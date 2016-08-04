@@ -219,7 +219,7 @@ class LocalityTxt(object):
         print loc
 
         loc.to_csv('locality.txt', index=False, encoding='utf-8')  # send to txt file
-        #loc.to_csv('locality.csv', index=False, encoding='utf-8')  # send to csv file
+        loc.to_csv('locality.csv', index=False, encoding='utf-8')  # send to csv file
 
 
 if __name__ == '__main__':
