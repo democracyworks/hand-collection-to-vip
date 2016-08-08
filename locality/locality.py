@@ -49,11 +49,11 @@ class LocalityTxt(object):
             index_str = '000' + str(index)
             return prefix + index_str
 
-        elif index in range(10,99):
+        elif index in range(10,100):
             index_str = '00' + str(index)
             return prefix + index_str
 
-        elif index > 100:
+        elif index >= 100:
             index_str = '0' + str(index)
             return prefix + index_str
 
@@ -77,16 +77,26 @@ class LocalityTxt(object):
         else:
             return ''
 
-    def create_name(self, index, ):
+    def create_name(self, index, division_description ):
         """
-        Creates a name by concatenating 'Locality #' with an 'index_str' based on the Dataframes row index.
-        '0s' are added, if necesary, to maintain a consistent id length.
+        Creates a name by concatenating the 'locality' (town name along with town or county designation)
+        with an 'index_str' based on the Dataframes row index.'0s' are added, if necesary, to
+        maintain a consistent id length.
         """
 
+        # Get locality(town or county), and remove state abbreviation.
+        if division_description:
+            locality = division_description[:-3].lower().replace(" ", "_")
+            #print locality
+        else:
+            locality = ''
+            print 'Missing data at row ' + str(index) + '.'
+
+        # Add leading '0s' depending on index number.
         if index <= 9:
             index_str = '000' + str(index)
 
-        elif index in range(10,99):
+        elif index in range(10,100):
             index_str = '00' + str(index)
 
         elif index > 100:
@@ -94,7 +104,7 @@ class LocalityTxt(object):
         else:
             index_str = str(index)
 
-        return 'Locality #' + index_str
+        return locality + index_str
 
     def create_polling_location_ids(self, index):
         """
@@ -106,11 +116,11 @@ class LocalityTxt(object):
             index_str = '000' + str(index)
             return 'poll' + index_str
 
-        elif index in range(10, 99):
+        elif index in range(10, 100):
             index_str = '00' + str(index)
             return 'poll' + index_str
 
-        elif index > 100:
+        elif index >= 100:
             index_str = '0' + str(index)
             return 'poll' + index_str
         elif index:
@@ -153,11 +163,11 @@ class LocalityTxt(object):
             index_str = '000' + str(index)
             return 'loc' + index_str
 
-        elif index in range(10,99):
+        elif index in range(10,100):
             index_str = '00' + str(index)
             return 'loc' + index_str
 
-        elif index > 100:
+        elif index >= 100:
             index_str = '0' + str(index)
             return 'loc' + index_str
 
@@ -177,7 +187,9 @@ class LocalityTxt(object):
             lambda row: self.create_election_administration_id(row['index']), axis=1)
 
         self.base_df['external_identifier_type'] = self.base_df.apply(
-            lambda row: self.get_external_identifier_type(), axis=1)
+            #lambda row: self.get_external_identifier_type(), axis=1)
+            # TODO: temporarily providing empty string
+            lambda row: '', axis = 1)
 
         self.base_df['external_identifier_othertype'] = self.base_df.apply(
             lambda row: self.get_external_identifier_othertype(), axis=1)
@@ -186,10 +198,12 @@ class LocalityTxt(object):
             lambda row: self.get_external_identifier_value(row['ocd-division']), axis=1)
 
         self.base_df['name'] = self.base_df.apply(
-            lambda row: self.create_name(row['index']), axis=1)
+            lambda row: self.create_name(row['index'], row['division-description']), axis=1)
 
         self.base_df['polling_location_ids'] = self.base_df.apply(
-            lambda row: self.create_polling_location_ids(row['index']), axis=1)
+            #lambda row: self.create_polling_location_ids(row['index']), axis=1)
+            # TODO: temporarily providing empty string
+            lambda row: '', axis=1)
 
         self.base_df['state_id'] = self.base_df.apply(
             lambda row: self.create_state_id(), axis=1)
