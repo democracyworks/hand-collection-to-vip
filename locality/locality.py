@@ -99,7 +99,7 @@ class LocalityTxt(object):
         elif index in range(10,100):
             index_str = '00' + str(index)
 
-        elif index > 100:
+        elif index >= 100:
             index_str = '0' + str(index)
         else:
             index_str = str(index)
@@ -132,8 +132,8 @@ class LocalityTxt(object):
 
     def create_state_id(self):
         """Creates the state_id by matching a key in the state_dict and retrieving
-        and modifying its value. Depening on the values lenght a '0' is added to
-        maintain a consistent id length.
+        and modifying its value. A '0' is added, if necessary, to maintain a
+        consistent id length.
         """
         for key, value in state_dict.iteritems():
             if key == self.state:
