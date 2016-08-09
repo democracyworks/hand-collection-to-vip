@@ -124,6 +124,5 @@ if __name__ == '__main__':
     for i in arr:
         lt = SourceTxt(i)
         sources.append(lt)
-        print lt.state, lt.get_vip_id()
 
-    # SourceTxt.write_source_txt(sources)
+    SourceTxt.write_source_txt(sources)
