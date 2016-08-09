@@ -6,6 +6,10 @@ import csv
 
 
 class SourceTxt(object):
+
+    def __init__(self, state):
+        self.state = state
+        
     @classmethod
     def write_source_txt(cls, arr):
         #This method is going to populate the source CSV with all the necessary data
@@ -29,10 +33,8 @@ class SourceTxt(object):
         finally:
             f.close()
 
-    def __init__(self, state):
-        self.state = state
-        # self.base_df = base_df
-        x = 1
+
+
 
     def get_date_time(self):
         # generate date-time, import date_time module--follows the format provided in the documentation
