@@ -1,4 +1,4 @@
-address_location_name,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
 "715 E Bannack, Dillon, MT 59725",,7am-8pm,,,False,True,,,,beav0000
 "715 E Bannack, Dillon, MT 59725",,7am-8pm,,,False,True,,,,beav0001
 "715 E Bannack, Dillon, MT 59725",,7am-8pm,,,False,True,,,,beav0002
