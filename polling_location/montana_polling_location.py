@@ -89,8 +89,8 @@ class PollingLocationTxt(object):
 
         else:
             print "The value ('" + hours +   "') at row " + str(index) + ' is invalid.'
-            #raise ValueError("WTF: The value ('" + hours +   "') at row " + str(index) + ' is invalid.')
-            return ''
+            #raise ValueError("The value ('" + hours +   "') at row " + str(index) + ' is invalid.')
+            #return ''
 
     def convert_hours(self):
         pass
@@ -155,7 +155,7 @@ class PollingLocationTxt(object):
         New columns that match the 'polling_location.txt' template are inserted into the DataFrame, apply() is
         used to run methods that generate the values for each row of the new columns.
         """
-        self.base_df['address_location_name'] = self.base_df.apply(
+        self.base_df['address_line'] = self.base_df.apply(
             lambda row: self.get_address_line(row['index'], row['polling_place_address'], row['polling_place_city'],
                                               row['polling_place_zip']), axis=1)
 
