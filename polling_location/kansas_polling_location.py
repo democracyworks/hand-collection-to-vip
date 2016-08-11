@@ -226,4 +226,4 @@ if __name__ == '__main__':
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
 
-    pl.write_polling_location_txt()
+    # pl.write_polling_location_txt()

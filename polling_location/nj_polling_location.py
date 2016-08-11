@@ -37,6 +37,8 @@ class PollingLocationTxt(object):
         return final_line
 
     def convert_zip_code(self, index, zip_code):
+        #supposed to standardize zip code format
+        #TODO: add a zero in front of four digit codes(CSV error) and cut 9 digit codes down to five
         if len(zip_code) == 5:
             text = str(zip_code)
         elif len(zip_code) == 4:
@@ -56,6 +58,7 @@ class PollingLocationTxt(object):
         return ''
 
     def convert_to_time(self, index, time):
+        #TODO: convert time strings into a time format--ie 1000 to 10:00
        if not pd.isnull(time):
             time_str = str(int(time))
             if len(time_str) == 4:
@@ -75,6 +78,8 @@ class PollingLocationTxt(object):
             return ""
 
     def convert_to_twelve_hour(self, index, time_str):
+        #convert 24 hour time to 12 hour time
+        #TODO: convert the time and add AM/PM. I.e. 16:30 to 4:30PM
         if not pd.isnull(time_str):
             d = time.strptime(time_str, "%H:%M")
             formatted_time = time.strftime("%I:%M %p", d)
