@@ -99,9 +99,33 @@ class PollingLocationTxt(object):
         # create conditional when/if column is present
         return ''
 
-    def create_hours_open_id(self):
-        """#"""
-        pass
+#    def create_hours_open_id(self):
+#        """#"""
+#        pass
+    def create_hours_open_id(self, index):
+        """Creates a sequential id by concatenating 'ho' with an 'index_str' based on the Dataframe's row index.
+        '0s' are added, if necesary, to maintain a consistent id length.
+        """
+
+        if index <= 9:
+            index_str = '000' + str(index)
+            return 'ho' + index_str
+
+        elif index in range(10, 100):
+            index_str = '00' + str(index)
+            return 'ho' + index_str
+
+        elif index >= 100:
+            index_str = '0' + str(index)
+            return 'ho' + index_str
+
+        elif index:
+            index_str = str(index)
+            return 'ho' + index_str
+
+        else:
+            return ''
+
 
     def is_drop_box(self):
         """#"""
@@ -169,7 +193,7 @@ class PollingLocationTxt(object):
             lambda row: self.get_photo_uri(), axis=1)
 
         self.base_df['hours_open_id'] = self.base_df.apply(
-            lambda row: self.create_hours_open_id(), axis=1)
+            lambda row: self.create_hours_open_id(row['index']), axis=1)
 
         self.base_df['is_drop_box'] = self.base_df.apply(
             lambda row: self.is_drop_box(), axis=1)
@@ -191,6 +215,14 @@ class PollingLocationTxt(object):
 
         return self.base_df
 
+    def dedupe(self, duped):
+        """#"""
+
+        #with_dupes = self.build_polling_location_txt()
+        #print with_dupes
+        deduped =  duped.drop_duplicates(subset='address_line')
+        return deduped
+
     def write_polling_location_txt(self):
         """Drops base DataFrame columns then writes final dataframe to text or csv file"""
 
@@ -201,7 +233,10 @@ class PollingLocationTxt(object):
                 'polling_place_location', 'polling_place_address', 'polling_place_city', 'polling_place_zip',
                 'polling_place_hours', 'late_egistration_location', 'late_egistration_address'], inplace=True, axis=1)
 
-        print plt
+        #print plt
+        p = self.dedupe(plt)
+        print p
+
 
         plt.to_csv('polling_location.txt', index=False, encoding='utf-8')  # send to txt file
         plt.to_csv('polling_location.csv', index=False, encoding='utf-8')  # send to csv file
@@ -214,7 +249,7 @@ if __name__ == '__main__':
     #drop_box_true =
     state_file='montana_early_voting _info.csv'
 
-    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
+    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/montana/polling_location/polling_location_input/" + state_file
 
     colnames = ['county', 'precinct_name', 'precinct_number', 'total_number_registered_voters', 'hd', 'sd',
                 'polling_place_location', 'polling_place_address', 'polling_place_city', 'polling_place_zip',

@@ -219,6 +219,11 @@ class LocalityTxt(object):
 
         return self.base_df
 
+    def group_polling_location_ids(self, frame):
+        #frame = self.build_locality_txt()
+        return pd.concat(g for _, g in frame.groupby("external_identifier_value") if len(g) > 1)
+        #return frame.groupby('external_identifier_value')
+
     def write_locality_txt(self):
         """Drops base DataFrame columns then writes final dataframe to text or csv file"""
 
@@ -231,6 +236,9 @@ class LocalityTxt(object):
                   'mailing-state', 'mailing-zip' ], inplace=True, axis=1)
 
         print loc
+        a = self.group_polling_location_ids(loc)
+        print type(a)
+        print a
 
         loc.to_csv('locality.txt', index=False, encoding='utf-8')  # send to txt file
         loc.to_csv('locality.csv', index=False, encoding='utf-8')  # send to csv file
@@ -246,6 +254,7 @@ if __name__ == '__main__':
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
 
     early_voting_df['index'] = early_voting_df.index +1 # offsets zero based index so it starts at 1 for ids
+    #print early_voting_df
 
 
     lt = LocalityTxt(early_voting_df, state)
