@@ -212,7 +212,7 @@ if __name__ == '__main__':
 
     early_voting_true = True  # True or False
     #drop_box_true =
-    state_file='montana_early_voting _info.csv'
+    state_file='kansas_early_voting_info.csv'
 
     early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
 
@@ -227,4 +227,3 @@ if __name__ == '__main__':
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
 
     pl.write_polling_location_txt()
-
