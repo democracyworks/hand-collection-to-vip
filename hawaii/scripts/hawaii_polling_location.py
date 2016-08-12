@@ -1,5 +1,6 @@
 import pandas as pd
 import time
+import config
 from time import strftime
 
 class PollingLocationTxt(object):
@@ -80,9 +81,19 @@ class PollingLocationTxt(object):
         # create conditional when/if column is present
         return ''
 
-    def create_hours_open_id(self):
+    def create_hours_open_id(self, index):
         """#"""
-        pass
+        if index <= 9:
+            return 'ho000' + str(index)
+
+        elif index in range(10,100):
+            return 'ho00' + str(index)
+
+        elif index > 100:
+            return 'ho0' + str(index)
+        else:
+            return str(index)
+
 
     def is_drop_box(self):
         """#"""
@@ -136,7 +147,7 @@ class PollingLocationTxt(object):
         New columns that match the 'polling_location.txt' template are inserted into the DataFrame, apply() is
         used to run methods that generate the values for each row of the new columns.
         """
-        self.base_df['address_location_name'] = self.base_df.apply(
+        self.base_df['address_line'] = self.base_df.apply(
             lambda row: self.get_address_line(row['index'], row['address']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
@@ -149,7 +160,7 @@ class PollingLocationTxt(object):
             lambda row: self.get_photo_uri(), axis=1)
 
         self.base_df['hours_open_id'] = self.base_df.apply(
-            lambda row: self.create_hours_open_id(), axis=1)
+            lambda row: self.create_hours_open_id(row['index']), axis=1)
 
         self.base_df['is_drop_box'] = self.base_df.apply(
             lambda row: self.is_drop_box(), axis=1)
@@ -186,8 +197,8 @@ class PollingLocationTxt(object):
         plt = self.dedupe(plt)
         print plt
 
-        plt.to_csv('polling_location.txt', index=False, encoding='utf-8')  # send to txt file
-        plt.to_csv('polling_location.csv', index=False, encoding='utf-8')  # send to csv file
+        plt.to_csv(config.polling_location_output + 'polling_location.txt', index=False, encoding='utf-8')  # send to txt file
+        plt.to_csv(config.polling_location_output + 'polling_location.csv', index=False, encoding='utf-8')  # send to csv file
 
 
 if __name__ == '__main__':
@@ -197,12 +208,13 @@ if __name__ == '__main__':
     #drop_box_true =
     state_file='hawaii_early_voting_info.csv'
 
-    early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
+    #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
+    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/hawaii/scripts/early_voting_input/" + state_file
 
     colnames = ['county', 'address', 'directions', 'start_time', 'end_time', 'start_date', 'end_date']
 
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
-    early_voting_df['index'] = early_voting_df.index
+    early_voting_df['index'] = early_voting_df.index + 1
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
     pl.write_polling_location_txt()
