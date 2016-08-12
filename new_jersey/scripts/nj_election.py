@@ -27,7 +27,7 @@ import config
 def main():
     input = 'state_feed_info.csv'
 
-    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/new_jersey/early_voting_input/" + input
+    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/new_jersey/scripts/early_voting_input/" + input
 
     with open(early_voting_file, 'rb') as f:
         f = csv.reader(f, delimiter=',')

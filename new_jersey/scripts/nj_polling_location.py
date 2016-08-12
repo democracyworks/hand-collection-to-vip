@@ -1,5 +1,6 @@
 import pandas as pd
 import time
+import config
 from time import strftime
 
 class PollingLocationTxt(object):
@@ -39,11 +40,11 @@ class PollingLocationTxt(object):
     def convert_zip_code(self, index, zip_code):
         #supposed to standardize zip code format
         #TODO: add a zero in front of four digit codes(CSV error) and cut 9 digit codes down to five
-        if len(zip_code) == 5:
+        if len(str(zip_code)) == 5:
             text = str(zip_code)
-        elif len(zip_code) == 4:
+        elif len(str(zip_code)) == 4:
             text = "0" + str(zip_code)
-        elif len(zip_code) == 10:
+        elif len(str(zip_code)) == 10:
             text = str(zip_code)
             text = text.split("-")[0]
         else:
@@ -218,8 +219,8 @@ class PollingLocationTxt(object):
         plt = self.dedupe(plt)
         print plt
 
-        plt.to_csv('polling_location.txt', index=False, encoding='utf-8')  # send to txt file
-        plt.to_csv('polling_location.csv', index=False, encoding='utf-8')  # send to csv file
+        plt.to_csv(config.polling_location_output+ 'polling_location.txt', index=False, encoding='utf-8')  # send to txt file
+        plt.to_csv(config.polling_location_output + 'polling_location.csv', index=False, encoding='utf-8')  # send to csv file
 
 
 if __name__ == '__main__':
@@ -230,7 +231,7 @@ if __name__ == '__main__':
     state_file='new_jersey_early_voting_info.csv'
 
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
-    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/new_jersey/early_voting_input/" + state_file
+    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/new_jersey/scripts/early_voting_input/" + state_file
 
     colnames = ['office_name', 'official_title', 'ocd_division', 'division_description', 'homepage', 'phone', 'email', 'street',
                 'directions', 'city', 'state', 'zip', 'start_time', 'end_time',  'start_date', 'end_date',

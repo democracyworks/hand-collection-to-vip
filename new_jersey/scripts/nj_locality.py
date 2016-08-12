@@ -202,9 +202,9 @@ class LocalityTxt(object):
             lambda row: self.create_name(row['index'], row['division_description']), axis=1)
 
         self.base_df['polling_location_ids'] = self.base_df.apply(
-            #lambda row: self.create_polling_location_ids(row['index']), axis=1)
-            # TODO: temporarily providing empty string
-            lambda row: '', axis=1)
+            lambda row: self.create_polling_location_ids(row['index']), axis=1)
+            # TODO: temporarily providing empty string, UPDATE: restored on
+            #lambda row: '', axis=1)
 
         self.base_df['state_id'] = self.base_df.apply(
             lambda row: self.create_state_id(), axis=1)
@@ -236,11 +236,11 @@ class LocalityTxt(object):
         #print loc
 
         # Drop base_df columns.
-        loc.drop(['office_name', 'official_title', 'ocd_division', 'division_description', 'homepage_url', 'phone', 'email',
+        loc.drop(['index', 'office_name', 'official_title', 'ocd_division', 'division_description', 'homepage_url', 'phone', 'email',
                 'street', 'directions', 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date', 'end_date',
                 'must_apply_for_mail_ballot', 'notes'], inplace=True, axis=1)
 
-        #loc = self.dedupe(loc)
+        loc = self.dedupe(loc)
         print loc
         #a = self.group_polling_location_ids(loc)
         #print type(a)
