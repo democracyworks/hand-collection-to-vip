@@ -1,0 +1,24 @@
+address_line,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+"Historic Court House Complex, 5903 Main Street Mays Landing, NJ 08330",08:30 AM-04:30 PM,,,False,True,,,,atla0000
+"One Bergen County Plaza, Room 310 Hackensack, NJ 07601",08:30 AM-04:00 PM,,,False,True,,,,berg0007
+"County Office Building, 49 Rancocas Road Room G-22 Mount Holly, NJ 08060",08:00 AM-04:00 PM,,,False,True,,,,burl0014
+"Courthouse, Room 102, 520 Market Street Camden, NJ 08101",08:30 AM-04:00 PM,,,False,True,,,,camd0021
+"100 University Court Blackwood, NJ 08012",08:30 AM-04:00 PM,,,False,True,,,,camd0028
+"10 W. Mechanic Street Cape May Courthouse, NJ 08210",08:30 AM-04:30 PM,,,False,True,,,,cape0035
+"555 Shiloh Pike Bridgeton, NJ 08302",08:30 AM-04:00 PM,,,False,True,,,,cumb0042
+"Hall of Records, 465 Dr. Martin Luther King, Jr. Boulevard, Fourth Floor, Room 411 Newark, NJ 07101",09:00 AM-04:00 PM,,,False,True,,,,esse0049
+"550 Grove Road West Deptford, NJ 08066",08:30 AM-04:30 PM,,,False,True,,,,glou0056
+"1750 Deptford Center Rd Deptford Township, NJ 08096",10:00 AM-09:00 PM,,,False,True,,,,glou0064
+"Hudson County Plaza, 257 Cornelison Avenue, 4th Floor Jersey City, NJ 07302",08:30 AM-04:30 PM,,,False,True,,,,huds0074
+"71 Main Street, Hall of Records Flemington, NJ 08822",09:00 AM-01:00 PM,,,False,True,,,,hunt0081
+"640 S. Broad Street Trenton, NJ 08650",08:30 AM-04:30 PM,,,False,True,,,,merc0099
+"11 Kennedy Blvd. East Brunswick, NJ 08816",08:30 AM-04:15 PM,,,False,True,,,,midd0107
+"300 Halls Mill Road Freehold, NJ 07728",08:30 AM-04:30 PM,,,False,True,,,,monm0127
+"10 Court Street Morristown, NJ 07963",08:00 AM-04:30 PM,,,False,True,,,,morr0134
+"Courthouse, 118 Washington Street Toms River, NJ 08754",08:00 AM-04:30 PM,,,False,True,,,,ocea0146
+"401 Grand Street, Room 123 Paterson, NJ 07505",08:30 AM-04:30 PM,,,False,True,,,,pass0155
+"110 Fifth Street, Suite 200 Salem, NJ 08079",08:30 AM-04:30 PM,,,False,True,,,,sale0163
+"Administration Building, 20 Grove Street Somerville, NJ 08876",08:15 AM-04:00 PM,,,False,True,,,,some0170
+"83 Spring Street, Suite 305 Newton, NJ 07860",08:00 AM-04:00 PM,,,False,True,,,,suss0177
+"2 Broad Street, Room 113 Elizabeth, NJ 07201",08:30 AM-04:00 PM,,,False,True,,,,unio0184
+"Courthouse, 413 Second Street Belvidere, NJ 07823",08:00 AM-04:30 PM,,,False,True,,,,warr0191

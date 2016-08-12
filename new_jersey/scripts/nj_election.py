@@ -18,8 +18,7 @@ hours_open_id
 
 """
 
-import time
-from datetime import date
+import datetime
 import csv
 import config
 
@@ -27,7 +26,7 @@ import config
 def main():
     input = 'state_feed_info.csv'
 
-    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/new_jersey/early_voting_input/" + input
+    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/new_jersey/scripts/early_voting_input/" + input
 
     with open(early_voting_file, 'rb') as f:
         f = csv.reader(f, delimiter=',')
@@ -78,7 +77,7 @@ class ElectionTxt(object):
 
     def get_date(self):
         """#"""
-        return '11-8-2016'
+        return '11-8-2016'.replace('-', '/')
 
     def get_name(self):
         """#"""
@@ -144,9 +143,11 @@ class ElectionTxt(object):
         """#"""
         # use ballot_request_deadline_display
 
-        deadline = self.state_feed.get('ballot_request_deadline')
-        #print deadline
-        return deadline
+        if self.state_feed.get('ballot_request_deadline'):
+            deadline = self.state_feed.get('ballot_request_deadline')
+            return datetime.datetime.strptime(deadline, '%Y-%m-%d').strftime('%-m/%d/%Y')
+        else:
+            return ''
 
     def hours_open_id(self):
         """#"""
