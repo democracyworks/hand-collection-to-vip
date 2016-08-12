@@ -241,15 +241,15 @@ class LocalityTxt(object):
         #print loc
 
         # Drop base_df columns.
-        loc.drop(['index', 'ocd_division', 'county', 'location', 'name', 'address_1', 'address_2',
+        loc.drop(['ocd_division', 'county', 'location', 'name', 'address_1', 'address_2',
                 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date', 'end_date',
                 'is_only_by_appointment', 'is_or_by_appointment', 'is_subject_to_change'], inplace=True, axis=1)
 
         loc = self.dedupe(loc)
         print loc
 
-        loc.to_csv('locality.txt', index=False, encoding='utf-8')  # send to txt file
-        loc.to_csv('locality.csv', index=False, encoding='utf-8')  # send to csv file
+        loc.to_csv(config.locality_output + 'locality.txt', index=False, encoding='utf-8')  # send to txt file
+        loc.to_csv(config.locality_output + 'locality.csv', index=False, encoding='utf-8')  # send to csv file
 
 
 if __name__ == '__main__':
