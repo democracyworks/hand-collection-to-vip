@@ -120,9 +120,18 @@ class PollingLocationTxt(object):
         # create conditional when/if column is present
         return ''
 
-    def create_hours_open_id(self):
+    def create_hours_open_id(self, index):
         """#"""
-        pass
+        if index <= 9:
+            return 'ho000' + str(index)
+
+        elif index in range(10,100):
+            return 'ho00' + str(index)
+
+        elif index > 100:
+            return 'ho0' + str(index)
+        else:
+            return str(index)
 
     def is_drop_box(self):
         """#"""
@@ -190,7 +199,7 @@ class PollingLocationTxt(object):
             lambda row: self.get_photo_uri(), axis=1)
 
         self.base_df['hours_open_id'] = self.base_df.apply(
-            lambda row: self.create_hours_open_id(), axis=1)
+            lambda row: self.create_hours_open_id(row['index']), axis=1)
 
         self.base_df['is_drop_box'] = self.base_df.apply(
             lambda row: self.is_drop_box(), axis=1)
