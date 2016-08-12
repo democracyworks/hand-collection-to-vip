@@ -89,8 +89,8 @@ class PollingLocationTxt(object):
 
         else:
             print "The value ('" + hours +   "') at row " + str(index) + ' is invalid.'
-            #raise ValueError("The value ('" + hours +   "') at row " + str(index) + ' is invalid.')
-            #return ''
+            #raise ValueError("WTF: The value ('" + hours +   "') at row " + str(index) + ' is invalid.')
+            return ''
 
     def convert_hours(self):
         pass
@@ -99,33 +99,9 @@ class PollingLocationTxt(object):
         # create conditional when/if column is present
         return ''
 
-#    def create_hours_open_id(self):
-#        """#"""
-#        pass
-    def create_hours_open_id(self, index):
-        """Creates a sequential id by concatenating 'ho' with an 'index_str' based on the Dataframe's row index.
-        '0s' are added, if necesary, to maintain a consistent id length.
-        """
-
-        if index <= 9:
-            index_str = '000' + str(index)
-            return 'ho' + index_str
-
-        elif index in range(10, 100):
-            index_str = '00' + str(index)
-            return 'ho' + index_str
-
-        elif index >= 100:
-            index_str = '0' + str(index)
-            return 'ho' + index_str
-
-        elif index:
-            index_str = str(index)
-            return 'ho' + index_str
-
-        else:
-            return ''
-
+    def create_hours_open_id(self):
+        """#"""
+        pass
 
     def is_drop_box(self):
         """#"""
@@ -179,7 +155,7 @@ class PollingLocationTxt(object):
         New columns that match the 'polling_location.txt' template are inserted into the DataFrame, apply() is
         used to run methods that generate the values for each row of the new columns.
         """
-        self.base_df['address_line'] = self.base_df.apply(
+        self.base_df['address_location_name'] = self.base_df.apply(
             lambda row: self.get_address_line(row['index'], row['polling_place_address'], row['polling_place_city'],
                                               row['polling_place_zip']), axis=1)
 
@@ -193,7 +169,7 @@ class PollingLocationTxt(object):
             lambda row: self.get_photo_uri(), axis=1)
 
         self.base_df['hours_open_id'] = self.base_df.apply(
-            lambda row: self.create_hours_open_id(row['index']), axis=1)
+            lambda row: self.create_hours_open_id(), axis=1)
 
         self.base_df['is_drop_box'] = self.base_df.apply(
             lambda row: self.is_drop_box(), axis=1)
@@ -215,10 +191,6 @@ class PollingLocationTxt(object):
 
         return self.base_df
 
-    def dedupe(self, dupe):
-        """#"""
-        return dupe.drop_duplicates(subset='address_line')
-
     def write_polling_location_txt(self):
         """Drops base DataFrame columns then writes final dataframe to text or csv file"""
 
@@ -229,10 +201,7 @@ class PollingLocationTxt(object):
                 'polling_place_location', 'polling_place_address', 'polling_place_city', 'polling_place_zip',
                 'polling_place_hours', 'late_egistration_location', 'late_egistration_address'], inplace=True, axis=1)
 
-        #print plt
-        plt = self.dedupe(plt)
         print plt
-
 
         plt.to_csv('polling_location.txt', index=False, encoding='utf-8')  # send to txt file
         plt.to_csv('polling_location.csv', index=False, encoding='utf-8')  # send to csv file
@@ -243,13 +212,9 @@ if __name__ == '__main__':
 
     early_voting_true = True  # True or False
     #drop_box_true =
-    state_file='montana_early_voting _info.csv'
+    state_file='kansas_early_voting_info.csv'
 
-#<<<<<<< HEAD:montana/polling_location/montana_polling_location.py
-    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/montana/polling_location/polling_location_input/" + state_file
-#=======
-#    early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
-#>>>>>>> origin:polling_location/montana_polling_location.py
+    early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
 
     colnames = ['county', 'precinct_name', 'precinct_number', 'total_number_registered_voters', 'hd', 'sd',
                 'polling_place_location', 'polling_place_address', 'polling_place_city', 'polling_place_zip',
@@ -261,5 +226,4 @@ if __name__ == '__main__':
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
 
-    pl.write_polling_location_txt()
-
+    # pl.write_polling_location_txt()
