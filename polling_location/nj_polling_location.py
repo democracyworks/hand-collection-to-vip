@@ -77,6 +77,10 @@ class PollingLocationTxt(object):
        else:
             return ""
 
+    def dedupe(self, dupe):
+        """#"""
+        return dupe.drop_duplicates(subset='address_line')
+
     def convert_to_twelve_hour(self, index, time_str):
         #convert 24 hour time to 12 hour time
         #TODO: convert the time and add AM/PM. I.e. 16:30 to 4:30PM
@@ -165,7 +169,7 @@ class PollingLocationTxt(object):
         New columns that match the 'polling_location.txt' template are inserted into the DataFrame, apply() is
         used to run methods that generate the values for each row of the new columns.
         """
-        self.base_df['address_location_name'] = self.base_df.apply(
+        self.base_df['address_line'] = self.base_df.apply(
             lambda row: self.get_address_line(row['index'], row['street'],
                                               row['city'], row['zip']), axis=1)
 
@@ -207,11 +211,13 @@ class PollingLocationTxt(object):
         plt = self.build_polling_location_txt()
 
         # Drop base_df columns.
-        plt.drop(['office_name', 'official_title', 'ocd_division', 'division_description', 'homepage', 'phone', 'email', 'street',
-                'directions', 'city', 'state', 'zip', 'start_time', 'end_time',  'start_date', 'end_date',
+        plt.drop(['index', 'office_name', 'official_title', 'ocd_division', 'division_description', 'homepage', 'phone', 'email', 'street',
+                'office_directions', 'city', 'state', 'zip', 'start_time', 'end_time',  'start_date', 'end_date',
                 'must_apply_for_mail_ballot', 'notes'], inplace=True, axis=1)
 
+        plt = self.dedupe(plt)
         print plt
+
 
         plt.to_csv('polling_location.txt', index=False, encoding='utf-8')  # send to txt file
         plt.to_csv('polling_location.csv', index=False, encoding='utf-8')  # send to csv file
@@ -227,7 +233,7 @@ if __name__ == '__main__':
     early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
 
     colnames = ['office_name', 'official_title', 'ocd_division', 'division_description', 'homepage', 'phone', 'email', 'street',
-                'directions', 'city', 'state', 'zip', 'start_time', 'end_time',  'start_date', 'end_date',
+                'office_directions', 'city', 'state', 'zip', 'start_time', 'end_time',  'start_date', 'end_date',
                 'must_apply_for_mail_ballot', 'notes']
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
     early_voting_df['index'] = early_voting_df.index
