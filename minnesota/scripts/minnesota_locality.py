@@ -241,7 +241,7 @@ class LocalityTxt(object):
         #print loc
 
         # Drop base_df columns.
-        loc.drop(['ocd_division', 'county', 'location', 'name', 'address_1', 'address_2',
+        loc.drop(['index', 'ocd_division', 'county', 'location', 'name', 'address_1', 'address_2',
                 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date', 'end_date',
                 'is_only_by_appointment', 'is_or_by_appointment', 'is_subject_to_change'], inplace=True, axis=1)
 

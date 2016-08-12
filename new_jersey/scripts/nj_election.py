@@ -18,8 +18,7 @@ hours_open_id
 
 """
 
-import time
-from datetime import date
+import datetime
 import csv
 import config
 
@@ -78,7 +77,7 @@ class ElectionTxt(object):
 
     def get_date(self):
         """#"""
-        return '11-8-2016'
+        return '11-8-2016'.replace('-', '/')
 
     def get_name(self):
         """#"""
@@ -144,9 +143,11 @@ class ElectionTxt(object):
         """#"""
         # use ballot_request_deadline_display
 
-        deadline = self.state_feed.get('ballot_request_deadline')
-        #print deadline
-        return deadline
+        if self.state_feed.get('ballot_request_deadline'):
+            deadline = self.state_feed.get('ballot_request_deadline')
+            return datetime.datetime.strptime(deadline, '%Y-%m-%d').strftime('%-m/%d/%Y')
+        else:
+            return ''
 
     def hours_open_id(self):
         """#"""
