@@ -5,6 +5,8 @@ state = 'minnesota'
 
 state_abbreviation = 'MN'
 
+utc_offset = '-06:00'
+
 polling_location_output = '/home/acg/democracyworks/hand-collection-to-vip/minnesota/output/'
 
 locality_output = '/home/acg/democracyworks/hand-collection-to-vip/minnesota/output/'

@@ -1,213 +1,638 @@
-index,address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-0,"209 2nd St NW Rm 202, Aitkin, MN 56431",,08:00 AM-04:30 PM,,ho0000,False,True,,,,aitk0000
-9,"1685 Crosstown Blvd NW, Andover, MN 55304",,08:00 AM-04:30 PM,,ho0009,False,True,,,,anok0009
-18,"2015 First Ave North, Anoka, MN 55303",,08:00 AM-04:30 PM,,ho0018,False,True,,,,anok0018
-27,"23820 Dewey St, Bethel, MN 55005",,07:25 AM-02:25 PM,,ho0027,False,True,,,,anok0027
-36,"10801 Town Square Dr, Blaine, MN 55449",,08:00 AM-04:30 PM,,ho0036,False,True,,,,anok0036
-45,"1880 Main St, Centerville, MN 55038",,07:00 AM-04:00 PM,,ho0045,False,True,,,,anok0045
-54,"200 Civic Heights Cir, Circle Pines, MN 55014",,08:00 AM-04:30 PM,,ho0054,False,True,,,,anok0054
-63,"590 40th Ave NE, Columbia Heights, MN 55421",,08:00 AM-04:30 PM,,ho0063,False,True,,,,anok0063
-72,"16319 Kettle River Blvd, Columbus, MN 55025",,08:00 AM-04:00 PM,,ho0072,False,True,,,,anok0072
-93,"11155 Robinson Dr, Coon Rapids, MN 55433",,08:00 AM-04:30 PM,,ho0093,False,True,,,,anok0093
-102,"2241 221st Ave NE, East Bethel, MN 55011",,08:00 AM-04:00 PM,,ho0102,False,True,,,,anok0102
-111,"6431 University Ave NE, Fridley, MN 55432",,08:00 AM-04:30 PM,,ho0111,False,True,,,,anok0111
-120,"15544 Central Ave NE, Ham Lake, MN 55304",,07:00 AM-12:00 PM,,ho0120,False,True,,,,anok0120
-135,"4555 Jackson St, Hilltop, MN 55421",,08:00 AM-04:30 PM,,ho0135,False,True,,,,anok0135
-144,"9180 Lexington Ave, Lexington, MN 55014",,08:00 AM-04:30 PM,,ho0144,False,True,,,,anok0144
-153,"600 Town Center Pkwy, Lino Lakes, MN 55014",,08:00 AM-04:30 PM,,ho0153,False,True,,,,anok0153
-162,"22817 Typo Creek Dr NE, Stacy, MN 55079",,08:00 AM-04:30 PM,,ho0162,False,True,,,,anok0162
-171,"8188 199th Ave NW, Nowthen, MN 55330",,08:00 AM-04:30 PM,,ho0171,False,True,,,,anok0171
-180,"19900 Nightingale St NW, Oak Grove, MN 55011",,08:00 AM-04:30 PM,,ho0180,False,True,,,,anok0180
-189,"7550 Sunwood Dr NW, Ramsey, MN 55303",,08:00 AM-04:30 PM,,ho0189,False,True,,,,anok0189
-198,"1301 81st Ave NE, Spring Lake Park, MN 55432",,08:00 AM-04:30 PM,,ho0198,False,True,,,,anok0198
-207,"23340 Cree St NW, St. Francis, MN 55070",,07:00 AM-05:30 PM,,ho0207,False,True,,,,anok0207
-215,"325 E Main St Ste W130, Anoka, MN 55303",,08:00 AM-04:30 PM,,ho0215,False,True,,,,anok0215
-224,"915 Lake Ave, Detroit Lakes, MN 56501",,08:00 AM-04:30 PM,,ho0224,False,True,,,,beck0224
-233,"701 Minnesota Ave NW Ste 220, Bemidji, MN 56601",,08:00 AM-04:30 PM,,ho0233,False,True,,,,belt0233
-242,"531 Dewey St, Foley, MN 56329",,08:00 AM-04:30 PM,,ho0242,False,True,,,,bent0242
-251,"20 2nd St SE Ste 103, Ortonville, MN 56278",,08:00 AM-04:00 PM,,ho0251,False,True,,,,bigs0251
-260,"410 S 5th St, Mankato, MN 56002",,08:00 AM-04:30 PM,,ho0260,False,True,,,,blue0260
-269,"14 South State St, New Ulm, MN 56073",,08:00 AM-04:30 PM,,ho0269,False,True,,,,brow0269
-278,"301 Walnut Ave, Carlton, MN 55718",,08:00 AM-04:00 PM,,ho0278,False,True,,,,carl0278
-287,"600 E Fourth St, Chaska, MN 55318",,08:00 AM-04:30 PM,,ho0287,False,True,,,,carv0287
-296,"330 2nd St NW, Cass Lake, MN 56601",,07:30 AM-03:30 PM,,ho0296,False,True,,,,cass0296
-305,"10790 Squaw Pt Rd, East Gull Lake, MN 56401",,08:00 AM-04:00 PM,,ho0305,False,True,,,,cass0305
-320,"8583 Interlachen Rd, Lake Shore, MN 56468",,08:00 AM-04:30 PM,,ho0320,False,True,,,,cass0320
-329,"306 Elm Ave W, Pillager, MN 56473",,08:00 AM-04:00 PM,,ho0329,False,True,,,,cass0329
-338,"106 Spruce St NW, Remer, MN 56672",,07:00 AM-03:30 PM,,ho0338,False,True,,,,cass0338
-347,"12956 24th Ave SW, Pillager, MN 56473",,08:30 AM-12:30 PM,,ho0347,False,True,,,,cass0347
-363,"303 Minnesota Ave W, Walker, MN 56484",,08:00 AM-04:30 PM,,ho0363,False,True,,,,cass0363
-372,"629 N 11th St, Montevideo, MN 56265",,08:00 AM-04:30 PM,,ho0372,False,True,,,,chip0372
-381,"313 N Main St Rm 271, Center City, MN 55012",,08:00 AM-04:30 PM,,ho0381,False,True,,,,chis0381
-390,"807 N 11th St, Moorhead, MN 56560",,08:00 AM-04:30 PM,,ho0390,False,True,,,,clay0390
-399,"213 Main Ave N Dept 202, Bagley, MN 56621",,08:00 AM-04:30 PM,,ho0399,False,True,,,,clea0399
-408,"411 W 2nd St, Grand Marais, MN 55604",,08:00 AM-04:00 PM,,ho0408,False,True,,,,cook0408
-417,"900 3rd Ave, Windom, MN 56101",,08:00 AM-04:30 PM,,ho0417,False,True,,,,cott0417
-426,"326 Laurel St Ste 22, Brainerd, MN 56401",,08:00 AM-05:00 PM,,ho0426,False,True,,,,crow0426
-435,"7100 147th St W, Apple Valley, MN 55124",,08:00 AM-04:30 PM,,ho0435,False,True,,,,dako0435
-444,"100 Civic Center, Burnsville, MN 55337",,08:00 AM-04:30 PM,,ho0444,False,True,,,,dako0444
-453,"1590 Hwy 55 Ste 2300, Hastings, MN 55033",,08:00 AM-04:30 PM,,ho0453,False,True,,,,dako0453
-462,"1 Mendota Rd, West St Paul, MN 55118",,08:00 AM-04:30 PM,,ho0462,False,True,,,,dako0462
-471,"14955 Galaxie Ave, Apple Valley, MN 55124",,08:00 AM-04:30 PM,,ho0471,False,True,,,,dako0471
-504,"3830 Pilot Knob Rd, Eagan, MN 55122",,08:00 AM-04:30 PM,,ho0504,False,True,,,,dako0504
-513,"430 3rd St, Farmington, MN 55024",,08:00 AM-04:30 PM,,ho0513,False,True,,,,dako0513
-522,"101 4th St E, Hastings, MN 55033",,08:00 AM-04:30 PM,,ho0522,False,True,,,,dako0522
-531,"8150 Barbara Ave, Inver Grove Heights, MN 55077",,08:00 AM-04:30 PM,,ho0531,False,True,,,,dako0531
-540,"20195 Holyoke Ave, Lakeville, MN 55044",,08:00 AM-04:30 PM,,ho0540,False,True,,,,dako0540
-549,"801 Washington St, Northfield, MN 55057",,08:00 AM-05:00 PM,,ho0549,False,True,,,,dako0549
-558,"2875 145th St W, Rosemount, MN 55068",,08:00 AM-04:30 PM,,ho0558,False,True,,,,dako0558
-567,"125 3rd Ave N, South St. Paul, MN 55075",,08:00 AM-04:30 PM,,ho0567,False,True,,,,dako0567
-576,"1590 Highway 55 Ste 2300, Hastings, MN 55033",,08:00 AM-04:30 PM,,ho0576,False,True,,,,dako0576
-585,"721 Main Street North Dept 45, Mantorville, MN 55955",,08:00 AM-04:30 PM,,ho0585,False,True,,,,dodg0585
-594,"305 8th Ave W, Alexandria, MN 56308",,08:00 AM-04:30 PM,,ho0594,False,True,,,,doug0594
-603,"415 N Main St, Blue Earth, MN 56013",,08:00 AM-04:30 PM,,ho0603,False,True,,,,fari0603
-612,"101 Fillmore St, Preston, MN 55965",,08:00 AM-04:30 PM,,ho0612,False,True,,,,fill0612
-621,"411 S Broadway, Albert Lea, MN 56007",,08:00 AM-05:00 PM,,ho0621,False,True,,,,free0621
-630,"918 River Rd, Cannon Falls, MN 55009",,08:00 AM-04:30 PM,,ho0630,False,True,,,,good0630
-639,"709 2nd St, Kenyon, MN 55946",,08:00 AM-04:30 PM,,ho0639,False,True,,,,good0639
-648,"205 W Center St, Lake City, MN 55041",,08:00 AM-04:30 PM,,ho0648,False,True,,,,good0648
-657,"315 W 4th St, Red Wing, MN 55066",,08:00 AM-04:30 PM,,ho0657,False,True,,,,good0657
-666,"175 West Ave, Zumbrota, MN 55992",,07:00 AM-05:30 PM,,ho0666,False,True,,,,good0666
-675,"509 W 5th St, Red Wing, MN 55066",,08:00 AM-04:30 PM,,ho0675,False,True,,,,good0675
-684,"10 2nd St NE, Elbow Lake, MN 56531",,08:00 AM-04:00 PM,,ho0684,False,True,,,,gran0684
-693,"1800 W. Old Shakopee Rd, Bloomington, MN 55431",,08:00 AM-04:30 PM,,ho0693,False,True,,,,henn0693
-702,"6301 Shingle Creek Parkway, Brooklyn Center, MN 55430",,08:00 AM-04:30 PM,,ho0702,False,True,,,,henn0702
-711,"5100 Edinbrook Terrace, Brooklyn Park, MN 55443",,08:00 AM-05:00 PM,,ho0711,False,True,,,,henn0711
-720,"11955 Champlin Drive, Champlin, MN 55316",,08:00 AM-05:00 PM,,ho0720,False,True,,,,henn0720
-729,"8200 County Rd 116, Corcoran, MN 55340",,08:00 AM-04:00 PM,,ho0729,False,True,,,,henn0729
-738,"4141 Douglas Dr N, Crystal, MN 55422",,08:00 AM-04:30 PM,,ho0738,False,True,,,,henn0738
-747,"12260 South Diamond Lake Road, Dayton, MN 55327",,08:00 AM-12:00 PM,,ho0747,False,True,,,,henn0747
-762,"20225 Cottagewood Road, Deephaven, MN 55331",,08:00 AM-04:30 PM,,ho0762,False,True,,,,henn0762
-771,"8080 Mitchell Road, Eden Prairie, MN 55344",,08:00 AM-04:30 PM,,ho0771,False,True,,,,henn0771
-780,"4801 West 50th St, Edina, MN 55424",,08:00 AM-04:30 PM,,ho0780,False,True,,,,henn0780
-789,"339 Third St, Excelsior, MN 55331",,07:30 AM-05:30 PM,,ho0789,False,True,,,,henn0789
-797,"7800 Golden Valley Rd, Golden Valley, MN 55427",,08:00 AM-04:30 PM,,ho0797,False,True,,,,henn0797
-806,"7738 Commerce Cir, Greenfield, MN 55373",,07:30 AM-05:00 PM,,ho0806,False,True,,,,henn0806
-820,"11250 5th St NE, Hanover, MN 55341",,08:00 AM-03:30 PM,,ho0820,False,True,,,,henn0820
-847,"1010 1st St S, Hopkins, MN 55343",,08:00 AM-04:30 PM,,ho0847,False,True,,,,henn0847
-856,"1920 County Rd 90, Independence, MN 55359",,08:00 AM-12:00 PM,,ho0856,False,True,,,,henn0856
-869,"450 Virginia Ave, Long Lake, MN 55356",,08:00 AM-12:00 PM,,ho0869,False,True,,,,henn0869
-887,"279 N. Medina St. Ste 260, Loretto, MN 55357",,08:00 AM-01:30 PM,,ho0887,False,True,,,,henn0887
-914,"12800 Arbor Lakes Parkway, Maple Grove, MN 55369",,08:00 AM-04:30 PM,,ho0914,False,True,,,,henn0914
-923,"5050 Independence St, Maple Plain, MN 55359",,08:00 AM-04:30 PM,,ho0923,False,True,,,,henn0923
-932,"2052 County Road 24, Medina, MN 55340",,08:00 AM-04:30 PM,,ho0932,False,True,,,,henn0932
-941,"217 S 3rd St, Minneapolis, MN 55415",,08:00 AM-04:30 PM,,ho0941,False,True,,,,henn0941
-951,"14600 Minnetonka Blvd, Minnetonka, MN 55345",,08:00 AM-04:30 PM,,ho0951,False,True,,,,henn0951
-961,"2945 Westwood Rd, Minnetonka Beach, MN 55361",,08:00 AM-12:00 PM,,ho0961,False,True,,,,henn0961
-983,"7701 County Road 110 W, Minnetrista, MN 55364",,08:00 AM-04:30 PM,,ho0983,False,True,,,,henn0983
-992,"2415 Wilshire Blvd, Mound, MN 55364",,08:00 AM-04:30 PM,,ho0992,False,True,,,,henn0992
-1003,"4401 Xylon Ave N, New Hope, MN 55428",,08:00 AM-04:30 PM,,ho01003,False,True,,,,henn01003
-1012,"2750 Kelley Pkwy, Orono, MN 55356",,08:00 AM-04:30 PM,,ho01012,False,True,,,,henn01012
-1021,"415 Central Ave, Osseo, MN 55369",,07:30 AM-11:30 AM,,ho01021,False,True,,,,henn01021
-1036,"3400 Plymouth Blvd, Plymouth, MN 55447",,08:00 AM-04:30 PM,,ho01036,False,True,,,,henn01036
-1057,"6700 Portland Ave S, Richfield, MN 55423",,08:00 AM-04:30 PM,,ho01057,False,True,,,,henn01057
-1066,"4100 Lakeview Ave N, Robbinsdale, MN 55422",,08:00 AM-04:30 PM,,ho01066,False,True,,,,henn01066
-1075,"22350 S Diamond Lk Rd, Rogers, MN 55374",,07:30 AM-01:30 PM,,ho01075,False,True,,,,henn01075
-1089,"5755 Country Club Road, Shorewood, MN 55331",,08:00 AM-04:30 PM,,ho01089,False,True,,,,henn01089
-1098,"4349 Warren Ave, Spring Park, MN 55384",,08:00 AM-04:30 PM,,ho01098,False,True,,,,henn01098
-1107,"3301 Silver Lake Rd, St. Anthony, MN 55418",,08:00 AM-04:30 PM,,ho01107,False,True,,,,henn01107
-1116,"8535 Kennedy Memorial Dr, St. Bonifacius, MN 55375",,08:00 AM-04:30 PM,,ho01116,False,True,,,,henn01116
-1125,"5005 Minnetonka Boulevard, St. Louis Park, MN 55416",,07:30 AM-04:30 PM,,ho01125,False,True,,,,henn01125
-1134,"4901 Manitou Rd, Tonka Bay, MN 55331",,07:30 AM-05:30 PM,,ho01134,False,True,,,,henn01134
-1142,"600 Rice St E, Wayzata, MN 55391",,07:00 AM-11:30 AM,,ho01142,False,True,,,,henn01142
-1157,"300 South 6th St PSL 012, Minneapolis, MN 55487",,08:00 AM-04:30 PM,,ho01157,False,True,,,,henn01157
-1166,"2100 Plymouth Ave N, Minneapolis, MN 55411",,08:30 AM-05:00 PM,,ho01166,False,True,,,,henn01166
-1175,"304 S Marshall St Rm 116, Caledonia, MN 55921",,08:00 AM-04:30 PM,,ho01175,False,True,,,,hous01175
-1184,"301 Court Ave, Park Rapids, MN 56470",,08:00 AM-04:30 PM,,ho01184,False,True,,,,hubb01184
-1193,"555 18th Avenue SW, Cambridge, MN 55008",,08:00 AM-04:30 PM,,ho01193,False,True,,,,isan01193
-1202,"123 NE 4th St, Grand Rapids, MN 55744",,08:00 AM-04:30 PM,,ho01202,False,True,,,,itas01202
-1211,"405 4th St, Jackson, MN 56143",,08:00 AM-04:30 PM,,ho01211,False,True,,,,jack01211
-1220,"18 N Vine St Ste 261-A, Mora, MN 55051",,08:00 AM-04:30 PM,,ho01220,False,True,,,,kana01220
-1229,"400 Benson Ave Sw, Willmar, MN 56201",,08:00 AM-04:30 PM,,ho01229,False,True,,,,kand01229
-1238,"410 5th St SE Ste 212, Hallock, MN 56728",,08:30 AM-04:30 PM,,ho01238,False,True,,,,kitt01238
-1247,"715 4th St, International Falls, MN 56649",,08:00 AM-04:30 PM,,ho01247,False,True,,,,kooc01247
-1256,"600 6th Street Ste 6, Madison, MN 56256",,08:30 AM-04:30 PM,,ho01256,False,True,,,,lacq01256
-1265,"601 3rd Ave, Two Harbors, MN 55616",,08:00 AM-04:30 PM,,ho01265,False,True,,,,lake01265
-1274,"206 8th Ave SE Ste 260, Baudette, MN 56623",,07:30 AM-04:00 PM,,ho01274,False,True,,,,lake01274
-1283,"88 S Park Ave, Le Center, MN 56057",,08:00 AM-04:00 PM,,ho01283,False,True,,,,lesu01283
-1297,"607 W Main, Marshall, MN 56258",,08:00 AM-04:30 PM,,ho01297,False,True,,,,lyon01297
-1306,"311 N Main St, Mahnomen, MN 56557",,08:00 AM-04:30 PM,,ho01306,False,True,,,,mahn01306
-1315,"208 E Colvin Ave Ste 10, Warren, MN 56762",,08:00 AM-04:30 PM,,ho01315,False,True,,,,mars01315
-1324,"201 Lake Ave, Fairmont, MN 56031",,08:00 AM-05:00 PM,,ho01324,False,True,,,,mart01324
-1333,"2391 Hennepin Ave N, Glencoe, MN 55336",,08:00 AM-04:30 PM,,ho01333,False,True,,,,mcle01333
-1342,"111 Hassan Street SE, Hutchinson, MN 55350",,08:00 AM-04:00 PM,,ho01342,False,True,,,,mcle01342
-1351,"325 Sibley Ave N, Litchfield, MN 55355",,08:00 AM-04:30 PM,,ho01351,False,True,,,,meek01351
-1360,"635 2nd St SE, Milaca, MN 56353",,08:00 AM-04:30 PM,,ho01360,False,True,,,,mill01360
-1369,"213 SE 1st Ave, Little Falls, MN 56345",,08:00 AM-04:30 PM,,ho01369,False,True,,,,morr01369
-1378,"201 1st St. NE Ste 5, Austin, MN 55912",,08:00 AM-04:30 PM,,ho01378,False,True,,,,mowe01378
-1387,"2500 28th St, Slayton, MN 56172",,08:00 AM-04:30 PM,,ho01387,False,True,,,,murr01387
-1396,"501 S Minnesota Ave, St Peter, MN 56082",,08:00 AM-04:30 PM,,ho01396,False,True,,,,nico01396
-1405,"315 10th St, Worthington, MN 56187",,08:00 AM-04:30 PM,,ho01405,False,True,,,,nobl01405
-1414,"16 E 3rd Ave, Ada, MN 56510",,08:30 AM-04:30 PM,,ho01414,False,True,,,,norm01414
-1423,"151 4th St SE, Rochester, MN 55904",,08:00 AM-05:00 PM,,ho01423,False,True,,,,olms01423
-1432,"510 Fir Ave W, Fergus Falls, MN 56537",,08:30 AM-04:30 PM,,ho01432,False,True,,,,otte01432
-1441,"101 Main Ave N, Thief River Falls, MN 56701",,08:00 AM-04:30 PM,,ho01441,False,True,,,,penn01441
-1450,"635 Northridge Dr NW Ste 240, Pine City, MN 55063",,08:00 AM-04:30 PM,,ho01450,False,True,,,,pine01450
-1459,"416 Hiawatha Ave S, Pipestone, MN 56164",,08:00 AM-04:30 PM,,ho01459,False,True,,,,pipe01459
-1468,"612 N Broadway Ste 207, Crookston, MN 56716",,08:00 AM-04:30 PM,,ho01468,False,True,,,,polk01468
-1477,"130 E Minnesota Ave Ste 218, Glenwood, MN 56334",,08:00 AM-04:30 PM,,ho01477,False,True,,,,pope01477
-1486,"1245 Hwy 96 W, Arden Hills, MN 55112",,08:00 AM-04:30 PM,,ho01486,False,True,,,,rams01486
-1495,"1891 Walnut St, Lauderdale, MN 55113",,08:00 AM-04:30 PM,,ho01495,False,True,,,,rams01495
-1504,"515 Little Canada Rd, Little Canada, MN 55117",,08:00 AM-04:30 PM,,ho01504,False,True,,,,rams01504
-1513,"1830 County Road B, Maplewood, MN 55109",,08:00 AM-04:30 PM,,ho01513,False,True,,,,rams01513
-1522,"2401 County Hwy 10, Mounds View, MN 55112",,08:00 AM-04:30 PM,,ho01522,False,True,,,,rams01522
-1531,"803 Old Highway 8 NW, New Brighton, MN 55112",,08:00 AM-04:30 PM,,ho01531,False,True,,,,rams01531
-1540,"100 Village Center Dr, North Oaks, MN 55127",,09:00 AM-04:00 PM,,ho01540,False,True,,,,rams01540
-1549,"2400 Margaret St N, St. Paul, MN 55109",,08:00 AM-04:30 PM,,ho01549,False,True,,,,rams01549
-1558,"90 W Plato Blvd #160, St. Paul, MN 55107",,08:00 AM-04:30 PM,,ho01558,False,True,,,,rams01558
-1567,"2660 Civic Center Dr, Roseville, MN 55113",,08:00 AM-04:30 PM,,ho01567,False,True,,,,rams01567
-1576,"4600 Victoria St N, Shoreview, MN 55126",,08:00 AM-04:30 PM,,ho01576,False,True,,,,rams01576
-1585,"800 Co Rd E East, Vadnais Heights, MN 55127",,08:00 AM-04:30 PM,,ho01585,False,True,,,,rams01585
-1594,"4701 Highway 61, White Bear Lake, MN 55110",,08:00 AM-04:30 PM,,ho01594,False,True,,,,rams01594
-1603,"1281 Hammond Rd, White Bear Township, MN 55110",,07:00 AM-04:30 PM,,ho01603,False,True,,,,rams01603
-1612,"124 Langevin Ave, Red Lake Falls, MN 56750",,09:00 AM-05:00 PM,,ho01612,False,True,,,,redl01612
-1621,"403 S Mill St, Redwood Falls, MN 56283",,08:00 AM-04:30 PM,,ho01621,False,True,,,,redw01621
-1630,"500 E Depue Ave Ste 202, Olivia, MN 56277",,08:00 AM-04:30 PM,,ho01630,False,True,,,,renv01630
-1639,"320 3rd St NW, Faribault, MN 55021",,08:00 AM-04:30 PM,,ho01639,False,True,,,,rice01639
-1648,"204 Brown St E, Luverne, MN 56156",,08:00 AM-05:00 PM,,ho01648,False,True,,,,rock01648
-1657,"606 5th Ave Sw Rm 160, Roseau, MN 56751",,07:30 AM-04:00 PM,,ho01657,False,True,,,,rose01657
-1666,"71 South Dr, Babbitt, MN 55706",,07:30 AM-04:30 PM,,ho01666,False,True,,,,sain01666
-1675,"321 N Main St, Biwabik, MN 55708",,08:00 AM-04:30 PM,,ho01675,False,True,,,,sain01675
-1684,"302 Frantz Ave, Buhl, MN 55713",,08:00 AM-05:00 PM,,ho01684,False,True,,,,sain01684
-1693,"316 West Lake Street, Chisholm, MN 55719",,07:00 AM-04:30 PM,,ho01693,False,True,,,,sain01693
-1702,"127 S River St, Cook, MN 55723",,09:00 AM-05:00 PM,,ho01702,False,True,,,,sain01702
-1711,"411 W 1st St Rm 330, Duluth, MN 55802",,08:00 AM-04:30 PM,,ho01711,False,True,,,,sain01711
-1720,"209 E Chapman St, Ely, MN 55731",,08:00 AM-04:30 PM,,ho01720,False,True,,,,sain01720
-1729,"413 Pierce St, Eveleth, MN 55734",,08:00 AM-04:30 PM,,ho01729,False,True,,,,sain01729
-1738,"16 S Broadway St, Gilbert, MN 55741",,08:00 AM-05:00 PM,,ho01738,False,True,,,,sain01738
-1747,"5105 Maple Grove Rd, Hermantown, MN 55811",,08:00 AM-04:30 PM,,ho01747,False,True,,,,sain01747
-1756,"401 E 21st St, Hibbing, MN 55746",,08:00 AM-04:00 PM,,ho01756,False,True,,,,sain01756
-1765,"206 Kennedy Memorial Drive, Hoyt Lakes, MN 55750",,07:30 AM-04:00 PM,,ho01765,False,True,,,,sain01765
-1774,"8586 Enterprise Dr S, Mountain Iron, MN 55768",,07:30 AM-04:00 PM,,ho01774,False,True,,,,sain01774
-1783,"4107 W Beyer Rd, Duluth, MN 55803",,07:30 AM-04:30 PM,,ho01783,False,True,,,,sain01783
-1792,"602 Main Street, Tower, MN 55790",,08:00 AM-04:30 PM,,ho01792,False,True,,,,sain01792
-1801,"327 S 1st St, Virginia, MN 55792",,08:00 AM-04:30 PM,,ho01801,False,True,,,,sain01801
-1810,"16 W 2nd Ave N, Aurora, MN 55705",,08:00 AM-04:00 PM,,ho01810,False,True,,,,sain01810
-1825,"100 N 5th Ave W # 214, Duluth, MN 55802",,08:00 AM-04:30 PM,,ho01825,False,True,,,,sain01825
-1834,"200 Fourth Ave W, Shakopee, MN 55379",,08:00 AM-04:30 PM,,ho01834,False,True,,,,scot01834
-1843,"13880 Business Center Drive NW, Elk River, MN 55330",,08:00 AM-04:30 PM,,ho01843,False,True,,,,sher01843
-1852,"400 Court Avenue, Gaylord, MN 55334",,08:00 AM-04:30 PM,,ho01852,False,True,,,,sibl01852
-1861,"225 1st St NE, Melrose, MN 56352",,08:00 AM-04:30 PM,,ho01861,False,True,,,,stea01861
-1870,"705 Courthouse Sq Rm 148, St Cloud, MN 56303",,08:00 AM-04:30 PM,,ho01870,False,True,,,,stea01870
-1879,"630 Florence Ave, Owatonna, MN 55060",,08:00 AM-05:00 PM,,ho01879,False,True,,,,stee01879
-1888,"400 Colorado Ave Ste 303, Morris, MN 56267",,08:00 AM-04:30 PM,,ho01888,False,True,,,,stev01888
-1897,"301 14th St N, Benson, MN 56215",,08:30 AM-04:30 PM,,ho01897,False,True,,,,swif01897
-1906,"215 1st Ave S Ste 201, Long Prairie, MN 56347",,08:30 AM-04:30 PM,,ho01906,False,True,,,,todd01906
-1915,"702 2nd Ave N , Wheaton, MN 56296",,08:30 AM-04:30 PM,,ho01915,False,True,,,,trav01915
-1933,"625 Jefferson Ave, Wabasha, MN 55981",,08:00 AM-04:30 PM,,ho01933,False,True,,,,waba01933
-1942,"415 Jefferson Street South, Wadena, MN 56482",,08:00 AM-04:30 PM,,ho01942,False,True,,,,wade01942
-1951,"307 N State St, Waseca, MN 56093",,08:00 AM-04:30 PM,,ho01951,False,True,,,,wase01951
-1960,"13000 Ravine Parkway South, Cottage Grove, MN 55016",,08:00 AM-04:30 PM,,ho01960,False,True,,,,wash01960
-1969,"14949 62nd Street North, Stillwater, MN 55082",,08:00 AM-04:30 PM,,ho01969,False,True,,,,wash01969
-1978,"19955 Forest Road North, Forest Lake, MN 55025",,08:00 AM-04:30 PM,,ho01978,False,True,,,,wash01978
-1987,"2150 Radio Drive, Woodbury, MN 55125",,08:00 AM-04:30 PM,,ho01987,False,True,,,,wash01987
-1996,"710 2nd Ave S, St James, MN 56081",,08:00 AM-12:00 PM,,ho01996,False,True,,,,wato01996
-2013,"300 S 5th St, Breckenridge, MN 56520",,08:00 AM-04:30 PM,,ho02013,False,True,,,,wilk02013
-2022,"177 Main Street, Winona, MN 55987",,08:00 AM-04:30 PM,,ho02022,False,True,,,,wino02022
-2031,"5959 Main Ave NE, Albertville, MN 55301",,07:00 AM-05:30 PM,,ho02031,False,True,,,,wrig02031
-2039,"212 Central Ave, Buffalo, MN 55313",,08:00 AM-05:00 PM,,ho02039,False,True,,,,wrig02039
-2063,"234 2nd St N, Delano, MN 55328",,08:00 AM-12:00 PM,,ho02063,False,True,,,,wrig02063
-2117,"505 Walnut St Ste 1, Monticello, MN 55362",,08:00 AM-04:30 PM,,ho02117,False,True,,,,wrig02117
-2126,"11880 Town Center Dr NE Ste 300, St. Michael, MN 55376",,08:00 AM-02:00 PM,,ho02126,False,True,,,,wrig02126
-2141,"10 2nd St NW Rm 230, Buffalo, MN 55313",,08:00 AM-04:30 PM,,ho02141,False,True,,,,wrig02141
-2150,"180 8th Ave, Granite Falls, MN 56241",,08:00 AM-04:00 PM,,ho02150,False,True,,,,yell02150
+address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+"209 2nd St NW Rm 202, Aitkin, MN 56431",,08:00 AM-04:30 PM,,ho0000,False,True,,,,aitk0000
+"209 2nd St NW Rm 202, Aitkin, MN 56431",,10:00 AM-03:00 PM,,ho0007,False,True,,,,aitk0007
+"209 2nd St NW Rm 202, Aitkin, MN 56431",,08:00 AM-05:00 PM,,ho0008,False,True,,,,aitk0008
+"1685 Crosstown Blvd NW, Andover, MN 55304",,08:00 AM-04:30 PM,,ho0009,False,True,,,,anok0009
+"1685 Crosstown Blvd NW, Andover, MN 55304",,10:00 AM-03:00 PM,,ho0016,False,True,,,,anok0016
+"1685 Crosstown Blvd NW, Andover, MN 55304",,08:00 AM-05:00 PM,,ho0017,False,True,,,,anok0017
+"2015 First Ave North, Anoka, MN 55303",,08:00 AM-04:30 PM,,ho0018,False,True,,,,anok0018
+"2015 First Ave North, Anoka, MN 55303",,10:00 AM-01:00 PM,,ho0025,False,True,,,,anok0025
+"2015 First Ave North, Anoka, MN 55303",,08:00 AM-05:00 PM,,ho0026,False,True,,,,anok0026
+"23820 Dewey St, Bethel, MN 55005",,07:25 AM-02:25 PM,,ho0027,False,True,,,,anok0027
+"23820 Dewey St, Bethel, MN 55005",,10:00 AM-03:00 PM,,ho0034,False,True,,,,anok0034
+"23820 Dewey St, Bethel, MN 55005",,07:25 AM-05:00 PM,,ho0035,False,True,,,,anok0035
+"10801 Town Square Dr, Blaine, MN 55449",,08:00 AM-04:30 PM,,ho0036,False,True,,,,anok0036
+"10801 Town Square Dr, Blaine, MN 55449",,10:00 AM-03:00 PM,,ho0043,False,True,,,,anok0043
+"10801 Town Square Dr, Blaine, MN 55449",,08:00 AM-05:00 PM,,ho0044,False,True,,,,anok0044
+"1880 Main St, Centerville, MN 55038",,07:00 AM-04:00 PM,,ho0045,False,True,,,,anok0045
+"1880 Main St, Centerville, MN 55038",,10:00 AM-03:00 PM,,ho0052,False,True,,,,anok0052
+"1880 Main St, Centerville, MN 55038",,07:00 AM-05:00 PM,,ho0053,False,True,,,,anok0053
+"200 Civic Heights Cir, Circle Pines, MN 55014",,08:00 AM-04:30 PM,,ho0054,False,True,,,,anok0054
+"200 Civic Heights Cir, Circle Pines, MN 55014",,10:00 AM-03:00 PM,,ho0061,False,True,,,,anok0061
+"200 Civic Heights Cir, Circle Pines, MN 55014",,08:00 AM-05:00 PM,,ho0062,False,True,,,,anok0062
+"590 40th Ave NE, Columbia Heights, MN 55421",,08:00 AM-04:30 PM,,ho0063,False,True,,,,anok0063
+"590 40th Ave NE, Columbia Heights, MN 55421",,10:00 AM-03:00 PM,,ho0070,False,True,,,,anok0070
+"590 40th Ave NE, Columbia Heights, MN 55421",,08:00 AM-05:00 PM,,ho0071,False,True,,,,anok0071
+"16319 Kettle River Blvd, Columbus, MN 55025",,08:00 AM-04:00 PM,,ho0072,False,True,,,,anok0072
+"16319 Kettle River Blvd, Columbus, MN 55025",,08:00 AM-05:00 PM,,ho0074,False,True,,,,anok0074
+"16319 Kettle River Blvd, Columbus, MN 55025",,10:00 AM-03:00 PM,,ho0091,False,True,,,,anok0091
+"11155 Robinson Dr, Coon Rapids, MN 55433",,08:00 AM-04:30 PM,,ho0093,False,True,,,,anok0093
+"11155 Robinson Dr, Coon Rapids, MN 55433",,10:00 AM-03:00 PM,,ho0100,False,True,,,,anok100
+"11155 Robinson Dr, Coon Rapids, MN 55433",,08:00 AM-05:00 PM,,ho0101,False,True,,,,anok0101
+"2241 221st Ave NE, East Bethel, MN 55011",,08:00 AM-04:00 PM,,ho0102,False,True,,,,anok0102
+"2241 221st Ave NE, East Bethel, MN 55011",,10:00 AM-03:00 PM,,ho0109,False,True,,,,anok0109
+"2241 221st Ave NE, East Bethel, MN 55011",,08:00 AM-05:00 PM,,ho0110,False,True,,,,anok0110
+"6431 University Ave NE, Fridley, MN 55432",,08:00 AM-04:30 PM,,ho0111,False,True,,,,anok0111
+"6431 University Ave NE, Fridley, MN 55432",,10:00 AM-03:00 PM,,ho0118,False,True,,,,anok0118
+"6431 University Ave NE, Fridley, MN 55432",,08:00 AM-05:00 PM,,ho0119,False,True,,,,anok0119
+"15544 Central Ave NE, Ham Lake, MN 55304",,07:00 AM-12:00 PM,,ho0120,False,True,,,,anok0120
+"15544 Central Ave NE, Ham Lake, MN 55304",,07:00 AM-04:30 PM,,ho0127,False,True,,,,anok0127
+"15544 Central Ave NE, Ham Lake, MN 55304",,10:00 AM-03:00 PM,,ho0133,False,True,,,,anok0133
+"15544 Central Ave NE, Ham Lake, MN 55304",,07:00 AM-05:00 PM,,ho0134,False,True,,,,anok0134
+"4555 Jackson St, Hilltop, MN 55421",,08:00 AM-04:30 PM,,ho0135,False,True,,,,anok0135
+"4555 Jackson St, Hilltop, MN 55421",,10:00 AM-03:00 PM,,ho0142,False,True,,,,anok0142
+"4555 Jackson St, Hilltop, MN 55421",,08:00 AM-05:00 PM,,ho0143,False,True,,,,anok0143
+"9180 Lexington Ave, Lexington, MN 55014",,08:00 AM-04:30 PM,,ho0144,False,True,,,,anok0144
+"9180 Lexington Ave, Lexington, MN 55014",,10:00 AM-03:00 PM,,ho0151,False,True,,,,anok0151
+"9180 Lexington Ave, Lexington, MN 55014",,08:00 AM-05:00 PM,,ho0152,False,True,,,,anok0152
+"600 Town Center Pkwy, Lino Lakes, MN 55014",,08:00 AM-04:30 PM,,ho0153,False,True,,,,anok0153
+"600 Town Center Pkwy, Lino Lakes, MN 55014",,10:00 AM-03:00 PM,,ho0160,False,True,,,,anok0160
+"600 Town Center Pkwy, Lino Lakes, MN 55014",,08:00 AM-05:00 PM,,ho0161,False,True,,,,anok0161
+"22817 Typo Creek Dr NE, Stacy, MN 55079",,08:00 AM-04:30 PM,,ho0162,False,True,,,,anok0162
+"22817 Typo Creek Dr NE, Stacy, MN 55079",,10:00 AM-03:00 PM,,ho0169,False,True,,,,anok0169
+"22817 Typo Creek Dr NE, Stacy, MN 55079",,08:00 AM-05:00 PM,,ho0170,False,True,,,,anok0170
+"8188 199th Ave NW, Nowthen, MN 55330",,08:00 AM-04:30 PM,,ho0171,False,True,,,,anok0171
+"8188 199th Ave NW, Nowthen, MN 55330",,10:00 AM-03:00 PM,,ho0178,False,True,,,,anok0178
+"8188 199th Ave NW, Nowthen, MN 55330",,08:00 AM-05:00 PM,,ho0179,False,True,,,,anok0179
+"19900 Nightingale St NW, Oak Grove, MN 55011",,08:00 AM-04:30 PM,,ho0180,False,True,,,,anok0180
+"19900 Nightingale St NW, Oak Grove, MN 55011",,10:00 AM-03:00 PM,,ho0187,False,True,,,,anok0187
+"19900 Nightingale St NW, Oak Grove, MN 55011",,08:00 AM-05:00 PM,,ho0188,False,True,,,,anok0188
+"7550 Sunwood Dr NW, Ramsey, MN 55303",,08:00 AM-04:30 PM,,ho0189,False,True,,,,anok0189
+"7550 Sunwood Dr NW, Ramsey, MN 55303",,10:00 AM-03:00 PM,,ho0196,False,True,,,,anok0196
+"7550 Sunwood Dr NW, Ramsey, MN 55303",,08:00 AM-05:00 PM,,ho0197,False,True,,,,anok0197
+"1301 81st Ave NE, Spring Lake Park, MN 55432",,08:00 AM-04:30 PM,,ho0198,False,True,,,,anok0198
+"1301 81st Ave NE, Spring Lake Park, MN 55432",,10:00 AM-03:00 PM,,ho0205,False,True,,,,anok0205
+"1301 81st Ave NE, Spring Lake Park, MN 55432",,08:00 AM-05:00 PM,,ho0206,False,True,,,,anok0206
+"23340 Cree St NW, St. Francis, MN 55070",,07:00 AM-05:30 PM,,ho0207,False,True,,,,anok0207
+"23340 Cree St NW, St. Francis, MN 55070",,10:00 AM-03:00 PM,,ho0213,False,True,,,,anok0213
+"325 E Main St Ste W130, Anoka, MN 55303",,08:00 AM-04:30 PM,,ho0215,False,True,,,,anok0215
+"325 E Main St Ste W130, Anoka, MN 55303",,10:00 AM-03:00 PM,,ho0222,False,True,,,,anok0222
+"325 E Main St Ste W130, Anoka, MN 55303",,08:00 AM-05:00 PM,,ho0223,False,True,,,,anok0223
+"915 Lake Ave, Detroit Lakes, MN 56501",,08:00 AM-04:30 PM,,ho0224,False,True,,,,beck0224
+"915 Lake Ave, Detroit Lakes, MN 56501",,10:00 AM-03:00 PM,,ho0231,False,True,,,,beck0231
+"915 Lake Ave, Detroit Lakes, MN 56501",,08:00 AM-05:00 PM,,ho0232,False,True,,,,beck0232
+"701 Minnesota Ave NW Ste 220, Bemidji, MN 56601",,08:00 AM-04:30 PM,,ho0233,False,True,,,,belt0233
+"701 Minnesota Ave NW Ste 220, Bemidji, MN 56601",,10:00 AM-03:00 PM,,ho0240,False,True,,,,belt0240
+"701 Minnesota Ave NW Ste 220, Bemidji, MN 56601",,08:00 AM-05:00 PM,,ho0241,False,True,,,,belt0241
+"531 Dewey St, Foley, MN 56329",,08:00 AM-04:30 PM,,ho0242,False,True,,,,bent0242
+"531 Dewey St, Foley, MN 56329",,10:00 AM-03:00 PM,,ho0249,False,True,,,,bent0249
+"531 Dewey St, Foley, MN 56329",,08:00 AM-05:00 PM,,ho0250,False,True,,,,bent0250
+"20 2nd St SE Ste 103, Ortonville, MN 56278",,08:00 AM-04:00 PM,,ho0251,False,True,,,,bigs0251
+"20 2nd St SE Ste 103, Ortonville, MN 56278",,10:00 AM-03:00 PM,,ho0258,False,True,,,,bigs0258
+"20 2nd St SE Ste 103, Ortonville, MN 56278",,08:00 AM-05:00 PM,,ho0259,False,True,,,,bigs0259
+"410 S 5th St, Mankato, MN 56002",,08:00 AM-04:30 PM,,ho0260,False,True,,,,blue0260
+"410 S 5th St, Mankato, MN 56002",,10:00 AM-03:00 PM,,ho0267,False,True,,,,blue0267
+"410 S 5th St, Mankato, MN 56002",,08:00 AM-05:00 PM,,ho0268,False,True,,,,blue0268
+"14 South State St, New Ulm, MN 56073",,08:00 AM-04:30 PM,,ho0269,False,True,,,,brow0269
+"14 South State St, New Ulm, MN 56073",,10:00 AM-03:00 PM,,ho0276,False,True,,,,brow0276
+"14 South State St, New Ulm, MN 56073",,08:00 AM-05:00 PM,,ho0277,False,True,,,,brow0277
+"301 Walnut Ave, Carlton, MN 55718",,08:00 AM-04:00 PM,,ho0278,False,True,,,,carl0278
+"301 Walnut Ave, Carlton, MN 55718",,10:00 AM-03:00 PM,,ho0285,False,True,,,,carl0285
+"301 Walnut Ave, Carlton, MN 55718",,08:00 AM-05:00 PM,,ho0286,False,True,,,,carl0286
+"600 E Fourth St, Chaska, MN 55318",,08:00 AM-04:30 PM,,ho0287,False,True,,,,carv0287
+"600 E Fourth St, Chaska, MN 55318",,10:00 AM-01:00 PM,,ho0294,False,True,,,,carv0294
+"600 E Fourth St, Chaska, MN 55318",,08:00 AM-05:00 PM,,ho0295,False,True,,,,carv0295
+"330 2nd St NW, Cass Lake, MN 56601",,07:30 AM-03:30 PM,,ho0296,False,True,,,,cass0296
+"330 2nd St NW, Cass Lake, MN 56601",,10:00 AM-03:00 PM,,ho0303,False,True,,,,cass0303
+"330 2nd St NW, Cass Lake, MN 56601",,07:30 AM-05:00 PM,,ho0304,False,True,,,,cass0304
+"10790 Squaw Pt Rd, East Gull Lake, MN 56401",,08:00 AM-04:00 PM,,ho0305,False,True,,,,cass0305
+"10790 Squaw Pt Rd, East Gull Lake, MN 56401",,08:00 AM-04:30 PM,,ho0306,False,True,,,,cass0306
+"10790 Squaw Pt Rd, East Gull Lake, MN 56401",,10:00 AM-03:00 PM,,ho0312,False,True,,,,cass0312
+"10790 Squaw Pt Rd, East Gull Lake, MN 56401",,08:00 AM-05:00 PM,,ho0313,False,True,,,,cass0313
+"8583 Interlachen Rd, Lake Shore, MN 56468",,08:00 AM-04:30 PM,,ho0320,False,True,,,,cass0320
+"8583 Interlachen Rd, Lake Shore, MN 56468",,10:00 AM-03:00 PM,,ho0327,False,True,,,,cass0327
+"8583 Interlachen Rd, Lake Shore, MN 56468",,08:00 AM-05:00 PM,,ho0328,False,True,,,,cass0328
+"306 Elm Ave W, Pillager, MN 56473",,08:00 AM-04:00 PM,,ho0329,False,True,,,,cass0329
+"306 Elm Ave W, Pillager, MN 56473",,10:00 AM-03:00 PM,,ho0336,False,True,,,,cass0336
+"306 Elm Ave W, Pillager, MN 56473",,08:00 AM-05:00 PM,,ho0337,False,True,,,,cass0337
+"106 Spruce St NW, Remer, MN 56672",,07:00 AM-03:30 PM,,ho0338,False,True,,,,cass0338
+"106 Spruce St NW, Remer, MN 56672",,10:00 AM-03:00 PM,,ho0345,False,True,,,,cass0345
+"106 Spruce St NW, Remer, MN 56672",,07:00 AM-05:00 PM,,ho0346,False,True,,,,cass0346
+"12956 24th Ave SW, Pillager, MN 56473",,08:30 AM-12:30 PM,,ho0347,False,True,,,,cass0347
+"12956 24th Ave SW, Pillager, MN 56473",,01:00 PM-02:30 PM,,ho0348,False,True,,,,cass0348
+"12956 24th Ave SW, Pillager, MN 56473",,10:00 AM-03:00 PM,,ho0361,False,True,,,,cass0361
+"12956 24th Ave SW, Pillager, MN 56473",,08:30 AM-05:00 PM,,ho0362,False,True,,,,cass0362
+"303 Minnesota Ave W, Walker, MN 56484",,08:00 AM-04:30 PM,,ho0363,False,True,,,,cass0363
+"303 Minnesota Ave W, Walker, MN 56484",,10:00 AM-01:00 PM,,ho0370,False,True,,,,cass0370
+"303 Minnesota Ave W, Walker, MN 56484",,08:00 AM-05:00 PM,,ho0371,False,True,,,,cass0371
+"629 N 11th St, Montevideo, MN 56265",,08:00 AM-04:30 PM,,ho0372,False,True,,,,chip0372
+"629 N 11th St, Montevideo, MN 56265",,10:00 AM-01:00 PM,,ho0379,False,True,,,,chip0379
+"629 N 11th St, Montevideo, MN 56265",,08:00 AM-05:00 PM,,ho0380,False,True,,,,chip0380
+"313 N Main St Rm 271, Center City, MN 55012",,08:00 AM-04:30 PM,,ho0381,False,True,,,,chis0381
+"313 N Main St Rm 271, Center City, MN 55012",,10:00 AM-01:00 PM,,ho0388,False,True,,,,chis0388
+"313 N Main St Rm 271, Center City, MN 55012",,08:00 AM-05:00 PM,,ho0389,False,True,,,,chis0389
+"807 N 11th St, Moorhead, MN 56560",,08:00 AM-04:30 PM,,ho0390,False,True,,,,clay0390
+"807 N 11th St, Moorhead, MN 56560",,10:00 AM-01:00 PM,,ho0397,False,True,,,,clay0397
+"807 N 11th St, Moorhead, MN 56560",,08:00 AM-05:00 PM,,ho0398,False,True,,,,clay0398
+"213 Main Ave N Dept 202, Bagley, MN 56621",,08:00 AM-04:30 PM,,ho0399,False,True,,,,clea0399
+"213 Main Ave N Dept 202, Bagley, MN 56621",,10:00 AM-01:00 PM,,ho0406,False,True,,,,clea0406
+"213 Main Ave N Dept 202, Bagley, MN 56621",,08:00 AM-05:00 PM,,ho0407,False,True,,,,clea0407
+"411 W 2nd St, Grand Marais, MN 55604",,08:00 AM-04:00 PM,,ho0408,False,True,,,,cook0408
+"411 W 2nd St, Grand Marais, MN 55604",,10:00 AM-01:00 PM,,ho0415,False,True,,,,cook0415
+"411 W 2nd St, Grand Marais, MN 55604",,08:00 AM-05:00 PM,,ho0416,False,True,,,,cook0416
+"900 3rd Ave, Windom, MN 56101",,08:00 AM-04:30 PM,,ho0417,False,True,,,,cott0417
+"900 3rd Ave, Windom, MN 56101",,10:00 AM-01:00 PM,,ho0424,False,True,,,,cott0424
+"900 3rd Ave, Windom, MN 56101",,08:00 AM-05:00 PM,,ho0425,False,True,,,,cott0425
+"326 Laurel St Ste 22, Brainerd, MN 56401",,08:00 AM-05:00 PM,,ho0426,False,True,,,,crow0426
+"326 Laurel St Ste 22, Brainerd, MN 56401",,10:00 AM-01:00 PM,,ho0433,False,True,,,,crow0433
+"7100 147th St W, Apple Valley, MN 55124",,08:00 AM-04:30 PM,,ho0435,False,True,,,,dako0435
+"7100 147th St W, Apple Valley, MN 55124",,10:00 AM-01:00 PM,,ho0442,False,True,,,,dako0442
+"7100 147th St W, Apple Valley, MN 55124",,08:00 AM-05:00 PM,,ho0443,False,True,,,,dako0443
+"100 Civic Center, Burnsville, MN 55337",,08:00 AM-04:30 PM,,ho0444,False,True,,,,dako0444
+"100 Civic Center, Burnsville, MN 55337",,10:00 AM-01:00 PM,,ho0451,False,True,,,,dako0451
+"100 Civic Center, Burnsville, MN 55337",,08:00 AM-05:00 PM,,ho0452,False,True,,,,dako0452
+"1590 Hwy 55 Ste 2300, Hastings, MN 55033",,08:00 AM-04:30 PM,,ho0453,False,True,,,,dako0453
+"1590 Hwy 55 Ste 2300, Hastings, MN 55033",,10:00 AM-01:00 PM,,ho0460,False,True,,,,dako0460
+"1590 Hwy 55 Ste 2300, Hastings, MN 55033",,08:00 AM-05:00 PM,,ho0461,False,True,,,,dako0461
+"1 Mendota Rd, West St Paul, MN 55118",,08:00 AM-04:30 PM,,ho0462,False,True,,,,dako0462
+"1 Mendota Rd, West St Paul, MN 55118",,10:00 AM-01:00 PM,,ho0469,False,True,,,,dako0469
+"1 Mendota Rd, West St Paul, MN 55118",,08:00 AM-05:00 PM,,ho0470,False,True,,,,dako0470
+"14955 Galaxie Ave, Apple Valley, MN 55124",,08:00 AM-04:30 PM,,ho0471,False,True,,,,dako0471
+"14955 Galaxie Ave, Apple Valley, MN 55124",,08:00 AM-06:00 PM,,ho0473,False,True,,,,dako0473
+"14955 Galaxie Ave, Apple Valley, MN 55124",,10:00 AM-01:00 PM,,ho0502,False,True,,,,dako0502
+"14955 Galaxie Ave, Apple Valley, MN 55124",,08:00 AM-05:00 PM,,ho0503,False,True,,,,dako0503
+"3830 Pilot Knob Rd, Eagan, MN 55122",,08:00 AM-04:30 PM,,ho0504,False,True,,,,dako0504
+"3830 Pilot Knob Rd, Eagan, MN 55122",,10:00 AM-01:00 PM,,ho0511,False,True,,,,dako0511
+"3830 Pilot Knob Rd, Eagan, MN 55122",,08:00 AM-05:00 PM,,ho0512,False,True,,,,dako0512
+"430 3rd St, Farmington, MN 55024",,08:00 AM-04:30 PM,,ho0513,False,True,,,,dako0513
+"430 3rd St, Farmington, MN 55024",,10:00 AM-01:00 PM,,ho0520,False,True,,,,dako0520
+"430 3rd St, Farmington, MN 55024",,08:00 AM-05:00 PM,,ho0521,False,True,,,,dako0521
+"101 4th St E, Hastings, MN 55033",,08:00 AM-04:30 PM,,ho0522,False,True,,,,dako0522
+"101 4th St E, Hastings, MN 55033",,10:00 AM-01:00 PM,,ho0529,False,True,,,,dako0529
+"101 4th St E, Hastings, MN 55033",,08:00 AM-05:00 PM,,ho0530,False,True,,,,dako0530
+"8150 Barbara Ave, Inver Grove Heights, MN 55077",,08:00 AM-04:30 PM,,ho0531,False,True,,,,dako0531
+"8150 Barbara Ave, Inver Grove Heights, MN 55077",,10:00 AM-01:00 PM,,ho0538,False,True,,,,dako0538
+"8150 Barbara Ave, Inver Grove Heights, MN 55077",,08:00 AM-05:00 PM,,ho0539,False,True,,,,dako0539
+"20195 Holyoke Ave, Lakeville, MN 55044",,08:00 AM-04:30 PM,,ho0540,False,True,,,,dako0540
+"20195 Holyoke Ave, Lakeville, MN 55044",,10:00 AM-01:00 PM,,ho0547,False,True,,,,dako0547
+"20195 Holyoke Ave, Lakeville, MN 55044",,08:00 AM-05:00 PM,,ho0548,False,True,,,,dako0548
+"801 Washington St, Northfield, MN 55057",,08:00 AM-05:00 PM,,ho0549,False,True,,,,dako0549
+"801 Washington St, Northfield, MN 55057",,10:00 AM-01:00 PM,,ho0556,False,True,,,,dako0556
+"2875 145th St W, Rosemount, MN 55068",,08:00 AM-04:30 PM,,ho0558,False,True,,,,dako0558
+"2875 145th St W, Rosemount, MN 55068",,10:00 AM-01:00 PM,,ho0565,False,True,,,,dako0565
+"2875 145th St W, Rosemount, MN 55068",,08:00 AM-05:00 PM,,ho0566,False,True,,,,dako0566
+"125 3rd Ave N, South St. Paul, MN 55075",,08:00 AM-04:30 PM,,ho0567,False,True,,,,dako0567
+"125 3rd Ave N, South St. Paul, MN 55075",,10:00 AM-01:00 PM,,ho0574,False,True,,,,dako0574
+"125 3rd Ave N, South St. Paul, MN 55075",,08:00 AM-05:00 PM,,ho0575,False,True,,,,dako0575
+"1590 Highway 55 Ste 2300, Hastings, MN 55033",,08:00 AM-04:30 PM,,ho0576,False,True,,,,dako0576
+"1590 Highway 55 Ste 2300, Hastings, MN 55033",,10:00 AM-01:00 PM,,ho0583,False,True,,,,dako0583
+"1590 Highway 55 Ste 2300, Hastings, MN 55033",,08:00 AM-05:00 PM,,ho0584,False,True,,,,dako0584
+"721 Main Street North Dept 45, Mantorville, MN 55955",,08:00 AM-04:30 PM,,ho0585,False,True,,,,dodg0585
+"721 Main Street North Dept 45, Mantorville, MN 55955",,10:00 AM-01:00 PM,,ho0592,False,True,,,,dodg0592
+"721 Main Street North Dept 45, Mantorville, MN 55955",,08:00 AM-05:00 PM,,ho0593,False,True,,,,dodg0593
+"305 8th Ave W, Alexandria, MN 56308",,08:00 AM-04:30 PM,,ho0594,False,True,,,,doug0594
+"305 8th Ave W, Alexandria, MN 56308",,10:00 AM-01:00 PM,,ho0601,False,True,,,,doug0601
+"305 8th Ave W, Alexandria, MN 56308",,08:00 AM-05:00 PM,,ho0602,False,True,,,,doug0602
+"415 N Main St, Blue Earth, MN 56013",,08:00 AM-04:30 PM,,ho0603,False,True,,,,fari0603
+"415 N Main St, Blue Earth, MN 56013",,10:00 AM-01:00 PM,,ho0610,False,True,,,,fari0610
+"415 N Main St, Blue Earth, MN 56013",,08:00 AM-05:00 PM,,ho0611,False,True,,,,fari0611
+"101 Fillmore St, Preston, MN 55965",,08:00 AM-04:30 PM,,ho0612,False,True,,,,fill0612
+"101 Fillmore St, Preston, MN 55965",,10:00 AM-01:00 PM,,ho0619,False,True,,,,fill0619
+"101 Fillmore St, Preston, MN 55965",,08:00 AM-05:00 PM,,ho0620,False,True,,,,fill0620
+"411 S Broadway, Albert Lea, MN 56007",,08:00 AM-05:00 PM,,ho0621,False,True,,,,free0621
+"411 S Broadway, Albert Lea, MN 56007",,10:00 AM-01:00 PM,,ho0628,False,True,,,,free0628
+"918 River Rd, Cannon Falls, MN 55009",,08:00 AM-04:30 PM,,ho0630,False,True,,,,good0630
+"918 River Rd, Cannon Falls, MN 55009",,10:00 AM-01:00 PM,,ho0637,False,True,,,,good0637
+"918 River Rd, Cannon Falls, MN 55009",,08:00 AM-05:00 PM,,ho0638,False,True,,,,good0638
+"709 2nd St, Kenyon, MN 55946",,08:00 AM-04:30 PM,,ho0639,False,True,,,,good0639
+"709 2nd St, Kenyon, MN 55946",,10:00 AM-01:00 PM,,ho0646,False,True,,,,good0646
+"709 2nd St, Kenyon, MN 55946",,08:00 AM-05:00 PM,,ho0647,False,True,,,,good0647
+"205 W Center St, Lake City, MN 55041",,08:00 AM-04:30 PM,,ho0648,False,True,,,,good0648
+"205 W Center St, Lake City, MN 55041",,10:00 AM-01:00 PM,,ho0655,False,True,,,,good0655
+"205 W Center St, Lake City, MN 55041",,08:00 AM-05:00 PM,,ho0656,False,True,,,,good0656
+"315 W 4th St, Red Wing, MN 55066",,08:00 AM-04:30 PM,,ho0657,False,True,,,,good0657
+"315 W 4th St, Red Wing, MN 55066",,10:00 AM-01:00 PM,,ho0664,False,True,,,,good0664
+"315 W 4th St, Red Wing, MN 55066",,08:00 AM-05:00 PM,,ho0665,False,True,,,,good0665
+"175 West Ave, Zumbrota, MN 55992",,07:00 AM-05:30 PM,,ho0666,False,True,,,,good0666
+"175 West Ave, Zumbrota, MN 55992",,10:00 AM-01:00 PM,,ho0673,False,True,,,,good0673
+"509 W 5th St, Red Wing, MN 55066",,08:00 AM-04:30 PM,,ho0675,False,True,,,,good0675
+"509 W 5th St, Red Wing, MN 55066",,10:00 AM-01:00 PM,,ho0682,False,True,,,,good0682
+"509 W 5th St, Red Wing, MN 55066",,08:00 AM-05:00 PM,,ho0683,False,True,,,,good0683
+"10 2nd St NE, Elbow Lake, MN 56531",,08:00 AM-04:00 PM,,ho0684,False,True,,,,gran0684
+"10 2nd St NE, Elbow Lake, MN 56531",,10:00 AM-01:00 PM,,ho0691,False,True,,,,gran0691
+"10 2nd St NE, Elbow Lake, MN 56531",,08:00 AM-05:00 PM,,ho0692,False,True,,,,gran0692
+"1800 W. Old Shakopee Rd, Bloomington, MN 55431",,08:00 AM-04:30 PM,,ho0693,False,True,,,,henn0693
+"1800 W. Old Shakopee Rd, Bloomington, MN 55431",,10:00 AM-01:00 PM,,ho0700,False,True,,,,henn0700
+"1800 W. Old Shakopee Rd, Bloomington, MN 55431",,08:00 AM-05:00 PM,,ho0701,False,True,,,,henn0701
+"6301 Shingle Creek Parkway, Brooklyn Center, MN 55430",,08:00 AM-04:30 PM,,ho0702,False,True,,,,henn0702
+"6301 Shingle Creek Parkway, Brooklyn Center, MN 55430",,10:00 AM-01:00 PM,,ho0709,False,True,,,,henn0709
+"6301 Shingle Creek Parkway, Brooklyn Center, MN 55430",,08:00 AM-05:00 PM,,ho0710,False,True,,,,henn0710
+"5100 Edinbrook Terrace, Brooklyn Park, MN 55443",,08:00 AM-05:00 PM,,ho0711,False,True,,,,henn0711
+"5100 Edinbrook Terrace, Brooklyn Park, MN 55443",,10:00 AM-01:00 PM,,ho0718,False,True,,,,henn0718
+"11955 Champlin Drive, Champlin, MN 55316",,08:00 AM-05:00 PM,,ho0720,False,True,,,,henn0720
+"11955 Champlin Drive, Champlin, MN 55316",,10:00 AM-01:00 PM,,ho0727,False,True,,,,henn0727
+"8200 County Rd 116, Corcoran, MN 55340",,08:00 AM-04:00 PM,,ho0729,False,True,,,,henn0729
+"8200 County Rd 116, Corcoran, MN 55340",,10:00 AM-01:00 PM,,ho0736,False,True,,,,henn0736
+"8200 County Rd 116, Corcoran, MN 55340",,08:00 AM-05:00 PM,,ho0737,False,True,,,,henn0737
+"4141 Douglas Dr N, Crystal, MN 55422",,08:00 AM-04:30 PM,,ho0738,False,True,,,,henn0738
+"4141 Douglas Dr N, Crystal, MN 55422",,10:00 AM-01:00 PM,,ho0745,False,True,,,,henn0745
+"4141 Douglas Dr N, Crystal, MN 55422",,08:00 AM-05:00 PM,,ho0746,False,True,,,,henn0746
+"12260 South Diamond Lake Road, Dayton, MN 55327",,08:00 AM-12:00 PM,,ho0747,False,True,,,,henn0747
+"12260 South Diamond Lake Road, Dayton, MN 55327",,07:30 AM-05:00 PM,,ho0748,False,True,,,,henn0748
+"12260 South Diamond Lake Road, Dayton, MN 55327",,10:00 AM-01:00 PM,,ho0760,False,True,,,,henn0760
+"20225 Cottagewood Road, Deephaven, MN 55331",,08:00 AM-04:30 PM,,ho0762,False,True,,,,henn0762
+"20225 Cottagewood Road, Deephaven, MN 55331",,10:00 AM-01:00 PM,,ho0769,False,True,,,,henn0769
+"20225 Cottagewood Road, Deephaven, MN 55331",,08:00 AM-05:00 PM,,ho0770,False,True,,,,henn0770
+"8080 Mitchell Road, Eden Prairie, MN 55344",,08:00 AM-04:30 PM,,ho0771,False,True,,,,henn0771
+"8080 Mitchell Road, Eden Prairie, MN 55344",,10:00 AM-01:00 PM,,ho0778,False,True,,,,henn0778
+"8080 Mitchell Road, Eden Prairie, MN 55344",,08:00 AM-05:00 PM,,ho0779,False,True,,,,henn0779
+"4801 West 50th St, Edina, MN 55424",,08:00 AM-04:30 PM,,ho0780,False,True,,,,henn0780
+"4801 West 50th St, Edina, MN 55424",,10:00 AM-01:00 PM,,ho0787,False,True,,,,henn0787
+"4801 West 50th St, Edina, MN 55424",,08:00 AM-05:00 PM,,ho0788,False,True,,,,henn0788
+"339 Third St, Excelsior, MN 55331",,07:30 AM-05:30 PM,,ho0789,False,True,,,,henn0789
+"339 Third St, Excelsior, MN 55331",,10:00 AM-01:00 PM,,ho0795,False,True,,,,henn0795
+"339 Third St, Excelsior, MN 55331",,07:30 AM-05:00 PM,,ho0796,False,True,,,,henn0796
+"7800 Golden Valley Rd, Golden Valley, MN 55427",,08:00 AM-04:30 PM,,ho0797,False,True,,,,henn0797
+"7800 Golden Valley Rd, Golden Valley, MN 55427",,10:00 AM-01:00 PM,,ho0804,False,True,,,,henn0804
+"7800 Golden Valley Rd, Golden Valley, MN 55427",,08:00 AM-05:00 PM,,ho0805,False,True,,,,henn0805
+"7738 Commerce Cir, Greenfield, MN 55373",,07:30 AM-05:00 PM,,ho0806,False,True,,,,henn0806
+"7738 Commerce Cir, Greenfield, MN 55373",,07:30 AM-11:30 AM,,ho0812,False,True,,,,henn0812
+"7738 Commerce Cir, Greenfield, MN 55373",,10:00 AM-01:00 PM,,ho0818,False,True,,,,henn0818
+"11250 5th St NE, Hanover, MN 55341",,08:00 AM-03:30 PM,,ho0820,False,True,,,,henn0820
+"11250 5th St NE, Hanover, MN 55341",,08:00 AM-04:30 PM,,ho0821,False,True,,,,henn0821
+"11250 5th St NE, Hanover, MN 55341",,08:00 AM-05:30 PM,,ho0822,False,True,,,,henn0822
+"11250 5th St NE, Hanover, MN 55341",,10:00 AM-01:00 PM,,ho0845,False,True,,,,henn0845
+"11250 5th St NE, Hanover, MN 55341",,08:00 AM-05:00 PM,,ho0846,False,True,,,,henn0846
+"1010 1st St S, Hopkins, MN 55343",,08:00 AM-04:30 PM,,ho0847,False,True,,,,henn0847
+"1010 1st St S, Hopkins, MN 55343",,10:00 AM-01:00 PM,,ho0854,False,True,,,,henn0854
+"1010 1st St S, Hopkins, MN 55343",,08:00 AM-05:00 PM,,ho0855,False,True,,,,henn0855
+"1920 County Rd 90, Independence, MN 55359",,08:00 AM-12:00 PM,,ho0856,False,True,,,,henn0856
+"1920 County Rd 90, Independence, MN 55359",,08:00 AM-04:30 PM,,ho0857,False,True,,,,henn0857
+"450 Virginia Ave, Long Lake, MN 55356",,08:00 AM-12:00 PM,,ho0869,False,True,,,,henn0869
+"450 Virginia Ave, Long Lake, MN 55356",,10:00 AM-01:00 PM,,ho0876,False,True,,,,henn0876
+"450 Virginia Ave, Long Lake, MN 55356",,01:00 PM-04:30 PM,,ho0878,False,True,,,,henn0878
+"450 Virginia Ave, Long Lake, MN 55356",,01:00 PM-05:00 PM,,ho0886,False,True,,,,henn0886
+"279 N. Medina St. Ste 260, Loretto, MN 55357",,08:00 AM-01:30 PM,,ho0887,False,True,,,,henn0887
+"279 N. Medina St. Ste 260, Loretto, MN 55357",,03:00 PM-06:00 PM,,ho0890,False,True,,,,henn0890
+"279 N. Medina St. Ste 260, Loretto, MN 55357",,10:00 AM-01:00 PM,,ho0912,False,True,,,,henn0912
+"279 N. Medina St. Ste 260, Loretto, MN 55357",,08:00 AM-05:00 PM,,ho0913,False,True,,,,henn0913
+"12800 Arbor Lakes Parkway, Maple Grove, MN 55369",,08:00 AM-04:30 PM,,ho0914,False,True,,,,henn0914
+"12800 Arbor Lakes Parkway, Maple Grove, MN 55369",,10:00 AM-01:00 PM,,ho0921,False,True,,,,henn0921
+"12800 Arbor Lakes Parkway, Maple Grove, MN 55369",,08:00 AM-05:00 PM,,ho0922,False,True,,,,henn0922
+"5050 Independence St, Maple Plain, MN 55359",,08:00 AM-04:30 PM,,ho0923,False,True,,,,henn0923
+"5050 Independence St, Maple Plain, MN 55359",,10:00 AM-01:00 PM,,ho0930,False,True,,,,henn0930
+"5050 Independence St, Maple Plain, MN 55359",,08:00 AM-05:00 PM,,ho0931,False,True,,,,henn0931
+"2052 County Road 24, Medina, MN 55340",,08:00 AM-04:30 PM,,ho0932,False,True,,,,henn0932
+"2052 County Road 24, Medina, MN 55340",,10:00 AM-01:00 PM,,ho0939,False,True,,,,henn0939
+"2052 County Road 24, Medina, MN 55340",,08:00 AM-05:00 PM,,ho0940,False,True,,,,henn0940
+"217 S 3rd St, Minneapolis, MN 55415",,08:00 AM-04:30 PM,,ho0941,False,True,,,,henn0941
+"217 S 3rd St, Minneapolis, MN 55415",,09:00 AM-04:00 PM,,ho0948,False,True,,,,henn0948
+"217 S 3rd St, Minneapolis, MN 55415",,08:00 AM-05:00 PM,,ho0949,False,True,,,,henn0949
+"14600 Minnetonka Blvd, Minnetonka, MN 55345",,08:00 AM-04:30 PM,,ho0951,False,True,,,,henn0951
+"14600 Minnetonka Blvd, Minnetonka, MN 55345",,09:00 AM-04:00 PM,,ho0958,False,True,,,,henn0958
+"14600 Minnetonka Blvd, Minnetonka, MN 55345",,08:00 AM-05:00 PM,,ho0959,False,True,,,,henn0959
+"14600 Minnetonka Blvd, Minnetonka, MN 55345",,08:00 AM-04:00 PM,,ho0960,False,True,,,,henn0960
+"2945 Westwood Rd, Minnetonka Beach, MN 55361",,08:00 AM-12:00 PM,,ho0961,False,True,,,,henn0961
+"2945 Westwood Rd, Minnetonka Beach, MN 55361",,10:00 AM-01:00 PM,,ho0968,False,True,,,,henn0968
+"2945 Westwood Rd, Minnetonka Beach, MN 55361",,01:00 PM-04:30 PM,,ho0970,False,True,,,,henn0970
+"2945 Westwood Rd, Minnetonka Beach, MN 55361",,01:00 PM-05:00 PM,,ho0976,False,True,,,,henn0976
+"7701 County Road 110 W, Minnetrista, MN 55364",,08:00 AM-04:30 PM,,ho0983,False,True,,,,henn0983
+"7701 County Road 110 W, Minnetrista, MN 55364",,10:00 AM-01:00 PM,,ho0990,False,True,,,,henn0990
+"7701 County Road 110 W, Minnetrista, MN 55364",,08:00 AM-05:00 PM,,ho0991,False,True,,,,henn0991
+"2415 Wilshire Blvd, Mound, MN 55364",,08:00 AM-04:30 PM,,ho0992,False,True,,,,henn0992
+"2415 Wilshire Blvd, Mound, MN 55364",,07:30 AM-05:00 PM,,ho0999,False,True,,,,henn0999
+"2415 Wilshire Blvd, Mound, MN 55364",,07:30 AM-11:30 AM,,ho1000,False,True,,,,henn01000
+"2415 Wilshire Blvd, Mound, MN 55364",,10:00 AM-01:00 PM,,ho1001,False,True,,,,henn01001
+"4401 Xylon Ave N, New Hope, MN 55428",,08:00 AM-04:30 PM,,ho1003,False,True,,,,henn01003
+"4401 Xylon Ave N, New Hope, MN 55428",,10:00 AM-01:00 PM,,ho1010,False,True,,,,henn01010
+"4401 Xylon Ave N, New Hope, MN 55428",,08:00 AM-05:00 PM,,ho1011,False,True,,,,henn01011
+"2750 Kelley Pkwy, Orono, MN 55356",,08:00 AM-04:30 PM,,ho1012,False,True,,,,henn01012
+"2750 Kelley Pkwy, Orono, MN 55356",,10:00 AM-01:00 PM,,ho1019,False,True,,,,henn01019
+"2750 Kelley Pkwy, Orono, MN 55356",,08:00 AM-05:00 PM,,ho1020,False,True,,,,henn01020
+"415 Central Ave, Osseo, MN 55369",,07:30 AM-11:30 AM,,ho1021,False,True,,,,henn01021
+"415 Central Ave, Osseo, MN 55369",,07:30 AM-04:30 PM,,ho1022,False,True,,,,henn01022
+"415 Central Ave, Osseo, MN 55369",,10:00 AM-01:00 PM,,ho1028,False,True,,,,henn01028
+"415 Central Ave, Osseo, MN 55369",,07:30 AM-05:00 PM,,ho1029,False,True,,,,henn01029
+"3400 Plymouth Blvd, Plymouth, MN 55447",,08:00 AM-04:30 PM,,ho1036,False,True,,,,henn01036
+"3400 Plymouth Blvd, Plymouth, MN 55447",,08:00 AM-06:00 PM,,ho1038,False,True,,,,henn01038
+"3400 Plymouth Blvd, Plymouth, MN 55447",,10:00 AM-01:00 PM,,ho1055,False,True,,,,henn01055
+"3400 Plymouth Blvd, Plymouth, MN 55447",,08:00 AM-05:00 PM,,ho1056,False,True,,,,henn01056
+"6700 Portland Ave S, Richfield, MN 55423",,08:00 AM-04:30 PM,,ho1057,False,True,,,,henn01057
+"6700 Portland Ave S, Richfield, MN 55423",,10:00 AM-01:00 PM,,ho1064,False,True,,,,henn01064
+"6700 Portland Ave S, Richfield, MN 55423",,08:00 AM-05:00 PM,,ho1065,False,True,,,,henn01065
+"4100 Lakeview Ave N, Robbinsdale, MN 55422",,08:00 AM-04:30 PM,,ho1066,False,True,,,,henn01066
+"4100 Lakeview Ave N, Robbinsdale, MN 55422",,10:00 AM-01:00 PM,,ho1073,False,True,,,,henn01073
+"4100 Lakeview Ave N, Robbinsdale, MN 55422",,08:00 AM-05:00 PM,,ho1074,False,True,,,,henn01074
+"22350 S Diamond Lk Rd, Rogers, MN 55374",,07:30 AM-01:30 PM,,ho1075,False,True,,,,henn01075
+"22350 S Diamond Lk Rd, Rogers, MN 55374",,07:30 AM-04:30 PM,,ho1076,False,True,,,,henn01076
+"5755 Country Club Road, Shorewood, MN 55331",,08:00 AM-04:30 PM,,ho1089,False,True,,,,henn01089
+"5755 Country Club Road, Shorewood, MN 55331",,10:00 AM-01:00 PM,,ho1096,False,True,,,,henn01096
+"5755 Country Club Road, Shorewood, MN 55331",,08:00 AM-05:00 PM,,ho1097,False,True,,,,henn01097
+"4349 Warren Ave, Spring Park, MN 55384",,08:00 AM-04:30 PM,,ho1098,False,True,,,,henn01098
+"4349 Warren Ave, Spring Park, MN 55384",,10:00 AM-01:00 PM,,ho1105,False,True,,,,henn01105
+"4349 Warren Ave, Spring Park, MN 55384",,08:00 AM-05:00 PM,,ho1106,False,True,,,,henn01106
+"3301 Silver Lake Rd, St. Anthony, MN 55418",,08:00 AM-04:30 PM,,ho1107,False,True,,,,henn01107
+"3301 Silver Lake Rd, St. Anthony, MN 55418",,10:00 AM-01:00 PM,,ho1114,False,True,,,,henn01114
+"3301 Silver Lake Rd, St. Anthony, MN 55418",,08:00 AM-05:00 PM,,ho1115,False,True,,,,henn01115
+"8535 Kennedy Memorial Dr, St. Bonifacius, MN 55375",,08:00 AM-04:30 PM,,ho1116,False,True,,,,henn01116
+"8535 Kennedy Memorial Dr, St. Bonifacius, MN 55375",,10:00 AM-01:00 PM,,ho1123,False,True,,,,henn01123
+"8535 Kennedy Memorial Dr, St. Bonifacius, MN 55375",,08:00 AM-05:00 PM,,ho1124,False,True,,,,henn01124
+"5005 Minnetonka Boulevard, St. Louis Park, MN 55416",,07:30 AM-04:30 PM,,ho1125,False,True,,,,henn01125
+"5005 Minnetonka Boulevard, St. Louis Park, MN 55416",,10:00 AM-01:00 PM,,ho1132,False,True,,,,henn01132
+"5005 Minnetonka Boulevard, St. Louis Park, MN 55416",,07:30 AM-05:00 PM,,ho1133,False,True,,,,henn01133
+"4901 Manitou Rd, Tonka Bay, MN 55331",,07:30 AM-05:30 PM,,ho1134,False,True,,,,henn01134
+"4901 Manitou Rd, Tonka Bay, MN 55331",,10:00 AM-01:00 PM,,ho1140,False,True,,,,henn01140
+"600 Rice St E, Wayzata, MN 55391",,07:00 AM-11:30 AM,,ho1142,False,True,,,,henn01142
+"600 Rice St E, Wayzata, MN 55391",,07:00 AM-04:30 PM,,ho1143,False,True,,,,henn01143
+"600 Rice St E, Wayzata, MN 55391",,10:00 AM-01:00 PM,,ho1149,False,True,,,,henn01149
+"600 Rice St E, Wayzata, MN 55391",,07:00 AM-05:00 PM,,ho1150,False,True,,,,henn01150
+"600 Rice St E, Wayzata, MN 55391",,07:00 AM-11:00 AM,,ho1151,False,True,,,,henn01151
+"300 South 6th St PSL 012, Minneapolis, MN 55487",,08:00 AM-04:30 PM,,ho1157,False,True,,,,henn01157
+"300 South 6th St PSL 012, Minneapolis, MN 55487",,10:00 AM-01:00 PM,,ho1164,False,True,,,,henn01164
+"300 South 6th St PSL 012, Minneapolis, MN 55487",,08:00 AM-05:00 PM,,ho1165,False,True,,,,henn01165
+"2100 Plymouth Ave N, Minneapolis, MN 55411",,08:30 AM-05:00 PM,,ho1166,False,True,,,,henn01166
+"2100 Plymouth Ave N, Minneapolis, MN 55411",,10:00 AM-01:00 PM,,ho1173,False,True,,,,henn01173
+"304 S Marshall St Rm 116, Caledonia, MN 55921",,08:00 AM-04:30 PM,,ho1175,False,True,,,,hous01175
+"304 S Marshall St Rm 116, Caledonia, MN 55921",,10:00 AM-01:00 PM,,ho1182,False,True,,,,hous01182
+"304 S Marshall St Rm 116, Caledonia, MN 55921",,08:00 AM-05:00 PM,,ho1183,False,True,,,,hous01183
+"301 Court Ave, Park Rapids, MN 56470",,08:00 AM-04:30 PM,,ho1184,False,True,,,,hubb01184
+"301 Court Ave, Park Rapids, MN 56470",,10:00 AM-01:00 PM,,ho1191,False,True,,,,hubb01191
+"301 Court Ave, Park Rapids, MN 56470",,08:00 AM-05:00 PM,,ho1192,False,True,,,,hubb01192
+"555 18th Avenue SW, Cambridge, MN 55008",,08:00 AM-04:30 PM,,ho1193,False,True,,,,isan01193
+"555 18th Avenue SW, Cambridge, MN 55008",,10:00 AM-01:00 PM,,ho1200,False,True,,,,isan01200
+"555 18th Avenue SW, Cambridge, MN 55008",,08:00 AM-05:00 PM,,ho1201,False,True,,,,isan01201
+"123 NE 4th St, Grand Rapids, MN 55744",,08:00 AM-04:30 PM,,ho1202,False,True,,,,itas01202
+"123 NE 4th St, Grand Rapids, MN 55744",,10:00 AM-01:00 PM,,ho1209,False,True,,,,itas01209
+"123 NE 4th St, Grand Rapids, MN 55744",,08:00 AM-05:00 PM,,ho1210,False,True,,,,itas01210
+"405 4th St, Jackson, MN 56143",,08:00 AM-04:30 PM,,ho1211,False,True,,,,jack01211
+"405 4th St, Jackson, MN 56143",,10:00 AM-01:00 PM,,ho1218,False,True,,,,jack01218
+"405 4th St, Jackson, MN 56143",,08:00 AM-05:00 PM,,ho1219,False,True,,,,jack01219
+"18 N Vine St Ste 261-A, Mora, MN 55051",,08:00 AM-04:30 PM,,ho1220,False,True,,,,kana01220
+"18 N Vine St Ste 261-A, Mora, MN 55051",,10:00 AM-01:00 PM,,ho1227,False,True,,,,kana01227
+"18 N Vine St Ste 261-A, Mora, MN 55051",,08:00 AM-05:00 PM,,ho1228,False,True,,,,kana01228
+"400 Benson Ave Sw, Willmar, MN 56201",,08:00 AM-04:30 PM,,ho1229,False,True,,,,kand01229
+"400 Benson Ave Sw, Willmar, MN 56201",,10:00 AM-01:00 PM,,ho1236,False,True,,,,kand01236
+"400 Benson Ave Sw, Willmar, MN 56201",,08:00 AM-05:00 PM,,ho1237,False,True,,,,kand01237
+"410 5th St SE Ste 212, Hallock, MN 56728",,08:30 AM-04:30 PM,,ho1238,False,True,,,,kitt01238
+"410 5th St SE Ste 212, Hallock, MN 56728",,10:00 AM-01:00 PM,,ho1245,False,True,,,,kitt01245
+"410 5th St SE Ste 212, Hallock, MN 56728",,08:30 AM-05:00 PM,,ho1246,False,True,,,,kitt01246
+"715 4th St, International Falls, MN 56649",,08:00 AM-04:30 PM,,ho1247,False,True,,,,kooc01247
+"715 4th St, International Falls, MN 56649",,10:00 AM-01:00 PM,,ho1254,False,True,,,,kooc01254
+"715 4th St, International Falls, MN 56649",,08:00 AM-05:00 PM,,ho1255,False,True,,,,kooc01255
+"600 6th Street Ste 6, Madison, MN 56256",,08:30 AM-04:30 PM,,ho1256,False,True,,,,lacq01256
+"600 6th Street Ste 6, Madison, MN 56256",,10:00 AM-01:00 PM,,ho1263,False,True,,,,lacq01263
+"600 6th Street Ste 6, Madison, MN 56256",,08:30 AM-05:00 PM,,ho1264,False,True,,,,lacq01264
+"601 3rd Ave, Two Harbors, MN 55616",,08:00 AM-04:30 PM,,ho1265,False,True,,,,lake01265
+"601 3rd Ave, Two Harbors, MN 55616",,10:00 AM-01:00 PM,,ho1272,False,True,,,,lake01272
+"601 3rd Ave, Two Harbors, MN 55616",,08:00 AM-05:00 PM,,ho1273,False,True,,,,lake01273
+"206 8th Ave SE Ste 260, Baudette, MN 56623",,07:30 AM-04:00 PM,,ho1274,False,True,,,,lake01274
+"206 8th Ave SE Ste 260, Baudette, MN 56623",,10:00 AM-01:00 PM,,ho1281,False,True,,,,lake01281
+"206 8th Ave SE Ste 260, Baudette, MN 56623",,07:30 AM-05:00 PM,,ho1282,False,True,,,,lake01282
+"88 S Park Ave, Le Center, MN 56057",,08:00 AM-04:00 PM,,ho1283,False,True,,,,lesu01283
+"88 S Park Ave, Le Center, MN 56057",,08:00 AM-04:30 PM,,ho1284,False,True,,,,lesu01284
+"88 S Park Ave, Le Center, MN 56057",,10:00 AM-01:00 PM,,ho1290,False,True,,,,lesu01290
+"88 S Park Ave, Le Center, MN 56057",,08:00 AM-05:00 PM,,ho1291,False,True,,,,lesu01291
+"607 W Main, Marshall, MN 56258",,08:00 AM-04:30 PM,,ho1297,False,True,,,,lyon01297
+"607 W Main, Marshall, MN 56258",,10:00 AM-01:00 PM,,ho1304,False,True,,,,lyon01304
+"607 W Main, Marshall, MN 56258",,08:00 AM-05:00 PM,,ho1305,False,True,,,,lyon01305
+"311 N Main St, Mahnomen, MN 56557",,08:00 AM-04:30 PM,,ho1306,False,True,,,,mahn01306
+"311 N Main St, Mahnomen, MN 56557",,10:00 AM-01:00 PM,,ho1313,False,True,,,,mahn01313
+"311 N Main St, Mahnomen, MN 56557",,08:00 AM-05:00 PM,,ho1314,False,True,,,,mahn01314
+"208 E Colvin Ave Ste 10, Warren, MN 56762",,08:00 AM-04:30 PM,,ho1315,False,True,,,,mars01315
+"208 E Colvin Ave Ste 10, Warren, MN 56762",,10:00 AM-01:00 PM,,ho1322,False,True,,,,mars01322
+"208 E Colvin Ave Ste 10, Warren, MN 56762",,08:00 AM-05:00 PM,,ho1323,False,True,,,,mars01323
+"201 Lake Ave, Fairmont, MN 56031",,08:00 AM-05:00 PM,,ho1324,False,True,,,,mart01324
+"201 Lake Ave, Fairmont, MN 56031",,10:00 AM-01:00 PM,,ho1331,False,True,,,,mart01331
+"2391 Hennepin Ave N, Glencoe, MN 55336",,08:00 AM-04:30 PM,,ho1333,False,True,,,,mcle01333
+"2391 Hennepin Ave N, Glencoe, MN 55336",,10:00 AM-01:00 PM,,ho1340,False,True,,,,mcle01340
+"2391 Hennepin Ave N, Glencoe, MN 55336",,08:00 AM-05:00 PM,,ho1341,False,True,,,,mcle01341
+"111 Hassan Street SE, Hutchinson, MN 55350",,08:00 AM-04:00 PM,,ho1342,False,True,,,,mcle01342
+"111 Hassan Street SE, Hutchinson, MN 55350",,10:00 AM-01:00 PM,,ho1349,False,True,,,,mcle01349
+"111 Hassan Street SE, Hutchinson, MN 55350",,08:00 AM-05:00 PM,,ho1350,False,True,,,,mcle01350
+"325 Sibley Ave N, Litchfield, MN 55355",,08:00 AM-04:30 PM,,ho1351,False,True,,,,meek01351
+"325 Sibley Ave N, Litchfield, MN 55355",,10:00 AM-01:00 PM,,ho1358,False,True,,,,meek01358
+"325 Sibley Ave N, Litchfield, MN 55355",,08:00 AM-05:00 PM,,ho1359,False,True,,,,meek01359
+"635 2nd St SE, Milaca, MN 56353",,08:00 AM-04:30 PM,,ho1360,False,True,,,,mill01360
+"635 2nd St SE, Milaca, MN 56353",,10:00 AM-01:00 PM,,ho1367,False,True,,,,mill01367
+"635 2nd St SE, Milaca, MN 56353",,08:00 AM-05:00 PM,,ho1368,False,True,,,,mill01368
+"213 SE 1st Ave, Little Falls, MN 56345",,08:00 AM-04:30 PM,,ho1369,False,True,,,,morr01369
+"213 SE 1st Ave, Little Falls, MN 56345",,10:00 AM-01:00 PM,,ho1376,False,True,,,,morr01376
+"213 SE 1st Ave, Little Falls, MN 56345",,08:00 AM-05:00 PM,,ho1377,False,True,,,,morr01377
+"201 1st St. NE Ste 5, Austin, MN 55912",,08:00 AM-04:30 PM,,ho1378,False,True,,,,mowe01378
+"201 1st St. NE Ste 5, Austin, MN 55912",,10:00 AM-01:00 PM,,ho1385,False,True,,,,mowe01385
+"201 1st St. NE Ste 5, Austin, MN 55912",,08:00 AM-05:00 PM,,ho1386,False,True,,,,mowe01386
+"2500 28th St, Slayton, MN 56172",,08:00 AM-04:30 PM,,ho1387,False,True,,,,murr01387
+"2500 28th St, Slayton, MN 56172",,10:00 AM-01:00 PM,,ho1394,False,True,,,,murr01394
+"2500 28th St, Slayton, MN 56172",,08:00 AM-05:00 PM,,ho1395,False,True,,,,murr01395
+"501 S Minnesota Ave, St Peter, MN 56082",,08:00 AM-04:30 PM,,ho1396,False,True,,,,nico01396
+"501 S Minnesota Ave, St Peter, MN 56082",,10:00 AM-01:00 PM,,ho1403,False,True,,,,nico01403
+"501 S Minnesota Ave, St Peter, MN 56082",,08:00 AM-05:00 PM,,ho1404,False,True,,,,nico01404
+"315 10th St, Worthington, MN 56187",,08:00 AM-04:30 PM,,ho1405,False,True,,,,nobl01405
+"315 10th St, Worthington, MN 56187",,10:00 AM-01:00 PM,,ho1412,False,True,,,,nobl01412
+"315 10th St, Worthington, MN 56187",,08:00 AM-05:00 PM,,ho1413,False,True,,,,nobl01413
+"16 E 3rd Ave, Ada, MN 56510",,08:30 AM-04:30 PM,,ho1414,False,True,,,,norm01414
+"16 E 3rd Ave, Ada, MN 56510",,10:00 AM-01:00 PM,,ho1421,False,True,,,,norm01421
+"16 E 3rd Ave, Ada, MN 56510",,08:30 AM-05:00 PM,,ho1422,False,True,,,,norm01422
+"151 4th St SE, Rochester, MN 55904",,08:00 AM-05:00 PM,,ho1423,False,True,,,,olms01423
+"151 4th St SE, Rochester, MN 55904",,10:00 AM-01:00 PM,,ho1430,False,True,,,,olms01430
+"510 Fir Ave W, Fergus Falls, MN 56537",,08:30 AM-04:30 PM,,ho1432,False,True,,,,otte01432
+"510 Fir Ave W, Fergus Falls, MN 56537",,10:00 AM-01:00 PM,,ho1439,False,True,,,,otte01439
+"510 Fir Ave W, Fergus Falls, MN 56537",,08:30 AM-05:00 PM,,ho1440,False,True,,,,otte01440
+"101 Main Ave N, Thief River Falls, MN 56701",,08:00 AM-04:30 PM,,ho1441,False,True,,,,penn01441
+"101 Main Ave N, Thief River Falls, MN 56701",,10:00 AM-01:00 PM,,ho1448,False,True,,,,penn01448
+"101 Main Ave N, Thief River Falls, MN 56701",,08:00 AM-05:00 PM,,ho1449,False,True,,,,penn01449
+"635 Northridge Dr NW Ste 240, Pine City, MN 55063",,08:00 AM-04:30 PM,,ho1450,False,True,,,,pine01450
+"635 Northridge Dr NW Ste 240, Pine City, MN 55063",,10:00 AM-01:00 PM,,ho1457,False,True,,,,pine01457
+"635 Northridge Dr NW Ste 240, Pine City, MN 55063",,08:00 AM-05:00 PM,,ho1458,False,True,,,,pine01458
+"416 Hiawatha Ave S, Pipestone, MN 56164",,08:00 AM-04:30 PM,,ho1459,False,True,,,,pipe01459
+"416 Hiawatha Ave S, Pipestone, MN 56164",,10:00 AM-01:00 PM,,ho1466,False,True,,,,pipe01466
+"416 Hiawatha Ave S, Pipestone, MN 56164",,08:00 AM-05:00 PM,,ho1467,False,True,,,,pipe01467
+"612 N Broadway Ste 207, Crookston, MN 56716",,08:00 AM-04:30 PM,,ho1468,False,True,,,,polk01468
+"612 N Broadway Ste 207, Crookston, MN 56716",,10:00 AM-01:00 PM,,ho1475,False,True,,,,polk01475
+"612 N Broadway Ste 207, Crookston, MN 56716",,08:00 AM-05:00 PM,,ho1476,False,True,,,,polk01476
+"130 E Minnesota Ave Ste 218, Glenwood, MN 56334",,08:00 AM-04:30 PM,,ho1477,False,True,,,,pope01477
+"130 E Minnesota Ave Ste 218, Glenwood, MN 56334",,10:00 AM-01:00 PM,,ho1484,False,True,,,,pope01484
+"130 E Minnesota Ave Ste 218, Glenwood, MN 56334",,08:00 AM-05:00 PM,,ho1485,False,True,,,,pope01485
+"1245 Hwy 96 W, Arden Hills, MN 55112",,08:00 AM-04:30 PM,,ho1486,False,True,,,,rams01486
+"1245 Hwy 96 W, Arden Hills, MN 55112",,10:00 AM-01:00 PM,,ho1493,False,True,,,,rams01493
+"1245 Hwy 96 W, Arden Hills, MN 55112",,08:00 AM-05:00 PM,,ho1494,False,True,,,,rams01494
+"1891 Walnut St, Lauderdale, MN 55113",,08:00 AM-04:30 PM,,ho1495,False,True,,,,rams01495
+"1891 Walnut St, Lauderdale, MN 55113",,10:00 AM-01:00 PM,,ho1502,False,True,,,,rams01502
+"1891 Walnut St, Lauderdale, MN 55113",,08:00 AM-05:00 PM,,ho1503,False,True,,,,rams01503
+"515 Little Canada Rd, Little Canada, MN 55117",,08:00 AM-04:30 PM,,ho1504,False,True,,,,rams01504
+"515 Little Canada Rd, Little Canada, MN 55117",,10:00 AM-01:00 PM,,ho1511,False,True,,,,rams01511
+"515 Little Canada Rd, Little Canada, MN 55117",,08:00 AM-05:00 PM,,ho1512,False,True,,,,rams01512
+"1830 County Road B, Maplewood, MN 55109",,08:00 AM-04:30 PM,,ho1513,False,True,,,,rams01513
+"1830 County Road B, Maplewood, MN 55109",,10:00 AM-01:00 PM,,ho1520,False,True,,,,rams01520
+"1830 County Road B, Maplewood, MN 55109",,08:00 AM-05:00 PM,,ho1521,False,True,,,,rams01521
+"2401 County Hwy 10, Mounds View, MN 55112",,08:00 AM-04:30 PM,,ho1522,False,True,,,,rams01522
+"2401 County Hwy 10, Mounds View, MN 55112",,10:00 AM-01:00 PM,,ho1529,False,True,,,,rams01529
+"2401 County Hwy 10, Mounds View, MN 55112",,08:00 AM-05:00 PM,,ho1530,False,True,,,,rams01530
+"803 Old Highway 8 NW, New Brighton, MN 55112",,08:00 AM-04:30 PM,,ho1531,False,True,,,,rams01531
+"803 Old Highway 8 NW, New Brighton, MN 55112",,10:00 AM-01:00 PM,,ho1538,False,True,,,,rams01538
+"803 Old Highway 8 NW, New Brighton, MN 55112",,08:00 AM-05:00 PM,,ho1539,False,True,,,,rams01539
+"100 Village Center Dr, North Oaks, MN 55127",,09:00 AM-04:00 PM,,ho1540,False,True,,,,rams01540
+"100 Village Center Dr, North Oaks, MN 55127",,10:00 AM-01:00 PM,,ho1547,False,True,,,,rams01547
+"100 Village Center Dr, North Oaks, MN 55127",,08:00 AM-05:00 PM,,ho1548,False,True,,,,rams01548
+"2400 Margaret St N, St. Paul, MN 55109",,08:00 AM-04:30 PM,,ho1549,False,True,,,,rams01549
+"2400 Margaret St N, St. Paul, MN 55109",,10:00 AM-01:00 PM,,ho1556,False,True,,,,rams01556
+"2400 Margaret St N, St. Paul, MN 55109",,08:00 AM-05:00 PM,,ho1557,False,True,,,,rams01557
+"90 W Plato Blvd #160, St. Paul, MN 55107",,08:00 AM-04:30 PM,,ho1558,False,True,,,,rams01558
+"90 W Plato Blvd #160, St. Paul, MN 55107",,10:00 AM-01:00 PM,,ho1565,False,True,,,,rams01565
+"90 W Plato Blvd #160, St. Paul, MN 55107",,08:00 AM-05:00 PM,,ho1566,False,True,,,,rams01566
+"2660 Civic Center Dr, Roseville, MN 55113",,08:00 AM-04:30 PM,,ho1567,False,True,,,,rams01567
+"2660 Civic Center Dr, Roseville, MN 55113",,10:00 AM-01:00 PM,,ho1574,False,True,,,,rams01574
+"2660 Civic Center Dr, Roseville, MN 55113",,08:00 AM-05:00 PM,,ho1575,False,True,,,,rams01575
+"4600 Victoria St N, Shoreview, MN 55126",,08:00 AM-04:30 PM,,ho1576,False,True,,,,rams01576
+"4600 Victoria St N, Shoreview, MN 55126",,10:00 AM-01:00 PM,,ho1583,False,True,,,,rams01583
+"4600 Victoria St N, Shoreview, MN 55126",,08:00 AM-05:00 PM,,ho1584,False,True,,,,rams01584
+"800 Co Rd E East, Vadnais Heights, MN 55127",,08:00 AM-04:30 PM,,ho1585,False,True,,,,rams01585
+"800 Co Rd E East, Vadnais Heights, MN 55127",,10:00 AM-01:00 PM,,ho1592,False,True,,,,rams01592
+"800 Co Rd E East, Vadnais Heights, MN 55127",,08:00 AM-05:00 PM,,ho1593,False,True,,,,rams01593
+"4701 Highway 61, White Bear Lake, MN 55110",,08:00 AM-04:30 PM,,ho1594,False,True,,,,rams01594
+"4701 Highway 61, White Bear Lake, MN 55110",,10:00 AM-01:00 PM,,ho1601,False,True,,,,rams01601
+"4701 Highway 61, White Bear Lake, MN 55110",,08:00 AM-05:00 PM,,ho1602,False,True,,,,rams01602
+"1281 Hammond Rd, White Bear Township, MN 55110",,07:00 AM-04:30 PM,,ho1603,False,True,,,,rams01603
+"1281 Hammond Rd, White Bear Township, MN 55110",,10:00 AM-01:00 PM,,ho1610,False,True,,,,rams01610
+"1281 Hammond Rd, White Bear Township, MN 55110",,07:00 AM-05:00 PM,,ho1611,False,True,,,,rams01611
+"124 Langevin Ave, Red Lake Falls, MN 56750",,09:00 AM-05:00 PM,,ho1612,False,True,,,,redl01612
+"124 Langevin Ave, Red Lake Falls, MN 56750",,10:00 AM-01:00 PM,,ho1619,False,True,,,,redl01619
+"403 S Mill St, Redwood Falls, MN 56283",,08:00 AM-04:30 PM,,ho1621,False,True,,,,redw01621
+"403 S Mill St, Redwood Falls, MN 56283",,10:00 AM-01:00 PM,,ho1628,False,True,,,,redw01628
+"403 S Mill St, Redwood Falls, MN 56283",,08:00 AM-05:00 PM,,ho1629,False,True,,,,redw01629
+"500 E Depue Ave Ste 202, Olivia, MN 56277",,08:00 AM-04:30 PM,,ho1630,False,True,,,,renv01630
+"500 E Depue Ave Ste 202, Olivia, MN 56277",,10:00 AM-01:00 PM,,ho1637,False,True,,,,renv01637
+"500 E Depue Ave Ste 202, Olivia, MN 56277",,08:00 AM-05:00 PM,,ho1638,False,True,,,,renv01638
+"320 3rd St NW, Faribault, MN 55021",,08:00 AM-04:30 PM,,ho1639,False,True,,,,rice01639
+"320 3rd St NW, Faribault, MN 55021",,10:00 AM-01:00 PM,,ho1646,False,True,,,,rice01646
+"320 3rd St NW, Faribault, MN 55021",,08:00 AM-05:00 PM,,ho1647,False,True,,,,rice01647
+"204 Brown St E, Luverne, MN 56156",,08:00 AM-05:00 PM,,ho1648,False,True,,,,rock01648
+"204 Brown St E, Luverne, MN 56156",,10:00 AM-01:00 PM,,ho1655,False,True,,,,rock01655
+"606 5th Ave Sw Rm 160, Roseau, MN 56751",,07:30 AM-04:00 PM,,ho1657,False,True,,,,rose01657
+"606 5th Ave Sw Rm 160, Roseau, MN 56751",,10:00 AM-01:00 PM,,ho1664,False,True,,,,rose01664
+"606 5th Ave Sw Rm 160, Roseau, MN 56751",,07:30 AM-05:00 PM,,ho1665,False,True,,,,rose01665
+"71 South Dr, Babbitt, MN 55706",,07:30 AM-04:30 PM,,ho1666,False,True,,,,sain01666
+"71 South Dr, Babbitt, MN 55706",,10:00 AM-01:00 PM,,ho1673,False,True,,,,sain01673
+"71 South Dr, Babbitt, MN 55706",,07:30 AM-05:00 PM,,ho1674,False,True,,,,sain01674
+"321 N Main St, Biwabik, MN 55708",,08:00 AM-04:30 PM,,ho1675,False,True,,,,sain01675
+"321 N Main St, Biwabik, MN 55708",,10:00 AM-01:00 PM,,ho1682,False,True,,,,sain01682
+"321 N Main St, Biwabik, MN 55708",,08:00 AM-05:00 PM,,ho1683,False,True,,,,sain01683
+"302 Frantz Ave, Buhl, MN 55713",,08:00 AM-05:00 PM,,ho1684,False,True,,,,sain01684
+"302 Frantz Ave, Buhl, MN 55713",,10:00 AM-01:00 PM,,ho1691,False,True,,,,sain01691
+"316 West Lake Street, Chisholm, MN 55719",,07:00 AM-04:30 PM,,ho1693,False,True,,,,sain01693
+"316 West Lake Street, Chisholm, MN 55719",,10:00 AM-01:00 PM,,ho1700,False,True,,,,sain01700
+"316 West Lake Street, Chisholm, MN 55719",,07:00 AM-05:00 PM,,ho1701,False,True,,,,sain01701
+"127 S River St, Cook, MN 55723",,09:00 AM-05:00 PM,,ho1702,False,True,,,,sain01702
+"127 S River St, Cook, MN 55723",,10:00 AM-01:00 PM,,ho1709,False,True,,,,sain01709
+"411 W 1st St Rm 330, Duluth, MN 55802",,08:00 AM-04:30 PM,,ho1711,False,True,,,,sain01711
+"411 W 1st St Rm 330, Duluth, MN 55802",,10:00 AM-01:00 PM,,ho1718,False,True,,,,sain01718
+"411 W 1st St Rm 330, Duluth, MN 55802",,08:00 AM-05:00 PM,,ho1719,False,True,,,,sain01719
+"209 E Chapman St, Ely, MN 55731",,08:00 AM-04:30 PM,,ho1720,False,True,,,,sain01720
+"209 E Chapman St, Ely, MN 55731",,10:00 AM-01:00 PM,,ho1727,False,True,,,,sain01727
+"209 E Chapman St, Ely, MN 55731",,08:00 AM-05:00 PM,,ho1728,False,True,,,,sain01728
+"413 Pierce St, Eveleth, MN 55734",,08:00 AM-04:30 PM,,ho1729,False,True,,,,sain01729
+"413 Pierce St, Eveleth, MN 55734",,10:00 AM-01:00 PM,,ho1736,False,True,,,,sain01736
+"413 Pierce St, Eveleth, MN 55734",,08:00 AM-05:00 PM,,ho1737,False,True,,,,sain01737
+"16 S Broadway St, Gilbert, MN 55741",,08:00 AM-05:00 PM,,ho1738,False,True,,,,sain01738
+"16 S Broadway St, Gilbert, MN 55741",,10:00 AM-01:00 PM,,ho1745,False,True,,,,sain01745
+"5105 Maple Grove Rd, Hermantown, MN 55811",,08:00 AM-04:30 PM,,ho1747,False,True,,,,sain01747
+"5105 Maple Grove Rd, Hermantown, MN 55811",,10:00 AM-01:00 PM,,ho1754,False,True,,,,sain01754
+"5105 Maple Grove Rd, Hermantown, MN 55811",,08:00 AM-05:00 PM,,ho1755,False,True,,,,sain01755
+"401 E 21st St, Hibbing, MN 55746",,08:00 AM-04:00 PM,,ho1756,False,True,,,,sain01756
+"401 E 21st St, Hibbing, MN 55746",,10:00 AM-01:00 PM,,ho1763,False,True,,,,sain01763
+"401 E 21st St, Hibbing, MN 55746",,08:00 AM-05:00 PM,,ho1764,False,True,,,,sain01764
+"206 Kennedy Memorial Drive, Hoyt Lakes, MN 55750",,07:30 AM-04:00 PM,,ho1765,False,True,,,,sain01765
+"206 Kennedy Memorial Drive, Hoyt Lakes, MN 55750",,10:00 AM-01:00 PM,,ho1772,False,True,,,,sain01772
+"206 Kennedy Memorial Drive, Hoyt Lakes, MN 55750",,07:30 AM-05:00 PM,,ho1773,False,True,,,,sain01773
+"8586 Enterprise Dr S, Mountain Iron, MN 55768",,07:30 AM-04:00 PM,,ho1774,False,True,,,,sain01774
+"8586 Enterprise Dr S, Mountain Iron, MN 55768",,10:00 AM-01:00 PM,,ho1781,False,True,,,,sain01781
+"8586 Enterprise Dr S, Mountain Iron, MN 55768",,07:30 AM-05:00 PM,,ho1782,False,True,,,,sain01782
+"4107 W Beyer Rd, Duluth, MN 55803",,07:30 AM-04:30 PM,,ho1783,False,True,,,,sain01783
+"4107 W Beyer Rd, Duluth, MN 55803",,10:00 AM-01:00 PM,,ho1790,False,True,,,,sain01790
+"4107 W Beyer Rd, Duluth, MN 55803",,07:30 AM-05:00 PM,,ho1791,False,True,,,,sain01791
+"602 Main Street, Tower, MN 55790",,08:00 AM-04:30 PM,,ho1792,False,True,,,,sain01792
+"602 Main Street, Tower, MN 55790",,10:00 AM-01:00 PM,,ho1799,False,True,,,,sain01799
+"602 Main Street, Tower, MN 55790",,08:00 AM-05:00 PM,,ho1800,False,True,,,,sain01800
+"327 S 1st St, Virginia, MN 55792",,08:00 AM-04:30 PM,,ho1801,False,True,,,,sain01801
+"327 S 1st St, Virginia, MN 55792",,10:00 AM-01:00 PM,,ho1808,False,True,,,,sain01808
+"327 S 1st St, Virginia, MN 55792",,08:00 AM-05:00 PM,,ho1809,False,True,,,,sain01809
+"16 W 2nd Ave N, Aurora, MN 55705",,08:00 AM-04:00 PM,,ho1810,False,True,,,,sain01810
+"16 W 2nd Ave N, Aurora, MN 55705",,08:00 AM-05:00 PM,,ho1811,False,True,,,,sain01811
+"16 W 2nd Ave N, Aurora, MN 55705",,10:00 AM-01:00 PM,,ho1817,False,True,,,,sain01817
+"100 N 5th Ave W # 214, Duluth, MN 55802",,08:00 AM-04:30 PM,,ho1825,False,True,,,,sain01825
+"100 N 5th Ave W # 214, Duluth, MN 55802",,10:00 AM-01:00 PM,,ho1832,False,True,,,,sain01832
+"100 N 5th Ave W # 214, Duluth, MN 55802",,08:00 AM-05:00 PM,,ho1833,False,True,,,,sain01833
+"200 Fourth Ave W, Shakopee, MN 55379",,08:00 AM-04:30 PM,,ho1834,False,True,,,,scot01834
+"200 Fourth Ave W, Shakopee, MN 55379",,10:00 AM-03:00 PM,,ho1841,False,True,,,,scot01841
+"200 Fourth Ave W, Shakopee, MN 55379",,08:00 AM-05:00 PM,,ho1842,False,True,,,,scot01842
+"13880 Business Center Drive NW, Elk River, MN 55330",,08:00 AM-04:30 PM,,ho1843,False,True,,,,sher01843
+"13880 Business Center Drive NW, Elk River, MN 55330",,10:00 AM-03:00 PM,,ho1850,False,True,,,,sher01850
+"13880 Business Center Drive NW, Elk River, MN 55330",,08:00 AM-05:00 PM,,ho1851,False,True,,,,sher01851
+"400 Court Avenue, Gaylord, MN 55334",,08:00 AM-04:30 PM,,ho1852,False,True,,,,sibl01852
+"400 Court Avenue, Gaylord, MN 55334",,10:00 AM-03:00 PM,,ho1859,False,True,,,,sibl01859
+"400 Court Avenue, Gaylord, MN 55334",,08:00 AM-05:00 PM,,ho1860,False,True,,,,sibl01860
+"225 1st St NE, Melrose, MN 56352",,08:00 AM-04:30 PM,,ho1861,False,True,,,,stea01861
+"225 1st St NE, Melrose, MN 56352",,10:00 AM-03:00 PM,,ho1868,False,True,,,,stea01868
+"225 1st St NE, Melrose, MN 56352",,08:00 AM-05:00 PM,,ho1869,False,True,,,,stea01869
+"705 Courthouse Sq Rm 148, St Cloud, MN 56303",,08:00 AM-04:30 PM,,ho1870,False,True,,,,stea01870
+"705 Courthouse Sq Rm 148, St Cloud, MN 56303",,10:00 AM-03:00 PM,,ho1877,False,True,,,,stea01877
+"705 Courthouse Sq Rm 148, St Cloud, MN 56303",,08:00 AM-05:00 PM,,ho1878,False,True,,,,stea01878
+"630 Florence Ave, Owatonna, MN 55060",,08:00 AM-05:00 PM,,ho1879,False,True,,,,stee01879
+"630 Florence Ave, Owatonna, MN 55060",,10:00 AM-03:00 PM,,ho1886,False,True,,,,stee01886
+"400 Colorado Ave Ste 303, Morris, MN 56267",,08:00 AM-04:30 PM,,ho1888,False,True,,,,stev01888
+"400 Colorado Ave Ste 303, Morris, MN 56267",,10:00 AM-03:00 PM,,ho1895,False,True,,,,stev01895
+"400 Colorado Ave Ste 303, Morris, MN 56267",,08:00 AM-05:00 PM,,ho1896,False,True,,,,stev01896
+"301 14th St N, Benson, MN 56215",,08:30 AM-04:30 PM,,ho1897,False,True,,,,swif01897
+"301 14th St N, Benson, MN 56215",,10:00 AM-03:00 PM,,ho1904,False,True,,,,swif01904
+"301 14th St N, Benson, MN 56215",,08:30 AM-05:00 PM,,ho1905,False,True,,,,swif01905
+"215 1st Ave S Ste 201, Long Prairie, MN 56347",,08:30 AM-04:30 PM,,ho1906,False,True,,,,todd01906
+"215 1st Ave S Ste 201, Long Prairie, MN 56347",,10:00 AM-03:00 PM,,ho1913,False,True,,,,todd01913
+"215 1st Ave S Ste 201, Long Prairie, MN 56347",,08:30 AM-05:00 PM,,ho1914,False,True,,,,todd01914
+"702 2nd Ave N , Wheaton, MN 56296",,08:30 AM-04:30 PM,,ho1915,False,True,,,,trav01915
+"702 2nd Ave N , Wheaton, MN 56296",,10:00 AM-03:00 PM,,ho1922,False,True,,,,trav01922
+"702 2nd Ave N , Wheaton, MN 56296",,08:30 AM-05:00 PM,,ho1923,False,True,,,,trav01923
+"205 W Center St, Lake City, MN 55041",,10:00 AM-03:00 PM,,ho1931,False,True,,,,waba01931
+"625 Jefferson Ave, Wabasha, MN 55981",,08:00 AM-04:30 PM,,ho1933,False,True,,,,waba01933
+"625 Jefferson Ave, Wabasha, MN 55981",,10:00 AM-03:00 PM,,ho1940,False,True,,,,waba01940
+"625 Jefferson Ave, Wabasha, MN 55981",,08:00 AM-05:00 PM,,ho1941,False,True,,,,waba01941
+"415 Jefferson Street South, Wadena, MN 56482",,08:00 AM-04:30 PM,,ho1942,False,True,,,,wade01942
+"415 Jefferson Street South, Wadena, MN 56482",,10:00 AM-03:00 PM,,ho1949,False,True,,,,wade01949
+"415 Jefferson Street South, Wadena, MN 56482",,08:00 AM-05:00 PM,,ho1950,False,True,,,,wade01950
+"307 N State St, Waseca, MN 56093",,08:00 AM-04:30 PM,,ho1951,False,True,,,,wase01951
+"307 N State St, Waseca, MN 56093",,10:00 AM-03:00 PM,,ho1958,False,True,,,,wase01958
+"307 N State St, Waseca, MN 56093",,08:00 AM-05:00 PM,,ho1959,False,True,,,,wase01959
+"13000 Ravine Parkway South, Cottage Grove, MN 55016",,08:00 AM-04:30 PM,,ho1960,False,True,,,,wash01960
+"13000 Ravine Parkway South, Cottage Grove, MN 55016",,10:00 AM-03:00 PM,,ho1967,False,True,,,,wash01967
+"13000 Ravine Parkway South, Cottage Grove, MN 55016",,08:00 AM-05:00 PM,,ho1968,False,True,,,,wash01968
+"14949 62nd Street North, Stillwater, MN 55082",,08:00 AM-04:30 PM,,ho1969,False,True,,,,wash01969
+"14949 62nd Street North, Stillwater, MN 55082",,10:00 AM-03:00 PM,,ho1976,False,True,,,,wash01976
+"14949 62nd Street North, Stillwater, MN 55082",,08:00 AM-05:00 PM,,ho1977,False,True,,,,wash01977
+"19955 Forest Road North, Forest Lake, MN 55025",,08:00 AM-04:30 PM,,ho1978,False,True,,,,wash01978
+"19955 Forest Road North, Forest Lake, MN 55025",,10:00 AM-03:00 PM,,ho1985,False,True,,,,wash01985
+"19955 Forest Road North, Forest Lake, MN 55025",,08:00 AM-05:00 PM,,ho1986,False,True,,,,wash01986
+"2150 Radio Drive, Woodbury, MN 55125",,08:00 AM-04:30 PM,,ho1987,False,True,,,,wash01987
+"2150 Radio Drive, Woodbury, MN 55125",,10:00 AM-03:00 PM,,ho1994,False,True,,,,wash01994
+"2150 Radio Drive, Woodbury, MN 55125",,08:00 AM-05:00 PM,,ho1995,False,True,,,,wash01995
+"710 2nd Ave S, St James, MN 56081",,08:00 AM-12:00 PM,,ho1996,False,True,,,,wato01996
+"710 2nd Ave S, St James, MN 56081",,01:00 PM-05:00 PM,,ho1997,False,True,,,,wato01997
+"710 2nd Ave S, St James, MN 56081",,10:00 AM-03:00 PM,,ho2010,False,True,,,,wato02010
+"710 2nd Ave S, St James, MN 56081",,08:00 AM-05:00 PM,,ho2011,False,True,,,,wato02011
+"300 S 5th St, Breckenridge, MN 56520",,08:00 AM-04:30 PM,,ho2013,False,True,,,,wilk02013
+"300 S 5th St, Breckenridge, MN 56520",,10:00 AM-03:00 PM,,ho2020,False,True,,,,wilk02020
+"300 S 5th St, Breckenridge, MN 56520",,08:00 AM-05:00 PM,,ho2021,False,True,,,,wilk02021
+"177 Main Street, Winona, MN 55987",,08:00 AM-04:30 PM,,ho2022,False,True,,,,wino02022
+"177 Main Street, Winona, MN 55987",,08:00 AM-05:30 PM,,ho2026,False,True,,,,wino02026
+"177 Main Street, Winona, MN 55987",,10:00 AM-03:00 PM,,ho2029,False,True,,,,wino02029
+"5959 Main Ave NE, Albertville, MN 55301",,07:00 AM-05:30 PM,,ho2031,False,True,,,,wrig02031
+"5959 Main Ave NE, Albertville, MN 55301",,10:00 AM-03:00 PM,,ho2037,False,True,,,,wrig02037
+"5959 Main Ave NE, Albertville, MN 55301",,07:00 AM-05:00 PM,,ho2038,False,True,,,,wrig02038
+"212 Central Ave, Buffalo, MN 55313",,08:00 AM-05:00 PM,,ho2039,False,True,,,,wrig02039
+"212 Central Ave, Buffalo, MN 55313",,10:00 AM-03:00 PM,,ho2046,False,True,,,,wrig02046
+"12260 South Diamond Lake Road, Dayton, MN 55327",,10:00 AM-03:00 PM,,ho2061,False,True,,,,wrig02061
+"234 2nd St N, Delano, MN 55328",,08:00 AM-12:00 PM,,ho2063,False,True,,,,wrig02063
+"234 2nd St N, Delano, MN 55328",,07:30 AM-05:00 PM,,ho2064,False,True,,,,wrig02064
+"234 2nd St N, Delano, MN 55328",,07:30 AM-07:00 PM,,ho2065,False,True,,,,wrig02065
+"234 2nd St N, Delano, MN 55328",,10:00 AM-03:00 PM,,ho2088,False,True,,,,wrig02088
+"11250 5th St NE, Hanover, MN 55341",,10:00 AM-03:00 PM,,ho2115,False,True,,,,wrig02115
+"505 Walnut St Ste 1, Monticello, MN 55362",,08:00 AM-04:30 PM,,ho2117,False,True,,,,wrig02117
+"505 Walnut St Ste 1, Monticello, MN 55362",,10:00 AM-03:00 PM,,ho2124,False,True,,,,wrig02124
+"505 Walnut St Ste 1, Monticello, MN 55362",,08:00 AM-05:00 PM,,ho2125,False,True,,,,wrig02125
+"11880 Town Center Dr NE Ste 300, St. Michael, MN 55376",,08:00 AM-02:00 PM,,ho2126,False,True,,,,wrig02126
+"11880 Town Center Dr NE Ste 300, St. Michael, MN 55376",,08:00 AM-05:00 PM,,ho2127,False,True,,,,wrig02127
+"11880 Town Center Dr NE Ste 300, St. Michael, MN 55376",,10:00 AM-03:00 PM,,ho2139,False,True,,,,wrig02139
+"10 2nd St NW Rm 230, Buffalo, MN 55313",,08:00 AM-04:30 PM,,ho2141,False,True,,,,wrig02141
+"10 2nd St NW Rm 230, Buffalo, MN 55313",,10:00 AM-03:00 PM,,ho2148,False,True,,,,wrig02148
+"10 2nd St NW Rm 230, Buffalo, MN 55313",,08:00 AM-05:00 PM,,ho2149,False,True,,,,wrig02149
+"180 8th Ave, Granite Falls, MN 56241",,08:00 AM-04:00 PM,,ho2150,False,True,,,,yell02150
+"180 8th Ave, Granite Falls, MN 56241",,10:00 AM-03:00 PM,,ho2157,False,True,,,,yell02157
+"180 8th Ave, Granite Falls, MN 56241",,08:00 AM-05:00 PM,,ho2158,False,True,,,,yell02158

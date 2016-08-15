@@ -146,7 +146,7 @@ class LocalityTxt(object):
         and modifying its value. A '0' is added, if necessary, to maintain a
         consistent id length.
         """
-        for key, value in state_dict.iteritems():
+        for key, value in config.fips_dict.iteritems():
             if key == self.state:
                 state_num = value
                 if state_num <=9:
@@ -234,22 +234,29 @@ class LocalityTxt(object):
         """#"""
         return dupe.drop_duplicates(subset='external_identifier_value')
 
+    def group(self, df):
+
+        l = df.groupby('external_identifier_value').agg(lambda x: ' '.join(set(x))).reset_index()
+        return l
+
     def write_locality_txt(self):
         """Drops base DataFrame columns then writes final dataframe to text or csv file"""
 
         loc = self.build_locality_txt()
-        #print loc
+        print loc
 
         # Drop base_df columns.
         loc.drop(['index', 'ocd_division', 'county', 'location', 'name', 'address_1', 'address_2',
                 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date', 'end_date',
                 'is_only_by_appointment', 'is_or_by_appointment', 'is_subject_to_change'], inplace=True, axis=1)
 
-        loc = self.dedupe(loc)
-        print loc
+        #loc = self.dedupe(loc)
+        ##l = loc.groupby('external_identifier_value').agg(lambda x: ' '.join(set(x))).reset_index()
 
-        loc.to_csv(config.locality_output + 'locality.txt', index=False, encoding='utf-8')  # send to txt file
-        loc.to_csv(config.locality_output + 'locality.csv', index=False, encoding='utf-8')  # send to csv file
+      #  print loc
+
+        #loc.to_csv(config.locality_output + 'locality.txt', index=False, encoding='utf-8')  # send to txt file
+        #loc.to_csv(config.locality_output + 'locality.csv', index=False, encoding='utf-8')  # send to csv file
 
 
 if __name__ == '__main__':

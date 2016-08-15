@@ -122,16 +122,18 @@ class PollingLocationTxt(object):
 
     def create_hours_open_id(self, index):
         """#"""
+        # TODO: this is the correct id/index code, correct everywhere
         if index <= 9:
             return 'ho000' + str(index)
 
         elif index in range(10,100):
             return 'ho00' + str(index)
 
-        elif index > 100:
+        #elif index >=100:
+        elif index in range(100, 1000):
             return 'ho0' + str(index)
         else:
-            return str(index)
+            return 'ho' + str(index)
 
     def is_drop_box(self):
         """#"""
@@ -173,7 +175,7 @@ class PollingLocationTxt(object):
         elif index in range(10,100):
             index_str = '00' + str(index)
 
-        elif index > 100:
+        elif index in range(100, 1000):
             index_str = '0' + str(index)
         else:
             index_str = str(index)
@@ -223,7 +225,19 @@ class PollingLocationTxt(object):
 
     def dedupe(self, dupe):
         """#"""
-        return dupe.drop_duplicates(subset='address_line')
+        return dupe.drop_duplicates(subset=['address_line', 'hours'])
+
+    def format_for_schedule(self):
+
+        sch_base_df = self.build_polling_location_txt()
+
+        # Drop base_df columns.
+        sch_base_df.drop(['index', 'ocd_division', 'county', 'location_name', 'address_1', 'address_2',
+                          'city', 'state', 'zip', 'id'], inplace=True, axis=1)
+
+        print sch_base_df
+
+        return self.dedupe(sch_base_df)
 
     def write_polling_location_txt(self):
         """Drops base DataFrame columns then writes final dataframe to text or csv file"""
@@ -231,7 +245,7 @@ class PollingLocationTxt(object):
         plt = self.build_polling_location_txt()
 
         # Drop base_df columns.
-        plt.drop(['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state', 'zip',
+        plt.drop(['index', 'ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment', 'is_or_by_appointment',
                 'appointment_phone_num', 'is_subject_to_change', ''], inplace=True, axis=1)
 
@@ -255,10 +269,10 @@ if __name__ == '__main__':
 
     colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment', 'is_or_by_appointment',
-                'appointment_phone_num', 'is_subject_to_change', '']
+                'appointment_phone_num', 'is_subject_to_change']
 
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
-    early_voting_df['index'] = early_voting_df.index
+    early_voting_df['index'] = early_voting_df.index + 1
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
     pl.write_polling_location_txt()
