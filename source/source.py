@@ -15,8 +15,7 @@ class SourceTxt(object):
         #This method is going to populate the source CSV with all the necessary data
         output_path = "/Users/danielgilberg/Development/hand-collection-to-vip/test.csv"
 
-        try:
-            f = open(output_path, 'ab')
+        with open(output_path, 'ab') as f:
             fieldnames = ["date_time", 'description', 'name', 'organization_uri', 'terms_of_use_uri', 'vip_id', 'version', 'id']
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
@@ -30,9 +29,6 @@ class SourceTxt(object):
                              'version': item.get_version(),
                              'id': item.get_id()
                             })
-        finally:
-            f.close()
-
 
 
 
