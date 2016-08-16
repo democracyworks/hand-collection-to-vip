@@ -224,8 +224,8 @@ if __name__ == '__main__':
                 'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date']
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
     early_voting_df['index'] = early_voting_df.index
-    print early_voting_df
-    # pl = PollingLocationTxt(early_voting_df, early_voting_true)
+    pl = PollingLocationTxt(early_voting_df, early_voting_true)
+
     # print early_voting_df["address_1"] + early_voting_df["address_2"]
-    # pl.write_polling_location_txt()
+    pl.write_polling_location_txt()
     # print early_voting_df["index"]

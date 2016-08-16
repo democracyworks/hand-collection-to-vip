@@ -1,6 +1,8 @@
 import pandas as pd
 import re
 import config
+from itertools import product
+import csv
 
 
 state_dict = {'wyoming': 50, 'colorado': 6, 'washington': 47, 'hawaii': 11, 'tennessee': 42, 'wisconsin': 49,
@@ -236,6 +238,11 @@ if __name__ == '__main__':
     state_file = 'kansas_early_voting_info.csv'
 
     early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
+
+    reformatted_file = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/scripts/early_voting_input/reformatted_kansas_early_voting_info.csv"
+
+
+
 
     colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
                 'address_two', 'city', 'state', 'zip', 'times', 'start_date', 'end_date']
