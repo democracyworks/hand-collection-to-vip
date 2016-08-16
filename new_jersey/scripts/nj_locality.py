@@ -253,7 +253,7 @@ if __name__ == '__main__':
 
     state_file = 'new_jersey_early_voting_info.csv'
 
-    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/new_jersey/scripts/early_voting_input/" + state_file
+    early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/new_jersey/scripts/early_voting_input/" + state_file
 
     colnames = ['office_name', 'official_title', 'ocd_division', 'division_description', 'homepage_url', 'phone', 'email',
                 'street', 'directions', 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date', 'end_date',
@@ -264,4 +264,4 @@ if __name__ == '__main__':
     #print early_voting_df
 
     lt = LocalityTxt(early_voting_df, config.state)
-    lt.write_locality_txt()
+    # lt.write_locality_txt()

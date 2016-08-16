@@ -105,6 +105,11 @@ class PollingLocationTxt(object):
             # print 'Hours not presented in the right format in line ' + str(index) +"."
             return ''
 
+    def convert_hours_to_uct(self, index, time_str, time_zone):
+        x = self.convert_to_time(index, time_str)
+        y = time_zone
+        return x
+
 
     def convert_hours(self):
         pass
@@ -200,6 +205,7 @@ class PollingLocationTxt(object):
         self.base_df['latlng_source'] = self.base_df.apply(
             lambda row: self.get_latlng_source(), axis=1)
 
+
         self.base_df['id'] = self.base_df.apply(
             lambda row: self.create_id(row['index'], row['division_description']), axis=1)
 
@@ -240,3 +246,5 @@ if __name__ == '__main__':
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
     # print early_voting_df["address_1"] + early_voting_df["address_2"]
     pl.write_polling_location_txt()
+    # print early_voting_df["index"]
+
