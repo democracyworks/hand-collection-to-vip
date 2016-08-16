@@ -2,6 +2,8 @@
 
 locality_output = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/output/"
 
+source_output = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/output/source.txt"
+
 state = 'kansas'
 
 fips_dict = {'wyoming': '56', 'colorado': '08', 'washington': '53', 'hawaii': '15', 'tennessee': '47', 'iowa': '19',
