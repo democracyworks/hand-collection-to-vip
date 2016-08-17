@@ -13,7 +13,7 @@ id
 
 import pandas as pd
 import config
-from minnesota_polling_location import PollingLocationTxt
+from nj_polling_location import PollingLocationTxt
 import datetime
 
 class ScheduleTxt(PollingLocationTxt):
@@ -23,9 +23,12 @@ class ScheduleTxt(PollingLocationTxt):
     """
 
 
-    def __init__(self, base_df, early_voting_true='false', drop_box_true='false'):
-        PollingLocationTxt.__init__(self, base_df, early_voting_true='false', drop_box_true='false')
+    def __init__(self, base_df, early_voting_true=False, drop_box_true=False):
+        PollingLocationTxt.__init__(self, base_df, early_voting_true=False, drop_box_true=False)
         self.base_df = self.build_polling_location_txt()
+        #self.base_df = self.dedupe(base_df)
+        #print self.base_df
+        #print d
 
     def format_for_schedule(self):
 
@@ -60,7 +63,7 @@ class ScheduleTxt(PollingLocationTxt):
 
     def is_subject_to_change(self):
         # create conditional when/if column is present
-        return ''
+        pass
 
 
     def get_start_date(self, start_date):
@@ -155,15 +158,6 @@ class ScheduleTxt(PollingLocationTxt):
         #print sch
 
         sch.drop(['address_line', 'hours'], inplace=True, axis=1)
-        #print sch
-
-        sch.rename(columns={'start_time2': 'start_time', 'end_time2': 'end_time',
-                            'is_only_by_appointment2': 'is_only_by_appointment',
-                            'is_or_by_appointment2': 'is_or_by_appointment',
-                            'is_subject_to_change2': 'is_subject_to_change',
-                            'start_date2': 'start_date', 'end_date2': 'end_date',
-                            'hours_open_id2': 'hours_open_id', 'id2': 'id'}, inplace=True)
-
         print sch
 
         sch.to_csv(config.polling_location_output + 'schedule.txt', index=False, encoding='utf-8')  # send to txt file
@@ -173,17 +167,17 @@ class ScheduleTxt(PollingLocationTxt):
 if __name__ == '__main__':
 
 
-    early_voting_true = 'true'  # true or false
+    early_voting_true = True  # True or False
     #drop_box_true =
     state_file='minnesota_early_voting_info.csv'
 
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
     early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/minnesota/early_voting_input/" + state_file
 
-
-    colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment', 'is_or_by_appointment',
-                'appointment_phone_num', 'is_subject_to_change']
+    # copy from state specific polling_location script
+    colnames = ['office_name', 'official_title', 'ocd_division', 'division_description', 'homepage', 'phone', 'email',
+                'street', 'directions', 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date', 'end_date',
+                'must_apply_for_mail_ballot', 'notes']
 
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1

@@ -1,4 +1,4 @@
-start_time2,end_time2,is_only_by_appointment2,is_or_by_appointment2,is_subject_to_change2,start_date2,end_date2,hours_open_id2,id2
+start_time,end_time,is_only_by_appointment,is_or_by_appointment,is_subject_to_change,start_date,end_date,hours_open_id,id
 08:00:00-06:00,04:30:00-06:00,,,,2016-09-23-06:00,2016-09-23-06:00,ho0001,sch0001
 10:00:00-06:00,03:00:00-06:00,,,,2016-11-05-06:00,2016-11-05-06:00,ho0008,sch0008
 08:00:00-06:00,05:00:00-06:00,,,,2016-11-07-06:00,2016-11-07-06:00,ho0009,sch0009

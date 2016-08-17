@@ -4,6 +4,8 @@ state = 'new jersey'
 
 state_abbreviation = 'nj'
 
+utc_offset = '-05:00'
+
 polling_location_output = '/home/acg/democracyworks/hand-collection-to-vip/new_jersey/output/'
 
 locality_output = '/home/acg/democracyworks/hand-collection-to-vip/new_jersey/output/'
@@ -33,6 +35,5 @@ fips_dict = {'wyoming': '56', 'colorado': '08', 'washington': '53', 'hawaii': '1
              'kansas': '20', 'utah': '49', 'virginia': '51', 'oregon': '41', 'connecticut': '09', 'montana': '30',
              'california': '06', 'new mexico': '35', 'rhode island': '44', 'vermont': '50', 'georgia': '13',
              'pennsylvania': '42', 'florida': '12', 'alaska': '02', 'kentucky': '21', 'missouri': '29',
-             'nebraska': '31',
-             'new hampshire': '33', 'idaho': '16', 'west virginia': '54', 'south carolina': '45', 'ohio': '39',
-             'alabama': '01', 'massachusetts': '25'}
+             'nebraska': '31', 'new hampshire': '33', 'idaho': '16', 'west virginia': '54', 'south carolina': '45',
+             'ohio': '39', 'alabama': '01', 'massachusetts': '25'}
