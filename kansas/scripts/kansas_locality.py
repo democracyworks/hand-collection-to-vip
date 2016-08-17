@@ -1,5 +1,8 @@
 import pandas as pd
 import re
+import config
+from itertools import product
+import csv
 
 
 state_dict = {'wyoming': 50, 'colorado': 6, 'washington': 47, 'hawaii': 11, 'tennessee': 42, 'wisconsin': 49,
@@ -55,11 +58,11 @@ class LocalityTxt(object):
         """Extracts external identifier (ocd-division)."""
 
         if external_identifier_value:
-            return external_identifier_value.lower().replace(" ", "_")
+            return external_identifier_value.lower()
         else:
             return ''
 
-    def create_name(self, index, division_description ):
+    def create_name(self, index, division_description):
         """
         Creates a name by concatenating the 'locality' (town name along with town or county designation)
         with an 'index_str' based on the Dataframes row index.'0s' are added, if necesary, to
@@ -68,7 +71,7 @@ class LocalityTxt(object):
 
         # Get locality(town or county), and remove state abbreviation.
         if division_description:
-            locality = division_description[:-3].lower().replace(" ", "_")
+            locality = division_description[:4].lower().replace(" ", "_")
             #print locality
         else:
             locality = ''
@@ -175,7 +178,7 @@ class LocalityTxt(object):
 
         self.base_df['external_identifier_othertype'] = self.base_df.apply(
             lambda row: self.get_external_identifier_othertype(), axis=1)
-
+        #
         self.base_df['external_identifier_value'] = self.base_df.apply(
             lambda row: self.get_external_identifier_value(row['county']), axis=1)
 
@@ -183,9 +186,9 @@ class LocalityTxt(object):
             lambda row: self.create_name(row['index'], row['county']), axis=1)
 
         self.base_df['polling_location_ids'] = self.base_df.apply(
-            #lambda row: self.create_polling_location_ids(row['index']), axis=1)
-            # TODO: temporarily providing empty string
-            lambda row: '', axis=1)
+            lambda row: self.create_polling_location_ids(row['index']), axis=1)
+            # TODO: temporarily providing empty string, UPDATE: restored on
+            #lambda row: '', axis=1)
 
         self.base_df['state_id'] = self.base_df.apply(
             lambda row: self.create_state_id(), axis=1)
@@ -201,6 +204,15 @@ class LocalityTxt(object):
 
         return self.base_df
 
+#    def group_polling_location_ids(self, frame):
+        #frame = self.build_locality_txt()
+#        return pd.concat(g for _, g in frame.groupby("external_identifier_value") if len(g) > 1)
+        #return frame.groupby('external_identifier_value')
+
+    def dedupe(self, dupe):
+        """#"""
+        return dupe.drop_duplicates(subset='external_identifier_value')
+
     def write_locality_txt(self):
         """Drops base DataFrame columns then writes final dataframe to text or csv file"""
 
@@ -208,27 +220,36 @@ class LocalityTxt(object):
         #print loc
 
         # Drop base_df columns.
-        loc.drop(['index','county', 'address', 'directions', 'start_time', 'end_time', 'start_date', 'end_date'], inplace=True, axis=1)
+        loc.drop(['index', 'county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
+                'address_two', 'city', 'state', 'zip', 'times', 'start_date', 'end_date'], inplace=True, axis=1)
 
+        loc = self.dedupe(loc)
+        # print loc
+        #a = self.group_polling_location_ids(loc)
+        #print type(a)
+        #print a
         print loc
 
-        txt_file = "/Users/danielgilberg/Development/hand-collection-to-vip/hawaii/output/locality.txt"
-        csv_file = "/Users/danielgilberg/Development/hand-collection-to-vip/hawaii/output/locality.csv"
 
-        loc.to_csv(csv_file, index=False, encoding='utf-8')  # send to txt file
-        loc.to_csv(txt_file, index=False, encoding='utf-8')  # send to csv file
-
+        loc.to_csv(config.locality_output + 'locality.txt', index=False, encoding='utf-8')  # send to txt file
+        loc.to_csv(config.locality_output + 'locality.csv', index=False, encoding='utf-8')  # send to csv file
 
 if __name__ == '__main__':
-    state_file = 'hawaii_early_voting_info.csv'
+    state_file = 'kansas_early_voting_info.csv'
 
     early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
 
-    colnames = ['county', 'address', 'directions', 'start_time', 'end_time', 'start_date', 'end_date']
-    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
+    reformatted_file = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/scripts/early_voting_input/reformatted_kansas_early_voting_info.csv"
+
+
+
+
+    colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
+                'address_two', 'city', 'state', 'zip', 'times', 'start_date', 'end_date']
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1, delimiter=',')
 
     early_voting_df['index'] = early_voting_df.index +1 # offsets zero based index so it starts at 1 for ids
 
-
-    lt = LocalityTxt(early_voting_df, "Hawaii")
+    lt = LocalityTxt(early_voting_df, config.state)
     lt.write_locality_txt()
+    # lt.write_locality_txt()

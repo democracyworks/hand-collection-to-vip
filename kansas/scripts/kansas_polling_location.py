@@ -15,13 +15,18 @@ class PollingLocationTxt(object):
     # (row['index'], row['address_1'], row['address_2'],
     #  row['city'], row['state'], row['zip']), axis = 1)
 
-    def get_address_line(self, index, street, city, zip_code):
+    def get_address_line(self, index, address_one, address_two, city, zip_code):
         # required: print message for exception
         # TODO: concatenate street, city, state and zip
-        if street:
-            address_line = street
+        if address_one:
+            adr1 = str(address_one)
         else:
-            address_line =''
+            adr1 = ''
+
+        if not pd.isnull(address_two):
+            adr2 = str(address_two)
+        else:
+            adr2 = ''
 
         if city:
             city_name = city
@@ -29,28 +34,12 @@ class PollingLocationTxt(object):
             city_name =''
 
         if zip_code:
-            zip = self.convert_zip_code(index, zip_code)
+            zip = str(zip_code[0:5])
         else:
             zip = ''
 
-        final_line = address_line + " " + city_name + ", NJ " + zip
+        final_line = adr1 + " " + adr2 + " " + city_name + ", KS " + zip
         return final_line
-
-    def convert_zip_code(self, index, zip_code):
-        #supposed to standardize zip code format
-        #TODO: add a zero in front of four digit codes(CSV error) and cut 9 digit codes down to five
-        if len(zip_code) == 5:
-            text = str(zip_code)
-        elif len(zip_code) == 4:
-            text = "0" + str(zip_code)
-        elif len(zip_code) == 10:
-            text = str(zip_code)
-            text = text.split("-")[0]
-        else:
-            text = ''
-            print 'Zip code not valid for line ' + str(index) + "."
-        return text
-
 
     def get_directions(self):
         """#"""
@@ -81,34 +70,24 @@ class PollingLocationTxt(object):
         """#"""
         return dupe.drop_duplicates(subset='address_line')
 
-    def convert_to_twelve_hour(self, index, time_str):
-        #convert 24 hour time to 12 hour time
-        #TODO: convert the time and add AM/PM. I.e. 16:30 to 4:30PM
-        if not pd.isnull(time_str):
-            d = time.strptime(time_str, "%H:%M")
-            formatted_time = time.strftime("%I:%M %p", d)
-            return formatted_time
-        else:
-            return ''
+
+    def add_am_and_pm(self, index, time):
+        arr = time.split("-")
+        print time
+        str1 = arr[0] + "AM"
+        str2 = arr[1] + "PM"
+        final_str = str1 + "-" + str2
+        return final_str
 
 
-    def get_hours(self, index, start_time, end_time):
+    def get_hours(self, index, hours):
         # create conditional when/if column is present
-        if not pd.isnull(start_time) and not pd.isnull(end_time):
-            start_time = self.convert_to_time(index, start_time)
-            end_time = self.convert_to_time(index, end_time)
-            formatted_start_str = self.convert_to_twelve_hour(index, start_time)
-            formatted_end_str = self.convert_to_twelve_hour(index, end_time)
-            hours_str = formatted_start_str + "-" + formatted_end_str
-            return hours_str
-        else:
-            # print 'Hours not presented in the right format in line ' + str(index) +"."
-            return ''
+        time = hours.split(" ")[0]
+        str = self.add_am_and_pm(index, time)
+        return str
 
-    def convert_hours_to_uct(self, index, time_str, time_zone):
-        x = self.convert_to_time(index, time_str)
-        y = time_zone
-        return x
+
+
 
 
     def convert_hours(self):
@@ -175,14 +154,14 @@ class PollingLocationTxt(object):
         used to run methods that generate the values for each row of the new columns.
         """
         self.base_df['address_line'] = self.base_df.apply(
-            lambda row: self.get_address_line(row['index'], row['street'],
+            lambda row: self.get_address_line(row['index'], row['address_one'], row['address_two'],
                                               row['city'], row['zip']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
             lambda row: self.get_directions(), axis=1)
 
         self.base_df['hours'] = self.base_df.apply(
-            lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)
+            lambda row: self.get_hours(row['index'],row['times']), axis=1)
 
         self.base_df['photo_uri'] = self.base_df.apply(
             lambda row: self.get_photo_uri(), axis=1)
@@ -207,7 +186,7 @@ class PollingLocationTxt(object):
 
 
         self.base_df['id'] = self.base_df.apply(
-            lambda row: self.create_id(row['index'], row['division_description']), axis=1)
+            lambda row: self.create_id(row['index'], row['county']), axis=1)
 
         return self.base_df
 
@@ -217,16 +196,19 @@ class PollingLocationTxt(object):
         plt = self.build_polling_location_txt()
 
         # Drop base_df columns.
-        plt.drop(['index', 'office_name', 'official_title', 'ocd_division', 'division_description', 'homepage', 'phone', 'email', 'street',
-                'office_directions', 'city', 'state', 'zip', 'start_time', 'end_time',  'start_date', 'end_date',
-                'must_apply_for_mail_ballot', 'notes'], inplace=True, axis=1)
+        plt.drop(['index', 'county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
+                'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date', 'time_zone']
+                 , inplace=True, axis=1)
 
         plt = self.dedupe(plt)
         print plt
 
 
-        plt.to_csv('polling_location.txt', index=False, encoding='utf-8')  # send to txt file
-        plt.to_csv('polling_location.csv', index=False, encoding='utf-8')  # send to csv file
+        txt_file = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/output/polling_location.txt"
+        csv_file = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/output/polling_location.csv"
+
+        plt.to_csv(txt_file, index=False, encoding='utf-8')  # send to txt file
+        plt.to_csv(csv_file, index=False, encoding='utf-8')  # send to csv file
 
 
 if __name__ == '__main__':
@@ -234,17 +216,16 @@ if __name__ == '__main__':
 
     early_voting_true = True  # True or False
     #drop_box_true =
-    state_file='nj_early_voting_info.csv'
+    state_file='kansas_early_voting_info.csv'
 
     early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
 
-    colnames = ['office_name', 'official_title', 'ocd_division', 'division_description', 'homepage', 'phone', 'email', 'street',
-                'office_directions', 'city', 'state', 'zip', 'start_time', 'end_time',  'start_date', 'end_date',
-                'must_apply_for_mail_ballot', 'notes']
+    colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
+                'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date', 'time_zone']
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
     early_voting_df['index'] = early_voting_df.index
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
+
     # print early_voting_df["address_1"] + early_voting_df["address_2"]
     pl.write_polling_location_txt()
     # print early_voting_df["index"]
-
