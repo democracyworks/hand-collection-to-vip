@@ -3,12 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b9515895-1d90-4fb4-8d64-9b170172ddcf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kansas/output/locality.csv" afterPath="$PROJECT_DIR$/kansas/output/locality.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kansas/output/locality.txt" afterPath="$PROJECT_DIR$/kansas/output/locality.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kansas/output/polling_Location.csv" afterPath="$PROJECT_DIR$/kansas/output/polling_Location.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kansas/output/polling_location.txt" afterPath="$PROJECT_DIR$/kansas/output/polling_location.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kansas/scripts/config.py" afterPath="$PROJECT_DIR$/kansas/scripts/config.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kansas/scripts/kansas_locality.py" afterPath="$PROJECT_DIR$/kansas/scripts/kansas_locality.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kansas/scripts/kansas_polling_location.py" afterPath="$PROJECT_DIR$/kansas/scripts/kansas_polling_location.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polling_location/polling_location_input/kansas_early_voting_info.csv" afterPath="$PROJECT_DIR$/polling_location/polling_location_input/kansas_early_voting_info.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polling_location/polling_location_input/nj_early_voting_info.csv" afterPath="$PROJECT_DIR$/polling_location/polling_location_input/nj_early_voting_info.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kansas/scripts/kansas_schedule.py" afterPath="$PROJECT_DIR$/kansas/scripts/kansas_schedule.py" />
     </list>
     <ignored path="hand-collection-to-vip.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,35 +29,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="kansas_polling_location.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kansas/scripts/kansas_polling_location.py">
+      <file leaf-file-name="kansas_locality.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kansas/scripts/kansas_locality.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="210" selection-end-column="79" />
+            <state relative-caret-position="-2097">
+              <caret line="98" column="35" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#315#334#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="polling_location.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kansas/output/polling_location.txt">
+      <file leaf-file-name="kansas_polling_location.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kansas/scripts/kansas_polling_location.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1575">
-              <caret line="105" column="81" selection-start-line="0" selection-start-column="0" selection-end-line="105" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kansas_schedule.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kansas/scripts/kansas_schedule.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="168" column="76" selection-start-line="168" selection-start-column="76" selection-end-line="168" selection-end-column="76" />
+            <state relative-caret-position="926">
+              <caret line="254" column="27" selection-start-line="254" selection-start-column="27" selection-end-line="254" selection-end-column="27" />
               <folding>
-                <element signature="e#140#159#0" expanded="true" />
+                <element signature="e#165#184#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,9 +56,33 @@
       <file leaf-file-name="polling_Location.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kansas/output/polling_Location.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="-1395">
               <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="minnesota_locality.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/minnesota/scripts/minnesota_locality.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="266" column="39" selection-start-line="266" selection-start-column="39" selection-end-line="266" selection-end-column="39" />
+              <folding>
+                <element signature="e#297#316#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kansas_schedule.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kansas/scripts/kansas_schedule.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="197" column="54" selection-start-line="197" selection-start-column="54" selection-end-line="197" selection-end-column="54" />
+              <folding>
+                <element signature="e#140#159#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,15 +134,15 @@
         <option value="$PROJECT_DIR$/polling_location/nj_polling_location.py" />
         <option value="$PROJECT_DIR$/polling_location/test" />
         <option value="$PROJECT_DIR$/new_jersey/scripts/nj_locality.py" />
-        <option value="$PROJECT_DIR$/kansas/scripts/kansas_locality.py" />
-        <option value="$PROJECT_DIR$/kansas/output/polling_Location.csv" />
         <option value="$PROJECT_DIR$/new_hampshire/scripts/new_hampshire_polling_location.py" />
         <option value="$PROJECT_DIR$/new_hampshire/output/polling_location.txt" />
         <option value="$PROJECT_DIR$/kansas/scripts/kansas_source.py" />
         <option value="$PROJECT_DIR$/kansas/scripts/config.py" />
         <option value="$PROJECT_DIR$/kansas/output/source.txt" />
         <option value="$PROJECT_DIR$/kansas/scripts/kansas_polling_location.py" />
+        <option value="$PROJECT_DIR$/kansas/output/polling_Location.csv" />
         <option value="$PROJECT_DIR$/kansas/scripts/kansas_schedule.py" />
+        <option value="$PROJECT_DIR$/kansas/scripts/kansas_locality.py" />
       </list>
     </option>
   </component>
@@ -273,7 +288,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/kansas/scripts/kansas_schedule.py" />
   </component>
-  <component name="RunManager" selected="Python.KS Schedule">
+  <component name="RunManager" selected="Python.KS Locality">
     <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
       <method />
     </configuration>
@@ -785,16 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/minnesota/scripts/minnesota_locality.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1268">
-          <caret line="266" column="39" selection-start-line="266" selection-start-column="39" selection-end-line="266" selection-end-column="39" />
-          <folding>
-            <element signature="e#297#316#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hawaii/output/locality.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -824,16 +829,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kansas/scripts/kansas_locality.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="243" column="0" selection-start-line="243" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -867,22 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="100" selection-start-line="19" selection-start-column="100" selection-end-line="19" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kansas/output/locality.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kansas/output/polling_Location.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -939,10 +918,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kansas/output/locality.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kansas/output/polling_Location.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1395">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kansas/scripts/kansas_schedule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="168" column="76" selection-start-line="168" selection-start-column="76" selection-end-line="168" selection-end-column="76" />
+        <state relative-caret-position="326">
+          <caret line="197" column="54" selection-start-line="197" selection-start-column="54" selection-end-line="197" selection-end-column="54" />
           <folding>
             <element signature="e#140#159#0" expanded="true" />
           </folding>
@@ -951,10 +946,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kansas/scripts/kansas_polling_location.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="210" selection-end-column="79" />
+        <state relative-caret-position="926">
+          <caret line="254" column="27" selection-start-line="254" selection-start-column="27" selection-end-line="254" selection-end-column="27" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#165#184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kansas/scripts/kansas_locality.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2097">
+          <caret line="98" column="35" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
+          <folding>
+            <element signature="e#315#334#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minnesota/scripts/minnesota_locality.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="266" column="39" selection-start-line="266" selection-start-column="39" selection-end-line="266" selection-end-column="39" />
+          <folding>
+            <element signature="e#297#316#0" expanded="true" />
           </folding>
         </state>
       </provider>

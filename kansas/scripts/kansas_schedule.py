@@ -195,4 +195,4 @@ if __name__ == '__main__':
     #print early_voting_df
 
     # ScheduleTxt(early_voting_df).write_schedule_txt()
-    #ScheduleTxt(early_voting_df).format_for_schedule(
+    ScheduleTxt(early_voting_df).format_for_schedule()
