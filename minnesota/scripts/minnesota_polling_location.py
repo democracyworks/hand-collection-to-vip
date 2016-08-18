@@ -111,10 +111,6 @@ class PollingLocationTxt(object):
             # print 'Hours not presented in the right format in line ' + str(index) +"."
             return ''
 
-
-    def convert_hours(self):
-        pass
-
     def get_photo_uri(self):
         # create conditional when/if column is present
         return ''
@@ -129,18 +125,6 @@ class PollingLocationTxt(object):
         address_line = int(hashlib.sha1(address_line).hexdigest(), 16) % (10 ** 8)
 
         return 'ho' + str(address_line)
-
-#        if index <= 9:
-#            return 'ho000' + str(index)
-
-#        elif index in range(10,100):
-#            return 'ho00' + str(index)
-
-        #elif index >=100:
-#        elif index in range(100, 1000):
-#            return 'ho0' + str(index)
-#        else:
-#            return 'ho' + str(index)
 
     def is_drop_box(self):
         """#"""
@@ -166,15 +150,6 @@ class PollingLocationTxt(object):
 
     def create_id(self, index):
         """Create id"""
-        # concatenate county name, or part of it (first 3/4 letters) with index
-        # add leading zeros to maintain consistent id length
-
-        #if county:
-        #    county_str_part = county.replace(' ', '').lower()[:4]
-
-        #else:
-        #    county_str_part = ''
-        #    print 'Missing county value at ' + index + '.'
 
         if index <= 9:
             index_str = '000' + str(index)
@@ -253,9 +228,6 @@ class PollingLocationTxt(object):
         #print ex_doc
 
         ex_doc.to_csv(config.polling_location_output + 'intermediate_pl_for_loc.csv', index=False, encoding='utf-8')
-
-
-
 
     def format(self):
         plt = self.build_polling_location_txt()

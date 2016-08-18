@@ -45,11 +45,12 @@ class LocalityTxt(object):
         row index. '0s' are added, if necesary, to maintain a consistent id length. As currently designed the method
         works up to index 9,999"""
 
-        # TODO: use fips code
-        for key, value in config.fips_dict.iteritems():
-            if key == config.state.lower():
-                state_num = value
-                return 'ea' + str(state_num)
+        ## TODO: use fips code
+        #for key, value in config.fips_dict.iteritems():
+        #    if key == config.state.lower():
+        #        state_num = value
+        #       return 'ea' + str(state_num)
+        return ''
 
     def get_external_identifier_type(self):
         """#"""
@@ -228,6 +229,7 @@ class LocalityTxt(object):
 
         loc['election_administration_id'] = loc.apply(
             lambda row: self.create_election_administration_id(row['grouped_index']), axis=1)
+            #lambda row: self.create_election_administration_id(''), axis = 1)
 
         loc['id'] = loc.apply(
             lambda row: self.create_id(row['grouped_index']), axis=1)

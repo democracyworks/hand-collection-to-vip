@@ -49,13 +49,14 @@ class StateTxt(object):
 
     def election_administration_id(self):
         """#"""
-        st = config.state
+        #st = config.state
 
-        for key, value in config.fips_dict.iteritems():
-            if key == st.lower():
-                state_num = value
-                print state_num
-                return 'ea' + str(state_num)
+        #for key, value in config.fips_dict.iteritems():
+        #    if key == st.lower():
+        #        state_num = value
+        #       print state_num
+        #       return 'ea' + str(state_num)
+        return ''
 
     def external_identifier_type(self):
         """#"""
@@ -87,7 +88,7 @@ class StateTxt(object):
         for key, value in config.fips_dict.iteritems():
             if key == state.lower():
                 state_num = value
-                return 'ea' + str(state_num)
+                return 'st' + str(state_num)
 
     def id(self):
         pass
@@ -98,7 +99,7 @@ class StateTxt(object):
         with open(config.polling_location_output + 'state.txt', 'ab') as f:
             fieldnames = ["election_administration_id", 'external_identifier_type',
                           'external_identifier_othertype', 'external_identifier_value',
-                          'name', 'polling_location_ids', 'state_id']
+                          'name', 'polling_location_ids', 'id']
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerow({'election_administration_id': self.election_administration_id(),
@@ -107,7 +108,7 @@ class StateTxt(object):
                              'external_identifier_value': self.get_external_identifier_value(),
                              'name': self.get_name(),
                              'polling_location_ids': self.polling_location_ids(),
-                             'state_id': self.create_state_id()
+                             'id': self.create_state_id()
                              })
 
 if __name__ == '__main__':
