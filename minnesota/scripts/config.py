@@ -3,11 +3,14 @@
 
 state = 'minnesota'
 
+state_upper = 'Minnesota'
+
 state_abbreviation = 'MN'
 
 utc_offset = '-06:00'
 
 early_voting = 'true'
+
 
 
 polling_location_output = '/home/acg/democracyworks/hand-collection-to-vip/minnesota/output/'

@@ -44,23 +44,13 @@ class LocalityTxt(object):
         """Creates election_administration_ids by concatenating a prefix with an 'index_str' based on the Dataframe's
         row index. '0s' are added, if necesary, to maintain a consistent id length. As currently designed the method
         works up to index 9,999"""
-        prefix = 'ea'
 
-        if index <= 9:
-            index_str = '000' + str(index)
-            return prefix + index_str
-
-        elif index in range(10,100):
-            index_str = '00' + str(index)
-            return prefix + index_str
-
-        elif index in range(100, 1000):
-            index_str = '0' + str(index)
-            return prefix + index_str
-
-        else:
-            index_str = str(index)
-            return prefix + index_str
+        ## TODO: use fips code
+        #for key, value in config.fips_dict.iteritems():
+        #    if key == config.state.lower():
+        #        state_num = value
+        #       return 'ea' + str(state_num)
+        return ''
 
     def get_external_identifier_type(self):
         """#"""
@@ -239,6 +229,7 @@ class LocalityTxt(object):
 
         loc['election_administration_id'] = loc.apply(
             lambda row: self.create_election_administration_id(row['grouped_index']), axis=1)
+            #lambda row: self.create_election_administration_id(''), axis = 1)
 
         loc['id'] = loc.apply(
             lambda row: self.create_id(row['grouped_index']), axis=1)

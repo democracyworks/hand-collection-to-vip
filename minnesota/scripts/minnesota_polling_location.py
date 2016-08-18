@@ -18,6 +18,7 @@ id
 import pandas as pd
 import time
 import config
+import hashlib
 from time import strftime
 
 class PollingLocationTxt(object):
@@ -29,6 +30,7 @@ class PollingLocationTxt(object):
         self.base_df = base_df
         self.drop_box_true = drop_box_true
         self.early_voting_true = early_voting_true
+
 
     def get_address_line(self, index, address_1, address_2, city, zip_code):
         # required: print message for exception
@@ -109,28 +111,20 @@ class PollingLocationTxt(object):
             # print 'Hours not presented in the right format in line ' + str(index) +"."
             return ''
 
-
-    def convert_hours(self):
-        pass
-
     def get_photo_uri(self):
         # create conditional when/if column is present
         return ''
 
-    def create_hours_open_id(self, index):
+    def create_hours_open_id(self, index, address_1, address_2, city, zip_code):
         """#"""
         # TODO: this is the correct id/index code, correct everywhere
-        if index <= 9:
-            return 'ho000' + str(index)
 
-        elif index in range(10,100):
-            return 'ho00' + str(index)
+        address_line = self.get_address_line(index, address_1, address_2, city, zip_code)
+        #print address_line
 
-        #elif index >=100:
-        elif index in range(100, 1000):
-            return 'ho0' + str(index)
-        else:
-            return 'ho' + str(index)
+        address_line = int(hashlib.sha1(address_line).hexdigest(), 16) % (10 ** 8)
+
+        return 'ho' + str(address_line)
 
     def is_drop_box(self):
         """#"""
@@ -156,15 +150,6 @@ class PollingLocationTxt(object):
 
     def create_id(self, index):
         """Create id"""
-        # concatenate county name, or part of it (first 3/4 letters) with index
-        # add leading zeros to maintain consistent id length
-
-        #if county:
-        #    county_str_part = county.replace(' ', '').lower()[:4]
-
-        #else:
-        #    county_str_part = ''
-        #    print 'Missing county value at ' + index + '.'
 
         if index <= 9:
             index_str = '000' + str(index)
@@ -198,7 +183,8 @@ class PollingLocationTxt(object):
             lambda row: self.get_photo_uri(), axis=1)
 
         self.base_df['hours_open_id'] = self.base_df.apply(
-            lambda row: self.create_hours_open_id(row['index']), axis=1)
+            lambda row: self.create_hours_open_id(row['index'], row['address_1'], row['address_2'],
+                                              row['city'], row['zip']), axis=1)
 
         self.base_df['is_drop_box'] = self.base_df.apply(
             lambda row: self.is_drop_box(), axis=1)
@@ -224,29 +210,24 @@ class PollingLocationTxt(object):
         """#"""
         return dupe.drop_duplicates(subset=['address_line', 'hours'])
 
-#    def format_for_schedule(self):
 
-#        sch_base_df = self.build_polling_location_txt()
-
-        # Drop base_df columns.
-#        sch_base_df.drop(['index', 'ocd_division', 'county', 'location_name', 'address_1', 'address_2',
-#                          'city', 'state', 'zip', 'id'], inplace=True, axis=1)
-
-#        print sch_base_df
-
-#        return self.dedupe(sch_base_df)
-
-    def export_for_locality(self):
+    def export_for_schedule(self):
         ex_doc = self.build_polling_location_txt()
-        #print ex_doc
+        # print ex_doc
 
         ex_doc = self.dedupe(ex_doc)
         print ex_doc
 
+        ex_doc.to_csv(config.polling_location_output + 'intermediate_pl_for_schedule.csv', index=False, encoding='utf-8')
+
+    def export_for_locality(self):
+        ex_doc = self.build_polling_location_txt()
+        print ex_doc
+
+        ex_doc = self.dedupe(ex_doc)
+        #print ex_doc
+
         ex_doc.to_csv(config.polling_location_output + 'intermediate_pl_for_loc.csv', index=False, encoding='utf-8')
-
-
-
 
     def format(self):
         plt = self.build_polling_location_txt()
@@ -298,3 +279,4 @@ if __name__ == '__main__':
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
     #pl.write_polling_location_txt()
     pl.export_for_locality()
+    #pl.export_for_schedule()

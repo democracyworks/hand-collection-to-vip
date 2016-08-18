@@ -15,6 +15,7 @@ import pandas as pd
 import config
 from minnesota_polling_location import PollingLocationTxt
 import datetime
+import re
 
 class ScheduleTxt(PollingLocationTxt):
     """
@@ -26,6 +27,7 @@ class ScheduleTxt(PollingLocationTxt):
     def __init__(self, base_df, early_voting_true='false', drop_box_true='false'):
         PollingLocationTxt.__init__(self, base_df, early_voting_true='false', drop_box_true='false')
         self.base_df = self.build_polling_location_txt()
+        print self.base_df
 
     def format_for_schedule(self):
 
@@ -41,14 +43,23 @@ class ScheduleTxt(PollingLocationTxt):
 
 
     def get_sch_start_time(self, start_time):
-        #return self.convert_to_uct()
-        start_time = tuple(start_time.split('-'))[0].replace(' AM', ':00')
+        """Replace AM or PM with ':00' and concatenate with utc offset"""
+
+        start_time = tuple(start_time.split('-'))[0]
+
+        start_time = str(datetime.datetime.strptime(start_time, '%I:%M %p'))[11:]
+        print start_time
+
         return start_time + config.utc_offset
 
 
     def get_end_time(self, end_time):
-        """#"""
-        end_time = tuple(end_time.split('-'))[1].replace(' PM', ':00')
+        """Replace AM or PM with ':00' and concatenate with utc offset."""
+
+        end_time = tuple(end_time.split('-'))[1]
+
+        end_time = str(datetime.datetime.strptime(end_time, '%I:%M %p'))[11:]
+
         return end_time + config.utc_offset
 
     def is_only_by_appointment(self):
