@@ -1,22 +1,22 @@
-election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
-ea0001,,,ocd-division/country:us/state:nj/county:atlantic,atlantic_county0001,,st30,,,loc0001
-ea0008,,,ocd-division/country:us/state:nj/county:bergen,bergen_county0008,,st30,,,loc0008
-ea0015,,,ocd-division/country:us/state:nj/county:burlington,burlington_county0015,,st30,,,loc0015
-ea0022,,,ocd-division/country:us/state:nj/county:camden,camden_county0022,,st30,,,loc0022
-ea0036,,,ocd-division/country:us/state:nj/county:cape_may,cape_may_county0036,,st30,,,loc0036
-ea0043,,,ocd-division/country:us/state:nj/county:cumberland,cumberland_county0043,,st30,,,loc0043
-ea0050,,,ocd-division/country:us/state:nj/county:essex,essex_county0050,,st30,,,loc0050
-ea0057,,,ocd-division/country:us/state:nj/county:gloucester,gloucester_county0057,,st30,,,loc0057
-ea0075,,,ocd-division/country:us/state:nj/county:hudson,hudson_county0075,,st30,,,loc0075
-ea0082,,,ocd-division/country:us/state:nj/county:hunterdon,hunterdon_county0082,,st30,,,loc0082
-ea0100,,,ocd-division/country:us/state:nj/county:mercer,mercer_county0100,,st30,,,loc0100
-ea0108,,,ocd-division/country:us/state:nj/county:middlesex,middlesex_county0108,,st30,,,loc0108
-ea0128,,,ocd-division/country:us/state:nj/county:monmouth,monmouth_county0128,,st30,,,loc0128
-ea0135,,,ocd-division/country:us/state:nj/county:morris,morris_county0135,,st30,,,loc0135
-ea0142,,,ocd-division/country:us/state:nj/county:ocean,ocean_county0142,,st30,,,loc0142
-ea0151,,,ocd-division/country:us/state:nj/county:passaic,passaic_county0151,,st30,,,loc0151
-ea0159,,,ocd-division/country:us/state:nj/county:salem,salem_county0159,,st30,,,loc0159
-ea0166,,,ocd-division/country:us/state:nj/county:somerset,somerset_county0166,,st30,,,loc0166
-ea0173,,,ocd-division/country:us/state:nj/county:sussex,sussex_county0173,,st30,,,loc0173
-ea0180,,,ocd-division/country:us/state:nj/county:union,union_county0180,,st30,,,loc0180
-ea0187,,,ocd-division/country:us/state:nj/county:warren,warren_county0187,,st30,,,loc0187
+address_line,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id,election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type
+"Historic Court House Complex, 5903 Main Street Mays Landing, NJ 08330",08:30 AM-04:30 PM,,ho0001,False,True,,,,loc0001,ea0001,ocd-id,,ocd-division/country:us/state:nj/county:atlantic,atlantic_county0001,poll0001,st34,,
+"One Bergen County Plaza, Room 310 Hackensack, NJ 07601",08:30 AM-04:00 PM,,ho0008,False,True,,,,loc0003,ea0003,ocd-id,,ocd-division/country:us/state:nj/county:bergen,bergen_county0003,poll0003,st34,,
+"County Office Building, 49 Rancocas Road Room G-22 Mount Holly, NJ 08060",08:00 AM-04:00 PM,,ho0015,False,True,,,,loc0005,ea0005,ocd-id,,ocd-division/country:us/state:nj/county:burlington,burlington_county0005,poll0005,st34,,
+"Courthouse, Room 102, 520 Market Street Camden, NJ 08101",08:30 AM-04:00 PM,,ho0022,False,True,,,,loc0007,ea0007,ocd-id,,ocd-division/country:us/state:nj/county:camden,camden_county0007,poll0007,st34,,
+"10 W. Mechanic Street Cape May Courthouse, NJ 08210",08:30 AM-04:30 PM,,ho0036,False,True,,,,loc0011,ea0011,ocd-id,,ocd-division/country:us/state:nj/county:cape_may,cape_may_county0011,poll0011,st34,,
+"555 Shiloh Pike Bridgeton, NJ 08302",08:30 AM-04:00 PM,,ho0043,False,True,,,,loc0013,ea0013,ocd-id,,ocd-division/country:us/state:nj/county:cumberland,cumberland_county0013,poll0013,st34,,
+"Hall of Records, 465 Dr. Martin Luther King, Jr. Boulevard, Fourth Floor, Room 411 Newark, NJ 07101",09:00 AM-04:00 PM,,ho0050,False,True,,,,loc0015,ea0015,ocd-id,,ocd-division/country:us/state:nj/county:essex,essex_county0015,poll0015,st34,,
+"550 Grove Road West Deptford, NJ 08066",08:30 AM-04:30 PM,,ho0057,False,True,,,,loc0017,ea0017,ocd-id,,ocd-division/country:us/state:nj/county:gloucester,gloucester_county0017,poll0017,st34,,
+"Hudson County Plaza, 257 Cornelison Avenue, 4th Floor Jersey City, NJ 07302",08:30 AM-04:30 PM,,ho0075,False,True,,,,loc0022,ea0022,ocd-id,,ocd-division/country:us/state:nj/county:hudson,hudson_county0022,poll0022,st34,,
+"71 Main Street, Hall of Records Flemington, NJ 08822",09:00 AM-01:00 PM,,ho0082,False,True,,,,loc0024,ea0024,ocd-id,,ocd-division/country:us/state:nj/county:hunterdon,hunterdon_county0024,poll0024,st34,,
+"640 S. Broad Street Trenton, NJ 08650",08:30 AM-04:30 PM,,ho0100,False,True,,,,loc0030,ea0030,ocd-id,,ocd-division/country:us/state:nj/county:mercer,mercer_county0030,poll0030,st34,,
+"11 Kennedy Blvd. East Brunswick, NJ 08816",08:30 AM-04:15 PM,,ho0108,False,True,,,,loc0033,ea0033,ocd-id,,,middlesex_county0033,poll0033,st34,,
+"300 Halls Mill Road Freehold, NJ 07728",08:30 AM-04:30 PM,,ho0128,False,True,,,,loc0036,ea0036,ocd-id,,ocd-division/country:us/state:nj/county:monmouth,monmouth_county0036,poll0036,st34,,
+"10 Court Street Morristown, NJ 07963",08:00 AM-04:30 PM,,ho0135,False,True,,,,loc0038,ea0038,ocd-id,,ocd-division/country:us/state:nj/county:morris,morris_county0038,poll0038,st34,,
+"Courthouse, 118 Washington Street Toms River, NJ 08754",08:00 AM-04:30 PM,,ho0147,False,True,,,,loc0044,ea0044,ocd-id,,ocd-division/country:us/state:nj/county:ocean,ocean_county0044,poll0044,st34,,
+"401 Grand Street, Room 123 Paterson, NJ 07505",08:30 AM-04:30 PM,,ho0156,False,True,,,,loc0047,ea0047,ocd-id,,ocd-division/country:us/state:nj/county:passaic,passaic_county0047,poll0047,st34,,
+"110 Fifth Street, Suite 200 Salem, NJ 08079",08:30 AM-04:30 PM,,ho0164,False,True,,,,loc0050,ea0050,ocd-id,,ocd-division/country:us/state:nj/county:salem,salem_county0050,poll0050,st34,,
+"Administration Building, 20 Grove Street Somerville, NJ 08876",08:15 AM-04:00 PM,,ho0171,False,True,,,,loc0052,ea0052,ocd-id,,ocd-division/country:us/state:nj/county:somerset,somerset_county0052,poll0052,st34,,
+"83 Spring Street, Suite 305 Newton, NJ 07860",08:00 AM-04:00 PM,,ho0178,False,True,,,,loc0054,ea0054,ocd-id,,ocd-division/country:us/state:nj/county:sussex,sussex_county0054,poll0054,st34,,
+"2 Broad Street, Room 113 Elizabeth, NJ 07201",08:30 AM-04:00 PM,,ho0185,False,True,,,,loc0056,ea0056,ocd-id,,ocd-division/country:us/state:nj/county:union,union_county0056,poll0056,st34,,
+"Courthouse, 413 Second Street Belvidere, NJ 07823",08:00 AM-04:30 PM,,ho0192,False,True,,,,loc0058,ea0058,ocd-id,,ocd-division/country:us/state:nj/county:warren,warren_county0058,poll0058,st34,,

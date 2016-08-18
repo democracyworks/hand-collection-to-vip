@@ -20,7 +20,9 @@ class SourceTxt(object):
     def get_vip_id(self):
         #the vip_id is the FIPS code for the state, which is available in the dictionary below
         if self.state in config.fips_dict:
-            return config.fips_dict[self.state]
+            p = config.fips_dict[self.state]
+            print p
+            return p
         else:
             return ''
 
@@ -44,7 +46,7 @@ class SourceTxt(object):
         return "Democracy Works"
 
     def get_id(self):
-        return ''
+        return 'source01'
 
 
     def write_source_txt(self):

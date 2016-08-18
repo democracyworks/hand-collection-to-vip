@@ -5,11 +5,16 @@ state = 'minnesota'
 
 state_abbreviation = 'MN'
 
+utc_offset = '-06:00'
+
+early_voting = 'true'
+
+
 polling_location_output = '/home/acg/democracyworks/hand-collection-to-vip/minnesota/output/'
 
 locality_output = '/home/acg/democracyworks/hand-collection-to-vip/minnesota/output/'
 
-source_output = "/home/acg/democracyworks/hand-collection-to-vip/minnesota/output/source.txt"
+source_output = "/home/acg/democracyworks/hand-collection-to-vip/minnesota/output/source2.txt"
 
 #fips_dict = {'Mississippi': '28', 'Oklahoma': '40', 'Delaware': '10', 'Minnesota': '27',
 #             'Illinois': '17', 'Arkansas': '05', 'New Mexico': '35',

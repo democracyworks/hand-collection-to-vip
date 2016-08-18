@@ -1,87 +1,87 @@
-election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,polling_location_ids,state_id,type,other_type,id
-ea0001,,,ocd-division/country:us/state:mn/county:aitkin,poll0001,st23,,,loc0001
-ea0010,,,ocd-division/country:us/state:mn/county:anoka,poll0010,st23,,,loc0010
-ea0225,,,ocd-division/country:us/state:mn/county:becker,poll0225,st23,,,loc0225
-ea0234,,,ocd-division/country:us/state:mn/county:beltrami,poll0234,st23,,,loc0234
-ea0243,,,ocd-division/country:us/state:mn/county:benton,poll0243,st23,,,loc0243
-ea0252,,,ocd-division/country:us/state:mn/county:big_stone,poll0252,st23,,,loc0252
-ea0261,,,ocd-division/country:us/state:mn/county:blue_earth,poll0261,st23,,,loc0261
-ea0270,,,ocd-division/country:us/state:mn/county:brown,poll0270,st23,,,loc0270
-ea0279,,,ocd-division/country:us/state:mn/county:carlton,poll0279,st23,,,loc0279
-ea0288,,,ocd-division/country:us/state:mn/county:carver,poll0288,st23,,,loc0288
-ea0297,,,ocd-division/country:us/state:mn/county:cass,poll0297,st23,,,loc0297
-ea0373,,,ocd-division/country:us/state:mn/county:chippewa,poll0373,st23,,,loc0373
-ea0382,,,ocd-division/country:us/state:mn/county:chisago,poll0382,st23,,,loc0382
-ea0391,,,ocd-division/country:us/state:mn/county:clay,poll0391,st23,,,loc0391
-ea0400,,,ocd-division/country:us/state:mn/county:clearwater,poll0400,st23,,,loc0400
-ea0409,,,ocd-division/country:us/state:mn/county:cook,poll0409,st23,,,loc0409
-ea0418,,,ocd-division/country:us/state:mn/county:cottonwood,poll0418,st23,,,loc0418
-ea0427,,,ocd-division/country:us/state:mn/county:crow_wing,poll0427,st23,,,loc0427
-ea0436,,,ocd-division/country:us/state:mn/county:dakota,poll0436,st23,,,loc0436
-ea0586,,,ocd-division/country:us/state:mn/county:dodge,poll0586,st23,,,loc0586
-ea0595,,,ocd-division/country:us/state:mn/county:douglas,poll0595,st23,,,loc0595
-ea0604,,,ocd-division/country:us/state:mn/county:faribault,poll0604,st23,,,loc0604
-ea0613,,,ocd-division/country:us/state:mn/county:fillmore,poll0613,st23,,,loc0613
-ea0622,,,ocd-division/country:us/state:mn/county:freeborn,poll0622,st23,,,loc0622
-ea0631,,,ocd-division/country:us/state:mn/county:goodhue,poll0631,st23,,,loc0631
-ea0685,,,ocd-division/country:us/state:mn/county:grant,poll0685,st23,,,loc0685
-ea0694,,,ocd-division/country:us/state:mn/county:hennepin,poll0694,st23,,,loc0694
-ea01176,,,ocd-division/country:us/state:mn/county:houston,poll01176,st23,,,loc01176
-ea01185,,,ocd-division/country:us/state:mn/county:hubbard,poll01185,st23,,,loc01185
-ea01194,,,ocd-division/country:us/state:mn/county:isanti,poll01194,st23,,,loc01194
-ea01203,,,ocd-division/country:us/state:mn/county:itasca,poll01203,st23,,,loc01203
-ea01212,,,ocd-division/country:us/state:mn/county:jackson,poll01212,st23,,,loc01212
-ea01221,,,ocd-division/country:us/state:mn/county:kanabec,poll01221,st23,,,loc01221
-ea01230,,,ocd-division/country:us/state:mn/county:kandiyohi,poll01230,st23,,,loc01230
-ea01239,,,ocd-division/country:us/state:mn/county:kittson,poll01239,st23,,,loc01239
-ea01248,,,ocd-division/country:us/state:mn/county:koochiching,poll01248,st23,,,loc01248
-ea01257,,,ocd-division/country:us/state:mn/county:lac_qui_parle,poll01257,st23,,,loc01257
-ea01266,,,ocd-division/country:us/state:mn/county:lake,poll01266,st23,,,loc01266
-ea01275,,,ocd-division/country:us/state:mn/county:lake_of_the_woods,poll01275,st23,,,loc01275
-ea01284,,,ocd-division/country:us/state:mn/county:le_sueur,poll01284,st23,,,loc01284
-ea01298,,,ocd-division/country:us/state:mn/county:lyon,poll01298,st23,,,loc01298
-ea01307,,,ocd-division/country:us/state:mn/county:mahnomen,poll01307,st23,,,loc01307
-ea01316,,,ocd-division/country:us/state:mn/county:marshall,poll01316,st23,,,loc01316
-ea01325,,,ocd-division/country:us/state:mn/county:martin,poll01325,st23,,,loc01325
-ea01334,,,ocd-division/country:us/state:mn/county:mcleod,poll01334,st23,,,loc01334
-ea01352,,,ocd-division/country:us/state:mn/county:meeker,poll01352,st23,,,loc01352
-ea01361,,,ocd-division/country:us/state:mn/county:mille_lacs,poll01361,st23,,,loc01361
-ea01370,,,ocd-division/country:us/state:mn/county:morrison,poll01370,st23,,,loc01370
-ea01379,,,ocd-division/country:us/state:mn/county:mower,poll01379,st23,,,loc01379
-ea01388,,,ocd-division/country:us/state:mn/county:murray,poll01388,st23,,,loc01388
-ea01397,,,ocd-division/country:us/state:mn/county:nicollet,poll01397,st23,,,loc01397
-ea01406,,,ocd-division/country:us/state:mn/county:nobles,poll01406,st23,,,loc01406
-ea01415,,,ocd-division/country:us/state:mn/county:norman,poll01415,st23,,,loc01415
-ea01424,,,ocd-division/country:us/state:mn/county:olmsted,poll01424,st23,,,loc01424
-ea01433,,,ocd-division/country:us/state:mn/county:otter_tail,poll01433,st23,,,loc01433
-ea01442,,,ocd-division/country:us/state:mn/county:pennington,poll01442,st23,,,loc01442
-ea01451,,,ocd-division/country:us/state:mn/county:pine,poll01451,st23,,,loc01451
-ea01460,,,ocd-division/country:us/state:mn/county:pipestone,poll01460,st23,,,loc01460
-ea01469,,,ocd-division/country:us/state:mn/county:polk,poll01469,st23,,,loc01469
-ea01478,,,ocd-division/country:us/state:mn/county:pope,poll01478,st23,,,loc01478
-ea01487,,,ocd-division/country:us/state:mn/county:ramsey,poll01487,st23,,,loc01487
-ea01613,,,ocd-division/country:us/state:mn/county:red_lake,poll01613,st23,,,loc01613
-ea01622,,,ocd-division/country:us/state:mn/county:redwood,poll01622,st23,,,loc01622
-ea01631,,,ocd-division/country:us/state:mn/county:renville,poll01631,st23,,,loc01631
-ea01640,,,ocd-division/country:us/state:mn/county:rice,poll01640,st23,,,loc01640
-ea01649,,,ocd-division/country:us/state:mn/county:rock,poll01649,st23,,,loc01649
-ea01658,,,ocd-division/country:us/state:mn/county:roseau,poll01658,st23,,,loc01658
-ea01667,,,ocd-division/country:us/state:mn/county:st_louis,poll01667,st23,,,loc01667
-ea01835,,,ocd-division/country:us/state:mn/county:scott,poll01835,st23,,,loc01835
-ea01844,,,ocd-division/country:us/state:mn/county:sherburne,poll01844,st23,,,loc01844
-ea01853,,,ocd-division/country:us/state:mn/county:sibley,poll01853,st23,,,loc01853
-ea01862,,,ocd-division/country:us/state:mn/county:stearns,poll01862,st23,,,loc01862
-ea01880,,,ocd-division/country:us/state:mn/county:steele,poll01880,st23,,,loc01880
-ea01889,,,ocd-division/country:us/state:mn/county:stevens,poll01889,st23,,,loc01889
-ea01898,,,ocd-division/country:us/state:mn/county:swift,poll01898,st23,,,loc01898
-ea01907,,,ocd-division/country:us/state:mn/county:todd,poll01907,st23,,,loc01907
-ea01916,,,ocd-division/country:us/state:mn/county:traverse,poll01916,st23,,,loc01916
-ea01925,,,ocd-division/country:us/state:mn/county:wabasha,poll01925,st23,,,loc01925
-ea01943,,,ocd-division/country:us/state:mn/county:wadena,poll01943,st23,,,loc01943
-ea01952,,,ocd-division/country:us/state:mn/county:waseca,poll01952,st23,,,loc01952
-ea01961,,,ocd-division/country:us/state:mn/county:washington,poll01961,st23,,,loc01961
-ea01997,,,ocd-division/country:us/state:mn/county:watonwan,poll01997,st23,,,loc01997
-ea02014,,,ocd-division/country:us/state:mn/county:wilkin,poll02014,st23,,,loc02014
-ea02023,,,ocd-division/country:us/state:mn/county:winona,poll02023,st23,,,loc02023
-ea02032,,,ocd-division/country:us/state:mn/county:wright,poll02032,st23,,,loc02032
-ea02151,,,ocd-division/country:us/state:mn/county:yellow_medicine,poll02151,st23,,,loc02151
+election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
+ea0001,ocd-id,,ocd-division/country:us/state:mn/county:aitkin,Aitkin_Aitkin_1,poll0009 poll0001 poll0008,st27,,,loc0001
+ea0002,ocd-id,,ocd-division/country:us/state:mn/county:anoka,Anoka_Bethel_12,poll0111 poll0110 poll0017 poll0010 poll0101 poll0171 poll0170 poll0119 poll0053 poll0072 poll0055 poll0135 poll0071 poll0018 poll0112 poll0197 poll0172 poll0073 poll0161 poll0223 poll0189 poll0216 poll0028 poll0180 poll0121 poll0143 poll0027 poll0026 poll0144 poll0145 poll0128 poll0063 poll0062 poll0136 poll0064 poll0162 poll0163 poll0120 poll0054 poll0181 poll0102 poll0046 poll0045 poll0019 poll0075 poll0179 poll0103 poll0134 poll0044 poll0199 poll0198 poll0224 poll0094 poll0190 poll0214 poll0092 poll0208 poll0207 poll0206 poll0188 poll0154 poll0152 poll0036 poll0037 poll0153 poll0035,st27,,,loc0002
+ea0003,ocd-id,,ocd-division/country:us/state:mn/county:becker,Becker_Detroit,poll0225 poll0232 poll0233,st27,,,loc0003
+ea0004,ocd-id,,ocd-division/country:us/state:mn/county:beltrami,Beltrami_Bemidji_74,poll0234 poll0241 poll0242,st27,,,loc0004
+ea0005,ocd-id,,ocd-division/country:us/state:mn/county:benton,Benton_Foley_78,poll0243 poll0250 poll0251,st27,,,loc0005
+ea0006,ocd-id,,ocd-division/country:us/state:mn/county:big_stone,Big,poll0260 poll0252 poll0259,st27,,,loc0006
+ea0007,ocd-id,,ocd-division/country:us/state:mn/county:blue_earth,Blue,poll0261 poll0268 poll0269,st27,,,loc0007
+ea0008,ocd-id,,ocd-division/country:us/state:mn/county:brown,Brown_New,poll0270 poll0278 poll0277,st27,,,loc0008
+ea0009,ocd-id,,ocd-division/country:us/state:mn/county:carlton,Carlton_Carlton_90,poll0279 poll0287 poll0286,st27,,,loc0009
+ea0010,ocd-id,,ocd-division/country:us/state:mn/county:carver,Carver_Chaska_93,poll0296 poll0288 poll0295,st27,,,loc0010
+ea0011,ocd-id,,ocd-division/country:us/state:mn/county:cass,Cass_Pillager_113,poll0364 poll0362 poll0363 poll0346 poll0347 poll0348 poll0349 poll0372 poll0337 poll0330 poll0371 poll0314 poll0339 poll0338 poll0297 poll0328 poll0307 poll0313 poll0321 poll0304 poll0305 poll0306 poll0329,st27,,,loc0011
+ea0012,ocd-id,,ocd-division/country:us/state:mn/county:chippewa,Chippewa_Montevideo_118,poll0373 poll0380 poll0381,st27,,,loc0012
+ea0013,ocd-id,,ocd-division/country:us/state:mn/county:chisago,Chisago_Center,poll0389 poll0382 poll0390,st27,,,loc0013
+ea0014,ocd-id,,ocd-division/country:us/state:mn/county:clay,Clay_Moorhead_123,poll0399 poll0391 poll0398,st27,,,loc0014
+ea0015,ocd-id,,ocd-division/country:us/state:mn/county:clearwater,Clearwater_Bagley_128,poll0408 poll0400 poll0407,st27,,,loc0015
+ea0016,ocd-id,,ocd-division/country:us/state:mn/county:cook,Cook_Grand,poll0409 poll0416 poll0417,st27,,,loc0016
+ea0017,ocd-id,,ocd-division/country:us/state:mn/county:cottonwood,Cottonwood,poll0418 poll0425 poll0426,st27,,,loc0017
+ea0018,ocd-id,,ocd-division/country:us/state:mn/county:crow_wing,Crow,poll0434 poll0427,st27,,,loc0018
+ea0019,ocd-id,,ocd-division/country:us/state:mn/county:dakota,Dakota_Farmington_156,poll0548 poll0503 poll0549 poll0575 poll0504 poll0505 poll0568 poll0521 poll0522 poll0523 poll0540 poll0541 poll0472 poll0470 poll0471 poll0566 poll0474 poll0454 poll0567 poll0452 poll0453 poll0436 poll0584 poll0514 poll0585 poll0513 poll0512 poll0550 poll0532 poll0531 poll0530 poll0559 poll0577 poll0576 poll0539 poll0557 poll0461 poll0463 poll0462 poll0445 poll0444 poll0443,st27,,,loc0019
+ea0020,ocd-id,,ocd-division/country:us/state:mn/county:dodge,Dodge_Mantorville_179,poll0594 poll0586 poll0593,st27,,,loc0020
+ea0021,ocd-id,,ocd-division/country:us/state:mn/county:douglas,Douglas_Alexandria_184,poll0595 poll0603 poll0602,st27,,,loc0021
+ea0022,ocd-id,,ocd-division/country:us/state:mn/county:faribault,Faribault_Blue,poll0612 poll0604 poll0611,st27,,,loc0022
+ea0023,ocd-id,,ocd-division/country:us/state:mn/county:fillmore,Fillmore_Preston_188,poll0621 poll0620 poll0613,st27,,,loc0023
+ea0024,ocd-id,,ocd-division/country:us/state:mn/county:freeborn,Freeborn_Albert,poll0622 poll0629,st27,,,loc0024
+ea0025,ocd-id,,ocd-division/country:us/state:mn/county:goodhue,Goodhue_Cannon,poll0667 poll0658 poll0649 poll0648 poll0666 poll0674 poll0647 poll0656 poll0640 poll0657 poll0638 poll0639 poll0665 poll0684 poll0631 poll0683 poll0676,st27,,,loc0025
+ea0026,ocd-id,,ocd-division/country:us/state:mn/county:grant,Grant_Elbow,poll0692 poll0685 poll0693,st27,,,loc0026
+ea0027,ocd-id,,ocd-division/country:us/state:mn/county:hennepin,Hennepin_Deephaven_232,poll1174 poll0737 poll0763 poll0761 poll0977 poll0971 poll0877 poll0870 poll0879 poll1107 poll1106 poll1108 poll0779 poll1166 poll1165 poll0771 poll0770 poll0772 poll0942 poll0940 poll0941 poll0949 poll1124 poll1075 poll1074 poll1077 poll1076 poll0780 poll0781 poll1152 poll1150 poll1151 poll0788 poll0789 poll1158 poll1097 poll0819 poll0952 poll0701 poll0702 poll0703 poll0959 poll1099 poll0813 poll0891 poll1004 poll1000 poll1001 poll1002 poll0790 poll0797 poll0796 poll0798 poll0719 poll0807 poll0712 poll0711 poll0710 poll0922 poll0923 poll0924 poll0887 poll1133 poll1013 poll1012 poll1011 poll0888 poll0728 poll0806 poll0805 poll0721 poll0933 poll0932 poll0931 poll1022 poll1023 poll1020 poll1021 poll1141 poll1143 poll1029 poll1144 poll1090 poll0730 poll0821 poll0823 poll0822 poll0739 poll0738 poll1037 poll1030 poll1134 poll1135 poll0984 poll1039 poll0950 poll1057 poll1056 poll1058 poll0746 poll0747 poll1167 poll0913 poll0748 poll0749 poll0855 poll0856 poll0857 poll0858 poll0915 poll0914 poll0991 poll0993 poll0992 poll1126 poll1125 poll1098 poll1066 poll1067 poll0694 poll1065 poll0969 poll0960 poll0961 poll0962 poll0847 poll0846 poll0848 poll1116 poll1117 poll1115,st27,,,loc0027
+ea0028,ocd-id,,ocd-division/country:us/state:mn/county:houston,Houston_Caledonia_346,poll1184 poll1183 poll1176,st27,,,loc0028
+ea0029,ocd-id,,ocd-division/country:us/state:mn/county:hubbard,Hubbard_Park,poll1185 poll1192 poll1193,st27,,,loc0029
+ea0030,ocd-id,,ocd-division/country:us/state:mn/county:isanti,Isanti_Cambridge_352,poll1202 poll1194 poll1201,st27,,,loc0030
+ea0031,ocd-id,,ocd-division/country:us/state:mn/county:itasca,Itasca_Grand,poll1211 poll1210 poll1203,st27,,,loc0031
+ea0032,ocd-id,,ocd-division/country:us/state:mn/county:jackson,Jackson_Jackson_357,poll1219 poll1220 poll1212,st27,,,loc0032
+ea0033,ocd-id,,ocd-division/country:us/state:mn/county:kanabec,Kanabec_Mora_361,poll1228 poll1221 poll1229,st27,,,loc0033
+ea0034,ocd-id,,ocd-division/country:us/state:mn/county:kandiyohi,Kandiyohi_Willmar_362,poll1230 poll1237 poll1238,st27,,,loc0034
+ea0035,ocd-id,,ocd-division/country:us/state:mn/county:kittson,Kittson_Hallock_365,poll1239 poll1246 poll1247,st27,,,loc0035
+ea0036,ocd-id,,ocd-division/country:us/state:mn/county:koochiching,Koochiching_International,poll1255 poll1248 poll1256,st27,,,loc0036
+ea0037,ocd-id,,ocd-division/country:us/state:mn/county:lac_qui_parle,Lac,poll1264 poll1265 poll1257,st27,,,loc0037
+ea0038,ocd-id,,ocd-division/country:us/state:mn/county:lake,Lake_Two,poll1266 poll1274 poll1273,st27,,,loc0038
+ea0039,ocd-id,,ocd-division/country:us/state:mn/county:lake_of_the_woods,Lake,poll1275 poll1282 poll1283,st27,,,loc0039
+ea0040,ocd-id,,ocd-division/country:us/state:mn/county:le_sueur,Le,poll1291 poll1284 poll1285 poll1292,st27,,,loc0040
+ea0041,ocd-id,,ocd-division/country:us/state:mn/county:lyon,Lyon_Marshall_384,poll1298 poll1305 poll1306,st27,,,loc0041
+ea0042,ocd-id,,ocd-division/country:us/state:mn/county:mahnomen,Mahnomen_Mahnomen_387,poll1307 poll1314 poll1315,st27,,,loc0042
+ea0043,ocd-id,,ocd-division/country:us/state:mn/county:marshall,Marshall_Warren_392,poll1324 poll1316 poll1323,st27,,,loc0043
+ea0044,ocd-id,,ocd-division/country:us/state:mn/county:martin,Martin_Fairmont_394,poll1325 poll1332,st27,,,loc0044
+ea0045,ocd-id,,ocd-division/country:us/state:mn/county:mcleod,McLeod_Glencoe_395,poll1343 poll1342 poll1341 poll1350 poll1351 poll1334,st27,,,loc0045
+ea0046,ocd-id,,ocd-division/country:us/state:mn/county:meeker,Meeker_Litchfield_401,poll1359 poll1352 poll1360,st27,,,loc0046
+ea0047,ocd-id,,ocd-division/country:us/state:mn/county:mille_lacs,Mille,poll1361 poll1368 poll1369,st27,,,loc0047
+ea0048,ocd-id,,ocd-division/country:us/state:mn/county:morrison,Morrison_Little,poll1377 poll1378 poll1370,st27,,,loc0048
+ea0049,ocd-id,,ocd-division/country:us/state:mn/county:mower,Mower_Austin_411,poll1387 poll1386 poll1379,st27,,,loc0049
+ea0050,ocd-id,,ocd-division/country:us/state:mn/county:murray,Murray_Slayton_415,poll1395 poll1396 poll1388,st27,,,loc0050
+ea0051,ocd-id,,ocd-division/country:us/state:mn/county:nicollet,Nicollet_St,poll1397 poll1404 poll1405,st27,,,loc0051
+ea0052,ocd-id,,ocd-division/country:us/state:mn/county:nobles,Nobles_Worthington_420,poll1413 poll1406 poll1414,st27,,,loc0052
+ea0053,ocd-id,,ocd-division/country:us/state:mn/county:norman,Norman_Ada_424,poll1422 poll1423 poll1415,st27,,,loc0053
+ea0054,ocd-id,,ocd-division/country:us/state:mn/county:olmsted,Olmsted_Rochester_426,poll1431 poll1424,st27,,,loc0054
+ea0055,ocd-id,,ocd-division/country:us/state:mn/county:otter_tail,Otter,poll1433 poll1440 poll1441,st27,,,loc0055
+ea0056,ocd-id,,ocd-division/country:us/state:mn/county:pennington,Pennington_Thief,poll1449 poll1442 poll1450,st27,,,loc0056
+ea0057,ocd-id,,ocd-division/country:us/state:mn/county:pine,Pine_Pine,poll1459 poll1451 poll1458,st27,,,loc0057
+ea0058,ocd-id,,ocd-division/country:us/state:mn/county:pipestone,Pipestone_Pipestone_436,poll1468 poll1460 poll1467,st27,,,loc0058
+ea0059,ocd-id,,ocd-division/country:us/state:mn/county:polk,Polk_Crookston_439,poll1476 poll1477 poll1469,st27,,,loc0059
+ea0060,ocd-id,,ocd-division/country:us/state:mn/county:pope,Pope_Glenwood_444,poll1478 poll1486 poll1485,st27,,,loc0060
+ea0061,ocd-id,,ocd-division/country:us/state:mn/county:ramsey,Ramsey_Roseville_473,poll1558 poll1559 poll1496 poll1495 poll1494 poll1550 poll1611 poll1557 poll1594 poll1612 poll1539 poll1576 poll1577 poll1530 poll1531 poll1532 poll1512 poll1514 poll1593 poll1595 poll1513 poll1585 poll1584 poll1586 poll1549 poll1548 poll1487 poll1602 poll1603 poll1541 poll1540 poll1604 poll1567 poll1566 poll1503 poll1505 poll1504 poll1523 poll1522 poll1521 poll1568 poll1575,st27,,,loc0061
+ea0062,ocd-id,,ocd-division/country:us/state:mn/county:red_lake,Red,poll1620 poll1613,st27,,,loc0062
+ea0063,ocd-id,,ocd-division/country:us/state:mn/county:redwood,Redwood_Redwood,poll1629 poll1622 poll1630,st27,,,loc0063
+ea0064,ocd-id,,ocd-division/country:us/state:mn/county:renville,Renville_Olivia_494,poll1639 poll1631 poll1638,st27,,,loc0064
+ea0065,ocd-id,,ocd-division/country:us/state:mn/county:rice,Rice_Faribault_496,poll1647 poll1648 poll1640,st27,,,loc0065
+ea0066,ocd-id,,ocd-division/country:us/state:mn/county:rock,Rock_Luverne_499,poll1656 poll1649,st27,,,loc0066
+ea0067,ocd-id,,ocd-division/country:us/state:mn/county:roseau,Roseau_Roseau_500,poll1658 poll1665 poll1666,st27,,,loc0067
+ea0068,ocd-id,,ocd-division/country:us/state:mn/county:scott,Scott_Shakopee_556,poll1835 poll1842 poll1843,st27,,,loc0068
+ea0069,ocd-id,,ocd-division/country:us/state:mn/county:sherburne,Sherburne_Elk,poll1852 poll1851 poll1844,st27,,,loc0069
+ea0070,ocd-id,,ocd-division/country:us/state:mn/county:sibley,Sibley_Gaylord_561,poll1853 poll1860 poll1861,st27,,,loc0070
+ea0071,ocd-id,,ocd-division/country:us/state:mn/county:st_louis,Saint,poll1710 poll1737 poll1712 poll1730 poll1719 poll1738 poll1739 poll1782 poll1791 poll1792 poll1793 poll1676 poll1675 poll1674 poll1765 poll1683 poll1826 poll1729 poll1728 poll1766 poll1800 poll1801 poll1684 poll1685 poll1721 poll1720 poll1784 poll1809 poll1703 poll1702 poll1701 poll1802 poll1773 poll1748 poll1810 poll1775 poll1746 poll1783 poll1764 poll1811 poll1667 poll1834 poll1833 poll1694 poll1812 poll1774 poll1692 poll1755 poll1756 poll1757 poll1818,st27,,,loc0071
+ea0072,ocd-id,,ocd-division/country:us/state:mn/county:stearns,Stearns_Melrose_563,poll1871 poll1870 poll1869 poll1879 poll1878 poll1862,st27,,,loc0072
+ea0073,ocd-id,,ocd-division/country:us/state:mn/county:steele,Steele_Owatonna_569,poll1887 poll1880,st27,,,loc0073
+ea0074,ocd-id,,ocd-division/country:us/state:mn/county:stevens,Stevens_Morris_571,poll1897 poll1896 poll1889,st27,,,loc0074
+ea0075,ocd-id,,ocd-division/country:us/state:mn/county:swift,Swift_Benson_574,poll1905 poll1906 poll1898,st27,,,loc0075
+ea0076,ocd-id,,ocd-division/country:us/state:mn/county:todd,Todd_Long,poll1907 poll1914 poll1915,st27,,,loc0076
+ea0077,ocd-id,,ocd-division/country:us/state:mn/county:traverse,Traverse_Wheaton_581,poll1923 poll1924 poll1916,st27,,,loc0077
+ea0078,ocd-id,,ocd-division/country:us/state:mn/county:wabasha,Wabasha_Lake,poll1934 poll1941 poll1942 poll1932,st27,,,loc0078
+ea0079,ocd-id,,ocd-division/country:us/state:mn/county:wadena,Wadena_Wadena_588,poll1943 poll1950 poll1951,st27,,,loc0079
+ea0080,ocd-id,,ocd-division/country:us/state:mn/county:waseca,Waseca_Waseca_591,poll1960 poll1952 poll1959,st27,,,loc0080
+ea0081,ocd-id,,ocd-division/country:us/state:mn/county:washington,Washington_Stillwater_596,poll1986 poll1987 poll1978 poll1979 poll1969 poll1968 poll1996 poll1995 poll1970 poll1961 poll1988 poll1977,st27,,,loc0081
+ea0082,ocd-id,,ocd-division/country:us/state:mn/county:watonwan,Watonwan_St,poll2012 poll1998 poll2011 poll1997,st27,,,loc0082
+ea0083,ocd-id,,ocd-division/country:us/state:mn/county:wilkin,Wilkin_Breckenridge_609,poll2021 poll2014 poll2022,st27,,,loc0083
+ea0084,ocd-id,,ocd-division/country:us/state:mn/county:winona,Winona_Winona_614,poll2027 poll2030 poll2023,st27,,,loc0084
+ea0085,ocd-id,,ocd-division/country:us/state:mn/county:wright,Wright_Delano_623,poll2128 poll2125 poll2032 poll2116 poll2089 poll2150 poll2126 poll2127 poll2066 poll2040 poll2149 poll2047 poll2140 poll2062 poll2142 poll2118 poll2038 poll2039 poll2065 poll2064,st27,,,loc0085
+ea0086,ocd-id,,ocd-division/country:us/state:mn/county:yellow_medicine,Yellow,poll2151 poll2158 poll2159,st27,,,loc0086

@@ -4,6 +4,13 @@ locality_output = "/Users/danielgilberg/Development/hand-collection-to-vip/kansa
 
 source_output = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/output/source.txt"
 
+polling_location_output = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/output/"
+
+schedule_data = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/data/kansas_schedule_info.csv"
+
+state_abbreviation = "KS"
+
+state_upper = "Kansas"
 state = 'kansas'
 
 fips_dict = {'wyoming': '56', 'colorado': '08', 'washington': '53', 'hawaii': '15', 'tennessee': '47', 'iowa': '19',

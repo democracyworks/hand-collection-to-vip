@@ -21,7 +21,7 @@ hours_open_id
 import datetime
 import csv
 import config
-from minnesota_polling_location import PollingLocationTxt
+from kansas_polling_location import PollingLocationTxt
 import pandas as pd
 
 
@@ -180,7 +180,7 @@ class ElectionTxt(object):
             lambda row: self.absentee_request_deadline(row['index']), axis=1)
 
         self.base_df['hours_open_id'] = self.base_df.apply(
-            lambda row: self.hours_open_id(row['source_hours_open_id']), axis=1)
+            lambda row: self.hours_open_id(row['hours_open_id']), axis=1)
 
         #print self.base_df
         return self.base_df
@@ -190,8 +190,10 @@ class ElectionTxt(object):
 
         et = self.build_election_txt()
 
-        et.drop(['index', 'address_line', 'directions', 'hours', 'photo_uri', 'source_hours_open_id', 'is_drop_box',
-                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'source_id'], inplace=True, axis=1)
+        et.drop(['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
+                'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date', 'time_zone', 'index',
+                'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
+                'is_early_voting', 'latitude', 'longitude', 'latlng_source'], inplace=True, axis=1)
 
         print et
 
@@ -233,19 +235,26 @@ if __name__ == '__main__':
 
 
     state_feed_file = 'state_feed_info.csv'
-    early_voting_file = 'polling_location.csv'
+    early_voting_file = 'kansas_early_voting_info.csv'
 
-    early_voting_path = "/home/acg/democracyworks/hand-collection-to-vip/minnesota/output/" + early_voting_file
-    colnames = ['address_line', 'directions', 'hours', 'photo_uri', 'source_hours_open_id', 'is_drop_box',
-                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'source_id']
+    early_voting_path ="/Users/danielgilberg/Development/hand-collection-to-vip/kansas/output/intermediate_pl_for_loc.csv"
+    #early_voting_path = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/kansas_early_voting_info.csv"
+    colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
+                'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date', 'time_zone', 'index',
+                'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
+                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
     early_voting_df = pd.read_csv(early_voting_path, names=colnames, encoding='utf-8', skiprows=1)
+
     early_voting_df['index'] = early_voting_df.index + 1
 
-    state_feed_path = "/home/acg/democracyworks/hand-collection-to-vip/minnesota/early_voting_input/" + state_feed_file
+
+    state_feed_path = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/data/" + state_feed_file
     colnames = ['office_name', 'ocd_division', 'same_day_reg', 'election_date', 'election_name', 'registration_deadline',
                 "registration_deadline_display", 'ballot_request_deadline', 'ballot_request_deadline_display']
     state_feed_df = pd.read_csv(state_feed_path, names=colnames, encoding='utf-8', skiprows=1)
     state_feed_df['index'] = state_feed_df.index + 1
+
+    # print state_feed_df
 
 
     et = ElectionTxt(early_voting_df, state_feed_df)

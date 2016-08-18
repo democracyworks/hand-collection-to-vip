@@ -1,128 +1,128 @@
 address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-"1 N Washington, Lola, MN 66749",,8:00 AM-5:00 PM,,ho0000,false,True,,,,poll0000
-"100 E 4th, Garnett, MN 66032",,8:00 AM-5:00 PM,,ho0001,false,True,,,,poll0001
-"423 N 5th, Atchison, MN 66002-1861",,8:30 AM-5:00 PM,,ho0002,false,True,,,,poll0002
-"120 E Washington, Medicine Lodge, MN 67104",,8:30 AM-5:00 PM,,ho0003,false,True,,,,poll0003
-"1400 Main Street Room 202, Great Bend, MN 67530",,8:00 AM-5:00 PM,,ho0004,false,True,,,,poll0004
-"210 S National, Ft Scott, MN 66701",,8:30 AM-4:30 PM,,ho0005,false,True,,,,poll0005
-"601 Oregon St, Hiawatha, MN 66434",,8:00 AM-5:00 PM,,ho0006,false,True,,,,poll0006
-"205 W Central, El Dorado, MN 67042",,8:00 AM-5:00 PM,,ho0007,false,True,,,,poll0007
-"300 Pearl St, Cottonwood Falls, MN 66845-0547",,8:00 AM-5:00 PM,,ho0008,false,True,,,,poll0008
-"215 N Chautauqua, Sedan, MN 67361",,8:00 AM-4:00 PM,,ho0009,false,True,,,,poll0009
-"110 W. Maple St #31, Columbus, MN 66725",,8:00 AM-5:00 PM,,ho0010,false,True,,,,poll0010
-"212 Washington St, St Francis, MN 67756",,8:00 AM-12:00 PM,,ho0011,false,True,,,,poll0011
-"212 Washington St, St Francis, MN 67756",,1:00 AM-5:00 PM,,ho0012,false,True,,,,poll0012
-"913 Highland, Ashland, MN 67831",,8:00 AM-5:00 PM,,ho0013,false,True,,,,poll0013
-"712 5th Street Suite 102, Clay Center, MN 67432",,8:00 AM-5:00 PM,,ho0014,false,True,,,,poll0014
-"811 Washington, Concordia, MN 66901",,8:00 AM-4:30 PM,,ho0015,false,True,,,,poll0015
-"Room 202 110 S 6th, Burlington, MN 66839",,8:00 AM-5:00 PM,,ho0016,false,True,,,,poll0016
-"201 S New York Avenue, Coldwater, MN 67029",,9:00 AM-12:00 PM,,ho0017,false,True,,,,poll0017
-"201 S New York Avenue, Coldwater, MN 67029",,1:00 AM-5:00 PM,,ho0018,false,True,,,,poll0018
-"321 E. 10th Avenue, Winfield, MN 67156",,8:00 AM-5:00 PM,,ho0019,false,True,,,,poll0019
-"111 E Forest Avenue, Girard, MN 66743-0249",,8:30 AM-4:30 PM,,ho0020,false,True,,,,poll0020
-"120 E Hall St #4, Oberlin, MN 67749",,8:00 AM-5:00 PM,,ho0021,false,True,,,,poll0021
-"109 E 1st, Ste. 207, Abilene, MN 67410",,8:00 AM-5:00 PM,,ho0022,false,True,,,,poll0022
-"120 E Chestnut St, Troy, MN 66087",,8:30 AM-5:00 PM,,ho0023,false,True,,,,poll0023
-"1100 Massachusetts St, Lawrence, MN 66044",,8:00 AM-5:00 PM,,ho0024,false,True,,,,poll0024
-"312 Massachusetts, Kinsley, MN 67547",,8:00 AM-5:00 PM,,ho0025,false,True,,,,poll0025
-"127 N Pine St, Howard, MN 67349",,8:00 AM-4:30 PM,,ho0026,false,True,,,,poll0026
-"1204 Fort St,, Hays, MN 67601",,8:00 AM-5:00 PM,,ho0027,false,True,,,,poll0027
-"210 N Kansas, Ellsworth, MN 67439",,8:00 AM-5:00 PM,,ho0028,false,True,,,,poll0028
-"Finney Co. Admin. Center 311 N. 9th St., Garden City, MN 67846",,8:00 AM-5:00 PM,,ho0029,false,True,,,,poll0029
-"100 Gunsmoke, Dodge City, MN 67801",,9:00 AM-5:00 PM,,ho0030,false,True,,,,poll0030
-"315 S Main, Ottawa, MN 66067",,8:00 AM-4:30 PM,,ho0031,false,True,,,,poll0031
-"200 E. 8th Street, Junction City, MN 66441",,8:30 AM-5:00 PM,,ho0032,false,True,,,,poll0032
-"520 Washington St. Suite 105, Gove, MN 67736",,8:00 AM-12:00 PM,,ho0033,false,True,,,,poll0033
-"520 Washington St. Suite 105, Gove, MN 67736",,1:00 AM-5:00 PM,,ho0034,false,True,,,,poll0034
-"410 N Pomeroy, Hill City, MN 67642",,8:30 AM-5:00 PM,,ho0035,false,True,,,,poll0035
-"108 S Glenn, Ulysses, MN 67880",,9:00 AM-5:00 PM,,ho0036,false,True,,,,poll0036
-"33 South Main Street, Cimarron, MN 67835-0487",,8:00 AM-5:00 PM,,ho0037,false,True,,,,poll0037
-"208 E Harper St, Tribune, MN 67879",,9:00 AM-12:00 PM,,ho0038,false,True,,,,poll0038
-"208 E Harper St, Tribune, MN 67879",,1:00 AM-5:00 PM,,ho0039,false,True,,,,poll0039
-"311 N Main, Eureka, MN 67045",,8:00 AM-5:00 PM,,ho0040,false,True,,,,poll0040
-"219 N Main St, Syracuse, MN 67878",,8:30 AM-4:30 PM,,ho0041,false,True,,,,poll0041
-"201 N Jennings Avenue, Anthony, MN 67003",,8:00 AM-12:00 PM,,ho0042,false,True,,,,poll0042
-"201 N Jennings Avenue, Anthony, MN 67003",,1:00 AM-5:00 PM,,ho0043,false,True,,,,poll0043
-"800 N Main St, Newton, MN 67114",,8:00 AM-5:00 PM,,ho0044,false,True,,,,poll0044
-"300 Inman St, Sublette, MN 67877",,9:00 AM-5:00 PM,,ho0045,false,True,,,,poll0045
-"500 Main, Jetmore, MN 67854",,9:00 AM-12:00 PM,,ho0046,false,True,,,,poll0046
-"500 Main, Jetmore, MN 67854",,1:00 AM-5:00 PM,,ho0047,false,True,,,,poll0047
-"400 New York, Holton, MN 66436",,8:00 AM-4:30 PM,,ho0048,false,True,,,,poll0048
-"300 Jefferson St, Oskaloosa, MN 66066",,8:00 AM-4:30 PM,,ho0049,false,True,,,,poll0049
-"307 N Commercial, Mankato, MN 66956",,8:30 AM-12:00 PM,,ho0050,false,True,,,,poll0050
-"307 N Commercial, Mankato, MN 66956",,1:00 AM-4:30 PM,,ho0051,false,True,,,,poll0051
-"2101 E Kansas City Rd, Olathe, MN 66061",,8:00 AM-5:00 PM,,ho0052,false,True,,,,poll0052
-"304 N Main St, Lakin, MN 67860",,8:00 AM-5:00 PM,,ho0053,false,True,,,,poll0053
-"130 N Spruce, Kingman, MN 67068",,8:00 AM-5:00 PM,,ho0054,false,True,,,,poll0054
-"211 East Florida Avenue, Greensburg, MN 67054",,8:30 AM-12:00 PM,,ho0055,false,True,,,,poll0055
-"211 East Florida Avenue, Greensburg, MN 67054",,1:00 AM-5:00 PM,,ho0056,false,True,,,,poll0056
-"501 Merchant St #9, Oswego, MN 67356",,8:00 AM-5:00 PM,,ho0057,false,True,,,,poll0057
-"144 S Lane St, Dighton, MN 67839",,8:00 AM-5:00 PM,,ho0058,false,True,,,,poll0058
-"300 Walnut, Leavenworth, MN 66048",,8:00 AM-5:00 PM,,ho0059,false,True,,,,poll0059
-"216 E Lincoln Ave, Lincoln, MN 67455",,8:00 AM-5:00 PM,,ho0060,false,True,,,,poll0060
-"315 Main St, Mound City, MN 66056",,8:00 AM-4:00 PM,,ho0061,false,True,,,,poll0061
-"710 W 2nd, Oakley, MN 67748",,8:00 AM-5:00 PM,,ho0062,false,True,,,,poll0062
-"430 Commercial, Emporia, MN 66801",,8:00 AM-5:00 PM,,ho0063,false,True,,,,poll0063
-"117 N. Maple, McPherson, MN 67460",,8:00 AM-5:00 PM,,ho0064,false,True,,,,poll0064
-"Marion County Courthouse 200 South Third, Suite 104, Marion, MN 66861",,8:30 AM-5:00 PM,,ho0065,false,True,,,,poll0065
-"1201 Broadway, Marysville, MN 66508",,8:30 AM-5:00 PM,,ho0066,false,True,,,,poll0066
-"200 N Fowler St, Meade, MN 67864",,8:00 AM-12:00 PM,,ho0067,false,True,,,,poll0067
-"200 N Fowler St, Meade, MN 67864",,1:00 AM-5:00 PM,,ho0068,false,True,,,,poll0068
-"201 S. Pearl Suite 102, Paola, MN 66071",,8:00 AM-4:30 PM,,ho0069,false,True,,,,poll0069
-"111 S Hersey, Beloit, MN 67420",,8:30 AM-5:00 PM,,ho0070,false,True,,,,poll0070
-"217 E Myrtle St, Independence, MN 67301",,8:30 AM-12:00 PM,,ho0071,false,True,,,,poll0071
-"217 E Myrtle St, Independence, MN 67301",,1:00 AM-5:00 PM,,ho0072,false,True,,,,poll0072
-"501 West Main, Council Grove, MN 66846",,8:00 AM-5:00 PM,,ho0073,false,True,,,,poll0073
-"1025 Morton St, Elkhart, MN 67950",,9:00 AM-5:00 PM,,ho0074,false,True,,,,poll0074
-"607 Nemaha, Seneca, MN 66538",,8:00 AM-4:30 PM,,ho0075,false,True,,,,poll0075
-"100 S Main St., Erie, MN 66733",,8:00 AM-4:30 PM,,ho0076,false,True,,,,poll0076
-"202 W Sycamore, Ness City, MN 67560",,8:00 AM-12:00 PM,,ho0077,false,True,,,,poll0077
-"202 W Sycamore, Ness City, MN 67560",,1:00 AM-5:00 PM,,ho0078,false,True,,,,poll0078
-"105 S Kansas Ave, Norton, MN 67654",,8:00 AM-5:00 PM,,ho0079,false,True,,,,poll0079
-"717 Topeka Ave, Lyndon, MN 66451-0226",,8:00 AM-5:00 PM,,ho0080,false,True,,,,poll0080
-"423 W Main St, Osborne, MN 67473",,8:30 AM-5:00 PM,,ho0081,false,True,,,,poll0081
-"307 N Concord Suite 130, Minneapolis, MN 67467",,8:00 AM-12:00 PM,,ho0082,false,True,,,,poll0082
-"307 N Concord Suite 130, Minneapolis, MN 67467",,1:00 AM-5:00 PM,,ho0083,false,True,,,,poll0083
-"715 Broadway, Larned, MN 67550",,8:30 AM-5:00 PM,,ho0084,false,True,,,,poll0084
-"301 State Street, Phillipsburg, MN 67661",,8:00 AM-5:00 PM,,ho0085,false,True,,,,poll0085
-"207 N 1st St, Westmoreland, MN 66549",,8:30 AM-4:30 PM,,ho0086,false,True,,,,poll0086
-"300 S Ninnescah St, Pratt, MN 67124",,8:00 AM-5:00 PM,,ho0087,false,True,,,,poll0087
-"607 Main, Atwood, MN 67730",,9:00 AM-5:00 PM,,ho0088,false,True,,,,poll0088
-"206 West 1st, Hutchinson, MN 67501",,8:00 AM-5:00 PM,,ho0089,false,True,,,,poll0089
-"1815 M. Street, Belleville, MN 66935-0429",,8:00 AM-5:00 PM,,ho0090,false,True,,,,poll0090
-"101 W Commercial, Lyons, MN 67554",,8:00 AM-5:00 PM,,ho0091,false,True,,,,poll0091
-"110 Courthouse Plaza, Manhattan, MN 66502",,8:00 AM-5:00 PM,,ho0092,false,True,,,,poll0092
-"115 N Walnut, Stockton, MN 67669",,8:00 AM-12:00 PM,,ho0093,false,True,,,,poll0093
-"115 N Walnut, Stockton, MN 67669",,1:00 AM-5:00 PM,,ho0094,false,True,,,,poll0094
-"715 Elm St, LaCrosse, MN 67548",,8:30 AM-12:00 PM,,ho0095,false,True,,,,poll0095
-"715 Elm St, LaCrosse, MN 67548",,1:00 AM-5:00 PM,,ho0096,false,True,,,,poll0096
-"401 N Main St, Russell, MN 67665",,8:30 AM-5:00 PM,,ho0097,false,True,,,,poll0097
-"300 W Ash Ste. #215, Salina, MN 67401",,8:00 AM-5:00 PM,,ho0098,false,True,,,,poll0098
-"303 Court, Scott City, MN 67871",,8:00 AM-5:00 PM,,ho0099,false,True,,,,poll0099
-"510 N Main, Wichita, MN 67203-3798",,8:00 AM-5:00 PM,,ho0100,false,True,,,,poll0100
-"515 N Washington Ste 100, Liberal, MN 67901",,9:00 AM-5:00 PM,,ho0101,false,True,,,,poll0101
-"3420 SW Van Buren, Topeka, MN 66611",,8:00 AM-5:00 PM,,ho0102,false,True,,,,poll0102
-"925 9th Street, Hoxie, MN 67740",,8:00 AM-12:00 PM,,ho0103,false,True,,,,poll0103
-"925 9th Street, Hoxie, MN 67740",,1:00 AM-5:00 PM,,ho0104,false,True,,,,poll0104
-"813 Broadway Rm 102, Goodland, MN 67735",,8:00 AM-12:00 PM,,ho0105,false,True,,,,poll0105
-"813 Broadway Rm 102, Goodland, MN 67735",,1:00 AM-5:00 PM,,ho0106,false,True,,,,poll0106
-"218 S Grant, Smith Center, MN 66967",,8:00 AM-12:00 PM,,ho0107,false,True,,,,poll0107
-"218 S Grant, Smith Center, MN 66967",,1:00 AM-5:00 PM,,ho0108,false,True,,,,poll0108
-"209 N Broadway, St. John, MN 67576",,8:00 AM-12:00 PM,,ho0109,false,True,,,,poll0109
-"209 N Broadway, St. John, MN 67576",,1:00 AM-5:00 PM,,ho0110,false,True,,,,poll0110
-"201 N Main St, Johnson, MN 67855",,9:00 AM-12:00 PM,,ho0111,false,True,,,,poll0111
-"201 N Main St, Johnson, MN 67855",,1:00 AM-5:00 PM,,ho0112,false,True,,,,poll0112
-"200 E 6th, Hugoton, MN 67951",,9:00 AM-5:00 PM,,ho0113,false,True,,,,poll0113
-"501 N Washington Ave, Wellington, MN 67152",,8:00 AM-5:00 PM,,ho0114,false,True,,,,poll0114
-"300 N Court, Colby, MN 67701",,8:00 AM-5:00 PM,,ho0115,false,True,,,,poll0115
-"216 Main St, WaKeeney, MN 67672",,8:30 AM-5:00 PM,,ho0116,false,True,,,,poll0116
-"215 Kansas Ave, Alma, MN 66401",,8:00 AM-4:30 PM,,ho0117,false,True,,,,poll0117
-"313 N Main St, Sharon Springs, MN 67758",,8:00 AM-12:00 PM,,ho0118,false,True,,,,poll0118
-"313 N Main St, Sharon Springs, MN 67758",,1:00 AM-5:00 PM,,ho0119,false,True,,,,poll0119
-"214 C St, Washington, MN 66968",,8:00 AM-5:00 PM,,ho0120,false,True,,,,poll0120
-"206 S Fourth St, Leoti, MN 67861",,8:00 AM-12:00 PM,,ho0121,false,True,,,,poll0121
-"206 S Fourth St, Leoti, MN 67861",,1:00 AM-5:00 PM,,ho0122,false,True,,,,poll0122
-"615 Madison, Fredonia, MN 66736",,8:30 AM-5:00 PM,,ho0123,false,True,,,,poll0123
-"105 W Rutledge Room 103, Yates Center, MN 66783",,8:00 AM-12:00 PM,,ho0124,false,True,,,,poll0124
-"105 W Rutledge Room 103, Yates Center, MN 66783",,1:00 AM-5:00 PM,,ho0125,false,True,,,,poll0125
-"850 State Avenue, Kansas City, MN 66101",,8:00 AM-5:00 PM,,ho0126,false,True,,,,poll0126
+"1 N Washington, Lola, KS 66749",,8:00 AM-5:00 PM,,ho0000,false,True,,,,poll0000
+"100 E 4th, Garnett, KS 66032",,8:00 AM-5:00 PM,,ho0005,false,True,,,,poll0005
+"423 N 5th, Atchison, KS 66002-1861",,8:30 AM-5:00 PM,,ho0010,false,True,,,,poll0010
+"120 E Washington, Medicine Lodge, KS 67104",,8:30 AM-5:00 PM,,ho0015,false,True,,,,poll0015
+"1400 Main Street Room 202, Great Bend, KS 67530",,8:00 AM-5:00 PM,,ho0020,false,True,,,,poll0020
+"210 S National, Ft Scott, KS 66701",,8:30 AM-4:30 PM,,ho0025,false,True,,,,poll0025
+"601 Oregon St, Hiawatha, KS 66434",,8:00 AM-5:00 PM,,ho0030,false,True,,,,poll0030
+"205 W Central, El Dorado, KS 67042",,8:00 AM-5:00 PM,,ho0035,false,True,,,,poll0035
+"300 Pearl St, Cottonwood Falls, KS 66845-0547",,8:00 AM-5:00 PM,,ho0040,false,True,,,,poll0040
+"215 N Chautauqua, Sedan, KS 67361",,8:00 AM-4:00 PM,,ho0045,false,True,,,,poll0045
+"110 W. Maple St #31, Columbus, KS 66725",,8:00 AM-5:00 PM,,ho0050,false,True,,,,poll0050
+"212 Washington St, St Francis, KS 67756",,8:00 AM-12:00 PM,,ho0055,false,True,,,,poll0055
+"212 Washington St, St Francis, KS 67756",,1:00 AM-5:00 PM,,ho0056,false,True,,,,poll0056
+"913 Highland, Ashland, KS 67831",,8:00 AM-5:00 PM,,ho0065,false,True,,,,poll0065
+"712 5th Street Suite 102, Clay Center, KS 67432",,8:00 AM-5:00 PM,,ho0070,false,True,,,,poll0070
+"811 Washington, Concordia, KS 66901",,8:00 AM-4:30 PM,,ho0075,false,True,,,,poll0075
+"Room 202 110 S 6th, Burlington, KS 66839",,8:00 AM-5:00 PM,,ho0080,false,True,,,,poll0080
+"201 S New York Avenue, Coldwater, KS 67029",,9:00 AM-12:00 PM,,ho0085,false,True,,,,poll0085
+"201 S New York Avenue, Coldwater, KS 67029",,1:00 AM-5:00 PM,,ho0086,false,True,,,,poll0086
+"321 E. 10th Avenue, Winfield, KS 67156",,8:00 AM-5:00 PM,,ho0095,false,True,,,,poll0095
+"111 E Forest Avenue, Girard, KS 66743-0249",,8:30 AM-4:30 PM,,ho0100,false,True,,,,poll0100
+"120 E Hall St #4, Oberlin, KS 67749",,8:00 AM-5:00 PM,,ho0105,false,True,,,,poll0105
+"109 E 1st, Ste. 207, Abilene, KS 67410",,8:00 AM-5:00 PM,,ho0110,false,True,,,,poll0110
+"120 E Chestnut St, Troy, KS 66087",,8:30 AM-5:00 PM,,ho0115,false,True,,,,poll0115
+"1100 Massachusetts St, Lawrence, KS 66044",,8:00 AM-5:00 PM,,ho0120,false,True,,,,poll0120
+"312 Massachusetts, Kinsley, KS 67547",,8:00 AM-5:00 PM,,ho0125,false,True,,,,poll0125
+"127 N Pine St, Howard, KS 67349",,8:00 AM-4:30 PM,,ho0130,false,True,,,,poll0130
+"1204 Fort St,, Hays, KS 67601",,8:00 AM-5:00 PM,,ho0135,false,True,,,,poll0135
+"210 N Kansas, Ellsworth, KS 67439",,8:00 AM-5:00 PM,,ho0140,false,True,,,,poll0140
+"Finney Co. Admin. Center 311 N. 9th St., Garden City, KS 67846",,8:00 AM-5:00 PM,,ho0145,false,True,,,,poll0145
+"100 Gunsmoke, Dodge City, KS 67801",,9:00 AM-5:00 PM,,ho0150,false,True,,,,poll0150
+"315 S Main, Ottawa, KS 66067",,8:00 AM-4:30 PM,,ho0155,false,True,,,,poll0155
+"200 E. 8th Street, Junction City, KS 66441",,8:30 AM-5:00 PM,,ho0160,false,True,,,,poll0160
+"520 Washington St. Suite 105, Gove, KS 67736",,8:00 AM-12:00 PM,,ho0165,false,True,,,,poll0165
+"520 Washington St. Suite 105, Gove, KS 67736",,1:00 AM-5:00 PM,,ho0166,false,True,,,,poll0166
+"410 N Pomeroy, Hill City, KS 67642",,8:30 AM-5:00 PM,,ho0175,false,True,,,,poll0175
+"108 S Glenn, Ulysses, KS 67880",,9:00 AM-5:00 PM,,ho0180,false,True,,,,poll0180
+"33 South Main Street, Cimarron, KS 67835-0487",,8:00 AM-5:00 PM,,ho0185,false,True,,,,poll0185
+"208 E Harper St, Tribune, KS 67879",,9:00 AM-12:00 PM,,ho0190,false,True,,,,poll0190
+"208 E Harper St, Tribune, KS 67879",,1:00 AM-5:00 PM,,ho0191,false,True,,,,poll0191
+"311 N Main, Eureka, KS 67045",,8:00 AM-5:00 PM,,ho0200,false,True,,,,poll0200
+"219 N Main St, Syracuse, KS 67878",,8:30 AM-4:30 PM,,ho0205,false,True,,,,poll0205
+"201 N Jennings Avenue, Anthony, KS 67003",,8:00 AM-12:00 PM,,ho0210,false,True,,,,poll0210
+"201 N Jennings Avenue, Anthony, KS 67003",,1:00 AM-5:00 PM,,ho0211,false,True,,,,poll0211
+"800 N Main St, Newton, KS 67114",,8:00 AM-5:00 PM,,ho0220,false,True,,,,poll0220
+"300 Inman St, Sublette, KS 67877",,9:00 AM-5:00 PM,,ho0225,false,True,,,,poll0225
+"500 Main, Jetmore, KS 67854",,9:00 AM-12:00 PM,,ho0226,false,True,,,,poll0226
+"500 Main, Jetmore, KS 67854",,1:00 AM-5:00 PM,,ho0227,false,True,,,,poll0227
+"400 New York, Holton, KS 66436",,8:00 AM-4:30 PM,,ho0236,false,True,,,,poll0236
+"300 Jefferson St, Oskaloosa, KS 66066",,8:00 AM-4:30 PM,,ho0241,false,True,,,,poll0241
+"307 N Commercial, Mankato, KS 66956",,8:30 AM-12:00 PM,,ho0246,false,True,,,,poll0246
+"307 N Commercial, Mankato, KS 66956",,1:00 AM-4:30 PM,,ho0247,false,True,,,,poll0247
+"2101 E Kansas City Rd, Olathe, KS 66061",,8:00 AM-5:00 PM,,ho0256,false,True,,,,poll0256
+"304 N Main St, Lakin, KS 67860",,8:00 AM-5:00 PM,,ho0261,false,True,,,,poll0261
+"130 N Spruce, Kingman, KS 67068",,8:00 AM-5:00 PM,,ho0266,false,True,,,,poll0266
+"211 East Florida Avenue, Greensburg, KS 67054",,8:30 AM-12:00 PM,,ho0271,false,True,,,,poll0271
+"211 East Florida Avenue, Greensburg, KS 67054",,1:00 AM-5:00 PM,,ho0272,false,True,,,,poll0272
+"501 Merchant St #9, Oswego, KS 67356",,8:00 AM-5:00 PM,,ho0281,false,True,,,,poll0281
+"144 S Lane St, Dighton, KS 67839",,8:00 AM-5:00 PM,,ho0286,false,True,,,,poll0286
+"300 Walnut, Leavenworth, KS 66048",,8:00 AM-5:00 PM,,ho0291,false,True,,,,poll0291
+"216 E Lincoln Ave, Lincoln, KS 67455",,8:00 AM-5:00 PM,,ho0296,false,True,,,,poll0296
+"315 Main St, Mound City, KS 66056",,8:00 AM-4:00 PM,,ho0301,false,True,,,,poll0301
+"710 W 2nd, Oakley, KS 67748",,8:00 AM-5:00 PM,,ho0306,false,True,,,,poll0306
+"430 Commercial, Emporia, KS 66801",,8:00 AM-5:00 PM,,ho0311,false,True,,,,poll0311
+"117 N. Maple, McPherson, KS 67460",,8:00 AM-5:00 PM,,ho0316,false,True,,,,poll0316
+"Marion County Courthouse 200 South Third, Suite 104, Marion, KS 66861",,8:30 AM-5:00 PM,,ho0321,false,True,,,,poll0321
+"1201 Broadway, Marysville, KS 66508",,8:30 AM-5:00 PM,,ho0326,false,True,,,,poll0326
+"200 N Fowler St, Meade, KS 67864",,8:00 AM-12:00 PM,,ho0331,false,True,,,,poll0331
+"200 N Fowler St, Meade, KS 67864",,1:00 AM-5:00 PM,,ho0332,false,True,,,,poll0332
+"201 S. Pearl Suite 102, Paola, KS 66071",,8:00 AM-4:30 PM,,ho0341,false,True,,,,poll0341
+"111 S Hersey, Beloit, KS 67420",,8:30 AM-5:00 PM,,ho0346,false,True,,,,poll0346
+"217 E Myrtle St, Independence, KS 67301",,8:30 AM-12:00 PM,,ho0351,false,True,,,,poll0351
+"217 E Myrtle St, Independence, KS 67301",,1:00 AM-5:00 PM,,ho0352,false,True,,,,poll0352
+"501 West Main, Council Grove, KS 66846",,8:00 AM-5:00 PM,,ho0361,false,True,,,,poll0361
+"1025 Morton St, Elkhart, KS 67950",,9:00 AM-5:00 PM,,ho0366,false,True,,,,poll0366
+"607 Nemaha, Seneca, KS 66538",,8:00 AM-4:30 PM,,ho0371,false,True,,,,poll0371
+"100 S Main St., Erie, KS 66733",,8:00 AM-4:30 PM,,ho0376,false,True,,,,poll0376
+"202 W Sycamore, Ness City, KS 67560",,8:00 AM-12:00 PM,,ho0381,false,True,,,,poll0381
+"202 W Sycamore, Ness City, KS 67560",,1:00 AM-5:00 PM,,ho0382,false,True,,,,poll0382
+"105 S Kansas Ave, Norton, KS 67654",,8:00 AM-5:00 PM,,ho0391,false,True,,,,poll0391
+"717 Topeka Ave, Lyndon, KS 66451-0226",,8:00 AM-5:00 PM,,ho0396,false,True,,,,poll0396
+"423 W Main St, Osborne, KS 67473",,8:30 AM-5:00 PM,,ho0401,false,True,,,,poll0401
+"307 N Concord Suite 130, Minneapolis, KS 67467",,8:00 AM-12:00 PM,,ho0406,false,True,,,,poll0406
+"307 N Concord Suite 130, Minneapolis, KS 67467",,1:00 AM-5:00 PM,,ho0407,false,True,,,,poll0407
+"715 Broadway, Larned, KS 67550",,8:30 AM-5:00 PM,,ho0416,false,True,,,,poll0416
+"301 State Street, Phillipsburg, KS 67661",,8:00 AM-5:00 PM,,ho0421,false,True,,,,poll0421
+"207 N 1st St, Westmoreland, KS 66549",,8:30 AM-4:30 PM,,ho0426,false,True,,,,poll0426
+"300 S Ninnescah St, Pratt, KS 67124",,8:00 AM-5:00 PM,,ho0431,false,True,,,,poll0431
+"607 Main, Atwood, KS 67730",,9:00 AM-5:00 PM,,ho0436,false,True,,,,poll0436
+"206 West 1st, Hutchinson, KS 67501",,8:00 AM-5:00 PM,,ho0441,false,True,,,,poll0441
+"1815 M. Street, Belleville, KS 66935-0429",,8:00 AM-5:00 PM,,ho0446,false,True,,,,poll0446
+"101 W Commercial, Lyons, KS 67554",,8:00 AM-5:00 PM,,ho0451,false,True,,,,poll0451
+"110 Courthouse Plaza, Manhattan, KS 66502",,8:00 AM-5:00 PM,,ho0456,false,True,,,,poll0456
+"115 N Walnut, Stockton, KS 67669",,8:00 AM-12:00 PM,,ho0461,false,True,,,,poll0461
+"115 N Walnut, Stockton, KS 67669",,1:00 AM-5:00 PM,,ho0462,false,True,,,,poll0462
+"715 Elm St, LaCrosse, KS 67548",,8:30 AM-12:00 PM,,ho0471,false,True,,,,poll0471
+"715 Elm St, LaCrosse, KS 67548",,1:00 AM-5:00 PM,,ho0472,false,True,,,,poll0472
+"401 N Main St, Russell, KS 67665",,8:30 AM-5:00 PM,,ho0481,false,True,,,,poll0481
+"300 W Ash Ste. #215, Salina, KS 67401",,8:00 AM-5:00 PM,,ho0486,false,True,,,,poll0486
+"303 Court, Scott City, KS 67871",,8:00 AM-5:00 PM,,ho0491,false,True,,,,poll0491
+"510 N Main, Wichita, KS 67203-3798",,8:00 AM-5:00 PM,,ho0496,false,True,,,,poll0496
+"515 N Washington Ste 100, Liberal, KS 67901",,9:00 AM-5:00 PM,,ho0501,false,True,,,,poll0501
+"3420 SW Van Buren, Topeka, KS 66611",,8:00 AM-5:00 PM,,ho0506,false,True,,,,poll0506
+"925 9th Street, Hoxie, KS 67740",,8:00 AM-12:00 PM,,ho0511,false,True,,,,poll0511
+"925 9th Street, Hoxie, KS 67740",,1:00 AM-5:00 PM,,ho0512,false,True,,,,poll0512
+"813 Broadway Rm 102, Goodland, KS 67735",,8:00 AM-12:00 PM,,ho0521,false,True,,,,poll0521
+"813 Broadway Rm 102, Goodland, KS 67735",,1:00 AM-5:00 PM,,ho0522,false,True,,,,poll0522
+"218 S Grant, Smith Center, KS 66967",,8:00 AM-12:00 PM,,ho0531,false,True,,,,poll0531
+"218 S Grant, Smith Center, KS 66967",,1:00 AM-5:00 PM,,ho0532,false,True,,,,poll0532
+"209 N Broadway, St. John, KS 67576",,8:00 AM-12:00 PM,,ho0541,false,True,,,,poll0541
+"209 N Broadway, St. John, KS 67576",,1:00 AM-5:00 PM,,ho0542,false,True,,,,poll0542
+"201 N Main St, Johnson, KS 67855",,9:00 AM-12:00 PM,,ho0551,false,True,,,,poll0551
+"201 N Main St, Johnson, KS 67855",,1:00 AM-5:00 PM,,ho0552,false,True,,,,poll0552
+"200 E 6th, Hugoton, KS 67951",,9:00 AM-5:00 PM,,ho0561,false,True,,,,poll0561
+"501 N Washington Ave, Wellington, KS 67152",,8:00 AM-5:00 PM,,ho0566,false,True,,,,poll0566
+"300 N Court, Colby, KS 67701",,8:00 AM-5:00 PM,,ho0571,false,True,,,,poll0571
+"216 Main St, WaKeeney, KS 67672",,8:30 AM-5:00 PM,,ho0576,false,True,,,,poll0576
+"215 Kansas Ave, Alma, KS 66401",,8:00 AM-4:30 PM,,ho0581,false,True,,,,poll0581
+"313 N Main St, Sharon Springs, KS 67758",,8:00 AM-12:00 PM,,ho0586,false,True,,,,poll0586
+"313 N Main St, Sharon Springs, KS 67758",,1:00 AM-5:00 PM,,ho0587,false,True,,,,poll0587
+"214 C St, Washington, KS 66968",,8:00 AM-5:00 PM,,ho0596,false,True,,,,poll0596
+"206 S Fourth St, Leoti, KS 67861",,8:00 AM-12:00 PM,,ho0601,false,True,,,,poll0601
+"206 S Fourth St, Leoti, KS 67861",,1:00 AM-5:00 PM,,ho0602,false,True,,,,poll0602
+"615 Madison, Fredonia, KS 66736",,8:30 AM-5:00 PM,,ho0611,false,True,,,,poll0611
+"105 W Rutledge Room 103, Yates Center, KS 66783",,8:00 AM-12:00 PM,,ho0616,false,True,,,,poll0616
+"105 W Rutledge Room 103, Yates Center, KS 66783",,1:00 AM-5:00 PM,,ho0617,false,True,,,,poll0617
+"850 State Avenue, Kansas City, KS 66101",,8:00 AM-5:00 PM,,ho0626,false,True,,,,poll0626

@@ -73,7 +73,7 @@ class LocalityTxt(object):
         """Extracts external identifier (ocd-division)."""
 
         if external_identifier_value:
-            return external_identifier_value
+            return external_identifier_value.lower()
         else:
             return ''
 
@@ -198,8 +198,8 @@ class LocalityTxt(object):
         self.base_df['name'] = self.base_df.apply(
             lambda row: self.create_name(row['index'], row['county'], row['city']), axis=1)
 
-        # self.base_df['polling_location_ids'] = self.base_df.apply(
-        #     lambda row: self.create_polling_location_ids(row['polling_location_id']), axis=1)
+        self.base_df['polling_location_ids'] = self.base_df.apply(
+            lambda row: self.create_polling_location_ids(row['id']), axis=1)
         #     # TODO: temporarily providing empty string, UPDATE: restored 8/12/16
         #     #lambda row: '', axis=1)
 
@@ -234,7 +234,8 @@ class LocalityTxt(object):
 
         # Drop base_df columns.
         loc.drop(['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'times', 'start_date', 'end_date'], inplace=True, axis=1)
+                'address_two', 'city', 'state', 'zip', 'times', 'start_date', 'end_date', 'address_line',
+                  'time_zone', 'hours'], inplace=True, axis=1)
 
         #loc = self.dedupe(loc)
         loc = loc.groupby('external_identifier_value').agg(lambda x: ' '.join(set(x))).reset_index()
@@ -258,19 +259,15 @@ class LocalityTxt(object):
         loc.to_csv(config.locality_output + 'locality.csv', index=False, encoding='utf-8')  # send to csv file
 
 if __name__ == '__main__':
-    state_file = 'kansas_early_voting_info.csv'
+    file_name = 'intermediate_pl_for_loc.csv'
 
-    early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
-
-    reformatted_file = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/scripts/early_voting_input/reformatted_kansas_early_voting_info.csv"
-
-
-
+    early_voting_file = config.polling_location_output + file_name
 
     colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'times', 'start_date', 'end_date']
+                'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date', 'time_zone', 'index',
+                'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
+                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1, delimiter=',')
-
     early_voting_df['index'] = early_voting_df.index +1 # offsets zero based index so it starts at 1 for ids
 
     lt = LocalityTxt(early_voting_df, config.state)
