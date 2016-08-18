@@ -26,6 +26,7 @@ class ScheduleTxt(PollingLocationTxt):
     def __init__(self, base_df, early_voting_true='false', drop_box_true='false'):
         PollingLocationTxt.__init__(self, base_df, early_voting_true='false', drop_box_true='false')
         self.base_df = self.build_polling_location_txt()
+        print self.base_df
 
     def format_for_schedule(self):
 
