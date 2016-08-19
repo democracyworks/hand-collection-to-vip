@@ -10,13 +10,19 @@ hours_open_id,
 id
 """
 
+
 import pandas as pd
 import config
 from kansas_polling_location import PollingLocationTxt
 import datetime
-
+import re
 
 class ScheduleTxt(object):
+    """
+    Inherits from PollingLocationTxt.
+
+    """
+
 
     def __init__(self, base_df, early_voting_true='false', drop_box_true='false'):
         self.base_df = base_df
@@ -26,16 +32,12 @@ class ScheduleTxt(object):
         sch_base_df = self.base_df
 
         # Drop base_df columns.
-        sch_base_df.drop(['index', 'county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                          'address_two', 'city', 'state', 'zip', 'times', 'start_date', 'end_date', 'time_zone'],
-                         inplace=True, axis=1)
+        sch_base_df.drop(['index', 'ocd_division', 'county', 'location_name', 'address_1', 'address_2',
+                          'city', 'state', 'zip', 'id'], inplace=True, axis=1)
 
-        # print self.dedupe(sch_base_df)
+       # print self.dedupe(sch_base_df)
 
-        print sch_base_df
-
-        # return self.dedupe(sch_base_df)
-
+        return self.dedupe(sch_base_df)
 
     def utc_offset(self, county):
         counties = ["Greeley", "Hamilton", "Sherman", "Wallace"]
@@ -58,21 +60,13 @@ class ScheduleTxt(object):
         hour = hours.split("-")[1]
         return hour + ":00" + offset
 
-    # def get_sch_start_time(self, start_time):
-    #     # return self.convert_to_uct()
-    #     start_time = tuple(start_time.split('-'))[0].replace('AM', ':00')
-    #     return start_time + config.utc_offset
-    #
-    # def get_end_time(self, end_time):
-    #     """#"""
-    #     end_time = tuple(end_time.split('-'))[1].replace('PM', ':00')
-    #     return end_time + config.utc_offset
 
     def is_only_by_appointment(self):
         return ''
 
     def is_or_by_appointment(self):
         return ''
+
 
     def is_subject_to_change(self):
         # create conditional when/if column is present
@@ -95,6 +89,7 @@ class ScheduleTxt(object):
     def get_hours_open_id(self, hours_open_id):
         """#"""
         return hours_open_id
+
 
     def create_schedule_id(self, index):
         """Create id"""
@@ -133,7 +128,7 @@ class ScheduleTxt(object):
 
         self.base_df['is_subject_to_change2'] = self.base_df.apply(
             lambda row: self.is_subject_to_change(), axis=1)
-        #
+
         self.base_df['start_date2'] = self.base_df.apply(
             lambda row: self.get_start_date(row['start_date'], row['county']), axis=1)
         #
@@ -189,7 +184,6 @@ class ScheduleTxt(object):
 
         sch.to_csv(config.polling_location_output + 'schedule.txt', index=False, encoding='utf-8')  # send to txt file
         sch.to_csv(config.polling_location_output + 'schedule.csv', index=False, encoding='utf-8')  # send to csv file
-
 
 if __name__ == '__main__':
     early_voting_true = 'true'  # true or false

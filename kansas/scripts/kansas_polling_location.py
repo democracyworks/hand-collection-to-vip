@@ -18,6 +18,7 @@ id
 import pandas as pd
 import time
 import config
+import hashlib
 from time import strftime
 
 class PollingLocationTxt(object):
@@ -117,20 +118,15 @@ class PollingLocationTxt(object):
         # create conditional when/if column is present
         return ''
 
-    def create_hours_open_id(self, index):
+    def create_hours_open_id(self, index, address_1, address_2, city, zip_code):
         """#"""
         # TODO: this is the correct id/index code, correct everywhere
-        if index <= 9:
-            return 'ho000' + str(index)
+        address_line = self.get_address_line(index, address_1, address_2, city, zip_code)
+        # print address_line
 
-        elif index in range(10,100):
-            return 'ho00' + str(index)
+        address_line = int(hashlib.sha1(address_line).hexdigest(), 16) % (10 ** 8)
 
-        #elif index >=100:
-        elif index in range(100, 1000):
-            return 'ho0' + str(index)
-        else:
-            return 'ho' + str(index)
+        return 'ho' + str(address_line)
 
     def is_drop_box(self):
         """#"""
@@ -188,7 +184,6 @@ class PollingLocationTxt(object):
             lambda row: self.get_address_line(row['index'], row['address_one'], row['address_two'],
                                               row['city'], row['zip']), axis=1)
 
-
         self.base_df['directions'] = self.base_df.apply(
             lambda row: self.get_directions(), axis=1)
         #
@@ -199,7 +194,7 @@ class PollingLocationTxt(object):
             lambda row: self.get_photo_uri(), axis=1)
 
         self.base_df['hours_open_id'] = self.base_df.apply(
-            lambda row: self.create_hours_open_id(row['index']), axis=1)
+            lambda row: self.create_hours_open_id(row['index'], row['address_one'], row['address_two'], row['city'], row['zip']), axis=1)
 
         self.base_df['is_drop_box'] = self.base_df.apply(
             lambda row: self.is_drop_box(), axis=1)
@@ -305,12 +300,11 @@ if __name__ == '__main__':
     colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
                 'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date', 'time_zone']
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
-    print early_voting_df.index
-    early_voting_df['index'] = early_voting_df.index
+    early_voting_df['index'] = early_voting_df.index + 1
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
 
     # print early_voting_df["address_1"] + early_voting_df["address_2"]
-    # pl.export_for_locality()
+    pl.export_for_locality()
     pl.export_for_schedule()
-    # pl.write_polling_location_txt()
+    pl.write_polling_location_txt()
     # print early_voting_df["index"]

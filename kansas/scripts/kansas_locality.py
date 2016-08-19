@@ -183,8 +183,8 @@ class LocalityTxt(object):
         New columns that match the 'locality.txt' template are inserted into the DataFrame, apply() is
         used to run methods that generate the values for each row of the new columns.
         """
-        self.base_df['election_administration_id'] = self.base_df.apply(
-            lambda row: self.create_election_administration_id(row['index']), axis=1)
+        #self.base_df['election_administration_id'] = self.base_df.apply(
+        #    lambda row: self.create_election_administration_id(row['index']), axis=1)
 
         self.base_df['external_identifier_type'] = self.base_df.apply(
             lambda row: self.get_external_identifier_type(), axis=1)
@@ -199,9 +199,7 @@ class LocalityTxt(object):
             lambda row: self.create_name(row['index'], row['county'], row['city']), axis=1)
 
         self.base_df['polling_location_ids'] = self.base_df.apply(
-            lambda row: self.create_polling_location_ids(row['id']), axis=1)
-        #     # TODO: temporarily providing empty string, UPDATE: restored 8/12/16
-        #     #lambda row: '', axis=1)
+            lambda row: self.create_polling_location_ids(row['polling_location_id']), axis=1)
 
         self.base_df['state_id'] = self.base_df.apply(
             lambda row: self.create_state_id(), axis=1)
@@ -212,48 +210,60 @@ class LocalityTxt(object):
         self.base_df['other_type'] = self.base_df.apply(
             lambda row: self.get_other_type(), axis=1)
 
-        self.base_df['id'] = self.base_df.apply(
-            lambda row: self.create_id(row['index']), axis=1)
+        #self.base_df['id'] = self.base_df.apply(
+        #    lambda row: self.create_id(row['index']), axis=1)
 
         return self.base_df
 
+    def final_build(self):
+
+        loc = self.build_locality_txt()
+
+        # Drop base_df columns.
+        loc.drop(['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
+                'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date', 'time_zone', 'index',
+                'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
+                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'polling_location_id'], inplace=True, axis=1)
+
+        loc = loc.groupby('external_identifier_value').agg(lambda x: ' '.join(set(x))).reset_index()
+
+        #loc['election_administration_id'] = loc['election_administration_id'].apply(lambda x: ''.join(x.split(' ')[0]))
+        #loc['id'] = loc['id'].apply(lambda x: ''.join(x.split(' ')[0]))
+
+        loc['name'] = loc['name'].apply(lambda x: ''.join(x.split(' ')[0]))
+
+        loc['grouped_index'] = loc.index + 1
+        #print loc
+
+        loc['election_administration_id'] = loc.apply(
+            lambda row: self.create_election_administration_id(row['grouped_index']), axis=1)
+            #lambda row: self.create_election_administration_id(''), axis = 1)
+
+        loc['id'] = loc.apply(
+            lambda row: self.create_id(row['grouped_index']), axis=1)
+
+        # reorder columns
+        cols =['election_administration_id', 'external_identifier_type', 'external_identifier_othertype',
+               'external_identifier_value', 'name', 'polling_location_ids', 'state_id', 'type',
+                'other_type', 'grouped_index', 'id']
+
+        final = loc.reindex(columns=cols)
+
+        final.drop(['grouped_index',], inplace=True, axis=1)
+
+        print final
+
+        return final
+
+
     def dedupe(self, dupe):
         """#"""
-        return dupe.drop_duplicates(subset='external_identifier_value')
-
-    def group(self, df):
-
-        l = df.groupby('external_identifier_value').agg(lambda x: ' '.join(set(x))).reset_index()
-        return l
+        return dupe.drop_duplicates(subset='external_identifier_value', inplace=True)
 
     def write_locality_txt(self):
         """Drops base DataFrame columns then writes final dataframe to text or csv file"""
 
-        loc = self.build_locality_txt()
-        #print loc
-
-        # Drop base_df columns.
-        loc.drop(['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'times', 'start_date', 'end_date', 'address_line',
-                  'time_zone', 'hours'], inplace=True, axis=1)
-
-        #loc = self.dedupe(loc)
-        loc = loc.groupby('external_identifier_value').agg(lambda x: ' '.join(set(x))).reset_index()
-
-        loc['election_administration_id'] = loc['election_administration_id'].apply(lambda x: ''.join(x.split(' ')[0]))
-        loc['id'] = loc['id'].apply(lambda x: ''.join(x.split(' ')[0]))
-
-        loc['name'] = loc['name'].apply(lambda x: ''.join(x.split(' ')[0]))
-
-        print loc
-
-        #keep = self.base_df[]
-
-        #loc['polling_location_ids'] = loc['polling_location_ids'].apply(lambda x: ''.join(x.split(' ')[0]))
-
-
-        #print loc
-
+        loc = self.final_build()
 
         loc.to_csv(config.locality_output + 'locality.txt', index=False, encoding='utf-8')  # send to txt file
         loc.to_csv(config.locality_output + 'locality.csv', index=False, encoding='utf-8')  # send to csv file
@@ -266,7 +276,7 @@ if __name__ == '__main__':
     colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
                 'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date', 'time_zone', 'index',
                 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
-                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
+                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'polling_location_id']
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1, delimiter=',')
     early_voting_df['index'] = early_voting_df.index +1 # offsets zero based index so it starts at 1 for ids
 

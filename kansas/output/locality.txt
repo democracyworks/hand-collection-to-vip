@@ -1,106 +1,106 @@
-external_identifier_value,hours_open_id,id,election_administration_id,external_identifier_type,external_identifier_othertype,name,polling_location_ids,state_id,type,other_type
-allen,ho0000,loc0001,ea0001,ocd-id,,allen_lola_1,poll0000,st20,,
-anderson,ho0005,loc0002,ea0002,ocd-id,,anderson_garnett_2,poll0005,st20,,
-atchison,ho0010,loc0003,ea0003,ocd-id,,atchison_atchison_3,poll0010,st20,,
-barber,ho0015,loc0004,ea0004,ocd-id,,barber_medicine,poll0015,st20,,
-barton,ho0020,loc0005,ea0005,ocd-id,,barton_great,poll0020,st20,,
-bourbon,ho0025,loc0006,ea0006,ocd-id,,bourbon_ft,poll0025,st20,,
-brown,ho0030,loc0007,ea0007,ocd-id,,brown_hiawatha_7,poll0030,st20,,
-butler,ho0035,loc0008,ea0008,ocd-id,,butler_el,poll0035,st20,,
-chase,ho0040,loc0009,ea0009,ocd-id,,chase_cottonwood,poll0040,st20,,
-chautauqua,ho0045,loc0010,ea0010,ocd-id,,chautauqua_sedan_10,poll0045,st20,,
-cherokee,ho0050,loc0011,ea0011,ocd-id,,cherokee_columbus_11,poll0050,st20,,
-cheyenne,ho0056 ho0055,loc0012,ea0013,ocd-id,,cheyenne_st,poll0055 poll0056,st20,,
-clark,ho0065,loc0014,ea0014,ocd-id,,clark_ashland_14,poll0065,st20,,
-clay,ho0070,loc0015,ea0015,ocd-id,,clay_clay,poll0070,st20,,
-cloud,ho0075,loc0016,ea0016,ocd-id,,cloud_concordia_16,poll0075,st20,,
-coffey,ho0080,loc0017,ea0017,ocd-id,,coffey_burlington_17,poll0080,st20,,
-comanche,ho0085 ho0086,loc0018,ea0019,ocd-id,,comanche_coldwater_19,poll0086 poll0085,st20,,
-cowley,ho0095,loc0020,ea0020,ocd-id,,cowley_winfield_20,poll0095,st20,,
-crawford,ho0100,loc0021,ea0021,ocd-id,,crawford_girard_21,poll0100,st20,,
-decatur,ho0105,loc0022,ea0022,ocd-id,,decatur_oberlin_22,poll0105,st20,,
-dickinson,ho0110,loc0023,ea0023,ocd-id,,dickinson_abilene_23,poll0110,st20,,
-doniphan,ho0115,loc0024,ea0024,ocd-id,,doniphan_troy_24,poll0115,st20,,
-douglas,ho0120,loc0025,ea0025,ocd-id,,douglas_lawrence_25,poll0120,st20,,
-edwards,ho0125,loc0026,ea0026,ocd-id,,edwards_kinsley_26,poll0125,st20,,
-elk,ho0130,loc0027,ea0027,ocd-id,,elk_howard_27,poll0130,st20,,
-ellis,ho0135,loc0028,ea0028,ocd-id,,ellis_hays_28,poll0135,st20,,
-ellsworth,ho0140,loc0029,ea0029,ocd-id,,ellsworth_ellsworth_29,poll0140,st20,,
-finney,ho0145,loc0030,ea0030,ocd-id,,finney_garden,poll0145,st20,,
-ford,ho0150,loc0031,ea0031,ocd-id,,ford_dodge,poll0150,st20,,
-franklin,ho0155,loc0032,ea0032,ocd-id,,franklin_ottawa_32,poll0155,st20,,
-geary,ho0160,loc0033,ea0033,ocd-id,,geary_junction,poll0160,st20,,
-gove,ho0166 ho0165,loc0034,ea0035,ocd-id,,gove_gove_35,poll0165 poll0166,st20,,
-graham,ho0175,loc0036,ea0036,ocd-id,,graham_hill,poll0175,st20,,
-grant,ho0180,loc0037,ea0037,ocd-id,,grant_ulysses_37,poll0180,st20,,
-gray,ho0185,loc0038,ea0038,ocd-id,,gray_cimarron_38,poll0185,st20,,
-greeley,ho0191 ho0190,loc0039,ea0040,ocd-id,,greeley_tribune_39,poll0191 poll0190,st20,,
-greenwood,ho0200,loc0041,ea0041,ocd-id,,greenwood_eureka_41,poll0200,st20,,
-hamilton,ho0205,loc0042,ea0042,ocd-id,,hamilton_syracuse_42,poll0205,st20,,
-harper,ho0210 ho0211,loc0043,ea0044,ocd-id,,harper_anthony_43,poll0210 poll0211,st20,,
-harvey,ho0220,loc0045,ea0045,ocd-id,,harvey_newton_45,poll0220,st20,,
-haskell,ho0225,loc0046,ea0046,ocd-id,,haskell_sublette_46,poll0225,st20,,
-hodgeman,ho0227 ho0226,loc0048,ea0047,ocd-id,,hodgeman_jetmore_48,poll0227 poll0226,st20,,
-jackson,ho0236,loc0049,ea0049,ocd-id,,jackson_holton_49,poll0236,st20,,
-jefferson,ho0241,loc0050,ea0050,ocd-id,,jefferson_oskaloosa_50,poll0241,st20,,
-jewell,ho0247 ho0246,loc0052,ea0052,ocd-id,,jewell_mankato_52,poll0247 poll0246,st20,,
-johnson,ho0256,loc0053,ea0053,ocd-id,,johnson_olathe_53,poll0256,st20,,
-kearny,ho0261,loc0054,ea0054,ocd-id,,kearny_lakin_54,poll0261,st20,,
-kingman,ho0266,loc0055,ea0055,ocd-id,,kingman_kingman_55,poll0266,st20,,
-kiowa,ho0272 ho0271,loc0056,ea0057,ocd-id,,kiowa_greensburg_57,poll0271 poll0272,st20,,
-labette,ho0281,loc0058,ea0058,ocd-id,,labette_oswego_58,poll0281,st20,,
-lane,ho0286,loc0059,ea0059,ocd-id,,lane_dighton_59,poll0286,st20,,
-leavenworth,ho0291,loc0060,ea0060,ocd-id,,leavenworth_leavenworth_60,poll0291,st20,,
-lincoln,ho0296,loc0061,ea0061,ocd-id,,lincoln_lincoln_61,poll0296,st20,,
-linn,ho0301,loc0062,ea0062,ocd-id,,linn_mound,poll0301,st20,,
-logan,ho0306,loc0063,ea0063,ocd-id,,logan_oakley_63,poll0306,st20,,
-lyon,ho0311,loc0064,ea0064,ocd-id,,lyon_emporia_64,poll0311,st20,,
-marion,ho0321,loc0066,ea0066,ocd-id,,marion_marion_66,poll0321,st20,,
-marshall,ho0326,loc0067,ea0067,ocd-id,,marshall_marysville_67,poll0326,st20,,
-mcpherson,ho0316,loc0065,ea0065,ocd-id,,mcpherson_mcpherson_65,poll0316,st20,,
-meade,ho0332 ho0331,loc0069,ea0068,ocd-id,,meade_meade_68,poll0331 poll0332,st20,,
-miami,ho0341,loc0070,ea0070,ocd-id,,miami_paola_70,poll0341,st20,,
-mitchell,ho0346,loc0071,ea0071,ocd-id,,mitchell_beloit_71,poll0346,st20,,
-montgomery,ho0351 ho0352,loc0072,ea0073,ocd-id,,montgomery_independence_72,poll0352 poll0351,st20,,
-morris,ho0361,loc0074,ea0074,ocd-id,,morris_council,poll0361,st20,,
-morton,ho0366,loc0075,ea0075,ocd-id,,morton_elkhart_75,poll0366,st20,,
-nemaha,ho0371,loc0076,ea0076,ocd-id,,nemaha_seneca_76,poll0371,st20,,
-neosho,ho0376,loc0077,ea0077,ocd-id,,neosho_erie_77,poll0376,st20,,
-ness,ho0382 ho0381,loc0078,ea0079,ocd-id,,ness_ness,poll0381 poll0382,st20,,
-norton,ho0391,loc0080,ea0080,ocd-id,,norton_norton_80,poll0391,st20,,
-osage,ho0396,loc0081,ea0081,ocd-id,,osage_lyndon_81,poll0396,st20,,
-osborne,ho0401,loc0082,ea0082,ocd-id,,osborne_osborne_82,poll0401,st20,,
-ottawa,ho0407 ho0406,loc0084,ea0083,ocd-id,,ottawa_minneapolis_83,poll0407 poll0406,st20,,
-pawnee,ho0416,loc0085,ea0085,ocd-id,,pawnee_larned_85,poll0416,st20,,
-phillips,ho0421,loc0086,ea0086,ocd-id,,phillips_phillipsburg_86,poll0421,st20,,
-pottawatomie,ho0426,loc0087,ea0087,ocd-id,,pottawatomie_westmoreland_87,poll0426,st20,,
-pratt,ho0431,loc0088,ea0088,ocd-id,,pratt_pratt_88,poll0431,st20,,
-rawlins,ho0436,loc0089,ea0089,ocd-id,,rawlins_atwood_89,poll0436,st20,,
-reno,ho0441,loc0090,ea0090,ocd-id,,reno_hutchinson_90,poll0441,st20,,
-republic,ho0446,loc0091,ea0091,ocd-id,,republic_belleville_91,poll0446,st20,,
-rice,ho0451,loc0092,ea0092,ocd-id,,rice_lyons_92,poll0451,st20,,
-riley,ho0456,loc0093,ea0093,ocd-id,,riley_manhattan_93,poll0456,st20,,
-rooks,ho0462 ho0461,loc0094,ea0095,ocd-id,,rooks_stockton_95,poll0461 poll0462,st20,,
-rush,ho0471 ho0472,loc0096,ea0097,ocd-id,,rush_lacrosse_97,poll0472 poll0471,st20,,
-russell,ho0481,loc0098,ea0098,ocd-id,,russell_russell_98,poll0481,st20,,
-saline,ho0486,loc0099,ea0099,ocd-id,,saline_salina_99,poll0486,st20,,
-scott,ho0491,loc0100,ea0100,ocd-id,,scott_scott,poll0491,st20,,
-sedgwick,ho0496,loc0101,ea0101,ocd-id,,sedgwick_wichita_101,poll0496,st20,,
-seward,ho0501,loc0102,ea0102,ocd-id,,seward_liberal_102,poll0501,st20,,
-shawnee,ho0506,loc0103,ea0103,ocd-id,,shawnee_topeka_103,poll0506,st20,,
-sheridan,ho0512 ho0511,loc0104,ea0105,ocd-id,,sheridan_hoxie_104,poll0511 poll0512,st20,,
-sherman,ho0522 ho0521,loc0106,ea0107,ocd-id,,sherman_goodland_107,poll0521 poll0522,st20,,
-smith,ho0531 ho0532,loc0108,ea0109,ocd-id,,smith_smith,poll0532 poll0531,st20,,
-stafford,ho0541 ho0542,loc0111,ea0110,ocd-id,,stafford_st.,poll0542 poll0541,st20,,
-stanton,ho0552 ho0551,loc0113,ea0112,ocd-id,,stanton_johnson_113,poll0551 poll0552,st20,,
-stevens,ho0561,loc0114,ea0114,ocd-id,,stevens_hugoton_114,poll0561,st20,,
-sumner,ho0566,loc0115,ea0115,ocd-id,,sumner_wellington_115,poll0566,st20,,
-thomas,ho0571,loc0116,ea0116,ocd-id,,thomas_colby_116,poll0571,st20,,
-trego,ho0576,loc0117,ea0117,ocd-id,,trego_wakeeney_117,poll0576,st20,,
-wabaunsee,ho0581,loc0118,ea0118,ocd-id,,wabaunsee_alma_118,poll0581,st20,,
-wallace,ho0586 ho0587,loc0120,ea0120,ocd-id,,wallace_sharon,poll0586 poll0587,st20,,
-washington,ho0596,loc0121,ea0121,ocd-id,,washington_washington_121,poll0596,st20,,
-wichita,ho0602 ho0601,loc0122,ea0123,ocd-id,,wichita_leoti_122,poll0601 poll0602,st20,,
-wilson,ho0611,loc0124,ea0124,ocd-id,,wilson_fredonia_124,poll0611,st20,,
-woodson,ho0616 ho0617,loc0126,ea0126,ocd-id,,woodson_yates,poll0616 poll0617,st20,,
-wyandotte,ho0626,loc0127,ea0127,ocd-id,,wyandotte_kansas,poll0626,st20,,
+election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
+ea0001,ocd-id,,allen,allen_lola_1,poll0001,st20,,,loc0001
+ea0002,ocd-id,,anderson,anderson_garnett_2,poll0006,st20,,,loc0002
+ea0003,ocd-id,,atchison,atchison_atchison_3,poll0011,st20,,,loc0003
+ea0004,ocd-id,,barber,barber_medicine,poll0016,st20,,,loc0004
+ea0005,ocd-id,,barton,barton_great,poll0021,st20,,,loc0005
+ea0006,ocd-id,,bourbon,bourbon_ft,poll0026,st20,,,loc0006
+ea0007,ocd-id,,brown,brown_hiawatha_7,poll0031,st20,,,loc0007
+ea0008,ocd-id,,butler,butler_el,poll0036,st20,,,loc0008
+ea0009,ocd-id,,chase,chase_cottonwood,poll0041,st20,,,loc0009
+ea0010,ocd-id,,chautauqua,chautauqua_sedan_10,poll0046,st20,,,loc0010
+ea0011,ocd-id,,cherokee,cherokee_columbus_11,poll0051,st20,,,loc0011
+ea0012,ocd-id,,cheyenne,cheyenne_st,poll0056 poll0057,st20,,,loc0012
+ea0013,ocd-id,,clark,clark_ashland_14,poll0066,st20,,,loc0013
+ea0014,ocd-id,,clay,clay_clay,poll0071,st20,,,loc0014
+ea0015,ocd-id,,cloud,cloud_concordia_16,poll0076,st20,,,loc0015
+ea0016,ocd-id,,coffey,coffey_burlington_17,poll0081,st20,,,loc0016
+ea0017,ocd-id,,comanche,comanche_coldwater_19,poll0087 poll0086,st20,,,loc0017
+ea0018,ocd-id,,cowley,cowley_winfield_20,poll0096,st20,,,loc0018
+ea0019,ocd-id,,crawford,crawford_girard_21,poll0101,st20,,,loc0019
+ea0020,ocd-id,,decatur,decatur_oberlin_22,poll0106,st20,,,loc0020
+ea0021,ocd-id,,dickinson,dickinson_abilene_23,poll0111,st20,,,loc0021
+ea0022,ocd-id,,doniphan,doniphan_troy_24,poll0116,st20,,,loc0022
+ea0023,ocd-id,,douglas,douglas_lawrence_25,poll0121,st20,,,loc0023
+ea0024,ocd-id,,edwards,edwards_kinsley_26,poll0126,st20,,,loc0024
+ea0025,ocd-id,,elk,elk_howard_27,poll0131,st20,,,loc0025
+ea0026,ocd-id,,ellis,ellis_hays_28,poll0136,st20,,,loc0026
+ea0027,ocd-id,,ellsworth,ellsworth_ellsworth_29,poll0141,st20,,,loc0027
+ea0028,ocd-id,,finney,finney_garden,poll0146,st20,,,loc0028
+ea0029,ocd-id,,ford,ford_dodge,poll0151,st20,,,loc0029
+ea0030,ocd-id,,franklin,franklin_ottawa_32,poll0156,st20,,,loc0030
+ea0031,ocd-id,,geary,geary_junction,poll0161,st20,,,loc0031
+ea0032,ocd-id,,gove,gove_gove_35,poll0166 poll0167,st20,,,loc0032
+ea0033,ocd-id,,graham,graham_hill,poll0176,st20,,,loc0033
+ea0034,ocd-id,,grant,grant_ulysses_37,poll0181,st20,,,loc0034
+ea0035,ocd-id,,gray,gray_cimarron_38,poll0186,st20,,,loc0035
+ea0036,ocd-id,,greeley,greeley_tribune_39,poll0191 poll0192,st20,,,loc0036
+ea0037,ocd-id,,greenwood,greenwood_eureka_41,poll0201,st20,,,loc0037
+ea0038,ocd-id,,hamilton,hamilton_syracuse_42,poll0206,st20,,,loc0038
+ea0039,ocd-id,,harper,harper_anthony_43,poll0212 poll0211,st20,,,loc0039
+ea0040,ocd-id,,harvey,harvey_newton_45,poll0221,st20,,,loc0040
+ea0041,ocd-id,,haskell,haskell_sublette_46,poll0226,st20,,,loc0041
+ea0042,ocd-id,,hodgeman,hodgeman_jetmore_48,poll0227 poll0228,st20,,,loc0042
+ea0043,ocd-id,,jackson,jackson_holton_49,poll0237,st20,,,loc0043
+ea0044,ocd-id,,jefferson,jefferson_oskaloosa_50,poll0242,st20,,,loc0044
+ea0045,ocd-id,,jewell,jewell_mankato_52,poll0248 poll0247,st20,,,loc0045
+ea0046,ocd-id,,johnson,johnson_olathe_53,poll0257,st20,,,loc0046
+ea0047,ocd-id,,kearny,kearny_lakin_54,poll0262,st20,,,loc0047
+ea0048,ocd-id,,kingman,kingman_kingman_55,poll0267,st20,,,loc0048
+ea0049,ocd-id,,kiowa,kiowa_greensburg_57,poll0272 poll0273,st20,,,loc0049
+ea0050,ocd-id,,labette,labette_oswego_58,poll0282,st20,,,loc0050
+ea0051,ocd-id,,lane,lane_dighton_59,poll0287,st20,,,loc0051
+ea0052,ocd-id,,leavenworth,leavenworth_leavenworth_60,poll0292,st20,,,loc0052
+ea0053,ocd-id,,lincoln,lincoln_lincoln_61,poll0297,st20,,,loc0053
+ea0054,ocd-id,,linn,linn_mound,poll0302,st20,,,loc0054
+ea0055,ocd-id,,logan,logan_oakley_63,poll0307,st20,,,loc0055
+ea0056,ocd-id,,lyon,lyon_emporia_64,poll0312,st20,,,loc0056
+ea0057,ocd-id,,marion,marion_marion_66,poll0322,st20,,,loc0057
+ea0058,ocd-id,,marshall,marshall_marysville_67,poll0327,st20,,,loc0058
+ea0059,ocd-id,,mcpherson,mcpherson_mcpherson_65,poll0317,st20,,,loc0059
+ea0060,ocd-id,,meade,meade_meade_68,poll0333 poll0332,st20,,,loc0060
+ea0061,ocd-id,,miami,miami_paola_70,poll0342,st20,,,loc0061
+ea0062,ocd-id,,mitchell,mitchell_beloit_71,poll0347,st20,,,loc0062
+ea0063,ocd-id,,montgomery,montgomery_independence_72,poll0353 poll0352,st20,,,loc0063
+ea0064,ocd-id,,morris,morris_council,poll0362,st20,,,loc0064
+ea0065,ocd-id,,morton,morton_elkhart_75,poll0367,st20,,,loc0065
+ea0066,ocd-id,,nemaha,nemaha_seneca_76,poll0372,st20,,,loc0066
+ea0067,ocd-id,,neosho,neosho_erie_77,poll0377,st20,,,loc0067
+ea0068,ocd-id,,ness,ness_ness,poll0382 poll0383,st20,,,loc0068
+ea0069,ocd-id,,norton,norton_norton_80,poll0392,st20,,,loc0069
+ea0070,ocd-id,,osage,osage_lyndon_81,poll0397,st20,,,loc0070
+ea0071,ocd-id,,osborne,osborne_osborne_82,poll0402,st20,,,loc0071
+ea0072,ocd-id,,ottawa,ottawa_minneapolis_83,poll0408 poll0407,st20,,,loc0072
+ea0073,ocd-id,,pawnee,pawnee_larned_85,poll0417,st20,,,loc0073
+ea0074,ocd-id,,phillips,phillips_phillipsburg_86,poll0422,st20,,,loc0074
+ea0075,ocd-id,,pottawatomie,pottawatomie_westmoreland_87,poll0427,st20,,,loc0075
+ea0076,ocd-id,,pratt,pratt_pratt_88,poll0432,st20,,,loc0076
+ea0077,ocd-id,,rawlins,rawlins_atwood_89,poll0437,st20,,,loc0077
+ea0078,ocd-id,,reno,reno_hutchinson_90,poll0442,st20,,,loc0078
+ea0079,ocd-id,,republic,republic_belleville_91,poll0447,st20,,,loc0079
+ea0080,ocd-id,,rice,rice_lyons_92,poll0452,st20,,,loc0080
+ea0081,ocd-id,,riley,riley_manhattan_93,poll0457,st20,,,loc0081
+ea0082,ocd-id,,rooks,rooks_stockton_95,poll0463 poll0462,st20,,,loc0082
+ea0083,ocd-id,,rush,rush_lacrosse_97,poll0472 poll0473,st20,,,loc0083
+ea0084,ocd-id,,russell,russell_russell_98,poll0482,st20,,,loc0084
+ea0085,ocd-id,,saline,saline_salina_99,poll0487,st20,,,loc0085
+ea0086,ocd-id,,scott,scott_scott,poll0492,st20,,,loc0086
+ea0087,ocd-id,,sedgwick,sedgwick_wichita_101,poll0497,st20,,,loc0087
+ea0088,ocd-id,,seward,seward_liberal_102,poll0502,st20,,,loc0088
+ea0089,ocd-id,,shawnee,shawnee_topeka_103,poll0507,st20,,,loc0089
+ea0090,ocd-id,,sheridan,sheridan_hoxie_104,poll0513 poll0512,st20,,,loc0090
+ea0091,ocd-id,,sherman,sherman_goodland_107,poll0522 poll0523,st20,,,loc0091
+ea0092,ocd-id,,smith,smith_smith,poll0533 poll0532,st20,,,loc0092
+ea0093,ocd-id,,stafford,stafford_st.,poll0542 poll0543,st20,,,loc0093
+ea0094,ocd-id,,stanton,stanton_johnson_113,poll0553 poll0552,st20,,,loc0094
+ea0095,ocd-id,,stevens,stevens_hugoton_114,poll0562,st20,,,loc0095
+ea0096,ocd-id,,sumner,sumner_wellington_115,poll0567,st20,,,loc0096
+ea0097,ocd-id,,thomas,thomas_colby_116,poll0572,st20,,,loc0097
+ea0098,ocd-id,,trego,trego_wakeeney_117,poll0577,st20,,,loc0098
+ea0099,ocd-id,,wabaunsee,wabaunsee_alma_118,poll0582,st20,,,loc0099
+ea0100,ocd-id,,wallace,wallace_sharon,poll0588 poll0587,st20,,,loc0100
+ea0101,ocd-id,,washington,washington_washington_121,poll0597,st20,,,loc0101
+ea0102,ocd-id,,wichita,wichita_leoti_122,poll0603 poll0602,st20,,,loc0102
+ea0103,ocd-id,,wilson,wilson_fredonia_124,poll0612,st20,,,loc0103
+ea0104,ocd-id,,woodson,woodson_yates,poll0617 poll0618,st20,,,loc0104
+ea0105,ocd-id,,wyandotte,wyandotte_kansas,poll0627,st20,,,loc0105

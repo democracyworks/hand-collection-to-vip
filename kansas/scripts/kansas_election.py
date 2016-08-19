@@ -180,7 +180,7 @@ class ElectionTxt(object):
             lambda row: self.absentee_request_deadline(row['index']), axis=1)
 
         self.base_df['hours_open_id'] = self.base_df.apply(
-            lambda row: self.hours_open_id(row['hours_open_id']), axis=1)
+            lambda row: self.hours_open_id(row['source_hours_open_id']), axis=1)
 
         #print self.base_df
         return self.base_df
@@ -192,8 +192,8 @@ class ElectionTxt(object):
 
         et.drop(['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
                 'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date', 'time_zone', 'index',
-                'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
-                'is_early_voting', 'latitude', 'longitude', 'latlng_source'], inplace=True, axis=1)
+                'address_line', 'directions', 'hours', 'photo_uri', 'source_hours_open_id', 'is_drop_box',
+                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id'], inplace=True, axis=1)
 
         print et
 
@@ -241,7 +241,7 @@ if __name__ == '__main__':
     #early_voting_path = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/kansas_early_voting_info.csv"
     colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
                 'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date', 'time_zone', 'index',
-                'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
+                'address_line', 'directions', 'hours', 'photo_uri', 'source_hours_open_id', 'is_drop_box',
                 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
     early_voting_df = pd.read_csv(early_voting_path, names=colnames, encoding='utf-8', skiprows=1)
 

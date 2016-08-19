@@ -22,9 +22,9 @@ def pl():
     early_voting_file = 'locality.csv'
 
     early_voting_path = config.polling_location_output + early_voting_file
-    colnames = ['source_external_identifier_value','hours_open_id',  'election_administration_id',
-                'source_external_identifier_type', 'other_type','name', 'source_polling_location_ids', 'state_id', 'type',
-                'source_id']
+    colnames = ['source_election_administration_id', 'external_identifier_type', 'external_identifier_othertype',
+                'external_identifier_value', 'name', 'source_polling_location_ids', 'state_id', 'type',
+                'other_type', 'source_id']
 
     #external_identifier_value, hours_open_id, id, election_administration_id, external_identifier_type, external_identifier_othertype, name, polling_location_ids, state_id, type, other_type
 
@@ -80,7 +80,6 @@ class StateTxt(object):
     def polling_location_ids(self):
         """#"""
         p = pl()
-        print p
         p = [i.split(' ') for i in p]
         p =[item for sublist in p for item in sublist]
         return ' '.join(p)
@@ -103,7 +102,7 @@ class StateTxt(object):
         with open(config.polling_location_output + 'state.txt', 'ab') as f:
             fieldnames = ["election_administration_id", 'external_identifier_type',
                           'external_identifier_othertype', 'external_identifier_value',
-                          'name', 'polling_location_ids', 'state_id']
+                          'name', 'polling_location_ids', 'id']
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerow({'election_administration_id': self.election_administration_id(),
@@ -112,7 +111,7 @@ class StateTxt(object):
                              'external_identifier_value': self.get_external_identifier_value(),
                              'name': self.get_name(),
                              'polling_location_ids': self.polling_location_ids(),
-                             'state_id': self.create_state_id()
+                             'id': self.create_state_id()
                              })
 
 if __name__ == '__main__':
@@ -120,3 +119,6 @@ if __name__ == '__main__':
 
     st = StateTxt()
     st.write_state_txt()
+
+
+
