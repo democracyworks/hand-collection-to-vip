@@ -112,7 +112,7 @@ class ElectionTxt(object):
 
     def has_election_day_registration(self):
         """#"""
-        return 'no'
+        return 'false'
 
     def registration_deadline(self, index):
         """Grab registration_deadline from state_feed document."""

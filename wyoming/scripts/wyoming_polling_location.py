@@ -9,7 +9,7 @@ class PollingLocationTxt(object):
 
     """
 
-    def __init__(self, base_df, early_voting_true=False, drop_box_true=False):
+    def __init__(self, base_df, early_voting_true=False, drop_box_true="false"):
         self.base_df = base_df
         self.drop_box_true = drop_box_true
         self.early_voting_true = early_voting_true
@@ -234,7 +234,7 @@ class PollingLocationTxt(object):
 if __name__ == '__main__':
 
 
-    early_voting_true = True  # True or False
+    early_voting_true = "true"  # True or False
     #drop_box_true =
     state_file='wyoming_early_voting_info.csv'
 
