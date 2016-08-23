@@ -2,13 +2,17 @@
 
 state = 'new jersey'
 
+state_upper = 'New Jersey'
+
 state_abbreviation = 'nj'
 
-utc_offset = '-05:00'
+utc_offset_4 = '-04:00'
 
-polling_location_output = '/home/acg/democracyworks/hand-collection-to-vip/new_jersey/output/'
+utc_offset_5 = '-05:00'
 
-locality_output = '/home/acg/democracyworks/hand-collection-to-vip/new_jersey/output/'
+early_voting = 'true'
+
+output = '/home/acg/democracyworks/hand-collection-to-vip/new_jersey/output/'
 
 source_output = "/home/acg/democracyworks/hand-collection-to-vip/new_jersey/output/source.txt"
 

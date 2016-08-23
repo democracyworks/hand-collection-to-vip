@@ -13,67 +13,135 @@ id
 
 import pandas as pd
 import config
-from nj_polling_location import PollingLocationTxt
 import datetime
 
-class ScheduleTxt(PollingLocationTxt):
-    """
-    Inherits from PollingLocationTxt.
-
+class ScheduleTxt(object):
     """
 
-
-    def __init__(self, base_df, early_voting_true=False, drop_box_true=False):
-        PollingLocationTxt.__init__(self, base_df, early_voting_true=False, drop_box_true=False)
-        self.base_df = self.build_polling_location_txt()
-        #self.base_df = self.dedupe(base_df)
-        #print self.base_df
-        #print d
-
-    def format_for_schedule(self):
-
-        sch_base_df = self.base_df
-
-        # Drop base_df columns.
-        sch_base_df.drop(['index', 'ocd_division', 'county', 'location_name', 'address_1', 'address_2',
-                          'city', 'state', 'zip', 'id'], inplace=True, axis=1)
-
-       # print self.dedupe(sch_base_df)
-
-        return self.dedupe(sch_base_df)
+    """
 
 
-    def get_sch_start_time(self, start_time):
+    def __init__(self, base_df):
+        self.base_df = base_df
+
+    def get_start_time(self, hours, start_date, end_date):
         #return self.convert_to_uct()
-        start_time = tuple(start_time.split('-'))[0].replace(' AM', ':00')
-        return start_time + config.utc_offset
 
+        start_time = tuple(hours.split('-'))[0].replace(' AM', ':00')
+        #start_time = str(datetime.datetime.strptime(start_time, '%I:%M %p'))[11:]
+        #print start_time
+        end_date = self.get_end_date(end_date, start_date)
 
-    def get_end_time(self, end_time):
+        diff1 = '11-07'
+        diff2 = '11-06'
+
+        # determines which utc offset to use
+        if diff1 in start_date or diff2 in start_date:
+            utc_offset = config.utc_offset_5
+            return start_time + utc_offset
+
+        elif diff1 in end_date or diff2 in end_date:
+            utc_offset = config.utc_offset_5
+            return start_time + utc_offset
+
+        else:
+            utc_offset = config.utc_offset_4
+            return start_time + utc_offset
+
+    def get_end_time(self, hours, start_date, end_date):
         """#"""
-        end_time = tuple(end_time.split('-'))[1].replace(' PM', ':00')
-        return end_time + config.utc_offset
+
+        end_time = tuple(hours.split('-'))[1].replace(' PM', ':00')
+        print type(end_date)
+
+        end_date = self.get_end_date(end_date, start_date)
+
+        diff1 = '11-07'
+        diff2 = '11-06'
+
+        # determines which utc offset to use
+        if diff1 in start_date or diff2 in start_date:
+            utc_offset = config.utc_offset_5
+            print utc_offset
+            return end_time + utc_offset
+
+        elif diff1 in end_date or diff2 in end_date:
+            utc_offset = config.utc_offset_5
+            return end_time + utc_offset
+
+        else:
+            utc_offset = config.utc_offset_4
+            print utc_offset
+            return end_time + utc_offset
 
     def is_only_by_appointment(self):
-        return ''
+        return None
 
     def is_or_by_appointment(self):
-        return ''
-
+        return None
 
     def is_subject_to_change(self):
         # create conditional when/if column is present
-        pass
+        return None
+
+    def format_date(self, start_date):
+
+        start_date = tuple(start_date.split('/'))
+        print start_date
+
+        month = start_date[0]
+        day = start_date [1]
+        year = '2016'
+
+        if len(month) == 1:
+            month = '0' + month
+        else:
+            month = month
+
+        if len(day) == 1:
+            day = '0' + day
+        else:
+            day = day
+
+        return month + '/' + day + '/' + year
 
 
     def get_start_date(self, start_date):
-        start_date = datetime.datetime.strptime(start_date, '%m-%d-%Y').strftime('%Y-%m-%d')
-        return start_date + config.utc_offset
 
-    def get_end_date(self, end_date):
+        mdy = self.format_date(start_date)
+        start_date = datetime.datetime.strptime(mdy, '%m/%d/%Y').strftime('%Y-%m-%d')
+
+        diff1 = '11-07'
+        diff2 = '11-06'
+
+        if diff1 in start_date or diff2 in start_date:
+            utc_offset = config.utc_offset_5
+            return start_date
+        else:
+            utc_offset = config.utc_offset_4
+            return start_date
+
+    def get_end_date(self, end_date, start_date):
         # create conditional when/if column is present
-        end_date = datetime.datetime.strptime(end_date, '%m-%d-%Y').strftime('%Y-%m-%d')
-        return end_date + config.utc_offset
+        #end_date = tuple(end_date.split('/'))
+
+        mdy = self.format_date(end_date)
+        end_date = datetime.datetime.strptime(mdy, '%m/%d/%Y').strftime('%Y-%m-%d')
+
+        diff1 = '11-07'
+        diff2 = '11-06'
+
+        if diff1 in start_date or diff2 in start_date:
+            #utc_offset = config.utc_offset_5
+            return end_date
+
+        elif diff1 in end_date or diff2 in end_date:
+            #utc_offset = config.utc_offset_5
+            return end_date
+
+        else:
+            #utc_offset = config.utc_offset_4
+            return end_date
 
     def get_hours_open_id(self, hours_open_id):
         """#"""
@@ -103,85 +171,73 @@ class ScheduleTxt(PollingLocationTxt):
         used to run methods that generate the values for each row of the new columns.
         """
 
-        self.base_df['start_time2'] = self.base_df.apply(
-            lambda row: self.get_sch_start_time(row['hours']), axis=1)
+        self.base_df['start_time'] = self.base_df.apply(
+            lambda row: self.get_start_time(row['hours'], row['start_date'], row['end_date']), axis=1)
 
-        self.base_df['end_time2'] = self.base_df.apply(
-            lambda row: self.get_end_time(row['hours']), axis=1)
+        self.base_df['end_time'] = self.base_df.apply(
+            lambda row: self.get_end_time(row['hours'], row['start_date'], row['end_date']), axis=1)
 
-        self.base_df['is_only_by_appointment2'] = self.base_df.apply(
+        self.base_df['is_only_by_appointment'] = self.base_df.apply(
             lambda row: self.is_only_by_appointment(), axis=1)
 
-        self.base_df['is_or_by_appointment2'] = self.base_df.apply(
+        self.base_df['is_or_by_appointment'] = self.base_df.apply(
             lambda row: self.is_or_by_appointment(), axis=1)
 
-        self.base_df['is_subject_to_change2'] = self.base_df.apply(
+        self.base_df['is_subject_to_change'] = self.base_df.apply(
             lambda row: self.is_subject_to_change(), axis=1)
 
-        self.base_df['start_date2'] = self.base_df.apply(
+        self.base_df['start_date'] = self.base_df.apply(
             lambda row: self.get_start_date(row['start_date']), axis=1)
 
-        self.base_df['end_date2'] = self.base_df.apply(
-            lambda row: self.get_end_date(row['end_date']), axis=1)
+        self.base_df['end_date'] = self.base_df.apply(
+            lambda row: self.get_end_date(row['end_date'], row['start_date']), axis=1)
 
-        self.base_df['hours_open_id2'] = self.base_df.apply(
+        self.base_df['hours_open_id'] = self.base_df.apply(
             lambda row: self.get_hours_open_id(row['hours_open_id']), axis=1)
 
-        self.base_df['id2'] = self.base_df.apply(
+        self.base_df['id'] = self.base_df.apply(
             lambda row: self.create_schedule_id(row['index']), axis=1)
 
         return self.base_df
-
-#    def dedupe(self, dupe):
-#        """#"""
-#        return dupe.drop_duplicates(subset=['address_line', 'hours'])
 
     def write_schedule_txt(self):
         """Drops base DataFrame columns then writes final dataframe to text or csv file"""
 
         sch = self.build_schedule_txt()
-
-
-         # start_time2, end_time2, is_only_by_appointment2, is_or_by_appointment2, is_subject_to_change2, start_date2, end_date2, hours_open_id2, id2
-
-        # Drop base_df columns.
-        sch.drop(['index', 'ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment', 'is_or_by_appointment',
-                'appointment_phone_num', 'is_subject_to_change', 'directions', 'photo_uri',
-                'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id'], inplace=True, axis=1)
-
-        # Drop base_df columns.
-        #sch.drop(['address_line', 'directions', 'hours', 'photo_uri', 'is_drop_box', 'is_early_voting',
-        #          'latitude', 'longitude', 'latlng_source', 'id'], inplace=True, axis=1)
-
-        sch = self.dedupe(sch)  # 'address_line' and 'hours are used to identfy/remove duplicates
         #print sch
 
-        sch.drop(['address_line', 'hours'], inplace=True, axis=1)
+        # Drop base_df columns.
+        sch.drop(['office_name', 'official_title', 'ocd_division', 'division_description', 'homepage_url', 'phone',
+                'email', 'street', 'directions', 'city', 'state', 'zip', 'must_apply_for_mail_ballot', 'notes', 'index',
+                  'address_line', 'hours', 'photo_uri', 'is_drop_box', 'is_early_voting', 'latitude', 'longitude',
+                  'latlng_source'], inplace=True, axis=1)
+
+        # reorder columns
+        cols =['start_time', 'end_time', 'is_only_by_appointment', 'is_or_by_appointment', 'is_subject_to_change',
+               'start_date', 'end_date', 'hours_open_id', 'id']
+
+        sch = sch.reindex(columns=cols)
         print sch
 
-        sch.to_csv(config.polling_location_output + 'schedule.txt', index=False, encoding='utf-8')  # send to txt file
-        sch.to_csv(config.polling_location_output + 'schedule.csv', index=False, encoding='utf-8')  # send to csv file
+        sch.to_csv(config.output + 'schedule.txt', index=False, encoding='utf-8')  # send to txt file
+        sch.to_csv(config.output + 'schedule.csv', index=False, encoding='utf-8')  # send to csv file
 
 
 if __name__ == '__main__':
 
+    state_file = 'intermediate_doc.csv'
 
-    early_voting_true = True  # True or False
-    #drop_box_true =
-    state_file='minnesota_early_voting_info.csv'
+    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/new_jersey/output/" + state_file
 
-    #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
-    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/minnesota/early_voting_input/" + state_file
+    colnames = ['office_name', 'official_title', 'ocd_division', 'division_description', 'homepage_url', 'phone',
+                'email', 'street', 'directions', 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date',
+                'end_date', 'must_apply_for_mail_ballot', 'notes', 'index', 'address_line', 'hours', 'photo_uri',
+                'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
 
-    # copy from state specific polling_location script
-    colnames = ['office_name', 'official_title', 'ocd_division', 'division_description', 'homepage', 'phone', 'email',
-                'street', 'directions', 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date', 'end_date',
-                'must_apply_for_mail_ballot', 'notes']
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1, delimiter=',')
 
-    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
-    early_voting_df['index'] = early_voting_df.index + 1
-    #print early_voting_df
+    early_voting_df['index'] = early_voting_df.index +1 # offsets zero based index so it starts at 1 for ids
+    print early_voting_df
 
     ScheduleTxt(early_voting_df).write_schedule_txt()
     #ScheduleTxt(early_voting_df).format_for_schedule()

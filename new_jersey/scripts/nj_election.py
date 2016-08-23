@@ -81,7 +81,7 @@ class ElectionTxt(object):
 
     def get_name(self):
         """#"""
-        return '2016 Presidential Election'
+        return '2016 General Election'
 
     def get_election_type(self):
         """#"""
@@ -111,7 +111,7 @@ class ElectionTxt(object):
 
     def is_statewide(self):
         """#"""
-        return True
+        return 'true'
 
     def registration_info(self):
         """#"""
@@ -137,7 +137,7 @@ class ElectionTxt(object):
     def registration_deadline(self):
         """#"""
         # use registration_deadline_display
-        return True
+        return 'true'
 
     def absentee_request_deadline(self):
         """#"""

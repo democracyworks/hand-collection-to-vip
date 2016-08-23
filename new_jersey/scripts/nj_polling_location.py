@@ -1,6 +1,7 @@
 import pandas as pd
 import time
 import config
+import hashlib
 from time import strftime
 
 class PollingLocationTxt(object):
@@ -107,18 +108,15 @@ class PollingLocationTxt(object):
         # create conditional when/if column is present
         return ''
 
-    def create_hours_open_id(self, index):
+    def create_hours_open_id(self, index, street, city, zip_code):
         """#"""
-        if index <= 9:
-            return 'ho000' + str(index)
 
-        elif index in range(10,100):
-            return 'ho00' + str(index)
+        address_line = self.get_address_line(index, street, city, zip_code)
+        #print address_line
 
-        elif index in range(100, 1000):
-            return 'ho0' + str(index)
-        else:
-            return str(index)
+        address_line = int(hashlib.sha1(address_line).hexdigest(), 16) % (10 ** 8)
+
+        return 'ho' + str(address_line)
 
     def is_drop_box(self):
         """#"""
@@ -142,31 +140,16 @@ class PollingLocationTxt(object):
         # create conditional when/if column is present
         return ''
 
-    def create_id(self, index, county):
+    def create_id(self, index, ocd_division, street, city, zip_code):
         """Create id"""
         # concatenate county name, or part of it (first 3/4 letters) with index
         # add leading zeros to maintain consistent id length
 
-        if county:
-            county_str_part = county.replace(' ', '').lower()[:4]
+        address_line = self.get_address_line(index, street, city, zip_code)
 
-        else:
-            county_str_part = ''
-            print 'Missing county value at ' + index + '.'
-
-        if index <= 9:
-            index_str = '000' + str(index)
-
-        elif index in range(10,100):
-            index_str = '00' + str(index)
-
-
-        elif index in range(100, 1000):
-            index_str = '0' + str(index)
-        else:
-            index_str = str(index)
-
-        return 'poll' + str(index_str)
+        id =  int(hashlib.sha1(str(ocd_division) + address_line).hexdigest(), 16) % (10 ** 8)
+        id = 'poll' + str(id)
+        return id
 
     def build_polling_location_txt(self):
         """
@@ -187,7 +170,8 @@ class PollingLocationTxt(object):
             lambda row: self.get_photo_uri(), axis=1)
 
         self.base_df['hours_open_id'] = self.base_df.apply(
-            lambda row: self.create_hours_open_id(row['index']), axis=1)
+            lambda row: self.create_hours_open_id(row['index'], row['street'],
+                                              row['city'], row['zip']), axis=1)
 
         self.base_df['is_drop_box'] = self.base_df.apply(
             lambda row: self.is_drop_box(), axis=1)
@@ -204,61 +188,56 @@ class PollingLocationTxt(object):
         self.base_df['latlng_source'] = self.base_df.apply(
             lambda row: self.get_latlng_source(), axis=1)
 
+        # street, city, zip_code
         self.base_df['id'] = self.base_df.apply(
-            lambda row: self.create_id(row['index'], row['division_description']), axis=1)
+            lambda row: self.create_id(row['index'], row['ocd_division'], row['street'], row['city'], row['zip']), axis=1)
 
         return self.base_df
 
     def dedupe(self, dupe):
         """#"""
-        return dupe.drop_duplicates(subset=['address_line', 'hours', 'start_date'])
+        return dupe.drop_duplicates(subset=['address_line'])
 
-    def export_for_schedule(self):
-        ex_doc = self.build_polling_location_txt()
-        # print ex_doc
+    def export_for_schedule_and_locality(self):
+        intermediate_doc = self.build_polling_location_txt()
 
-        ex_doc = self.dedupe(ex_doc)
-        print ex_doc
+        intermediate_doc = intermediate_doc.drop_duplicates(subset=['start_time', 'end_time', 'start_date',
+                                                                    'end_date', 'address_line'])
 
-        ex_doc.to_csv(config.polling_location_output + 'intermediate_pl_for_schedule.csv', index=False, encoding='utf-8')
+        print intermediate_doc
 
-    def export_for_locality(self):
-        ex_doc = self.build_polling_location_txt()
-        # print ex_doc
+        intermediate_doc.to_csv(config.output + 'intermediate_doc.csv', index=False, encoding='utf-8')
 
-        ex_doc = self.dedupe(ex_doc)
-        print ex_doc
-
-        ex_doc.to_csv(config.polling_location_output + 'intermediate_pl_for_loc.csv', index=False, encoding='utf-8')
-
-    def format(self):
-        plt = self.build_polling_location_txt()
+#    def format(self):
+#        plt = self.build_polling_location_txt()
 
         # Drop base_df columns.
-        plt.drop(['index', 'ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state', 'zip',
-                 'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment', 'is_or_by_appointment',
-                 'appointment_phone_num', 'is_subject_to_change'], inplace=True, axis=1)
+#        plt.drop(['index', 'ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state', 'zip',
+#                 'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment', 'is_or_by_appointment',
+#                 'appointment_phone_num', 'is_subject_to_change'], inplace=True, axis=1)
 
-        plt = self.dedupe(plt)
-        return plt
+#        plt = self.dedupe(plt)
+#        return plt
 
     def write_polling_location_txt(self):
         """Drops base DataFrame columns then writes final dataframe to text or csv file"""
 
         plt = self.build_polling_location_txt()
 
-        plt = self.dedupe(plt)
-        print plt
+
 
         # Drop base_df columns.
         plt.drop(['index', 'office_name', 'official_title', 'ocd_division', 'division_description', 'homepage',
                   'phone', 'email', 'street', 'directions', 'city', 'state', 'zip', 'start_time', 'end_time',
                   'start_date', 'end_date', 'must_apply_for_mail_ballot', 'notes'], inplace=True, axis=1)
 
+        plt = self.dedupe(plt)
+        #print plt
 
 
-        plt.to_csv(config.polling_location_output+ 'polling_location.txt', index=False, encoding='utf-8')  # send to txt file
-        plt.to_csv(config.polling_location_output + 'polling_location.csv', index=False, encoding='utf-8')  # send to csv file
+
+        plt.to_csv(config.output+ 'polling_location.txt', index=False, encoding='utf-8')  # send to txt file
+        plt.to_csv(config.output + 'polling_location.csv', index=False, encoding='utf-8')  # send to csv file
 
 
 if __name__ == '__main__':
@@ -280,6 +259,6 @@ if __name__ == '__main__':
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
 
-    pl.write_polling_location_txt()
-    #pl.export_for_locality()
-    #pl.export_for_schedule()
+    #pl.write_polling_location_txt()
+    pl.export_for_schedule_and_locality()
+
