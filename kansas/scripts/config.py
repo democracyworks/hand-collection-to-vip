@@ -10,8 +10,12 @@ schedule_data = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/
 
 state_abbreviation = "KS"
 
+state_lower_abbreviation = "ks"
+
 state_upper = "Kansas"
 state = 'kansas'
+
+input_folder = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/input/"
 
 fips_dict = {'wyoming': '56', 'colorado': '08', 'washington': '53', 'hawaii': '15', 'tennessee': '47', 'iowa': '19',
              'nevada': '32', 'maine': '23', 'north dakota': '38', 'mississippi': '28', 'south dakota': '46',

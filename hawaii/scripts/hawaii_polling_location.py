@@ -9,7 +9,7 @@ class PollingLocationTxt(object):
 
     """
 
-    def __init__(self, base_df, early_voting_true=False, drop_box_true=False):
+    def __init__(self, base_df, early_voting_true="false", drop_box_true="false"):
         self.base_df = base_df
         self.drop_box_true = drop_box_true
         self.early_voting_true = early_voting_true
@@ -114,23 +114,14 @@ class PollingLocationTxt(object):
         # create conditional when/if column is present
         return ''
 
-    def create_id(self, index, county):
+    def create_id(self, index, address):
         """Create id"""
         # concatenate county name, or part of it (first 3/4 letters) with index
         # add leading zeros to maintain consistent id length
-
-        if index <= 9:
-            index_str = '000' + str(index)
-
-        elif index in range(10,100):
-            index_str = '00' + str(index)
-
-        elif index in range(100, 1000):
-            index_str = '0' + str(index)
-        else:
-            index_str = str(index)
-
-        return 'poll' + str(index_str)
+        address_line = self.get_address_line(index, address)
+        id = int(hashlib.sha1(address).hexdigest(), 16) % (10 ** 8)
+        id = 'poll' + str(id)
+        return id
 
     def build_polling_location_txt(self):
         """
@@ -168,13 +159,13 @@ class PollingLocationTxt(object):
             lambda row: self.get_latlng_source(), axis=1)
 
         self.base_df['id'] = self.base_df.apply(
-            lambda row: self.create_id(row['index'], row['county']), axis=1)
+            lambda row: self.create_id(row['index'], row['address']), axis=1)
 
         return self.base_df
 
     def dedupe(self, dupe):
         """#"""
-        return dupe.drop_duplicates(subset=['address_line', 'hours'])
+        return dupe.drop_duplicates(subset=['address_line'])
 
     def dedupe_for_sch(self, dupe):
         return dupe.drop_duplicates(subset=['address_line', 'hours', 'start_date'])
@@ -195,6 +186,16 @@ class PollingLocationTxt(object):
 
         ex_doc.to_csv(config.output + 'intermediate_pl_for_sch.csv', index=False, encoding='utf-8')
 
+    def export_for_schedule_and_locality(self):
+        intermediate_doc = self.build_polling_location_txt()
+
+        # intermediate_doc = self.dedupe(intermediate_doc)
+
+        intermediate_doc = intermediate_doc.drop_duplicates(subset=['start_time', 'end_time', 'start_date',
+                                                                    'end_date', 'address_line'])
+
+        intermediate_doc.to_csv(config.output + 'intermediate_doc.csv', index=False, encoding='utf-8')
+
     def write_polling_location_txt(self):
         """Drops base DataFrame columns then writes final dataframe to text or csv file"""
 
@@ -213,7 +214,7 @@ class PollingLocationTxt(object):
 if __name__ == '__main__':
 
 
-    early_voting_true = True  # True or False
+    early_voting_true = "true"  # True or False
     #drop_box_true =
     state_file='hawaii_early_voting_info.csv'
 
@@ -226,6 +227,5 @@ if __name__ == '__main__':
     early_voting_df['index'] = early_voting_df.index + 1
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
-    pl.export_for_locality()
-    pl.export_for_schedule()
+    pl.export_for_schedule_and_locality()
     pl.write_polling_location_txt()

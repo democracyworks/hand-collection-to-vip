@@ -46,19 +46,27 @@ class ScheduleTxt(object):
         else:
             return "-6:00"
 
-    def get_sch_start_time(self, hours, county):
-        offset = self.utc_offset(county)
-        hour = hours.split("-")[0]
-        return hour + ":00" + offset
+    def get_sch_time(self, hours):
+        if len(hours) > 15:
+            return hours.replace(" - ", "-")
+        else:
+            string = "0" + hours.replace(" - ", "-")
+            return "0" + str(hours.replace(" - ", "-"))
         # arr = hours.split("-")
         # offset = self.utc_offset(county)
         # print arr[0] + ";00" + offset
 
-    def get_sch_end_time(self, hours, county):
-        offset = self.utc_offset(county)
-        hours = hours.split(" ")[0]
-        hour = hours.split("-")[1]
-        return hour + ":00" + offset
+    def convert_from_twelve_hour(self, hours):
+        if not pd.isnull(hours):
+            arr = hours.split(":")
+            hour = int(arr[0])
+            mins = arr[1]
+            if hour < 12:
+                hour = str(hour + 12)
+            return str(hour) + ":" + str(mins)
+        else:
+            return ''
+
 
 
     def is_only_by_appointment(self):
@@ -75,16 +83,17 @@ class ScheduleTxt(object):
     def get_start_date(self, start_date, county):
         string = str(start_date)
         date = datetime.datetime.strptime(string, '%m/%d/%Y').strftime('%Y-%m-%d')
-        offset = self.utc_offset(county)
-        return date + offset
+
+        return date
         # return start_date + config.utc_offset
 
     def get_end_date(self, end_date, county):
         # create conditional when/if column is present
         string = str(end_date)
+
         date = datetime.datetime.strptime(string, '%m/%d/%Y').strftime('%Y-%m-%d')
-        offset = self.utc_offset(county)
-        return date + offset
+
+        return date
 
     def get_hours_open_id(self, hours_open_id):
         """#"""
@@ -115,10 +124,10 @@ class ScheduleTxt(object):
         """
 
         self.base_df['start_time2'] = self.base_df.apply(
-            lambda row: self.get_sch_start_time(row["times"], row['county']), axis=1)
+            lambda row: self.get_sch_time(row["start_time"]), axis=1)
 
         self.base_df['end_time2'] = self.base_df.apply(
-            lambda row: self.get_sch_end_time(row['times'], row['county']), axis=1)
+            lambda row: self.get_sch_time(row['end_time']), axis=1)
         #
         self.base_df['is_only_by_appointment2'] = self.base_df.apply(
             lambda row: self.is_only_by_appointment(), axis=1)
@@ -156,7 +165,7 @@ class ScheduleTxt(object):
 
         # Drop base_df columns.
         sch.drop(['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                  'address_two', 'city', 'state', 'zip', 'times', 'start_date', 'end_date', 'index', 'time_zone',
+                  'address_two', 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date', 'end_date', 'index', 'time_zone',
                   'address_line', 'directions', 'hours', 'photo_uri', 'hours_open', 'is_drop_box', 'is_early_voting',
                   'latitude', 'longitude', 'latlng_source', 'id'], inplace=True,
                  axis=1)
@@ -199,13 +208,12 @@ if __name__ == '__main__':
 
 
     colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date', 'time_zone', 'index',
+                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'index',
                 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open', 'is_drop_box',
                 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
 
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
-
+    print len("13:00:00-05:00")
     # early_voting_df['index'] = early_voting_df.index + 1
-
     ScheduleTxt(early_voting_df).write_schedule_txt()
     # ScheduleTxt(early_voting_df).format_for_schedule()

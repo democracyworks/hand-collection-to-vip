@@ -37,6 +37,8 @@ class ElectionTxt(object):
     def create_election_id(self, index):
         """Leading zeroes are added, if necessary, to maintain a
         consistent id length.
+
+
         """
         if index <= 9:
             index_str = '000' + str(index)
@@ -107,7 +109,7 @@ class ElectionTxt(object):
 
     def has_election_day_registration(self):
         """#"""
-        return 'no'
+        return 'false'
 
     def registration_deadline(self, index):
         """Grab registration_deadline from state_feed document."""
@@ -130,9 +132,9 @@ class ElectionTxt(object):
             print 'Missing value at row '  + str(index) + '.'
             return ''
 
-    def hours_open_id(self, source_hours_open_id):
+    def hours_open_id(self):
         """#"""
-        return source_hours_open_id
+        return ''
 
     def build_election_txt(self):
         """
@@ -180,7 +182,7 @@ class ElectionTxt(object):
             lambda row: self.absentee_request_deadline(row['index']), axis=1)
 
         self.base_df['hours_open_id'] = self.base_df.apply(
-            lambda row: self.hours_open_id(row['source_hours_open_id']), axis=1)
+            lambda row: self.hours_open_id(), axis=1)
 
         #print self.base_df
         return self.base_df
@@ -191,9 +193,9 @@ class ElectionTxt(object):
         et = self.build_election_txt()
 
         et.drop(['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date', 'time_zone', 'index',
+                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date', 'end_date', 'time_zone', 'index',
                 'address_line', 'directions', 'hours', 'photo_uri', 'source_hours_open_id', 'is_drop_box',
-                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id'], inplace=True, axis=1)
+                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'source_id'], inplace=True, axis=1)
 
         print et
 
@@ -240,9 +242,9 @@ if __name__ == '__main__':
     early_voting_path ="/Users/danielgilberg/Development/hand-collection-to-vip/kansas/output/intermediate_pl_for_loc.csv"
     #early_voting_path = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/kansas_early_voting_info.csv"
     colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date', 'time_zone', 'index',
+                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'index',
                 'address_line', 'directions', 'hours', 'photo_uri', 'source_hours_open_id', 'is_drop_box',
-                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
+                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'source_id']
     early_voting_df = pd.read_csv(early_voting_path, names=colnames, encoding='utf-8', skiprows=1)
 
     early_voting_df['index'] = early_voting_df.index + 1

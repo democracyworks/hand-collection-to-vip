@@ -1,2 +1,2 @@
 election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,id
-,ocd-id,,ocd-division/country:us/state:hi,Hawaii,poll0001 poll0006 poll0005 poll0015 poll0013 poll0017 poll0018 poll0003 poll0026 poll0024 poll0010 poll0009,st15
+,ocd-id,,ocd-division/country:us/state:hi,Hawaii,poll19172834 poll30593437 poll40643554 poll48566391 poll50325806 poll60276226 poll7266808 poll78160051 poll94498505,st15

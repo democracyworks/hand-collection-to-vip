@@ -187,6 +187,9 @@ class PollingLocationTxt(object):
     def dedupe_for_sch(self, dupe):
         return dupe.drop_duplicates(subset=['address_line', 'hours', 'start_date'])
 
+    def group_by_address(self, item):
+        item = item.groupby('address_line').agg(lambda x: ' '.join(set(x))).reset_index()
+
     # def export_for_locality(self):
     #     ex_doc = self.build_polling_location_txt()
     #     #print ex_doc

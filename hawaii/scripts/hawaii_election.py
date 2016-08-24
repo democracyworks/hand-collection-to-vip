@@ -59,7 +59,7 @@ class ElectionTxt(object):
 
     def get_name(self):
         """#"""
-        return '2016 Presidential Election'
+        return '2016 General Election'
 
     def get_election_type(self):
         """#"""
@@ -109,7 +109,7 @@ class ElectionTxt(object):
 
     def has_election_day_registration(self):
         """#"""
-        return 'no'
+        return 'false'
 
     def registration_deadline(self, index):
         """Grab registration_deadline from state_feed document."""

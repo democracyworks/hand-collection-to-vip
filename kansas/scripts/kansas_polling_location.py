@@ -88,24 +88,24 @@ class PollingLocationTxt(object):
 
     def convert_to_twelve_hour(self, index, time_str):
         if not pd.isnull(time_str):
-            d = time.strptime(time_str, "%H:%M")
+            d = time.strptime(time_str, "%H:%M:%S")
             formatted_time = time.strftime("%I:%M %p", d)
             return formatted_time
         else:
             return ''
 
-    def get_start_time(self, times):
-        hours = times.split(" ")[0]
-        return hours.split("-")[0] + " AM"
+    def get_converted_time(self, index, time):
+        t = time.split(" -")[0]
+        return self.convert_to_twelve_hour(index, t)
 
-    def get_end_time(self, times):
-        hours = times.split(" ")[0]
-        return hours.split("-")[1] + " PM"
+
 
     def get_hours(self, index, start_time, end_time):
         # create conditional when/if column is present
         if not pd.isnull(start_time) and not pd.isnull(end_time):
-            return start_time + "-" + end_time
+            start = self.get_converted_time(index, start_time)
+            end = self.get_converted_time(index, end_time)
+            return start + " - " + end
         else:
             # print 'Hours not presented in the right format in line ' + str(index) +"."
             return ''
@@ -150,30 +150,14 @@ class PollingLocationTxt(object):
         # create conditional when/if column is present
         return ''
 
-    def create_id(self, index):
+    def create_id(self, index, address_1, address_2, city, zip_code):
         """Create id"""
         # concatenate county name, or part of it (first 3/4 letters) with index
         # add leading zeros to maintain consistent id length
-
-        #if county:
-        #    county_str_part = county.replace(' ', '').lower()[:4]
-
-        #else:
-        #    county_str_part = ''
-        #    print 'Missing county value at ' + index + '.'
-
-        if index <= 9:
-            index_str = '000' + str(index)
-
-        elif index in range(10,100):
-            index_str = '00' + str(index)
-
-        elif index in range(100, 1000):
-            index_str = '0' + str(index)
-        else:
-            index_str = str(index)
-
-        return 'poll' + str(index_str)
+        address_line = self.get_address_line(index, address_1, address_2, city, zip_code)
+        id = int(hashlib.sha1(address_line).hexdigest(), 16) % (10 ** 8)
+        id = 'poll' + str(id)
+        return id
 
     def build_polling_location_txt(self):
         """
@@ -188,7 +172,7 @@ class PollingLocationTxt(object):
             lambda row: self.get_directions(), axis=1)
         #
         self.base_df['hours'] = self.base_df.apply(
-            lambda row: self.get_hours(row['index'],self.get_start_time(row['times']), self.get_end_time(row['times'])), axis=1)
+            lambda row: self.get_hours(row['index'],row["start_time"], row['end_time']), axis=1)
         #
         self.base_df['photo_uri'] = self.base_df.apply(
             lambda row: self.get_photo_uri(), axis=1)
@@ -212,14 +196,15 @@ class PollingLocationTxt(object):
             lambda row: self.get_latlng_source(), axis=1)
 
         self.base_df['id'] = self.base_df.apply(
-            lambda row: self.create_id(row['index']), axis=1)
+            lambda row: self.create_id(row['index'], row['address_one'], row['address_two'],
+                                              row['city'], row['zip']), axis=1)
 
 
         return self.base_df
 
     def dedupe(self, dupe):
         """#"""
-        return dupe.drop_duplicates(subset=['address_line', 'hours'])
+        return dupe.drop_duplicates(subset=['address_line'])
 
     def dedupe_for_sch(self, dupe):
         return dupe.drop_duplicates(subset=['address_line', 'hours', 'start_date'])
@@ -254,15 +239,27 @@ class PollingLocationTxt(object):
         ex_doc.to_csv(config.polling_location_output + 'intermediate_pl_for_sch.csv', index=False, encoding='utf-8')
 
 
-
+    def group_by_address(self, item):
+        item = item.groupby('address_line').agg(lambda x: ' '.join(set(x))).reset_index()
+        return item
 
     def format(self):
         plt = self.build_polling_location_txt()
         # Drop base_df columns.
         plt.drop(['index', 'county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date', 'time_zone'], inplace=True, axis=1)
+                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone'], inplace=True, axis=1)
         plt = self.dedupe(plt)
         return plt
+
+    def export_for_schedule_and_locality(self):
+        intermediate_doc = self.build_polling_location_txt()
+
+        # intermediate_doc = self.dedupe(intermediate_doc)
+
+        intermediate_doc = intermediate_doc.drop_duplicates(subset=['start_time', 'end_time', 'start_date',
+                                                                    'end_date', 'address_line'])
+
+        intermediate_doc.to_csv(config.polling_location_output + 'intermediate_doc.csv', index=False, encoding='utf-8')
 
 
     def write_polling_location_txt(self):
@@ -289,22 +286,21 @@ class PollingLocationTxt(object):
 if __name__ == '__main__':
 
 
-    early_voting_true = True  # True or False
+    early_voting_true = "true"  # True or False
     #drop_box_true =
-    state_file='kansas_early_voting_info.csv'
+    state_file='kansas_final_schedule.csv'
 
     # early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
 
-    early_voting_file = config.schedule_data
+    early_voting_file = config.input_folder + state_file
 
     colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date', 'time_zone']
+                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone']
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
 
     # print early_voting_df["address_1"] + early_voting_df["address_2"]
-    pl.export_for_locality()
-    pl.export_for_schedule()
+    pl.export_for_schedule_and_locality()
     pl.write_polling_location_txt()
     # print early_voting_df["index"]

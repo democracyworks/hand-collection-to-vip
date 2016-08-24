@@ -201,31 +201,19 @@ class LocalityTxt(object):
         loc = self.build_locality_txt()
         # print loc
 
-        # Drop base_df columns.
-        # loc.drop(['county', 'address', 'instructions', 'start_time', 'end_time', 'start_date', 'count', 'end_date', 'address_line', 'directions',
-        #         'hours', 'photo_uri', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'polling_location_id'], inplace=True, axis=1)
+        loc = loc.groupby(['hours_open_id']).agg(lambda x: ' '.join(set(x))).reset_index()
         # print loc
-
-        loc = loc.groupby(['hours_open_id', 'external_identifier_value']).agg(
-            lambda x: ' '.join(set(x))).reset_index()
-
-        # loc.drop(["hours_open_id"], inplace=True, axis=1)
-        # print loc
-
-        # loc['election_administration_id'] = loc['election_administration_id'].apply(lambda x: ''.join(x.split(' ')[0]))
-        # loc['id'] = loc['id'].apply(lambda x: ''.join(x.split(' ')[0]))
 
         loc['name'] = loc['name'].apply(lambda x: ''.join(x.split(' ')[0]))
 
         loc['grouped_index'] = loc.index + 1
-
-        #        loc['election_administration_id'] = loc.apply(
-        #            lambda row: self.create_election_administration_id(row['grouped_index']), axis=1)
-        # lambda row: self.create_election_administration_id(''), axis = 1)
+        print type(loc['grouped_index'])
 
         loc['id'] = loc.apply(
             lambda row: self.create_id(row['grouped_index']), axis=1)
         # print loc
+
+        print loc['id']
 
         # reorder columns
         cols = ['election_administration_id', 'external_identifier_type', 'external_identifier_othertype',
@@ -233,7 +221,9 @@ class LocalityTxt(object):
                 'other_type', 'grouped_index', 'id']
 
         final = loc.reindex(columns=cols)
-        final.drop(["grouped_index"], inplace=True, axis=1)
+        # print final
+
+        final.drop(['grouped_index'], inplace=True, axis=1)
         print final
 
         # final.drop(['grouped_index',  'address_line', 'hours', 'photo_uri', 'hours_open_id',
@@ -248,7 +238,7 @@ class LocalityTxt(object):
 
 
 if __name__ == '__main__':
-    state_file = 'intermediate_pl_for_loc.csv'
+    state_file = 'intermediate_doc.csv'
 
     early_voting_file = config.output + state_file
 

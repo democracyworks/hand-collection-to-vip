@@ -83,15 +83,16 @@ class ScheduleTxt(object):
 
     def get_start_date(self, start_date):
         string = str(start_date)
-        date = datetime.datetime.strptime(string, '%m/%d/%y').strftime('%Y-%m-%d')
-        return date + config.utc_offset
+
+        date = datetime.datetime.strptime(string, '%m/%d/%Y').strftime('%Y-%m-%d')
+        return date
         # return start_date + config.utc_offset
 
     def get_end_date(self, end_date):
         # create conditional when/if column is present
         string = str(end_date)
-        date = datetime.datetime.strptime(string, '%m/%d/%y').strftime('%Y-%m-%d')
-        return date + config.utc_offset
+        date = datetime.datetime.strptime(string, '%m/%d/%Y').strftime('%Y-%m-%d')
+        return date
 
     def get_hours_open_id(self, hours_open_id):
         """#"""
@@ -138,7 +139,7 @@ class ScheduleTxt(object):
 
         self.base_df['start_date2'] = self.base_df.apply(
             lambda row: self.get_start_date(row['start_date']), axis=1)
-        # #
+        # # #
         self.base_df['end_date2'] = self.base_df.apply(
             lambda row: self.get_end_date(row['end_date']), axis=1)
         #
@@ -199,7 +200,7 @@ if __name__ == '__main__':
     #
     # early_voting_file = config.schedule_data
 
-    file = "intermediate_pl_for_sch.csv"
+    file = "intermediate_doc.csv"
     early_voting_file = config.output + file
 
 

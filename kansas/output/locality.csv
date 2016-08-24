@@ -1,106 +1,106 @@
 election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
-ea0001,ocd-id,,allen,allen_lola_1,poll0001,st20,,,loc0001
-ea0002,ocd-id,,anderson,anderson_garnett_2,poll0006,st20,,,loc0002
-ea0003,ocd-id,,atchison,atchison_atchison_3,poll0011,st20,,,loc0003
-ea0004,ocd-id,,barber,barber_medicine,poll0016,st20,,,loc0004
-ea0005,ocd-id,,barton,barton_great,poll0021,st20,,,loc0005
-ea0006,ocd-id,,bourbon,bourbon_ft,poll0026,st20,,,loc0006
-ea0007,ocd-id,,brown,brown_hiawatha_7,poll0031,st20,,,loc0007
-ea0008,ocd-id,,butler,butler_el,poll0036,st20,,,loc0008
-ea0009,ocd-id,,chase,chase_cottonwood,poll0041,st20,,,loc0009
-ea0010,ocd-id,,chautauqua,chautauqua_sedan_10,poll0046,st20,,,loc0010
-ea0011,ocd-id,,cherokee,cherokee_columbus_11,poll0051,st20,,,loc0011
-ea0012,ocd-id,,cheyenne,cheyenne_st,poll0056 poll0057,st20,,,loc0012
-ea0013,ocd-id,,clark,clark_ashland_14,poll0066,st20,,,loc0013
-ea0014,ocd-id,,clay,clay_clay,poll0071,st20,,,loc0014
-ea0015,ocd-id,,cloud,cloud_concordia_16,poll0076,st20,,,loc0015
-ea0016,ocd-id,,coffey,coffey_burlington_17,poll0081,st20,,,loc0016
-ea0017,ocd-id,,comanche,comanche_coldwater_19,poll0087 poll0086,st20,,,loc0017
-ea0018,ocd-id,,cowley,cowley_winfield_20,poll0096,st20,,,loc0018
-ea0019,ocd-id,,crawford,crawford_girard_21,poll0101,st20,,,loc0019
-ea0020,ocd-id,,decatur,decatur_oberlin_22,poll0106,st20,,,loc0020
-ea0021,ocd-id,,dickinson,dickinson_abilene_23,poll0111,st20,,,loc0021
-ea0022,ocd-id,,doniphan,doniphan_troy_24,poll0116,st20,,,loc0022
-ea0023,ocd-id,,douglas,douglas_lawrence_25,poll0121,st20,,,loc0023
-ea0024,ocd-id,,edwards,edwards_kinsley_26,poll0126,st20,,,loc0024
-ea0025,ocd-id,,elk,elk_howard_27,poll0131,st20,,,loc0025
-ea0026,ocd-id,,ellis,ellis_hays_28,poll0136,st20,,,loc0026
-ea0027,ocd-id,,ellsworth,ellsworth_ellsworth_29,poll0141,st20,,,loc0027
-ea0028,ocd-id,,finney,finney_garden,poll0146,st20,,,loc0028
-ea0029,ocd-id,,ford,ford_dodge,poll0151,st20,,,loc0029
-ea0030,ocd-id,,franklin,franklin_ottawa_32,poll0156,st20,,,loc0030
-ea0031,ocd-id,,geary,geary_junction,poll0161,st20,,,loc0031
-ea0032,ocd-id,,gove,gove_gove_35,poll0166 poll0167,st20,,,loc0032
-ea0033,ocd-id,,graham,graham_hill,poll0176,st20,,,loc0033
-ea0034,ocd-id,,grant,grant_ulysses_37,poll0181,st20,,,loc0034
-ea0035,ocd-id,,gray,gray_cimarron_38,poll0186,st20,,,loc0035
-ea0036,ocd-id,,greeley,greeley_tribune_39,poll0191 poll0192,st20,,,loc0036
-ea0037,ocd-id,,greenwood,greenwood_eureka_41,poll0201,st20,,,loc0037
-ea0038,ocd-id,,hamilton,hamilton_syracuse_42,poll0206,st20,,,loc0038
-ea0039,ocd-id,,harper,harper_anthony_43,poll0212 poll0211,st20,,,loc0039
-ea0040,ocd-id,,harvey,harvey_newton_45,poll0221,st20,,,loc0040
-ea0041,ocd-id,,haskell,haskell_sublette_46,poll0226,st20,,,loc0041
-ea0042,ocd-id,,hodgeman,hodgeman_jetmore_48,poll0227 poll0228,st20,,,loc0042
-ea0043,ocd-id,,jackson,jackson_holton_49,poll0237,st20,,,loc0043
-ea0044,ocd-id,,jefferson,jefferson_oskaloosa_50,poll0242,st20,,,loc0044
-ea0045,ocd-id,,jewell,jewell_mankato_52,poll0248 poll0247,st20,,,loc0045
-ea0046,ocd-id,,johnson,johnson_olathe_53,poll0257,st20,,,loc0046
-ea0047,ocd-id,,kearny,kearny_lakin_54,poll0262,st20,,,loc0047
-ea0048,ocd-id,,kingman,kingman_kingman_55,poll0267,st20,,,loc0048
-ea0049,ocd-id,,kiowa,kiowa_greensburg_57,poll0272 poll0273,st20,,,loc0049
-ea0050,ocd-id,,labette,labette_oswego_58,poll0282,st20,,,loc0050
-ea0051,ocd-id,,lane,lane_dighton_59,poll0287,st20,,,loc0051
-ea0052,ocd-id,,leavenworth,leavenworth_leavenworth_60,poll0292,st20,,,loc0052
-ea0053,ocd-id,,lincoln,lincoln_lincoln_61,poll0297,st20,,,loc0053
-ea0054,ocd-id,,linn,linn_mound,poll0302,st20,,,loc0054
-ea0055,ocd-id,,logan,logan_oakley_63,poll0307,st20,,,loc0055
-ea0056,ocd-id,,lyon,lyon_emporia_64,poll0312,st20,,,loc0056
-ea0057,ocd-id,,marion,marion_marion_66,poll0322,st20,,,loc0057
-ea0058,ocd-id,,marshall,marshall_marysville_67,poll0327,st20,,,loc0058
-ea0059,ocd-id,,mcpherson,mcpherson_mcpherson_65,poll0317,st20,,,loc0059
-ea0060,ocd-id,,meade,meade_meade_68,poll0333 poll0332,st20,,,loc0060
-ea0061,ocd-id,,miami,miami_paola_70,poll0342,st20,,,loc0061
-ea0062,ocd-id,,mitchell,mitchell_beloit_71,poll0347,st20,,,loc0062
-ea0063,ocd-id,,montgomery,montgomery_independence_72,poll0353 poll0352,st20,,,loc0063
-ea0064,ocd-id,,morris,morris_council,poll0362,st20,,,loc0064
-ea0065,ocd-id,,morton,morton_elkhart_75,poll0367,st20,,,loc0065
-ea0066,ocd-id,,nemaha,nemaha_seneca_76,poll0372,st20,,,loc0066
-ea0067,ocd-id,,neosho,neosho_erie_77,poll0377,st20,,,loc0067
-ea0068,ocd-id,,ness,ness_ness,poll0382 poll0383,st20,,,loc0068
-ea0069,ocd-id,,norton,norton_norton_80,poll0392,st20,,,loc0069
-ea0070,ocd-id,,osage,osage_lyndon_81,poll0397,st20,,,loc0070
-ea0071,ocd-id,,osborne,osborne_osborne_82,poll0402,st20,,,loc0071
-ea0072,ocd-id,,ottawa,ottawa_minneapolis_83,poll0408 poll0407,st20,,,loc0072
-ea0073,ocd-id,,pawnee,pawnee_larned_85,poll0417,st20,,,loc0073
-ea0074,ocd-id,,phillips,phillips_phillipsburg_86,poll0422,st20,,,loc0074
-ea0075,ocd-id,,pottawatomie,pottawatomie_westmoreland_87,poll0427,st20,,,loc0075
-ea0076,ocd-id,,pratt,pratt_pratt_88,poll0432,st20,,,loc0076
-ea0077,ocd-id,,rawlins,rawlins_atwood_89,poll0437,st20,,,loc0077
-ea0078,ocd-id,,reno,reno_hutchinson_90,poll0442,st20,,,loc0078
-ea0079,ocd-id,,republic,republic_belleville_91,poll0447,st20,,,loc0079
-ea0080,ocd-id,,rice,rice_lyons_92,poll0452,st20,,,loc0080
-ea0081,ocd-id,,riley,riley_manhattan_93,poll0457,st20,,,loc0081
-ea0082,ocd-id,,rooks,rooks_stockton_95,poll0463 poll0462,st20,,,loc0082
-ea0083,ocd-id,,rush,rush_lacrosse_97,poll0472 poll0473,st20,,,loc0083
-ea0084,ocd-id,,russell,russell_russell_98,poll0482,st20,,,loc0084
-ea0085,ocd-id,,saline,saline_salina_99,poll0487,st20,,,loc0085
-ea0086,ocd-id,,scott,scott_scott,poll0492,st20,,,loc0086
-ea0087,ocd-id,,sedgwick,sedgwick_wichita_101,poll0497,st20,,,loc0087
-ea0088,ocd-id,,seward,seward_liberal_102,poll0502,st20,,,loc0088
-ea0089,ocd-id,,shawnee,shawnee_topeka_103,poll0507,st20,,,loc0089
-ea0090,ocd-id,,sheridan,sheridan_hoxie_104,poll0513 poll0512,st20,,,loc0090
-ea0091,ocd-id,,sherman,sherman_goodland_107,poll0522 poll0523,st20,,,loc0091
-ea0092,ocd-id,,smith,smith_smith,poll0533 poll0532,st20,,,loc0092
-ea0093,ocd-id,,stafford,stafford_st.,poll0542 poll0543,st20,,,loc0093
-ea0094,ocd-id,,stanton,stanton_johnson_113,poll0553 poll0552,st20,,,loc0094
-ea0095,ocd-id,,stevens,stevens_hugoton_114,poll0562,st20,,,loc0095
-ea0096,ocd-id,,sumner,sumner_wellington_115,poll0567,st20,,,loc0096
-ea0097,ocd-id,,thomas,thomas_colby_116,poll0572,st20,,,loc0097
-ea0098,ocd-id,,trego,trego_wakeeney_117,poll0577,st20,,,loc0098
-ea0099,ocd-id,,wabaunsee,wabaunsee_alma_118,poll0582,st20,,,loc0099
-ea0100,ocd-id,,wallace,wallace_sharon,poll0588 poll0587,st20,,,loc0100
-ea0101,ocd-id,,washington,washington_washington_121,poll0597,st20,,,loc0101
-ea0102,ocd-id,,wichita,wichita_leoti_122,poll0603 poll0602,st20,,,loc0102
-ea0103,ocd-id,,wilson,wilson_fredonia_124,poll0612,st20,,,loc0103
-ea0104,ocd-id,,woodson,woodson_yates,poll0617 poll0618,st20,,,loc0104
-ea0105,ocd-id,,wyandotte,wyandotte_kansas,poll0627,st20,,,loc0105
+,ocd-id,,ocd-division/country/us/state:ks/county:reno,reno_hutchinson_580,poll10151601,st20,,,loc0001
+,ocd-id,,ocd-division/country/us/state:ks/county:morton,morton_elkhart_252,poll10227693,st20,,,loc0002
+,ocd-id,,ocd-division/country/us/state:ks/county:neosho,neosho_erie_449,poll10592309,st20,,,loc0003
+,ocd-id,,ocd-division/country/us/state:ks/county:lincoln,lincoln_lincoln_60,poll10791726,st20,,,loc0004
+,ocd-id,,ocd-division/country/us/state:ks/county:brown,brown_hiawatha_532,poll11298506,st20,,,loc0005
+,ocd-id,,ocd-division/country/us/state:ks/county:cherokee,cherokee_columbus_536,poll12349079,st20,,,loc0006
+,ocd-id,,ocd-division/country/us/state:ks/county:scott,scott_scott,poll12576203,st20,,,loc0007
+,ocd-id,,ocd-division/country/us/state:ks/county:smith,smith_smith,poll12746312,st20,,,loc0008
+,ocd-id,,ocd-division/country/us/state:ks/county:nemaha,nemaha_seneca_448,poll13473456,st20,,,loc0009
+,ocd-id,,ocd-division/country/us/state:ks/county:barber,barber_medicine,poll13751350,st20,,,loc0010
+,ocd-id,,ocd-division/country/us/state:ks/county:finney,finney_garden,poll14459408,st20,,,loc0011
+,ocd-id,,ocd-division/country/us/state:ks/county:marion,marion_marion_111,poll14727303,st20,,,loc0012
+,ocd-id,,ocd-division/country/us/state:ks/county:chase,chase_cottonwood,poll18175681,st20,,,loc0013
+,ocd-id,,ocd-division/country/us/state:ks/county:cowley,cowley_winfield_36,poll19711793,st20,,,loc0014
+,ocd-id,,ocd-division/country/us/state:ks/county:meade,meade_meade_569,poll19823926,st20,,,loc0015
+,ocd-id,,ocd-division/country/us/state:ks/county:ellis,ellis_hays_548,poll19994593,st20,,,loc0016
+,ocd-id,,ocd-division/country/us/state:ks/county:pottawatomie,pottawatomie_westmoreland_242,poll20735871,st20,,,loc0017
+,ocd-id,,ocd-division/country/us/state:ks/county:republic,republic_belleville_332,poll20966287,st20,,,loc0018
+,ocd-id,,ocd-division/country/us/state:ks/county:washington,washington_washington_223,poll212146,st20,,,loc0019
+,ocd-id,,ocd-division/country/us/state:ks/county:anderson,anderson_garnett_24,poll22014036,st20,,,loc0020
+,ocd-id,,ocd-division/country/us/state:ks/county:gray,gray_cimarron_428,poll2233058,st20,,,loc0021
+,ocd-id,,ocd-division/country/us/state:ks/county:trego,trego_wakeeney_619,poll23730737,st20,,,loc0022
+,ocd-id,,ocd-division/country/us/state:ks/county:kiowa,kiowa_greensburg_8,poll24892030,st20,,,loc0023
+,ocd-id,,ocd-division/country/us/state:ks/county:haskell,haskell_sublette_625,poll24914065,st20,,,loc0024
+,ocd-id,,ocd-division/country/us/state:ks/county:seward,seward_liberal_129,poll25374915,st20,,,loc0025
+,ocd-id,,ocd-division/country/us/state:ks/county:lane,lane_dighton_188,poll25637587,st20,,,loc0026
+,ocd-id,,ocd-division/country/us/state:ks/county:norton,norton_norton_201,poll27872103,st20,,,loc0027
+,ocd-id,,ocd-division/country/us/state:ks/county:doniphan,doniphan_troy_231,poll28018905,st20,,,loc0028
+,ocd-id,,ocd-division/country/us/state:ks/county:morris,morris_council,poll29403476,st20,,,loc0029
+,ocd-id,,ocd-division/country/us/state:ks/county:sedgwick,sedgwick_wichita_213,poll30439346,st20,,,loc0030
+,ocd-id,,ocd-division/country/us/state:ks/county:osborne,osborne_osborne_490,poll3045406,st20,,,loc0031
+,ocd-id,,ocd-division/country/us/state:ks/county:riley,riley_manhattan_334,poll30902449,st20,,,loc0032
+,ocd-id,,ocd-division/country/us/state:ks/county:jewell,jewell_mankato_234,poll31269569,st20,,,loc0033
+,ocd-id,,ocd-division/country/us/state:ks/county:rice,rice_lyons_78,poll32829058,st20,,,loc0034
+,ocd-id,,ocd-division/country/us/state:ks/county:miami,miami_paola_321,poll35035398,st20,,,loc0035
+,ocd-id,,ocd-division/country/us/state:ks/county:logan,logan_oakley_442,poll35937091,st20,,,loc0036
+,ocd-id,,ocd-division/country/us/state:ks/county:grant,grant_ulysses_623,poll36308365,st20,,,loc0037
+,ocd-id,,ocd-division/country/us/state:ks/county:greenwood,greenwood_eureka_179,poll36479759,st20,,,loc0038
+,ocd-id,,ocd-division/country/us/state:ks/county:comanche,comanche_coldwater_621,poll37839255,st20,,,loc0039
+,ocd-id,,ocd-division/country/us/state:ks/county:osage,osage_lyndon_576,poll38412410,st20,,,loc0040
+,ocd-id,,ocd-division/country/us/state:ks/county:mitchell,mitchell_beloit_238,poll39808350,st20,,,loc0041
+,ocd-id,,ocd-division/country/us/state:ks/county:geary,geary_junction,poll39936985,st20,,,loc0042
+,ocd-id,,ocd-division/country/us/state:ks/county:wyandotte,wyandotte_kansas,poll41720604,st20,,,loc0043
+,ocd-id,,ocd-division/country/us/state:ks/county:gove,gove_gove_552,poll41904618,st20,,,loc0044
+,ocd-id,,ocd-division/country/us/state:ks/county:marshall,marshall_marysville_487,poll43927063,st20,,,loc0045
+,ocd-id,,ocd-division/country/us/state:ks/county:crawford,crawford_girard_100,poll44314876,st20,,,loc0046
+,ocd-id,,ocd-division/country/us/state:ks/county:franklin,franklin_ottawa_176,poll45551726,st20,,,loc0047
+,ocd-id,,ocd-division/country/us/state:ks/county:hodgeman,hodgeman_jetmore_251,poll45754666,st20,,,loc0048
+,ocd-id,,ocd-division/country/us/state:ks/county:allen,allen_lola_23,poll46088214,st20,,,loc0049
+,ocd-id,,ocd-division/country/us/state:ks/county:russell,russell_russell_494,poll47284691,st20,,,loc0050
+,ocd-id,,ocd-division/country/us/state:ks/county:kearny,kearny_lakin_55,poll48011121,st20,,,loc0051
+,ocd-id,,ocd-division/country/us/state:ks/county:ness,ness_ness,poll4964011,st20,,,loc0052
+,ocd-id,,ocd-division/country/us/state:ks/county:bourbon,bourbon_ft,poll49681936,st20,,,loc0053
+,ocd-id,,ocd-division/country/us/state:ks/county:stanton,stanton_johnson_255,poll50080543,st20,,,loc0054
+,ocd-id,,ocd-division/country/us/state:ks/county:linn,linn_mound,poll53208996,st20,,,loc0055
+,ocd-id,,ocd-division/country/us/state:ks/county:rush,rush_lacrosse_145,poll54482322,st20,,,loc0056
+,ocd-id,,ocd-division/country/us/state:ks/county:harper,harper_anthony_555,poll5482228,st20,,,loc0057
+,ocd-id,,ocd-division/country/us/state:ks/county:graham,graham_hill,poll55790840,st20,,,loc0058
+,ocd-id,,ocd-division/country/us/state:ks/county:coffey,coffey_burlington_166,poll56118502,st20,,,loc0059
+,ocd-id,,ocd-division/country/us/state:ks/county:sheridan,sheridan_hoxie_340,poll5808555,st20,,,loc0060
+,ocd-id,,ocd-division/country/us/state:ks/county:stevens,stevens_hugoton_256,poll58413211,st20,,,loc0061
+,ocd-id,,ocd-division/country/us/state:ks/county:wabaunsee,wabaunsee_alma_471,poll58876664,st20,,,loc0062
+,ocd-id,,ocd-division/country/us/state:ks/county:ottawa,ottawa_minneapolis_12,poll58907627,st20,,,loc0063
+,ocd-id,,ocd-division/country/us/state:ks/county:montgomery,montgomery_independence_141,poll606214,st20,,,loc0064
+,ocd-id,,ocd-division/country/us/state:ks/county:wichita,wichita_leoti_598,poll61345820,st20,,,loc0065
+,ocd-id,,ocd-division/country/us/state:ks/county:edwards,edwards_kinsley_40,poll63905830,st20,,,loc0066
+,ocd-id,,ocd-division/country/us/state:ks/county:stafford,stafford_st.,poll64183587,st20,,,loc0067
+,ocd-id,,ocd-division/country/us/state:ks/county:cheyenne,cheyenne_st,poll65099163,st20,,,loc0068
+,ocd-id,,ocd-division/country/us/state:ks/county:johnson,johnson_olathe_54,poll65784832,st20,,,loc0069
+,ocd-id,,ocd-division/country/us/state:ks/county:wallace,wallace_sharon,poll68324648,st20,,,loc0070
+,ocd-id,,ocd-division/country/us/state:ks/county:greeley,greeley_tribune_135,poll70110386,st20,,,loc0071
+,ocd-id,,ocd-division/country/us/state:ks/county:pawnee,pawnee_larned_615,poll70160908,st20,,,loc0072
+,ocd-id,,ocd-division/country/us/state:ks/county:sherman,sherman_goodland_466,poll73030319,st20,,,loc0073
+,ocd-id,,ocd-division/country/us/state:ks/county:clay,clay_clay,poll73396200,st20,,,loc0074
+,ocd-id,,ocd-division/country/us/state:ks/county:hamilton,hamilton_syracuse_233,poll73486943,st20,,,loc0075
+,ocd-id,,ocd-division/country/us/state:ks/county:kingman,kingman_kingman_436,poll73638989,st20,,,loc0076
+,ocd-id,,ocd-division/country/us/state:ks/county:woodson,woodson_yates,poll74342879,st20,,,loc0077
+,ocd-id,,ocd-division/country/us/state:ks/county:saline,saline_salina_461,poll75726451,st20,,,loc0078
+,ocd-id,,ocd-division/country/us/state:ks/county:chautauqua,chautauqua_sedan_160,poll76569633,st20,,,loc0079
+,ocd-id,,ocd-division/country/us/state:ks/county:thomas,thomas_colby_470,poll77877776,st20,,,loc0080
+,ocd-id,,ocd-division/country/us/state:ks/county:cloud,cloud_concordia_34,poll78837689,st20,,,loc0081
+,ocd-id,,ocd-division/country/us/state:ks/county:rawlins,rawlins_atwood_253,poll80890185,st20,,,loc0082
+,ocd-id,,ocd-division/country/us/state:ks/county:harvey,harvey_newton_51,poll82388413,st20,,,loc0083
+,ocd-id,,ocd-division/country/us/state:ks/county:clark,clark_ashland_163,poll83974220,st20,,,loc0084
+,ocd-id,,ocd-division/country/us/state:ks/county:ellsworth,ellsworth_ellsworth_43,poll84040399,st20,,,loc0085
+,ocd-id,,ocd-division/country/us/state:ks/county:wilson,wilson_fredonia_371,poll84042329,st20,,,loc0086
+,ocd-id,,ocd-division/country/us/state:ks/county:jackson,jackson_holton_432,poll85119386,st20,,,loc0087
+,ocd-id,,ocd-division/country/us/state:ks/county:douglas,douglas_lawrence_39,poll85480065,st20,,,loc0088
+,ocd-id,,ocd-division/country/us/state:ks/county:labette,labette_oswego_57,poll87186618,st20,,,loc0089
+,ocd-id,,ocd-division/country/us/state:ks/county:dickinson,dickinson_abilene_419,poll87225355,st20,,,loc0090
+,ocd-id,,ocd-division/country/us/state:ks/county:decatur,decatur_oberlin_418,poll88393637,st20,,,loc0091
+,ocd-id,,ocd-division/country/us/state:ks/county:rooks,rooks_stockton_584,poll88652434,st20,,,loc0092
+,ocd-id,,ocd-division/country/us/state:ks/county:sumner,sumner_wellington_219,poll88872326,st20,,,loc0093
+,ocd-id,,ocd-division/country/us/state:ks/county:butler,butler_el,poll90630924,st20,,,loc0094
+,ocd-id,,ocd-division/country/us/state:ks/county:pratt,pratt_pratt_579,poll90758429,st20,,,loc0095
+,ocd-id,,ocd-division/country/us/state:ks/county:shawnee,shawnee_topeka_339,poll91387856,st20,,,loc0096
+,ocd-id,,ocd-division/country/us/state:ks/county:lyon,lyon_emporia_318,poll91932231,st20,,,loc0097
+,ocd-id,,ocd-division/country/us/state:ks/county:barton,barton_great,poll92877893,st20,,,loc0098
+,ocd-id,,ocd-division/country/us/state:ks/county:mcpherson,mcpherson_mcpherson_568,poll93723938,st20,,,loc0099
+,ocd-id,,ocd-division/country/us/state:ks/county:atchison,atchison_atchison_97,poll94568803,st20,,,loc0100
+,ocd-id,,ocd-division/country/us/state:ks/county:jefferson,jefferson_oskaloosa_53,poll95871056,st20,,,loc0101
+,ocd-id,,ocd-division/country/us/state:ks/county:ford,ford_dodge,poll97354625,st20,,,loc0102
+,ocd-id,,ocd-division/country/us/state:ks/county:phillips,phillips_phillipsburg_454,poll9764972,st20,,,loc0103
+,ocd-id,,ocd-division/country/us/state:ks/county:elk,elk_howard_547,poll97967978,st20,,,loc0104
+,ocd-id,,ocd-division/country/us/state:ks/county:leavenworth,leavenworth_leavenworth_59,poll99781800,st20,,,loc0105

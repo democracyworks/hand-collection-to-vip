@@ -43,23 +43,25 @@ class LocalityTxt(object):
         """Creates election_administration_ids by concatenating a prefix with an 'index_str' based on the Dataframe's
         row index. '0s' are added, if necesary, to maintain a consistent id length. As currently designed the method
         works up to index 9,999"""
-        prefix = 'ea'
 
-        if index <= 9:
-            index_str = '000' + str(index)
-            return prefix + index_str
-
-        elif index in range(10,100):
-            index_str = '00' + str(index)
-            return prefix + index_str
-
-        elif index in range(100, 1000):
-            index_str = '0' + str(index)
-            return prefix + index_str
-
-        else:
-            index_str = str(index)
-            return prefix + index_str
+        return ''
+        # prefix = 'ea'
+        #
+        # if index <= 9:
+        #     index_str = '000' + str(index)
+        #     return prefix + index_str
+        #
+        # elif index in range(10,100):
+        #     index_str = '00' + str(index)
+        #     return prefix + index_str
+        #
+        # elif index in range(100, 1000):
+        #     index_str = '0' + str(index)
+        #     return prefix + index_str
+        #
+        # else:
+        #     index_str = str(index)
+        #     return prefix + index_str
 
     def get_external_identifier_type(self):
         """#"""
@@ -73,7 +75,9 @@ class LocalityTxt(object):
         """Extracts external identifier (ocd-division)."""
 
         if external_identifier_value:
-            return external_identifier_value.lower()
+            str = "ocd-division/country/us/state:" + config.state_lower_abbreviation + "/county:" + external_identifier_value.lower()
+            return str
+            # ocd-division/country:us/state:nj/county:atlantic
         else:
             return ''
 
@@ -183,8 +187,8 @@ class LocalityTxt(object):
         New columns that match the 'locality.txt' template are inserted into the DataFrame, apply() is
         used to run methods that generate the values for each row of the new columns.
         """
-        #self.base_df['election_administration_id'] = self.base_df.apply(
-        #    lambda row: self.create_election_administration_id(row['index']), axis=1)
+        self.base_df['election_administration_id'] = self.base_df.apply(
+           lambda row: self.create_election_administration_id(row['index']), axis=1)
 
         self.base_df['external_identifier_type'] = self.base_df.apply(
             lambda row: self.get_external_identifier_type(), axis=1)
@@ -221,11 +225,11 @@ class LocalityTxt(object):
 
         # Drop base_df columns.
         loc.drop(['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date', 'time_zone', 'index',
-                'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
+                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'index',
+                'address_line', 'directions', 'hours', 'photo_uri', 'is_drop_box',
                 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'polling_location_id'], inplace=True, axis=1)
 
-        loc = loc.groupby('external_identifier_value').agg(lambda x: ' '.join(set(x))).reset_index()
+        loc = loc.groupby('hours_open_id').agg(lambda x: ' '.join(set(x))).reset_index()
 
         #loc['election_administration_id'] = loc['election_administration_id'].apply(lambda x: ''.join(x.split(' ')[0]))
         #loc['id'] = loc['id'].apply(lambda x: ''.join(x.split(' ')[0]))
@@ -269,12 +273,12 @@ class LocalityTxt(object):
         loc.to_csv(config.locality_output + 'locality.csv', index=False, encoding='utf-8')  # send to csv file
 
 if __name__ == '__main__':
-    file_name = 'intermediate_pl_for_loc.csv'
+    file_name = 'intermediate_doc.csv'
 
     early_voting_file = config.polling_location_output + file_name
 
     colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'times','start_date', 'end_date', 'time_zone', 'index',
+                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'index',
                 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
                 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'polling_location_id']
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1, delimiter=',')
