@@ -1,0 +1,95 @@
+address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+"500 W 4th Street, Room 109 Hastings, NE 68902",,09:00 AM - 05:00 PM,,ho96157166,false,true,,,,poll81186445
+"501 Main Street Neligh, NE 68756",,08:00 AM - 04:30 PM,,ho90452296,false,true,,,,poll86597320
+"205 Fir Street Arthur, NE 69121",,08:00 AM - 12:00 PM,,ho77732033,false,true,,,,poll45054001
+"206 College St Harrisburg, NE 69345",,08:00 AM - 12:00 PM,,ho10636801,false,true,,,,poll61071717
+"145 Lincoln Ave. Brewster, NE 68821",,08:00 AM - 04:00 PM,,ho8727829,false,true,,,,poll83415664
+"222 S. 4th Street Albion, NE 68620",,08:00 AM - 05:00 PM,,ho11727646,false,true,,,,poll66284358
+"515 Box Butte Avenue  Alliance, NE 69301",,08:00 AM - 04:00 PM,,ho60338116,false,true,,,,poll33143836
+"401 Thayer Butte, NE 68722",,08:15 AM - 04:00 PM,,ho74094092,false,true,,,,poll60762923
+"148 W. 4th Street Ainsworth, NE 69210",,08:00 AM - 05:00 PM,,ho53285387,false,true,,,,poll25054599
+"1512 Central Ave. Kearney, NE 68848",,08:00 AM - 05:00 PM,,ho91868945,false,true,,,,poll20757794
+"111 N. 13th St., Ste 8 Tekamah, NE 68061",,08:00 AM - 04:30 PM,,ho4345847,false,true,,,,poll47252550
+"451 N. 5th St. David City, NE 68632",,08:30 AM - 05:00 PM,,ho3872662,false,true,,,,poll18445576
+"201 Main St Plattsmouth, NE 68048",,08:00 AM - 05:00 PM,,ho82005867,false,true,,,,poll51746892
+"101 S. Broadway Hartington, NE 68739",,08:00 AM - 05:00 PM,,ho80826934,false,true,,,,poll40078785
+"921 Broadway St. Imperial, NE 69033",,08:00 AM - 04:00 PM,,ho56656073,false,true,,,,poll62265231
+"365 N. Main Street, #5 Valentine, NE 69201",,08:30 AM - 12:00 PM,,ho64411397,false,true,,,,poll91054955
+"1000 10th Ave. Sidney, NE 69162",,08:00 AM - 05:00 PM,,ho31182032,false,true,,,,poll29073306
+"111 W. Fairfield St. Clay Center, NE 68933",,08:30 AM - 05:00 PM,,ho93449969,false,true,,,,poll87385414
+"411 E. 11th St. Schuyler, NE 68661",,08:30 AM - 04:30 PM,,ho86805472,false,true,,,,poll40312251
+"200 S. Lincoln St., Room 100 West Point, NE 68788",,08:30 AM - 04:30 PM,,ho73216844,false,true,,,,poll87989128
+"431 S. 10th St. Broken Bow, NE 68822",,09:00 AM - 05:00 PM,,ho52258836,false,true,,,,poll20175722
+"1601 Broadway St. Dakota City, NE 68731",,08:00 AM - 04:30 PM,,ho95065240,false,true,,,,poll82069985
+"451 Main Chadron, NE 69337",,08:30 AM - 04:30 PM,,ho6337321,false,true,,,,poll31478202
+"700 N. Washington, Room A Lexington, NE 68850",,08:00 AM - 05:00 PM,,ho45817727,false,true,,,,poll23532807
+"718 Third St. Chappell, NE 69129",,08:00 AM - 04:00 PM,,ho89702713,false,true,,,,poll80448295
+"302 W. 3rd St. Ponca, NE 68770",,08:00 AM - 04:30 PM,,ho74190493,false,true,,,,poll77450807
+"435 N. Park, Room 102 Fremont, NE 68025",,08:30 AM - 04:30 PM,,ho57689549,false,true,,,,poll51956229
+"225 N. 115th St. Omaha, NE 68154",,08:00 AM - 05:00 PM,,ho34237567,false,true,,,,poll6496917
+"112 7th Ave. West Benkelman, NE 69021",,08:00 AM - 04:00 PM,,ho49944350,false,true,,,,poll61611824
+"900 G St. Geneva, NE 68361",,08:00 AM - 04:30 PM,,ho8972206,false,true,,,,poll34486605
+"405 15th St. Franklin, NE 68939",,08:30 AM - 04:30 PM,,ho39822272,false,true,,,,poll35295779
+"1 Wellington St Stockville, NE 69042",,08:30 AM - 12:00 PM,,ho86882366,false,true,,,,poll21058895
+"1 Wellington St Beaver City, NE 68926",,08:00 AM - 04:00 PM,,ho1663609,false,true,,,,poll62855777
+"912 R St. Beaver City, NE 68926",,08:00 AM - 04:00 PM,,ho40963894,false,true,,,,poll61766608
+"612 Grant St. Beatrice, NE 68310",,08:00 AM - 05:00 PM,,ho77560832,false,true,,,,poll44174241
+"611 Main St. Oshkosh, NE 69154",,08:00 AM - 04:00 PM,,ho55717030,false,true,,,,poll44095405
+"250 S. 8th Ave. Burwell, NE 68823",,09:00 AM - 12:00 PM,,ho65153006,false,true,,,,poll92331617
+"507 Smith St. Elwood, NE 68937",,08:30 AM - 04:30 PM,,ho89646679,false,true,,,,poll79266320
+"105 E Harrison Hyannis, NE 69350",,08:00 AM - 04:00 PM,,ho37880822,false,true,,,,poll41698360
+"101 S Kildare St. Greeley, NE 68842",,08:00 AM - 04:00 PM,,ho11287334,false,true,,,,poll29821712
+"121 South Pine, Ste 8 Grand Island, NE 68801",,08:30 AM - 05:00 PM,,ho16766055,false,true,,,,poll58455350
+"1111 13th St., Ste 1 Aurora, NE 68818",,08:00 AM - 05:00 PM,,ho38722974,false,true,,,,poll61722040
+"706 West 2nd St. Alma, NE 68920",,08:30 AM - 04:30 PM,,ho15639242,false,true,,,,poll63796106
+"505 Troth Hayes Center, NE 69032",,08:00 AM - 04:00 PM,,ho86235933,false,true,,,,poll52781142
+"229 East D Street Trenton, NE 69044",,08:30 AM - 04:00 PM,,ho84117487,false,true,,,,poll95721022
+"204 N 4th Street O'Neill, NE 68763",,08:00 AM - 04:30 PM,,ho50802362,false,true,,,,poll34291076
+"303 NW 1st St. Mullen, NE 69152",,08:30 AM - 12:00 PM,,ho89821436,false,true,,,,poll97807987
+"612 Indian St. St. Paul, NE 68873",,08:00 AM - 05:00 PM,,ho13601051,false,true,,,,poll14112536
+"411 Fourth Street Fairbury, NE 68352",,09:00 AM - 05:00 PM,,ho63902137,false,true,,,,poll58222135
+"351 Broadway Tecumseh, NE 68450",,08:00 AM - 12:30 PM,,ho56119522,false,true,,,,poll10876174
+"424 N Colorado Ave. Minden, NE 68959",,08:30 AM - 05:00 PM,,ho27969490,false,true,,,,poll85786616
+"511 N. Spruce, Ste 102 Ogallala, NE 69153",,08:00 AM - 04:00 PM,,ho23192488,false,true,,,,poll75029539
+"310 Courthouse Drive Springview, NE 68778",,08:00 AM - 12:00 PM,,ho59590967,false,true,,,,poll98162026
+"114 E Third St., Ste 6 Kimball, NE 69145",,08:00 AM - 05:00 PM,,ho32659685,false,true,,,,poll26841241
+"206 Main St Center, NE 68724",,08:30 AM - 04:30 PM,,ho88350118,false,true,,,,poll42585300
+"601 N. 46th Street Lincoln, NE 68503",,08:00 AM - 04:30 PM,,ho73251947,false,true,,,,poll33942543
+"301 N Jeffers, Room 101 North Platte, NE 69101",,09:00 AM - 05:00 PM,,ho83852689,false,true,,,,poll70276777
+"317 Main St. Stapleton, NE 69163",,08:00 AM - 12:00 PM,,ho77639125,false,true,,,,poll91742947
+"408 4th St. Taylor, NE 68879",,08:30 AM - 12:00 PM,,ho31903532,false,true,,,,poll37728431
+"1313 N Main St. Madison, NE 68748",,08:30 AM - 05:00 PM,,ho19879901,false,true,,,,poll60717117
+"1500 Anderson Tryon, NE 69167",,08:30 AM - 04:30 PM,,ho30288274,false,true,,,,poll85035906
+"1510 18th St. Central City, NE 68826",,08:00 AM - 05:00 PM,,ho75470244,false,true,,,,poll25439972
+"6th and L Street Bridgeport, NE 69336",,08:30 AM - 04:30 PM,,ho88435297,false,true,,,,poll36507213
+"209 Esther St. Fullerton, NE 68638",,08:00 AM - 04:30 PM,,ho27356632,false,true,,,,poll5251283
+"1824 N Street, Ste 201 Auburn, NE 68305",,08:00 AM - 05:00 PM,,ho64120887,false,true,,,,poll70452833
+"150 S Main St Nelson, NE 68961",,08:00 AM - 04:30 PM,,ho90733217,false,true,,,,poll76432096
+"1021 Central Ave, Room 102 Nebraska City, NE 68410",,08:00 AM - 04:30 PM,,ho36949458,false,true,,,,poll57598933
+"625 6th St. Pawnee City, NE 68420",,08:00 AM - 12:30 PM,,ho14138907,false,true,,,,poll69542746
+"Perkins County Courthouse, 200 Lincoln Ave. Grant, NE 69140",,08:00 AM - 04:00 PM,,ho12710655,false,true,,,,poll53182391
+"715 5th Ave. Holdrege, NE 68949",,09:00 AM - 05:00 PM,,ho86958455,false,true,,,,poll67336336
+"111 W. Court, # 1 Pierce, NE 68767",,08:30 AM - 04:30 PM,,ho92971884,false,true,,,,poll21802138
+"2610 14th St. Columbus, NE 68602",,08:00 AM - 05:00 PM,,ho27685919,false,true,,,,poll75608229
+"400 Hawkeye St. Osceola, NE 68651",,08:00 AM - 05:00 PM,,ho25913380,false,true,,,,poll60079890
+"502 Norris Ave. McCook, NE 69001",,08:00 AM - 04:00 PM,,ho27965374,false,true,,,,poll11185017
+"1700 Stone Street Falls City, NE 68355",,08:30 AM - 05:00 PM,,ho79158736,false,true,,,,poll24830692
+"400 S State St. Bassett, NE 68714",,09:00 AM - 05:00 PM,,ho18393792,false,true,,,,poll96383928
+"215 S Court St. Wilber, NE 68465",,08:00 AM - 05:00 PM,,ho76603423,false,true,,,,poll89631158
+"501 Olson Dr., Ste 4 Papillion, NE 68046",,08:00 AM - 04:45 PM,,ho64601888,false,true,,,,poll17687600
+"433 N Chestnut St., Ste 300 Wahoo, NE 68066",,08:00 AM - 05:00 PM,,ho74170323,false,true,,,,poll77178731
+"1825 10th Street Gering, NE 69341",,08:00 AM - 04:30 PM,,ho34171929,false,true,,,,poll52664877
+"529 Seward St. Seward, NE 68434",,08:00 AM - 05:00 PM,,ho37152074,false,true,,,,poll97564993
+"301 E 2nd St. Rushville, NE 69360",,08:30 AM - 04:30 PM,,ho96348604,false,true,,,,poll76361233
+"630 O St. Loup City, NE 68853",,08:30 AM - 04:30 PM,,ho53273102,false,true,,,,poll98532434
+"325 Main St. Harrison, NE 69346",,08:00 AM - 04:30 PM,,ho96321114,false,true,,,,poll21552705
+"804 Ivy St. Stanton, NE 68779",,08:30 AM - 04:30 PM,,ho80754929,false,true,,,,poll97343603
+"225 N. Fourth St., Room 201 Hebron, NE 68370",,07:30 AM - 04:30 PM,,ho4707295,false,true,,,,poll79817399
+"503 Main St. Thedford, NE 69166",,08:00 AM - 12:00 PM,,ho69558078,false,true,,,,poll93341526
+"106 S 5th St. Pender, NE 68047",,08:30 AM - 05:00 PM,,ho43270787,false,true,,,,poll21260231
+"125 S. 15th Street Ord, NE 68862",,08:00 AM - 05:00 PM,,ho93218931,false,true,,,,poll19099337
+"1555 Colfax St. Blair, NE 68008",,08:00 AM - 04:30 PM,,ho79165770,false,true,,,,poll99208675
+"510 Pearl St., Ste 5 Wayne, NE 68787",,08:30 AM - 05:00 PM,,ho56151323,false,true,,,,poll75148737
+"621 N Cedar St. Red Cloud, NE 68970",,08:30 AM - 04:30 PM,,ho28871597,false,true,,,,poll64430077
+"301 3rd St. Bartlett, NE 68622",,09:00 AM - 12:00 PM,,ho59979301,false,true,,,,poll80774775
+"510 Lincoln Ave., Room 103 York, NE 68467",,08:00 AM - 05:00 PM,,ho15426034,false,true,,,,poll44000971
