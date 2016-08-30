@@ -1,0 +1,4 @@
+election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
+,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:adams,ocd-division/country:us/state:il/county:ad0004,poll47894679,st17,,,loc0001
+,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:alexander,ocd-division/country:us/state:il/county:alexan0022,poll12444145,st17,,,loc0002
+,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:bond,ocd-division/country:us/state:il/county:b0026,poll84340451,st17,,,loc0003
