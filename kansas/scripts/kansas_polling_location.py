@@ -20,6 +20,7 @@ import time
 import config
 import hashlib
 from time import strftime
+import csv
 
 class PollingLocationTxt(object):
     """
@@ -304,3 +305,19 @@ if __name__ == '__main__':
     pl.export_for_schedule_and_locality()
     pl.write_polling_location_txt()
     # print early_voting_df["index"]
+
+
+    old_file = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/data/kansas_early_voting_info.csv"
+    new_file = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/data/reformatted_info.csv"
+
+    with open(old_file, 'rU') as csvfile:
+        reader = csv.DictReader(csvfile)
+        f = open(new_file, 'wb')
+        writer = csv.writer(f)
+        cols = ["County", "Officer", "Email", "Phone", "Address1", "Address2", "City", "State", "Zip", "Hours", "Start", "End"]
+        writer.writerow(cols)
+        for row in reader:
+            arr1 = [row["COUNTY"], row["OFFICER"], row["EMAIL"], "10/24"]
+            arr2 = [row["CITY"], row["STATE"], "10/31"]
+            writer.writerow(arr1)
+            writer.writerow(arr2)

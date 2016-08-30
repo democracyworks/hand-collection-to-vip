@@ -114,7 +114,7 @@ class LocalityTxt(object):
 
     def get_other_type(self):
         # create conditional when/if column is present
-        return ''
+        return 'other'
 
 
     def create_id(self, index):
