@@ -96,7 +96,7 @@ class StateTxt(object):
     def write_state_txt(self):
         # This method is going to populate the source CSV with all the necessary data
 
-        with open(config.polling_location_output + 'state.txt', 'ab') as f:
+        with open(config.output + 'state.txt', 'ab') as f:
             fieldnames = ["election_administration_id", 'external_identifier_type',
                           'external_identifier_othertype', 'external_identifier_value',
                           'name', 'polling_location_ids', 'id']

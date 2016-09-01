@@ -1,57 +1,57 @@
 election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
-,ocd-id,,ocd-division/country:us/state:mt/county:beaverhead,beaverhead_county0005,poll77635771,st30,,,loc0001
-,ocd-id,,ocd-division/country:us/state:mt/county:big_horn,big_horn_county0020,poll58894529 poll66169550 poll84282476,st30,,,loc0002
-,ocd-id,,ocd-division/country:us/state:mt/county:blaine,blaine_county0027,poll29884351 poll66041645 poll87906921 poll8501250,st30,,,loc0003
-,ocd-id,,ocd-division/country:us/state:mt/county:broadwater,broadwater_county0038,poll92662463,st30,,,loc0004
-,ocd-id,,ocd-division/country:us/state:mt/county:carbon,carbon_county0041,poll23361517,st30,,,loc0005
-,ocd-id,,ocd-division/country:us/state:mt/county:carter,carter_county0049,poll43919146,st30,,,loc0006
-,ocd-id,,ocd-division/country:us/state:mt/county:cascade,cascade_county0052,poll7023546,st30,,,loc0007
-,ocd-id,,ocd-division/country:us/state:mt/county:chouteau,chouteau_county0059,poll6790303,st30,,,loc0008
-,ocd-id,,ocd-division/country:us/state:mt/county:custer,custer_county0066,poll97393653,st30,,,loc0009
-,ocd-id,,ocd-division/country:us/state:mt/county:daniels,daniels_county0074,poll97440916,st30,,,loc0010
-,ocd-id,,ocd-division/country:us/state:mt/county:dawson,dawson_county0077,poll59870868,st30,,,loc0011
-,ocd-id,,ocd-division/country:us/state:mt/county:deer_lodge,deer_lodge_county0082,poll93199725,st30,,,loc0012
-,ocd-id,,ocd-division/country:us/state:mt/county:fallon,fallon_county0088,poll10061675,st30,,,loc0013
-,ocd-id,,ocd-division/country:us/state:mt/county:fergus,fergus_county0095,poll48736620,st30,,,loc0014
-,ocd-id,,ocd-division/country:us/state:mt/county:flathead,flathead_county0104,poll79116468,st30,,,loc0015
-,ocd-id,,ocd-division/country:us/state:mt/county:gallatin,gallatin_county0105,poll73385087,st30,,,loc0016
-,ocd-id,,ocd-division/country:us/state:mt/county:garfield,garfield_county0116,poll73035965 poll77888635 poll57898643 poll57583213,st30,,,loc0017
-,ocd-id,,ocd-division/country:us/state:mt/county:glacier,glacier_county0124,poll37557849,st30,,,loc0018
-,ocd-id,,ocd-division/country:us/state:mt/county:golden_valley,golden_valley_county0129,poll99414863,st30,,,loc0019
-,ocd-id,,ocd-division/country:us/state:mt/county:granite,granite_county0131,poll63054648,st30,,,loc0020
-,ocd-id,,ocd-division/country:us/state:mt/county:hill,hill_county0137,poll39479837,st30,,,loc0021
-,ocd-id,,ocd-division/country:us/state:mt/county:jefferson,jefferson_county0143,poll24225175,st30,,,loc0022
-,ocd-id,,ocd-division/country:us/state:mt/county:judith_basin,judith_basin_county0150,poll85440926,st30,,,loc0023
-,ocd-id,,ocd-division/country:us/state:mt/county:lake,lake_county0159,poll25789885,st30,,,loc0024
-,ocd-id,,ocd-division/country:us/state:mt/county:lewis_and_clark,lewis_and_clark_county0164,poll26462964,st30,,,loc0025
-,ocd-id,,ocd-division/country:us/state:mt/county:liberty,liberty_county0167,poll78236188,st30,,,loc0026
-,ocd-id,,ocd-division/country:us/state:mt/county:lincoln,lincoln_county0174,poll38922022,st30,,,loc0027
-,ocd-id,,ocd-division/country:us/state:mt/county:madison,madison_county0176,poll58493448,st30,,,loc0028
-,ocd-id,,ocd-division/country:us/state:mt/county:mccone,mccone_county0186,poll71950076,st30,,,loc0029
-,ocd-id,,ocd-division/country:us/state:mt/county:meagher,meagher_county0189,poll84864897,st30,,,loc0030
-,ocd-id,,ocd-division/country:us/state:mt/county:mineral,mineral_county0197,poll87752240,st30,,,loc0031
-,ocd-id,,ocd-division/country:us/state:mt/county:missoula,missoula_county0204,poll11402894,st30,,,loc0032
-,ocd-id,,ocd-division/country:us/state:mt/county:musselshell,musselshell_county0205,poll19907548,st30,,,loc0033
-,ocd-id,,ocd-division/country:us/state:mt/county:park,park_county0213,poll73987952,st30,,,loc0034
-,ocd-id,,ocd-division/country:us/state:mt/county:petroleum,petroleum_county0217,poll62167098,st30,,,loc0035
-,ocd-id,,ocd-division/country:us/state:mt/county:phillips,phillips_county0225,poll61028000,st30,,,loc0036
-,ocd-id,,ocd-division/country:us/state:mt/county:pondera,pondera_county0229,poll76257047,st30,,,loc0037
-,ocd-id,,ocd-division/country:us/state:mt/county:powder_river,powder_river_county0239,poll38111014,st30,,,loc0038
-,ocd-id,,ocd-division/country:us/state:mt/county:powell,powell_county0247,poll30514419,st30,,,loc0039
-,ocd-id,,ocd-division/country:us/state:mt/county:prairie,prairie_county0256,poll35991430,st30,,,loc0040
-,ocd-id,,ocd-division/country:us/state:mt/county:ravalli,ravalli_county0260,poll70080076,st30,,,loc0041
-,ocd-id,,ocd-division/country:us/state:mt/county:richland,richland_county0265,poll38371132,st30,,,loc0042
-,ocd-id,,ocd-division/country:us/state:mt/county:roosevelt,roosevelt_county0268,poll15452505,st30,,,loc0043
-,ocd-id,,ocd-division/country:us/state:mt/county:rosebud,rosebud_county0285,poll10696311 poll15908065,st30,,,loc0044
-,ocd-id,,ocd-division/country:us/state:mt/county:sanders,sanders_county0288,poll54942395,st30,,,loc0045
-,ocd-id,,ocd-division/country:us/state:mt/county:sheridan,sheridan_county0295,poll19594984,st30,,,loc0046
-,ocd-id,,ocd-division/country:us/state:mt/county:silver_bow,silver_bow_county0301,poll3679998,st30,,,loc0047
-,ocd-id,,ocd-division/country:us/state:mt/county:stillwater,stillwater_county0308,poll62296086 poll93780097 poll51855044 poll20859945,st30,,,loc0048
-,ocd-id,,ocd-division/country:us/state:mt/county:sweet_grass,sweet_grass_county0318,poll58455835,st30,,,loc0049
-,ocd-id,,ocd-division/country:us/state:mt/county:teton,teton_county0319,poll65718594,st30,,,loc0050
-,ocd-id,,ocd-division/country:us/state:mt/county:toole,toole_county0325,poll33735044,st30,,,loc0051
-,ocd-id,,ocd-division/country:us/state:mt/county:treasure,treasure_county0331,poll31100823,st30,,,loc0052
-,ocd-id,,ocd-division/country:us/state:mt/county:valley,valley_county0339,poll94964182,st30,,,loc0053
-,ocd-id,,ocd-division/country:us/state:mt/county:wheatland,wheatland_county0348,poll13837989,st30,,,loc0054
-,ocd-id,,ocd-division/country:us/state:mt/county:wibaux,wibaux_county0349,poll27701148,st30,,,loc0055
-,ocd-id,,ocd-division/country:us/state:mt/county:yellowstone,yellowstone_county0358,poll77663762,st30,,,loc0056
+,ocd-id,,ocd-division/country:us/state:mt/county:beaverhead,beaverhead_county0005,poll77635771,st30,other,,loc0001
+,ocd-id,,ocd-division/country:us/state:mt/county:big_horn,big_horn_county0020,poll58894529 poll66169550 poll84282476,st30,other,,loc0002
+,ocd-id,,ocd-division/country:us/state:mt/county:blaine,blaine_county0027,poll29884351 poll66041645 poll87906921 poll8501250,st30,other,,loc0003
+,ocd-id,,ocd-division/country:us/state:mt/county:broadwater,broadwater_county0038,poll92662463,st30,other,,loc0004
+,ocd-id,,ocd-division/country:us/state:mt/county:carbon,carbon_county0041,poll23361517,st30,other,,loc0005
+,ocd-id,,ocd-division/country:us/state:mt/county:carter,carter_county0049,poll43919146,st30,other,,loc0006
+,ocd-id,,ocd-division/country:us/state:mt/county:cascade,cascade_county0052,poll7023546,st30,other,,loc0007
+,ocd-id,,ocd-division/country:us/state:mt/county:chouteau,chouteau_county0059,poll6790303,st30,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:mt/county:custer,custer_county0066,poll97393653,st30,other,,loc0009
+,ocd-id,,ocd-division/country:us/state:mt/county:daniels,daniels_county0074,poll97440916,st30,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:mt/county:dawson,dawson_county0077,poll59870868,st30,other,,loc0011
+,ocd-id,,ocd-division/country:us/state:mt/county:deer_lodge,deer_lodge_county0082,poll93199725,st30,other,,loc0012
+,ocd-id,,ocd-division/country:us/state:mt/county:fallon,fallon_county0088,poll10061675,st30,other,,loc0013
+,ocd-id,,ocd-division/country:us/state:mt/county:fergus,fergus_county0095,poll48736620,st30,other,,loc0014
+,ocd-id,,ocd-division/country:us/state:mt/county:flathead,flathead_county0104,poll79116468,st30,other,,loc0015
+,ocd-id,,ocd-division/country:us/state:mt/county:gallatin,gallatin_county0105,poll73385087,st30,other,,loc0016
+,ocd-id,,ocd-division/country:us/state:mt/county:garfield,garfield_county0116,poll73035965 poll77888635 poll57898643 poll57583213,st30,other,,loc0017
+,ocd-id,,ocd-division/country:us/state:mt/county:glacier,glacier_county0124,poll37557849,st30,other,,loc0018
+,ocd-id,,ocd-division/country:us/state:mt/county:golden_valley,golden_valley_county0129,poll99414863,st30,other,,loc0019
+,ocd-id,,ocd-division/country:us/state:mt/county:granite,granite_county0131,poll63054648,st30,other,,loc0020
+,ocd-id,,ocd-division/country:us/state:mt/county:hill,hill_county0137,poll39479837,st30,other,,loc0021
+,ocd-id,,ocd-division/country:us/state:mt/county:jefferson,jefferson_county0143,poll24225175,st30,other,,loc0022
+,ocd-id,,ocd-division/country:us/state:mt/county:judith_basin,judith_basin_county0150,poll85440926,st30,other,,loc0023
+,ocd-id,,ocd-division/country:us/state:mt/county:lake,lake_county0159,poll25789885,st30,other,,loc0024
+,ocd-id,,ocd-division/country:us/state:mt/county:lewis_and_clark,lewis_and_clark_county0164,poll26462964,st30,other,,loc0025
+,ocd-id,,ocd-division/country:us/state:mt/county:liberty,liberty_county0167,poll78236188,st30,other,,loc0026
+,ocd-id,,ocd-division/country:us/state:mt/county:lincoln,lincoln_county0174,poll38922022,st30,other,,loc0027
+,ocd-id,,ocd-division/country:us/state:mt/county:madison,madison_county0176,poll58493448,st30,other,,loc0028
+,ocd-id,,ocd-division/country:us/state:mt/county:mccone,mccone_county0186,poll71950076,st30,other,,loc0029
+,ocd-id,,ocd-division/country:us/state:mt/county:meagher,meagher_county0189,poll84864897,st30,other,,loc0030
+,ocd-id,,ocd-division/country:us/state:mt/county:mineral,mineral_county0197,poll87752240,st30,other,,loc0031
+,ocd-id,,ocd-division/country:us/state:mt/county:missoula,missoula_county0204,poll11402894,st30,other,,loc0032
+,ocd-id,,ocd-division/country:us/state:mt/county:musselshell,musselshell_county0205,poll19907548,st30,other,,loc0033
+,ocd-id,,ocd-division/country:us/state:mt/county:park,park_county0213,poll73987952,st30,other,,loc0034
+,ocd-id,,ocd-division/country:us/state:mt/county:petroleum,petroleum_county0217,poll62167098,st30,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:mt/county:phillips,phillips_county0225,poll61028000,st30,other,,loc0036
+,ocd-id,,ocd-division/country:us/state:mt/county:pondera,pondera_county0229,poll76257047,st30,other,,loc0037
+,ocd-id,,ocd-division/country:us/state:mt/county:powder_river,powder_river_county0239,poll38111014,st30,other,,loc0038
+,ocd-id,,ocd-division/country:us/state:mt/county:powell,powell_county0247,poll30514419,st30,other,,loc0039
+,ocd-id,,ocd-division/country:us/state:mt/county:prairie,prairie_county0256,poll35991430,st30,other,,loc0040
+,ocd-id,,ocd-division/country:us/state:mt/county:ravalli,ravalli_county0260,poll70080076,st30,other,,loc0041
+,ocd-id,,ocd-division/country:us/state:mt/county:richland,richland_county0265,poll38371132,st30,other,,loc0042
+,ocd-id,,ocd-division/country:us/state:mt/county:roosevelt,roosevelt_county0268,poll15452505,st30,other,,loc0043
+,ocd-id,,ocd-division/country:us/state:mt/county:rosebud,rosebud_county0285,poll10696311 poll15908065,st30,other,,loc0044
+,ocd-id,,ocd-division/country:us/state:mt/county:sanders,sanders_county0288,poll54942395,st30,other,,loc0045
+,ocd-id,,ocd-division/country:us/state:mt/county:sheridan,sheridan_county0295,poll19594984,st30,other,,loc0046
+,ocd-id,,ocd-division/country:us/state:mt/county:silver_bow,silver_bow_county0301,poll3679998,st30,other,,loc0047
+,ocd-id,,ocd-division/country:us/state:mt/county:stillwater,stillwater_county0308,poll62296086 poll93780097 poll51855044 poll20859945,st30,other,,loc0048
+,ocd-id,,ocd-division/country:us/state:mt/county:sweet_grass,sweet_grass_county0318,poll58455835,st30,other,,loc0049
+,ocd-id,,ocd-division/country:us/state:mt/county:teton,teton_county0319,poll65718594,st30,other,,loc0050
+,ocd-id,,ocd-division/country:us/state:mt/county:toole,toole_county0325,poll33735044,st30,other,,loc0051
+,ocd-id,,ocd-division/country:us/state:mt/county:treasure,treasure_county0331,poll31100823,st30,other,,loc0052
+,ocd-id,,ocd-division/country:us/state:mt/county:valley,valley_county0339,poll94964182,st30,other,,loc0053
+,ocd-id,,ocd-division/country:us/state:mt/county:wheatland,wheatland_county0348,poll13837989,st30,other,,loc0054
+,ocd-id,,ocd-division/country:us/state:mt/county:wibaux,wibaux_county0349,poll27701148,st30,other,,loc0055
+,ocd-id,,ocd-division/country:us/state:mt/county:yellowstone,yellowstone_county0358,poll77663762,st30,other,,loc0056

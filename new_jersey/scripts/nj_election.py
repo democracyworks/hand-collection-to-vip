@@ -87,12 +87,6 @@ class ElectionTxt(object):
         """#"""
         return 'federal'
 
-    #def get_state_id(self):
-     #   """#"""
-        # get state name, lower()
-
-      #  pass
-
     def create_state_id(self):
         """Creates the state_id by matching a key in the state_dict and retrieving
         and modifying its value. A '0' is added, if necessary, to maintain a
@@ -132,7 +126,7 @@ class ElectionTxt(object):
 
     def has_election_day_registration(self):
         """#"""
-        return 'no'
+        return 'false'
 
     def registration_deadline(self):
         """#"""
@@ -152,8 +146,6 @@ class ElectionTxt(object):
     def hours_open_id(self):
         """#"""
         return ''
-
-
 
     def write_election_txt(self):
         output_path = "/home/acg/democracyworks/hand-collection-to-vip/new_jersey/output/election.txt"

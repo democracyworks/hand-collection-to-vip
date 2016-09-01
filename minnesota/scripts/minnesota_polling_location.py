@@ -148,21 +148,15 @@ class PollingLocationTxt(object):
         # create conditional when/if column is present
         return ''
 
-    def create_id(self, index):
+    def create_id(self, index, ocd_division, street, city, state, zip_code):
         """Create id"""
+        # concatenate county name, or part of it (first 3/4 letters) with index
+        # add leading zeros to maintain consistent id length
 
-        if index <= 9:
-            index_str = '000' + str(index)
+        address_line = self.get_address_line(index, street, city, state, zip_code)
 
-        elif index in range(10,100):
-            index_str = '00' + str(index)
-
-        elif index in range(100, 1000):
-            index_str = '0' + str(index)
-        else:
-            index_str = str(index)
-
-        return 'poll' + str(index_str)
+        id =  int(hashlib.sha1(config.state + address_line).hexdigest(), 16) % (10 ** 8)
+        return 'poll' + str(id)
 
     def build_polling_location_txt(self):
         """
@@ -202,35 +196,69 @@ class PollingLocationTxt(object):
             lambda row: self.get_latlng_source(), axis=1)
 
         self.base_df['id'] = self.base_df.apply(
-            lambda row: self.create_id(row['index']), axis=1)
+            lambda row: self.create_id(row['index'], row['ocd_division'], row['address_1'], row['address_2'],
+                                       row['city'], row['zip']), axis=1)
 
         return self.base_df
 
-    def dedupe(self, dupe):
-        """#"""
-        return dupe.drop_duplicates(subset=['address_line', 'hours'])
+#    def dedupe(self, dupe):
+#        """#"""
+#        return dupe.drop_duplicates(subset=['address_line', 'hours'])
 
 
-    def export_for_schedule(self):
-        ex_doc = self.build_polling_location_txt()
-        # print ex_doc
+#    def export_for_schedule_and_locality(self):
+#        ex_doc = self.build_polling_location_txt()
+#        print ex_doc
 
-        ex_doc = self.dedupe(ex_doc)
-        print ex_doc
+#        ex_doc = self.dedupe(ex_doc)
+#        print ex_doc
 
-        ex_doc.to_csv(config.polling_location_output + 'intermediate_pl_for_schedule.csv', index=False, encoding='utf-8')
+#        ex_doc.to_csv(config.polling_location_output + 'intermediate_pl_for_schedule.csv', index=False, encoding='utf-8')
 
-    def export_for_locality(self):
-        ex_doc = self.build_polling_location_txt()
-        print ex_doc
-
-        ex_doc = self.dedupe(ex_doc)
+#    def export_for_locality(self):
+#        ex_doc = self.build_polling_location_txt()
         #print ex_doc
 
-        ex_doc.to_csv(config.polling_location_output + 'intermediate_pl_for_loc.csv', index=False, encoding='utf-8')
+#        ex_doc = self.dedupe(ex_doc)
+        #print ex_doc
 
-    def format(self):
+#        ex_doc.to_csv(config.polling_location_output + 'intermediate_pl_for_loc.csv', index=False, encoding='utf-8')
+
+    def dedupe(self, dupe):
+        """#"""
+        return dupe.drop_duplicates(subset=['address_line'])
+
+    def export_for_schedule_and_locality(self):
+        intermediate_doc = self.build_polling_location_txt()
+
+        print intermediate_doc
+        #intermediate_doc = self.dedupe(intermediate_doc)
+
+        intermediate_doc = intermediate_doc.drop_duplicates(subset=['start_time', 'end_time', 'start_date',
+                                                                    'end_date', 'address_line'])
+
+        #intermediate_doc = intermediate_doc.drop_duplicates(subset=['address_line', 'hours'])
+        print intermediate_doc
+
+        intermediate_doc.to_csv(config.output + 'intermediate_doc.csv', index=False, encoding='utf-8')
+
+#    def format(self):
+#        plt = self.build_polling_location_txt()
+
+        # Drop base_df columns.
+#        plt.drop(['index', 'ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state', 'zip',
+#                'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment', 'is_or_by_appointment',
+#                'appointment_phone_num', 'is_subject_to_change'], inplace=True, axis=1)
+
+#        plt = self.dedupe(plt)
+#        return plt
+
+
+    def write_polling_location_txt(self):
+        """Drops base DataFrame columns then writes final dataframe to text or csv file"""
+
         plt = self.build_polling_location_txt()
+        #print plt
 
         # Drop base_df columns.
         plt.drop(['index', 'ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state', 'zip',
@@ -238,28 +266,13 @@ class PollingLocationTxt(object):
                 'appointment_phone_num', 'is_subject_to_change'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
-        return plt
-
-
-    def write_polling_location_txt(self):
-        """Drops base DataFrame columns then writes final dataframe to text or csv file"""
-
-        plt = self.format()
-
-        # Drop base_df columns.
-#        plt.drop(['index', 'ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state', 'zip',
-#                'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment', 'is_or_by_appointment',
-#                'appointment_phone_num', 'is_subject_to_change'], inplace=True, axis=1)
-
-        plt = self.dedupe(plt)
         print plt
 
-        plt.to_csv(config.polling_location_output + 'polling_location.txt', index=False, encoding='utf-8')  # send to txt file
-        plt.to_csv(config.polling_location_output + 'polling_location.csv', index=False, encoding='utf-8')  # send to csv file
+        plt.to_csv(config.output + 'polling_location.txt', index=False, encoding='utf-8')  # send to txt file
+        plt.to_csv(config.output + 'polling_location.csv', index=False, encoding='utf-8')  # send to csv file
 
 
 if __name__ == '__main__':
-
 
     early_voting_true = 'true'  # true or false
     #drop_box_true =
@@ -277,6 +290,6 @@ if __name__ == '__main__':
     early_voting_df['index'] = early_voting_df.index + 1
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
-    #pl.write_polling_location_txt()
-    pl.export_for_locality()
+    pl.write_polling_location_txt()
+    #pl.export_for_schedule_and_locality()
     #pl.export_for_schedule()
