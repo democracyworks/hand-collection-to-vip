@@ -243,9 +243,6 @@ class ElectionTxt(object):
 
 if __name__ == '__main__':
 
-    state_feed_file = 'state_feed_info.csv'
-    early_voting_file = 'idaho_early_voting_info.csv'
-
     early_voting_path = config.output + "intermediate_doc.csv"
     #early_voting_path = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/kansas_early_voting_info.csv"
     colnames = ['ocd_division', 'homepage', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip',
@@ -257,7 +254,7 @@ if __name__ == '__main__':
     early_voting_df['index'] = early_voting_df.index + 1
 
 
-    state_feed_path = "/Users/danielgilberg/Development/hand-collection-to-vip/nebraska/input/" + state_feed_file
+    state_feed_path = config.data_folder + "state_feed_info.csv"
     colnames = ['office_name', 'ocd_division', 'same_day_reg', 'election_date', 'election_name', 'registration_deadline',
                 "registration_deadline_display", 'ballot_request_deadline', 'ballot_request_deadline_display']
     state_feed_df = pd.read_csv(state_feed_path, names=colnames, encoding='utf-8', skiprows=1)

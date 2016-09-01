@@ -1,4 +1,4 @@
 address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-"Adams County Court House 507 Vermont Quincy, ID 62306",,08:30 AM - 04:30 PM,,ho67478093,false,true,,,,poll47894679
-"Alexander County Clerk 2000 Washington Avenue Cairo, ID 62914",,08:00 AM - 12:00 PM,,ho79026471,false,true,,,,poll12444145
-"Bond County Clerk County Office 203 West College Greenville, ID 62246",,08:00 AM - 04:00 PM,,ho28808525,false,true,,,,poll84340451
+"Adams County Court House 507 Vermont Quincy, IL 62306",,08:30 AM - 04:30 PM,,ho61105418,false,true,,,,poll2069996
+"Alexander County Clerk 2000 Washington Avenue Cairo, IL 62914",,08:00 AM - 12:00 PM,,ho92177919,false,true,,,,poll46180870
+"Bond County Clerk County Office 203 West College Greenville, IL 62246",,08:00 AM - 04:00 PM,,ho62558324,false,true,,,,poll89563775
