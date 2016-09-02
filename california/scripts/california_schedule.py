@@ -60,7 +60,7 @@ class ScheduleTxt(object):
 
         date = datetime.datetime.strptime(start_date, '%m/%d/%y').strftime('%Y-%m-%d')
         dst_date = datetime.datetime.strptime("11/6/16", '%m/%d/%y').strftime('%Y-%m-%d')
-        print type(date)
+
         if date < dst_date:
             return hours + config.dst_utc
         else:

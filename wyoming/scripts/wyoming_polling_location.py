@@ -33,6 +33,7 @@ class PollingLocationTxt(object):
             city_name = ''
 
         if zip_code:
+            print type(zip_code)
             zip = zip_code
         else:
             zip = ''

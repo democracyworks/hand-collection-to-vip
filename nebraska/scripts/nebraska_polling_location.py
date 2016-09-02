@@ -30,7 +30,7 @@ class PollingLocationTxt(object):
             city_name = ''
 
         if zip_code:
-            zip = str(zip_code)
+            zip = str(zip_code[0:4])
         else:
             zip = ''
 
