@@ -1,0 +1,24 @@
+address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+"525 Grand Ave Ste 202 Laramie, WY 82070",,09:00 AM - 05:00 PM,,ho43476038,false,true,,,,poll14485596
+"420 West C Street nan Basin, WY 82410",,08:00 AM - 05:00 PM,,ho18164005,false,true,,,,poll14991705
+"500 S. Gillette Ave. Ste 1600 Gillette, WY 82716",,08:00 AM - 05:00 PM,,ho2440073,false,true,,,,poll47475204
+"415 W Pine St nan Rawlins, WY 82301",,08:00 AM - 05:00 PM,,ho71232352,false,true,,,,poll93021925
+"107 North 5th Street Ste 114 Douglas, WY 82633-2448",,08:00 AM - 05:00 PM,,ho69938607,false,true,,,,poll71213601
+"309 Cleveland Street nan Sundance, WY 82729",,08:00 AM - 05:00 PM,,ho36600079,false,true,,,,poll9976
+"450 North 2nd Street Rm 220 Lander, WY 82520-0090",,08:00 AM - 05:00 PM,,ho77623622,false,true,,,,poll26537244
+"2125 East A Street nan Torrington, WY 82240",,07:30 AM - 04:00 PM,,ho13173098,false,true,,,,poll62665070
+"415 Arapahoe nan Thermopolis, WY 82443-2783",,08:00 AM - 05:00 PM,,ho2274314,false,true,,,,poll41834629
+"76 North Main Street nan Buffalo, WY 82834-1883",,08:00 AM - 05:00 PM,,ho27364480,false,true,,,,poll44373553
+"309 West 20th Street nan Cheyenne, WY 82001",,08:00 AM - 05:00 PM,,ho83221112,false,true,,,,poll802668
+"925 Sage Avenue Ste 101 Kemmerer, WY 83101",,08:00 AM - 05:00 PM,,ho50699225,false,true,,,,poll7563412
+"200 North Center Street Suite 154 Casper, WY 82601",,08:00 AM - 05:00 PM,,ho76243773,false,true,,,,poll53174269
+"424 South Elm nan Lusk, WY 82225",,08:00 AM - 05:00 PM,,ho58744273,false,true,,,,poll42773041
+"1002 Sheridan Ave nan Cody, WY 82414-3589",,08:00 AM - 05:00 PM,,ho4180332,false,true,,,,poll2348759
+"800 9th St. nan Wheatland, WY 82201",,07:00 AM - 04:00 PM,,ho81855948,false,true,,,,poll29968441
+"224 South Main Street Suite B-2 Sheridan, WY 82801-4855",,08:00 AM - 05:00 PM,,ho63111098,false,true,,,,poll39328780
+"21 S. Tyler nan Pinedale, WY 82941",,08:00 AM - 05:00 PM,,ho75221433,false,true,,,,poll19693278
+"80 West Flaming Gorge Way Ste 150 Green River, WY 82935",,08:00 AM - 05:00 PM,,ho98544971,false,true,,,,poll88521434
+"200 S. Willow St.  nan Jackson, WY 83001",,08:00 AM - 05:00 PM,,ho89565803,false,true,,,,poll65948505
+"225 9th Street nan Evanston, WY 82930-3415",,08:00 AM - 05:00 PM,,ho41366925,false,true,,,,poll63425432
+"1001 Big Horn Avenue nan Worland, WY 82401",,08:00 AM - 05:00 PM,,ho9269054,false,true,,,,poll40630299
+"1 West Main nan Newcastle, WY 82701-2121 ",,08:00 AM - 04:30 PM,,ho41801716,false,true,,,,poll79964262

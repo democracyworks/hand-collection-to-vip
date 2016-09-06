@@ -2,13 +2,14 @@ import pandas as pd
 import time
 import config
 from time import strftime
+import hashlib
 
 class PollingLocationTxt(object):
     """
 
     """
 
-    def __init__(self, base_df, early_voting_true=False, drop_box_true=False):
+    def __init__(self, base_df, early_voting_true="false", drop_box_true="false"):
         self.base_df = base_df
         self.drop_box_true = drop_box_true
         self.early_voting_true = early_voting_true
@@ -53,25 +54,22 @@ class PollingLocationTxt(object):
 
     def convert_to_twelve_hour(self, index, time_str):
         if not pd.isnull(time_str):
-            d = time.strptime(time_str, "%H:%M")
+            d = time.strptime(time_str, "%H:%M:%S")
             formatted_time = time.strftime("%I:%M %p", d)
             return formatted_time
         else:
             return ''
 
 
+    def get_converted_time(self, index, time):
+        t = time.split(" -")[0]
+        return self.convert_to_twelve_hour(index, t)
+
     def get_hours(self, index, start_time, end_time):
-        # create conditional when/if column is present
-        if not pd.isnull(start_time) and not pd.isnull(end_time):
-            start_time = self.convert_to_time(index, start_time)
-            end_time = self.convert_to_time(index, end_time)
-            formatted_start_str = self.convert_to_twelve_hour(index, start_time)
-            formatted_end_str = self.convert_to_twelve_hour(index, end_time)
-            hours_str = formatted_start_str + "-" + formatted_end_str
-            return hours_str
-        else:
-            # print 'Hours not presented in the right format in line ' + str(index) +"."
-            return ''
+        start = self.get_converted_time(index, start_time)
+        end = self.get_converted_time(index, end_time)
+        return start + " - " + end
+
 
 
     def convert_hours(self):
@@ -81,18 +79,17 @@ class PollingLocationTxt(object):
         # create conditional when/if column is present
         return ''
 
-    def create_hours_open_id(self, index):
+
+
+    def create_hours_open_id(self, index, address):
         """#"""
-        if index <= 9:
-            return 'ho000' + str(index)
+        # TODO: this is the correct id/index code, correct everywhere
+        address_line = self.get_address_line(index, address)
+        # print address_line
 
-        elif index in range(10,100):
-            return 'ho00' + str(index)
+        address_line = int(hashlib.sha1(address_line).hexdigest(), 16) % (10 ** 8)
 
-        elif index > 100:
-            return 'ho0' + str(index)
-        else:
-            return str(index)
+        return 'ho' + str(address_line)
 
 
     def is_drop_box(self):
@@ -117,30 +114,14 @@ class PollingLocationTxt(object):
         # create conditional when/if column is present
         return ''
 
-    def create_id(self, index, county):
+    def create_id(self, index, address):
         """Create id"""
         # concatenate county name, or part of it (first 3/4 letters) with index
         # add leading zeros to maintain consistent id length
-
-        if county:
-            county_str_part = county.replace(' ', '').lower()[:4]
-
-        else:
-            county_str_part = ''
-            print 'Missing county value at ' + index + '.'
-
-        if index <= 9:
-            index_str = '000' + str(index)
-
-        elif index in range(10,100):
-            index_str = '00' + str(index)
-
-        elif index > 100:
-            index_str = '0' + str(index)
-        else:
-            index_str = str(index)
-
-        return county_str_part + str(index_str)
+        address_line = self.get_address_line(index, address)
+        id = int(hashlib.sha1(address).hexdigest(), 16) % (10 ** 8)
+        id = 'poll' + str(id)
+        return id
 
     def build_polling_location_txt(self):
         """
@@ -160,7 +141,7 @@ class PollingLocationTxt(object):
             lambda row: self.get_photo_uri(), axis=1)
 
         self.base_df['hours_open_id'] = self.base_df.apply(
-            lambda row: self.create_hours_open_id(row['index']), axis=1)
+            lambda row: self.create_hours_open_id(row['index'], row['address']), axis=1)
 
         self.base_df['is_drop_box'] = self.base_df.apply(
             lambda row: self.is_drop_box(), axis=1)
@@ -178,13 +159,42 @@ class PollingLocationTxt(object):
             lambda row: self.get_latlng_source(), axis=1)
 
         self.base_df['id'] = self.base_df.apply(
-            lambda row: self.create_id(row['index'], row['county']), axis=1)
+            lambda row: self.create_id(row['index'], row['address']), axis=1)
 
         return self.base_df
 
     def dedupe(self, dupe):
         """#"""
-        return dupe.drop_duplicates(subset='address_line')
+        return dupe.drop_duplicates(subset=['address_line'])
+
+    def dedupe_for_sch(self, dupe):
+        return dupe.drop_duplicates(subset=['address_line', 'hours', 'start_date'])
+
+    def export_for_locality(self):
+        ex_doc = self.build_polling_location_txt()
+        #print ex_doc
+
+        ex_doc = self.dedupe(ex_doc)
+        # print ex_doc
+
+        ex_doc.to_csv(config.output + 'intermediate_pl_for_loc.csv', index=False, encoding='utf-8')
+
+    def export_for_schedule(self):
+        ex_doc = self.build_polling_location_txt()
+
+        ex_doc = self.dedupe_for_sch(ex_doc)
+
+        ex_doc.to_csv(config.output + 'intermediate_pl_for_sch.csv', index=False, encoding='utf-8')
+
+    def export_for_schedule_and_locality(self):
+        intermediate_doc = self.build_polling_location_txt()
+
+        # intermediate_doc = self.dedupe(intermediate_doc)
+
+        intermediate_doc = intermediate_doc.drop_duplicates(subset=['start_time', 'end_time', 'start_date',
+                                                                    'end_date', 'address_line'])
+
+        intermediate_doc.to_csv(config.output + 'intermediate_doc.csv', index=False, encoding='utf-8')
 
     def write_polling_location_txt(self):
         """Drops base DataFrame columns then writes final dataframe to text or csv file"""
@@ -192,29 +202,30 @@ class PollingLocationTxt(object):
         plt = self.build_polling_location_txt()
 
         # Drop base_df columns.
-        plt.drop(['county', 'address', 'directions', 'start_time', 'end_time', 'start_date', 'end_date'], inplace=True, axis=1)
+        plt.drop(['index','county', 'address', 'instructions','start_time', 'end_time', 'start_date', 'end_date'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
         print plt
 
-        plt.to_csv(config.polling_location_output + 'polling_location.txt', index=False, encoding='utf-8')  # send to txt file
-        plt.to_csv(config.polling_location_output + 'polling_location.csv', index=False, encoding='utf-8')  # send to csv file
+        plt.to_csv(config.output + 'polling_location.txt', index=False, encoding='utf-8')  # send to txt file
+        plt.to_csv(config.output + 'polling_location.csv', index=False, encoding='utf-8')  # send to csv file
 
 
 if __name__ == '__main__':
 
 
-    early_voting_true = True  # True or False
+    early_voting_true = "true"  # True or False
     #drop_box_true =
     state_file='hawaii_early_voting_info.csv'
 
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
-    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/hawaii/scripts/early_voting_input/" + state_file
+    early_voting_file = config.data_folder + state_file
 
-    colnames = ['county', 'address', 'directions', 'start_time', 'end_time', 'start_date', 'end_date']
+    colnames = ['county', 'address', 'instructions', 'start_time', 'end_time', 'start_date', 'end_date']
 
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
+    pl.export_for_schedule_and_locality()
     pl.write_polling_location_txt()

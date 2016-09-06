@@ -1,0 +1,52 @@
+election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:adams,ocd-division/country:us/state:nd/county:ad0013,poll43845504,st38,other,,loc0001
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:barnes,ocd-division/country:us/state:nd/county:bar0019,poll98049142,st38,other,,loc0002
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:benson,ocd-division/country:us/state:nd/county:ben0026,poll73008576,st38,other,,loc0003
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:billings,ocd-division/country:us/state:nd/county:billi0030,poll90230662,st38,other,,loc0004
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:bottineau,ocd-division/country:us/state:nd/county:bottin0037,poll2288570,st38,other,,loc0005
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:bowman,ocd-division/country:us/state:nd/county:bow0057,poll80282742,st38,other,,loc0006
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:burke,ocd-division/country:us/state:nd/county:bu0067,poll49963293,st38,other,,loc0007
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:burleigh,ocd-division/country:us/state:nd/county:burle0078,poll65084700 poll90974807,st38,other,,loc0008
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:cass,ocd-division/country:us/state:nd/county:c0099,poll2235679 poll29980186 poll95806901 poll53649240 poll20416247,st38,other,,loc0009
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:cavalier,ocd-division/country:us/state:nd/county:caval0101,poll64575838,st38,other,,loc0010
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:dickey,ocd-division/country:us/state:nd/county:dic0119,poll84628882,st38,other,,loc0011
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:divide,ocd-division/country:us/state:nd/county:div0131,poll2805819,st38,other,,loc0012
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:dunn,ocd-division/country:us/state:nd/county:d0140,poll91386007,st38,other,,loc0013
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:eddy,ocd-division/country:us/state:nd/county:e0152,poll37212442,st38,other,,loc0014
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:emmons,ocd-division/country:us/state:nd/county:emm0163,poll39329672,st38,other,,loc0015
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:foster,ocd-division/country:us/state:nd/county:fos0184,poll20914974,st38,other,,loc0016
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:golden_valley,ocd-division/country:us/state:nd/county:golden_val0185,poll17113657,st38,other,,loc0017
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:grand_forks,ocd-division/country:us/state:nd/county:grand_fo0198,poll16241839 poll75989431,st38,other,,loc0018
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:grant,ocd-division/country:us/state:nd/county:gr0209,poll28399246,st38,other,,loc0019
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:griggs,ocd-division/country:us/state:nd/county:gri0223,poll95865659,st38,other,,loc0020
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:hettlinger,ocd-division/country:us/state:nd/county:hettlin0247,poll84147625,st38,other,,loc0021
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:kidder,ocd-division/country:us/state:nd/county:kid0249,poll44317825,st38,other,,loc0022
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:lamoure,ocd-division/country:us/state:nd/county:lamo0263,poll27127224,st38,other,,loc0023
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:logan,ocd-division/country:us/state:nd/county:lo0276,poll65505638,st38,other,,loc0024
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:mchenry,ocd-division/country:us/state:nd/county:mche0300,poll61236750,st38,other,,loc0025
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:mcintosh,ocd-division/country:us/state:nd/county:mcint0312,poll4156946,st38,other,,loc0026
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:mckenzie,ocd-division/country:us/state:nd/county:mcken0322,poll91872750,st38,other,,loc0027
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:mclean,ocd-division/country:us/state:nd/county:mcl0332,poll8701489,st38,other,,loc0028
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:mercer,ocd-division/country:us/state:nd/county:mer0339,poll43986333,st38,other,,loc0029
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:morton,ocd-division/country:us/state:nd/county:mor0351,poll74930534,st38,other,,loc0030
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:mountrail,ocd-division/country:us/state:nd/county:mountr0360,poll46255001,st38,other,,loc0031
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:oliver,ocd-division/country:us/state:nd/county:oli0367,poll65318223,st38,other,,loc0032
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:pembina,ocd-division/country:us/state:nd/county:pemb0380,poll16330783,st38,other,,loc0033
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:pierce,ocd-division/country:us/state:nd/county:pie0386,poll64886441,st38,other,,loc0034
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:ransom,ocd-division/country:us/state:nd/county:ran0390,poll36034552,st38,other,,loc0035
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:renville,ocd-division/country:us/state:nd/county:renvi0401,poll5431014,st38,other,,loc0036
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:richland,ocd-division/country:us/state:nd/county:richl0408,poll48808129,st38,other,,loc0037
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:rolette,ocd-division/country:us/state:nd/county:role0409,poll13439751,st38,other,,loc0038
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:sargent,ocd-division/country:us/state:nd/county:sarg0422,poll46288364,st38,other,,loc0039
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:sheridan,ocd-division/country:us/state:nd/county:sheri0431,poll8724973,st38,other,,loc0040
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:sioux,ocd-division/country:us/state:nd/county:si0437,poll76534555,st38,other,,loc0041
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:slope,ocd-division/country:us/state:nd/county:sl0447,poll24179092,st38,other,,loc0042
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:stark,ocd-division/country:us/state:nd/county:st0462,poll77677989,st38,other,,loc0043
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:steele,ocd-division/country:us/state:nd/county:ste0467,poll24852921,st38,other,,loc0044
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:stutsman,ocd-division/country:us/state:nd/county:stuts0471,poll39026275,st38,other,,loc0045
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:towner,ocd-division/country:us/state:nd/county:tow0481,poll28928672,st38,other,,loc0046
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:traill,ocd-division/country:us/state:nd/county:tra0488,poll98397030,st38,other,,loc0047
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:walsh,ocd-division/country:us/state:nd/county:wa0503,poll52974464,st38,other,,loc0048
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:ward,ocd-division/country:us/state:nd/county:w0509,poll76912149 poll57106646,st38,other,,loc0049
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:wells,ocd-division/country:us/state:nd/county:we0518,poll26330557,st38,other,,loc0050
+,ocd-id,,ocd-division/country/us/state:nd/county:ocd-division/country:us/state:nd/county:williams,ocd-division/country:us/state:nd/county:willi0523,poll93373631,st38,other,,loc0051

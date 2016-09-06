@@ -1,8 +1,23 @@
+# Contains class that generates the 'locality.txt' file for any state.
+#
+# locality.txt contains the following columns:
+# election_administration_id,
+# external_identifier_type,
+# external_identifier_othertype,
+# external_identifier_value,
+# name,
+# polling_location_ids,
+# state_id,
+# type,
+# other_type,
+# id
+
+
+
+
 import pandas as pd
-import re
 import config
-from itertools import product
-import csv
+import re
 
 
 state_dict = {'wyoming': 50, 'colorado': 6, 'washington': 47, 'hawaii': 11, 'tennessee': 42, 'wisconsin': 49,
@@ -28,23 +43,25 @@ class LocalityTxt(object):
         """Creates election_administration_ids by concatenating a prefix with an 'index_str' based on the Dataframe's
         row index. '0s' are added, if necesary, to maintain a consistent id length. As currently designed the method
         works up to index 9,999"""
-        prefix = 'ea'
 
-        if index <= 9:
-            index_str = '000' + str(index)
-            return prefix + index_str
-
-        elif index in range(10,100):
-            index_str = '00' + str(index)
-            return prefix + index_str
-
-        elif index >= 100:
-            index_str = '0' + str(index)
-            return prefix + index_str
-
-        else:
-            index_str = str(index)
-            return prefix + index_str
+        return ''
+        # prefix = 'ea'
+        #
+        # if index <= 9:
+        #     index_str = '000' + str(index)
+        #     return prefix + index_str
+        #
+        # elif index in range(10,100):
+        #     index_str = '00' + str(index)
+        #     return prefix + index_str
+        #
+        # elif index in range(100, 1000):
+        #     index_str = '0' + str(index)
+        #     return prefix + index_str
+        #
+        # else:
+        #     index_str = str(index)
+        #     return prefix + index_str
 
     def get_external_identifier_type(self):
         """#"""
@@ -58,69 +75,71 @@ class LocalityTxt(object):
         """Extracts external identifier (ocd-division)."""
 
         if external_identifier_value:
-            return external_identifier_value.lower()
+            str = "ocd-division/country/us/state:" + config.state_lower_abbreviation + "/county:" + external_identifier_value.lower()
+            return str
+            # ocd-division/country:us/state:nj/county:atlantic
         else:
             return ''
 
-    def create_name(self, index, division_description):
+    def create_name(self, index, county, city ):
         """
         Creates a name by concatenating the 'locality' (town name along with town or county designation)
         with an 'index_str' based on the Dataframes row index.'0s' are added, if necesary, to
         maintain a consistent id length.
         """
 
+
+
         # Get locality(town or county), and remove state abbreviation.
-        if division_description:
-            locality = division_description[:4].lower().replace(" ", "_")
+        if county and city:
+            locality =  county.lower() + '_' + city.lower()
+            return locality + '_' + str(index)
             #print locality
+        elif county:
+            locality = county.lower()
+            return locality + '_' + str(index)
+
+        elif city:
+            locality = city.lower()
+            return locality + '_' + str(index)
         else:
-            locality = ''
             print 'Missing data at row ' + str(index) + '.'
 
-        # Add leading '0s' depending on index number.
-        if index <= 9:
-            index_str = '000' + str(index)
 
-        elif index in range(10,100):
-            index_str = '00' + str(index)
 
-        elif index >= 100:
-            index_str = '0' + str(index)
-        else:
-            index_str = str(index)
-
-        return locality + index_str
-
-    def create_polling_location_ids(self, index):
+    def create_polling_location_ids(self, polling_location_id):
         """
         Creates polling_location_ids by concatenating 'poll' with an 'index_str' based on the Dataframe's row index.
         '0s' are added, if necesary, to maintain a consistent id length.
         """
 
-        if index <= 9:
-            index_str = '000' + str(index)
-            return 'poll' + index_str
+        return polling_location_id
 
-        elif index in range(10, 100):
-            index_str = '00' + str(index)
-            return 'poll' + index_str
+ #       if index <= 9:
+ #           index_str = '000' + str(index)
+ #           return 'poll' + index_str
 
-        elif index >= 100:
-            index_str = '0' + str(index)
-            return 'poll' + index_str
-        elif index:
-            index_str = str(index)
-            return 'poll' + index_str
+#        elif index in range(10, 100):
+#            index_str = '00' + str(index)
+#            return 'poll' + index_str
 
-        else:
-            return ''
+#        elif index in range(100, 1000):
+#            index_str = '0' + str(index)
+#            return 'poll' + index_str
+
+#        elif index:
+#            index_str = str(index)
+#            return 'poll' + index_str
+
+#        else:
+#            return ''
 
     def create_state_id(self):
         """Creates the state_id by matching a key in the state_dict and retrieving
         and modifying its value. A '0' is added, if necessary, to maintain a
         consistent id length.
         """
-        for key, value in state_dict.iteritems():
+        for key, value in config.fips_dict.iteritems():
             if key == self.state:
                 state_num = value
                 if state_num <=9:
@@ -132,7 +151,7 @@ class LocalityTxt(object):
 
     def get_type(self):
         # create conditional when/if column is present
-        return ''
+        return 'other'
 
     def get_other_type(self):
         # create conditional when/if column is present
@@ -152,7 +171,7 @@ class LocalityTxt(object):
             index_str = '00' + str(index)
             return 'loc' + index_str
 
-        elif index >= 100:
+        elif index in range(100, 1000):
             index_str = '0' + str(index)
             return 'loc' + index_str
 
@@ -169,26 +188,22 @@ class LocalityTxt(object):
         used to run methods that generate the values for each row of the new columns.
         """
         self.base_df['election_administration_id'] = self.base_df.apply(
-            lambda row: self.create_election_administration_id(row['index']), axis=1)
+           lambda row: self.create_election_administration_id(row['index']), axis=1)
 
         self.base_df['external_identifier_type'] = self.base_df.apply(
-            #lambda row: self.get_external_identifier_type(), axis=1)
-            # TODO: temporarily providing empty string
-            lambda row: '', axis = 1)
+            lambda row: self.get_external_identifier_type(), axis=1)
 
         self.base_df['external_identifier_othertype'] = self.base_df.apply(
             lambda row: self.get_external_identifier_othertype(), axis=1)
-        #
+
         self.base_df['external_identifier_value'] = self.base_df.apply(
             lambda row: self.get_external_identifier_value(row['county']), axis=1)
 
         self.base_df['name'] = self.base_df.apply(
-            lambda row: self.create_name(row['index'], row['county']), axis=1)
+            lambda row: self.create_name(row['index'], row['county'], row['city']), axis=1)
 
         self.base_df['polling_location_ids'] = self.base_df.apply(
-            lambda row: self.create_polling_location_ids(row['index']), axis=1)
-            # TODO: temporarily providing empty string, UPDATE: restored on
-            #lambda row: '', axis=1)
+            lambda row: self.create_polling_location_ids(row['polling_location_id']), axis=1)
 
         self.base_df['state_id'] = self.base_df.apply(
             lambda row: self.create_state_id(), axis=1)
@@ -199,55 +214,74 @@ class LocalityTxt(object):
         self.base_df['other_type'] = self.base_df.apply(
             lambda row: self.get_other_type(), axis=1)
 
-        self.base_df['id'] = self.base_df.apply(
-            lambda row: self.create_id(row['index']), axis=1)
+        #self.base_df['id'] = self.base_df.apply(
+        #    lambda row: self.create_id(row['index']), axis=1)
 
         return self.base_df
 
-#    def group_polling_location_ids(self, frame):
-        #frame = self.build_locality_txt()
-#        return pd.concat(g for _, g in frame.groupby("external_identifier_value") if len(g) > 1)
-        #return frame.groupby('external_identifier_value')
+    def final_build(self):
+
+        loc = self.build_locality_txt()
+
+        # Drop base_df columns.
+        loc.drop(['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
+                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'index',
+                'address_line', 'directions', 'hours', 'photo_uri', 'is_drop_box',
+                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'polling_location_id'], inplace=True, axis=1)
+
+        loc = loc.groupby('hours_open_id').agg(lambda x: ' '.join(set(x))).reset_index()
+
+        #loc['election_administration_id'] = loc['election_administration_id'].apply(lambda x: ''.join(x.split(' ')[0]))
+        #loc['id'] = loc['id'].apply(lambda x: ''.join(x.split(' ')[0]))
+
+        loc['name'] = loc['name'].apply(lambda x: ''.join(x.split(' ')[0]))
+
+        loc['grouped_index'] = loc.index + 1
+        #print loc
+
+        loc['election_administration_id'] = loc.apply(
+            lambda row: self.create_election_administration_id(row['grouped_index']), axis=1)
+            #lambda row: self.create_election_administration_id(''), axis = 1)
+
+        loc['id'] = loc.apply(
+            lambda row: self.create_id(row['grouped_index']), axis=1)
+
+        # reorder columns
+        cols =['election_administration_id', 'external_identifier_type', 'external_identifier_othertype',
+               'external_identifier_value', 'name', 'polling_location_ids', 'state_id', 'type',
+                'other_type', 'grouped_index', 'id']
+
+        final = loc.reindex(columns=cols)
+
+        final.drop(['grouped_index',], inplace=True, axis=1)
+
+        print final
+
+        return final
+
 
     def dedupe(self, dupe):
         """#"""
-        return dupe.drop_duplicates(subset='external_identifier_value')
+        return dupe.drop_duplicates(subset='external_identifier_value', inplace=True)
 
     def write_locality_txt(self):
         """Drops base DataFrame columns then writes final dataframe to text or csv file"""
 
-        loc = self.build_locality_txt()
-        #print loc
-
-        # Drop base_df columns.
-        loc.drop(['index', 'county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'times', 'start_date', 'end_date'], inplace=True, axis=1)
-
-        loc = self.dedupe(loc)
-        # print loc
-        #a = self.group_polling_location_ids(loc)
-        #print type(a)
-        #print a
-        print loc
-
+        loc = self.final_build()
 
         loc.to_csv(config.locality_output + 'locality.txt', index=False, encoding='utf-8')  # send to txt file
         loc.to_csv(config.locality_output + 'locality.csv', index=False, encoding='utf-8')  # send to csv file
 
 if __name__ == '__main__':
-    state_file = 'kansas_early_voting_info.csv'
+    file_name = 'intermediate_doc.csv'
 
-    early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
-
-    reformatted_file = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/scripts/early_voting_input/reformatted_kansas_early_voting_info.csv"
-
-
-
+    early_voting_file = config.polling_location_output + file_name
 
     colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'times', 'start_date', 'end_date']
+                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'index',
+                'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
+                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'polling_location_id']
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1, delimiter=',')
-
     early_voting_df['index'] = early_voting_df.index +1 # offsets zero based index so it starts at 1 for ids
 
     lt = LocalityTxt(early_voting_df, config.state)
