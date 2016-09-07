@@ -334,8 +334,7 @@ if __name__ == '__main__':
         reader = csv.DictReader(csvfile)
         f = open(new_file, 'wb')
         writer = csv.writer(f)
-        cols = ["office-name", "official-title", "types", "ocd-division", "division - description", "homepage - url", 'phone'
-                "email", "street", "city", "state", "zip", "start_time", 'end_time', 'start_date', 'end_date', 'notes', 'merge-status']
+        cols = ["office-name", "official-title", "types", "ocd-division", "division - description", "homepage - url", , 'notes', 'merge-status']
         writer.writerow(cols)
         for row in reader:
             arr1 = [row["office-name"], row["official-title"], row["types"], row['ocd-division'], row["division-description"],
