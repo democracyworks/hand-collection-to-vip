@@ -1,0 +1,5 @@
+
+/dev_scripts/source/
+*.pyc
+/dev_scripts/output/
+/dev_scripts/data/
