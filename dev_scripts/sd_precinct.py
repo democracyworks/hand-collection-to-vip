@@ -30,7 +30,8 @@ from sd_locality import LocalityTxt
 from sd_polling_location import PollingLocationTxt
 
 #f = 'tsmart_google_geo_20160817_SD_20150914.txt'
-f = 'tsmart_google_geo_20160817_OH_20160708.txt'
+#f = 'tsmart_google_geo_20160817_OH_20160708.txt'
+f = 'tsmart_google_geo_20160817_ME_20160712.txt'
 
 voter_file = "/home/acg/democracyworks/hand-collection-to-vip/dev_scripts/source/" + f
 
@@ -57,6 +58,7 @@ def main():
 
     lt = LocalityTxt(ev_df, config.state)
     lt_df = lt.export_for_precinct()
+    del ev_df
 
 
     # state voter file import
@@ -116,19 +118,22 @@ def main():
 
     #df = df.reindex(columns=cols )
 
-#    df['merge_key'] = df['vf_county_name']
+    df['merge_key'] = df['vf_county_name']
 #    print df
 
 
-#    merged_df = pd.merge(df, lt_df, on='merge_key', how='outer')
+    #merged_df = pd.merge(df, lt_df, on='merge_key', how='outer')
     #print merged
+    #del lt_df
+    #del df
 
 #print merged
-#    pr = PrecinctTxt(merged_df)
-#    pr.write_precinct_txt()
+    #pr = PrecinctTxt(merged_df)
+    #pr.write_precinct_txt()
+    #del merged_df
 
 
-    #merged.to_csv(config.output + 'precinct_test.csv', index=False, encoding='utf-8')
+    df.to_csv(config.output + 'precinct_test2.csv', index=False, encoding='utf-8')
     #return merged
 
 
@@ -364,7 +369,7 @@ class PrecinctTxt(object):
         print pt
 
         pt.to_csv(config.output + 'precinct.txt', index=False, encoding='utf-8')  # send to txt file
-        pt.to_csv(config.output + 'precinct.csv', index=False, encoding='utf-8')  # send to csv file
+        #pt.to_csv(config.output + 'precinct.csv', index=False, encoding='utf-8')  # send to csv file
 
 
 

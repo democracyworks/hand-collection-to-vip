@@ -22,6 +22,7 @@ id
 
 import pandas as pd
 import dask.dataframe as dd
+import csv
 import numpy as np
 import re
 import config
@@ -62,28 +63,7 @@ def main():
 
 
     # state voter file import
-    colnames = ['voterbase_id', 'tsmart_exact_track', 'tsmart_exact_address_track', 'vf_voterfile_update_date',
-                'vf_source_state',
-                'vf_county_code', 'vf_county_name', 'vf_cd', 'vf_sd', 'vf_hd', 'vf_township', 'vf_ward',
-                'vf_precinct_id',
-                'vf_precinct_name', 'vf_county_council', 'vf_city_council', 'vf_municipal_district',
-                'vf_school_district',
-                'vf_judicial_district', 'reg_latitude', 'reg_longitude', 'reg_level', 'reg_census_id', 'reg_dma',
-                'reg_dma_name', 'reg_place', 'reg_place_name', 'vf_reg_address_1', 'vf_reg_address_2',
-                'vf_reg_city', 'vf_reg_state',
-                'vf_reg_zip', 'vf_reg_zip4', 'vf_reg_cass_address_full', 'vf_reg_cass_city', 'vf_reg_cass_state',
-                'vf_reg_cass_zip',
-                'vf_reg_cass_zip4', 'vf_reg_cass_street_num', 'vf_reg_cass_pre_directional',
-                'vf_reg_cass_street_name',
-                'vf_reg_cass_street_suffix', 'vf_reg_cass_post_directional', 'vf_reg_cass_unit_designator',
-                'vf_reg_cass_apt_num',
-                'reg_address_usps_address_code', 'reg_address_carrier_route', 'reg_address_dpv_confirm_code',
-                'reg_address_dpv_footnote', 'vf_mail_street', 'vf_mail_city', 'vf_mail_state', 'vf_mail_zip5',
-                'vf_mail_zip4',
-                'vf_mail_house_number', 'vf_mail_pre_direction', 'vf_mail_street_name', 'vf_mail_street_type',
-                'vf_mail_post_direction', 'vf_mail_apt_type', 'vf_mail_apt_num', 'van_precinctid']
-
-    df = dd.read_csv(voter_file, sep='\t', names=colnames,
+    df = dd.read_csv(voter_file, sep='\t', names=config.voter_file_columns,
                      usecols=['vf_source_state', 'vf_county_code', 'vf_county_name',
                               'vf_cd', 'vf_sd', 'vf_hd', 'vf_township', 'vf_ward', 'vf_precinct_id',
                               'vf_precinct_name', 'vf_county_council', 'vf_reg_cass_address_full', 'vf_reg_cass_city',
@@ -95,26 +75,39 @@ def main():
                      skiprows=1,
                      #iterator=True,
                      #chunksize=1000,
-                     dtype={'vf_county_code': str, 'vf_county_name': str}
+                     #dtype={'vf_county_code': str, 'vf_county_name': str}
+                     dtype='str'
                      )
 
     #df = dd.concat(df, ignore_index=True)
     df['index'] = df.index + 1
+
+
+    #
+    pre_street_seg_df = pd.read_csv(voter_file, sep='\t', names=colnames,
+                     usecols=[ 'vf_reg_cass_street_num', 'vf_reg_cass_street_name', 'vf_reg_cass_street_suffix',
+                              'van_precinctid'],
+                     encoding='ISO-8859-1',
+                     skiprows=1,
+                     #iterator=True,
+                     #chunksize=1000,
+                     dtype='str'
+                     )
 
  #   print df
 
 #    info = df.memory_usage(index=True, deep=False)
 #    print info
 
-    cols = ['index', 'vf_source_state', 'vf_county_code', 'vf_county_name', 'vf_township', 'vf_ward', 'vf_precinct_id',
-                    'vf_precinct_name', 'vf_county_council', 'reg_place_name', 'vf_reg_address_1', 'vf_reg_address_2',
-                    'vf_reg_city', 'vf_reg_state', 'vf_reg_zip', 'vf_reg_zip4', 'vf_reg_cass_address_full',
-                    'vf_reg_cass_city', 'vf_reg_cass_state', 'vf_reg_cass_zip', 'vf_reg_cass_zip4',
-                    'vf_reg_cass_street_num', 'vf_reg_cass_pre_directional', 'vf_reg_cass_street_name',
-                    'vf_reg_cass_street_suffix', 'vf_reg_cass_post_directional', 'van_precinctid',
-                    'election_administration_id', 'external_identifier_type', 'external_identifier_othertype',
-                    'external_identifier_value', 'name', 'polling_location_ids', 'state_id', 'type', 'other_type',
-                    'id']
+#    cols = ['index', 'vf_source_state', 'vf_county_code', 'vf_county_name', 'vf_township', 'vf_ward', 'vf_precinct_id',
+#                    'vf_precinct_name', 'vf_county_council', 'reg_place_name', 'vf_reg_address_1', 'vf_reg_address_2',
+#                    'vf_reg_city', 'vf_reg_state', 'vf_reg_zip', 'vf_reg_zip4', 'vf_reg_cass_address_full',
+#                    'vf_reg_cass_city', 'vf_reg_cass_state', 'vf_reg_cass_zip', 'vf_reg_cass_zip4',
+#                    'vf_reg_cass_street_num', 'vf_reg_cass_pre_directional', 'vf_reg_cass_street_name',
+#                    'vf_reg_cass_street_suffix', 'vf_reg_cass_post_directional', 'van_precinctid',
+#                    'election_administration_id', 'external_identifier_type', 'external_identifier_othertype',
+#                    'external_identifier_value', 'name', 'polling_location_ids', 'state_id', 'type', 'other_type',
+#                    'id']
 
     #df = df.reindex(columns=cols )
 
@@ -127,21 +120,8 @@ def main():
 
 #print merged
     pr = PrecinctTxt(merged_df)
-    pr.write_precinct_txt()
-
-
-    #merged_df.to_csv(config.output + 'precinct_test.csv', index=False, encoding='utf-8')
-#    merged_df.to_csv(config.output, index=False, encoding='utf-8')
-    #return merged
-
-
-#    con = sqlite3.connect('test4.db')
-
-#    merged.to_sql('test', con, flavor='sqlite',
-#               schema=None, if_exists='replace', index=True,
-#               index_label=None, chunksize=None, dtype=None)
-
-#    con.close()
+    #pr.write_precinct_txt()
+    pr.export_for_street_segments()
 
 
 class PrecinctTxt(object):
@@ -279,6 +259,7 @@ class PrecinctTxt(object):
         #self.base_df['id'] = self.base_df.apply(
         #    lambda row: self.create_id(), args=('van_precinctid'), meta=('new_van_precinctid', str), axis=1)
 
+        # TODO: this should be renamed in the write method
         self.base_df['van_precinctid'] = self.base_df.apply(lambda row: 'pre' + str(row['van_precinctid'])[:-2], axis=1, meta=('new_van_precinctid', str))
 
         #print self.base_df
@@ -287,7 +268,26 @@ class PrecinctTxt(object):
 
 
     def export_for_street_segments(self):
-        return self.build_precinct_txt()
+        test = self.build_precinct_txt()
+
+        # TODO: some of the columns should have been dropped earlier
+        tp = test.drop(['vf_source_state', 'vf_county_code', 'vf_county_name', 'vf_cd', 'vf_sd', 'vf_hd', 'vf_township',
+                 'vf_ward', 'vf_precinct_id', 'vf_precinct_name', 'vf_county_council', 'vf_reg_cass_address_full',
+                 'vf_reg_cass_zip4', 'vf_reg_cass_post_directional', 'vf_reg_cass_unit_designator',
+                 'vf_reg_cass_apt_num', 'merge_key', 'state_id', 'type', 'other_type', 'grouped_index',
+                        'external_identifier_type', 'external_identifier_othertype', 'polling_location_ids',
+                        'ballot_style_id', 'electoral_district_ids', 'is_mail_only', 'locality_id',
+                        'precinct_split_name', 'ward'
+                       #'van_precinctid'
+                       ], axis=1).compute()
+        del test
+
+
+        #tp.rename({'van_precinctid': 'merge_key'})
+
+        #tp.to_csv(config.output + 'for_street_seg.txt', index=False, encoding='utf-8')
+
+        return tp
 
 
     def write_precinct_txt(self):
@@ -318,6 +318,33 @@ class PrecinctTxt(object):
         #pt.to_csv(config.output, index=False, encoding='utf-8')  # send to txt file
         prt.to_csv(config.output + 'precinct.txt', index=False, encoding='utf-8')  # send to txt file
         #pt.to_csv(config.output + 'precinct.csv', index=False, encoding='utf-8')  # send to csv file
+
+    def write(self):
+        with open("/Users/danielgilberg/Development/hand-collection-to-vip/dev_scripts/output/precinct_test.txt",
+                  'ab') as f:
+            fieldnames = ["ballot_style_id", "electoral_district_ids", "external_identifier_type",
+                          "external_identifier_othertype",
+                          "external_identifier_value", "is_mail_only", "locality_id", "name", "number",
+                          "polling_location_ids",
+                          "precinct_split_name", "ward", "id"]
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            for row in prt.itertuples():
+                dict = {'ballot_style_id': row[10],
+                        'electoral_district_ids': row[11],
+                        'external_identifier_type': row[3],
+                        'external_identifier_othertype': row[4],
+                        'external_identifier_value': row[5],
+                        'is_mail_only': row[12],
+                        'locality_id': row[13],
+                        'name': row[6],
+                        'number': row[14],
+                        'polling_location_ids': row[7],
+                        'precinct_split_name': row[15],
+                        'ward': row[16],
+                        'id': row[9]
+                        }
+                writer.writerow(dict)
 
 
 if __name__ == '__main__':

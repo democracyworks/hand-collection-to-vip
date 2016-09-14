@@ -251,7 +251,7 @@ class LocalityTxt(object):
 
         # loc = loc.groupby('hours_open_id', 'external_identifier_value').agg(lambda x: ' '.join(set(x))).reset_index()
         loc = loc.groupby('external_identifier_value').agg(lambda x: ' '.join(set(x))).reset_index()
-        # print loc
+        print loc
 
         # loc['name'] = loc['name'].apply(lambda x: ''.join(x.split(' ')[0]))
 

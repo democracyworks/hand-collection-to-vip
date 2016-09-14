@@ -12,6 +12,8 @@ utc_offset_5 = ''
 
 early_voting = 'true'
 
+input = '/home/acg/democracyworks/hand-collection-to-vip/dev_scripts/early_voting_input/'
+
 output = '/home/acg/democracyworks/hand-collection-to-vip/dev_scripts/output/'
 
 source_output = "/home/acg/democracyworks/hand-collection-to-vip/dev_scripts/output/source.txt"
@@ -41,3 +43,18 @@ fips_dict = {'wyoming': '56', 'colorado': '08', 'washington': '53', 'hawaii': '1
              'pennsylvania': '42', 'florida': '12', 'alaska': '02', 'kentucky': '21', 'missouri': '29',
              'nebraska': '31', 'new hampshire': '33', 'idaho': '16', 'west virginia': '54', 'south carolina': '45',
              'ohio': '39', 'alabama': '01', 'massachusetts': '25'}
+
+voter_file_columns = ['voterbase_id', 'tsmart_exact_track', 'tsmart_exact_address_track', 'vf_voterfile_update_date',
+            'vf_source_state','vf_county_code', 'vf_county_name', 'vf_cd', 'vf_sd', 'vf_hd', 'vf_township', 'vf_ward',
+            'vf_precinct_id', 'vf_precinct_name', 'vf_county_council', 'vf_city_council', 'vf_municipal_district',
+            'vf_school_district', 'vf_judicial_district', 'reg_latitude', 'reg_longitude', 'reg_level', 'reg_census_id', 'reg_dma',
+            'reg_dma_name', 'reg_place', 'reg_place_name', 'vf_reg_address_1', 'vf_reg_address_2', 'vf_reg_city',
+            'vf_reg_state', 'vf_reg_zip', 'vf_reg_zip4', 'vf_reg_cass_address_full', 'vf_reg_cass_city',
+            'vf_reg_cass_state', 'vf_reg_cass_zip', 'vf_reg_cass_zip4', 'vf_reg_cass_street_num',
+            'vf_reg_cass_pre_directional', 'vf_reg_cass_street_name', 'vf_reg_cass_street_suffix',
+            'vf_reg_cass_post_directional', 'vf_reg_cass_unit_designator', 'vf_reg_cass_apt_num',
+            'reg_address_usps_address_code', 'reg_address_carrier_route', 'reg_address_dpv_confirm_code',
+            'reg_address_dpv_footnote', 'vf_mail_street', 'vf_mail_city', 'vf_mail_state', 'vf_mail_zip5',
+            'vf_mail_zip4', 'vf_mail_house_number', 'vf_mail_pre_direction', 'vf_mail_street_name',
+            'vf_mail_street_type', 'vf_mail_post_direction', 'vf_mail_apt_type', 'vf_mail_apt_num',
+            'van_precinctid']
