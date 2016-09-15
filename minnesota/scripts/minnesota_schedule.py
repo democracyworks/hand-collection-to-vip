@@ -52,7 +52,7 @@ class ScheduleTxt(object):
         else:
             utc_offset = config.utc_offset_5
 
-        start_time = tuple(start_time.split('-'))[1]
+        start_time = tuple(start_time.split('-'))[0]
 
         start_time = str(datetime.datetime.strptime(start_time, '%I:%M %p'))[11:]
         #print start_time
@@ -99,7 +99,7 @@ class ScheduleTxt(object):
             utc_offset = config.utc_offset_5
 
         start_date = datetime.datetime.strptime(start_date, '%m-%d-%Y').strftime('%Y-%m-%d')
-        return start_date + utc_offset
+        return start_date
 
     def get_end_date(self, end_date, start_date):
         """#"""
@@ -113,7 +113,7 @@ class ScheduleTxt(object):
             utc_offset = config.utc_offset_5
 
         end_date = datetime.datetime.strptime(end_date, '%m-%d-%Y').strftime('%Y-%m-%d')
-        return end_date + utc_offset
+        return end_date
 
     def get_hours_open_id(self, hours_open_id):
         """#"""
@@ -215,6 +215,8 @@ class ScheduleTxt(object):
 
 
 if __name__ == '__main__':
+
+    ''
 
     early_voting_true = 'true'  # true or false
 
