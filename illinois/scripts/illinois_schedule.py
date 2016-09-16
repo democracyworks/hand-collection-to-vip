@@ -54,7 +54,6 @@ class ScheduleTxt(object):
         return hours + "-" + mins
 
     def get_sch_time(self, hours):
-        print hours
         hours_arr = hours.split(" - ")
         hours = hours_arr[0] + "-" + hours_arr[1]
         hours = hours.strip()
@@ -103,6 +102,7 @@ class ScheduleTxt(object):
 
     def get_hours_open_id(self, hours_open_id):
         """#"""
+        print hours_open_id
         return hours_open_id
 
 

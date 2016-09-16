@@ -21,20 +21,20 @@ class PollingLocationTxt(object):
         # required: print message for exception
         # TODO: concatenate street, city, state and zip
         if not pd.isnull(name):
-            loc_name = str(name)
+            loc_name = name
         else:
             loc_name = ''
 
         adr = ''
 
         if not pd.isnull(address_one):
-            adr += str(address_one)
+            adr += address_one
 
         if not pd.isnull(address_two):
-            adr += " " + str(address_two)
+            adr += " " + address_two
 
         if not pd.isnull(city):
-            city_name = str(city)
+            city_name = city
         else:
             city_name = ''
 
@@ -105,8 +105,8 @@ class PollingLocationTxt(object):
     def create_hours_open_id(self, index, name, address_one, address_two, city, zip_code):
         """#"""
         # TODO: this is the correct id/index code, correct everywhere
-        address_line = self.get_address_line(index, name, address_one, address_two, city, zip_code)
-        # print address_line
+        address_line = self.get_address_line(index, name, address_one,address_two, city, zip_code)
+
 
         address_line = int(hashlib.sha1(address_line).hexdigest(), 16) % (10 ** 8)
 
@@ -159,7 +159,7 @@ class PollingLocationTxt(object):
 
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)
-
+        #
         self.base_df['photo_uri'] = self.base_df.apply(
             lambda row: self.get_photo_uri(), axis=1)
 
@@ -256,7 +256,7 @@ if __name__ == '__main__':
                 'start_time', 'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change', 'notes']
 
 
-    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
