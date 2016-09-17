@@ -20,76 +20,47 @@ class PollingLocationTxt(object):
     def get_address_line(self, index, name, address_one, address_two, city, zip_code):
         # required: print message for exception
         # TODO: concatenate street, city, state and zip
-        if not pd.isnull(name):
-            loc_name = name
-        else:
-            loc_name = ''
+
 
         adr = ''
 
         if not pd.isnull(address_one):
-            adr += address_one
+            adr += str(address_one)
 
         if not pd.isnull(address_two):
-            adr += " " + address_two
+            adr += " " + str(address_two)
 
         if not pd.isnull(city):
-            city_name = city
+            city_name = str(city)
         else:
             city_name = ''
 
         if not pd.isnull(zip_code):
-            zip = str(zip_code)
+            zip = str(zip_code)[0:5]
         else:
             zip = ''
 
-        return loc_name + " " + adr + " " + city_name + ", IL " + zip
+        return adr + " " + city_name + ", " + config.state_abbreviation + zip
 
     def get_directions(self):
         """#"""
         # no direct relationship to any column
         return ''
 
+    def get_start_time(self, time):
+        arr = time.split(" ")
+        hours = arr[0].split(":")[0] + ":" + arr[0].split(":")[1]
+        return hours + " " + "AM"
 
-    def convert_to_time(self, index, time):
-       if not pd.isnull(time):
-            time_str = str(int(time))
-            if len(time_str) == 4:
-                hours = time_str[0:2]
-                mins = time_str[2:]
-                time_str = hours + ":" + mins
-                return time_str
-            elif len(time_str) == 3:
-                hours = time_str[0]
-                mins = time_str[1:]
-                time_str = hours + ":" +mins
-                return time_str
-            else:
-                # print 'Hours were not in the proper format in line ' + str(index) + '.'
-                return ''
-       else:
-            return ""
-
-    def convert_to_twelve_hour(self, index, time_str):
-        if not pd.isnull(time_str):
-            d = time.strptime(time_str, "%H:%M:%S")
-            formatted_time = time.strftime("%I:%M %p", d)
-            return formatted_time
-        else:
-            return ''
-
-
-
-    def get_converted_time(self, index, time_str):
-        t = str(time_str)
-        t = t.split(" -")[0].strip()
-        return self.convert_to_twelve_hour(index, t)
+    def get_end_time(self, time):
+        arr = time.split(" ")
+        hours = arr[0].split(":")[0] + ":" + arr[0].split(":")[1]
+        return hours + " " + "PM"
 
     def get_hours(self, index, start_time, end_time):
-        if not pd.isnull(start_time) and not pd.isnull(end_time):
-            start = self.get_converted_time(index, start_time)
-            end = self.get_converted_time(index, end_time)
-            return start + " - " + end
+        start_time = self.get_start_time(start_time)
+        end_time = self.get_end_time(end_time)
+        return start_time + "-" + end_time
 
 
 
@@ -105,8 +76,8 @@ class PollingLocationTxt(object):
     def create_hours_open_id(self, index, name, address_one, address_two, city, zip_code):
         """#"""
         # TODO: this is the correct id/index code, correct everywhere
-        address_line = self.get_address_line(index, name, address_one,address_two, city, zip_code)
-
+        address_line = self.get_address_line(index, name, address_one, address_two, city, zip_code)
+        # print address_line
 
         address_line = int(hashlib.sha1(address_line).hexdigest(), 16) % (10 ** 8)
 
@@ -159,7 +130,7 @@ class PollingLocationTxt(object):
 
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)
-        #
+
         self.base_df['photo_uri'] = self.base_df.apply(
             lambda row: self.get_photo_uri(), axis=1)
 
@@ -183,7 +154,7 @@ class PollingLocationTxt(object):
             lambda row: self.get_latlng_source(), axis=1)
 
         self.base_df['id'] = self.base_df.apply(
-            lambda row: self.create_id(row['index'], row['ocd_division'], row['name'],row['address_one'],
+            lambda row: self.create_id(row['index'], row['ocd-division'], row['name'],row['address_one'],
                                        row['address_two'], row['city'], row['zip']), axis=1)
 
         return self.base_df
@@ -231,9 +202,8 @@ class PollingLocationTxt(object):
         plt = self.build_polling_location_txt()
 
         # Drop base_df columns.
-        plt.drop(['ocd_division', 'homepage', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change',
-                  'index','notes'], inplace=True, axis=1)
+        plt.drop(['ocd-division', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time', 'end_time',
+                'start_date', 'end_date', 'appt1', 'appt2', 'app3', 'subject_to_change', 'index'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
         print plt
@@ -247,16 +217,15 @@ if __name__ == '__main__':
 
     early_voting_true = "true"  # True or False
     #drop_box_true =
-    state_file='illinois_early_voting_info.csv'
+    state_file='iowa_early_voting_info.csv'
 
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
     early_voting_file = config.data_folder + state_file
 
-    colnames = ['ocd_division', 'homepage', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change', 'notes']
+    colnames = ['ocd-division', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time', 'end_time',
+                'start_date', 'end_date', 'appt1', 'appt2', 'app3', 'subject_to_change']
 
-
-    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)

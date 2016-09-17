@@ -21,7 +21,7 @@ hours_open_id
 import datetime
 import csv
 import config
-from illinois_polling_location import PollingLocationTxt
+from iowa_polling_location import PollingLocationTxt
 import pandas as pd
 
 
@@ -195,10 +195,9 @@ class ElectionTxt(object):
 
         et = self.build_election_txt()
 
-        et.drop(['ocd_division', 'homepage', 'county', 'source_name', 'address_one', 'address_two', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change', 'notes',
-                'index', 'address_line', 'directions',
-                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'source_id'], inplace=True, axis=1)
+        et.drop(['ocd-division', 'county', 'source_name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time', 'end_time',
+                'start_date', 'end_date', 'appt1', 'appt2', 'app3', 'subject_to_change', 'index', 'address_line', 'directions',
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id'], inplace=True, axis=1)
 
         cols = ["id", "date", "name", "election_type", "state_id", "is_statewide", "registration_info",
                 'absentee_ballot_info', 'results_uri', "polling_hours", 'has_election_day_registration', 'registration_deadline',
@@ -243,18 +242,20 @@ class ElectionTxt(object):
 
 if __name__ == '__main__':
 
-    early_voting_path = config.output + "intermediate_doc.csv"
+    state_feed_file = 'state_feed_info.csv'
+    early_voting_file = 'iowa_early_voting_info.csv'
+
+    early_voting_path =config.output + "intermediate_doc.csv"
     #early_voting_path = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/kansas_early_voting_info.csv"
-    colnames = ['ocd_division', 'homepage', 'county', 'source_name', 'address_one', 'address_two', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change', 'notes',
-                'index', 'address_line', 'directions',
-                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'source_id']
+    colnames = ['ocd-division', 'county', 'source_name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time', 'end_time',
+                'start_date', 'end_date', 'appt1', 'appt2', 'app3', 'subject_to_change', 'index', 'address_line', 'directions',
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id']
     early_voting_df = pd.read_csv(early_voting_path, names=colnames, encoding='utf-8', skiprows=1)
 
     early_voting_df['index'] = early_voting_df.index + 1
 
 
-    state_feed_path = config.data_folder + "state_feed_info.csv"
+    state_feed_path = "/Users/danielgilberg/Development/hand-collection-to-vip/nebraska/input/" + state_feed_file
     colnames = ['office_name', 'ocd_division', 'same_day_reg', 'election_date', 'election_name', 'registration_deadline',
                 "registration_deadline_display", 'ballot_request_deadline', 'ballot_request_deadline_display']
     state_feed_df = pd.read_csv(state_feed_path, names=colnames, encoding='utf-8', skiprows=1)

@@ -17,33 +17,25 @@ class PollingLocationTxt(object):
     # (row['index'], row['address_1'], row['address_2'],
     #  row['city'], row['state'], row['zip']), axis = 1)
 
-    def get_address_line(self, index, name, address_one, address_two, city, zip_code):
+    def get_address_line(self, index, address, city, zip_code):
         # required: print message for exception
         # TODO: concatenate street, city, state and zip
-        if not pd.isnull(name):
-            loc_name = name
+        if address:
+            adr = address
         else:
-            loc_name = ''
-
-        adr = ''
-
-        if not pd.isnull(address_one):
-            adr += address_one
-
-        if not pd.isnull(address_two):
-            adr += " " + address_two
-
-        if not pd.isnull(city):
+            adr = ''
+        if city:
             city_name = city
         else:
             city_name = ''
 
-        if not pd.isnull(zip_code):
-            zip = str(zip_code)
+        if zip_code:
+
+            zip = str(zip_code[0:5])
         else:
             zip = ''
 
-        return loc_name + " " + adr + " " + city_name + ", IL " + zip
+        return adr + " " + city + ", NV " + zip
 
     def get_directions(self):
         """#"""
@@ -86,10 +78,9 @@ class PollingLocationTxt(object):
         return self.convert_to_twelve_hour(index, t)
 
     def get_hours(self, index, start_time, end_time):
-        if not pd.isnull(start_time) and not pd.isnull(end_time):
-            start = self.get_converted_time(index, start_time)
-            end = self.get_converted_time(index, end_time)
-            return start + " - " + end
+        start = self.get_converted_time(index, start_time)
+        end = self.get_converted_time(index, end_time)
+        return start + " - " + end
 
 
 
@@ -102,11 +93,11 @@ class PollingLocationTxt(object):
 
 
 
-    def create_hours_open_id(self, index, name, address_one, address_two, city, zip_code):
+    def create_hours_open_id(self, index, street, city, zip_code):
         """#"""
         # TODO: this is the correct id/index code, correct everywhere
-        address_line = self.get_address_line(index, name, address_one,address_two, city, zip_code)
-
+        address_line = self.get_address_line(index, street, city, zip_code)
+        print address_line
 
         address_line = int(hashlib.sha1(address_line).hexdigest(), 16) % (10 ** 8)
 
@@ -135,15 +126,14 @@ class PollingLocationTxt(object):
         # create conditional when/if column is present
         return ''
 
-    def create_id(self, index, ocd_division, name, address_one, address_two, city, zip_code):
+    def create_id(self, index, ocd_division, street, city, zip_code):
         """Create id"""
         # concatenate county name, or part of it (first 3/4 letters) with index
         # add leading zeros to maintain consistent id length
-        if not pd.isnull(ocd_division):
-            address_line = self.get_address_line(index, name, address_one, address_two, city, zip_code)
-            id = int(hashlib.sha1(ocd_division + address_line).hexdigest(), 16) % (10 ** 8)
-            id = 'poll' + str(id)
-            return id
+        address_line = self.get_address_line(index, street, city, zip_code)
+        id = int(hashlib.sha1(ocd_division + address_line).hexdigest(), 16) % (10 ** 8)
+        id = 'poll' + str(id)
+        return id
 
     def build_polling_location_txt(self):
         """
@@ -151,8 +141,8 @@ class PollingLocationTxt(object):
         used to run methods that generate the values for each row of the new columns.
         """
         self.base_df['address_line'] = self.base_df.apply(
-            lambda row: self.get_address_line(row['index'], row['name'], row['address_one'],
-                                              row['address_two'], row['city'], row['zip']), axis=1)
+            lambda row: self.get_address_line(row['index'], row['street'], row['city'],
+                                              row['zip']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
             lambda row: self.get_directions(), axis=1)
@@ -164,7 +154,7 @@ class PollingLocationTxt(object):
             lambda row: self.get_photo_uri(), axis=1)
 
         self.base_df['hours_open_id'] = self.base_df.apply(
-            lambda row: self.create_hours_open_id(row['index'], row['name'],row['address_one'], row['address_two'], row['city'],
+            lambda row: self.create_hours_open_id(row['index'], row['street'], row['city'],
                                               row['zip']), axis=1)
 
         self.base_df['is_drop_box'] = self.base_df.apply(
@@ -183,8 +173,8 @@ class PollingLocationTxt(object):
             lambda row: self.get_latlng_source(), axis=1)
 
         self.base_df['id'] = self.base_df.apply(
-            lambda row: self.create_id(row['index'], row['ocd_division'], row['name'],row['address_one'],
-                                       row['address_two'], row['city'], row['zip']), axis=1)
+            lambda row: self.create_id(row['index'], row['ocd_division'], row['street'],
+                                       row["city"], row['zip']), axis=1)
 
         return self.base_df
 
@@ -217,7 +207,7 @@ class PollingLocationTxt(object):
     def export_for_schedule_and_locality(self):
         intermediate_doc = self.build_polling_location_txt()
 
-        # print intermediate_doc
+
         # intermediate_doc = self.dedupe(intermediate_doc)
 
         intermediate_doc = intermediate_doc.drop_duplicates(subset=['start_time', 'end_time', 'start_date',
@@ -231,9 +221,8 @@ class PollingLocationTxt(object):
         plt = self.build_polling_location_txt()
 
         # Drop base_df columns.
-        plt.drop(['ocd_division', 'homepage', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change',
-                  'index','notes'], inplace=True, axis=1)
+        plt.drop(['office_name', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
+                'start_time', 'end_time','start_date', 'end_date', 'index'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
         print plt
@@ -247,14 +236,14 @@ if __name__ == '__main__':
 
     early_voting_true = "true"  # True or False
     #drop_box_true =
-    state_file='illinois_early_voting_info.csv'
+    state_file='nevada_early_voting_info.csv'
 
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
     early_voting_file = config.data_folder + state_file
 
-    colnames = ['ocd_division', 'homepage', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change', 'notes']
-
+    colnames = ['office_name', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
+                'start_time', 'end_time', 'start_date', 'end_date']
+    print len(colnames)
 
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1

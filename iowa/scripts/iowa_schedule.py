@@ -13,7 +13,7 @@ id
 
 import pandas as pd
 import config
-from illinois_polling_location import PollingLocationTxt
+from iowa_polling_location import PollingLocationTxt
 import datetime
 import re
 
@@ -32,32 +32,18 @@ class ScheduleTxt(object):
         sch_base_df = self.base_df
 
         # Drop base_df columns.
-        sch_base_df.drop(['index', 'ocd_division', 'county', 'location_name', 'address_1', 'address_2',
+        sch_base_df.drop(['index', 'ocd-division', 'county', 'location_name', 'address_1', 'address_2',
                           'city', 'state', 'zip', 'id'], inplace=True, axis=1)
 
        # print self.dedupe(sch_base_df)
 
         return self.dedupe(sch_base_df)
 
-    def format_time(self, hours):
-        arr = hours.split("-")
-        if len(arr[0]) > 7:
-            hours = arr[0]
-        else:
-            hours = "0" + arr[0]
-
-        if len(arr[1]) > 4:
-            mins = arr[1]
-        else:
-            mins = "0" + arr[1]
-
-        return hours + "-" + mins
 
     def get_sch_time(self, hours):
         hours_arr = hours.split(" - ")
         hours = hours_arr[0] + "-" + hours_arr[1]
-        hours = hours.strip()
-        return self.format_time(hours)
+        return hours.strip()
         # arr = hours.split("-")
         # offset = self.utc_offset(county)
         # print arr[0] + ";00" + offset
@@ -102,7 +88,6 @@ class ScheduleTxt(object):
 
     def get_hours_open_id(self, hours_open_id):
         """#"""
-        print hours_open_id
         return hours_open_id
 
 
@@ -170,9 +155,8 @@ class ScheduleTxt(object):
         # # start_time2, end_time2, is_only_by_appointment2, is_or_by_appointment2, is_subject_to_change2, start_date2, end_date2, hours_open_id2, id2
 
         # Drop base_df columns.
-        sch.drop(['ocd_division', 'homepage', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change', 'notes',
-                'index', 'address_line', 'directions',
+        sch.drop(['ocd-division', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time', 'end_time',
+                'start_date', 'end_date', 'appt1', 'appt2', 'app3', 'subject_to_change', 'index', 'address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id'], inplace=True,
                  axis=1)
 
@@ -212,10 +196,10 @@ if __name__ == '__main__':
     early_voting_file = config.output + file
 
 
-    colnames = ['ocd_division', 'homepage', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change', 'notes',
-                'index', 'address_line', 'directions',
+    colnames = ['ocd-division', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time', 'end_time',
+                'start_date', 'end_date', 'appt1', 'appt2', 'app3', 'subject_to_change', 'index', 'address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id']
+    print len(colnames)
 
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
 
