@@ -47,7 +47,7 @@ class PollingLocationTxt(object):
 
         #address = adr1 + '' +adr2
 
-        final_line = street_address + ", " + city_name + ", SD " + zip
+        final_line = street_address + " " + city_name + " " + config.state_abbreviation_upper + " " + zip
         print final_line
         return final_line
 

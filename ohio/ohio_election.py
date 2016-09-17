@@ -79,7 +79,7 @@ class ElectionTxt(object):
 
     def get_date(self):
         """#"""
-        return '11-8-2016'.replace('-', '/')
+        return '11-08-2016'.replace('-', '/')
 
     def get_name(self):
         """#"""
@@ -134,12 +134,16 @@ class ElectionTxt(object):
 
     def has_election_day_registration(self):
         """#"""
-        return 'no'
+        return 'false'
 
     def registration_deadline(self):
         """#"""
-        # use registration_deadline_display
-        return 'true'
+        #TODO: use registration_deadline
+        if self.state_feed.get('registration_deadline'):
+            deadline = self.state_feed.get('registration_deadline')
+            return datetime.datetime.strptime(deadline, '%Y-%m-%d').strftime('%-m/%d/%Y')
+        else:
+            return ''
 
     def absentee_request_deadline(self):
         """#"""

@@ -1,89 +1,89 @@
 address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-"215 N. Cross St. Room 103, West Union, SD 45693",,08:00 AM-05:00 PM,,ho75706633,false,true,,,,poll34192954
-"Courthouse, 204 N. Main St. Lower Level, Lima, SD 45801",,08:00 AM-05:00 PM,,ho89491725,false,true,,,,poll71540632
-"110 Cottage St. Ste 106, Ashland, SD 44805",,08:00 AM-05:00 PM,,ho89310518,false,true,,,,poll97945365
-"Bureau of Motor Vehicle, 8 W. Walnut St., Jefferson, SD 44047",,08:00 AM-05:00 PM,,ho3020844,false,true,,,,poll88122460
-"Courthouse Annex , 15 S. Court St. Room 130, Athens, SD 45701",,08:00 AM-05:00 PM,,ho70002916,false,true,,,,poll28312350
-"Administration Building, 209 S. Blackhoof Street Room 205, Wapakoneta, SD 45895",,08:00 AM-05:00 PM,,ho23879165,false,true,,,,poll30591381
-"Veterans Affairs Building, 103 Plaza Dr. Ste B, St. Clairsville, SD 43950",,08:00 AM-05:00 PM,,ho13768264,false,true,,,,poll41168442
-"County Administration Building, Administration Building, 800 Mt. Orab Pk. Ste 111, Georgetown, SD 45121",,08:00 AM-05:00 PM,,ho50360530,false,true,,,,poll56385331
-"Board of Elections Building, Princeton Road Campus, 1802 Princeton Rd. Ste 600, Hamilton, SD 45011",,08:00 AM-05:00 PM,,ho17866217,false,true,,,,poll67751608
-"Courthouse, 119 S. Lisbon St. Ste 102, Carrollton, SD 44615",,08:00 AM-05:00 PM,,ho94500370,false,true,,,,poll51757897
-"1512 South U.S. Hwy 68 Ste L100, Urbana, SD 43078",,08:00 AM-05:00 PM,,ho35372055,false,true,,,,poll68258179
-"3130 E. Main St., Springfield, SD 45505",,08:00 AM-05:00 PM,,ho12013712,false,true,,,,poll34707937
-"Board Election Building , 76 S. Riverside Dr., Batavia, SD 45103",,08:00 AM-05:00 PM,,ho41720143,false,true,,,,poll92010762
-"Courthouse , 46 S. South St. Room 126, Wilmington, SD 45177",,08:00 AM-05:00 PM,,ho76160583,false,true,,,,poll9473657
-"County Administration Building, 7989 Dickey Dr. Ste 3, Lisbon, SD 44432",,08:00 AM-05:00 PM,,ho58407069,false,true,,,,poll591362
-"County Services Building , 724 S. Seventh St. Room 100, Coshocton, SD 43812",,08:00 AM-05:00 PM,,ho28908344,false,true,,,,poll44988905
-"Courthouse , 112 East Mansfield St. Ste A, Bucyrus, SD 44820",,08:00 AM-05:00 PM,,ho74998913,false,true,,,,poll47836673
-"Board of Elections Building, 2925 Euclid Ave., Cleveland, SD 44115",,08:00 AM-05:00 PM,,ho88004658,false,true,,,,poll23787408
-"Courthouse , 300 Garst Ave. Ste 7, Greenville, SD 45331",,08:00 AM-05:00 PM,,ho72383626,false,true,,,,poll32097794
-"County Administration Building, 1300 E. Second St. Ste 103, Defiance, SD 43512",,08:00 AM-05:00 PM,,ho57882070,false,true,,,,poll82515971
-"County Administration Building, 2079 U.S. 23 North, Delaware, SD 43015",,08:00 AM-05:00 PM,,ho58976135,false,true,,,,poll97670289
-"Board of Elections Building, 2900 Columbus Ave. Room 101, Sandusky, SD 44870",,08:00 AM-05:00 PM,,ho95899719,false,true,,,,poll57428854
-"Education Service Center, 951 Liberty Dr., Lancaster, SD 43130",,08:00 AM-05:00 PM,,ho93788200,false,true,,,,poll52206738
-"Courthouse, 135 S. Main St., Washington Courthouse, SD 43160",,08:00 AM-05:00 PM,,ho14675351,false,true,,,,poll21088317
-"Board of Elections Building, 1700 Morse Road, Columbus, SD 43229",,08:00 AM-05:00 PM,,ho99347389,false,true,,,,poll65579434
-"Courthouse, 135 Courthouse Plaza, Wauseon, SD 43567",,08:00 AM-05:00 PM,,ho69557852,false,true,,,,poll53088429
-"Courthouse, Courthouse, 18 Locust St. Room 1266, Gallipolis, SD 45631",,08:00 AM-05:00 PM,,ho99334713,false,true,,,,poll51669285
-"County Administration Building, 470 Center St. Building 6A, Chardon, SD 44024",,08:00 AM-05:00 PM,,ho68951729,false,true,,,,poll96863367
-"Board of Elections Building, 551 Ledbetter Rd., Xenia, SD 45385",,08:00 AM-05:00 PM,,ho52919932,false,true,,,,poll72124588
-"Courthouse, 627 Wheeling Ave. Ste 101, Cambridge, SD 43725",,08:00 AM-05:00 PM,,ho7050494,false,true,,,,poll73683362
-"Board of Elections Building, 824 Broadway St., Cincinnati, SD 45202",,08:00 AM-05:00 PM,,ho38358104,false,true,,,,poll65446984
-"Board of Elections Building, 201 E. Lincoln St., Rear, Findlay, SD 45840",,08:00 AM-05:00 PM,,ho47609643,false,true,,,,poll68935250
-"Courthouse, One Courthouse Sq. Ste 40, Kenton, SD 43326",,08:00 AM-05:00 PM,,ho78902798,false,true,,,,poll39493396
-"Bureau of Motor Vehicles, 538 N. Main St. Ste B, Cadiz, SD 43907",,08:00 AM-05:00 PM,,ho33101867,false,true,,,,poll87517148
-"Board of Elections Building, 1827 Oakwood Ave., Napoleon, SD 43545",,08:00 AM-05:00 PM,,ho8892337,false,true,,,,poll40814555
-"Administration Building, 1575 N. High St. Ste 200, Hillsboro, SD 45133",,08:00 AM-05:00 PM,,ho89072508,false,true,,,,poll79879198
-"Veterans Services Offices, 93 W. Hunter St., Logan, SD 43138",,08:00 AM-05:00 PM,,ho70202386,false,true,,,,poll40748900
-"Children Services Building, 75 E. Clinton St. Ste 108, Millersburg, SD 44654",,08:00 AM-05:00 PM,,ho39046018,false,true,,,,poll25207522
-"County Administration Building, 180 Milan Ave. Ste 4, Norwalk, SD 44857",,08:00 AM-05:00 PM,,ho71837904,false,true,,,,poll23757736
-"Board of Elections Building, 275 Portsmouth St. Ste 2, Jackson, SD 45640",,08:00 AM-05:00 PM,,ho10913496,false,true,,,,poll77752794
-"500 Market St. Fl. 1, Ste 1, Steubenville, SD 43952",,08:00 AM-05:00 PM,,ho69651041,false,true,,,,poll46101017
-"117 E. High St. Ste 210, Mt. Vernon, SD 43050",,08:00 AM-05:00 PM,,ho74921750,false,true,,,,poll92207361
-"Administration Center, 105 Main St., Painesville, SD 44077",,08:00 AM-05:00 PM,,ho8701468,false,true,,,,poll26443150
-"Veterans Square, 111 S. Fourth St., Ironton, SD 45638",,08:00 AM-05:00 PM,,ho9892143,false,true,,,,poll97171118
-"County Administration Building, 20 S. Second St., Newark, SD 43055",,08:00 AM-05:00 PM,,ho78863051,false,true,,,,poll19208443
-"255 S. Main St., Bellefontaine, SD 43311",,08:00 AM-05:00 PM,,ho99152712,false,true,,,,poll43103905
-"Board of Elections Building, 1985 North Ridge Rd. E, Lorain, SD 44055",,08:00 AM-05:00 PM,,ho96659151,false,true,,,,poll23514363
-"City Government Center, One Government Center Ste 300, Toledo, SD 43604",,08:00 AM-05:00 PM,,ho12547803,false,true,,,,poll73658394
-"Board of Elections Building, 1423 State Route 38 SE, London, SD 43140",,08:00 AM-05:00 PM,,ho16563836,false,true,,,,poll50203643
-"City Hall, 345 Oak Hill Ave. Entrance A, Youngstown, SD 44502",,08:00 AM-05:00 PM,,ho2067819,false,true,,,,poll21615690
-"222 W. Center St., Marion, SD 43302",,08:00 AM-05:00 PM,,ho66265308,false,true,,,,poll76889850
-"3800 Stonegate Drive Ste C, Medina, SD 44256",,08:00 AM-05:00 PM,,ho44976980,false,true,,,,poll69211488
-"117 E. Memorial Dr. Ste 1, Pomeroy, SD 45769",,08:00 AM-05:00 PM,,ho31567852,false,true,,,,poll45742824
-"101 N. Main St. Room 107, Celina, SD 45822",,08:00 AM-05:00 PM,,ho59030418,false,true,,,,poll86470043
-"Courthouse, 215 W. Main St., Troy, SD 45373",,08:00 AM-05:00 PM,,ho9860302,false,true,,,,poll46579032
-"117 North Main Street Ste 12, Woodsfield, SD 43793",,08:00 AM-05:00 PM,,ho8696209,false,true,,,,poll70083929
-"451 W. Third St., Dayton, SD 45422",,08:00 AM-05:00 PM,,ho71057125,false,true,,,,poll68638032
-"155 E. Main St. Room 157, McConnelsville, SD 43756",,08:00 AM-05:00 PM,,ho38855110,false,true,,,,poll28522676
-"619 W. Marion Rd. Room 146, Mt. Gilead, SD 43338",,08:00 AM-05:00 PM,,ho9084008,false,true,,,,poll37802553
-"205 N. Seventh St., Zanesville, SD 43701",,08:00 AM-05:00 PM,,ho40886740,false,true,,,,poll74137367
-"140 Courthouse, Caldwell, SD 43724",,08:00 AM-05:00 PM,,ho59846266,false,true,,,,poll49908866
-"8444 W. State Route 163 Ste 101, Oak Harbor, SD 43449",,08:00 AM-05:00 PM,,ho98797000,false,true,,,,poll61877238
-"105 E. Perry St., Paulding, SD 45879",,08:00 AM-05:00 PM,,ho34290597,false,true,,,,poll3731830
-"121 W. Brown St. Ste B, New Lexington, SD 43764",,08:00 AM-05:00 PM,,ho63771762,false,true,,,,poll68134690
-"141 W. Main St. Ste 800, Circleville, SD 43113",,08:00 AM-05:00 PM,,ho39262899,false,true,,,,poll49873020
-"230 Waverly Plaza Ste 1100, Waverly, SD 45690",,08:00 AM-05:00 PM,,ho87140906,false,true,,,,poll44824129
-"449 S. Meridian St. Room 101, Ravenna, SD 44266",,08:00 AM-05:00 PM,,ho34536126,false,true,,,,poll22165447
-"Courthouse, 101 E. Main St., Eaton, SD 45320",,08:00 AM-05:00 PM,,ho99114420,false,true,,,,poll48691201
-"575 Ottawa-Glandorf Road Ste 2, Ottawa, SD 45875",,08:00 AM-05:00 PM,,ho76299411,false,true,,,,poll84760974
-"1495 W. Longview Ave. Ste 101, Mansfield, SD 44906",,08:00 AM-05:00 PM,,ho82353369,false,true,,,,poll46306661
-"475 Western Ave. Ste D, Chillicothe, SD 45601",,08:00 AM-05:00 PM,,ho20692972,false,true,,,,poll63757712
-"2020 Countryside Dr., Fremont, SD 43420",,08:00 AM-05:00 PM,,ho20031302,false,true,,,,poll342751
-"602 Seventh St. Room 105, Portsmouth, SD 45662",,08:00 AM-05:00 PM,,ho68159468,false,true,,,,poll24924128
-"71 S. Washington St. Ste 1101, Tiffin, SD 44883",,08:00 AM-05:00 PM,,ho16189652,false,true,,,,poll90644687
-"230 E. Court St., Sidney, SD 45365",,08:00 AM-05:00 PM,,ho36319203,false,true,,,,poll52912344
-"3525 Regent Ave. NE, Canton, SD 44705",,08:00 AM-05:00 PM,,ho8203137,false,true,,,,poll76960382
-"470 Grant St., Akron, SD 44311",,08:00 AM-05:00 PM,,ho15087061,false,true,,,,poll82329159
-"2947 Youngstown Rd. SE, Warren, SD 44484",,08:00 AM-05:00 PM,,ho12424691,false,true,,,,poll16823207
-"Courthouse Square, 101 E. High Ave., New Philadelphia, SD 44663",,08:00 AM-05:00 PM,,ho37191793,false,true,,,,poll3366480
-"835 East 5th St. Ste A, Marysville, SD 43040",,08:00 AM-05:00 PM,,ho94682318,false,true,,,,poll45361545
-"County Annex, 120 E. Main St., Van Wert, SD 45891",,08:00 AM-05:00 PM,,ho9431487,false,true,,,,poll56567526
-"Community Building, 31935 SR 93, McArthur, SD 45651",,08:00 AM-05:00 PM,,ho660350,false,true,,,,poll76008938
-"520 Justice Dr., Lebanon, SD 45036",,08:00 AM-05:00 PM,,ho50867238,false,true,,,,poll89616969
-"204 Davis Ave. Ste B, Marietta, SD 45750",,08:00 AM-05:00 PM,,ho90166371,false,true,,,,poll74656965
-"200 Vanover St. Ste 1, Wooster, SD 44691",,08:00 AM-05:00 PM,,ho72220856,false,true,,,,poll67243800
-"1425 E. High St. Ste 104, Bryan, SD 43506",,08:00 AM-05:00 PM,,ho69600695,false,true,,,,poll63584763
-"1 Courthouse Sq., Bowling Green, SD 43402",,08:00 AM-05:00 PM,,ho18937543,false,true,,,,poll67247683
-"109 S. Sandusky Ave. Room 12, Upper Sandusky, SD 43351",,08:00 AM-05:00 PM,,ho97101241,false,true,,,,poll52077569
+"215 N. Cross St. Room 103, West Union OH 45693",,08:00 AM-05:00 PM,,ho26164169,false,true,,,,poll39610313
+"Courthouse, 204 N. Main St. Lower Level, Lima OH 45801",,08:00 AM-05:00 PM,,ho11177922,false,true,,,,poll21037804
+"110 Cottage St. Ste 106, Ashland OH 44805",,08:00 AM-05:00 PM,,ho16256489,false,true,,,,poll87237384
+"Bureau of Motor Vehicle, 8 W. Walnut St., Jefferson OH 44047",,08:00 AM-05:00 PM,,ho81826515,false,true,,,,poll81481273
+"Courthouse Annex , 15 S. Court St. Room 130, Athens OH 45701",,08:00 AM-05:00 PM,,ho78964127,false,true,,,,poll72367170
+"Administration Building, 209 S. Blackhoof Street Room 205, Wapakoneta OH 45895",,08:00 AM-05:00 PM,,ho43583166,false,true,,,,poll11604153
+"Veterans Affairs Building, 103 Plaza Dr. Ste B, St. Clairsville OH 43950",,08:00 AM-05:00 PM,,ho76285653,false,true,,,,poll32311767
+"County Administration Building, Administration Building, 800 Mt. Orab Pk. Ste 111, Georgetown OH 45121",,08:00 AM-05:00 PM,,ho89809971,false,true,,,,poll4565263
+"Board of Elections Building, Princeton Road Campus, 1802 Princeton Rd. Ste 600, Hamilton OH 45011",,08:00 AM-05:00 PM,,ho9523941,false,true,,,,poll61218229
+"Courthouse, 119 S. Lisbon St. Ste 102, Carrollton OH 44615",,08:00 AM-05:00 PM,,ho89033181,false,true,,,,poll1617450
+"1512 South U.S. Hwy 68 Ste L100, Urbana OH 43078",,08:00 AM-05:00 PM,,ho2694552,false,true,,,,poll96755998
+"3130 E. Main St., Springfield OH 45505",,08:00 AM-05:00 PM,,ho36982334,false,true,,,,poll99843232
+"Board Election Building , 76 S. Riverside Dr., Batavia OH 45103",,08:00 AM-05:00 PM,,ho48405245,false,true,,,,poll3811862
+"Courthouse , 46 S. South St. Room 126, Wilmington OH 45177",,08:00 AM-05:00 PM,,ho41240879,false,true,,,,poll84786261
+"County Administration Building, 7989 Dickey Dr. Ste 3, Lisbon OH 44432",,08:00 AM-05:00 PM,,ho52286049,false,true,,,,poll30186748
+"County Services Building , 724 S. Seventh St. Room 100, Coshocton OH 43812",,08:00 AM-05:00 PM,,ho28243084,false,true,,,,poll93857489
+"Courthouse , 112 East Mansfield St. Ste A, Bucyrus OH 44820",,08:00 AM-05:00 PM,,ho3265024,false,true,,,,poll28669413
+"Board of Elections Building, 2925 Euclid Ave., Cleveland OH 44115",,08:00 AM-05:00 PM,,ho1528938,false,true,,,,poll66597106
+"Courthouse , 300 Garst Ave. Ste 7, Greenville OH 45331",,08:00 AM-05:00 PM,,ho37326917,false,true,,,,poll9997904
+"County Administration Building, 1300 E. Second St. Ste 103, Defiance OH 43512",,08:00 AM-05:00 PM,,ho10630143,false,true,,,,poll23049998
+"County Administration Building, 2079 U.S. 23 North, Delaware OH 43015",,08:00 AM-05:00 PM,,ho31172870,false,true,,,,poll77725413
+"Board of Elections Building, 2900 Columbus Ave. Room 101, Sandusky OH 44870",,08:00 AM-05:00 PM,,ho60968229,false,true,,,,poll35782030
+"Education Service Center, 951 Liberty Dr., Lancaster OH 43130",,08:00 AM-05:00 PM,,ho94039972,false,true,,,,poll55620522
+"Courthouse, 135 S. Main St., Washington Courthouse OH 43160",,08:00 AM-05:00 PM,,ho49503011,false,true,,,,poll6134676
+"Board of Elections Building, 1700 Morse Road, Columbus OH 43229",,08:00 AM-05:00 PM,,ho80826222,false,true,,,,poll32693069
+"Courthouse, 135 Courthouse Plaza, Wauseon OH 43567",,08:00 AM-05:00 PM,,ho62509019,false,true,,,,poll81009978
+"Courthouse, Courthouse, 18 Locust St. Room 1266, Gallipolis OH 45631",,08:00 AM-05:00 PM,,ho96813097,false,true,,,,poll38045251
+"County Administration Building, 470 Center St. Building 6A, Chardon OH 44024",,08:00 AM-05:00 PM,,ho58281834,false,true,,,,poll44668817
+"Board of Elections Building, 551 Ledbetter Rd., Xenia OH 45385",,08:00 AM-05:00 PM,,ho6508866,false,true,,,,poll81088142
+"Courthouse, 627 Wheeling Ave. Ste 101, Cambridge OH 43725",,08:00 AM-05:00 PM,,ho16176613,false,true,,,,poll86709366
+"Board of Elections Building, 824 Broadway St., Cincinnati OH 45202",,08:00 AM-05:00 PM,,ho47002107,false,true,,,,poll86377559
+"Board of Elections Building, 201 E. Lincoln St., Rear, Findlay OH 45840",,08:00 AM-05:00 PM,,ho41335508,false,true,,,,poll66352194
+"Courthouse, One Courthouse Sq. Ste 40, Kenton OH 43326",,08:00 AM-05:00 PM,,ho23917211,false,true,,,,poll34795252
+"Bureau of Motor Vehicles, 538 N. Main St. Ste B, Cadiz OH 43907",,08:00 AM-05:00 PM,,ho73924639,false,true,,,,poll96668630
+"Board of Elections Building, 1827 Oakwood Ave., Napoleon OH 43545",,08:00 AM-05:00 PM,,ho75344230,false,true,,,,poll65438417
+"Administration Building, 1575 N. High St. Ste 200, Hillsboro OH 45133",,08:00 AM-05:00 PM,,ho12270298,false,true,,,,poll96365801
+"Veterans Services Offices, 93 W. Hunter St., Logan OH 43138",,08:00 AM-05:00 PM,,ho48357961,false,true,,,,poll62042190
+"Children Services Building, 75 E. Clinton St. Ste 108, Millersburg OH 44654",,08:00 AM-05:00 PM,,ho36615255,false,true,,,,poll67158987
+"County Administration Building, 180 Milan Ave. Ste 4, Norwalk OH 44857",,08:00 AM-05:00 PM,,ho35746700,false,true,,,,poll31216909
+"Board of Elections Building, 275 Portsmouth St. Ste 2, Jackson OH 45640",,08:00 AM-05:00 PM,,ho55005894,false,true,,,,poll29978252
+"500 Market St. Fl. 1, Ste 1, Steubenville OH 43952",,08:00 AM-05:00 PM,,ho89674953,false,true,,,,poll22696158
+"117 E. High St. Ste 210, Mt. Vernon OH 43050",,08:00 AM-05:00 PM,,ho90988399,false,true,,,,poll78961762
+"Administration Center, 105 Main St., Painesville OH 44077",,08:00 AM-05:00 PM,,ho29487161,false,true,,,,poll99325252
+"Veterans Square, 111 S. Fourth St., Ironton OH 45638",,08:00 AM-05:00 PM,,ho38002549,false,true,,,,poll47031946
+"County Administration Building, 20 S. Second St., Newark OH 43055",,08:00 AM-05:00 PM,,ho85170614,false,true,,,,poll50865062
+"255 S. Main St., Bellefontaine OH 43311",,08:00 AM-05:00 PM,,ho5371524,false,true,,,,poll39449829
+"Board of Elections Building, 1985 North Ridge Rd. E, Lorain OH 44055",,08:00 AM-05:00 PM,,ho51850468,false,true,,,,poll90276689
+"City Government Center, One Government Center Ste 300, Toledo OH 43604",,08:00 AM-05:00 PM,,ho17782821,false,true,,,,poll66168768
+"Board of Elections Building, 1423 State Route 38 SE, London OH 43140",,08:00 AM-05:00 PM,,ho60500306,false,true,,,,poll91544005
+"City Hall, 345 Oak Hill Ave. Entrance A, Youngstown OH 44502",,08:00 AM-05:00 PM,,ho21235828,false,true,,,,poll2158792
+"222 W. Center St., Marion OH 43302",,08:00 AM-05:00 PM,,ho94933226,false,true,,,,poll17052006
+"3800 Stonegate Drive Ste C, Medina OH 44256",,08:00 AM-05:00 PM,,ho55995645,false,true,,,,poll19549811
+"117 E. Memorial Dr. Ste 1, Pomeroy OH 45769",,08:00 AM-05:00 PM,,ho92882742,false,true,,,,poll28290585
+"101 N. Main St. Room 107, Celina OH 45822",,08:00 AM-05:00 PM,,ho79843541,false,true,,,,poll58082795
+"Courthouse, 215 W. Main St., Troy OH 45373",,08:00 AM-05:00 PM,,ho6414219,false,true,,,,poll34476195
+"117 North Main Street Ste 12, Woodsfield OH 43793",,08:00 AM-05:00 PM,,ho65757970,false,true,,,,poll58774817
+"451 W. Third St., Dayton OH 45422",,08:00 AM-05:00 PM,,ho11299459,false,true,,,,poll76894092
+"155 E. Main St. Room 157, McConnelsville OH 43756",,08:00 AM-05:00 PM,,ho1374229,false,true,,,,poll57665642
+"619 W. Marion Rd. Room 146, Mt. Gilead OH 43338",,08:00 AM-05:00 PM,,ho68500918,false,true,,,,poll5088640
+"205 N. Seventh St., Zanesville OH 43701",,08:00 AM-05:00 PM,,ho28793903,false,true,,,,poll33053820
+"140 Courthouse, Caldwell OH 43724",,08:00 AM-05:00 PM,,ho13890501,false,true,,,,poll26873104
+"8444 W. State Route 163 Ste 101, Oak Harbor OH 43449",,08:00 AM-05:00 PM,,ho51294454,false,true,,,,poll15336291
+"105 E. Perry St., Paulding OH 45879",,08:00 AM-05:00 PM,,ho50536588,false,true,,,,poll18778005
+"121 W. Brown St. Ste B, New Lexington OH 43764",,08:00 AM-05:00 PM,,ho33425579,false,true,,,,poll97515269
+"141 W. Main St. Ste 800, Circleville OH 43113",,08:00 AM-05:00 PM,,ho47316308,false,true,,,,poll66948735
+"230 Waverly Plaza Ste 1100, Waverly OH 45690",,08:00 AM-05:00 PM,,ho1495514,false,true,,,,poll23606670
+"449 S. Meridian St. Room 101, Ravenna OH 44266",,08:00 AM-05:00 PM,,ho23174264,false,true,,,,poll89975340
+"Courthouse, 101 E. Main St., Eaton OH 45320",,08:00 AM-05:00 PM,,ho69631133,false,true,,,,poll99388394
+"575 Ottawa-Glandorf Road Ste 2, Ottawa OH 45875",,08:00 AM-05:00 PM,,ho42867956,false,true,,,,poll55638910
+"1495 W. Longview Ave. Ste 101, Mansfield OH 44906",,08:00 AM-05:00 PM,,ho26789758,false,true,,,,poll8495758
+"475 Western Ave. Ste D, Chillicothe OH 45601",,08:00 AM-05:00 PM,,ho84118638,false,true,,,,poll50363061
+"2020 Countryside Dr., Fremont OH 43420",,08:00 AM-05:00 PM,,ho53214133,false,true,,,,poll17911619
+"602 Seventh St. Room 105, Portsmouth OH 45662",,08:00 AM-05:00 PM,,ho75028468,false,true,,,,poll34755623
+"71 S. Washington St. Ste 1101, Tiffin OH 44883",,08:00 AM-05:00 PM,,ho5390427,false,true,,,,poll97414315
+"230 E. Court St., Sidney OH 45365",,08:00 AM-05:00 PM,,ho56862811,false,true,,,,poll2924922
+"3525 Regent Ave. NE, Canton OH 44705",,08:00 AM-05:00 PM,,ho39395901,false,true,,,,poll17358308
+"470 Grant St., Akron OH 44311",,08:00 AM-05:00 PM,,ho51350358,false,true,,,,poll95123873
+"2947 Youngstown Rd. SE, Warren OH 44484",,08:00 AM-05:00 PM,,ho63224391,false,true,,,,poll67421837
+"Courthouse Square, 101 E. High Ave., New Philadelphia OH 44663",,08:00 AM-05:00 PM,,ho81114764,false,true,,,,poll30900616
+"835 East 5th St. Ste A, Marysville OH 43040",,08:00 AM-05:00 PM,,ho63555233,false,true,,,,poll50699878
+"County Annex, 120 E. Main St., Van Wert OH 45891",,08:00 AM-05:00 PM,,ho92184603,false,true,,,,poll93188924
+"Community Building, 31935 SR 93, McArthur OH 45651",,08:00 AM-05:00 PM,,ho66536280,false,true,,,,poll68551711
+"520 Justice Dr., Lebanon OH 45036",,08:00 AM-05:00 PM,,ho9290222,false,true,,,,poll84446315
+"204 Davis Ave. Ste B, Marietta OH 45750",,08:00 AM-05:00 PM,,ho41425070,false,true,,,,poll59968965
+"200 Vanover St. Ste 1, Wooster OH 44691",,08:00 AM-05:00 PM,,ho58431463,false,true,,,,poll73471676
+"1425 E. High St. Ste 104, Bryan OH 43506",,08:00 AM-05:00 PM,,ho76328431,false,true,,,,poll92830203
+"1 Courthouse Sq., Bowling Green OH 43402",,08:00 AM-05:00 PM,,ho97179479,false,true,,,,poll20177618
+"109 S. Sandusky Ave. Room 12, Upper Sandusky OH 43351",,08:00 AM-05:00 PM,,ho8783703,false,true,,,,poll22881420

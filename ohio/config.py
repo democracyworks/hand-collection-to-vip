@@ -5,6 +5,8 @@ state_upper = 'Ohio'
 
 state_abbreviation = 'oh'
 
+state_abbreviation_upper = 'OH'
+
 utc_offset_4 = ''
 
 utc_offset_5 = ''

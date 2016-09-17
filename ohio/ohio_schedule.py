@@ -26,13 +26,6 @@ class ScheduleTxt(object):
         self.base_df = base_df
         #print self.base_df
 
-#    def mountain_time(self, county):
-#        df = self.build_schedule_txt()
-
-#        if df['county'] in mountain_tz:
-#                df['start_date'] = df['start_date'].str.replace('\n', '')
-
-
     def get_start_time(self, index, start_time, end_date, county):
         """#"""
 
