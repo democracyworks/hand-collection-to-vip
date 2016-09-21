@@ -1,2 +1,0 @@
-election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,id
-,ocd-id,,ocd-division/country:us/state:nj,New Jersey,poll98247693 poll40372757 poll74973525 poll68336913 poll81879542 poll38983223 poll58726283 poll4192658 poll99274575 poll68582886 poll22336735 poll81398790 poll19481053 poll26114854 poll45769320 poll68319453 poll73366023 poll30447281 poll32455109 poll14895419 poll17039496 poll53807987,st34

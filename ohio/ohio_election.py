@@ -24,6 +24,9 @@ import config
 
 
 def main():
+    """Creates a dictionary from the headers and column values of the row matching
+       the state value in the config file then passes the dict to ElectionTxt().
+    """
     input = 'state_feed_info.csv'
 
     early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/ohio/early_voting_input/" + input
@@ -79,21 +82,15 @@ class ElectionTxt(object):
 
     def get_date(self):
         """#"""
-        return '11-08-2016'.replace('-', '/')
+        return '2016-11-08'
 
     def get_name(self):
         """#"""
-        return 'General Election'
+        return '2016 General Election'
 
     def get_election_type(self):
         """#"""
         return 'federal'
-
-    #def get_state_id(self):
-     #   """#"""
-        # get state name, lower()
-
-      #  pass
 
     def create_state_id(self):
         """Creates the state_id by matching a key in the state_dict and retrieving
@@ -104,10 +101,10 @@ class ElectionTxt(object):
         for key, value in config.fips_dict.iteritems():
             if key == config.state.lower():
                 state_num = value
-                if state_num <=9:
-                    state_num = '0' + str(state_num)
-                else:
-                    state_num = str(state_num)
+                #if state_num <=9:
+                #    state_num = '0' + str(state_num)
+                #else:
+                #    state_num = str(state_num)
 
                 return 'st' + state_num
 
@@ -121,7 +118,7 @@ class ElectionTxt(object):
 
     def absentee_ballot_info(self):
         """#"""
-        pass
+        return ''
 
     def results_uri(self):
         """#"""
@@ -129,8 +126,7 @@ class ElectionTxt(object):
 
     def polling_hours(self):
         """#"""
-        # TODO: take from early voting doc
-        pass
+        return ''
 
     def has_election_day_registration(self):
         """#"""
@@ -141,8 +137,11 @@ class ElectionTxt(object):
         #TODO: use registration_deadline
         if self.state_feed.get('registration_deadline'):
             deadline = self.state_feed.get('registration_deadline')
-            return datetime.datetime.strptime(deadline, '%Y-%m-%d').strftime('%-m/%d/%Y')
+            #print deadline
+            return deadline
+            #return datetime.datetime.strptime(deadline, '%Y-%m-%d').strftime('%-m/%d/%Y')
         else:
+            #raise ValueError('Registration deadline value is not valid.')
             return ''
 
     def absentee_request_deadline(self):
@@ -151,8 +150,11 @@ class ElectionTxt(object):
 
         if self.state_feed.get('ballot_request_deadline'):
             deadline = self.state_feed.get('ballot_request_deadline')
-            return datetime.datetime.strptime(deadline, '%Y-%m-%d').strftime('%-m/%d/%Y')
+            #print deadline
+            return deadline
+            #return datetime.datetime.strptime(deadline, '%Y-%m-%d').strftime('%-m/%d/%Y')
         else:
+            #raise ValueError('Absentee_request deadline value is not valid.')
             return ''
 
     def hours_open_id(self):
