@@ -27,7 +27,7 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:tx/county:burnet,burnet_cou0026,poll92895959,st48,other,,loc0026
 ,ocd-id,,ocd-division/country:us/state:tx/county:caldwell,caldwell_cou0027,poll20109638,st48,other,,loc0027
 ,ocd-id,,ocd-division/country:us/state:tx/county:calhoun,calhoun_cou0028,poll96895198,st48,other,,loc0028
-,ocd-id,,ocd-division/country:us/state:tx/county:callahan,callahan_county_ector_cou0029,poll44372959 poll1572075 poll42652033 poll46930580 poll90010077 poll98287821 poll55377325,st48,other,,loc0029
+,ocd-id,,ocd-division/country:us/state:tx/county:callahan,callahan_county_ector_cou0029,poll44372959 poll42652033 poll46930580 poll90010077 poll98287821 poll55377325,st48,other,,loc0029
 ,ocd-id,,ocd-division/country:us/state:tx/county:cameron,cameron_cou0030,poll27683056 poll69474618 poll86499069 poll14834082 poll55658081 poll82355732 poll76083713 poll79385491 poll21974541 poll46942448 poll42173732 poll10779760 poll29136651 poll23293692 poll64075508 poll65283777 poll81290674 poll82691482 poll40981948 poll311498 poll248757 poll68355182 poll2902003 poll56932774 poll53403197,st48,other,,loc0030
 ,ocd-id,,ocd-division/country:us/state:tx/county:camp,camp_cou0031,poll68848974,st48,other,,loc0031
 ,ocd-id,,ocd-division/country:us/state:tx/county:carson,carson_cou0032,poll95508628,st48,other,,loc0032
