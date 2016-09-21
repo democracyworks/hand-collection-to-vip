@@ -2,6 +2,7 @@ import pandas as pd
 import time
 import config
 from time import strftime
+from datetime import datetime
 import hashlib
 
 class PollingLocationTxt(object):
@@ -35,7 +36,7 @@ class PollingLocationTxt(object):
         else:
             zip_code = ''
 
-        return street + " " + city + ", ME " + zip_code
+        return street + ", " + city + ", ME " + zip_code
 
     def get_directions(self):
         """#"""
@@ -53,8 +54,13 @@ class PollingLocationTxt(object):
         return hours + " " + "PM"
 
     def get_hours(self, index, start_time, end_time):
-        start_time = self.get_start_time(start_time)
-        end_time = self.get_end_time(end_time)
+        #d = datetime.strptime("10:30", "%H:%M")
+
+        start_time = datetime.strptime(start_time, "%H:%M:%S")
+        start_time = start_time.strftime("%I:%M %p")
+        end_time = datetime.strptime(end_time, "%H:%M:%S")
+        end_time = end_time.strftime("%I:%M %p")
+
         return start_time + "-" + end_time
 
 

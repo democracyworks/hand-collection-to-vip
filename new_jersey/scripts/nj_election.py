@@ -26,7 +26,7 @@ import config
 def main():
     input = 'state_feed_info.csv'
 
-    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/new_jersey/scripts/early_voting_input/" + input
+    early_voting_file = config.input + input
 
     with open(early_voting_file, 'rb') as f:
         f = csv.reader(f, delimiter=',')
@@ -77,7 +77,7 @@ class ElectionTxt(object):
 
     def get_date(self):
         """#"""
-        return '11-8-2016'.replace('-', '/')
+        return '2016-11-08'
 
     def get_name(self):
         """#"""
@@ -139,7 +139,7 @@ class ElectionTxt(object):
 
         if self.state_feed.get('ballot_request_deadline'):
             deadline = self.state_feed.get('ballot_request_deadline')
-            return datetime.datetime.strptime(deadline, '%Y-%m-%d').strftime('%-m/%d/%Y')
+            return deadline
         else:
             return ''
 
@@ -148,7 +148,7 @@ class ElectionTxt(object):
         return ''
 
     def write_election_txt(self):
-        output_path = "/home/acg/democracyworks/hand-collection-to-vip/new_jersey/output/election.txt"
+        output_path = config.output + "election.txt"
         try:
             f = open(output_path, 'ab')
             fieldnames = ['id', 'date', 'name', 'election_type', 'state_id', 'is_statewide',

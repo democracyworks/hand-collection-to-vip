@@ -35,12 +35,12 @@ class PollingLocationTxt(object):
         else:
             zip = ''
 
-        return adr + " " + city + ", ND " + zip
+        return adr.strip() + ", " + city + ", ND " + zip
 
-    def get_directions(self):
+    def get_directions(self, dirs):
         """#"""
         # no direct relationship to any column
-        return ''
+        return dirs
 
 
     def convert_to_time(self, index, time):
@@ -145,7 +145,7 @@ class PollingLocationTxt(object):
                                               row['zip']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
-            lambda row: self.get_directions(), axis=1)
+            lambda row: self.get_directions(row['dirs']), axis=1)
 
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)
@@ -221,7 +221,7 @@ class PollingLocationTxt(object):
         plt = self.build_polling_location_txt()
 
         # Drop base_df columns.
-        plt.drop(['office_name', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
+        plt.drop(['office_name', 'ocd_division', 'description', 'dirs','homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'appt_one', 'appt_two', 'subject_to_change','start_date', 'end_date', 'ev_or_aip', 'index'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
@@ -241,7 +241,7 @@ if __name__ == '__main__':
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
     early_voting_file = config.data_folder + state_file
 
-    colnames = ['office_name', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
+    colnames = ['office_name', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'dirs', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'appt_one', 'appt_two', 'subject_to_change','start_date', 'end_date', 'ev_or_aip']
     print len(colnames)
 

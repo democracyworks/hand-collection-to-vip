@@ -34,6 +34,7 @@ def pl():
     # df['index'] = early_voting_df.index + 1
 
     polling_location_list = df['source_polling_location_ids'].tolist()
+    print polling_location_list
     return polling_location_list
 
 

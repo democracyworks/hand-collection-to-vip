@@ -1,35 +1,35 @@
-election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:allen,ocd-division/country:us/state:in/county:al0006,poll84613755 poll69198483 poll6008946 poll36921457 poll67376765,st18,other,,loc0001
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:bartholomew,ocd-division/country:us/state:in/county:bartholo0042,poll21372008 poll79773532 poll50914585 poll18134555,st18,other,,loc0002
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:benton,ocd-division/country:us/state:in/county:ben0051,poll78572115,st18,other,,loc0003
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:blackford,ocd-division/country:us/state:in/county:blackf0053,poll41878322 poll6073081,st18,other,,loc0004
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:boone,ocd-division/country:us/state:in/county:bo0068,poll49732911,st18,other,,loc0005
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:brown,ocd-division/country:us/state:in/county:br0076,poll37183024,st18,other,,loc0006
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:carroll,ocd-division/country:us/state:in/county:carr0083,poll26796000,st18,other,,loc0007
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:cass,ocd-division/country:us/state:in/county:c0094,poll43188206,st18,other,,loc0008
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:clark,ocd-division/country:us/state:in/county:cl0101,poll14519525 poll9137750 poll29143294 poll47122812 poll28291921 poll3613351 poll2966503,st18,other,,loc0009
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:clay,ocd-division/country:us/state:in/county:c0108,poll68413425,st18,other,,loc0010
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:daviess,ocd-division/country:us/state:in/county:davi0119,poll43503598,st18,other,,loc0011
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:dearborn,ocd-division/country:us/state:in/county:dearb0129,poll24885252,st18,other,,loc0012
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:decatur,ocd-division/country:us/state:in/county:deca0136,poll83162556,st18,other,,loc0013
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:dekalb,ocd-division/country:us/state:in/county:dek0139,poll32836117,st18,other,,loc0014
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:delaware,ocd-division/country:us/state:in/county:delaw0148,poll47354301,st18,other,,loc0015
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:dubois,ocd-division/country:us/state:in/county:dub0155,poll7161372,st18,other,,loc0016
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:elkhart,ocd-division/country:us/state:in/county:elkh0190,poll31218386 poll70703372 poll59501572 poll57562628,st18,other,,loc0017
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:fayette,ocd-division/country:us/state:in/county:faye0194,poll30102959,st18,other,,loc0018
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:floyd,ocd-division/country:us/state:in/county:fl0212,poll20069514 poll95423568 poll32177966 poll95775720 poll81912937 poll86401325 poll26925529 poll49526262 poll37807596 poll99338571 poll42882366 poll52603418 poll26056922 poll53086460 poll58531200 poll85610239 poll85484115 poll17485464 poll79505747 poll89667805 poll85795030 poll16310408 poll81593645,st18,other,,loc0019
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:fulton,ocd-division/country:us/state:in/county:ful0230,poll90823099,st18,other,,loc0020
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:gibson,ocd-division/country:us/state:in/county:gib0244,poll33863795,st18,other,,loc0021
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:grant,ocd-division/country:us/state:in/county:gr0251,poll1771598,st18,other,,loc0022
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:greene,ocd-division/country:us/state:in/county:gre0253,poll39848519,st18,other,,loc0023
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:hamilton,ocd-division/country:us/state:in/county:hamil0259,poll92934255,st18,other,,loc0024
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:hancock,ocd-division/country:us/state:in/county:hanc0269,poll81335854,st18,other,,loc0025
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:harrison,ocd-division/country:us/state:in/county:harri0273,poll87916747,st18,other,,loc0026
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:hendricks,ocd-division/country:us/state:in/county:hendri0289,poll38324333 poll70103397 poll57015539 poll11300360,st18,other,,loc0027
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:henry,ocd-division/country:us/state:in/county:he0310,poll57271662,st18,other,,loc0028
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:huntington,ocd-division/country:us/state:in/county:hunting0326,poll29562556,st18,other,,loc0029
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:jay,ocd-division/country:us/state:in/county:0327,poll13124416,st18,other,,loc0030
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:jefferson,ocd-division/country:us/state:in/county:jeffer0328,poll44365114,st18,other,,loc0031
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:jennings,ocd-division/country:us/state:in/county:jenni0329,poll54402736,st18,other,,loc0032
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:johnson,ocd-division/country:us/state:in/county:john0332,poll101061,st18,other,,loc0033
-,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:knox,ocd-division/country:us/state:in/county:k0339,poll10863240,st18,other,,loc0034
+election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id,dirs
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:allen,ocd-division/country:us/state:in/county:al0006,poll84961277 poll64158121 poll24728509 poll51654258 poll23681946 poll52039742,st18,other,,loc0001,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:bartholomew,ocd-division/country:us/state:in/county:bartholo0042,poll68696075 poll61074992 poll90925176 poll26901972,st18,other,,loc0002,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:benton,ocd-division/country:us/state:in/county:ben0051,poll90194853,st18,other,,loc0003,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:blackford,ocd-division/country:us/state:in/county:blackf0053,poll99099183 poll76202890,st18,other,,loc0004,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:boone,ocd-division/country:us/state:in/county:bo0068,poll87996016,st18,other,,loc0005,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:brown,ocd-division/country:us/state:in/county:br0076,poll10426660,st18,other,,loc0006,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:carroll,ocd-division/country:us/state:in/county:carr0083,poll80163971,st18,other,,loc0007,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:cass,ocd-division/country:us/state:in/county:c0094,poll86551842,st18,other,,loc0008,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:clark,ocd-division/country:us/state:in/county:cl0101,poll15163647 poll56405659 poll61569586 poll37729392 poll90370679 poll20241436 poll26510454,st18,other,,loc0009,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:clay,ocd-division/country:us/state:in/county:c0108,poll67806366,st18,other,,loc0010,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:daviess,ocd-division/country:us/state:in/county:davi0119,poll86095326,st18,other,,loc0011,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:dearborn,ocd-division/country:us/state:in/county:dearb0129,poll488939,st18,other,,loc0012,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:decatur,ocd-division/country:us/state:in/county:deca0136,poll68204573,st18,other,,loc0013,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:dekalb,ocd-division/country:us/state:in/county:dek0139,poll63246779,st18,other,,loc0014,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:delaware,ocd-division/country:us/state:in/county:delaw0148,poll87797799,st18,other,,loc0015,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:dubois,ocd-division/country:us/state:in/county:dub0155,poll74454134,st18,other,,loc0016,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:elkhart,ocd-division/country:us/state:in/county:elkh0190,poll54880916 poll16270043 poll78123870 poll4919748,st18,other,,loc0017,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:fayette,ocd-division/country:us/state:in/county:faye0194,poll13087751,st18,other,,loc0018,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:floyd,ocd-division/country:us/state:in/county:fl0212,poll21045628 poll19957188 poll46002728 poll86698377 poll29169877 poll42615750 poll61572188 poll80867376 poll51139614 poll20660639 poll93939898 poll34121596 poll31897435 poll31889532 poll64341899 poll44678116 poll36680824 poll45886962 poll36856527 poll46107270 poll71546549 poll30049856 poll23500297,st18,other,,loc0019,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:fulton,ocd-division/country:us/state:in/county:ful0230,poll60259236,st18,other,,loc0020,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:gibson,ocd-division/country:us/state:in/county:gib0244,poll19763318,st18,other,,loc0021,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:grant,ocd-division/country:us/state:in/county:gr0251,poll79884962,st18,other,,loc0022,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:greene,ocd-division/country:us/state:in/county:gre0253,poll99733605,st18,other,,loc0023,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:hamilton,ocd-division/country:us/state:in/county:hamil0259,poll41074162,st18,other,,loc0024,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:hancock,ocd-division/country:us/state:in/county:hanc0269,poll68701776,st18,other,,loc0025,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:harrison,ocd-division/country:us/state:in/county:harri0273,poll91209239,st18,other,,loc0026,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:hendricks,ocd-division/country:us/state:in/county:hendri0289,poll44731939 poll70685577 poll65821189 poll80399450,st18,other,,loc0027,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:henry,ocd-division/country:us/state:in/county:he0310,poll69579558,st18,other,,loc0028,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:huntington,ocd-division/country:us/state:in/county:hunting0326,poll38652176,st18,other,,loc0029,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:jay,ocd-division/country:us/state:in/county:0327,poll54317090,st18,other,,loc0030,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:jefferson,ocd-division/country:us/state:in/county:jeffer0328,poll32702614,st18,other,,loc0031,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:jennings,ocd-division/country:us/state:in/county:jenni0329,poll96966482,st18,other,,loc0032,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:johnson,ocd-division/country:us/state:in/county:john0332,poll70703969,st18,other,,loc0033,
+,ocd-id,,ocd-division/country/us/state:in/county:ocd-division/country:us/state:in/county:knox,ocd-division/country:us/state:in/county:k0339,poll15504613,st18,other,,loc0034,

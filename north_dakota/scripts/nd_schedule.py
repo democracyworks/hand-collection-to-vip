@@ -76,14 +76,14 @@ class ScheduleTxt(object):
 
     def get_start_date(self, start_date):
         string = str(start_date)
-        date = datetime.datetime.strptime(string, '%m-%d-%Y').strftime('%Y-%m-%d')
+        date = datetime.datetime.strptime(string, '%m/%d/%y').strftime('%Y-%m-%d')
         return date
         # return start_date + config.utc_offset
 
     def get_end_date(self, end_date):
         # create conditional when/if column is present
         string = str(end_date)
-        date = datetime.datetime.strptime(string, '%m-%d-%Y').strftime('%Y-%m-%d')
+        date = datetime.datetime.strptime(string, '%m/%d/%y').strftime('%Y-%m-%d')
         return date
 
     def get_hours_open_id(self, hours_open_id):
@@ -155,10 +155,10 @@ class ScheduleTxt(object):
         # # start_time2, end_time2, is_only_by_appointment2, is_or_by_appointment2, is_subject_to_change2, start_date2, end_date2, hours_open_id2, id2
 
         # Drop base_df columns.
-        sch.drop(['office_name', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
+        sch.drop(['office_name', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'dirs', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'appt_one', 'appt_two', 'subject_to_change','start_date', 'end_date', 'ev_or_aip',
                 'index', 'address_line', 'directions',
-                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id'], inplace=True,
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id', 'dirs'], inplace=True,
                  axis=1)
 
         # hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id,
@@ -197,7 +197,7 @@ if __name__ == '__main__':
     early_voting_file = config.output + file
 
 
-    colnames = ['office_name', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
+    colnames = ['office_name', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'dirs', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'appt_one', 'appt_two', 'subject_to_change','start_date', 'end_date', 'ev_or_aip',
                 'index', 'address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id']

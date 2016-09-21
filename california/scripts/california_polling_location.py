@@ -40,12 +40,12 @@ class PollingLocationTxt(object):
         else:
             zip = ''
 
-        return adr + " " + city_name + ", CA " + zip
+        return adr.strip() + ", " + city_name + ", CA " + zip
 
-    def get_directions(self):
+    def get_directions(self, dirs):
         """#"""
         # no direct relationship to any column
-        return ''
+        return dirs
 
     def get_start_time(self, time):
         arr = time.split(" ")
@@ -58,6 +58,7 @@ class PollingLocationTxt(object):
         return hours + " " + "PM"
 
     def get_hours(self, index, start_time, end_time):
+        print end_time
         start_time = self.get_start_time(start_time)
         end_time = self.get_end_time(end_time)
         return start_time + "-" + end_time
@@ -126,7 +127,7 @@ class PollingLocationTxt(object):
                                               row['address_two'], row['city'], row['zip']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
-            lambda row: self.get_directions(), axis=1)
+            lambda row: self.get_directions(row['dirs']), axis=1)
 
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)
@@ -203,7 +204,7 @@ class PollingLocationTxt(object):
 
         # Drop base_df columns.
         plt.drop(['ocd-division', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time',
-                'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change', 'index'], inplace=True, axis=1)
+                'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change', 'index', 'dirs'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
         print plt
@@ -222,7 +223,7 @@ if __name__ == '__main__':
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
     early_voting_file = config.data_folder + state_file
 
-    colnames = ['ocd-division', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time',
+    colnames = ['ocd-division', 'county', 'name', 'address_one', 'address_two', 'dirs', 'city', 'state', 'zip', 'start_time',
                 'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change']
 
 

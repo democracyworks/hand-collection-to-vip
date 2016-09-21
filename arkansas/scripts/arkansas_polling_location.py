@@ -287,24 +287,24 @@ class PollingLocationTxt(object):
 if __name__ == '__main__':
 
 
-    # early_voting_true = "true"  # True or False
-    # #drop_box_true =
-    # state_file='kansas_final_schedule.csv'
-    #
-    # # early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
-    #
-    # early_voting_file = config.input_folder + state_file
-    #
-    # colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-    #             'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone']
-    # early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
-    # early_voting_df['index'] = early_voting_df.index + 1
-    # pl = PollingLocationTxt(early_voting_df, early_voting_true)
-    #
-    # # print early_voting_df["address_1"] + early_voting_df["address_2"]
-    # pl.export_for_schedule_and_locality()
-    # pl.write_polling_location_txt()
-    # # print early_voting_df["index"]
+    early_voting_true = "true"  # True or False
+    #drop_box_true =
+    state_file='kansas_final_schedule.csv'
+
+    # early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
+
+    early_voting_file = config.input_folder + state_file
+
+    colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
+                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone']
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
+    early_voting_df['index'] = early_voting_df.index + 1
+    pl = PollingLocationTxt(early_voting_df, early_voting_true)
+
+    # print early_voting_df["address_1"] + early_voting_df["address_2"]
+    pl.export_for_schedule_and_locality()
+    pl.write_polling_location_txt()
+    # print early_voting_df["index"]
 
 
     old_file = config.data_folder + "arkansas_raw_data.csv"
@@ -330,30 +330,30 @@ if __name__ == '__main__':
     # Merge
     # status
 
-    with open(old_file, 'rU') as csvfile:
-        reader = csv.DictReader(csvfile)
-        f = open(new_file, 'wb')
-        writer = csv.writer(f)
-        cols = ["office-name", "official-title", "types", "ocd-division", "division - description", "homepage - url", , 'notes', 'merge-status']
-        writer.writerow(cols)
-        for row in reader:
-            arr1 = [row["office-name"], row["official-title"], row["types"], row['ocd-division'], row["division-description"],
-                    row["homepage-url"], row["phone"], row["email"], row["street"], row["city"], row["zip"], row["start_time"],
-                    row["end_time"], "10/24/16", "10/28/16", row['notes'], row['Merge status']]
-            arr2 = [row["office-name"], row["official-title"], row["types"], row['ocd-division'], row["division-description"],
-                    row["homepage-url"], row["phone"], row["email"], row["street"], row["city"], row["zip"], row["start_time"],
-                    row["end_time"], "10/29/16", "10/29/16", row['notes'], row['Merge status']]
-            arr3 = [row["office-name"], row["official-title"], row["types"], row['ocd-division'], row["division-description"],
-                    row["homepage-url"], row["phone"], row["email"], row["street"], row["city"], row["zip"], row["start_time"],
-                    row["end_time"], "10/31/16", "11/4/16", row['notes'], row['Merge status']]
-            arr4 = [row["office-name"], row["official-title"], row["types"], row['ocd-division'], row["division-description"],
-                    row["homepage-url"], row["phone"], row["email"], row["street"], row["city"], row["zip"], row["start_time"],
-                    row["end_time"], "11/5/16", "11/5/16", row['notes'], row['Merge status']]
-            arr5 = [row["office-name"], row["official-title"], row["types"], row['ocd-division'], row["division-description"],
-                    row["homepage-url"], row["phone"], row["email"], row["street"], row["city"], row["zip"], row["start_time"],
-                    row["end_time"], "11/7/16", "11/7/16", row['notes'], row['Merge status']]
-            writer.writerow(arr1)
-            writer.writerow(arr2)
-            writer.writerow(arr3)
-            writer.writerow(arr4)
-            writer.writerow(arr5)
+    # with open(old_file, 'rU') as csvfile:
+    #     reader = csv.DictReader(csvfile)
+    #     f = open(new_file, 'wb')
+    #     writer = csv.writer(f)
+    #     cols = ["office-name", "official-title", "types", "ocd-division", "division - description", "homepage - url", , 'notes', 'merge-status']
+    #     writer.writerow(cols)
+    #     for row in reader:
+    #         arr1 = [row["office-name"], row["official-title"], row["types"], row['ocd-division'], row["division-description"],
+    #                 row["homepage-url"], row["phone"], row["email"], row["street"], row["city"], row["zip"], row["start_time"],
+    #                 row["end_time"], "10/24/16", "10/28/16", row['notes'], row['Merge status']]
+    #         arr2 = [row["office-name"], row["official-title"], row["types"], row['ocd-division'], row["division-description"],
+    #                 row["homepage-url"], row["phone"], row["email"], row["street"], row["city"], row["zip"], row["start_time"],
+    #                 row["end_time"], "10/29/16", "10/29/16", row['notes'], row['Merge status']]
+    #         arr3 = [row["office-name"], row["official-title"], row["types"], row['ocd-division'], row["division-description"],
+    #                 row["homepage-url"], row["phone"], row["email"], row["street"], row["city"], row["zip"], row["start_time"],
+    #                 row["end_time"], "10/31/16", "11/4/16", row['notes'], row['Merge status']]
+    #         arr4 = [row["office-name"], row["official-title"], row["types"], row['ocd-division'], row["division-description"],
+    #                 row["homepage-url"], row["phone"], row["email"], row["street"], row["city"], row["zip"], row["start_time"],
+    #                 row["end_time"], "11/5/16", "11/5/16", row['notes'], row['Merge status']]
+    #         arr5 = [row["office-name"], row["official-title"], row["types"], row['ocd-division'], row["division-description"],
+    #                 row["homepage-url"], row["phone"], row["email"], row["street"], row["city"], row["zip"], row["start_time"],
+    #                 row["end_time"], "11/7/16", "11/7/16", row['notes'], row['Merge status']]
+    #         writer.writerow(arr1)
+    #         writer.writerow(arr2)
+    #         writer.writerow(arr3)
+    #         writer.writerow(arr4)
+    #         writer.writerow(arr5)

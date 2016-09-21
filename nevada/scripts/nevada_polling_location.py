@@ -21,9 +21,13 @@ class PollingLocationTxt(object):
         # required: print message for exception
         # TODO: concatenate street, city, state and zip
         if address:
+            if address.strip()[-1]== ",":
+                address = address.strip()[:-1]
             adr = address
+            print adr
         else:
             adr = ''
+
         if city:
             city_name = city
         else:
@@ -35,7 +39,9 @@ class PollingLocationTxt(object):
         else:
             zip = ''
 
-        return adr + " " + city + ", NV " + zip
+        line= adr.strip() + ", " + city + ", NV " + zip
+        # print line, index
+        return line
 
     def get_directions(self):
         """#"""

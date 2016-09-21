@@ -12,9 +12,9 @@ utc_offset_5 = '-05:00'
 
 early_voting = 'true'
 
-output = '/home/acg/democracyworks/hand-collection-to-vip/new_jersey/output/'
+input = "/Users/danielgilberg/Development/hand-collection-to-vip/new_jersey/input/"
 
-source_output = "/home/acg/democracyworks/hand-collection-to-vip/new_jersey/output/source.txt"
+output = "/Users/danielgilberg/Development/hand-collection-to-vip/new_jersey/output/"
 
 election_output = ''
 

@@ -41,14 +41,10 @@ class ScheduleTxt(object):
 
 
     def get_sch_time(self, hours, date):
-        hours_arr = hours.split(" ")
-        if hours_arr[1] == "PM":
-            hours = self.convert_from_twelve_hour(hours_arr[0])
-        else:
-            hours = hours_arr[0]
-        time = self.format_hours(hours)
+        if len(hours) == 7:
+            hours = "0" + hours
         offset = self.add_offset(date)
-        return time + offset
+        return hours + offset
 
         # arr = hours.split("-")
         # offset = self.utc_offset(county)

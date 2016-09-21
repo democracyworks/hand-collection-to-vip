@@ -21,7 +21,9 @@ class PollingLocationTxt(object):
         # required: print message for exception
         # TODO: concatenate street, city, state and zip
         if not pd.isnull(name):
-            loc_name = name
+            if name.strip()[-1]==",":
+                name = name.strip()[:-1]
+            loc_name = name + ","
         else:
             loc_name = ''
 
@@ -43,12 +45,12 @@ class PollingLocationTxt(object):
         else:
             zip = ''
 
-        return loc_name + " " + adr + " " + city_name + ", IL " + zip
+        return loc_name + " " + adr + ", " + city_name + ", IL " + zip
 
-    def get_directions(self):
+    def get_directions(self, dir):
         """#"""
         # no direct relationship to any column
-        return ''
+        return dir
 
 
     def convert_to_time(self, index, time):
@@ -155,7 +157,7 @@ class PollingLocationTxt(object):
                                               row['address_two'], row['city'], row['zip']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
-            lambda row: self.get_directions(), axis=1)
+            lambda row: self.get_directions(row['directions']), axis=1)
 
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)
@@ -235,6 +237,9 @@ class PollingLocationTxt(object):
                 'start_time', 'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change',
                   'index','notes'], inplace=True, axis=1)
 
+        cols = ['address_line', 'directions',
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id']
+        plt = plt.reindex(columns= cols)
         plt = self.dedupe(plt)
         print plt
 
@@ -252,7 +257,7 @@ if __name__ == '__main__':
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
     early_voting_file = config.data_folder + state_file
 
-    colnames = ['ocd_division', 'homepage', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip',
+    colnames = ['ocd_division', 'homepage', 'county', 'name', 'address_one', 'address_two', 'directions', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change', 'notes']
 
 

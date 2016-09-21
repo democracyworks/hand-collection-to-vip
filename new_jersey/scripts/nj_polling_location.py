@@ -2,7 +2,7 @@ import pandas as pd
 import time
 import config
 import hashlib
-from time import strftime
+
 
 class PollingLocationTxt(object):
     """
@@ -59,20 +59,22 @@ class PollingLocationTxt(object):
     def convert_to_time(self, index, time):
         #TODO: convert time strings into a time format--ie 1000 to 10:00
        if not pd.isnull(time):
-            time_str = str(int(time))
-            if len(time_str) == 4:
-                hours = time_str[0:2]
-                mins = time_str[2:]
-                time_str = hours + ":" + mins
-                return time_str
-            elif len(time_str) == 3:
-                hours = time_str[0]
-                mins = time_str[1:]
-                time_str = hours + ":" +mins
-                return time_str
-            else:
-                # print 'Hours were not in the proper format in line ' + str(index) + '.'
-                return ''
+            time_str = str(time)
+            arr = time_str.split(" - ")[0].split(":")
+            return arr[0] + ":" + arr[1]
+            # if len(time_str) == 4:
+            #     hours = time_str[0:2]
+            #     mins = time_str[2:]
+            #     time_str = hours + ":" + mins
+            #     return time_str
+            # elif len(time_str) == 3:
+            #     hours = time_str[0]
+            #     mins = time_str[1:]
+            #     time_str = hours + ":" +mins
+            #     return time_str
+            # else:
+            #     # print 'Hours were not in the proper format in line ' + str(index) + '.'
+            #     return ''
        else:
             return ""
 
@@ -80,6 +82,7 @@ class PollingLocationTxt(object):
         #convert 24 hour time to 12 hour time
         #TODO: convert the time and add AM/PM. I.e. 16:30 to 4:30PM
         if not pd.isnull(time_str):
+            # print time_str
             d = time.strptime(time_str, "%H:%M")
             formatted_time = time.strftime("%I:%M %p", d)
             return formatted_time
@@ -89,9 +92,12 @@ class PollingLocationTxt(object):
 
     def get_hours(self, index, start_time, end_time):
         # create conditional when/if column is present
+
         if not pd.isnull(start_time) and not pd.isnull(end_time):
+
             start_time = self.convert_to_time(index, start_time)
             end_time = self.convert_to_time(index, end_time)
+
             formatted_start_str = self.convert_to_twelve_hour(index, start_time)
             formatted_end_str = self.convert_to_twelve_hour(index, end_time)
             hours_str = formatted_start_str + "-" + formatted_end_str
@@ -201,10 +207,11 @@ class PollingLocationTxt(object):
     def export_for_schedule_and_locality(self):
         intermediate_doc = self.build_polling_location_txt()
 
+
+        # intermediate_doc = self.dedupe(intermediate_doc)
+
         intermediate_doc = intermediate_doc.drop_duplicates(subset=['start_time', 'end_time', 'start_date',
                                                                     'end_date', 'address_line'])
-
-        print intermediate_doc
 
         intermediate_doc.to_csv(config.output + 'intermediate_doc.csv', index=False, encoding='utf-8')
 
@@ -248,17 +255,19 @@ if __name__ == '__main__':
     state_file='new_jersey_early_voting_info.csv'
 
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
-    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/new_jersey/scripts/early_voting_input/" + state_file
+    early_voting_file = config.input + state_file
 
     colnames = ['office_name', 'official_title', 'ocd_division', 'division_description', 'homepage', 'phone',
                 'email', 'street', 'directions', 'city', 'state', 'zip', 'start_time', 'end_time',
                 'start_date', 'end_date', 'must_apply_for_mail_ballot', 'notes']
-    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
-    print early_voting_df
+    #print early_voting_df
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
 
-    #pl.write_polling_location_txt()
+    print pl.base_df
+
+    pl.write_polling_location_txt()
     pl.export_for_schedule_and_locality()
 

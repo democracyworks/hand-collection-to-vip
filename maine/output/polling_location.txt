@@ -1,53 +1,53 @@
 address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-"334 Water St Addison, ME 04606",,8:00 AM-4:00 PM,,ho11469471,false,true,,,,poll83681847
-"82 School House Road 30 Orient, ME 04471",,8:00 AM-4:00 PM,,ho79372468,false,true,,,,poll23791279
-"17 Bridgham St Ashland, ME 04732",,7:30 AM-4:30 PM,,ho16398414,false,true,,,,poll39210483
-"63 Broadway Street Baileyville, ME 04694",,8:00 AM-4:00 PM,,ho34623767,false,true,,,,poll67108121
-"36 School Street Suite 1 Sherman, ME 04776",,8:00 AM-4:00 PM,,ho58610921,false,true,,,,poll11544192
-"321 Main Street Bingham, ME 04920",,9:00 AM-5:00 PM,,ho25641809,false,true,,,,poll39369552
-"18 Union Street Blue Hill, ME 04614",,8:00 AM-4:00 PM,,ho85178257,false,true,,,,poll14839104
-"1011 Wiscasset Road Boothbay, ME 04537",,8:30 AM-4:30 PM,,ho40027559,false,true,,,,poll67000465
-"23 Bay Road Brooklin, ME 04616",,8:30 AM-4:30 PM,,ho65020722,false,true,,,,poll14066568
-"185 Portland Road Buxton, ME 04093",,8:30 AM-4:30 PM,,ho1286454,false,true,,,,poll60508122
-"48 Morton Avenue, Suite A Dover-Foxcroft, ME 04426",,7:30 AM-4:00 PM,,ho30090505,false,true,,,,poll33348027
-"906 Main Road Eddington, ME 04428",,7:30 AM-4:00 PM,,ho55361982,false,true,,,,poll39377643
-"2589 Main Street Fayette, ME 04349",,7:00 AM-4:30 PM,,ho7257077,false,true,,,,poll95494280
-"18 Community Center Drive Fort Fairfield, ME 04742",,7:00 AM-4:30 PM,,ho50770476,false,true,,,,poll43762445
-"24 Main Street Gray, ME 04039",,8:30 AM-12:00 PM,,ho86961440,false,true,,,,poll41745396
-"333 Billings Road Hermon, ME 04401",,8:00 AM-5:00 PM,,ho55105612,false,true,,,,poll63324186
-"34 Town Farm Rd Hollis, ME 04042",,9:00 AM-4:00 PM,,ho38082866,false,true,,,,poll43779094
-"441 Camden Road Hope, ME 04847",,7:30 AM-4:30 PM,,ho17287759,false,true,,,,poll71951321
-"8 Main Street Howland, ME 04448",,8:00 AM-4:00 PM,,ho60549241,false,true,,,,poll84502273
-"4010 Broadway Kenduskeag, ME 04450",,9:00 AM-5:00 PM,,ho52342271,false,true,,,,poll14144836
-"2 Main St Livermore Falls, ME 04254",,8:30 AM-4:00 PM,,ho44372025,false,true,,,,poll56877553
-"10 Crash Road Livermore, ME 04253",,8:30 AM-4:00 PM,,ho76638572,false,true,,,,poll40512348
-"11 South Waterboro Road Lyman, ME 04002",,9:00 AM-4:00 PM,,ho59755084,false,true,,,,poll75054905
-"26 Weston Avenue Madison, ME 04950",,7:30 AM-4:00 PM,,ho6515545,false,true,,,,poll23209308
-"37 Main Street Mars Hill, ME 04758",,8:00 AM-4:00 PM,,ho18438771,false,true,,,,poll34092758
-"329 Woodman Hill Road Minot, ME 04258",,8:00 AM-4:00 PM,,ho16161487,false,true,,,,poll24417001
-"705 Main Street Moose River, ME 04945",,3:00 AM-6:00 PM,,ho72968264,false,true,,,,poll73600506
-"422 Bear River Road Newry Town, ME 04261",,7:00 AM-5:00 PM,,ho90949065,false,true,,,,poll85221753
-"59 Main Street Orono, ME 04473",,8:30 AM-4:30 PM,,ho42322761,false,true,,,,poll77267554
-"1042 Main Road Phippsburg, ME 04562",,9:00 AM-5:00 PM,,ho10459205,false,true,,,,poll42583013
-"1231 Maine Street Poland, ME 04274",,9:00 AM-4:00 PM,,ho14572312,false,true,,,,poll85819512
-"71 Main Street Porter, ME 04068",,9:00 AM-6:00 PM,,ho33785182,false,true,,,,poll48538681
-"121 Kinderhook Street Randolph, ME 04346",,9:00 AM-2:00 PM,,ho74650247,false,true,,,,poll38802041
-"270 Pleasant Rockland, ME 04841",,8:00 AM-4:30 PM,,ho52194330,false,true,,,,poll70896977
-"145 Congress Street Rumford, ME 04276",,8:00 AM-4:00 PM,,ho97706444,false,true,,,,poll10841161
-"1 Union Street Searsport, ME 04974",,8:30 AM-4:00 PM,,ho36279687,false,true,,,,poll11352507
-"36 School St Suite 1 Sherman, ME 04776",,8:00 AM-4:00 PM,,ho34536042,false,true,,,,poll20884199
-"36 School Street, Suite 1 Sherman, ME 04776",,8:00 AM-4:00 PM,,ho71526278,false,true,,,,poll923943
-"217 Main Street Stockton Springs, ME 04981",,9:00 AM-4:30 PM,,ho3263281,false,true,,,,poll66329289
-"1888 U S Hwy 1 Sullivan, ME 04664",,8:00 AM-12:00 PM,,ho52705732,false,true,,,,poll34877649
-"20 Harbor Dr Bass Harbor, ME 04653",,8:00 AM-4:00 PM,,ho95793221,false,true,,,,poll46742973
-"11 Turner Center Rd Turner, ME 04282",,8:00 AM-4:30 PM,,ho6235190,false,true,,,,poll9732933
-"1084 Main Street Veazie, ME 04401",,8:00 AM-4:30 PM,,ho24406728,false,true,,,,poll3187556
-"19 Washington School Road Vinalhaven, ME 04863",,8:00 AM-5:00 PM,,ho87234708,false,true,,,,poll11551943
-"54 Gurney Hill Road Waldo, ME 04915",,4:00 AM-6:00 PM,,ho17259796,false,true,,,,poll46651122
-"1287 Main Street Washburn, ME 04786",,7:00 AM-4:00 PM,,ho77105214,false,true,,,,poll59059924
-"40 Old Union Rd Washington, ME 04574",,9:00 AM-1:00 PM,,ho92901102,false,true,,,,poll13243293
-"208 Sanford Rd Wells, ME 04090",,8:00 AM-5:00 PM,,ho8500664,false,true,,,,poll48853406
-"8 School Road Windham, ME 04062",,8:00 AM-4:00 PM,,ho74649794,false,true,,,,poll74819292
-"20 School Street Winterport, ME 04496",,9:00 AM-5:00 PM,,ho90627519,false,true,,,,poll9176419
-"391 Quimby Road Winterville Plantation, ME 04739",,1:00 AM-5:00 PM,,ho20575578,false,true,,,,poll65827824
-"843 Woodland Center Road, Suite 1 Woodland, ME 04736",,8:00 AM-4:00 PM,,ho51633783,false,true,,,,poll6119126
+"334 Water St, Addison, ME 04606",,08:00 AM-04:00 PM,,ho23878255,false,true,,,,poll74409722
+"82 School House Road 30, Orient, ME 04471",,08:00 AM-04:00 PM,,ho49125216,false,true,,,,poll35747896
+"17 Bridgham St, Ashland, ME 04732",,07:30 AM-04:30 PM,,ho75448885,false,true,,,,poll60763126
+"63 Broadway Street, Baileyville, ME 04694",,08:00 AM-04:00 PM,,ho20051154,false,true,,,,poll6773709
+"36 School Street Suite 1, Sherman, ME 04776",,08:00 AM-04:00 PM,,ho76845899,false,true,,,,poll39787730
+"321 Main Street, Bingham, ME 04920",,09:00 AM-05:00 PM,,ho32313926,false,true,,,,poll36760992
+"18 Union Street, Blue Hill, ME 04614",,08:00 AM-04:00 PM,,ho337206,false,true,,,,poll9692023
+"1011 Wiscasset Road, Boothbay, ME 04537",,08:30 PM-04:30 PM,,ho73683782,false,true,,,,poll29340326
+"23 Bay Road, Brooklin, ME 04616",,08:30 AM-04:30 PM,,ho55004023,false,true,,,,poll83150136
+"185 Portland Road, Buxton, ME 04093",,08:30 AM-04:30 PM,,ho64203754,false,true,,,,poll43745555
+"48 Morton Avenue, Suite A, Dover-Foxcroft, ME 04426",,07:30 AM-04:00 PM,,ho14593639,false,true,,,,poll45816035
+"906 Main Road, Eddington, ME 04428",,07:30 AM-04:00 PM,,ho95249125,false,true,,,,poll11405766
+"2589 Main Street, Fayette, ME 04349",,07:00 AM-04:30 PM,,ho41848683,false,true,,,,poll38692016
+"18 Community Center Drive, Fort Fairfield, ME 04742",,07:00 AM-04:30 PM,,ho25174044,false,true,,,,poll23073859
+"24 Main Street, Gray, ME 04039",,08:30 AM-12:00 PM,,ho54291749,false,true,,,,poll90400300
+"333 Billings Road, Hermon, ME 04401",,08:00 AM-05:00 PM,,ho80287507,false,true,,,,poll58914959
+"34 Town Farm Rd, Hollis, ME 04042",,09:00 AM-04:00 PM,,ho56106083,false,true,,,,poll49127266
+"441 Camden Road, Hope, ME 04847",,07:30 AM-04:30 PM,,ho52889271,false,true,,,,poll25733383
+"8 Main Street, Howland, ME 04448",,08:00 AM-04:00 PM,,ho90845879,false,true,,,,poll23674039
+"4010 Broadway, Kenduskeag, ME 04450",,09:00 AM-05:00 PM,,ho44272801,false,true,,,,poll51150311
+"2 Main St, Livermore Falls, ME 04254",,08:30 AM-04:00 PM,,ho18964083,false,true,,,,poll62343405
+"10 Crash Road, Livermore, ME 04253",,08:30 AM-04:00 PM,,ho75948549,false,true,,,,poll43249811
+"11 South Waterboro Road, Lyman, ME 04002",,09:00 AM-04:00 PM,,ho6827284,false,true,,,,poll2418914
+"26 Weston Avenue, Madison, ME 04950",,07:30 AM-04:00 PM,,ho2540695,false,true,,,,poll18019812
+"37 Main Street, Mars Hill, ME 04758",,08:00 AM-04:00 PM,,ho67563549,false,true,,,,poll28721783
+"329 Woodman Hill Road, Minot, ME 04258",,08:00 AM-04:00 PM,,ho99971346,false,true,,,,poll30241085
+"705 Main Street, Moose River, ME 04945",,03:00 PM-06:00 PM,,ho29935306,false,true,,,,poll63812723
+"422 Bear River Road, Newry Town, ME 04261",,07:00 AM-05:00 PM,,ho16125663,false,true,,,,poll83700400
+"59 Main Street, Orono, ME 04473",,08:30 AM-04:30 PM,,ho54653119,false,true,,,,poll15213224
+"1042 Main Road, Phippsburg, ME 04562",,09:00 AM-05:00 PM,,ho65625399,false,true,,,,poll35746211
+"1231 Maine Street, Poland, ME 04274",,09:00 AM-04:00 PM,,ho37651222,false,true,,,,poll29352138
+"71 Main Street, Porter, ME 04068",,09:00 AM-06:00 PM,,ho83483748,false,true,,,,poll37771768
+"121 Kinderhook Street, Randolph, ME 04346",,09:00 AM-02:00 PM,,ho20145723,false,true,,,,poll29731158
+"270 Pleasant, Rockland, ME 04841",,08:00 AM-04:30 PM,,ho81032080,false,true,,,,poll92995609
+"145 Congress Street, Rumford, ME 04276",,08:00 AM-04:00 PM,,ho43752577,false,true,,,,poll96675660
+"1 Union Street, Searsport, ME 04974",,08:30 AM-04:00 PM,,ho32761156,false,true,,,,poll3260166
+"36 School St Suite 1, Sherman, ME 04776",,08:00 AM-04:00 PM,,ho33601273,false,true,,,,poll51483806
+"36 School Street, Suite 1, Sherman, ME 04776",,08:00 AM-04:00 PM,,ho51272275,false,true,,,,poll46898144
+"217 Main Street, Stockton Springs, ME 04981",,09:00 AM-04:30 PM,,ho10326727,false,true,,,,poll93475291
+"1888 U S Hwy 1, Sullivan, ME 04664",,08:00 AM-12:00 PM,,ho85715603,false,true,,,,poll31520547
+"20 Harbor Dr, Bass Harbor, ME 04653",,08:00 AM-04:00 PM,,ho92920996,false,true,,,,poll98662249
+"11 Turner Center Rd, Turner, ME 04282",,08:00 AM-04:30 PM,,ho22268024,false,true,,,,poll26645634
+"1084 Main Street, Veazie, ME 04401",,08:00 AM-04:30 PM,,ho76299388,false,true,,,,poll30814876
+"19 Washington School Road, Vinalhaven, ME 04863",,08:00 AM-05:00 PM,,ho40870651,false,true,,,,poll81037226
+"54 Gurney Hill Road, Waldo, ME 04915",,04:00 PM-06:00 PM,,ho46669776,false,true,,,,poll95986102
+"1287 Main Street, Washburn, ME 04786",,07:00 AM-04:00 PM,,ho79541328,false,true,,,,poll41805138
+"40 Old Union Rd, Washington, ME 04574",,09:00 AM-01:00 PM,,ho95430261,false,true,,,,poll71182703
+"208 Sanford Rd, Wells, ME 04090",,08:00 AM-05:00 PM,,ho68645878,false,true,,,,poll66572317
+"8 School Road, Windham, ME 04062",,08:00 AM-04:00 PM,,ho35630898,false,true,,,,poll16208015
+"20 School Street, Winterport, ME 04496",,09:00 AM-05:00 PM,,ho54652907,false,true,,,,poll47287861
+"391 Quimby Road, Winterville Plantation, ME 04739",,01:00 PM-05:00 PM,,ho59414169,false,true,,,,poll22821187
+"843 Woodland Center Road, Suite 1, Woodland, ME 04736",,08:00 AM-04:00 PM,,ho57286814,false,true,,,,poll12148392

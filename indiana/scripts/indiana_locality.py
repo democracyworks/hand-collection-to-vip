@@ -216,7 +216,7 @@ class LocalityTxt(object):
         # reorder columns
         cols = ['election_administration_id', 'external_identifier_type', 'external_identifier_othertype',
                 'external_identifier_value', 'name', 'polling_location_ids', 'state_id', 'type',
-                'other_type', 'grouped_index', 'id']
+                'other_type', 'grouped_index', 'id', 'dirs']
 
         final = loc.reindex(columns=cols)
         # print final
@@ -240,7 +240,7 @@ if __name__ == '__main__':
 
     early_voting_file = config.output + state_file
 
-    colnames = ['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
+    colnames = ['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'dirs','city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'notes',
                 'index', 'address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id']

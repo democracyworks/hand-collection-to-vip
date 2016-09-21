@@ -30,11 +30,11 @@ class PollingLocationTxt(object):
             city_name = ''
 
         if zip_code:
-            zip = str(zip_code[0:4])
+            zip = str(zip_code)[0:5]
         else:
             zip = ''
 
-        return adr + " " + city + ", NE " + zip
+        return adr + ", " + city + ", NE " + zip
 
     def get_directions(self):
         """#"""
@@ -206,7 +206,7 @@ class PollingLocationTxt(object):
     def export_for_schedule_and_locality(self):
         intermediate_doc = self.build_polling_location_txt()
 
-        print intermediate_doc
+        #print intermediate_doc
         # intermediate_doc = self.dedupe(intermediate_doc)
 
         intermediate_doc = intermediate_doc.drop_duplicates(subset=['start_time', 'end_time', 'start_date',

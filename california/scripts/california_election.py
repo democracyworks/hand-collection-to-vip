@@ -55,7 +55,7 @@ class ElectionTxt(object):
 
     def get_date(self):
         """#"""
-        return '11/8/2016'
+        return '2016-11-08'
 
     def get_name(self):
         """#"""
@@ -245,7 +245,7 @@ if __name__ == '__main__':
 
     early_voting_path = config.output + "intermediate_doc.csv"
     #early_voting_path = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/kansas_early_voting_info.csv"
-    colnames = ['ocd-division', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time',
+    colnames = ['ocd-division', 'county', 'name', 'address_one', 'address_two', 'dirs', 'city', 'state', 'zip', 'start_time',
                 'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change',
                 'index', 'address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'source_id']
