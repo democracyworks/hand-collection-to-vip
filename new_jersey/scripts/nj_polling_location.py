@@ -32,7 +32,7 @@ class PollingLocationTxt(object):
         else:
             zip = ''
 
-        final_line = address_line + " " + city_name + ", NJ " + zip
+        final_line = address_line + ", " + city_name + ", NJ " + zip
         return final_line
 
     def convert_zip_code(self, index, zip_code):
@@ -259,6 +259,6 @@ if __name__ == '__main__':
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
 
-    #pl.write_polling_location_txt()
-    pl.export_for_schedule_and_locality()
+    pl.write_polling_location_txt()
+    #pl.export_for_schedule_and_locality()
 

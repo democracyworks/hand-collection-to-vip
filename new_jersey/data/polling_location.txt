@@ -1,24 +1,24 @@
 address_line,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-"Historic Court House Complex, 5903 Main Street Mays Landing, NJ 08330",08:30 AM-04:30 PM,,ho33124669,false,true,,,,poll98247693
-"One Bergen County Plaza, Room 310 Hackensack, NJ 07601",08:30 AM-04:00 PM,,ho60493655,false,true,,,,poll40372757
-"County Office Building, 49 Rancocas Road Room G22 Mount Holly, NJ 08060",08:00 AM-04:00 PM,,ho56098634,false,true,,,,poll74973525
-"Courthouse, Room 102, 520 Market Street Camden, NJ 08101",08:30 AM-04:00 PM,,ho18312256,false,true,,,,poll68336913
-"100 University Court Blackwood, NJ 08012",08:30 AM-04:00 PM,,ho8002677,false,true,,,,poll81879542
-"10 W. Mechanic Street Cape May Courthouse, NJ 08210",08:30 AM-04:30 PM,,ho94488398,false,true,,,,poll38983223
-"555 Shiloh Pike Bridgeton, NJ 08302",08:30 AM-04:00 PM,,ho2119046,false,true,,,,poll58726283
-"Hall of Records, 465 Dr. Martin Luther King, Jr. Boulevard, Fourth Floor, Room 411 Newark, NJ 07101",09:00 AM-04:00 PM,,ho49467680,false,true,,,,poll4192658
-"550 Grove Road West Deptford, NJ 08066",08:30 AM-04:30 PM,,ho41630685,false,true,,,,poll99274575
-"1750 Deptford Center Rd Deptford Township, NJ 08096",10:00 AM-09:00 PM,,ho95915048,false,true,,,,poll68582886
-"Hudson County Plaza, 257 Cornelison Avenue, 4th Floor Jersey City, NJ 07302",08:30 AM-04:30 PM,,ho53434528,false,true,,,,poll22336735
-"71 Main Street, Hall of Records Flemington, NJ 08822",09:00 AM-01:00 PM,,ho67896566,false,true,,,,poll81398790
-"640 S. Broad Street Trenton, NJ 08650",08:30 AM-04:30 PM,,ho80945248,false,true,,,,poll19481053
-"11 Kennedy Blvd. East Brunswick, NJ 08816",08:30 AM-04:15 PM,,ho82774956,false,true,,,,poll52666288
-"300 Halls Mill Road Freehold, NJ 07728",08:30 AM-04:30 PM,,ho77717772,false,true,,,,poll26114854
-"10 Court Street Morristown, NJ 07963",08:00 AM-04:30 PM,,ho89624757,false,true,,,,poll45769320
-"Courthouse, 118 Washington Street Toms River, NJ 08754",08:00 AM-04:30 PM,,ho38973677,false,true,,,,poll68319453
-"401 Grand Street, Room 123 Paterson, NJ 07505",08:30 AM-04:30 PM,,ho9635109,false,true,,,,poll73366023
-"110 Fifth Street, Suite 200 Salem, NJ 08079",08:30 AM-04:30 PM,,ho75981014,false,true,,,,poll30447281
-"Administration Building, 20 Grove Street Somerville, NJ 08876",08:15 AM-04:00 PM,,ho13415899,false,true,,,,poll32455109
-"83 Spring Street, Suite 305 Newton, NJ 07860",08:00 AM-04:00 PM,,ho91954705,false,true,,,,poll14895419
-"2 Broad Street, Room 113 Elizabeth, NJ 07201",08:30 AM-04:00 PM,,ho60846229,false,true,,,,poll17039496
-"Courthouse, 413 Second Street Belvidere, NJ 07823",08:00 AM-04:30 PM,,ho55928255,false,true,,,,poll53807987
+"Historic Court House Complex, 5903 Main Street, Mays Landing, NJ 08330",08:30 AM-04:30 PM,,ho75239337,false,true,,,,poll8631477
+"One Bergen County Plaza, Room 310, Hackensack, NJ 07601",08:30 AM-04:00 PM,,ho50238449,false,true,,,,poll52164499
+"County Office Building, 49 Rancocas Road Room G-22, Mount Holly, NJ 08060",08:00 AM-04:00 PM,,ho69539110,false,true,,,,poll71816567
+"Courthouse, Room 102, 520 Market Street, Camden, NJ 08101",08:30 AM-04:00 PM,,ho72242665,false,true,,,,poll1652353
+"100 University Court, Blackwood, NJ 08012",08:30 AM-04:00 PM,,ho43996004,false,true,,,,poll15109550
+"10 W. Mechanic Street, Cape May Courthouse, NJ 08210",08:30 AM-04:30 PM,,ho55731989,false,true,,,,poll32041484
+"555 Shiloh Pike, Bridgeton, NJ 08302",08:30 AM-04:00 PM,,ho49699362,false,true,,,,poll75801284
+"Hall of Records, 465 Dr. Martin Luther King, Jr. Boulevard, Fourth Floor, Room 411, Newark, NJ 07101",09:00 AM-04:00 PM,,ho36858397,false,true,,,,poll95748722
+"550 Grove Road, West Deptford, NJ 08066",08:30 AM-04:30 PM,,ho308316,false,true,,,,poll41554570
+"1750 Deptford Center Rd, Deptford Township, NJ 08096",10:00 AM-09:00 PM,,ho96617495,false,true,,,,poll93396293
+"Hudson County Plaza, 257 Cornelison Avenue, 4th Floor, Jersey City, NJ 07302",08:30 AM-04:30 PM,,ho72416973,false,true,,,,poll53526812
+"71 Main Street, Hall of Records, Flemington, NJ 08822",09:00 AM-01:00 PM,,ho38237166,false,true,,,,poll12840449
+"640 S. Broad Street, Trenton, NJ 08650",08:30 AM-04:30 PM,,ho90668241,false,true,,,,poll68641705
+"11 Kennedy Blvd., East Brunswick, NJ 08816",08:30 AM-04:15 PM,,ho41290549,false,true,,,,poll63296675
+"300 Halls Mill Road, Freehold, NJ 07728",08:30 AM-04:30 PM,,ho73499220,false,true,,,,poll73959951
+"10 Court Street, Morristown, NJ 07963",08:00 AM-04:30 PM,,ho29096159,false,true,,,,poll8604575
+"Courthouse, 118 Washington Street, Toms River, NJ 08754",08:00 AM-04:30 PM,,ho47032245,false,true,,,,poll65814467
+"401 Grand Street, Room 123, Paterson, NJ 07505",08:30 AM-04:30 PM,,ho23309558,false,true,,,,poll7281238
+"110 Fifth Street, Suite 200, Salem, NJ 08079",08:30 AM-04:30 PM,,ho23975656,false,true,,,,poll49717595
+"Administration Building, 20 Grove Street, Somerville, NJ 08876",08:15 AM-04:00 PM,,ho52254109,false,true,,,,poll9352916
+"83 Spring Street, Suite 305, Newton, NJ 07860",08:00 AM-04:00 PM,,ho3599878,false,true,,,,poll48528316
+"2 Broad Street, Room 113, Elizabeth, NJ 07201",08:30 AM-04:00 PM,,ho51129102,false,true,,,,poll94638000
+"Courthouse, 413 Second Street, Belvidere, NJ 07823",08:00 AM-04:30 PM,,ho25045755,false,true,,,,poll70194107

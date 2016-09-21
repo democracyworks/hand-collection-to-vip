@@ -1,21 +1,21 @@
 election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
-,ocd-id,,ocd-division/country:us/state:nj/county:atlantic,atlantic_county0002,poll98247693,st34,other,,loc0001
-,ocd-id,,ocd-division/country:us/state:nj/county:bergen,bergen_county0009,poll40372757,st34,other,,loc0002
-,ocd-id,,ocd-division/country:us/state:nj/county:burlington,burlington_county0020,poll74973525,st34,other,,loc0003
-,ocd-id,,ocd-division/country:us/state:nj/county:camden,camden_county0028,poll68336913 poll81879542,st34,other,,loc0004
-,ocd-id,,ocd-division/country:us/state:nj/county:cape_may,cape_may_county0038,poll38983223,st34,other,,loc0005
-,ocd-id,,ocd-division/country:us/state:nj/county:cumberland,cumberland_county0045,poll58726283,st34,other,,loc0006
-,ocd-id,,ocd-division/country:us/state:nj/county:essex,essex_county0056,poll4192658,st34,other,,loc0007
-,ocd-id,,ocd-division/country:us/state:nj/county:gloucester,gloucester_county0069,poll99274575 poll68582886,st34,other,,loc0008
-,ocd-id,,ocd-division/country:us/state:nj/county:hudson,hudson_county0076,poll22336735,st34,other,,loc0009
-,ocd-id,,ocd-division/country:us/state:nj/county:hunterdon,hunterdon_county0097,poll81398790,st34,other,,loc0010
-,ocd-id,,ocd-division/country:us/state:nj/county:mercer,mercer_county0103,poll19481053,st34,other,,loc0011
-,ocd-id,,ocd-division/country:us/state:nj/county:monmouth,monmouth_county0128,poll26114854,st34,other,,loc0012
-,ocd-id,,ocd-division/country:us/state:nj/county:morris,morris_county0146,poll45769320,st34,other,,loc0013
-,ocd-id,,ocd-division/country:us/state:nj/county:ocean,ocean_county0147,poll68319453,st34,other,,loc0014
-,ocd-id,,ocd-division/country:us/state:nj/county:passaic,passaic_county0160,poll73366023,st34,other,,loc0015
-,ocd-id,,ocd-division/country:us/state:nj/county:salem,salem_county0164,poll30447281,st34,other,,loc0016
-,ocd-id,,ocd-division/country:us/state:nj/county:somerset,somerset_county0171,poll32455109,st34,other,,loc0017
-,ocd-id,,ocd-division/country:us/state:nj/county:sussex,sussex_county0179,poll14895419,st34,other,,loc0018
-,ocd-id,,ocd-division/country:us/state:nj/county:union,union_county0189,poll17039496,st34,other,,loc0019
-,ocd-id,,ocd-division/country:us/state:nj/county:warren,warren_county0199,poll53807987,st34,other,,loc0020
+,ocd-id,,ocd-division/country:us/state:nj/county:atlantic,atlantic_county0002,poll8631477,st34,other,,loc0001
+,ocd-id,,ocd-division/country:us/state:nj/county:bergen,bergen_county0009,poll52164499,st34,other,,loc0002
+,ocd-id,,ocd-division/country:us/state:nj/county:burlington,burlington_county0020,poll71816567,st34,other,,loc0003
+,ocd-id,,ocd-division/country:us/state:nj/county:camden,camden_county0028,poll1652353 poll15109550,st34,other,,loc0004
+,ocd-id,,ocd-division/country:us/state:nj/county:cape_may,cape_may_county0038,poll32041484,st34,other,,loc0005
+,ocd-id,,ocd-division/country:us/state:nj/county:cumberland,cumberland_county0045,poll75801284,st34,other,,loc0006
+,ocd-id,,ocd-division/country:us/state:nj/county:essex,essex_county0056,poll95748722,st34,other,,loc0007
+,ocd-id,,ocd-division/country:us/state:nj/county:gloucester,gloucester_county0069,poll93396293 poll41554570,st34,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:nj/county:hudson,hudson_county0076,poll53526812,st34,other,,loc0009
+,ocd-id,,ocd-division/country:us/state:nj/county:hunterdon,hunterdon_county0097,poll12840449,st34,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:nj/county:mercer,mercer_county0103,poll68641705,st34,other,,loc0011
+,ocd-id,,ocd-division/country:us/state:nj/county:monmouth,monmouth_county0128,poll73959951,st34,other,,loc0012
+,ocd-id,,ocd-division/country:us/state:nj/county:morris,morris_county0146,poll8604575,st34,other,,loc0013
+,ocd-id,,ocd-division/country:us/state:nj/county:ocean,ocean_county0147,poll65814467,st34,other,,loc0014
+,ocd-id,,ocd-division/country:us/state:nj/county:passaic,passaic_county0160,poll7281238,st34,other,,loc0015
+,ocd-id,,ocd-division/country:us/state:nj/county:salem,salem_county0164,poll49717595,st34,other,,loc0016
+,ocd-id,,ocd-division/country:us/state:nj/county:somerset,somerset_county0171,poll9352916,st34,other,,loc0017
+,ocd-id,,ocd-division/country:us/state:nj/county:sussex,sussex_county0179,poll48528316,st34,other,,loc0018
+,ocd-id,,ocd-division/country:us/state:nj/county:union,union_county0189,poll94638000,st34,other,,loc0019
+,ocd-id,,ocd-division/country:us/state:nj/county:warren,warren_county0199,poll70194107,st34,other,,loc0020
