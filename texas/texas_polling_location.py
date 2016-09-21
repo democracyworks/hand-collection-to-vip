@@ -53,6 +53,7 @@ class PollingLocationTxt(object):
 
     def get_hours(self, index, start_time, end_time):
         """Convert from 24 to 12 hour format."""
+        print index, start_time, end_time
 
         #hour_min_time_format = "%H:%M"
         #hour_min_sec_time_format= "%H:%M:%S"
@@ -224,10 +225,10 @@ if __name__ == '__main__':
 
     state = config.state_abbreviation_upper
 
-    state_file='texas_early_voting_info.csv'
+    state_file='texas_early_voting_info_clean.csv'
 
     colnames = ['office_name', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state', 'zip_code',
-                'start_time', 'end_time', 'start_date', 'end_date', 'is_subject_to_change', 'notes']
+                'start_time', 'end_time', 'start_date', 'end_date']
 
     usecols = ['office_name', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state', 'zip_code',
                 'start_time', 'end_time', 'start_date', 'end_date']

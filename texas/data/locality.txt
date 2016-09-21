@@ -1,24 +1,24 @@
 election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
-,ocd-id,,ocd-division/country:us/state:tx/county:anderson,anderson_cou0001,poll91608036,st48,other,,loc0001
+,ocd-id,,ocd-division/country:us/state:tx/county:anderson,anderson_cou0001,poll98625947,st48,other,,loc0001
 ,ocd-id,,ocd-division/country:us/state:tx/county:andrews,andrews_cou0002,poll2942621,st48,other,,loc0002
 ,ocd-id,,ocd-division/country:us/state:tx/county:angelina,angelina_cou0003,poll45638819 poll85112481 poll5341860 poll93158181,st48,other,,loc0003
 ,ocd-id,,ocd-division/country:us/state:tx/county:aransas,aransas_cou0004,poll31023671,st48,other,,loc0004
 ,ocd-id,,ocd-division/country:us/state:tx/county:archer,archer_cou0005,poll67525055 poll26811224 poll46189450,st48,other,,loc0005
 ,ocd-id,,ocd-division/country:us/state:tx/county:armstrong,armstrong_cou0006,poll95060156,st48,other,,loc0006
 ,ocd-id,,ocd-division/country:us/state:tx/county:atascosa,atascosa_cou0007,poll10911764,st48,other,,loc0007
-,ocd-id,,ocd-division/country:us/state:tx/county:austin,austin_cou0008,poll84510513 poll83950825,st48,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:tx/county:austin,austin_cou0008,poll45860567 poll83950825,st48,other,,loc0008
 ,ocd-id,,ocd-division/country:us/state:tx/county:bailey,bailey_cou0009,poll17656682,st48,other,,loc0009
 ,ocd-id,,ocd-division/country:us/state:tx/county:bandera,bandera_cou0010,poll83934015 poll33510333 poll84234496,st48,other,,loc0010
 ,ocd-id,,ocd-division/country:us/state:tx/county:bastrop,bastrop_cou0011,poll10016583 poll82505353 poll49051113 poll26631458,st48,other,,loc0011
 ,ocd-id,,ocd-division/country:us/state:tx/county:baylor,baylor_cou0012,poll56034125,st48,other,,loc0012
-,ocd-id,,ocd-division/country:us/state:tx/county:bee,bee_cou0013,poll44754431,st48,other,,loc0013
+,ocd-id,,ocd-division/country:us/state:tx/county:bee,bee_cou0013,poll55543451 poll53420679,st48,other,,loc0013
 ,ocd-id,,ocd-division/country:us/state:tx/county:bell,bell_cou0014,poll33588986 poll28581524 poll25450382 poll87516012 poll23132732 poll90553799,st48,other,,loc0014
 ,ocd-id,,ocd-division/country:us/state:tx/county:bexar,bexar_cou0015,poll32676261 poll96357150 poll79776802 poll87767356 poll69685205 poll1935273 poll53069165 poll45504642 poll70101396 poll30209227 poll37029254 poll32951380 poll15968745 poll30159937 poll72906404 poll76127820 poll19104874 poll26182792 poll22810967 poll24834662 poll12021842 poll23564115 poll35083728 poll87597644 poll25771324 poll65821488 poll79123777 poll47949800 poll67428784 poll87402763 poll97278594 poll30682891 poll36512839 poll1722156 poll3231403 poll31143408 poll79316315 poll84846220 poll32380138 poll57857103 poll33895652,st48,other,,loc0015
 ,ocd-id,,ocd-division/country:us/state:tx/county:blanco,blanco_cou0016,poll86792495 poll38772393,st48,other,,loc0016
-,ocd-id,,ocd-division/country:us/state:tx/county:borden,borden_cou0017,poll92184530,st48,other,,loc0017
+,ocd-id,,ocd-division/country:us/state:tx/county:borden,borden_cou0017,poll41839157,st48,other,,loc0017
 ,ocd-id,,ocd-division/country:us/state:tx/county:bosque,bosque_cou0018,poll17664989,st48,other,,loc0018
 ,ocd-id,,ocd-division/country:us/state:tx/county:bowie,bowie_cou0019,poll98812612 poll29711485,st48,other,,loc0019
-,ocd-id,,ocd-division/country:us/state:tx/county:brazoria,brazoria_cou0020,poll96595690 poll29581606 poll21151286 poll99534490 poll41582206 poll90687111 poll59653153 poll7255792 poll72897977,st48,other,,loc0020
+,ocd-id,,ocd-division/country:us/state:tx/county:brazoria,brazoria_cou0020,poll96595690 poll69452185 poll29581606 poll21151286 poll41582206 poll49818358 poll59653153 poll82993592 poll51126535 poll95355617 poll65895224 poll7255792 poll83552089 poll3985700 poll72897977,st48,other,,loc0020
 ,ocd-id,,ocd-division/country:us/state:tx/county:brazos,brazos_cou0021,poll95130392 poll49032479 poll75404586 poll11470874 poll80671653,st48,other,,loc0021
 ,ocd-id,,ocd-division/country:us/state:tx/county:brewster,brewster_cou0022,poll38582008,st48,other,,loc0022
 ,ocd-id,,ocd-division/country:us/state:tx/county:briscoe,briscoe_cou0023,poll89808557,st48,other,,loc0023
@@ -28,224 +28,225 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:tx/county:caldwell,caldwell_cou0027,poll20109638,st48,other,,loc0027
 ,ocd-id,,ocd-division/country:us/state:tx/county:calhoun,calhoun_cou0028,poll96895198,st48,other,,loc0028
 ,ocd-id,,ocd-division/country:us/state:tx/county:callahan,callahan_county_ector_cou0029,poll44372959 poll42652033 poll46930580 poll90010077 poll98287821 poll55377325,st48,other,,loc0029
-,ocd-id,,ocd-division/country:us/state:tx/county:cameron,cameron_cou0030,poll27683056 poll69474618 poll86499069 poll14834082 poll55658081 poll82355732 poll76083713 poll79385491 poll21974541 poll46942448 poll42173732 poll10779760 poll29136651 poll23293692 poll64075508 poll65283777 poll81290674 poll82691482 poll40981948 poll311498 poll248757 poll68355182 poll2902003 poll56932774 poll53403197,st48,other,,loc0030
+,ocd-id,,ocd-division/country:us/state:tx/county:cameron,cameron_cou0030,poll27683056 poll69474618 poll86499069 poll85047600 poll14834082 poll55658081 poll82355732 poll76083713 poll79385491 poll53403197 poll46942448 poll42173732 poll10779760 poll29136651 poll23293692 poll21974541 poll17348940 poll65283777 poll34823482 poll22566733 poll81290674 poll82691482 poll40981948 poll311498 poll64075508 poll70735349 poll68355182 poll2902003 poll56932774 poll83719454,st48,other,,loc0030
 ,ocd-id,,ocd-division/country:us/state:tx/county:camp,camp_cou0031,poll68848974,st48,other,,loc0031
 ,ocd-id,,ocd-division/country:us/state:tx/county:carson,carson_cou0032,poll95508628,st48,other,,loc0032
 ,ocd-id,,ocd-division/country:us/state:tx/county:cass,cass_cou0033,poll32296319 poll97901242,st48,other,,loc0033
-,ocd-id,,ocd-division/country:us/state:tx/county:castro,castro_cou0034,poll9089384,st48,other,,loc0034
+,ocd-id,,ocd-division/country:us/state:tx/county:castro,castro_cou0034,poll50797903,st48,other,,loc0034
 ,ocd-id,,ocd-division/country:us/state:tx/county:chambers,comal_county_chambers_cou0035,poll76956251 poll28752093 poll84999424 poll6295501 poll70882136 poll10515749 poll57376370,st48,other,,loc0035
 ,ocd-id,,ocd-division/country:us/state:tx/county:cherokee,cherokee_cou0036,poll33663659 poll90521446 poll93308492,st48,other,,loc0036
 ,ocd-id,,ocd-division/country:us/state:tx/county:childress,childress_cou0037,poll46562188,st48,other,,loc0037
 ,ocd-id,,ocd-division/country:us/state:tx/county:clay,clay_cou0038,poll3879269,st48,other,,loc0038
-,ocd-id,,ocd-division/country:us/state:tx/county:cochran,cochran_cou0039,poll97153018,st48,other,,loc0039
+,ocd-id,,ocd-division/country:us/state:tx/county:cochran,cochran_cou0039,poll8944694 poll52582741,st48,other,,loc0039
 ,ocd-id,,ocd-division/country:us/state:tx/county:coke,coke_cou0040,poll43279645,st48,other,,loc0040
 ,ocd-id,,ocd-division/country:us/state:tx/county:coleman,coleman_cou0041,poll79492908,st48,other,,loc0041
 ,ocd-id,,ocd-division/country:us/state:tx/county:collin,collin_cou0042,poll39866879,st48,other,,loc0042
-,ocd-id,,ocd-division/country:us/state:tx/county:collingsworth,collingsworth_cou0043,poll94802568,st48,other,,loc0043
+,ocd-id,,ocd-division/country:us/state:tx/county:collingsworth,collingsworth_cou0043,poll12454164 poll37301233,st48,other,,loc0043
 ,ocd-id,,ocd-division/country:us/state:tx/county:colorado,colorado_cou0044,poll21568736,st48,other,,loc0044
 ,ocd-id,,ocd-division/country:us/state:tx/county:comal,comal_cou0045,poll75670446,st48,other,,loc0045
 ,ocd-id,,ocd-division/country:us/state:tx/county:comanche,comanche_cou0046,poll82062795 poll82476360,st48,other,,loc0046
 ,ocd-id,,ocd-division/country:us/state:tx/county:concho,concho_cou0047,poll93761186,st48,other,,loc0047
 ,ocd-id,,ocd-division/country:us/state:tx/county:cooke,cooke_cou0048,poll88199506,st48,other,,loc0048
 ,ocd-id,,ocd-division/country:us/state:tx/county:coryell,coryell_cou0049,poll71942748 poll92831193,st48,other,,loc0049
-,ocd-id,,ocd-division/country:us/state:tx/county:crane,crane_cou0050,poll56507510,st48,other,,loc0050
-,ocd-id,,ocd-division/country:us/state:tx/county:crockett,crockett_cou0051,poll42341748,st48,other,,loc0051
-,ocd-id,,ocd-division/country:us/state:tx/county:crosby,crosby_cou0052,poll20297706,st48,other,,loc0052
-,ocd-id,,ocd-division/country:us/state:tx/county:culberson,culberson_cou0053,poll97430571,st48,other,,loc0053
-,ocd-id,,ocd-division/country:us/state:tx/county:dallam,dallam_cou0054,poll47879663,st48,other,,loc0054
-,ocd-id,,ocd-division/country:us/state:tx/county:dallas,dallas_cou0055,poll25303101,st48,other,,loc0055
-,ocd-id,,ocd-division/country:us/state:tx/county:dawson,dawson_cou0056,poll68859703,st48,other,,loc0056
-,ocd-id,,ocd-division/country:us/state:tx/county:deaf_smith,deaf_smith_cou0057,poll68181454,st48,other,,loc0057
-,ocd-id,,ocd-division/country:us/state:tx/county:delta,delta_cou0058,poll19811042,st48,other,,loc0058
-,ocd-id,,ocd-division/country:us/state:tx/county:denton,denton_cou0059,poll50888020 poll10678423 poll64364237 poll13736168 poll26585518 poll73118366 poll18691201 poll18411762 poll42880479 poll37293880 poll26316412 poll49392288 poll12201099 poll76086954 poll23600865 poll49961053 poll42475900 poll10487634 poll71852868 poll198205 poll72055117 poll22899484,st48,other,,loc0059
-,ocd-id,,ocd-division/country:us/state:tx/county:dewitt,dewitt_cou0060,poll77909598,st48,other,,loc0060
-,ocd-id,,ocd-division/country:us/state:tx/county:dickens,dickens_cou0061,poll56446463,st48,other,,loc0061
-,ocd-id,,ocd-division/country:us/state:tx/county:dimmit,dimmit_cou0062,poll738753,st48,other,,loc0062
-,ocd-id,,ocd-division/country:us/state:tx/county:donley,donley_cou0063,poll3552820,st48,other,,loc0063
-,ocd-id,,ocd-division/country:us/state:tx/county:duval,duval_cou0064,poll18266471,st48,other,,loc0064
-,ocd-id,,ocd-division/country:us/state:tx/county:eastland,eastland_cou0065,poll9611703,st48,other,,loc0065
-,ocd-id,,ocd-division/country:us/state:tx/county:ector,ector_cou0066,poll80748328,st48,other,,loc0066
-,ocd-id,,ocd-division/country:us/state:tx/county:edwards,edwards_cou0067,poll91282058,st48,other,,loc0067
-,ocd-id,,ocd-division/country:us/state:tx/county:el_paso,el_paso_cou0068,poll54245579 poll27486727 poll27641858 poll62797809 poll39100896 poll45846954 poll13132142 poll1246039 poll73225661 poll27281566 poll32702180 poll84961745 poll57940839 poll36751320 poll86361877 poll99260458 poll91933261 poll43370980 poll62345730 poll14827550 poll36735525 poll96768700 poll24662346 poll86786961 poll62514823 poll77139396,st48,other,,loc0068
-,ocd-id,,ocd-division/country:us/state:tx/county:ellis,ellis_cou0069,poll23926989 poll11416246 poll49284070 poll72884385 poll40216733 poll75134048 poll39763566,st48,other,,loc0069
-,ocd-id,,ocd-division/country:us/state:tx/county:erath,erath_cou0070,poll68773358 poll86586532,st48,other,,loc0070
-,ocd-id,,ocd-division/country:us/state:tx/county:falls,falls_cou0071,poll59806695,st48,other,,loc0071
-,ocd-id,,ocd-division/country:us/state:tx/county:fannin,fannin_cou0072,poll39155671,st48,other,,loc0072
-,ocd-id,,ocd-division/country:us/state:tx/county:fayette,fayette_cou0073,poll12588637,st48,other,,loc0073
-,ocd-id,,ocd-division/country:us/state:tx/county:fisher,fisher_cou0074,poll52090104 poll15964410,st48,other,,loc0074
-,ocd-id,,ocd-division/country:us/state:tx/county:floyd,floyd_cou0075,poll67178208 poll90557444,st48,other,,loc0075
-,ocd-id,,ocd-division/country:us/state:tx/county:foard,foard_cou0076,poll70047058,st48,other,,loc0076
-,ocd-id,,ocd-division/country:us/state:tx/county:fort_bend,fort_bend_cou0077,poll87764425 poll99767594 poll3028048 poll99545246 poll4432477 poll25483578 poll41918501 poll63910023 poll38127509 poll67783180 poll60393584 poll33461 poll6809035 poll40602355 poll22246215 poll71884333 poll45990258 poll70134337 poll98654126 poll93793881 poll91981653 poll81582547 poll28905516 poll50847583 poll78568001 poll30740863,st48,other,,loc0077
-,ocd-id,,ocd-division/country:us/state:tx/county:freestone,freestone_cou0078,poll29737463 poll75535037 poll23907977 poll79681688 poll62008424 poll86463759 poll84720583,st48,other,,loc0078
-,ocd-id,,ocd-division/country:us/state:tx/county:frio,frio_cou0079,poll68579639,st48,other,,loc0079
-,ocd-id,,ocd-division/country:us/state:tx/county:gaines,freestone_cou0080,poll4695214 poll1271140,st48,other,,loc0080
-,ocd-id,,ocd-division/country:us/state:tx/county:galveston,galveston_cou0081,poll88599803 poll93177343 poll21297463 poll20094188 poll43109386 poll88937540 poll56346546 poll83311948 poll75962933 poll45930153 poll48979566 poll88617614 poll74382076 poll32910025 poll743787 poll11159171 poll55921532,st48,other,,loc0081
-,ocd-id,,ocd-division/country:us/state:tx/county:garza,garza_cou0082,poll38581336,st48,other,,loc0082
-,ocd-id,,ocd-division/country:us/state:tx/county:gillespie,gillespie_cou0083,poll26248622,st48,other,,loc0083
-,ocd-id,,ocd-division/country:us/state:tx/county:glasscock,glasscock_cou0084,poll54004347,st48,other,,loc0084
-,ocd-id,,ocd-division/country:us/state:tx/county:goliad,goliad_cou0085,poll3584002,st48,other,,loc0085
-,ocd-id,,ocd-division/country:us/state:tx/county:gonzales,gonzales_cou0086,poll89632283 poll49682688 poll65005946,st48,other,,loc0086
-,ocd-id,,ocd-division/country:us/state:tx/county:gray,gray_cou0087,poll10840336,st48,other,,loc0087
-,ocd-id,,ocd-division/country:us/state:tx/county:grayson,grayson_cou0088,poll5655693,st48,other,,loc0088
-,ocd-id,,ocd-division/country:us/state:tx/county:gregg,gregg_cou0089,poll95494770 poll55371043 poll45753421 poll62286931 poll22329087 poll59872152 poll85284085 poll32034315 poll99927188 poll30994722 poll30015490,st48,other,,loc0089
-,ocd-id,,ocd-division/country:us/state:tx/county:grimes,grimes_cou0090,poll46098422 poll75177674,st48,other,,loc0090
-,ocd-id,,ocd-division/country:us/state:tx/county:guadalupe,guadalupe_cou0091,poll77482518 poll89401118 poll58383367 poll86386734 poll3849703 poll17476402 poll94264230,st48,other,,loc0091
-,ocd-id,,ocd-division/country:us/state:tx/county:hale,hale_cou0092,poll96886899,st48,other,,loc0092
-,ocd-id,,ocd-division/country:us/state:tx/county:hall,hall_cou0093,poll17106290,st48,other,,loc0093
-,ocd-id,,ocd-division/country:us/state:tx/county:hamilton,hamilton_cou0094,poll60604053,st48,other,,loc0094
-,ocd-id,,ocd-division/country:us/state:tx/county:hansford,hansford_cou0095,poll49034906,st48,other,,loc0095
-,ocd-id,,ocd-division/country:us/state:tx/county:hardeman,hardeman_cou0096,poll97118934 poll50934697,st48,other,,loc0096
-,ocd-id,,ocd-division/country:us/state:tx/county:hardin,hardin_cou0097,poll58257309,st48,other,,loc0097
-,ocd-id,,ocd-division/country:us/state:tx/county:harris,harris_cou0098,poll76476590 poll67323611 poll5076534 poll66420806 poll29635123 poll82005643 poll45590438 poll58904677 poll92644130 poll36218839 poll91465867 poll96398698 poll30944881 poll42503895 poll79300779 poll49656647 poll76254067 poll15084590 poll65623945 poll92735707 poll1713876 poll66921898 poll91459292 poll89048378 poll13735129 poll6225201 poll89196685 poll15218071 poll94666104 poll25485862 poll28769852 poll32610049 poll97781321 poll65269047 poll23466170 poll8500935 poll82781922 poll73696603 poll68400883 poll24125586 poll35091924 poll25470674 poll17142168 poll27799050 poll42555953 poll46178285,st48,other,,loc0098
-,ocd-id,,ocd-division/country:us/state:tx/county:harrison,harrison_cou0099,poll20083534,st48,other,,loc0099
-,ocd-id,,ocd-division/country:us/state:tx/county:hartley,hartley_cou0100,poll45097034 poll20306479,st48,other,,loc0100
-,ocd-id,,ocd-division/country:us/state:tx/county:haskell,haskell_cou0101,poll81759408,st48,other,,loc0101
-,ocd-id,,ocd-division/country:us/state:tx/county:hays,hays_cou0102,poll74978881 poll33669705 poll62496912 poll79554726 poll89615658 poll943634 poll14943176 poll6699024,st48,other,,loc0102
-,ocd-id,,ocd-division/country:us/state:tx/county:hemphill,hemphill_cou0103,poll73494822,st48,other,,loc0103
-,ocd-id,,ocd-division/country:us/state:tx/county:henderson,henderson_cou0104,poll37440754 poll61540968 poll43638578,st48,other,,loc0104
-,ocd-id,,ocd-division/country:us/state:tx/county:hill,hill_cou0105,poll5955617,st48,other,,loc0105
-,ocd-id,,ocd-division/country:us/state:tx/county:hockley,hockley_cou0106,poll41307604 poll47987664 poll23201495 poll527631,st48,other,,loc0106
-,ocd-id,,ocd-division/country:us/state:tx/county:hood,hood_cou0107,poll69526233,st48,other,,loc0107
-,ocd-id,,ocd-division/country:us/state:tx/county:hopkins,hopkins_cou0108,poll39626230,st48,other,,loc0108
-,ocd-id,,ocd-division/country:us/state:tx/county:houston,houston_cou0109,poll49519527,st48,other,,loc0109
-,ocd-id,,ocd-division/country:us/state:tx/county:howard,howard_cou0110,poll67716881,st48,other,,loc0110
-,ocd-id,,ocd-division/country:us/state:tx/county:hudspeth,hudspeth_cou0111,poll57833602,st48,other,,loc0111
-,ocd-id,,ocd-division/country:us/state:tx/county:hunt,hunt_cou0112,poll51856782,st48,other,,loc0112
-,ocd-id,,ocd-division/country:us/state:tx/county:hutchinson,hutchinson_cou0113,poll84322032 poll83907565 poll22393105,st48,other,,loc0113
-,ocd-id,,ocd-division/country:us/state:tx/county:irion,irion_cou0114,poll64682816,st48,other,,loc0114
-,ocd-id,,ocd-division/country:us/state:tx/county:jack,jack_cou0115,poll7566959,st48,other,,loc0115
-,ocd-id,,ocd-division/country:us/state:tx/county:jackson,jackson_cou0116,poll17628817,st48,other,,loc0116
-,ocd-id,,ocd-division/country:us/state:tx/county:jasper,jasper_cou0117,poll76893674,st48,other,,loc0117
-,ocd-id,,ocd-division/country:us/state:tx/county:jeff_davis,jeff_davis_cou0118,poll43046768,st48,other,,loc0118
-,ocd-id,,ocd-division/country:us/state:tx/county:jefferson,jefferson_cou0119,poll89590532 poll38148267 poll24375539 poll89785338 poll7934723 poll3800654 poll40528510 poll67782310 poll9830288 poll25167371 poll78625967,st48,other,,loc0119
-,ocd-id,,ocd-division/country:us/state:tx/county:jim_hogg,jim_hogg_cou0120,poll91578050,st48,other,,loc0120
-,ocd-id,,ocd-division/country:us/state:tx/county:jim_wells,jim_wells_cou0121,poll67591809 poll32736067 poll37330428 poll57916870 poll12889347,st48,other,,loc0121
-,ocd-id,,ocd-division/country:us/state:tx/county:johnson,johnson_cou0122,poll49670506 poll76452907 poll79341969 poll28645 poll21417126 poll51838537,st48,other,,loc0122
-,ocd-id,,ocd-division/country:us/state:tx/county:jones,jones_cou0123,poll29769465,st48,other,,loc0123
-,ocd-id,,ocd-division/country:us/state:tx/county:karnes,karnes_cou0124,poll62016214,st48,other,,loc0124
-,ocd-id,,ocd-division/country:us/state:tx/county:kaufman,kaufman_cou0125,poll51784949 poll95170967 poll69877621 poll24213915,st48,other,,loc0125
-,ocd-id,,ocd-division/country:us/state:tx/county:kendall,kendall_cou0126,poll87776275 poll67539327,st48,other,,loc0126
-,ocd-id,,ocd-division/country:us/state:tx/county:kenedy,kenedy_cou0127,poll51665943,st48,other,,loc0127
-,ocd-id,,ocd-division/country:us/state:tx/county:kent,kent_cou0128,poll23095125,st48,other,,loc0128
-,ocd-id,,ocd-division/country:us/state:tx/county:kerr,kerr_cou0129,poll90196364 poll32323530,st48,other,,loc0129
-,ocd-id,,ocd-division/country:us/state:tx/county:kimble,kimble_cou0130,poll15499497,st48,other,,loc0130
-,ocd-id,,ocd-division/country:us/state:tx/county:king,king_cou0131,poll51747392,st48,other,,loc0131
-,ocd-id,,ocd-division/country:us/state:tx/county:kinney,kinney_cou0132,poll30579885,st48,other,,loc0132
-,ocd-id,,ocd-division/country:us/state:tx/county:kleberg,kleberg_cou0133,poll26973191,st48,other,,loc0133
-,ocd-id,,ocd-division/country:us/state:tx/county:knox,knox_cou0134,poll93197370,st48,other,,loc0134
-,ocd-id,,ocd-division/country:us/state:tx/county:la_salle,la_salle_cou0135,poll56575150 poll94444190,st48,other,,loc0135
-,ocd-id,,ocd-division/country:us/state:tx/county:lamar,lamar_cou0136,poll12473411,st48,other,,loc0136
-,ocd-id,,ocd-division/country:us/state:tx/county:lamb,lamb_cou0137,poll66437805,st48,other,,loc0137
-,ocd-id,,ocd-division/country:us/state:tx/county:lampasas,lampasas_cou0138,poll98553027,st48,other,,loc0138
-,ocd-id,,ocd-division/country:us/state:tx/county:lavaca,lavaca_cou0139,poll99248820,st48,other,,loc0139
-,ocd-id,,ocd-division/country:us/state:tx/county:lee,lee_cou0140,poll85059877,st48,other,,loc0140
-,ocd-id,,ocd-division/country:us/state:tx/county:leon,leon_cou0141,poll31747356,st48,other,,loc0141
-,ocd-id,,ocd-division/country:us/state:tx/county:liberty,liberty_cou0142,poll73544691 poll76007370 poll94782015 poll41499697,st48,other,,loc0142
-,ocd-id,,ocd-division/country:us/state:tx/county:limestone,limestone_cou0143,poll52806454 poll18254173,st48,other,,loc0143
-,ocd-id,,ocd-division/country:us/state:tx/county:lipscomb,lipscomb_cou0144,poll1155905,st48,other,,loc0144
-,ocd-id,,ocd-division/country:us/state:tx/county:live_oak,live_oak_cou0145,poll13086936,st48,other,,loc0145
-,ocd-id,,ocd-division/country:us/state:tx/county:llano,llano_cou0146,poll11709120 poll12682258 poll37483320,st48,other,,loc0146
-,ocd-id,,ocd-division/country:us/state:tx/county:loving,loving_cou0147,poll48888405,st48,other,,loc0147
-,ocd-id,,ocd-division/country:us/state:tx/county:lubbock,lubbock_cou0148,poll34898860 poll83044246 poll56766343 poll18693060 poll77835168 poll7675294 poll45414661 poll36216046 poll36922291 poll29279869 poll39354760 poll99362282 poll50222930 poll34375471 poll35628729 poll70619353 poll14078412 poll80605647 poll32932804 poll70072978 poll22149880 poll32109016 poll94465037 poll75364017 poll94747383 poll96930552 poll46748160 poll54391459 poll66811798,st48,other,,loc0148
-,ocd-id,,ocd-division/country:us/state:tx/county:lynn,lynn_cou0149,poll86717925,st48,other,,loc0149
-,ocd-id,,ocd-division/country:us/state:tx/county:madison,madison_cou0150,poll66475092 poll73195204,st48,other,,loc0150
-,ocd-id,,ocd-division/country:us/state:tx/county:marion,marion_cou0151,poll82612753,st48,other,,loc0151
-,ocd-id,,ocd-division/country:us/state:tx/county:martin,martin_cou0152,poll60960965,st48,other,,loc0152
-,ocd-id,,ocd-division/country:us/state:tx/county:mason,mason_cou0153,poll71962924,st48,other,,loc0153
-,ocd-id,,ocd-division/country:us/state:tx/county:matagorda,matagorda_cou0154,poll54628187,st48,other,,loc0154
-,ocd-id,,ocd-division/country:us/state:tx/county:maverick,maverick_cou0155,poll81161110,st48,other,,loc0155
-,ocd-id,,ocd-division/country:us/state:tx/county:mcculloch,mcculloch_cou0156,poll16026648,st48,other,,loc0156
-,ocd-id,,ocd-division/country:us/state:tx/county:mclennan,mclennan_cou0157,poll57036918 poll69913150 poll70907201 poll83006994 poll14260324,st48,other,,loc0157
-,ocd-id,,ocd-division/country:us/state:tx/county:mcmullen,mcmullen_cou0158,poll49956521,st48,other,,loc0158
-,ocd-id,,ocd-division/country:us/state:tx/county:medina,medina_cou0159,poll18137637 poll19142878 poll32021037,st48,other,,loc0159
-,ocd-id,,ocd-division/country:us/state:tx/county:menard,menard_cou0160,poll4769172 poll2343794 poll26186373 poll4171367,st48,other,,loc0160
-,ocd-id,,ocd-division/country:us/state:tx/county:midland,midland_cou0161,poll30345391 poll2445770 poll72991037 poll89267895 poll65752254,st48,other,,loc0161
-,ocd-id,,ocd-division/country:us/state:tx/county:milam,milam_cou0162,poll82001877 poll2835179 poll78726373 poll93466812,st48,other,,loc0162
-,ocd-id,,ocd-division/country:us/state:tx/county:mills,mills_cou0163,poll18485032,st48,other,,loc0163
-,ocd-id,,ocd-division/country:us/state:tx/county:mitchell,mitchell_cou0164,poll11880260,st48,other,,loc0164
-,ocd-id,,ocd-division/country:us/state:tx/county:montague,montague_cou0165,poll70050498 poll4937836 poll7267420 poll86005320,st48,other,,loc0165
-,ocd-id,,ocd-division/country:us/state:tx/county:montgomery,montgomery_cou0166,poll9065838 poll89668620 poll93856379 poll13745476 poll96315289 poll4454488 poll41470624 poll7348425,st48,other,,loc0166
-,ocd-id,,ocd-division/country:us/state:tx/county:moore,moore_cou0167,poll69730267,st48,other,,loc0167
-,ocd-id,,ocd-division/country:us/state:tx/county:morris,morris_cou0168,poll8679918,st48,other,,loc0168
-,ocd-id,,ocd-division/country:us/state:tx/county:motley,motley_cou0169,poll80378693,st48,other,,loc0169
-,ocd-id,,ocd-division/country:us/state:tx/county:nacogdoches,nacogdoches_cou0170,poll27859362,st48,other,,loc0170
-,ocd-id,,ocd-division/country:us/state:tx/county:navarro,navarro_cou0171,poll56750212,st48,other,,loc0171
-,ocd-id,,ocd-division/country:us/state:tx/county:newton,newton_cou0172,poll75667703 poll85430979,st48,other,,loc0172
-,ocd-id,,ocd-division/country:us/state:tx/county:nolan,nolan_cou0173,poll17300087,st48,other,,loc0173
-,ocd-id,,ocd-division/country:us/state:tx/county:nueces,nueces_cou0174,poll43669089 poll32720038 poll19649994 poll99104669 poll48703499 poll26015559 poll35427584 poll52328095 poll51575447 poll50982085 poll29901383 poll83760815 poll73553388 poll46929621 poll79977111 poll76044514 poll62443471 poll8564892 poll60342729 poll12728672 poll80781787 poll87560169 poll70608884 poll63259890 poll80467002 poll1895815,st48,other,,loc0174
-,ocd-id,,ocd-division/country:us/state:tx/county:ochiltree,ochiltree_cou0175,poll41000646,st48,other,,loc0175
-,ocd-id,,ocd-division/country:us/state:tx/county:oldham,oldham_cou0176,poll18503540,st48,other,,loc0176
-,ocd-id,,ocd-division/country:us/state:tx/county:orange,orange_cou0177,poll80644053,st48,other,,loc0177
-,ocd-id,,ocd-division/country:us/state:tx/county:palo_pinto,palo_pinto_cou0178,poll18919097 poll15980848,st48,other,,loc0178
-,ocd-id,,ocd-division/country:us/state:tx/county:panola,panola_cou0179,poll90971282,st48,other,,loc0179
-,ocd-id,,ocd-division/country:us/state:tx/county:parker,parker_cou0180,poll65955836 poll41532235 poll87343863 poll68134186 poll83353872 poll58704137 poll69895587,st48,other,,loc0180
-,ocd-id,,ocd-division/country:us/state:tx/county:parmer,parmer_cou0181,poll5792703 poll22527324 poll89485491,st48,other,,loc0181
-,ocd-id,,ocd-division/country:us/state:tx/county:pecos,pecos_cou0182,poll63121296,st48,other,,loc0182
-,ocd-id,,ocd-division/country:us/state:tx/county:polk,polk_cou0183,poll63894174,st48,other,,loc0183
-,ocd-id,,ocd-division/country:us/state:tx/county:potter,potter_cou0184,poll88661102 poll62802193 poll52233269 poll81076640 poll19394652 poll82120043 poll98557128 poll69578001 poll26346389,st48,other,,loc0184
-,ocd-id,,ocd-division/country:us/state:tx/county:presidio,presidio_cou0185,poll8418741,st48,other,,loc0185
-,ocd-id,,ocd-division/country:us/state:tx/county:rains,rains_cou0186,poll46932880,st48,other,,loc0186
-,ocd-id,,ocd-division/country:us/state:tx/county:randall,randall_cou0187,poll4837801 poll49394471 poll36302787 poll68912124 poll51144233,st48,other,,loc0187
-,ocd-id,,ocd-division/country:us/state:tx/county:reagan,reagan_cou0188,poll48155874,st48,other,,loc0188
-,ocd-id,,ocd-division/country:us/state:tx/county:real,real_cou0189,poll24497805 poll48566292 poll77706958,st48,other,,loc0189
-,ocd-id,,ocd-division/country:us/state:tx/county:red_river,red_river_cou0190,poll79931066,st48,other,,loc0190
-,ocd-id,,ocd-division/country:us/state:tx/county:reeves,reeves_cou0191,poll2507609,st48,other,,loc0191
-,ocd-id,,ocd-division/country:us/state:tx/county:refugio,refugio_cou0192,poll12435999,st48,other,,loc0192
-,ocd-id,,ocd-division/country:us/state:tx/county:roberts,roberts_cou0193,poll25448505,st48,other,,loc0193
-,ocd-id,,ocd-division/country:us/state:tx/county:robertson,robertson_cou0194,poll51668589 poll19090356 poll16027849 poll81390062,st48,other,,loc0194
-,ocd-id,,ocd-division/country:us/state:tx/county:rockwall,rockwall_cou0195,poll9489978 poll53297686 poll51340949 poll63373201,st48,other,,loc0195
-,ocd-id,,ocd-division/country:us/state:tx/county:runnels,runnels_cou0196,poll63430378,st48,other,,loc0196
-,ocd-id,,ocd-division/country:us/state:tx/county:rusk,rusk_cou0197,poll56239642 poll35141547 poll29123288 poll58313441 poll10879690,st48,other,,loc0197
-,ocd-id,,ocd-division/country:us/state:tx/county:sabine,sabine_cou0198,poll63352335 poll94065252,st48,other,,loc0198
-,ocd-id,,ocd-division/country:us/state:tx/county:san_augustine,san_augustine_cou0199,poll55457240 poll98169325,st48,other,,loc0199
-,ocd-id,,ocd-division/country:us/state:tx/county:san_jacinto,san_jacinto_cou0200,poll74137996,st48,other,,loc0200
-,ocd-id,,ocd-division/country:us/state:tx/county:san_patricio,san_patricio_cou0201,poll57432558 poll51990798 poll31634182 poll97120793,st48,other,,loc0201
-,ocd-id,,ocd-division/country:us/state:tx/county:san_saba,san_saba_cou0202,poll41659824,st48,other,,loc0202
-,ocd-id,,ocd-division/country:us/state:tx/county:schleicher,schleicher_cou0203,poll46417540 poll2693607 poll21479911,st48,other,,loc0203
-,ocd-id,,ocd-division/country:us/state:tx/county:scurry,scurry_cou0204,poll46614953,st48,other,,loc0204
-,ocd-id,,ocd-division/country:us/state:tx/county:shackelford,shackelford_cou0205,poll11233289,st48,other,,loc0205
-,ocd-id,,ocd-division/country:us/state:tx/county:shelby,shelby_cou0206,poll30241450,st48,other,,loc0206
-,ocd-id,,ocd-division/country:us/state:tx/county:sherman,sherman_cou0207,poll30663088,st48,other,,loc0207
-,ocd-id,,ocd-division/country:us/state:tx/county:smith,smith_cou0208,poll7619549,st48,other,,loc0208
-,ocd-id,,ocd-division/country:us/state:tx/county:somervell,somervell_cou0209,poll1166006,st48,other,,loc0209
-,ocd-id,,ocd-division/country:us/state:tx/county:starr,starr_cou0210,poll59500988,st48,other,,loc0210
-,ocd-id,,ocd-division/country:us/state:tx/county:stephens,stephens_cou0211,poll48301279,st48,other,,loc0211
-,ocd-id,,ocd-division/country:us/state:tx/county:sterling,sterling_cou0212,poll39970006,st48,other,,loc0212
-,ocd-id,,ocd-division/country:us/state:tx/county:stonewall,stonewall_cou0213,poll73540757,st48,other,,loc0213
-,ocd-id,,ocd-division/country:us/state:tx/county:sutton,sutton_cou0214,poll72374826,st48,other,,loc0214
-,ocd-id,,ocd-division/country:us/state:tx/county:swisher,swisher_cou0215,poll41367989,st48,other,,loc0215
-,ocd-id,,ocd-division/country:us/state:tx/county:tarrant,tarrant_cou0216,poll14688701 poll24305660 poll55948700 poll12880125 poll95725678 poll48306452 poll66209763 poll42710987 poll51498804 poll72629661 poll57009007 poll49851103 poll44487272 poll64257566 poll65127493 poll57264835 poll82924175 poll41082309 poll68500457 poll34301229 poll15643428 poll76854365 poll46120116 poll94785138 poll3577705 poll45429394 poll42263835 poll44550601 poll25001906 poll43163079 poll17889478 poll15320994 poll2295173 poll21027471 poll43761242 poll77659212 poll12111291 poll32436821 poll66380636 poll44142422 poll75130281 poll51134757 poll54920162 poll65210493 poll66157685 poll16281941 poll43760344 poll24852489 poll59124452,st48,other,,loc0216
-,ocd-id,,ocd-division/country:us/state:tx/county:taylor,taylor_cou0217,poll76993191 poll7930774 poll71016343 poll17563603 poll4872361,st48,other,,loc0217
-,ocd-id,,ocd-division/country:us/state:tx/county:terrell,terrell_cou0218,poll20622052,st48,other,,loc0218
-,ocd-id,,ocd-division/country:us/state:tx/county:terry,terry_cou0219,poll49241360,st48,other,,loc0219
-,ocd-id,,ocd-division/country:us/state:tx/county:throckmorton,throckmorton_cou0220,poll20815726,st48,other,,loc0220
-,ocd-id,,ocd-division/country:us/state:tx/county:titus,titus_cou0221,poll66925729,st48,other,,loc0221
-,ocd-id,,ocd-division/country:us/state:tx/county:tom_green,tom_green_cou0222,poll38174304,st48,other,,loc0222
-,ocd-id,,ocd-division/country:us/state:tx/county:travis,travis_cou0223,poll10882630 poll8049379 poll34719435 poll63567500 poll31230555 poll10019570 poll95771562 poll18881940 poll54885730 poll51591733 poll32222958 poll99184094 poll73946098 poll1049236 poll15087698 poll14390502 poll25738355 poll11633238 poll26624073 poll66170058 poll46696326 poll52420551 poll83203636 poll74546194 poll92268114 poll83485062 poll24464880 poll25124652 poll67077073 poll66637410 poll40970258 poll23636467 poll59818734 poll52853588 poll36809307 poll46023709 poll70741296,st48,other,,loc0223
-,ocd-id,,ocd-division/country:us/state:tx/county:trinity,trinity_cou0224,poll93035759 poll14086350,st48,other,,loc0224
-,ocd-id,,ocd-division/country:us/state:tx/county:tyler,tyler_cou0225,poll44986021,st48,other,,loc0225
-,ocd-id,,ocd-division/country:us/state:tx/county:upshur,upshur_cou0226,poll88816462,st48,other,,loc0226
-,ocd-id,,ocd-division/country:us/state:tx/county:upton,upton_cou0227,poll18225020 poll3388922,st48,other,,loc0227
-,ocd-id,,ocd-division/country:us/state:tx/county:uvalde,uvalde_cou0228,poll24710942,st48,other,,loc0228
-,ocd-id,,ocd-division/country:us/state:tx/county:val_verde,val_verde_cou0229,poll30997357,st48,other,,loc0229
-,ocd-id,,ocd-division/country:us/state:tx/county:van_zandt,van_zandt_cou0230,poll93809366,st48,other,,loc0230
-,ocd-id,,ocd-division/country:us/state:tx/county:victoria,victoria_cou0231,poll37562418 poll54992385 poll31816901 poll65512397,st48,other,,loc0231
-,ocd-id,,ocd-division/country:us/state:tx/county:walker,walker_cou0232,poll17930717,st48,other,,loc0232
-,ocd-id,,ocd-division/country:us/state:tx/county:waller,waller_cou0233,poll17370717 poll42841634 poll15535413 poll99496679 poll13675610 poll33547544 poll78627269 poll4058013 poll34726448,st48,other,,loc0233
-,ocd-id,,ocd-division/country:us/state:tx/county:ward,ward_cou0234,poll34101985,st48,other,,loc0234
-,ocd-id,,ocd-division/country:us/state:tx/county:washington,washington_cou0235,poll94035613,st48,other,,loc0235
-,ocd-id,,ocd-division/country:us/state:tx/county:webb,webb_cou0236,poll42334425 poll1904883 poll48352674 poll31975254 poll87171522 poll57379129 poll24841109 poll58692068 poll98721752 poll49029619 poll35760057 poll8645794 poll36036304 poll86334 poll29701933 poll58969663 poll79130241 poll39402035 poll78155163 poll52283187 poll98797768 poll33468623 poll83072516 poll11973043 poll29461579 poll77989128 poll27477777 poll15456103 poll95106963 poll87907762 poll99847541 poll45614617 poll53090609 poll39145899 poll63101167 poll42499149,st48,other,,loc0236
-,ocd-id,,ocd-division/country:us/state:tx/county:wharton,wharton_cou0237,poll72803809 poll62016781,st48,other,,loc0237
-,ocd-id,,ocd-division/country:us/state:tx/county:wheeler,wheeler_cou0238,poll20642039 poll74257669,st48,other,,loc0238
-,ocd-id,,ocd-division/country:us/state:tx/county:wichita,wichita_cou0239,poll84415247 poll69579074 poll25562144 poll54152622 poll97080557 poll97310659,st48,other,,loc0239
-,ocd-id,,ocd-division/country:us/state:tx/county:wilbarger,wilbarger_cou0240,poll73854927,st48,other,,loc0240
-,ocd-id,,ocd-division/country:us/state:tx/county:willacy,willacy_cou0241,poll34260492,st48,other,,loc0241
-,ocd-id,,ocd-division/country:us/state:tx/county:williamson,williamson_cou0242,poll85560899 poll9307283 poll34322769 poll85361084 poll32788910 poll38207745 poll31273010 poll32485635 poll2133398 poll9578575 poll15528645 poll57324683 poll14687923 poll48898341 poll86178145,st48,other,,loc0242
-,ocd-id,,ocd-division/country:us/state:tx/county:wilson,wilson_cou0243,poll19790951 poll49577869 poll86347192 poll99516208,st48,other,,loc0243
-,ocd-id,,ocd-division/country:us/state:tx/county:winkler,winkler_cou0244,poll45521528,st48,other,,loc0244
-,ocd-id,,ocd-division/country:us/state:tx/county:wise,wise_cou0245,poll83618250 poll80383505 poll23247880 poll8606926,st48,other,,loc0245
-,ocd-id,,ocd-division/country:us/state:tx/county:wood,wood_cou0246,poll1594533,st48,other,,loc0246
-,ocd-id,,ocd-division/country:us/state:tx/county:yoakum,yoakum_cou0247,poll46060296 poll6556773,st48,other,,loc0247
-,ocd-id,,ocd-division/country:us/state:tx/county:young,young_cou0248,poll76256504 poll2131873,st48,other,,loc0248
-,ocd-id,,ocd-division/country:us/state:tx/county:zapata,zapata_cou0249,poll40837735,st48,other,,loc0249
-,ocd-id,,ocd-division/country:us/state:tx/county:zavala,zavala_cou0250,poll69553835,st48,other,,loc0250
+,ocd-id,,ocd-division/country:us/state:tx/county:cottle,cottle_cou0050,poll69428144,st48,other,,loc0050
+,ocd-id,,ocd-division/country:us/state:tx/county:crane,crane_cou0051,poll56507510,st48,other,,loc0051
+,ocd-id,,ocd-division/country:us/state:tx/county:crockett,crockett_cou0052,poll42341748,st48,other,,loc0052
+,ocd-id,,ocd-division/country:us/state:tx/county:crosby,crosby_cou0053,poll20297706,st48,other,,loc0053
+,ocd-id,,ocd-division/country:us/state:tx/county:culberson,culberson_cou0054,poll97430571,st48,other,,loc0054
+,ocd-id,,ocd-division/country:us/state:tx/county:dallam,dallam_cou0055,poll14094429,st48,other,,loc0055
+,ocd-id,,ocd-division/country:us/state:tx/county:dallas,dallas_cou0056,poll25303101,st48,other,,loc0056
+,ocd-id,,ocd-division/country:us/state:tx/county:dawson,dawson_cou0057,poll68859703,st48,other,,loc0057
+,ocd-id,,ocd-division/country:us/state:tx/county:deaf_smith,deaf_smith_cou0058,poll68181454,st48,other,,loc0058
+,ocd-id,,ocd-division/country:us/state:tx/county:delta,delta_cou0059,poll19811042,st48,other,,loc0059
+,ocd-id,,ocd-division/country:us/state:tx/county:denton,denton_cou0060,poll50888020 poll10678423 poll64364237 poll13736168 poll26585518 poll73118366 poll18691201 poll18411762 poll42880479 poll37293880 poll26316412 poll49392288 poll12201099 poll76086954 poll23600865 poll49961053 poll42475900 poll10487634 poll71852868 poll198205 poll72055117 poll22899484,st48,other,,loc0060
+,ocd-id,,ocd-division/country:us/state:tx/county:dewitt,dewitt_cou0061,poll77909598,st48,other,,loc0061
+,ocd-id,,ocd-division/country:us/state:tx/county:dickens,dickens_cou0062,poll56446463,st48,other,,loc0062
+,ocd-id,,ocd-division/country:us/state:tx/county:dimmit,dimmit_cou0063,poll738753,st48,other,,loc0063
+,ocd-id,,ocd-division/country:us/state:tx/county:donley,donley_cou0064,poll3552820,st48,other,,loc0064
+,ocd-id,,ocd-division/country:us/state:tx/county:duval,duval_cou0065,poll18266471,st48,other,,loc0065
+,ocd-id,,ocd-division/country:us/state:tx/county:eastland,eastland_cou0066,poll9611703,st48,other,,loc0066
+,ocd-id,,ocd-division/country:us/state:tx/county:ector,ector_cou0067,poll80748328,st48,other,,loc0067
+,ocd-id,,ocd-division/country:us/state:tx/county:edwards,edwards_cou0068,poll91282058,st48,other,,loc0068
+,ocd-id,,ocd-division/country:us/state:tx/county:el_paso,el_paso_cou0069,poll54245579 poll27486727 poll27641858 poll62797809 poll39100896 poll45846954 poll13132142 poll1246039 poll73225661 poll27281566 poll32702180 poll84961745 poll57940839 poll36751320 poll86361877 poll99260458 poll91933261 poll43370980 poll62345730 poll14827550 poll36735525 poll96768700 poll24662346 poll86786961 poll62514823 poll77139396,st48,other,,loc0069
+,ocd-id,,ocd-division/country:us/state:tx/county:ellis,ellis_cou0070,poll72157984 poll24023403 poll89570871 poll23684555 poll61721419 poll39763566 poll43004240,st48,other,,loc0070
+,ocd-id,,ocd-division/country:us/state:tx/county:erath,erath_cou0071,poll68773358 poll86586532,st48,other,,loc0071
+,ocd-id,,ocd-division/country:us/state:tx/county:falls,falls_cou0072,poll53494628,st48,other,,loc0072
+,ocd-id,,ocd-division/country:us/state:tx/county:fannin,fannin_cou0073,poll85730941 poll3910952 poll86930539 poll27000050 poll65365597,st48,other,,loc0073
+,ocd-id,,ocd-division/country:us/state:tx/county:fayette,fayette_cou0074,poll12588637,st48,other,,loc0074
+,ocd-id,,ocd-division/country:us/state:tx/county:fisher,fisher_cou0075,poll52090104 poll15964410,st48,other,,loc0075
+,ocd-id,,ocd-division/country:us/state:tx/county:floyd,floyd_cou0076,poll4847814 poll62132157,st48,other,,loc0076
+,ocd-id,,ocd-division/country:us/state:tx/county:foard,foard_cou0077,poll70047058,st48,other,,loc0077
+,ocd-id,,ocd-division/country:us/state:tx/county:fort_bend,fort_bend_cou0078,poll87764425 poll99767594 poll3028048 poll99545246 poll4432477 poll25483578 poll41918501 poll63910023 poll38127509 poll67783180 poll60393584 poll33461 poll6809035 poll40602355 poll22246215 poll71884333 poll45990258 poll70134337 poll98654126 poll93793881 poll91981653 poll81582547 poll28905516 poll61502259 poll78568001 poll30740863,st48,other,,loc0078
+,ocd-id,,ocd-division/country:us/state:tx/county:freestone,freestone_cou0079,poll29737463 poll54126421 poll75535037 poll23907977 poll58405233 poll84720583 poll68573112,st48,other,,loc0079
+,ocd-id,,ocd-division/country:us/state:tx/county:frio,frio_cou0080,poll68579639,st48,other,,loc0080
+,ocd-id,,ocd-division/country:us/state:tx/county:gaines,freestone_cou0081,poll76329148 poll15663864 poll1271140,st48,other,,loc0081
+,ocd-id,,ocd-division/country:us/state:tx/county:galveston,galveston_cou0082,poll88599803 poll93177343 poll21297463 poll20094188 poll43109386 poll88937540 poll56346546 poll83311948 poll75962933 poll45930153 poll48979566 poll88617614 poll74382076 poll32910025 poll743787 poll11159171 poll55921532,st48,other,,loc0082
+,ocd-id,,ocd-division/country:us/state:tx/county:garza,garza_cou0083,poll38581336,st48,other,,loc0083
+,ocd-id,,ocd-division/country:us/state:tx/county:gillespie,gillespie_cou0084,poll14008957,st48,other,,loc0084
+,ocd-id,,ocd-division/country:us/state:tx/county:glasscock,glasscock_cou0085,poll54004347,st48,other,,loc0085
+,ocd-id,,ocd-division/country:us/state:tx/county:goliad,goliad_cou0086,poll3584002,st48,other,,loc0086
+,ocd-id,,ocd-division/country:us/state:tx/county:gonzales,gonzales_cou0087,poll75542288 poll49682688 poll65005946,st48,other,,loc0087
+,ocd-id,,ocd-division/country:us/state:tx/county:gray,gray_cou0088,poll10840336,st48,other,,loc0088
+,ocd-id,,ocd-division/country:us/state:tx/county:grayson,grayson_cou0089,poll5655693,st48,other,,loc0089
+,ocd-id,,ocd-division/country:us/state:tx/county:gregg,gregg_cou0090,poll95494770 poll55371043 poll45753421 poll62286931 poll22329087 poll59872152 poll85284085 poll32034315 poll99927188 poll30994722 poll30015490,st48,other,,loc0090
+,ocd-id,,ocd-division/country:us/state:tx/county:grimes,grimes_cou0091,poll46098422 poll75177674,st48,other,,loc0091
+,ocd-id,,ocd-division/country:us/state:tx/county:guadalupe,guadalupe_cou0092,poll89401118 poll29477699 poll66091432 poll98491240 poll17476402 poll79406903 poll94264230,st48,other,,loc0092
+,ocd-id,,ocd-division/country:us/state:tx/county:hale,hale_cou0093,poll96886899,st48,other,,loc0093
+,ocd-id,,ocd-division/country:us/state:tx/county:hall,hall_cou0094,poll67784329,st48,other,,loc0094
+,ocd-id,,ocd-division/country:us/state:tx/county:hamilton,hamilton_cou0095,poll60604053,st48,other,,loc0095
+,ocd-id,,ocd-division/country:us/state:tx/county:hansford,hansford_cou0096,poll19070628,st48,other,,loc0096
+,ocd-id,,ocd-division/country:us/state:tx/county:hardeman,hardeman_cou0097,poll97118934 poll50934697,st48,other,,loc0097
+,ocd-id,,ocd-division/country:us/state:tx/county:hardin,hardin_cou0098,poll58257309,st48,other,,loc0098
+,ocd-id,,ocd-division/country:us/state:tx/county:harris,harris_cou0099,poll76476590 poll5076534 poll66420806 poll29635123 poll82005643 poll45590438 poll58904677 poll92644130 poll36218839 poll91465867 poll96398698 poll4038916 poll79300779 poll49656647 poll76254067 poll15084590 poll65623945 poll92735707 poll1713876 poll66921898 poll91459292 poll49465833 poll89048378 poll13735129 poll6225201 poll89196685 poll15218071 poll94666104 poll25485862 poll28769852 poll42503895 poll32610049 poll97781321 poll23466170 poll8500935 poll82781922 poll82708279 poll73696603 poll68400883 poll67323611 poll35091924 poll25470674 poll17142168 poll27799050 poll42555953 poll46178285,st48,other,,loc0099
+,ocd-id,,ocd-division/country:us/state:tx/county:harrison,harrison_cou0100,poll20083534,st48,other,,loc0100
+,ocd-id,,ocd-division/country:us/state:tx/county:hartley,hartley_cou0101,poll45097034 poll20306479,st48,other,,loc0101
+,ocd-id,,ocd-division/country:us/state:tx/county:haskell,haskell_cou0102,poll81759408,st48,other,,loc0102
+,ocd-id,,ocd-division/country:us/state:tx/county:hays,hays_cou0103,poll22962100 poll89208144 poll74978881 poll33669705 poll62496912 poll79554726 poll89615658 poll943634 poll14943176 poll6699024 poll18016011,st48,other,,loc0103
+,ocd-id,,ocd-division/country:us/state:tx/county:hemphill,hemphill_cou0104,poll73494822,st48,other,,loc0104
+,ocd-id,,ocd-division/country:us/state:tx/county:henderson,henderson_cou0105,poll37440754 poll61540968 poll43638578,st48,other,,loc0105
+,ocd-id,,ocd-division/country:us/state:tx/county:hill,hill_cou0106,poll5955617,st48,other,,loc0106
+,ocd-id,,ocd-division/country:us/state:tx/county:hockley,hockley_cou0107,poll41307604 poll47987664 poll23201495 poll527631,st48,other,,loc0107
+,ocd-id,,ocd-division/country:us/state:tx/county:hood,hood_cou0108,poll69526233,st48,other,,loc0108
+,ocd-id,,ocd-division/country:us/state:tx/county:hopkins,hopkins_cou0109,poll39626230,st48,other,,loc0109
+,ocd-id,,ocd-division/country:us/state:tx/county:houston,houston_cou0110,poll49519527,st48,other,,loc0110
+,ocd-id,,ocd-division/country:us/state:tx/county:howard,howard_cou0111,poll67716881,st48,other,,loc0111
+,ocd-id,,ocd-division/country:us/state:tx/county:hudspeth,hudspeth_cou0112,poll57833602,st48,other,,loc0112
+,ocd-id,,ocd-division/country:us/state:tx/county:hunt,hunt_cou0113,poll51856782,st48,other,,loc0113
+,ocd-id,,ocd-division/country:us/state:tx/county:hutchinson,hutchinson_cou0114,poll84322032 poll83907565 poll22393105,st48,other,,loc0114
+,ocd-id,,ocd-division/country:us/state:tx/county:irion,irion_cou0115,poll64682816,st48,other,,loc0115
+,ocd-id,,ocd-division/country:us/state:tx/county:jack,jack_cou0116,poll7566959,st48,other,,loc0116
+,ocd-id,,ocd-division/country:us/state:tx/county:jackson,jackson_cou0117,poll17628817,st48,other,,loc0117
+,ocd-id,,ocd-division/country:us/state:tx/county:jasper,jasper_cou0118,poll76893674,st48,other,,loc0118
+,ocd-id,,ocd-division/country:us/state:tx/county:jeff_davis,jeff_davis_cou0119,poll43046768,st48,other,,loc0119
+,ocd-id,,ocd-division/country:us/state:tx/county:jefferson,jefferson_cou0120,poll89590532 poll38148267 poll24375539 poll89785338 poll3800654 poll40528510 poll67782310 poll9830288 poll25167371 poll84900231 poll78625967,st48,other,,loc0120
+,ocd-id,,ocd-division/country:us/state:tx/county:jim_hogg,jim_hogg_cou0121,poll91578050,st48,other,,loc0121
+,ocd-id,,ocd-division/country:us/state:tx/county:jim_wells,jim_wells_cou0122,poll67591809 poll32736067 poll37330428 poll57916870 poll12889347,st48,other,,loc0122
+,ocd-id,,ocd-division/country:us/state:tx/county:johnson,johnson_cou0123,poll76452907 poll79341969 poll41734226 poll21417126 poll51838537 poll63184415,st48,other,,loc0123
+,ocd-id,,ocd-division/country:us/state:tx/county:jones,jones_cou0124,poll29769465,st48,other,,loc0124
+,ocd-id,,ocd-division/country:us/state:tx/county:karnes,karnes_cou0125,poll62016214,st48,other,,loc0125
+,ocd-id,,ocd-division/country:us/state:tx/county:kaufman,kaufman_cou0126,poll24991404 poll44695549 poll77499332 poll97272047,st48,other,,loc0126
+,ocd-id,,ocd-division/country:us/state:tx/county:kendall,kendall_cou0127,poll87776275 poll67539327,st48,other,,loc0127
+,ocd-id,,ocd-division/country:us/state:tx/county:kenedy,kenedy_cou0128,poll51665943,st48,other,,loc0128
+,ocd-id,,ocd-division/country:us/state:tx/county:kent,kent_cou0129,poll23095125,st48,other,,loc0129
+,ocd-id,,ocd-division/country:us/state:tx/county:kerr,kerr_cou0130,poll90196364 poll32323530,st48,other,,loc0130
+,ocd-id,,ocd-division/country:us/state:tx/county:kimble,kimble_cou0131,poll15499497,st48,other,,loc0131
+,ocd-id,,ocd-division/country:us/state:tx/county:king,king_cou0132,poll51747392,st48,other,,loc0132
+,ocd-id,,ocd-division/country:us/state:tx/county:kinney,kinney_cou0133,poll30579885,st48,other,,loc0133
+,ocd-id,,ocd-division/country:us/state:tx/county:kleberg,kleberg_cou0134,poll26973191,st48,other,,loc0134
+,ocd-id,,ocd-division/country:us/state:tx/county:knox,knox_cou0135,poll93197370,st48,other,,loc0135
+,ocd-id,,ocd-division/country:us/state:tx/county:la_salle,la_salle_cou0136,poll56575150 poll94444190,st48,other,,loc0136
+,ocd-id,,ocd-division/country:us/state:tx/county:lamar,lamar_cou0137,poll12473411,st48,other,,loc0137
+,ocd-id,,ocd-division/country:us/state:tx/county:lamb,lamb_cou0138,poll16700848 poll9692387 poll40799326 poll11702265,st48,other,,loc0138
+,ocd-id,,ocd-division/country:us/state:tx/county:lampasas,lampasas_cou0139,poll98553027,st48,other,,loc0139
+,ocd-id,,ocd-division/country:us/state:tx/county:lavaca,lavaca_cou0140,poll99248820,st48,other,,loc0140
+,ocd-id,,ocd-division/country:us/state:tx/county:lee,lee_cou0141,poll85059877,st48,other,,loc0141
+,ocd-id,,ocd-division/country:us/state:tx/county:leon,leon_cou0142,poll31747356,st48,other,,loc0142
+,ocd-id,,ocd-division/country:us/state:tx/county:liberty,liberty_cou0143,poll73544691 poll76007370 poll94782015 poll41499697,st48,other,,loc0143
+,ocd-id,,ocd-division/country:us/state:tx/county:limestone,limestone_cou0144,poll29154278 poll17352901,st48,other,,loc0144
+,ocd-id,,ocd-division/country:us/state:tx/county:lipscomb,lipscomb_cou0145,poll1155905,st48,other,,loc0145
+,ocd-id,,ocd-division/country:us/state:tx/county:live_oak,live_oak_cou0146,poll13086936,st48,other,,loc0146
+,ocd-id,,ocd-division/country:us/state:tx/county:llano,llano_cou0147,poll11709120 poll12682258 poll37483320,st48,other,,loc0147
+,ocd-id,,ocd-division/country:us/state:tx/county:loving,loving_cou0148,poll48888405,st48,other,,loc0148
+,ocd-id,,ocd-division/country:us/state:tx/county:lubbock,lubbock_cou0149,poll34898860 poll83044246 poll22149880 poll18693060 poll7675294 poll40752684 poll36216046 poll96930552 poll29279869 poll39354760 poll12286742 poll18631598 poll65065762 poll34375471 poll35628729 poll70619353 poll14078412 poll99362282 poll80605647 poll32932804 poll32109016 poll94465037 poll75364017 poll94747383 poll41062884 poll43560972 poll46748160 poll54391459 poll66811798,st48,other,,loc0149
+,ocd-id,,ocd-division/country:us/state:tx/county:lynn,lynn_cou0150,poll86717925,st48,other,,loc0150
+,ocd-id,,ocd-division/country:us/state:tx/county:madison,madison_cou0151,poll66475092 poll73195204,st48,other,,loc0151
+,ocd-id,,ocd-division/country:us/state:tx/county:marion,marion_cou0152,poll82612753,st48,other,,loc0152
+,ocd-id,,ocd-division/country:us/state:tx/county:martin,martin_cou0153,poll60960965,st48,other,,loc0153
+,ocd-id,,ocd-division/country:us/state:tx/county:mason,mason_cou0154,poll71962924,st48,other,,loc0154
+,ocd-id,,ocd-division/country:us/state:tx/county:matagorda,matagorda_cou0155,poll54628187,st48,other,,loc0155
+,ocd-id,,ocd-division/country:us/state:tx/county:maverick,maverick_cou0156,poll81161110,st48,other,,loc0156
+,ocd-id,,ocd-division/country:us/state:tx/county:mcculloch,mcculloch_cou0157,poll16026648,st48,other,,loc0157
+,ocd-id,,ocd-division/country:us/state:tx/county:mclennan,mclennan_cou0158,poll57036918 poll69913150 poll70907201 poll83006994 poll14260324,st48,other,,loc0158
+,ocd-id,,ocd-division/country:us/state:tx/county:mcmullen,mcmullen_cou0159,poll49956521,st48,other,,loc0159
+,ocd-id,,ocd-division/country:us/state:tx/county:medina,medina_cou0160,poll18137637 poll61602539 poll32021037,st48,other,,loc0160
+,ocd-id,,ocd-division/country:us/state:tx/county:menard,menard_cou0161,poll4769172 poll2343794 poll26186373 poll4171367,st48,other,,loc0161
+,ocd-id,,ocd-division/country:us/state:tx/county:midland,midland_cou0162,poll30345391 poll72991037 poll2445770 poll93092099 poll65752254,st48,other,,loc0162
+,ocd-id,,ocd-division/country:us/state:tx/county:milam,milam_cou0163,poll82001877 poll2835179 poll78726373 poll93466812,st48,other,,loc0163
+,ocd-id,,ocd-division/country:us/state:tx/county:mills,mills_cou0164,poll18485032,st48,other,,loc0164
+,ocd-id,,ocd-division/country:us/state:tx/county:mitchell,mitchell_cou0165,poll11880260,st48,other,,loc0165
+,ocd-id,,ocd-division/country:us/state:tx/county:montague,montague_cou0166,poll70050498 poll47446346 poll4937836 poll86005320,st48,other,,loc0166
+,ocd-id,,ocd-division/country:us/state:tx/county:montgomery,montgomery_cou0167,poll9065838 poll89668620 poll93856379 poll13745476 poll96315289 poll4454488 poll41470624 poll7348425,st48,other,,loc0167
+,ocd-id,,ocd-division/country:us/state:tx/county:moore,moore_cou0168,poll69730267,st48,other,,loc0168
+,ocd-id,,ocd-division/country:us/state:tx/county:morris,morris_cou0169,poll8679918,st48,other,,loc0169
+,ocd-id,,ocd-division/country:us/state:tx/county:motley,motley_cou0170,poll80378693,st48,other,,loc0170
+,ocd-id,,ocd-division/country:us/state:tx/county:nacogdoches,nacogdoches_cou0171,poll27859362,st48,other,,loc0171
+,ocd-id,,ocd-division/country:us/state:tx/county:navarro,navarro_cou0172,poll56750212,st48,other,,loc0172
+,ocd-id,,ocd-division/country:us/state:tx/county:newton,newton_cou0173,poll75667703 poll85430979,st48,other,,loc0173
+,ocd-id,,ocd-division/country:us/state:tx/county:nolan,nolan_cou0174,poll17300087,st48,other,,loc0174
+,ocd-id,,ocd-division/country:us/state:tx/county:nueces,nueces_cou0175,poll1576959 poll83567765 poll58321904 poll20595517 poll6521778 poll44391242 poll3193267 poll72058928 poll29228971 poll66450709 poll71069786 poll96218814 poll5665487 poll62001321 poll37684792 poll6194788 poll90065710 poll35504248 poll80781787 poll45564508 poll14773321 poll67714128 poll18003357 poll68617983 poll84951162 poll56229917 poll63604873,st48,other,,loc0175
+,ocd-id,,ocd-division/country:us/state:tx/county:ochiltree,ochiltree_cou0176,poll41000646,st48,other,,loc0176
+,ocd-id,,ocd-division/country:us/state:tx/county:oldham,oldham_cou0177,poll18503540,st48,other,,loc0177
+,ocd-id,,ocd-division/country:us/state:tx/county:orange,orange_cou0178,poll80644053,st48,other,,loc0178
+,ocd-id,,ocd-division/country:us/state:tx/county:palo_pinto,palo_pinto_cou0179,poll21040871 poll18919097,st48,other,,loc0179
+,ocd-id,,ocd-division/country:us/state:tx/county:panola,panola_cou0180,poll90971282,st48,other,,loc0180
+,ocd-id,,ocd-division/country:us/state:tx/county:parker,parker_cou0181,poll65955836 poll41532235 poll87343863 poll68134186 poll83353872 poll58704137 poll69895587,st48,other,,loc0181
+,ocd-id,,ocd-division/country:us/state:tx/county:parmer,parmer_cou0182,poll5792703 poll22527324 poll89485491,st48,other,,loc0182
+,ocd-id,,ocd-division/country:us/state:tx/county:pecos,pecos_cou0183,poll63121296,st48,other,,loc0183
+,ocd-id,,ocd-division/country:us/state:tx/county:polk,polk_cou0184,poll63894174,st48,other,,loc0184
+,ocd-id,,ocd-division/country:us/state:tx/county:potter,potter_cou0185,poll88661102 poll62802193 poll52233269 poll81076640 poll19394652 poll82120043 poll98557128 poll69578001 poll26346389,st48,other,,loc0185
+,ocd-id,,ocd-division/country:us/state:tx/county:presidio,presidio_cou0186,poll8418741,st48,other,,loc0186
+,ocd-id,,ocd-division/country:us/state:tx/county:rains,rains_cou0187,poll46932880,st48,other,,loc0187
+,ocd-id,,ocd-division/country:us/state:tx/county:randall,randall_cou0188,poll4837801 poll51144233 poll36302787 poll68912124 poll4548080,st48,other,,loc0188
+,ocd-id,,ocd-division/country:us/state:tx/county:reagan,reagan_cou0189,poll47968118,st48,other,,loc0189
+,ocd-id,,ocd-division/country:us/state:tx/county:real,real_cou0190,poll24497805 poll6981253 poll48566292,st48,other,,loc0190
+,ocd-id,,ocd-division/country:us/state:tx/county:red_river,red_river_cou0191,poll79931066,st48,other,,loc0191
+,ocd-id,,ocd-division/country:us/state:tx/county:reeves,reeves_cou0192,poll82064883,st48,other,,loc0192
+,ocd-id,,ocd-division/country:us/state:tx/county:refugio,refugio_cou0193,poll12435999,st48,other,,loc0193
+,ocd-id,,ocd-division/country:us/state:tx/county:roberts,roberts_cou0194,poll25448505,st48,other,,loc0194
+,ocd-id,,ocd-division/country:us/state:tx/county:robertson,robertson_cou0195,poll51668589 poll19090356 poll16027849 poll81390062,st48,other,,loc0195
+,ocd-id,,ocd-division/country:us/state:tx/county:rockwall,rockwall_cou0196,poll9489978 poll53297686 poll51340949 poll63373201,st48,other,,loc0196
+,ocd-id,,ocd-division/country:us/state:tx/county:runnels,runnels_cou0197,poll63430378,st48,other,,loc0197
+,ocd-id,,ocd-division/country:us/state:tx/county:rusk,rusk_cou0198,poll56239642 poll35141547 poll29123288 poll58313441 poll10879690,st48,other,,loc0198
+,ocd-id,,ocd-division/country:us/state:tx/county:sabine,sabine_cou0199,poll63352335 poll94065252,st48,other,,loc0199
+,ocd-id,,ocd-division/country:us/state:tx/county:san_augustine,san_augustine_cou0200,poll55457240 poll98169325,st48,other,,loc0200
+,ocd-id,,ocd-division/country:us/state:tx/county:san_jacinto,san_jacinto_cou0201,poll74137996,st48,other,,loc0201
+,ocd-id,,ocd-division/country:us/state:tx/county:san_patricio,san_patricio_cou0202,poll57432558 poll51990798 poll31634182 poll97120793,st48,other,,loc0202
+,ocd-id,,ocd-division/country:us/state:tx/county:san_saba,san_saba_cou0203,poll41659824,st48,other,,loc0203
+,ocd-id,,ocd-division/country:us/state:tx/county:schleicher,schleicher_cou0204,poll46417540 poll2693607 poll21479911,st48,other,,loc0204
+,ocd-id,,ocd-division/country:us/state:tx/county:scurry,scurry_cou0205,poll46614953,st48,other,,loc0205
+,ocd-id,,ocd-division/country:us/state:tx/county:shackelford,shackelford_cou0206,poll768901,st48,other,,loc0206
+,ocd-id,,ocd-division/country:us/state:tx/county:shelby,shelby_cou0207,poll21230172,st48,other,,loc0207
+,ocd-id,,ocd-division/country:us/state:tx/county:sherman,sherman_cou0208,poll30663088,st48,other,,loc0208
+,ocd-id,,ocd-division/country:us/state:tx/county:smith,smith_cou0209,poll7619549,st48,other,,loc0209
+,ocd-id,,ocd-division/country:us/state:tx/county:somervell,somervell_cou0210,poll1166006,st48,other,,loc0210
+,ocd-id,,ocd-division/country:us/state:tx/county:starr,starr_cou0211,poll59500988,st48,other,,loc0211
+,ocd-id,,ocd-division/country:us/state:tx/county:stephens,stephens_cou0212,poll8332715,st48,other,,loc0212
+,ocd-id,,ocd-division/country:us/state:tx/county:sterling,sterling_cou0213,poll39970006,st48,other,,loc0213
+,ocd-id,,ocd-division/country:us/state:tx/county:stonewall,stonewall_cou0214,poll73540757,st48,other,,loc0214
+,ocd-id,,ocd-division/country:us/state:tx/county:sutton,sutton_cou0215,poll72374826,st48,other,,loc0215
+,ocd-id,,ocd-division/country:us/state:tx/county:swisher,swisher_cou0216,poll41367989,st48,other,,loc0216
+,ocd-id,,ocd-division/country:us/state:tx/county:tarrant,tarrant_cou0217,poll89654302 poll79916199 poll36615419 poll62656442 poll55400567 poll82461304 poll19264359 poll51024078 poll88489507 poll66640323 poll46795460 poll69757786 poll31152749 poll78089234 poll36142925 poll36235588 poll11514340 poll94754530 poll88439052 poll93257518 poll5503841 poll76753955 poll22025813 poll13614766 poll19643907 poll45493933 poll27075653 poll64046661 poll90756646 poll54464446 poll89331948 poll40772544 poll17889478 poll64003849 poll77558296 poll54299625 poll11652960 poll21425687 poll97853686 poll54144968 poll19780671 poll85508052 poll45241016 poll40979225 poll50596366 poll44580107 poll57139700 poll33558432 poll64943680 poll81974641 poll33819351 poll8834450 poll33809479 poll31025818 poll28023682 poll55037332 poll4681768,st48,other,,loc0217
+,ocd-id,,ocd-division/country:us/state:tx/county:taylor,taylor_cou0218,poll76993191 poll7930774 poll71016343 poll17563603 poll4872361,st48,other,,loc0218
+,ocd-id,,ocd-division/country:us/state:tx/county:terrell,terrell_cou0219,poll20622052,st48,other,,loc0219
+,ocd-id,,ocd-division/country:us/state:tx/county:terry,terry_cou0220,poll49241360,st48,other,,loc0220
+,ocd-id,,ocd-division/country:us/state:tx/county:throckmorton,throckmorton_cou0221,poll20815726,st48,other,,loc0221
+,ocd-id,,ocd-division/country:us/state:tx/county:titus,titus_cou0222,poll66925729,st48,other,,loc0222
+,ocd-id,,ocd-division/country:us/state:tx/county:tom_green,tom_green_cou0223,poll38174304,st48,other,,loc0223
+,ocd-id,,ocd-division/country:us/state:tx/county:travis,travis_cou0224,poll25317631 poll57730184 poll28927797 poll17478121 poll8049379 poll45818431 poll14443551 poll57221599 poll96046387 poll48106212 poll88030664 poll81013746 poll98854771 poll68994101 poll99184094 poll78539834 poll40791419 poll48499191 poll72106120 poll94814231 poll83439336 poll79159593 poll78127396 poll38373211 poll68433023 poll83485062 poll65069373 poll14623739 poll7883112 poll76741400 poll9513342 poll67181077 poll45237796 poll92268114 poll62219448 poll2699213 poll80649641,st48,other,,loc0224
+,ocd-id,,ocd-division/country:us/state:tx/county:trinity,trinity_cou0225,poll93035759 poll14086350,st48,other,,loc0225
+,ocd-id,,ocd-division/country:us/state:tx/county:tyler,tyler_cou0226,poll44986021,st48,other,,loc0226
+,ocd-id,,ocd-division/country:us/state:tx/county:upshur,upshur_cou0227,poll85910932,st48,other,,loc0227
+,ocd-id,,ocd-division/country:us/state:tx/county:upton,upton_cou0228,poll18225020 poll3388922,st48,other,,loc0228
+,ocd-id,,ocd-division/country:us/state:tx/county:uvalde,uvalde_cou0229,poll24710942,st48,other,,loc0229
+,ocd-id,,ocd-division/country:us/state:tx/county:val_verde,val_verde_cou0230,poll30997357,st48,other,,loc0230
+,ocd-id,,ocd-division/country:us/state:tx/county:van_zandt,van_zandt_cou0231,poll93809366,st48,other,,loc0231
+,ocd-id,,ocd-division/country:us/state:tx/county:victoria,victoria_cou0232,poll37562418 poll54992385 poll31816901 poll65512397,st48,other,,loc0232
+,ocd-id,,ocd-division/country:us/state:tx/county:walker,walker_cou0233,poll17930717,st48,other,,loc0233
+,ocd-id,,ocd-division/country:us/state:tx/county:waller,waller_cou0234,poll42841634 poll15535413 poll4058013 poll99496679 poll33547544 poll78627269 poll71490993 poll46580014 poll48395077,st48,other,,loc0234
+,ocd-id,,ocd-division/country:us/state:tx/county:ward,ward_cou0235,poll34101985,st48,other,,loc0235
+,ocd-id,,ocd-division/country:us/state:tx/county:washington,washington_cou0236,poll94035613,st48,other,,loc0236
+,ocd-id,,ocd-division/country:us/state:tx/county:webb,webb_cou0237,poll42334425 poll33712672 poll1904883 poll48352674 poll31975254 poll87171522 poll57379129 poll24841109 poll86274374 poll58692068 poll98721752 poll49029619 poll8645794 poll20501625 poll36036304 poll86334 poll52096465 poll29701933 poll58969663 poll79130241 poll39402035 poll78155163 poll52283187 poll98797768 poll33468623 poll83072516 poll11973043 poll29461579 poll27477777 poll15456103 poll95106963 poll99847541 poll53090609 poll39145899 poll63101167 poll42499149,st48,other,,loc0237
+,ocd-id,,ocd-division/country:us/state:tx/county:wharton,wharton_cou0238,poll72803809 poll62016781,st48,other,,loc0238
+,ocd-id,,ocd-division/country:us/state:tx/county:wheeler,wheeler_cou0239,poll4259864 poll31689658,st48,other,,loc0239
+,ocd-id,,ocd-division/country:us/state:tx/county:wichita,wichita_cou0240,poll60622689 poll25562144 poll19627036 poll11937999 poll98013255 poll12967591,st48,other,,loc0240
+,ocd-id,,ocd-division/country:us/state:tx/county:wilbarger,wilbarger_cou0241,poll73854927,st48,other,,loc0241
+,ocd-id,,ocd-division/country:us/state:tx/county:willacy,willacy_cou0242,poll51322186,st48,other,,loc0242
+,ocd-id,,ocd-division/country:us/state:tx/county:williamson,williamson_cou0243,poll85560899 poll9307283 poll34322769 poll85361084 poll32788910 poll38207745 poll31273010 poll32485635 poll2133398 poll9578575 poll15528645 poll57324683 poll14687923 poll48898341 poll86178145,st48,other,,loc0243
+,ocd-id,,ocd-division/country:us/state:tx/county:wilson,wilson_cou0244,poll49577869 poll86347192 poll72687412 poll99516208,st48,other,,loc0244
+,ocd-id,,ocd-division/country:us/state:tx/county:winkler,winkler_cou0245,poll20944105 poll26369613,st48,other,,loc0245
+,ocd-id,,ocd-division/country:us/state:tx/county:wise,wise_cou0246,poll83618250 poll80383505 poll23247880 poll8606926,st48,other,,loc0246
+,ocd-id,,ocd-division/country:us/state:tx/county:wood,wood_cou0247,poll1594533,st48,other,,loc0247
+,ocd-id,,ocd-division/country:us/state:tx/county:yoakum,yoakum_cou0248,poll6556773 poll82519999,st48,other,,loc0248
+,ocd-id,,ocd-division/country:us/state:tx/county:young,young_cou0249,poll6426071 poll73300007,st48,other,,loc0249
+,ocd-id,,ocd-division/country:us/state:tx/county:zapata,zapata_cou0250,poll40837735,st48,other,,loc0250
+,ocd-id,,ocd-division/country:us/state:tx/county:zavala,zavala_cou0251,poll69553835,st48,other,,loc0251

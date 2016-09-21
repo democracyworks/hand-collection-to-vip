@@ -303,10 +303,10 @@ if __name__ == '__main__':
 #    early_voting_df['index'] = early_voting_df.index +1 # offsets zero based index so it starts at 1 for ids
     #print early_voting_df
 
-    state_file = 'texas_early_voting_info.csv'
+    state_file = 'texas_early_voting_info_clean.csv'
 
     colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state', 'zip_code',
-                'start_time', 'end_time', 'start_date', 'end_date', 'is_subject_to_change', 'notes']
+                'start_time', 'end_time', 'start_date', 'end_date']
 
     usecols = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state', 'zip_code',
                 'start_time', 'end_time', 'start_date', 'end_date']
@@ -317,6 +317,7 @@ if __name__ == '__main__':
     pl = PollingLocationTxt(early_voting_df, config.state_abbreviation_upper)
     early_voting_df = pl.export_for_schedule_and_locality()
     print early_voting_df
+
 
     lt = LocalityTxt(early_voting_df, config.state)
     lt.write_locality_txt()
