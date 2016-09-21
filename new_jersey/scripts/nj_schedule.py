@@ -50,9 +50,15 @@ class ScheduleTxt(object):
 
     def get_end_time(self, hours, start_date, end_date):
         """#"""
+        #print hours
 
-        end_time = tuple(hours.split('-'))[1].replace(' PM', ':00')
-        print type(end_date)
+        #end_time = tuple(hours.split('-'))[1].replace(' PM', ':00')
+        # Create tuple from hours string, get end time from index 1.
+        end_time = tuple(hours.split('-'))[1]
+
+        # Convert 12 hour time to 24 hour format.
+        et = datetime.datetime.strptime(end_time, '%I:%M %p').strftime('%H:%M:%S')
+        print et
 
         end_date = self.get_end_date(end_date, start_date)
 
@@ -63,16 +69,16 @@ class ScheduleTxt(object):
         if diff1 in start_date or diff2 in start_date:
             utc_offset = config.utc_offset_5
             print utc_offset
-            return end_time + utc_offset
+            return et + utc_offset
 
         elif diff1 in end_date or diff2 in end_date:
             utc_offset = config.utc_offset_5
-            return end_time + utc_offset
+            return et + utc_offset
 
         else:
             utc_offset = config.utc_offset_4
             print utc_offset
-            return end_time + utc_offset
+            return et + utc_offset
 
     def is_only_by_appointment(self):
         return None

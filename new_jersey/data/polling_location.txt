@@ -1,7 +1,7 @@
 address_line,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
 "Historic Court House Complex, 5903 Main Street Mays Landing, NJ 08330",08:30 AM-04:30 PM,,ho33124669,false,true,,,,poll98247693
 "One Bergen County Plaza, Room 310 Hackensack, NJ 07601",08:30 AM-04:00 PM,,ho60493655,false,true,,,,poll40372757
-"County Office Building, 49 Rancocas Road Room G-22 Mount Holly, NJ 08060",08:00 AM-04:00 PM,,ho56098634,false,true,,,,poll74973525
+"County Office Building, 49 Rancocas Road Room G22 Mount Holly, NJ 08060",08:00 AM-04:00 PM,,ho56098634,false,true,,,,poll74973525
 "Courthouse, Room 102, 520 Market Street Camden, NJ 08101",08:30 AM-04:00 PM,,ho18312256,false,true,,,,poll68336913
 "100 University Court Blackwood, NJ 08012",08:30 AM-04:00 PM,,ho8002677,false,true,,,,poll81879542
 "10 W. Mechanic Street Cape May Courthouse, NJ 08210",08:30 AM-04:30 PM,,ho94488398,false,true,,,,poll38983223

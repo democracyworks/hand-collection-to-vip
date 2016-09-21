@@ -44,7 +44,7 @@ class SourceTxt(object):
         return "Democracy Works"
 
     def get_id(self):
-        return ''
+        return 'source01'
 
 
     def write_source_txt(self):

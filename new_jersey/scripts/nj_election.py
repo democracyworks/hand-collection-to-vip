@@ -64,20 +64,11 @@ class ElectionTxt(object):
         and modifying its value. A '0' is added, if necessary, to maintain a
         consistent id length.
         """
-        # TODO: use fips code
-        for key, value in config.fips_dict.iteritems():
-            if key == config.state.lower():
-                state_num = value
-                if state_num <=9:
-                    state_num = '0' + str(state_num)
-                else:
-                    state_num = str(state_num)
-
-                return 'e' + state_num
+        return 'e0001'
 
     def get_date(self):
         """#"""
-        return '11-8-2016'.replace('-', '/')
+        return '2016-11-08'
 
     def get_name(self):
         """#"""
@@ -130,8 +121,14 @@ class ElectionTxt(object):
 
     def registration_deadline(self):
         """#"""
-        # use registration_deadline_display
-        return 'true'
+
+        if self.state_feed.get('registration_deadline'):
+            deadline = self.state_feed.get('registration_deadline')
+            print deadline
+            return deadline
+            #return datetime.datetime.strptime(deadline, '%Y-%m-%d').strftime('%-m/%d/%Y')
+        else:
+            return ''
 
     def absentee_request_deadline(self):
         """#"""
@@ -139,8 +136,11 @@ class ElectionTxt(object):
 
         if self.state_feed.get('ballot_request_deadline'):
             deadline = self.state_feed.get('ballot_request_deadline')
-            return datetime.datetime.strptime(deadline, '%Y-%m-%d').strftime('%-m/%d/%Y')
+            #print deadline
+            return deadline
+            #return datetime.datetime.strptime(deadline, '%Y-%m-%d').strftime('%-m/%d/%Y')
         else:
+            #raise ValueError('Absentee_request deadline value is not valid.')
             return ''
 
     def hours_open_id(self):
