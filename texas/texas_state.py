@@ -19,7 +19,7 @@ import pandas as pd
 
 def pl():
     # state_feed_file = 'state_feed_info.csv'
-    f = 'locality.csv'
+    f = 'locality.txt'
 
     colnames = ['source_election_administration_id', 'external_identifier_type', 'external_identifier_othertype',
                 'external_identifier_value', 'name', 'source_polling_location_ids', 'state_id', 'type',

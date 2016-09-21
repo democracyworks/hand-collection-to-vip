@@ -55,7 +55,7 @@ index,address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early
 187,"9310 Jim Seal Dr, San Antonio, TX 78233",,08:00 AM-06:00 PM,,ho51827644,false,true,,,,poll79776802
 191,"4522 Fredericksburg Rd, San Antonio, TX 78201",,08:00 AM-06:00 PM,,ho420013,false,true,,,,poll33895652
 195,"101 E. Cypress St., Johnson City, TX 78636",,08:00 AM-04:30 PM,,ho25825754,false,true,,,,poll86792495
-196,"607 Chandler St , Blanco, TX 78606",,08:00 AM-04:00 PM,,ho1661285,false,true,,,,poll75382348
+196,"607 Chandler St, Blanco, TX 78606",,08:00 AM-04:00 PM,,ho50536640,false,true,,,,poll38772393
 199,"104 West Morgan St., Meridian, TX 76665",,08:00 AM-05:00 PM,,ho76102842,false,true,,,,poll17664989
 203,"710 James Bowie Dr, New Boston, TX 75570",,08:00 AM-05:00 PM,,ho6002693,false,true,,,,poll29711485
 209,"100 N Stateline Ave, Texarkana, TX 75501",,08:00 AM-05:00 PM,,ho62827337,false,true,,,,poll98812612
@@ -63,12 +63,10 @@ index,address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early
 217,"2700 Premier St, Fort Worth, TX 76111-3011",,08:00 AM-05:00 PM,,ho18968881,false,true,,,,poll17889478
 222,"Bob Duncan Center 2800 S Center Street, Arlington, TX 76014",,08:00 AM-05:00 PM,,ho52688652,false,true,,,,poll72629661
 227,"Elzie Odom Athletic Center 1601 NE Green Oaks Boulevard, Arlington, TX 76006",,08:00 AM-05:00 PM,,ho68254338,false,true,,,,poll54920162
-232,"Center for Community Service
-Junior League of Arlington 4002 W Pioneer Parkway , Arlington, TX 76013",,08:00 AM-05:00 PM,,ho66200199,false,true,,,,poll93387073
+232,"Center for Community Service Junior League of Arlington 4002 W Pioneer Parkway, Arlington, TX 76013",,08:00 AM-05:00 PM,,ho46290008,false,true,,,,poll2295173
 237,"South Service Center 1100 SW Green Oaks Boulevard, Arlington, TX 76017",,08:00 AM-05:00 PM,,ho77761185,false,true,,,,poll59124452
-242,"Tarrant County Sub   Courthouse in Arlington 700 E Abram Street, Arlington, TX 76010",,08:00 AM-05:00 PM,,ho54712211,false,true,,,,poll91176094
-247,"Tarrant County College Southeast Campus
-EMB     C Portable Building 2100 Southeast Parkway, Arlington, TX 76018",,08:00 AM-05:00 PM,,ho32587959,false,true,,,,poll92474228
+242,"Tarrant County Sub Courthouse in Arlington 700 E Abram Street, Arlington, TX 76010",,08:00 AM-05:00 PM,,ho90008223,false,true,,,,poll45429394
+247,"Tarrant County College Southeast Campus EMB C Portable Building 2100 Southeast Parkway, Arlington, TX 76018",,08:00 AM-05:00 PM,,ho1144512,false,true,,,,poll95725678
 252,"B J Clark Annex Room 4 603 Southeast Parkway, Azle, TX 76020",,08:00 AM-05:00 PM,,ho35885233,false,true,,,,poll57264835
 257,"Bedford Public Library 2424 Forest Ridge Drive, Bedford, TX 76021",,08:00 AM-05:00 PM,,ho45930332,false,true,,,,poll32436821
 262,"Benbrook Community Center 228 San Angelo Avenue, Benbrook, TX 76126",,08:00 AM-05:00 PM,,ho12503934,false,true,,,,poll48306452
@@ -78,52 +76,39 @@ EMB     C Portable Building 2100 Southeast Parkway, Arlington, TX 76018",,08:00 
 282,"Forest Hill Civic and Convention Center 6901 Wichita Street, Forest Hill, TX 76140",,08:00 AM-05:00 PM,,ho57416799,false,true,,,,poll16281941
 287,"All Saints Catholic Church Parish Hall 200 NW 20th Street, Fort Worth, TX 76164",,08:00 AM-05:00 PM,,ho54310166,false,true,,,,poll68500457
 292,"Diamond Hill/Jarvis Library 1300 NE 35th Street, Fort Worth, TX 76106",,08:00 AM-05:00 PM,,ho46872439,false,true,,,,poll66209763
-297,"Griffin Sub   Courthouse 3212 Miller Avenue, Fort Worth, TX 76119",,08:00 AM-05:00 PM,,ho80436014,false,true,,,,poll70052977
-302,"Handley   Meadowbrook Community Center 6201 Beaty Street, Fort Worth, TX 76112",,08:00 AM-05:00 PM,,ho64756202,false,true,,,,poll32234655
-307,"JPS Health Center Viola M. Pitts/Como
-Lower Level     Suite 100 4701 Bryant Irvin Road N, Fort Worth, TX 76107",,08:00 AM-05:00 PM,,ho59003199,false,true,,,,poll15301974
+297,"Griffin Sub Courthouse 3212 Miller Avenue, Fort Worth, TX 76119",,08:00 AM-05:00 PM,,ho63074615,false,true,,,,poll25001906
+302,"Handley Meadowbrook Community Center 6201 Beaty Street, Fort Worth, TX 76112",,08:00 AM-05:00 PM,,ho64495237,false,true,,,,poll15320994
+307,"JPS Health Center Viola M. Pitts/Como Lower Level Suite 100 4701 Bryant Irvin Road N, Fort Worth, TX 76107",,08:00 AM-05:00 PM,,ho3497418,false,true,,,,poll12111291
 312,"Longhorn Activity Center 5350 Basswood Boulevard, Fort Worth, TX 76137",,08:00 AM-05:00 PM,,ho70709802,false,true,,,,poll49851103
 317,"Rosemont Middle School 1501 West Seminary Drive, Fort Worth, TX 76115",,08:00 AM-05:00 PM,,ho78185675,false,true,,,,poll77659212
 322,"Southside Community Center 959 E Rosedale Street, Fort Worth, TX 76104",,08:00 AM-05:00 PM,,ho58427147,false,true,,,,poll24305660
 327,"Southwest Community Center 6300 Welch Avenue, Fort Worth, TX 76133",,08:00 AM-05:00 PM,,ho51024570,false,true,,,,poll24852489
-332,"Southwest Sub   Courthouse 6551 Granbury Road, Fort Worth, TX 76133",,08:00 AM-05:00 PM,,ho45929734,false,true,,,,poll43481815
+332,"Southwest Sub Courthouse 6551 Granbury Road, Fort Worth, TX 76133",,08:00 AM-05:00 PM,,ho67937439,false,true,,,,poll42263835
 337,"Tarrant County Plaza Building 201 Burnett Street, Fort Worth, TX 76102",,08:00 AM-05:00 PM,,ho10948415,false,true,,,,poll43760344
-342,"Villages of Woodland Springs
-Amenity Center 12209 Timberland Boulevard, Fort Worth, TX 76244",,08:00 AM-05:00 PM,,ho22960238,false,true,,,,poll28621752
+342,"Villages of Woodland Springs Amenity Center 12209 Timberland Boulevard, Fort Worth, TX 76244",,08:00 AM-05:00 PM,,ho37380029,false,true,,,,poll65210493
 347,"Worth Heights Community Center 3551 New York Avenue, Fort Worth, TX 76110",,08:00 AM-05:00 PM,,ho57128833,false,true,,,,poll51134757
-352,"Asia Times Square II
-2615 W Pioneer Parkway
-(Corner Pioneer Pkwy and Great
-Southwest Pkwy), Grand Prairie, TX 75051",,08:00 AM-05:00 PM,,ho49495304,false,true,,,,poll82305837
+352,"Asia Times Square II 2615 W Pioneer Parkway, Grand Prairie, TX 75051",,08:00 AM-05:00 PM,,ho70489733,false,true,,,,poll44550601
 357,"Lake Park Operations Center 5610 Lake Ridge Parkway, Grand Prairie, TX 75052",,08:00 AM-05:00 PM,,ho33426770,false,true,,,,poll42710987
 362,"The REC of Grapevine 1175 Municipal Way, Grapevine, TX 76051",,08:00 AM-05:00 PM,,ho22508944,false,true,,,,poll46120116
 367,"Haltom City Northeast Center 3201 Friendly Lane, Haltom City, TX 76117",,08:00 AM-05:00 PM,,ho96486661,false,true,,,,poll14688701
 372,"Hurst Recreation Center 700 Mary Drive, Hurst, TX 76053",,08:00 AM-05:00 PM,,ho46145127,false,true,,,,poll15643428
-377,"Northeast Courthouse
-Bear Creek Community Room 645 Grapevine Highway, Hurst, TX 76054",,08:00 AM-05:00 PM,,ho71446395,false,true,,,,poll66616994
+377,"Northeast Courthouse Bear Creek Community Room 645 Grapevine Highway, Hurst, TX 76054",,08:00 AM-05:00 PM,,ho43393693,false,true,,,,poll57009007
 382,"Keller Town Hall 1100 Bear Creek Parkway, Keller, TX 76248",,08:00 AM-05:00 PM,,ho4367424,false,true,,,,poll41082309
 387,"Kennedale Community Center 316 W 3rd Street, Kennedale, TX 76060",,08:00 AM-05:00 PM,,ho11987191,false,true,,,,poll44142422
-392,"Sheriff   s Office North Patrol Division 6651 Lake Worth Boulevard, Lake Worth, TX 76135",,08:00 AM-05:00 PM,,ho52238546,false,true,,,,poll5818843
-397,"Mansfield Sub   Courthouse 1100 E Broad Street, Mansfield, TX 76063",,08:00 AM-05:00 PM,,ho49611203,false,true,,,,poll73581708
+392,"Sheriff s Office North Patrol Division 6651 Lake Worth Boulevard, Lake Worth, TX 76135",,08:00 AM-05:00 PM,,ho83325514,false,true,,,,poll44487272
+397,"Mansfield Sub Courthouse 1100 E Broad Street, Mansfield, TX 76063",,08:00 AM-05:00 PM,,ho43647841,false,true,,,,poll3577705
 402,"Dan Echols Center 6801 Glenview Drive, N Richland Hills, TX 76180",,08:00 AM-05:00 PM,,ho77802234,false,true,,,,poll75130281
-407,"Eagle Mountain   Saginaw ISD Administration
-Building 6     Training Room 1200 Old Decatur Road, Saginaw, TX 76179",,08:00 AM-05:00 PM,,ho28121349,false,true,,,,poll59452666
+407,"Eagle Mountain Saginaw ISD Administration Building 6 Training Room 1200 Old Decatur Road, Saginaw, TX 76179",,08:00 AM-05:00 PM,,ho75676678,false,true,,,,poll55948700
 412,"Southlake Town Hall 1400 Main Street, Southlake, TX 76092",,08:00 AM-05:00 PM,,ho74489220,false,true,,,,poll66380636
 417,"White Settlement Public Library 8215 White Settlement Road, White Settlement, TX 76108",,08:00 AM-05:00 PM,,ho5950062,false,true,,,,poll94785138
 422,"Southwestern Baptist Theological Seminary Naylor Student Center 1900 West Boyce Avenue, Fort Worth, TX 76115",,08:00 AM-05:00 PM,,ho50382313,false,true,,,,poll82924175
-423,"Texas Wesleyan University
-Brown   Lupton Student Center 1108 South Collard Street, Fort Worth, TX 76105",,08:00 AM-05:00 PM,,ho6335374,false,true,,,,poll74516637
-424,"UNT     Health Science Center
-Carl E. Everett Education and Administration Building 3500 Camp Bowie Boulevard, Fort Worth, TX 76107",,08:00 AM-05:00 PM,,ho18514122,false,true,,,,poll87058274
+423,"Texas Wesleyan University Brown Lupton Student Center 1108 South Collard Street, Fort Worth, TX 76105",,08:00 AM-05:00 PM,,ho7352203,false,true,,,,poll51498804
+424,"Health Science Center Carl E. Everett Education and Administration Building 3500 Camp Bowie Boulevard, Fort Worth, TX 76107",,08:00 AM-05:00 PM,,ho47986215,false,true,,,,poll43761242
 425,"Tarrant County College Northeast Campus Student Center NSTU 1506 828 W. Harwood Road, Hurst, TX 76054",,07:00 AM-07:00 PM,,ho53479150,false,true,,,,poll65127493
-426,"Tarrant County College Northwest Campus
-Student Union WSTU 1303/05 4801 Marine Creek Parkway, Fort Worth, TX 76179",,07:00 AM-07:00 PM,,ho49053152,false,true,,,,poll37388934
-427,"Tarrant County College South Campus
-Student Center 5301 Campus Drive Fort Worth 76119, Fort Worth, TX 76119",,07:00 AM-07:00 PM,,ho14651457,false,true,,,,poll35434998
-428,"UTA     University of Texas at Arlington
-Maverick Activities Center 500 W. Nedderman Drive, Arlington, TX 76019",,07:00 AM-07:00 PM,,ho1651608,false,true,,,,poll43400851
-429,"TCU     Texas Christian University
-Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00 AM-07:00 PM,,ho20612094,false,true,,,,poll57518686
+426,"Tarrant County College Northwest Campus Student Union WSTU 1303/05 4801 Marine Creek Parkway, Fort Worth, TX 76179",,07:00 AM-07:00 PM,,ho16601436,false,true,,,,poll76854365
+427,"Tarrant County College South Campus Student Center 5301 Campus Drive Fort Worth 76119, Fort Worth, TX 76119",,07:00 AM-07:00 PM,,ho81292799,false,true,,,,poll34301229
+428,"University of Texas at Arlington Maverick Activities Center 500 W. Nedderman Drive, Arlington, TX 76019",,07:00 AM-07:00 PM,,ho39067290,false,true,,,,poll64257566
+429,"Texas Christian University Brown Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00 AM-07:00 PM,,ho96991347,false,true,,,,poll21027471
 430,"Taylor County Plaza Building, 400 Oak Street, Ste 101, Abilene, TX 79602",,08:00 AM-05:00 PM,,ho47531072,false,true,,,,poll71016343
 434,"United Supermarket, 920 North Willis Street, Abilene, TX 79603",,10:00 AM-07:00 PM,,ho69380229,false,true,,,,poll4872361
 438,"United Supermarket, 1095 North Judge Ely Boulevard, Abilene, TX 79601",,10:00 AM-07:00 PM,,ho52761211,false,true,,,,poll7930774
@@ -135,7 +120,7 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 460,"Uvalde Civic Center, 300 E Main St, Uvalde, TX 78801",,08:00 AM-05:00 PM,,ho46880190,false,true,,,,poll24710942
 463,"Canton City Hall, 290 E. Tyler St, Canton, TX 75103",,08:00 AM-05:00 PM,,ho56436233,false,true,,,,poll93809366
 468,"2805 N. Navarro St., Ste 500, Victoria, TX 77901-3947",,08:00 AM-05:00 PM,,ho27582609,false,true,,,,poll65512397
-472,"Citizen   s HealthPlex, 9406 Zac Lentz Parkway, Victoria, TX 77904",,08:00 AM-05:00 PM,,ho79401466,false,true,,,,poll11799429
+472,"Citizen s HealthPlex, 9406 Zac Lentz Parkway, Victoria, TX 77904",,08:00 AM-05:00 PM,,ho41968102,false,true,,,,poll37562418
 474,"Bloomington Fire Station, 551 2nd Street West, Bloomington, TX 77951",,07:00 AM-07:00 PM,,ho86927696,false,true,,,,poll54992385
 475,"DaCosta Volunteer Fire Department, 144 Commerce Drive, DaCosta, TX 77905",,08:00 AM-05:00 PM,,ho72796935,false,true,,,,poll31816901
 476,"1301 Sam Houston Ave., Ste 100, Huntsville, TX 77340",,08:00 AM-05:00 PM,,ho88002950,false,true,,,,poll17930717
@@ -159,7 +144,7 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 536,"Pat Bryson Municipal Hall, 201 N. Brushy Street, Leander, TX 78641",,07:00 AM-07:00 PM,,ho37192786,false,true,,,,poll14687923
 539,"Hutto ISD Administration Building, 200 College Street, Hutto, TX 78634",,07:00 AM-07:00 PM,,ho2106176,false,true,,,,poll85560899
 542,"Taylor City Hall, 400 Porter Street, Taylor, TX 76574",,07:00 AM-07:00 PM,,ho73528265,false,true,,,,poll2133398
-545,"100 East Third, Suite 108  , Sweetwater, TX 79556",,08:30 AM-05:00 PM,,ho52073351,false,true,,,,poll92937029
+545,"100 East Third, Suite 108, Sweetwater, TX 79556",,08:30 AM-05:00 PM,,ho21378812,false,true,,,,poll1594533
 547,"Avenue G and Cowboy Way, Plains , TX 79355",,08:00 AM-05:00 PM,,ho81865792,false,true,,,,poll46060296
 549,"Denver City Branch Tax, 112 West 4th St, Denver City, TX 79323",,08:00 AM-05:00 PM,,ho92900223,false,true,,,,poll6556773
 551,"North Central Texas College 928 Cherry St., Graham, TX 76450",,08:00 AM-05:00 PM,,ho68296268,false,true,,,,poll2131873
@@ -178,10 +163,10 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 603,"511 East Adams, Brownwood, TX 76801",,08:00 AM-05:00 PM,,ho37765534,false,true,,,,poll85922806
 607,"414 Denver Ave # 201, Dalhart, TX 79022",,08:30 AM-05:00 PM,,ho65433950,false,true,,,,poll47879663
 609,"900 Main St, Channing, TX 79018",,08:00 AM-12:00 PM,,ho59048985,false,true,,,,poll45097034
-614,"701 Texas Blvd , Dalhart , TX 79022",,08:00 AM-12:00 PM,,ho84403801,false,true,,,,poll64917320
+614,"701 Texas Blvd, Dalhart , TX 79022",,08:00 AM-12:00 PM,,ho930358,false,true,,,,poll20306479
 618,"109 W Millican St, Sierra Blanca, TX 79851",,07:00 AM-07:00 PM,,ho6744006,false,true,,,,poll57833602
 620,"501 S. Ann Street, Brackettville, TX 78832",,08:00 AM-12:00 PM,,ho88067127,false,true,,,,poll30579885
-624,"100 W Cedar St , Benjamin, TX 79505",,08:30 AM-04:30 PM,,ho71382847,false,true,,,,poll15910566
+624,"100 W Cedar St, Benjamin, TX 79505",,08:30 AM-04:30 PM,,ho33169156,false,true,,,,poll93197370
 626,"112 E Walnut, Archer City, TX 76351",,08:00 AM-05:00 PM,,ho17120022,false,true,,,,poll46189450
 628,"47 Donna St, Wichita Falls, TX 76308",,08:00 AM-05:00 PM,,ho2916983,false,true,,,,poll26811224
 630,"Holiday City Hall, 110 W Olive St, Holiday City, TX 76366",,08:00 AM-05:00 PM,,ho11464986,false,true,,,,poll67525055
@@ -225,26 +210,26 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 771,"400 N Locust St., Sanger, TX 76266",,08:00 AM-05:00 PM,,ho91945471,false,true,,,,poll42475900
 776,"400 E. Gravis, 2nd Floor, San Diego, TX 78384",,08:00 AM-05:00 PM,,ho69639058,false,true,,,,poll18266471
 782,"100 West Main St, Ste 104A, Eastland, TX 76448",,08:00 AM-05:00 PM,,ho51644684,false,true,,,,poll9611703
-784,"101 E Main , Rocksprings, TX 78880",,08:00 AM-05:00 PM,,ho65873710,false,true,,,,poll65707179
+784,"101 E Main, Rocksprings, TX 78880",,08:00 AM-05:00 PM,,ho57734740,false,true,,,,poll91282058
 786,"151 N. Washington St., Room 108, La Grange, TX 78945",,08:00 AM-05:00 PM,,ho93292929,false,true,,,,poll12588637
 790,"410 S Pecan St, Pearsall, TX 78061",,08:00 AM-05:00 PM,,ho31549317,false,true,,,,poll68579639
 793,"2803 53rd Street, Galveston, TX 77552",,08:00 AM-05:00 PM,,ho31702260,false,true,,,,poll20094188
 797,"750 Highway 87, Crystal Beach, TX 77650",,08:00 AM-05:00 PM,,ho26341335,false,true,,,,poll88617614
 801,"722 Moody Ave., Galveston, TX 77550",,08:00 AM-05:00 PM,,ho72126776,false,true,,,,poll45930153
 805,"2929 Highway 6, Bayou Vista , TX 77563",,08:00 AM-05:00 PM,,ho38380834,false,true,,,,poll75962933
-809,"6333 Highway 6 , Hitchcock, TX 77563",,08:00 AM-05:00 PM,,ho71015302,false,true,,,,poll56765531
+809,"6333 Highway 6, Hitchcock, TX 77563",,08:00 AM-05:00 PM,,ho30549492,false,true,,,,poll74382076
 813,"11730 Highway 6, Santa Fe, TX 77510",,08:00 AM-05:00 PM,,ho99363252,false,true,,,,poll88599803
-817,"1109 B Bayou Road , La Marque, TX 77568",,08:00 AM-05:00 PM,,ho72909562,false,true,,,,poll92474704
+817,"1109 B Bayou Road, La Marque, TX 77568",,08:00 AM-05:00 PM,,ho80171921,false,true,,,,poll11159171
 821,"6415 Park Avenue, Texas City, TX 77591",,08:00 AM-05:00 PM,,ho36542391,false,true,,,,poll48979566
 825,"2010 5th Ave. N, Texas City, TX 77590",,08:00 AM-05:00 PM,,ho62834743,false,true,,,,poll55921532
 829,"2714 Highway 3, Dickinson, TX 77539",,08:00 AM-05:00 PM,,ho8167423,false,true,,,,poll93177343
 833,"4503 11th Street, Bacliff, TX 77518",,08:00 AM-05:00 PM,,ho44055799,false,true,,,,poll32910025
-837,"800 Harris Avenue , Kemah, TX 77565",,08:00 AM-05:00 PM,,ho47864111,false,true,,,,poll57873670
+837,"800 Harris Avenue, Kemah, TX 77565",,08:00 AM-05:00 PM,,ho90155071,false,true,,,,poll21297463
 841,"2425 East Main Street, League City, TX 77573",,08:00 AM-05:00 PM,,ho92728426,false,true,,,,poll743787
 845,"174 Calder Road, League City, TX 77573",,08:00 AM-05:00 PM,,ho69131302,false,true,,,,poll43109386
-849,"4320 West Main Street , League City, TX 77573",,08:00 AM-05:00 PM,,ho26313050,false,true,,,,poll38092958
-853,"910 South Friendswood Ave , Friendswood, TX 77546",,08:00 AM-05:00 PM,,ho32938425,false,true,,,,poll49292210
-857,"600 59th Street , Galveston, TX 77551",,08:00 AM-05:00 PM,,ho35228738,false,true,,,,poll90721589
+849,"4320 West Main Street, League City, TX 77573",,08:00 AM-05:00 PM,,ho55978138,false,true,,,,poll56346546
+853,"910 South Friendswood Ave, Friendswood, TX 77546",,08:00 AM-05:00 PM,,ho78677975,false,true,,,,poll88937540
+857,"600 59th Street, Galveston, TX 77551",,08:00 AM-05:00 PM,,ho37156147,false,true,,,,poll83311948
 861,"329 W franklin St, Goliad, TX 77963",,09:00 AM-05:00 PM,,ho63390406,false,true,,,,poll3584002
 866,"115 W. Houston Street, Sherman, TX 75090",,07:00 AM-07:00 PM,,ho85757006,false,true,,,,poll5655693
 869,"102 N. Rice St., Ste 107, Hamilton, TX 76531",,08:00 AM-04:30 PM,,ho72215567,false,true,,,,poll60604053
@@ -279,11 +264,11 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 980,"7340 Spencer Highway, Pasadena, TX 77505",,08:00 AM-06:00 PM,,ho28372889,false,true,,,,poll29635123
 984,"16616 Diana Lane, Houston, TX 77062",,08:00 AM-06:00 PM,,ho7487856,false,true,,,,poll66921898
 988,"10851 Scarsdale Boulevard, Houston, TX 77089",,08:00 AM-06:00 PM,,ho88078639,false,true,,,,poll82781922
-992,"4250 Cook Road, (Entrance on High Star - South Entrance), Houston, TX 77072",,08:00 AM-06:00 PM,,ho99679839,false,true,,,,poll71024742
+992,"4250 Cook Road, Houston, TX 77072",,08:00 AM-06:00 PM,,ho93369016,false,true,,,,poll30944881
 996,"805 Hidden Canyon Road, Katy, TX 77450",,08:00 AM-06:00 PM,,ho13956777,false,true,,,,poll66420806
 1000,"926 Country Place Drive, Houston, TX 77079",,08:00 AM-06:00 PM,,ho81546117,false,true,,,,poll97781321
 1004,"5414 Franz Road, Katy, TX 77493",,08:00 AM-06:00 PM,,ho90307662,false,true,,,,poll27799050
-1008,"3055 Bear Creek Drive (at Patterson Road), Houston, TX 77084",,08:00 AM-06:00 PM,,ho21822495,false,true,,,,poll19182883
+1008,"3055 Bear Creek Drive, Houston, TX 77084",,08:00 AM-06:00 PM,,ho32808648,false,true,,,,poll36218839
 1012,"19710 Clay Road, Katy, TX 77449",,08:00 AM-06:00 PM,,ho42332417,false,true,,,,poll89196685
 1016,"16327 Lakeview Drive, Jersey Village, TX 77040",,08:00 AM-06:00 PM,,ho82314186,false,true,,,,poll42503895
 1020,"8440 Greenhouse Road, Cypress, TX 77433",,08:00 AM-06:00 PM,,ho42620300,false,true,,,,poll49656647
@@ -304,10 +289,10 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 1080,"111 North Front Street, Fort Davis, TX 79734",,09:00 AM-05:00 PM,,ho70783230,false,true,,,,poll43046768
 1082,"103 S. Walnut St., Cleburne, TX 76033",,08:00 AM-05:00 PM,,ho64853537,false,true,,,,poll21417126
 1086,"1501 W. Henderson St., Cleburne, TX 76033",,08:00 AM-05:00 PM,,ho59948497,false,true,,,,poll79341969
-1090,"247 Elk Dr. Rm. , 104 Burleson, TX 76028",,08:00 AM-05:00 PM,,ho59086285,false,true,,,,poll19502806
-1094,"206 N. Baugh St. , Alvarado, TX 76009",,08:00 AM-05:00 PM,,ho98743554,false,true,,,,poll22904823
-1098,"10420 E. FM 917 , Alvarado, TX 76009",,08:00 AM-05:00 PM,,ho14519534,false,true,,,,poll6196536
-1102,"4300 E. FM 4 , Cleburne, TX 76031",,08:00 AM-05:00 PM,,ho44108204,false,true,,,,poll2651211
+1090,"247 Elk Dr. Rm., 104 Burleson, TX 76028",,08:00 AM-05:00 PM,,ho60000126,false,true,,,,poll51838537
+1094,"206 N. Baugh St., Alvarado, TX 76009",,08:00 AM-05:00 PM,,ho61551729,false,true,,,,poll76452907
+1098,"10420 E. FM 917, Alvarado, TX 76009",,08:00 AM-05:00 PM,,ho89508587,false,true,,,,poll28645
+1102,"4300 E. FM 4, Cleburne, TX 76031",,08:00 AM-05:00 PM,,ho39522047,false,true,,,,poll49670506
 1106,"101 N Main St, Jayton, TX 79528",,08:30 AM-12:00 PM,,ho16780936,false,true,,,,poll23095125
 1110,"Courthouse, 501 Main St., Junction, TX 76849",,08:30 AM-12:00 PM,,ho83177019,false,true,,,,poll15499497
 1114,"800 S Baker St, Guthrie, TX 79236",,08:00 AM-05:00 PM,,ho44482590,false,true,,,,poll51747392
@@ -338,7 +323,7 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 1186,"609 4th St, Sterling City, TX 76951",,08:00 AM-04:00 PM,,ho38218713,false,true,,,,poll39970006
 1190,"128 Town Square Ln, Aspermont, TX 79502",,08:00 AM-04:30 PM,,ho60778867,false,true,,,,poll73540757
 1194,"North Mega Site - ACC Highland Mall, 6001 Airport Blvd, Austin, TX 78752",,07:00 AM-07:00 PM,,ho31846141,false,true,,,,poll92268114
-1197,"West Mega Site - Ben Hur Shrine Center, 7811 Rockwood Ln , Austin, TX 78757",,07:00 AM-07:00 PM,,ho2904622,false,true,,,,poll99654829
+1197,"West Mega Site - Ben Hur Shrine Center, 7811 Rockwood Ln, Austin, TX 78757",,07:00 AM-07:00 PM,,ho68884279,false,true,,,,poll83485062
 1200,"South Mega Site - Southpark Meadows, 9600 IH-35 South, Austin, TX 78748",,07:00 AM-07:00 PM,,ho1076913,false,true,,,,poll8049379
 1203,"East Mega Site - Millennium Youth Complex, 1156 Hargrave St, Austin, TX 78702",,07:00 AM-07:00 PM,,ho88849864,false,true,,,,poll99184094
 1206,"Austin City Hall 301 W 2ND St, Austin, TX 78701",,07:00 AM-07:00 PM,,ho67942734,false,true,,,,poll14390502
@@ -375,7 +360,7 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 1281,"Randalls Lakeway 2301 RR 620 South, Lakeway, TX 78734",,07:00 AM-07:00 PM,,ho59897005,false,true,,,,poll23636467
 1284,"Bee Cave City Hall 4000 Galleria Parkway, Bee Cave, TX 78738",,07:00 AM-07:00 PM,,ho81645711,false,true,,,,poll52420551
 1287,"101 W. Madison St, Trinity, TX 75862",,08:00 AM-05:00 PM,,ho58303589,false,true,,,,poll14086350
-1289,"14755 Texas 94 , Apple Springs , TX 75926",,08:00 AM-05:00 PM,,ho78802637,false,true,,,,poll7442711
+1289,"14755 Texas 94, Apple Springs , TX 75926",,08:00 AM-05:00 PM,,ho36140597,false,true,,,,poll93035759
 1291,"836 Austin St., Ste 103, Hempstead, TX 77445",,08:00 AM-05:00 PM,,ho77639991,false,true,,,,poll42841634
 1296,"Brookshire Waller Co. Library, 3815 6th St., Brookshire, TX 77423",,09:00 AM-03:00 PM,,ho39067281,false,true,,,,poll78627269
 1299,"Prairie View City Hall,44500 Bus- Hwy. 290 East, Prairie View, TX 77445",,09:00 AM-03:00 PM,,ho21813014,false,true,,,,poll13675610
@@ -386,8 +371,7 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 1305,"Student Center, PVAM University, LW Minor Street, Prairie View, TX 77445",,11:00 AM-08:00 PM,,ho41391058,false,true,,,,poll17370717
 1306,"SL Francis Episcopal Church, 204 Dooley SL, Prairie View, TX 77445",,11:00 AM-08:00 PM,,ho71001836,false,true,,,,poll4058013
 1307,"El Campo Library, 200 W Church St, Wharton, TX 77488",,08:00 AM-05:00 PM,,ho33330197,false,true,,,,poll72803809
-1310,"Wharton Annex, 315 E Milam , Wharton, TX 77488",,08:00 AM-05:00 PM,,ho7756214,false,true,,,,poll90513646
-1311,"Wharton Annex, 315 E Milam, Wharton, TX 77488",,08:00 AM-05:00 PM,,ho48186147,false,true,,,,poll62016781
+1310,"Wharton Annex, 315 E Milam, Wharton, TX 77488",,08:00 AM-05:00 PM,,ho48186147,false,true,,,,poll62016781
 1313,"100 E. Winkler, 3rd Floor Courthouse, Kermit, TX 79745",,08:00 AM-05:00 PM,,ho75670429,false,true,,,,poll45521528
 1315,"200 S. Trinity, Decatur, TX 76234",,08:00 AM-05:00 PM,,ho67756635,false,true,,,,poll23247880
 1322,"Alvord City Hall, 215 W Elm, Alvord, TX 76225",,08:00 AM-05:00 PM,,ho64076361,false,true,,,,poll83618250
@@ -396,7 +380,7 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 1342,"200 E. 7th Avenue, Ste 138, Zapata, TX 78076",,07:00 AM-07:00 PM,,ho77654737,false,true,,,,poll40837735
 1344,"123 South 6th Street, Orange, TX 77630",,08:00 AM-05:00 PM,,ho23327291,false,true,,,,poll80644053
 1350,"P. O. Drawer 2119, Livingston, TX 77351",,08:00 AM-05:00 PM,,ho60794789,false,true,,,,poll63894174
-1352,"East Annex (Old Walmart), 1524 E Mulberry, Angleton, TX 77515",,08:00 AM-05:00 PM,,ho27903501,false,true,,,,poll78267799
+1352,"East Annex 1524 E Mulberry, Angleton, TX 77515",,08:00 AM-05:00 PM,,ho19828101,false,true,,,,poll90687111
 1356,"Alvin Library, 105 S Gordon, Alvin, TX 77511",,08:00 AM-05:00 PM,,ho49714999,false,true,,,,poll41582206
 1360,"Brazoria Library, 620 S Brooks, Brazoria, TX 77422",,08:00 AM-05:00 PM,,ho54308661,false,true,,,,poll7255792
 1364,"Freeport Library, 410 Brazosport Blvd, Freeport, TX 77541",,08:00 AM-05:00 PM,,ho34044499,false,true,,,,poll29581606
@@ -409,31 +393,31 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 1392,"Arena Hall, 2906 Tabor Road, Bryan, TX 77803",,08:00 AM-05:00 PM,,ho54141388,false,true,,,,poll75404586
 1396,"Galilee Baptist Church, 804 N Logan, Bryan, TX 77803",,08:00 AM-05:00 PM,,ho38535755,false,true,,,,poll80671653
 1400,"College Station Utilities Meeting & Training Facility, 1603 Graham Road, College Station, TX 77845",,08:00 AM-05:00 PM,,ho51593104,false,true,,,,poll11470874
-1404,"Memorial Student Center (MSC)    Texas A&M University, Rm 526, College Station, TX 77845",,08:00 AM-05:00 PM,,ho41763811,false,true,,,,poll7784372
+1404,"Memorial Student Center (MSC) Texas A&M University, Rm 526, College Station, TX 77845",,08:00 AM-05:00 PM,,ho78316587,false,true,,,,poll95130392
 1408,"Marble Falls Courthouse South Annex, 810 Steve Hawkins Pkwy, Marble Falls, TX 78654",,08:00 AM-05:00 PM,,ho79871993,false,true,,,,poll92895959
 1410,"1403 Blackjack St., Ste C, Lockhart, TX 78644",,08:00 AM-05:00 PM,,ho64032673,false,true,,,,poll20109638
 1414,"100 W. 4th St., Ste 104, Baird, TX 79504",,08:00 AM-05:00 PM,,ho11162483,false,true,,,,poll44372959
 1416,"208 Oak St, Clyde, TX 79510",,08:00 AM-05:00 PM,,ho92913109,false,true,,,,poll42652033
 1418,"424 South Main, Cross Plains, TX 76443",,08:00 AM-05:00 PM,,ho53131315,false,true,,,,poll55377325
 1420,"954 E Harrison St,, Brownsville, TX 78520",,09:00 AM-06:00 PM,,ho65045506,false,true,,,,poll248757
-1424,"2600 Central Blvd , Brownsville, TX 78520",,09:00 AM-08:00 PM,,ho86017507,false,true,,,,poll75018909
+1424,"2600 Central Blvd, Brownsville, TX 78520",,09:00 AM-08:00 PM,,ho53208642,false,true,,,,poll81290674
 1428,"4320 Southmost Rd, Brownsville, TX 78521",,09:00 AM-08:00 PM,,ho6565602,false,true,,,,poll86499069
 1432,"1900 E Price Rd, Brownsville, TX 78521",,09:00 AM-08:00 PM,,ho28987632,false,true,,,,poll64075508
 1436,"2100 Gregory Ave, Brownsville, TX 78526",,09:00 AM-08:00 PM,,ho33621255,false,true,,,,poll79385491
-1440,"3302 Wilson Rd , Harlingen, TX 78552",,09:00 AM-08:00 PM,,ho23631350,false,true,,,,poll34666083
+1440,"3302 Wilson Rd, Harlingen, TX 78552",,09:00 AM-08:00 PM,,ho6943081,false,true,,,,poll23293692
 1444,"210 East Heywood Street, San Benito, TX 78586",,09:00 AM-08:00 PM,,ho12552009,false,true,,,,poll56932774
 1448,"505 State Highway 100, Port Isabel, TX 78578",,09:00 AM-06:00 PM,,ho30009135,false,true,,,,poll42173732
-1451,"474 N Villarreal (4th St), La Feria, TX 78559",,09:00 AM-06:00 PM,,ho94710703,false,true,,,,poll93234041
+1451,"474 N Villarreal, La Feria, TX 78559",,09:00 AM-06:00 PM,,ho12889905,false,true,,,,poll29136651
 1454,"204 N Brazil St, Los Fresnos, TX 78566",,09:00 AM-08:00 PM,,ho40498912,false,true,,,,poll68355182
 1458,"191 E Price Rd, Brownsville, TX 78521",,09:00 AM-06:00 PM,,ho63152797,false,true,,,,poll55658081
 1461,"11119 Old Military Highway 281, Santa Maria, TX 78592",,09:00 AM-06:00 PM,,ho37603699,false,true,,,,poll10779760
 1464,"576 76 Dr, Harlingen, TX 78550",,09:00 AM-06:00 PM,,ho97218812,false,true,,,,poll21974541
-1467,"125 W COLORADO AVE,  RIO HONDO, TX 78583",,09:00 AM-06:00 PM,,ho85384017,false,true,,,,poll85680068
+1467,"125 W COLORADO AVE, RIO HONDO, TX 78583",,09:00 AM-06:00 PM,,ho79092536,false,true,,,,poll40981948
 1468,"116 Santa Vista Ave, Santa Rosa, TX 78593",,09:00 AM-06:00 PM,,ho92286417,false,true,,,,poll311498
 1469,"35428 Padilla St, San Benito , TX 78586",,09:00 AM-06:00 PM,,ho84038146,false,true,,,,poll82691482
 1470,"2101 Pease St., Harlingen, TX 78550",,09:00 AM-06:00 PM,,ho86594568,false,true,,,,poll65283777
 1471,"1902 N. Loop, Harlingen, TX 78550",,09:00 AM-06:00 PM,,ho77770443,false,true,,,,poll46942448
-1472,"1040 W Jefferson St , Brownsville, TX 78520",,09:00 AM-06:00 PM,,ho59558427,false,true,,,,poll55577868
+1472,"1040 W Jefferson St, Brownsville, TX 78520",,09:00 AM-06:00 PM,,ho45397770,false,true,,,,poll53403197
 1473,"100A E. Alton Gloor Blvd., Brownsville, TX 78526",,09:00 AM-06:00 PM,,ho91456358,false,true,,,,poll69474618
 1474,"3301 Carmen Ave., Rancho Viejo, TX 78575",,09:00 AM-06:00 PM,,ho65006175,false,true,,,,poll82355732
 1475,"9901 California Rd., Brownsville, TX 78521",,09:00 AM-06:00 PM,,ho98856020,false,true,,,,poll14834082
@@ -441,7 +425,7 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 1477,"80 Fort Brown, Brownsville, TX 78520",,09:00 AM-06:00 PM,,ho72653044,false,true,,,,poll27683056
 1478,"4601 Padre Blvd., South Padre Island, TX 78597",,09:00 AM-06:00 PM,,ho40500039,false,true,,,,poll76083713
 1479,"501 Main Street, Panhandle, TX 79068",,08:00 AM-12:00 PM,,ho30900485,false,true,,,,poll95508628
-1483," 227 E. Rush, Linden, TX 75563",,08:00 AM-05:00 PM,,ho70068842,false,true,,,,poll19064848
+1483,"227 E. Rush, Linden, TX 75563",,08:00 AM-05:00 PM,,ho41566392,false,true,,,,poll97901242
 1486,"106 W. MAIN STREET, Atlanta, TX 75551",,08:00 AM-05:00 PM,,ho19568663,false,true,,,,poll32296319
 1489,"Anahuac Annex Building, 2128 SH 61, Anahuac, TX 77514",,07:00 AM-07:00 PM,,ho85752433,false,true,,,,poll57376370
 1491,"East Chambers County Courthouse Annex, 211 Broadway Ave, Winnie, TX 77665",,07:00 AM-07:00 PM,,ho27332009,false,true,,,,poll76956251
@@ -530,7 +514,7 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 1762,"712 South Stagecoach Trail, Ste 1045, San Marcos, TX 78666",,08:00 AM-05:00 PM,,ho66030249,false,true,,,,poll62496912
 1766,"401 A Broadway St, San Marcos, TX 78666",,08:00 AM-05:00 PM,,ho29166194,false,true,,,,poll943634
 1770,"195 Roger Hanks Pkwy, Dripping Springs, TX 78620",,08:00 AM-05:00 PM,,ho91043399,false,true,,,,poll89615658
-1774,"5458 FM 2770 @ Crystal Meadow Dr., Kyle, TX 78640",,08:00 AM-05:00 PM,,ho65340666,false,true,,,,poll19681732
+1774,"5458 FM 2770, Kyle, TX 78640",,08:00 AM-05:00 PM,,ho83441900,false,true,,,,poll79554726
 1778,"14068 Ranch Rd. 12, Wimberley, TX 78676",,08:00 AM-05:00 PM,,ho23437528,false,true,,,,poll74978881
 1782,"700 Student Center Dr., San Marcos, TX 78666",,11:00 AM-07:00 PM,,ho51766099,false,true,,,,poll33669705
 1783,"151 Trinity Hills Dr, Austin, TX 78737",,07:00 AM-07:00 PM,,ho43415270,false,true,,,,poll14943176
@@ -543,7 +527,7 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 1805,"400 SPADE RD, ANTON, TX 79313",,08:00 AM-12:00 PM,,ho4441938,false,true,,,,poll23201495
 1809,"809 S SLAUGHTER, SUNDOWN, TX 79372",,08:00 AM-05:00 PM,,ho23424364,false,true,,,,poll47987664
 1811,"107 HOCKLEY MAIN, ROPESVILLE, TX 79358",,08:00 AM-12:00 PM,,ho13931857,false,true,,,,poll41307604
-1815,"128 Jefferson St., JP #2 Courtroom (for in-person EV voting), Sulphur Springs, TX 75482",,08:00 AM-05:00 PM,,ho53625708,false,true,,,,poll48321697
+1815,"128 Jefferson St., JP #2 Courtroom, Sulphur Springs, TX 75482",,08:00 AM-05:00 PM,,ho27824976,false,true,,,,poll39626230
 1823,"401 East Goliad, 1st Floor, Crockett, TX 75835",,08:00 AM-04:30 PM,,ho7112781,false,true,,,,poll49519527
 1825,"300 Main Street, Room 303, Big Spring, TX 79720",,08:00 AM-05:00 PM,,ho49263287,false,true,,,,poll67716881
 1831,"2217A Washington, Greenville, TX 75401",,08:00 AM-05:00 PM,,ho9360342,false,true,,,,poll51856782
@@ -552,17 +536,16 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 1846,"205 N Cornell Ave, Fritch, TX 79036",,08:00 AM-06:00 PM,,ho3990409,false,true,,,,poll84322032
 1850,"115 W. Main, Room 101, Edna, TX 77957",,08:00 AM-05:00 PM,,ho7183255,false,true,,,,poll17628817
 1852,"1085 Pearl St., Beaumont, TX 77701",,08:00 AM-05:00 PM,,ho3900319,false,true,,,,poll38148267
-1856,"525 Lakeshore Dr,, Port Arthur, TX 77640 . ",,08:00 AM-05:00 PM,,ho42271612,false,true,,,,poll32832375
+1856,"525 Lakeshore Dr, Port Arthur, TX 77640",,08:00 AM-05:00 PM,,ho85880284,false,true,,,,poll7934723
 1860,"6540 Gladys Ave, Beaumont, TX 77706",,08:00 AM-05:00 PM,,ho76117159,false,true,,,,poll89785338
-1864,"4615 9th Ave , Port Arthur, TX 77642",,08:00 AM-05:00 PM,,ho96129819,false,true,,,,poll61678522
+1864,"4615 9th Ave, Port Arthur, TX 77642",,08:00 AM-05:00 PM,,ho69834858,false,true,,,,poll89590532
 1868,"4255 Fannett Rd, Beaumont, TX 77705",,08:00 AM-05:00 PM,,ho13877550,false,true,,,,poll67782310
 1872,"3580 E. Lucas, Beaumont, TX 77708",,08:00 AM-05:00 PM,,ho24081110,false,true,,,,poll9830288
 1876,"2715 Nederland Ave, Nederland, TX 77627",,08:00 AM-05:00 PM,,ho27605606,false,true,,,,poll3800654
-1880,"6150 39th St , Groves, TX 77619",,08:00 AM-05:00 PM,,ho64960389,false,true,,,,poll46550265
-1884," 2025 Merriman St , Port Neches , TX 77651",,08:00 AM-05:00 PM,,ho27269378,false,true,,,,poll49320872
-1888,"19217  FM 365, Beaumont, TX 77705",,07:00 AM-07:00 PM,,ho9901251,false,true,,,,poll9754804
-1889,"19217 FM 365, Beaumont, TX 77705",,07:00 AM-07:00 PM,,ho47433052,false,true,,,,poll40528510
-1890,"1201 W Highway 90 , China, TX 77613",,07:00 AM-07:00 PM,,ho25540957,false,true,,,,poll29881283
+1880,"6150 39th St, Groves, TX 77619",,08:00 AM-05:00 PM,,ho58655125,false,true,,,,poll24375539
+1884,"2025 Merriman St, Port Neches , TX 77651",,08:00 AM-05:00 PM,,ho62111743,false,true,,,,poll78625967
+1888,"19217 FM 365, Beaumont, TX 77705",,07:00 AM-07:00 PM,,ho47433052,false,true,,,,poll40528510
+1890,"1201 W Highway 90, China, TX 77613",,07:00 AM-07:00 PM,,ho84245200,false,true,,,,poll25167371
 1892,"102 E Tilley St, Hebbronville, TX 78361",,09:00 AM-05:00 PM,,ho95064853,false,true,,,,poll91578050
 1894,"200 N. Almond Street, Ste 104, Alice, TX 78332",,08:00 AM-05:00 PM,,ho30172943,false,true,,,,poll67591809
 1901,"172 Badger Ln, Ben Bolt, TX 78342",,08:00 AM-05:00 PM,,ho23926974,false,true,,,,poll37330428
@@ -573,7 +556,7 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 1923,"221 Fawn Valley Drive, Ste 100, Boerne, TX 78006",,08:00 AM-06:00 PM,,ho77326144,false,true,,,,poll67539327
 1927,"100 Amber Drive, Comfort, TX 78013",,09:00 AM-05:00 PM,,ho89245988,false,true,,,,poll87776275
 1928,"150 N Turcotte St, Sarita, TX 78385",,08:30 AM-04:30 PM,,ho62724859,false,true,,,,poll51665943
-1930,"910 Main St. , Kerrville, TX 78028",,08:00 AM-05:00 PM,,ho53297742,false,true,,,,poll84763094
+1930,"910 Main St., Kerrville, TX 78028",,08:00 AM-05:00 PM,,ho9036162,false,true,,,,poll90196364
 1934,"3350 TX-27, Ingram, TX 78025",,08:00 AM-05:00 PM,,ho25428586,false,true,,,,poll32323530
 1938,"231 Lamar Ave, Paris, TX 75460",,08:00 AM-05:00 PM,,ho67277476,false,true,,,,poll12473411
 1942,"100 6th Drive Room 103, Littlefield, TX 79339",,08:30 AM-05:00 PM,,ho46473308,false,true,,,,poll66437805
@@ -585,7 +568,7 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 1961,"142 CR 2010, Hardin, TX 77561",,07:00 AM-07:00 PM,,ho71537105,false,true,,,,poll73544691
 1964,"200 W State Street,, Groesbeck,, TX 76642",,08:00 AM-05:00 PM,,ho65863104,false,true,,,,poll18254173
 1967,"205 S McKinney,, Mexia, TX 76667",,09:00 AM-04:00 PM,,ho73676862,false,true,,,,poll52806454
-1970,"102 E. Haynie , Llano, TX 78643",,07:00 AM-07:00 PM,,ho13170033,false,true,,,,poll30566236
+1970,"102 E. Haynie, Llano, TX 78643",,07:00 AM-07:00 PM,,ho65746400,false,true,,,,poll12682258
 1977,"125 W. Polk, Kingsland, TX 78639",,07:00 AM-07:00 PM,,ho4786073,false,true,,,,poll11709120
 1984,"107 Twilight, Horseshoe Bay, TX 78657",,09:00 AM-03:30 PM,,ho77102808,false,true,,,,poll37483320
 1986,"1308 Crickets Avenue, Lubbock, TX 79401",,08:00 AM-08:00 PM,,ho6721983,false,true,,,,poll35628729
@@ -596,7 +579,7 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 2001,"4425 19th Street, Lubbock, TX 79407",,08:00 AM-08:00 PM,,ho70893834,false,true,,,,poll32109016
 2004,"2703 82nd St, Lubbock, TX 79423",,08:00 AM-08:00 PM,,ho67375347,false,true,,,,poll75364017
 2007,"8010 Frankford Ave, Lubbock, TX 79424",,08:00 AM-08:00 PM,,ho62895636,false,true,,,,poll83044246
-2010,"4205 98th St (at Quaker Ave.) , Lubbock, TX 79423",,08:00 AM-08:00 PM,,ho97566790,false,true,,,,poll29797870
+2010,"4205 98th St (at Quaker Ave.), Lubbock, TX 79423",,08:00 AM-08:00 PM,,ho92857323,false,true,,,,poll77835168
 2013,"2500 Broadway,, Lubbock, TX 79401",,08:00 AM-08:00 PM,,ho50987626,false,true,,,,poll70072978
 2016,"TTU Student Rec - Hartford Avenue and Main Street, Lubbock, TX 79401",,08:00 AM-08:00 PM,,ho11233358,false,true,,,,poll45414661
 2019,"140 E Panhandle St,, Slaton, TX 79364",,08:00 AM-08:00 PM,,ho44898766,false,true,,,,poll56766343
@@ -614,7 +597,7 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 2035,"1717 Norfolk Ave Bldg B, Lubbock, TX 79416",,10:00 AM-04:00 PM,,ho45014333,false,true,,,,poll50222930
 2036,"602 Indiana Ave,, Lubbock, TX 79415",,08:00 AM-08:00 PM,,ho56218145,false,true,,,,poll36922291
 2037,"3615 19th St, Lubbock, TX 79410",,08:00 AM-08:00 PM,,ho73510653,false,true,,,,poll80605647
-2038,"401 S Auburn Ave , New Deal , TX 79350",,08:00 AM-08:00 PM,,ho98233537,false,true,,,,poll71525278
+2038,"401 S Auburn Ave, New Deal , TX 79350",,08:00 AM-08:00 PM,,ho74132868,false,true,,,,poll94465037
 2039,"4000 24th St, Lubbock, TX 79410",,08:00 AM-08:00 PM,,ho74589152,false,true,,,,poll54391459
 2040,"6548 43rd St, Lubbock, TX 79407",,09:00 AM-02:00 PM,,ho78615801,false,true,,,,poll99362282
 2041,"1600 Main Courthouse Square, Tahoka, TX 79373",,08:30 AM-12:00 PM,,ho54229323,false,true,,,,poll86717925
@@ -644,238 +627,235 @@ Brown   Lupton University Union 2901 Stadium Drive, Fort Worth, TX 76129",,07:00
 2119,"307 N. Mason St, Bowie, TX 76230",,08:00 AM-05:00 PM,,ho22844128,false,true,,,,poll86005320
 2121,"102 E. Square, Saint Jo, TX 76265",,08:00 AM-05:00 PM,,ho59037690,false,true,,,,poll4937836
 2123,"9159 Airport Road, Conroe, TX 77303",,08:00 AM-05:00 PM,,ho89266488,false,true,,,,poll9065838
-2127,"8125 Ashlane Way , The Woodlands , TX 77382",,08:00 AM-05:00 PM,,ho39583701,false,true,,,,poll25685935
-2131,"207 W Phillips Street , Conroe, TX 77301",,08:00 AM-05:00 PM,,ho99978651,false,true,,,,poll10259795
-2135,"2235 Lake Robbins Drive , The Woodlands , TX 77301",,08:00 AM-05:00 PM,,ho64802224,false,true,,,,poll28051740
-2139,"21130 Highway 59 South , New Caney , TX 77357",,08:00 AM-05:00 PM,,ho55862504,false,true,,,,poll54689236
-2143,"422 Melton Street , Magnolia, TX 77354",,08:00 AM-05:00 PM,,ho8664648,false,true,,,,poll4828750
-2147,"2500 Lone Star Parkway , Montgomery, TX 77356",,08:00 AM-05:00 PM,,ho23963844,false,true,,,,poll82499930
-2151,"600 Gerald Street , Willis, TX 77378",,08:00 AM-05:00 PM,,ho44420774,false,true,,,,poll19176595
-2155,"500 Broadnax St., Ste D, Daingerfield, TX 75638",,08:00 AM-12:00 PM,,ho9737031,false,true,,,,poll8679918
-2159,"701 Dundee, Matador, TX 79244",,09:00 AM-12:00 PM,,ho19220510,false,true,,,,poll80378693
-2163,"600 N 13th St, Corsicana, TX 75110",,08:00 AM-05:00 PM,,ho17190895,false,true,,,,poll56750212
-2167,"115 Court Street, Newton, TX 75966",,08:00 AM-04:30 PM,,ho72646916,false,true,,,,poll75667703
-2169,"JP Dana Ashmore's Office, Spur 272, Deweyville, TX 77614",,09:00 AM-07:00 PM,,ho58348589,false,true,,,,poll85430979
-2171,"100 E. 3rd, Ste 106, Sweetwater, TX 79556",,08:30 AM-05:00 PM,,ho80986294,false,true,,,,poll17300087
-2173,"511 S. Main St., Perryton, TX 79070",,08:30 AM-05:00 PM,,ho94017769,false,true,,,,poll41000646
-2175,"105 S. Main, Vega, TX 79092",,08:30 AM-12:00 PM,,ho79843058,false,true,,,,poll18503540
-2179,"435 Oak Street, Palo Pinto, TX 76484",,08:30 AM-04:30 PM,,ho3801891,false,true,,,,poll18919097
-2188,"Palo Pinto County Mineral Wells Annex Building (Postons Building), 109 N. Oak Avenue, Mineral Wells, TX 76067",,08:30 AM-04:30 PM,,ho89790723,false,true,,,,poll15980848
-2197,"522 W. College St., Carthage, TX 75633",,08:00 AM-08:00 PM,,ho39663918,false,true,,,,poll90971282
-2203,"1112 Santa Fe Drive, Weatherford, TX 76086",,08:00 AM-05:00 PM,,ho46661281,false,true,,,,poll68134186
-2207,"Springtown Municipal Court Annex, 200 N Main St, Springtown, TX 76082",,08:00 AM-05:00 PM,,ho43326196,false,true,,,,poll69895587
-2211,"Peaster Fire Department, 221 Judd St, Weatherford, TX 76088",,08:00 AM-05:00 PM,,ho63799869,false,true,,,,poll83353872
-2215,"Aledo ISD Admin Building, 1008 Bailey Ranch Rd, Aledo, TX 76008",,08:00 AM-05:00 PM,,ho62426334,false,true,,,,poll58704137
-2219,"Azle Masonic Lodge, 257 W Main St, Azle, TX 76020",,08:00 AM-05:00 PM,,ho40734402,false,true,,,,poll41532235
-2223,"Willow Park Municipal Building, 516 Ranch House Rd, Willow Park, TX 76087",,08:00 AM-05:00 PM,,ho88841899,false,true,,,,poll65955836
-2227,"Old Brock ISD Admin Building, 100 Grindstone Rd, Weatherford, TX 76087",,08:00 AM-05:00 PM,,ho27473062,false,true,,,,poll87343863
-2231,"401 Third St, Farwell, TX 79325",,08:30 AM-12:00 PM,,ho37532793,false,true,,,,poll89485491
-2235,"First Bank Bovina, 101 3rd St, Bovina, TX 79009",,09:00 AM-03:00 PM,,ho5717241,false,true,,,,poll22527324
-2236,"Inter Bank Friona, 1105 N Cleveland, Friona, TX 79035",,08:00 AM-04:00 PM,,ho20962859,false,true,,,,poll5792703
-2240,"Community Center, 500 S Oak St, Pecos, TX 79772",,08:00 AM-05:00 PM,,ho4163519,false,true,,,,poll63121296
-2242,"Santa Fe Ticket Office, 900 South Polk Street, Ste 320, Amarillo, TX 79101",,08:00 AM-05:00 PM,,ho97877872,false,true,,,,poll98557128
-2246,"Casey Carpet One, W, 3500 I-40 Frontage Rd, Amarillo, TX 79102",,12:00 PM-05:00 PM,,ho21828110,false,true,,,,poll19394652
-2250,"Coffee Memorial Blood Center Inc, 7500 Wallace Blvd, Amarillo, TX 79124",,12:00 PM-05:00 PM,,ho40473834,false,true,,,,poll52233269
-2254,"United Amigos, 3300 E I-40, Amarillo, TX 79103",,12:00 PM-05:00 PM,,ho88884886,false,true,,,,poll69578001
-2258,"Cornerstone Outreach, 1111 N Buchanan St, Amarillo, TX 79107",,12:00 PM-05:00 PM,,ho77276986,false,true,,,,poll88661102
-2262,"Bivins Village, 3201 Tee Anchor Blvd, Amarillo, TX 79104",,12:00 PM-07:00 PM,,ho42076930,false,true,,,,poll26346389
-2263,"Park Central, 1300 S Harrison St, Amarillo, TX 79101",,12:00 PM-07:00 PM,,ho35209051,false,true,,,,poll81076640
-2264,"Canyons Retirement Community, 2200 SW 7th Ave, Amarillo, TX 79106",,12:00 PM-07:00 PM,,ho15700166,false,true,,,,poll62802193
-2265,"The Craig, 5500 SW 9th Ave, Amarillo, TX 79106",,12:00 PM-07:00 PM,,ho48121242,false,true,,,,poll82120043
-2266,"220 W. Quitman St., Ste B, Emory, TX 75440",,08:30 AM-04:30 PM,,ho58145147,false,true,,,,poll46932880
-2268,"1604 5th Ave, Canyon, TX 79015",,08:00 AM-05:00 PM,,ho90930880,false,true,,,,poll36302787
-2272,"Randall County Annexm 4111 S. Georgia, Amarillo, TX 79110",,08:00 AM-05:00 PM,,ho55124482,false,true,,,,poll49394471
-2276,"Randall County Justice Center, 2309 Russell Long Blvd, Canyon, TX 79015",,08:00 AM-05:00 PM,,ho11340102,false,true,,,,poll51144233
-2278,"Region 16 Education Service Center, 5800 Bell Street, Amarillo, TX 79109",,08:00 AM-05:00 PM,,ho65062929,false,true,,,,poll4837801
-2280,"Comanche Trail Church of Christ, 2700 E. 34th, Amarillo, TX 79103",,08:00 AM-05:00 PM,,ho3669677,false,true,,,,poll68912124
-2282,"300 N Plaza, Courthouse, Big Lake, TX 76932",,08:00 AM-05:00 PM,,ho11436090,false,true,,,,poll48155874
-2286,"COURTROOM, REAL COUNTY COURTHOUSE, 146 SOUTH US HWY 83, Leakey, TX 78873",,08:00 AM-05:00 PM,,ho5102054,false,true,,,,poll77706958
-2288,"COUNTY HOUSE, 107 E. 5TH STREET, Camp Wood, TX 78833",,02:00 PM-06:00 PM,,ho80717383,false,true,,,,poll48566292
-2292,"GARVEN STORE, 27304 N US HIGHWAY 83, Mountain Home, TX 78058",,02:00 PM-06:00 PM,,ho64072464,false,true,,,,poll24497805
-2293,"200 N. Walnut Street, Clarksville, TX 75426",,08:00 AM-05:00 PM,,ho74286212,false,true,,,,poll79931066
-2295,"414 C North Alamo Street, Refugio, TX 78377",,08:00 AM-06:00 PM,,ho65218624,false,true,,,,poll12435999
-2298,"300 E. Commercial, Miami, TX 79059",,08:00 AM-12:00 PM,,ho51428068,false,true,,,,poll25448505
-2302,"601 North Hearne Street, Franklin, TX 77856",,08:00 AM-05:00 PM,,ho39410981,false,true,,,,poll81390062
-2305,"309 N Market Street, Hearne, TX 77859",,08:00 AM-05:00 PM,,ho67430,false,true,,,,poll19090356
-2308,"113 Jack Street, Bremond, TX 76629",,08:00 AM-07:00 PM,,ho75697257,false,true,,,,poll51668589
-2310,"700 Railroad Street, Calvert, TX 77837",,08:00 AM-07:00 PM,,ho10936572,false,true,,,,poll16027849
-2312,"200 Laurence Dr, Rockwall, TX 75032",,08:00 AM-05:00 PM,,ho46466942,false,true,,,,poll51340949
-2316,"1215 E Yellowjacket Ln, Rockwall, TX 75087",,08:00 AM-05:00 PM,,ho19247782,false,true,,,,poll63373201
-2319,"305 N Arch St , Royse City , TX 75189",,08:00 AM-05:00 PM,,ho71116249,false,true,,,,poll73912659
-2323,"5701 Scenic Dr , Rowlett, TX 75088",,08:00 AM-05:00 PM,,ho19166020,false,true,,,,poll3345296
-2327,"600 Strong Ave, Ballinger, TX 76821",,08:30 AM-05:00 PM,,ho32300475,false,true,,,,poll63430378
-2333,"204 North Main Street, Henderson, TX 75652",,08:00 AM-05:00 PM,,ho93942421,false,true,,,,poll10879690
-2337,"13612 FM 1798 W,, HENDERSON, TX 75654",,08:00 AM-05:00 PM,,ho17041878,false,true,,,,poll58313441
-2341,"300 W 2nd St, Mt Enterprise, TX 75681",,08:00 AM-05:00 PM,,ho22696761,false,true,,,,poll35141547
-2345,"231 N Hood St, Tatum, TX 75691",,08:00 AM-05:00 PM,,ho12982044,false,true,,,,poll56239642
-2349," 2700 Chandler St, Kilgore, TX 75662",,08:00 AM-05:00 PM,,ho28584449,false,true,,,,poll11795364
-2353,"280 E Main St, Hemphill, TX 75948",,08:00 AM-04:00 PM,,ho75489463,false,true,,,,poll63352335
-2356,"22019 Fm 705 Rd, Pineland, TX 75968",,08:00 AM-04:00 PM,,ho75691818,false,true,,,,poll94065252
-2357,"225 N Harrison, San Augustine, TX 75972",,08:00 AM-04:00 PM,,ho35905169,false,true,,,,poll98169325
-2359,"Cr 361 off of Hwy 147 , Broaddus, TX 75929",,09:00 AM-04:00 PM,,ho42455482,false,true,,,,poll6026447
-2361,"51 E. Pine Ave, Room A1, Coldspring, TX 77331",,07:00 AM-07:00 PM,,ho7814768,false,true,,,,poll74137996
-2369,"410 W. Market St., Sinton, TX 78387",,08:00 AM-05:00 PM,,ho71832402,false,true,,,,poll31634182
-2380,"401 E SAN PATRICIO AVE, MATHIS , TX 78368",,08:00 AM-05:00 PM,,ho53728263,false,true,,,,poll57432558
-2391,"401 PARK STREET, TAFT, TX 78390",,08:00 AM-05:00 PM,,ho91985085,false,true,,,,poll97120793
-2402,"704 W. YOAKUM AVE, ARANSAS PASS, TX 78336",,09:00 AM-06:00 PM,,ho57596844,false,true,,,,poll51990798
-2407,"1 N COTTONWOOD ST, ELDORADO, TX 76936",,09:00 AM-12:00 PM,,ho22932343,false,true,,,,poll46417540
-2411,"826 North Divide St., ELDORADO, TX 76936",,09:00 AM-12:00 PM,,ho74539252,false,true,,,,poll2693607
-2415,"107 W. Warner Ave, ELDORADO, TX 76936",,09:00 AM-12:00 PM,,ho92273245,false,true,,,,poll21479911
-2419,"1806 25th St., Ste 300, Snyder, TX 79549",,08:30 AM-05:00 PM,,ho44935979,false,true,,,,poll46614953
-2421,"102 N.E. Vine St, Glen Rose, TX 76043",,08:00 AM-05:00 PM,,ho46448639,false,true,,,,poll1166006
-2423,"200 West Walker, Courthouse, Breckenridge, TX 76424",,08:00 AM-05:00 PM,,ho45260289,false,true,,,,poll48301279
-2425,"County Voter Registration 703 N. Mallard St., Ste 116, Palestine, TX 75801",,08:00 AM-05:00 PM,,ho88781902,false,true,,,,poll91608036
-2427,"County Clerk 117 E Wasson Street, Gail, TX 79738",,08:00 AM-12:00 PM,,ho3821527,false,true,,,,poll92184530
-2429,"Falls County Courthouse 125 Bridge St, Marlin, TX 76661",,08:00 AM-05:00 PM,,ho20245186,false,true,,,,poll59806695
-2439,"Floyd County District Clerk 105 S. Main Room 101, Floydada, TX 79235",,08:30 AM-05:30 PM,,ho20876315,false,true,,,,poll67178208
-2441,"First United Methodist Church  102 West Poplar St, Lockney, TX 79241",,08:30 AM-05:30 PM,,ho32402291,false,true,,,,poll11965624
-2443,"Hall County Clerk 512 Main Street, Ste 8, Memphis, TX 79245",,08:30 AM-12:00 PM,,ho94786316,false,true,,,,poll17106290
-2447,"Hansford County Clerk 15 NW Court St, Spearman, TX 79081",,08:00 AM-05:00 PM,,ho58148288,false,true,,,,poll49034906
-2449,"County Courthouse, 300 South Main, Quanah, TX 79252",,08:30 AM-12:00 PM,,ho25803064,false,true,,,,poll97118934
-2453,"City Hall, 14051 US HW 287, Chillicothe, TX 79225",,08:00 AM-05:00 PM,,ho90808448,false,true,,,,poll50934697
-2455,"Jasper County Courthouse 121 N Austin St, Jasper, TX 75951",,08:00 AM-06:00 PM,,ho77170444,false,true,,,,poll76893674
-2457,"210 W. Calvert St, Karnes City, TX 78118",,08:00 AM-05:00 PM,,ho59659328,false,true,,,,poll62016214
-2459,"Kaufman County Courhouse 100 N. Washington St, Kaufman, TX 75142",,08:00 AM-05:00 PM,,ho31399921,false,true,,,,poll51784949
-2463,"Kaufman County Sub-Courthouse
-200 E Main St, Forney, TX 75126-4008",,08:00 AM-05:00 PM,,ho36613589,false,true,,,,poll30962940
-2467,"Kaufman County Sub-Courthouse 408 E. College St, Terrell, TX 75160",,08:00 AM-05:00 PM,,ho6227489,false,true,,,,poll69877621
-2471,"Crandall Municipal Court House
-114 S Main St, Crandall, TX 75114",,08:00 AM-05:00 PM,,ho57094061,false,true,,,,poll25549740
-2475,"301 Houston St., Annex, Room 8, George West, TX 78022",,08:00 AM-05:00 PM,,ho98548649,false,true,,,,poll13086936
-2477,"NUECES COUNTY COURTHOUSE (1st Floor Atrium) 901 Leopard St. , Corpus Christi, TX 78401",,08:00 AM-05:00 PM,,ho4093654,false,true,,,,poll74049394
-2481,"ART CENTER OF CORPUS CHRISTI 100 N. Shoreline Blvd, Corpus Christi, TX 78401",,08:00 AM-05:00 PM,,ho98087937,false,true,,,,poll43669089
-2485,"BISHOP COMMUNITY CENTER 102 W. Joyce St.,  Bishop, TX 78343",,08:00 AM-05:00 PM,,ho23343674,false,true,,,,poll60479626
-2489,"CALALLEN ISD (Administration Building) 4205 Wildcat Dr., Corpus Christi, TX 78410-5108",,08:00 AM-05:00 PM,,ho35776814,false,true,,,,poll1895815
-2492,"CORPUS CHRISTI CITY HALL (1st Floor Utility Section) 1201 Leopard St., Corpus Christi, TX 78401",,08:00 AM-05:00 PM,,ho20471610,false,true,,,,poll50982085
-2494,"CORPUS CHRISTI ISD (Administration Building) 801 Leopard St, Corpus Christi, TX 78401",,08:00 AM-05:00 PM,,ho6072033,false,true,,,,poll52328095
-2496,"DEAF AND HARD OF HEARING CENTER   5151 McArdle Rd. , Corpus Christi, TX 78411",,08:00 AM-05:00 PM,,ho99845402,false,true,,,,poll63017697
-2500,"DEL MAR COLLEGE (Heldenfels Administrative Building) 101 Baldwin Blvd, Corpus Christi, TX 78404",,08:00 AM-05:00 PM,,ho9358203,false,true,,,,poll46929621
-2504,"ETHEL EYERLY SENIOR CENTER 654 Graham Rd., Corpus Christi, TX 78418",,08:00 AM-05:00 PM,,ho69695209,false,true,,,,poll26015559
-2508,"FLOUR BLUFF ISD (Maintenance Building) 2510 Waldron Rd. , Corpus Christi, TX 78418",,08:00 AM-05:00 PM,,ho91259353,false,true,,,,poll94206296
-2510,"GREENWOOD SENIOR CITIZENS CENTER 4040 Greenwood Dr. , Corpus Christi, TX 78416",,08:00 AM-05:00 PM,,ho78771219,false,true,,,,poll77376812
-2514,"HILLTOP COMMUNITY CENTER 11425 Leopard St. , Corpus Christi, TX 78410",,08:00 AM-05:00 PM,,ho32221778,false,true,,,,poll95596119
-2518,"JOHNNY S. CALDERON COUNTY BUILDING 710 E. Main St.,  Robstown, TX 78380",,08:00 AM-05:00 PM,,ho94123492,false,true,,,,poll7069409
-2522,"PETRONILA ELEMENTARY (CAFETERIA) 2391 Co Road 67 ,  Robstown, TX 78380",,08:00 AM-05:00 PM,,ho29281516,false,true,,,,poll44516349
-2525,"PORT ARANSAS COMMUNITY CENTER 408 N. Alister St,  Port Aransas, TX 78373",,08:00 AM-05:00 PM,,ho89709621,false,true,,,,poll14361326
-2529,"ROBSTOWN CITY HALL 101 East Main St,  Robstown, TX 78380",,08:00 AM-05:00 PM,,ho61658380,false,true,,,,poll46539125
-2532,"ROBSTOWN ISD (Administration Building) 801 N. First St. ,  Robstown, TX 78380",,08:00 AM-05:00 PM,,ho49059539,false,true,,,,poll45116355
-2534,"SCHLITTERBAHN 14353 Commodores Dr, Corpus Christi, TX 78418",,08:00 AM-05:00 PM,,ho73370753,false,true,,,,poll60342729
-2538,"VALENCIA HALL 6110 Ayers St. , Corpus Christi, TX 78415",,08:00 AM-05:00 PM,,ho9963227,false,true,,,,poll32439565
-2542,"VETERANS MEMORIAL HIGH SCHOOL 3750 Cimarron Blvd., Corpus Christi, TX 78414",,08:00 AM-05:00 PM,,ho60947270,false,true,,,,poll80781787
-2546,"WEST OSO ISD (Administration Building) 5050 Rockford Dr. , Corpus Christi, TX 78416",,08:00 AM-05:00 PM,,ho65322249,false,true,,,,poll11126099
-2549,"CORPUS CHRISTI ARMY DEPOT (BUILDING 8) 308 Crecy Street , Corpus Christi, TX 78419",,08:00 AM-05:00 PM,,ho83834093,false,true,,,,poll90763552
-2551,"TAMU-CC UNIVERSITY CENTER (LEGACY HALL RM   124) 6300 Ocean Drive, Corpus Christi, TX 78412",,08:00 AM-05:00 PM,,ho13293028,false,true,,,,poll14200387
-2553,"BANQUETE ISD   (ADMIN BUILDING) 4339 Fourth St,  Banquete, TX 78339",,08:00 AM-05:00 PM,,ho67053421,false,true,,,,poll43373972
-2555,"DAVID BERLANGA   COMMUNITY CENTER   1513 2nd St. ,  Agua Dulce, TX 78330",,08:00 AM-05:00 PM,,ho86374824,false,true,,,,poll90434445
-2558,"LONDON ISD   (HIGH SCHOOL)   1306 FM 43, Corpus Christi, TX 78415",,07:00 AM-07:00 PM,,ho68527346,false,true,,,,poll99806044
-2559,"Community Center 10 S. Oak, Pecos, TX 79744",,08:00 AM-05:00 PM,,ho53415364,false,true,,,,poll2507609
-2561,"Shelby County Clerk 124 Austin St, Center, TX 75935",,07:00 AM-07:00 PM,,ho4080278,false,true,,,,poll30241450
-2567,"105 East Hackberry St. , Sanderson, TX 79848",,08:00 AM-12:00 PM,,ho225791,false,true,,,,poll88104190
-2571,"507 W. Main St, Brownfield, TX 79316",,08:30 AM-07:00 PM,,ho79993427,false,true,,,,poll49241360
-2575,"UPSHUR COUNTY COURTHOUSE 100 W. Tyler St, Gilmer, TX 75644",,07:00 AM-07:00 PM,,ho9992685,false,true,,,,poll88816462
-2578,"Reber Memorial Public Library 193 N 4th st , Raymondville, TX 78580",,08:00 AM-12:00 PM,,ho49828705,false,true,,,,poll98208137
-2582,"Wilson County Courhouse annex #3 1103 4th St, Floresville, TX 78114",,08:00 AM-05:00 PM,,ho78351203,false,true,,,,poll19790951
-2587,"Lavernia City Hall, 102 E Chihuahua St., Lavernia, TX 78121",,08:00 AM-05:00 PM,,ho91138518,false,true,,,,poll99516208
-2592,"200 Carroll St, Poth, TX 78147",,10:00 AM-01:00 PM,,ho20006239,false,true,,,,poll86347192
-2594,"700 W Main St, Stockdale, TX 78160",,04:00 PM-07:00 PM,,ho21947941,false,true,,,,poll49577869
-2595,"110 S. Madison St., Ste C, Mt. Pleasant, TX 75455",,07:00 AM-07:00 PM,,ho72933173,false,true,,,,poll66925729
-2597,"138 W. 5th Street, Rusk, TX 75785",,08:00 AM-05:00 PM,,ho8952910,false,true,,,,poll33663659
-2601,"235 East San Antonio St, Alto, TX 75925",,08:00 AM-05:00 PM,,ho9184043,false,true,,,,poll93308492
-2605,"502 S Jackson St, Jacksonville, TX 75766",,08:00 AM-05:00 PM,,ho80669017,false,true,,,,poll90521446
-2609,"103 N. 5th St., Carrizo Springs, TX 78834",,08:00 AM-05:00 PM,,ho72075919,false,true,,,,poll738753
-2612,"500 Broadway, Plainview, TX 79072",,08:00 AM-05:00 PM,,ho99416555,false,true,,,,poll96886899
-2614,"300 E. Oak, Ste 3, Sonora, TX 76950",,08:30 AM-04:30 PM,,ho48211828,false,true,,,,poll72374826
-2616,"1000 N. Rankin St., Rankin, TX 79778",,07:00 AM-07:00 PM,,ho95671247,false,true,,,,poll3388922
-2620,"108 W 5th St, McCamey, TX 79752",,07:00 AM-07:00 PM,,ho83806410,false,true,,,,poll18225020
-2624,"400 Pecan St, Del Rio, TX 78840",,08:30 AM-04:30 PM,,ho75061972,false,true,,,,poll30997357
-2628,"1110 Washington St., Ste 103, Laredo, TX 78040",,08:00 AM-05:00 PM,,ho59921976,false,true,,,,poll24841109
-2632,"2001 LOWRY RD, Laredo, TX 78045",,08:00 AM-05:00 PM,,ho25227100,false,true,,,,poll8645794
-2636,"
-230 Calle Del Norte, Laredo, TX 78041",,08:00 AM-05:00 PM,,ho35715112,false,true,,,,poll91015076
-2640,"1102 Bob Bullock Loop, Laredo, TX 78043",,08:00 AM-05:00 PM,,ho14828311,false,true,,,,poll83072516
-2644," 1920 Palo Blanco St, Laredo, TX 78046",,08:00 AM-05:00 PM,,ho63967088,false,true,,,,poll87777402
-2648,"1701 Centeno Ln , Rio Bravo, TX 78046",,08:00 AM-05:00 PM,,ho36360565,false,true,,,,poll55184892
-2652,"3519 Cecilia Ln, Laredo, TX 78046",,08:00 AM-05:00 PM,,ho28235107,false,true,,,,poll39402035
-2656,"Webb CISD, 619 Ave F, Bruni, TX 98344",,09:00 AM-05:00 PM,,ho26075643,false,true,,,,poll1904883
-2658,"300 Despain St, Oilton, TX 78369",,01:00 PM-06:00 PM,,ho67326405,false,true,,,,poll27477777
-2660,"917 N. Main Street , Mirando City, TX 78369",,09:00 AM-08:00 PM,,ho94841364,false,true,,,,poll65698971
-2661,"Daiches Elementary School 1401 Green St , Laredo, TX 78040",,09:00 AM-05:00 PM,,ho32306911,false,true,,,,poll16178549
-2662,"1700 Anna Ave , Laredo, TX 78040",,09:00 AM-05:00 PM,,ho77326473,false,true,,,,poll48834763
-2663,"1515 Pappas St, Laredo, TX 78041",,09:00 AM-05:00 PM,,ho89313853,false,true,,,,poll63101167
-2664,"1606 Benavides St , Laredo, TX 78040",,09:00 AM-05:00 PM,,ho46454635,false,true,,,,poll62127739
-2666,"2800 S Canada Ave, Laredo, TX 78046",,01:00 PM-06:00 PM,,ho31274442,false,true,,,,poll52283187
-2668,"Santo Nino Elementary School 2702 Bismark St , Laredo, TX 78043",,09:00 AM-08:00 PM,,ho66575233,false,true,,,,poll43211518
-2669,"Gateway Community Health Center at2007 S Zapata Hwy , Laredo, TX 78046",,09:00 AM-08:00 PM,,ho5603826,false,true,,,,poll89714308
-2670,"2600 Zacatecas St, Laredo, TX 78040",,09:00 AM-08:00 PM,,ho12434088,false,true,,,,poll78155163
-2671,"1003 Espejo Molina Rd ,  Rio Bravo, TX 78043",,11:00 AM-08:00 PM,,ho17014371,false,true,,,,poll41610667
-2672,"Perez Elementary, Laredo, TX 78046",,11:00 AM-08:00 PM,,ho13282711,false,true,,,,poll11973043
-2673," 6431 Casa Del Sol Blvd, Laredo, TX 78043",,11:00 AM-08:00 PM,,ho74134206,false,true,,,,poll79470188
-2674,"10702 Kirby Dr, Laredo, TX 78045",,11:00 AM-08:00 PM,,ho2380775,false,true,,,,poll39145899
-2675,"1453 Concord Hills Blvd , Laredo, TX 78046",,11:00 AM-08:00 PM,,ho89234906,false,true,,,,poll55061644
-2676,"1000 Century Dr W, Laredo, TX 78046",,09:00 AM-08:00 PM,,ho58343518,false,true,,,,poll95106963
-2677,"Malakoff Elementary, 2810 Havana Dr, Laredo, TX 78045",,01:00 PM-06:00 PM,,ho10342601,false,true,,,,poll36036304
-2678,"United High School, 2811 United Ave, Laredo, TX 78045",,09:00 AM-08:00 PM,,ho61450634,false,true,,,,poll58969663
-2679,"5626 Cielito Lindo Blvd, Laredo, TX 78046",,09:00 AM-08:00 PM,,ho19308054,false,true,,,,poll98797768
-2680,"3600 E Del Mar Blvd, Laredo, TX 78041",,09:00 AM-08:00 PM,,ho28539589,false,true,,,,poll53090609
-2681,"4001 Ave Los Presidentes, Laredo, TX 78046",,09:00 AM-08:00 PM,,ho3555858,false,true,,,,poll31975254
-2682,"UNITED HIGH SCHOOL, 8800 MCPHERSON RD, Laredo, TX 78045",,09:00 AM-08:00 PM,,ho72312304,false,true,,,,poll86334
-2683,"LCC     Kazen Center, W End Washington St, Laredo, TX 78040",,09:00 AM-06:00 PM,,ho42342308,false,true,,,,poll84284470
-2685,"Doctor   s Hospital, 10700 McPherson Rd, Laredo, TX 78045",,09:00 AM-08:00 PM,,ho79311126,false,true,,,,poll51516585
-2687,"LCC South - Zaffirini Library, Laredo, TX 78046",,09:00 AM-06:00 PM,,ho22373690,false,true,,,,poll45614617
-2689,"City Hall of Loredo, 1110 Houston St, Laredo, TX 78040",,08:00 AM-05:00 PM,,ho32349524,false,true,,,,poll58692068
-2690,"Laredo Medical Center, 1700 E Saunders St, Laredo, TX 78041",,09:00 AM-08:00 PM,,ho23604781,false,true,,,,poll15456103
-2693,"Texas A&M Int'l, 5201 University Blvd, Laredo, TX 78041",,09:00 AM-08:00 PM,,ho96119563,false,true,,,,poll29461579
-2694,"900 7th Street, Room 250, Wichita Falls, TX 76307",,08:00 AM-05:00 PM,,ho36840905,false,true,,,,poll25562144
-2698,"Commissioner Pct Bldg 102 W College , Burkburnett, TX 76354",,08:00 AM-05:00 PM,,ho39179742,false,true,,,,poll75780411
-2702,"Wichita Co Tax Office 400 W Wall St , Iowa Park, TX 76367",,08:00 AM-05:00 PM,,ho89862501,false,true,,,,poll50344227
-2706,"Commissioner Pct 4 Bldg Wichita Co 2202 SH 25 N, Electra, TX 76360",,08:00 AM-05:00 PM,,ho16474324,false,true,,,,poll54152622
-2710,"Sikes Senter Mall 3111 Midwestern Pkwy [Senter is spelled with an S for this location], Wichita Falls, TX 76308",,10:00 AM-07:00 PM,,ho48476307,false,true,,,,poll2909116
-2714,"Home Depot 3705 Kell Blvd , Wichita Falls, TX 76308-1604",,10:00 AM-07:00 PM,,ho23410671,false,true,,,,poll26285402
-2718,"2010 Redbud Blvd., Ste 102, McKinney, TX 75069",,08:00 AM-05:00 PM,,ho19523023,false,true,,,,poll39866879
-2722,"415 Main St, Silverton, TX 79257",,08:00 AM-12:00 PM,,ho10777526,false,true,,,,poll89808557
-2726,"100 West Buck Street, Ste 107, Caldwell, TX 77836",,08:00 AM-05:00 PM,,ho38630040,false,true,,,,poll75833094
-2729,"310 E. 1st Street, Dumas, TX 79029",,08:30 AM-05:00 PM,,ho7795818,false,true,,,,poll69730267
-2731,"1017 Parker St., Goldthwaite, TX 76844",,08:00 AM-05:00 PM,,ho41435391,false,true,,,,poll18485032
-2733,"300 La Caverna St., Van Horn, TX 79855",,08:00 AM-12:00 PM,,ho45041564,false,true,,,,poll97430571
-2737,"4520 Reading Road, Rosenberg, TX 77471",,08:00 AM-05:00 PM,,ho96868152,false,true,,,,poll25483578
-2749,"1 Troyan Dr, Stafford, TX 77477",,08:00 AM-05:00 PM,,ho95424790,false,true,,,,poll38127509
-2757,"15700 Old Richmond Road, Sugar Land, TX 77498",,08:00 AM-05:00 PM,,ho41710604,false,true,,,,poll93793881
-2772,"319 S. 3rd Street, Beasley, TX 77469",,08:00 AM-05:00 PM,,ho15587807,false,true,,,,poll4432477
-2775,"3703 Lost Creek Blvd, Sugar Land, TX 77478",,08:00 AM-05:00 PM,,ho26285042,false,true,,,,poll67783180
-2781,"101 E. Methvin, Ste 112, Longview, TX 75601",,08:00 AM-06:00 PM,,ho3530192,false,true,,,,poll62286931
-2785,"1129 FM 1844, Longview, TX 75605",,08:00 AM-06:00 PM,,ho16676785,false,true,,,,poll30994722
-2788,"3211 W. Marshall Ave, Longview, TX 75604",,08:00 AM-06:00 PM,,ho69171009,false,true,,,,poll59872152
-2791,"622 Kay St., Kilgore, TX 75662",,08:00 AM-06:00 PM,,ho28626712,false,true,,,,poll32034315
-2794,"801 S. MLK Blvd., Longview, TX 75601",,08:00 AM-06:00 PM,,ho57482151,false,true,,,,poll85284085
-2797,"5333 Old Highway 135 N., Liberty City, TX 75647",,08:00 AM-06:00 PM,,ho78629704,false,true,,,,poll95494770
-2800,"3101 Spring Hill Rd., Longview, TX 75605",,08:00 AM-06:00 PM,,ho99326158,false,true,,,,poll55371043
-2801,"1701 Pine Tree Rd., Longview, TX 75604",,08:00 AM-06:00 PM,,ho17434321,false,true,,,,poll99927188
-2802,"White Oak Community Center, E Center St., White Oak, TX 75693",,08:00 AM-06:00 PM,,ho28105800,false,true,,,,poll22329087
-2803,"10450 Highway 349, Longview, TX 75603",,08:00 AM-06:00 PM,,ho91061798,false,true,,,,poll45753421
-2804,"519 E. Broadway, Gladewater, TX 75647",,08:00 AM-06:00 PM,,ho19225512,false,true,,,,poll30015490
-2806,"500 E. San Antonio Ave, Ste 314, El Paso, TX 79901",,08:00 AM-05:00 PM,,ho86753027,false,true,,,,poll43370980
-2810,"12280 Socorro Rd, San Elizario, TX 79849",,08:00 AM-05:00 PM,,ho50172369,false,true,,,,poll32702180
-2814,"5509 Will Ruth Ave, El Paso, TX 79924",,09:00 AM-06:00 PM,,ho47986363,false,true,,,,poll36735525
-2818,"7965 Artcraft Rd, El Paso, TX 79932",,08:00 AM-05:00 PM,,ho54854317,false,true,,,,poll84961745
-2822,"563 N Carolina Dr, El Paso, TX 79915",,09:00 AM-06:00 PM,,ho24285807,false,true,,,,poll1246039
-2825,"13100 Alameda Ave, Clint, TX 79836",,08:00 AM-05:00 PM,,ho11395754,false,true,,,,poll14827550
-2828,"551 Redd Rd, El Paso, TX 79912",,10:00 AM-07:00 PM,,ho54386993,false,true,,,,poll45846954
-2831,"6701 S Desert Blvd, El Paso, TX 79932",,09:00 AM-06:00 PM,,ho23115824,false,true,,,,poll73225661
-2834,"2350 George Dieter Dr, El Paso, TX 79936",,09:00 AM-06:00 PM,,ho17958926,false,true,,,,poll91933261
-2838,"435 Vinton Rd, Anthony, TX 79821",,08:00 AM-05:00 PM,,ho54561495,false,true,,,,poll27486727
-2842,"3850 Justice, El Paso, TX 79938",,08:00 AM-05:00 PM,,ho58676533,false,true,,,,poll36751320
-2846,"12899 Sparks Dr, El Paso, TX 79928",,08:00 AM-05:00 PM,,ho46193643,false,true,,,,poll13132142
-2850,"12480 Pebble Hills Blvd, El Paso, TX 79938",,10:00 AM-07:00 PM,,ho3775052,false,true,,,,poll86361877
-2853,"650 Wallenberg Dr, El Paso, TX 79912",,09:00 AM-06:00 PM,,ho58347848,false,true,,,,poll27281566
-2856,"10064 Alameda Ave, Socorro, TX 79927",,08:00 AM-05:00 PM,,ho74867854,false,true,,,,poll27641858
-2860,"11600 Vista Del Sol Dr, El Paso, TX 79936",,09:00 AM-06:00 PM,,ho3422351,false,true,,,,poll77139396
-2863,"8501 Diana Dr, El Paso, TX 79904",,10:00 AM-07:00 PM,,ho63015176,false,true,,,,poll57940839
-2866,"8831 Railroad Dr, El Paso, TX 79904",,09:00 AM-06:00 PM,,ho22346619,false,true,,,,poll24662346
-2870,"13969 Veny Webb St, Horizon City, TX 79928",,08:00 AM-05:00 PM,,ho29473655,false,true,,,,poll39100896
-2874,"9301 Alameda Ave, El Paso, TX 79907",,09:00 AM-06:00 PM,,ho69589753,false,true,,,,poll99260458
-2877,"221 Bartlett Dr, El Paso, TX 79912",,09:00 AM-06:00 PM,,ho89408128,false,true,,,,poll62514823
-2881,"1331 Fabens St, Fabens, TX 79838",,09:00 AM-06:00 PM,,ho4824592,false,true,,,,poll62345730
-2885,"19200 Cobb Ave, Tornillo, TX 79853",,08:00 AM-05:00 PM,,ho70954097,false,true,,,,poll86786961
-2888,"10712 Sam Snead Dr, El Paso, TX 79935",,09:00 AM-06:00 PM,,ho88066303,false,true,,,,poll96768700
-2891,"9135 Stahala Dr, El Paso, TX 79924",,09:00 AM-06:00 PM,,ho43926466,false,true,,,,poll62797809
-2894,"1700 N Zaragoza Rd, El Paso, TX 79936",,09:00 AM-06:00 PM,,ho80000867,false,true,,,,poll54245579
+2127,"8125 Ashlane Way, The Woodlands , TX 77382",,08:00 AM-05:00 PM,,ho36408363,false,true,,,,poll96315289
+2131,"207 W Phillips Street, Conroe, TX 77301",,08:00 AM-05:00 PM,,ho58290914,false,true,,,,poll4454488
+2135,"2235 Lake Robbins Drive, The Woodlands , TX 77301",,08:00 AM-05:00 PM,,ho31869596,false,true,,,,poll93856379
+2139,"21130 Highway 59 South, New Caney , TX 77357",,07:00 AM-07:00 PM,,ho58933900,false,true,,,,poll7348425
+2142,"422 Melton Street, Magnolia, TX 77354",,08:00 AM-05:00 PM,,ho99095601,false,true,,,,poll89668620
+2146,"2500 Lone Star Parkway, Montgomery, TX 77356",,08:00 AM-05:00 PM,,ho50413867,false,true,,,,poll13745476
+2150,"600 Gerald Street, Willis, TX 77378",,08:00 AM-05:00 PM,,ho228491,false,true,,,,poll41470624
+2154,"500 Broadnax St., Ste D, Daingerfield, TX 75638",,08:00 AM-12:00 PM,,ho9737031,false,true,,,,poll8679918
+2158,"701 Dundee, Matador, TX 79244",,09:00 AM-12:00 PM,,ho19220510,false,true,,,,poll80378693
+2162,"600 N 13th St, Corsicana, TX 75110",,08:00 AM-05:00 PM,,ho17190895,false,true,,,,poll56750212
+2166,"115 Court Street, Newton, TX 75966",,08:00 AM-04:30 PM,,ho72646916,false,true,,,,poll75667703
+2168,"JP Dana Ashmore's Office, Spur 272, Deweyville, TX 77614",,09:00 AM-07:00 PM,,ho58348589,false,true,,,,poll85430979
+2170,"100 E. 3rd, Ste 106, Sweetwater, TX 79556",,08:30 AM-05:00 PM,,ho80986294,false,true,,,,poll17300087
+2172,"511 S. Main St., Perryton, TX 79070",,08:30 AM-05:00 PM,,ho94017769,false,true,,,,poll41000646
+2174,"105 S. Main, Vega, TX 79092",,08:30 AM-12:00 PM,,ho79843058,false,true,,,,poll18503540
+2178,"435 Oak Street, Palo Pinto, TX 76484",,08:30 AM-04:30 PM,,ho3801891,false,true,,,,poll18919097
+2187,"Palo Pinto County Mineral Wells Annex Building (Postons Building), 109 N. Oak Avenue, Mineral Wells, TX 76067",,08:30 AM-04:30 PM,,ho89790723,false,true,,,,poll15980848
+2196,"522 W. College St., Carthage, TX 75633",,08:00 AM-08:00 PM,,ho39663918,false,true,,,,poll90971282
+2202,"1112 Santa Fe Drive, Weatherford, TX 76086",,08:00 AM-05:00 PM,,ho46661281,false,true,,,,poll68134186
+2206,"Springtown Municipal Court Annex, 200 N Main St, Springtown, TX 76082",,08:00 AM-05:00 PM,,ho43326196,false,true,,,,poll69895587
+2210,"Peaster Fire Department, 221 Judd St, Weatherford, TX 76088",,08:00 AM-05:00 PM,,ho63799869,false,true,,,,poll83353872
+2214,"Aledo ISD Admin Building, 1008 Bailey Ranch Rd, Aledo, TX 76008",,08:00 AM-05:00 PM,,ho62426334,false,true,,,,poll58704137
+2218,"Azle Masonic Lodge, 257 W Main St, Azle, TX 76020",,08:00 AM-05:00 PM,,ho40734402,false,true,,,,poll41532235
+2222,"Willow Park Municipal Building, 516 Ranch House Rd, Willow Park, TX 76087",,08:00 AM-05:00 PM,,ho88841899,false,true,,,,poll65955836
+2226,"Old Brock ISD Admin Building, 100 Grindstone Rd, Weatherford, TX 76087",,08:00 AM-05:00 PM,,ho27473062,false,true,,,,poll87343863
+2230,"401 Third St, Farwell, TX 79325",,08:30 AM-12:00 PM,,ho37532793,false,true,,,,poll89485491
+2234,"First Bank Bovina, 101 3rd St, Bovina, TX 79009",,09:00 AM-03:00 PM,,ho5717241,false,true,,,,poll22527324
+2235,"Inter Bank Friona, 1105 N Cleveland, Friona, TX 79035",,08:00 AM-04:00 PM,,ho20962859,false,true,,,,poll5792703
+2239,"Community Center, 500 S Oak St, Pecos, TX 79772",,08:00 AM-05:00 PM,,ho4163519,false,true,,,,poll63121296
+2241,"Santa Fe Ticket Office, 900 South Polk Street, Ste 320, Amarillo, TX 79101",,08:00 AM-05:00 PM,,ho97877872,false,true,,,,poll98557128
+2245,"Casey Carpet One, W, 3500 I-40 Frontage Rd, Amarillo, TX 79102",,12:00 PM-05:00 PM,,ho21828110,false,true,,,,poll19394652
+2249,"Coffee Memorial Blood Center Inc, 7500 Wallace Blvd, Amarillo, TX 79124",,12:00 PM-05:00 PM,,ho40473834,false,true,,,,poll52233269
+2253,"United Amigos, 3300 E I-40, Amarillo, TX 79103",,12:00 PM-05:00 PM,,ho88884886,false,true,,,,poll69578001
+2257,"Cornerstone Outreach, 1111 N Buchanan St, Amarillo, TX 79107",,12:00 PM-05:00 PM,,ho77276986,false,true,,,,poll88661102
+2261,"Bivins Village, 3201 Tee Anchor Blvd, Amarillo, TX 79104",,12:00 PM-07:00 PM,,ho42076930,false,true,,,,poll26346389
+2262,"Park Central, 1300 S Harrison St, Amarillo, TX 79101",,12:00 PM-07:00 PM,,ho35209051,false,true,,,,poll81076640
+2263,"Canyons Retirement Community, 2200 SW 7th Ave, Amarillo, TX 79106",,12:00 PM-07:00 PM,,ho15700166,false,true,,,,poll62802193
+2264,"The Craig, 5500 SW 9th Ave, Amarillo, TX 79106",,12:00 PM-07:00 PM,,ho48121242,false,true,,,,poll82120043
+2265,"220 W. Quitman St., Ste B, Emory, TX 75440",,08:30 AM-04:30 PM,,ho58145147,false,true,,,,poll46932880
+2267,"1604 5th Ave, Canyon, TX 79015",,08:00 AM-05:00 PM,,ho90930880,false,true,,,,poll36302787
+2271,"Randall County Annexm 4111 S. Georgia, Amarillo, TX 79110",,08:00 AM-05:00 PM,,ho55124482,false,true,,,,poll49394471
+2275,"Randall County Justice Center, 2309 Russell Long Blvd, Canyon, TX 79015",,08:00 AM-05:00 PM,,ho11340102,false,true,,,,poll51144233
+2277,"Region 16 Education Service Center, 5800 Bell Street, Amarillo, TX 79109",,08:00 AM-05:00 PM,,ho65062929,false,true,,,,poll4837801
+2279,"Comanche Trail Church of Christ, 2700 E. 34th, Amarillo, TX 79103",,08:00 AM-05:00 PM,,ho3669677,false,true,,,,poll68912124
+2281,"300 N Plaza, Courthouse, Big Lake, TX 76932",,08:00 AM-05:00 PM,,ho11436090,false,true,,,,poll48155874
+2285,"COURTROOM, REAL COUNTY COURTHOUSE, 146 SOUTH US HWY 83, Leakey, TX 78873",,08:00 AM-05:00 PM,,ho5102054,false,true,,,,poll77706958
+2287,"COUNTY HOUSE, 107 E. 5TH STREET, Camp Wood, TX 78833",,02:00 PM-06:00 PM,,ho80717383,false,true,,,,poll48566292
+2291,"GARVEN STORE, 27304 N US HIGHWAY 83, Mountain Home, TX 78058",,02:00 PM-06:00 PM,,ho64072464,false,true,,,,poll24497805
+2292,"200 N. Walnut Street, Clarksville, TX 75426",,08:00 AM-05:00 PM,,ho74286212,false,true,,,,poll79931066
+2294,"414 C North Alamo Street, Refugio, TX 78377",,08:00 AM-06:00 PM,,ho65218624,false,true,,,,poll12435999
+2297,"300 E. Commercial, Miami, TX 79059",,08:00 AM-12:00 PM,,ho51428068,false,true,,,,poll25448505
+2301,"601 North Hearne Street, Franklin, TX 77856",,08:00 AM-05:00 PM,,ho39410981,false,true,,,,poll81390062
+2304,"309 N Market Street, Hearne, TX 77859",,08:00 AM-05:00 PM,,ho67430,false,true,,,,poll19090356
+2307,"113 Jack Street, Bremond, TX 76629",,08:00 AM-07:00 PM,,ho75697257,false,true,,,,poll51668589
+2309,"700 Railroad Street, Calvert, TX 77837",,08:00 AM-07:00 PM,,ho10936572,false,true,,,,poll16027849
+2311,"200 Laurence Dr, Rockwall, TX 75032",,08:00 AM-05:00 PM,,ho46466942,false,true,,,,poll51340949
+2315,"1215 E Yellowjacket Ln, Rockwall, TX 75087",,08:00 AM-05:00 PM,,ho19247782,false,true,,,,poll63373201
+2318,"305 N Arch St, Royse City , TX 75189",,08:00 AM-05:00 PM,,ho56210624,false,true,,,,poll53297686
+2322,"5701 Scenic Dr, Rowlett, TX 75088",,08:00 AM-05:00 PM,,ho23467747,false,true,,,,poll9489978
+2326,"600 Strong Ave, Ballinger, TX 76821",,08:30 AM-05:00 PM,,ho32300475,false,true,,,,poll63430378
+2332,"204 North Main Street, Henderson, TX 75652",,08:00 AM-05:00 PM,,ho93942421,false,true,,,,poll10879690
+2336,"13612 FM 1798 W,, HENDERSON, TX 75654",,08:00 AM-05:00 PM,,ho17041878,false,true,,,,poll58313441
+2340,"300 W 2nd St, Mt Enterprise, TX 75681",,08:00 AM-05:00 PM,,ho22696761,false,true,,,,poll35141547
+2344,"231 N Hood St, Tatum, TX 75691",,08:00 AM-05:00 PM,,ho12982044,false,true,,,,poll56239642
+2348,"2700 Chandler St, Kilgore, TX 75662",,08:00 AM-05:00 PM,,ho79147112,false,true,,,,poll29123288
+2352,"280 E Main St, Hemphill, TX 75948",,08:00 AM-04:00 PM,,ho75489463,false,true,,,,poll63352335
+2355,"22019 Fm 705 Rd, Pineland, TX 75968",,08:00 AM-04:00 PM,,ho75691818,false,true,,,,poll94065252
+2356,"225 N Harrison, San Augustine, TX 75972",,08:00 AM-04:00 PM,,ho35905169,false,true,,,,poll98169325
+2358,"Cr 361 off of Hwy 147, Broaddus, TX 75929",,09:00 AM-04:00 PM,,ho88152764,false,true,,,,poll55457240
+2360,"51 E. Pine Ave, Room A1, Coldspring, TX 77331",,07:00 AM-07:00 PM,,ho7814768,false,true,,,,poll74137996
+2368,"410 W. Market St., Sinton, TX 78387",,08:00 AM-05:00 PM,,ho71832402,false,true,,,,poll31634182
+2379,"401 E SAN PATRICIO AVE, MATHIS , TX 78368",,08:00 AM-05:00 PM,,ho53728263,false,true,,,,poll57432558
+2390,"401 PARK STREET, TAFT, TX 78390",,08:00 AM-05:00 PM,,ho91985085,false,true,,,,poll97120793
+2401,"704 W. YOAKUM AVE, ARANSAS PASS, TX 78336",,09:00 AM-06:00 PM,,ho57596844,false,true,,,,poll51990798
+2406,"1 N COTTONWOOD ST, ELDORADO, TX 76936",,09:00 AM-12:00 PM,,ho22932343,false,true,,,,poll46417540
+2410,"826 North Divide St., ELDORADO, TX 76936",,09:00 AM-12:00 PM,,ho74539252,false,true,,,,poll2693607
+2414,"107 W. Warner Ave, ELDORADO, TX 76936",,09:00 AM-12:00 PM,,ho92273245,false,true,,,,poll21479911
+2418,"1806 25th St., Ste 300, Snyder, TX 79549",,08:30 AM-05:00 PM,,ho44935979,false,true,,,,poll46614953
+2420,"102 N.E. Vine St, Glen Rose, TX 76043",,08:00 AM-05:00 PM,,ho46448639,false,true,,,,poll1166006
+2422,"200 West Walker, Courthouse, Breckenridge, TX 76424",,08:00 AM-05:00 PM,,ho45260289,false,true,,,,poll48301279
+2424,"County Voter Registration 703 N. Mallard St., Ste 116, Palestine, TX 75801",,08:00 AM-05:00 PM,,ho88781902,false,true,,,,poll91608036
+2426,"County Clerk 117 E Wasson Street, Gail, TX 79738",,08:00 AM-12:00 PM,,ho3821527,false,true,,,,poll92184530
+2428,"Falls County Courthouse 125 Bridge St, Marlin, TX 76661",,08:00 AM-05:00 PM,,ho20245186,false,true,,,,poll59806695
+2438,"Floyd County District Clerk 105 S. Main Room 101, Floydada, TX 79235",,08:30 AM-05:30 PM,,ho20876315,false,true,,,,poll67178208
+2440,"First United Methodist Church 102 West Poplar St, Lockney, TX 79241",,08:30 AM-05:30 PM,,ho86170599,false,true,,,,poll90557444
+2442,"Hall County Clerk 512 Main Street, Ste 8, Memphis, TX 79245",,08:30 AM-12:00 PM,,ho94786316,false,true,,,,poll17106290
+2446,"Hansford County Clerk 15 NW Court St, Spearman, TX 79081",,08:00 AM-05:00 PM,,ho58148288,false,true,,,,poll49034906
+2448,"County Courthouse, 300 South Main, Quanah, TX 79252",,08:30 AM-12:00 PM,,ho25803064,false,true,,,,poll97118934
+2452,"City Hall, 14051 US HW 287, Chillicothe, TX 79225",,08:00 AM-05:00 PM,,ho90808448,false,true,,,,poll50934697
+2454,"Jasper County Courthouse 121 N Austin St, Jasper, TX 75951",,08:00 AM-06:00 PM,,ho77170444,false,true,,,,poll76893674
+2456,"210 W. Calvert St, Karnes City, TX 78118",,08:00 AM-05:00 PM,,ho59659328,false,true,,,,poll62016214
+2458,"Kaufman County Courhouse 100 N. Washington St, Kaufman, TX 75142",,08:00 AM-05:00 PM,,ho31399921,false,true,,,,poll51784949
+2462,"Kaufman County Sub-Courthouse 200 E Main St, Forney, TX 75126-4008",,08:00 AM-05:00 PM,,ho41882079,false,true,,,,poll95170967
+2466,"Kaufman County Sub-Courthouse 408 E. College St, Terrell, TX 75160",,08:00 AM-05:00 PM,,ho6227489,false,true,,,,poll69877621
+2470,"Crandall Municipal Court House 114 S Main St, Crandall, TX 75114",,08:00 AM-05:00 PM,,ho2510531,false,true,,,,poll24213915
+2474,"301 Houston St., Annex, Room 8, George West, TX 78022",,08:00 AM-05:00 PM,,ho98548649,false,true,,,,poll13086936
+2476,"NUECES COUNTY COURTHOUSE (1st Floor Atrium) 901 Leopard St., Corpus Christi, TX 78401",,08:00 AM-05:00 PM,,ho72054604,false,true,,,,poll63259890
+2480,"ART CENTER OF CORPUS CHRISTI 100 N. Shoreline Blvd, Corpus Christi, TX 78401",,08:00 AM-05:00 PM,,ho98087937,false,true,,,,poll43669089
+2484,"BISHOP COMMUNITY CENTER 102 W. Joyce St., Bishop, TX 78343",,08:00 AM-05:00 PM,,ho81107044,false,true,,,,poll12728672
+2488,"CALALLEN ISD (Administration Building) 4205 Wildcat Dr., Corpus Christi, TX 78410-5108",,08:00 AM-05:00 PM,,ho35776814,false,true,,,,poll1895815
+2491,"CORPUS CHRISTI CITY HALL (1st Floor Utility Section) 1201 Leopard St., Corpus Christi, TX 78401",,08:00 AM-05:00 PM,,ho20471610,false,true,,,,poll50982085
+2493,"CORPUS CHRISTI ISD (Administration Building) 801 Leopard St, Corpus Christi, TX 78401",,08:00 AM-05:00 PM,,ho6072033,false,true,,,,poll52328095
+2495,"DEAF AND HARD OF HEARING CENTER 5151 McArdle Rd., Corpus Christi, TX 78411",,08:00 AM-05:00 PM,,ho89132612,false,true,,,,poll99104669
+2499,"DEL MAR COLLEGE (Heldenfels Administrative Building) 101 Baldwin Blvd, Corpus Christi, TX 78404",,08:00 AM-05:00 PM,,ho9358203,false,true,,,,poll46929621
+2503,"ETHEL EYERLY SENIOR CENTER 654 Graham Rd., Corpus Christi, TX 78418",,08:00 AM-05:00 PM,,ho69695209,false,true,,,,poll26015559
+2507,"FLOUR BLUFF ISD (Maintenance Building) 2510 Waldron Rd., Corpus Christi, TX 78418",,08:00 AM-05:00 PM,,ho88790893,false,true,,,,poll29901383
+2509,"GREENWOOD SENIOR CITIZENS CENTER 4040 Greenwood Dr., Corpus Christi, TX 78416",,08:00 AM-05:00 PM,,ho60847130,false,true,,,,poll79977111
+2513,"HILLTOP COMMUNITY CENTER 11425 Leopard St., Corpus Christi, TX 78410",,08:00 AM-05:00 PM,,ho76574396,false,true,,,,poll80467002
+2517,"JOHNNY S. CALDERON COUNTY BUILDING 710 E. Main St., Robstown, TX 78380",,08:00 AM-05:00 PM,,ho279917,false,true,,,,poll76044514
+2521,"PETRONILA ELEMENTARY (CAFETERIA) 2391 Co Road 67, Robstown, TX 78380",,08:00 AM-05:00 PM,,ho44486534,false,true,,,,poll32720038
+2524,"PORT ARANSAS COMMUNITY CENTER 408 N. Alister St, Port Aransas, TX 78373",,08:00 AM-05:00 PM,,ho96091500,false,true,,,,poll73553388
+2528,"ROBSTOWN CITY HALL 101 East Main St, Robstown, TX 78380",,08:00 AM-05:00 PM,,ho92559602,false,true,,,,poll48703499
+2531,"ROBSTOWN ISD (Administration Building) 801 N. First St., Robstown, TX 78380",,08:00 AM-05:00 PM,,ho76739977,false,true,,,,poll70608884
+2533,"SCHLITTERBAHN 14353 Commodores Dr, Corpus Christi, TX 78418",,08:00 AM-05:00 PM,,ho73370753,false,true,,,,poll60342729
+2537,"VALENCIA HALL 6110 Ayers St., Corpus Christi, TX 78415",,08:00 AM-05:00 PM,,ho36267641,false,true,,,,poll8564892
+2541,"VETERANS MEMORIAL HIGH SCHOOL 3750 Cimarron Blvd., Corpus Christi, TX 78414",,08:00 AM-05:00 PM,,ho60947270,false,true,,,,poll80781787
+2545,"WEST OSO ISD (Administration Building) 5050 Rockford Dr., Corpus Christi, TX 78416",,08:00 AM-05:00 PM,,ho43563867,false,true,,,,poll51575447
+2548,"CORPUS CHRISTI ARMY DEPOT (BUILDING 8) 308 Crecy Street, Corpus Christi, TX 78419",,08:00 AM-05:00 PM,,ho60715522,false,true,,,,poll87560169
+2550,"TAMU-CC UNIVERSITY CENTER (LEGACY HALL RM 124) 6300 Ocean Drive, Corpus Christi, TX 78412",,08:00 AM-05:00 PM,,ho95734564,false,true,,,,poll83760815
+2552,"BANQUETE ISD (ADMIN BUILDING) 4339 Fourth St, Banquete, TX 78339",,08:00 AM-05:00 PM,,ho69009458,false,true,,,,poll35427584
+2554,"DAVID BERLANGA COMMUNITY CENTER 1513 2nd St., Agua Dulce, TX 78330",,08:00 AM-05:00 PM,,ho14858814,false,true,,,,poll19649994
+2557,"LONDON ISD (HIGH SCHOOL) 1306 FM 43, Corpus Christi, TX 78415",,07:00 AM-07:00 PM,,ho51375990,false,true,,,,poll62443471
+2558,"Community Center 10 S. Oak, Pecos, TX 79744",,08:00 AM-05:00 PM,,ho53415364,false,true,,,,poll2507609
+2560,"Shelby County Clerk 124 Austin St, Center, TX 75935",,07:00 AM-07:00 PM,,ho4080278,false,true,,,,poll30241450
+2566,"105 East Hackberry St., Sanderson, TX 79848",,08:00 AM-12:00 PM,,ho95377723,false,true,,,,poll20622052
+2570,"507 W. Main St, Brownfield, TX 79316",,08:30 AM-07:00 PM,,ho79993427,false,true,,,,poll49241360
+2574,"UPSHUR COUNTY COURTHOUSE 100 W. Tyler St, Gilmer, TX 75644",,07:00 AM-07:00 PM,,ho9992685,false,true,,,,poll88816462
+2577,"Reber Memorial Public Library 193 N 4th st, Raymondville, TX 78580",,08:00 AM-12:00 PM,,ho26691162,false,true,,,,poll34260492
+2581,"Wilson County Courhouse annex #3 1103 4th St, Floresville, TX 78114",,08:00 AM-05:00 PM,,ho78351203,false,true,,,,poll19790951
+2586,"Lavernia City Hall, 102 E Chihuahua St., Lavernia, TX 78121",,08:00 AM-05:00 PM,,ho91138518,false,true,,,,poll99516208
+2591,"200 Carroll St, Poth, TX 78147",,10:00 AM-01:00 PM,,ho20006239,false,true,,,,poll86347192
+2593,"700 W Main St, Stockdale, TX 78160",,04:00 PM-07:00 PM,,ho21947941,false,true,,,,poll49577869
+2594,"110 S. Madison St., Ste C, Mt. Pleasant, TX 75455",,07:00 AM-07:00 PM,,ho72933173,false,true,,,,poll66925729
+2596,"138 W. 5th Street, Rusk, TX 75785",,08:00 AM-05:00 PM,,ho8952910,false,true,,,,poll33663659
+2600,"235 East San Antonio St, Alto, TX 75925",,08:00 AM-05:00 PM,,ho9184043,false,true,,,,poll93308492
+2604,"502 S Jackson St, Jacksonville, TX 75766",,08:00 AM-05:00 PM,,ho80669017,false,true,,,,poll90521446
+2608,"103 N. 5th St., Carrizo Springs, TX 78834",,08:00 AM-05:00 PM,,ho72075919,false,true,,,,poll738753
+2611,"500 Broadway, Plainview, TX 79072",,08:00 AM-05:00 PM,,ho99416555,false,true,,,,poll96886899
+2613,"300 E. Oak, Ste 3, Sonora, TX 76950",,08:30 AM-04:30 PM,,ho48211828,false,true,,,,poll72374826
+2615,"1000 N. Rankin St., Rankin, TX 79778",,07:00 AM-07:00 PM,,ho95671247,false,true,,,,poll3388922
+2619,"108 W 5th St, McCamey, TX 79752",,07:00 AM-07:00 PM,,ho83806410,false,true,,,,poll18225020
+2623,"400 Pecan St, Del Rio, TX 78840",,08:30 AM-04:30 PM,,ho75061972,false,true,,,,poll30997357
+2627,"1110 Washington St., Ste 103, Laredo, TX 78040",,08:00 AM-05:00 PM,,ho59921976,false,true,,,,poll24841109
+2631,"2001 LOWRY RD, Laredo, TX 78045",,08:00 AM-05:00 PM,,ho25227100,false,true,,,,poll8645794
+2635,"230 Calle Del Norte, Laredo, TX 78041",,08:00 AM-05:00 PM,,ho39992972,false,true,,,,poll42334425
+2639,"1102 Bob Bullock Loop, Laredo, TX 78043",,08:00 AM-05:00 PM,,ho14828311,false,true,,,,poll83072516
+2643,"1920 Palo Blanco St, Laredo, TX 78046",,08:00 AM-05:00 PM,,ho19099874,false,true,,,,poll99847541
+2647,"1701 Centeno Ln, Rio Bravo, TX 78046",,08:00 AM-05:00 PM,,ho50912007,false,true,,,,poll49029619
+2651,"3519 Cecilia Ln, Laredo, TX 78046",,08:00 AM-05:00 PM,,ho28235107,false,true,,,,poll39402035
+2655,"Webb CISD, 619 Ave F, Bruni, TX 98344",,09:00 AM-05:00 PM,,ho26075643,false,true,,,,poll1904883
+2657,"300 Despain St, Oilton, TX 78369",,01:00 PM-06:00 PM,,ho67326405,false,true,,,,poll27477777
+2659,"917 N. Main Street, Mirando City, TX 78369",,09:00 AM-08:00 PM,,ho25985417,false,true,,,,poll87171522
+2660,"Daiches Elementary School 1401 Green St, Laredo, TX 78040",,09:00 AM-05:00 PM,,ho23424842,false,true,,,,poll77989128
+2661,"1700 Anna Ave, Laredo, TX 78040",,09:00 AM-05:00 PM,,ho43639848,false,true,,,,poll48352674
+2662,"1515 Pappas St, Laredo, TX 78041",,09:00 AM-05:00 PM,,ho89313853,false,true,,,,poll63101167
+2663,"1606 Benavides St, Laredo, TX 78040",,09:00 AM-05:00 PM,,ho78972323,false,true,,,,poll79130241
+2665,"2800 S Canada Ave, Laredo, TX 78046",,01:00 PM-06:00 PM,,ho31274442,false,true,,,,poll52283187
+2667,"Santo Nino Elementary School 2702 Bismark St, Laredo, TX 78043",,09:00 AM-08:00 PM,,ho41034387,false,true,,,,poll35760057
+2668,"Gateway Community Health Center at2007 S Zapata Hwy, Laredo, TX 78046",,09:00 AM-08:00 PM,,ho64933964,false,true,,,,poll87907762
+2669,"2600 Zacatecas St, Laredo, TX 78040",,09:00 AM-08:00 PM,,ho12434088,false,true,,,,poll78155163
+2670,"1003 Espejo Molina Rd, Rio Bravo, TX 78043",,11:00 AM-08:00 PM,,ho97967572,false,true,,,,poll42499149
+2671,"Perez Elementary, Laredo, TX 78046",,11:00 AM-08:00 PM,,ho13282711,false,true,,,,poll11973043
+2672,"6431 Casa Del Sol Blvd, Laredo, TX 78043",,11:00 AM-08:00 PM,,ho24784787,false,true,,,,poll98721752
+2673,"10702 Kirby Dr, Laredo, TX 78045",,11:00 AM-08:00 PM,,ho2380775,false,true,,,,poll39145899
+2674,"1453 Concord Hills Blvd, Laredo, TX 78046",,11:00 AM-08:00 PM,,ho12990213,false,true,,,,poll29701933
+2675,"1000 Century Dr W, Laredo, TX 78046",,09:00 AM-08:00 PM,,ho58343518,false,true,,,,poll95106963
+2676,"Malakoff Elementary, 2810 Havana Dr, Laredo, TX 78045",,01:00 PM-06:00 PM,,ho10342601,false,true,,,,poll36036304
+2677,"United High School, 2811 United Ave, Laredo, TX 78045",,09:00 AM-08:00 PM,,ho61450634,false,true,,,,poll58969663
+2678,"5626 Cielito Lindo Blvd, Laredo, TX 78046",,09:00 AM-08:00 PM,,ho19308054,false,true,,,,poll98797768
+2679,"3600 E Del Mar Blvd, Laredo, TX 78041",,09:00 AM-08:00 PM,,ho28539589,false,true,,,,poll53090609
+2680,"4001 Ave Los Presidentes, Laredo, TX 78046",,09:00 AM-08:00 PM,,ho3555858,false,true,,,,poll31975254
+2681,"UNITED HIGH SCHOOL, 8800 MCPHERSON RD, Laredo, TX 78045",,09:00 AM-08:00 PM,,ho72312304,false,true,,,,poll86334
+2682,"LCC Kazen Center, W End Washington St, Laredo, TX 78040",,09:00 AM-06:00 PM,,ho12767338,false,true,,,,poll57379129
+2684,"Doctor s Hospital, 10700 McPherson Rd, Laredo, TX 78045",,09:00 AM-08:00 PM,,ho66040601,false,true,,,,poll33468623
+2686,"LCC South - Zaffirini Library, Laredo, TX 78046",,09:00 AM-06:00 PM,,ho22373690,false,true,,,,poll45614617
+2688,"City Hall of Loredo, 1110 Houston St, Laredo, TX 78040",,08:00 AM-05:00 PM,,ho32349524,false,true,,,,poll58692068
+2689,"Laredo Medical Center, 1700 E Saunders St, Laredo, TX 78041",,09:00 AM-08:00 PM,,ho23604781,false,true,,,,poll15456103
+2692,"Texas A&M Int'l, 5201 University Blvd, Laredo, TX 78041",,09:00 AM-08:00 PM,,ho96119563,false,true,,,,poll29461579
+2693,"900 7th Street, Room 250, Wichita Falls, TX 76307",,08:00 AM-05:00 PM,,ho36840905,false,true,,,,poll25562144
+2697,"Commissioner Pct Bldg 102 W College, Burkburnett, TX 76354",,08:00 AM-05:00 PM,,ho79669566,false,true,,,,poll84415247
+2701,"Wichita Co Tax Office 400 W Wall St, Iowa Park, TX 76367",,08:00 AM-05:00 PM,,ho17300178,false,true,,,,poll97310659
+2705,"Commissioner Pct 4 Bldg Wichita Co 2202 SH 25 N, Electra, TX 76360",,08:00 AM-05:00 PM,,ho16474324,false,true,,,,poll54152622
+2709,"Sikes Senter Mall 3111 Midwestern Pkwy, Wichita Falls, TX 76308",,10:00 AM-07:00 PM,,ho57496920,false,true,,,,poll97080557
+2713,"Home Depot 3705 Kell Blvd, Wichita Falls, TX 76308-1604",,10:00 AM-07:00 PM,,ho49766142,false,true,,,,poll69579074
+2717,"2010 Redbud Blvd., Ste 102, McKinney, TX 75069",,08:00 AM-05:00 PM,,ho19523023,false,true,,,,poll39866879
+2721,"415 Main St, Silverton, TX 79257",,08:00 AM-12:00 PM,,ho10777526,false,true,,,,poll89808557
+2725,"100 West Buck Street, Ste 107, Caldwell, TX 77836",,08:00 AM-05:00 PM,,ho38630040,false,true,,,,poll75833094
+2728,"310 E. 1st Street, Dumas, TX 79029",,08:30 AM-05:00 PM,,ho7795818,false,true,,,,poll69730267
+2730,"1017 Parker St., Goldthwaite, TX 76844",,08:00 AM-05:00 PM,,ho41435391,false,true,,,,poll18485032
+2732,"300 La Caverna St., Van Horn, TX 79855",,08:00 AM-12:00 PM,,ho45041564,false,true,,,,poll97430571
+2736,"4520 Reading Road, Rosenberg, TX 77471",,08:00 AM-05:00 PM,,ho96868152,false,true,,,,poll25483578
+2748,"1 Troyan Dr, Stafford, TX 77477",,08:00 AM-05:00 PM,,ho95424790,false,true,,,,poll38127509
+2756,"15700 Old Richmond Road, Sugar Land, TX 77498",,08:00 AM-05:00 PM,,ho41710604,false,true,,,,poll93793881
+2771,"319 S. 3rd Street, Beasley, TX 77469",,08:00 AM-05:00 PM,,ho15587807,false,true,,,,poll4432477
+2774,"3703 Lost Creek Blvd, Sugar Land, TX 77478",,08:00 AM-05:00 PM,,ho26285042,false,true,,,,poll67783180
+2780,"101 E. Methvin, Ste 112, Longview, TX 75601",,08:00 AM-06:00 PM,,ho3530192,false,true,,,,poll62286931
+2784,"1129 FM 1844, Longview, TX 75605",,08:00 AM-06:00 PM,,ho16676785,false,true,,,,poll30994722
+2787,"3211 W. Marshall Ave, Longview, TX 75604",,08:00 AM-06:00 PM,,ho69171009,false,true,,,,poll59872152
+2790,"622 Kay St., Kilgore, TX 75662",,08:00 AM-06:00 PM,,ho28626712,false,true,,,,poll32034315
+2793,"801 S. MLK Blvd., Longview, TX 75601",,08:00 AM-06:00 PM,,ho57482151,false,true,,,,poll85284085
+2796,"5333 Old Highway 135 N., Liberty City, TX 75647",,08:00 AM-06:00 PM,,ho78629704,false,true,,,,poll95494770
+2799,"3101 Spring Hill Rd., Longview, TX 75605",,08:00 AM-06:00 PM,,ho99326158,false,true,,,,poll55371043
+2800,"1701 Pine Tree Rd., Longview, TX 75604",,08:00 AM-06:00 PM,,ho17434321,false,true,,,,poll99927188
+2801,"White Oak Community Center, E Center St., White Oak, TX 75693",,08:00 AM-06:00 PM,,ho28105800,false,true,,,,poll22329087
+2802,"10450 Highway 349, Longview, TX 75603",,08:00 AM-06:00 PM,,ho91061798,false,true,,,,poll45753421
+2803,"519 E. Broadway, Gladewater, TX 75647",,08:00 AM-06:00 PM,,ho19225512,false,true,,,,poll30015490
+2805,"500 E. San Antonio Ave, Ste 314, El Paso, TX 79901",,08:00 AM-05:00 PM,,ho86753027,false,true,,,,poll43370980
+2809,"12280 Socorro Rd, San Elizario, TX 79849",,08:00 AM-05:00 PM,,ho50172369,false,true,,,,poll32702180
+2813,"5509 Will Ruth Ave, El Paso, TX 79924",,09:00 AM-06:00 PM,,ho47986363,false,true,,,,poll36735525
+2817,"7965 Artcraft Rd, El Paso, TX 79932",,08:00 AM-05:00 PM,,ho54854317,false,true,,,,poll84961745
+2821,"563 N Carolina Dr, El Paso, TX 79915",,09:00 AM-06:00 PM,,ho24285807,false,true,,,,poll1246039
+2824,"13100 Alameda Ave, Clint, TX 79836",,08:00 AM-05:00 PM,,ho11395754,false,true,,,,poll14827550
+2827,"551 Redd Rd, El Paso, TX 79912",,10:00 AM-07:00 PM,,ho54386993,false,true,,,,poll45846954
+2830,"6701 S Desert Blvd, El Paso, TX 79932",,09:00 AM-06:00 PM,,ho23115824,false,true,,,,poll73225661
+2833,"2350 George Dieter Dr, El Paso, TX 79936",,09:00 AM-06:00 PM,,ho17958926,false,true,,,,poll91933261
+2837,"435 Vinton Rd, Anthony, TX 79821",,08:00 AM-05:00 PM,,ho54561495,false,true,,,,poll27486727
+2841,"3850 Justice, El Paso, TX 79938",,08:00 AM-05:00 PM,,ho58676533,false,true,,,,poll36751320
+2845,"12899 Sparks Dr, El Paso, TX 79928",,08:00 AM-05:00 PM,,ho46193643,false,true,,,,poll13132142
+2849,"12480 Pebble Hills Blvd, El Paso, TX 79938",,10:00 AM-07:00 PM,,ho3775052,false,true,,,,poll86361877
+2852,"650 Wallenberg Dr, El Paso, TX 79912",,09:00 AM-06:00 PM,,ho58347848,false,true,,,,poll27281566
+2855,"10064 Alameda Ave, Socorro, TX 79927",,08:00 AM-05:00 PM,,ho74867854,false,true,,,,poll27641858
+2859,"11600 Vista Del Sol Dr, El Paso, TX 79936",,09:00 AM-06:00 PM,,ho3422351,false,true,,,,poll77139396
+2862,"8501 Diana Dr, El Paso, TX 79904",,10:00 AM-07:00 PM,,ho63015176,false,true,,,,poll57940839
+2865,"8831 Railroad Dr, El Paso, TX 79904",,09:00 AM-06:00 PM,,ho22346619,false,true,,,,poll24662346
+2869,"13969 Veny Webb St, Horizon City, TX 79928",,08:00 AM-05:00 PM,,ho29473655,false,true,,,,poll39100896
+2873,"9301 Alameda Ave, El Paso, TX 79907",,09:00 AM-06:00 PM,,ho69589753,false,true,,,,poll99260458
+2876,"221 Bartlett Dr, El Paso, TX 79912",,09:00 AM-06:00 PM,,ho89408128,false,true,,,,poll62514823
+2880,"1331 Fabens St, Fabens, TX 79838",,09:00 AM-06:00 PM,,ho4824592,false,true,,,,poll62345730
+2884,"19200 Cobb Ave, Tornillo, TX 79853",,08:00 AM-05:00 PM,,ho70954097,false,true,,,,poll86786961
+2887,"10712 Sam Snead Dr, El Paso, TX 79935",,09:00 AM-06:00 PM,,ho88066303,false,true,,,,poll96768700
+2890,"9135 Stahala Dr, El Paso, TX 79924",,09:00 AM-06:00 PM,,ho43926466,false,true,,,,poll62797809
+2893,"1700 N Zaragoza Rd, El Paso, TX 79936",,09:00 AM-06:00 PM,,ho80000867,false,true,,,,poll54245579

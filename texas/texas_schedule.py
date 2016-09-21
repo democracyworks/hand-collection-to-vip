@@ -334,23 +334,23 @@ class ScheduleTxt(object):
             end = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
             return end
             #print index, start_date
-            end = end_date
+#            end = end_date
             #sd = tuple(start_date.split('-'))
 
             #d = '2016-' + sd[0] + '-' + sd[1]
             #print d
             #return d
 
-            try:
-                end = datetime.datetime.strptime(end, '%m-%d-%y').strftime('%Y-%m-%d')
-                return end
+#            try:
+#                end = datetime.datetime.strptime(end, '%m-%d-%y').strftime('%Y-%m-%d')
+#                return end
            #     print 'c', index, sd
            #     return sd
-            except:
+#            except:
            #     sd = datetime.datetime.strptime(start_date, '%m-%d-%y').strftime('%Y-%m-%d')
 
                 #print 'd', index, sd
-                pass
+#                pass
 
         #mdy = self.format_date(start_date)
         #end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
@@ -360,6 +360,7 @@ class ScheduleTxt(object):
 
     def get_hours_open_id(self, hours_open_id):
         """#"""
+        print hours_open_id
         return hours_open_id
 
 
@@ -388,10 +389,10 @@ class ScheduleTxt(object):
         """
 
         self.base_df['start_time'] = self.base_df.apply(
-            lambda row: self.get_start_time(row['index'], row['office_name'], row['start_time'], row['start_date']), axis=1)
+            lambda row: self.get_start_time(row['index'], row['county'], row['start_time'], row['start_date']), axis=1)
 
         self.base_df['end_time'] = self.base_df.apply(
-            lambda row: self.get_end_time(row['office_name'], row['end_time']), axis=1)
+            lambda row: self.get_end_time(row['county'], row['end_time']), axis=1)
 
         self.base_df['is_only_by_appointment'] = self.base_df.apply(
             lambda row: self.is_only_by_appointment(), axis=1)
@@ -428,8 +429,8 @@ class ScheduleTxt(object):
         #print sch
 
         # Drop base_df columns.
-        sch.drop(['index', 'office_name', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state',
-                  'zip_code', 'notes', 'address_line', 'directions', 'hours', 'photo_uri', 'is_drop_box',
+        sch.drop(['index', 'county', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state',
+                  'zip_code', 'address_line', 'directions', 'hours', 'photo_uri', 'is_drop_box',
                   'is_early_voting', 'latitude', 'longitude', 'latlng_source'], inplace=True, axis=1)
 
         # reorder columns
@@ -446,7 +447,9 @@ class ScheduleTxt(object):
 if __name__ == '__main__':
 
     s = 'office_name	ocd_division homepage_url phone email street city state zip_code start_time end_time start_date end_date is_subject_to_change notes	index address_line directions hours photo_uri hours_open_id is_drop_box	is_early_voting	latitude longitude latlng_source id'.split(' ')
-    print s
+    s2 = 'county ocd_division homepage_url phone email street city state zip_code start_time end_time start_date end_date index address_line directions hours photo_uri hours_open_id is_drop_box is_early_voting latitude longitude latlng_source id'.split()
+    print s2
+    #print s
 
 
     intermediate_doc = 'intermediate_doc.csv'
@@ -459,16 +462,20 @@ if __name__ == '__main__':
     #            'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude',
     #           'longitude', 'latlng_source', 'polling_location_id']
 
-    colnames = ['office_name', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state', 'zip_code',
-                'start_time', 'end_time', 'start_date', 'end_date', 'is_subject_to_change', 'notes', 'index',
-                'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
-                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
+#    colnames = ['office_name', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state', 'zip_code',
+#                'start_time', 'end_time', 'start_date', 'end_date', 'is_subject_to_change', 'notes', 'index',
+#                'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
+#                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
 
+    colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state', 'zip_code', 'start_time',
+     'end_time', 'start_date', 'end_date', 'index', 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id',
+     'is_drop_box', 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
 
     early_voting_df = pd.read_csv(config.output + intermediate_doc, names=colnames, encoding='ISO-8859-1', skiprows=1, delimiter=',')
 
     early_voting_df['index'] = early_voting_df.index +1 # offsets zero based index so it starts at 1 for ids
     #print early_voting_df
+    print early_voting_df.hours_open_id
 
     ScheduleTxt(early_voting_df).write_schedule_txt()
     #ScheduleTxt(early_voting_df).format_for_schedule()

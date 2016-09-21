@@ -308,12 +308,15 @@ if __name__ == '__main__':
     colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state', 'zip_code',
                 'start_time', 'end_time', 'start_date', 'end_date', 'is_subject_to_change', 'notes']
 
-    early_voting_df = pd.read_csv(config.input + state_file, names=colnames, encoding='utf-8', skiprows=1)
+    usecols = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state', 'zip_code',
+                'start_time', 'end_time', 'start_date', 'end_date']
+
+    early_voting_df = pd.read_csv(config.input + state_file, names=colnames, usecols=usecols, encoding='utf-8', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
 
     pl = PollingLocationTxt(early_voting_df, config.state_abbreviation_upper)
     early_voting_df = pl.export_for_schedule_and_locality()
-    #print early_voting_df
+    print early_voting_df
 
     lt = LocalityTxt(early_voting_df, config.state)
     lt.write_locality_txt()
