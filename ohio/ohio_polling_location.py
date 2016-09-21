@@ -47,7 +47,7 @@ class PollingLocationTxt(object):
 
         #address = adr1 + '' +adr2
 
-        final_line = street_address + " " + city_name + " " + config.state_abbreviation_upper + " " + zip
+        final_line = street_address + ", " + city_name + ", " + config.state_abbreviation_upper + " " + zip
         print final_line
         return final_line
 
@@ -268,6 +268,6 @@ if __name__ == '__main__':
 
     pl = PollingLocationTxt(early_voting_df, config.early_voting)
 
-    pl.write_polling_location_txt()
-    #pl.export_for_schedule_and_locality()
+    #pl.write_polling_location_txt()
+    pl.export_for_schedule_and_locality()
 
