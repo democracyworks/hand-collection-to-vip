@@ -1,45 +1,45 @@
 address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-" 400 N Benjamin Lane Suite 100 Boise, ID 83704",,08:00 AM - 05:00 PM,,ho12785108,false,true,,,,poll39170377
-"Adams County Courthouse 201 Industrial Ave Council, ID 83612",,08:00 AM - 05:00 PM,,ho35836011,false,true,,,,poll67004111
-" 141 N. 6th Pocatello, ID 83201",,09:00 AM - 05:00 PM,,ho70416843,false,true,,,,poll49941123
-"Bear Lake County Courthouse 7 East Center Paris, ID 83261-0190",,08:00 AM - 04:30 PM,,ho32395439,false,true,,,,poll95185580
-"Benewah County Courthouse          701 W College Ave Suite 101 St Maries, ID 83861-1852",,09:00 AM - 05:00 PM,,ho93513964,false,true,,,,poll62195252
-"Bingham County Courthouse 501 N Maple St Room 105 Blackfoot, ID 83221-1776",,08:30 AM - 04:30 PM,,ho41611951,false,true,,,,poll94597466
-"Old County Courthouse 206 1st Ave South #200 Hailey, ID 83333-8429",,08:00 AM - 05:00 PM,,ho24385978,false,true,,,,poll56666999
-" 420 Main St Idaho City, ID 83631",,08:00 AM - 05:00 PM,,ho30021981,false,true,,,,poll49661922
-" 1500 Hwy 2 Suite 124 Sandpoint, ID 83864-1794",,09:00 AM - 05:00 PM,,ho65686351,false,true,,,,poll17455605
-" 825 Shoup Ave Idaho Falls, ID 83402-3582",,08:00 AM - 05:00 PM,,ho23818093,false,true,,,,poll97664195
-" 6452 Kootenai Street Bonners Ferry, ID 83805",,09:00 AM - 05:00 PM,,ho86762439,false,true,,,,poll20582227
-"Butte County Courthouse 241 W Grand Ave Arco, ID 83213-0737",,09:00 AM - 12:00 PM,,ho57234212,false,true,,,,poll64905233
-" 501 Soldier Road Fairfield, ID 83327",,08:30 AM - 12:00 PM,,ho82763846,false,true,,,,poll2250149
-" 1102 E Chicago Caldwell, ID 83605-3522",,08:00 AM - 05:00 PM,,ho40837231,false,true,,,,poll19932588
-" 159 S. Main St. Room 202 Soda Springs, ID 83276",,09:00 AM - 05:00 PM,,ho52554998,false,true,,,,poll1210019
-" 1459 Overland Avenue Room #105 Burley, ID 83318-1862",,08:30 AM - 05:00 PM,,ho17347182,false,true,,,,poll60976453
-" 204 W Main St Dubois, ID 83423",,09:00 AM - 05:00 PM,,ho7813877,false,true,,,,poll40129085
-"Clearwater County Courthouse 150 Michigan Avenue Orofino, ID 83544",,08:00 AM - 05:00 PM,,ho32561627,false,true,,,,poll20646284
-"Custer County Court House 801 E. Main Ave. Challis, ID 83226-0385",,08:00 AM - 05:00 PM,,ho78365777,false,true,,,,poll74956058
-" 150 S 4th E #3 Mountain Home, ID 83647-3000",,09:00 AM - 05:00 PM,,ho6469686,false,true,,,,poll2904177
-" 39 W Oneida Preston, ID 83263-1232",,09:00 AM - 05:00 PM,,ho18603222,false,true,,,,poll82643548
-"Fremont County Courthouse 151 W 1st N Room 12 St Anthony, ID 83445-1548",,08:00 AM - 05:00 PM,,ho78425317,false,true,,,,poll61677385
-" 415 E Main Room 202 Emmett, ID 83617-3096",,08:00 AM - 05:00 PM,,ho43055549,false,true,,,,poll13845639
-"Gooding County Courthouse 624 Main St Gooding, ID 83330",,08:00 AM - 05:00 PM,,ho19159525,false,true,,,,poll8990491
-" 320 W Main Room 5 Grangeville, ID 83530-1948",,08:30 AM - 05:00 PM,,ho94576038,false,true,,,,poll39070689
-" 210 Courthouse Way Suite 100 Rigby, ID 83442",,09:00 AM - 05:00 PM,,ho32748529,false,true,,,,poll22003050
-" 300 N Lincoln Room 301 Jerome, ID 83338-2344",,08:30 AM - 05:00 PM,,ho74869813,false,true,,,,poll14340462
-" 1808 N 3rd Street Coeur d'Alene, ID 83816-9000",,08:00 AM - 05:00 PM,,ho57886942,false,true,,,,poll74832111
-"Latah County Courthouse 522 South Adams, Room 101 Moscow, ID 83843",,08:00 AM - 05:00 PM,,ho81172220,false,true,,,,poll55655327
-" 206 Courthouse Drive Salmon, ID 83467-3900",,08:00 AM - 05:00 PM,,ho49530966,false,true,,,,poll11620640
-" 510 Oak Street Room 1 Nezperce, ID 83543-5065",,09:00 AM - 05:00 PM,,ho33542669,false,true,,,,poll35010147
-" 111 West B Street Suite C Shoshone, ID 83352-5364",,08:30 AM - 05:00 PM,,ho82784773,false,true,,,,poll19839593
-" 134 E Main St Rexburg, ID 83440",,08:30 AM - 04:30 PM,,ho60831486,false,true,,,,poll70463149
-"Minidoka County Court House 715 G Street Rupert, ID 83350",,08:00 AM - 05:00 PM,,ho5015790,false,true,,,,poll47797702
-"Brammer Building 1225 Idaho St Lewiston, ID 38501",,08:00 AM - 05:00 PM,,ho92268403,false,true,,,,poll1076627
-" 10 Court Street Malad, ID 83252-1200",,09:00 AM - 05:00 PM,,ho28168828,false,true,,,,poll58221260
-" 20381 State Hwy 78 Mercy , ID 83650",,08:30 AM - 05:00 PM,,ho67034961,false,true,,,,poll420801
-" 1130 3rd Ave N Room 104 Payette, ID 83661-2473",,09:00 AM - 05:00 PM,,ho99662708,false,true,,,,poll75242294
-" 543 Bannock Ave American Falls, ID 83211-1200",,09:00 AM - 05:00 AM,,ho67139731,false,true,,,,poll87829322
-"Shoshone County Courthouse 700 Bank Street Ste 120 Wallace, ID 83873-2348",,09:00 AM - 05:00 PM,,ho91038024,false,true,,,,poll36595119
-" 150 Courthouse Drive #208 Driggs, ID 83422",,09:00 AM - 05:00 PM,,ho19114174,false,true,,,,poll27531664
-" 630 Addison Ave W Twin Falls, ID 83301",,08:00 AM - 05:00 PM,,ho22983132,false,true,,,,poll90051364
-" 219 N. Main St. Cascade, ID 83611",,08:00 AM - 05:00 PM,,ho23345110,false,true,,,,poll34115046
-" 256 East Court Street Weiser, ID 83672-0670",,08:30 AM - 05:00 PM,,ho29316031,false,true,,,,poll31280451
+"400 N Benjamin Lane, Suite 100, Boise, ID 83704",,08:00 AM - 05:00 PM,,ho10016664,false,true,,,,poll23009603
+"Adams County Courthouse, 201 Industrial Ave, Council, ID 83612",,08:00 AM - 05:00 PM,,ho9226867,false,true,,,,poll83397665
+"141 N. 6th, Pocatello, ID 83201",,09:00 AM - 05:00 PM,,ho98137561,false,true,,,,poll7680323
+"Bear Lake County Courthouse, 7 East Center, Paris, ID 83261",,08:00 AM - 04:30 PM,,ho93937395,false,true,,,,poll19431024
+"Benewah County Courthouse, 701 W College Ave, Suite 101, St Maries, ID 83861",,09:00 AM - 05:00 PM,,ho64127484,false,true,,,,poll36293406
+"Bingham County Courthouse, 501 N Maple St, Room 105, Blackfoot, ID 83221",,08:30 AM - 04:30 PM,,ho28319272,false,true,,,,poll98362131
+"Old County Courthouse, 206 1st Ave South, #200, Hailey, ID 83333",,08:00 AM - 05:00 PM,,ho52312425,false,true,,,,poll19290959
+"420 Main St, Idaho City, ID 83631",,08:00 AM - 05:00 PM,,ho89264221,false,true,,,,poll38788595
+"1500 Hwy 2, Suite 124, Sandpoint, ID 83864",,09:00 AM - 05:00 PM,,ho48307151,false,true,,,,poll15853240
+"825 Shoup Ave, Idaho Falls, ID 83402",,08:00 AM - 05:00 PM,,ho8576257,false,true,,,,poll95305352
+"6452 Kootenai Street, Bonners Ferry, ID 83805",,09:00 AM - 05:00 PM,,ho3823232,false,true,,,,poll30445305
+"Butte County Courthouse, 241 W Grand Ave, Arco, ID 83213",,09:00 AM - 12:00 PM,,ho12943878,false,true,,,,poll79566243
+"501 Soldier Road, Fairfield, ID 83327",,08:30 AM - 12:00 PM,,ho35048328,false,true,,,,poll8684392
+"1102 E Chicago, Caldwell, ID 83605",,08:00 AM - 05:00 PM,,ho78745410,false,true,,,,poll50278443
+"159 S. Main St., Room 202, Soda Springs, ID 83276",,09:00 AM - 05:00 PM,,ho71043622,false,true,,,,poll68402387
+"1459 Overland Avenue, Room #105, Burley, ID 83318",,08:30 AM - 05:00 PM,,ho31430820,false,true,,,,poll29840166
+"204 W Main St, Dubois, ID 83423",,09:00 AM - 05:00 PM,,ho72919498,false,true,,,,poll31552388
+"Clearwater County Courthouse, 150 Michigan Avenue, Orofino, ID 83544",,08:00 AM - 05:00 PM,,ho78039533,false,true,,,,poll28453474
+"Custer County Court House, 801 E. Main Ave., Challis, ID 83226",,08:00 AM - 05:00 PM,,ho78260381,false,true,,,,poll35958962
+"150 S 4th E, #3, Mountain Home, ID 83647",,09:00 AM - 05:00 PM,,ho30931542,false,true,,,,poll10403039
+"39 W Oneida, Preston, ID 83263",,09:00 AM - 05:00 PM,,ho39946432,false,true,,,,poll53053018
+"Fremont County Courthouse, 151 W 1st N, Room 12, St Anthony, ID 83445",,08:00 AM - 05:00 PM,,ho80745224,false,true,,,,poll77190168
+"415 E Main, Room 202, Emmett, ID 83617",,08:00 AM - 05:00 PM,,ho66207983,false,true,,,,poll92621502
+"Gooding County Courthouse, 624 Main St, Gooding, ID 83330",,08:00 AM - 05:00 PM,,ho26848295,false,true,,,,poll26408402
+"320 W Main, Room 5, Grangeville, ID 83530",,08:30 AM - 05:00 PM,,ho9639267,false,true,,,,poll30025466
+"210 Courthouse Way, Suite 100, Rigby, ID 83442",,09:00 AM - 05:00 PM,,ho76524677,false,true,,,,poll77623852
+"300 N Lincoln, Room 301, Jerome, ID 83338",,08:30 AM - 05:00 PM,,ho78797778,false,true,,,,poll73282676
+"1808 N 3rd Street, Coeur d'Alene, ID 83816",,08:00 AM - 05:00 PM,,ho58022017,false,true,,,,poll76548461
+"Latah County Courthouse, 522 South Adams,, Room 101, Moscow, ID 83843",,08:00 AM - 05:00 PM,,ho8921304,false,true,,,,poll52103576
+"206 Courthouse Drive, Salmon, ID 83467",,08:00 AM - 05:00 PM,,ho29239005,false,true,,,,poll43524876
+"510 Oak Street, Room 1, Nezperce, ID 83543",,09:00 AM - 05:00 PM,,ho90932659,false,true,,,,poll93208515
+"111 West B Street, Suite C, Shoshone, ID 83352",,08:30 AM - 05:00 PM,,ho66785420,false,true,,,,poll74329757
+"134 E Main St, Rexburg, ID 83440",,08:30 AM - 04:30 PM,,ho6766149,false,true,,,,poll10712229
+"Minidoka County Court House, 715 G Street, Rupert, ID 83350",,08:00 AM - 05:00 PM,,ho53871165,false,true,,,,poll33008252
+"Brammer Building, 1225 Idaho St, Lewiston, ID 38501",,08:00 AM - 05:00 PM,,ho26424139,false,true,,,,poll16928010
+"10 Court Street, Malad, ID 83252",,09:00 AM - 05:00 PM,,ho12054398,false,true,,,,poll6283570
+"20381 State Hwy 78, Mercy , ID 83650",,08:30 AM - 05:00 PM,,ho27285743,false,true,,,,poll40491465
+"1130 3rd Ave N, Room 104, Payette, ID 83661",,09:00 AM - 05:00 PM,,ho7684001,false,true,,,,poll56693623
+"543 Bannock Ave, American Falls, ID 83211",,09:00 AM - 05:00 AM,,ho34591158,false,true,,,,poll17087806
+"Shoshone County Courthouse, 700 Bank Street, Ste 120, Wallace, ID 83873",,09:00 AM - 05:00 PM,,ho2299041,false,true,,,,poll65947250
+"150 Courthouse Drive, #208, Driggs, ID 83422",,09:00 AM - 05:00 PM,,ho44677157,false,true,,,,poll62489535
+"630 Addison Ave W, Twin Falls, ID 83301",,08:00 AM - 05:00 PM,,ho58819684,false,true,,,,poll46795207
+"219 N. Main St., Cascade, ID 83611",,08:00 AM - 05:00 PM,,ho36176437,false,true,,,,poll23359148
+"256 East Court Street, Weiser, ID 83672",,08:30 AM - 05:00 PM,,ho58390323,false,true,,,,poll57282728

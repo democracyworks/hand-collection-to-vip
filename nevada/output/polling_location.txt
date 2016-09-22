@@ -35,7 +35,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "1950 Village Center Cir,  Las Vegas, NV 89134",,08:00 AM - 06:00 PM,,ho16497012,false,true,,,,poll72500314
 "6450 Sky Pointe Dr,  Las Vegas, NV 89131",,09:00 AM - 07:00 PM,,ho80036056,false,true,,,,poll50139465
 "2835 S. Nellis Bl.,  Las Vegas, NV 89121",,09:00 AM - 07:00 PM,,ho43427463,false,true,,,,poll15093532
-"1755 W Alexander Rd (Martin Luther King Blvd), North Las Vegas, NV 89032",,10:30 AM - 07:30 PM,,ho3440090,false,true,,,,poll75852959
+"1755 W Alexander Rd, North Las Vegas, NV 89032",(Martin Luther King Blvd),10:30 AM - 07:30 PM,,ho41704753,false,true,,,,poll2725245
 "10360 Sun City Blvd, Las Vegas, NV 89134",,09:00 AM - 07:00 PM,,ho39720934,false,true,,,,poll91389391
 "6670 W Cheyenne Ave, Las Vegas, NV 89108",,09:00 AM - 07:00 PM,,ho32876043,false,true,,,,poll84172029
 "2401 Somersworth Dr, Henderson, NV 89044",,08:00 AM - 06:00 PM,,ho84448664,false,true,,,,poll26460142
@@ -92,10 +92,10 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "7200 Arroyo Crossing Pkwy, Las Vegas, NV 89113",,09:00 AM - 07:00 PM,,ho72146058,false,true,,,,poll4305723
 "Blue Diamond Business Center Blue Diamond & Arville, Las Vegas, NV 89139",,09:00 AM - 07:00 PM,,ho15109552,false,true,,,,poll14712157
 "8060 W Tropical Pkwy, Las Vegas, NV 89149",,09:00 AM - 07:00 PM,,ho76291263,false,true,,,,poll66592078
-"6960 N 5th St (Trailer near Michaels), North Las Vegas, NV 89084",,09:00 AM - 07:00 PM,,ho39988474,false,true,,,,poll72051285
+"6960 N 5th St, North Las Vegas, NV 89084",Trailer near Michaels,09:00 AM - 07:00 PM,,ho48126746,false,true,,,,poll59480403
 "Sahara Ave & 215 Beltway, Las Vegas, NV 89135",,09:00 AM - 07:00 PM,,ho12079446,false,true,,,,poll88993527
 "5050 South Fort Apache Road, Las Vegas, NV 89148",,09:00 AM - 07:00 PM,,ho50526265,false,true,,,,poll98108338
-"9857 S. Eastern Avenue (Trailer in lot near PetSmart), Las Vegas, NV 89183",,09:00 AM - 07:00 PM,,ho49220911,false,true,,,,poll78947581
+"9857 S. Eastern Avenue, Las Vegas, NV 89183",Trailer in lot near PetSmart,09:00 AM - 07:00 PM,,ho46096993,false,true,,,,poll44738550
 "600 S. Grand Central Pkwy. @ W. Bonneville Ave, Las Vegas, NV 89106",,09:00 AM - 05:00 PM,,ho33454244,false,true,,,,poll17514605
 "250 North Eastern Ave., Las Vegas, NV 89101",,09:00 AM - 05:00 PM,,ho49600417,false,true,,,,poll85117804
 "3550 West Harmon Avenue, Las Vegas, NV 89103",,09:00 AM - 07:00 PM,,ho61169358,false,true,,,,poll6233190
@@ -125,7 +125,6 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "1001 E. Ninth Street, Room A135, Reno, NV 89512",,10:00 AM - 02:00 PM,,ho70366899,false,true,,,,poll39236956
 "301 S. Center St.,  Reno, NV 89501",,11:00 AM - 04:00 PM,,ho3018974,false,true,,,,poll52021985
 "845 Alder Ave, Incline Village, NV 89451",,11:00 AM - 06:00 PM,,ho80125693,false,true,,,,poll85142669
-"1310 Scheels Drive, #B107 Sparks, NV 89434",,10:00 AM - 06:00 PM,,ho66636643,false,true,,,,poll16337819
 "1310 Scheels Drive #B107, Sparks, NV 89434",,10:00 AM - 06:00 PM,,ho21942880,false,true,,,,poll95775501
 "1075 North Hills Blvd #340,  Reno, NV 89506",,11:00 AM - 04:00 PM,,ho37331646,false,true,,,,poll77423250
 "1075 North Hills Blvd #340, Reno, NV 89506",,11:00 AM - 06:00 PM,,ho83783050,false,true,,,,poll36282249

@@ -242,9 +242,10 @@ if __name__ == '__main__':
 
     early_voting_file = config.output + state_file
 
-    colnames = ['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'notes', 'address_line', 'directions',
-                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'polling_location_id', 'polling_id']
+    colnames = [ 'ocd_division', 'email', 'county', 'name', 'adr_1', 'adr_2', 'city', 'state',
+                 'zip', 'start_time', 'end_time', ' start_date', 'end_date', 'appt1', 'appt2', 'appt3', 'subject_to_change',
+                 'index','address_line', 'directions',
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'polling_id']
     print len(colnames)
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
 
@@ -253,5 +254,5 @@ if __name__ == '__main__':
     # print early_voting_df
 
 
-    lt = LocalityTxt(early_voting_df, "Indiana")
+    lt = LocalityTxt(early_voting_df, config.state)
     lt.final_build()

@@ -21,7 +21,7 @@ class PollingLocationTxt(object):
         # required: print message for exception
         # TODO: concatenate street, city, state and zip
         if not pd.isnull(name):
-            loc_name = str(name)
+            loc_name = str(name).strip() + ", "
         else:
             loc_name = ''
 
@@ -31,7 +31,7 @@ class PollingLocationTxt(object):
             adr += str(address_one)
 
         if not pd.isnull(address_two):
-            adr += " " + str(address_two)
+            adr += ", " + str(address_two)
 
         if not pd.isnull(city):
             city_name = str(city)
@@ -39,12 +39,14 @@ class PollingLocationTxt(object):
             city_name = ''
 
         if not pd.isnull(zip_code):
-            zip = str(zip_code)
+            zip = str(zip_code)[0:5]
         else:
             zip = ''
 
-        return loc_name + " " + adr + " " + city_name + ", ID " + zip
-
+        line = loc_name.strip() + " " + adr.strip() + ", " + city_name + ", ID " + zip
+        if line[0] == " ":
+            line = line[1:]
+        return line
     def get_directions(self):
         """#"""
         # no direct relationship to any column

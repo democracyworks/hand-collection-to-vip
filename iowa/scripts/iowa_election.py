@@ -55,7 +55,7 @@ class ElectionTxt(object):
 
     def get_date(self):
         """#"""
-        return '11/8/2016'
+        return '2016-11-08'
 
     def get_name(self):
         """#"""

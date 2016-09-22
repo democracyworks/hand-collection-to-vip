@@ -43,10 +43,10 @@ class PollingLocationTxt(object):
         # print line, index
         return line
 
-    def get_directions(self):
+    def get_directions(self, dirs):
         """#"""
         # no direct relationship to any column
-        return ''
+        return dirs
 
 
     def convert_to_time(self, index, time):
@@ -151,7 +151,7 @@ class PollingLocationTxt(object):
                                               row['zip']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
-            lambda row: self.get_directions(), axis=1)
+            lambda row: self.get_directions(row["dirs"]), axis=1)
 
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)
@@ -228,7 +228,7 @@ class PollingLocationTxt(object):
 
         # Drop base_df columns.
         plt.drop(['office_name', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
-                'start_time', 'end_time','start_date', 'end_date', 'index'], inplace=True, axis=1)
+                'start_time', 'end_time','start_date', 'end_date', 'index', 'dirs'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
         print plt
@@ -247,7 +247,7 @@ if __name__ == '__main__':
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
     early_voting_file = config.data_folder + state_file
 
-    colnames = ['office_name', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
+    colnames = ['office_name', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'dirs','city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date']
     print len(colnames)
 

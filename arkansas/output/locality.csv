@@ -1,70 +1,70 @@
 election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
-,ocd-id,,ocd-division/country:us/state:ar/county:arkansas,ocd-division/country:us/state:ar/county:arkan0005,poll51154514,st05,other,,loc0001
-,ocd-id,,ocd-division/country:us/state:ar/county:ashley,ocd-division/country:us/state:ar/county:ash0006,poll55953433,st05,other,,loc0002
-,ocd-id,,ocd-division/country:us/state:ar/county:baxter,ocd-division/country:us/state:ar/county:bax0014,poll69726548,st05,other,,loc0003
-,ocd-id,,ocd-division/country:us/state:ar/county:boone,ocd-division/country:us/state:ar/county:bo0017,poll39337845,st05,other,,loc0004
-,ocd-id,,ocd-division/country:us/state:ar/county:bradley,ocd-division/country:us/state:ar/county:brad0022,poll62397144,st05,other,,loc0005
-,ocd-id,,ocd-division/country:us/state:ar/county:calhoun,ocd-division/country:us/state:ar/county:calh0029,poll18371094,st05,other,,loc0006
-,ocd-id,,ocd-division/country:us/state:ar/county:carroll,ocd-division/country:us/state:ar/county:carr0032,poll20638214 poll38829297,st05,other,,loc0007
-,ocd-id,,ocd-division/country:us/state:ar/county:chicot,ocd-division/country:us/state:ar/county:chi0041,poll12166329,st05,other,,loc0008
-,ocd-id,,ocd-division/country:us/state:ar/county:clark,ocd-division/country:us/state:ar/county:cl0048,poll7924559,st05,other,,loc0009
-,ocd-id,,ocd-division/country:us/state:ar/county:clay,ocd-division/country:us/state:ar/county:c0058,poll88715823 poll12954262,st05,other,,loc0010
-,ocd-id,,ocd-division/country:us/state:ar/county:cleburne,ocd-division/country:us/state:ar/county:clebu0065,poll60074505,st05,other,,loc0011
-,ocd-id,,ocd-division/country:us/state:ar/county:cleveland,ocd-division/country:us/state:ar/county:clevel0066,poll62649911,st05,other,,loc0012
-,ocd-id,,ocd-division/country:us/state:ar/county:columbia,ocd-division/country:us/state:ar/county:colum0071,poll17736872,st05,other,,loc0013
-,ocd-id,,ocd-division/country:us/state:ar/county:conway,ocd-division/country:us/state:ar/county:con0077,poll85888408,st05,other,,loc0014
-,ocd-id,,ocd-division/country:us/state:ar/county:craighead,ocd-division/country:us/state:ar/county:craigh0094,poll42803979 poll33922704 poll21502528,st05,other,,loc0015
-,ocd-id,,ocd-division/country:us/state:ar/county:crawford,ocd-division/country:us/state:ar/county:crawf0098,poll42370982 poll76713246,st05,other,,loc0016
-,ocd-id,,ocd-division/country:us/state:ar/county:crittenden,ocd-division/country:us/state:ar/county:critten0108,poll44263093,st05,other,,loc0017
-,ocd-id,,ocd-division/country:us/state:ar/county:cross,ocd-division/country:us/state:ar/county:cr0114,poll61255724,st05,other,,loc0018
-,ocd-id,,ocd-division/country:us/state:ar/county:desha,ocd-division/country:us/state:ar/county:de0116,poll84086712 poll42427285 poll28038839,st05,other,,loc0019
-,ocd-id,,ocd-division/country:us/state:ar/county:drew,ocd-division/country:us/state:ar/county:d0127,poll39361237,st05,other,,loc0020
-,ocd-id,,ocd-division/country:us/state:ar/county:faulkner,ocd-division/country:us/state:ar/county:faulk0132,poll1665341,st05,other,,loc0021
-,ocd-id,,ocd-division/country:us/state:ar/county:franklin,ocd-division/country:us/state:ar/county:frank0134,poll15311564,st05,other,,loc0022
-,ocd-id,,ocd-division/country:us/state:ar/county:fulton,ocd-division/country:us/state:ar/county:ful0139,poll90003703,st05,other,,loc0023
-,ocd-id,,ocd-division/country:us/state:ar/county:garland,ocd-division/country:us/state:ar/county:garl0143,poll44491224,st05,other,,loc0024
-,ocd-id,,ocd-division/country:us/state:ar/county:grant,ocd-division/country:us/state:ar/county:gr0149,poll19833828,st05,other,,loc0025
-,ocd-id,,ocd-division/country:us/state:ar/county:greene,ocd-division/country:us/state:ar/county:gre0154,poll68318834,st05,other,,loc0026
-,ocd-id,,ocd-division/country:us/state:ar/county:hempstead,ocd-division/country:us/state:ar/county:hempst0158,poll32303519,st05,other,,loc0027
-,ocd-id,,ocd-division/country:us/state:ar/county:hot_spring,ocd-division/country:us/state:ar/county:hot_spr0163,poll63356368,st05,other,,loc0028
-,ocd-id,,ocd-division/country:us/state:ar/county:howard,ocd-division/country:us/state:ar/county:how0172,poll16135871,st05,other,,loc0029
-,ocd-id,,ocd-division/country:us/state:ar/county:independence,ocd-division/country:us/state:ar/county:independe0173,poll39824396,st05,other,,loc0030
-,ocd-id,,ocd-division/country:us/state:ar/county:izard,ocd-division/country:us/state:ar/county:iz0181,poll26759385,st05,other,,loc0031
-,ocd-id,,ocd-division/country:us/state:ar/county:jefferson,ocd-division/country:us/state:ar/county:jeffer0186,poll91194248,st05,other,,loc0032
-,ocd-id,,ocd-division/country:us/state:ar/county:johnson,ocd-division/country:us/state:ar/county:john0189,poll21573463,st05,other,,loc0033
-,ocd-id,,ocd-division/country:us/state:ar/county:lafayette,ocd-division/country:us/state:ar/county:lafaye0193,poll85272286 poll13859184,st05,other,,loc0034
-,ocd-id,,ocd-division/country:us/state:ar/county:lawrence,ocd-division/country:us/state:ar/county:lawre0199,poll18773434,st05,other,,loc0035
-,ocd-id,,ocd-division/country:us/state:ar/county:lee,ocd-division/country:us/state:ar/county:0205,poll78002580,st05,other,,loc0036
-,ocd-id,,ocd-division/country:us/state:ar/county:lincoln,ocd-division/country:us/state:ar/county:linc0212,poll9519542,st05,other,,loc0037
-,ocd-id,,ocd-division/country:us/state:ar/county:little_river,ocd-division/country:us/state:ar/county:little_ri0213,poll21926927,st05,other,,loc0038
-,ocd-id,,ocd-division/country:us/state:ar/county:logan,ocd-division/country:us/state:ar/county:lo0221,poll68775819,st05,other,,loc0039
-,ocd-id,,ocd-division/country:us/state:ar/county:lonoke,ocd-division/country:us/state:ar/county:lon0225,poll79371002,st05,other,,loc0040
-,ocd-id,,ocd-division/country:us/state:ar/county:madison,ocd-division/country:us/state:ar/county:madi0232,poll16549639,st05,other,,loc0041
-,ocd-id,,ocd-division/country:us/state:ar/county:marion,ocd-division/country:us/state:ar/county:mar0235,poll11056315,st05,other,,loc0042
-,ocd-id,,ocd-division/country:us/state:ar/county:miller,ocd-division/country:us/state:ar/county:mil0242,poll35880114,st05,other,,loc0043
-,ocd-id,,ocd-division/country:us/state:ar/county:mississippi,ocd-division/country:us/state:ar/county:mississi0252,poll83437763 poll82867023 poll97455522 poll23329072,st05,other,,loc0044
-,ocd-id,,ocd-division/country:us/state:ar/county:monroe,ocd-division/country:us/state:ar/county:mon0259,poll35814911,st05,other,,loc0045
-,ocd-id,,ocd-division/country:us/state:ar/county:montgomery,ocd-division/country:us/state:ar/county:montgom0267,poll11536784,st05,other,,loc0046
-,ocd-id,,ocd-division/country:us/state:ar/county:nevada,ocd-division/country:us/state:ar/county:nev0269,poll71120356,st05,other,,loc0047
-,ocd-id,,ocd-division/country:us/state:ar/county:newton,ocd-division/country:us/state:ar/county:new0277,poll74599918,st05,other,,loc0048
-,ocd-id,,ocd-division/country:us/state:ar/county:ouachita,ocd-division/country:us/state:ar/county:ouach0283,poll77907332,st05,other,,loc0049
-,ocd-id,,ocd-division/country:us/state:ar/county:perry,ocd-division/country:us/state:ar/county:pe0288,poll40795810,st05,other,,loc0050
-,ocd-id,,ocd-division/country:us/state:ar/county:phillips,ocd-division/country:us/state:ar/county:phill0289,poll15886362,st05,other,,loc0051
-,ocd-id,,ocd-division/country:us/state:ar/county:poinsett,ocd-division/country:us/state:ar/county:poins0294,poll78737257,st05,other,,loc0052
-,ocd-id,,ocd-division/country:us/state:ar/county:polk,ocd-division/country:us/state:ar/county:p0303,poll80298479,st05,other,,loc0053
-,ocd-id,,ocd-division/country:us/state:ar/county:pope,ocd-division/country:us/state:ar/county:p0307,poll9338571,st05,other,,loc0054
-,ocd-id,,ocd-division/country:us/state:ar/county:prairie,ocd-division/country:us/state:ar/county:prai0312,poll26956654,st05,other,,loc0055
-,ocd-id,,ocd-division/country:us/state:ar/county:randolph,ocd-division/country:us/state:ar/county:rando0318,poll53223635,st05,other,,loc0056
-,ocd-id,,ocd-division/country:us/state:ar/county:saline,ocd-division/country:us/state:ar/county:sal0338,poll32846082 poll48378887 poll12232388 poll27112516 poll34902325,st05,other,,loc0057
-,ocd-id,,ocd-division/country:us/state:ar/county:scott,ocd-division/country:us/state:ar/county:sc0344,poll69038359,st05,other,,loc0058
-,ocd-id,,ocd-division/country:us/state:ar/county:searcy,ocd-division/country:us/state:ar/county:sea0348,poll49004363,st05,other,,loc0059
-,ocd-id,,ocd-division/country:us/state:ar/county:sebastian,ocd-division/country:us/state:ar/county:sebast0355,poll71618013,st05,other,,loc0060
-,ocd-id,,ocd-division/country:us/state:ar/county:sevier,ocd-division/country:us/state:ar/county:sev0360,poll85977058,st05,other,,loc0061
-,ocd-id,,ocd-division/country:us/state:ar/county:sharp,ocd-division/country:us/state:ar/county:sh0365,poll24990847,st05,other,,loc0062
-,ocd-id,,ocd-division/country:us/state:ar/county:st_francis,ocd-division/country:us/state:ar/county:st_fran0368,poll43197085,st05,other,,loc0063
-,ocd-id,,ocd-division/country:us/state:ar/county:stone,ocd-division/country:us/state:ar/county:st0372,poll55207558,st05,other,,loc0064
-,ocd-id,,ocd-division/country:us/state:ar/county:union,ocd-division/country:us/state:ar/county:un0378,poll45898843,st05,other,,loc0065
-,ocd-id,,ocd-division/country:us/state:ar/county:washington,ocd-division/country:us/state:ar/county:washing0382,poll97483993,st05,other,,loc0066
-,ocd-id,,ocd-division/country:us/state:ar/county:white,ocd-division/country:us/state:ar/county:wh0387,poll66006166,st05,other,,loc0067
-,ocd-id,,ocd-division/country:us/state:ar/county:woodruff,ocd-division/country:us/state:ar/county:woodr0393,poll43871692,st05,other,,loc0068
-,ocd-id,,ocd-division/country:us/state:ar/county:yell,ocd-division/country:us/state:ar/county:y0402,poll25785505 poll4258260,st05,other,,loc0069
+,ocd-id,,ocd-division/country:us/state:ar/county:arkansas,ocd-division/country:us/state:ar/county:arkan0005,poll62800431,st05,other,,loc0001
+,ocd-id,,ocd-division/country:us/state:ar/county:ashley,ocd-division/country:us/state:ar/county:ash0006,poll32993218,st05,other,,loc0002
+,ocd-id,,ocd-division/country:us/state:ar/county:baxter,ocd-division/country:us/state:ar/county:bax0014,poll17337328,st05,other,,loc0003
+,ocd-id,,ocd-division/country:us/state:ar/county:boone,ocd-division/country:us/state:ar/county:bo0017,poll68025673,st05,other,,loc0004
+,ocd-id,,ocd-division/country:us/state:ar/county:bradley,ocd-division/country:us/state:ar/county:brad0022,poll60389175,st05,other,,loc0005
+,ocd-id,,ocd-division/country:us/state:ar/county:calhoun,ocd-division/country:us/state:ar/county:calh0029,poll39481746,st05,other,,loc0006
+,ocd-id,,ocd-division/country:us/state:ar/county:carroll,ocd-division/country:us/state:ar/county:carr0032,poll70666889 poll46410525,st05,other,,loc0007
+,ocd-id,,ocd-division/country:us/state:ar/county:chicot,ocd-division/country:us/state:ar/county:chi0041,poll55567195,st05,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:ar/county:clark,ocd-division/country:us/state:ar/county:cl0048,poll2554226,st05,other,,loc0009
+,ocd-id,,ocd-division/country:us/state:ar/county:clay,ocd-division/country:us/state:ar/county:c0058,poll84155299 poll58250211,st05,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:ar/county:cleburne,ocd-division/country:us/state:ar/county:clebu0065,poll47930527,st05,other,,loc0011
+,ocd-id,,ocd-division/country:us/state:ar/county:cleveland,ocd-division/country:us/state:ar/county:clevel0066,poll88601158,st05,other,,loc0012
+,ocd-id,,ocd-division/country:us/state:ar/county:columbia,ocd-division/country:us/state:ar/county:colum0071,poll80735464,st05,other,,loc0013
+,ocd-id,,ocd-division/country:us/state:ar/county:conway,ocd-division/country:us/state:ar/county:con0077,poll37233585,st05,other,,loc0014
+,ocd-id,,ocd-division/country:us/state:ar/county:craighead,ocd-division/country:us/state:ar/county:craigh0094,poll72354989 poll53378318 poll30995665,st05,other,,loc0015
+,ocd-id,,ocd-division/country:us/state:ar/county:crawford,ocd-division/country:us/state:ar/county:crawf0098,poll29046279 poll1243374,st05,other,,loc0016
+,ocd-id,,ocd-division/country:us/state:ar/county:crittenden,ocd-division/country:us/state:ar/county:critten0108,poll58789186,st05,other,,loc0017
+,ocd-id,,ocd-division/country:us/state:ar/county:cross,ocd-division/country:us/state:ar/county:cr0114,poll26456020,st05,other,,loc0018
+,ocd-id,,ocd-division/country:us/state:ar/county:desha,ocd-division/country:us/state:ar/county:de0116,poll40318918 poll20837386 poll24855099,st05,other,,loc0019
+,ocd-id,,ocd-division/country:us/state:ar/county:drew,ocd-division/country:us/state:ar/county:d0127,poll71520843,st05,other,,loc0020
+,ocd-id,,ocd-division/country:us/state:ar/county:faulkner,ocd-division/country:us/state:ar/county:faulk0132,poll97722996,st05,other,,loc0021
+,ocd-id,,ocd-division/country:us/state:ar/county:franklin,ocd-division/country:us/state:ar/county:frank0134,poll77510405,st05,other,,loc0022
+,ocd-id,,ocd-division/country:us/state:ar/county:fulton,ocd-division/country:us/state:ar/county:ful0139,poll99647210,st05,other,,loc0023
+,ocd-id,,ocd-division/country:us/state:ar/county:garland,ocd-division/country:us/state:ar/county:garl0143,poll51765875,st05,other,,loc0024
+,ocd-id,,ocd-division/country:us/state:ar/county:grant,ocd-division/country:us/state:ar/county:gr0149,poll23302682,st05,other,,loc0025
+,ocd-id,,ocd-division/country:us/state:ar/county:greene,ocd-division/country:us/state:ar/county:gre0154,poll5671340,st05,other,,loc0026
+,ocd-id,,ocd-division/country:us/state:ar/county:hempstead,ocd-division/country:us/state:ar/county:hempst0158,poll16809572,st05,other,,loc0027
+,ocd-id,,ocd-division/country:us/state:ar/county:hot_spring,ocd-division/country:us/state:ar/county:hot_spr0163,poll51719577,st05,other,,loc0028
+,ocd-id,,ocd-division/country:us/state:ar/county:howard,ocd-division/country:us/state:ar/county:how0172,poll48196247,st05,other,,loc0029
+,ocd-id,,ocd-division/country:us/state:ar/county:independence,ocd-division/country:us/state:ar/county:independe0173,poll15526856,st05,other,,loc0030
+,ocd-id,,ocd-division/country:us/state:ar/county:izard,ocd-division/country:us/state:ar/county:iz0181,poll71169553,st05,other,,loc0031
+,ocd-id,,ocd-division/country:us/state:ar/county:jefferson,ocd-division/country:us/state:ar/county:jeffer0186,poll96068245,st05,other,,loc0032
+,ocd-id,,ocd-division/country:us/state:ar/county:johnson,ocd-division/country:us/state:ar/county:john0189,poll34983020,st05,other,,loc0033
+,ocd-id,,ocd-division/country:us/state:ar/county:lafayette,ocd-division/country:us/state:ar/county:lafaye0193,poll22955022,st05,other,,loc0034
+,ocd-id,,ocd-division/country:us/state:ar/county:lawrence,ocd-division/country:us/state:ar/county:lawre0199,poll47786244,st05,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:ar/county:lee,ocd-division/country:us/state:ar/county:0205,poll74275512,st05,other,,loc0036
+,ocd-id,,ocd-division/country:us/state:ar/county:lincoln,ocd-division/country:us/state:ar/county:linc0212,poll65912890,st05,other,,loc0037
+,ocd-id,,ocd-division/country:us/state:ar/county:little_river,ocd-division/country:us/state:ar/county:little_ri0213,poll5387401,st05,other,,loc0038
+,ocd-id,,ocd-division/country:us/state:ar/county:logan,ocd-division/country:us/state:ar/county:lo0221,poll21130008,st05,other,,loc0039
+,ocd-id,,ocd-division/country:us/state:ar/county:lonoke,ocd-division/country:us/state:ar/county:lon0225,poll32194333,st05,other,,loc0040
+,ocd-id,,ocd-division/country:us/state:ar/county:madison,ocd-division/country:us/state:ar/county:madi0232,poll83404192,st05,other,,loc0041
+,ocd-id,,ocd-division/country:us/state:ar/county:marion,ocd-division/country:us/state:ar/county:mar0235,poll21232733,st05,other,,loc0042
+,ocd-id,,ocd-division/country:us/state:ar/county:miller,ocd-division/country:us/state:ar/county:mil0242,poll90004641,st05,other,,loc0043
+,ocd-id,,ocd-division/country:us/state:ar/county:mississippi,ocd-division/country:us/state:ar/county:mississi0252,poll56861922 poll13187330 poll36764754 poll89642400,st05,other,,loc0044
+,ocd-id,,ocd-division/country:us/state:ar/county:monroe,ocd-division/country:us/state:ar/county:mon0259,poll84808331,st05,other,,loc0045
+,ocd-id,,ocd-division/country:us/state:ar/county:montgomery,ocd-division/country:us/state:ar/county:montgom0267,poll19998825,st05,other,,loc0046
+,ocd-id,,ocd-division/country:us/state:ar/county:nevada,ocd-division/country:us/state:ar/county:nev0269,poll18597140,st05,other,,loc0047
+,ocd-id,,ocd-division/country:us/state:ar/county:newton,ocd-division/country:us/state:ar/county:new0277,poll27017548,st05,other,,loc0048
+,ocd-id,,ocd-division/country:us/state:ar/county:ouachita,ocd-division/country:us/state:ar/county:ouach0283,poll49624895,st05,other,,loc0049
+,ocd-id,,ocd-division/country:us/state:ar/county:perry,ocd-division/country:us/state:ar/county:pe0288,poll49510873,st05,other,,loc0050
+,ocd-id,,ocd-division/country:us/state:ar/county:phillips,ocd-division/country:us/state:ar/county:phill0289,poll63120040,st05,other,,loc0051
+,ocd-id,,ocd-division/country:us/state:ar/county:poinsett,ocd-division/country:us/state:ar/county:poins0294,poll33851681,st05,other,,loc0052
+,ocd-id,,ocd-division/country:us/state:ar/county:polk,ocd-division/country:us/state:ar/county:p0303,poll48853607,st05,other,,loc0053
+,ocd-id,,ocd-division/country:us/state:ar/county:pope,ocd-division/country:us/state:ar/county:p0307,poll81093296,st05,other,,loc0054
+,ocd-id,,ocd-division/country:us/state:ar/county:prairie,ocd-division/country:us/state:ar/county:prai0312,poll68416899,st05,other,,loc0055
+,ocd-id,,ocd-division/country:us/state:ar/county:randolph,ocd-division/country:us/state:ar/county:rando0318,poll45629173,st05,other,,loc0056
+,ocd-id,,ocd-division/country:us/state:ar/county:saline,ocd-division/country:us/state:ar/county:sal0338,poll31812139 poll29456932 poll37400112 poll19084177 poll84669009,st05,other,,loc0057
+,ocd-id,,ocd-division/country:us/state:ar/county:scott,ocd-division/country:us/state:ar/county:sc0344,poll63478839,st05,other,,loc0058
+,ocd-id,,ocd-division/country:us/state:ar/county:searcy,ocd-division/country:us/state:ar/county:sea0348,poll5063191,st05,other,,loc0059
+,ocd-id,,ocd-division/country:us/state:ar/county:sebastian,ocd-division/country:us/state:ar/county:sebast0355,poll97598106,st05,other,,loc0060
+,ocd-id,,ocd-division/country:us/state:ar/county:sevier,ocd-division/country:us/state:ar/county:sev0360,poll13073010,st05,other,,loc0061
+,ocd-id,,ocd-division/country:us/state:ar/county:sharp,ocd-division/country:us/state:ar/county:sh0365,poll62139174,st05,other,,loc0062
+,ocd-id,,ocd-division/country:us/state:ar/county:st_francis,ocd-division/country:us/state:ar/county:st_fran0368,poll92470626,st05,other,,loc0063
+,ocd-id,,ocd-division/country:us/state:ar/county:stone,ocd-division/country:us/state:ar/county:st0372,poll71187689,st05,other,,loc0064
+,ocd-id,,ocd-division/country:us/state:ar/county:union,ocd-division/country:us/state:ar/county:un0378,poll23783606,st05,other,,loc0065
+,ocd-id,,ocd-division/country:us/state:ar/county:washington,ocd-division/country:us/state:ar/county:washing0382,poll1109252,st05,other,,loc0066
+,ocd-id,,ocd-division/country:us/state:ar/county:white,ocd-division/country:us/state:ar/county:wh0387,poll25765167,st05,other,,loc0067
+,ocd-id,,ocd-division/country:us/state:ar/county:woodruff,ocd-division/country:us/state:ar/county:woodr0393,poll24190000,st05,other,,loc0068
+,ocd-id,,ocd-division/country:us/state:ar/county:yell,ocd-division/country:us/state:ar/county:y0402,poll73693662 poll43223714,st05,other,,loc0069

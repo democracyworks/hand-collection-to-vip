@@ -21,6 +21,8 @@ class PollingLocationTxt(object):
         # required: print message for exception
         # TODO: concatenate street, city, state and zip
         if address:
+            if address.strip()[-1] == ",":
+                address = address.strip()[:-1]
             adr = address
         else:
             adr = ''

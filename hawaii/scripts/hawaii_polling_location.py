@@ -27,10 +27,10 @@ class PollingLocationTxt(object):
 
         return address_line
 
-    def get_directions(self):
+    def get_directions(self, dirs):
         """#"""
         # no direct relationship to any column
-        return ''
+        return dirs
 
 
     def convert_to_time(self, index, time):
@@ -132,7 +132,7 @@ class PollingLocationTxt(object):
             lambda row: self.get_address_line(row['index'], row['address']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
-            lambda row: self.get_directions(), axis=1)
+            lambda row: self.get_directions(row["instructions"]), axis=1)
 
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)

@@ -40,7 +40,7 @@ class PollingLocationTxt(object):
         else:
             zip = ''
 
-        return adr + " " + city_name + ", " + config.state_abbreviation + zip
+        return adr.strip() + ", " + city_name + ", " + config.state_abbreviation + zip
 
     def get_directions(self):
         """#"""

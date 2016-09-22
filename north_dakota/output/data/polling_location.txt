@@ -9,9 +9,9 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "221 N 5th St, Bismarck, ND 58501", Auditor/Treasurer's Office ,08:00 AM - 05:00 PM,,ho36120506,false,true,,,,poll90443080
 "211 9th Street South, Fargo, ND 58103",,08:00 AM - 05:00 PM,,ho21460601,false,true,,,,poll43143137
 "Baymont Inn and Suites, 3333 13th Ave S, Fargo, ND 58103",,10:00 AM - 07:00 PM,,ho92281461,false,true,,,,poll93693412
-"Cambria Suites - West Fargo, 825 E Beaton Dr, West Fargo, ND 58078",,10:00 AM - 07:00 PM,,ho69442571,false,true,,,,poll66656962
+"825 E Beaton Dr, West Fargo, ND 58078",Cambria Suites - West Fargo,10:00 AM - 07:00 PM,,ho3741474,false,true,,,,poll36478181
 "FargoDome, 1800 N University Dr, Fargo, ND 58102",,10:00 AM - 07:00 PM,,ho56316100,false,true,,,,poll55236708
-"Days Inn Casselton/Fargo, 2050 Governor's Dr, Casselton, ND 58012",,10:00 AM - 07:00 PM,,ho83285505,false,true,,,,poll89286761
+"2050 Governor's Dr, Casselton, ND 58012",Days Inn Casselton/Fargo,10:00 AM - 07:00 PM,,ho19361141,false,true,,,,poll42155907
 "901 3rd St, Ste 15, Langdon, ND 58249",,08:30 AM - 04:00 PM,,ho55522773,false,true,,,,poll92110353
 "309 N. 2nd Street, Ellendale, ND 58436",,08:00 AM - 12:00 PM,,ho74925139,false,true,,,,poll1365169
 "200 N Main St, Crosby, ND 58730",,08:30 AM - 12:00 PM,,ho64441298,false,true,,,,poll98229645
@@ -25,7 +25,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "106 Second Ave NE, Carson, ND 58529",,08:00 AM - 12:00 PM,,ho52992468,false,true,,,,poll5606236
 "808 Rollin Ave SW, Cooperstown, ND 58425",,08:00 AM - 12:00 PM,,ho50501877,false,true,,,,poll98157333
 "336 Pacific Avenue, Mott, ND 58646",,07:30 AM - 12:00 PM,,ho47181560,false,true,,,,poll77155922
-"120 Broadway E,, Steele, ND 58482",,09:00 AM - 12:00 PM,,ho50157949,false,true,,,,poll72170017
+"120 Broadway E, Steele, ND 58482",,09:00 AM - 12:00 PM,,ho93212081,false,true,,,,poll44317825
 "202 4th Ave NE, LaMoure, ND 58458",,08:30 AM - 12:00 PM,,ho66869321,false,true,,,,poll55155660
 "301 Broadway, Napoleon, ND 58561",,08:30 AM - 12:00 PM,,ho15835314,false,true,,,,poll57321118
 "407 Main Street S, Room 201, Towner, ND 58788",,08:00 AM - 12:00 PM,,ho74193210,false,true,,,,poll29077727

@@ -1,100 +1,100 @@
 address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-"400 Public Square Ste 5 Greenfield, IA 50849",,08:00 AM-16:30 PM,,ho66584857,false,true,,,,poll24319662
-"500 9th St Corning, IA 50841",,08:30 AM-16:30 PM,,ho22876837,false,true,,,,poll2515447
-"110 Allamakee St Waukon, IA 52172",,08:00 AM-16:00 PM,,ho92357196,false,true,,,,poll18372833
-"201 N. 12th St Centerville, IA 52544",,08:30 AM-16:30 PM,,ho12893012,false,true,,,,poll42926531
-"318 Leroy St #4 Audubon, IA 50025",,08:00 AM-16:30 PM,,ho42110991,false,true,,,,poll82484076
-"111 E. 4th St Vinton, IA 52349",,08:00 AM-16:30 PM,,ho89056218,false,true,,,,poll69513723
-"316 E. 5th St Waterloo, IA 50703",,08:00 AM-16:30 PM,,ho20840708,false,true,,,,poll46542920
-"201 State St Boone, IA 50036",,08:00 AM-16:40 PM,,ho39879179,false,true,,,,poll91092648
-"415 E. Bremer Waverly, IA 50677",,08:00 AM-16:30 PM,,ho74669011,false,true,,,,poll509224
-"210 5th Avenue NE Independence, IA 50644",,08:00 AM-16:30 PM,,ho5903250,false,true,,,,poll59302971
-"215 E. 5th St Storm Lake, IA 50588",,08:00 AM-16:30 PM,,ho70254891,false,true,,,,poll44935424
-"428 6th St Allison, IA 50602",,07:30 AM-16:30 PM,,ho25871940,false,true,,,,poll53811451
-"416 4th St Ste 1 Rockwell City, IA 50579",,08:30 AM-16:30 PM,,ho47341282,false,true,,,,poll65435924
-"114 E. 6th St Carroll, IA 51401",,08:00 AM-16:30 PM,,ho10417445,false,true,,,,poll20195466
-"5 W. 7th St Atlantic, IA 50022",,08:00 AM-16:30 PM,,ho76166010,false,true,,,,poll26451785
-"400 Cedar St Tipton, IA 52772",,08:00 AM-16:00 PM,,ho58202071,false,true,,,,poll24598255
-"220 N. Washington Ave. Mason City, IA 50401",,08:00 AM-16:30 PM,,ho53786338,false,true,,,,poll16752824
-"520 W. Main Cherokee, IA 51012",,08:00 AM-16:40 PM,,ho19514717,false,true,,,,poll16036776
-"8 E. Prospect New Hampton, IA 50659",,08:30 AM-16:30 PM,,ho5332547,false,true,,,,poll52309552
-"100 S. Main Osceola, IA 50213",,08:30 AM-16:30 PM,,ho84164421,false,true,,,,poll83059940
-"300 W. 4th St. Ste 4 Spencer, IA 51301",,08:00 AM-16:30 PM,,ho36248953,false,true,,,,poll55533076
-"111 High St. NE Elkader, IA 52043",,08:00 AM-16:30 PM,,ho32545618,false,true,,,,poll84416914
-"1900 N. 3rd St Clinton, IA 52732",,08:00 AM-16:30 PM,,ho12853910,false,true,,,,poll33990595
-"1202 Broadway Ste 5 Denison, IA 51442",,08:00 AM-16:30 PM,,ho90378064,false,true,,,,poll81477769
-"910 Court St Adel, IA 50003",,08:00 AM-16:30 PM,,ho2142465,false,true,,,,poll11704935
-"100 Courthouse Square Ste 2 Bloomfield, IA 52537",,08:00 AM-16:00 PM,,ho40337838,false,true,,,,poll71093805
-"207 N. Main St Leon, IA 50144",,08:00 AM-16:30 PM,,ho97575345,false,true,,,,poll80527074
-"301 E. Main St Room 210 Manchester, IA 52057",,08:00 AM-16:30 PM,,ho55549324,false,true,,,,poll18722880
-"513 N. Main Ste 203 Burlington, IA 52601",,08:00 AM-16:30 PM,,ho97756108,false,true,,,,poll12958675
-"1802 Hill Avenue Ste 1400 Spirit Lake, IA 51360",,08:00 AM-16:30 PM,,ho9680467,false,true,,,,poll31765083
-"720 Central Avenue Dubuque, IA 52001",,08:00 AM-16:30 PM,,ho76126245,false,true,,,,poll86807942
-"609 1st Avenue N. Estherville, IA 51334",,08:00 AM-16:30 PM,,ho32825406,false,true,,,,poll76456138
-"114 N. Vine St West Union, IA 52175",,08:00 AM-16:00 PM,,ho69118888,false,true,,,,poll24770363
-"101 S. Main St #302 Charles City, IA 50616",,08:00 AM-16:30 PM,,ho9584993,false,true,,,,poll6211647
-"12 1st Avenue NW Hampton, IA 50441",,08:00 AM-16:00 PM,,ho25958677,false,true,,,,poll37872814
-"506 Filmore Sidney, IA 51652",,08:00 AM-16:30 PM,,ho86046953,false,true,,,,poll34966396
-"114 N. Chestnut Jefferson, IA 50129",,08:00 AM-16:30 PM,,ho69815397,false,true,,,,poll43978510
-"706 G Avenue Grundy Center, IA 50638",,08:00 AM-16:30 PM,,ho84256670,false,true,,,,poll5182951
-"200 N. 5th Guthrie Center, IA 50115",,08:00 AM-16:30 PM,,ho34721410,false,true,,,,poll26679767
-"2300 Superior St Webster City, IA 50595",,08:00 AM-16:30 PM,,ho60691502,false,true,,,,poll48577949
-"855 State St Garner, IA 50438",,08:00 AM-16:00 PM,,ho21904221,false,true,,,,poll82004423
-"1215 Edgington Avenue Ste 1 Eldora, IA 50627",,08:00 AM-16:30 PM,,ho64934656,false,true,,,,poll39874556
-"111 N. 2nd Avenue Logan, IA 51546",,07:00 AM-16:30 PM,,ho9038642,false,true,,,,poll30645957
-"100 E. Washington St. Ste 202 Mount Pleasant, IA 52641",,08:00 AM-16:30 PM,,ho44318914,false,true,,,,poll17355756
-"137 N. Elm St Cresco, IA 52136",,08:00 AM-16:30 PM,,ho67645558,false,true,,,,poll45761708
-"203 Main St. Dakota City, IA 50529",,08:00 AM-16:30 PM,,ho78633501,false,true,,,,poll92522050
-"401 Moorhead St Ida Grove, IA 51445",,08:00 AM-16:30 PM,,ho74172363,false,true,,,,poll50901568
-"970 Court Ave Marengo, IA 52301",,08:00 AM-16:30 PM,,ho19319397,false,true,,,,poll22956402
-"201 W. Platt St Maquoketa, IA 52060",,08:30 AM-16:30 PM,,ho91061843,false,true,,,,poll28714588
-"101 1st St N. Newton, IA 50208",,08:00 AM-16:30 PM,,ho75161865,false,true,,,,poll87008766
-"51 E. Briggs Fairfield, IA 52556",,08:00 AM-16:30 PM,,ho74163841,false,true,,,,poll8116610
-"913 S. Dubuque St. Ste 101 Iowa City, IA 52240",,08:00 AM-18:00 PM,,ho41549527,false,true,,,,poll29944495
-"500 W. Main Anamosa, IA 52205",,08:00 AM-16:30 PM,,ho81462756,false,true,,,,poll65013297
-"101 S. Main Sigourney, IA 52591",,08:00 AM-16:30 PM,,ho49707192,false,true,,,,poll56675493
-"114 W. State St Algona, IA 50511",,08:00 AM-16:00 PM,,ho35820169,false,true,,,,poll83846197
-"933 Avenue H Fort Madison, IA 52627",,08:00 AM-16:30 PM,,ho24233877,false,true,,,,poll43701198
-"935 2nd St. SW Cedar Rapids, IA 52404",,08:00 AM-17:00 PM,,ho35392421,false,true,,,,poll11897445
-"117 S. Main Wapello, IA 52653",,08:00 AM-16:30 PM,,ho50904256,false,true,,,,poll76898189
-"916 Braden Avenue Chariton, IA 50049",,08:00 AM-16:00 PM,,ho77644993,false,true,,,,poll96177230
-"206 S. 2nd Avenue Rock Rapids, IA 51246",,08:00 AM-16:30 PM,,ho12906724,false,true,,,,poll88032386
-"112 N. 1st St Winterset, IA 50273",,08:00 AM-16:30 PM,,ho85612074,false,true,,,,poll46200250
-"106 S. 1st St Oskaloosa, IA 52577",,08:00 AM-16:30 PM,,ho60950003,false,true,,,,poll49444538
-"214 E. Main Knoxville, IA 50138",,08:00 AM-16:30 PM,,ho99555357,false,true,,,,poll87092685
-"1 E. Main St Marshalltown, IA 50158",,08:00 AM-16:30 PM,,ho51820820,false,true,,,,poll98958905
-"418 Sharp St Glenwood, IA 51534",,08:00 AM-16:30 PM,,ho47869385,false,true,,,,poll9068041
-"212 S. 5th St. Osage, IA 50461",,08:00 AM-16:30 PM,,ho39632482,false,true,,,,poll18555787
-"610 Iowa Avenue Onawa, IA 51040",,08:00 AM-16:30 PM,,ho93438409,false,true,,,,poll81420867
-"10 Benton Avenue E Albia, IA 52531",,08:00 AM-16:00 PM,,ho84008981,false,true,,,,poll2071972
-"105 E. Coolbaugh St Red Oak, IA 51566",,08:00 AM-16:30 PM,,ho73108563,false,true,,,,poll84041075
-"414 E. 3rd St Muscatine, IA 52761",,08:00 AM-16:30 PM,,ho93537189,false,true,,,,poll97232646
-"155 S. Hayes Avenue Primghar, IA 51245",,08:00 AM-16:30 PM,,ho53470510,false,true,,,,poll92082215
-"300 7th St Sibley, IA 51249",,08:00 AM-16:30 PM,,ho97891889,false,true,,,,poll5898945
-"112 E. Main Clarinda, IA 51632",,08:00 AM-16:30 PM,,ho65706135,false,true,,,,poll48488979
-"1010 Broadway Emmetsburg, IA 50536",,08:00 AM-16:00 PM,,ho78865034,false,true,,,,poll43186617
-"215 4th Avenue SE Le Mars, IA 51031",,08:00 AM-17:00 PM,,ho93186357,false,true,,,,poll5617051
-"99 Court Square Pocahontas, IA 50574",,08:00 AM-16:00 PM,,ho67861050,false,true,,,,poll81241806
-"120 2nd Avenue Des Moines, IA 50309",,08:00 AM-17:00 PM,,ho45070667,false,true,,,,poll29483812
-"227 S. 6th St Council Bluffs, IA 51501",,08:00 AM-16:30 PM,,ho56999925,false,true,,,,poll37068708
-"302 E. Main St Montezuma, IA 50171",,08:00 AM-16:00 PM,,ho72388275,false,true,,,,poll62218328
-"109 W. Madison Mount Ayr, IA 50854",,08:00 AM-16:00 PM,,ho53277510,false,true,,,,poll21937407
-"100 NW State St Sac City, IA 50583",,08:00 AM-16:30 PM,,ho67674004,false,true,,,,poll97793716
-"600 W 4th St Davenport, IA 52801",,08:00 AM-16:30 PM,,ho96679796,false,true,,,,poll63543776
-"612 Court St Harlan, IA 51537",,08:00 AM-16:30 PM,,ho20525265,false,true,,,,poll41409137
-"210 Central Ave. SW Orange City, IA 51041",,08:00 AM-16:30 PM,,ho4330036,false,true,,,,poll57325090
-"900 6th St Nevada, IA 50201",,08:00 AM-17:00 PM,,ho81228944,false,true,,,,poll75601295
-"104 W. State St Toledo, IA 52342",,08:00 AM-16:30 PM,,ho76327581,false,true,,,,poll38645331
-"405 Jefferson Bedford, IA 50833",,08:00 AM-16:30 PM,,ho83206490,false,true,,,,poll9602320
-"300 N. Pine St. Ste 2 Creston, IA 50801",,08:30 AM-16:30 PM,,ho99314874,false,true,,,,poll5827635
-"406 Dodge St Keosauqua, IA 52565",,08:00 AM-16:30 PM,,ho27822956,false,true,,,,poll22698205
-"101 W. 4th Ottumwa, IA 52501",,08:00 AM-16:30 PM,,ho51090430,false,true,,,,poll22300621
-"301 N. Buxton Ave. Ste 101 Indianola, IA 50125",,08:00 AM-16:30 PM,,ho59440986,false,true,,,,poll32712787
-"222 W. Main St Washington, IA 52353",,08:00 AM-16:30 PM,,ho48441963,false,true,,,,poll46240982
-"100 N Lafayette St Corydon, IA 50060",,08:00 AM-16:00 PM,,ho54793883,false,true,,,,poll10558488
-"703 Central Avenue Fort Dodge, IA 50501",,08:00 AM-16:30 PM,,ho92716273,false,true,,,,poll2877441
-"126 S. Clark St Forest City, IA 50436",,08:00 AM-16:30 PM,,ho63498847,false,true,,,,poll84264153
-"201 W. Main St Decorah, IA 52101",,08:00 AM-16:00 PM,,ho77724880,false,true,,,,poll7232976
-"620 Douglas St. Room 103 Sioux City, IA 51101",,08:00 AM-16:30 PM,,ho73202561,false,true,,,,poll50044379
-"1000 Central Avenue Northwood, IA 50459",,08:00 AM-16:00 PM,,ho92018914,false,true,,,,poll89822339
-"115 N. Main Clarion, IA 50525",,08:00 AM-16:00 PM,,ho41109144,false,true,,,,poll35953569
+"400 Public Square Ste 5, Greenfield, IA 50849",,08:00 AM-16:30 PM,,ho15879802,false,true,,,,poll14791178
+"500 9th St, Corning, IA 50841",,08:30 AM-16:30 PM,,ho59636117,false,true,,,,poll93095200
+"110 Allamakee St, Waukon, IA 52172",,08:00 AM-16:00 PM,,ho76066885,false,true,,,,poll8172061
+"201 N. 12th St, Centerville, IA 52544",,08:30 AM-16:30 PM,,ho49688510,false,true,,,,poll27383628
+"318 Leroy St #4, Audubon, IA 50025",,08:00 AM-16:30 PM,,ho36892385,false,true,,,,poll87934461
+"111 E. 4th St, Vinton, IA 52349",,08:00 AM-16:30 PM,,ho20680008,false,true,,,,poll48838814
+"316 E. 5th St, Waterloo, IA 50703",,08:00 AM-16:30 PM,,ho31619692,false,true,,,,poll73569291
+"201 State St, Boone, IA 50036",,08:00 AM-16:40 PM,,ho94698844,false,true,,,,poll69754011
+"415 E. Bremer, Waverly, IA 50677",,08:00 AM-16:30 PM,,ho97263221,false,true,,,,poll83021415
+"210 5th Avenue NE, Independence, IA 50644",,08:00 AM-16:30 PM,,ho62283283,false,true,,,,poll71941539
+"215 E. 5th St, Storm Lake, IA 50588",,08:00 AM-16:30 PM,,ho27705439,false,true,,,,poll57133332
+"428 6th St, Allison, IA 50602",,07:30 AM-16:30 PM,,ho9170063,false,true,,,,poll6870963
+"416 4th St Ste 1, Rockwell City, IA 50579",,08:30 AM-16:30 PM,,ho921898,false,true,,,,poll67967901
+"114 E. 6th St, Carroll, IA 51401",,08:00 AM-16:30 PM,,ho88966706,false,true,,,,poll85150652
+"5 W. 7th St, Atlantic, IA 50022",,08:00 AM-16:30 PM,,ho82113114,false,true,,,,poll34714052
+"400 Cedar St, Tipton, IA 52772",,08:00 AM-16:00 PM,,ho65164281,false,true,,,,poll87431668
+"220 N. Washington Ave., Mason City, IA 50401",,08:00 AM-16:30 PM,,ho81703862,false,true,,,,poll18760559
+"520 W. Main, Cherokee, IA 51012",,08:00 AM-16:40 PM,,ho81500364,false,true,,,,poll86430788
+"8 E. Prospect, New Hampton, IA 50659",,08:30 AM-16:30 PM,,ho10286369,false,true,,,,poll76044772
+"100 S. Main, Osceola, IA 50213",,08:30 AM-16:30 PM,,ho96591942,false,true,,,,poll85956634
+"300 W. 4th St. Ste 4, Spencer, IA 51301",,08:00 AM-16:30 PM,,ho26993395,false,true,,,,poll50970635
+"111 High St. NE, Elkader, IA 52043",,08:00 AM-16:30 PM,,ho68143909,false,true,,,,poll28233798
+"1900 N. 3rd St, Clinton, IA 52732",,08:00 AM-16:30 PM,,ho87929444,false,true,,,,poll65721645
+"1202 Broadway Ste 5, Denison, IA 51442",,08:00 AM-16:30 PM,,ho18092948,false,true,,,,poll25784033
+"910 Court St, Adel, IA 50003",,08:00 AM-16:30 PM,,ho76976304,false,true,,,,poll38145007
+"100 Courthouse Square Ste 2, Bloomfield, IA 52537",,08:00 AM-16:00 PM,,ho39232811,false,true,,,,poll53810719
+"207 N. Main St, Leon, IA 50144",,08:00 AM-16:30 PM,,ho21465260,false,true,,,,poll86670394
+"301 E. Main St Room 210, Manchester, IA 52057",,08:00 AM-16:30 PM,,ho19192856,false,true,,,,poll17801144
+"513 N. Main Ste 203, Burlington, IA 52601",,08:00 AM-16:30 PM,,ho85628066,false,true,,,,poll99048111
+"1802 Hill Avenue Ste 1400, Spirit Lake, IA 51360",,08:00 AM-16:30 PM,,ho80312423,false,true,,,,poll71764611
+"720 Central Avenue, Dubuque, IA 52001",,08:00 AM-16:30 PM,,ho62596186,false,true,,,,poll4343902
+"609 1st Avenue N., Estherville, IA 51334",,08:00 AM-16:30 PM,,ho63695706,false,true,,,,poll7315141
+"114 N. Vine St, West Union, IA 52175",,08:00 AM-16:00 PM,,ho37218013,false,true,,,,poll98485556
+"101 S. Main St #302, Charles City, IA 50616",,08:00 AM-16:30 PM,,ho56265676,false,true,,,,poll54281601
+"12 1st Avenue NW, Hampton, IA 50441",,08:00 AM-16:00 PM,,ho96261272,false,true,,,,poll97128090
+"506 Filmore, Sidney, IA 51652",,08:00 AM-16:30 PM,,ho55889206,false,true,,,,poll15750400
+"114 N. Chestnut, Jefferson, IA 50129",,08:00 AM-16:30 PM,,ho81566791,false,true,,,,poll59698386
+"706 G Avenue, Grundy Center, IA 50638",,08:00 AM-16:30 PM,,ho60305060,false,true,,,,poll95481236
+"200 N. 5th, Guthrie Center, IA 50115",,08:00 AM-16:30 PM,,ho61518931,false,true,,,,poll87238442
+"2300 Superior St, Webster City, IA 50595",,08:00 AM-16:30 PM,,ho86959225,false,true,,,,poll79223546
+"855 State St, Garner, IA 50438",,08:00 AM-16:00 PM,,ho13247159,false,true,,,,poll83440326
+"1215 Edgington Avenue Ste 1, Eldora, IA 50627",,08:00 AM-16:30 PM,,ho53518656,false,true,,,,poll41086404
+"111 N. 2nd Avenue, Logan, IA 51546",,07:00 AM-16:30 PM,,ho659661,false,true,,,,poll26815894
+"100 E. Washington St. Ste 202, Mount Pleasant, IA 52641",,08:00 AM-16:30 PM,,ho64273544,false,true,,,,poll72644362
+"137 N. Elm St, Cresco, IA 52136",,08:00 AM-16:30 PM,,ho25001374,false,true,,,,poll70275308
+"203 Main St., Dakota City, IA 50529",,08:00 AM-16:30 PM,,ho36596802,false,true,,,,poll72951788
+"401 Moorhead St, Ida Grove, IA 51445",,08:00 AM-16:30 PM,,ho25509471,false,true,,,,poll65943527
+"970 Court Ave, Marengo, IA 52301",,08:00 AM-16:30 PM,,ho88112184,false,true,,,,poll81501840
+"201 W. Platt St, Maquoketa, IA 52060",,08:30 AM-16:30 PM,,ho47492319,false,true,,,,poll9786260
+"101 1st St N., Newton, IA 50208",,08:00 AM-16:30 PM,,ho47603997,false,true,,,,poll34059786
+"51 E. Briggs, Fairfield, IA 52556",,08:00 AM-16:30 PM,,ho90167495,false,true,,,,poll83131838
+"913 S. Dubuque St. Ste 101, Iowa City, IA 52240",,08:00 AM-18:00 PM,,ho50584101,false,true,,,,poll15312266
+"500 W. Main, Anamosa, IA 52205",,08:00 AM-16:30 PM,,ho40175386,false,true,,,,poll58242539
+"101 S. Main, Sigourney, IA 52591",,08:00 AM-16:30 PM,,ho86980690,false,true,,,,poll49889872
+"114 W. State St, Algona, IA 50511",,08:00 AM-16:00 PM,,ho93135986,false,true,,,,poll95484487
+"933 Avenue H, Fort Madison, IA 52627",,08:00 AM-16:30 PM,,ho89268159,false,true,,,,poll54671742
+"935 2nd St. SW, Cedar Rapids, IA 52404",,08:00 AM-17:00 PM,,ho59258280,false,true,,,,poll6847514
+"117 S. Main, Wapello, IA 52653",,08:00 AM-16:30 PM,,ho71534727,false,true,,,,poll68185018
+"916 Braden Avenue, Chariton, IA 50049",,08:00 AM-16:00 PM,,ho36184342,false,true,,,,poll65359540
+"206 S. 2nd Avenue, Rock Rapids, IA 51246",,08:00 AM-16:30 PM,,ho45164940,false,true,,,,poll26161968
+"112 N. 1st St, Winterset, IA 50273",,08:00 AM-16:30 PM,,ho52390336,false,true,,,,poll25197463
+"106 S. 1st St, Oskaloosa, IA 52577",,08:00 AM-16:30 PM,,ho44719990,false,true,,,,poll39586379
+"214 E. Main, Knoxville, IA 50138",,08:00 AM-16:30 PM,,ho84575394,false,true,,,,poll10768128
+"1 E. Main St, Marshalltown, IA 50158",,08:00 AM-16:30 PM,,ho87962955,false,true,,,,poll67019942
+"418 Sharp St, Glenwood, IA 51534",,08:00 AM-16:30 PM,,ho91798647,false,true,,,,poll81748603
+"212 S. 5th St., Osage, IA 50461",,08:00 AM-16:30 PM,,ho54314232,false,true,,,,poll82209940
+"610 Iowa Avenue, Onawa, IA 51040",,08:00 AM-16:30 PM,,ho19568873,false,true,,,,poll26423419
+"10 Benton Avenue E, Albia, IA 52531",,08:00 AM-16:00 PM,,ho40343369,false,true,,,,poll3581631
+"105 E. Coolbaugh St, Red Oak, IA 51566",,08:00 AM-16:30 PM,,ho46673597,false,true,,,,poll62934677
+"414 E. 3rd St, Muscatine, IA 52761",,08:00 AM-16:30 PM,,ho68686577,false,true,,,,poll57240228
+"155 S. Hayes Avenue, Primghar, IA 51245",,08:00 AM-16:30 PM,,ho5050909,false,true,,,,poll69201198
+"300 7th St, Sibley, IA 51249",,08:00 AM-16:30 PM,,ho67029044,false,true,,,,poll28358888
+"112 E. Main, Clarinda, IA 51632",,08:00 AM-16:30 PM,,ho40229289,false,true,,,,poll75827843
+"1010 Broadway, Emmetsburg, IA 50536",,08:00 AM-16:00 PM,,ho1361334,false,true,,,,poll70296677
+"215 4th Avenue SE, Le Mars, IA 51031",,08:00 AM-17:00 PM,,ho79743771,false,true,,,,poll17530275
+"99 Court Square, Pocahontas, IA 50574",,08:00 AM-16:00 PM,,ho82029757,false,true,,,,poll42955752
+"120 2nd Avenue, Des Moines, IA 50309",,08:00 AM-17:00 PM,,ho77020291,false,true,,,,poll92682210
+"227 S. 6th St, Council Bluffs, IA 51501",,08:00 AM-16:30 PM,,ho94971246,false,true,,,,poll766212
+"302 E. Main St, Montezuma, IA 50171",,08:00 AM-16:00 PM,,ho44279402,false,true,,,,poll33101612
+"109 W. Madison, Mount Ayr, IA 50854",,08:00 AM-16:00 PM,,ho34085122,false,true,,,,poll91404020
+"100 NW State St, Sac City, IA 50583",,08:00 AM-16:30 PM,,ho58439778,false,true,,,,poll68680903
+"600 W 4th St, Davenport, IA 52801",,08:00 AM-16:30 PM,,ho76837988,false,true,,,,poll5345848
+"612 Court St, Harlan, IA 51537",,08:00 AM-16:30 PM,,ho81773676,false,true,,,,poll10802234
+"210 Central Ave. SW, Orange City, IA 51041",,08:00 AM-16:30 PM,,ho98472340,false,true,,,,poll57655089
+"900 6th St, Nevada, IA 50201",,08:00 AM-17:00 PM,,ho15700866,false,true,,,,poll65837059
+"104 W. State St, Toledo, IA 52342",,08:00 AM-16:30 PM,,ho91888370,false,true,,,,poll24992183
+"405 Jefferson, Bedford, IA 50833",,08:00 AM-16:30 PM,,ho76142737,false,true,,,,poll37956035
+"300 N. Pine St. Ste 2, Creston, IA 50801",,08:30 AM-16:30 PM,,ho56942333,false,true,,,,poll33649939
+"406 Dodge St, Keosauqua, IA 52565",,08:00 AM-16:30 PM,,ho45300061,false,true,,,,poll90855294
+"101 W. 4th, Ottumwa, IA 52501",,08:00 AM-16:30 PM,,ho34025053,false,true,,,,poll78994815
+"301 N. Buxton Ave. Ste 101, Indianola, IA 50125",,08:00 AM-16:30 PM,,ho35137723,false,true,,,,poll15355883
+"222 W. Main St, Washington, IA 52353",,08:00 AM-16:30 PM,,ho90809752,false,true,,,,poll16684280
+"100 N Lafayette St, Corydon, IA 50060",,08:00 AM-16:00 PM,,ho598686,false,true,,,,poll8761242
+"703 Central Avenue, Fort Dodge, IA 50501",,08:00 AM-16:30 PM,,ho36325948,false,true,,,,poll80024009
+"126 S. Clark St, Forest City, IA 50436",,08:00 AM-16:30 PM,,ho95190688,false,true,,,,poll33103422
+"201 W. Main St, Decorah, IA 52101",,08:00 AM-16:00 PM,,ho95362590,false,true,,,,poll13826294
+"620 Douglas St. Room 103, Sioux City, IA 51101",,08:00 AM-16:30 PM,,ho95721162,false,true,,,,poll10163260
+"1000 Central Avenue, Northwood, IA 50459",,08:00 AM-16:00 PM,,ho5875241,false,true,,,,poll35169275
+"115 N. Main, Clarion, IA 50525",,08:00 AM-16:00 PM,,ho9267672,false,true,,,,poll89952829

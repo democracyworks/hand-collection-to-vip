@@ -156,10 +156,10 @@ class ScheduleTxt(object):
         # # start_time2, end_time2, is_only_by_appointment2, is_or_by_appointment2, is_subject_to_change2, start_date2, end_date2, hours_open_id2, id2
 
         # Drop base_df columns.
-        sch.drop(['ocd_division', 'email', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'by_appointment_one', 'by_appointment_two', 'appointmnents', 'index',
+        sch.drop(['ocd_division', 'email', 'county', 'name', 'adr_1', 'adr_2', 'city', 'state', 'zip',
+                'start_time', 'end_time', 'start_date', 'end_date', 'appt1', 'appt2', 'appt3', 'index',
                 'subject_to_change', 'address_line', 'directions',
-                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id'], inplace=True,
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'polling_id'], inplace=True,
                  axis=1)
 
         # hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id,
@@ -198,10 +198,10 @@ if __name__ == '__main__':
     early_voting_file = config.output + file
 
 
-    colnames = ['ocd_division', 'email', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'by_appointment_one', 'by_appointment_two', 'appointmnents',
-                'subject_to_change', 'index', 'address_line', 'directions',
-                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id']
+    colnames = [ 'ocd_division', 'email', 'county', 'name', 'adr_1', 'adr_2', 'city', 'state',
+                 'zip', 'start_time', 'end_time', 'start_date', 'end_date', 'appt1', 'appt2', 'appt3', 'subject_to_change',
+                 'index','address_line', 'directions',
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'polling_id']
     print len(colnames)
 
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)

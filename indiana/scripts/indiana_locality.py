@@ -216,7 +216,7 @@ class LocalityTxt(object):
         # reorder columns
         cols = ['election_administration_id', 'external_identifier_type', 'external_identifier_othertype',
                 'external_identifier_value', 'name', 'polling_location_ids', 'state_id', 'type',
-                'other_type', 'grouped_index', 'id', 'dirs']
+                'other_type', 'grouped_index', 'id']
 
         final = loc.reindex(columns=cols)
         # print final

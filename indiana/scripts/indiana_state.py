@@ -32,6 +32,8 @@ def pl():
     df = pd.read_csv(early_voting_path, names=colnames, encoding='utf-8', skiprows=1)
     # df['index'] = early_voting_df.index + 1
 
+    print df
+
     polling_location_list = df['source_polling_location_ids'].tolist()
     return polling_location_list
 
