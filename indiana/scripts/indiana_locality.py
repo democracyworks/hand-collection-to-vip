@@ -50,7 +50,7 @@ class LocalityTxt(object):
         county = external_identifier_value.split(" ")
         county = county[len(county)-1]
         if external_identifier_value:
-            str = "ocd-division/country/us/state:" + config.state_lower_abbreviation + "/county:" + county.lower()
+            str = "ocd-division/country:us/state:" + config.state_lower_abbreviation + "/county:" + county.lower()
             return str
             # ocd-division/country:us/state:nj/county:atlantic
         else:
