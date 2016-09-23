@@ -1,107 +1,107 @@
 election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:adams,ocd-division/country:us/state:il/county:ad0008,poll38406744,st17,other,,loc0001
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:alexander,ocd-division/country:us/state:il/county:alexan0024,poll16510451,st17,other,,loc0002
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:bond,ocd-division/country:us/state:il/county:b0026,poll60068794,st17,other,,loc0003
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:boone,ocd-division/country:us/state:il/county:bo0040,poll98107661,st17,other,,loc0004
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:brown,ocd-division/country:us/state:il/county:br0043,poll30775285,st17,other,,loc0005
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:bureau,ocd-division/country:us/state:il/county:bur0061,poll11975587 poll27005090 poll16345518,st17,other,,loc0006
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:calhoun,ocd-division/country:us/state:il/county:calh0070,poll93678207,st17,other,,loc0007
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:carroll,ocd-division/country:us/state:il/county:carr0074,poll80756366,st17,other,,loc0008
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:cass,ocd-division/country:us/state:il/county:c0085,poll8928542 poll96581147,st17,other,,loc0009
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:christian,ocd-division/country:us/state:il/county:christ0093,poll23018218,st17,other,,loc0010
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:clark,ocd-division/country:us/state:il/county:cl0110,poll63907086,st17,other,,loc0011
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:clay,ocd-division/country:us/state:il/county:c0119,poll21065730,st17,other,,loc0012
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:clinton,ocd-division/country:us/state:il/county:clin0126,poll28833581,st17,other,,loc0013
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:coles,ocd-division/country:us/state:il/county:co0148,poll64008585 poll49266397 poll44641968,st17,other,,loc0014
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:cook,ocd-division/country:us/state:il/county:c0359,poll57806592 poll95692198 poll12967371 poll44503354 poll69899839 poll19012295 poll40118096 poll71658580 poll31396410 poll40719810 poll81021181 poll75997814 poll12136719 poll772434 poll3230573 poll32543765 poll17105477 poll4527691 poll61529041 poll2946795 poll31686539 poll87768163 poll33884687 poll77438047 poll80080867 poll94013826 poll97218891 poll65160909 poll43162376 poll97786292 poll2662487 poll58593360 poll56760084 poll28704572 poll43946314 poll31249927 poll1551661 poll3344356 poll64400454 poll28289317 poll88529411 poll1576585 poll47664796 poll94457160 poll70618974 poll29523776 poll54351785 poll59601211 poll10582791 poll70979000 poll23004268 poll75289335,st17,other,,loc0015
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:crawford,ocd-division/country:us/state:il/county:crawf0526,poll55703589,st17,other,,loc0016
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:cumberland,ocd-division/country:us/state:il/county:cumberl0534,poll32391385,st17,other,,loc0017
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:de_witt,ocd-division/country:us/state:il/county:de_w0543,poll91263222,st17,other,,loc0018
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:dekalb,ocd-division/country:us/state:il/county:dek0598,poll18796702 poll66866135 poll53012560 poll3076859 poll69970689,st17,other,,loc0019
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:douglas,ocd-division/country:us/state:il/county:doug0600,poll68118597,st17,other,,loc0020
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:dupage,ocd-division/country:us/state:il/county:dup0668,poll23076066 poll16345780 poll24160361 poll51615707 poll76665922 poll13866138 poll10734238 poll18537059 poll89973625 poll2378579,st17,other,,loc0021
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:edgar,ocd-division/country:us/state:il/county:ed0669,poll16257142,st17,other,,loc0022
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:edwards,ocd-division/country:us/state:il/county:edwa0680,poll21303330,st17,other,,loc0023
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:effingham,ocd-division/country:us/state:il/county:effing0688,poll20772382,st17,other,,loc0024
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:fayette,ocd-division/country:us/state:il/county:faye0695,poll33586773,st17,other,,loc0025
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:ford,ocd-division/country:us/state:il/county:f0710,poll49033932,st17,other,,loc0026
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:franklin,ocd-division/country:us/state:il/county:frank0712,poll91811361 poll80341669 poll17066297,st17,other,,loc0027
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:fulton,ocd-division/country:us/state:il/county:ful0728,poll18900960,st17,other,,loc0028
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:gallatin,ocd-division/country:us/state:il/county:galla0731,poll56621491,st17,other,,loc0029
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:greene,ocd-division/country:us/state:il/county:gre0743,poll57601321,st17,other,,loc0030
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:grundy,ocd-division/country:us/state:il/county:gru0768,poll40220090,st17,other,,loc0031
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:hamilton,ocd-division/country:us/state:il/county:hamil0769,poll86383217,st17,other,,loc0032
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:hancock,ocd-division/country:us/state:il/county:hanc0788,poll11785301,st17,other,,loc0033
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:hardin,ocd-division/country:us/state:il/county:har0799,poll4910646,st17,other,,loc0034
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:henderson,ocd-division/country:us/state:il/county:hender0801,poll92056293,st17,other,,loc0035
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:henry,ocd-division/country:us/state:il/county:he0811,poll72823757,st17,other,,loc0036
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:iroquois,ocd-division/country:us/state:il/county:iroqu0824,poll49676981,st17,other,,loc0037
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:jackson,ocd-division/country:us/state:il/county:jack0836,poll72771365 poll35500403 poll62701810,st17,other,,loc0038
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:jasper,ocd-division/country:us/state:il/county:jas0846,poll26224360,st17,other,,loc0039
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:jefferson,ocd-division/country:us/state:il/county:jeffer0858,poll13657903,st17,other,,loc0040
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:jersey,ocd-division/country:us/state:il/county:jer0870,poll43001992,st17,other,,loc0041
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:jo_daviess,ocd-division/country:us/state:il/county:jo_davi0879,poll58823403,st17,other,,loc0042
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:johnson,ocd-division/country:us/state:il/county:john0895,poll11784584 poll79633276 poll79042839 poll72927920,st17,other,,loc0043
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:kane,ocd-division/country:us/state:il/county:k0904,poll46168796 poll59217946 poll8783065 poll3102151 poll19994236 poll12465952 poll15136178 poll8467508 poll99483175 poll26665069 poll70213561 poll53501637 poll69802968 poll60995695 poll91849541 poll31334219 poll26353841 poll67346206 poll7390514 poll25138180 poll41041730 poll92735097 poll77660624 poll93255047 poll70719103,st17,other,,loc0044
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:kankakee,ocd-division/country:us/state:il/county:kanka0978,poll47207166 poll96929450 poll14349911,st17,other,,loc0045
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:kendall,ocd-division/country:us/state:il/county:kend01010,poll60672418 poll62256130 poll42263284,st17,other,,loc0046
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:knox,ocd-division/country:us/state:il/county:k01018,poll50450310,st17,other,,loc0047
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:lake,ocd-division/country:us/state:il/county:l01031,poll54300478 poll85589461 poll91928932 poll6470684 poll69055142 poll98848012 poll17390115 poll17944215 poll36825764 poll62897006 poll51919708 poll62997606 poll59836830 poll47181419 poll15146393,st17,other,,loc0048
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:lasalle,ocd-division/country:us/state:il/county:lasa01099,poll8702470,st17,other,,loc0049
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:lawrence,ocd-division/country:us/state:il/county:lawre01112,poll13785215,st17,other,,loc0050
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:lee,ocd-division/country:us/state:il/county:01113,poll80884746,st17,other,,loc0051
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:livingston,ocd-division/country:us/state:il/county:livings01130,poll4264595,st17,other,,loc0052
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:logan,ocd-division/country:us/state:il/county:lo01140,poll13492050,st17,other,,loc0053
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:macon,ocd-division/country:us/state:il/county:ma01154,poll25319949,st17,other,,loc0054
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:madison,ocd-division/country:us/state:il/county:madi01189,poll45224595 poll4309586 poll10925666 poll24179614 poll592777 poll34430930 poll79207919 poll22834423 poll84375401 poll54158015 poll41575501,st17,other,,loc0055
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:marion,ocd-division/country:us/state:il/county:mar01209,poll8123567,st17,other,,loc0056
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:marshall,ocd-division/country:us/state:il/county:marsh01218,poll48198968,st17,other,,loc0057
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:mason,ocd-division/country:us/state:il/county:ma01232,poll7414679,st17,other,,loc0058
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:massac,ocd-division/country:us/state:il/county:mas01236,poll42040052,st17,other,,loc0059
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:mcdonough,ocd-division/country:us/state:il/county:mcdono01254,poll88815457 poll2797973,st17,other,,loc0060
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:mchenry,ocd-division/country:us/state:il/county:mche01298,poll34232122 poll62777806 poll26706256 poll21741830 poll79449449 poll17107543 poll10027996 poll26852477 poll17295654 poll43085475 poll46781259,st17,other,,loc0061
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:mclean,ocd-division/country:us/state:il/county:mcl01338,poll49876681 poll68426375 poll7084346 poll62152122 poll60648246,st17,other,,loc0062
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:menard,ocd-division/country:us/state:il/county:men01349,poll23234568,st17,other,,loc0063
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:mercer,ocd-division/country:us/state:il/county:mer01360,poll59499388,st17,other,,loc0064
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:monroe,ocd-division/country:us/state:il/county:mon01365,poll57888076,st17,other,,loc0065
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:montgomery,ocd-division/country:us/state:il/county:montgom01379,poll67422620,st17,other,,loc0066
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:morgan,ocd-division/country:us/state:il/county:mor01389,poll34950548,st17,other,,loc0067
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:moultrie,ocd-division/country:us/state:il/county:moult01397,poll78270734,st17,other,,loc0068
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:ogle,ocd-division/country:us/state:il/county:o01405,poll61319834,st17,other,,loc0069
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:peoria,ocd-division/country:us/state:il/county:peo01415,poll68356869 poll44177124 poll96341199 poll69373036 poll69064267 poll1287264 poll20234626 poll10264125 poll77354141 poll36086422 poll99089943 poll8662383 poll49668942,st17,other,,loc0070
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:perry,ocd-division/country:us/state:il/county:pe01440,poll77223736 poll92806016,st17,other,,loc0071
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:piatt,ocd-division/country:us/state:il/county:pi01448,poll51468055,st17,other,,loc0072
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:pike,ocd-division/country:us/state:il/county:p01462,poll96393253,st17,other,,loc0073
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:pope,ocd-division/country:us/state:il/county:p01466,poll23291835,st17,other,,loc0074
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:putnam,ocd-division/country:us/state:il/county:put01487,poll37858325,st17,other,,loc0075
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:randolph,ocd-division/country:us/state:il/county:rando01488,poll37628379,st17,other,,loc0076
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:richland,ocd-division/country:us/state:il/county:richl01504,poll29303081,st17,other,,loc0077
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:rock_island,ocd-division/country:us/state:il/county:rock_isl01515,poll8237516,st17,other,,loc0078
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:saline,ocd-division/country:us/state:il/county:sal01521,poll80356973,st17,other,,loc0079
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:sangamon,ocd-division/country:us/state:il/county:sanga01535,poll21056607,st17,other,,loc0080
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:schuyler,ocd-division/country:us/state:il/county:schuy01545,poll96537616,st17,other,,loc0081
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:scott,ocd-division/country:us/state:il/county:sc01553,poll48312374,st17,other,,loc0082
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:shelby,ocd-division/country:us/state:il/county:she01558,poll97748888,st17,other,,loc0083
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:st_clair,ocd-division/country:us/state:il/county:st_cl01564,poll15558936 poll94972139 poll84036190 poll12762028 poll59674375 poll12289058 poll72608650 poll3935539,st17,other,,loc0084
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:stark,ocd-division/country:us/state:il/county:st01602,poll76094144,st17,other,,loc0085
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:stephenson,ocd-division/country:us/state:il/county:stephen01605,poll8436276,st17,other,,loc0086
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:tazewell,ocd-division/country:us/state:il/county:tazew01616,poll59307939 poll86409698 poll38180261 poll18024422 poll6396605 poll47170075 poll94342100,st17,other,,loc0087
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:union,ocd-division/country:us/state:il/county:un01642,poll30985137,st17,other,,loc0088
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:vermilion,ocd-division/country:us/state:il/county:vermil01653,poll69889194,st17,other,,loc0089
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:wabash,ocd-division/country:us/state:il/county:wab01660,poll75053191,st17,other,,loc0090
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:warren,ocd-division/country:us/state:il/county:war01673,poll50624822,st17,other,,loc0091
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:washington,ocd-division/country:us/state:il/county:washing01684,poll73932868,st17,other,,loc0092
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:wayne,ocd-division/country:us/state:il/county:wa01691,poll88302455,st17,other,,loc0093
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:white,ocd-division/country:us/state:il/county:wh01702,poll15755362,st17,other,,loc0094
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:whiteside,ocd-division/country:us/state:il/county:whites01708,poll50388637,st17,other,,loc0095
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:will,ocd-division/country:us/state:il/county:w01715,poll12827753,st17,other,,loc0096
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:williamson,ocd-division/country:us/state:il/county:william01728,poll5776747,st17,other,,loc0097
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:winnebago,ocd-division/country:us/state:il/county:winneb01747,poll46604419,st17,other,,loc0098
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/county:woodford,ocd-division/country:us/state:il/county:woodf01755,poll58563268,st17,other,,loc0099
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/place:aurora,ocd-division/country:us/state:il/place:aur01773,poll82824768 poll73647979,st17,other,,loc0100
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/place:bloomington,ocd-division/country:us/state:il/place:blooming01787,poll75618283 poll69766695,st17,other,,loc0101
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/place:chicago,ocd-division/country:us/state:il/place:chic01798,poll29709647,st17,other,,loc0102
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/place:danville,ocd-division/country:us/state:il/place:danvi01810,poll57749945,st17,other,,loc0103
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/place:east_st_louis,ocd-division/country:us/state:il/place:east_st_lo01818,poll69506462,st17,other,,loc0104
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/place:galesburg,ocd-division/country:us/state:il/place:galesb01827,poll56733326,st17,other,,loc0105
-,ocd-id,,ocd-division/country/us/state:il/county:ocd-division/country:us/state:il/place:rockford,ocd-division/country:us/state:il/place:rockf01845,poll52781521 poll21848106,st17,other,,loc0106
+,ocd-id,,ocd-division/country:us/state:il/county:adams,ocd-division/country:us/state:il/county:ad0008,poll38406744,st17,other,,loc0001
+,ocd-id,,ocd-division/country:us/state:il/county:alexander,ocd-division/country:us/state:il/county:alexan0024,poll16510451,st17,other,,loc0002
+,ocd-id,,ocd-division/country:us/state:il/county:bond,ocd-division/country:us/state:il/county:b0026,poll60068794,st17,other,,loc0003
+,ocd-id,,ocd-division/country:us/state:il/county:boone,ocd-division/country:us/state:il/county:bo0040,poll98107661,st17,other,,loc0004
+,ocd-id,,ocd-division/country:us/state:il/county:brown,ocd-division/country:us/state:il/county:br0043,poll30775285,st17,other,,loc0005
+,ocd-id,,ocd-division/country:us/state:il/county:bureau,ocd-division/country:us/state:il/county:bur0061,poll11975587 poll27005090 poll16345518,st17,other,,loc0006
+,ocd-id,,ocd-division/country:us/state:il/county:calhoun,ocd-division/country:us/state:il/county:calh0070,poll93678207,st17,other,,loc0007
+,ocd-id,,ocd-division/country:us/state:il/county:carroll,ocd-division/country:us/state:il/county:carr0074,poll80756366,st17,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:il/county:cass,ocd-division/country:us/state:il/county:c0085,poll8928542 poll96581147,st17,other,,loc0009
+,ocd-id,,ocd-division/country:us/state:il/county:christian,ocd-division/country:us/state:il/county:christ0093,poll23018218,st17,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:il/county:clark,ocd-division/country:us/state:il/county:cl0110,poll63907086,st17,other,,loc0011
+,ocd-id,,ocd-division/country:us/state:il/county:clay,ocd-division/country:us/state:il/county:c0119,poll21065730,st17,other,,loc0012
+,ocd-id,,ocd-division/country:us/state:il/county:clinton,ocd-division/country:us/state:il/county:clin0126,poll28833581,st17,other,,loc0013
+,ocd-id,,ocd-division/country:us/state:il/county:coles,ocd-division/country:us/state:il/county:co0148,poll64008585 poll49266397 poll44641968,st17,other,,loc0014
+,ocd-id,,ocd-division/country:us/state:il/county:cook,ocd-division/country:us/state:il/county:c0359,poll57806592 poll95692198 poll12967371 poll44503354 poll69899839 poll19012295 poll40118096 poll71658580 poll31396410 poll40719810 poll81021181 poll75997814 poll12136719 poll772434 poll3230573 poll32543765 poll17105477 poll4527691 poll61529041 poll2946795 poll31686539 poll87768163 poll33884687 poll77438047 poll80080867 poll94013826 poll97218891 poll65160909 poll43162376 poll97786292 poll2662487 poll58593360 poll56760084 poll28704572 poll43946314 poll31249927 poll1551661 poll3344356 poll64400454 poll28289317 poll88529411 poll1576585 poll47664796 poll94457160 poll70618974 poll29523776 poll54351785 poll59601211 poll10582791 poll70979000 poll23004268 poll75289335,st17,other,,loc0015
+,ocd-id,,ocd-division/country:us/state:il/county:crawford,ocd-division/country:us/state:il/county:crawf0526,poll55703589,st17,other,,loc0016
+,ocd-id,,ocd-division/country:us/state:il/county:cumberland,ocd-division/country:us/state:il/county:cumberl0534,poll32391385,st17,other,,loc0017
+,ocd-id,,ocd-division/country:us/state:il/county:de_witt,ocd-division/country:us/state:il/county:de_w0543,poll91263222,st17,other,,loc0018
+,ocd-id,,ocd-division/country:us/state:il/county:dekalb,ocd-division/country:us/state:il/county:dek0598,poll18796702 poll66866135 poll53012560 poll3076859 poll69970689,st17,other,,loc0019
+,ocd-id,,ocd-division/country:us/state:il/county:douglas,ocd-division/country:us/state:il/county:doug0600,poll68118597,st17,other,,loc0020
+,ocd-id,,ocd-division/country:us/state:il/county:dupage,ocd-division/country:us/state:il/county:dup0668,poll23076066 poll16345780 poll24160361 poll51615707 poll76665922 poll13866138 poll10734238 poll18537059 poll89973625 poll2378579,st17,other,,loc0021
+,ocd-id,,ocd-division/country:us/state:il/county:edgar,ocd-division/country:us/state:il/county:ed0669,poll16257142,st17,other,,loc0022
+,ocd-id,,ocd-division/country:us/state:il/county:edwards,ocd-division/country:us/state:il/county:edwa0680,poll21303330,st17,other,,loc0023
+,ocd-id,,ocd-division/country:us/state:il/county:effingham,ocd-division/country:us/state:il/county:effing0688,poll20772382,st17,other,,loc0024
+,ocd-id,,ocd-division/country:us/state:il/county:fayette,ocd-division/country:us/state:il/county:faye0695,poll33586773,st17,other,,loc0025
+,ocd-id,,ocd-division/country:us/state:il/county:ford,ocd-division/country:us/state:il/county:f0710,poll49033932,st17,other,,loc0026
+,ocd-id,,ocd-division/country:us/state:il/county:franklin,ocd-division/country:us/state:il/county:frank0712,poll91811361 poll80341669 poll17066297,st17,other,,loc0027
+,ocd-id,,ocd-division/country:us/state:il/county:fulton,ocd-division/country:us/state:il/county:ful0728,poll18900960,st17,other,,loc0028
+,ocd-id,,ocd-division/country:us/state:il/county:gallatin,ocd-division/country:us/state:il/county:galla0731,poll56621491,st17,other,,loc0029
+,ocd-id,,ocd-division/country:us/state:il/county:greene,ocd-division/country:us/state:il/county:gre0743,poll57601321,st17,other,,loc0030
+,ocd-id,,ocd-division/country:us/state:il/county:grundy,ocd-division/country:us/state:il/county:gru0768,poll40220090,st17,other,,loc0031
+,ocd-id,,ocd-division/country:us/state:il/county:hamilton,ocd-division/country:us/state:il/county:hamil0769,poll86383217,st17,other,,loc0032
+,ocd-id,,ocd-division/country:us/state:il/county:hancock,ocd-division/country:us/state:il/county:hanc0788,poll11785301,st17,other,,loc0033
+,ocd-id,,ocd-division/country:us/state:il/county:hardin,ocd-division/country:us/state:il/county:har0799,poll4910646,st17,other,,loc0034
+,ocd-id,,ocd-division/country:us/state:il/county:henderson,ocd-division/country:us/state:il/county:hender0801,poll92056293,st17,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:il/county:henry,ocd-division/country:us/state:il/county:he0811,poll72823757,st17,other,,loc0036
+,ocd-id,,ocd-division/country:us/state:il/county:iroquois,ocd-division/country:us/state:il/county:iroqu0824,poll49676981,st17,other,,loc0037
+,ocd-id,,ocd-division/country:us/state:il/county:jackson,ocd-division/country:us/state:il/county:jack0836,poll72771365 poll35500403 poll62701810,st17,other,,loc0038
+,ocd-id,,ocd-division/country:us/state:il/county:jasper,ocd-division/country:us/state:il/county:jas0846,poll26224360,st17,other,,loc0039
+,ocd-id,,ocd-division/country:us/state:il/county:jefferson,ocd-division/country:us/state:il/county:jeffer0858,poll13657903,st17,other,,loc0040
+,ocd-id,,ocd-division/country:us/state:il/county:jersey,ocd-division/country:us/state:il/county:jer0870,poll43001992,st17,other,,loc0041
+,ocd-id,,ocd-division/country:us/state:il/county:jo_daviess,ocd-division/country:us/state:il/county:jo_davi0879,poll58823403,st17,other,,loc0042
+,ocd-id,,ocd-division/country:us/state:il/county:johnson,ocd-division/country:us/state:il/county:john0895,poll11784584 poll79633276 poll79042839 poll72927920,st17,other,,loc0043
+,ocd-id,,ocd-division/country:us/state:il/county:kane,ocd-division/country:us/state:il/county:k0904,poll46168796 poll59217946 poll8783065 poll3102151 poll19994236 poll12465952 poll15136178 poll8467508 poll99483175 poll26665069 poll70213561 poll53501637 poll69802968 poll60995695 poll91849541 poll31334219 poll26353841 poll67346206 poll7390514 poll25138180 poll41041730 poll92735097 poll77660624 poll93255047 poll70719103,st17,other,,loc0044
+,ocd-id,,ocd-division/country:us/state:il/county:kankakee,ocd-division/country:us/state:il/county:kanka0978,poll47207166 poll96929450 poll14349911,st17,other,,loc0045
+,ocd-id,,ocd-division/country:us/state:il/county:kendall,ocd-division/country:us/state:il/county:kend01010,poll60672418 poll62256130 poll42263284,st17,other,,loc0046
+,ocd-id,,ocd-division/country:us/state:il/county:knox,ocd-division/country:us/state:il/county:k01018,poll50450310,st17,other,,loc0047
+,ocd-id,,ocd-division/country:us/state:il/county:lake,ocd-division/country:us/state:il/county:l01031,poll54300478 poll85589461 poll91928932 poll6470684 poll69055142 poll98848012 poll17390115 poll17944215 poll36825764 poll62897006 poll51919708 poll62997606 poll59836830 poll47181419 poll15146393,st17,other,,loc0048
+,ocd-id,,ocd-division/country:us/state:il/county:lasalle,ocd-division/country:us/state:il/county:lasa01099,poll8702470,st17,other,,loc0049
+,ocd-id,,ocd-division/country:us/state:il/county:lawrence,ocd-division/country:us/state:il/county:lawre01112,poll13785215,st17,other,,loc0050
+,ocd-id,,ocd-division/country:us/state:il/county:lee,ocd-division/country:us/state:il/county:01113,poll80884746,st17,other,,loc0051
+,ocd-id,,ocd-division/country:us/state:il/county:livingston,ocd-division/country:us/state:il/county:livings01130,poll4264595,st17,other,,loc0052
+,ocd-id,,ocd-division/country:us/state:il/county:logan,ocd-division/country:us/state:il/county:lo01140,poll13492050,st17,other,,loc0053
+,ocd-id,,ocd-division/country:us/state:il/county:macon,ocd-division/country:us/state:il/county:ma01154,poll25319949,st17,other,,loc0054
+,ocd-id,,ocd-division/country:us/state:il/county:madison,ocd-division/country:us/state:il/county:madi01189,poll45224595 poll4309586 poll10925666 poll24179614 poll592777 poll34430930 poll79207919 poll22834423 poll84375401 poll54158015 poll41575501,st17,other,,loc0055
+,ocd-id,,ocd-division/country:us/state:il/county:marion,ocd-division/country:us/state:il/county:mar01209,poll8123567,st17,other,,loc0056
+,ocd-id,,ocd-division/country:us/state:il/county:marshall,ocd-division/country:us/state:il/county:marsh01218,poll48198968,st17,other,,loc0057
+,ocd-id,,ocd-division/country:us/state:il/county:mason,ocd-division/country:us/state:il/county:ma01232,poll7414679,st17,other,,loc0058
+,ocd-id,,ocd-division/country:us/state:il/county:massac,ocd-division/country:us/state:il/county:mas01236,poll42040052,st17,other,,loc0059
+,ocd-id,,ocd-division/country:us/state:il/county:mcdonough,ocd-division/country:us/state:il/county:mcdono01254,poll88815457 poll2797973,st17,other,,loc0060
+,ocd-id,,ocd-division/country:us/state:il/county:mchenry,ocd-division/country:us/state:il/county:mche01298,poll34232122 poll62777806 poll26706256 poll21741830 poll79449449 poll17107543 poll10027996 poll26852477 poll17295654 poll43085475 poll46781259,st17,other,,loc0061
+,ocd-id,,ocd-division/country:us/state:il/county:mclean,ocd-division/country:us/state:il/county:mcl01338,poll49876681 poll68426375 poll7084346 poll62152122 poll60648246,st17,other,,loc0062
+,ocd-id,,ocd-division/country:us/state:il/county:menard,ocd-division/country:us/state:il/county:men01349,poll23234568,st17,other,,loc0063
+,ocd-id,,ocd-division/country:us/state:il/county:mercer,ocd-division/country:us/state:il/county:mer01360,poll59499388,st17,other,,loc0064
+,ocd-id,,ocd-division/country:us/state:il/county:monroe,ocd-division/country:us/state:il/county:mon01365,poll57888076,st17,other,,loc0065
+,ocd-id,,ocd-division/country:us/state:il/county:montgomery,ocd-division/country:us/state:il/county:montgom01379,poll67422620,st17,other,,loc0066
+,ocd-id,,ocd-division/country:us/state:il/county:morgan,ocd-division/country:us/state:il/county:mor01389,poll34950548,st17,other,,loc0067
+,ocd-id,,ocd-division/country:us/state:il/county:moultrie,ocd-division/country:us/state:il/county:moult01397,poll78270734,st17,other,,loc0068
+,ocd-id,,ocd-division/country:us/state:il/county:ogle,ocd-division/country:us/state:il/county:o01405,poll61319834,st17,other,,loc0069
+,ocd-id,,ocd-division/country:us/state:il/county:peoria,ocd-division/country:us/state:il/county:peo01415,poll68356869 poll44177124 poll96341199 poll69373036 poll69064267 poll1287264 poll20234626 poll10264125 poll77354141 poll36086422 poll99089943 poll8662383 poll49668942,st17,other,,loc0070
+,ocd-id,,ocd-division/country:us/state:il/county:perry,ocd-division/country:us/state:il/county:pe01440,poll77223736 poll92806016,st17,other,,loc0071
+,ocd-id,,ocd-division/country:us/state:il/county:piatt,ocd-division/country:us/state:il/county:pi01448,poll51468055,st17,other,,loc0072
+,ocd-id,,ocd-division/country:us/state:il/county:pike,ocd-division/country:us/state:il/county:p01462,poll96393253,st17,other,,loc0073
+,ocd-id,,ocd-division/country:us/state:il/county:pope,ocd-division/country:us/state:il/county:p01466,poll23291835,st17,other,,loc0074
+,ocd-id,,ocd-division/country:us/state:il/county:putnam,ocd-division/country:us/state:il/county:put01487,poll37858325,st17,other,,loc0075
+,ocd-id,,ocd-division/country:us/state:il/county:randolph,ocd-division/country:us/state:il/county:rando01488,poll37628379,st17,other,,loc0076
+,ocd-id,,ocd-division/country:us/state:il/county:richland,ocd-division/country:us/state:il/county:richl01504,poll29303081,st17,other,,loc0077
+,ocd-id,,ocd-division/country:us/state:il/county:rock_island,ocd-division/country:us/state:il/county:rock_isl01515,poll8237516,st17,other,,loc0078
+,ocd-id,,ocd-division/country:us/state:il/county:saline,ocd-division/country:us/state:il/county:sal01521,poll80356973,st17,other,,loc0079
+,ocd-id,,ocd-division/country:us/state:il/county:sangamon,ocd-division/country:us/state:il/county:sanga01535,poll21056607,st17,other,,loc0080
+,ocd-id,,ocd-division/country:us/state:il/county:schuyler,ocd-division/country:us/state:il/county:schuy01545,poll96537616,st17,other,,loc0081
+,ocd-id,,ocd-division/country:us/state:il/county:scott,ocd-division/country:us/state:il/county:sc01553,poll48312374,st17,other,,loc0082
+,ocd-id,,ocd-division/country:us/state:il/county:shelby,ocd-division/country:us/state:il/county:she01558,poll97748888,st17,other,,loc0083
+,ocd-id,,ocd-division/country:us/state:il/county:st_clair,ocd-division/country:us/state:il/county:st_cl01564,poll15558936 poll94972139 poll84036190 poll12762028 poll59674375 poll12289058 poll72608650 poll3935539,st17,other,,loc0084
+,ocd-id,,ocd-division/country:us/state:il/county:stark,ocd-division/country:us/state:il/county:st01602,poll76094144,st17,other,,loc0085
+,ocd-id,,ocd-division/country:us/state:il/county:stephenson,ocd-division/country:us/state:il/county:stephen01605,poll8436276,st17,other,,loc0086
+,ocd-id,,ocd-division/country:us/state:il/county:tazewell,ocd-division/country:us/state:il/county:tazew01616,poll59307939 poll86409698 poll38180261 poll18024422 poll6396605 poll47170075 poll94342100,st17,other,,loc0087
+,ocd-id,,ocd-division/country:us/state:il/county:union,ocd-division/country:us/state:il/county:un01642,poll30985137,st17,other,,loc0088
+,ocd-id,,ocd-division/country:us/state:il/county:vermilion,ocd-division/country:us/state:il/county:vermil01653,poll69889194,st17,other,,loc0089
+,ocd-id,,ocd-division/country:us/state:il/county:wabash,ocd-division/country:us/state:il/county:wab01660,poll75053191,st17,other,,loc0090
+,ocd-id,,ocd-division/country:us/state:il/county:warren,ocd-division/country:us/state:il/county:war01673,poll50624822,st17,other,,loc0091
+,ocd-id,,ocd-division/country:us/state:il/county:washington,ocd-division/country:us/state:il/county:washing01684,poll73932868,st17,other,,loc0092
+,ocd-id,,ocd-division/country:us/state:il/county:wayne,ocd-division/country:us/state:il/county:wa01691,poll88302455,st17,other,,loc0093
+,ocd-id,,ocd-division/country:us/state:il/county:white,ocd-division/country:us/state:il/county:wh01702,poll15755362,st17,other,,loc0094
+,ocd-id,,ocd-division/country:us/state:il/county:whiteside,ocd-division/country:us/state:il/county:whites01708,poll50388637,st17,other,,loc0095
+,ocd-id,,ocd-division/country:us/state:il/county:will,ocd-division/country:us/state:il/county:w01715,poll12827753,st17,other,,loc0096
+,ocd-id,,ocd-division/country:us/state:il/county:williamson,ocd-division/country:us/state:il/county:william01728,poll5776747,st17,other,,loc0097
+,ocd-id,,ocd-division/country:us/state:il/county:winnebago,ocd-division/country:us/state:il/county:winneb01747,poll46604419,st17,other,,loc0098
+,ocd-id,,ocd-division/country:us/state:il/county:woodford,ocd-division/country:us/state:il/county:woodf01755,poll58563268,st17,other,,loc0099
+,ocd-id,,ocd-division/country:us/state:il/place:aurora,ocd-division/country:us/state:il/place:aur01773,poll82824768 poll73647979,st17,other,,loc0100
+,ocd-id,,ocd-division/country:us/state:il/place:bloomington,ocd-division/country:us/state:il/place:blooming01787,poll75618283 poll69766695,st17,other,,loc0101
+,ocd-id,,ocd-division/country:us/state:il/place:chicago,ocd-division/country:us/state:il/place:chic01798,poll29709647,st17,other,,loc0102
+,ocd-id,,ocd-division/country:us/state:il/place:danville,ocd-division/country:us/state:il/place:danvi01810,poll57749945,st17,other,,loc0103
+,ocd-id,,ocd-division/country:us/state:il/place:east_st_louis,ocd-division/country:us/state:il/place:east_st_lo01818,poll69506462,st17,other,,loc0104
+,ocd-id,,ocd-division/country:us/state:il/place:galesburg,ocd-division/country:us/state:il/place:galesb01827,poll56733326,st17,other,,loc0105
+,ocd-id,,ocd-division/country:us/state:il/place:rockford,ocd-division/country:us/state:il/place:rockf01845,poll52781521 poll21848106,st17,other,,loc0106

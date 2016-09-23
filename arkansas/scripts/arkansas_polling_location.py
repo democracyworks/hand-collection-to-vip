@@ -37,7 +37,7 @@ class PollingLocationTxt(object):
         else:
             zip = ''
 
-        return st.strip() + ", " + city + ", IN " + str(zip)
+        return st.strip() + ", " + city + ", AR " + str(zip)
 
     def get_directions(self):
         """#"""

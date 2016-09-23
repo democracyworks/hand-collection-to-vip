@@ -75,7 +75,7 @@ class LocalityTxt(object):
         """Extracts external identifier (ocd-division)."""
 
         if external_identifier_value:
-            str = "ocd-division/country/us/state:" + config.state_lower_abbreviation + "/county:" + external_identifier_value.lower()
+            str = "ocd-division/country:us/state:" + config.state_lower_abbreviation + "/county:" + external_identifier_value.lower()
             return str
             # ocd-division/country:us/state:nj/county:atlantic
         else:

@@ -45,12 +45,21 @@ class LocalityTxt(object):
         # create conditional when/if column is present
         return ''
 
+    def get_county_name(self, ocd_id):
+        county = ocd_id.split(" ")
+        if len(county) == 2:
+            return county[0].lower()
+        elif len(county) == 3:
+            return county[0].lower() + "_" + county[1].lower()
+
     def get_external_identifier_value(self, external_identifier_value):
         """Extracts external identifier (ocd-division)."""
-        county = external_identifier_value.split(" ")
-        county = county[len(county)-1]
+        county = self.get_county_name(external_identifier_value)
+        print county
+
+
         if external_identifier_value:
-            str = "ocd-division/country/us/state:" + config.state_lower_abbreviation + "/county:" + county.lower()
+            str = "ocd-division/country:us/state:" + config.state_lower_abbreviation + "/county:" + county
             return str
             # ocd-division/country:us/state:nj/county:atlantic
         else:

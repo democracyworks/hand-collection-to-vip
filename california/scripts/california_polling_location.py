@@ -3,6 +3,7 @@ import time
 import config
 from time import strftime
 import hashlib
+from datetime import datetime
 
 class PollingLocationTxt(object):
     """
@@ -47,20 +48,23 @@ class PollingLocationTxt(object):
         # no direct relationship to any column
         return dirs
 
-    def get_start_time(self, time):
-        arr = time.split(" ")
-        hours = arr[0].split(":")[0] + ":" + arr[0].split(":")[1]
-        return hours + " " + "AM"
-
-    def get_end_time(self, time):
-        arr = time.split(" ")
-        hours = arr[0].split(":")[0] + ":" + arr[0].split(":")[1]
-        return hours + " " + "PM"
+    # def get_start_time(self, time):
+    #     arr = time.split(" ")
+    #     hours = arr[0].split(":")[0] + ":" + arr[0].split(":")[1]
+    #     return hours + " " + "AM"
+    #
+    # def get_end_time(self, time):
+    #     arr = time.split(" ")
+    #     hours = arr[0].split(":")[0] + ":" + arr[0].split(":")[1]
+    #     return hours + " " + "PM"
+    def get_time(self, time):
+        d = datetime.strptime(time, "%H:%M:%S")
+        return d.strftime("%I:%M %p")
 
     def get_hours(self, index, start_time, end_time):
-        print end_time
-        start_time = self.get_start_time(start_time)
-        end_time = self.get_end_time(end_time)
+
+        start_time = self.get_time(start_time)
+        end_time = self.get_time(end_time)
         return start_time + "-" + end_time
 
 

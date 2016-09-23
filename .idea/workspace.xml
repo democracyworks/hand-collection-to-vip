@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9515895-1d90-4fb4-8d64-9b170172ddcf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/output/arkansas_early_voting.zip" afterPath="$PROJECT_DIR$/arkansas/output/arkansas_early_voting.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/output/hawaii_early_voting.zip" afterPath="$PROJECT_DIR$/hawaii/output/hawaii_early_voting.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/idaho_early_voting.zip" afterPath="$PROJECT_DIR$/idaho/output/idaho_early_voting.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indiana/output/indiana_early_voting.zip" afterPath="$PROJECT_DIR$/indiana/output/indiana_early_voting.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/output/california_early_voting.zip" afterPath="$PROJECT_DIR$/california/output/california_early_voting.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/iowa_early_voting.zip" afterPath="$PROJECT_DIR$/iowa/output/iowa_early_voting.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nebraska/output/nebraska_early_voting.zip" afterPath="$PROJECT_DIR$/nebraska/output/nebraska_early_voting.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/output/nevada_early_voting.zip" afterPath="$PROJECT_DIR$/nevada/output/nevada_early_voting.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/output/wyoming_early_voting.zip" afterPath="$PROJECT_DIR$/wyoming/output/wyoming_early_voting.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/input/arkansas_early_voting_info.csv" afterPath="$PROJECT_DIR$/arkansas/input/arkansas_early_voting_info.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/output/data/locality.txt" afterPath="$PROJECT_DIR$/arkansas/output/data/locality.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/output/data/polling_location.txt" afterPath="$PROJECT_DIR$/arkansas/output/data/polling_location.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/output/data/schedule.txt" afterPath="$PROJECT_DIR$/arkansas/output/data/schedule.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/output/data/source.txt" afterPath="$PROJECT_DIR$/arkansas/output/data/source.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/output/data/state.txt" afterPath="$PROJECT_DIR$/arkansas/output/data/state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/output/election.csv" afterPath="$PROJECT_DIR$/arkansas/output/election.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/output/election.txt" afterPath="$PROJECT_DIR$/arkansas/output/election.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/output/intermediate_doc.csv" afterPath="$PROJECT_DIR$/arkansas/output/intermediate_doc.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/output/locality.csv" afterPath="$PROJECT_DIR$/arkansas/output/locality.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/output/locality.txt" afterPath="$PROJECT_DIR$/arkansas/output/locality.txt" />
@@ -23,119 +17,60 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/output/polling_location.txt" afterPath="$PROJECT_DIR$/arkansas/output/polling_location.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/output/schedule.csv" afterPath="$PROJECT_DIR$/arkansas/output/schedule.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/output/schedule.txt" afterPath="$PROJECT_DIR$/arkansas/output/schedule.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/output/source.txt" afterPath="$PROJECT_DIR$/arkansas/output/source.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/output/state.txt" afterPath="$PROJECT_DIR$/arkansas/output/state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/scripts/arkansas_locality.py" afterPath="$PROJECT_DIR$/arkansas/scripts/arkansas_locality.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/scripts/arkansas_polling_location.py" afterPath="$PROJECT_DIR$/arkansas/scripts/arkansas_polling_location.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arkansas/scripts/arkansas_schedule.py" afterPath="$PROJECT_DIR$/arkansas/scripts/arkansas_schedule.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/input/hawaii_early_voting_info.csv" afterPath="$PROJECT_DIR$/hawaii/input/hawaii_early_voting_info.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/output/data/locality.txt" afterPath="$PROJECT_DIR$/hawaii/output/data/locality.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/output/data/polling_location.txt" afterPath="$PROJECT_DIR$/hawaii/output/data/polling_location.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/output/data/schedule.txt" afterPath="$PROJECT_DIR$/hawaii/output/data/schedule.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/output/data/source.txt" afterPath="$PROJECT_DIR$/hawaii/output/data/source.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/output/data/state.txt" afterPath="$PROJECT_DIR$/hawaii/output/data/state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/output/intermediate_doc.csv" afterPath="$PROJECT_DIR$/hawaii/output/intermediate_doc.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/input/california_early_voting_info.csv" afterPath="$PROJECT_DIR$/california/input/california_early_voting_info.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/output/data/locality.txt" afterPath="$PROJECT_DIR$/california/output/data/locality.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/output/data/polling_location.txt" afterPath="$PROJECT_DIR$/california/output/data/polling_location.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/output/data/schedule.txt" afterPath="$PROJECT_DIR$/california/output/data/schedule.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/output/data/source.txt" afterPath="$PROJECT_DIR$/california/output/data/source.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/output/data/state.txt" afterPath="$PROJECT_DIR$/california/output/data/state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/output/intermediate_doc.csv" afterPath="$PROJECT_DIR$/california/output/intermediate_doc.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/output/locality.csv" afterPath="$PROJECT_DIR$/california/output/locality.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/output/locality.txt" afterPath="$PROJECT_DIR$/california/output/locality.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/output/polling_location.csv" afterPath="$PROJECT_DIR$/california/output/polling_location.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/output/polling_location.txt" afterPath="$PROJECT_DIR$/california/output/polling_location.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/output/schedule.csv" afterPath="$PROJECT_DIR$/california/output/schedule.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/output/schedule.txt" afterPath="$PROJECT_DIR$/california/output/schedule.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/output/source.txt" afterPath="$PROJECT_DIR$/california/output/source.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/output/state.txt" afterPath="$PROJECT_DIR$/california/output/state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/scripts/california_locality.py" afterPath="$PROJECT_DIR$/california/scripts/california_locality.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/california/scripts/california_polling_location.py" afterPath="$PROJECT_DIR$/california/scripts/california_polling_location.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/output/locality.csv" afterPath="$PROJECT_DIR$/hawaii/output/locality.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/output/locality.txt" afterPath="$PROJECT_DIR$/hawaii/output/locality.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/output/polling_location.csv" afterPath="$PROJECT_DIR$/hawaii/output/polling_location.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/output/polling_location.txt" afterPath="$PROJECT_DIR$/hawaii/output/polling_location.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/output/schedule.csv" afterPath="$PROJECT_DIR$/hawaii/output/schedule.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/output/schedule.txt" afterPath="$PROJECT_DIR$/hawaii/output/schedule.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/output/source.txt" afterPath="$PROJECT_DIR$/hawaii/output/source.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/output/state.txt" afterPath="$PROJECT_DIR$/hawaii/output/state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/scripts/hawaii_polling_location.py" afterPath="$PROJECT_DIR$/hawaii/scripts/hawaii_polling_location.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/input/idaho_early_voting_info.csv" afterPath="$PROJECT_DIR$/idaho/input/idaho_early_voting_info.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/data/election.txt" afterPath="$PROJECT_DIR$/idaho/output/data/election.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/data/locality.txt" afterPath="$PROJECT_DIR$/idaho/output/data/locality.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/data/polling_location.txt" afterPath="$PROJECT_DIR$/idaho/output/data/polling_location.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/data/schedule.txt" afterPath="$PROJECT_DIR$/idaho/output/data/schedule.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/data/source.txt" afterPath="$PROJECT_DIR$/idaho/output/data/source.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/data/state.txt" afterPath="$PROJECT_DIR$/idaho/output/data/state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/election.csv" afterPath="$PROJECT_DIR$/idaho/output/election.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/election.txt" afterPath="$PROJECT_DIR$/idaho/output/election.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/intermediate_doc.csv" afterPath="$PROJECT_DIR$/idaho/output/intermediate_doc.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/locality.csv" afterPath="$PROJECT_DIR$/idaho/output/locality.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/locality.txt" afterPath="$PROJECT_DIR$/idaho/output/locality.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/polling_location.csv" afterPath="$PROJECT_DIR$/idaho/output/polling_location.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/polling_location.txt" afterPath="$PROJECT_DIR$/idaho/output/polling_location.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/schedule.csv" afterPath="$PROJECT_DIR$/idaho/output/schedule.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/schedule.txt" afterPath="$PROJECT_DIR$/idaho/output/schedule.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/source.txt" afterPath="$PROJECT_DIR$/idaho/output/source.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/output/state.txt" afterPath="$PROJECT_DIR$/idaho/output/state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/scripts/idaho_election.py" afterPath="$PROJECT_DIR$/idaho/scripts/idaho_election.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idaho/scripts/idaho_polling_location.py" afterPath="$PROJECT_DIR$/idaho/scripts/idaho_polling_location.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indiana/output/data/locality.txt" afterPath="$PROJECT_DIR$/indiana/output/data/locality.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indiana/output/data/state.txt" afterPath="$PROJECT_DIR$/indiana/output/data/state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indiana/output/locality.csv" afterPath="$PROJECT_DIR$/indiana/output/locality.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indiana/output/locality.txt" afterPath="$PROJECT_DIR$/indiana/output/locality.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indiana/output/state.txt" afterPath="$PROJECT_DIR$/indiana/output/state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indiana/scripts/indiana_locality.py" afterPath="$PROJECT_DIR$/indiana/scripts/indiana_locality.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indiana/scripts/indiana_state.py" afterPath="$PROJECT_DIR$/indiana/scripts/indiana_state.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/data/election.txt" afterPath="$PROJECT_DIR$/iowa/output/data/election.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hawaii/scripts/hawaii_locality.py" afterPath="$PROJECT_DIR$/hawaii/scripts/hawaii_locality.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/illinois/output/locality.csv" afterPath="$PROJECT_DIR$/illinois/output/locality.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/illinois/output/locality.txt" afterPath="$PROJECT_DIR$/illinois/output/locality.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/illinois/scripts/illinois_locality.py" afterPath="$PROJECT_DIR$/illinois/scripts/illinois_locality.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/data/locality.txt" afterPath="$PROJECT_DIR$/iowa/output/data/locality.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/data/polling_location.txt" afterPath="$PROJECT_DIR$/iowa/output/data/polling_location.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/data/schedule.txt" afterPath="$PROJECT_DIR$/iowa/output/data/schedule.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/data/source.txt" afterPath="$PROJECT_DIR$/iowa/output/data/source.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/data/state.txt" afterPath="$PROJECT_DIR$/iowa/output/data/state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/election.csv" afterPath="$PROJECT_DIR$/iowa/output/election.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/election.txt" afterPath="$PROJECT_DIR$/iowa/output/election.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/intermediate_doc.csv" afterPath="$PROJECT_DIR$/iowa/output/intermediate_doc.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/locality.csv" afterPath="$PROJECT_DIR$/iowa/output/locality.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/locality.txt" afterPath="$PROJECT_DIR$/iowa/output/locality.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/polling_location.csv" afterPath="$PROJECT_DIR$/iowa/output/polling_location.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/polling_location.txt" afterPath="$PROJECT_DIR$/iowa/output/polling_location.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/schedule.csv" afterPath="$PROJECT_DIR$/iowa/output/schedule.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/schedule.txt" afterPath="$PROJECT_DIR$/iowa/output/schedule.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/source.txt" afterPath="$PROJECT_DIR$/iowa/output/source.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/output/state.txt" afterPath="$PROJECT_DIR$/iowa/output/state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/scripts/iowa_election.py" afterPath="$PROJECT_DIR$/iowa/scripts/iowa_election.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/scripts/iowa_polling_location.py" afterPath="$PROJECT_DIR$/iowa/scripts/iowa_polling_location.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/input/nevada_early_voting_info.csv" afterPath="$PROJECT_DIR$/nevada/input/nevada_early_voting_info.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/output/data/election.txt" afterPath="$PROJECT_DIR$/nevada/output/data/election.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iowa/scripts/iowa_locality.py" afterPath="$PROJECT_DIR$/iowa/scripts/iowa_locality.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kansas/output/locality.csv" afterPath="$PROJECT_DIR$/kansas/output/locality.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kansas/output/locality.txt" afterPath="$PROJECT_DIR$/kansas/output/locality.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kansas/scripts/kansas_locality.py" afterPath="$PROJECT_DIR$/kansas/scripts/kansas_locality.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maine/output/locality.csv" afterPath="$PROJECT_DIR$/maine/output/locality.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maine/output/locality.txt" afterPath="$PROJECT_DIR$/maine/output/locality.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maine/scripts/maine_locality.py" afterPath="$PROJECT_DIR$/maine/scripts/maine_locality.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nebraska/output/data/locality.txt" afterPath="$PROJECT_DIR$/nebraska/output/data/locality.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nebraska/output/locality.csv" afterPath="$PROJECT_DIR$/nebraska/output/locality.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nebraska/output/locality.txt" afterPath="$PROJECT_DIR$/nebraska/output/locality.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nebraska/scripts/nebraska_locality.py" afterPath="$PROJECT_DIR$/nebraska/scripts/nebraska_locality.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/output/data/locality.txt" afterPath="$PROJECT_DIR$/nevada/output/data/locality.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/output/data/polling_location.txt" afterPath="$PROJECT_DIR$/nevada/output/data/polling_location.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/output/data/schedule.txt" afterPath="$PROJECT_DIR$/nevada/output/data/schedule.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/output/data/source.txt" afterPath="$PROJECT_DIR$/nevada/output/data/source.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/output/data/state.txt" afterPath="$PROJECT_DIR$/nevada/output/data/state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/output/intermediate_doc.csv" afterPath="$PROJECT_DIR$/nevada/output/intermediate_doc.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/output/locality.csv" afterPath="$PROJECT_DIR$/nevada/output/locality.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/output/locality.txt" afterPath="$PROJECT_DIR$/nevada/output/locality.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/output/polling_location.csv" afterPath="$PROJECT_DIR$/nevada/output/polling_location.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/output/polling_location.txt" afterPath="$PROJECT_DIR$/nevada/output/polling_location.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/output/schedule.csv" afterPath="$PROJECT_DIR$/nevada/output/schedule.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/output/schedule.txt" afterPath="$PROJECT_DIR$/nevada/output/schedule.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/output/source.txt" afterPath="$PROJECT_DIR$/nevada/output/source.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/output/state.txt" afterPath="$PROJECT_DIR$/nevada/output/state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/scripts/nevada_locality.py" afterPath="$PROJECT_DIR$/nevada/scripts/nevada_locality.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/scripts/nevada_polling_location.py" afterPath="$PROJECT_DIR$/nevada/scripts/nevada_polling_location.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nevada/scripts/nevada_schedule.py" afterPath="$PROJECT_DIR$/nevada/scripts/nevada_schedule.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/north_dakota/output/intermediate_doc.csv" afterPath="$PROJECT_DIR$/north_dakota/output/intermediate_doc.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/north_dakota/output/locality.csv" afterPath="$PROJECT_DIR$/north_dakota/output/locality.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/north_dakota/output/locality.txt" afterPath="$PROJECT_DIR$/north_dakota/output/locality.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/north_dakota/output/polling_location.csv" afterPath="$PROJECT_DIR$/north_dakota/output/polling_location.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/north_dakota/output/polling_location.txt" afterPath="$PROJECT_DIR$/north_dakota/output/polling_location.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/north_dakota/output/schedule.csv" afterPath="$PROJECT_DIR$/north_dakota/output/schedule.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/north_dakota/output/schedule.txt" afterPath="$PROJECT_DIR$/north_dakota/output/schedule.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/north_dakota/output/state.txt" afterPath="$PROJECT_DIR$/north_dakota/output/state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/north_dakota/scripts/nd_polling_location.py" afterPath="$PROJECT_DIR$/north_dakota/scripts/nd_polling_location.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/north_dakota/scripts/nd_locality.py" afterPath="$PROJECT_DIR$/north_dakota/scripts/nd_locality.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/output/data/locality.txt" afterPath="$PROJECT_DIR$/wyoming/output/data/locality.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/output/data/polling_location.txt" afterPath="$PROJECT_DIR$/wyoming/output/data/polling_location.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/output/data/schedule.txt" afterPath="$PROJECT_DIR$/wyoming/output/data/schedule.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/output/data/source.txt" afterPath="$PROJECT_DIR$/wyoming/output/data/source.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/output/data/state.txt" afterPath="$PROJECT_DIR$/wyoming/output/data/state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/output/election.csv" afterPath="$PROJECT_DIR$/wyoming/output/election.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/output/intermediate_doc.csv" afterPath="$PROJECT_DIR$/wyoming/output/intermediate_doc.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/output/election.txt" afterPath="$PROJECT_DIR$/wyoming/output/election.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/output/locality.csv" afterPath="$PROJECT_DIR$/wyoming/output/locality.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/output/locality.txt" afterPath="$PROJECT_DIR$/wyoming/output/locality.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/output/polling_location.csv" afterPath="$PROJECT_DIR$/wyoming/output/polling_location.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/output/polling_location.txt" afterPath="$PROJECT_DIR$/wyoming/output/polling_location.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/output/schedule.csv" afterPath="$PROJECT_DIR$/wyoming/output/schedule.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/output/schedule.txt" afterPath="$PROJECT_DIR$/wyoming/output/schedule.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/output/source.txt" afterPath="$PROJECT_DIR$/wyoming/output/source.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/output/state.txt" afterPath="$PROJECT_DIR$/wyoming/output/state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/scripts/wyoming_election.py" afterPath="$PROJECT_DIR$/wyoming/scripts/wyoming_election.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/scripts/wyoming_locality.py" afterPath="$PROJECT_DIR$/wyoming/scripts/wyoming_locality.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/scripts/wyoming_polling_location.py" afterPath="$PROJECT_DIR$/wyoming/scripts/wyoming_polling_location.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wyoming/scripts/wyoming_schedule.py" afterPath="$PROJECT_DIR$/wyoming/scripts/wyoming_schedule.py" />
     </list>
     <ignored path="hand-collection-to-vip.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -155,51 +90,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="polling_location.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iowa/output/polling_location.txt">
+      <file leaf-file-name="wyoming_polling_location.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wyoming/scripts/wyoming_polling_location.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="intermediate_doc.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/north_dakota/output/intermediate_doc.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="polling_location.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/north_dakota/output/polling_location.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="state.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/north_dakota/output/state.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nd_polling_location.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/north_dakota/scripts/nd_polling_location.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+            <state relative-caret-position="540">
+              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -207,8 +102,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="state.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iowa/output/state.txt">
+      <file leaf-file-name="wyoming_election.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wyoming/scripts/wyoming_election.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="election.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wyoming/output/election.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="98" selection-start-line="1" selection-start-column="98" selection-end-line="1" selection-end-column="98" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="polling_location.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wyoming/output/polling_location.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -217,8 +132,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="source.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iowa/output/source.txt">
+      <file leaf-file-name="state.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wyoming/output/state.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="state.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wyoming/output/state.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="polling_location.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wyoming/output/data/polling_location.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="locality.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wyoming/output/data/locality.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -228,33 +173,11 @@
         </entry>
       </file>
       <file leaf-file-name="election.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iowa/output/election.txt">
+        <entry file="file://$PROJECT_DIR$/wyoming/output/data/election.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="101" selection-start-line="1" selection-start-column="101" selection-end-line="1" selection-end-column="101" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="iowa_election.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iowa/scripts/iowa_election.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="iowa_polling_location.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iowa/scripts/iowa_polling_location.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -267,36 +190,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/north_dakota/scripts/nd_schedule.py" />
-        <option value="$PROJECT_DIR$/indiana/output/polling_location.txt" />
-        <option value="$PROJECT_DIR$/indiana/output/source.txt" />
-        <option value="$PROJECT_DIR$/indiana/scripts/indiana_election.py" />
-        <option value="$PROJECT_DIR$/indiana/output/election.txt" />
-        <option value="$PROJECT_DIR$/illinois/output/polling_location.txt" />
-        <option value="$PROJECT_DIR$/illinois/output/state.txt" />
-        <option value="$PROJECT_DIR$/indiana/scripts/indiana_polling_location.py" />
-        <option value="$PROJECT_DIR$/indiana/scripts/indiana_schedule.py" />
-        <option value="$PROJECT_DIR$/indiana/scripts/indiana_state.py" />
-        <option value="$PROJECT_DIR$/indiana/scripts/indiana_locality.py" />
-        <option value="$PROJECT_DIR$/indiana/output/state.txt" />
-        <option value="$PROJECT_DIR$/arkansas/scripts/arkansas_polling_location.py" />
-        <option value="$PROJECT_DIR$/arkansas/scripts/arkansas_locality.py" />
-        <option value="$PROJECT_DIR$/nevada/scripts/nevada_polling_location.py" />
-        <option value="$PROJECT_DIR$/nevada/output/polling_location.txt" />
-        <option value="$PROJECT_DIR$/nevada/scripts/nevada_locality.py" />
-        <option value="$PROJECT_DIR$/nevada/scripts/nevada_schedule.py" />
-        <option value="$PROJECT_DIR$/nevada/output/state.txt" />
-        <option value="$PROJECT_DIR$/nevada/output/source.txt" />
-        <option value="$PROJECT_DIR$/wyoming/scripts/wyoming_polling_location.py" />
         <option value="$PROJECT_DIR$/wyoming/output/polling_location.txt" />
-        <option value="$PROJECT_DIR$/wyoming/scripts/wyoming_locality.py" />
         <option value="$PROJECT_DIR$/wyoming/scripts/wyoming_schedule.py" />
-        <option value="$PROJECT_DIR$/wyoming/output/election.txt" />
         <option value="$PROJECT_DIR$/wyoming/output/state.txt" />
         <option value="$PROJECT_DIR$/wyoming/output/source.txt" />
         <option value="$PROJECT_DIR$/arkansas/output/polling_location.txt" />
         <option value="$PROJECT_DIR$/arkansas/output/source.txt" />
-        <option value="$PROJECT_DIR$/arkansas/output/state.txt" />
         <option value="$PROJECT_DIR$/arkansas/scripts/arkansas_schedule.py" />
         <option value="$PROJECT_DIR$/hawaii/output/polling_location.txt" />
         <option value="$PROJECT_DIR$/hawaii/scripts/hawaii_polling_location.py" />
@@ -318,11 +217,34 @@
         <option value="$PROJECT_DIR$/north_dakota/scripts/nd_polling_location.py" />
         <option value="$PROJECT_DIR$/north_dakota/output/polling_location.txt" />
         <option value="$PROJECT_DIR$/north_dakota/output/state.txt" />
+        <option value="$PROJECT_DIR$/iowa/scripts/iowa_locality.py" />
+        <option value="$PROJECT_DIR$/nevada/scripts/nevada_locality.py" />
+        <option value="$PROJECT_DIR$/nebraska/scripts/nebraska_locality.py" />
+        <option value="$PROJECT_DIR$/north_dakota/scripts/nd_locality.py" />
+        <option value="$PROJECT_DIR$/wyoming/scripts/wyoming_locality.py" />
+        <option value="$PROJECT_DIR$/wyoming/output/locality.txt" />
+        <option value="$PROJECT_DIR$/south_dakota/scripts/config.py" />
+        <option value="$PROJECT_DIR$/south_dakota/scripts/sd_schedule.py" />
+        <option value="$PROJECT_DIR$/south_dakota/scripts/sd_polling_location.py" />
+        <option value="$PROJECT_DIR$/california/scripts/california_locality.py" />
+        <option value="$PROJECT_DIR$/california/output/source.txt" />
+        <option value="$PROJECT_DIR$/california/output/state.txt" />
+        <option value="$PROJECT_DIR$/california/output/schedule.txt" />
+        <option value="$PROJECT_DIR$/kansas/scripts/kansas_locality.py" />
+        <option value="$PROJECT_DIR$/hawaii/scripts/hawaii_locality.py" />
+        <option value="$PROJECT_DIR$/arkansas/scripts/arkansas_polling_location.py" />
+        <option value="$PROJECT_DIR$/arkansas/output/state.txt" />
+        <option value="$PROJECT_DIR$/illinois/scripts/illinois_locality.py" />
+        <option value="$PROJECT_DIR$/maine/scripts/maine_locality.py" />
+        <option value="$PROJECT_DIR$/north_dakota/output/locality.txt" />
+        <option value="$PROJECT_DIR$/california/scripts/california_polling_location.py" />
+        <option value="$PROJECT_DIR$/wyoming/scripts/wyoming_election.py" />
+        <option value="$PROJECT_DIR$/wyoming/output/election.txt" />
+        <option value="$PROJECT_DIR$/wyoming/scripts/wyoming_polling_location.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="33" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="814" />
@@ -355,6 +277,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+        <subPane subId="Default" />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -370,6 +296,78 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wyoming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wyoming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="output" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wyoming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="output" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wyoming" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -422,12 +420,234 @@
               <option name="myItemId" value="north_dakota" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="output" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="north_dakota" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="output" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kansas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kansas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="output" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kansas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hawaii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hawaii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="output" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hawaii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="output" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arkansas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arkansas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="output" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arkansas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files" />
-        <subPane subId="Default" />
       </pane>
       <pane id="Scratches">
         <subPane />
@@ -440,37 +660,20 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/north_dakota/scripts/nd_polling_location.py" />
     <property name="prop_add_unversioned_files" value="true" />
   </component>
-  <component name="RunManager" selected="Python.nd_state">
-    <configuration default="false" name="iowa_source" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.wyoming_election">
+    <configuration default="false" name="illinois_locality" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/iowa/scripts" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/illinois/scripts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hand-collection-to-vip" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/iowa/scripts/iowa_source.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="iowa_election" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/iowa/scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hand-collection-to-vip" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/iowa/scripts/iowa_election.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/illinois/scripts/illinois_locality.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -492,36 +695,53 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="nd_schedule" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="california_polling_location" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/north_dakota/scripts" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/california/scripts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hand-collection-to-vip" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/north_dakota/scripts/nd_schedule.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/california/scripts/california_polling_location.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="nd_state" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="california_schedule" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/north_dakota/scripts" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/california/scripts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hand-collection-to-vip" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/north_dakota/scripts/nd_state.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/california/scripts/california_schedule.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="wyoming_election" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wyoming/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="hand-collection-to-vip" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wyoming/scripts/wyoming_election.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -790,19 +1010,19 @@
       <item index="4" class="java.lang.String" itemvalue="Python.ME Election" />
       <item index="5" class="java.lang.String" itemvalue="Python.ME State" />
       <item index="6" class="java.lang.String" itemvalue="Python.ME Source" />
-      <item index="7" class="java.lang.String" itemvalue="Python.iowa_source" />
-      <item index="8" class="java.lang.String" itemvalue="Python.iowa_election" />
-      <item index="9" class="java.lang.String" itemvalue="Python.nd_locality" />
-      <item index="10" class="java.lang.String" itemvalue="Python.nd_schedule" />
-      <item index="11" class="java.lang.String" itemvalue="Python.nd_state" />
+      <item index="7" class="java.lang.String" itemvalue="Python.illinois_locality" />
+      <item index="8" class="java.lang.String" itemvalue="Python.nd_locality" />
+      <item index="9" class="java.lang.String" itemvalue="Python.california_polling_location" />
+      <item index="10" class="java.lang.String" itemvalue="Python.california_schedule" />
+      <item index="11" class="java.lang.String" itemvalue="Python.wyoming_election" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.nd_state" />
-        <item index="1" class="java.lang.String" itemvalue="Python.nd_schedule" />
-        <item index="2" class="java.lang.String" itemvalue="Python.nd_locality" />
-        <item index="3" class="java.lang.String" itemvalue="Python.iowa_election" />
-        <item index="4" class="java.lang.String" itemvalue="Python.iowa_source" />
+        <item index="0" class="java.lang.String" itemvalue="Python.wyoming_election" />
+        <item index="1" class="java.lang.String" itemvalue="Python.california_schedule" />
+        <item index="2" class="java.lang.String" itemvalue="Python.california_polling_location" />
+        <item index="3" class="java.lang.String" itemvalue="Python.nd_locality" />
+        <item index="4" class="java.lang.String" itemvalue="Python.illinois_locality" />
       </list>
     </recent_temporary>
   </component>
@@ -823,7 +1043,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="33" y="23" width="1440" height="814" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="814" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21000704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -831,18 +1051,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3199446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24945927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39750692" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3199446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39750692" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -882,61 +1102,365 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nevada/scripts/nevada_schedule.py">
+    <entry file="file://$PROJECT_DIR$/north_dakota/output/state.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="163" column="132" selection-start-line="163" selection-start-column="132" selection-end-line="163" selection-end-column="132" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iowa/output/locality.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="69" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iowa/scripts/iowa_locality.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nevada/scripts/nevada_locality.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="223" column="109" selection-start-line="223" selection-start-column="109" selection-end-line="223" selection-end-column="109" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="690">
+          <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nevada/output/election.txt">
+    <entry file="file://$PROJECT_DIR$/nebraska/scripts/nebraska_locality.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nevada/output/locality.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/north_dakota/output/polling_location.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nevada/scripts/nevada_source.py">
+    <entry file="file://$PROJECT_DIR$/nebraska/scripts/nebraska_election.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nevada/output/source.txt">
+    <entry file="file://$PROJECT_DIR$/iowa/scripts/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/south_dakota/scripts/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/south_dakota/scripts/sd_schedule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3375">
+          <caret line="227" column="46" selection-start-line="227" selection-start-column="46" selection-end-line="227" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/south_dakota/scripts/sd_polling_location.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3930">
+          <caret line="262" column="4" selection-start-line="262" selection-start-column="4" selection-end-line="262" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/california/scripts/california_locality.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/california/output/source.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/california/output/state.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+          <caret line="1" column="573" selection-start-line="1" selection-start-column="573" selection-end-line="1" selection-end-column="573" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/california/output/locality.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/california/output/schedule.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3105">
+          <caret line="207" column="73" selection-start-line="207" selection-start-column="73" selection-end-line="207" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hawaii/output/locality.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hawaii/scripts/hawaii_locality.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arkansas/scripts/arkansas_polling_location.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arkansas/output/state.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arkansas/output/data/schedule.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-660">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/california/output/data/schedule.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kansas/scripts/kansas_locality.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="77" column="40" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wyoming/output/locality.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="103" selection-start-line="8" selection-start-column="103" selection-end-line="8" selection-end-column="103" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nevada/scripts/nevada_polling_location.py">
+    <entry file="file://$PROJECT_DIR$/illinois/scripts/illinois_locality.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2597">
-          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+        <state relative-caret-position="135">
+          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/illinois/output/polling_location.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/illinois/output/locality.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kansas/output/locality.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maine/scripts/maine_locality.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
           <folding>
-            <element signature="e#0#19#0" expanded="false" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nevada/output/state.txt">
+    <entry file="file://$PROJECT_DIR$/maine/output/locality.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/north_dakota/scripts/nd_locality.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/north_dakota/output/locality.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/north_dakota/output/data/polling_location.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/north_dakota/output/data/locality.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wyoming/scripts/wyoming_locality.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="61" column="106" selection-start-line="61" selection-start-column="106" selection-end-line="61" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/california/scripts/california_schedule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/california/scripts/california_polling_location.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/california/output/polling_location.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-242">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hawaii/output/data/election.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wyoming/output/data/locality.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wyoming/output/data/election.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wyoming/output/election.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="98" selection-start-line="1" selection-start-column="98" selection-end-line="1" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wyoming/output/polling_location.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wyoming/output/state.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wyoming/output/state.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wyoming/output/data/polling_location.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wyoming/scripts/wyoming_polling_location.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kansas/output/election.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -952,362 +1476,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wyoming/scripts/wyoming_polling_location.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wyoming/scripts/wyoming_locality.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="244" column="15" selection-start-line="244" selection-start-column="15" selection-end-line="247" selection-end-column="127" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wyoming/scripts/wyoming_schedule.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="161" column="123" selection-start-line="161" selection-start-column="123" selection-end-line="161" selection-end-column="123" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wyoming/scripts/wyoming_election.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-602">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wyoming/output/election.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="97" selection-start-line="1" selection-start-column="97" selection-end-line="1" selection-end-column="97" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wyoming/output/source.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wyoming/scripts/wyoming_state.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wyoming/output/state.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wyoming/output/polling_location.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="102" selection-start-line="8" selection-start-column="102" selection-end-line="8" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkansas/output/source.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hawaii/scripts/hawaii_schedule.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nevada/output/polling_location.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="97" column="71" selection-start-line="97" selection-start-column="70" selection-end-line="97" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nevada/output/schedule.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hawaii/output/polling_location.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkansas/scripts/arkansas_schedule.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="158" column="126" selection-start-line="158" selection-start-column="126" selection-end-line="158" selection-end-column="126" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkansas/output/schedule.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkansas/output/polling_location.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkansas/output/state.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arkansas/scripts/arkansas_polling_location.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="226" column="62" selection-start-line="226" selection-start-column="62" selection-end-line="226" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hawaii/scripts/hawaii_polling_location.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hawaii/output/source.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hawaii/scripts/hawaii_state.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hawaii/output/state.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/illinois/output/polling_location.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2880">
-          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/idaho/output/state.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/idaho/scripts/idaho_polling_location.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="50" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/idaho/output/polling_location.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="96" selection-start-line="14" selection-start-column="96" selection-end-line="14" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/idaho/output/source.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/idaho/scripts/idaho_locality.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/idaho/output/locality.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/idaho/output/election.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="87" selection-start-line="1" selection-start-column="87" selection-end-line="1" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/idaho/scripts/idaho_election.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="150">
           <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/indiana/output/polling_location.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iowa/scripts/iowa_polling_location.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iowa/output/state.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iowa/output/source.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iowa/scripts/iowa_election.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iowa/output/election.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="101" selection-start-line="1" selection-start-column="101" selection-end-line="1" selection-end-column="101" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iowa/output/polling_location.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/north_dakota/output/intermediate_doc.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/north_dakota/scripts/nd_polling_location.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/north_dakota/output/polling_location.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/north_dakota/output/state.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

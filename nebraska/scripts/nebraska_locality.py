@@ -47,14 +47,7 @@ class LocalityTxt(object):
 
     def get_external_identifier_value(self, external_identifier_value):
         """Extracts external identifier (ocd-division)."""
-        county = external_identifier_value.split(" ")
-        county = county[len(county)-1]
-        if external_identifier_value:
-            str = "ocd-division/country/us/state:" + config.state_lower_abbreviation + "/county:" + county.lower()
-            return str
-            # ocd-division/country:us/state:nj/county:atlantic
-        else:
-            return ''
+        return external_identifier_value
 
     def create_name(self, index, division_description ):
         """
