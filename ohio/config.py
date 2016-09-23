@@ -13,7 +13,9 @@ utc_offset_5 = ''
 
 early_voting = 'true'
 
-output = '/home/acg/democracyworks/hand-collection-to-vip/ohio/output/'
+output = '/Users/danielgilberg/Development/hand-collection-to-vip/ohio/output/'
+
+input = '/Users/danielgilberg/Development/hand-collection-to-vip/ohio/input/'
 
 source_output = "/home/acg/democracyworks/hand-collection-to-vip/ohio/output/source.txt"
 

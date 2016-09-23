@@ -31,7 +31,7 @@ class PollingLocationTxt(object):
             street_address = address_1
 
         if not pd.isnull(address_2):
-            street_address =  str(street_address) + ' ' + str(address_2)
+            street_address =  str(street_address) + ', ' + str(address_2)
         else:
             street_address = street_address
 
