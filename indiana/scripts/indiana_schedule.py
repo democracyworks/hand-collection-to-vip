@@ -171,7 +171,8 @@ class ScheduleTxt(object):
         sch.drop(['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'notes',
                 'index', 'address_line', 'directions',
-                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'source_id', 'dirs'], inplace=True,
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'source_id', 'dirs',
+                  'subject_to_change'], inplace=True,
                  axis=1)
 
         # hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id,
@@ -211,11 +212,10 @@ if __name__ == '__main__':
 
 
     colnames = ['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'dirs','city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'notes',
-                'index', 'address_line', 'directions',
+                'start_time', 'end_time', 'start_date', 'end_date', 'subject_to_change','notes', 'index', 'address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'source_id']
 
-    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
 
     # early_voting_df['index'] = early_voting_df.index + 1
 

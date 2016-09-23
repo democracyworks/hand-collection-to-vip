@@ -1,9 +1,13 @@
 address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+"112 S. 2nd Street, Room A, Decatur, IN 46733",,08:00 AM - 04:30 PM,,ho82443877,false,true,,,,poll87086718
+"1403 Winchester Rd., Decatur, IN 46733",,09:00 AM - 04:00 PM,,ho38879117,false,true,,,,poll86613747
+"950 US Hwy 27 S., Berne , IN 46711",,09:00 AM - 04:00 PM,,ho14393316,false,true,,,,poll61719783
+"1300 Mercer Ave., Decatur, IN 46733",,10:00 AM - 04:00 PM,,ho65076589,false,true,,,,poll29874758
+"1350 W. Main St., Berne , IN 46711",,12:00 PM - 08:00 PM,,ho87903406,false,true,,,,poll76936264
 "1 E Main Street, Suite 172, Fort Wayne, IN 46802",,08:00 AM - 04:30 PM,,ho43846663,false,true,,,,poll84961277
 "5630 Coventry Lane, Fort Wayne, IN 46804",,10:00 AM - 09:00 PM,,ho12228860,false,true,,,,poll52039742
 "536 E Dupont Rd., Fort Wayne, IN 46825",,10:00 AM - 09:00 PM,,ho52790979,false,true,,,,poll64158121
-"6600 E. State Blvd, Fort Wayne, IN 46815",,10:00 AM - 09:00 PM,,ho55089576,false,true,,,,poll51654258
-"6600E. State Blvd, Fort Wayne, IN 46815",,10:00 AM - 06:00 PM,,ho4908926,false,true,,,,poll24728509
+"6600E. State Blvd, Fort Wayne, IN 46815",,10:00 AM - 09:00 PM,,ho4908926,false,true,,,,poll24728509
 "3030 E. Paulding Rd., Fort Wayne, IN 46816",,10:00 AM - 09:00 PM,,ho80532197,false,true,,,,poll23681946
 "234 Washington Street, Columbus, IN 47201",,08:00 AM - 05:00 PM,,ho35427164,false,true,,,,poll26901972
 "739 22nd St., Columbus, IN 47201",,11:00 AM - 07:00 PM,,ho48273758,false,true,,,,poll90925176
@@ -13,9 +17,28 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "110 W. Washington St., First Floor, Hartford City, IN 47348",,08:00 AM - 04:00 PM,,ho61246916,false,true,,,,poll76202890
 "339 S Main St, Montpelier, IN 47359",,08:00 AM - 12:00 PM,,ho13033225,false,true,,,,poll99099183
 "212 Courthouse Square, Lebanon, IN 46052",,08:00 AM - 04:00 PM,,ho86920791,false,true,,,,poll87996016
+"6210 S 700 E, Whitestown, IN 46075",,08:00 AM - 03:00 PM,,ho27594073,false,true,,,,poll47262659
+"515 Crown Point Dr., Lebanon, IN 46052",,08:00 AM - 03:00 PM,,ho50645378,false,true,,,,poll89763124
+"1300 E 100 S, Lebanon, IN 46052",,08:00 AM - 03:00 PM,,ho77494619,false,true,,,,poll65153940
+"1100 W Oak St, Zionsville, IN 46077",,08:00 AM - 03:00 PM,,ho86817340,false,true,,,,poll49308149
+"4775 W 116th St, Zionsville, IN 46077",,01:00 PM - 08:00 PM,,ho71699377,false,true,,,,poll53562204
+"124 N Market St., Thorntown, IN 46071",,01:00 PM - 08:00 PM,,ho29533977,false,true,,,,poll16333589
+"421 E Main St., Jamestown, IN 46147",,01:00 PM - 08:00 PM,,ho8882073,false,true,,,,poll35496501
+"5745 N 500 E, Lebanon, IN 46052",,01:00 PM - 08:00 PM,,ho96567526,false,true,,,,poll29662930
 "Courthouse, 1st Floor, 20 East Main Street, Nashville, IN 47448",,08:00 AM - 04:00 PM,,ho44553985,false,true,,,,poll10426660
 "101 West Main Street, Suite 206, Delphi, IN 46923",,08:00 AM - 12:00 PM,,ho62746939,false,true,,,,poll80163971
+"425 E. 5th St., Burlington, IN 46915",,08:00 AM - 02:00 PM,,ho88073189,false,true,,,,poll86577808
+"658 E 871 N, Burrows, IN 46916",,08:00 AM - 02:00 PM,,ho33576323,false,true,,,,poll48732254
+"102 N. Fourth St., Flora, IN 46929",,08:00 AM - 02:00 PM,,ho39250823,false,true,,,,poll59550399
+"4583 N. St. Rd. 29, Camden, IN 46917",,08:00 AM - 02:00 PM,,ho78783257,false,true,,,,poll37856629
+"10892 W. 825 N., Monticello, IN 47960",,08:00 AM - 02:00 PM,,ho1523985,false,true,,,,poll91236249
 "200 Court Park, Room 103, Logansport, IN 46947",,09:00 AM - 04:00 PM,,ho1313280,false,true,,,,poll86551842
+"115 S 6th St,  Logansport , IN 46947",,10:00 AM - 07:00 PM,,ho66394904,false,true,,,,poll96724000
+"104 E. North St., Royal Center, IN 46978",,10:00 AM - 07:00 PM,,ho54739570,false,true,,,,poll5127173
+"210 S Depot St, Walton, IN 46994",,10:00 AM - 07:00 PM,,ho50730886,false,true,,,,poll48971007
+"101 S Park Rd, Galveston, IN 46932",,10:00 AM - 07:00 PM,,ho89912559,false,true,,,,poll42214028
+"3900 E Market St,  Logansport , IN 46947",,10:00 AM - 07:00 PM,,ho2757739,false,true,,,,poll90804862
+"2281 E County Road 125 N,  Logansport , IN 46947",,10:00 AM - 07:00 PM,,ho70822700,false,true,,,,poll21217639
 "501 E. Court Avenue, Room 131, Jeffersonville, IN 47130",,09:00 AM - 04:00 PM,,ho74899222,false,true,,,,poll56405659
 "502 E. Court Avenue, Room 131, Jeffersonville, IN 47130",,09:00 AM - 04:00 PM,,ho43925291,false,true,,,,poll26510454
 "503 E. Court Avenue, Room 131, Jeffersonville, IN 47130",,09:00 AM - 04:00 PM,,ho12733491,false,true,,,,poll90370679
@@ -24,6 +47,16 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "506 E. Court Avenue, Room 131, Jeffersonville, IN 47130",,09:00 AM - 04:00 PM,,ho34844168,false,true,,,,poll61569586
 "507 E. Court Avenue, Room 131, Jeffersonville, IN 47130",,09:00 AM - 12:00 PM,,ho20053029,false,true,,,,poll37729392
 "609 E. National Ave., Room 211, Brazil, IN 47834",,08:00 AM - 12:00 PM,,ho76662637,false,true,,,,poll67806366
+"5230 E Washington St, Bowling Green, IN 47833",,09:00 AM - 04:00 PM,,ho19830051,false,true,,,,poll86583171
+"500 S Center St, Cory, IN 47846",,09:00 AM - 04:00 PM,,ho79911779,false,true,,,,poll50876013
+"265 Courthouse Square, Frankfort, IN 46041",,08:00 AM - 04:00 PM,,ho64913782,false,true,,,,poll55913517
+"401 W. Walnut Street, Frankfort, IN 46041",,12:00 PM - 07:00 PM,,ho94087301,false,true,,,,poll58530238
+"2400 E. Wabash Street, Frankfort, IN 46041",,12:00 PM - 07:00 PM,,ho89300322,false,true,,,,poll79916718
+"350 E. Main Street, rossville, IN 46065",,12:00 PM - 07:00 PM,,ho22862419,false,true,,,,poll87235998
+"113 N. Main Street, Kirklin, IN 46050",,12:00 PM - 07:00 PM,,ho13757891,false,true,,,,poll47318907
+"2489 N. State Road 29, Michigantown, IN 46057",,12:00 PM - 07:00 PM,,ho7762455,false,true,,,,poll18322248
+"502 W. Jackson Street, Mulberry, IN 46058",,12:00 PM - 07:00 PM,,ho87125905,false,true,,,,poll35611469
+"715 Judicial Plaza Drive, English, IN 47118",,08:00 AM - 06:00 PM,,ho3702649,false,true,,,,poll58570939
 "200 E Walnut St, Washington, IN 47501",,08:00 AM - 04:00 PM,,ho24991982,false,true,,,,poll86095326
 "215 W. High Street, Lawrenceburg, IN 47025",,09:00 AM - 12:00 PM,,ho17202790,false,true,,,,poll488939
 "150 Courthouse Square, Suite 244, Greensburg, IN 47240",,08:00 AM - 04:00 PM,,ho23394722,false,true,,,,poll68204573
@@ -58,21 +91,191 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "2797 Charlestown Road, New Albany, IN 47150",,08:00 AM - 04:00 PM,,ho289680,false,true,,,,poll20660639
 "2043 Silver Street, New Albany, IN 47150",,08:00 AM - 04:00 PM,,ho69073040,false,true,,,,poll46002728
 "2044 Silver Street, New Albany, IN 47150",,08:00 AM - 04:00 PM,,ho93460939,false,true,,,,poll23500297
+"301 4th St., Covington, IN 47932",,08:00 AM - 12:00 PM,,ho90587306,false,true,,,,poll3316669
+"459 Main Street, Brookville, IN 47012",,08:30 AM - 12:00 PM,,ho5267072,false,true,,,,poll46421344
 "815 N Main St, Rochester, IN 46975",,08:00 AM - 12:00 PM,,ho6612926,false,true,,,,poll60259236
 "101 N. Main St., Princeton, IN 47670",,09:00 AM - 04:00 PM,,ho67428094,false,true,,,,poll19763318
 "101 E. 4th Street, Room B-9, Marion, IN 46952",,08:00 AM - 04:00 PM,,ho84786428,false,true,,,,poll79884962
 "1 E. Main St., Bloomfield, IN 47424",,08:00 AM - 04:00 PM,,ho90370311,false,true,,,,poll99733605
 "1 Hamilton County Square, Suite 106, Noblesville, IN 46060",,08:00 AM - 04:30 PM,,ho55288363,false,true,,,,poll41074162
+"55 4th Ave SE, Carmel, IN 46032",,02:00 PM - 07:00 PM,,ho28564172,false,true,,,,poll89167529
+"One Municipal Drive, Fishers, IN 46038",,12:00 PM - 05:00 PM,,ho57826284,false,true,,,,poll752916
 "9 East Main Street, Room 213, Greenfield, IN 46140",,08:00 AM - 04:00 PM,,ho44962793,false,true,,,,poll68701776
+"6280 W 800 North, McCordsville, IN 46055",,08:00 AM - 04:00 PM,,ho68689436,false,true,,,,poll95392147
+"1672 N 600 West, Greenfield, IN 46140",,08:00 AM - 04:00 PM,,ho55234020,false,true,,,,poll80509286
+"900 W McKenzie Rd., Greenfield, IN 46140",,01:00 PM - 07:00 PM,,ho92766747,false,true,,,,poll32895215
+"5087 W US HWY 52, New Palestine, IN 46163",,01:00 PM - 07:00 PM,,ho14192706,false,true,,,,poll20930240
 "300 North Capitol Avenue, Room 203, Corydon, IN 47112",,08:00 AM - 11:30 AM,,ho17321937,false,true,,,,poll91209239
 "355 S Washington St., Suite 218, Danville, IN 46122",,08:00 AM - 04:00 PM,,ho54834976,false,true,,,,poll44731939
 "498 N Avon Ave, Avon, IN 46123",,02:00 PM - 07:00 PM,,ho31236537,false,true,,,,poll65821189
 "450 S Jefferson St., Avon, IN 46123",,02:00 PM - 07:00 PM,,ho19843907,false,true,,,,poll70685577
 "1120 Stafford Rd, Plainfield , IN 46168",,02:00 PM - 07:00 PM,,ho87266997,false,true,,,,poll80399450
 "1215 Race St, Suite 130, New Castle, IN 47362",,08:00 AM - 01:00 PM,,ho75487507,false,true,,,,poll69579558
+"120 E Mulberry, Kokomo, IN 46901",,08:00 AM - 04:00 PM,,ho91870953,false,true,,,,poll74947160
+"1030 N Purdum, Kokomo, IN 46901",,09:00 AM - 09:00 PM,,ho27383346,false,true,,,,poll79230959
+"2600 W Alto Rd, Kokomo, IN 46901",,09:00 AM - 09:00 PM,,ho91954500,false,true,,,,poll36701715
+"421 S Harrison St, Greentown, IN 46963",,09:00 AM - 09:00 PM,,ho64305709,false,true,,,,poll40350730
+"1916 E Markland, Kokomo, IN 46901",,09:00 AM - 09:00 PM,,ho57654198,false,true,,,,poll48490488
+"700 E Firmin Street, Kokomo, IN 46901",,09:00 AM - 09:00 PM,,ho40021949,false,true,,,,poll87737407
+"4223W Co Rd 350 N, Kokomo, IN 46901",,09:00 AM - 09:00 PM,,ho43448956,false,true,,,,poll14763717
+"555 N Liberty, Russiaville, IN 46979",,09:00 AM - 09:00 PM,,ho39872286,false,true,,,,poll29410908
+"3794 E 300 St, Kokomo, IN 46901",,09:00 AM - 09:00 PM,,ho57485363,false,true,,,,poll27786421
 "201 North Jefferson Street, Huntington, IN 46750",,09:00 AM - 04:00 PM,,ho97477648,false,true,,,,poll38652176
+"150 W Sparks St., Markle, IN 46770",,11:00 AM - 07:00 PM,,ho6624996,false,true,,,,poll30986107
+"1410 S. Jefferson St., Huntington, IN 46750",,11:00 AM - 07:00 PM,,ho50351381,false,true,,,,poll48152385
+"66 Main St., Andrews, IN 46702",,11:00 AM - 07:00 PM,,ho36317964,false,true,,,,poll74698440
+"1160 W - 500 N, Huntington, IN 46750",,07:00 AM - 03:00 PM,,ho60448225,false,true,,,,poll55464030
+"9524 US 24 N, Roanoke, IN 46783",,11:00 AM - 07:00 PM,,ho37952533,false,true,,,,poll54476327
+"111 S. Main Street, Brownstown, IN 47220",,08:00 AM - 04:30 PM,,ho57055093,false,true,,,,poll16762611
+"1420 Corporate Way, Seymour, IN 47274",,08:00 AM - 04:00 PM,,ho13596072,false,true,,,,poll8710814
+"115 West Washington St., Suite 204, Rensselaer, IN 47978",,08:00 AM - 12:00 PM,,ho53160905,false,true,,,,poll39586594
 "120 North Court Street, Suite 209, Portland, IN 47371",,08:30 AM - 12:00 PM,,ho81969229,false,true,,,,poll54317090
 "300 East Main Street, Room 203, Madison, IN 47250",,08:00 AM - 04:00 PM,,ho7273204,false,true,,,,poll32702614
 "24 Pike Street, Vernon, IN 47282",,08:00 AM - 04:00 PM,,ho29919610,false,true,,,,poll96966482
-"Main Courthouse,  5 E. Jefferson St., Franklin, IN 46131",Basement,08:00 AM - 04:30 PM,,ho25796745,false,true,,,,poll70703969
+"Main Courthouse, Basement, 5 E. Jefferson St., Franklin, IN 46131",,08:00 AM - 04:30 PM,,ho58968819,false,true,,,,poll65610641
+"381 N. Bluff Road, Greenwood, IN 46143",,08:00 AM - 03:00 PM,,ho3296221,false,true,,,,poll88914030
+"424 S. Tower Street, Trafalgar, IN 46481",,08:00 AM - 03:00 PM,,ho556240,false,true,,,,poll49633186
+"100 Byrd Way, Greenwood, IN 46413",,08:00 AM - 03:00 PM,,ho10302425,false,true,,,,poll89864042
+"119 W. Main Cross St, Edinburgh, IN 46124",,08:00 AM - 03:00 PM,,ho29966637,false,true,,,,poll64851545
+"396 Branigan Boulevard and State Street, Franklin, IN 46181",,10:00 AM - 07:00 PM,,ho94588455,false,true,,,,poll41310023
 "111 North 7th Street, Suite 27, Vincennes, IN 47591",,08:00 AM - 04:00 PM,,ho86451251,false,true,,,,poll15504613
+"121 North Lake Street, D162, Warsaw, IN 46580",,08:00 AM - 04:30 PM,,ho9411532,false,true,,,,poll13755225
+"105 North Detroit Street, LaGrange, IN 46761",,08:30 AM - 12:00 PM,,ho11985579,false,true,,,,poll82163875
+"2293 North Main Street, A-205, Crown Point, IN 46307",,08:30 AM - 04:30 PM,,ho30199642,false,true,,,,poll70724085
+"3711 Main St., East Chicago, IN 46312",,09:00 AM - 03:00 PM,,ho39273425,false,true,,,,poll70042320
+"232 Russell St., Hammond, IN 46320",,09:00 AM - 03:00 PM,,ho69544752,false,true,,,,poll32623354
+"705 E. 4th St., Hobart, IN 46342",,09:00 AM - 03:00 PM,,ho75573371,false,true,,,,poll24908930
+"501 E. Main St., Lowell, IN 46356",,09:00 AM - 03:00 PM,,ho88801699,false,true,,,,poll52878754
+"1005 Ridge Rd., Munster, IN 46321",,09:00 AM - 03:00 PM,,ho90633402,false,true,,,,poll54827567
+"10 E. Joliet St., Schererville, IN 46375",,09:00 AM - 03:00 PM,,ho9758908,false,true,,,,poll15163173
+"9157 Wicker Ave, St. John, IN 46373",,09:00 AM - 03:00 PM,,ho11290831,false,true,,,,poll92663773
+"8554 Indpls. Blvd., Highland, IN 46322",,09:00 AM - 03:00 PM,,ho70869152,false,true,,,,poll24514666
+"10645 Randolph St., Winfield, IN 46307",,09:00 AM - 03:00 PM,,ho31697920,false,true,,,,poll34236708
+"813 Lincolnway, Suite 101, LaPorte, IN 46350",,08:00 AM - 11:30 AM,,ho84472565,false,true,,,,poll68126638
+"300 Washington St., LaPorte, IN 46350",,08:00 AM - 11:30 AM,,ho10371413,false,true,,,,poll69802142
+"916 15th St., Room 11, Bedford, IN 47421",,08:30 AM - 12:00 PM,,ho89760444,false,true,,,,poll92794830
+"16 East 9th Street, Anderson, IN 46016",,08:00 AM - 04:00 PM,,ho65385456,false,true,,,,poll30479338
+"200 E Washington Suite 122, Indianapolis, IN 46201",,08:00 AM - 05:00 PM,,ho21237137,false,true,,,,poll6358833
+"211 West Madison Street, Plymouth, IN 46563",,08:00 AM - 04:00 PM,,ho11857864,false,true,,,,poll8152847
+"104 W. Plymouth St, Bremen, IN 46506",,08:00 AM - 03:00 PM,,ho69653899,false,true,,,,poll89770584
+"200 East Washington St., Culver, IN 46511",,08:00 AM - 03:00 PM,,ho52770077,false,true,,,,poll92671891
+"129 Main Street, Shoals, IN 47581",,08:00 AM - 04:00 PM,,ho50676277,false,true,,,,poll70685079
+"25 N. Broadway, Room 115, Peru, IN 46970",,08:00 AM - 04:00 PM,,ho34724042,false,true,,,,poll97300601
+"111 N Yorick, Denver, IN 46926",,10:00 AM - 07:00 PM,,ho84876856,false,true,,,,poll85126380
+"280 W Broadway, Bunker Hill, IN 46914",,10:00 AM - 07:00 PM,,ho67553492,false,true,,,,poll37433861
+"269 Meadowview Dr, Peru, IN 46970",,10:00 AM - 07:00 PM,,ho57554871,false,true,,,,poll39353221
+"210 N Jefferson St, Converse, IN 46919",,10:00 AM - 07:00 PM,,ho68570417,false,true,,,,poll51904811
+"401 W. 7th Street, Suite 100, Bloomington, IN 47404",,08:00 AM - 06:00 PM,,ho55204152,false,true,,,,poll63136736
+"501 North Morton, Rm 201, Bloomington, IN 47404",,08:00 AM - 06:00 PM,,ho58348679,false,true,,,,poll25289546
+"100 E Main St, Room 203, Crawfordsville, IN 47933",,08:00 AM - 04:30 PM,,ho42897906,false,true,,,,poll95605150
+"429 W 150 Street, Crawfordsville, IN 47933",,08:00 AM - 03:00 PM,,ho56730140,false,true,,,,poll6182312
+"180 South Main Street, Suite 1, Martinsville, IN 46151",,08:00 AM - 06:00 PM,,ho51445607,false,true,,,,poll65703601
+"4 E. Harrison St, Mooresville, IN 46158",,08:30 AM - 06:00 PM,,ho63934020,false,true,,,,poll61065411
+"201 N 3rd St, Kentland, IN 47951",,08:00 AM - 04:00 PM,,ho68259933,false,true,,,,
+"101 North Orange Street, Albion, IN 46701",,08:00 AM - 04:00 PM,,ho81882370,false,true,,,,poll27149968
+"210 Brian's Place, Kendallville, IN 46755",,09:00 AM - 02:00 PM,,ho89330523,false,true,,,,poll1496089
+"151 W Stones Hill Rd, Ligonier, IN 46767",,09:00 AM - 02:00 PM,,ho30188005,false,true,,,,poll82649725
+"3985 S Us Highway 33, Albion, IN 46701",,02:00 PM - 07:00 PM,,ho65087382,false,true,,,,poll5118182
+"101 Warrner Dr, Rome City, IN 46784",,10:00 AM - 01:00 PM,,ho2433232,false,true,,,,poll93195895
+"500 S Main St, LaOtto, IN 46763",,10:00 AM - 01:00 PM,,ho32435280,false,true,,,,poll4750686
+"413 Main St, Rising Sun, IN 47040",,08:30 AM - 12:30 PM,,ho8079323,false,true,,,,poll62238370
+"1 Court Street, Orange County Courthouse, Paoli, IN 47454",,08:00 AM - 12:00 PM,,ho85185957,false,true,,,,poll11983958
+"60 South Main Street, Spencer, IN 47460",,08:00 AM - 04:00 PM,,ho14478652,false,true,,,,poll55743670
+"5530 State Hwy 42, Poland, IN 47868",,08:00 AM - 03:00 PM,,ho1323095,false,true,,,,poll92963944
+"550 State Route 67, Freedom, IN 47431",,08:00 AM - 03:00 PM,,ho71215855,false,true,,,,poll1220354
+"116 West High Street, Room 204, Rockville, IN 47872",,08:00 AM - 04:00 PM,,ho97174812,false,true,,,,poll15988866
+"2219 Payne Street, Tell City, IN 47586",,08:00 AM - 12:00 PM,,ho90365233,false,true,,,,poll8347372
+"801 Main Street, 2nd Floor, Petersburg, IN 47567",,08:00 AM - 04:00 PM,,ho48009206,false,true,,,,poll31612315
+"155 Indiana Ave., Suite 105, Valparaiso, IN 46383",,08:30 AM - 03:30 PM,,ho50898797,false,true,,,,poll14047835
+"790 Broadway, Chesterton, IN 46304",,08:30 AM - 03:30 PM,,ho82137622,false,true,,,,poll83123330
+"3560 Willowcreek Rd., Portage, IN 46368",,08:30 AM - 03:30 PM,,ho23664409,false,true,,,,poll68450197
+"300 Main Street, Mt. Vernon, IN 47620",,08:00 AM - 06:00 PM,,ho80349839,false,true,,,,poll2229862
+"407 Tavern St, New Harmony, IN 47631",,09:00 AM - 06:00 PM,,ho55701550,false,true,,,,poll41739991
+"63 W Fletchall Ave,, Poseyville, IN 47633",,09:00 AM - 06:00 PM,,ho79229055,false,true,,,,poll31822715
+"Hwy 66, Wadesville, IN 47638",,09:00 AM - 06:00 PM,,ho55005369,false,true,,,,poll6947637
+"18474 State Road 250, Patriot, IN 47038",,09:00 AM - 06:00 PM,,ho24710421,false,true,,,,poll72228816
+"121 S Riverside Dr, Winamac, IN 46996",,10:00 AM - 01:00 AM,,ho53501458,false,true,,,,poll18575657
+"1 W. Washington Street, Room 21, Greencastle, IN 46135",,09:00 AM - 04:00 PM,,ho3776991,false,true,,,,poll93375791
+"100 S Main Street, 2nd Floor, Winchester, IN 47394",,09:00 AM - 12:00 PM,,ho30761602,false,true,,,,poll90350811
+"101 S Main Street, 2nd Floor, Winchester, IN 47394",,01:00 PM - 04:00 PM,,ho83297210,false,true,,,,poll23047398
+"102 S Main Street, 2nd Floor, Winchester, IN 47394",,09:00 AM - 12:00 PM,,ho24165715,false,true,,,,poll63699581
+"103 S Main Street, 2nd Floor, Winchester, IN 47394",,01:00 PM - 04:00 PM,,ho84756881,false,true,,,,poll72393181
+"104 S Main Street, 2nd Floor, Winchester, IN 47394",,09:00 AM - 12:00 PM,,ho15213600,false,true,,,,poll55131461
+"105 S Main Street, 2nd Floor, Winchester, IN 47394",,01:00 PM - 04:00 PM,,ho44803173,false,true,,,,poll56245618
+"106 S Main Street, 2nd Floor, Winchester, IN 47394",,08:00 AM - 03:00 PM,,ho80386865,false,true,,,,poll30969427
+"107 S Main Street, 2nd Floor, Winchester, IN 47394",,09:00 AM - 12:00 PM,,ho27162742,false,true,,,,poll43665270
+"108 S Main Street, 2nd Floor, Winchester, IN 47394",,01:00 PM - 04:00 PM,,ho65198983,false,true,,,,poll99297662
+"109 S Main Street, 2nd Floor, Winchester, IN 47394",,08:00 AM - 03:00 PM,,ho65110194,false,true,,,,poll42079478
+"110 S Main Street, 2nd Floor, Winchester, IN 47394",,08:00 AM - 12:00 PM,,ho60903611,false,true,,,,poll61939791
+"115 N. Main Street, Versailles, IN 47042",,09:00 AM - 04:00 PM,,ho64227139,false,true,,,,poll47065026
+"116 N. Main Street, Versailles, IN 47042",,09:00 AM - 04:00 PM,,ho28296235,false,true,,,,poll84594952
+"117 N. Main Street, Versailles, IN 47042",,09:00 AM - 04:00 PM,,ho70454679,false,true,,,,poll68489219
+"118 N. Main Street, Versailles, IN 47042",,09:00 AM - 04:00 PM,,ho67401003,false,true,,,,poll14424052
+"119 N. Main Street, Versailles, IN 47042",,09:00 AM - 04:00 PM,,ho70759512,false,true,,,,poll41418879
+"120 N. Main Street, Versailles, IN 47042",,09:00 AM - 04:00 PM,,ho10569602,false,true,,,,poll99236821
+"121 N. Main Street, Versailles, IN 47042",,09:00 AM - 12:00 PM,,ho21250299,false,true,,,,poll38442640
+"101 East 2nd Street, Room 209, Rushville, IN 46173",,08:00 AM - 04:00 PM,,ho622861,false,true,,,,poll89030610
+"1 East McClain Avenue, Suite 120, Scottsburg, IN 47170",,08:40 AM - 12:00 PM,,ho44834147,false,true,,,,poll32462952
+"407 S. Harrison St, Shelbyville, IN 46176",,08:00 AM - 04:00 PM,,ho19464072,false,true,,,,poll85170738
+"200 Main Street, Room 5, Rockport, IN 47635",,08:00 AM - 12:00 PM,,ho40565747,false,true,,,,poll2736810
+"227 West Jefferson Blvd, 4th Floor, South Bend, IN 46601",,08:00 AM - 04:30 PM,,ho93435582,false,true,,,,poll4110854
+"219 Lincoln Way West, Mishawaka, IN 46601",,08:00 AM - 04:30 PM,,ho4118824,false,true,,,,poll24585115
+"Courthouse, 53 East Washington Street, Knox, IN 46534",,08:00 AM - 12:00 PM,,ho54827012,false,true,,,,poll2197720
+"55 South Public Square, Angola, IN 46703",,08:00 AM - 12:00 PM,,ho68335478,false,true,,,,poll76092450
+"100 Courthouse Square, Room 370, Sullivan, IN 47882",,08:00 AM - 04:00 PM,,ho77029528,false,true,,,,poll51170258
+"212 West Main St., Vevay, IN 47043",,08:00 AM - 12:00 PM,,ho62389363,false,true,,,,poll65017297
+"8124 IN-129, Vevay, IN 47403",,08:00 AM - 12:00 PM,,ho48043086,false,true,,,,poll23377149
+"13091 State Road 56, East Enterprise, IN 47019",,08:00 AM - 12:00 PM,,ho52369400,false,true,,,,poll54458265
+"352 3rd S, Patriot, IN 47038",,08:00 AM - 12:00 PM,,ho3334585,false,true,,,,poll54822340
+"15337 Hill Rd., Florence, IN 47020",,08:00 AM - 12:00 PM,,ho2890629,false,true,,,,poll9732364
+"708 W. SEMINARY ST., Vevay, IN 47403",,08:00 AM - 04:00 PM,,ho50298734,false,true,,,,poll87904404
+"20 N. 3rd Street, Lafayette, IN 47902",,08:00 AM - 04:30 PM,,ho41436547,false,true,,,,poll51339974
+"128 Memorial Hall, West Lafayette, IN 47907",,12:00 PM - 08:00 PM,,ho10979844,false,true,,,,poll54701872
+"1903 Union St., Lafayette, IN 47904",,09:00 AM - 11:00 AM,,ho78030589,false,true,,,,poll65683044
+"250 Shenandoah Drive, Lafayette, IN 47905",,01:00 PM - 03:00 PM,,ho55123382,false,true,,,,poll95974920
+"2741 North Salisbury Street, West Lafayette, IN 47906",,09:00 AM - 02:00 PM,,ho90656980,false,true,,,,poll76606820
+"1205 North 14th Street, Lafayette, IN 47904",,01:00 PM - 03:00 PM,,ho3778895,false,true,,,,poll98442466
+"3575 Senior Place, West Lafayette, IN 47906",,09:00 AM - 11:00 AM,,ho57274428,false,true,,,,poll31123160
+"1010 Cumberland Ave, West Lafayette, IN 47906",,01:00 PM - 03:00 PM,,ho13331113,false,true,,,,poll45773441
+"1700 Lindberg Rd., West Lafayette, IN 47906",,09:00 AM - 02:00 PM,,ho64426199,false,true,,,,poll61356030
+"7050 Main St., West Point, IN 47992",,08:00 AM - 12:00 PM,,ho80398903,false,true,,,,poll76923512
+"US 231 South, Romney, IN 47981",,08:00 AM - 12:00 PM,,ho97138294,false,true,,,,poll17260201
+"6491 Church St., Stockwell, IN 47983",,08:00 AM - 12:00 PM,,ho39048224,false,true,,,,poll36927841
+"9150 West 500 North, Lafayette, IN 47906",,08:00 AM - 12:00 PM,,ho23072509,false,true,,,,poll4339078
+"741 Park East Boulevard, Lafayette, IN 47905",,09:00 AM - 11:00 AM,,ho4961268,false,true,,,,poll9621830
+"2402 South Street, Lafayette, IN 47904",,01:00 PM - 03:00 PM,,ho19364988,false,true,,,,poll68721751
+"1051 Cumberland Avenue, West Lafayette, IN 47906",,09:00 AM - 11:00 AM,,ho95372601,false,true,,,,poll22678014
+"3851 North River Road, West Lafayette, IN 47906",,01:00 PM - 03:00 PM,,ho56076468,false,true,,,,poll76505196
+"2200 Greenbush St, Lafayette, IN 47904",,12:00 PM - 07:00 PM,,ho90738873,false,true,,,,poll81181381
+"2513 Maple Point Dr, Lafayette, IN 47905",,12:00 PM - 07:00 PM,,ho74614893,false,true,,,,poll44462251
+"1032 Sagamore Pkwy West, West Lafayette, IN 47906",,12:00 PM - 07:00 PM,,ho75581586,false,true,,,,poll66984100
+"101 East Jefferson Street, Tipton, IN 46072",,08:00 AM - 04:00 PM,,ho21955531,false,true,,,,poll84394811
+"26 West Union Street, Liberty, IN 47353",,08:00 AM - 12:00 PM,,ho24627106,false,true,,,,poll36962271
+"825 Sycamore Street, Evansville, IN 47708",,08:00 AM - 04:00 PM,,ho78388543,false,true,,,,poll9250435
+"120 S. Red Bank Rd., Evansville, IN 47712",,12:00 PM - 06:00 PM,,ho26067568,false,true,,,,poll22002458
+"960 Koehler Dr., Evansville, IN 47710",,12:00 PM - 06:00 PM,,ho45303920,false,true,,,,poll95674217
+"200 SE MLK Blvd., Evansville, IN 47713",,12:00 PM - 06:00 PM,,ho75847934,false,true,,,,poll38146596
+"3001 Oaklyn Dr., Evansville, IN 47711",,12:00 PM - 06:00 PM,,ho64117969,false,true,,,,poll85757469
+"5115 Washington Ave., Evansville, IN 47715",,12:00 PM - 06:00 PM,,ho90939934,false,true,,,,poll47197515
+"1215 N. Boeke Rd., Evansville, IN 47711",,08:00 AM - 03:00 PM,,ho25661467,false,true,,,,poll24831772
+"255 S. Main Street, Room 304, Newport, IN 47966",,08:00 AM - 04:00 PM,,ho94181354,false,true,,,,poll44291290
+"259 Vine St, Clinton, IN 47842",,02:00 PM - 07:00 PM,,ho8574463,false,true,,,,poll83723087
+"33 South Third St., Terre Haute, IN 47808",,08:00 AM - 04:00 PM,,ho19850950,false,true,,,,poll83160849
+"69 West Hill Street, Wabash, IN 46992",,08:00 AM - 04:00 PM,,ho76936301,false,true,,,,poll14430650
+"125 North Monroe Street, Suite 11, Williamsport, IN 47993",,08:00 AM - 04:00 PM,,ho78447175,false,true,,,,poll88044451
+"1 County Square, Suite 220, Boonville, IN 47601",,08:00 AM - 04:00 PM,,ho53912888,false,true,,,,poll83786673
+"99 Public Square, Suite 102, Salem, IN 47167",,08:00 AM - 04:00 PM,,ho30815946,false,true,,,,poll85929064
+"301 E. Main Street, Richmond, IN 47374",,08:30 AM - 04:30 PM,,ho27857719,false,true,,,,poll28226934
+"861 North Salisbury Rd, Richmond, IN 47374",,10:00 AM - 03:00 PM,,ho6819215,false,true,,,,poll51017809
+"1007 East Main St,  Cambridge City, IN 47327",,10:00 AM - 03:00 PM,,ho91607856,false,true,,,,poll92205991
+"752 West Main St., Hagers Town, IN 47346",,10:00 AM - 03:00 PM,,ho84244293,false,true,,,,poll91792936
+"2727 National Rd East, Richmond, IN 47374",,10:00 AM - 03:00 PM,,ho81172350,false,true,,,,poll77499553
+"102 West Market Street, Suite 201, Bluffton, IN 46714",,08:00 AM - 04:30 PM,,ho63194502,false,true,,,,poll34555158
+"1240 4-H Park Rd, Bluffton, IN 46714",,10:00 AM - 07:00 PM,,ho51013256,false,true,,,,poll91215610
+"215 E Dustman Rd, Bluffton, IN 46714",,10:00 AM - 07:00 PM,,ho85027695,false,true,,,,poll24749768
+"9120 S 300 W, Poneto, IN 46781",,10:00 AM - 07:00 PM,,ho62397769,false,true,,,,poll90372322
+"10794 N State Road 1, Ossian, IN 46777",,10:00 AM - 07:00 PM,,ho67435075,false,true,,,,poll37167238
+"11811 N Wayne St, Zanesville, IN 46799",,10:00 AM - 07:00 PM,,ho82138511,false,true,,,,poll37693032
+"110 N Main Street, Monticello, IN 47960",,08:00 AM - 04:00 PM,,ho55353166,false,true,,,,poll6714624
+"700 S. Prairie St., Brookstone, IN 47923",,08:00 AM - 12:00 PM,,ho18893817,false,true,,,,poll49240395
+"101 W. Van Buren Street, Room 18, Columbia City, IN 46725",,08:00 AM - 04:30 PM,,ho5275645,false,true,,,,poll72860116

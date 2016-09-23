@@ -193,9 +193,13 @@ class LocalityTxt(object):
 
     def final_build(self):
         loc = self.build_locality_txt()
+        print"HELLO"
+        print loc
+        print "HELLO"
+        loc = loc.groupby(['ocd_division', 'polling_location_ids']).agg(lambda x: ' '.join(set(x))).reset_index()
         # print loc
+
         loc = loc.groupby(['ocd_division']).agg(lambda x: ' '.join(set(x))).reset_index()
-        # print loc
 
         loc['name'] = loc['name'].apply(lambda x: ''.join(x.split(' ')[0]))
 
@@ -215,7 +219,7 @@ class LocalityTxt(object):
         # print final
 
         final.drop(['grouped_index'], inplace=True, axis=1)
-        print final
+        #print final
 
         # final.drop(['grouped_index',  'address_line', 'hours', 'photo_uri', 'hours_open_id',
         #            'is_drop_box', 'is_early_voting', 'latitude', 'longitude', 'latlng_source',
@@ -234,10 +238,11 @@ if __name__ == '__main__':
     early_voting_file = config.output + state_file
 
     colnames = ['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'dirs','city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'notes',
+                'start_time', 'end_time', 'start_date', 'end_date', 'subject_to_change','notes',
                 'index', 'address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id']
-    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
+    print len(colnames)
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
 
     early_voting_df['index'] = early_voting_df.index +1 # offsets zero based index so it starts at 1 for ids
 

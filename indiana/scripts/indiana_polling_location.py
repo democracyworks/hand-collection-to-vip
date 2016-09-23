@@ -222,7 +222,7 @@ class PollingLocationTxt(object):
 
         # Drop base_df columns.
         plt.drop(['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'notes', 'index', 'dirs'], inplace=True, axis=1)
+                'start_time', 'end_time', 'start_date', 'end_date', 'notes', 'index', 'dirs', 'subject_to_change'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
         print plt
@@ -242,10 +242,10 @@ if __name__ == '__main__':
     early_voting_file = config.data_folder + state_file
 
     colnames = ['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'dirs','city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'notes']
+                'start_time', 'end_time', 'start_date', 'end_date', 'subject_to_change','notes']
 
 
-    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
