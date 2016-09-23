@@ -1,85 +1,85 @@
 address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-"101 Court Square, Dewitt, IN 72042",,08:00 AM - 06:00 PM,,ho65884971,false,true,,,,poll62800431
-"205 East Jefferson, #5, Hamburg, IN 71646",,08:00 AM - 06:00 PM,,ho64910206,false,true,,,,poll32993218
-"1 East 7th St., Suite 103, Mountain Home, IN 72653",,08:00 AM - 06:00 PM,,ho8452899,false,true,,,,poll17337328
-"414 W. Central Harrison, Harrison, IN 72601",,08:00 AM - 06:00 PM,,ho26028280,false,true,,,,poll68025673
-"101 East Cedar St., Warren, IN 71671",,08:00 AM - 06:00 PM,,ho60662883,false,true,,,,poll60389175
-"309 West Main, Hampton, IN 71744",,08:00 AM - 06:00 PM,,ho44549987,false,true,,,,poll39481746
-"210 West Church St., Berryville, IN 72616",,08:00 AM - 06:00 PM,,ho29295465,false,true,,,,poll70666889
-"44 S. Main St, Eureka Springs, IN 72632",,08:00 AM - 06:00 PM,,ho60086915,false,true,,,,poll46410525
-"108 Main St., Lake Village, IN 71653",,08:00 AM - 06:00 PM,,ho44055407,false,true,,,,poll55567195
-"401 Clay St., Arkadelphia, IN 71923",,08:00 AM - 06:00 PM,,ho28679544,false,true,,,,poll2554226
-"151 South Second Ave. AND 800 W Second St, Piggott and Corning, IN 72454",,08:00 AM - 06:00 PM,,ho47499673,false,true,,,,poll58250211
-"800 Sw 2nd St, Corning, IN 72422",,08:00 AM - 06:00 PM,,ho52050444,false,true,,,,poll84155299
-"301 West Main St, Heber Springs, IN 72543",,08:00 AM - 06:00 PM,,ho42131845,false,true,,,,poll47930527
-"20 Magnolia Street, Rison, IN 71665",,08:00 AM - 06:00 PM,,ho37059052,false,true,,,,poll88601158
-"1 Court Square, Suite 1, Magnolia, IN 71753",,08:00 AM - 06:00 PM,,ho98065091,false,true,,,,poll80735464
-"4th Floor Courthouse, 115 South Moose St., Morrilton, IN 72110",,08:00 AM - 06:00 PM,,ho80412418,false,true,,,,poll37233585
-"511 South Main, Room 202, Jonesboro, IN 72401",,08:00 AM - 06:00 PM,,ho70440826,false,true,,,,poll30995665
-"315 W Jefferson, Jonesboro, IN 72401",,08:00 AM - 06:00 PM,,ho30448863,false,true,,,,poll72354989
-"107 Cobean Blvd, Lake City, IN 72437",,08:00 AM - 06:00 PM,,ho18341313,false,true,,,,poll53378318
-"300 Main St., Room 7, Van Buren, IN 72956",,08:00 AM - 06:00 PM,,ho89055777,false,true,,,,poll1243374
-"1820 Chestnut St, Van Buren, IN 72956",,08:00 AM - 06:00 PM,,ho19479478,false,true,,,,poll29046279
-"100 Court Square, Marion, IN 72364",,08:00 AM - 06:00 PM,,ho18903899,false,true,,,,poll58789186
-"705 East Union St, Wynne, IN 72396",,08:00 AM - 06:00 PM,,ho75154673,false,true,,,,poll26456020
-"608 Robert Moore Street, Arkansas City, IN 71630",,08:00 AM - 06:00 PM,,ho63946519,false,true,,,,poll20837386
-"901 Holly St, Arkansas City, IN 71654",,08:00 AM - 06:00 PM,,ho80823105,false,true,,,,poll40318918
-"18 Belmont St, Dumas, IN 71639",,08:00 AM - 06:00 PM,,ho41778340,false,true,,,,poll24855099
-"210 South Main St., Monticello, IN 71655",,08:00 AM - 06:00 PM,,ho75416333,false,true,,,,poll71520843
-"801 Locust St., Conway, IN 72034",,08:00 AM - 06:00 PM,,ho96134827,false,true,,,,poll97722996
-"211 West Commercial, Ozark, IN 72949",,08:00 AM - 06:00 PM,,ho13908831,false,true,,,,poll77510405
-"123 South Main Street, Salem, IN 72576",,08:00 AM - 06:00 PM,,ho4628546,false,true,,,,poll99647210
-"649 Ouachita Ave, Hot Springs, IN 71901",,08:00 AM - 06:00 PM,,ho25343989,false,true,,,,poll51765875
-"101 West Center, Room 106, Sheridan, IN 72150",,08:00 AM - 06:00 PM,,ho48289908,false,true,,,,poll23302682
-"320 West Court Street, Room 102, Paragould, IN 72450",,08:00 AM - 06:00 PM,,ho60770776,false,true,,,,poll5671340
-"400 South Washington, Hope, IN 71801",,08:00 AM - 06:00 PM,,ho50052675,false,true,,,,poll16809572
-"230 W 2nd, Malvern, IN 72104",,08:00 AM - 06:00 PM,,ho59061850,false,true,,,,poll51719577
-"421 North Main St., Room 10, Nashville, IN 71852",,08:00 AM - 06:00 PM,,ho90500328,false,true,,,,poll48196247
-"192 East Main Street, Batesville, IN 72501",,08:00 AM - 06:00 PM,,ho51611277,false,true,,,,poll15526856
-"500 Main St., Melbourne, IN 72556",,08:00 AM - 06:00 PM,,ho13821014,false,true,,,,poll71169553
-"101 East Barraque Street, Pine Bluff, IN 71601",,08:00 AM - 06:00 PM,,ho86705946,false,true,,,,poll96068245
-"215 West Main Street, Clarksville, IN 72830",,08:00 AM - 06:00 PM,,ho29128624,false,true,,,,poll34983020
-"116 W 3rd St,, Lewisville, IN 71845",,08:00 AM - 06:00 PM,,ho66502702,false,true,,,,poll22955022
-"315 West Main Street, Walnut Ridge, IN 72476",,08:00 AM - 06:00 PM,,ho82207064,false,true,,,,poll47786244
-"15 East Chestnut Street, Room 4, Marianna, IN 72360",,08:00 AM - 06:00 PM,,ho51447576,false,true,,,,poll74275512
-"300 South Drew St., Star City, IN 71667",,08:00 AM - 06:00 PM,,ho64037356,false,true,,,,poll65912890
-"351 North 2nd St., Ashdown, IN 71822",,08:00 AM - 06:00 PM,,ho48924947,false,true,,,,poll5387401
-"#25 West Walnut St., Paris, IN 72855",,08:00 AM - 06:00 PM,,ho43365854,false,true,,,,poll21130008
-"301 North Center St, Lonoke, IN 72086",,08:00 AM - 06:00 PM,,ho88628305,false,true,,,,poll32194333
-"201 West Main St., Suite 202, Huntsville, IN 72740",,08:00 AM - 06:00 PM,,ho63882063,false,true,,,,poll83404192
-"300 East Old Main, Yellville, IN 72687",,08:00 AM - 06:00 PM,,ho34522176,false,true,,,,poll21232733
-"400 Laurel St., Room 105, Texarkana, IN 71854",,08:00 AM - 06:00 PM,,ho10844067,false,true,,,,poll90004641
-"200 West Hale, Osceola, IN 72370",,08:00 AM - 06:00 PM,,ho46368729,false,true,,,,poll13187330
-"200 West Walnut Street, Blytheville, IN 72315",,08:00 AM - 06:00 PM,,ho12945400,false,true,,,,poll56861922
-"105 NW Dewey, Manila, IN 72442",,08:00 AM - 06:00 PM,,ho44589368,false,true,,,,poll36764754
-"105 S Main St, Leachville, IN 72438",,08:00 AM - 06:00 PM,,ho60662764,false,true,,,,poll89642400
-"123 Madison Street, Clarendon, IN 72029",,08:00 AM - 06:00 PM,,ho93001865,false,true,,,,poll84808331
-"117 Ray Drive, Mount Ida, IN 71957",,08:00 AM - 06:00 PM,,ho14815026,false,true,,,,poll19998825
-"215 East 2nd St. South, Prescott, IN 71857",,08:00 AM - 06:00 PM,,ho7480721,false,true,,,,poll18597140
-"100 East Court St, Jasper, IN 72641",,08:00 AM - 06:00 PM,,ho38247587,false,true,,,,poll27017548
-"145 Jefferson St., Camden, IN 71701",,08:00 AM - 06:00 PM,,ho54408433,false,true,,,,poll49624895
-"204 West Main, Perryville, IN 72126",,08:00 AM - 06:00 PM,,ho82349407,false,true,,,,poll49510873
-"620 Cherry St., Suite 202, Helena, IN 72342",,08:00 AM - 06:00 PM,,ho2372668,false,true,,,,poll63120040
-"401 Market St., Harrisburg, IN 72432",,08:00 AM - 06:00 PM,,ho79143569,false,true,,,,poll33851681
-"606 Pine Street, Mena, IN 71953",,08:00 AM - 06:00 PM,,ho77794047,false,true,,,,poll48853607
-"1509 East Main St, Suite 7, Russellville, IN 72801",,08:00 AM - 06:00 PM,,ho80967664,false,true,,,,poll81093296
-"200 Courthouse Square, Suite 104; DeValls Bluff 183 Prairie St 72041, Des Arc, IN 72040",,08:00 AM - 06:00 PM,,ho69563624,false,true,,,,poll68416899
-"101 East Broadway, Suite A, Pocahontas, IN 72455",,08:00 AM - 06:00 PM,,ho75752597,false,true,,,,poll45629173
-"215 North Main, Suite 9, Benton, IN 72015",,08:00 AM - 06:00 PM,,ho67423211,false,true,,,,poll37400112
-"221 North Main, Benton, IN 72015",,08:00 AM - 06:00 PM,,ho76774389,false,true,,,,poll84669009
-"4200 Hwy 5 North, Bryant, IN 72022",,10:00 AM - 06:00 PM,,ho43382398,false,true,,,,poll19084177
-"24705 Hwy 5, Lonsdale, IN 72087",,10:00 AM - 06:00 PM,,ho94006862,false,true,,,,poll31812139
-"20422 North Springlake Road, Helsey, IN 72065",,10:00 AM - 06:00 PM,,ho18015228,false,true,,,,poll29456932
-"190 West 1st St., Waldron, IN 72958",,08:00 AM - 06:00 PM,,ho68236294,false,true,,,,poll63478839
-"200 South Highway 27, Marshall, IN 72650",,08:00 AM - 06:00 PM,,ho43670140,false,true,,,,poll5063191
-"35 South 6th St., Room 102, Fort Smith, IN 72901",,08:00 AM - 05:00 PM,,ho66479704,false,true,,,,poll97598106
-"115 North 3rd St., Room 102, De Queen, IN 71832",,08:00 AM - 06:00 PM,,ho79593026,false,true,,,,poll13073010
-"718 Ash Flat Drive, Ash Flat, IN 72513",,08:00 AM - 06:00 PM,,ho36041255,false,true,,,,poll62139174
-"313 South Izard, Forrest City, IN 72335",,08:00 AM - 05:00 PM,,ho81884499,false,true,,,,poll92470626
-"111 N Peabody Ave, Mountain View, IN 72560",,08:00 AM - 06:00 PM,,ho75320613,false,true,,,,poll71187689
-"101 North Washington, Suite 102, El Dorado, IN 71730",,08:00 AM - 06:00 PM,,ho48339267,false,true,,,,poll23783606
-"280 North College, Suite 300, Fayetteville, IN 72701",,08:00 AM - 06:00 PM,,ho23296659,false,true,,,,poll1109252
-"315 North Spruce St, Searcy, IN 72143",,08:00 AM - 06:00 PM,,ho66342278,false,true,,,,poll25765167
-"500 North Third St., Augusta, IN 72006",,08:00 AM - 06:00 PM,,ho18494512,false,true,,,,poll24190000
-"108 Union Street, Dardanell, IN 72834",,08:00 AM - 06:00 PM,,ho5022468,false,true,,,,poll73693662
-"710 boston plaza, Danville, IN 72833",,08:00 AM - 06:00 PM,,ho50502228,false,true,,,,poll43223714
+"101 Court Square, Dewitt, AR 72042",,08:00 AM - 06:00 PM,,ho35080659,false,true,,,,poll21329873
+"205 East Jefferson, #5, Hamburg, AR 71646",,08:00 AM - 06:00 PM,,ho5952210,false,true,,,,poll73378493
+"1 East 7th St., Suite 103, Mountain Home, AR 72653",,08:00 AM - 06:00 PM,,ho32476036,false,true,,,,poll20190996
+"414 W. Central Harrison, Harrison, AR 72601",,08:00 AM - 06:00 PM,,ho28930629,false,true,,,,poll15021816
+"101 East Cedar St., Warren, AR 71671",,08:00 AM - 06:00 PM,,ho37539806,false,true,,,,poll63965051
+"309 West Main, Hampton, AR 71744",,08:00 AM - 06:00 PM,,ho64599599,false,true,,,,poll77369785
+"210 West Church St., Berryville, AR 72616",,08:00 AM - 06:00 PM,,ho58936397,false,true,,,,poll89061978
+"44 S. Main St, Eureka Springs, AR 72632",,08:00 AM - 06:00 PM,,ho10654755,false,true,,,,poll92263209
+"108 Main St., Lake Village, AR 71653",,08:00 AM - 06:00 PM,,ho17861247,false,true,,,,poll32392040
+"401 Clay St., Arkadelphia, AR 71923",,08:00 AM - 06:00 PM,,ho31477641,false,true,,,,poll79430252
+"151 South Second Ave. AND 800 W Second St, Piggott and Corning, AR 72454",,08:00 AM - 06:00 PM,,ho46675132,false,true,,,,poll74669666
+"800 Sw 2nd St, Corning, AR 72422",,08:00 AM - 06:00 PM,,ho91425669,false,true,,,,poll28378054
+"301 West Main St, Heber Springs, AR 72543",,08:00 AM - 06:00 PM,,ho28464775,false,true,,,,poll34633431
+"20 Magnolia Street, Rison, AR 71665",,08:00 AM - 06:00 PM,,ho84799382,false,true,,,,poll71360343
+"1 Court Square, Suite 1, Magnolia, AR 71753",,08:00 AM - 06:00 PM,,ho96103054,false,true,,,,poll23110813
+"4th Floor Courthouse, 115 South Moose St., Morrilton, AR 72110",,08:00 AM - 06:00 PM,,ho2974418,false,true,,,,poll39942899
+"511 South Main, Room 202, Jonesboro, AR 72401",,08:00 AM - 06:00 PM,,ho1142156,false,true,,,,poll46130916
+"315 W Jefferson, Jonesboro, AR 72401",,08:00 AM - 06:00 PM,,ho42995826,false,true,,,,poll93145916
+"107 Cobean Blvd, Lake City, AR 72437",,08:00 AM - 06:00 PM,,ho70417622,false,true,,,,poll33922704
+"300 Main St., Room 7, Van Buren, AR 72956",,08:00 AM - 06:00 PM,,ho10605743,false,true,,,,poll13627506
+"1820 Chestnut St, Van Buren, AR 72956",,08:00 AM - 06:00 PM,,ho50123786,false,true,,,,poll10076781
+"100 Court Square, Marion, AR 72364",,08:00 AM - 06:00 PM,,ho82434301,false,true,,,,poll82645771
+"705 East Union St, Wynne, AR 72396",,08:00 AM - 06:00 PM,,ho2180267,false,true,,,,poll90777792
+"608 Robert Moore Street, Arkansas City, AR 71630",,08:00 AM - 06:00 PM,,ho28282373,false,true,,,,poll8815443
+"901 Holly St, Arkansas City, AR 71654",,08:00 AM - 06:00 PM,,ho32118906,false,true,,,,poll7503963
+"18 Belmont St, Dumas, AR 71639",,08:00 AM - 06:00 PM,,ho42031502,false,true,,,,poll12790951
+"210 South Main St., Monticello, AR 71655",,08:00 AM - 06:00 PM,,ho68448706,false,true,,,,poll6100786
+"801 Locust St., Conway, AR 72034",,08:00 AM - 06:00 PM,,ho4939602,false,true,,,,poll2619015
+"211 West Commercial, Ozark, AR 72949",,08:00 AM - 06:00 PM,,ho40330882,false,true,,,,poll72536162
+"123 South Main Street, Salem, AR 72576",,08:00 AM - 06:00 PM,,ho47262805,false,true,,,,poll61675759
+"649 Ouachita Ave, Hot Springs, AR 71901",,08:00 AM - 06:00 PM,,ho49395461,false,true,,,,poll23525682
+"101 West Center, Room 106, Sheridan, AR 72150",,08:00 AM - 06:00 PM,,ho284042,false,true,,,,poll26364395
+"320 West Court Street, Room 102, Paragould, AR 72450",,08:00 AM - 06:00 PM,,ho16735028,false,true,,,,poll35751187
+"400 South Washington, Hope, AR 71801",,08:00 AM - 06:00 PM,,ho82599626,false,true,,,,poll77110240
+"230 W 2nd, Malvern, AR 72104",,08:00 AM - 06:00 PM,,ho64542823,false,true,,,,poll64328082
+"421 North Main St., Room 10, Nashville, AR 71852",,08:00 AM - 06:00 PM,,ho29144832,false,true,,,,poll40048459
+"192 East Main Street, Batesville, AR 72501",,08:00 AM - 06:00 PM,,ho9818525,false,true,,,,poll21912754
+"500 Main St., Melbourne, AR 72556",,08:00 AM - 06:00 PM,,ho50851602,false,true,,,,poll36075354
+"101 East Barraque Street, Pine Bluff, AR 71601",,08:00 AM - 06:00 PM,,ho88825851,false,true,,,,poll74167889
+"215 West Main Street, Clarksville, AR 72830",,08:00 AM - 06:00 PM,,ho40650685,false,true,,,,poll59874977
+"116 W 3rd St,, Lewisville, AR 71845",,08:00 AM - 06:00 PM,,ho82054107,false,true,,,,poll57494778
+"315 West Main Street, Walnut Ridge, AR 72476",,08:00 AM - 06:00 PM,,ho87763344,false,true,,,,poll47731530
+"15 East Chestnut Street, Room 4, Marianna, AR 72360",,08:00 AM - 06:00 PM,,ho80972210,false,true,,,,poll90769943
+"300 South Drew St., Star City, AR 71667",,08:00 AM - 06:00 PM,,ho74023367,false,true,,,,poll79196911
+"351 North 2nd St., Ashdown, AR 71822",,08:00 AM - 06:00 PM,,ho98777027,false,true,,,,poll91843750
+"#25 West Walnut St., Paris, AR 72855",,08:00 AM - 06:00 PM,,ho41830180,false,true,,,,poll14955905
+"301 North Center St, Lonoke, AR 72086",,08:00 AM - 06:00 PM,,ho22909016,false,true,,,,poll39960625
+"201 West Main St., Suite 202, Huntsville, AR 72740",,08:00 AM - 06:00 PM,,ho71848016,false,true,,,,poll49824928
+"300 East Old Main, Yellville, AR 72687",,08:00 AM - 06:00 PM,,ho60166719,false,true,,,,poll4850804
+"400 Laurel St., Room 105, Texarkana, AR 71854",,08:00 AM - 06:00 PM,,ho52970002,false,true,,,,poll36238866
+"200 West Hale, Osceola, AR 72370",,08:00 AM - 06:00 PM,,ho46233656,false,true,,,,poll69126721
+"200 West Walnut Street, Blytheville, AR 72315",,08:00 AM - 06:00 PM,,ho84923701,false,true,,,,poll29421740
+"105 NW Dewey, Manila, AR 72442",,08:00 AM - 06:00 PM,,ho73362345,false,true,,,,poll88862449
+"105 S Main St, Leachville, AR 72438",,08:00 AM - 06:00 PM,,ho73264822,false,true,,,,poll88225428
+"123 Madison Street, Clarendon, AR 72029",,08:00 AM - 06:00 PM,,ho42088882,false,true,,,,poll22432008
+"117 Ray Drive, Mount Ida, AR 71957",,08:00 AM - 06:00 PM,,ho61873543,false,true,,,,poll54444089
+"215 East 2nd St. South, Prescott, AR 71857",,08:00 AM - 06:00 PM,,ho64778144,false,true,,,,poll11276503
+"100 East Court St, Jasper, AR 72641",,08:00 AM - 06:00 PM,,ho55118536,false,true,,,,poll40276629
+"145 Jefferson St., Camden, AR 71701",,08:00 AM - 06:00 PM,,ho68363979,false,true,,,,poll17429464
+"204 West Main, Perryville, AR 72126",,08:00 AM - 06:00 PM,,ho51893557,false,true,,,,poll32232372
+"620 Cherry St., Suite 202, Helena, AR 72342",,08:00 AM - 06:00 PM,,ho20148643,false,true,,,,poll60798222
+"401 Market St., Harrisburg, AR 72432",,08:00 AM - 06:00 PM,,ho64867399,false,true,,,,poll79078269
+"606 Pine Street, Mena, AR 71953",,08:00 AM - 06:00 PM,,ho91143221,false,true,,,,poll85757976
+"1509 East Main St, Suite 7, Russellville, AR 72801",,08:00 AM - 06:00 PM,,ho31330852,false,true,,,,poll70109607
+"200 Courthouse Square, Suite 104; DeValls Bluff 183 Prairie St 72041, Des Arc, AR 72040",,08:00 AM - 06:00 PM,,ho7577106,false,true,,,,poll33559330
+"101 East Broadway, Suite A, Pocahontas, AR 72455",,08:00 AM - 06:00 PM,,ho24619818,false,true,,,,poll25214797
+"215 North Main, Suite 9, Benton, AR 72015",,08:00 AM - 06:00 PM,,ho78899072,false,true,,,,poll99140105
+"221 North Main, Benton, AR 72015",,08:00 AM - 06:00 PM,,ho42612220,false,true,,,,poll14094987
+"4200 Hwy 5 North, Bryant, AR 72022",,10:00 AM - 06:00 PM,,ho38525273,false,true,,,,poll31362327
+"24705 Hwy 5, Lonsdale, AR 72087",,10:00 AM - 06:00 PM,,ho44100486,false,true,,,,poll95737351
+"20422 North Springlake Road, Helsey, AR 72065",,10:00 AM - 06:00 PM,,ho26118243,false,true,,,,poll42484838
+"190 West 1st St., Waldron, AR 72958",,08:00 AM - 06:00 PM,,ho94591064,false,true,,,,poll5782240
+"200 South Highway 27, Marshall, AR 72650",,08:00 AM - 06:00 PM,,ho97171536,false,true,,,,poll80966298
+"35 South 6th St., Room 102, Fort Smith, AR 72901",,08:00 AM - 05:00 PM,,ho51164505,false,true,,,,poll39026653
+"115 North 3rd St., Room 102, De Queen, AR 71832",,08:00 AM - 06:00 PM,,ho97633472,false,true,,,,poll11948112
+"718 Ash Flat Drive, Ash Flat, AR 72513",,08:00 AM - 06:00 PM,,ho14513419,false,true,,,,poll66200501
+"313 South Izard, Forrest City, AR 72335",,08:00 AM - 05:00 PM,,ho41424250,false,true,,,,poll27269908
+"111 N Peabody Ave, Mountain View, AR 72560",,08:00 AM - 06:00 PM,,ho1769903,false,true,,,,poll91663508
+"101 North Washington, Suite 102, El Dorado, AR 71730",,08:00 AM - 06:00 PM,,ho66853360,false,true,,,,poll47013003
+"280 North College, Suite 300, Fayetteville, AR 72701",,08:00 AM - 06:00 PM,,ho84198025,false,true,,,,poll48602513
+"315 North Spruce St, Searcy, AR 72143",,08:00 AM - 06:00 PM,,ho20721786,false,true,,,,poll3587493
+"500 North Third St., Augusta, AR 72006",,08:00 AM - 06:00 PM,,ho89563638,false,true,,,,poll66705617
+"108 Union Street, Dardanell, AR 72834",,08:00 AM - 06:00 PM,,ho39115610,false,true,,,,poll507370
+"710 boston plaza, Danville, AR 72833",,08:00 AM - 06:00 PM,,ho26060316,false,true,,,,poll98786800
