@@ -51,7 +51,9 @@ class ElectionTxt(object):
         else:
             index_str = str(index)
 
-        return 'e' + str(index_str)
+        final =  'e' + str(index_str)
+        print final
+        return final
 
     def get_date(self):
         """#"""
@@ -197,7 +199,7 @@ class ElectionTxt(object):
 
         et.drop(['ocd-division', 'county', 'source_name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time', 'end_time',
                 'start_date', 'end_date', 'appt1', 'appt2', 'app3', 'subject_to_change', 'index', 'address_line', 'directions',
-                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id'], inplace=True, axis=1)
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'source_id'], inplace=True, axis=1)
 
         cols = ["id", "date", "name", "election_type", "state_id", "is_statewide", "registration_info",
                 'absentee_ballot_info', 'results_uri', "polling_hours", 'has_election_day_registration', 'registration_deadline',
@@ -249,7 +251,7 @@ if __name__ == '__main__':
     #early_voting_path = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/kansas_early_voting_info.csv"
     colnames = ['ocd-division', 'county', 'source_name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time', 'end_time',
                 'start_date', 'end_date', 'appt1', 'appt2', 'app3', 'subject_to_change', 'index', 'address_line', 'directions',
-                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id']
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'source_id']
     early_voting_df = pd.read_csv(early_voting_path, names=colnames, encoding='utf-8', skiprows=1)
 
     early_voting_df['index'] = early_voting_df.index + 1
