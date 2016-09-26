@@ -1,36 +1,46 @@
 election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
 ,ocd-id,,ocd-division/country:us/state:ca/county:alameda,ocd-division/country:us/state:ca/county:alam0007,poll30931741,st06,other,,loc0001
-,ocd-id,,ocd-division/country:us/state:ca/county:butte,ocd-division/country:us/state:ca/county:bu0009,poll98810408,st06,other,,loc0002
-,ocd-id,,ocd-division/country:us/state:ca/county:calaveras,ocd-division/country:us/state:ca/county:calave0015,poll3850315,st06,other,,loc0003
-,ocd-id,,ocd-division/country:us/state:ca/county:del_norte,ocd-division/country:us/state:ca/county:del_no0021,poll32367450,st06,other,,loc0004
-,ocd-id,,ocd-division/country:us/state:ca/county:el_dorado,ocd-division/country:us/state:ca/county:el_dor0033,poll81735112 poll12306305,st06,other,,loc0005
-,ocd-id,,ocd-division/country:us/state:ca/county:fresno,ocd-division/country:us/state:ca/county:fre0035,poll78433664,st06,other,,loc0006
-,ocd-id,,ocd-division/country:us/state:ca/county:glenn,ocd-division/country:us/state:ca/county:gl0041,poll93785153,st06,other,,loc0007
-,ocd-id,,ocd-division/country:us/state:ca/county:humboldt,ocd-division/country:us/state:ca/county:humbo0048,poll43127736,st06,other,,loc0008
-,ocd-id,,ocd-division/country:us/state:ca/county:imperial,ocd-division/country:us/state:ca/county:imper0053,poll48592718,st06,other,,loc0009
-,ocd-id,,ocd-division/country:us/state:ca/county:inyo,ocd-division/country:us/state:ca/county:i0058,poll67455466,st06,other,,loc0010
-,ocd-id,,ocd-division/country:us/state:ca/county:kern,ocd-division/country:us/state:ca/county:k0062,poll73958333,st06,other,,loc0011
-,ocd-id,,ocd-division/country:us/state:ca/county:kings,ocd-division/country:us/state:ca/county:ki0066,poll37788599,st06,other,,loc0012
-,ocd-id,,ocd-division/country:us/state:ca/county:lassen,ocd-division/country:us/state:ca/county:las0072,poll40013324,st06,other,,loc0013
-,ocd-id,,ocd-division/country:us/state:ca/county:madera,ocd-division/country:us/state:ca/county:mad0078,poll54856670 poll65006922,st06,other,,loc0014
-,ocd-id,,ocd-division/country:us/state:ca/county:marin,ocd-division/country:us/state:ca/county:ma0082,poll75856392,st06,other,,loc0015
-,ocd-id,,ocd-division/country:us/state:ca/county:mariposa,ocd-division/country:us/state:ca/county:marip0088,poll33199359,st06,other,,loc0016
-,ocd-id,,ocd-division/country:us/state:ca/county:mendocino,ocd-division/country:us/state:ca/county:mendoc0094,poll3135162,st06,other,,loc0017
-,ocd-id,,ocd-division/country:us/state:ca/county:modoc,ocd-division/country:us/state:ca/county:mo0099,poll25997673,st06,other,,loc0018
-,ocd-id,,ocd-division/country:us/state:ca/county:mono,ocd-division/country:us/state:ca/county:m0103,poll4718991,st06,other,,loc0019
-,ocd-id,,ocd-division/country:us/state:ca/county:monterey,ocd-division/country:us/state:ca/county:monte0109,poll16320877,st06,other,,loc0020
-,ocd-id,,ocd-division/country:us/state:ca/county:riverside,ocd-division/country:us/state:ca/county:rivers0113,poll63894622,st06,other,,loc0021
-,ocd-id,,ocd-division/country:us/state:ca/county:san_benito,ocd-division/country:us/state:ca/county:san_ben0117,poll8160068,st06,other,,loc0022
-,ocd-id,,ocd-division/country:us/state:ca/county:san_diego,ocd-division/country:us/state:ca/county:san_di0123,poll91978198,st06,other,,loc0023
-,ocd-id,,ocd-division/country:us/state:ca/county:san_francisco,ocd-division/country:us/state:ca/county:san_franci0130,poll78885144,st06,other,,loc0024
-,ocd-id,,ocd-division/country:us/state:ca/county:san_mateo,ocd-division/country:us/state:ca/county:san_ma0151,poll31547540 poll13101045 poll11819629,st06,other,,loc0025
-,ocd-id,,ocd-division/country:us/state:ca/county:santa_barbara,ocd-division/country:us/state:ca/county:santa_barb0157,poll30546351,st06,other,,loc0026
-,ocd-id,,ocd-division/country:us/state:ca/county:santa_clara,ocd-division/country:us/state:ca/county:santa_cl0162,poll60402856,st06,other,,loc0027
-,ocd-id,,ocd-division/country:us/state:ca/county:santa_cruz,ocd-division/country:us/state:ca/county:santa_c0174,poll69160685 poll52902263,st06,other,,loc0028
-,ocd-id,,ocd-division/country:us/state:ca/county:shasta,ocd-division/country:us/state:ca/county:sha0179,poll89113059,st06,other,,loc0029
-,ocd-id,,ocd-division/country:us/state:ca/county:solano,ocd-division/country:us/state:ca/county:sol0184,poll66624871,st06,other,,loc0030
-,ocd-id,,ocd-division/country:us/state:ca/county:stanislaus,ocd-division/country:us/state:ca/county:stanisl0186,poll26791746,st06,other,,loc0031
-,ocd-id,,ocd-division/country:us/state:ca/county:tulare,ocd-division/country:us/state:ca/county:tul0194,poll39417218,st06,other,,loc0032
-,ocd-id,,ocd-division/country:us/state:ca/county:tuolumne,ocd-division/country:us/state:ca/county:tuolu0202,poll19002651,st06,other,,loc0033
-,ocd-id,,ocd-division/country:us/state:ca/county:ventura,ocd-division/country:us/state:ca/county:vent0209,poll81173047,st06,other,,loc0034
-,ocd-id,,ocd-division/country:us/state:ca/county:yolo,ocd-division/country:us/state:ca/county:y0213,poll92646892,st06,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:ca/county:amador,ocd-division/country:us/state:ca/county:ama0008,poll62415200,st06,other,,loc0002
+,ocd-id,,ocd-division/country:us/state:ca/county:butte,ocd-division/country:us/state:ca/county:bu0018,poll98810408,st06,other,,loc0003
+,ocd-id,,ocd-division/country:us/state:ca/county:calaveras,ocd-division/country:us/state:ca/county:calave0020,poll3850315,st06,other,,loc0004
+,ocd-id,,ocd-division/country:us/state:ca/county:contra_costa,ocd-division/country:us/state:ca/county:contra_co0025,poll77054551,st06,other,,loc0005
+,ocd-id,,ocd-division/country:us/state:ca/county:del_norte,ocd-division/country:us/state:ca/county:del_no0029,poll32367450,st06,other,,loc0006
+,ocd-id,,ocd-division/country:us/state:ca/county:el_dorado,ocd-division/country:us/state:ca/county:el_dor0041,poll81735112 poll12306305,st06,other,,loc0007
+,ocd-id,,ocd-division/country:us/state:ca/county:fresno,ocd-division/country:us/state:ca/county:fre0044,poll78433664,st06,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:ca/county:glenn,ocd-division/country:us/state:ca/county:gl0049,poll93785153,st06,other,,loc0009
+,ocd-id,,ocd-division/country:us/state:ca/county:humboldt,ocd-division/country:us/state:ca/county:humbo0057,poll43127736,st06,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:ca/county:imperial,ocd-division/country:us/state:ca/county:imper0059,poll48592718,st06,other,,loc0011
+,ocd-id,,ocd-division/country:us/state:ca/county:inyo,ocd-division/country:us/state:ca/county:i0068,poll67455466,st06,other,,loc0012
+,ocd-id,,ocd-division/country:us/state:ca/county:kern,ocd-division/country:us/state:ca/county:k0071,poll73958333,st06,other,,loc0013
+,ocd-id,,ocd-division/country:us/state:ca/county:kings,ocd-division/country:us/state:ca/county:ki0075,poll37788599,st06,other,,loc0014
+,ocd-id,,ocd-division/country:us/state:ca/county:lassen,ocd-division/country:us/state:ca/county:las0082,poll40013324,st06,other,,loc0015
+,ocd-id,,ocd-division/country:us/state:ca/county:los_angeles,ocd-division/country:us/state:ca/county:los_ange0090,poll24955377,st06,other,,loc0016
+,ocd-id,,ocd-division/country:us/state:ca/county:madera,ocd-division/country:us/state:ca/county:mad0094,poll54856670 poll65006922,st06,other,,loc0017
+,ocd-id,,ocd-division/country:us/state:ca/county:marin,ocd-division/country:us/state:ca/county:ma0099,poll75856392,st06,other,,loc0018
+,ocd-id,,ocd-division/country:us/state:ca/county:mariposa,ocd-division/country:us/state:ca/county:marip0103,poll33199359,st06,other,,loc0019
+,ocd-id,,ocd-division/country:us/state:ca/county:mendocino,ocd-division/country:us/state:ca/county:mendoc0107,poll3135162,st06,other,,loc0020
+,ocd-id,,ocd-division/country:us/state:ca/county:merced,ocd-division/country:us/state:ca/county:mer0116,poll50099825,st06,other,,loc0021
+,ocd-id,,ocd-division/country:us/state:ca/county:modoc,ocd-division/country:us/state:ca/county:mo0117,poll25997673,st06,other,,loc0022
+,ocd-id,,ocd-division/country:us/state:ca/county:mono,ocd-division/country:us/state:ca/county:m0125,poll4718991,st06,other,,loc0023
+,ocd-id,,ocd-division/country:us/state:ca/county:monterey,ocd-division/country:us/state:ca/county:monte0127,poll16320877,st06,other,,loc0024
+,ocd-id,,ocd-division/country:us/state:ca/county:napa,ocd-division/country:us/state:ca/county:n0133,poll37346554,st06,other,,loc0025
+,ocd-id,,ocd-division/country:us/state:ca/county:nevada,ocd-division/country:us/state:ca/county:nev0144,poll40113841,st06,other,,loc0026
+,ocd-id,,ocd-division/country:us/state:ca/county:placer,ocd-division/country:us/state:ca/county:pla0151,poll92627841,st06,other,,loc0027
+,ocd-id,,ocd-division/country:us/state:ca/county:riverside,ocd-division/country:us/state:ca/county:rivers0157,poll63894622,st06,other,,loc0028
+,ocd-id,,ocd-division/country:us/state:ca/county:san_benito,ocd-division/country:us/state:ca/county:san_ben0162,poll8160068,st06,other,,loc0029
+,ocd-id,,ocd-division/country:us/state:ca/county:san_bernardino,ocd-division/country:us/state:ca/county:san_bernard0181,poll59823621 poll37814339 poll66357284 poll29140925 poll5652823,st06,other,,loc0030
+,ocd-id,,ocd-division/country:us/state:ca/county:san_diego,ocd-division/country:us/state:ca/county:san_di0188,poll91978198,st06,other,,loc0031
+,ocd-id,,ocd-division/country:us/state:ca/county:san_francisco,ocd-division/country:us/state:ca/county:san_franci0194,poll78885144,st06,other,,loc0032
+,ocd-id,,ocd-division/country:us/state:ca/county:san_joaquin,ocd-division/country:us/state:ca/county:san_joaq0196,poll27163421,st06,other,,loc0033
+,ocd-id,,ocd-division/country:us/state:ca/county:san_mateo,ocd-division/country:us/state:ca/county:san_ma0212,poll31547540 poll13101045 poll11819629,st06,other,,loc0034
+,ocd-id,,ocd-division/country:us/state:ca/county:santa_barbara,ocd-division/country:us/state:ca/county:santa_barb0221,poll30546351,st06,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:ca/county:santa_clara,ocd-division/country:us/state:ca/county:santa_cl0229,poll60402856,st06,other,,loc0036
+,ocd-id,,ocd-division/country:us/state:ca/county:santa_cruz,ocd-division/country:us/state:ca/county:santa_c0240,poll69160685 poll52902263,st06,other,,loc0037
+,ocd-id,,ocd-division/country:us/state:ca/county:shasta,ocd-division/country:us/state:ca/county:sha0243,poll89113059,st06,other,,loc0038
+,ocd-id,,ocd-division/country:us/state:ca/county:solano,ocd-division/country:us/state:ca/county:sol0247,poll66624871,st06,other,,loc0039
+,ocd-id,,ocd-division/country:us/state:ca/county:stanislaus,ocd-division/country:us/state:ca/county:stanisl0258,poll26791746,st06,other,,loc0040
+,ocd-id,,ocd-division/country:us/state:ca/county:tehama,ocd-division/country:us/state:ca/county:teh0264,poll36476267,st06,other,,loc0041
+,ocd-id,,ocd-division/country:us/state:ca/county:tulare,ocd-division/country:us/state:ca/county:tul0274,poll39417218,st06,other,,loc0042
+,ocd-id,,ocd-division/country:us/state:ca/county:tuolumne,ocd-division/country:us/state:ca/county:tuolu0275,poll19002651,st06,other,,loc0043
+,ocd-id,,ocd-division/country:us/state:ca/county:ventura,ocd-division/country:us/state:ca/county:vent0281,poll81173047,st06,other,,loc0044
+,ocd-id,,ocd-division/country:us/state:ca/county:yolo,ocd-division/country:us/state:ca/county:y0290,poll92646892,st06,other,,loc0045
