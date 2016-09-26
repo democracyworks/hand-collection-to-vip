@@ -1,7 +1,18 @@
 address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
 "101 Court Square, Dewitt, AR 72042",,08:00 AM - 06:00 PM,,ho35080659,false,true,,,,poll21329873
-"205 East Jefferson, #5, Hamburg, AR 71646",,08:00 AM - 06:00 PM,,ho5952210,false,true,,,,poll73378493
-"1 East 7th St., Suite 103, Mountain Home, AR 72653",,08:00 AM - 06:00 PM,,ho32476036,false,true,,,,poll20190996
+"Ashley County Clerk, 205 East Jefferson, #5, Hamburg, AR 71646",,08:00 AM - 06:00 PM,,ho23354846,false,true,,,,poll35764365
+"Baxter County Clerk, 1 East 7th St., Suite 103, Mountain Home, AR 72653",,08:00 AM - 06:00 PM,,ho55860054,false,true,,,,poll52347133
+"Twin Lakes Plaza, 759 Hwy 62, Mountain Home, AR 72653",,10:00 AM - 04:00 PM,,ho44656605,false,true,,,,poll30258283
+"Benton County Clerk's Office, 215 East Central Ave, Bentonville, AR 72712",,08:00 AM - 06:00 PM,,ho1221838,false,true,,,,poll190980
+"1428 W. Walnut St., Rogers, AR 72712",,08:00 AM - 06:00 PM,,ho4969780,false,true,,,,poll26025197
+"707 S. Lincoln St., # C, Siloam Springs, AR 72761",,08:00 AM - 06:00 PM,,ho16299205,false,true,,,,poll86621238
+"706 S. Walton Blvd, Bentonville, AR 72712",,08:30 AM - 05:00 PM,,ho71818225,false,true,,,,poll2912177
+"3 Riordan Rd., Bella Visa, AR 72714",,08:00 AM - 05:00 PM,,ho18511442,false,true,,,,poll6329575
+"330 Market St., Suite 130, Rogers, AR 72758",,08:00 AM - 05:00 PM,,ho1957693,false,true,,,,poll58954346
+"401 Charlotte St. SE, Gravette, AR 72736",,09:00 AM - 06:00 PM,,ho7940164,false,true,,,,poll45827819
+"506 Enterprise Dr., Lowell, AR 72745",,08:00 AM - 05:00 PM,,ho30611508,false,true,,,,poll34443286
+"755 W. Centerton Blvd., Centerton, AR 72719",,09:00 AM - 06:00 PM,,ho9963740,false,true,,,,poll66012437
+"17823 Marshall St., Garfield, AR 72732",,09:00 AM - 06:00 PM,,ho40356597,false,true,,,,poll40131738
 "414 W. Central Harrison, Harrison, AR 72601",,08:00 AM - 06:00 PM,,ho28930629,false,true,,,,poll15021816
 "101 East Cedar St., Warren, AR 71671",,08:00 AM - 06:00 PM,,ho37539806,false,true,,,,poll63965051
 "309 West Main, Hampton, AR 71744",,08:00 AM - 06:00 PM,,ho64599599,false,true,,,,poll77369785
@@ -17,7 +28,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "4th Floor Courthouse, 115 South Moose St., Morrilton, AR 72110",,08:00 AM - 06:00 PM,,ho2974418,false,true,,,,poll39942899
 "511 South Main, Room 202, Jonesboro, AR 72401",,08:00 AM - 06:00 PM,,ho1142156,false,true,,,,poll46130916
 "315 W Jefferson, Jonesboro, AR 72401",,08:00 AM - 06:00 PM,,ho42995826,false,true,,,,poll93145916
-"107 Cobean Blvd, Lake City, AR 72437",,08:00 AM - 06:00 PM,,ho70417622,false,true,,,,poll33922704
+"107 Cobean Blvd,, Lake City, AR 72437",,08:00 AM - 06:00 PM,,ho94073578,false,true,,,,poll74495567
 "300 Main St., Room 7, Van Buren, AR 72956",,08:00 AM - 06:00 PM,,ho10605743,false,true,,,,poll13627506
 "1820 Chestnut St, Van Buren, AR 72956",,08:00 AM - 06:00 PM,,ho50123786,false,true,,,,poll10076781
 "100 Court Square, Marion, AR 72364",,08:00 AM - 06:00 PM,,ho82434301,false,true,,,,poll82645771
@@ -34,9 +45,10 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "320 West Court Street, Room 102, Paragould, AR 72450",,08:00 AM - 06:00 PM,,ho16735028,false,true,,,,poll35751187
 "400 South Washington, Hope, AR 71801",,08:00 AM - 06:00 PM,,ho82599626,false,true,,,,poll77110240
 "230 W 2nd, Malvern, AR 72104",,08:00 AM - 06:00 PM,,ho64542823,false,true,,,,poll64328082
-"421 North Main St., Room 10, Nashville, AR 71852",,08:00 AM - 06:00 PM,,ho29144832,false,true,,,,poll40048459
+"200 Lake Nichols Dr, Nashville, AR 71852",,08:00 AM - 06:00 PM,,ho65906137,false,true,,,,poll84726617
 "192 East Main Street, Batesville, AR 72501",,08:00 AM - 06:00 PM,,ho9818525,false,true,,,,poll21912754
 "500 Main St., Melbourne, AR 72556",,08:00 AM - 06:00 PM,,ho50851602,false,true,,,,poll36075354
+"Village Mall, 2119 Malcolm Avenue, Newport, AR 72112",,08:00 AM - 06:00 PM,,ho41522474,false,true,,,,poll25462950
 "101 East Barraque Street, Pine Bluff, AR 71601",,08:00 AM - 06:00 PM,,ho88825851,false,true,,,,poll74167889
 "215 West Main Street, Clarksville, AR 72830",,08:00 AM - 06:00 PM,,ho40650685,false,true,,,,poll59874977
 "116 W 3rd St,, Lewisville, AR 71845",,08:00 AM - 06:00 PM,,ho82054107,false,true,,,,poll57494778
@@ -60,11 +72,22 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "145 Jefferson St., Camden, AR 71701",,08:00 AM - 06:00 PM,,ho68363979,false,true,,,,poll17429464
 "204 West Main, Perryville, AR 72126",,08:00 AM - 06:00 PM,,ho51893557,false,true,,,,poll32232372
 "620 Cherry St., Suite 202, Helena, AR 72342",,08:00 AM - 06:00 PM,,ho20148643,false,true,,,,poll60798222
+"112 North Washington, Murfeesboro, AR 71958",,08:00 AM - 06:00 PM,,ho59115341,false,true,,,,poll64570149
+"510 N. 1st St., Glenwood, AR 79143",,11:30 AM - 06:00 PM,,ho14776276,false,true,,,,poll70802175
 "401 Market St., Harrisburg, AR 72432",,08:00 AM - 06:00 PM,,ho64867399,false,true,,,,poll79078269
 "606 Pine Street, Mena, AR 71953",,08:00 AM - 06:00 PM,,ho91143221,false,true,,,,poll85757976
 "1509 East Main St, Suite 7, Russellville, AR 72801",,08:00 AM - 06:00 PM,,ho31330852,false,true,,,,poll70109607
 "200 Courthouse Square, Suite 104; DeValls Bluff 183 Prairie St 72041, Des Arc, AR 72040",,08:00 AM - 06:00 PM,,ho7577106,false,true,,,,poll33559330
-"101 East Broadway, Suite A, Pocahontas, AR 72455",,08:00 AM - 06:00 PM,,ho24619818,false,true,,,,poll25214797
+"501 West Markham, Little Rock, AR 72201",,08:00 AM - 06:00 PM,,ho17786907,false,true,,,,poll21818787
+"Sue Cowan Williams Library, 1800 S Chester St, Little Rock, AR 72206",,10:00 AM - 06:00 PM,,ho97133329,false,true,,,,poll63915927
+"Dee Brown Library, 6325 Baseline Rd, Little Rock, AR 72209",,10:00 AM - 06:00 PM,,ho30988625,false,true,,,,poll2026559
+"Roosevelt Thompson Library, 38 Rahling Circle, Little Rock, AR 72223",,10:00 AM - 06:00 PM,,ho99750139,false,true,,,,poll29656749
+"Laman Library, 2801 Orange St, North Little Rock, AR 72114",,10:00 AM - 06:00 PM,,ho90750078,false,true,,,,poll70122240
+"Sidney S. McMath Library, 2100 John Barrow Rd, Little Rock, AR 72204",,10:00 AM - 06:00 PM,,ho67981490,false,true,,,,poll69393694
+"Jacksonville Community Center, 5 Municipal Dr, Jacksonville, AR 72076",,10:00 AM - 06:00 PM,,ho81900231,false,true,,,,poll11858734
+"Jess Odom Community Center, 1100 Edgewood Dr,  Maumelle , AR 72113",,10:00 AM - 06:00 PM,,ho65147539,false,true,,,,poll66730087
+"Jack Evans Senior Citizen Center, 2301 Thornhill Dr, Sherwood , AR 72120",,10:00 AM - 06:00 PM,,ho75356882,false,true,,,,poll83357769
+"511 W Church St, Pocahontas, AR 72455",,08:00 AM - 06:00 PM,,ho46002914,false,true,,,,poll94525702
 "215 North Main, Suite 9, Benton, AR 72015",,08:00 AM - 06:00 PM,,ho78899072,false,true,,,,poll99140105
 "221 North Main, Benton, AR 72015",,08:00 AM - 06:00 PM,,ho42612220,false,true,,,,poll14094987
 "4200 Hwy 5 North, Bryant, AR 72022",,10:00 AM - 06:00 PM,,ho38525273,false,true,,,,poll31362327
@@ -72,12 +95,13 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "20422 North Springlake Road, Helsey, AR 72065",,10:00 AM - 06:00 PM,,ho26118243,false,true,,,,poll42484838
 "190 West 1st St., Waldron, AR 72958",,08:00 AM - 06:00 PM,,ho94591064,false,true,,,,poll5782240
 "200 South Highway 27, Marshall, AR 72650",,08:00 AM - 06:00 PM,,ho97171536,false,true,,,,poll80966298
-"35 South 6th St., Room 102, Fort Smith, AR 72901",,08:00 AM - 05:00 PM,,ho51164505,false,true,,,,poll39026653
+"35 South 6th St., Room 102, Fort Smith, AR 72901",,08:00 AM - 06:00 PM,,ho51164505,false,true,,,,poll39026653
 "115 North 3rd St., Room 102, De Queen, AR 71832",,08:00 AM - 06:00 PM,,ho97633472,false,true,,,,poll11948112
 "718 Ash Flat Drive, Ash Flat, AR 72513",,08:00 AM - 06:00 PM,,ho14513419,false,true,,,,poll66200501
-"313 South Izard, Forrest City, AR 72335",,08:00 AM - 05:00 PM,,ho41424250,false,true,,,,poll27269908
+"313 South Izard, Forrest City, AR 72335",,08:00 AM - 06:00 PM,,ho41424250,false,true,,,,poll27269908
 "111 N Peabody Ave, Mountain View, AR 72560",,08:00 AM - 06:00 PM,,ho1769903,false,true,,,,poll91663508
 "101 North Washington, Suite 102, El Dorado, AR 71730",,08:00 AM - 06:00 PM,,ho66853360,false,true,,,,poll47013003
+"1414 Hwy 65 S, Suite 131, Clinton, AR 72031",,08:00 AM - 06:00 PM,,ho52681412,false,true,,,,poll1000249
 "280 North College, Suite 300, Fayetteville, AR 72701",,08:00 AM - 06:00 PM,,ho84198025,false,true,,,,poll48602513
 "315 North Spruce St, Searcy, AR 72143",,08:00 AM - 06:00 PM,,ho20721786,false,true,,,,poll3587493
 "500 North Third St., Augusta, AR 72006",,08:00 AM - 06:00 PM,,ho89563638,false,true,,,,poll66705617

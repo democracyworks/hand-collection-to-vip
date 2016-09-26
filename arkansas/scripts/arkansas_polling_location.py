@@ -247,7 +247,7 @@ if __name__ == '__main__':
                 'start_time', 'end_time', 'start_date', 'end_date', 'notes']
 
 
-    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
