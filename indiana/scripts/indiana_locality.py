@@ -55,7 +55,7 @@ class LocalityTxt(object):
         with an 'index_str' based on the Dataframes row index.'0s' are added, if necesary, to
         maintain a consistent id length.
         """
-
+        print index, division_description
         # Get locality(town or county), and remove state abbreviation.
         if division_description:
             locality = division_description[:-3].lower().replace(" ", "_")

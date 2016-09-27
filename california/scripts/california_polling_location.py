@@ -7,7 +7,6 @@ from datetime import datetime
 
 class PollingLocationTxt(object):
     """
-
     """
 
     def __init__(self, base_df, early_voting_true=False, drop_box_true="false"):

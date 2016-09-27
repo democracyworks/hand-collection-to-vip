@@ -54,7 +54,8 @@ class ScheduleTxt(object):
         return hours + "-" + mins
 
     def get_sch_time(self, hours):
-        hours_arr = hours.split("-")
+        hours_arr = str(hours).split("-")
+
         hours = hours_arr[0].strip() + "-" + hours_arr[1].strip()
         return self.format_time(hours)
         # arr = hours.split("-")
