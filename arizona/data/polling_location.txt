@@ -1,0 +1,82 @@
+address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+"Chinle Road Yard, 50 yards South of Old Mustang Store, Highway 191, Chinle, AZ 86503",,07:00 AM-05:00 PM,,ho36949660,false,true,,,,poll19288272
+"Fort Defiance Road Yard, Indn Route 12, Fort Defiance, AZ 86504",,07:00 AM-05:00 PM,,ho69033752,false,true,,,,poll83287847
+"1415 W. Melody Lane, Bldg. B, Bisbee, AZ 85603",,08:00 AM-05:00 PM,,ho39716982,false,true,,,,poll87575508
+"110 E. Cherry Ave., Flagstaff, AZ 86001",,08:00 AM-05:00 PM,,ho91486104,false,true,,,,poll95650011
+"78 Main St, Tuba City, AZ 86045",,08:00 AM-05:00 PM,,ho61272318,false,true,,,,poll4629691
+"113 S 1st St, Williams, AZ 86046",,07:30 AM-05:00 PM,,ho20912467,false,true,,,,poll52341613
+"102 Roadrunner Dr, Sedona, AZ 86336",,07:00 AM-06:00 PM,,ho44815321,false,true,,,,poll70688167
+"697 Vista Ave, Page, AZ 86040",,07:00 AM-05:30 PM,,ho14261187,false,true,,,,poll92121385
+"25 N Main St, Fredonia, AZ 84741",,07:30 AM-05:30 PM,,ho15939255,false,true,,,,poll89259334
+"1 Boulder St, Grand Canyon Village, AZ 86023",,06:00 AM-04:30 PM,,ho71953709,false,true,,,,poll61662464
+"1400 E. Ash St., Globe, AZ 85501",,08:00 AM-05:00 PM,,ho9398961,false,true,,,,poll55533018
+"201 W. Frontier St., Payson, AZ 85541",,08:00 AM-12:00 PM,,ho42993316,false,true,,,,poll80494999
+"206 Giffin Ave, Winkelman, AZ 85192",,10:00 AM-02:00 PM,,ho1784886,false,true,,,,poll52794427
+"4621 S 9th St, Whiteriver, AZ 85941",,10:00 AM-02:00 PM,,ho16635994,false,true,,,,poll67721847
+"Hwy 188, Roosevelt, AZ 85545",,09:00 AM-11:00 AM,,ho2146192,false,true,,,,poll96755569
+"45675 N Hwy 188, Tonto Basin, AZ 85553",,01:00 PM-03:00 PM,,ho61379892,false,true,,,,poll51220575
+"4039 N Az Highway 87, Pine, AZ 85544",,10:00 AM-02:00 PM,,ho23972466,false,true,,,,poll24493783
+"89 San Carlos Ave, San Carlos, AZ 85550",,10:00 AM-02:00 PM,,ho57909833,false,true,,,,poll84848348
+"Pleasant Valley Community Center, Hwy 288, Young, AZ 85554",,10:00 AM-02:00 PM,,ho13654959,false,true,,,,poll71052178
+"921 Thatcher Blvd., Safford, AZ 85546",,07:00 AM-06:00 PM,,ho37176100,false,true,,,,poll7643297
+"253 5th Street, Clifton, AZ 85533",,08:00 AM-05:00 PM,,ho13764713,false,true,,,,poll51968319
+"1112 Joshua Ave., Suite 201, Parker, AZ 85344",,07:00 AM-06:00 PM,,ho4293706,false,true,,,,poll51302627
+"Recorder's/Election Office, MCTEC, 510 South 3rd Avenue, Phoenix, AZ 85003",,08:00 AM-05:00 PM,,ho27125283,false,true,,,,poll65743876
+"Recorder's/Election Office, MCTEC, 510 South 3rd Avenue, Mesa, AZ 85210",,08:00 AM-05:00 PM,,ho23484568,false,true,,,,poll76150624
+"Recorder's/ Elections Office, Downtown, 111 South 3rd Avenue, Phoenix, AZ 85003",,08:00 AM-05:00 PM,,ho21465615,false,true,,,,poll13544619
+"Avondale City Clerk's Office, 11465 W Civic Center Dr, Avondale, AZ 85323",,07:00 AM-06:00 PM,,ho2798534,false,true,,,,poll57479370
+"Ability360 Center, Computer Lab Room, 2nd Floor, 5025 E Washington St, Phoenix, AZ 85034",,08:00 AM-05:00 PM,,ho5887288,false,true,,,,poll7302208
+"Buckeye City Clerk's Office, 530 E Monroe Ave, Buckeye, AZ 85326",,07:00 AM-06:00 PM,,ho14626569,false,true,,,,poll12381168
+"Carefree Town Clerk's Office, 8 Sundial Cir, Carefree, AZ 85377",,08:00 AM-04:30 PM,,ho59352605,false,true,,,,poll58838435
+"Cave Creek Town Clerk's Office, 37622 N Cave Creek Rd, Cave Creek, AZ 85331",,07:00 AM-05:00 PM,,ho9256691,false,true,,,,poll77083149
+"Chandler City Clerk's Office, 175 S Arizona Ave, Chandler, AZ 85225",,08:00 AM-05:00 PM,,ho32981937,false,true,,,,poll81171500
+"El Mirage City Clerk's Office, 12145 NW Grand Ave, El Mirage, AZ 85335",,08:00 AM-05:00 PM,,ho39738325,false,true,,,,poll35487202
+"Fountain Hills Town Clerk's Office, 16705 E Ave of the Fountains, Fountain Hills, AZ 85268",,07:00 AM-06:00 PM,,ho17429690,false,true,,,,poll62827216
+"Gila Bend Town Clerk's Office, 644 W Pima St, Gila Bend, AZ 85337",,08:00 AM-04:00 PM,,ho16248,false,true,,,,poll72284597
+"Gilbert Municipal Center, 50 E Civic Center Dr, Gilbert, AZ 85296",,07:00 AM-06:00 PM,,ho71923911,false,true,,,,poll81126753
+"Glendale - Ability360 Center, 6829 N 57th Ave, Glendale, AZ 85301",,08:00 AM-05:00 PM,,ho23838642,false,true,,,,poll44260236
+"Litchfield Park City Clerk's Office, 214 W Wigwam Boulevard, Litchfield Park, AZ 85340",,08:00 AM-05:00 PM,,ho56413719,false,true,,,,poll17313191
+"Maryvale - Cartwright School District Annex Blg, 3401 N 67TH Ave, Phoenix, AZ 85033",,08:00 AM-05:00 PM,,ho82990852,false,true,,,,poll20265678
+"Mesa City Clerk's Office, 20 E Main St, Mesa, AZ 85201",,07:00 AM-06:00 PM,,ho9221676,false,true,,,,poll85769793
+"Phoenix City Hall, 200 W Washington St, 15th Floor, Phoenix, AZ 85003",,08:00 AM-05:00 PM,,ho17332361,false,true,,,,poll51964244
+"Scottsdale City Hall/Election's Office, 3939 N Drinkwater Blvd, Scottsdale, AZ 85251",,09:00 AM-05:00 PM,,ho45829012,false,true,,,,poll36437049
+"South Mountain Community Center, 212 E Alta Vista Rd, Phoenix, AZ 85042",,08:00 AM-05:00 PM,,ho80007431,false,true,,,,poll36014047
+"Surprise City Clerk's Office, 16000 N Civic Center Plaza, Surprise, AZ 85374",,08:00 AM-05:00 PM,,ho73970394,false,true,,,,poll85785908
+"Tempe - ASU, Safety Escort Office, Palo Verde West Bldg, Room 151, 330 E University Dr, Tempe, AZ 85281",,10:00 AM-06:00 PM,,ho98496926,false,true,,,,poll28286136
+"Tempe Public Library, 3500 S Rural Rd, Tempe, AZ 85282",,10:00 AM-06:00 PM,,ho91622409,false,true,,,,poll93114242
+"Wickenburg Town Clerk's Office, 155 N Tegner St, Wickenburg, AZ 85390",,07:00 AM-06:00 PM,,ho98036040,false,true,,,,poll84666519
+"Youngtown Town Clerk's Office, 12030 N Clubhouse Sq, Youngtown, AZ 85363",,08:00 AM-04:00 PM,,ho34630811,false,true,,,,poll65578551
+"Mohave County Library, 1770 N McCulloch Blvd, Room A, Lake Havasu City, AZ 86403",,09:00 AM-04:00 PM,,ho50250481,false,true,,,,poll77118093
+"Mohave County Library, 1170 E Hancock Rd, Bullhead City, AZ 86442",,09:00 AM-02:00 PM,,ho86191714,false,true,,,,poll51797922
+"Kathryn Heidenreich Senior Center, 1776 Airway, Suite B, Kingman, AZ 86401",,09:00 AM-02:00 PM,,ho67808486,false,true,,,,poll19667733
+"100 East Code Talkers Drive, South Hwy 77, Holbrook, AZ 86025",,08:00 AM-05:00 PM,,ho84832474,false,true,,,,poll90912197
+"180 N. 9th St., Show Low, AZ 85901",,08:00 AM-05:00 PM,,ho20447930,false,true,,,,poll48331996
+"Polacca Circle M Store, AZ-264, Polacca, AZ 86042",,11:00 AM-06:00 PM,,ho11406515,false,true,,,,poll42933576
+"Dilkon Shopping Center, Bashas, NEC NAVAJO RTE 15 AND 60, Dilkon, AZ 86047",,11:00 AM-06:00 PM,,ho22357530,false,true,,,,poll96348761
+"Kayenta Shopping Center Area, Bashas Grocery Store, Hwy 160 & Hwy 163, Kayenta, AZ 86033",,10:00 AM-06:00 PM,,ho81036313,false,true,,,,poll57581047
+"Social Services Building, Lobby, Whiteriver, AZ 85941",,11:00 AM-06:00 PM,,ho2944996,false,true,,,,poll63238067
+"Kayenta Shopping Center Area, Bashas' Grocery Store, Hwy 160 & Hwy 163, Kayenta, AZ 86033",,10:00 AM-06:00 PM,,ho43667081,false,true,,,,poll67013743
+"Pinon Shopping Center, Bashas Grocery Store, BIA Route 4 & BIA Route 41, Pinon, AZ 86510",,10:00 AM-06:00 PM,,ho26054758,false,true,,,,poll27693831
+"County Public Service Center, Recorder s Main Office, 240 North Stone Avenue, Tucson, AZ 85701",,08:00 AM-05:00 PM,,ho66214235,false,true,,,,poll58830494
+"Recorder s East Side Annex, Suite D, 6920 East Broadway Boulevard, Tucson, AZ 85710",,08:00 AM-05:00 PM,,ho37801021,false,true,,,,poll41429617
+"Pima County Recorder s Office Annex, 6550 South Country Club Rd, Tucson, AZ 85756",,08:00 AM-05:00 PM,,ho61864101,false,true,,,,poll89479077
+"Ascension Lutheran Church and School, 1220 W. Magee Road, Tucson, AZ 85704",,09:00 AM-05:00 PM,,ho73106167,false,true,,,,poll25024751
+"Sahuarita Town Hall, 375 West Sahuarita Center Way, Sahuarita, AZ 85629",,09:00 AM-04:30 PM,,ho46637946,false,true,,,,poll82521662
+"ASUA Administration Office, Conference Room, 3rd floor of the Student Union Memorial Building, Tucson, AZ 85721",,09:00 AM-05:00 PM,,ho32382615,false,true,,,,poll6580196
+"Salazar-Ajo Library Conference Room, 33 Plaza Street, Ajo, AZ 85321",,09:00 AM-05:00 PM,,ho73231760,false,true,,,,poll86354605
+"Pascua Yaqui Tribe Radio Station, 7474 South Camino de Oeste, Tucson, AZ 85746",,09:00 AM-05:00 PM,,ho53067318,false,true,,,,poll92767620
+"Tohono O odham High School, Music Room State Rt 86, Mile Marker 74, Sells, AZ 85634",,09:00 AM-04:00 PM,,ho68280623,false,true,,,,poll91584295
+"Gu Achi District Santa Rosa Multi-Purpose Building, Santa Rosa Community, Sells, AZ 85634",,09:00 AM-04:00 PM,,ho13652222,false,true,,,,poll61672395
+"San Xavier District Council Chamber, 2018 W San Xavier Rd, Tucson, AZ 85746",,09:00 AM-04:00 PM,,ho34299285,false,true,,,,poll8395437
+"Tohono O'odham Legislative Council Chambers, Sells, AZ 85634",,09:00 AM-04:00 PM,,ho77195523,false,true,,,,poll96215952
+"31 North Pinal Street, Bldg. E, Florence, AZ 85132",,08:00 AM-05:00 PM,,ho93287106,false,true,,,,poll97767234
+"575 N Idaho Rd #800, Apache Junction, AZ 85119",,08:00 AM-04:30 PM,,ho24783379,false,true,,,,poll72045219
+"820 E Cottonwood Ln, Ste A-2, Casa Grande, AZ 85122",,08:00 AM-04:30 PM,,ho65086905,false,true,,,,poll92023467
+"2150 N. Congress Drive, Suite 119, Nogales, AZ 85621",,08:00 AM-05:00 PM,,ho29801640,false,true,,,,poll81447973
+"50 Bridge Rd, Tubac, AZ 85646",,09:00 AM-01:00 PM,,ho66399870,false,true,,,,poll70684277
+"1450 N Hohokam Dr, Nogales, AZ 85621",,02:00 PM-05:00 PM,,ho38235467,false,true,,,,poll31855344
+"310 McKeown Ave, Patagonia, AZ 85624",,09:00 AM-01:00 PM,,ho29783514,false,true,,,,poll85143035
+"3173 State Highway 83, Sonoita, AZ 85637",,02:00 PM-05:00 PM,,ho17338276,false,true,,,,poll6968931
+"1015 Fair St., Room #228, Prescott, AZ 86305",,08:00 AM-05:00 PM,,ho96938188,false,true,,,,poll23293747
+"10 S 6th St, Cottonwood, AZ 86326",,08:00 AM-05:00 PM,,ho69220061,false,true,,,,poll48144109
+"410 S. Maiden Lane, #b, Yuma, AZ 85364",,08:00 AM-05:00 PM,,ho46156934,false,true,,,,poll68257211

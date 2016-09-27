@@ -1,0 +1,16 @@
+election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
+,ocd-id,,ocd-division/country:us/state:az/county:apache,apache_cou0001,poll83287847 poll19288272,st04,other,,loc0001
+,ocd-id,,ocd-division/country:us/state:az/county:cochise,cochise_cou0002,poll87575508,st04,other,,loc0002
+,ocd-id,,ocd-division/country:us/state:az/county:coconino,coconino_cou0003,poll4629691 poll95650011 poll61662464 poll52341613 poll70688167 poll92121385 poll89259334,st04,other,,loc0003
+,ocd-id,,ocd-division/country:us/state:az/county:gila,gila_cou0004,poll55533018 poll84848348 poll52794427 poll80494999 poll24493783 poll96755569 poll67721847 poll51220575 poll71052178,st04,other,,loc0004
+,ocd-id,,ocd-division/country:us/state:az/county:graham,graham_cou0005,poll7643297,st04,other,,loc0005
+,ocd-id,,ocd-division/country:us/state:az/county:greenlee,greenlee_cou0006,poll51968319,st04,other,,loc0006
+,ocd-id,,ocd-division/country:us/state:az/county:la_paz,la_paz_cou0007,poll51302627,st04,other,,loc0007
+,ocd-id,,ocd-division/country:us/state:az/county:maricopa,maricopa_cou0008,poll84666519 poll62827216 poll57479370 poll72284597 poll35487202 poll77083149 poll12381168 poll7302208 poll20265678 poll81126753 poll28286136 poll36437049 poll81171500 poll85785908 poll44260236 poll65743876 poll51964244 poll17313191 poll58838435 poll36014047 poll13544619 poll76150624 poll93114242 poll65578551 poll85769793,st04,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:az/county:mohave,mohave_cou0009,poll77118093 poll51797922 poll19667733,st04,other,,loc0009
+,ocd-id,,ocd-division/country:us/state:az/county:navajo,navajo_cou0010,poll27693831 poll67013743 poll48331996 poll96348761 poll90912197 poll42933576 poll63238067 poll57581047,st04,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:az/county:pima,pima_cou0011,poll8395437 poll61672395 poll25024751 poll89479077 poll91584295 poll58830494 poll41429617 poll96215952 poll82521662 poll92767620 poll86354605 poll6580196,st04,other,,loc0011
+,ocd-id,,ocd-division/country:us/state:az/county:pinal,pinal_cou0012,poll92023467 poll97767234 poll72045219,st04,other,,loc0012
+,ocd-id,,ocd-division/country:us/state:az/county:santa_cruz,santa_cruz_cou0013,poll81447973 poll70684277 poll31855344 poll6968931 poll85143035,st04,other,,loc0013
+,ocd-id,,ocd-division/country:us/state:az/county:yavapai,yavapai_cou0014,poll23293747 poll48144109,st04,other,,loc0014
+,ocd-id,,ocd-division/country:us/state:az/county:yuma,yuma_cou0015,poll68257211,st04,other,,loc0015
