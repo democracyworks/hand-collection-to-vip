@@ -55,7 +55,7 @@ class ScheduleTxt(object):
 
     def get_sch_time(self, hours):
         hours_arr = hours.split(" - ")
-        print hours_arr
+
         hours = hours_arr[0] + "-" + hours_arr[1]
         hours = hours.strip()
         return self.format_time(hours)
@@ -174,7 +174,7 @@ class ScheduleTxt(object):
         sch.drop(['ocd_division', 'homepage', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change', 'notes',
                 'index', 'address_line',
-                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id', 'dirs'], inplace=True,
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id', 'dirs', 'directions'], inplace=True,
                  axis=1)
 
         # hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id,
@@ -215,8 +215,9 @@ if __name__ == '__main__':
 
     colnames = ['ocd_division', 'homepage', 'county', 'name', 'address_one', 'address_two', 'dirs','city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change', 'notes',
-                'index', 'address_line',
+                'index', 'address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id']
+    print len(colnames)
 
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
 
