@@ -1,0 +1,196 @@
+address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+"69 Tippins Street, Suite 205, Baxley, GA 31513",,08:30 AM-05:00 PM,,ho73749651,false,true,,,,poll4196833
+"232 West 12th Street Alma, GA 31510",,09:00 AM-05:00 PM,,ho19625673,false,true,,,,poll4738365
+"121 N Wilkinson St, Ste 104, Milledgeville, GA 31061",,08:30 AM-05:00 PM,,ho29217598,false,true,,,,poll27039556
+"226 Candler Street Homer, GA 30547",,08:00 AM-05:00 PM,,ho4815738,false,true,,,,poll49564164
+"233 East Broad Street, Ground Floor, Winder, GA 30680",,08:00 AM-05:00 PM,,ho5658410,false,true,,,,poll46759372
+"115 W Pine Street Fitzgerald, GA 31750",,07:30 AM-03:45 PM,,ho17275213,false,true,,,,poll39153575
+"112 North Second Street, 2nd floor, Cochran, GA 31014",,08:30 AM-05:00 PM,,ho44383637,false,true,,,,poll10829438
+"10305 N. Main St, Suite 400, Nahunta, GA 31553",,08:00 AM-05:00 PM,,ho75928731,false,true,,,,poll41647566
+"610 S Highland Rd Quitman, GA 31643",,08:00 AM-05:00 PM,,ho36843494,false,true,,,,poll43811779
+"602 North Liberty Street, Room 104, Waynesboro, GA 30830-1417",,09:00 AM-05:00 PM,,ho76494979,false,true,,,,poll47045407
+"200 E 4th St Woodbine, GA 31569",,08:30 AM-05:00 PM,,ho59288617,false,true,,,,poll13081778
+"1050 Wildcat Dr Kingsland, GA 31548",,09:00 AM-04:00 PM,,ho1569449,false,true,,,,poll53676183
+"1915 Osborne St Saint Marys, GA 31558",,08:30 AM-05:00 PM,,ho86717595,false,true,,,,poll72493758
+"333 S Ashley St Kingsland, GA 31548",,08:30 AM-05:00 PM,,ho10418182,false,true,,,,poll36661134
+"621 West Pine Street Metter, GA 30439",,08:00 AM-05:00 PM,,ho64710616,false,true,,,,poll22161037
+"423 College Street, Lower Level, Carrollton, GA 30117",,08:00 AM-05:00 PM,,ho48101864,false,true,,,,poll90482029
+"424 Leslie Dr Villa Rica, GA 30180",,08:00 AM-07:00 PM,,ho69538036,false,true,,,,poll95772548
+"5238 Evitt Street Ringgold, GA 30736",,08:00 AM-05:00 PM,,ho7393332,false,true,,,,poll94095884
+"3319 Lakeview Dr Rossville, GA 30741",,08:00 AM-05:00 PM,,ho20523890,false,true,,,,poll3255323
+"13063 Florida Ave Saint George, GA 31562",,09:00 AM-04:00 PM,,ho79373154,false,true,,,,poll76736542
+"1520 Third St, Suite C, Folkston, GA 31537",,08:00 AM-05:00 PM,,ho95749408,false,true,,,,poll38918690
+"400 East Main Street Canton, GA 30114",,08:30 AM-05:00 PM,,ho88021041,false,true,,,,poll19316922
+"435 Old Canton Road Ball Ground, GA 30107",,09:00 AM-04:00 PM,,ho92953742,false,true,,,,poll45248702
+"2740 East Cherokee Drive Canton, GA 30115",,09:00 AM-04:00 PM,,ho99732432,false,true,,,,poll49061440
+"4476 Towne Lake Parkway Woodstock, GA 30189",,09:00 AM-04:00 PM,,ho47792678,false,true,,,,poll24342679
+"7735 Main Street Woodstock, GA 30188",,09:00 AM-04:00 PM,,ho92168172,false,true,,,,poll24393984
+"155 East Washington Street Athens, GA 30601",,08:00 AM-05:00 PM,,ho46554275,false,true,,,,poll36543603
+"301 College Avenue, Conference Room 103, Athens, GA 30601",,08:00 AM-05:00 PM,,ho66505669,false,true,,,,poll7285214
+"2025 Baxter Street Athens, GA 30606",,10:00 AM-06:00 PM,,ho62734877,false,true,,,,poll12358656
+"45 Baxter St, Room 137, Athens, GA 30612",,08:00 AM-05:00 PM,,ho14553404,false,true,,,,poll68591799
+"210 South Washington Street Fort Gaines, GA 39851",,08:30 AM-04:30 PM,,ho96308804,false,true,,,,poll98226926
+"875 Six Flags Drive Austell, GA 30168-7064",,08:00 AM-07:00 PM,,ho84621638,false,true,,,,poll4903485
+"3820 Macedonia Rd Powder Springs, GA 30127-36",,08:00 AM-07:00 PM,,ho97988752,false,true,,,,poll2544656
+"3332 Sandy Plains Rd Marietta, GA 30066-4743",,08:00 AM-07:00 PM,,ho62067236,false,true,,,,poll25233319
+"1885 Roswell St Smyrna, GA 30080-2213",,08:00 AM-07:00 PM,,ho44726641,false,true,,,,poll71629250
+"736 Whitlock Ave. NW Marietta, GA 30064-4663",,08:00 AM-05:00 PM,,ho70072611,false,true,,,,poll20840847
+"548 S. Marietta Pkwy Marietta, GA 30060-2251",,08:00 AM-07:00 PM,,ho63355148,false,true,,,,poll4875233
+"4400 Lower Roswell Rd Marietta, GA 30068-4233",,08:00 AM-07:00 PM,,ho21348090,false,true,,,,poll33461192
+"620 Lions Club Dr Mableton, GA 30126-2438",,08:00 AM-07:00 PM,,ho54758542,false,true,,,,poll10857088
+"4845 Dallas Hwy Powder Springs, GA 30127-4486",,08:00 AM-07:00 PM,,ho32577482,false,true,,,,poll91198136
+"3413 Blue Springs Rd. NW Kennesaw, GA 30144-1082",,08:00 AM-07:00 PM,,ho79854446,false,true,,,,poll36159629
+"4120 Canton Rd Marietta, GA 30066-2714",,08:00 AM-07:00 PM,,ho72264255,false,true,,,,poll3316339
+"101 East Central Avenue, Room 221, Moultrie, GA 31768",,08:00 AM-04:30 PM,,ho73430651,false,true,,,,poll31060134
+"610 Ronald Reagan Drive, Building G3 - next to Zaxbys, Evans, GA 30809",,08:00 AM-05:00 PM,,ho45005342,false,true,,,,poll33756539
+"600 Stevens Creek Road Augusta, GA 30907",,09:00 AM-04:00 PM,,ho80766456,false,true,,,,poll26326321
+"5445 Columbia Road Grovetown, GA 30813",,09:00 AM-04:00 PM,,ho60772034,false,true,,,,poll71404907
+"1200 S Hutchinson Ave Adel, GA 31620",,08:30 AM-04:30 PM,,ho66139113,false,true,,,,poll18894218
+"22 East Broad Street, Room 128, Newnan, GA 30263",,08:30 AM-04:30 PM,,ho31580665,false,true,,,,poll91479136
+"65 Literary Lane Newnan, GA 30265",,08:30 AM-04:30 PM,,ho821125,false,true,,,,poll64536064
+"210 S 7th St, Room 103, Cordele, GA 31015",,08:00 AM-05:00 PM,,ho14869383,false,true,,,,poll79064973
+"110 W 13th Ave Cordele, GA 31015",,08:30 AM-04:30 PM,,ho88682644,false,true,,,,poll38327218
+"96 Academy Avenue Dawsonville, GA 30534",,08:00 AM-05:00 PM,,ho33515544,false,true,,,,poll4333710
+"4380 Memorial Drive, Suite 300, Decatur, GA 30032",,07:00 AM-07:00 PM,,ho95833502,false,true,,,,poll69028173
+"330 West Ponce de Leon Ave, Room A, Decatur, GA 30030",,07:00 AM-07:00 PM,,ho36887655,false,true,,,,poll24915084
+"4898 LaVista Road Tucker, GA 30084",,07:00 AM-07:00 PM,,ho46113806,false,true,,,,poll45593082
+"2440 Young Road Stone Mountain, GA 30088",,07:00 AM-07:00 PM,,ho38795932,false,true,,,,poll87884306
+"2801 Candler Road Decatur, GA 30034",,09:00 AM-08:00 PM,,ho5300174,false,true,,,,poll34904686
+"4362 Peachtree Road NE Brookhaven, GA 30319",,07:00 AM-07:00 PM,,ho22349185,false,true,,,,poll38782479
+"3123 Klondike Road Lithonia, GA 30038",,07:00 AM-07:00 PM,,ho77030082,false,true,,,,poll60254557
+"5339 Chamblee Dunwoody Road Dunwoody, GA 30338",,07:00 AM-07:00 PM,,ho77773305,false,true,,,,poll52830916
+"1530 Woodbine Avenue SE Atlanta, GA 30317",,07:00 AM-07:00 PM,,ho66915767,false,true,,,,poll79996133
+"5401 Anson Avenue Eastman, GA 31023",,01:00 PM-05:00 PM,,ho99220476,false,true,,,,poll78632428
+"402 Hawkinsville Road Vienna, GA 31092",,08:00 AM-05:00 PM,,ho15255684,false,true,,,,poll34162815
+"8700 Hospital Drive Douglasville, GA 30134",,08:00 AM-05:00 PM,,ho45944421,false,true,,,,poll84007797
+"5000 Ga. Hwy 92 Douglasville, GA 30135",,08:00 AM-05:00 PM,,ho58633762,false,true,,,,poll16070632
+"2105 Mack Road Douglasville, GA 30135",,08:00 AM-05:00 PM,,ho83567387,false,true,,,,poll78438795
+"6100 Ga. Hwy 5 Douglasville, GA 30135",,08:00 AM-05:00 PM,,ho42642936,false,true,,,,poll15183351
+"6745 Church Street Douglasville, GA 30134",,08:00 AM-05:00 PM,,ho48390338,false,true,,,,poll4900210
+"17 McDonald Ave Blakely, GA 39823",,08:30 AM-04:30 PM,,ho5620605,false,true,,,,poll29369210
+"45 Forest Avenue Elberton, GA 30635",,08:00 AM-05:00 PM,,ho90113759,false,true,,,,poll77863878
+"201 Freeman Street, Suite 10, Claxton, GA 30417",,08:00 AM-05:00 PM,,ho54618142,false,true,,,,poll68323969
+"400 West Main Street, Suite 301, Blue Ridge, GA 30513",,09:00 AM-05:00 PM,,ho83535589,false,true,,,,poll80422830
+"140 Stonewall Avenue West, Suite 209, Fayetteville, GA 30214",,08:00 AM-05:00 PM,,ho78127555,false,true,,,,poll31357596
+"140 Stonewall Avenue West, Public Meeting Room, Fayetteville, GA 30214",,08:00 AM-05:00 PM,,ho6953474,false,true,,,,poll93926269
+"201 Willow Bend Rd Peachtree City, GA 30269",,08:00 AM-05:00 PM,,ho32321927,false,true,,,,poll11852243
+"881 Senoia Rd Tyrone, GA 30290",,08:00 AM-05:00 PM,,ho80167967,false,true,,,,poll8503111
+"211 Athens Street Carnesville, GA 30521",,08:00 AM-04:30 PM,,ho23811579,false,true,,,,poll67658285
+"130 Peachtree Street SW Atlanta, GA 30303",,07:00 AM-07:00 PM,,ho38230395,false,true,,,,poll41420114
+"7741 Roswell Road, Suite 232, Sandy Springs, GA 30350",,07:00 AM-07:00 PM,,ho84155034,false,true,,,,poll11754443
+"3647 Main Street College Park, GA 30337",,07:00 AM-07:00 PM,,ho20328762,false,true,,,,poll40770639
+"5600 Stonewall Tell Road, Room 108, College Park, GA 30349",,07:00 AM-07:00 PM,,ho39427940,false,true,,,,poll58937151
+"2301 Holcomb Bridge Road Roswell, GA 30076",,07:00 AM-07:00 PM,,ho87005916,false,true,,,,poll1970599
+"3201 MLK Jr. Dr. SW Atlanta, GA 30311",,07:00 AM-07:00 PM,,ho46697958,false,true,,,,poll97339801
+"140 W. Wieuca Rd. NW Atlanta, GA 30305",,07:00 AM-07:00 PM,,ho10661415,false,true,,,,poll42944828
+"5090 Abbotts Bridge Road Johns Creek, GA 30355",,07:00 AM-07:00 PM,,ho97535013,false,true,,,,poll35252368
+"8100 Holcomb Bridge Road Alpharetta, GA 30022",,07:00 AM-07:00 PM,,ho22718711,false,true,,,,poll72921374
+"9560 Spruill Road Johns Creek, GA 30022",,07:00 AM-07:00 PM,,ho46163672,false,true,,,,poll93733864
+"855 Mayfield Road Milton, GA 30009",,07:00 AM-07:00 PM,,ho37078816,false,true,,,,poll86225122
+"115 Norcross Street Roswell, GA 30075",,07:00 AM-07:00 PM,,ho7603152,false,true,,,,poll56841652
+"10 Park Plaza Alpharetta, GA 30009",,07:00 AM-07:00 PM,,ho74089905,false,true,,,,poll87025823
+"395 Mount Vernon Hwy NE Sandy Springs, GA 30328",,07:00 AM-07:00 PM,,ho66410131,false,true,,,,poll28615146
+"269 Buckhead Ave. NE Atlanta, GA 30305",,07:00 AM-07:00 PM,,ho8879339,false,true,,,,poll44410212
+"3295 Northside Parkway NW Atlanta, GA 30327",,07:00 AM-07:00 PM,,ho68028500,false,true,,,,poll28442542
+"2489 Perry Boulevard NW Atlanta, GA 30331",,07:00 AM-07:00 PM,,ho25932156,false,true,,,,poll39114272
+"3424 Martin Luther King Jr. Dr. Atlanta, GA 30331",,07:00 AM-07:00 PM,,ho45928951,false,true,,,,poll85757600
+"4255 Will Lee Rd College Park, GA 30349",,07:00 AM-07:00 PM,,ho84827030,false,true,,,,poll18904997
+"2885 Church Street East Point, GA 30344",,08:30 AM-04:00 PM,,ho49868715,false,true,,,,poll97627592
+"6500 Venon Woods Dr. NE Sandy Springs, GA 30328",,08:30 AM-04:00 PM,,ho32332966,false,true,,,,poll82394564
+"515 John Wesley Dobbs Ave NE Atlanta, GA 30312",,07:00 AM-07:00 PM,,ho13754057,false,true,,,,poll13496080
+"4001 Danforth Rd SW Atlanta, GA 30331",,08:30 AM-04:00 PM,,ho66778496,false,true,,,,poll9823118
+"12624 Boadwell Rd Alpharetta, GA 30004",,08:30 AM-04:00 PM,,ho37316476,false,true,,,,poll17622722
+"1250 Warsaw Rd Roswell, GA 30076",,08:30 AM-04:00 PM,,ho31656022,false,true,,,,poll30440908
+"745 Orr Street NW Atlanta, GA 30314",,08:30 AM-04:00 PM,,ho68380222,false,true,,,,poll48689046
+"677 Fairburn Road NW Atlanta, GA 30331",,08:30 AM-04:00 PM,,ho64412167,false,true,,,,poll60922339
+"510 Turner Ave Palmetto, GA 30268",,08:30 AM-04:00 PM,,ho20675328,false,true,,,,poll65898829
+"2757 Main Street East Point, GA 30344",,07:00 AM-07:00 PM,,ho96471540,false,true,,,,poll33412840
+"1463 Pryor Road Atlanta, GA 30315",,07:00 AM-07:00 PM,,ho35971283,false,true,,,,poll72848722
+"60 Valley View Drive Fairburn, GA 30213",,07:00 AM-07:00 PM,,ho30133355,false,true,,,,poll20880004
+"915 New Hope Rd SW Atlanta, GA 30331",,07:00 AM-07:00 PM,,ho79636015,false,true,,,,poll96695866
+"3100 Enon Road Atlanta, GA 30331",,07:00 AM-07:00 PM,,ho59149021,false,true,,,,poll2945268
+"177 North Ave., William C. Wardlaw Jr. Center-The Poole Board Room, Atlanta, GA 30332",,08:30 AM-04:00 PM,,ho11499672,false,true,,,,poll30760420
+"30 Courtland Street, Veterans Memorial Hall in Dahlberg Hall, Atlanta, GA 30303",,08:30 AM-04:00 PM,,ho39174904,false,true,,,,poll74208854
+"1630 Metropolitan Parkway SW, Edwin Thompson, Sr. Student Center Building 800, Atlanta, GA 30310",,08:30 AM-04:00 PM,,ho36292016,false,true,,,,poll28280838
+"1 Broad St, Ste 107, Ellijay, GA 30540",,08:30 AM-05:00 PM,,ho18259201,false,true,,,,poll41488948
+"676 West Main Street Gibson, GA 30810",,08:00 AM-05:00 PM,,ho54530981,false,true,,,,poll69492046
+"24 3rd Ave NE Cairo, GA 39828",,08:00 AM-05:00 PM,,ho85756946,false,true,,,,poll28034699
+"1180 C. Weldon Smith Drive Greensboro, GA 30642",,08:00 AM-05:00 PM,,ho84550310,false,true,,,,poll99238187
+"455 Grayson Highway, Suite 200, Lawrenceville, GA 30046",,08:00 AM-05:00 PM,,ho79176100,false,true,,,,poll51119813
+"2735 Old Auburn Avenue Dacula, GA 30019",,07:00 AM-07:00 PM,,ho65351504,false,true,,,,poll47186485
+"55 Buford Highway Suwanee, GA 30024",,07:00 AM-07:00 PM,,ho47508452,false,true,,,,poll98400952
+"4651 Britt Road Norcross, GA 30039",,07:00 AM-07:00 PM,,ho24530091,false,true,,,,poll66667395
+"2723 North Bogan Road Buford, GA 30518",,07:00 AM-07:00 PM,,ho9239830,false,true,,,,poll39690531
+"4515 Lenora Church Road Snellville, GA 30078",,07:00 AM-07:00 PM,,ho77754004,false,true,,,,poll67298430
+"1063 Rockbridge Road Stone Mountain, GA 30087",,07:00 AM-07:00 PM,,ho66145263,false,true,,,,poll48497190
+"2750 Pleasant Hill Road Duluth, GA 30096",,07:00 AM-07:00 PM,,ho68070540,false,true,,,,poll45093257
+"120 Paul Franklin Road Clarkesville, GA 30523",,09:00 AM-04:00 PM,,ho49891428,false,true,,,,poll82052258
+"555 Monroe Street Clarkesville, GA 30523",,08:00 AM-05:00 PM,,ho66871878,false,true,,,,poll96571736
+"325 Oak Street Cornelia, GA 30531",,09:00 AM-04:00 PM,,ho61040591,false,true,,,,poll53918336
+"2875 Browns Bridge Road Gainesville, GA 30501",,08:00 AM-05:00 PM,,ho73334339,false,true,,,,poll47810828
+"4175 Nopone Road Gainesville, GA 30506",,09:00 AM-04:00 PM,,ho26530041,false,true,,,,poll78102915
+"6488 Spout Springs Road Flowery Branch, GA 30542",,09:00 AM-04:00 PM,,ho43157093,false,true,,,,poll60167683
+"3911 P Davison Road Gainesville, GA 30507",,09:00 AM-04:00 PM,,ho22358260,false,true,,,,poll51331781
+"4485 Highway 120 Buchanan, GA 30113",,08:30 AM-05:00 PM,,ho10477623,false,true,,,,poll65218250
+"104 North College Street Hamilton, GA 31811",,08:00 AM-05:00 PM,,ho72879315,false,true,,,,poll36287221
+"150 Davis St Franklin, GA 30217",,08:00 AM-12:00 PM,,ho3997287,false,true,,,,poll94211717
+"215 East Court Square, Room #14, Franklin, GA 30217",,08:30 AM-05:00 PM,,ho4118506,false,true,,,,poll91764451
+"40 Atlanta St McDonough, GA 30253",,08:00 AM-05:00 PM,,ho42885649,false,true,,,,poll88627417
+"61 McDonough St Hampton, GA 30228",,07:00 AM-07:00 PM,,ho14441954,false,true,,,,poll64836885
+"115 MLK Jr. Blvd Locust Grove, GA 30248",,07:00 AM-07:00 PM,,ho14985287,false,true,,,,poll68265392
+"28 Austin Rd Stockbridge, GA 30281",,07:00 AM-07:00 PM,,ho67366351,false,true,,,,poll93412438
+"111 Davis Rd Stockbridge, GA 30281",,07:00 AM-07:00 PM,,ho18960544,false,true,,,,poll73053775
+"801 Main Street Perry, GA 31069",,08:00 AM-05:00 PM,,ho15016072,false,true,,,,poll87963639
+"71 Cohen Walker Dr. Warner Robins, GA 31088",,08:00 AM-05:00 PM,,ho68590301,false,true,,,,poll30770133
+"233 N. Houston Rd Warner Robins, GA 31093",,08:00 AM-05:00 PM,,ho72535124,false,true,,,,poll59856382
+"207 South Irwin Ave Ocilla, GA 31774",,08:00 AM-04:45 PM,,ho47272983,false,true,,,,poll40271120
+"126 West Greene St, Suite 3, Monticello, GA 31064",,08:30 AM-04:30 PM,,ho88812729,false,true,,,,poll31612800
+"415 Green Street Louisville, GA 30434",,08:00 AM-05:00 PM,,ho33793158,false,true,,,,poll79106856
+"166 Industrial Boulevard, Suite 102, Gray, GA 31032",,08:30 AM-05:00 PM,,ho56255742,false,true,,,,poll2081794
+"408 Thomaston Street Barnesville, GA 30204",,08:00 AM-05:00 PM,,ho42556003,false,true,,,,poll71731218
+"117 East Jackson Street, Suite A, Dublin, GA 31021",,08:30 AM-05:00 PM,,ho55321574,false,true,,,,poll30873344
+"100 Starksville Ave. North, Suite C, Leesburg, GA 31763",,08:15 AM-05:00 PM,,ho897913,false,true,,,,poll94638163
+"160 May Avenue Lincolnton, GA 30817",,08:00 AM-05:00 PM,,ho11139416,false,true,,,,poll46606016
+"2808 N. Oak Street Valdosta, GA 31602",,06:00 AM-09:00 PM,,ho92795484,false,true,,,,poll62452230
+"56 Short Street Dahlonega, GA 30533",,08:00 AM-05:00 PM,,ho18574507,false,true,,,,poll81639298
+"91 Albany Avenue Danielsville, GA 30633",,08:00 AM-05:00 PM,,ho8768644,false,true,,,,poll85579292
+"4683 AUGUSTA HWY DEARING, GA 30808",,09:00 AM-04:30 PM,,ho29107561,false,true,,,,poll30396413
+"511 Main St Thomson, GA 30824",,09:00 AM-04:30 PM,,ho94957698,false,true,,,,poll94538877
+"103 Jefferson Street Darien, GA 31305",,08:00 AM-05:00 PM,,ho47672586,false,true,,,,poll33711841
+"137 S. Court Square Greenville, GA 30222",,08:30 AM-05:00 PM,,ho76651487,false,true,,,,poll32399082
+"38 West Main Street Fosyth, GA 31029",,08:30 AM-04:30 PM,,ho49167146,false,true,,,,poll73844596
+"400 S. Railroad Ave Mount Vernon, GA 30445",,08:30 AM-05:00 PM,,ho20483825,false,true,,,,poll52586638
+"434 Hancock Street Madison, GA 30650",,08:30 AM-04:30 PM,,ho29465353,false,true,,,,poll52221112
+"121 N 4th Ave Chatsworth, GA 30705",,08:30 AM-04:30 PM,,ho69147127,false,true,,,,poll97374451
+"3111 Citizens Way Columbus, GA 31906",,07:00 AM-07:00 PM,,ho40356674,false,true,,,,poll37717957
+"1113 Usher Street Covington, GA 30014",,08:00 AM-05:00 PM,,ho6571064,false,true,,,,poll5939485
+"10 Court Street Watkinsville, GA 30677",,08:00 AM-05:00 PM,,ho96839805,false,true,,,,poll50481002
+"109 East Boggs Street Lexington, GA 30648",,08:00 AM-05:00 PM,,ho77829692,false,true,,,,poll44498168
+"205 West Church Street, Suite 102, Fort Valley, GA 31030",,08:00 AM-05:00 PM,,ho90491276,false,true,,,,poll61487793
+"401 Main St Byron, GA 31008",,08:00 AM-05:00 PM,,ho96075220,false,true,,,,poll29938780
+"16001 Barnesville Street Zebulon, GA 30295",,08:00 AM-05:00 PM,,ho53738909,false,true,,,,poll56341829
+"19 Jo Dotson Circle, Suite 201, Clayton, GA 30525",,08:00 AM-05:00 PM,,ho18332608,false,true,,,,poll70128956
+"93 Front Street Cuthbert, GA 39840",,08:30 AM-05:00 PM,,ho28591216,false,true,,,,poll19284680
+"1400 Parker Road, Lobby C, Conyers, GA 30094",,08:00 AM-04:30 PM,,ho20243771,false,true,,,,poll16673892
+"1764 Broad Street Lumpkin, GA 31815",,08:30 AM-03:30 PM,,ho21183314,false,true,,,,poll11161878
+"500 West Lamar Street, Suite 110, Americus, GA 31709",,08:00 AM-05:00 PM,,ho2622250,false,true,,,,poll87349014
+"113 Monument Street Crawfordville, GA 30631",,09:00 AM-05:00 PM,,ho72234852,false,true,,,,poll64661614
+"114 West Brazell Street Reidsville, GA 30453",,08:00 AM-05:00 PM,,ho2788028,false,true,,,,poll74594202
+"211 S Tillman Street Glennville, GA 30427",,08:00 AM-05:00 PM,,ho30737509,false,true,,,,poll5212709
+"509 N.W. Williams St Collins, GA 30421",,08:00 AM-05:00 PM,,ho47688784,false,true,,,,poll18982754
+"1B Ivy Street Butler, GA 31006",,08:00 AM-05:00 PM,,ho53864070,false,true,,,,poll38773542
+"91 Telfair Avenue, Suite H, McRae, GA 31055",,08:00 AM-05:00 PM,,ho48395375,false,true,,,,poll86485090
+"955 Forrester Drive SE Dawson, GA 39842",,08:30 AM-05:00 PM,,ho57092244,false,true,,,,poll80923000
+"325 N. Madison St. Thomasville, GA 31792",,09:00 AM-05:00 PM,,ho46220156,false,true,,,,poll2185302
+"48 River Street, Suite 30, Hiawassee, GA 30546",,08:30 AM-04:30 PM,,ho27063263,false,true,,,,poll29798402
+"100 Ridley Avenue, Suite 1100, LaGrange, GA 30240",,08:00 AM-05:00 PM,,ho52569353,false,true,,,,poll93522923
+"425 Railroad Street N, Room 123, Jeffersonville, GA 31044",,09:00 AM-05:00 PM,,ho38098138,false,true,,,,poll90140448
+"65 Courthouse St Blairsville, GA 30512",,08:00 AM-04:30 PM,,ho96947249,false,true,,,,poll63276277
+"303 S. Hammond Drive Monroe, GA 30655",,08:30 AM-05:00 PM,,ho13247649,false,true,,,,poll17529889
+"408 Tebeau Street Wayross, GA 31501",,08:30 AM-05:00 PM,,ho21079446,false,true,,,,poll16375184
+"48 Warren Street Warrenton, GA 30828",,08:00 AM-05:00 PM,,ho96438707,false,true,,,,poll3479015
+"174 North Brunswick Street Jesup, GA 31546",,09:00 AM-05:00 PM,,ho111170,false,true,,,,poll12535961
+"1241 Helen Hwy, Suite 210-A, Cleveland, GA 30528",,08:00 AM-05:00 PM,,ho87616307,false,true,,,,poll98119845
+"205 N. Selvidge Street, Suite K, Dalton, GA 30720",,08:00 AM-05:00 PM,,ho57473029,false,true,,,,poll20548398
+"23 Court Street, Room 113, Washington, GA 30673-1570",,08:00 AM-05:00 PM,,ho63820789,false,true,,,,poll90758541
+"201 North Main Street, Room 10, Sylvester, GA 31791",,08:00 AM-05:00 PM,,ho32766723,false,true,,,,poll17331351
