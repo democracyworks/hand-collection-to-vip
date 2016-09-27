@@ -8,7 +8,7 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:in/county:brown,ocd-division/country:us/state:in/county:br0108,poll10426660,st18,other,,loc0007
 ,ocd-id,,ocd-division/country:us/state:in/county:carroll,ocd-division/country:us/state:in/county:carr0125,poll80163971 poll86577808 poll91236249 poll48732254 poll59550399 poll37856629,st18,other,,loc0008
 ,ocd-id,,ocd-division/country:us/state:in/county:cass,ocd-division/country:us/state:in/county:c0137,poll5127173 poll90804862 poll86551842 poll21217639 poll48971007 poll96724000 poll42214028,st18,other,,loc0009
-,ocd-id,,ocd-division/country:us/state:in/county:clark,ocd-division/country:us/state:in/county:cl0148,poll15163647 poll56405659 poll61569586 poll20241436 poll90370679 poll37729392 poll26510454,st18,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:in/county:clark,ocd-division/country:us/state:in/county:cl0148,poll56405659,st18,other,,loc0010
 ,ocd-id,,ocd-division/country:us/state:in/county:clay,ocd-division/country:us/state:in/county:c0160,poll50876013 poll86583171 poll67806366,st18,other,,loc0011
 ,ocd-id,,ocd-division/country:us/state:in/county:clinton,ocd-division/country:us/state:in/county:clin0180,poll79916718 poll35611469 poll55913517 poll47318907 poll18322248 poll87235998 poll58530238,st18,other,,loc0012
 ,ocd-id,,ocd-division/country:us/state:in/county:crawford,ocd-division/country:us/state:in/county:crawf0201,poll58570939,st18,other,,loc0013
@@ -20,7 +20,7 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:in/county:dubois,ocd-division/country:us/state:in/county:dub0256,poll74454134,st18,other,,loc0019
 ,ocd-id,,ocd-division/country:us/state:in/county:elkhart,ocd-division/country:us/state:in/county:elkh0269,poll16270043 poll54880916 poll78123870 poll4919748,st18,other,,loc0020
 ,ocd-id,,ocd-division/country:us/state:in/county:fayette,ocd-division/country:us/state:in/county:faye0284,poll13087751,st18,other,,loc0021
-,ocd-id,,ocd-division/country:us/state:in/county:floyd,ocd-division/country:us/state:in/county:fl0316,poll21045628 poll31897435 poll46002728 poll86698377 poll29169877 poll42615750 poll61572188 poll80867376 poll51139614 poll20660639 poll93939898 poll34121596 poll19957188 poll31889532 poll64341899 poll44678116 poll30049856 poll45886962 poll36856527 poll46107270 poll71546549 poll36680824 poll23500297,st18,other,,loc0022
+,ocd-id,,ocd-division/country:us/state:in/county:floyd,ocd-division/country:us/state:in/county:fl0314,poll34121596 poll21045628 poll64341899 poll44678116 poll46107270 poll46002728 poll42615750 poll93939898 poll80867376,st18,other,,loc0022
 ,ocd-id,,ocd-division/country:us/state:in/county:fountain,ocd-division/country:us/state:in/county:fount0318,poll3316669,st18,other,,loc0023
 ,ocd-id,,ocd-division/country:us/state:in/county:franklin,ocd-division/country:us/state:in/county:frank0329,poll46421344,st18,other,,loc0024
 ,ocd-id,,ocd-division/country:us/state:in/county:fulton,ocd-division/country:us/state:in/county:ful0348,poll60259236,st18,other,,loc0025
@@ -53,7 +53,7 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:in/county:monroe,ocd-division/country:us/state:in/county:mon0880,poll25289546 poll63136736,st18,other,,loc0052
 ,ocd-id,,ocd-division/country:us/state:in/county:montgomery,ocd-division/country:us/state:in/county:montgom0883,poll6182312 poll95605150,st18,other,,loc0053
 ,ocd-id,,ocd-division/country:us/state:in/county:morgan,ocd-division/country:us/state:in/county:mor0897,poll61065411 poll65703601,st18,other,,loc0054
-,ocd-id,,ocd-division/country:us/state:in/county:newton,ocd-division/country:us/state:in/county:new0831,poll6358833,st18,other,,loc0055
+,ocd-id,,ocd-division/country:us/state:in/county:newton,ocd-division/country:us/state:in/county:new0831,poll6358833 poll2109018,st18,other,,loc0055
 ,ocd-id,,ocd-division/country:us/state:in/county:noble,ocd-division/country:us/state:in/county:no0934,poll1496089 poll82649725 poll5118182 poll93195895 poll4750686 poll27149968,st18,other,,loc0056
 ,ocd-id,,ocd-division/country:us/state:in/county:ohio,ocd-division/country:us/state:in/county:o0951,poll62238370,st18,other,,loc0057
 ,ocd-id,,ocd-division/country:us/state:in/county:orange,ocd-division/country:us/state:in/county:ora0962,poll11983958,st18,other,,loc0058
@@ -65,8 +65,8 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:in/county:posey,ocd-division/country:us/state:in/county:po01043,poll41739991 poll72228816 poll6947637 poll31822715 poll2229862,st18,other,,loc0064
 ,ocd-id,,ocd-division/country:us/state:in/county:pulaski,ocd-division/country:us/state:in/county:pula01062,poll18575657,st18,other,,loc0065
 ,ocd-id,,ocd-division/country:us/state:in/county:putnam,ocd-division/country:us/state:in/county:put01067,poll93375791,st18,other,,loc0066
-,ocd-id,,ocd-division/country:us/state:in/county:randolph,ocd-division/country:us/state:in/county:rando01080,poll72393181 poll90350811 poll99297662 poll63699581 poll43665270 poll30969427 poll61939791 poll23047398 poll42079478 poll55131461 poll56245618,st18,other,,loc0067
-,ocd-id,,ocd-division/country:us/state:in/county:ripley,ocd-division/country:us/state:in/county:rip01087,poll84594952 poll14424052 poll38442640 poll41418879 poll68489219 poll47065026 poll99236821,st18,other,,loc0068
+,ocd-id,,ocd-division/country:us/state:in/county:randolph,ocd-division/country:us/state:in/county:rando01080,poll90350811,st18,other,,loc0067
+,ocd-id,,ocd-division/country:us/state:in/county:ripley,ocd-division/country:us/state:in/county:rip01087,poll47065026,st18,other,,loc0068
 ,ocd-id,,ocd-division/country:us/state:in/county:rush,ocd-division/country:us/state:in/county:r01093,poll89030610,st18,other,,loc0069
 ,ocd-id,,ocd-division/country:us/state:in/county:scott,ocd-division/country:us/state:in/county:sc01106,poll32462952,st18,other,,loc0070
 ,ocd-id,,ocd-division/country:us/state:in/county:shelby,ocd-division/country:us/state:in/county:she01114,poll85170738,st18,other,,loc0071
