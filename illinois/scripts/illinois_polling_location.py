@@ -264,6 +264,7 @@ if __name__ == '__main__':
 
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
+    print early_voting_df['index']
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
     pl.export_for_schedule_and_locality()
