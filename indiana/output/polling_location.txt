@@ -174,7 +174,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "63 W Fletchall Ave,, Poseyville, IN 47633",,09:00 AM - 06:00 PM,,ho79229055,false,true,,,,poll31822715
 "Hwy 66, Wadesville, IN 47638",,09:00 AM - 06:00 PM,,ho55005369,false,true,,,,poll6947637
 "18474 State Road 250, Patriot, IN 47038",,09:00 AM - 06:00 PM,,ho24710421,false,true,,,,poll72228816
-"121 S Riverside Dr, Winamac, IN 46996",,10:00 AM - 01:00 AM,,ho53501458,false,true,,,,poll18575657
+"121 S Riverside Dr, Winamac, IN 46996",,10:00 AM - 01:00 PM,,ho53501458,false,true,,,,poll18575657
 "1 W. Washington Street, Room 21, Greencastle, IN 46135",,09:00 AM - 04:00 PM,,ho3776991,false,true,,,,poll93375791
 "100 S Main Street, 2nd Floor, Winchester, IN 47394",,09:00 AM - 12:00 PM,,ho30761602,false,true,,,,poll90350811
 "115 N. Main Street, Versailles, IN 47042",,09:00 AM - 04:00 PM,,ho64227139,false,true,,,,poll47065026
