@@ -78,109 +78,124 @@ class ScheduleTxt(object):
         """#"""
         #print index, start_date
 
-
-        if len(start_date) == 5:
-            start_date = start_date + '-16'
-            start_date = datetime.datetime.strptime(start_date, '%m-%d-%y').strftime('%Y-%m-%d')
-            #print 'a', index, start_date
-            return start_date
-            #print index, start_date
-
-        elif len(start_date) == 7:
-            sd = tuple(start_date.split('-'))
-            #print sd
-            #date_tup = tuple(sd.split('-'))
-            #print date_tup
-            m = sd[0]
-            d= sd[1]
-            if len(d) == 1:
-                d = '0' + d
-            else:
-                d = d
-            y= '16'
-            start_date = m + '-' + d + '-' + y
-            start_date = datetime.datetime.strptime(start_date, '%m-%d-%y').strftime('%Y-%m-%d')
-            #print 'b', index, start_date
-            return  start_date
-
+        if not pd.isnull(start_date):
+            d = datetime.datetime.strptime(start_date, "%m/%d/%y").strftime('%Y-%m-%d')
+            return d
         else:
-            #print index, start_date
-            sd = tuple(start_date.split('-'))
-            m = sd[0]
-            d = sd[1]
-            if len(d) == 1:
-                d = '0' + d
-            else:
-                d = d
-            return '2016-' + m + '-' + d
+            print 'no start date for index ' + index
+            return''
+
+
+        # if len(start_date) == 5:
+        #     start_date = start_date + '-16'
+        #     start_date = datetime.datetime.strptime(start_date, '%m-%d-%y').strftime('%Y-%m-%d')
+        #     #print 'a', index, start_date
+        #     return start_date
+        #     #print index, start_date
+        #
+        # elif len(start_date) == 7:
+        #     sd = tuple(start_date.split('-'))
+        #     #print sd
+        #     #date_tup = tuple(sd.split('-'))
+        #     #print date_tup
+        #     m = sd[0]
+        #     d= sd[1]
+        #     if len(d) == 1:
+        #         d = '0' + d
+        #     else:
+        #         d = d
+        #     y= '16'
+        #     start_date = m + '-' + d + '-' + y
+        #     start_date = datetime.datetime.strptime(start_date, '%m-%d-%y').strftime('%Y-%m-%d')
+        #     #print 'b', index, start_date
+        #     return  start_date
+        #
+        # else:
+        #     #print index, start_date
+        #     sd = tuple(start_date.split('-'))
+        #     m = sd[0]
+        #     d = sd[1]
+        #     if len(d) == 1:
+        #         d = '0' + d
+        #     else:
+        #         d = d
+        #     return '2016-' + m + '-' + d
 
     def get_end_date(self, index, end_date):
         """#"""
 
-        if len(end_date) == 5:
-            end_date = end_date + '-16'
-            end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
-            #print 'a', index, end_date
-            return end_date
-            #print index, start_date
-        elif len(end_date) == 4:
-
-            #print end_date
-
-            sd = tuple(end_date.split('-'))
-            m = str(sd[0])
-            d = str(sd[1])
-            if len(d) == 1:
-                d = '0' + d
-            else:
-                d = d
-            #y = '16'
-            #e = str(m + '-' + d + '-' + y)
-            #print type(e)
-            return '2016-' + m + '-' + d
-
-        elif len(end_date) == 7:
-            sd = tuple(end_date.split('-'))
-            #print sd
-            #date_tup = tuple(sd.split('-'))
-            #print date_tup
-            m = sd[0]
-            d= sd[1]
-            if len(d) == 1:
-                d = '0' + d
-            else:
-                d = d
-            y= '16'
-            end_date = m + '-' + d + '-' + y
-            end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
-            #print 'b', index, end_date
-            return  end_date
-
-        elif len(end_date) == 8:
-            #print index, end_date
-            end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
-            return end_date
-
-
-        elif len(end_date) == 9:
-            sd = tuple(end_date.split('-'))
-            m = sd[0]
-            d = sd[1]
-            if len(d) == 1:
-                d = '0' + d
-            else:
-                d = d
-            y = sd[2]
-            return '2016-' + m + '-' + d
-
-        elif len(end_date) == 10:
-            return datetime.datetime.strptime(end_date, '%m-%d-%Y').strftime('%Y-%m-%d')
-
-
-
+        if not pd.isnull(end_date):
+            d = datetime.datetime.strptime(end_date, "%m/%d/%y").strftime('%Y-%m-%d')
+            return d
         else:
-            end = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
-            return end
+            print 'no start date for index ' + index
+            return''
+
+
+        # if len(end_date) == 5:
+        #     end_date = end_date + '-16'
+        #     end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
+        #     #print 'a', index, end_date
+        #     return end_date
+        #     #print index, start_date
+        # elif len(end_date) == 4:
+        #
+        #     #print end_date
+        #
+        #     sd = tuple(end_date.split('-'))
+        #     m = str(sd[0])
+        #     d = str(sd[1])
+        #     if len(d) == 1:
+        #         d = '0' + d
+        #     else:
+        #         d = d
+        #     #y = '16'
+        #     #e = str(m + '-' + d + '-' + y)
+        #     #print type(e)
+        #     return '2016-' + m + '-' + d
+
+        # elif len(end_date) == 7:
+        #     sd = tuple(end_date.split('-'))
+        #     #print sd
+        #     #date_tup = tuple(sd.split('-'))
+        #     #print date_tup
+        #     m = sd[0]
+        #     d= sd[1]
+        #     if len(d) == 1:
+        #         d = '0' + d
+        #     else:
+        #         d = d
+        #     y= '16'
+        #     end_date = m + '-' + d + '-' + y
+        #     end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
+        #     #print 'b', index, end_date
+        #     return  end_date
+        #
+        # elif len(end_date) == 8:
+        #     #print index, end_date
+        #     end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
+        #     return end_date
+        #
+        #
+        # elif len(end_date) == 9:
+        #     sd = tuple(end_date.split('-'))
+        #     m = sd[0]
+        #     d = sd[1]
+        #     if len(d) == 1:
+        #         d = '0' + d
+        #     else:
+        #         d = d
+        #     y = sd[2]
+        #     return '2016-' + m + '-' + d
+        #
+        # elif len(end_date) == 10:
+        #     return datetime.datetime.strptime(end_date, '%m-%d-%Y').strftime('%Y-%m-%d')
+        #
+        #
+        #
+        # else:
+        #     end = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
+        #     return end
 
     def get_hours_open_id(self, hours_open_id):
         """#"""
