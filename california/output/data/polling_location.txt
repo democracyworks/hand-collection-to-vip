@@ -36,7 +36,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "14343 Civic Drive, Victorville, CA 92392",,07:30 AM-05:30 PM,,ho99890627,false,true,,,,poll59823621
 "57090 Twentynine Palms Highway, Yucca Valley, CA 92284",,07:30 AM-05:30 PM,,ho73809306,false,true,,,,poll66357284
 "5600 Overland Avenue, San Diego, CA 92123",,08:00 AM-05:00 PM,,ho60954883,false,true,,,,poll91978198
-"City Hall 1 Dr. Carlton B. Goodlett Place, Room 48, , CA 94102",,08:00 AM-05:00 PM,,ho27922668,false,true,,,,poll78885144
+"City Hall 1 Dr. Carlton B. Goodlett Place, Room 48, San Francisco, CA 94102",,08:00 AM-05:00 PM,,ho61584978,false,true,,,,poll99353177
 "44 N San Joaquin St Suite 350, Stockton, CA 95202",,08:00 AM-05:00 PM,,ho17923542,false,true,,,,poll27163421
 "40 Tower Road, San Mateo, CA 94402",,08:00 AM-05:00 PM,,ho10449321,false,true,,,,poll13101045
 "555 County Center, 1st Floor, Redwood City, CA 94063",,08:00 AM-05:00 PM,,ho21463823,false,true,,,,poll31547540
@@ -49,7 +49,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "675 Texas Street, Ste 2600, Fairfield, CA 94533",,08:00 AM-05:00 PM,,ho1930766,false,true,,,,poll66624871
 "1021 I Street, Modesto, CA 95354",,08:00 AM-04:00 PM,,ho44979037,false,true,,,,poll26791746
 "444 Oak Street, Room C, Red Bluff, CA 96080",,08:00 AM-05:00 PM,,ho37474966,false,true,,,,poll36476267
-"5951 S. Mooney Blvd, Visalia, CA 93277",,07:30 AM-05:30 AM,,ho14432856,false,true,,,,poll39417218
+"5951 S. Mooney Blvd, Visalia, CA 93277",,07:30 AM-05:30 PM,,ho14432856,false,true,,,,poll39417218
 "2 South Green St, Sonora, CA 95370",,08:00 AM-05:00 PM,,ho78231746,false,true,,,,poll19002651
 "800 S. Victoria Avenue, L-1200, Ventura, CA 93009",,08:00 AM-05:00 PM,,ho62755735,false,true,,,,poll81173047
 "625 Court Street, Room B-05, Woodland, CA 95695",,08:00 AM-05:00 PM,,ho67663871,false,true,,,,poll92646892

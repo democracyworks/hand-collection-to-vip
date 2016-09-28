@@ -57,6 +57,7 @@ class PollingLocationTxt(object):
     #     hours = arr[0].split(":")[0] + ":" + arr[0].split(":")[1]
     #     return hours + " " + "PM"
     def get_time(self, time):
+        time = time.split(" - ")[0]
         d = datetime.strptime(time, "%H:%M:%S")
         return d.strftime("%I:%M %p")
 
@@ -88,10 +89,13 @@ class PollingLocationTxt(object):
         return 'ho' + str(address_line)
 
 
-    def is_drop_box(self):
+    def is_drop_box(self, box):
         """#"""
         # TODO: default to False? Make a boolean instance variable passed as a parameter
-        return self.drop_box_true
+        if pd.isnull(box):
+            return 'false'
+        else:
+            return str(box).lower()
 
     def is_early_voting(self):
         """#"""
@@ -143,7 +147,7 @@ class PollingLocationTxt(object):
                                               row['zip']), axis=1)
 
         self.base_df['is_drop_box'] = self.base_df.apply(
-            lambda row: self.is_drop_box(), axis=1)
+            lambda row: self.is_drop_box(row["drop_box"]), axis=1)
 
         self.base_df['is_early_voting'] = self.base_df.apply(
             lambda row: self.is_early_voting(), axis=1)
@@ -227,10 +231,10 @@ if __name__ == '__main__':
     early_voting_file = config.data_folder + state_file
 
     colnames = ['ocd-division', 'county', 'name', 'address_one', 'address_two', 'dirs', 'city', 'state', 'zip', 'start_time',
-                'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change']
+                'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change', 'drop_box']
 
 
-    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)

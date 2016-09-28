@@ -150,7 +150,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "Plano City Hall, 7 N James St., Plano, IL, 60545",,01:00 PM - 07:00 PM,,ho10786227,false,true,,,,poll60752133
 "Oswego City Hall, 100 Parkers Mill , Oswego, IL, 60543",,08:00 AM - 04:30 PM,,ho16356256,false,true,,,,poll47745015
 "Knox County Court House, 200 South Cherry, Galesburg, IL, 61401",,08:30 AM - 04:30 PM,,ho55647335,false,true,,,,poll63463920
-"Lake County Clerk's office, 18 N. County St., Room 101, Waukegan, IL, 60085",,09:00 AM - 09:00 AM,,ho88046831,false,true,,,,poll6041266
+"Lake County Clerk's office, 18 N. County St., Room 101, Waukegan, IL, 60085",,09:00 AM - 05:00 PM,,ho88046831,false,true,,,,poll6041266
 "Antioch Township Office, 1625 Deep Lake Rd., Lake Villa, IL, 60046",,09:00 AM - 05:00 PM,,ho39613908,false,true,,,,poll27663393
 "Ela Township Office, 1155 E. Route 22, Lake Zurich, IL, 60047",,09:00 AM - 05:00 PM,,ho87277787,false,true,,,,poll1781171
 "Fremont Public Library, 1170 N. Midlothian Rd., Mundelein, IL, 60060",,09:00 AM - 05:00 PM,,ho41422753,false,true,,,,poll84287684
