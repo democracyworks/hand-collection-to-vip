@@ -1,96 +1,96 @@
 election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
-,ocd-id,,ocd-division/country:us/state:georgia/county:appling,appling_cou0001,poll4196833,st13,other,,loc0001
-,ocd-id,,ocd-division/country:us/state:georgia/county:bacon,bacon_cou0002,poll4738365,st13,other,,loc0002
-,ocd-id,,ocd-division/country:us/state:georgia/county:baldwin,baldwin_cou0003,poll27039556,st13,other,,loc0003
-,ocd-id,,ocd-division/country:us/state:georgia/county:banks,banks_cou0004,poll49564164,st13,other,,loc0004
-,ocd-id,,ocd-division/country:us/state:georgia/county:barrow,barrow_cou0005,poll46759372,st13,other,,loc0005
-,ocd-id,,ocd-division/country:us/state:georgia/county:ben_hill,ben_hill_cou0006,poll39153575,st13,other,,loc0006
-,ocd-id,,ocd-division/country:us/state:georgia/county:bleckley,bleckley_cou0007,poll10829438,st13,other,,loc0007
-,ocd-id,,ocd-division/country:us/state:georgia/county:brantley,brantley_cou0008,poll41647566,st13,other,,loc0008
-,ocd-id,,ocd-division/country:us/state:georgia/county:brooks,brooks_cou0009,poll43811779,st13,other,,loc0009
-,ocd-id,,ocd-division/country:us/state:georgia/county:burke,burke_cou0010,poll47045407,st13,other,,loc0010
-,ocd-id,,ocd-division/country:us/state:georgia/county:camden,camden_cou0011,poll72493758 poll53676183 poll13081778 poll36661134,st13,other,,loc0011
-,ocd-id,,ocd-division/country:us/state:georgia/county:candler,candler_cou0012,poll22161037,st13,other,,loc0012
-,ocd-id,,ocd-division/country:us/state:georgia/county:carroll,carroll_cou0013,poll95772548 poll90482029,st13,other,,loc0013
-,ocd-id,,ocd-division/country:us/state:georgia/county:catoosa,catoosa_cou0014,poll94095884 poll3255323,st13,other,,loc0014
-,ocd-id,,ocd-division/country:us/state:georgia/county:charlton,charlton_cou0015,poll38918690 poll76736542,st13,other,,loc0015
-,ocd-id,,ocd-division/country:us/state:georgia/county:cherokee,cherokee_cou0016,poll24393984 poll19316922 poll49061440 poll24342679 poll45248702,st13,other,,loc0016
-,ocd-id,,ocd-division/country:us/state:georgia/county:clarke,clarke_cou0017,poll7285214 poll36543603 poll12358656 poll68591799,st13,other,,loc0017
-,ocd-id,,ocd-division/country:us/state:georgia/county:clay,clay_cou0018,poll98226926,st13,other,,loc0018
-,ocd-id,,ocd-division/country:us/state:georgia/county:cobb,cobb_cou0019,poll71629250 poll10857088 poll3316339 poll91198136 poll33461192 poll25233319 poll4875233 poll36159629 poll20840847 poll2544656 poll4903485,st13,other,,loc0019
-,ocd-id,,ocd-division/country:us/state:georgia/county:colquitt,colquitt_cou0020,poll31060134,st13,other,,loc0020
-,ocd-id,,ocd-division/country:us/state:georgia/county:columbia,columbia_cou0021,poll33756539 poll26326321 poll71404907,st13,other,,loc0021
-,ocd-id,,ocd-division/country:us/state:georgia/county:cook,cook_cou0022,poll18894218,st13,other,,loc0022
-,ocd-id,,ocd-division/country:us/state:georgia/county:coweta,coweta_cou0023,poll91479136 poll64536064,st13,other,,loc0023
-,ocd-id,,ocd-division/country:us/state:georgia/county:crisp,crisp_cou0024,poll38327218 poll79064973,st13,other,,loc0024
-,ocd-id,,ocd-division/country:us/state:georgia/county:dawson,dawson_cou0025,poll4333710,st13,other,,loc0025
-,ocd-id,,ocd-division/country:us/state:georgia/county:dekalb,dekalb_cou0026,poll24915084 poll45593082 poll87884306 poll52830916 poll60254557 poll79996133 poll34904686 poll69028173 poll38782479,st13,other,,loc0026
-,ocd-id,,ocd-division/country:us/state:georgia/county:dodge,dodge_cou0027,poll78632428,st13,other,,loc0027
-,ocd-id,,ocd-division/country:us/state:georgia/county:dooly,dooly_cou0028,poll34162815,st13,other,,loc0028
-,ocd-id,,ocd-division/country:us/state:georgia/county:douglas,douglas_cou0029,poll16070632 poll84007797 poll15183351 poll4900210 poll78438795,st13,other,,loc0029
-,ocd-id,,ocd-division/country:us/state:georgia/county:early,early_cou0030,poll29369210,st13,other,,loc0030
-,ocd-id,,ocd-division/country:us/state:georgia/county:elbert,elbert_cou0031,poll77863878,st13,other,,loc0031
-,ocd-id,,ocd-division/country:us/state:georgia/county:evans,evans_cou0032,poll68323969,st13,other,,loc0032
-,ocd-id,,ocd-division/country:us/state:georgia/county:fannin,fannin_cou0033,poll80422830,st13,other,,loc0033
-,ocd-id,,ocd-division/country:us/state:georgia/county:fayette,fayette_cou0034,poll93926269 poll8503111 poll31357596 poll11852243,st13,other,,loc0034
-,ocd-id,,ocd-division/country:us/state:georgia/county:franklin,franklin_cou0035,poll67658285,st13,other,,loc0035
-,ocd-id,,ocd-division/country:us/state:georgia/county:fulton,fulton_cou0036,poll87025823 poll11754443 poll33412840 poll72848722 poll60922339 poll28615146 poll97339801 poll28442542 poll13496080 poll96695866 poll44410212 poll72921374 poll65898829 poll42944828 poll18904997 poll1970599 poll97627592 poll30440908 poll86225122 poll17622722 poll20880004 poll58937151 poll30760420 poll85757600 poll93733864 poll35252368 poll56841652 poll39114272 poll74208854 poll82394564 poll2945268 poll9823118 poll40770639 poll41420114 poll48689046 poll28280838,st13,other,,loc0036
-,ocd-id,,ocd-division/country:us/state:georgia/county:gilmer,gilmer_count0037,poll41488948,st13,other,,loc0037
-,ocd-id,,ocd-division/country:us/state:georgia/county:glascock,glascock_coun0038,poll69492046,st13,other,,loc0038
-,ocd-id,,ocd-division/country:us/state:georgia/county:grady,grady_cou0039,poll28034699,st13,other,,loc0039
-,ocd-id,,ocd-division/country:us/state:georgia/county:greene,greene_coun0040,poll99238187,st13,other,,loc0040
-,ocd-id,,ocd-division/country:us/state:georgia/county:gwinnett,gwinnett_cou0041,poll51119813 poll48497190 poll67298430 poll66667395 poll47186485 poll45093257 poll98400952 poll39690531,st13,other,,loc0041
-,ocd-id,,ocd-division/country:us/state:georgia/county:habersham,habersham_cou0042,poll96571736 poll53918336 poll82052258,st13,other,,loc0042
-,ocd-id,,ocd-division/country:us/state:georgia/county:hall,hall_cou0043,poll60167683 poll51331781 poll47810828 poll78102915,st13,other,,loc0043
-,ocd-id,,ocd-division/country:us/state:georgia/county:haralson,haralson_coun0044,poll65218250,st13,other,,loc0044
-,ocd-id,,ocd-division/country:us/state:georgia/county:harris,harris_cou0045,poll36287221,st13,other,,loc0045
-,ocd-id,,ocd-division/country:us/state:georgia/county:heard,heard_cou0046,poll91764451 poll94211717,st13,other,,loc0046
-,ocd-id,,ocd-division/country:us/state:georgia/county:henry,henry_cou0047,poll88627417 poll68265392 poll64836885 poll73053775 poll93412438,st13,other,,loc0047
-,ocd-id,,ocd-division/country:us/state:georgia/county:houston,houston_cou0048,poll59856382 poll87963639 poll30770133,st13,other,,loc0048
-,ocd-id,,ocd-division/country:us/state:georgia/county:irwin,irwin_cou0049,poll40271120,st13,other,,loc0049
-,ocd-id,,ocd-division/country:us/state:georgia/county:jasper,jasper_cou0050,poll31612800,st13,other,,loc0050
-,ocd-id,,ocd-division/country:us/state:georgia/county:jefferson,jefferson_cou0051,poll79106856,st13,other,,loc0051
-,ocd-id,,ocd-division/country:us/state:georgia/county:jones,jones_cou0052,poll2081794,st13,other,,loc0052
-,ocd-id,,ocd-division/country:us/state:georgia/county:lamar,lamar_cou0053,poll71731218,st13,other,,loc0053
-,ocd-id,,ocd-division/country:us/state:georgia/county:laurens,laurens_cou0054,poll30873344,st13,other,,loc0054
-,ocd-id,,ocd-division/country:us/state:georgia/county:lee,lee_cou0055,poll94638163,st13,other,,loc0055
-,ocd-id,,ocd-division/country:us/state:georgia/county:lincoln,lincoln_cou0056,poll46606016,st13,other,,loc0056
-,ocd-id,,ocd-division/country:us/state:georgia/county:lowndes,lowndes_cou0057,poll62452230,st13,other,,loc0057
-,ocd-id,,ocd-division/country:us/state:georgia/county:lumpkin,lumpkin_cou0058,poll81639298,st13,other,,loc0058
-,ocd-id,,ocd-division/country:us/state:georgia/county:madison,madison_cou0059,poll85579292,st13,other,,loc0059
-,ocd-id,,ocd-division/country:us/state:georgia/county:mcduffle,mcduffle_cou0060,poll94538877 poll30396413,st13,other,,loc0060
-,ocd-id,,ocd-division/country:us/state:georgia/county:mcintosh,mcintosh_cou0061,poll33711841,st13,other,,loc0061
-,ocd-id,,ocd-division/country:us/state:georgia/county:meriwether,meriwether_cou0062,poll32399082,st13,other,,loc0062
-,ocd-id,,ocd-division/country:us/state:georgia/county:monroe,monroe_coun0063,poll73844596,st13,other,,loc0063
-,ocd-id,,ocd-division/country:us/state:georgia/county:montgomery,montgomery_coun0064,poll52586638,st13,other,,loc0064
-,ocd-id,,ocd-division/country:us/state:georgia/county:morgan,morgan_cou0065,poll52221112,st13,other,,loc0065
-,ocd-id,,ocd-division/country:us/state:georgia/county:murray,murray_cou0066,poll97374451,st13,other,,loc0066
-,ocd-id,,ocd-division/country:us/state:georgia/county:muscogee,muscogee_cou0067,poll37717957,st13,other,,loc0067
-,ocd-id,,ocd-division/country:us/state:georgia/county:newton,newton_cou0068,poll5939485,st13,other,,loc0068
-,ocd-id,,ocd-division/country:us/state:georgia/county:oconee,oconee_cou0069,poll50481002,st13,other,,loc0069
-,ocd-id,,ocd-division/country:us/state:georgia/county:oglethorpe,oglethorpe_cou0070,poll44498168,st13,other,,loc0070
-,ocd-id,,ocd-division/country:us/state:georgia/county:peach,peach_coun0071,poll61487793 poll29938780,st13,other,,loc0071
-,ocd-id,,ocd-division/country:us/state:georgia/county:pike,pike_coun0072,poll56341829,st13,other,,loc0072
-,ocd-id,,ocd-division/country:us/state:georgia/county:rabun,rabun_coun0073,poll70128956,st13,other,,loc0073
-,ocd-id,,ocd-division/country:us/state:georgia/county:randolph,randol0074,poll19284680,st13,other,,loc0074
-,ocd-id,,ocd-division/country:us/state:georgia/county:rockdale,rockdale_cou0075,poll16673892,st13,other,,loc0075
-,ocd-id,,ocd-division/country:us/state:georgia/county:stewart,stewart_cou0076,poll11161878,st13,other,,loc0076
-,ocd-id,,ocd-division/country:us/state:georgia/county:sumter,sumter_cou0077,poll87349014,st13,other,,loc0077
-,ocd-id,,ocd-division/country:us/state:georgia/county:taliaferro,taliaferro_coun0078,poll64661614,st13,other,,loc0078
-,ocd-id,,ocd-division/country:us/state:georgia/county:tattnall,tattnall_cou0079,poll74594202 poll5212709 poll18982754,st13,other,,loc0079
-,ocd-id,,ocd-division/country:us/state:georgia/county:taylor,taylor_cou0080,poll38773542,st13,other,,loc0080
-,ocd-id,,ocd-division/country:us/state:georgia/county:telfair,telfair_cou0081,poll86485090,st13,other,,loc0081
-,ocd-id,,ocd-division/country:us/state:georgia/county:terrell,terrell_cou0082,poll80923000,st13,other,,loc0082
-,ocd-id,,ocd-division/country:us/state:georgia/county:thomas,thomas_cou0083,poll2185302,st13,other,,loc0083
-,ocd-id,,ocd-division/country:us/state:georgia/county:towns,towns_cou0084,poll29798402,st13,other,,loc0084
-,ocd-id,,ocd-division/country:us/state:georgia/county:troup,troup_cou0085,poll93522923,st13,other,,loc0085
-,ocd-id,,ocd-division/country:us/state:georgia/county:twiggs,twiggs_cou0086,poll90140448,st13,other,,loc0086
-,ocd-id,,ocd-division/country:us/state:georgia/county:union,union_coun0087,poll63276277,st13,other,,loc0087
-,ocd-id,,ocd-division/country:us/state:georgia/county:walton,walton_cou0088,poll17529889,st13,other,,loc0088
-,ocd-id,,ocd-division/country:us/state:georgia/county:ware,ware_cou0089,poll16375184,st13,other,,loc0089
-,ocd-id,,ocd-division/country:us/state:georgia/county:warren,warren_cou0090,poll3479015,st13,other,,loc0090
-,ocd-id,,ocd-division/country:us/state:georgia/county:wayne,wayne_coun0091,poll12535961,st13,other,,loc0091
-,ocd-id,,ocd-division/country:us/state:georgia/county:white,white_cou0092,poll98119845,st13,other,,loc0092
-,ocd-id,,ocd-division/country:us/state:georgia/county:whitfield,whitfield_cou0093,poll20548398,st13,other,,loc0093
-,ocd-id,,ocd-division/country:us/state:georgia/county:wilkes,wilkes_coun0094,poll90758541,st13,other,,loc0094
-,ocd-id,,ocd-division/country:us/state:georgia/county:worth,worth_cou0095,poll17331351,st13,other,,loc0095
+,ocd-id,,ocd-division/country:us/state:ga/county:appling,appling_cou0001,poll36557195,st13,other,,loc0001
+,ocd-id,,ocd-division/country:us/state:ga/county:bacon,bacon_cou0002,poll40515553,st13,other,,loc0002
+,ocd-id,,ocd-division/country:us/state:ga/county:baldwin,baldwin_cou0003,poll65028978,st13,other,,loc0003
+,ocd-id,,ocd-division/country:us/state:ga/county:banks,banks_cou0004,poll67914767,st13,other,,loc0004
+,ocd-id,,ocd-division/country:us/state:ga/county:barrow,barrow_cou0005,poll79145403,st13,other,,loc0005
+,ocd-id,,ocd-division/country:us/state:ga/county:ben_hill,ben_hill_cou0006,poll58760185,st13,other,,loc0006
+,ocd-id,,ocd-division/country:us/state:ga/county:bleckley,bleckley_cou0007,poll58568805,st13,other,,loc0007
+,ocd-id,,ocd-division/country:us/state:ga/county:brantley,brantley_cou0008,poll53023458,st13,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:ga/county:brooks,brooks_cou0009,poll47411147,st13,other,,loc0009
+,ocd-id,,ocd-division/country:us/state:ga/county:burke,burke_cou0010,poll45183456,st13,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:ga/county:camden,camden_cou0011,poll18788402 poll9146010 poll572893 poll57414685,st13,other,,loc0011
+,ocd-id,,ocd-division/country:us/state:ga/county:candler,candler_cou0012,poll95769533,st13,other,,loc0012
+,ocd-id,,ocd-division/country:us/state:ga/county:carroll,carroll_cou0013,poll48748992 poll69868832,st13,other,,loc0013
+,ocd-id,,ocd-division/country:us/state:ga/county:catoosa,catoosa_cou0014,poll6073890 poll60888035,st13,other,,loc0014
+,ocd-id,,ocd-division/country:us/state:ga/county:charlton,charlton_cou0015,poll72189202 poll95214235,st13,other,,loc0015
+,ocd-id,,ocd-division/country:us/state:ga/county:cherokee,cherokee_cou0016,poll11786087 poll17714935 poll65887783 poll82477895 poll95630966,st13,other,,loc0016
+,ocd-id,,ocd-division/country:us/state:ga/county:clarke,clarke_cou0017,poll41641803 poll78563441 poll497885 poll56804289,st13,other,,loc0017
+,ocd-id,,ocd-division/country:us/state:ga/county:clay,clay_cou0018,poll80350715,st13,other,,loc0018
+,ocd-id,,ocd-division/country:us/state:ga/county:cobb,cobb_cou0019,poll40001088 poll32457395 poll35386803 poll62689200 poll12079137 poll59856730 poll87097124 poll87366230 poll27280022 poll11027313 poll50763115,st13,other,,loc0019
+,ocd-id,,ocd-division/country:us/state:ga/county:colquitt,colquitt_cou0020,poll41125953,st13,other,,loc0020
+,ocd-id,,ocd-division/country:us/state:ga/county:columbia,columbia_cou0021,poll67127345 poll72039654 poll19100860,st13,other,,loc0021
+,ocd-id,,ocd-division/country:us/state:ga/county:cook,cook_cou0022,poll57667380,st13,other,,loc0022
+,ocd-id,,ocd-division/country:us/state:ga/county:coweta,coweta_cou0023,poll75024782 poll26541808,st13,other,,loc0023
+,ocd-id,,ocd-division/country:us/state:ga/county:crisp,crisp_cou0024,poll65202800 poll41714935,st13,other,,loc0024
+,ocd-id,,ocd-division/country:us/state:ga/county:dawson,dawson_cou0025,poll48912134,st13,other,,loc0025
+,ocd-id,,ocd-division/country:us/state:ga/county:dekalb,dekalb_cou0026,poll78303134 poll74992962 poll46120468 poll63769698 poll63473622 poll79181809 poll93249351 poll21622154 poll49526697,st13,other,,loc0026
+,ocd-id,,ocd-division/country:us/state:ga/county:dodge,dodge_cou0027,poll63785916,st13,other,,loc0027
+,ocd-id,,ocd-division/country:us/state:ga/county:dooly,dooly_cou0028,poll34414566,st13,other,,loc0028
+,ocd-id,,ocd-division/country:us/state:ga/county:douglas,douglas_cou0029,poll91071021 poll5385830 poll7892996 poll96087153 poll16771938,st13,other,,loc0029
+,ocd-id,,ocd-division/country:us/state:ga/county:early,early_cou0030,poll14472031,st13,other,,loc0030
+,ocd-id,,ocd-division/country:us/state:ga/county:elbert,elbert_cou0031,poll46734745,st13,other,,loc0031
+,ocd-id,,ocd-division/country:us/state:ga/county:evans,evans_cou0032,poll8047720,st13,other,,loc0032
+,ocd-id,,ocd-division/country:us/state:ga/county:fannin,fannin_cou0033,poll31590384,st13,other,,loc0033
+,ocd-id,,ocd-division/country:us/state:ga/county:fayette,fayette_cou0034,poll24387044 poll723805 poll10036924 poll95318626,st13,other,,loc0034
+,ocd-id,,ocd-division/country:us/state:ga/county:franklin,franklin_cou0035,poll17376684,st13,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:ga/county:fulton,fulton_cou0036,poll73028521 poll38905149 poll84867649 poll70760466 poll46203462 poll40198374 poll58203344 poll75268175 poll57954966 poll5598881 poll65542285 poll44037378 poll73744946 poll14447791 poll15916451 poll83346807 poll85668477 poll15425015 poll24166875 poll86947195 poll42503755 poll52539855 poll94093156 poll23980157 poll18901345 poll40459617 poll15188555 poll19187258 poll45140402 poll18025966 poll57594602 poll59550367 poll71025996 poll74436915 poll57133002 poll4483763,st13,other,,loc0036
+,ocd-id,,ocd-division/country:us/state:ga/county:gilmer,gilmer_count0037,poll79936781,st13,other,,loc0037
+,ocd-id,,ocd-division/country:us/state:ga/county:glascock,glascock_coun0038,poll17526940,st13,other,,loc0038
+,ocd-id,,ocd-division/country:us/state:ga/county:grady,grady_cou0039,poll84928268,st13,other,,loc0039
+,ocd-id,,ocd-division/country:us/state:ga/county:greene,greene_coun0040,poll86378323,st13,other,,loc0040
+,ocd-id,,ocd-division/country:us/state:ga/county:gwinnett,gwinnett_cou0041,poll47792577 poll2425479 poll646568 poll8505875 poll15320905 poll95121993 poll66274846 poll3554969,st13,other,,loc0041
+,ocd-id,,ocd-division/country:us/state:ga/county:habersham,habersham_cou0042,poll79824683 poll94981374 poll48063767,st13,other,,loc0042
+,ocd-id,,ocd-division/country:us/state:ga/county:hall,hall_cou0043,poll65848034 poll18371697 poll78823196 poll28338150,st13,other,,loc0043
+,ocd-id,,ocd-division/country:us/state:ga/county:haralson,haralson_coun0044,poll76253264,st13,other,,loc0044
+,ocd-id,,ocd-division/country:us/state:ga/county:harris,harris_cou0045,poll92172634,st13,other,,loc0045
+,ocd-id,,ocd-division/country:us/state:ga/county:heard,heard_cou0046,poll70460125 poll75805865,st13,other,,loc0046
+,ocd-id,,ocd-division/country:us/state:ga/county:henry,henry_cou0047,poll21328559 poll81090294 poll21328772 poll65417912 poll67348006,st13,other,,loc0047
+,ocd-id,,ocd-division/country:us/state:ga/county:houston,houston_cou0048,poll64098800 poll60538844 poll89067670,st13,other,,loc0048
+,ocd-id,,ocd-division/country:us/state:ga/county:irwin,irwin_cou0049,poll84035934,st13,other,,loc0049
+,ocd-id,,ocd-division/country:us/state:ga/county:jasper,jasper_cou0050,poll45148062,st13,other,,loc0050
+,ocd-id,,ocd-division/country:us/state:ga/county:jefferson,jefferson_cou0051,poll63412890,st13,other,,loc0051
+,ocd-id,,ocd-division/country:us/state:ga/county:jones,jones_cou0052,poll40955844,st13,other,,loc0052
+,ocd-id,,ocd-division/country:us/state:ga/county:lamar,lamar_cou0053,poll57283354,st13,other,,loc0053
+,ocd-id,,ocd-division/country:us/state:ga/county:laurens,laurens_cou0054,poll87714872,st13,other,,loc0054
+,ocd-id,,ocd-division/country:us/state:ga/county:lee,lee_cou0055,poll5432601,st13,other,,loc0055
+,ocd-id,,ocd-division/country:us/state:ga/county:lincoln,lincoln_cou0056,poll69841360,st13,other,,loc0056
+,ocd-id,,ocd-division/country:us/state:ga/county:lowndes,lowndes_cou0057,poll60256001,st13,other,,loc0057
+,ocd-id,,ocd-division/country:us/state:ga/county:lumpkin,lumpkin_cou0058,poll35245051,st13,other,,loc0058
+,ocd-id,,ocd-division/country:us/state:ga/county:madison,madison_cou0059,poll30776757,st13,other,,loc0059
+,ocd-id,,ocd-division/country:us/state:ga/county:mcduffle,mcduffle_cou0060,poll36912318 poll50459821,st13,other,,loc0060
+,ocd-id,,ocd-division/country:us/state:ga/county:mcintosh,mcintosh_cou0061,poll73887553,st13,other,,loc0061
+,ocd-id,,ocd-division/country:us/state:ga/county:meriwether,meriwether_cou0062,poll29740795,st13,other,,loc0062
+,ocd-id,,ocd-division/country:us/state:ga/county:monroe,monroe_coun0063,poll62123811,st13,other,,loc0063
+,ocd-id,,ocd-division/country:us/state:ga/county:montgomery,montgomery_coun0064,poll15653413,st13,other,,loc0064
+,ocd-id,,ocd-division/country:us/state:ga/county:morgan,morgan_cou0065,poll73576687,st13,other,,loc0065
+,ocd-id,,ocd-division/country:us/state:ga/county:murray,murray_cou0066,poll16901077,st13,other,,loc0066
+,ocd-id,,ocd-division/country:us/state:ga/county:muscogee,muscogee_cou0067,poll23947184,st13,other,,loc0067
+,ocd-id,,ocd-division/country:us/state:ga/county:newton,newton_cou0068,poll5471932,st13,other,,loc0068
+,ocd-id,,ocd-division/country:us/state:ga/county:oconee,oconee_cou0069,poll76028765,st13,other,,loc0069
+,ocd-id,,ocd-division/country:us/state:ga/county:oglethorpe,oglethorpe_cou0070,poll95301184,st13,other,,loc0070
+,ocd-id,,ocd-division/country:us/state:ga/county:peach,peach_coun0071,poll44729540 poll81224976,st13,other,,loc0071
+,ocd-id,,ocd-division/country:us/state:ga/county:pike,pike_coun0072,poll27892442,st13,other,,loc0072
+,ocd-id,,ocd-division/country:us/state:ga/county:rabun,rabun_coun0073,poll79693559,st13,other,,loc0073
+,ocd-id,,ocd-division/country:us/state:ga/county:randolph,randol0074,poll64671957,st13,other,,loc0074
+,ocd-id,,ocd-division/country:us/state:ga/county:rockdale,rockdale_cou0075,poll24610442,st13,other,,loc0075
+,ocd-id,,ocd-division/country:us/state:ga/county:stewart,stewart_cou0076,poll88487384,st13,other,,loc0076
+,ocd-id,,ocd-division/country:us/state:ga/county:sumter,sumter_cou0077,poll83574890,st13,other,,loc0077
+,ocd-id,,ocd-division/country:us/state:ga/county:taliaferro,taliaferro_coun0078,poll9060719,st13,other,,loc0078
+,ocd-id,,ocd-division/country:us/state:ga/county:tattnall,tattnall_cou0079,poll50973457 poll88244702 poll69601401,st13,other,,loc0079
+,ocd-id,,ocd-division/country:us/state:ga/county:taylor,taylor_cou0080,poll46083080,st13,other,,loc0080
+,ocd-id,,ocd-division/country:us/state:ga/county:telfair,telfair_cou0081,poll92246630,st13,other,,loc0081
+,ocd-id,,ocd-division/country:us/state:ga/county:terrell,terrell_cou0082,poll58472301,st13,other,,loc0082
+,ocd-id,,ocd-division/country:us/state:ga/county:thomas,thomas_cou0083,poll40969204,st13,other,,loc0083
+,ocd-id,,ocd-division/country:us/state:ga/county:towns,towns_cou0084,poll78565056,st13,other,,loc0084
+,ocd-id,,ocd-division/country:us/state:ga/county:troup,troup_cou0085,poll38728303,st13,other,,loc0085
+,ocd-id,,ocd-division/country:us/state:ga/county:twiggs,twiggs_cou0086,poll32611604,st13,other,,loc0086
+,ocd-id,,ocd-division/country:us/state:ga/county:union,union_coun0087,poll87814695,st13,other,,loc0087
+,ocd-id,,ocd-division/country:us/state:ga/county:walton,walton_cou0088,poll34833577,st13,other,,loc0088
+,ocd-id,,ocd-division/country:us/state:ga/county:ware,ware_cou0089,poll22428924,st13,other,,loc0089
+,ocd-id,,ocd-division/country:us/state:ga/county:warren,warren_cou0090,poll82708536,st13,other,,loc0090
+,ocd-id,,ocd-division/country:us/state:ga/county:wayne,wayne_coun0091,poll92953833,st13,other,,loc0091
+,ocd-id,,ocd-division/country:us/state:ga/county:white,white_cou0092,poll28708322,st13,other,,loc0092
+,ocd-id,,ocd-division/country:us/state:ga/county:whitfield,whitfield_cou0093,poll96908059,st13,other,,loc0093
+,ocd-id,,ocd-division/country:us/state:ga/county:wilkes,wilkes_coun0094,poll53047838,st13,other,,loc0094
+,ocd-id,,ocd-division/country:us/state:ga/county:worth,worth_cou0095,poll75241830,st13,other,,loc0095
