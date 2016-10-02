@@ -144,7 +144,7 @@ class PollingLocationTxt(object):
         used to run methods that generate the values for each row of the new columns.
         """
         self.base_df['address_line'] = self.base_df.apply(
-            lambda row: self.get_address_line(row['index'],  row['street'],
+            lambda row: self.get_address_line(row['index'], row['street'],
                                                row['city'], row['zip']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
@@ -223,8 +223,9 @@ class PollingLocationTxt(object):
         plt = self.build_polling_location_txt()
 
         # Drop base_df columns.
-        plt.drop(['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'notes', 'index'], inplace=True, axis=1)
+        plt.drop(['office_name', 'name', 'ocd_division', 'division_description', 'homepage_url', 'phone', 'email',
+                'street', 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date', 'end_date', 'directions',
+                'notes'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
         print plt
@@ -236,6 +237,8 @@ class PollingLocationTxt(object):
 if __name__ == '__main__':
 
 
+    s = 'office_name	name ocd_division division_description homepage_url phone email street city state zip start_time end_time start_date end_date directions notes'.split(' ')
+    print s
     early_voting_true = "true"  # True or False
     #drop_box_true =
     state_file='arkansas_early_voting_info.csv'
@@ -243,8 +246,9 @@ if __name__ == '__main__':
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
     early_voting_file = config.data_folder + state_file
 
-    colnames = ['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'notes']
+    colnames = ['office_name', 'name', 'ocd_division', 'division_description', 'homepage_url', 'phone', 'email',
+                'street', 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date', 'end_date', 'directions',
+                'notes']
 
 
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
