@@ -53,8 +53,9 @@ class ScheduleTxt(object):
         else:
             raise ValueError('Missing start_time value at row ' + str(index) + '.')
 
-    def get_end_time(self, index, end_time, hours_open_id):
+    def get_end_time(self, index, end_time):
         """#"""
+        print 1, index, end_time
 
         end_time = end_time.strip()
 
@@ -76,7 +77,7 @@ class ScheduleTxt(object):
 
     def get_start_date(self, index, start_date):
         """#"""
-        #print index, start_date
+        print 3, index, start_date
 
 
         if len(start_date) == 5:
@@ -116,71 +117,76 @@ class ScheduleTxt(object):
 
     def get_end_date(self, index, end_date):
         """#"""
+        print 4, index, end_date
+        end_date = str(end_date)
 
-        if len(end_date) == 5:
-            end_date = end_date + '-16'
-            end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
-            #print 'a', index, end_date
-            return end_date
-            #print index, start_date
-        elif len(end_date) == 4:
+        try:
+            if len(end_date) == 5:
+                end_date = end_date + '-16'
+                end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
+                #print 'a', index, end_date
+                return end_date
+                #print index, start_date
+            elif len(end_date) == 4:
 
-            #print end_date
+                #print end_date
 
-            sd = tuple(end_date.split('-'))
-            m = str(sd[0])
-            d = str(sd[1])
-            if len(d) == 1:
-                d = '0' + d
+                sd = tuple(end_date.split('-'))
+                m = str(sd[0])
+                d = str(sd[1])
+                if len(d) == 1:
+                    d = '0' + d
+                else:
+                    d = d
+                #y = '16'
+                #e = str(m + '-' + d + '-' + y)
+                #print type(e)
+                return '2016-' + m + '-' + d
+
+            elif len(end_date) == 7:
+                sd = tuple(end_date.split('-'))
+                #print sd
+                #date_tup = tuple(sd.split('-'))
+                #print date_tup
+                m = sd[0]
+                d= sd[1]
+                if len(d) == 1:
+                    d = '0' + d
+                else:
+                    d = d
+                y= '16'
+                end_date = m + '-' + d + '-' + y
+                end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
+                #print 'b', index, end_date
+                return  end_date
+
+            elif len(end_date) == 8:
+                #print index, end_date
+                end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
+                return end_date
+
+
+            elif len(end_date) == 9:
+                sd = tuple(end_date.split('-'))
+                m = sd[0]
+                d = sd[1]
+                if len(d) == 1:
+                    d = '0' + d
+                else:
+                    d = d
+                y = sd[2]
+                return '2016-' + m + '-' + d
+
+            elif len(end_date) == 10:
+                return datetime.datetime.strptime(end_date, '%m-%d-%Y').strftime('%Y-%m-%d')
+
+
+
             else:
-                d = d
-            #y = '16'
-            #e = str(m + '-' + d + '-' + y)
-            #print type(e)
-            return '2016-' + m + '-' + d
-
-        elif len(end_date) == 7:
-            sd = tuple(end_date.split('-'))
-            #print sd
-            #date_tup = tuple(sd.split('-'))
-            #print date_tup
-            m = sd[0]
-            d= sd[1]
-            if len(d) == 1:
-                d = '0' + d
-            else:
-                d = d
-            y= '16'
-            end_date = m + '-' + d + '-' + y
-            end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
-            #print 'b', index, end_date
-            return  end_date
-
-        elif len(end_date) == 8:
-            #print index, end_date
-            end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
-            return end_date
-
-
-        elif len(end_date) == 9:
-            sd = tuple(end_date.split('-'))
-            m = sd[0]
-            d = sd[1]
-            if len(d) == 1:
-                d = '0' + d
-            else:
-                d = d
-            y = sd[2]
-            return '2016-' + m + '-' + d
-
-        elif len(end_date) == 10:
-            return datetime.datetime.strptime(end_date, '%m-%d-%Y').strftime('%Y-%m-%d')
-
-
-
-        else:
-            end = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
-            return end
+                end = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
+                return end
+        except:
+            pass
 
     def get_hours_open_id(self, hours_open_id):
         """#"""
@@ -217,7 +223,7 @@ class ScheduleTxt(object):
                                             row['hours_open_id']), axis=1)
 
         self.base_df['end_time'] = self.base_df.apply(
-            lambda row: self.get_end_time(row['county'], row['end_time'], row['hours_open_id']), axis=1)
+            lambda row: self.get_end_time(row['index'], row['end_time']), axis=1)
 
         self.base_df['is_only_by_appointment'] = self.base_df.apply(
             lambda row: self.is_only_by_appointment(), axis=1)
@@ -254,9 +260,9 @@ class ScheduleTxt(object):
         #print sch
 
         # Drop base_df columns.
-        sch.drop(['index', 'county', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state',
-                  'zip_code', 'address_line', 'directions', 'hours', 'photo_uri', 'is_drop_box',
-                  'is_early_voting', 'latitude', 'longitude', 'latlng_source'], inplace=True, axis=1)
+        #sch.drop(['index', 'county', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state',
+        #          'zip_code', 'address_line', 'directions', 'hours', 'photo_uri', 'is_drop_box',
+        #          'is_early_voting', 'latitude', 'longitude', 'latlng_source'], inplace=True, axis=1)
 
         # reorder columns
         cols =['start_time', 'end_time', 'is_only_by_appointment', 'is_or_by_appointment', 'is_subject_to_change',
@@ -274,13 +280,17 @@ if __name__ == '__main__':
     intermediate_doc = 'intermediate_doc.csv'
 
 
-    colnames = ['county', 'official_title', 'types', 'ocd_division', 'division_description', 'homepage_url',
-                'phone', 'email', 'street', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date',
-                'end_date', 'index', 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id',
-                'is_drop_box', 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
+    #colnames = ['county', 'official_title', 'types', 'ocd_division', 'division_description', 'homepage_url',
+    #            'phone', 'email', 'street', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date',
+    #            'end_date', 'index', 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id',
+    #            'is_drop_box', 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
+
+    colnames = ['county', 'official_title', 'types', 'ocd_division', 'division_description', 'homepage_url', 'phone', 'street', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date', 'index', 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
 
 
-    early_voting_df = pd.read_csv(config.output + intermediate_doc, names=colnames, encoding='ISO-8859-1', skiprows=1, delimiter=',')
+    s ='county, official_title, types, ocd_division, division_description, homepage_url, phone, street, city, state, zip_code, start_time, end_time, start_date, end_date, index, address_line, directions, hours, photo_uri, hours_open_id, is_drop_box, is_early_voting, latitude, longitude, latlng_source, id'.split(', ')
+    print s
+    early_voting_df = pd.read_csv(config.output + intermediate_doc, names=colnames, sep=',', encoding='ISO-8859-1', skiprows=1)
 
     early_voting_df['index'] = early_voting_df.index +1 # offsets zero based index so it starts at 1 for ids
     #print early_voting_df

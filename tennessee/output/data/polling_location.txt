@@ -1,160 +1,188 @@
-address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-"102 Robertsville Rd, Oak Ridge, TN 37830",,10:00 AM-06:00 PM,,ho7751608,false,true,,,,poll68212145
-"101 S Hicks St, Clinton, TN 37716",,09:00 AM-12:00 PM,,ho52917193,false,true,,,,poll43899468
-"3310 Andersonville Hwy, Andersonville, TN 37705",,10:00 AM-06:00 PM,,ho69227747,false,true,,,,poll53833424
-"One Public Square, Suite 20, Shelbyville, TN 37160-3952",,08:00 AM-05:00 PM,,ho18027906,false,true,,,,poll18086085
-"113 Maple Avenue, Suite 1, Camden, TN 38320-2044",,09:00 AM-05:00 PM,,ho29502187,false,true,,,,poll94695702
-"3150 Main Street, Pikeville, TN 37367",,04:00 PM-07:00 PM,,ho57805670,false,true,,,,poll43422481
-"Blount County Courthouse, 383 Court Street, Maryville, TN 37804-5906",,08:00 AM-05:00 PM,,ho11369404,false,true,,,,poll41156003
-"508 N Cusick St, Maryville, TN 37804",,11:00 AM-07:00 PM,,ho56429925,false,true,,,,poll31415945
-"Pellissippi State Community College, 10915 Hardin Valley Road, Knoxville, TN 37933",,08:00 AM-04:00 PM,,ho20885044,false,true,,,,poll50415867
-"316 S Everett High Rd, Maryville, TN 37804",,11:00 AM-07:00 PM,,ho10571150,false,true,,,,poll31886995
-"Courthouse Annex, 155 Broad Street N.W., Suite 102, Cleveland, TN 37311-5000",,09:00 AM-06:00 PM,,ho30167008,false,true,,,,poll54617698
-"200 Paul Huff PKwy NW, Suite 513, Cleveland, TN 37312",,09:00 AM-06:00 PM,,ho14551734,false,true,,,,poll89122086
-"2310 McGrady Drive SE, Cleveland, TN 37323",,09:00 AM-06:00 PM,,ho6964244,false,true,,,,poll22195557
-"129 Church Alley, Jacksboro, TN 37757",,09:00 AM-04:00 PM,,ho2217590,false,true,,,,poll43730514
-"410 S Main St, Jellico, TN 37762",,09:00 AM-02:00 PM,,ho91696578,false,true,,,,poll87546573
-"Carroll Co Office Complex, 625 High Street, Suite 113, Huntingdon, TN 38344-1712",,08:30 AM-04:00 PM,,ho73036893,false,true,,,,poll40193405
-"116 Holston Ave, Elizabethton, TN 37643-3264",,09:00 AM-04:00 PM,,ho33235965,false,true,,,,poll83393891
-"188 County Services Drive, Suite 100, Ashland City, TN 37015-1744",,09:00 AM-04:00 PM,,ho4318160,false,true,,,,poll73144776
-"133 East Main, Henderson, TN 38340",,08:30 AM-04:00 PM,,ho74954100,false,true,,,,poll30954978
-"1802 Main Street, Tazewell, TN 37879",,09:00 AM-05:00 PM,,ho34477976,false,true,,,,poll78638831
-"Clay Co Community Ctr, 145 Cordell Hull Drive, Celina, TN 38551",,09:00 AM-12:00 PM,,ho25481497,false,true,,,,poll4268814
-"360 East Main Street, Newport, TN 37821-3121",,08:30 AM-04:00 PM,,ho64620345,false,true,,,,poll33466816
-"Coffee Co Admin. Plaza, 1329 McArthur Street, Suite 6, Manchester, TN 37355-2456",,08:00 AM-04:30 PM,,ho31026900,false,true,,,,poll41711141
-"C.D. Stamps Community Center, 810 South Jackson Street, Tullahoma, TN 37388",,09:00 AM-04:30 PM,,ho20604938,false,true,,,,poll78809991
-"235 East Church Street, Alamo, TN 38001-1107",,08:30 AM-06:00 PM,,ho66848400,false,true,,,,poll75496483
-"2 South Main Street, Crossville, TN 38555-4583",,08:00 AM-05:00 PM,,ho66102167,false,true,,,,poll61598723
-"BELLE MEADE CITY HALL, 4705 HARDING PIKE, Nashville, TN 37205",,08:00 AM-04:30 PM,,ho43148567,false,true,,,,poll25559781
-"BELLEVUE LIBRARY, 720 BAUGH ROAD, Nashville, TN 37221",,08:00 AM-04:30 PM,,ho53812126,false,true,,,,poll16465107
-"BORDEAUX LIBRARY, 4000 CLARKSVILLE PIKE, Nashville, TN 37218",,08:00 AM-04:30 PM,,ho77625899,false,true,,,,poll94710044
-"CASA AZAFR N COMM. CENTER, 2195 NOLENSVILLE PIKE, Nashville, TN 37211",,08:00 AM-04:30 PM,,ho2459815,false,true,,,,poll74966609
-"EDMONDSON PIKE LIBRARY, 5501 EDMONDSON PIKE, Nashville, TN 37211",,08:00 AM-04:30 PM,,ho73097664,false,true,,,,poll16969561
-"FRIENDSHIP BAPTIST CHURCH, 1109 32ND AVE N, Nashville, TN 37209",,08:00 AM-04:30 PM,,ho53758602,false,true,,,,poll69131314
-"GOODLETTSVILLE COMM. CENTER, 200 MEMORIAL DR, GOODLETTSVILLE, TN 37072",,08:00 AM-04:30 PM,,ho60514514,false,true,,,,poll17548004
-"GREEN HILLS LIBRARY, 3701 BENHAM AVE, Nashville, TN 37215",,08:00 AM-04:30 PM,,ho37116748,false,true,,,,poll66467248
-"HERMITAGE LIBRARY, 3700 JAMES KAY LANE, HERMITAGE, TN 37076",,08:00 AM-04:30 PM,,ho33818634,false,true,,,,poll60073515
-"MADISON LIBRARY, 610 GALLATIN PIKE S, MADISON, TN 37115",,08:00 AM-04:30 PM,,ho15790964,false,true,,,,poll42223855
-"SONNY WEST AUDITORIUM, 700 2ND AVE S, Nashville, TN 37210",,08:00 AM-04:30 PM,,ho22877138,false,true,,,,poll6640748
-"SOUTHEAST COMM. CENTER, 5260 HICKORY HOLLOW PKWY, STE 102, ANTIOCH, TN 37013",,08:00 AM-04:30 PM,,ho84286242,false,true,,,,poll66630688
-"Election Office, 67 S East Street, Decaturville, TN 38329",,09:00 AM-04:00 PM,,ho93079951,false,true,,,,poll77156242
-"1 Public Square, Smithville, TN 37166-1425",,09:00 AM-01:00 PM,,ho37435169,false,true,,,,poll17769413
-"Election Commission, 110-A Academy Street, Charlotte, TN 37036",,08:00 AM-04:00 PM,,ho76219174,false,true,,,,poll3873933
-"Restoration Church, 505 Henslee Dr, Charlotte, TN 37055",,08:00 AM-04:00 PM,,ho11212212,false,true,,,,poll31456701
-"103 West Market St, Dyersburg, TN 38024",,09:00 AM-04:00 PM,,ho9582676,false,true,,,,poll55803610
-"2700 Lake Road, Dyersburg, TN 38034",,12:00 PM-07:00 PM,,ho40638446,false,true,,,,poll31341837
-"45 Dogwood Lane, Somerville, TN 38068",,09:00 AM-04:00 PM,,ho9371434,false,true,,,,poll52920262
-"Fentress Co Election Comm, 111 North Norris Street, Jamestown, TN 38556",,09:00 AM-04:00 PM,,ho35009532,false,true,,,,poll29881923
-"839 Dinah Shore Blvd, Suite 1, Winchester, TN 37398-1426",,08:00 AM-04:30 PM,,ho47507378,false,true,,,,poll58268750
-"Gibson County Election Commission Office Medina City Hall, One Court Square, Suite 101, Trenton, TN 38382-1851",,08:30 AM-06:00 PM,,ho32354659,false,true,,,,poll20348795
-"201 Hwy 45 E North, Medina, TN 38355",,08:30 AM-06:00 PM,,ho66813310,false,true,,,,poll63146654
-"222 West Madison St, Basement, Room 100, Pulaski, TN 38478-2622",,08:00 AM-04:00 PM,,ho29593431,false,true,,,,poll83189814
-"119 Marshall Ave, Rutledge, TN 37861",,08:30 AM-12:00 PM,,ho7386007,false,true,,,,poll45213064
-"218 North Main Street, Greeneville, TN 37745-3834",,08:30 AM-06:00 PM,,ho70383247,false,true,,,,poll3355401
-"11745 U.S. 41, Monteagle, TN 37356",,08:00 AM-04:00 PM,,ho52727303,false,true,,,,poll42675823
-"1433 TN-56, Altamont, TN 37301",,08:00 AM-04:00 PM,,ho36591798,false,true,,,,poll6954666
-"511 West Second North St, Morristown, TN 37814-3964",,08:00 AM-06:00 PM,,ho23580663,false,true,,,,poll56237632
-"106 South Porter Street, Bolivar, TN 38008-1735",,09:00 AM-04:00 PM,,ho47736644,false,true,,,,poll60053963
-"Courthouse, 465 Main Street, Basement, Savannah, TN 38372-2062",,09:00 AM-03:30 PM,,ho36675455,false,true,,,,poll87812052
-"110 East Main Street, Suite 301, Rogersville, TN 37857-3360",,08:00 AM-05:00 PM,,ho53724342,false,true,,,,poll31870862
-"111 Hamilton St, Church Hill, TN 37642",,09:00 AM-06:00 PM,,ho82370322,false,true,,,,poll99592245
-"Courthouse, One North Washington Ave, Basement, Brownsville, TN 38012-2561",,09:00 AM-01:00 PM,,ho2273671,false,true,,,,poll1426267
-"340 Natchez Trace Dr, Lexington, TN 38351-1838",,08:30 AM-04:00 PM,,ho69339814,false,true,,,,poll13361893
-"Courthouse Annex, 213 West Washington, Paris, TN 38242",,08:00 AM-04:30 PM,,ho60105888,false,true,,,,poll93199465
-"114 North Central Ave, Centerville, TN 37033-1426",,09:00 AM-04:00 PM,,ho40522673,false,true,,,,poll63938290
-"7700 New Hwy 7, Lyles, TN 37098",,09:00 AM-04:00 PM,,ho95819035,false,true,,,,poll69214390
-"4760 East Main Street, Erin, TN 37061",,08:00 AM-04:30 PM,,ho96242349,false,true,,,,poll17390699
-"208 West Wyly Street, Waverly, TN 37185-1547",,08:00 AM-04:00 PM,,ho17408346,false,true,,,,poll41190399
-"Jackson Co Courthouse, 101 East Hull Avenue, Gainesboro, TN 38562",,08:00 AM-12:00 PM,,ho25053108,false,true,,,,poll60503005
-"931 Industrial Park Road, Dandridge, TN 37725-4701",,09:00 AM-04:00 PM,,ho67888789,false,true,,,,poll12689617
-"158 Election Avenue, Mountain City, TN 37683-1870",,08:00 AM-05:00 PM,,ho2926701,false,true,,,,poll38975384
-"Lake County Election Commision, 217 S Court Street, Tiptonville, TN 38079-1305",,09:00 AM-12:00 PM,,ho78866453,false,true,,,,poll81354856
-"217 N Main Street, Ripley, TN 38063-1315",,08:30 AM-04:30 PM,,ho30132316,false,true,,,,poll24242104
-"219 Centennial Blvd, Lawrenceburg, TN 38464-3208",,08:00 AM-04:00 PM,,ho92057385,false,true,,,,poll8864404
-"208 Davidson Street East, Room 106, Fayetteville, TN 37334-3581",,08:00 AM-05:00 PM,,ho26260829,false,true,,,,poll39922898
-"Loudon County Election Commission Office, 100 River Road, Room 108, Loudon, TN 37774-1042",,10:00 AM-06:00 PM,,ho52459719,false,true,,,,poll93828665
-"Roane State Community College, 100 West Broadway, Lenoir City, TN 37771",,10:00 AM-06:00 PM,,ho90599926,false,true,,,,poll73599912
-"Tellico Village Playhouse, 304 Lakeside Plaza, Loudon, TN 37774",,10:00 AM-06:00 PM,,ho31023205,false,true,,,,poll3525546
-"County Election Commissions, 607 Hwy 52 Bypass E, Suite C, Lafayette, TN 37083-1009",,08:00 AM-04:30 PM,,ho35951231,false,true,,,,poll30468469
-"311 North Parkway, Jackson, TN 38305-2713",,09:00 AM-04:00 PM,,ho70703477,false,true,,,,poll76428452
-"Elections Office, 109 Academy Avenue, Jasper, TN 37347-3520",,08:00 AM-04:00 PM,,ho43815835,false,true,,,,poll36466087
-"Hardison Office Annex, 230 College Street, Suite 120, Lewisburg, TN 37091-3305",,08:00 AM-05:00 PM,,ho466297,false,true,,,,poll21334378
-"Chapel Hill Methodist Church, 316 N Horton Pkwy, Chapel Hill, TN 37034",,10:00 AM-05:00 PM,,ho88712909,false,true,,,,poll61187362
-"5 South Hill Street, Suite B, Athens, TN 37303-5403",,08:30 AM-04:00 PM,,ho24939163,false,true,,,,poll21497532
-"Annex Building, 530 Mulberry Avenue, Suite 3, Selmer, TN 38375",,09:00 AM-04:30 PM,,ho57865499,false,true,,,,poll29619576
-"Meigs Co Courthouse County Election Commision, 17214 Hwy 58 N, 1st Floor, Decatur, TN 37322-7472",,09:00 AM-12:00 PM,,ho86027521,false,true,,,,poll4344850
-"Decatur City Hall, 200 River Rd, Decatur, TN 37322",,09:00 AM-06:00 PM,,ho26602572,false,true,,,,poll37485010
-"Election Commission, 401 Main Street, Madisonville, TN 37354-3110",,08:30 AM-05:00 PM,,ho52324684,false,true,,,,poll49715146
-"Sweetwater City Hall, 203 Monroe St, Sweetwater, TN 37874",,09:00 AM-05:00 PM,,ho47245316,false,true,,,,poll27612117
-"136 Bank Street, Tellicoe Plains, TN 37385",,09:00 AM-05:00 PM,,ho87264449,false,true,,,,poll20594001
-"Montgomery County Elections Commission, Montgomery Veterans Plaza, 350 Pageant Lane, Suite 404, Clarksville, TN 37040-3813",,08:00 AM-06:00 PM,,ho32716819,false,true,,,,poll59779683
-"Education Building, 241 Main Street, Suite 201, Lynchburg, TN 37352-8390",,09:00 AM-04:00 PM,,ho12005539,false,true,,,,poll1332478
-"308 Bill Burnett Circle, Union City, TN 38261-3705",,08:30 AM-04:30 PM,,ho92205275,false,true,,,,poll36543826
-"County Election Commissions Courthouse Annex, 317 East University Street, Room 45, Livingston, TN 38570-1547",,08:00 AM-05:00 PM,,ho58149497,false,true,,,,poll26406004
-"124 East Main Street, Linden, TN 37096",,08:30 AM-11:30 AM,,ho9696763,false,true,,,,poll30724432
-"Community Center, 105 South Main Street, Room 2, Byrdstown, TN 38549-2285",,08:00 AM-04:00 PM,,ho23434884,false,true,,,,poll58819542
-"6050 Highway 411, Benton, TN 37307-3603",,09:00 AM-04:00 PM,,ho45989057,false,true,,,,poll75562056
-"804 Cherokee Trail, Dovetown, TN 37326",,09:00 AM-05:00 PM,,ho85594401,false,true,,,,poll89975858
-"705 County Services Drive, Cookeville, TN 38501-4338",,08:00 AM-05:00 PM,,ho65988518,false,true,,,,poll11241190
-"Election Commission Office, 125 Court Street, Suite 1, Dayton, TN 37321-1275",,08:30 AM-05:00 PM,,ho867143,false,true,,,,poll68341348
-"Spring City City Hall, 229 Front St, Spring City, TN 37381",,08:30 AM-05:00 PM,,ho27451333,false,true,,,,poll22031695
-"Roane Co Courthouse, 200 E. Race Street, 1st Flr, Suite 8, Kingston, TN 37763-2860",,09:00 AM-05:00 PM,,ho18521428,false,true,,,,poll73997139
-"Robertson Co Office Bldg, 513 South Brown Street, Room 137, Springfield, TN 37172-2941",,08:00 AM-04:30 PM,,ho68087394,false,true,,,,poll98370723
-"Rutherford County Election Commission, 1 South Public Square, Suite 103, Murfreesboro, TN 37130-8001",,07:00 AM-07:00 PM,,ho32341045,false,true,,,,poll10132927
-"Election Commission Annex Building, 426 East Vine Street, Murfreesboro, TN 37130",,09:00 AM-06:00 PM,,ho74706395,false,true,,,,poll43041207
-"Sports Com, 2310 Memorial Blvd, Murfreesboro, TN 37130",,09:00 AM-06:00 PM,,ho84021092,false,true,,,,poll10653105
-"Lane Agri Park Livestock Pavilion, 315 John Rice Blvd, Murfreesboro, TN 37130",,09:00 AM-06:00 PM,,ho81544074,false,true,,,,poll1493775
-"Smyrna City Hall, 315 S Lowry St, Smyrna, TN 37167",,09:00 AM-06:00 PM,,ho25186439,false,true,,,,poll48727612
-"LaVergne Civic Auditorium, 283 Old Nashville Hwy, La Vergne, TN 37086",,09:00 AM-06:00 PM,,ho61710926,false,true,,,,poll69346439
-"Middle TN Assoc. of Realtors, 311 Butler Dr., Murfreesboro, TN 37127",,09:00 AM-06:00 PM,,ho5484725,false,true,,,,poll66113348
-"Elections Office, 68 Spring Street, Dunlap, TN 37327-3752",,09:00 AM-05:00 PM,,ho46163066,false,true,,,,poll82332579
-"Abundant Grace Fellowship Church, 1574 E. Shelby Drive, Memphis, TN 38116",,10:00 AM-07:00 PM,,ho34741590,false,true,,,,poll66585717
-"Agricenter International, 7777 Walnut Grove Road, Memphis, TN 38120",,10:00 AM-07:00 PM,,ho29244725,false,true,,,,poll12738386
-"Anointed Temple of Praise, 3939 Riverdale Road, Memphis, TN 38141",,10:00 AM-07:00 PM,,ho98231287,false,true,,,,poll98109290
-"Baker Community Center, 7942 Church Road, Millington, TN 38053",,10:00 AM-07:00 PM,,ho76452857,false,true,,,,poll87198462
-"Bellevue Baptist Church, 2000 Appling Road, Cordova, TN 38016",,10:00 AM-07:00 PM,,ho18351998,false,true,,,,poll29072784
-"Berclair Church of Christ, 4536 Summer Avenue, Memphis, TN 38122",,10:00 AM-07:00 PM,,ho65237530,false,true,,,,poll53921077
-"Collierville Church of Christ, 575 Shelton Drive, Collierville, TN 38017",,10:00 AM-07:00 PM,,ho34964680,false,true,,,,poll87536694
-"Dave Wells Community Center, 915 Chelsea Avenue, Memphis, TN 38107",,10:00 AM-07:00 PM,,ho61308661,false,true,,,,poll42318991
-"Ed Rice Community Center, 2907 N. Watkins, Memphis, TN 38127",,10:00 AM-07:00 PM,,ho67507377,false,true,,,,poll7947415
-"Glenview Community Center, 1141 S. Barksdale Street, Memphis, TN 38114",,10:00 AM-07:00 PM,,ho52469977,false,true,,,,poll34839719
-"Greater Lewis Street Baptist Church, 152 E. Parkway North, Memphis, TN 38104",,10:00 AM-07:00 PM,,ho62297001,false,true,,,,poll22238400
-"Greater Middle Baptist Church, 4982 Knight Arnold Road, Memphis, TN 38118",,10:00 AM-07:00 PM,,ho15552476,false,true,,,,poll89152045
-"Mississippi Blvd. Church-Family Life Center, 70 N. Bellevue Boulevard, Memphis, TN 38106",,10:00 AM-07:00 PM,,ho61502932,false,true,,,,poll64435580
-"Mt. Zion Baptist Church, 60 S. Parkway East, Memphis, TN 38106",,10:00 AM-07:00 PM,,ho3078990,false,true,,,,poll18412196
-"New Bethel Missionary Baptist Church, 7786 Poplar Pike, Germantown, TN 38138",,10:00 AM-07:00 PM,,ho77708303,false,true,,,,poll26022603
-"Raleigh United Methodist Church, 3295 Powers Road, Memphis, TN 38128",,10:00 AM-07:00 PM,,ho87855181,false,true,,,,poll66770447
-"Riverside Missionary Baptist Church, 3560 S. Third Street, Memphis, TN 38109",,10:00 AM-07:00 PM,,ho91138055,false,true,,,,poll41746789
-"Shelby County Office Building, 157 Poplar Avenue, Memphis, TN 38103",,10:00 AM-07:00 PM,,ho57577422,false,true,,,,poll7299561
-"The Refuge Church, 9817 Huff N Puff Road, Lakeland, TN 38002",,10:00 AM-07:00 PM,,ho13771370,false,true,,,,poll88062933
-"Waypoint Church, 5586 Stage Road, Bartlett, TN 38134",,10:00 AM-07:00 PM,,ho14730649,false,true,,,,poll21764741
-"White Station Church of Christ, 1106 Colonial Road, Memphis, TN 38117",,10:00 AM-07:00 PM,,ho28847491,false,true,,,,poll74502705
-"Turner Annex Building, 122 Turner High Circle, Suite 105, Carthage, TN 37030-1555",,08:00 AM-04:00 PM,,ho55187469,false,true,,,,poll83391487
-"Old Dover Elem School, 110 Natcor Drive, Dover, TN 37058",,08:00 AM-05:00 PM,,ho46724295,false,true,,,,poll58377244
-"Sullivan County Election Commission Office, 3258 Highway 126, Suite 103, Blountville, TN 37617-4566",,09:00 AM-06:00 PM,,ho83397216,false,true,,,,poll38721755
-"Civic Auditorium, 1550 Fort Henry Dr, Kingsport, TN 37664",,09:00 AM-06:00 PM,,ho99779486,false,true,,,,poll56195800
-"National Guard Armory, 611 Bluff City Hwy, Bristol, TN 37620",,09:00 AM-06:00 PM,,ho10082941,false,true,,,,poll17618053
-"Sumner Co Admin Bldg, 355 North Belvedere Drive, Room 106, Gallatin, TN 37066-5410",,08:00 AM-04:30 PM,,ho63491603,false,true,,,,poll25720457
-"214 Broadway, Hartsville, TN 37074-1304",,08:30 AM-04:30 PM,,ho46068204,false,true,,,,poll13333229
-"106 Nolichucky Avenue, Erwin, TN 37650-1254",,09:00 AM-05:00 PM,,ho54998925,false,true,,,,poll76021667
-"825 Main Street, Maynardville, TN 37807",,09:00 AM-12:00 PM,,ho61718056,false,true,,,,poll32024363
-"Van Buren County Clerk-Master, 179 Veterans Square, Spencer, TN 38585",,09:00 AM-05:00 PM,,ho10548990,false,true,,,,poll82366210
-"201 Locust Street, Suite 3, McMinnville, TN 37110-9926",,09:00 AM-06:00 PM,,ho6167613,false,true,,,,poll62385041
-"Old Jonesborough Courthouse, 100 East Main Street, Jonesborough, TN 37659-1340",,09:00 AM-06:00 PM,,ho84440791,false,true,,,,poll60123056
-"Tennessee Department of Health, 219 Princeton Rd, Johnston City, TN 37601",,09:00 AM-06:00 PM,,ho96124746,false,true,,,,poll39118373
-"Gray Fire Dpt, 106 Gray Commons Circle, Johnson City, TN 37604",,09:00 AM-06:00 PM,,ho5780274,false,true,,,,poll27215641
-"Courthouse, 100 Court Circle, Room 201, Waynesboro, TN 38485-2142",,08:00 AM-04:00 PM,,ho76014371,false,true,,,,poll94220313
-"135 South Poplar Street, Suite A, Dresden, TN 38225-1479",,08:30 AM-04:00 PM,,ho89837271,false,true,,,,poll9241247
-"Courthouse, 1 East Bockman Way, Room 215, Sparta, TN 38583-2034",,08:00 AM-04:00 PM,,ho28188212,false,true,,,,poll47257517
-"Administrative Complex, 1320 West Main Street, Suite 140, Franklin, TN 37064-3731",,08:00 AM-07:00 PM,,ho90347619,false,true,,,,poll1655335
-"The Factory at Franklin, 230 Franklin Road, Franklin, TN 37064",,09:00 AM-07:00 PM,,ho42160539,false,true,,,,poll30987336
-"Williamson County Ag Expo Center, 4215 Long Lane, Franklin, TN 37064",,09:00 AM-07:00 PM,,ho39286752,false,true,,,,poll92106435
-"The Brentwood Library, 8109 Concord Road, Brentwood, TN 37027",,09:00 AM-07:00 PM,,ho74485586,false,true,,,,poll16397045
-"Fairview Recreation Center, 2714 Fairview Boulevard, Fairview, TN 37062",,09:00 AM-07:00 PM,,ho89990360,false,true,,,,poll28406105
-"Nolensville Recreation Center, 7250 Nolensville Road, Nolensville, TN 37135",,09:00 AM-07:00 PM,,ho35072390,false,true,,,,poll51639878
-"Longview Recreation Center, 2909 Commonwealth Drive, Spring Hill, TN 37174",,09:00 AM-07:00 PM,,ho27822678,false,true,,,,poll7552431
-"Election Commission Office, 203 East Main Street, Lebanon, TN 37087-2825",,08:00 AM-06:00 PM,,ho20573281,false,true,,,,poll76768418
-"1075 Charlie Daniels Parkway, Mount Juliet, TN 37122",,08:00 AM-06:00 PM,,ho54591528,false,true,,,,poll97792813
-"8630 Sparta Pike, Watertown, TN 37184",,08:00 AM-06:00 PM,,ho41052677,false,true,,,,poll15597234
-"Gladeville Community Center, 95 McCreary Rd, Lebanon, TN 37090",,08:00 AM-06:00 PM,,ho62708052,false,true,,,,poll37490762
-"6141 Saundersville Rd, Mount Juliet, TN 37122",,08:00 AM-05:00 PM,,ho13553339,false,true,,,,poll82597226
+index,address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+0,"102 Robertsville Rd, Oak Ridge, TN 37830",,10:00 AM-06:00 PM,,ho7751608,false,true,,,,poll68212145
+5,"101 S Hicks St, Clinton, TN 37716",,09:00 AM-12:00 PM,,ho52917193,false,true,,,,poll43899468
+10,"3310 Andersonville Hwy, Andersonville, TN 37705",,10:00 AM-06:00 PM,,ho69227747,false,true,,,,poll53833424
+15,"One Public Square, Suite 20, Shelbyville, TN 37160-3952",,08:00 AM-05:00 PM,,ho18027906,false,true,,,,poll18086085
+24,"113 Maple Avenue, Suite 1, Camden, TN 38320-2044",,09:00 AM-05:00 PM,,ho29502187,false,true,,,,poll94695702
+29,"3150 Main Street, Pikeville, TN 37367",,04:00 PM-07:00 PM,,ho57805670,false,true,,,,poll43422481
+34,"Blount County Courthouse, 383 Court Street, Maryville, TN 37804-5906",,08:00 AM-05:00 PM,,ho11369404,false,true,,,,poll41156003
+39,"508 N Cusick St, Maryville, TN 37804",,11:00 AM-07:00 PM,,ho56429925,false,true,,,,poll31415945
+42,"Pellissippi State Community College, 10915 Hardin Valley Road, Knoxville, TN 37933",,08:00 AM-04:00 PM,,ho20885044,false,true,,,,poll50415867
+45,"316 S Everett High Rd, Maryville, TN 37804",,11:00 AM-07:00 PM,,ho10571150,false,true,,,,poll31886995
+48,"Courthouse Annex, 155 Broad Street N.W., Suite 102, Cleveland, TN 37311-5000",,09:00 AM-06:00 PM,,ho30167008,false,true,,,,poll54617698
+53,"200 Paul Huff PKwy NW, Suite 513, Cleveland, TN 37312",,09:00 AM-06:00 PM,,ho14551734,false,true,,,,poll89122086
+58,"2310 McGrady Drive SE, Cleveland, TN 37323",,09:00 AM-06:00 PM,,ho6964244,false,true,,,,poll22195557
+63,"129 Church Alley, Jacksboro, TN 37757",,09:00 AM-04:00 PM,,ho2217590,false,true,,,,poll43730514
+70,"410 S Main St, Jellico, TN 37762",,09:00 AM-02:00 PM,,ho91696578,false,true,,,,poll87546573
+77,"301 West Main Street, Adams Office Bldg Room 244, Woodbury, TN 37190-1100",,08:00 AM-01:00 PM,,ho76292631,false,true,,,,poll2817856
+91,"Carroll Co Office Complex, 625 High Street, Suite 113, Huntingdon, TN 38344-1712",,08:30 AM-04:00 PM,,ho73036893,false,true,,,,poll40193405
+96,"116 Holston Ave, Elizabethton, TN 37643-3264",,09:00 AM-04:00 PM,,ho33235965,false,true,,,,poll83393891
+101,"188 County Services Drive, Suite 100, Ashland City, TN 37015-1744",,09:00 AM-04:00 PM,,ho4318160,false,true,,,,poll73144776
+103,"133 East Main, Henderson, TN 38340",,08:30 AM-04:00 PM,,ho74954100,false,true,,,,poll30954978
+108,"1802 Main Street, Tazewell, TN 37879",,09:00 AM-05:00 PM,,ho34477976,false,true,,,,poll78638831
+113,"Clay Co Community Ctr, 145 Cordell Hull Drive, Celina, TN 38551",,09:00 AM-12:00 PM,,ho25481497,false,true,,,,poll4268814
+121,"360 East Main Street, Newport, TN 37821-3121",,08:30 AM-04:00 PM,,ho64620345,false,true,,,,poll33466816
+128,"Coffee Co Admin. Plaza, 1329 McArthur Street, Suite 6, Manchester, TN 37355-2456",,08:00 AM-04:30 PM,,ho31026900,false,true,,,,poll41711141
+133,"C.D. Stamps Community Center, 810 South Jackson Street, Tullahoma, TN 37388",,09:00 AM-04:30 PM,,ho20604938,false,true,,,,poll78809991
+138,"235 East Church Street, Alamo, TN 38001-1107",,08:30 AM-06:00 PM,,ho66848400,false,true,,,,poll75496483
+148,"2 South Main Street, Crossville, TN 38555-4583",,08:00 AM-05:00 PM,,ho66102167,false,true,,,,poll61598723
+153,"BELLE MEADE CITY HALL, 4705 HARDING PIKE, Nashville, TN 37205",,08:00 AM-04:30 PM,,ho43148567,false,true,,,,poll25559781
+163,"BELLEVUE LIBRARY, 720 BAUGH ROAD, Nashville, TN 37221",,08:00 AM-04:30 PM,,ho53812126,false,true,,,,poll16465107
+173,"BORDEAUX LIBRARY, 4000 CLARKSVILLE PIKE, Nashville, TN 37218",,08:00 AM-04:30 PM,,ho77625899,false,true,,,,poll94710044
+183,"CASA AZAFR N COMM. CENTER, 2195 NOLENSVILLE PIKE, Nashville, TN 37211",,08:00 AM-04:30 PM,,ho2459815,false,true,,,,poll74966609
+193,"EDMONDSON PIKE LIBRARY, 5501 EDMONDSON PIKE, Nashville, TN 37211",,08:00 AM-04:30 PM,,ho73097664,false,true,,,,poll16969561
+203,"FRIENDSHIP BAPTIST CHURCH, 1109 32ND AVE N, Nashville, TN 37209",,08:00 AM-04:30 PM,,ho53758602,false,true,,,,poll69131314
+213,"GOODLETTSVILLE COMM. CENTER, 200 MEMORIAL DR, GOODLETTSVILLE, TN 37072",,08:00 AM-04:30 PM,,ho60514514,false,true,,,,poll17548004
+223,"GREEN HILLS LIBRARY, 3701 BENHAM AVE, Nashville, TN 37215",,08:00 AM-04:30 PM,,ho37116748,false,true,,,,poll66467248
+233,"HERMITAGE LIBRARY, 3700 JAMES KAY LANE, HERMITAGE, TN 37076",,08:00 AM-04:30 PM,,ho33818634,false,true,,,,poll60073515
+243,"MADISON LIBRARY, 610 GALLATIN PIKE S, MADISON, TN 37115",,08:00 AM-04:30 PM,,ho15790964,false,true,,,,poll42223855
+253,"SONNY WEST AUDITORIUM, 700 2ND AVE S, Nashville, TN 37210",,08:00 AM-04:30 PM,,ho22877138,false,true,,,,poll6640748
+263,"SOUTHEAST COMM. CENTER, 5260 HICKORY HOLLOW PKWY, STE 102, ANTIOCH, TN 37013",,08:00 AM-04:30 PM,,ho84286242,false,true,,,,poll66630688
+273,"Election Office, 67 S East Street, Decaturville, TN 38329",,09:00 AM-04:00 PM,,ho93079951,false,true,,,,poll77156242
+282,"1 Public Square, Smithville, TN 37166-1425",,09:00 AM-01:00 PM,,ho37435169,false,true,,,,poll17769413
+294,"Election Commission, 110-A Academy Street, Charlotte, TN 37036",,08:00 AM-04:00 PM,,ho76219174,false,true,,,,poll3873933
+304,"Restoration Church, 505 Henslee Dr, Charlotte, TN 37055",,08:00 AM-04:00 PM,,ho11212212,false,true,,,,poll31456701
+314,"103 West Market St, Dyersburg, TN 38024",,09:00 AM-04:00 PM,,ho9582676,false,true,,,,poll55803610
+318,"2700 Lake Road, Dyersburg, TN 38034",,12:00 PM-07:00 PM,,ho40638446,false,true,,,,poll31341837
+321,"45 Dogwood Lane, Somerville, TN 38068",,09:00 AM-04:00 PM,,ho9371434,false,true,,,,poll52920262
+326,"Fentress Co Election Comm, 111 North Norris Street, Jamestown, TN 38556",,09:00 AM-04:00 PM,,ho35009532,false,true,,,,poll29881923
+331,"839 Dinah Shore Blvd, Suite 1, Winchester, TN 37398-1426",,08:00 AM-04:30 PM,,ho47507378,false,true,,,,poll58268750
+337,"Gibson County Election Commission Office Medina City Hall, One Court Square, Suite 101, Trenton, TN 38382-1851",,08:30 AM-06:00 PM,,ho32354659,false,true,,,,poll20348795
+342,"201 Hwy 45 E North, Medina, TN 38355",,08:30 AM-06:00 PM,,ho66813310,false,true,,,,poll63146654
+347,"222 West Madison St, Basement, Room 100, Pulaski, TN 38478-2622",,08:00 AM-04:00 PM,,ho29593431,false,true,,,,poll83189814
+352,"119 Marshall Ave, Rutledge, TN 37861",,08:30 AM-12:00 PM,,ho7386007,false,true,,,,poll45213064
+362,"218 North Main Street, Greeneville, TN 37745-3834",,08:30 AM-06:00 PM,,ho70383247,false,true,,,,poll3355401
+367,"11745 U.S. 41, Monteagle, TN 37356",,08:00 AM-04:00 PM,,ho52727303,false,true,,,,poll42675823
+372,"1433 TN-56, Altamont, TN 37301",,08:00 AM-04:00 PM,,ho36591798,false,true,,,,poll6954666
+377,"511 West Second North St, Morristown, TN 37814-3964",,08:00 AM-06:00 PM,,ho23580663,false,true,,,,poll56237632
+387,"700 River Terminal Road, Chattanooga, TN 37406-1736",,08:00 AM-07:00 PM,,ho83759343,false,true,,,,poll72238211
+392,"1010 North Moore Rd., Chattanooga, TN 37411",,10:00 AM-06:00 PM,,ho93369719,false,true,,,,poll38067898
+395,"4300 Ooltewah-Ringgold Road, Ooltewah, TN 37363",,10:00 AM-06:00 PM,,ho25444356,false,true,,,,poll85961078
+398,"1009 Executive Drive, Suite 102, Hixson, TN 37343",,10:00 AM-06:00 PM,,ho49429410,false,true,,,,poll71591585
+401,"1237 Main Street, Courthouse 1st Floor, Sneedville, TN 37869-3846",,09:00 AM-12:00 PM,,ho69417892,false,true,,,,poll37233701
+411,"106 South Porter Street, Bolivar, TN 38008-1735",,09:00 AM-04:00 PM,,ho47736644,false,true,,,,poll60053963
+416,"Courthouse, 465 Main Street, Basement, Savannah, TN 38372-2062",,09:00 AM-03:30 PM,,ho36675455,false,true,,,,poll87812052
+426,"110 East Main Street, Suite 301, Rogersville, TN 37857-3360",,08:00 AM-05:00 PM,,ho53724342,false,true,,,,poll31870862
+432,"111 Hamilton St, Church Hill, TN 37642",,09:00 AM-06:00 PM,,ho82370322,false,true,,,,poll99592245
+438,"Courthouse, One North Washington Ave, Basement, Brownsville, TN 38012-2561",,09:00 AM-01:00 PM,,ho2273671,false,true,,,,poll1426267
+451,"340 Natchez Trace Dr, Lexington, TN 38351-1838",,08:30 AM-04:00 PM,,ho69339814,false,true,,,,poll13361893
+465,"Courthouse Annex, 213 West Washington, Paris, TN 38242",,08:00 AM-04:30 PM,,ho60105888,false,true,,,,poll93199465
+474,"114 North Central Ave, Centerville, TN 37033-1426",,09:00 AM-04:00 PM,,ho40522673,false,true,,,,poll63938290
+479,"7700 New Hwy 7, Lyles, TN 37098",,09:00 AM-04:00 PM,,ho95819035,false,true,,,,poll69214390
+484,"4760 East Main Street, Erin, TN 37061",,08:00 AM-04:30 PM,,ho96242349,false,true,,,,poll17390699
+489,"208 West Wyly Street, Waverly, TN 37185-1547",,08:00 AM-04:00 PM,,ho17408346,false,true,,,,poll41190399
+494,"Jackson Co Courthouse, 101 East Hull Avenue, Gainesboro, TN 38562",,08:00 AM-12:00 PM,,ho25053108,false,true,,,,poll60503005
+504,"931 Industrial Park Road, Dandridge, TN 37725-4701",,09:00 AM-04:00 PM,,ho67888789,false,true,,,,poll12689617
+509,"158 Election Avenue, Mountain City, TN 37683-1870",,08:00 AM-05:00 PM,,ho2926701,false,true,,,,poll38975384
+516,"1542 Downtown W Blvd, Knoxville, TN 37919",,10:00 AM-06:00 PM,,ho28509372,false,true,,,,poll91574174
+521,"6933 Recreation Lane, Knoxville, TN 37918",,10:00 AM-06:00 PM,,ho21144993,false,true,,,,poll114747
+526,"11408 Municipal Center Dr, Knoxville, TN 37934",,10:00 AM-06:00 PM,,ho88759053,false,true,,,,poll81083652
+531,"9036 Asheville Hwy, Knoxville, TN 37924",,10:00 AM-06:00 PM,,ho59585832,false,true,,,,poll27024309
+536,"2418 Martin Luther King Jr Ave, Knoxville, TN 37915",,10:00 AM-06:00 PM,,ho4008937,false,true,,,,poll17794143
+541,"400 Main St, Knoxville, TN 37902",,12:00 PM-05:00 PM,,ho992248,false,true,,,,poll72620824
+547,"4775 New Harvest Ln, Knoxville, TN 37918",,10:00 AM-06:00 PM,,ho2726732,false,true,,,,poll7275462
+552,"4952 Clinton Hwy, Knoxville, TN 37912",,10:00 AM-06:00 PM,,ho52782467,false,true,,,,poll64896179
+557,"4536 Chapman Highway, Knoxville, TN 37920",,10:00 AM-06:00 PM,,ho11714836,false,true,,,,poll64142240
+562,"8042 Oak Ridge Hwy, Knoxville, TN 37931",,08:00 AM-05:00 PM,,ho61454905,false,true,,,,poll48572345
+565,"1640 Cumberland Ave, Knoxville, TN 37916",,08:00 AM-08:00 PM,,ho80990499,false,true,,,,poll80183887
+566,"Lake County Election Commision, 217 S Court Street, Tiptonville, TN 38079-1305",,09:00 AM-12:00 PM,,ho78866453,false,true,,,,poll81354856
+574,"217 N Main Street, Ripley, TN 38063-1315",,08:30 AM-04:30 PM,,ho30132316,false,true,,,,poll24242104
+582,"219 Centennial Blvd, Lawrenceburg, TN 38464-3208",,08:00 AM-04:00 PM,,ho92057385,false,true,,,,poll8864404
+587,"35 Smith Avenue, Hohenwald, TN 38462-1124",,08:00 AM-04:00 PM,,ho29051535,false,true,,,,poll9758062
+592,"208 Davidson Street East, Room 106, Fayetteville, TN 37334-3581",,08:00 AM-05:00 PM,,ho26260829,false,true,,,,poll39922898
+597,"Loudon County Election Commission Office, 100 River Road, Room 108, Loudon, TN 37774-1042",,10:00 AM-06:00 PM,,ho52459719,false,true,,,,poll93828665
+602,"Roane State Community College, 100 West Broadway, Lenoir City, TN 37771",,10:00 AM-06:00 PM,,ho90599926,false,true,,,,poll73599912
+607,"Tellico Village Playhouse, 304 Lakeside Plaza, Loudon, TN 37774",,10:00 AM-06:00 PM,,ho31023205,false,true,,,,poll3525546
+608,"County Election Commissions, 607 Hwy 52 Bypass E, Suite C, Lafayette, TN 37083-1009",,08:00 AM-04:30 PM,,ho35951231,false,true,,,,poll30468469
+618,"311 North Parkway, Jackson, TN 38305-2713",,09:00 AM-04:00 PM,,ho70703477,false,true,,,,poll76428452
+624,"Elections Office, 109 Academy Avenue, Jasper, TN 37347-3520",,08:00 AM-04:00 PM,,ho43815835,false,true,,,,poll36466087
+629,"Hardison Office Annex, 230 College Street, Suite 120, Lewisburg, TN 37091-3305",,08:00 AM-05:00 PM,,ho466297,false,true,,,,poll21334378
+632,"Chapel Hill Methodist Church, 316 N Horton Pkwy, Chapel Hill, TN 37034",,10:00 AM-05:00 PM,,ho88712909,false,true,,,,poll61187362
+635,"5 South Hill Street, Suite B, Athens, TN 37303-5403",,08:30 AM-04:00 PM,,ho24939163,false,true,,,,poll21497532
+636,"1207A Tradewinds Drive, Columbia, TN 38401-4607",,08:00 AM-04:00 PM,,ho50929624,false,true,,,,poll32439147
+641,"563 Maury Hill St., Spring Hill, TN 37174",,08:00 AM-07:00 PM,,ho64412802,false,true,,,,poll6649236
+655,"Annex Building, 530 Mulberry Avenue, Suite 3, Selmer, TN 38375",,09:00 AM-04:30 PM,,ho57865499,false,true,,,,poll29619576
+660,"Meigs Co Courthouse County Election Commision, 17214 Hwy 58 N, 1st Floor, Decatur, TN 37322-7472",,09:00 AM-12:00 PM,,ho86027521,false,true,,,,poll4344850
+663,"Decatur City Hall, 200 River Rd, Decatur, TN 37322",,09:00 AM-06:00 PM,,ho26602572,false,true,,,,poll37485010
+668,"Election Commission, 401 Main Street, Madisonville, TN 37354-3110",,08:30 AM-05:00 PM,,ho52324684,false,true,,,,poll49715146
+673,"Sweetwater City Hall, 203 Monroe St, Sweetwater, TN 37874",,09:00 AM-05:00 PM,,ho47245316,false,true,,,,poll27612117
+674,"136 Bank Street, Tellicoe Plains, TN 37385",,09:00 AM-05:00 PM,,ho87264449,false,true,,,,poll20594001
+675,"611 Church Street, Vonore, TN 37884",,09:00 AM-05:00 PM,,ho35750879,false,true,,,,poll62572509
+676,"Montgomery County Elections Commission, Montgomery Veterans Plaza, 350 Pageant Lane, Suite 404, Clarksville, TN 37040-3813",,08:00 AM-06:00 PM,,ho32716819,false,true,,,,poll59779683
+681,"Education Building, 241 Main Street, Suite 201, Lynchburg, TN 37352-8390",,09:00 AM-04:00 PM,,ho12005539,false,true,,,,poll1332478
+686,"415 North Kingston Street, Courthouse Room 105, Wartburg, TN 37887-4317",,09:00 AM-04:00 PM,,ho21161842,false,true,,,,poll65388885
+692,"308 Bill Burnett Circle, Union City, TN 38261-3705",,08:30 AM-04:30 PM,,ho92205275,false,true,,,,poll36543826
+697,"County Election Commissions Courthouse Annex, 317 East University Street, Room 45, Livingston, TN 38570-1547",,08:00 AM-05:00 PM,,ho58149497,false,true,,,,poll26406004
+702,"124 East Main Street, Linden, TN 37096",,08:30 AM-11:30 AM,,ho9696763,false,true,,,,poll30724432
+710,"Community Center, 105 South Main Street, Room 2, Byrdstown, TN 38549-2285",,08:00 AM-04:00 PM,,ho23434884,false,true,,,,poll58819542
+715,"6050 Highway 411, Benton, TN 37307-3603",,09:00 AM-04:00 PM,,ho45989057,false,true,,,,poll75562056
+720,"804 Cherokee Trail, Dovetown, TN 37326",,09:00 AM-05:00 PM,,ho85594401,false,true,,,,poll89975858
+722,"705 County Services Drive, Cookeville, TN 38501-4338",,08:00 AM-05:00 PM,,ho65988518,false,true,,,,poll11241190
+732,"Election Commission Office, 125 Court Street, Suite 1, Dayton, TN 37321-1275",,08:30 AM-05:00 PM,,ho867143,false,true,,,,poll68341348
+737,"Spring City City Hall, 229 Front St, Spring City, TN 37381",,08:30 AM-05:00 PM,,ho27451333,false,true,,,,poll22031695
+742,"Roane Co Courthouse, 200 E. Race Street, 1st Flr, Suite 8, Kingston, TN 37763-2860",,09:00 AM-05:00 PM,,ho18521428,false,true,,,,poll73997139
+747,"Robertson Co Office Bldg, 513 South Brown Street, Room 137, Springfield, TN 37172-2941",,08:00 AM-04:30 PM,,ho68087394,false,true,,,,poll98370723
+752,"Rutherford County Election Commission, 1 South Public Square, Suite 103, Murfreesboro, TN 37130-8001",,07:00 AM-07:00 PM,,ho32341045,false,true,,,,poll10132927
+756,"Election Commission Annex Building, 426 East Vine Street, Murfreesboro, TN 37130",,09:00 AM-06:00 PM,,ho74706395,false,true,,,,poll43041207
+761,"Sports Com, 2310 Memorial Blvd, Murfreesboro, TN 37130",,09:00 AM-06:00 PM,,ho84021092,false,true,,,,poll10653105
+766,"Lane Agri Park Livestock Pavilion, 315 John Rice Blvd, Murfreesboro, TN 37130",,09:00 AM-06:00 PM,,ho81544074,false,true,,,,poll1493775
+771,"Smyrna City Hall, 315 S Lowry St, Smyrna, TN 37167",,09:00 AM-06:00 PM,,ho25186439,false,true,,,,poll48727612
+776,"LaVergne Civic Auditorium, 283 Old Nashville Hwy, La Vergne, TN 37086",,09:00 AM-06:00 PM,,ho61710926,false,true,,,,poll69346439
+781,"Middle TN Assoc. of Realtors, 311 Butler Dr., Murfreesboro, TN 37127",,09:00 AM-06:00 PM,,ho5484725,false,true,,,,poll66113348
+786,"2845 Baker Highway, Scott Co Office Bldg, Huntsville, TN 37756-3710",,10:00 AM-02:00 PM,,ho59641229,false,true,,,,poll92327185
+794,"Oneida Municipal Building, 121 Municipal Drive, Oneida, TN 37841",,10:00 AM-02:00 PM,,ho12677949,false,true,,,,poll91854401
+802,"Elections Office, 68 Spring Street, Dunlap, TN 37327-3752",,09:00 AM-05:00 PM,,ho46163066,false,true,,,,poll82332579
+807,"1145 Dolly Parton Parkway, Sevierville, TN 37862-3710",,10:00 AM-06:00 PM,,ho33276130,false,true,,,,poll17377021
+812,"Seymour Public Library, 137 West Macon Lane, Seymour, TN 37865",,10:00 AM-06:00 PM,,ho82831689,false,true,,,,poll91398405
+817,"Abundant Grace Fellowship Church, 1574 E. Shelby Drive, Memphis, TN 38116",,10:00 AM-07:00 PM,,ho34741590,false,true,,,,poll66585717
+822,"Agricenter International, 7777 Walnut Grove Road, Memphis, TN 38120",,10:00 AM-07:00 PM,,ho29244725,false,true,,,,poll12738386
+827,"Anointed Temple of Praise, 3939 Riverdale Road, Memphis, TN 38141",,10:00 AM-07:00 PM,,ho98231287,false,true,,,,poll98109290
+832,"Baker Community Center, 7942 Church Road, Millington, TN 38053",,10:00 AM-07:00 PM,,ho76452857,false,true,,,,poll87198462
+837,"Bellevue Baptist Church, 2000 Appling Road, Cordova, TN 38016",,10:00 AM-07:00 PM,,ho18351998,false,true,,,,poll29072784
+842,"Berclair Church of Christ, 4536 Summer Avenue, Memphis, TN 38122",,10:00 AM-07:00 PM,,ho65237530,false,true,,,,poll53921077
+847,"Collierville Church of Christ, 575 Shelton Drive, Collierville, TN 38017",,10:00 AM-07:00 PM,,ho34964680,false,true,,,,poll87536694
+852,"Dave Wells Community Center, 915 Chelsea Avenue, Memphis, TN 38107",,10:00 AM-07:00 PM,,ho61308661,false,true,,,,poll42318991
+857,"Ed Rice Community Center, 2907 N. Watkins, Memphis, TN 38127",,10:00 AM-07:00 PM,,ho67507377,false,true,,,,poll7947415
+862,"Glenview Community Center, 1141 S. Barksdale Street, Memphis, TN 38114",,10:00 AM-07:00 PM,,ho52469977,false,true,,,,poll34839719
+867,"Greater Lewis Street Baptist Church, 152 E. Parkway North, Memphis, TN 38104",,10:00 AM-07:00 PM,,ho62297001,false,true,,,,poll22238400
+872,"Greater Middle Baptist Church, 4982 Knight Arnold Road, Memphis, TN 38118",,10:00 AM-07:00 PM,,ho15552476,false,true,,,,poll89152045
+877,"Mississippi Blvd. Church-Family Life Center, 70 N. Bellevue Boulevard, Memphis, TN 38106",,10:00 AM-07:00 PM,,ho61502932,false,true,,,,poll64435580
+882,"Mt. Zion Baptist Church, 60 S. Parkway East, Memphis, TN 38106",,10:00 AM-07:00 PM,,ho3078990,false,true,,,,poll18412196
+887,"New Bethel Missionary Baptist Church, 7786 Poplar Pike, Germantown, TN 38138",,10:00 AM-07:00 PM,,ho77708303,false,true,,,,poll26022603
+892,"Raleigh United Methodist Church, 3295 Powers Road, Memphis, TN 38128",,10:00 AM-07:00 PM,,ho87855181,false,true,,,,poll66770447
+897,"Riverside Missionary Baptist Church, 3560 S. Third Street, Memphis, TN 38109",,10:00 AM-07:00 PM,,ho91138055,false,true,,,,poll41746789
+902,"Shelby County Office Building, 157 Poplar Avenue, Memphis, TN 38103",,10:00 AM-07:00 PM,,ho57577422,false,true,,,,poll7299561
+907,"The Refuge Church, 9817 Huff N Puff Road, Lakeland, TN 38002",,10:00 AM-07:00 PM,,ho13771370,false,true,,,,poll88062933
+912,"Waypoint Church, 5586 Stage Road, Bartlett, TN 38134",,10:00 AM-07:00 PM,,ho14730649,false,true,,,,poll21764741
+917,"White Station Church of Christ, 1106 Colonial Road, Memphis, TN 38117",,10:00 AM-07:00 PM,,ho28847491,false,true,,,,poll74502705
+922,"Turner Annex Building, 122 Turner High Circle, Suite 105, Carthage, TN 37030-1555",,08:00 AM-04:00 PM,,ho55187469,false,true,,,,poll83391487
+930,"Old Dover Elem School, 110 Natcor Drive, Dover, TN 37058",,08:00 AM-05:00 PM,,ho46724295,false,true,,,,poll58377244
+935,"Sullivan County Election Commission Office, 3258 Highway 126, Suite 103, Blountville, TN 37617-4566",,09:00 AM-06:00 PM,,ho83397216,false,true,,,,poll38721755
+940,"Civic Auditorium, 1550 Fort Henry Dr, Kingsport, TN 37664",,09:00 AM-06:00 PM,,ho99779486,false,true,,,,poll56195800
+945,"National Guard Armory, 611 Bluff City Hwy, Bristol, TN 37620",,09:00 AM-06:00 PM,,ho10082941,false,true,,,,poll17618053
+950,"Sumner Co Admin Bldg, 355 North Belvedere Drive, Room 106, Gallatin, TN 37066-5410",,08:00 AM-04:30 PM,,ho63491603,false,true,,,,poll25720457
+955,"113 East Church Street, Tipton Co Office Annex, Covington, TN 38019-2503",,08:30 AM-06:00 PM,,ho35732305,false,true,,,,poll75563646
+960,"Munford City Hall, 70 College St., Munford, TN 38058",,08:30 AM-06:00 PM,,ho89145045,false,true,,,,poll19259059
+965,"214 Broadway, Hartsville, TN 37074-1304",,08:30 AM-04:30 PM,,ho46068204,false,true,,,,poll13333229
+975,"106 Nolichucky Avenue, Erwin, TN 37650-1254",,09:00 AM-05:00 PM,,ho54998925,false,true,,,,poll76021667
+981,"825 Main Street, Maynardville, TN 37807",,09:00 AM-12:00 PM,,ho61718056,false,true,,,,poll32024363
+984,"Van Buren County Clerk-Master, 179 Veterans Square, Spencer, TN 38585",,09:00 AM-05:00 PM,,ho10548990,false,true,,,,poll82366210
+989,"201 Locust Street, Suite 3, McMinnville, TN 37110-9926",,09:00 AM-06:00 PM,,ho6167613,false,true,,,,poll62385041
+994,"Old Jonesborough Courthouse, 100 East Main Street, Jonesborough, TN 37659-1340",,09:00 AM-06:00 PM,,ho84440791,false,true,,,,poll60123056
+999,"Tennessee Department of Health, 219 Princeton Rd, Johnston City, TN 37601",,09:00 AM-06:00 PM,,ho96124746,false,true,,,,poll39118373
+1004,"Gray Fire Dpt, 106 Gray Commons Circle, Johnson City, TN 37604",,09:00 AM-06:00 PM,,ho5780274,false,true,,,,poll27215641
+1009,"Courthouse, 100 Court Circle, Room 201, Waynesboro, TN 38485-2142",,08:00 AM-04:00 PM,,ho76014371,false,true,,,,poll94220313
+1014,"135 South Poplar Street, Suite A, Dresden, TN 38225-1479",,08:30 AM-04:00 PM,,ho89837271,false,true,,,,poll9241247
+1019,"Courthouse, 1 East Bockman Way, Room 215, Sparta, TN 38583-2034",,08:00 AM-04:00 PM,,ho28188212,false,true,,,,poll47257517
+1033,"Administrative Complex, 1320 West Main Street, Suite 140, Franklin, TN 37064-3731",,08:00 AM-07:00 PM,,ho90347619,false,true,,,,poll1655335
+1038,"The Factory at Franklin, 230 Franklin Road, Franklin, TN 37064",,09:00 AM-07:00 PM,,ho42160539,false,true,,,,poll30987336
+1043,"Williamson County Ag Expo Center, 4215 Long Lane, Franklin, TN 37064",,09:00 AM-07:00 PM,,ho39286752,false,true,,,,poll92106435
+1048,"The Brentwood Library, 8109 Concord Road, Brentwood, TN 37027",,09:00 AM-07:00 PM,,ho74485586,false,true,,,,poll16397045
+1053,"Fairview Recreation Center, 2714 Fairview Boulevard, Fairview, TN 37062",,09:00 AM-07:00 PM,,ho89990360,false,true,,,,poll28406105
+1058,"Nolensville Recreation Center, 7250 Nolensville Road, Nolensville, TN 37135",,09:00 AM-07:00 PM,,ho35072390,false,true,,,,poll51639878
+1063,"Longview Recreation Center, 2909 Commonwealth Drive, Spring Hill, TN 37174",,09:00 AM-07:00 PM,,ho27822678,false,true,,,,poll7552431
+1068,"Election Commission Office, 203 East Main Street, Lebanon, TN 37087-2825",,08:00 AM-06:00 PM,,ho20573281,false,true,,,,poll76768418
+1073,"1075 Charlie Daniels Parkway, Mount Juliet, TN 37122",,08:00 AM-06:00 PM,,ho54591528,false,true,,,,poll97792813
+1078,"8630 Sparta Pike, Watertown, TN 37184",,08:00 AM-06:00 PM,,ho41052677,false,true,,,,poll15597234
+1083,"Gladeville Community Center, 95 McCreary Rd, Lebanon, TN 37090",,08:00 AM-06:00 PM,,ho62708052,false,true,,,,poll37490762
+1088,"6141 Saundersville Rd, Mount Juliet, TN 37122",,08:00 AM-05:00 PM,,ho13553339,false,true,,,,poll82597226
