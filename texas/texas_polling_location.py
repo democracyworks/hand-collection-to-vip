@@ -20,9 +20,9 @@ class PollingLocationTxt(object):
 
         if not pd.isnull(address1):
             #address = street
-            address = str(re.sub(r'[^\x00-\x7f]', r' ', address1.strip()))
-            address = ' '.join(address.split())
-            #print address
+            address1 = str(re.sub(r'[^\x00-\x7f]', r' ', address1.strip()))
+            #address1 = ' '.join(address1.split())
+            print 1, address1
             #print type(address)
         else:
             raise ValueError('Missing street value at row ' + str(index) + '.')
@@ -30,13 +30,13 @@ class PollingLocationTxt(object):
 
         if not pd.isnull(address2):
             #address = street
-            address2 = str(re.sub(r'[^\x00-\x7f]', r' ', address2.strip()))
-            address2 = ' '.join(address.split())
-            address = address1 + ' ' + address2
-            print address
+            address2 = ', ' + str(re.sub(r'[^\x00-\x7f]', r' ', address2.strip()))
+            #address2 = ' '.join(address2.split())
+            #address = address1 + ' ' + address2
+            #print address2
             #print type(address)
         else:
-            address = address
+            address2 = ''
 
         if not pd.isnull(city):
             city_name = str(city)
@@ -46,12 +46,18 @@ class PollingLocationTxt(object):
 
         if not pd.isnull(zip_code):
             zip = str(zip_code)
+            #print zip
+            #print type(zip)
+
         else:
             raise ValueError('Missing zip code value at row ' + str(index) + '.')
 
-        final_line = address + ", " + city_name + ', ' + config.state_abbreviation_upper + ' ' + zip
+        #print address
+        #print type(address)
+
+        final_line = address1 +  address2 + ", " + city_name + ', ' + config.state_abbreviation_upper + ' ' + zip
         final_line = ' '.join(final_line.split())
-        #print final_line
+        #print index, final_line
         return final_line
 
 
@@ -258,6 +264,6 @@ if __name__ == '__main__':
 
     pl = PollingLocationTxt(early_voting_df, state)
 
-    pl.write_polling_location_txt()
-    #pl.export_for_schedule_and_locality()
+    #pl.write_polling_location_txt()
+    pl.export_for_schedule_and_locality()
 
