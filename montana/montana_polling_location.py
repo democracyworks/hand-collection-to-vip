@@ -184,7 +184,7 @@ class PollingLocationTxt(object):
                                                                     'end_date', 'address_line'])
 
         #intermediate_doc = intermediate_doc.drop_duplicates(subset=['address_line', 'hours'])
-        print intermediate_doc
+        # print intermediate_doc
 
         intermediate_doc.to_csv(config.output + 'intermediate_doc.csv', index=False, encoding='utf-8')
 
@@ -226,7 +226,7 @@ if __name__ == '__main__':
     state_file='montana_early_voting_info.csv'
 
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
-    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/montana/early_voting_input/" + state_file
+    early_voting_file = config.input_path + state_file
 
 
     colnames = ['office_name', 'official_title', 'types', 'ocd_division', 'division_description',
@@ -240,6 +240,7 @@ if __name__ == '__main__':
 
     pl = PollingLocationTxt(early_voting_df, config.early_voting)
 
+    pl.export_for_schedule_and_locality()
     pl.write_polling_location_txt()
-    #pl.export_for_schedule_and_locality()
+
 

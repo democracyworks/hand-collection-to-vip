@@ -186,7 +186,7 @@ if __name__ == '__main__':
 
     state_file = 'intermediate_doc.csv'
 
-    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/montana/output/" + state_file
+    early_voting_file = config.output + state_file
 
     colnames = ['office_name', 'official_title', 'types', 'ocd_division', 'division_description', 'phone', 'email',
                 'street', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date', 'notes',
