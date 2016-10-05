@@ -39,10 +39,10 @@ class PollingLocationTxt(object):
 
         return st.strip() + ", " + city + ", AR " + str(zip)
 
-    def get_directions(self):
+    def get_directions(self, dirs):
         """#"""
         # no direct relationship to any column
-        return ''
+        return dirs
 
 
     def convert_to_time(self, index, time):
@@ -144,11 +144,11 @@ class PollingLocationTxt(object):
         used to run methods that generate the values for each row of the new columns.
         """
         self.base_df['address_line'] = self.base_df.apply(
-            lambda row: self.get_address_line(row['index'],  row['street'],
+            lambda row: self.get_address_line(row['index'],  row['address_one'],
                                                row['city'], row['zip']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
-            lambda row: self.get_directions(), axis=1)
+            lambda row: self.get_directions(row["address_two"]), axis=1)
 
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)
@@ -157,7 +157,7 @@ class PollingLocationTxt(object):
             lambda row: self.get_photo_uri(), axis=1)
         #
         self.base_df['hours_open_id'] = self.base_df.apply(
-            lambda row: self.create_hours_open_id(row['index'], row['street'], row['city'],
+            lambda row: self.create_hours_open_id(row['index'], row['address_one'], row['city'],
                                               row['zip']), axis=1)
 
         self.base_df['is_drop_box'] = self.base_df.apply(
@@ -176,7 +176,7 @@ class PollingLocationTxt(object):
             lambda row: self.get_latlng_source(), axis=1)
         #
         self.base_df['id'] = self.base_df.apply(
-            lambda row: self.create_id(row['index'], row['ocd_division'], row['street'], row['city'], row['zip']), axis=1)
+            lambda row: self.create_id(row['index'], row['ocd_division'], row['address_one'], row['city'], row['zip']), axis=1)
 
         return self.base_df
 
@@ -223,7 +223,8 @@ class PollingLocationTxt(object):
         plt = self.build_polling_location_txt()
 
         # Drop base_df columns.
-        plt.drop(['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
+        plt.drop(['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'address_one',
+                  'address_two', 'loc_name', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'notes', 'index'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
@@ -243,7 +244,7 @@ if __name__ == '__main__':
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
     early_voting_file = config.data_folder + state_file
 
-    colnames = ['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
+    colnames = ['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'loc_name', 'address_one', 'address_two', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'notes']
 
 
