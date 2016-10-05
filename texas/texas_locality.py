@@ -305,11 +305,12 @@ if __name__ == '__main__':
 
     state_file = 'texas_early_voting_info_clean.csv'
 
-    colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state', 'zip_code',
-                'start_time', 'end_time', 'start_date', 'end_date']
+    colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name', 'address1',
+                'address2', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date']
 
-    usecols = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state', 'zip_code',
-                'start_time', 'end_time', 'start_date', 'end_date']
+    usecols = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name', 'address1',
+                'address2', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date']
+
 
     early_voting_df = pd.read_csv(config.input + state_file, names=colnames, usecols=usecols, encoding='utf-8', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1

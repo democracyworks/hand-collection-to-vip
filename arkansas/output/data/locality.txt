@@ -25,26 +25,46 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:ar/county:franklin,ocd-division/country:us/state:ar/county:frank0167,poll72536162,st05,other,,loc0024
 ,ocd-id,,ocd-division/country:us/state:ar/county:fulton,ocd-division/country:us/state:ar/county:ful0172,poll61675759,st05,other,,loc0025
 ,ocd-id,,ocd-division/country:us/state:ar/county:garland,ocd-division/country:us/state:ar/county:garl0178,poll23525682,st05,other,,loc0026
+<<<<<<< HEAD
 ,ocd-id,,ocd-division/country:us/state:ar/county:grant,ocd-division/country:us/state:ar/county:gr0179,poll5428156,st05,other,,loc0027
 ,ocd-id,,ocd-division/country:us/state:ar/county:greene,ocd-division/country:us/state:ar/county:gre0188,poll2011394,st05,other,,loc0028
+=======
+,ocd-id,,ocd-division/country:us/state:ar/county:grant,ocd-division/country:us/state:ar/county:gr0179,poll26364395,st05,other,,loc0027
+,ocd-id,,ocd-division/country:us/state:ar/county:greene,ocd-division/country:us/state:ar/county:gre0188,poll35751187,st05,other,,loc0028
+>>>>>>> ada8c87f4b6c73d639027759c62476cfb6c95400
 ,ocd-id,,ocd-division/country:us/state:ar/county:hempstead,ocd-division/country:us/state:ar/county:hempst0189,poll77110240,st05,other,,loc0029
 ,ocd-id,,ocd-division/country:us/state:ar/county:hot_spring,ocd-division/country:us/state:ar/county:hot_spr0198,poll64328082,st05,other,,loc0030
 ,ocd-id,,ocd-division/country:us/state:ar/county:howard,ocd-division/country:us/state:ar/county:how0199,poll84726617,st05,other,,loc0031
 ,ocd-id,,ocd-division/country:us/state:ar/county:independence,ocd-division/country:us/state:ar/county:independe0206,poll21912754,st05,other,,loc0032
 ,ocd-id,,ocd-division/country:us/state:ar/county:izard,ocd-division/country:us/state:ar/county:iz0212,poll36075354,st05,other,,loc0033
+<<<<<<< HEAD
 ,ocd-id,,ocd-division/country:us/state:ar/county:jackson,ocd-division/country:us/state:ar/county:jack0218,poll21938856,st05,other,,loc0034
 ,ocd-id,,ocd-division/country:us/state:ar/county:jefferson,ocd-division/country:us/state:ar/county:jeffer0220,poll74167889,st05,other,,loc0035
 ,ocd-id,,ocd-division/country:us/state:ar/county:johnson,ocd-division/country:us/state:ar/county:john0224,poll59874977,st05,other,,loc0036
 ,ocd-id,,ocd-division/country:us/state:ar/county:lafayette,ocd-division/country:us/state:ar/county:lafaye0232,poll13859184,st05,other,,loc0037
 ,ocd-id,,ocd-division/country:us/state:ar/county:lawrence,ocd-division/country:us/state:ar/county:lawre0238,poll47731530,st05,other,,loc0038
 ,ocd-id,,ocd-division/country:us/state:ar/county:lee,ocd-division/country:us/state:ar/county:0241,poll89992817,st05,other,,loc0039
+=======
+,ocd-id,,ocd-division/country:us/state:ar/county:jackson,ocd-division/country:us/state:ar/county:jack0218,poll25462950,st05,other,,loc0034
+,ocd-id,,ocd-division/country:us/state:ar/county:jefferson,ocd-division/country:us/state:ar/county:jeffer0220,poll74167889,st05,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:ar/county:johnson,ocd-division/country:us/state:ar/county:john0224,poll59874977,st05,other,,loc0036
+,ocd-id,,ocd-division/country:us/state:ar/county:lafayette,ocd-division/country:us/state:ar/county:lafaye0232,poll57494778,st05,other,,loc0037
+,ocd-id,,ocd-division/country:us/state:ar/county:lawrence,ocd-division/country:us/state:ar/county:lawre0238,poll47731530,st05,other,,loc0038
+,ocd-id,,ocd-division/country:us/state:ar/county:lee,ocd-division/country:us/state:ar/county:0241,poll90769943,st05,other,,loc0039
+>>>>>>> ada8c87f4b6c73d639027759c62476cfb6c95400
 ,ocd-id,,ocd-division/country:us/state:ar/county:lincoln,ocd-division/country:us/state:ar/county:linc0248,poll79196911,st05,other,,loc0040
 ,ocd-id,,ocd-division/country:us/state:ar/county:little_river,ocd-division/country:us/state:ar/county:little_ri0252,poll91843750,st05,other,,loc0041
 ,ocd-id,,ocd-division/country:us/state:ar/county:logan,ocd-division/country:us/state:ar/county:lo0257,poll14955905,st05,other,,loc0042
 ,ocd-id,,ocd-division/country:us/state:ar/county:lonoke,ocd-division/country:us/state:ar/county:lon0261,poll39960625,st05,other,,loc0043
+<<<<<<< HEAD
 ,ocd-id,,ocd-division/country:us/state:ar/county:madison,ocd-division/country:us/state:ar/county:madi0268,poll82046659,st05,other,,loc0044
 ,ocd-id,,ocd-division/country:us/state:ar/county:marion,ocd-division/country:us/state:ar/county:mar0271,poll4850804,st05,other,,loc0045
 ,ocd-id,,ocd-division/country:us/state:ar/county:miller,ocd-division/country:us/state:ar/county:mil0278,poll23565801,st05,other,,loc0046
+=======
+,ocd-id,,ocd-division/country:us/state:ar/county:madison,ocd-division/country:us/state:ar/county:madi0268,poll49824928,st05,other,,loc0044
+,ocd-id,,ocd-division/country:us/state:ar/county:marion,ocd-division/country:us/state:ar/county:mar0271,poll4850804,st05,other,,loc0045
+,ocd-id,,ocd-division/country:us/state:ar/county:miller,ocd-division/country:us/state:ar/county:mil0278,poll36238866,st05,other,,loc0046
+>>>>>>> ada8c87f4b6c73d639027759c62476cfb6c95400
 ,ocd-id,,ocd-division/country:us/state:ar/county:mississippi,ocd-division/country:us/state:ar/county:mississi0285,poll29421740 poll69126721 poll88225428 poll88862449,st05,other,,loc0047
 ,ocd-id,,ocd-division/country:us/state:ar/county:monroe,ocd-division/country:us/state:ar/county:mon0295,poll22432008,st05,other,,loc0048
 ,ocd-id,,ocd-division/country:us/state:ar/county:montgomery,ocd-division/country:us/state:ar/county:montgom0304,poll54444089,st05,other,,loc0049
@@ -52,6 +72,7 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:ar/county:newton,ocd-division/country:us/state:ar/county:new0310,poll40276629,st05,other,,loc0051
 ,ocd-id,,ocd-division/country:us/state:ar/county:ouachita,ocd-division/country:us/state:ar/county:ouach0318,poll17429464,st05,other,,loc0052
 ,ocd-id,,ocd-division/country:us/state:ar/county:perry,ocd-division/country:us/state:ar/county:pe0321,poll32232372,st05,other,,loc0053
+<<<<<<< HEAD
 ,ocd-id,,ocd-division/country:us/state:ar/county:phillips,ocd-division/country:us/state:ar/county:phill0328,poll92020142,st05,other,,loc0054
 ,ocd-id,,ocd-division/country:us/state:ar/county:pike,ocd-division/country:us/state:ar/county:p0332,poll64570149 poll70802175,st05,other,,loc0055
 ,ocd-id,,ocd-division/country:us/state:ar/county:poinsett,ocd-division/country:us/state:ar/county:poins0337,poll79078269,st05,other,,loc0056
@@ -74,3 +95,27 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:ar/county:white,ocd-division/country:us/state:ar/county:wh0479,poll3587493,st05,other,,loc0073
 ,ocd-id,,ocd-division/country:us/state:ar/county:woodruff,ocd-division/country:us/state:ar/county:woodr0483,poll66705617,st05,other,,loc0074
 ,ocd-id,,ocd-division/country:us/state:ar/county:yell,ocd-division/country:us/state:ar/county:y0494,poll98786800 poll507370,st05,other,,loc0075
+=======
+,ocd-id,,ocd-division/country:us/state:ar/county:phillips,ocd-division/country:us/state:ar/county:phill0328,poll60798222,st05,other,,loc0054
+,ocd-id,,ocd-division/country:us/state:ar/county:pike,ocd-division/country:us/state:ar/county:p0332,poll64570149 poll70802175,st05,other,,loc0055
+,ocd-id,,ocd-division/country:us/state:ar/county:poinsett,ocd-division/country:us/state:ar/county:poins0337,poll79078269,st05,other,,loc0056
+,ocd-id,,ocd-division/country:us/state:ar/county:polk,ocd-division/country:us/state:ar/county:p0343,poll85757976,st05,other,,loc0057
+,ocd-id,,ocd-division/country:us/state:ar/county:pope,ocd-division/country:us/state:ar/county:p0350,poll70109607,st05,other,,loc0058
+,ocd-id,,ocd-division/country:us/state:ar/county:prairie,ocd-division/country:us/state:ar/county:prai0353,poll33559330,st05,other,,loc0059
+,ocd-id,,ocd-division/country:us/state:ar/county:pulaski,ocd-division/country:us/state:ar/county:pula0357,poll21818787 poll66730087 poll70122240 poll69393694 poll63915927 poll11858734 poll29656749 poll83357769 poll2026559,st05,other,,loc0060
+,ocd-id,,ocd-division/country:us/state:ar/county:randolph,ocd-division/country:us/state:ar/county:rando0393,poll94525702,st05,other,,loc0061
+,ocd-id,,ocd-division/country:us/state:ar/county:saline,ocd-division/country:us/state:ar/county:sal0408,poll42484838 poll95737351 poll31362327 poll99140105 poll14094987,st05,other,,loc0062
+,ocd-id,,ocd-division/country:us/state:ar/county:scott,ocd-division/country:us/state:ar/county:sc0424,poll5782240,st05,other,,loc0063
+,ocd-id,,ocd-division/country:us/state:ar/county:searcy,ocd-division/country:us/state:ar/county:sea0425,poll80966298,st05,other,,loc0064
+,ocd-id,,ocd-division/country:us/state:ar/county:sebastian,ocd-division/country:us/state:ar/county:sebast0432,poll39026653,st05,other,,loc0065
+,ocd-id,,ocd-division/country:us/state:ar/county:sevier,ocd-division/country:us/state:ar/county:sev0439,poll11948112,st05,other,,loc0066
+,ocd-id,,ocd-division/country:us/state:ar/county:sharp,ocd-division/country:us/state:ar/county:sh0440,poll66200501,st05,other,,loc0067
+,ocd-id,,ocd-division/country:us/state:ar/county:st_francis,ocd-division/country:us/state:ar/county:st_fran0447,poll27269908,st05,other,,loc0068
+,ocd-id,,ocd-division/country:us/state:ar/county:stone,ocd-division/country:us/state:ar/county:st0453,poll91663508,st05,other,,loc0069
+,ocd-id,,ocd-division/country:us/state:ar/county:union,ocd-division/country:us/state:ar/county:un0459,poll47013003,st05,other,,loc0070
+,ocd-id,,ocd-division/country:us/state:ar/county:van_buren,ocd-division/country:us/state:ar/county:van_bu0462,poll1000249,st05,other,,loc0071
+,ocd-id,,ocd-division/country:us/state:ar/county:washington,ocd-division/country:us/state:ar/county:washing0467,poll48602513,st05,other,,loc0072
+,ocd-id,,ocd-division/country:us/state:ar/county:white,ocd-division/country:us/state:ar/county:wh0471,poll3587493,st05,other,,loc0073
+,ocd-id,,ocd-division/country:us/state:ar/county:woodruff,ocd-division/country:us/state:ar/county:woodr0478,poll66705617,st05,other,,loc0074
+,ocd-id,,ocd-division/country:us/state:ar/county:yell,ocd-division/country:us/state:ar/county:y0481,poll98786800 poll507370,st05,other,,loc0075
+>>>>>>> ada8c87f4b6c73d639027759c62476cfb6c95400

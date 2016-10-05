@@ -72,10 +72,15 @@ class PollingLocationTxt(object):
 
     def get_hours(self, index, start_time, end_time):
         """Convert from 24 to 12 hour format."""
+
+        print index, end_time
+        print start_time, end_time
+        start_time = str(start_time)
         start_time = tuple(start_time.split(' - '))[0]
         start_time = datetime.datetime.strptime(start_time, "%H:%M:%S").strftime("%I:%M %p")
         #print start_time
 
+        end_time = str(end_time)
         end_time = tuple(end_time.split(' - '))[0]
         end_time = datetime.datetime.strptime(end_time, "%H:%M:%S").strftime("%I:%M %p")
         #print end_time
@@ -234,9 +239,9 @@ class PollingLocationTxt(object):
 
 
         # Drop base_df columns.
-        plt.drop(['index', 'county', 'official_title', 'types', 'ocd_division', 'division_description', 'homepage_url',
-                'phone', 'email', 'street', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date',
-                'end_date'], inplace=True, axis=1)
+        plt.drop(['office_name', 'official_title', 'types', 'ocd_division', 'division_description',
+                  'homepage_url', 'phone', 'street', 'city', 'state', 'zip_code', 'start_time', 'end_time',
+                  'start_date', 'end_date'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
         print plt
@@ -256,13 +261,22 @@ if __name__ == '__main__':
 #    print s
 
     #state_file=''
-    colnames = ['county', 'official_title', 'types', 'ocd_division', 'division_description', 'homepage_url',
-                'phone', 'email', 'street', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date',
-                'end_date']
+    #colnames = ['county', 'official_title', 'types', 'ocd_division', 'division_description', 'homepage_url',
+    #            'phone', 'email', 'street', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date',
+    #            'end_date']
 
-    early_voting_df = pd.read_csv(config.input_path + config.state_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
-    early_voting_df['index'] = early_voting_df.index + 1
+    colnames = ['office_name', 'official_title', 'types', 'ocd_division', 'division_description', 'homepage_url',
+                'phone', 'street', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date']
+
+    early_voting_df = pd.read_csv(config.input_path + config.state_file, names=colnames, sep='\t', encoding='ISO-8859-1', skiprows=1)
+    #early_voting_df.reset_index(level=1, drop=True)
     print early_voting_df
+
+    early_voting_df.reset_index(0).reset_index(drop=True)
+    print 1, early_voting_df
+
+    early_voting_df['index'] = early_voting_df.index
+    #print early_voting_df.office_name
 
     pl = PollingLocationTxt(early_voting_df, config.early_voting)
 

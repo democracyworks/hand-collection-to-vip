@@ -203,6 +203,6 @@ if __name__ == '__main__':
 
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
 
-    # early_voting_df['index'] = early_voting_df.index + 1
+    early_voting_df['index'] = early_voting_df.index + 1
 
     ScheduleTxt(early_voting_df).write_schedule_txt()

@@ -42,7 +42,7 @@ class ScheduleTxt(object):
 
         mountain_counties = ['culberson county', 'hudspeth county', 'el paso', 'el paso county']
 
-        county = office_name.lower().strip()
+        county = str(office_name).lower().strip()
         #print county
         if county in mountain_counties:
             utc_offset = config.mountain_utc_offset_6
@@ -110,7 +110,7 @@ class ScheduleTxt(object):
 
         mountain_counties = ['culberson county', 'hudspeth county', 'el paso', 'el paso county']
 
-        county = office_name.lower().strip()
+        county = str(office_name).lower().strip()
         #print county
         if county in mountain_counties:
             utc_offset = config.mountain_utc_offset_6
@@ -268,6 +268,8 @@ class ScheduleTxt(object):
 
     def get_end_date(self, index, end_date):
         """#"""
+
+        print end_date
 
         if len(end_date) == 5:
             end_date = end_date + '-16'
@@ -429,9 +431,10 @@ class ScheduleTxt(object):
         #print sch
 
         # Drop base_df columns.
-        sch.drop(['index', 'county', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state',
-                  'zip_code', 'address_line', 'directions', 'hours', 'photo_uri', 'is_drop_box',
-                  'is_early_voting', 'latitude', 'longitude', 'latlng_source'], inplace=True, axis=1)
+        sch.drop(['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name',
+                  'address1', 'address2', 'city', 'state', 'zip_code', 'index', 'address_line',
+                  'hours', 'photo_uri', 'is_drop_box', 'is_early_voting', 'latitude',
+     'longitude', 'latlng_source'], inplace=True, axis=1)
 
         # reorder columns
         cols =['start_time', 'end_time', 'is_only_by_appointment', 'is_or_by_appointment', 'is_subject_to_change',
@@ -446,9 +449,9 @@ class ScheduleTxt(object):
 
 if __name__ == '__main__':
 
-    s = 'office_name	ocd_division homepage_url phone email street city state zip_code start_time end_time start_date end_date is_subject_to_change notes	index address_line directions hours photo_uri hours_open_id is_drop_box	is_early_voting	latitude longitude latlng_source id'.split(' ')
-    s2 = 'county ocd_division homepage_url phone email street city state zip_code start_time end_time start_date end_date index address_line directions hours photo_uri hours_open_id is_drop_box is_early_voting latitude longitude latlng_source id'.split()
-    print s2
+    #s ='county ocd_division homepage_url phone email directions location_name address1 address2 city state zip_code start_time end_time start_date end_date is_subject_to_change notes index address_line hours photo_uri hours_open_id is_drop_box is_early_voting latitude longitude latlng_source id'.split(' ')
+    #print s
+
     #print s
 
 
@@ -467,14 +470,15 @@ if __name__ == '__main__':
 #                'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
 #                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
 
-    colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state', 'zip_code', 'start_time',
-     'end_time', 'start_date', 'end_date', 'index', 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id',
-     'is_drop_box', 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
+    colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name', 'address1', 'address2',
+     'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date',
+     'index', 'address_line', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude',
+     'longitude', 'latlng_source', 'id']
 
     early_voting_df = pd.read_csv(config.output + intermediate_doc, names=colnames, encoding='ISO-8859-1', skiprows=1, delimiter=',')
 
-    early_voting_df['index'] = early_voting_df.index +1 # offsets zero based index so it starts at 1 for ids
-    #print early_voting_df
+    early_voting_df['index'] = early_voting_df.index +1# offsets zero based index so it starts at 1 for ids
+    print early_voting_df
     print early_voting_df.hours_open_id
 
     ScheduleTxt(early_voting_df).write_schedule_txt()

@@ -77,14 +77,14 @@ class ScheduleTxt(object):
 
     def get_start_date(self, start_date):
         string = str(start_date)
-        date = datetime.datetime.strptime(string, '%m/%d/%y').strftime('%Y-%m-%d')
+        date = datetime.datetime.strptime(string, '%m-%d-%Y').strftime('%Y-%m-%d')
         return date
         # return start_date + config.utc_offset
 
     def get_end_date(self, end_date):
         # create conditional when/if column is present
         string = str(end_date)
-        date = datetime.datetime.strptime(string, '%m/%d/%y').strftime('%Y-%m-%d')
+        date = datetime.datetime.strptime(string, '%m-%d-%Y').strftime('%Y-%m-%d')
         return date
 
     def get_hours_open_id(self, hours_open_id):
@@ -206,7 +206,7 @@ if __name__ == '__main__':
 
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
 
-    # early_voting_df['index'] = early_voting_df.index + 1
+    #early_voting_df['index'] = early_voting_df.index + 1
 
     ScheduleTxt(early_voting_df).write_schedule_txt()
     # ScheduleTxt(early_voting_df).format_for_schedule()

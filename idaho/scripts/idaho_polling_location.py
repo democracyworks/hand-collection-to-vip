@@ -20,10 +20,10 @@ class PollingLocationTxt(object):
     def get_address_line(self, index, name, address_one, address_two, city, zip_code):
         # required: print message for exception
         # TODO: concatenate street, city, state and zip
-        if not pd.isnull(name):
-            loc_name = str(name).strip() + ", "
-        else:
-            loc_name = ''
+        #if not pd.isnull(name):
+        #    loc_name = str(name).strip() + ", "
+        #else:
+        #    loc_name = ''
 
         adr = ''
 
@@ -43,7 +43,7 @@ class PollingLocationTxt(object):
         else:
             zip = ''
 
-        line = loc_name.strip() + " " + adr.strip() + ", " + city_name + ", ID " + zip
+        line = adr.strip() + ", " + city_name + ", ID " + zip
         if line[0] == " ":
             line = line[1:]
         return line
