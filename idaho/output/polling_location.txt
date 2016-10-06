@@ -32,7 +32,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "715 G Street, Rupert, ID 83350",,08:00 AM - 05:00 PM,,ho98115461,false,true,,,,poll89383951
 "1225 Idaho St, Lewiston, ID 38501",,08:00 AM - 05:00 PM,,ho89949944,false,true,,,,poll86091418
 "10 Court Street, Malad, ID 83252",,09:00 AM - 05:00 PM,,ho12054398,false,true,,,,poll6283570
-"20381 State Hwy 78, Mercy, ID 83650",,08:30 AM - 05:00 PM,,ho9556263,false,true,,,,poll30158669
+"20381 State Hwy 78, Mercy , ID 83650",,08:30 AM - 05:00 PM,,ho27285743,false,true,,,,poll40491465
 "1130 3rd Ave N, Room 104, Payette, ID 83661",,09:00 AM - 05:00 PM,,ho7684001,false,true,,,,poll56693623
 "700 Bank Street, Ste 120, Wallace, ID 83873",,09:00 AM - 05:00 PM,,ho88160955,false,true,,,,poll33732822
 "150 Courthouse Drive, #208, Driggs, ID 83422",,09:00 AM - 05:00 PM,,ho44677157,false,true,,,,poll62489535

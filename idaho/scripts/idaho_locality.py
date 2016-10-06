@@ -45,16 +45,22 @@ class LocalityTxt(object):
         # create conditional when/if column is present
         return ''
 
-    def get_external_identifier_value(self, external_identifier_value):
+    def get_external_identifier_value(self, index, external_identifier_value):
         """Extracts external identifier (ocd-division)."""
-        county = external_identifier_value.split(" ")
-        county = county[len(county)-1]
-        if external_identifier_value:
-            str = "ocd-division/country/us/state:" + config.state_lower_abbreviation + "/county:" + county.lower()
-            return str
+
+        return external_identifier_value
+
+        #print index, external_identifier_value
+
+        #ocd-division/country:us/state:id/county:caribou
+        #county = external_identifier_value.split(" ")
+        #county = county[len(county)-1]
+        #if external_identifier_value:
+        #    str = "ocd-division/country/us/state:" + config.state_lower_abbreviation + "/county:" + county.lower()
+        #    return str
             # ocd-division/country:us/state:nj/county:atlantic
-        else:
-            return ''
+        #else:
+        #    return ''
 
     def create_name(self, index, division_description ):
         """
@@ -62,6 +68,9 @@ class LocalityTxt(object):
         with an 'index_str' based on the Dataframes row index.'0s' are added, if necesary, to
         maintain a consistent id length.
         """
+        print index, division_description
+
+        division_description = str(division_description)
 
         # Get locality(town or county), and remove state abbreviation.
         if division_description:
@@ -156,7 +165,7 @@ class LocalityTxt(object):
             lambda row: self.get_external_identifier_othertype(), axis=1)
 
         self.base_df['external_identifier_value'] = self.base_df.apply(
-            lambda row: self.get_external_identifier_value(row['ocd_division']), axis=1)
+            lambda row: self.get_external_identifier_value(row['index'], row['ocd_division']), axis=1)
 
         self.base_df['name'] = self.base_df.apply(
             lambda row: self.create_name(row['index'], row['ocd_division']), axis=1)

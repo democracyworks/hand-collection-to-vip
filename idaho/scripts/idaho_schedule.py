@@ -53,14 +53,22 @@ class ScheduleTxt(object):
 
         return hours + "-" + mins
 
-    def get_sch_time(self, hours):
-        hours_arr = hours.split(" - ")
-        hours = hours_arr[0] + "-" + hours_arr[1]
-        hours = hours.strip()
-        return self.format_time(hours)
-        # arr = hours.split("-")
-        # offset = self.utc_offset(county)
-        # print arr[0] + ";00" + offset
+    def get_sch_time(self, index, hours):
+
+        try:
+
+            print index, hours
+            hours_arr = str(hours).split(" - ")
+            print hours_arr
+            hours = hours_arr[0] + "-" + hours_arr[1]
+            hours = hours.strip()
+            print hours
+            return self.format_time(hours)
+            # arr = hours.split("-")
+            # offset = self.utc_offset(county)
+            # print arr[0] + ";00" + offset
+        except:
+            pass
 
 
 
@@ -89,16 +97,25 @@ class ScheduleTxt(object):
         return ''
 
     def get_start_date(self, start_date):
-        string = str(start_date)
-        date = datetime.datetime.strptime(string, '%m/%d/%y').strftime('%Y-%m-%d')
-        return date
-        # return start_date + config.utc_offset
+        try:
+            print start_date
+            string = str(start_date)
+            date = datetime.datetime.strptime(string, '%m-%d-%Y').strftime('%Y-%m-%d')
+            return date
+            # return start_date + config.utc_offset
+        except:
+            pass
 
     def get_end_date(self, end_date):
         # create conditional when/if column is present
-        string = str(end_date)
-        date = datetime.datetime.strptime(string, '%m/%d/%y').strftime('%Y-%m-%d')
-        return date
+
+        try:
+            print end_date
+            string = str(end_date)
+            date = datetime.datetime.strptime(string, '%m-%d-%Y').strftime('%Y-%m-%d')
+            return date
+        except:
+            pass
 
     def get_hours_open_id(self, hours_open_id):
         """#"""
@@ -129,10 +146,10 @@ class ScheduleTxt(object):
         """
 
         self.base_df['start_time2'] = self.base_df.apply(
-            lambda row: self.get_sch_time(row["start_time"]), axis=1)
+            lambda row: self.get_sch_time(row['index'], row["start_time"]), axis=1)
 
         self.base_df['end_time2'] = self.base_df.apply(
-            lambda row: self.get_sch_time(row['end_time']), axis=1)
+            lambda row: self.get_sch_time(row['index'], row['end_time']), axis=1)
 
         self.base_df['is_only_by_appointment2'] = self.base_df.apply(
             lambda row: self.is_only_by_appointment(), axis=1)
