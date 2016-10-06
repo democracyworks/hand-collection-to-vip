@@ -1,11 +1,11 @@
 address_line,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-"441 4th Street NW, Washington, DC 20001",8:30:00 AM-07:00 PM,,ho28726338,false,true,,,,poll66456210
-"1351 Alaba Avenue SE, Ward 8, Washington, DC 20032",8:30:00 AM-07:00 PM,,ho79269348,false,true,,,,poll62887680
-"640 10th Street NE, Ward 6, Washington, DC 20024",8:30:00 AM-07:00 PM,,ho22041358,false,true,,,,poll15702469
-"5601 Connecticut Avenue NW, Ward 3, Washington, DC 20015",8:30:00 AM-07:00 PM,,ho88418864,false,true,,,,poll20890758
-"1480 Girard Street NW, Ward 1, Washington, DC 20009",8:30:00 AM-07:00 PM,,ho79917447,false,true,,,,poll87319983
-"3935 Benning Rd. NE, Ward 7, Washington, DC 20019",8:30:00 AM-07:00 PM,,ho80208848,false,true,,,,poll89099724
-"201 N Street SW, Ward 6, Washington, DC 20024",8:30:00 AM-07:00 PM,,ho71998422,false,true,,,,poll46040589
-"441 4th Street NW, Ward 2, Washington, DC 20001",8:30:00 AM-07:00 PM,,ho13020563,false,true,,,,poll4912769
-"300 Van Buren Street NW, Ward 4, Washington, DC 20011",8:30:00 AM-07:00 PM,,ho66860769,false,true,,,,poll83251246
-"1100 Michigan Avenue NE, Ward 5, Washington, DC 20017",8:30:00 AM-07:00 PM,,ho31294357,false,true,,,,poll44582160
+"441 4th Street NW, Washington, DC 20001",08:30:00-07:00 PM,,ho28726338,false,true,,,,poll66456210
+"1351 Alaba Avenue SE, Ward 8, Washington, DC 20032",08:30:00-07:00 PM,,ho79269348,false,true,,,,poll62887680
+"640 10th Street NE, Ward 6, Washington, DC 20024",08:30:00-07:00 PM,,ho22041358,false,true,,,,poll15702469
+"5601 Connecticut Avenue NW, Ward 3, Washington, DC 20015",08:30:00-07:00 PM,,ho88418864,false,true,,,,poll20890758
+"1480 Girard Street NW, Ward 1, Washington, DC 20009",08:30:00-07:00 PM,,ho79917447,false,true,,,,poll87319983
+"3935 Benning Rd. NE, Ward 7, Washington, DC 20019",08:30:00-07:00 PM,,ho80208848,false,true,,,,poll89099724
+"201 N Street SW, Ward 6, Washington, DC 20024",08:30:00-07:00 PM,,ho71998422,false,true,,,,poll46040589
+"441 4th Street NW, Ward 2, Washington, DC 20001",08:30:00-07:00 PM,,ho13020563,false,true,,,,poll4912769
+"300 Van Buren Street NW, Ward 4, Washington, DC 20011",08:30:00-07:00 PM,,ho66860769,false,true,,,,poll83251246
+"1100 Michigan Avenue NE, Ward 5, Washington, DC 20017",08:30:00-07:00 PM,,ho31294357,false,true,,,,poll44582160
