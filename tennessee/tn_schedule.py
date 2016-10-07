@@ -285,11 +285,13 @@ if __name__ == '__main__':
     #            'end_date', 'index', 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id',
     #            'is_drop_box', 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
 
-    colnames = ['county', 'official_title', 'types', 'ocd_division', 'division_description', 'homepage_url', 'phone', 'street', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date', 'index', 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
+    colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'name', 'address1', 'address2', 'city', 'state',
+                'zip_code', 'start_time', 'end_time', 'start_date', 'end_date', 'index', 'address_line', 'directions',
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude', 'longitude',
+                'latlng_source', 'id']
 
-
-    s ='county, official_title, types, ocd_division, division_description, homepage_url, phone, street, city, state, zip_code, start_time, end_time, start_date, end_date, index, address_line, directions, hours, photo_uri, hours_open_id, is_drop_box, is_early_voting, latitude, longitude, latlng_source, id'.split(', ')
-    print s
+    #s = 'county, ocd_division, homepage_url, phone, name, address1, address2, city, state, zip_code, start_time, end_time, start_date, end_date, index, address_line, directions, hours, photo_uri, hours_open_id, is_drop_box, is_early_voting, latitude, longitude, latlng_source, id'.split(', ')
+    #print s
     early_voting_df = pd.read_csv(config.output + intermediate_doc, names=colnames, sep=',', encoding='ISO-8859-1', skiprows=1)
 
     early_voting_df['index'] = early_voting_df.index +1 # offsets zero based index so it starts at 1 for ids

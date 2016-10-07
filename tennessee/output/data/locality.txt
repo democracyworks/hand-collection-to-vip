@@ -1,96 +1,96 @@
 election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
-,ocd-id,,ocd-division/country:us/state:tn/county:anderson,anderson_cou0001,poll68212145 poll43899468 poll53833424,st47,other,,loc0001
-,ocd-id,,ocd-division/country:us/state:tn/county:bedford,bedford_cou0002,poll18086085,st47,other,,loc0002
-,ocd-id,,ocd-division/country:us/state:tn/county:benton,benton_cou0003,poll94695702,st47,other,,loc0003
-,ocd-id,,ocd-division/country:us/state:tn/county:bledsoe,bledsoe_cou0004,poll43422481,st47,other,,loc0004
-,ocd-id,,ocd-division/country:us/state:tn/county:blount,blount_cou0005,poll31415945 poll41156003 poll31886995 poll50415867,st47,other,,loc0005
-,ocd-id,,ocd-division/country:us/state:tn/county:bradley,bradley_cou0006,poll89122086 poll22195557 poll54617698,st47,other,,loc0006
-,ocd-id,,ocd-division/country:us/state:tn/county:campbell,campbell_cou0007,poll43730514 poll87546573,st47,other,,loc0007
-,ocd-id,,ocd-division/country:us/state:tn/county:cannon,cannon_cou0008,poll2817856,st47,other,,loc0008
-,ocd-id,,ocd-division/country:us/state:tn/county:carroll,carroll_cou0009,poll40193405,st47,other,,loc0009
-,ocd-id,,ocd-division/country:us/state:tn/county:carter,carter_cou0010,poll83393891,st47,other,,loc0010
-,ocd-id,,ocd-division/country:us/state:tn/county:cheatham,cheatham_cou0011,poll73144776,st47,other,,loc0011
-,ocd-id,,ocd-division/country:us/state:tn/county:chester,chester_cou0012,poll30954978,st47,other,,loc0012
-,ocd-id,,ocd-division/country:us/state:tn/county:claiborne,claiborne_cou0013,poll78638831,st47,other,,loc0013
-,ocd-id,,ocd-division/country:us/state:tn/county:clay,clay_cou0014,poll4268814,st47,other,,loc0014
-,ocd-id,,ocd-division/country:us/state:tn/county:cocke,cocke_cou0015,poll33466816,st47,other,,loc0015
-,ocd-id,,ocd-division/country:us/state:tn/county:coffee,coffee_cou0016,poll41711141 poll78809991,st47,other,,loc0016
-,ocd-id,,ocd-division/country:us/state:tn/county:crockett,crockett_cou0017,poll75496483,st47,other,,loc0017
-,ocd-id,,ocd-division/country:us/state:tn/county:cumberland,cumberland_cou0018,poll61598723,st47,other,,loc0018
-,ocd-id,,ocd-division/country:us/state:tn/county:davidson,davidson_cou0019,poll17548004 poll16465107 poll74966609 poll94710044 poll16969561 poll25559781 poll66630688 poll60073515 poll69131314 poll42223855 poll6640748 poll66467248,st47,other,,loc0019
-,ocd-id,,ocd-division/country:us/state:tn/county:decatur,decatur_cou0020,poll77156242,st47,other,,loc0020
-,ocd-id,,ocd-division/country:us/state:tn/county:dekalb,dekalb_cou0021,poll17769413,st47,other,,loc0021
-,ocd-id,,ocd-division/country:us/state:tn/county:dickson,dickson_cou0022,poll3873933 poll31456701,st47,other,,loc0022
-,ocd-id,,ocd-division/country:us/state:tn/county:dyer,dyer_cou0023,poll55803610 poll31341837,st47,other,,loc0023
-,ocd-id,,ocd-division/country:us/state:tn/county:fayette,fayette_cou0024,poll52920262,st47,other,,loc0024
-,ocd-id,,ocd-division/country:us/state:tn/county:fentress,fentress_cou0025,poll29881923,st47,other,,loc0025
-,ocd-id,,ocd-division/country:us/state:tn/county:franklin,franklin_cou0026,poll58268750,st47,other,,loc0026
-,ocd-id,,ocd-division/country:us/state:tn/county:gibson,gibson_cou0027,poll63146654 poll20348795,st47,other,,loc0027
-,ocd-id,,ocd-division/country:us/state:tn/county:giles,giles_cou0028,poll83189814,st47,other,,loc0028
-,ocd-id,,ocd-division/country:us/state:tn/county:grainger,grainger_cou0029,poll45213064,st47,other,,loc0029
-,ocd-id,,ocd-division/country:us/state:tn/county:greene,greene_cou0030,poll3355401,st47,other,,loc0030
-,ocd-id,,ocd-division/country:us/state:tn/county:grundy,grundy_cou0031,poll42675823 poll6954666,st47,other,,loc0031
-,ocd-id,,ocd-division/country:us/state:tn/county:hamblen,hamblen_cou0032,poll56237632,st47,other,,loc0032
-,ocd-id,,ocd-division/country:us/state:tn/county:hamilton,hamilton_cou0033,poll85961078 poll38067898 poll72238211 poll71591585,st47,other,,loc0033
-,ocd-id,,ocd-division/country:us/state:tn/county:hancock,hancock_cou0034,poll37233701,st47,other,,loc0034
-,ocd-id,,ocd-division/country:us/state:tn/county:hardeman,hardeman_cou0035,poll60053963,st47,other,,loc0035
-,ocd-id,,ocd-division/country:us/state:tn/county:hardin,hardin_cou0036,poll87812052,st47,other,,loc0036
-,ocd-id,,ocd-division/country:us/state:tn/county:hawkins,hawkins_cou0037,poll31870862 poll99592245,st47,other,,loc0037
-,ocd-id,,ocd-division/country:us/state:tn/county:haywood,haywood_cou0038,poll1426267,st47,other,,loc0038
-,ocd-id,,ocd-division/country:us/state:tn/county:henderson,henderson_cou0039,poll13361893,st47,other,,loc0039
-,ocd-id,,ocd-division/country:us/state:tn/county:henry,henry_cou0040,poll93199465,st47,other,,loc0040
-,ocd-id,,ocd-division/country:us/state:tn/county:hickman,hickman_cou0041,poll63938290 poll69214390,st47,other,,loc0041
-,ocd-id,,ocd-division/country:us/state:tn/county:houston,houston_cou0042,poll17390699,st47,other,,loc0042
-,ocd-id,,ocd-division/country:us/state:tn/county:humphreys,humphreys_cou0043,poll41190399,st47,other,,loc0043
-,ocd-id,,ocd-division/country:us/state:tn/county:jackson,jackson_cou0044,poll60503005,st47,other,,loc0044
-,ocd-id,,ocd-division/country:us/state:tn/county:jefferson,jefferson_cou0045,poll12689617,st47,other,,loc0045
-,ocd-id,,ocd-division/country:us/state:tn/county:johnson,johnson_cou0046,poll38975384,st47,other,,loc0046
-,ocd-id,,ocd-division/country:us/state:tn/county:knox,knox_cou0047,poll81083652 poll64142240 poll80183887 poll91574174 poll27024309 poll7275462 poll48572345 poll64896179 poll72620824 poll17794143 poll114747,st47,other,,loc0047
-,ocd-id,,ocd-division/country:us/state:tn/county:lake,lake_cou0048,poll81354856,st47,other,,loc0048
-,ocd-id,,ocd-division/country:us/state:tn/county:lauderdale,lauderdale_cou0049,poll24242104,st47,other,,loc0049
-,ocd-id,,ocd-division/country:us/state:tn/county:lawrence,lawrence_cou0050,poll8864404,st47,other,,loc0050
-,ocd-id,,ocd-division/country:us/state:tn/county:lewis,lewis_cou0051,poll9758062,st47,other,,loc0051
-,ocd-id,,ocd-division/country:us/state:tn/county:lincoln,lincoln_cou0052,poll39922898,st47,other,,loc0052
-,ocd-id,,ocd-division/country:us/state:tn/county:loudon,loudon_cou0053,poll73599912 poll93828665 poll3525546,st47,other,,loc0053
-,ocd-id,,ocd-division/country:us/state:tn/county:macon,macon_cou0054,poll30468469,st47,other,,loc0054
-,ocd-id,,ocd-division/country:us/state:tn/county:madison,madison_cou0055,poll76428452,st47,other,,loc0055
-,ocd-id,,ocd-division/country:us/state:tn/county:marion,marion_cou0056,poll36466087,st47,other,,loc0056
-,ocd-id,,ocd-division/country:us/state:tn/county:marshall,marshall_cou0057,poll21334378 poll61187362,st47,other,,loc0057
-,ocd-id,,ocd-division/country:us/state:tn/county:maury,maury_cou0058,poll6649236 poll32439147,st47,other,,loc0058
-,ocd-id,,ocd-division/country:us/state:tn/county:mcminn,mcminn_cou0059,poll21497532,st47,other,,loc0059
-,ocd-id,,ocd-division/country:us/state:tn/county:mcnairy,mcnairy_cou0060,poll29619576,st47,other,,loc0060
-,ocd-id,,ocd-division/country:us/state:tn/county:meigs,meigs_cou0061,poll37485010 poll4344850,st47,other,,loc0061
-,ocd-id,,ocd-division/country:us/state:tn/county:monroe,monroe_cou0062,poll62572509 poll27612117 poll49715146 poll20594001,st47,other,,loc0062
-,ocd-id,,ocd-division/country:us/state:tn/county:montgomery,montgomery_cou0063,poll59779683,st47,other,,loc0063
-,ocd-id,,ocd-division/country:us/state:tn/county:moore,moore_cou0064,poll1332478,st47,other,,loc0064
-,ocd-id,,ocd-division/country:us/state:tn/county:morgan,morgan_cou0065,poll65388885,st47,other,,loc0065
-,ocd-id,,ocd-division/country:us/state:tn/county:obion,obion_cou0066,poll36543826,st47,other,,loc0066
-,ocd-id,,ocd-division/country:us/state:tn/county:overton,overton_cou0067,poll26406004,st47,other,,loc0067
-,ocd-id,,ocd-division/country:us/state:tn/county:perry,perry_cou0068,poll30724432,st47,other,,loc0068
-,ocd-id,,ocd-division/country:us/state:tn/county:pickett,pickett_cou0069,poll58819542,st47,other,,loc0069
-,ocd-id,,ocd-division/country:us/state:tn/county:polk,polk_cou0070,poll75562056 poll89975858,st47,other,,loc0070
-,ocd-id,,ocd-division/country:us/state:tn/county:putnam,putnam_cou0071,poll11241190,st47,other,,loc0071
-,ocd-id,,ocd-division/country:us/state:tn/county:rhea,rhea_cou0072,poll68341348 poll22031695,st47,other,,loc0072
-,ocd-id,,ocd-division/country:us/state:tn/county:roane,roane_cou0073,poll73997139,st47,other,,loc0073
-,ocd-id,,ocd-division/country:us/state:tn/county:robertson,robertson_cou0074,poll98370723,st47,other,,loc0074
-,ocd-id,,ocd-division/country:us/state:tn/county:rutherford,rutherford_cou0075,poll1493775 poll43041207 poll10653105 poll10132927 poll66113348 poll48727612 poll69346439,st47,other,,loc0075
-,ocd-id,,ocd-division/country:us/state:tn/county:scott,scott_cou0076,poll92327185 poll91854401,st47,other,,loc0076
-,ocd-id,,ocd-division/country:us/state:tn/county:sequatchie,sequatchie_cou0077,poll82332579,st47,other,,loc0077
-,ocd-id,,ocd-division/country:us/state:tn/county:sevier,sevier_cou0078,poll91398405 poll17377021,st47,other,,loc0078
-,ocd-id,,ocd-division/country:us/state:tn/county:shelby,shelby_cou0079,poll88062933 poll21764741 poll66770447 poll87536694 poll7947415 poll42318991 poll7299561 poll53921077 poll41746789 poll22238400 poll98109290 poll64435580 poll26022603 poll29072784 poll18412196 poll66585717 poll74502705 poll87198462 poll34839719 poll12738386 poll89152045,st47,other,,loc0079
-,ocd-id,,ocd-division/country:us/state:tn/county:smith,smith_cou0080,poll83391487,st47,other,,loc0080
-,ocd-id,,ocd-division/country:us/state:tn/county:stewart,stewart_cou0081,poll58377244,st47,other,,loc0081
-,ocd-id,,ocd-division/country:us/state:tn/county:sullivan,sullivan_cou0082,poll38721755 poll17618053 poll56195800,st47,other,,loc0082
-,ocd-id,,ocd-division/country:us/state:tn/county:sumner,sumner_cou0083,poll25720457,st47,other,,loc0083
-,ocd-id,,ocd-division/country:us/state:tn/county:tipton,tipton_cou0084,poll19259059 poll75563646,st47,other,,loc0084
-,ocd-id,,ocd-division/country:us/state:tn/county:trousdale,trousdale_cou0085,poll13333229,st47,other,,loc0085
-,ocd-id,,ocd-division/country:us/state:tn/county:unicoi,unicoi_cou0086,poll76021667,st47,other,,loc0086
-,ocd-id,,ocd-division/country:us/state:tn/county:union,union_cou0087,poll32024363,st47,other,,loc0087
-,ocd-id,,ocd-division/country:us/state:tn/county:van_buren,van_buren_cou0088,poll82366210,st47,other,,loc0088
-,ocd-id,,ocd-division/country:us/state:tn/county:warren,warren_cou0089,poll62385041,st47,other,,loc0089
-,ocd-id,,ocd-division/country:us/state:tn/county:washington,washington_cou0090,poll39118373 poll60123056 poll27215641,st47,other,,loc0090
-,ocd-id,,ocd-division/country:us/state:tn/county:wayne,wayne_cou0091,poll94220313,st47,other,,loc0091
-,ocd-id,,ocd-division/country:us/state:tn/county:weakley,weakley_cou0092,poll9241247,st47,other,,loc0092
-,ocd-id,,ocd-division/country:us/state:tn/county:white,white_cou0093,poll47257517,st47,other,,loc0093
-,ocd-id,,ocd-division/country:us/state:tn/county:williamson,williamson_cou0094,poll7552431 poll51639878 poll30987336 poll28406105 poll1655335 poll16397045 poll92106435,st47,other,,loc0094
-,ocd-id,,ocd-division/country:us/state:tn/county:wilson,wilson_cou0095,poll76768418 poll97792813 poll37490762 poll82597226 poll15597234,st47,other,,loc0095
+,ocd-id,,ocd-division/country:us/state:tn/county:anderson,anderson_cou0001,poll89628436 poll58607566 poll64499716 poll25235457 poll92404488 poll76941990,st47,other,,loc0001
+,ocd-id,,ocd-division/country:us/state:tn/county:bedford,bedford_cou0002,poll12080642 poll39460143 poll57252562,st47,other,,loc0002
+,ocd-id,,ocd-division/country:us/state:tn/county:benton,benton_cou0003,poll47020904,st47,other,,loc0003
+,ocd-id,,ocd-division/country:us/state:tn/county:bledsoe,bledsoe_cou0004,poll50190618 poll55049893,st47,other,,loc0004
+,ocd-id,,ocd-division/country:us/state:tn/county:blount,blount_cou0005,poll99959423 poll41000556 poll35415867 poll65365427 poll4323136,st47,other,,loc0005
+,ocd-id,,ocd-division/country:us/state:tn/county:bradley,bradley_cou0006,poll10607663 poll74588519 poll96855866 poll21286755 poll9249359 poll46673002,st47,other,,loc0006
+,ocd-id,,ocd-division/country:us/state:tn/county:campbell,campbell_cou0007,poll2219411 poll79040358 poll25025965,st47,other,,loc0007
+,ocd-id,,ocd-division/country:us/state:tn/county:cannon,cannon_cou0008,poll94880589 poll86693419 poll8798666,st47,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:tn/county:carroll,carroll_cou0009,poll55441789,st47,other,,loc0009
+,ocd-id,,ocd-division/country:us/state:tn/county:carter,carter_cou0010,poll13546490 poll17999790,st47,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:tn/county:cheatham,cheatham_cou0011,poll7368669 poll27623547 poll52570318 poll72533190,st47,other,,loc0011
+,ocd-id,,ocd-division/country:us/state:tn/county:chester,chester_cou0012,poll24261426 poll84333524,st47,other,,loc0012
+,ocd-id,,ocd-division/country:us/state:tn/county:claiborne,claiborne_cou0013,poll99634759 poll30152097 poll87501729 poll67054471,st47,other,,loc0013
+,ocd-id,,ocd-division/country:us/state:tn/county:clay,clay_cou0014,poll36692865 poll107031,st47,other,,loc0014
+,ocd-id,,ocd-division/country:us/state:tn/county:cocke,cocke_cou0015,poll30876814,st47,other,,loc0015
+,ocd-id,,ocd-division/country:us/state:tn/county:coffee,coffee_cou0016,poll93216740 poll24852499 poll83461732 poll6587948,st47,other,,loc0016
+,ocd-id,,ocd-division/country:us/state:tn/county:crockett,crockett_cou0017,poll79377359 poll73493717 poll59139036,st47,other,,loc0017
+,ocd-id,,ocd-division/country:us/state:tn/county:cumberland,cumberland_cou0018,poll81138340 poll49596578,st47,other,,loc0018
+,ocd-id,,ocd-division/country:us/state:tn/county:davidson,davidson_cou0019,poll89764678 poll91377863 poll58515658 poll76363778 poll9369321 poll95257396 poll20653417 poll9518076 poll69694034 poll9636861 poll72177366 poll79915231 poll97246095 poll25333128 poll23393540 poll99063840 poll99482344 poll60350736 poll80262875 poll71889526 poll41588989 poll84768433 poll4441082 poll20210525 poll92147714 poll57122370 poll21117100 poll20528049,st47,other,,loc0019
+,ocd-id,,ocd-division/country:us/state:tn/county:decatur,decatur_cou0020,poll59554432,st47,other,,loc0020
+,ocd-id,,ocd-division/country:us/state:tn/county:dekalb,dekalb_cou0021,poll73111592 poll24405896 poll99845082 poll51177837,st47,other,,loc0021
+,ocd-id,,ocd-division/country:us/state:tn/county:dickson,dickson_cou0022,poll38293855 poll74532891 poll8190597 poll50034500,st47,other,,loc0022
+,ocd-id,,ocd-division/country:us/state:tn/county:dyer,dyer_cou0023,poll65726381 poll15853914,st47,other,,loc0023
+,ocd-id,,ocd-division/country:us/state:tn/county:fayette,fayette_cou0024,poll80962616 poll32031933 poll68429113 poll67469141,st47,other,,loc0024
+,ocd-id,,ocd-division/country:us/state:tn/county:fentress,fentress_cou0025,poll20765182 poll31469210 poll74224301,st47,other,,loc0025
+,ocd-id,,ocd-division/country:us/state:tn/county:franklin,franklin_cou0026,poll82881511 poll60715393,st47,other,,loc0026
+,ocd-id,,ocd-division/country:us/state:tn/county:gibson,gibson_cou0027,poll82503142 poll60273102 poll21807131 poll99183569,st47,other,,loc0027
+,ocd-id,,ocd-division/country:us/state:tn/county:giles,giles_cou0028,poll94260376 poll66799539,st47,other,,loc0028
+,ocd-id,,ocd-division/country:us/state:tn/county:grainger,grainger_cou0029,poll12890356 poll35380420 poll10393304,st47,other,,loc0029
+,ocd-id,,ocd-division/country:us/state:tn/county:greene,greene_cou0030,poll55343957 poll13036885,st47,other,,loc0030
+,ocd-id,,ocd-division/country:us/state:tn/county:grundy,grundy_cou0031,poll7489222 poll86821059 poll68016292 poll34725765,st47,other,,loc0031
+,ocd-id,,ocd-division/country:us/state:tn/county:hamblen,hamblen_cou0032,poll78182949 poll30084041 poll59006754,st47,other,,loc0032
+,ocd-id,,ocd-division/country:us/state:tn/county:hamilton,hamilton_cou0033,poll46113799 poll17386277 poll47782633 poll29039747 poll90257195,st47,other,,loc0033
+,ocd-id,,ocd-division/country:us/state:tn/county:hancock,hancock_cou0034,poll83517482 poll94068844,st47,other,,loc0034
+,ocd-id,,ocd-division/country:us/state:tn/county:hardeman,hardeman_cou0035,poll19706565 poll62660308,st47,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:tn/county:hardin,hardin_cou0036,poll73632562 poll90871639 poll61766024,st47,other,,loc0036
+,ocd-id,,ocd-division/country:us/state:tn/county:hawkins,hawkins_cou0037,poll90254110 poll18188952 poll76322001 poll3511483,st47,other,,loc0037
+,ocd-id,,ocd-division/country:us/state:tn/county:haywood,haywood_cou0038,poll16839001 poll60275820 poll30247128,st47,other,,loc0038
+,ocd-id,,ocd-division/country:us/state:tn/county:henderson,henderson_cou0039,poll3052047 poll25017352 poll69606976,st47,other,,loc0039
+,ocd-id,,ocd-division/country:us/state:tn/county:henry,henry_cou0040,poll86190170 poll71501430,st47,other,,loc0040
+,ocd-id,,ocd-division/country:us/state:tn/county:hickman,hickman_cou0041,poll73430141 poll75043022 poll87981706 poll24221931,st47,other,,loc0041
+,ocd-id,,ocd-division/country:us/state:tn/county:houston,houston_cou0042,poll20964619 poll10931573,st47,other,,loc0042
+,ocd-id,,ocd-division/country:us/state:tn/county:humphreys,humphreys_cou0043,poll83495746 poll55293173,st47,other,,loc0043
+,ocd-id,,ocd-division/country:us/state:tn/county:jackson,jackson_cou0044,poll81612403 poll72464707 poll57747109,st47,other,,loc0044
+,ocd-id,,ocd-division/country:us/state:tn/county:jefferson,jefferson_cou0045,poll84240140 poll13744832,st47,other,,loc0045
+,ocd-id,,ocd-division/country:us/state:tn/county:johnson,johnson_cou0046,poll36752018 poll90076323,st47,other,,loc0046
+,ocd-id,,ocd-division/country:us/state:tn/county:knox,knox_cou0047,poll44511405 poll91088339 poll18574346 poll49466282 poll53426236 poll79678742 poll59759151 poll30434088 poll26889574 poll68399036 poll37225063 poll19313646 poll64070577 poll84412871 poll73780732 poll70481111 poll59604783 poll19770382 poll68649590 poll45222870,st47,other,,loc0047
+,ocd-id,,ocd-division/country:us/state:tn/county:lake,lake_cou0048,poll51465793,st47,other,,loc0048
+,ocd-id,,ocd-division/country:us/state:tn/county:lauderdale,lauderdale_cou0049,poll30767153 poll27233900,st47,other,,loc0049
+,ocd-id,,ocd-division/country:us/state:tn/county:lawrence,lawrence_cou0050,poll24854105,st47,other,,loc0050
+,ocd-id,,ocd-division/country:us/state:tn/county:lewis,lewis_cou0051,poll75382288,st47,other,,loc0051
+,ocd-id,,ocd-division/country:us/state:tn/county:lincoln,lincoln_cou0052,poll48306438,st47,other,,loc0052
+,ocd-id,,ocd-division/country:us/state:tn/county:loudon,loudon_cou0053,poll41912468 poll89798020 poll30453931,st47,other,,loc0053
+,ocd-id,,ocd-division/country:us/state:tn/county:macon,macon_cou0054,poll71415841 poll13201051,st47,other,,loc0054
+,ocd-id,,ocd-division/country:us/state:tn/county:madison,madison_cou0055,poll33205571 poll92034428,st47,other,,loc0055
+,ocd-id,,ocd-division/country:us/state:tn/county:marion,marion_cou0056,poll75257944 poll91042715,st47,other,,loc0056
+,ocd-id,,ocd-division/country:us/state:tn/county:marshall,marshall_cou0057,poll44110878 poll12755112 poll9642730,st47,other,,loc0057
+,ocd-id,,ocd-division/country:us/state:tn/county:maury,maury_cou0058,poll77902700 poll15594719,st47,other,,loc0058
+,ocd-id,,ocd-division/country:us/state:tn/county:mcminn,mcminn_cou0059,poll4157701 poll89549694 poll60297714,st47,other,,loc0059
+,ocd-id,,ocd-division/country:us/state:tn/county:mcnairy,mcnairy_cou0060,poll10756998,st47,other,,loc0060
+,ocd-id,,ocd-division/country:us/state:tn/county:meigs,meigs_cou0061,poll48421392 poll41189202 poll8076710,st47,other,,loc0061
+,ocd-id,,ocd-division/country:us/state:tn/county:monroe,monroe_cou0062,poll85792655 poll32159959 poll4092851 poll71854076 poll13420767,st47,other,,loc0062
+,ocd-id,,ocd-division/country:us/state:tn/county:montgomery,montgomery_cou0063,poll16925897 poll90778036,st47,other,,loc0063
+,ocd-id,,ocd-division/country:us/state:tn/county:moore,moore_cou0064,poll9705544,st47,other,,loc0064
+,ocd-id,,ocd-division/country:us/state:tn/county:morgan,morgan_cou0065,poll29965947 poll28098820,st47,other,,loc0065
+,ocd-id,,ocd-division/country:us/state:tn/county:obion,obion_cou0066,poll31993591,st47,other,,loc0066
+,ocd-id,,ocd-division/country:us/state:tn/county:overton,overton_cou0067,poll72698203 poll12760075,st47,other,,loc0067
+,ocd-id,,ocd-division/country:us/state:tn/county:perry,perry_cou0068,poll24320605 poll68043595,st47,other,,loc0068
+,ocd-id,,ocd-division/country:us/state:tn/county:pickett,pickett_cou0069,poll55828278 poll74874162,st47,other,,loc0069
+,ocd-id,,ocd-division/country:us/state:tn/county:polk,polk_cou0070,poll65220084 poll60241327 poll53080202,st47,other,,loc0070
+,ocd-id,,ocd-division/country:us/state:tn/county:putnam,putnam_cou0071,poll45088338 poll62235480,st47,other,,loc0071
+,ocd-id,,ocd-division/country:us/state:tn/county:rhea,rhea_cou0072,poll80694549 poll41471823,st47,other,,loc0072
+,ocd-id,,ocd-division/country:us/state:tn/county:roane,roane_cou0073,poll72631782 poll6358148 poll13703876 poll59221713 poll72499421 poll10066491 poll3456556 poll60714222 poll52618428,st47,other,,loc0073
+,ocd-id,,ocd-division/country:us/state:tn/county:robertson,robertson_cou0074,poll69160071,st47,other,,loc0074
+,ocd-id,,ocd-division/country:us/state:tn/county:rutherford,rutherford_cou0075,poll48755776 poll25564262 poll29682211 poll70029739 poll26253653 poll8291615 poll11978724 poll59594250 poll88242829 poll63903918,st47,other,,loc0075
+,ocd-id,,ocd-division/country:us/state:tn/county:scott,scott_cou0076,poll10537048 poll63797099 poll79320451 poll18190041,st47,other,,loc0076
+,ocd-id,,ocd-division/country:us/state:tn/county:sequatchie,sequatchie_cou0077,poll66418287,st47,other,,loc0077
+,ocd-id,,ocd-division/country:us/state:tn/county:sevier,sevier_cou0078,poll16959712 poll27353858 poll78519990,st47,other,,loc0078
+,ocd-id,,ocd-division/country:us/state:tn/county:shelby,shelby_cou0079,poll84290998 poll51868866 poll94054566 poll11761336 poll17314801 poll35406931 poll63825802 poll6694857 poll21437233 poll96556647 poll198159 poll28642445 poll87469263 poll7302732 poll71404752 poll16539036 poll27369167 poll64768324 poll58482423 poll26587278 poll83702590,st47,other,,loc0079
+,ocd-id,,ocd-division/country:us/state:tn/county:smith,smith_cou0080,poll51821806 poll97227280,st47,other,,loc0080
+,ocd-id,,ocd-division/country:us/state:tn/county:stewart,stewart_cou0081,poll57075785 poll28562791,st47,other,,loc0081
+,ocd-id,,ocd-division/country:us/state:tn/county:sullivan,sullivan_cou0082,poll85426982 poll96402701 poll61434670 poll30694923 poll49207802,st47,other,,loc0082
+,ocd-id,,ocd-division/country:us/state:tn/county:sumner,sumner_cou0083,poll26451642 poll80535391 poll87137267 poll50442027 poll38799001 poll36324629 poll39574246 poll90317957,st47,other,,loc0083
+,ocd-id,,ocd-division/country:us/state:tn/county:tipton,tipton_cou0084,poll76198115 poll64215341,st47,other,,loc0084
+,ocd-id,,ocd-division/country:us/state:tn/county:trousdale,trousdale_cou0085,poll58329661 poll41233894 poll86377069,st47,other,,loc0085
+,ocd-id,,ocd-division/country:us/state:tn/county:unicoi,unicoi_cou0086,poll65182077 poll28403630,st47,other,,loc0086
+,ocd-id,,ocd-division/country:us/state:tn/county:union,union_cou0087,poll143439,st47,other,,loc0087
+,ocd-id,,ocd-division/country:us/state:tn/county:van_buren,van_buren_cou0088,poll71442706 poll71768536,st47,other,,loc0088
+,ocd-id,,ocd-division/country:us/state:tn/county:warren,warren_cou0089,poll47160035 poll28140596,st47,other,,loc0089
+,ocd-id,,ocd-division/country:us/state:tn/county:washington,washington_cou0090,poll38753853 poll67576206 poll22908897 poll17247687 poll85064765 poll12233880 poll70710706 poll12390697 poll64446127,st47,other,,loc0090
+,ocd-id,,ocd-division/country:us/state:tn/county:wayne,wayne_cou0091,poll31101746 poll26274056,st47,other,,loc0091
+,ocd-id,,ocd-division/country:us/state:tn/county:weakley,weakley_cou0092,poll58369699 poll10562348,st47,other,,loc0092
+,ocd-id,,ocd-division/country:us/state:tn/county:white,white_cou0093,poll15076332,st47,other,,loc0093
+,ocd-id,,ocd-division/country:us/state:tn/county:williamson,williamson_cou0094,poll33632127 poll38593896 poll48415908 poll54807790 poll19284521 poll55419275 poll24515997 poll89558218 poll83430266,st47,other,,loc0094
+,ocd-id,,ocd-division/country:us/state:tn/county:wilson,wilson_cou0095,poll78476083 poll96317218 poll69005596 poll54657950 poll96593010 poll58395207,st47,other,,loc0095
