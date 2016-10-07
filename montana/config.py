@@ -11,9 +11,9 @@ utc_offset_5 = ''
 
 early_voting = 'true'
 
-output = '/home/acg/democracyworks/hand-collection-to-vip/montana/output/'
+input_path = '/Users/danielgilberg/Development/hand-collection-to-vip/'+ state + '/early_voting_input/'
 
-source_output = "/home/acg/democracyworks/hand-collection-to-vip/montana/output/source.txt"
+output = '/Users/danielgilberg/Development/hand-collection-to-vip/'+ state + '/output/'
 
 election_output = ''
 

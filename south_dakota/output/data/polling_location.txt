@@ -1,0 +1,65 @@
+address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+"401 N Main St, Plankinton, SD 57368",,08:00 AM-04:30 PM,,ho88017211,false,true,,,,poll56064814
+"450 3rd St. SW Ste. 201, Huron, SD 57350",,08:00 AM-05:00 PM,,ho10283989,false,true,,,,poll85245650
+"202 Main St., Martin, SD 57551",,08:00 AM-04:30 PM,,ho99602215,false,true,,,,poll25369937
+"300 W. 18th Ave., Tyndall, SD 57066",,08:00 AM-04:30 PM,,ho77675093,false,true,,,,poll25943541
+"520 Third St Ste. 100, Brookings, SD 57006",,08:00 AM-05:00 PM,,ho56491884,false,true,,,,poll70985769
+"25 Market St Ste 1, Aberdeen, SD 57401",,08:00 AM-05:00 PM,,ho28316302,false,true,,,,poll96423012
+"300 South Courtland 3rd Floor, Chamberlain, SD 57325",,08:00 AM-05:00 PM,,ho19480704,false,true,,,,poll80445745
+"839 5th Ave., Belle Fourche, SD 57717",,08:00 AM-05:00 PM,,ho64861556,false,true,,,,poll40066420
+"111 2nd Street NE, Mound City, SD 57646",,08:00 AM-12:00 PM,,ho45665851,false,true,,,,poll75983125
+"400 E Main St, Lake Andes, SD 57356",,08:00 AM-04:30 PM,,ho66320576,false,true,,,,poll6134743
+"200 Commercial Street 2nd Floor, Clark, SD 57225",,01:00 PM-05:00 PM,,ho98024055,false,true,,,,poll38723438
+"211 W. Main St Ste 200, Vermillion, SD 57069",,08:00 AM-05:00 PM,,ho32333472,false,true,,,,poll79287579
+"14 1st Ave SE, Watertown, SD 57201",,08:00 AM-05:00 PM,,ho39548437,false,true,,,,poll31688708
+"108 E. 1st Street, McIntosh, SD 57641",,01:00 PM-05:00 PM,,ho97560181,false,true,,,,poll42773809
+"420 Mount Rushmore Rd., Custer, SD 57730",,08:00 AM-05:00 PM,,ho85171265,false,true,,,,poll92814124
+"200 E 4th St 1st Floor, Mitchell, SD 57301",,08:00 AM-05:00 PM,,ho41369210,false,true,,,,poll63965181
+"711 W. 1st St Ste. 204, Webster, SD 57274",,08:00 AM-05:00 PM,,ho36726099,false,true,,,,poll63928592
+"408 4th St W 2nd Floor, Clear Lake, SD 57226",,08:00 AM-05:00 PM,,ho97110654,false,true,,,,poll55764331
+"710 C Street, Timber Lake, SD 57656",,01:00 PM-05:00 PM,,ho56984472,false,true,,,,poll1445300
+"706 Braddock St., Armour, SD 57313",,12:30 PM-04:30 PM,,ho34187022,false,true,,,,poll86869040
+"210 2nd Ave., Ipswich, SD 57451",,01:00 PM-05:00 PM,,ho57752823,false,true,,,,poll5969754
+"906 N. River Street, Hot Springs, SD 57747",,08:00 AM-05:00 PM,,ho94649375,false,true,,,,poll42726289
+"110 9th Ave. South, Faulkton, SD 57438",,01:00 PM-05:00 PM,,ho29481979,false,true,,,,poll41867456
+"210 E 5th Ave., Milbank, SD 57252",,08:00 AM-05:00 PM,,ho92366589,false,true,,,,poll16713683
+"221 East 8th Street, Burke, SD 57523",,01:00 PM-05:00 PM,,ho29592347,false,true,,,,poll50645687
+"140 South Howard, Philip, SD 57567",,01:00 PM-05:00 PM,,ho58438175,false,true,,,,poll67432999
+"300 4th St 2nd Floor, Hayti, SD 57241",,08:00 AM-05:00 PM,,ho60827592,false,true,,,,poll35363572
+"415 W. 1st Ave., Miller, SD 57362",,12:30 PM-05:00 PM,,ho6548902,false,true,,,,poll83349109
+"720 5th St., Alexandria, SD 57311",,01:00 PM-05:00 PM,,ho18700014,false,true,,,,poll31001773
+"410 Ramsland, Buffalo, SD 57720",,01:00 PM-05:00 PM,,ho30094753,false,true,,,,poll97690122
+"104 E Capitol Ave, Pierre, SD 57052",,08:00 AM-05:00 PM,,ho4139403,false,true,,,,poll67072662
+"140 Euclid St., Olivet, SD 57501",,08:00 AM-04:30 PM,,ho23632853,false,true,,,,poll2371371
+"412 Commercial Street SE, Highmore, SD 57345",,07:30 AM-12:00 PM,,ho18691218,false,true,,,,poll24651653
+"205 Wallace Ave S., Wessington Springs, SD 57382",,01:00 PM-05:00 PM,,ho56014994,false,true,,,,poll47612221
+"310 Main St, Murdo, SD 57559",,01:00 PM-05:00 PM,,ho5117135,false,true,,,,poll68618886
+"202 2nd St, Desmet, SD 57231",,01:00 PM-05:00 PM,,ho76871519,false,true,,,,poll34272531
+"200 East Center St., Madison, SD 57042",,08:00 AM-05:00 PM,,ho35221899,false,true,,,,poll48264268
+"90 Sherman St, Deadwood, SD 57732",,08:00 AM-05:00 PM,,ho66842090,false,true,,,,poll18798201
+"104 N Main St., Canton, SD 57013",,08:00 AM-05:00 PM,,ho70724075,false,true,,,,poll91344049
+"300 S Main, Kennebec, SD 57544",,08:00 AM-05:00 PM,,ho381421,false,true,,,,poll33817762
+"911 Vander Horck, Britton, SD 57430",,08:00 AM-04:30 PM,,ho73815272,false,true,,,,poll30534244
+"130 W Essex Ave, Salem, SD 57058",,08:00 AM-04:30 PM,,ho79555225,false,true,,,,poll88846624
+"706 Main Street, Leola, SD 57456",,08:00 AM-05:00 PM,,ho82631209,false,true,,,,poll48665364
+"1300 Sherman Street #126, Sturgis, SD 57785",,08:00 AM-05:00 PM,,ho17252578,false,true,,,,poll46557711
+"321 E 4th St, White River, SD 57579-0403",,08:00 AM-04:00 PM,,ho94229422,false,true,,,,poll27060302
+"401 N. Main St. 2nd Floor, Howard, SD 57349",,01:00 PM-05:00 PM,,ho66669463,false,true,,,,poll35215585
+"415 N. Dakota Avenue, Sioux Falls, SD 57104",,08:00 AM-05:00 PM,,ho74992950,false,true,,,,poll90215382
+"101 E Pipestone Ave Ste D, Flandreau, SD 57028",,08:00 AM-05:00 PM,,ho32569388,false,true,,,,poll86536761
+"1 Positive Place, Pine Ridge, SD 57770",,08:00 AM-05:00 PM,,ho46630229,false,true,,,,poll23876517
+"906 N. River St., Hot Springs, SD 57747",,08:00 AM-05:00 PM,,ho47501868,false,true,,,,poll51147937
+"130 Kansas City St Ste 230, Rapid City, SD 57701",,08:00 AM-05:00 PM,,ho57546226,false,true,,,,poll15103554
+"100 East Main Street, Bison, SD 57620",,07:30 AM-12:00 PM,,ho72255578,false,true,,,,poll66517497
+"201 S Exene St, Gettysburg, SD 57442",,07:30 AM-12:00 PM,,ho35428799,false,true,,,,poll69062356
+"411 2nd Ave. E., Sisseton, SD 57262",,08:00 AM-05:00 PM,,ho97307563,false,true,,,,poll35183156
+"604 W 6th St, Woonsocket, SD 57385",,08:00 AM-04:30 PM,,ho93391352,false,true,,,,poll37627034
+"210 East 7th Avenue Ste 5, Redfield, SD 57469",,08:00 AM-05:00 PM,,ho69404550,false,true,,,,poll12529796
+"08 E 2 Avenue, Fort Pierre, SD 57532",,01:00 PM-05:00 PM,,ho15829064,false,true,,,,poll82465289
+"700 Ash Ave, Onida, SD 57564",,08:00 AM-05:00 PM,,ho50380957,false,true,,,,poll45814323
+"200 Third Street , Winner, SD 57580",,08:00 AM-05:00 PM,,ho84130253,false,true,,,,poll23380504
+"400 S Main 1st Floor, Parker, SD 57053",,08:30 AM-05:00 PM,,ho51049935,false,true,,,,poll15229639
+"209 East Main Street Ste 200, Elk Point, SD 57025",,08:30 AM-05:00 PM,,ho99836581,false,true,,,,poll68533776
+"4304 4th Avenue, Selby, SD 57472",,01:00 PM-05:00 PM,,ho43230870,false,true,,,,poll56629647
+"321 W 3rd St. Ste 100, Yankton, SD 57078",,09:00 AM-05:00 PM,,ho73096950,false,true,,,,poll36342630
+"215 Main Street, Dupree, SD 57623",,01:00 PM-05:00 PM,,ho33149241,false,true,,,,poll21251990

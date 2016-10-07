@@ -184,9 +184,8 @@ class LocalityTxt(object):
         #print loc
 
         # Drop base_df columns.
-        loc.drop(['ocd_division', 'email', 'county', 'loc_name', 'address_one', 'address_two', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'by_appointment_one', 'by_appointment_two', 'appointmnents',
-                'subject_to_change', 'address_line', 'directions',
+        loc.drop(['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'loc_name', 'address_one', 'address_two', 'city', 'state', 'zip',
+                'start_time', 'end_time', 'start_date', 'end_date', 'notes', 'address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id',
                   'index'], inplace=True, axis=1)
 
@@ -240,9 +239,11 @@ if __name__ == '__main__':
 
     early_voting_file = config.output + state_file
 
-    colnames = ['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'notes', 'index', 'address_line', 'directions',
+    colnames = ['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'loc_name', 'address_one', 'address_two',
+                'city', 'state', 'zip',
+                'start_time', 'end_time', 'start_date', 'end_date', 'notes', 'index','address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id']
+    print len(colnames)
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
 
     early_voting_df['index'] = early_voting_df.index +1 # offsets zero based index so it starts at 1 for ids
