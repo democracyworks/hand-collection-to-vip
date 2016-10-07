@@ -12,14 +12,13 @@ central_utc_offset_6 = '-06:00'
 mountain_utc_offset_6 = '-06:00'
 mountain_utc_offset_7 = '-07:00'
 
-
 early_voting = 'true'
+
+state_file = 'Texas Early Voting + Polling Places - Data.csv'
 
 input = '/home/acg/democracyworks/hand-collection-to-vip/texas/input/'
 
 output = '/home/acg/democracyworks/hand-collection-to-vip/texas/output/'
-
-source_output = "/home/acg/democracyworks/hand-collection-to-vip/texas/output/source.txt"
 
 
 fips_dict = {'wyoming': '56', 'colorado': '08', 'washington': '53', 'hawaii': '15', 'tennessee': '47', 'iowa': '19',

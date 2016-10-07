@@ -18,6 +18,8 @@ class PollingLocationTxt(object):
     def get_address_line(self, index, address1, address2, city, state, zip_code):
         # required: print message for exception
 
+        print index, city
+
         if not pd.isnull(address1):
             #address = street
             address1 = str(re.sub(r'[^\x00-\x7f]', r' ', address1.strip()))
@@ -40,17 +42,21 @@ class PollingLocationTxt(object):
 
         if not pd.isnull(city):
             city_name = str(city)
+            city_name = ''.join([i if ord(i) < 128 else ' ' for i in str(city_name)])
+            print city_name
         else:
             raise ValueError('Missing city value at row ' + str(index) + '.')
             #city_name =''
 
         if not pd.isnull(zip_code):
             zip = str(zip_code)
+            zip = ', ' + str(re.sub(r'[^\x00-\x7f]', r' ', zip.strip()))
             #print zip
             #print type(zip)
 
         else:
-            raise ValueError('Missing zip code value at row ' + str(index) + '.')
+            zip = ''
+            #raise ValueError('Missing zip code value at row ' + str(index) + '.')
 
         #print address
         #print type(address)
@@ -219,16 +225,17 @@ class PollingLocationTxt(object):
         intermediate_doc.to_csv(config.output + 'intermediate_doc.csv', index=False, encoding='utf-8')
         return intermediate_doc
 
+    def export_for_locality(self):
+        return self.build_polling_location_txt()
+
     def write_polling_location_txt(self):
         """Drops base DataFrame columns then writes final dataframe to text or csv file"""
 
         plt = self.build_polling_location_txt()
 
-
         # Drop base_df columns.
         plt.drop(['index', 'office_name', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name', 'address1',
                 'address2', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date'], inplace=True, axis=1)
-
 
         plt = self.dedupe(plt)
         print plt
@@ -244,7 +251,7 @@ if __name__ == '__main__':
 
     state = config.state_abbreviation_upper
 
-    state_file='texas_early_voting_info_clean.csv'
+    #state_file='texas_early_voting_info_clean.csv'
 
     colnames = ['office_name', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name', 'address1',
                 'address2', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date']
@@ -255,7 +262,7 @@ if __name__ == '__main__':
 
 
 
-    early_voting_df = pd.read_csv(config.input + state_file, names=colnames,
+    early_voting_df = pd.read_csv(config.input + config.state_file, names=colnames,
                                   usecols=usecols,
                                   encoding='ISO-8859-1',
                                   skiprows=1)

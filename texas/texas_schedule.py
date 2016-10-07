@@ -432,9 +432,8 @@ class ScheduleTxt(object):
 
         # Drop base_df columns.
         sch.drop(['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name',
-                  'address1', 'address2', 'city', 'state', 'zip_code', 'index', 'address_line',
-                  'hours', 'photo_uri', 'is_drop_box', 'is_early_voting', 'latitude',
-     'longitude', 'latlng_source'], inplace=True, axis=1)
+                  'address1', 'address2', 'city', 'state', 'zip_code', 'index', 'address_line', 'hours', 'photo_uri',
+                  'is_drop_box', 'is_early_voting', 'latitude', 'longitude', 'latlng_source'], inplace=True, axis=1)
 
         # reorder columns
         cols =['start_time', 'end_time', 'is_only_by_appointment', 'is_or_by_appointment', 'is_subject_to_change',
@@ -452,23 +451,7 @@ if __name__ == '__main__':
     #s ='county ocd_division homepage_url phone email directions location_name address1 address2 city state zip_code start_time end_time start_date end_date is_subject_to_change notes index address_line hours photo_uri hours_open_id is_drop_box is_early_voting latitude longitude latlng_source id'.split(' ')
     #print s
 
-    #print s
-
-
     intermediate_doc = 'intermediate_doc.csv'
-
-    #early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/south_dakota/output/" + state_file
-
-    #colnames = ['ocd-division', 'email', 'county', 'location_name', 'address_1', 'address_2', 'city',
-    #            'state', 'zip_code', 'source_start_time', 'source_end_time', 'source_start_date', 'source_end_date',
-    #            'is_only_by_appointment', 'is_or_by_appointment', 'appointment_phone', 'is_subject_to_change', 'index', 'address_line',
-    #            'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude',
-    #           'longitude', 'latlng_source', 'polling_location_id']
-
-#    colnames = ['office_name', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state', 'zip_code',
-#                'start_time', 'end_time', 'start_date', 'end_date', 'is_subject_to_change', 'notes', 'index',
-#                'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
-#                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
 
     colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name', 'address1', 'address2',
      'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date',
@@ -477,7 +460,7 @@ if __name__ == '__main__':
 
     early_voting_df = pd.read_csv(config.output + intermediate_doc, names=colnames, encoding='ISO-8859-1', skiprows=1, delimiter=',')
 
-    early_voting_df['index'] = early_voting_df.index +1# offsets zero based index so it starts at 1 for ids
+    early_voting_df['index'] = early_voting_df.index +1  # offsets zero based index so it starts at 1 for ids
     print early_voting_df
     print early_voting_df.hours_open_id
 
