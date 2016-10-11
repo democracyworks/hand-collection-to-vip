@@ -35,7 +35,7 @@ class PollingLocationTxt(object):
         else:
             zip = ''
 
-        return st.strip() + ", " + city + ", " + config.state_abbreviation + " " + zip
+        return st.strip() + ", " + city.strip() + ", " + config.state_abbreviation + " " + zip
 
     def get_directions(self, dirs):
         """#"""
