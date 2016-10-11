@@ -18,7 +18,7 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:ar/county:crawford,ocd-division/country:us/state:ar/county:crawf0131,poll10076781,st05,other,,loc0017
 ,ocd-id,,ocd-division/country:us/state:ar/county:crittenden,ocd-division/country:us/state:ar/county:critten0133,poll82645771,st05,other,,loc0018
 ,ocd-id,,ocd-division/country:us/state:ar/county:cross,ocd-division/country:us/state:ar/county:cr0138,poll90777792,st05,other,,loc0019
-,ocd-id,,ocd-division/country:us/state:ar/county:dallas,ocd-division/country:us/state:ar/county:dal0526,poll95007202 poll47033942 poll50466778 poll74248685 poll76316359,st05,other,,loc0020
+,ocd-id,,ocd-division/country:us/state:ar/county:dallas,ocd-division/country:us/state:ar/county:dal0526,poll95007202 poll47033942 poll50466778 poll44601250 poll76316359,st05,other,,loc0020
 ,ocd-id,,ocd-division/country:us/state:ar/county:desha,ocd-division/country:us/state:ar/county:de0148,poll8815443 poll12790951 poll7503963,st05,other,,loc0021
 ,ocd-id,,ocd-division/country:us/state:ar/county:drew,ocd-division/country:us/state:ar/county:d0152,poll6100786,st05,other,,loc0022
 ,ocd-id,,ocd-division/country:us/state:ar/county:faulkner,ocd-division/country:us/state:ar/county:faulk0158,poll2619015,st05,other,,loc0023
