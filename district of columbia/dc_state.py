@@ -72,6 +72,8 @@ class StateTxt(object):
     def polling_location_ids(self):
         """#"""
         p = pl()
+        print p
+        print type(p)
         p = [i.split(' ') for i in p]
         p =[item for sublist in p for item in sublist]
         return ' '.join(p)

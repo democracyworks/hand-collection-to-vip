@@ -49,7 +49,7 @@ class ScheduleTxt(object):
         """#"""
         if end_time:
             #print index, end_time
-            return end_time.replace(' - ', '-')
+            return str(end_time).replace(' - ', '-')
         else:
             raise ValueError('Missing end_time value at row ' + str(index) + '.')
 
@@ -171,13 +171,13 @@ if __name__ == '__main__':
 
     intermediate_doc = 'intermediate_doc.csv'
 
-    s = 'ocd_division location_name address1 address2 city state zip_code directions start_date end_date start_time end_time index address_line hours photo_uri hours_open_id is_drop_box is_early_voting latitude longitude latlng_source id'.split(' ')
+    s ='ocd_division, location_name, address1, city, state, zip_code, directions, start_date, end_date, start_time, end_time, index, address_line, hours, photo_uri, hours_open_id, is_drop_box, is_early_voting, latitude, longitude, latlng_source, id'.split(', ')
     print s
 
+    colnames = ['ocd_division', 'location_name', 'address1', 'city', 'state', 'zip_code', 'directions', 'start_date',
+                'end_date', 'start_time', 'end_time', 'index', 'address_line', 'hours', 'photo_uri', 'hours_open_id',
+                'is_drop_box', 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
 
-    colnames = ['ocd_division', 'location_name', 'address1', 'address2', 'city', 'state', 'zip_code', 'directions',
-                'start_date', 'end_date', 'start_time', 'end_time', 'index', 'address_line', 'hours', 'photo_uri',
-                'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
 
 
     #s = 'county, ocd_division, homepage_url, phone, name, address1, address2, city, state, zip_code, start_time, end_time, start_date, end_date, index, address_line, directions, hours, photo_uri, hours_open_id, is_drop_box, is_early_voting, latitude, longitude, latlng_source, id'.split(', ')
