@@ -14,7 +14,7 @@ mountain_utc_offset_7 = '-07:00'
 
 early_voting = 'true'
 
-state_file = 'Texas Early Voting + Polling Places - Data.csv'
+state_file = 'Texas Early Voting + Polling Places - Data (7).csv'
 
 input = '/home/acg/democracyworks/hand-collection-to-vip/texas/input/'
 
