@@ -1,0 +1,69 @@
+address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+"701 Kelly Road, Cumberland, MD 21502",Room 100,08:00 AM - 08:00 PM,,ho63583635,false,true,,,,poll86660020
+"2004 Queensguard Road, Silver Spring, MD 20906",,08:00 AM - 08:00 PM,,ho33110235,false,true,,,,poll42035325
+"101 Monroe Street, Rockville, MD 20850",,08:00 AM - 08:00 PM,,ho66800780,false,true,,,,poll91326451
+"18905 Kingsview Road, Germantown, MD 20874",,08:00 AM - 08:00 PM,,ho33572631,false,true,,,,poll86577910
+"14906 Old Columbia Pike, Burtonsville, MD 20866",,08:00 AM - 08:00 PM,,ho64507047,false,true,,,,poll55219077
+"One Veterans Place, Silver Spring, MD 20910",,08:00 AM - 08:00 PM,,ho76717129,false,true,,,,poll39576140
+"4501 Edmondson Avenue, Baltimore, MD 21229",Rear of Bldg. Enter on Athol Avenue,08:00 AM - 08:00 PM,,ho67625837,false,true,,,,poll11978258
+"3601 Eastern Avenue, Baltimore, MD 21224",,08:00 AM - 08:00 PM,,ho67108611,false,true,,,,poll74333711
+"1111 E. Coldspring Lane, Baltimore, MD 21239",,08:00 AM - 08:00 PM,,ho78851197,false,true,,,,poll1637288
+"5001 Sinclair Lane, Baltimore, MD 21206",,08:00 AM - 08:00 PM,,ho241011,false,true,,,,poll89226680
+"3500 W. Northern Pkwy, Baltimore, MD 21215",,08:00 AM - 08:00 PM,,ho73375195,false,true,,,,poll92939217
+"1 N. Poppleton St, Baltimore, MD 21201",Enter on W. Baltimore Street,08:00 AM - 08:00 PM,,ho17166828,false,true,,,,poll95896896
+"5051 Pierce Ave, College Park, MD 20740",,08:00 AM - 08:00 PM,,ho85706307,false,true,,,,poll81514844
+"7007 Bock Rd, Fort Washington, MD 20744",,08:00 AM - 08:00 PM,,ho71030954,false,true,,,,poll12537346
+"5600 Regency Lane, Forestville, MD 20747",,08:00 AM - 08:00 PM,,ho73508268,false,true,,,,poll66366293
+"7120 Contee Rd, Laurel, MD 20707",,08:00 AM - 08:00 PM,,ho6634395,false,true,,,,poll54444898
+"5400 Marlboro Race Track Rd, Upper Marlboro, MD 20772",,08:00 AM - 08:00 PM,,ho53467696,false,true,,,,poll66187658
+"8001 Sheriff Rd, Landover, MD 20785",,08:00 AM - 08:00 PM,,ho70597999,false,true,,,,poll20986749
+"13601 Baden-Westwood Rd, Brandywine, MD 20613",,08:00 AM - 08:00 PM,,ho53626229,false,true,,,,poll4692040
+"4100 Northview Drive, Bowie, MD 20716",,08:00 AM - 08:00 PM,,ho31924022,false,true,,,,poll40562197
+"12601 National Pike, Grantsville, MD 21536",,08:00 AM - 08:00 PM,,ho10141996,false,true,,,,poll99105063
+"14 N. Eighth St, Oakland, MD 21550",,08:00 AM - 08:00 PM,,ho5899147,false,true,,,,poll61562128
+"506 S. Frederick Avenue, Gaithersburg, MD 20877",,08:00 AM - 08:00 PM,,ho40221686,false,true,,,,poll66055270
+"25520 Oak Drive, Damascus, MD 20872",,08:00 AM - 08:00 PM,,ho95759828,false,true,,,,poll82687583
+"4301 Willow Lane, Chevy Chase, MD 20815",,08:00 AM - 08:00 PM,,ho8692291,false,true,,,,poll92262372
+"11315 Falls Road, Potomaac, MD 20854",,08:00 AM - 08:00 PM,,ho73457535,false,true,,,,poll5222827
+"2400 Arcola Avenue, Wheaton, MD 20902",,08:00 AM - 08:00 PM,,ho25606140,false,true,,,,poll96928085
+"3505 Resource Drive, Randallstown, MD 21133",,08:00 AM - 08:00 PM,,ho84798318,false,true,,,,poll39432548
+"7720 York Road, Towson, MD 21252",,08:00 AM - 08:00 PM,,ho51789933,false,true,,,,poll83446221
+"9033 Honeygo Blvd, Perry Hall, MD 21128",,08:00 AM - 08:00 PM,,ho63619502,false,true,,,,poll68270044
+"1114 Shawan Road, Cockeysville, MD 21030",,08:00 AM - 08:00 PM,,ho96470114,false,true,,,,poll31487784
+"12035 Reisterstown Road, Reisterstown, MD 21136",,08:00 AM - 08:00 PM,,ho93726809,false,true,,,,poll61581120
+"865 Sulphur Spring Road, Halethorpe, MD 21227",,08:00 AM - 08:00 PM,,ho85136978,false,true,,,,poll5809508
+"323 Sollers Point Road, Dundalk, MD 21222",,08:00 AM - 08:00 PM,,ho18751703,false,true,,,,poll4270674
+"404 Compass Road E., Middle River, MD 21220",,08:00 AM - 08:00 PM,,ho55052665,false,true,,,,poll14630388
+"2120 Gwynn Oak Avenue, Gwynn Oak, MD 21207",,08:00 AM - 08:00 PM,,ho78302468,false,true,,,,poll25010271
+"1610 Main St, Chester, MD 21619",,08:00 AM - 08:00 PM,,ho75523224,false,true,,,,poll8225393
+"110 Vincit St, Centreville, MD 21617",,08:00 AM - 08:00 PM,,ho99202072,false,true,,,,poll29088029
+"24801 Three Notch Road, Hollywood, MD 20636",,08:00 AM - 08:00 PM,,ho32886871,false,true,,,,poll43722945
+"11916 Somerset Avenue, Princess Anne, MD 21853",,08:00 AM - 08:00 PM,,ho96658295,false,true,,,,poll19049976
+"315 Aurora Park Drive, Easton, MD 21601",,08:00 AM - 08:00 PM,,ho20771995,false,true,,,,poll36468561
+"101 Tandy Drive, Hagerstown, MD 21740",,08:00 AM - 08:00 PM,,ho79049518,false,true,,,,poll83325743
+"500 Glen Avenue, Salisbury, MD 21801",,08:00 AM - 08:00 PM,,ho72008701,false,true,,,,poll90700657
+"1 Meadow Street, Berlin, MD 21811",,08:00 AM - 08:00 PM,,ho31553220,false,true,,,,poll52713713
+"119 S. Villa Ave, Annapolis, MD 21401",,08:00 AM - 08:00 PM,,ho47201049,false,true,,,,poll8544209
+"1325 Annapolis Road, Odenton, MD 21113",,08:00 AM - 08:00 PM,,ho70283210,false,true,,,,poll27501571
+"1010 Eastway, Glen Burnie, MD 21060",,08:00 AM - 08:00 PM,,ho23344485,false,true,,,,poll38727764
+"45 W. Mckinsey Road, Severna Park, MD 21146",,08:00 AM - 08:00 PM,,ho17530687,false,true,,,,poll29196053
+"25 Stepneys Lane, Edgewater, MD 21037",,08:00 AM - 08:00 PM,,ho9036660,false,true,,,,poll8240125
+"30 Duke Stl, Prince Frederick, MD 20678",Lower Level,08:00 AM - 08:00 PM,,ho71563559,false,true,,,,poll67955036
+"403 South 7th Street, Denton, MD 21629",,08:00 AM - 08:00 PM,,ho51672322,false,true,,,,poll78785006
+"125 Stoner Avenue, Westminster, MD 21157",,08:00 AM - 08:00 PM,,ho73828822,false,true,,,,poll81681413
+"200 Chesapeake Blvd, Elkton, MD 21921",Elk Room,08:00 AM - 08:00 PM,,ho4746170,false,true,,,,poll57182019
+"4900 Kirkcaldy Court, Waldorf, MD 20602",,08:00 AM - 08:00 PM,,ho72827980,false,true,,,,poll83955205
+"911 Washington Avenue, La Plata, MD 20646",,08:00 AM - 08:00 PM,,ho34696711,false,true,,,,poll16168163
+"501 Court Ln, Cambridge, MD 21613",,08:00 AM - 08:00 PM,,ho33421734,false,true,,,,poll79474221
+"1440 Taney Avenue, Frederick, MD 21702",,08:00 AM - 08:00 PM,,ho58966226,false,true,,,,poll64927981
+"76 E. Moser Road, Thurmont, MD 21788",,08:00 AM - 08:00 PM,,ho78552222,false,true,,,,poll85722232
+"9020 Amelung Street, Frederick, MD 21704",,08:00 AM - 08:00 PM,,ho78460835,false,true,,,,poll61783529
+"1 Fireman's Lane, Middletown, MD 21769",,08:00 AM - 08:00 PM,,ho57779665,false,true,,,,poll93972924
+"525 W. Mcphail Road, Bel Air, MD 21014",,08:00 AM - 08:00 PM,,ho66077949,false,true,,,,poll28203346
+"629 Edgewood Road, Edgewood, MD 21040",,08:00 AM - 08:00 PM,,ho28561310,false,true,,,,poll26183563
+"1201 Technology Drive, Aberdeen, MD 21001",,08:00 AM - 08:00 PM,,ho36125333,false,true,,,,poll90011133
+"3722 Norrisville Road, Jarrettsville, MD 21084",,08:00 AM - 08:00 PM,,ho45714153,false,true,,,,poll46296331
+"8400 Mission Rd, Jessup, MD 20794",,08:00 AM - 08:00 PM,,ho13187334,false,true,,,,poll43215415
+"5470 Ruth Keeton Way, Columbia, MD 21044",,08:00 AM - 08:00 PM,,ho7816976,false,true,,,,poll17679893
+"9421 Fredrick Rd, Ellicott City, MD 21042",,08:00 AM - 08:00 PM,,ho23393560,false,true,,,,poll53097347
+"408 High Street, Chestertown, MD 21620",,08:00 AM - 08:00 PM,,ho99162288,false,true,,,,poll77183007

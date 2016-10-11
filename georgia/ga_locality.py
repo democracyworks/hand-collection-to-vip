@@ -46,11 +46,11 @@ class LocalityTxt(object):
         # create conditional when/if column is present
         return ''
 
-    def get_external_identifier_value(self, external_identifier_value):
+    def get_external_identifier_value(self, ocd_division):
         """Extracts external identifier (ocd-division)."""
 
-        if external_identifier_value:
-            return external_identifier_value
+        if not pd.isnull(ocd_division):
+            return ocd_division
         else:
             return ''
 

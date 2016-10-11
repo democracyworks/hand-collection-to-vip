@@ -32,7 +32,6 @@ class PollingLocationTxt(object):
             city_name = ''
 
         if zip_code:
-            print type(zip_code)
             zip = str(zip_code[0:5])
         else:
             zip = ''
@@ -223,8 +222,8 @@ class PollingLocationTxt(object):
         plt = self.build_polling_location_txt()
 
         # Drop base_df columns.
-        plt.drop(['office_name', 'ocd_division', 'description', 'dirs','homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'appt_one', 'appt_two', 'subject_to_change','start_date', 'end_date', 'ev_or_aip', 'index'], inplace=True, axis=1)
+        plt.drop(['office_name', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'name', 'street', 'dirs', 'city', 'state',
+                'zip', 'start_time', 'end_time', 'appt_1', 'appt_2', 'subject_to_change', 'start_date', 'end_date', 'ev_or_aip', 'index'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
         print plt
@@ -243,8 +242,8 @@ if __name__ == '__main__':
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
     early_voting_file = config.data_folder + state_file
 
-    colnames = ['office_name', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'dirs', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'appt_one', 'appt_two', 'subject_to_change','start_date', 'end_date', 'ev_or_aip']
+    colnames = ['office_name', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'name', 'street', 'dirs', 'city', 'state',
+                'zip', 'start_time', 'end_time', 'appt_1', 'appt_2', 'subject_to_change', 'start_date', 'end_date', 'ev_or_aip']
     print len(colnames)
 
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)

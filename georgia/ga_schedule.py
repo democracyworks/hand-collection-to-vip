@@ -28,6 +28,13 @@ class ScheduleTxt(object):
         self.base_df = base_df
         #print self.base_df
 
+#    def mountain_time(self, county):
+#        df = self.build_schedule_txt()
+
+#        if df['county'] in mountain_tz:
+#                df['start_date'] = df['start_date'].str.replace('\n', '')
+
+
     def get_start_time(self, index, office_name, start_time, start_date, hours_open_id):
         """#"""
         print index, start_time
@@ -72,7 +79,8 @@ class ScheduleTxt(object):
         #print index, start_date
 
         if not pd.isnull(start_date):
-            d = datetime.datetime.strptime(start_date, "%m-%d-%y").strftime('%Y-%m-%d')
+            print start_date
+            d = datetime.datetime.strptime(start_date, "%m/%d/%y").strftime('%Y-%m-%d')
             return d
         else:
             print 'no start date for index ' + index
@@ -116,12 +124,12 @@ class ScheduleTxt(object):
 
     def get_end_date(self, index, end_date):
         """#"""
-
+        print end_date
         if not pd.isnull(end_date):
-            d = datetime.datetime.strptime(end_date, "%m-%d-%y").strftime('%Y-%m-%d')
+            d = datetime.datetime.strptime(end_date, "%m/%d/%y").strftime('%Y-%m-%d')
             return d
         else:
-            print 'no start date for index ' + index
+            print 'no end date for index ' + index
             return''
 
 

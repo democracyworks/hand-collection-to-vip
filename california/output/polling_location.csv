@@ -1,61 +1,61 @@
-drop_box,address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-,"1225 Fallon Street, Oakland, CA 94612",,08:30 AM-05:00 PM,,ho81028848,false,true,,,,poll30931741
-,"810 Court Street, Jackson, CA 95642",,08:00 AM-05:00 PM,,ho41004337,false,true,,,,poll62415200
-,"155 Nelson Ave, Oroville, CA 95965",,09:00 AM-05:00 PM,,ho77700636,false,true,,,,poll98810408
-,"891 Mountain Ranch Road, San Andreas, CA 95249",,08:00 AM-04:00 PM,,ho34192186,false,true,,,,poll3850315
-,"555 Escobar Street, Martinez, CA 94553",,08:00 AM-05:00 PM,,ho62635214,false,true,,,,poll77054551
-,"981 H Street, Room 160, Crescent City, CA 95531",,08:00 AM-05:00 PM,,ho72512269,false,true,,,,poll32367450
-,"2850 Fairlane Ct, Placerville, CA 95667",,08:00 AM-05:00 PM,,ho6618035,false,true,,,,poll81735112
-,"3368 Lake Tahoe Blvd 108, South Lake Tahoe, CA 96150",,08:00 AM-05:00 PM,,ho71860804,false,true,,,,poll12306305
-,"2221 Kern Street, Fresno, CA 93721",,08:00 AM-05:00 PM,,ho56375565,false,true,,,,poll78433664
-,"516 W. Sycamore Street, Willows, CA 95988",,07:00 AM-05:00 PM,,ho88367127,false,true,,,,poll93785153
-,"3033 H Street, Room 20, Eureka, CA 95501",,08:30 AM-05:00 PM,,ho85684882,false,true,,,,poll43127736
-,"940 Main Street, Ste 206, El Centro, CA 92243",,08:00 AM-05:00 PM,,ho30293259,false,true,,,,poll48592718
-,"168 N. Edwards St Inyo County Elections, Independence, CA 93526",,08:00 AM-05:00 PM,,ho22306379,false,true,,,,poll67455466
-,"1115 Truxtun Avenue, Bakersfield, CA 93301",,08:00 AM-05:00 PM,,ho40327739,false,true,,,,poll73958333
-,"1400 W. Lacey Blvd., Hanford, CA 93230",,08:00 AM-05:00 PM,,ho87133124,false,true,,,,poll37788599
-,"220 S. Lassen Street, Ste 5, Susanville, CA 96130",,09:00 AM-05:00 PM,,ho35269615,false,true,,,,poll40013324
-,"12400 Imperial Hwy., Norwalk, CA 90650",,08:00 AM-05:00 PM,,ho73826420,false,true,,,,poll24955377
-,"200 W. 4th Street, Madera, CA 93637",,08:00 AM-05:00 PM,,ho85147266,false,true,,,,poll54856670
-,"48267 Liberty Lane, Oakhurst , CA 93644",,10:00 AM-03:00 PM,,ho87414622,false,true,,,,poll65006922
-,"3501 Civic Center, Room 121, San Rafael, CA 94903",,08:00 AM-04:30 PM,,ho42523122,false,true,,,,poll75856392
-,"4982 10th Street, Mariposa, CA 95338",,08:00 AM-05:00 PM,,ho82331149,false,true,,,,poll33199359
-,"501 Low Gap Rd., Room 1020, Ukiah, CA 95482",,08:00 AM-05:00 PM,,ho36345638,false,true,,,,poll3135162
-,"2222 M Street, Room 14, Merced, CA 95340",,08:00 AM-05:00 PM,,ho59406384,false,true,,,,poll50099825
-,"108 E. Modoc Street, Alturas, CA 96101",,08:30 AM-05:00 PM,,ho65997374,false,true,,,,poll25997673
-,"74 N. School Street, Annex I, Bridgeport, CA 93517",,08:00 AM-05:00 PM,,ho69684443,false,true,,,,poll66141389
-,"1370 S. Main St # B, Salinas, CA 93901",,08:00 AM-05:00 PM,,ho1226727,false,true,,,,poll16320877
-,"900 Coombs St, Room 256, Napa, CA 94559",,08:00 AM-05:00 PM,,ho47788951,false,true,,,,poll37346554
-,"950 Maidu Avenue, Ste 250, Nevada City, CA 95959",,08:00 AM-05:00 PM,,ho84886677,false,true,,,,poll40113841
-,"2956 Richardson Drive, Auburn, CA 95603",,08:00 AM-05:00 PM,,ho11169864,false,true,,,,poll92627841
-,"2724 Gateway Drive, Riverside, CA 92507",,08:00 AM-05:00 PM,,ho45223742,false,true,,,,poll63894622
-,"440 Fifth Street, 2nd Floor Room 206, Hollister, CA 95023",,08:00 AM-05:00 PM,,ho31962409,false,true,,,,poll8160068
-,"777 E. Rialto Avenue, San Bernardino, CA 92415",,07:30 AM-05:30 PM,,ho52407834,false,true,,,,poll5652823
-,"1947 E Convention Center Way, Ontario, CA 91764",,07:30 AM-05:30 PM,,ho55230000,false,true,,,,poll37814339
-,"27400 Highway 18, Lake Arrowhead, CA 92352",,07:30 AM-05:30 PM,,ho64238566,false,true,,,,poll29140925
-,"14343 Civic Drive, Victorville, CA 92392",,07:30 AM-05:30 PM,,ho99890627,false,true,,,,poll59823621
-,"57090 Twentynine Palms Highway, Yucca Valley, CA 92284",,07:30 AM-05:30 PM,,ho73809306,false,true,,,,poll66357284
-,"5600 Overland Avenue, San Diego, CA 92123",,08:00 AM-05:00 PM,,ho60954883,false,true,,,,poll91978198
-,"City Hall 1 Dr. Carlton B. Goodlett Place, Room 48, , CA 94102",,08:00 AM-05:00 PM,,ho27922668,false,true,,,,poll78885144
-,"44 N San Joaquin St Suite 350, Stockton, CA 95202",,08:00 AM-05:00 PM,,ho17923542,false,true,,,,poll27163421
-,"40 Tower Road, San Mateo, CA 94402",,08:00 AM-05:00 PM,,ho10449321,false,true,,,,poll13101045
-,"555 County Center, 1st Floor, Redwood City, CA 94063",,08:00 AM-05:00 PM,,ho21463823,false,true,,,,poll31547540
-,"840 West Orange Avenue, South San Francisco, CA 94080",,08:00 AM-05:00 PM,,ho83041839,false,true,,,,poll11819629
-,"4440-a Calle Real, Santa Barbara, CA 93110",,08:00 AM-05:00 PM,,ho37939285,false,true,,,,poll30546351
-,"1555 Berger Drive, Bldg. 2, San Jose, CA 95112",,08:00 AM-05:00 PM,,ho96947314,false,true,,,,poll60402856
-,"701 Ocean Street, Room 210, Santa Cruz, CA 95060",,08:00 AM-05:00 PM,,ho24108230,false,true,,,,poll52902263
-,"275 Main St Suite 400 4th Floor, Watsonville, CA 95076",,08:00 AM-05:00 PM,,ho80800979,false,true,,,,poll69160685
-,"1643 Market Street, Redding, CA 96002",,08:00 AM-05:00 PM,,ho75445722,false,true,,,,poll89113059
-,"675 Texas Street, Ste 2600, Fairfield, CA 94533",,08:00 AM-05:00 PM,,ho1930766,false,true,,,,poll66624871
-,"1021 I Street, Modesto, CA 95354",,08:00 AM-04:00 PM,,ho44979037,false,true,,,,poll26791746
-,"444 Oak Street, Room C, Red Bluff, CA 96080",,08:00 AM-05:00 PM,,ho37474966,false,true,,,,poll36476267
-,"5951 S. Mooney Blvd, Visalia, CA 93277",,07:30 AM-05:30 PM,,ho14432856,false,true,,,,poll39417218
-,"2 South Green St, Sonora, CA 95370",,08:00 AM-05:00 PM,,ho78231746,false,true,,,,poll19002651
-,"800 S. Victoria Avenue, L-1200, Ventura, CA 93009",,08:00 AM-05:00 PM,,ho62755735,false,true,,,,poll81173047
-,"625 Court Street, Room B-05, Woodland, CA 95695",,08:00 AM-05:00 PM,,ho67663871,false,true,,,,poll92646892
-False,"200 S. Anaheim Boulevard, #217, Anaheim, CA 92805",,08:00 AM-05:00 PM,,ho50676851,false,true,,,,poll54644203
-False,"1845 Park Avenue, Costa Mesa, CA 92627",,08:00 AM-05:00 PM,,ho23092867,false,true,,,,poll37598878
-True,"1 Civic Center Plaza, Irvine, CA 92606",,08:00 AM-05:00 PM,,ho3182799,true,true,,,,poll82493283
-True,"200 Civic Center, Mission Viejo, CA 92691",,08:00 AM-05:00 PM,,ho43054700,true,true,,,,poll8885196
-False,"8180 13th Street, Westminster, CA 92683",,08:00 AM-05:00 PM,,ho75205994,false,true,,,,poll53831881
-False,"1300 S. Grand Avenue Building C, Santa Ana, CA 92705",,08:00 AM-05:00 PM,,ho69059914,false,true,,,,poll75043014
+address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+"1225 Fallon Street, Oakland, CA 94612",,08:30 AM-05:00 PM,,ho81028848,false,true,,,,poll30931741
+"810 Court Street, Jackson, CA 95642",,08:00 AM-05:00 PM,,ho41004337,false,true,,,,poll62415200
+"155 Nelson Ave, Oroville, CA 95965",,08:00 AM-04:00 PM,,ho77700636,false,true,,,,poll98810408
+"891 Mountain Ranch Road, San Andreas, CA 95249",,08:00 AM-04:00 PM,,ho34192186,false,true,,,,poll3850315
+"555 Escobar Street, Martinez, CA 94553",,08:00 AM-05:00 PM,,ho62635214,false,true,,,,poll77054551
+"981 H Street, Room 160, Crescent City, CA 95531",,08:00 AM-05:00 PM,,ho72512269,false,true,,,,poll32367450
+"2850 Fairlane Ct, Placerville, CA 95667",,08:00 AM-05:00 PM,,ho6618035,false,true,,,,poll81735112
+"3368 Lake Tahoe Blvd 108, South Lake Tahoe, CA 96150",,08:00 AM-12:00 PM,,ho71860804,false,true,,,,poll12306305
+"2221 Kern Street, Fresno, CA 93721",,08:30 AM-05:00 PM,,ho56375565,false,true,,,,poll78433664
+"516 W. Sycamore Street, Willows, CA 95988",,08:00 AM-05:00 PM,,ho88367127,false,true,,,,poll93785153
+"2426 6th Street, Eureka, CA 95501",,08:30 AM-12:00 PM,,ho68018604,false,true,,,,poll46459874
+"940 Main Street, Ste 206, El Centro, CA 92243",,08:00 AM-05:00 PM,,ho30293259,false,true,,,,poll48592718
+"168 N. Edwards St Inyo County Elections, Independence, CA 93526",,08:00 AM-05:00 PM,,ho22306379,false,true,,,,poll67455466
+"1115 Truxtun Avenue, Bakersfield, CA 93301",,08:00 AM-05:00 PM,,ho40327739,false,true,,,,poll73958333
+"1400 W. Lacey Blvd., Hanford, CA 93230",,08:00 AM-05:00 PM,,ho87133124,false,true,,,,poll37788599
+"220 S. Lassen Street, Ste 5, Susanville, CA 96130",,09:00 AM-12:00 PM,,ho35269615,false,true,,,,poll40013324
+"12400 Imperial Hwy., Norwalk, CA 90650",,08:00 AM-05:00 PM,,ho73826420,false,true,,,,poll24955377
+"200 W. 4th Street, Madera, CA 93637",,08:00 AM-05:00 PM,,ho85147266,false,true,,,,poll54856670
+"48267 Liberty Lane, Oakhurst , CA 93644",,10:00 AM-03:00 PM,,ho87414622,false,true,,,,poll65006922
+"3501 Civic Center, Room 121, San Rafael, CA 94903",,08:00 AM-04:30 PM,,ho42523122,false,true,,,,poll75856392
+"4982 10th Street, Mariposa, CA 95338",,08:00 AM-05:00 PM,,ho82331149,false,true,,,,poll33199359
+"501 Low Gap Rd., Room 1020, Ukiah, CA 95482",,08:00 AM-05:00 PM,,ho36345638,false,true,,,,poll3135162
+"2222 M Street, Room 14, Merced, CA 95340",,08:00 AM-05:00 PM,,ho59406384,false,true,,,,poll50099825
+"108 E. Modoc Street, Alturas, CA 96101",,08:30 AM-12:00 PM,,ho65997374,false,true,,,,poll25997673
+"74 N. School Street, Annex I, Bridgeport, CA 93517",,08:00 AM-05:00 PM,,ho69684443,false,true,,,,poll66141389
+"1370 S. Main St # B, Salinas, CA 93901",,08:00 AM-05:00 PM,,ho1226727,false,true,,,,poll16320877
+"900 Coombs St, Room 256, Napa, CA 94559",,08:00 AM-05:00 PM,,ho47788951,false,true,,,,poll37346554
+"950 Maidu Avenue, Ste 250, Nevada City, CA 95959",,08:00 AM-05:00 PM,,ho84886677,false,true,,,,poll40113841
+"10183 Truckee Airport Road, Truckee, CA 96161",,08:00 AM-12:00 PM,,ho48140995,false,true,,,,poll68858213
+"2956 Richardson Drive, Auburn, CA 95603",,08:00 AM-05:00 PM,,ho11169864,false,true,,,,poll92627841
+"2724 Gateway Drive, Riverside, CA 92507",,08:00 AM-05:00 PM,,ho45223742,false,true,,,,poll63894622
+"440 Fifth Street, 2nd Floor Room 206, Hollister, CA 95023",,08:00 AM-05:00 PM,,ho31962409,false,true,,,,poll8160068
+"777 E. Rialto Avenue, San Bernardino, CA 92415",,07:30 AM-05:30 PM,,ho52407834,false,true,,,,poll5652823
+"5600 Overland Avenue, San Diego, CA 92123",,08:00 AM-05:00 PM,,ho60954883,false,true,,,,poll91978198
+"City Hall 1 Dr. Carlton B. Goodlett Place, Room 48, San Francisco, CA 94102",,08:00 AM-05:00 PM,,ho61584978,false,true,,,,poll99353177
+"44 N San Joaquin St Suite 350, Stockton, CA 95202",,08:00 AM-05:00 PM,,ho17923542,false,true,,,,poll27163421
+"40 Tower Road, San Mateo, CA 94402",,08:00 AM-05:00 PM,,ho10449321,false,true,,,,poll13101045
+"555 County Center, 1st Floor, Redwood City, CA 94063",,08:00 AM-05:00 PM,,ho21463823,false,true,,,,poll31547540
+"840 West Orange Avenue, South San Francisco, CA 94080",,08:00 AM-05:00 PM,,ho83041839,false,true,,,,poll11819629
+"4440-a Calle Real, Santa Barbara, CA 93110",,08:00 AM-05:00 PM,,ho37939285,false,true,,,,poll30546351
+"511 E. Lakeside Parkway Suite 134, Santa Maria, CA 93455",,08:00 AM-12:00 PM,,ho85278843,false,true,,,,poll50676581
+"401 E. Cypress St. Room 102, Lompoc, CA 93436",,09:00 AM-12:00 PM,,ho98469820,false,true,,,,poll68074709
+"1555 Berger Drive, Bldg. 2, San Jose, CA 95112",,08:00 AM-05:00 PM,,ho96947314,false,true,,,,poll60402856
+"701 Ocean Street, Room 210, Santa Cruz, CA 95060",,08:00 AM-05:00 PM,,ho24108230,false,true,,,,poll52902263
+"275 Main St Suite 400 4th Floor, Watsonville, CA 95076",,08:00 AM-05:00 PM,,ho80800979,false,true,,,,poll69160685
+"1643 Market Street, Redding, CA 96002",,08:00 AM-05:00 PM,,ho75445722,false,true,,,,poll89113059
+"675 Texas Street, Ste 2600, Fairfield, CA 94533",,08:00 AM-05:00 PM,,ho1930766,false,true,,,,poll66624871
+"1021 I Street, Modesto, CA 95354",,08:00 AM-04:00 PM,,ho44979037,false,true,,,,poll26791746
+"444 Oak Street, Room C, Red Bluff, CA 96080",,08:00 AM-05:00 PM,,ho37474966,false,true,,,,poll36476267
+"5951 S. Mooney Blvd, Visalia, CA 93277",,07:30 AM-05:30 PM,,ho14432856,false,true,,,,poll39417218
+"2 South Green St, Sonora, CA 95370",,08:00 AM-05:00 PM,,ho78231746,false,true,,,,poll19002651
+"800 S. Victoria Avenue, L-1200, Ventura, CA 93009",,08:00 AM-05:00 PM,,ho62755735,false,true,,,,poll81173047
+"625 Court Street, Room B-05, Woodland, CA 95695",,08:00 AM-05:00 PM,,ho67663871,false,true,,,,poll92646892
+"200 S. Anaheim Boulevard, #217, Anaheim, CA 92805",,08:00 AM-05:00 PM,,ho50676851,false,true,,,,poll54644203
+"1845 Park Avenue, Costa Mesa, CA 92627",,08:00 AM-05:00 PM,,ho23092867,false,true,,,,poll37598878
+"1 Civic Center Plaza, Irvine, CA 92606",,08:00 AM-05:00 PM,,ho3182799,true,true,,,,poll82493283
+"200 Civic Center, Mission Viejo, CA 92691",,08:00 AM-05:00 PM,,ho43054700,true,true,,,,poll8885196
+"8180 13th Street, Westminster, CA 92683",,08:00 AM-05:00 PM,,ho75205994,false,true,,,,poll53831881
+"1300 S. Grand Avenue Building C, Santa Ana, CA 92705",,08:00 AM-05:00 PM,,ho69059914,false,true,,,,poll75043014
+"7000 65th Street Suite A, Sacramento, CA 95823",,08:00 AM-05:00 PM,,ho75494263,false,true,,,,poll39800294
