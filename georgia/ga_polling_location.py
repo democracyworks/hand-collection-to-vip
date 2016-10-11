@@ -127,32 +127,11 @@ class PollingLocationTxt(object):
         # concatenate county name, or part of it (first 3/4 letters) with index
         # add leading zeros to maintain consistent id length
 
-        address_line = self.get_address_line(index, address_1, address_2, city, state, zip_code)
+        address_line = str(self.get_address_line(index, address_1, address_2, city, state, zip_code))
 
-        id =  int(hashlib.sha1(ocd_division + address_line).hexdigest(), 16) % (10 ** 8)
+        id =  int(hashlib.sha1(str(ocd_division) + address_line).hexdigest(), 16) % (10 ** 8)
         id = 'poll' + str(id)
         return id
-
-        #if county:
-        #    county_str_part = county.replace(' ', '').lower()[:4]
-
-        #else:
-        #    county_str_part = ''
-        #    print 'Missing county value at ' + index + '.'
-
-        #if index <= 9:
-        #    index_str = '000' + str(index)
-
-        #elif index in range(10,100):
-        #    index_str = '00' + str(index)
-
-
-        #elif index in range(100, 1000):
-        #    index_str = '0' + str(index)
-        #else:
-        #    index_str = str(index)
-
-        #eturn 'poll' + str(index_str)
 
     def build_polling_location_txt(self):
         """
@@ -236,10 +215,9 @@ class PollingLocationTxt(object):
 if __name__ == '__main__':
 
 
-    s = 'ocd_division county location_name address_1 address_2 city state zip_code start_time end_time start_date end_date'.split(' ')
-    print s
+    #s = 'ocd_division county location_name address_1 address_2 city state zip_code start_time end_time start_date end_date'.split(' ')
+    #print s
 
-    #state_file=''
     colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state', 'zip_code',
                 'start_time', 'end_time', 'start_date', 'end_date']
 
@@ -250,6 +228,6 @@ if __name__ == '__main__':
 
     pl = PollingLocationTxt(early_voting_df, config.early_voting)
 
-    pl.write_polling_location_txt()
-    #pl.export_for_schedule_and_locality()
+    #pl.write_polling_location_txt()
+    pl.export_for_schedule_and_locality()
 

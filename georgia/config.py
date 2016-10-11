@@ -10,14 +10,19 @@ utc_offset = ''
 
 early_voting = 'true'
 
-state_file = 'georgia_early_voting_info.csv'
+#state_file = 'georgia_early_voting_info.csv'
+state_file = 'Georgia Early Voting Information v. 2 - Sheet1 (1).csv'
 
 state_feed = ''
 
-input_path = '/Users/danielgilberg/Development/hand-collection-to-vip/'+ state + '/input/'
+#input_path = '/Users/danielgilberg/Development/hand-collection-to-vip/'+ state + '/input/'
+
+input_path = '/home/acg/democracyworks/hand-collection-to-vip/'+ state + '/input/'
 
 
-output = '/Users/danielgilberg/Development/hand-collection-to-vip/'+ state + '/output/'
+#output = '/Users/danielgilberg/Development/hand-collection-to-vip/'+ state + '/output/'
+
+output = '/home/acg/democracyworks/hand-collection-to-vip/'+ state + '/output/'
 
 #source_output = "/home/acg/democracyworks/hand-collection-to-vip/dev_scripts/output/source.txt"
 

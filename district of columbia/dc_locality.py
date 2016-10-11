@@ -304,13 +304,18 @@ if __name__ == '__main__':
 #    early_voting_df['index'] = early_voting_df.index +1 # offsets zero based index so it starts at 1 for ids
     #print early_voting_df
 
+    s ='ocdid,location name,address_line1,address_city,address_state,address_zip,directions,start_date,end_date,start_time,end_time'.split(', ')
+    print s
 
-    colnames = ['ocd_division', 'location_name', 'address1', 'address2', 'city', 'state', 'zip_code', 'directions',
+
+    colnames = ['ocd_division', 'location_name', 'address1', 'city', 'state', 'zip_code', 'directions',
                 'start_date', 'end_date', 'start_time', 'end_time']
+
 
 
     early_voting_df = pd.read_csv(config.input + config.state_file, names=colnames, encoding='utf-8', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
+    print early_voting_df
 
     pl = PollingLocationTxt(early_voting_df, config.state_abbreviation_upper)
     early_voting_df = pl.export_for_schedule_and_locality()

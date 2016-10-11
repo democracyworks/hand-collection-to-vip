@@ -27,15 +27,15 @@ class PollingLocationTxt(object):
         else:
             raise ValueError('Missing street value at row ' + str(index) + '.')
 
-        if not pd.isnull(address2):
+#        if not pd.isnull(address2):
             #address = street
-            address2 = ', ' + str(re.sub(r'[^\x00-\x7f]', r' ', address2.strip()))
-            address2 = ' '.join(address2.split())
+#            address2 = ', ' + str(re.sub(r'[^\x00-\x7f]', r' ', address2.strip()))
+#            address2 = ' '.join(address2.split())
             #address = address1 + ' ' + address2
             #print address2
             #print type(address)
-        else:
-            address2 = ''
+#        else:
+#            address2 = ''
 
         if city:
             city_name = city.strip()
@@ -44,14 +44,14 @@ class PollingLocationTxt(object):
 
         if zip_code:
             print zip_code
-            zip = ''.join([i if ord(i) < 128 else ' ' for i in zip_code.strip()])
+            zip = ''.join([i if ord(i) < 128 else ' ' for i in str(zip_code).strip()])
             #zip = re.sub(r'[^\x00-\x7f]+', r' ', str(zip_code).strip())
             print index, zip
             #zip = str(zip_code).strip()
         else:
             raise ValueError('Missing zip code value at row ' + str(index) + '.')
 
-        final_line = address1 + address2 + ", " + city_name + ', ' + config.state_abbreviation_upper + ' ' + zip
+        final_line = str(address1) + str(address2) + ", " + city_name + ', ' + config.state_abbreviation_upper + ' ' + str(zip)
 
         #final_line = address + ", " + city_name + ", " + state + " " + zip
         final_line = ' '.join(final_line.split())
@@ -227,8 +227,9 @@ class PollingLocationTxt(object):
 
 
         # Drop base_df columns.
-        plt.drop(['index', 'office_name', 'ocd_division', 'homepage_url', 'phone', 'name', 'address1', 'address2', 'city',
-                'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date'], inplace=True, axis=1)
+        plt.drop(['index', 'office_name', 'official_title', 'types', 'ocd_division', 'division_description', 'homepage_url',
+                'phone', 'location_name', 'address1', 'address2', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date',
+                'end_date'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
         print plt
@@ -252,24 +253,28 @@ if __name__ == '__main__':
     #            'phone', 'email', 'street', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date',
     #            'end_date']
 
-    colnames = ['office_name', 'ocd_division', 'homepage_url', 'phone', 'name', 'address1', 'address2', 'city',
-                'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date']
+    s ='office_name, official_title, types, ocd_division, division_description, homepage_url, phone, location_name, street, city, state, zip, start_time, end_time, start_date, end_date'.split(', ')
+    print s
+    colnames = ['office_name', 'official_title', 'types', 'ocd_division', 'division_description', 'homepage_url',
+                'phone', 'location_name', 'address1', 'address2', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date',
+                'end_date']
+
 
 
     #s = 'office_name ocd_division homepage_url phone name address1 address2 city state zip start_time end_time start_date end_date'.split(' ')
     #print s
-    early_voting_df = pd.read_csv(config.input_path + config.state_file, names=colnames, sep='\t', encoding='ISO-8859-1', skiprows=1)
+    early_voting_df = pd.read_csv(config.input_path + config.state_file, names=colnames, sep=',', encoding='ISO-8859-1', skiprows=1)
     #early_voting_df.reset_index(level=1, drop=True)
     print early_voting_df
 
-    early_voting_df.reset_index(0).reset_index(drop=True)
-    print 1, early_voting_df
+    #early_voting_df.reset_index(0).reset_index(drop=True)
+    #print 1, early_voting_df
 
-    early_voting_df['index'] = early_voting_df.index
+    early_voting_df['index'] = early_voting_df.index + 1
     #print early_voting_df.office_name
 
     pl = PollingLocationTxt(early_voting_df, config.early_voting)
 
-    pl.write_polling_location_txt()
-    #pl.export_for_schedule_and_locality()
+    #pl.write_polling_location_txt()
+    pl.export_for_schedule_and_locality()
 

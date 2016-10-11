@@ -1,338 +1,205 @@
 address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-"102 Robertsville Rd, Kingston, TN 37763",,09:00 AM-01:00 PM,,ho4107314,false,true,,,,poll76941990
-"102 Robertsville Rd, Harriman, TN 37748",,09:00 AM-05:00 PM,,ho79626320,false,true,,,,poll92404488
-"101 S Hicks St, Harriman, TN 37748",,09:00 AM-01:00 PM,,ho93436729,false,true,,,,poll25235457
-"101 S Hicks St, Rockwood, TN 37854",,09:00 AM-05:00 PM,,ho12230362,false,true,,,,poll64499716
-"3310 Andersonville Hwy, Rockwood, TN 37854",,09:00 AM-01:00 PM,,ho95970024,false,true,,,,poll58607566
-"3310 Andersonville Hwy, Oak Ridge, TN 37840",,09:00 AM-05:00 PM,,ho82900787,false,true,,,,poll89628436
-"One Public Square, Suite 20, Maryville, TN 37804",,11:00 AM-07:00 PM,,ho27549998,false,true,,,,poll39460143
-"One Public Square, Suite 20, Friendsville, TN 37737",,08:00 AM-04:00 PM,,ho94825219,false,true,,,,poll12080642
-"One Public Square, Suite 20, Cleveland, TN 37311-5000",,09:00 AM-06:00 PM,,ho76283559,false,true,,,,poll57252562
-"113 Maple Avenue, Suite 1, Jacksboro, TN 37757",,09:00 AM-04:00 PM,,ho50547478,false,true,,,,poll47020904
-"3150 Main Street, Oak Ridge, TN 37840",,09:00 AM-01:00 PM,,ho66409497,false,true,,,,poll55049893
-"3150 Main Street, Springfield, TN 37172-2941",,08:00 AM-04:30 PM,,ho81088002,false,true,,,,poll50190618
-"383 Court Street, Pulaski, TN 38478-2622",,08:00 AM-04:00 PM,,ho97033291,false,true,,,,poll99959423
-"383 Court Street, Rutledge, TN 37861",,08:30 AM-12:00 PM,,ho8820221,false,true,,,,poll35415867
-"508 N Cusick St, Springfield, TN 37172-2941",,08:00 AM-06:00 PM,,ho4901978,false,true,,,,poll4323136
-"2731 West Lamar Alexander Parkway, Springfield, TN 37172-2941",,08:00 AM-06:00 PM,,ho28590101,false,true,,,,poll65365427
-"318 S Everett High Rd, Murfreesboro, TN 37130-8001",,07:00 AM-07:00 PM,,ho25971975,false,true,,,,poll41000556
-"200 Paul Huff PKwy NW, Suite 513, Camden, TN 38320-2044",,09:00 AM-04:00 PM,,ho85471394,false,true,,,,poll21286755
-"200 Paul Huff PKwy NW, Suite 513, Pikeville, TN 37367",,04:00 PM-07:00 PM,,ho39258648,false,true,,,,poll10607663
-"155 Broad Street N.W., Suite 102, Tiptonville, TN 38079-1305",,01:00 PM-04:00 PM,,ho67220281,false,true,,,,poll9249359
-"155 Broad Street N.W., Suite 102, Ripley, TN 38063-1315",,08:30 AM-04:30 PM,,ho83801710,false,true,,,,poll46673002
-"2310 McGrady Drive SE, Murfreesboro, TN 37130-8001",,09:00 AM-04:00 PM,,ho17497583,false,true,,,,poll74588519
-"2310 McGrady Drive SE, Murfreesboro, TN 37130",,09:00 AM-06:00 PM,,ho93513257,false,true,,,,poll96855866
-"129 Church Alley, Murfreesboro, TN 37130",,09:00 AM-06:00 PM,,ho30109803,false,true,,,,poll79040358
-"410 S Main St, Murfreesboro, TN 37130",,08:00 AM-03:00 PM,,ho43837150,false,true,,,,poll2219411
-"410 S Main St, Smyrna, TN 37167",,09:00 AM-06:00 PM,,ho50533832,false,true,,,,poll25025965
-"Adams Office Bldg Room 244, Harrogate, TN 37752",,09:00 AM-05:00 PM,,ho77272995,false,true,,,,poll8798666
-"Adams Office Bldg Room 244, South New Tazewell, TN 37825",,09:00 AM-05:00 PM,,ho19605374,false,true,,,,poll94880589
-"Adams Office Bldg Room 244, Celina, TN 38551",,09:00 AM-12:00 PM,,ho44966783,false,true,,,,poll86693419
-"625 High Street, Suite 113, GOODLETTSVILLE, TN 37072",,08:00 AM-04:30 PM,,ho64396468,false,true,,,,poll55441789
-"116 Holston Ave, Smyrna, TN 37167",,08:00 AM-03:00 PM,,ho6455072,false,true,,,,poll13546490
-"116 Holston Ave, La Vergne, TN 37086",,09:00 AM-06:00 PM,,ho73418871,false,true,,,,poll17999790
-"188 County Services Drive, Suite 100, Cleveland, TN 37312",,09:00 AM-06:00 PM,,ho56380906,false,true,,,,poll7368669
-"188 County Services Drive, Suite 100, Cleveland, TN 37323",,09:00 AM-06:00 PM,,ho12670074,false,true,,,,poll52570318
-"308 US 70, Church Hill, TN 37642",,08:00 AM-12:00 PM,,ho62334115,false,true,,,,poll72533190
-"1008 Civic Court, Union City, TN 38261-3705",,09:00 AM-12:00 PM,,ho40825135,false,true,,,,poll27623547
-"133 East Main, La Vergne, TN 37086",,08:00 AM-03:00 PM,,ho22550485,false,true,,,,poll84333524
-"133 East Main, Murfreesboro, TN 37127",,09:00 AM-06:00 PM,,ho49564376,false,true,,,,poll24261426
-"3711 Hwy 33, Rutledge, TN 37861",,08:30 AM-04:30 PM,,ho90497588,false,true,,,,poll87501729
-"1802 Main Street, Murfreesboro, TN 37127",,08:00 AM-03:00 PM,,ho63173948,false,true,,,,poll30152097
-"1802 Main Street, Huntsville, TN 37756-3710",,10:00 AM-02:00 PM,,ho26582691,false,true,,,,poll99634759
-"138 Harrogate Crossing, Huntsville, TN 37756-3710",,10:00 AM-02:00 PM,,ho34973435,false,true,,,,poll67054471
-"145 Cordell Hull Drive, Ripley, TN 38063-1315",,08:30 AM-04:30 PM,,ho93004294,false,true,,,,poll36692865
-"145 Cordell Hull Drive, Lawrenceburg, TN 38464-3208",,08:00 AM-04:00 PM,,ho24015050,false,true,,,,poll107031
-"360 East Main Street, Oneida, TN 37841",,10:00 AM-02:00 PM,,ho60860798,false,true,,,,poll30876814
-"810 South Jackson Street, Tullahoma, TN 37388",,09:00 AM-05:30 PM,,ho74628940,false,true,,,,poll6587948
-"810 South Jackson Street, Alamo, TN 38001-1107",,08:30 AM-06:00 PM,,ho38523284,false,true,,,,poll83461732
-"1329 McArthur Street, Suite 6, Hohenwald, TN 38462-1124",,08:00 AM-04:00 PM,,ho82090395,false,true,,,,poll93216740
-"1329 McArthur Street, Suite 6, Fayetteville, TN 37334-3581",,08:00 AM-05:00 PM,,ho56597341,false,true,,,,poll24852499
-"235 East Church Street, Oneida, TN 37841",,10:00 AM-06:00 PM,,ho69795026,false,true,,,,poll59139036
-"235 East Church Street, Dunlap, TN 37327-3752",,09:00 AM-05:00 PM,,ho13688756,false,true,,,,poll79377359
-"235 East Church Street, Sevierville, TN 37862-3710",,10:00 AM-06:00 PM,,ho1491909,false,true,,,,poll73493717
-"2 South Main Street, Sevierville, TN 37862-3710",,10:00 AM-06:00 PM,,ho42540183,false,true,,,,poll49596578
-"2 South Main Street, Seymour, TN 37865",,10:00 AM-06:00 PM,,ho22140345,false,true,,,,poll81138340
-"720 BAUGH ROAD, Nashville, TN 37221",,08:00 AM-04:30 PM,,ho8422555,false,true,,,,poll80262875
-"700 2ND AVE S, Nashville, TN 37218",,08:00 AM-07:00 PM,,ho99933660,false,true,,,,poll23393540
-"700 2ND AVE S, Nashville, TN 37211",,08:00 AM-04:30 PM,,ho90175219,false,true,,,,poll71889526
-"610 GALLATIN PIKE S, GOODLETTSVILLE, TN 37072",,08:00 AM-07:00 PM,,ho21034638,false,true,,,,poll76363778
-"610 GALLATIN PIKE S, Nashville, TN 37215",,08:00 AM-04:30 PM,,ho70241034,false,true,,,,poll9518076
-"5501 EDMONDSON PIKE, Nashville, TN 37210",,08:00 AM-04:30 PM,,ho28238104,false,true,,,,poll99482344
-"5501 EDMONDSON PIKE, ANTIOCH, TN 37013",,08:00 AM-04:30 PM,,ho9256998,false,true,,,,poll97246095
-"5260 HICKORY HOLLOW PKWY, STE 102, ANTIOCH, TN 37013",,08:00 AM-07:00 PM,,ho83449602,false,true,,,,poll89764678
-"5260 HICKORY HOLLOW PKWY, STE 102, Decaturville, TN 38329",,09:00 AM-04:00 PM,,ho60085687,false,true,,,,poll58515658
-"4705 HARDING PIKE, Charlotte, TN 37055",,08:00 AM-04:00 PM,,ho2259897,false,true,,,,poll9369321
-"4000 CLARKSVILLE PIKE, Trenton, TN 38382-1851",,09:00 AM-12:00 PM,,ho48553930,false,true,,,,poll92147714
-"4000 CLARKSVILLE PIKE, Medina, TN 38355",,08:30 AM-06:00 PM,,ho52260776,false,true,,,,poll91377863
-"4000 CLARKSVILLE PIKE, Pulaski, TN 38478-2622",,08:00 AM-04:00 PM,,ho41428750,false,true,,,,poll99063840
-"3701 BENHAM AVE, Rutledge, TN 37861",,08:30 AM-12:00 PM,,ho26399251,false,true,,,,poll20528049
-"3701 BENHAM AVE, Greeneville, TN 37745-3834",,08:30 AM-06:00 PM,,ho71244036,false,true,,,,poll57122370
-"3701 BENHAM AVE, Monteagle, TN 37356",,08:00 AM-04:00 PM,,ho42457389,false,true,,,,poll84768433
-"3700 JAMES KAY LANE, Monteagle, TN 37356",,08:00 AM-12:00 PM,,ho98265931,false,true,,,,poll69694034
-"3700 JAMES KAY LANE, Altamont, TN 37301",,08:00 AM-04:00 PM,,ho60489701,false,true,,,,poll95257396
-"3700 JAMES KAY LANE, Morristown, TN 37814-3964",,08:00 AM-05:00 PM,,ho21316216,false,true,,,,poll9636861
-"2195 NOLENSVILLE PIKE, Lyles, TN 37098",,09:00 AM-04:00 PM,,ho60944277,false,true,,,,poll25333128
-"2195 NOLENSVILLE PIKE, Erin, TN 37061",,08:00 AM-04:30 PM,,ho47441390,false,true,,,,poll79915231
-"2195 NOLENSVILLE PIKE, Waverly, TN 37185-1547",,08:00 AM-04:00 PM,,ho3355376,false,true,,,,poll20653417
-"200 MEMORIAL DR, Knoxville, TN 37934",,11:00 AM-05:00 PM,,ho6979059,false,true,,,,poll4441082
-"200 MEMORIAL DR, Knoxville, TN 37924",,10:00 AM-06:00 PM,,ho46694615,false,true,,,,poll20210525
-"200 MEMORIAL DR, Knoxville, TN 37915",,10:00 AM-06:00 PM,,ho39098593,false,true,,,,poll41588989
-"1109 32ND AVE N, Columbia, TN 38401-4607",,08:00 AM-12:00 PM,,ho33770727,false,true,,,,poll72177366
-"1109 32ND AVE N, Spring Hill, TN 37174",,08:00 AM-07:00 PM,,ho25622235,false,true,,,,poll21117100
-"1109 32ND AVE N, Athens, TN 37303-5403",,08:30 AM-06:00 PM,,ho89470406,false,true,,,,poll60350736
-"67 S East Street, Nashville, TN 37209",,08:00 AM-04:30 PM,,ho69275945,false,true,,,,poll59554432
-"1 Public Square, Seymour, TN 37865",,10:00 AM-06:00 PM,,ho68563368,false,true,,,,poll99845082
-"1 Public Square, Memphis, TN 38116",,10:00 AM-07:00 PM,,ho63176114,false,true,,,,poll73111592
-"1 Public Square, Memphis, TN 38120",,10:00 AM-07:00 PM,,ho95028938,false,true,,,,poll24405896
-"1 Public Square, Memphis, TN 38141",,10:00 AM-07:00 PM,,ho62917916,false,true,,,,poll51177837
-"505 Henslee Dr, Dickson, TN 37055",,09:00 AM-01:00 PM,,ho34394546,false,true,,,,poll8190597
-"110-A Academy Street, Athens, TN 37303-5403",,08:30 AM-06:00 PM,,ho47107720,false,true,,,,poll38293855
-"110-A Academy Street, Selmer, TN 38375",,09:00 AM-04:30 PM,,ho98365426,false,true,,,,poll74532891
-"110-A Academy Street, Decatur, TN 37322-7472",,09:00 AM-12:00 PM,,ho50324886,false,true,,,,poll50034500
-"103 West Market St, Memphis, TN 38141",,09:00 AM-12:00 PM,,ho68163974,false,true,,,,poll15853914
-"2700 Lake Road, Millington, TN 38053",,10:00 AM-07:00 PM,,ho59683458,false,true,,,,poll65726381
-"3575 Hwy 196, Morristown, TN 37814-3964",,08:00 AM-02:00 PM,,ho7237646,false,true,,,,poll68429113
-"17675 Hwy 196, Knoxville, TN 37918",,10:00 AM-06:00 PM,,ho21903843,false,true,,,,poll67469141
-"45 Dogwood Lane, Millington, TN 38053",,08:00 AM-04:00 PM,,ho34806808,false,true,,,,poll32031933
-"45 Dogwood Lane, Cordova, TN 38016",,10:00 AM-07:00 PM,,ho24597050,false,true,,,,poll80962616
-"111 North Norris Street, Chapel Hill, TN 37034",,10:00 AM-05:00 PM,,ho84197686,false,true,,,,poll31469210
-"111 North Norris Street, Athens, TN 37303-5403",,08:30 AM-04:00 PM,,ho18388388,false,true,,,,poll74224301
-"111 North Norris Street, Columbia, TN 38401-4607",,08:00 AM-04:00 PM,,ho94252259,false,true,,,,poll20765182
-"839 Dinah Shore Blvd, Suite 1, Jacksboro, TN 37757",,09:00 AM-01:00 PM,,ho61468793,false,true,,,,poll82881511
-"839 Dinah Shore Blvd, Suite 1, Jellico, TN 37762",,09:00 AM-02:00 PM,,ho78969329,false,true,,,,poll60715393
-"One Court Square, Suite 101, Elizabethton, TN 37643-3264",,09:00 AM-04:00 PM,,ho97786346,false,true,,,,poll21807131
-"One Court Square, Suite 101, Ashland City, TN 37015-1744",,09:00 AM-04:00 PM,,ho955347,false,true,,,,poll82503142
-"201 Hwy 45 E North, Cordova, TN 38016",,08:00 AM-04:00 PM,,ho75364247,false,true,,,,poll60273102
-"201 Hwy 45 E North, Memphis, TN 38122",,10:00 AM-07:00 PM,,ho45897984,false,true,,,,poll99183569
-"Basement, Room 100, Henderson, TN 38340",,08:30 AM-04:00 PM,,ho18786715,false,true,,,,poll66799539
-"Basement, Room 100, Tazewell, TN 37879",,09:00 AM-05:00 PM,,ho94648787,false,true,,,,poll94260376
-"119 Marshall Ave, Memphis, TN 38122",,08:00 AM-04:00 PM,,ho59634338,false,true,,,,poll35380420
-"119 Marshall Ave, Collierville, TN 38017",,10:00 AM-07:00 PM,,ho85217308,false,true,,,,poll10393304
-"119 Marshall Ave, Memphis, TN 38107",,10:00 AM-07:00 PM,,ho27381473,false,true,,,,poll12890356
-"218 North Main Street, Memphis, TN 38107",,08:00 AM-04:00 PM,,ho43109697,false,true,,,,poll13036885
-"218 North Main Street, Memphis, TN 38127",,10:00 AM-07:00 PM,,ho81495707,false,true,,,,poll55343957
-"11745 U.S. 41, Memphis, TN 38127",,08:00 AM-04:00 PM,,ho12366547,false,true,,,,poll68016292
-"11745 U.S. 41, Memphis, TN 38114",,10:00 AM-07:00 PM,,ho15175211,false,true,,,,poll7489222
-"1433 TN-56, Memphis, TN 38114",,08:00 AM-04:00 PM,,ho84102511,false,true,,,,poll86821059
-"1433 TN-56, Memphis, TN 38104",,10:00 AM-07:00 PM,,ho68691633,false,true,,,,poll34725765
-"511 West Second North St, Memphis, TN 38104",,08:00 AM-04:00 PM,,ho99321218,false,true,,,,poll59006754
-"511 West Second North St, Memphis, TN 38118",,10:00 AM-07:00 PM,,ho86871616,false,true,,,,poll30084041
-"511 West Second North St, Memphis, TN 38106",,10:00 AM-07:00 PM,,ho23179872,false,true,,,,poll78182949
-"1009 Executive Drive, Suite 102, Cleveland, TN 37311-5000",,09:00 AM-06:00 PM,,ho20874716,false,true,,,,poll29039747
-"700 River Terminal Road, Memphis, TN 38106",,08:00 AM-04:00 PM,,ho44144650,false,true,,,,poll17386277
-"1010 North Moore Rd. , Memphis, TN 38106",,08:00 AM-04:00 PM,,ho89012414,false,true,,,,poll47782633
-"1010 North Moore Rd. , Germantown, TN 38138",,10:00 AM-07:00 PM,,ho91461252,false,true,,,,poll90257195
-"4300 Ooltewah-Ringgold Road, Germantown, TN 38138",,10:00 AM-04:00 PM,,ho20733530,false,true,,,,poll46113799
-"1237 Main Street, 1st Floor, Ashland City, TN 37015-1744",,09:00 AM-06:00 PM,,ho32668432,false,true,,,,poll94068844
-"1237 Main Street, 1st Floor, Pleasant View, TN 37146",,09:00 AM-06:00 PM,,ho29512476,false,true,,,,poll83517482
-"106 South Porter Street, Germantown, TN 38138",,10:00 AM-07:00 PM,,ho11445843,false,true,,,,poll19706565
-"106 South Porter Street, Memphis, TN 38128",,10:00 AM-07:00 PM,,ho1606337,false,true,,,,poll62660308
-"465 Main Street, Basement, Dyersburg, TN 38024",,09:00 AM-04:00 PM,,ho45803976,false,true,,,,poll61766024
-"465 Main Street, Basement, Dyersburg, TN 38034",,12:00 PM-07:00 PM,,ho61361279,false,true,,,,poll90871639
-"465 Main Street, Basement, Somerville, TN 38068",,09:00 AM-04:00 PM,,ho25278990,false,true,,,,poll73632562
-"110 East Main Street, Suite 301, Pikeville, TN 37367",,09:00 AM-12:00 PM,,ho10948110,false,true,,,,poll18188952
-"110 East Main Street, Suite 301, Maryville, TN 37804-5906",,08:00 AM-04:00 PM,,ho39587992,false,true,,,,poll3511483
-"111 Hamilton St, Memphis, TN 38128",,10:00 AM-07:00 PM,,ho58730820,false,true,,,,poll90254110
-"111 Hamilton St, Memphis, TN 38109",,10:00 AM-07:00 PM,,ho4179674,false,true,,,,poll76322001
-"One North Washington Ave, Basement, Woodbury, TN 37190-1100",,08:00 AM-01:00 PM,,ho68665093,false,true,,,,poll30247128
-"One North Washington Ave, Basement, Huntingdon, TN 38344-1712",,08:30 AM-04:00 PM,,ho35774970,false,true,,,,poll16839001
-"One North Washington Ave, Basement, Elizabethton, TN 37643-3264",,09:00 AM-04:00 PM,,ho78748768,false,true,,,,poll60275820
-"340 Natchez Trace Dr, Memphis, TN 38103",,10:00 AM-07:00 PM,,ho35382592,false,true,,,,poll69606976
-"340 Natchez Trace Dr, Lakeland, TN 38002",,10:00 AM-07:00 PM,,ho85839780,false,true,,,,poll25017352
-"340 Natchez Trace Dr, Bartlett, TN 38134",,10:00 AM-07:00 PM,,ho96824231,false,true,,,,poll3052047
-"213 West Washington, Dandridge, TN 37725-4701",,09:00 AM-04:00 PM,,ho50895012,false,true,,,,poll71501430
-"213 West Washington, Mountain City, TN 37683-1870",,08:00 AM-05:00 PM,,ho77731673,false,true,,,,poll86190170
-"114 North Central Ave, Bartlett, TN 38134",,10:00 AM-07:00 PM,,ho37373189,false,true,,,,poll73430141
-"114 North Central Ave, Memphis, TN 38117",,10:00 AM-07:00 PM,,ho65499820,false,true,,,,poll24221931
-"7700 New Hwy 7, Memphis, TN 38117",,10:00 AM-07:00 PM,,ho19414344,false,true,,,,poll87981706
-"7700 New Hwy 7, Carthage, TN 37030-1555",,08:00 AM-04:00 PM,,ho89989517,false,true,,,,poll75043022
-"4760 East Main Street, Carthage, TN 37030-1555",,08:00 AM-04:00 PM,,ho65434159,false,true,,,,poll10931573
-"4760 East Main Street, Dover, TN 37058",,08:00 AM-05:00 PM,,ho4657294,false,true,,,,poll20964619
-"208 West Wyly Street, Dover, TN 37058",,08:00 AM-12:00 PM,,ho13754853,false,true,,,,poll55293173
-"208 West Wyly Street, Blountville, TN 37617-4566",,09:00 AM-06:00 PM,,ho58150276,false,true,,,,poll83495746
-"101 East Hull Avenue, Lynchburg, TN 37352-8390",,09:00 AM-04:00 PM,,ho14718363,false,true,,,,poll81612403
-"101 East Hull Avenue, Wartburg, TN 37887-4317",,09:00 AM-04:00 PM,,ho94708890,false,true,,,,poll72464707
-"101 East Hull Avenue, Union City, TN 38261-3705",,08:30 AM-04:30 PM,,ho86810886,false,true,,,,poll57747109
-"931 Industrial Park Road, Blountville, TN 37617-4566",,09:00 AM-02:00 PM,,ho39676375,false,true,,,,poll13744832
-"931 Industrial Park Road, Kingsport, TN 37664",,09:00 AM-06:00 PM,,ho57653460,false,true,,,,poll84240140
-"158 Election Avenue, Kingsport, TN 37664",,09:00 AM-02:00 PM,,ho18420196,false,true,,,,poll90076323
-"158 Election Avenue, Bristol, TN 37620",,09:00 AM-06:00 PM,,ho14165356,false,true,,,,poll36752018
-"1542 Downtown W Blvd, Bristol, TN 37620",,09:00 AM-02:00 PM,,ho15204599,false,true,,,,poll18574346
-"1542 Downtown W Blvd, Gallatin, TN 37066-5410",,08:00 AM-04:30 PM,,ho12856575,false,true,,,,poll53426236
-"6933 Recreation Lane, Gallatin, TN 37066-5410",,09:00 AM-12:00 PM,,ho53075414,false,true,,,,poll64070577
-"6933 Recreation Lane, Westmoreland, TN 37186",,10:00 AM-06:00 PM,,ho91945307,false,true,,,,poll79678742
-"6933 Recreation Lane, Goodlettsville, TN 37072",,10:00 AM-06:00 PM,,ho55212773,false,true,,,,poll26889574
-"11408 Municipal Center Dr, White House, TN 37075",,10:00 AM-06:00 PM,,ho41597282,false,true,,,,poll59759151
-"11408 Municipal Center Dr, Hendersonville, TN 37075",,10:00 AM-06:00 PM,,ho50297711,false,true,,,,poll19313646
-"9036 Asheville Hwy, Portland, TN 37148",,10:00 AM-06:00 PM,,ho48231602,false,true,,,,poll44511405
-"9036 Asheville Hwy, Covington, TN 38019-2503",,08:30 AM-06:00 PM,,ho3499036,false,true,,,,poll68649590
-"2418 Martin Luther King Jr Ave, Covington, TN 38019-2503",,08:30 AM-06:00 PM,,ho32215229,false,true,,,,poll91088339
-"2418 Martin Luther King Jr Ave, Munford, TN 38058",,08:30 AM-06:00 PM,,ho61200058,false,true,,,,poll30434088
-"400 Main St, Munford, TN 38058",,08:30 AM-06:00 PM,,ho55958488,false,true,,,,poll19770382
-"400 Main St, Hartsville, TN 37074-1304",,08:30 AM-04:30 PM,,ho46436194,false,true,,,,poll37225063
-"4775 New Harvest Ln, Hartsville, TN 37074-1304",,08:30 AM-06:00 PM,,ho56366068,false,true,,,,poll84412871
-"4952 Clinton Hwy, Erwin, TN 37650-1254",,09:00 AM-05:00 PM,,ho47794274,false,true,,,,poll68399036
-"4536 Chapman Highway, Erwin, TN 37650-1254",,09:00 AM-06:00 PM,,ho80555461,false,true,,,,poll70481111
-"4536 Chapman Highway, Maynardville, TN 37807",,09:00 AM-12:00 PM,,ho85912417,false,true,,,,poll73780732
-"4536 Chapman Highway, Spencer, TN 38585",,09:00 AM-05:00 PM,,ho90940232,false,true,,,,poll49466282
-"8042 Oak Ridge Hwy, Spencer, TN 38585",,09:00 AM-02:00 PM,,ho99059474,false,true,,,,poll59604783
-"1640 Cumberland Ave, Spencer, TN 38585",,09:00 AM-05:00 PM,,ho14840245,false,true,,,,poll45222870
-"217 S Court Street, Gainesboro, TN 38562",,08:00 AM-12:00 PM,,ho83585580,false,true,,,,poll51465793
-"217 N Main Street, McMinnville, TN 37110-9926",,09:00 AM-06:00 PM,,ho22909622,false,true,,,,poll30767153
-"217 N Main Street, Jonesborough, TN 37659-1340",,09:00 AM-06:00 PM,,ho3299904,false,true,,,,poll27233900
-"219 Centennial Blvd, Johnston City, TN 37601",,09:00 AM-06:00 PM,,ho98183703,false,true,,,,poll24854105
-"35 Smith Avenue, Johnson City, TN 37604",,09:00 AM-06:00 PM,,ho50703694,false,true,,,,poll75382288
-"208 Davidson Street East, Room 106, Woodbury, TN 37190-1100",,04:00 PM-07:00 PM,,ho8350062,false,true,,,,poll48306438
-"304 Lakeside Plaza, Brownsville, TN 38012-2561",,09:00 AM-01:00 PM,,ho4375548,false,true,,,,poll89798020
-"100 West Broadway, Livingston, TN 38570-1547",,08:00 AM-05:00 PM,,ho77939957,false,true,,,,poll41912468
-"100 River Road, Room 108, Linden, TN 37096",,08:30 AM-11:30 AM,,ho19548213,false,true,,,,poll30453931
-"607 Hwy 52 Bypass E, Suite C, Nashville, TN 37215",,08:00 AM-07:00 PM,,ho4505812,false,true,,,,poll71415841
-"607 Hwy 52 Bypass E, Suite C, HERMITAGE, TN 37076",,08:00 AM-04:30 PM,,ho87113369,false,true,,,,poll13201051
-"311 North Parkway, Waynesboro, TN 38485-2142",,08:00 AM-04:00 PM,,ho74735920,false,true,,,,poll92034428
-"311 North Parkway, Dresden, TN 38225-1479",,08:30 AM-04:00 PM,,ho84452164,false,true,,,,poll33205571
-"109 Academy Avenue, Decatur, TN 37322",,09:00 AM-06:00 PM,,ho96753391,false,true,,,,poll91042715
-"109 Academy Avenue, Madisonville, TN 37354-3110",,08:30 AM-05:00 PM,,ho82230218,false,true,,,,poll75257944
-"316 N Horton Pkwy, Bolivar, TN 38008-1735",,09:00 AM-04:00 PM,,ho13451751,false,true,,,,poll44110878
-"316 N Horton Pkwy, Savannah, TN 38372-2062",,09:00 AM-03:30 PM,,ho76131500,false,true,,,,poll12755112
-"230 College Street, Suite 120, Centerville, TN 37033-1426",,09:00 AM-01:00 PM,,ho71440483,false,true,,,,poll9642730
-"1207A Tradewinds Drive, Dresden, TN 38225-1479",,08:30 AM-12:00 PM,,ho44729471,false,true,,,,poll77902700
-"563 Maury Hill St. , Sparta, TN 38583-2034",,08:00 AM-04:00 PM,,ho62952140,false,true,,,,poll15594719
-"5 South Hill Street, Suite B, Clinton, TN 37716",,09:00 AM-12:00 PM,,ho50241856,false,true,,,,poll60297714
-"5 South Hill Street, Suite B, Andersonville, TN 37705",,10:00 AM-06:00 PM,,ho27417928,false,true,,,,poll89549694
-"5 South Hill Street, Suite B, Shelbyville, TN 37160-3952",,08:00 AM-05:00 PM,,ho83880453,false,true,,,,poll4157701
-"530 Mulberry Avenue, Suite 3, ANTIOCH, TN 37013",,08:00 AM-04:30 PM,,ho75485427,false,true,,,,poll10756998
-"17214 Hwy 58 N, 1st Floor, Knoxville, TN 37912",,10:00 AM-06:00 PM,,ho6558153,false,true,,,,poll41189202
-"116 North Main Street, Jackson, TN 38305-2713",,09:00 AM-06:00 PM,,ho89073947,false,true,,,,poll8076710
-"116 North Main Street, Jasper, TN 37347-3520",,08:00 AM-04:00 PM,,ho36816871,false,true,,,,poll48421392
-"401 Main Street, Winchester, TN 37398-1426",,08:00 AM-04:30 PM,,ho98920685,false,true,,,,poll13420767
-"401 Main Street, Trenton, TN 38382-1851",,08:30 AM-06:00 PM,,ho74444865,false,true,,,,poll32159959
-"203 Monroe St, Mountain City, TN 37683-1870",,08:00 AM-12:00 PM,,ho18075254,false,true,,,,poll71854076
-"132 Bank Street, Sparta, TN 38583",,08:00 AM-06:00 PM,,ho14940298,false,true,,,,poll85792655
-"611 Church Street, Vonore, TN 37885",,09:00 AM-05:00 PM,,ho15286532,false,true,,,,poll4092851
-"350 Pageant Lane, Suite 404, Chattanooga, TN 37411",,10:00 AM-06:00 PM,,ho91134264,false,true,,,,poll16925897
-"350 Pageant Lane, Suite 404, Ooltewah, TN 37363",,10:00 AM-06:00 PM,,ho5209952,false,true,,,,poll90778036
-"241 Main Street, Suite 201, Lexington, TN 38351-1838",,08:30 AM-12:00 PM,,ho39827791,false,true,,,,poll9705544
-"415 North Kingston Street, Room 105, Ashland City, TN 37015-1744",,09:00 AM-04:00 PM,,ho25058652,false,true,,,,poll28098820
-"415 North Kingston Street, Room 105, Pegram, TN 37143",,09:00 AM-04:00 PM,,ho54314008,false,true,,,,poll29965947
-"308 Bill Burnett Circle, Sparta, TN 38583-2034",,09:00 AM-12:00 PM,,ho21366078,false,true,,,,poll31993591
-"317 East University Street, Room 45, Sneedville, TN 37869-3846",,09:00 AM-04:00 PM,,ho52959343,false,true,,,,poll72698203
-"317 East University Street, Room 45, Bolivar, TN 38008-1735",,09:00 AM-04:00 PM,,ho43596395,false,true,,,,poll12760075
-"124 East Main Street, Sparta, TN 38583-2034",,09:00 AM-12:00 PM,,ho95729372,false,true,,,,poll24320605
-"124 East Main Street, Franklin, TN 37064-3731",,08:00 AM-07:00 PM,,ho51488900,false,true,,,,poll68043595
-"105 South Main Street, Room 2, Clarksville, TN 37040-3813",,08:00 AM-04:00 PM,,ho99965233,false,true,,,,poll74874162
-"105 South Main Street, Room 2, Lynchburg, TN 37352-8390",,09:00 AM-04:00 PM,,ho59579418,false,true,,,,poll55828278
-"6050 Highway 411, Franklin, TN 37064-3731",,08:00 AM-02:00 PM,,ho45727885,false,true,,,,poll53080202
-"6050 Highway 411, Franklin, TN 37064",,09:00 AM-07:00 PM,,ho41570708,false,true,,,,poll60241327
-"804 Cherokee Trail, Franklin, TN 37064",,08:00 AM-02:00 PM,,ho86936260,false,true,,,,poll65220084
-"705 County Services Drive, Franklin, TN 37064",,09:00 AM-07:00 PM,,ho41045440,false,true,,,,poll45088338
-"705 County Services Drive, Brentwood, TN 37027",,09:00 AM-07:00 PM,,ho41163769,false,true,,,,poll62235480
-"229 Front St, Lyles, TN 37098",,09:00 AM-04:00 PM,,ho42733531,false,true,,,,poll80694549
-"125 Court Street, Suite 1, Lenoir City, TN 37771",,10:00 AM-06:00 PM,,ho1998054,false,true,,,,poll41471823
-"710 N. Chamberlain Ave., Nashville, TN 37218",,08:00 AM-04:30 PM,,ho43824573,false,true,,,,poll59221713
-"631 Clinch St., Nashville, TN 37209",,08:00 AM-07:00 PM,,ho65535904,false,true,,,,poll6358148
-"631 Clinch St., GOODLETTSVILLE, TN 37072",,08:00 AM-04:30 PM,,ho14214689,false,true,,,,poll52618428
-"201 Patton Ferry Rd., Knoxville, TN 37919",,11:00 AM-05:00 PM,,ho32351624,false,true,,,,poll13703876
-"201 Patton Ferry Rd., Knoxville, TN 37918",,10:00 AM-06:00 PM,,ho88290992,false,true,,,,poll3456556
-"200 E. Race Street, 1st Flr, Knoxville, TN 37915",,11:00 AM-05:00 PM,,ho40545868,false,true,,,,poll60714222
-"200 E. Race Street, 1st Flr, Knoxville, TN 37902",,12:00 PM-05:00 PM,,ho76287527,false,true,,,,poll72499421
-"100 Gum Hollow Rd., Linden, TN 37096",,09:00 AM-12:00 PM,,ho91221521,false,true,,,,poll10066491
-"100 Gum Hollow Rd., Byrdstown, TN 38549-2285",,08:00 AM-04:00 PM,,ho97833625,false,true,,,,poll72631782
-"513 South Brown Street, Room 137, Springfield, TN 37172",,08:00 AM-04:30 PM,,ho63356392,false,true,,,,poll69160071
-"426 East Vine Street, Murfreesboro, TN 37130",,09:00 AM-04:00 PM,,ho52977790,false,true,,,,poll11978724
-"315 S Lowry St, Savannah, TN 38372-2062",,09:00 AM-03:30 PM,,ho54363105,false,true,,,,poll88242829
-"315 John Rice Blvd , Savannah, TN 38372-2062",,09:00 AM-12:00 PM,,ho36818077,false,true,,,,poll29682211
-"315 John Rice Blvd , Rogersville, TN 37857-3360",,08:00 AM-05:00 PM,,ho21020298,false,true,,,,poll48755776
-"311 Butler Dr. , Rogersville, TN 37857-3360",,08:00 AM-05:00 PM,,ho98356393,false,true,,,,poll8291615
-"311 Butler Dr. , Church Hill, TN 37642",,09:00 AM-06:00 PM,,ho48695032,false,true,,,,poll26253653
-"283 Old Nashville Hwy, Brownsville, TN 38012-2561",,09:00 AM-06:00 PM,,ho7122978,false,true,,,,poll59594250
-"283 Old Nashville Hwy, Lexington, TN 38351-1838",,08:30 AM-04:00 PM,,ho36933745,false,true,,,,poll25564262
-"2310 Memorial Blvd, Paris, TN 38242",,08:00 AM-04:30 PM,,ho97060707,false,true,,,,poll70029739
-"1 South Public Square, Suite 103, Cookeville, TN 38501-4338",,08:00 AM-05:00 PM,,ho69872214,false,true,,,,poll63903918
-"2845 Baker Highway, Jellico, TN 37762",,02:00 PM-07:00 PM,,ho23691278,false,true,,,,poll63797099
-"2845 Baker Highway, Woodbury, TN 37190-1100",,08:00 AM-01:00 PM,,ho98165490,false,true,,,,poll18190041
-"121 Municipal Drive, Lafayette, TN 37083-1009",,08:00 AM-12:00 PM,,ho55811963,false,true,,,,poll79320451
-"121 Municipal Drive, Jackson, TN 38305-2713",,09:00 AM-04:00 PM,,ho27756643,false,true,,,,poll10537048
-"68 Spring Street, Nashville, TN 37211",,08:00 AM-07:00 PM,,ho1119931,false,true,,,,poll66418287
-"137 West Macon Lane, Lawrenceburg, TN 38464-3208",,08:00 AM-04:00 PM,,ho68870154,false,true,,,,poll27353858
-"137 West Macon Lane, Hohenwald, TN 38462-1124",,08:00 AM-04:00 PM,,ho89434503,false,true,,,,poll78519990
-"1145 Dolly Parton Parkway, Fairview, TN 37062",,09:00 AM-07:00 PM,,ho92428706,false,true,,,,poll16959712
-"122 Turner High Circle, Suite 105, Loudon, TN 37774",,10:00 AM-06:00 PM,,ho45377440,false,true,,,,poll51821806
-"122 Turner High Circle, Suite 105, Lafayette, TN 37083-1009",,08:00 AM-04:30 PM,,ho8376475,false,true,,,,poll97227280
-"110 Natcor Drive, Decatur, TN 37322-7472",,09:00 AM-12:00 PM,,ho65141084,false,true,,,,poll28562791
-"110 Natcor Drive, Decatur, TN 37322",,09:00 AM-06:00 PM,,ho12130905,false,true,,,,poll57075785
-"3258 Highway 126, Suite 103, Sneedville, TN 37869-3846",,09:00 AM-12:00 PM,,ho50942650,false,true,,,,poll30694923
-"1550 Fort Henry Dr, Knoxville, TN 37916",,08:00 AM-08:00 PM,,ho35675106,false,true,,,,poll61434670
-"1550 Fort Henry Dr, Tiptonville, TN 38079-1305",,09:00 AM-12:00 PM,,ho82397053,false,true,,,,poll96402701
-"611 Bluff City Hwy, Kingston, TN 37763-2860",,09:00 AM-01:00 PM,,ho65983476,false,true,,,,poll85426982
-"611 Bluff City Hwy, Kingston, TN 37763",,09:00 AM-05:00 PM,,ho22047173,false,true,,,,poll49207802
-"90 Volunteer Drive, Manchester, TN 37355-2456",,08:00 AM-04:30 PM,,ho7195328,false,true,,,,poll36324629
-"400 Loretta Drive, Pulaski, TN 38478-2622",,08:00 AM-06:00 PM,,ho25481847,false,true,,,,poll38799001
-"355 North Belvedere Drive, Room 106, Chattanooga, TN 37406-1736",,09:00 AM-06:00 PM,,ho36070135,false,true,,,,poll87137267
-"355 North Belvedere Drive, Room 106, Chattanooga, TN 37411",,10:00 AM-06:00 PM,,ho91224341,false,true,,,,poll26451642
-"3199 Long Hollow Pike, Sneedville, TN 37869-3846",,09:00 AM-04:00 PM,,ho13074247,false,true,,,,poll90317957
-"3012 Thompson Lane, Brownsville, TN 38012-2561",,09:00 AM-06:00 PM,,ho50300561,false,true,,,,poll80535391
-"105 College Street, Lynchburg, TN 37352-8390",,09:00 AM-12:00 PM,,ho51677925,false,true,,,,poll50442027
-"303 Portland Blvd., Nolensville, TN 37135",,09:00 AM-07:00 PM,,ho6845239,false,true,,,,poll39574246
-"113 East Church Street, Oak Ridge, TN 37830",,10:00 AM-06:00 PM,,ho4912499,false,true,,,,poll64215341
-"70 College St. , Nashville, TN 37211",,08:00 AM-04:30 PM,,ho84687456,false,true,,,,poll76198115
-"214 Broadway, Nolensville, TN 37135",,08:00 AM-02:00 PM,,ho73181961,false,true,,,,poll58329661
-"214 Broadway, Spring Hill, TN 37174",,09:00 AM-07:00 PM,,ho98298295,false,true,,,,poll86377069
-"214 Broadway, Lebanon, TN 37087-2825",,08:00 AM-06:00 PM,,ho5938838,false,true,,,,poll41233894
-"106 Nolichucky Avenue, Lebanon, TN 37087-2825",,08:00 AM-01:00 PM,,ho94314687,false,true,,,,poll28403630
-"106 Nolichucky Avenue, Mount Juliet, TN 37122",,08:00 AM-06:00 PM,,ho53908421,false,true,,,,poll65182077
-"901 Main Street, Mount Juliet, TN 37122",,08:00 AM-06:00 PM,,ho39362593,false,true,,,,poll143439
-"179 Veterans Square, Knoxville, TN 37902",,08:00 AM-05:00 PM,,ho49655573,false,true,,,,poll71442706
-"179 Veterans Square, Knoxville, TN 37918",,10:00 AM-06:00 PM,,ho39602185,false,true,,,,poll71768536
-"201 Locust Street, Suite 3, Maryville, TN 37804-5906",,08:00 AM-04:00 PM,,ho28565726,false,true,,,,poll28140596
-"201 Locust Street, Suite 3, Maryville, TN 37804",,11:00 AM-07:00 PM,,ho99691817,false,true,,,,poll47160035
-"219 Princeton Rd, Waverly, TN 37185-1547",,08:00 AM-04:00 PM,,ho58811946,false,true,,,,poll22908897
-"219 Princeton Rd, Gainesboro, TN 38562",,08:00 AM-12:00 PM,,ho9360257,false,true,,,,poll12233880
-"106 Gray Commons Circle, Madisonville, TN 37354-3110",,08:30 AM-05:00 PM,,ho81825625,false,true,,,,poll67576206
-"106 Gray Commons Circle, Sweetwater, TN 37874",,09:00 AM-05:00 PM,,ho28537997,false,true,,,,poll12390697
-"106 Gray Commons Circle, Tellicoe Plains, TN 37385",,09:00 AM-05:00 PM,,ho74223307,false,true,,,,poll64446127
-"106 Gray Commons Circle, Vonore, TN 37884",,09:00 AM-05:00 PM,,ho5046061,false,true,,,,poll38753853
-"106 Gray Commons Circle, Clarksville, TN 37040-3813",,08:00 AM-06:00 PM,,ho84911733,false,true,,,,poll17247687
-"100 East Main Street, Byrdstown, TN 38549-2285",,08:00 AM-04:00 PM,,ho23872864,false,true,,,,poll85064765
-"100 East Main Street, Benton, TN 37307-3603",,09:00 AM-04:00 PM,,ho75133863,false,true,,,,poll70710706
-"100 Court Circle, Room 201, Benton, TN 37307-3603",,09:00 AM-04:00 PM,,ho1877855,false,true,,,,poll31101746
-"100 Court Circle, Room 201, Dovetown, TN 37326",,09:00 AM-05:00 PM,,ho29248853,false,true,,,,poll26274056
-"135 South Poplar Street, Suite A, Shelbyville, TN 37160-3952",,08:00 AM-05:00 PM,,ho53149728,false,true,,,,poll58369699
-"135 South Poplar Street, Suite A, Camden, TN 38320-2044",,08:00 AM-04:00 PM,,ho34594322,false,true,,,,poll10562348
-"1 East Bockman Way, Room 215, Sparta, TN 38583",,08:00 AM-04:00 PM,,ho97177863,false,true,,,,poll15076332
-"8109 Concord Road , Tullahoma, TN 37388",,09:00 AM-04:30 PM,,ho49286263,false,true,,,,poll19284521
-"7250 Nolensville Road , Nashville, TN 37205",,08:00 AM-07:00 PM,,ho96904311,false,true,,,,poll54807790
-"4215 Long Lane, Jamestown, TN 38556",,09:00 AM-04:00 PM,,ho59940761,false,true,,,,poll38593896
-"4215 Long Lane, Winchester, TN 37398-1426",,08:00 AM-04:30 PM,,ho86485437,false,true,,,,poll89558218
-"2909 Commonwealth Drive , Brownsville, TN 38012-2561",,09:00 AM-01:00 PM,,ho97080931,false,true,,,,poll83430266
-"2714 Fairview Boulevard , Lexington, TN 38351-1838",,08:30 AM-04:00 PM,,ho54762417,false,true,,,,poll55419275
-"230 Franklin Road , Paris, TN 38242",,08:00 AM-07:00 PM,,ho26493886,false,true,,,,poll48415908
-"230 Franklin Road , Centerville, TN 37033-1426",,09:00 AM-04:00 PM,,ho55055455,false,true,,,,poll33632127
-"1320 West Main Street, Suite 140, Loudon, TN 37774-1042",,10:00 AM-06:00 PM,,ho57108697,false,true,,,,poll24515997
-"95 McCreary Rd, Newport, TN 37821-3121",,08:30 AM-06:00 PM,,ho20988478,false,true,,,,poll69005596
-"203 East Main Street, Mountain City, TN 37683-1870",,08:00 AM-06:00 PM,,ho56993303,false,true,,,,poll96317218
-"203 East Main Street, Knoxville, TN 37919",,10:00 AM-06:00 PM,,ho85628856,false,true,,,,poll78476083
-"1075 Charlie Daniels Parkway , Watertown, TN 37184",,08:00 AM-06:00 PM,,ho73342384,false,true,,,,poll96593010
-"8630 Sparta Pike, Lebanon, TN 37090",,08:00 AM-06:00 PM,,ho51610744,false,true,,,,poll58395207
-"6141 Saundersville Rd , Mount Juliet, TN 37122",,08:00 AM-05:00 PM,,ho67400405,false,true,,,,poll54657950
-"9817 Huff N Puff Road, Lakeland, TN 38002",,10:00 AM-07:00 PM,,ho77898760,false,true,,,,poll87469263
-"70 N. Bellevue Boulevard, Memphis, TN 38106",,10:00 AM-07:00 PM,,ho12318752,false,true,,,,poll84290998
-"915 Chelsea Avenue, Memphis, TN 38107",,10:00 AM-07:00 PM,,ho20285344,false,true,,,,poll51868866
-"7942 Church Road, Millington, TN 38053",,10:00 AM-07:00 PM,,ho18885543,false,true,,,,poll7302732
-"7786 Poplar Pike, Germantown, TN 38138",,10:00 AM-07:00 PM,,ho33256484,false,true,,,,poll63825802
-"7777 Walnut Grove Road, Memphis, TN 38120",,10:00 AM-07:00 PM,,ho66334715,false,true,,,,poll21437233
-"60 S. Parkway East, Memphis, TN 38106",,10:00 AM-07:00 PM,,ho67748657,false,true,,,,poll27369167
-"575 Shelton Drive, Collierville, TN 38017",,10:00 AM-07:00 PM,,ho96767018,false,true,,,,poll96556647
-"5586 Stage Road, Bartlett, TN 38134",,10:00 AM-07:00 PM,,ho35867203,false,true,,,,poll26587278
-"4982 Knight Arnold Road, Memphis, TN 38118",,10:00 AM-07:00 PM,,ho61712661,false,true,,,,poll6694857
-"4536 Summer Avenue, Memphis, TN 38122",,10:00 AM-07:00 PM,,ho22329616,false,true,,,,poll64768324
-"3939 Riverdale Road, Memphis, TN 38115",,10:00 AM-07:00 PM,,ho30241746,false,true,,,,poll198159
-"3560 S. Third Street, Memphis, TN 38109",,10:00 AM-07:00 PM,,ho82371350,false,true,,,,poll83702590
-"3295 Powers Road, Memphis, TN 38128",,10:00 AM-07:00 PM,,ho99495282,false,true,,,,poll71404752
-"2907 N. Watkins, Memphis, TN 38127",,10:00 AM-07:00 PM,,ho64149123,false,true,,,,poll28642445
-"2000 Appling Road, Cordova, TN 38016",,10:00 AM-07:00 PM,,ho29026475,false,true,,,,poll16539036
-"1574 E. Shelby Drive, Memphis, TN 38116",,10:00 AM-07:00 PM,,ho18513480,false,true,,,,poll11761336
-"157 Poplar Avenue, Memphis, TN 38103",,10:00 AM-07:00 PM,,ho79806771,false,true,,,,poll17314801
-"1106 Colonial Road, Memphis, TN 38117",,10:00 AM-07:00 PM,,ho46474756,false,true,,,,poll35406931
-"152 E. Parkway North, Memphis, TN 38104",,10:00 AM-07:00 PM,,ho6907774,false,true,,,,poll58482423
-"1141 S. Barksdale Street, Memphis, TN 38114",,10:00 AM-07:00 PM,,ho62157101,false,true,,,,poll94054566
+"102 Robertsville Rdnan, Oak Ridge, TN 37830",,10:00 AM-06:00 PM,,ho44761406,false,true,,,,poll6615874
+"3310 Andersonville Hwynan, Andersonville, TN 37705",,10:00 AM-06:00 PM,,ho78251298,false,true,,,,poll14874278
+"One Public Square, Suite 20nan, Shelbyville, TN 37160-3952",,08:00 AM-05:00 PM,,ho27222415,false,true,,,,poll980111
+"3150 Main Streetnan, Pikeville, TN 37367",,04:00 PM-07:00 PM,,ho81519794,false,true,,,,poll21073329
+"155 Broad Street N.W., Suite 102nan, Cleveland, TN 37311-5000",,09:00 AM-06:00 PM,,ho51532905,false,true,,,,poll99741807
+"200 Paul Huff PKwy NW, Suite 513nan, Cleveland, TN 37312",,09:00 AM-06:00 PM,,ho98936166,false,true,,,,poll59035294
+"2310 McGrady Drive SEnan, Cleveland, TN 37323",,09:00 AM-06:00 PM,,ho59106017,false,true,,,,poll14111409
+"129 Church Alleynan, Jacksboro, TN 37757",,09:00 AM-04:00 PM,,ho72750410,false,true,,,,poll26124881
+"410 S Main Stnan, Jellico, TN 37762",,09:00 AM-02:00 PM,,ho15112890,false,true,,,,poll62829716
+"301 West Main Street, Adams Office Bldg Room 244nan, Woodbury, TN 37190-1100",,08:00 AM-01:00 PM,,ho4344844,false,true,,,,poll97163015
+"625 High Street, Suite 113nan, Huntingdon, TN 38344-1712",,08:30 AM-04:00 PM,,ho96420662,false,true,,,,poll93699860
+"116 Holston Avenan, Elizabethton, TN 37643-3264",,09:00 AM-04:00 PM,,ho72740655,false,true,,,,poll74866769
+"145 Cordell Hull Drivenan, Celina, TN 38551",,09:00 AM-12:00 PM,,ho71524473,false,true,,,,poll56832251
+"360 East Main Streetnan, Newport, TN 37821-3121",,08:30 AM-04:00 PM,,ho48116857,false,true,,,,poll1022111
+"235 East Church Streetnan, Alamo, TN 38001-1107",,08:30 AM-06:00 PM,,ho33928660,false,true,,,,poll76674842
+"2 South Main Streetnan, Crossville, TN 38555-4583",,08:00 AM-05:00 PM,,ho43821876,false,true,,,,poll85953340
+"4705 HARDING PIKEnan, Nashville, TN 37205",,08:00 AM-04:30 PM,,ho29427361,false,true,,,,poll83879184
+"720 BAUGH ROADnan, Nashville, TN 37221",,08:00 AM-04:30 PM,,ho91934915,false,true,,,,poll89622894
+"4000 CLARKSVILLE PIKEnan, Nashville, TN 37218",,08:00 AM-04:30 PM,,ho89031625,false,true,,,,poll84180873
+"2195 NOLENSVILLE PIKEnan, Nashville, TN 37211",,08:00 AM-04:30 PM,,ho1001837,false,true,,,,poll7086505
+"5501 EDMONDSON PIKEnan, Nashville, TN 37211",,08:00 AM-04:30 PM,,ho26268333,false,true,,,,poll60963196
+"1109 32ND AVE Nnan, Nashville, TN 37209",,08:00 AM-04:30 PM,,ho34035141,false,true,,,,poll63838117
+"200 MEMORIAL DRnan, GOODLETTSVILLE, TN 37072",,08:00 AM-04:30 PM,,ho86534759,false,true,,,,poll39947826
+"3701 BENHAM AVEnan, Nashville, TN 37215",,08:00 AM-04:30 PM,,ho5344427,false,true,,,,poll58914343
+"3700 JAMES KAY LANEnan, HERMITAGE, TN 37076",,08:00 AM-04:30 PM,,ho25955371,false,true,,,,poll18395161
+"610 GALLATIN PIKE Snan, MADISON, TN 37115",,08:00 AM-04:30 PM,,ho52755502,false,true,,,,poll14126789
+"700 2ND AVE Snan, Nashville, TN 37210",,08:00 AM-04:30 PM,,ho44317168,false,true,,,,poll10126232
+"5260 HICKORY HOLLOW PKWY, STE 102nan, ANTIOCH, TN 37013",,08:00 AM-04:30 PM,,ho65356221,false,true,,,,poll46875381
+"Election Office, 67 S East Streetnan, Decaturville, TN 38329",,09:00 AM-04:00 PM,,ho84108022,false,true,,,,poll77347647
+"1 Public Squarenan, Smithville, TN 37166-1425",,09:00 AM-01:00 PM,,ho4893861,false,true,,,,poll18408872
+"Election Commission, 110-A Academy Streetnan, Charlotte, TN 37036",,08:00 AM-04:00 PM,,ho14423617,false,true,,,,poll31658371
+"Fentress Co Election Comm, 111 North Norris Streetnan, Jamestown, TN 38556",,09:00 AM-04:00 PM,,ho3437912,false,true,,,,poll27089869
+"839 Dinah Shore Blvd, Suite 1nan, Winchester, TN 37398-1426",,08:00 AM-04:30 PM,,ho68876612,false,true,,,,poll63233744
+"One Court Square, Suite 101nan, Trenton, TN 38382-1851",,08:30 AM-06:00 PM,,ho58768767,false,true,,,,poll15701492
+"201 Hwy 45 E Northnan, Medina, TN 38355",,08:30 AM-06:00 PM,,ho63063607,false,true,,,,poll55364453
+"119 Marshall Avenan, Rutledge, TN 37861",,08:30 AM-12:00 PM,,ho70810681,false,true,,,,poll3064622
+"218 North Main Streetnan, Greeneville, TN 37745-3834",,08:30 AM-06:00 PM,,ho12993887,false,true,,,,poll61738145
+"11745 U.S. 41nan, Monteagle, TN 37356",,08:00 AM-04:00 PM,,ho38719144,false,true,,,,poll71073336
+"1433 TN-56nan, Altamont, TN 37301",,08:00 AM-04:00 PM,,ho82252828,false,true,,,,poll86717652
+"700 River Terminal Roadnan, Chattanooga, TN 37406-1736",,08:00 AM-07:00 PM,,ho39588724,false,true,,,,poll68629361
+"1010 North Moore Rd. nan, Chattanooga, TN 37411",,10:00 AM-06:00 PM,,ho33522612,false,true,,,,poll7539099
+"4300 Ooltewah-Ringgold Roadnan, Ooltewah, TN 37363",,10:00 AM-06:00 PM,,ho85711026,false,true,,,,poll33023433
+"1009 Executive Drive, Suite 102nan, Hixson, TN 37343",,10:00 AM-06:00 PM,,ho94930516,false,true,,,,poll24450839
+"1237 Main Street, Courthouse 1st Floornan, Sneedville, TN 37869-3846",,09:00 AM-12:00 PM,,ho67269528,false,true,,,,poll70420805
+"106 South Porter Streetnan, Bolivar, TN 38008-1735",,09:00 AM-04:00 PM,,ho50671206,false,true,,,,poll51870544
+"Courthouse, 465 Main Street, Basementnan, Savannah, TN 38372-2062",,09:00 AM-03:30 PM,,ho34631424,false,true,,,,poll50123899
+"110 East Main Street, Suite 301nan, Rogersville, TN 37857-3360",,08:00 AM-05:00 PM,,ho73235489,false,true,,,,poll36294478
+"111 Hamilton Stnan, Church Hill, TN 37642",,09:00 AM-06:00 PM,,ho18080000,false,true,,,,poll97663500
+"Courthouse, One North Washington Ave, Basementnan, Brownsville, TN 38012-2561",,09:00 AM-01:00 PM,,ho34362481,false,true,,,,poll10131375
+"340 Natchez Trace Drnan, Lexington, TN 38351-1838",,08:30 AM-04:00 PM,,ho9809461,false,true,,,,poll48058855
+"213 West Washingtonnan, Paris, TN 38242",,08:00 AM-04:30 PM,,ho81774388,false,true,,,,poll5496875
+"114 North Central Avenan, Centerville, TN 37033-1426",,09:00 AM-04:00 PM,,ho98994731,false,true,,,,poll71199531
+"7700 New Hwy 7nan, Lyles, TN 37098",,09:00 AM-04:00 PM,,ho63271121,false,true,,,,poll41315534
+"4760 East Main Streetnan, Erin, TN 37061",,08:00 AM-04:30 PM,,ho35000232,false,true,,,,poll73954897
+"208 West Wyly Streetnan, Waverly, TN 37185-1547",,08:00 AM-04:00 PM,,ho22006031,false,true,,,,poll52740226
+"101 East Hull Avenuenan, Gainesboro, TN 38562",,08:00 AM-12:00 PM,,ho66125375,false,true,,,,poll6970720
+"931 Industrial Park Roadnan, Dandridge, TN 37725-4701",,09:00 AM-04:00 PM,,ho48048321,false,true,,,,poll88620541
+"158 Election Avenuenan, Mountain City, TN 37683-1870",,08:00 AM-05:00 PM,,ho95556397,false,true,,,,poll51450914
+"1542 Downtown W Blvdnan, Knoxville, TN 37919",,10:00 AM-06:00 PM,,ho8948009,false,true,,,,poll68515051
+"6933 Recreation Lanenan, Knoxville, TN 37918",,10:00 AM-06:00 PM,,ho58243121,false,true,,,,poll3441006
+"11408 Municipal Center Drnan, Knoxville, TN 37934",,10:00 AM-06:00 PM,,ho75479280,false,true,,,,poll56523651
+"9036 Asheville Hwynan, Knoxville, TN 37924",,10:00 AM-06:00 PM,,ho97742950,false,true,,,,poll13675911
+"2418 Martin Luther King Jr Avenan, Knoxville, TN 37915",,10:00 AM-06:00 PM,,ho44522324,false,true,,,,poll38424686
+"400 Main Stnan, Knoxville, TN 37902",,12:00 PM-05:00 PM,,ho11558133,false,true,,,,poll6940714
+"4775 New Harvest Lnnan, Knoxville, TN 37918",,10:00 AM-06:00 PM,,ho42573939,false,true,,,,poll65914
+"4952 Clinton Hwynan, Knoxville, TN 37912",,10:00 AM-06:00 PM,,ho13761060,false,true,,,,poll9445957
+"4536 Chapman Highwaynan, Knoxville, TN 37920",,10:00 AM-06:00 PM,,ho49649457,false,true,,,,poll99336486
+"8042 Oak Ridge Hwynan, Knoxville, TN 37931",,08:00 AM-05:00 PM,,ho47877307,false,true,,,,poll43327419
+"1640 Cumberland Avenan, Knoxville, TN 37916",,08:00 AM-08:00 PM,,ho75929940,false,true,,,,poll76525745
+"217 S Court Streetnan, Tiptonville, TN 38079-1305",,09:00 AM-12:00 PM,,ho89191249,false,true,,,,poll23609337
+"219 Centennial Blvdnan, Lawrenceburg, TN 38464-3208",,08:00 AM-04:00 PM,,ho29192941,false,true,,,,poll77126087
+"35 Smith Avenuenan, Hohenwald, TN 38462-1124",,08:00 AM-04:00 PM,,ho47791206,false,true,,,,poll8811069
+"208 Davidson Street East, Room 106nan, Fayetteville, TN 37334-3581",,08:00 AM-05:00 PM,,ho77296548,false,true,,,,poll31937765
+"100 River Road, Room 108nan, Loudon, TN 37774-1042",,10:00 AM-06:00 PM,,ho66215869,false,true,,,,poll69101780
+"100 West Broadwaynan, Lenoir City, TN 37771",,10:00 AM-06:00 PM,,ho34090240,false,true,,,,poll77077076
+"304 Lakeside Plazanan, Loudon, TN 37774",,10:00 AM-06:00 PM,,ho24448896,false,true,,,,poll64525115
+"607 Hwy 52 Bypass E, Suite Cnan, Lafayette, TN 37083-1009",,08:00 AM-04:30 PM,,ho46503317,false,true,,,,poll10638721
+"311 North Parkwaynan, Jackson, TN 38305-2713",,09:00 AM-04:00 PM,,ho34351705,false,true,,,,poll99106426
+"Elections Office, 109 Academy Avenuenan, Jasper, TN 37347-3520",,08:00 AM-04:00 PM,,ho93924094,false,true,,,,poll28176098
+"5 South Hill Street, Suite Bnan, Athens, TN 37303-5403",,08:30 AM-04:00 PM,,ho7021887,false,true,,,,poll44773276
+"1207A Tradewinds Drivenan, Columbia, TN 38401-4607",,08:00 AM-04:00 PM,,ho82762608,false,true,,,,poll1393194
+"563 Maury Hill St. nan, Spring Hill, TN 37174",,08:00 AM-07:00 PM,,ho50319620,false,true,,,,poll14514055
+"530 Mulberry Avenue, Suite 3nan, Selmer, TN 38375",,09:00 AM-04:30 PM,,ho36463557,false,true,,,,poll50799875
+"Montgomery Veterans Plaza, 350 Pageant Lane, Suite 404nan, Clarksville, TN 37040-3813",,08:00 AM-06:00 PM,,ho11456854,false,true,,,,poll34931699
+"241 Main Street, Suite 201nan, Lynchburg, TN 37352-8390",,09:00 AM-04:00 PM,,ho78164700,false,true,,,,poll63914183
+"415 North Kingston Street, Courthouse Room 105nan, Wartburg, TN 37887-4317",,09:00 AM-04:00 PM,,ho34910469,false,true,,,,poll65282312
+"317 East University Street, Room 45nan, Livingston, TN 38570-1547",,08:00 AM-05:00 PM,,ho71626738,false,true,,,,poll71924078
+"124 East Main Streetnan, Linden, TN 37096",,08:30 AM-11:30 AM,,ho50819361,false,true,,,,poll65174422
+"105 South Main Street, Room 2nan, Byrdstown, TN 38549-2285",,08:00 AM-04:00 PM,,ho60513063,false,true,,,,poll53928578
+"6050 Highway 411nan, Benton, TN 37307-3603",,09:00 AM-04:00 PM,,ho54808099,false,true,,,,poll48551024
+"804 Cherokee Trailnan, Dovetown, TN 37326",,09:00 AM-05:00 PM,,ho84240026,false,true,,,,poll89967013
+"705 County Services Drivenan, Cookeville, TN 38501-4338",,08:00 AM-05:00 PM,,ho22854298,false,true,,,,poll55506065
+"2845 Baker Highwaynan, Huntsville, TN 37756-3710",,10:00 AM-02:00 PM,,ho1604970,false,true,,,,poll17415347
+"121 Municipal Drivenan, Oneida, TN 37841",,10:00 AM-02:00 PM,,ho37015732,false,true,,,,poll68694278
+"Elections Office, 68 Spring Streetnan, Dunlap, TN 37327-3752",,09:00 AM-05:00 PM,,ho38405963,false,true,,,,poll90074624
+"1145 Dolly Parton Parkwaynan, Sevierville, TN 37862-3710",,10:00 AM-06:00 PM,,ho2498639,false,true,,,,poll10871255
+"137 West Macon Lanenan, Seymour, TN 37865",,10:00 AM-06:00 PM,,ho49181690,false,true,,,,poll50528879
+"122 Turner High Circle, Suite 105nan, Carthage, TN 37030-1555",,08:00 AM-04:00 PM,,ho79484961,false,true,,,,poll51221992
+"110 Natcor Drivenan, Dover, TN 37058",,08:00 AM-05:00 PM,,ho43517150,false,true,,,,poll61261685
+"3258 Highway 126, Suite 103nan, Blountville, TN 37617-4566",,09:00 AM-06:00 PM,,ho73891461,false,true,,,,poll88503307
+"1550 Fort Henry Drnan, Kingsport, TN 37664",,09:00 AM-06:00 PM,,ho20127499,false,true,,,,poll16416246
+"611 Bluff City Hwynan, Bristol, TN 37620",,09:00 AM-06:00 PM,,ho7949465,false,true,,,,poll44641372
+"113 East Church Streetnan, Covington, TN 38019-2503",,08:30 AM-06:00 PM,,ho78484853,false,true,,,,poll41044747
+"Munford City Hall, 70 College St. nan, Munford, TN 38058",,08:30 AM-06:00 PM,,ho17845662,false,true,,,,poll15229487
+"214 Broadwaynan, Hartsville, TN 37074-1304",,08:30 AM-04:30 PM,,ho14578162,false,true,,,,poll31075644
+"106 Nolichucky Avenuenan, Erwin, TN 37650-1254",,09:00 AM-05:00 PM,,ho88469537,false,true,,,,poll53602073
+"179 Veterans Squarenan, Spencer, TN 38585",,09:00 AM-05:00 PM,,ho92773563,false,true,,,,poll53132382
+"201 Locust Street, Suite 3nan, McMinnville, TN 37110-9926",,09:00 AM-06:00 PM,,ho86678775,false,true,,,,poll12407190
+"100 East Main Streetnan, Jonesborough, TN 37659-1340",,09:00 AM-06:00 PM,,ho90026405,false,true,,,,poll98107671
+"219 Princeton Rdnan, Johnston City, TN 37601",,09:00 AM-06:00 PM,,ho50804429,false,true,,,,poll9979273
+"106 Gray Commons Circlenan, Johnson City, TN 37604",,09:00 AM-06:00 PM,,ho20382956,false,true,,,,poll83210672
+"Courthouse, 100 Court Circle, Room 201nan, Waynesboro, TN 38485-2142",,08:00 AM-04:00 PM,,ho32510601,false,true,,,,poll63070184
+"1320 West Main Street, Suite 140nan, Franklin, TN 37064-3731",,08:00 AM-07:00 PM,,ho54169877,false,true,,,,poll84902792
+"230 Franklin Road nan, Franklin, TN 37064",,09:00 AM-07:00 PM,,ho64332444,false,true,,,,poll70527155
+"4215 Long Lanenan, Franklin, TN 37064",,09:00 AM-07:00 PM,,ho59886706,false,true,,,,poll83114527
+"8109 Concord Road nan, Brentwood, TN 37027",,09:00 AM-07:00 PM,,ho8114226,false,true,,,,poll279450
+"2714 Fairview Boulevard nan, Fairview, TN 37062",,09:00 AM-07:00 PM,,ho51739122,false,true,,,,poll61369490
+"7250 Nolensville Road nan, Nolensville, TN 37135",,09:00 AM-07:00 PM,,ho13267683,false,true,,,,poll24588574
+"2909 Commonwealth Drive nan, Spring Hill, TN 37174",,09:00 AM-07:00 PM,,ho17089165,false,true,,,,poll47773008
+"Election Commission Office, 203 East Main Streetnan, Lebanon, TN 37087-2825",,08:00 AM-06:00 PM,,ho2844099,false,true,,,,poll7976052
+"1075 Charlie Daniels Parkway nan, Mount Juliet, TN 37122",,08:00 AM-06:00 PM,,ho25920264,false,true,,,,poll72340791
+"8630 Sparta Pikenan, Watertown, TN 37184",,08:00 AM-06:00 PM,,ho15766348,false,true,,,,poll36968412
+"95 McCreary Rdnan, Lebanon, TN 37090",,08:00 AM-06:00 PM,,ho65889020,false,true,,,,poll75017984
+"6141 Saundersville Rd nan, Mount Juliet, TN 37122",,08:00 AM-05:00 PM,,ho22403248,false,true,,,,poll73915368
+"101 S Hicks Stnan, Clinton, TN 37716",,10:00 AM-06:00 PM,,ho94281243,false,true,,,,poll96667297
+"113 Maple Avenue, Suite 1nan, Camden, TN 38320-2044",,08:00 AM-04:00 PM,,ho65304532,false,true,,,,poll89145794
+"Blount County Courthouse, 383 Court Streetnan, Maryville, TN 37804-5906",,08:00 AM-04:00 PM,,ho69261565,false,true,,,,poll63804915
+"508 N Cusick Stnan, Maryville, TN 37804",,11:00 AM-07:00 PM,,ho43017048,false,true,,,,poll37894402
+"2731 West Lamar Alexander Parkwaynan, Knoxville, TN 37933",,08:00 AM-04:00 PM,,ho48213369,false,true,,,,poll8210533
+"318 S Everett High Rdnan, Maryville, TN 37804",,11:00 AM-07:00 PM,,ho84514847,false,true,,,,poll40262602
+"188 County Services Drive, Suite 100nan, Ashland City, TN 37015-1744",,09:00 AM-04:00 PM,,ho18863930,false,true,,,,poll31188552
+"PLEASANT VIEW CITY HALL, 1008 CIVIC CTnan, PLEASANT VIEW, TN 37146",,09:00 AM-04:00 PM,,ho23491968,false,true,,,,poll84840327
+"PEAGRAM CITY HALL, 308 HWY 70nan, PEGRAM, TN 37143",,09:00 AM-06:00 PM,,ho37002426,false,true,,,,poll10896375
+"133 East Mainnan, Henderson, TN 38340",,08:30 AM-04:00 PM,,ho32382985,false,true,,,,poll64350061
+"1802 Main Streetnan, Tazewell, TN 37879",,09:00 AM-05:00 PM,,ho89493519,false,true,,,,poll44686484
+"The Harrogate City Building, 138 Harrogate Crossingnan, Harrogate, TN 37752",,09:00 AM-05:00 PM,,ho35670878,false,true,,,,poll15782871
+"3711 Hwy 33 Southnan, New Tazewell, TN 37825",,09:00 AM-05:00 PM,,ho61124325,false,true,,,,poll44957980
+"1329 McArthur Street, Suite 6nan, Manchester, TN 37355-2456",,08:00 AM-04:30 PM,,ho72757433,false,true,,,,poll85396215
+"810 South Jackson Streetnan, Tullahoma, TN 37388",,09:00 AM-04:30 PM,,ho81998892,false,true,,,,poll14584967
+"505 Henslee Drnan, Dickson, TN 37055",,08:00 AM-04:00 PM,,ho64224228,false,true,,,,poll30909128
+"103 West Market Stnan, Dyersburg, TN 38024",,09:00 AM-04:00 PM,,ho50301953,false,true,,,,poll72390169
+"2700 Lake Roadnan, Dyersburg, TN 38034",,12:00 PM-07:00 PM,,ho25508436,false,true,,,,poll59637301
+"45 Dogwood Lanenan, Somerville, TN 38068",,09:00 AM-04:00 PM,,ho10220320,false,true,,,,poll47292412
+"17675 Hwy 196nan, Hickory Withe, TN 38028",,09:00 AM-04:00 PM,,ho68552429,false,true,,,,poll82532963
+"3575 Hwy 196nan, Piperton, TN 38017",,09:00 AM-04:00 PM,,ho47926839,false,true,,,,poll44897574
+"222 West Madison Stnan, Pulaski, TN 38478-2622",,08:00 AM-04:00 PM,,ho36409722,false,true,,,,poll11815697
+"511 West Second North Stnan, Morristown, TN 37814-3964",,08:30 AM-04:30 PM,,ho21480601,false,true,,,,poll55892961
+"217 N Main Streetnan, Ripley, TN 38063-1315",,08:30 AM-04:30 PM,,ho87457782,false,true,,,,poll91071864
+"230 College Street, Suite 120nan, Lewisburg, TN 37091-3305",,08:00 AM-05:00 PM,,ho82095811,false,true,,,,poll93928244
+"316 N Horton Pkwynan, Chapel Hill, TN 37034",,10:00 AM-05:00 PM,,ho31504926,false,true,,,,poll71360599
+"17214 Hwy 58 N, 1st Floornan, Decatur, TN 37322-7472",,09:00 AM-12:00 PM,,ho97564989,false,true,,,,poll13940110
+"116 North Main Streetnan, Decatur, TN 37322",,09:00 AM-06:00 PM,,ho49698126,false,true,,,,poll11374740
+"308 Bill Burnett Circlenan, Union City, TN 38261-3705",,08:30 AM-04:30 PM,,ho63774706,false,true,,,,poll8585271
+"Election Commission Office, 125 Court Street, Suite 1nan, Dayton, TN 37321-1275",,08:30 AM-05:00 PM,,ho12810228,false,true,,,,poll92811032
+"Spring City City Hall, 229 Front Stnan, Spring City, TN 37381",,08:30 AM-05:00 PM,,ho96495211,false,true,,,,poll19818556
+"200 E. Race Street, 1st Flr, Suite 8nan, Kingston, TN 37763-2860",,09:00 AM-05:00 PM,,ho60296552,false,true,,,,poll48959576
+"201 Patton Ferry Rd.nan, Kingston, TN 37763",,09:00 AM-05:00 PM,,ho41348934,false,true,,,,poll52049272
+"631 Clinch St.nan, Harriman, TN 37748",,09:00 AM-05:00 PM,,ho21382938,false,true,,,,poll21765147
+"100 Gum Hollow Rd.nan, Oak Ridge, TN 37840",,09:00 AM-05:00 PM,,ho19197470,false,true,,,,poll67343091
+"710 N. Chamberlain Ave.nan, Rockwood, TN 37854",,09:00 AM-05:00 PM,,ho82552609,false,true,,,,poll21064575
+"513 South Brown Street, Room 137nan, Springfield, TN 37172-2941",,08:00 AM-04:30 PM,,ho92970556,false,true,,,,poll27676494
+"1 South Public Square, Suite 103nan, Murfreesboro, TN 37130-8001",,07:00 AM-07:00 PM,,ho55809289,false,true,,,,poll34986332
+"426 East Vine Streetnan, Murfreesboro, TN 37130",,09:00 AM-06:00 PM,,ho96006029,false,true,,,,poll94810925
+"2310 Memorial Blvdnan, Murfreesboro, TN 37130",,09:00 AM-06:00 PM,,ho98005168,false,true,,,,poll89230424
+"315 John Rice Blvdnan, Murfreesboro, TN 37130",,09:00 AM-06:00 PM,,ho15343165,false,true,,,,poll81103833
+"Smyrna City Hall, 315 S Lowry Stnan, Smyrna, TN 37167",,09:00 AM-06:00 PM,,ho77850471,false,true,,,,poll33068660
+"283 Old Nashville Hwynan, La Vergne, TN 37086",,09:00 AM-06:00 PM,,ho42790052,false,true,,,,poll6511356
+"311 Butler Dr.nan, Murfreesboro, TN 37127",,09:00 AM-06:00 PM,,ho57945116,false,true,,,,poll99859266
+"Election Commission, 401 Main Streetnan, Madisonville, TN 37354-3110",,08:30 AM-05:00 PM,,ho78930298,false,true,,,,poll69920179
+"Sweetwater City Hall, 203 Monroe Stnan, Sweetwater, TN 37874",,09:00 AM-05:00 PM,,ho60650568,false,true,,,,poll58205281
+"132 Bank Streetnan, Tellicoe Plains, TN 37385",,09:00 AM-05:00 PM,,ho59824886,false,true,,,,poll99523686
+"611 Church Streetnan, Vonore, TN 37884",,09:00 AM-05:00 PM,,ho25228918,false,true,,,,poll3683620
+"1 East Bockman Way, Room 215nan, Sparta, TN 38583-2034",,08:00 AM-04:00 PM,,ho7258269,false,true,,,,poll82456303
+"135 South Poplar Street, Suite Anan, Dresden, TN 38225-1479",,08:30 AM-04:00 PM,,ho8588215,false,true,,,,poll53301685
+"901 Main Streetnan, Maynardville, TN 37807",,09:00 AM-12:00 PM,,ho94892840,false,true,,,,poll37257233
+"355 North Belvedere Drive, Room 106nan, Gallatin, TN 37066-5410",,08:00 AM-04:30 PM,,ho66493441,false,true,,,,poll65061202
+"3012 Thompson Lanenan, Westmoreland, TN 37186",,10:00 AM-06:00 PM,,ho71745727,false,true,,,,poll85476008
+"400 Loretta Drivenan, Goodlettsville, TN 37072",,10:00 AM-06:00 PM,,ho74946895,false,true,,,,poll27687061
+"White House City Hall, 105 College Streetnan, White House, TN 37075",,10:00 AM-06:00 PM,,ho73315805,false,true,,,,poll34569126
+"90 Volunteer Drivenan, Hendersonville, TN 37075",,10:00 AM-06:00 PM,,ho82422346,false,true,,,,poll52631902
+"3199 Long Hollow Pikenan, Hendersonville, TN 37075",,10:00 AM-06:00 PM,,ho91968138,false,true,,,,poll98531278
+"Shackle Island Fire Rescue, 3199 Long Hollow Pikenan, Hendersonville, TN 37075",,09:00 AM-12:00 PM,,ho18349066,false,true,,,,poll63710819
+"303 Portland Blvd.nan, Portland, TN 37148",,10:00 AM-06:00 PM,,ho37587493,false,true,,,,poll7884133
+"9817 Huff N Puff Road nan, Lakeland, TN 38002",,10:00 AM-07:00 PM,,ho47946907,false,true,,,,poll35968548
+"70 N. Bellevue Boulevard nan, Memphis, TN 38106",,10:00 AM-07:00 PM,,ho19080479,false,true,,,,poll42554156
+"915 Chelsea Avenuenan, Memphis, TN 38107",,10:00 AM-07:00 PM,,ho97097193,false,true,,,,poll85089647
+"7942 Church Road nan, Millington, TN 38053",,10:00 AM-07:00 PM,,ho56049986,false,true,,,,poll59557549
+"7786 Poplar Pike nan, Germantown, TN 38138",,10:00 AM-07:00 PM,,ho36487413,false,true,,,,poll44055336
+"7777 Walnut Grove Roadnan, Memphis, TN 38120",,10:00 AM-07:00 PM,,ho9269523,false,true,,,,poll51518493
+"60 S. Parkway Eastnan, Memphis, TN 38106",,10:00 AM-07:00 PM,,ho16542019,false,true,,,,poll11219352
+"575 Shelton Drive nan, Collierville, TN 38017",,10:00 AM-07:00 PM,,ho89074151,false,true,,,,poll28419404
+"5586 Stage Road nan, Bartlett, TN 38134",,10:00 AM-07:00 PM,,ho39579985,false,true,,,,poll16565974
+"4982 Knight Arnold Road nan, Memphis, TN 38118",,10:00 AM-07:00 PM,,ho80331952,false,true,,,,poll61659235
+"4536 Summer Avenue nan, Memphis, TN 38122",,10:00 AM-07:00 PM,,ho94278952,false,true,,,,poll95874741
+"3939 Riverdale Road nan, Memphis, TN 38115",,10:00 AM-07:00 PM,,ho10861818,false,true,,,,poll68983926
+"3560 S. Third Street nan, Memphis, TN 38109",,10:00 AM-07:00 PM,,ho63636467,false,true,,,,poll42286002
+"3295 Powers Road nan, Memphis, TN 38128",,10:00 AM-07:00 PM,,ho38352737,false,true,,,,poll46747269
+"2907 N. Watkins nan, Memphis, TN 38127",,10:00 AM-07:00 PM,,ho54586286,false,true,,,,poll79108300
+"2000 Appling Road nan, Cordova, TN 38016",,10:00 AM-07:00 PM,,ho9907065,false,true,,,,poll30029117
+"1574 E. Shelby Drive nan, Memphis, TN 38116",,10:00 AM-07:00 PM,,ho65206644,false,true,,,,poll8586029
+"157 Poplar Avenue nan, Memphis, TN 38103",,10:00 AM-07:00 PM,,ho69303026,false,true,,,,poll20865125
+"1106 Colonial Road nan, Memphis, TN 38117",,10:00 AM-07:00 PM,,ho82986314,false,true,,,,poll33814884
+"152 E. Parkway North nan, Memphis, TN 38104",,10:00 AM-07:00 PM,,ho68422138,false,true,,,,poll62898746
+"1141 S. Barksdale Street nan, Memphis, TN 38114",,10:00 AM-07:00 PM,,ho9343479,false,true,,,,poll6475606

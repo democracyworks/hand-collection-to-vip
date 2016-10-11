@@ -12,7 +12,7 @@ early_voting = 'true'
 
 #state_file = 'tennessee_early_voting_info.csv'
 
-state_file = 'Tennessee Early Voting Info - Data (4).csv'
+state_file = 'Tennessee Early Voting Info - Data (6).csv'
 
 state_feed = ''
 
