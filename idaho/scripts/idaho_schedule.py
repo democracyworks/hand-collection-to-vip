@@ -97,7 +97,7 @@ class ScheduleTxt(object):
         return ''
 
     def get_start_date(self, start_date):
-<<<<<<< HEAD
+
         string = str(start_date)
         date = datetime.datetime.strptime(string, '%m-%d-%Y').strftime('%Y-%m-%d')
         return date
@@ -108,7 +108,6 @@ class ScheduleTxt(object):
         string = str(end_date)
         date = datetime.datetime.strptime(string, '%m-%d-%Y').strftime('%Y-%m-%d')
         return date
-=======
         try:
             print start_date
             string = str(start_date)
@@ -118,17 +117,6 @@ class ScheduleTxt(object):
         except:
             pass
 
-    def get_end_date(self, end_date):
-        # create conditional when/if column is present
-
-        try:
-            print end_date
-            string = str(end_date)
-            date = datetime.datetime.strptime(string, '%m-%d-%Y').strftime('%Y-%m-%d')
-            return date
-        except:
-            pass
->>>>>>> db4b5a468b019b745ba47628879909661b78531c
 
     def get_hours_open_id(self, hours_open_id):
         """#"""
