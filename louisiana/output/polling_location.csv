@@ -1,7 +1,7 @@
 address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
 "568  Nw Court Circle, Crowley, LA 70526",,08:30 AM-06:00 PM,,ho68766526,false,true,,,,poll68766526
 "105 N Fifth St, Oberlin, LA 70655",,08:30 AM-06:00 PM,,ho7156515,false,true,,,,poll7156515
-"828 S Irma Blvd Rm, #205, Gonzales, LA 70737",,08:30 AM-06:00 PM,,ho48340266,false,true,,,,poll48340266
+"828 S Irma Blvd, Rm #205, Gonzales, LA 70737",,08:30 AM-06:00 PM,,ho33761592,false,true,,,,poll33761592
 "300 Houmas St, Donaldsonville, LA 70346",,08:30 AM-06:00 PM,,ho25076442,false,true,,,,poll25076442
 "4809 Highway 1, Napoleonville, LA 70390",,08:30 AM-06:00 PM,,ho59949654,false,true,,,,poll59949654
 "312 N Main,  Suite E, Marksville, LA 71351",,08:30 AM-06:00 PM,,ho93888355,false,true,,,,poll93888355
@@ -13,7 +13,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "201 Main St., Columbia, LA 71418",Suite 4,08:30 AM-06:00 PM,,ho23242953,false,true,,,,poll23242953
 "148 Smith Circle, Cameron, LA 70631",,08:30 AM-06:00 PM,,ho78500355,false,true,,,,poll78500355
 "301 Bushley St, Harrisonburg, LA 71340",Room 103,08:30 AM-06:00 PM,,ho67373376,false,true,,,,poll67373376
-"507 W. Main St Ste 1, Homer, LA 71040",,08:30 AM-06:00 PM,,ho33341312,false,true,,,,poll33341312
+"507 W. Main St, Ste 1, Homer, LA 71040",,08:30 AM-06:00 PM,,ho22475931,false,true,,,,poll22475931
 "4001 Carter St., Vidalia, LA 71373",Suite K,08:30 AM-06:00 PM,,ho10246169,false,true,,,,poll10246169
 "105 Franklin St, Mansfield, LA 71052",,08:30 AM-06:00 PM,,ho76748359,false,true,,,,poll76748359
 "2250 Main St, Baker, LA 70714",,08:30 AM-06:00 PM,,ho57642332,false,true,,,,poll57642332
@@ -24,7 +24,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "200 Court St, Ste 102, Ville Platte, LA 70586",,08:30 AM-06:00 PM,,ho52476618,false,true,,,,poll52476618
 "6560 Main St, Winnsboro, LA 71295",,08:30 AM-06:00 PM,,ho62367676,false,true,,,,poll62367676
 "200 Main St, Colfax, LA 71417",,08:30 AM-06:00 PM,,ho16703195,false,true,,,,poll16703195
-"300 S. Iberia St. Ste 110, New Iberia, LA 70560",,08:30 AM-06:00 PM,,ho99134679,false,true,,,,poll99134679
+"300 S. Iberia St., Ste 110, New Iberia, LA 70560",,08:30 AM-06:00 PM,,ho68625488,false,true,,,,poll68625488
 "58050 Meriam St., Plaquemine, LA 70764",,08:30 AM-06:00 PM,,ho88965824,false,true,,,,poll88965824
 "500 E. Court St., Room 102, Jonesboro, LA 71251",,08:30 AM-06:00 PM,,ho39661559,false,true,,,,poll39661559
 "1221 Elmwood Park Blvd., Rm 502, Harahan, LA 70123",,08:30 AM-06:00 PM,,ho71360306,false,true,,,,poll71360306
@@ -41,7 +41,6 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "200 Church St., Natchitoches, LA 71457",Office 103,08:30 AM-06:00 PM,,ho14333625,false,true,,,,poll14333625
 "1300 Perdido St., New Orleans, LA 70112",,08:30 AM-06:00 PM,,ho19033718,false,true,,,,poll19033718
 "1650 Desiard St, Suite 125, Monroe, LA 71201",,08:30 AM-06:00 PM,,ho8578793,false,true,,,,poll8578793
-"1650 Desiard St Suite 125, Monroe, LA 71201",,08:30 AM-06:00 PM,,ho91636170,false,true,,,,poll91636170
 "28028 Hwy 23, Port Sulphur, LA 70083",,08:30 AM-06:00 PM,,ho87907166,false,true,,,,poll87907166
 "211 East Main Street, New Roads, LA 70760",,08:30 AM-06:00 PM,,ho17605811,false,true,,,,poll17605811
 "701 Murray St., Alexandria, LA 71301",,08:30 AM-06:00 PM,,ho57702615,false,true,,,,poll57702615
@@ -50,7 +49,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "400 Capitol St., #107, Many, LA 71449",,08:30 AM-06:00 PM,,ho40013590,false,true,,,,poll40013590
 "8201 W. Judge Perez, Chalmette, LA 70043",,08:30 AM-06:00 PM,,ho87622948,false,true,,,,poll87622948
 "14564 River Road, New Sarpy, LA 70078",,08:30 AM-06:00 PM,,ho18417175,false,true,,,,poll18417175
-"Courthouse, 15045 River Rd., #189, Hahnville, LA 70057",,08:30 AM-06:00 PM,,ho43919732,false,true,,,,poll43919732
+"15045 River Rd., #189, Hahnville, LA 70057",,08:30 AM-06:00 PM,,ho24849351,false,true,,,,poll24849351
 "48 Kendrick Street, Greensburg, LA 70441",,08:30 AM-06:00 PM,,ho58276420,false,true,,,,poll58276420
 "Courthouse, 5800 La 44, Convent, LA 70723",,08:30 AM-06:00 PM,,ho25653493,false,true,,,,poll25653493
 "2631 La 20 West, Vacherie, LA 70090",,08:30 AM-06:00 PM,,ho8649043,false,true,,,,poll8649043
