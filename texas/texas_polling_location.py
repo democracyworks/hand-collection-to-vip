@@ -31,12 +31,7 @@ class PollingLocationTxt(object):
             #address = ''
 
         if not pd.isnull(address2):
-            #address = street
-            address2 = ''.join([i if ord(i) < 128 else ' ' for i in str(address2)])
-            #address2 = ' '.join(address2.split())
-            #address = address1 + ' ' + address2
-            #print address2
-            #print type(address)
+            address2 = ' ' + ''.join([i if ord(i) < 128 else ' ' for i in str(address2)])
         else:
             address2 = ''
 
@@ -61,9 +56,9 @@ class PollingLocationTxt(object):
         #print address
         #print type(address)
 
-        final_line = address1 +  address2 + ", " + city_name + ', ' + config.state_abbreviation_upper + ' ' + zip
+        final_line = address1 + address2 + ", " + city_name + ', ' + config.state_abbreviation_upper + zip
         final_line = ' '.join(final_line.split())
-        #print index, final_line
+        print index, final_line
         return final_line
 
 
@@ -271,6 +266,6 @@ if __name__ == '__main__':
 
     pl = PollingLocationTxt(early_voting_df, state)
 
-    pl.write_polling_location_txt()
-    #pl.export_for_schedule_and_locality()
+    #pl.write_polling_location_txt()
+    pl.export_for_schedule_and_locality()
 
