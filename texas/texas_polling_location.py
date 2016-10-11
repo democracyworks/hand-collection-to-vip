@@ -228,9 +228,10 @@ class PollingLocationTxt(object):
 
         plt = self.build_polling_location_txt()
 
-        # Drop base_df columns.
-        plt.drop(['index', 'office_name', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name', 'address1',
-                'address2', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date'], inplace=True, axis=1)
+        cols = ['address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting',
+                'latitude', 'longitude', 'latlng_source', 'id']
+
+        plt = plt.reindex(columns=cols)
 
         plt = self.dedupe(plt)
         print plt
@@ -241,9 +242,11 @@ class PollingLocationTxt(object):
 
 if __name__ == '__main__':
 
-    s = 'office_name ocd_division homepage_url phone email directions name address1 address2 city state zip start_time end_time start_date end_date is_subject_to_change notes'.split(' ')
-    print s
+    #s = 'office_name ocd_division homepage_url phone email directions name address1 address2 city state zip start_time end_time start_date end_date is_subject_to_change notes'.split(' ')
+    #print s
 
+    s =['address_line, directions, hours, photo_uri, hours_open_id, is_drop_box, is_early_voting, latitude, longitude, latlng_source, id']
+    print s
     state = config.state_abbreviation_upper
 
     #state_file='texas_early_voting_info_clean.csv'
