@@ -10,7 +10,7 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:ca/county:glenn,ocd-division/country:us/state:ca/county:gl0058,poll93785153,st06,other,,loc0009
 ,ocd-id,,ocd-division/country:us/state:ca/county:humboldt,ocd-division/country:us/state:ca/county:humbo0068,poll46459874,st06,other,,loc0010
 ,ocd-id,,ocd-division/country:us/state:ca/county:imperial,ocd-division/country:us/state:ca/county:imper0069,poll48592718,st06,other,,loc0011
-,ocd-id,,ocd-division/country:us/state:ca/county:inyo,ocd-division/country:us/state:ca/county:i0077,poll67455466,st06,other,,loc0012
+,ocd-id,,ocd-division/country:us/state:ca/county:inyo,ocd-division/country:us/state:ca/county:i0077,poll74270012,st06,other,,loc0012
 ,ocd-id,,ocd-division/country:us/state:ca/county:kern,ocd-division/country:us/state:ca/county:k0084,poll73958333,st06,other,,loc0013
 ,ocd-id,,ocd-division/country:us/state:ca/county:kings,ocd-division/country:us/state:ca/county:ki0085,poll37788599,st06,other,,loc0014
 ,ocd-id,,ocd-division/country:us/state:ca/county:lassen,ocd-division/country:us/state:ca/county:las0092,poll40013324,st06,other,,loc0015
@@ -21,23 +21,23 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:ca/county:mendocino,ocd-division/country:us/state:ca/county:mendoc0125,poll3135162,st06,other,,loc0020
 ,ocd-id,,ocd-division/country:us/state:ca/county:merced,ocd-division/country:us/state:ca/county:mer0131,poll50099825,st06,other,,loc0021
 ,ocd-id,,ocd-division/country:us/state:ca/county:modoc,ocd-division/country:us/state:ca/county:mo0141,poll25997673,st06,other,,loc0022
-,ocd-id,,ocd-division/country:us/state:ca/county:mono,ocd-division/country:us/state:ca/county:m0147,poll66141389,st06,other,,loc0023
+,ocd-id,,ocd-division/country:us/state:ca/county:mono,ocd-division/country:us/state:ca/county:m0147,poll4718991,st06,other,,loc0023
 ,ocd-id,,ocd-division/country:us/state:ca/county:monterey,ocd-division/country:us/state:ca/county:monte0154,poll16320877,st06,other,,loc0024
 ,ocd-id,,ocd-division/country:us/state:ca/county:napa,ocd-division/country:us/state:ca/county:n0159,poll37346554,st06,other,,loc0025
 ,ocd-id,,ocd-division/country:us/state:ca/county:nevada,ocd-division/country:us/state:ca/county:nev0169,poll40113841 poll68858213,st06,other,,loc0026
-,ocd-id,,ocd-division/country:us/state:ca/county:orange,ocd-division/country:us/state:ca/county:ora0359,poll37598878 poll82493283 poll8885196 poll54644203 poll75043014 poll53831881,st06,other,,loc0027
+,ocd-id,,ocd-division/country:us/state:ca/county:orange,ocd-division/country:us/state:ca/county:ora0359,poll37598878 poll82493283 poll8885196 poll54644203 poll88271765 poll53831881,st06,other,,loc0027
 ,ocd-id,,ocd-division/country:us/state:ca/county:placer,ocd-division/country:us/state:ca/county:pla0178,poll92627841,st06,other,,loc0028
 ,ocd-id,,ocd-division/country:us/state:ca/county:riverside,ocd-division/country:us/state:ca/county:rivers0193,poll63894622,st06,other,,loc0029
-,ocd-id,,ocd-division/country:us/state:ca/county:sacramento,ocd-division/country:us/state:ca/county:sacrame0366,poll39800294,st06,other,,loc0030
-,ocd-id,,ocd-division/country:us/state:ca/county:san_benito,ocd-division/country:us/state:ca/county:san_ben0199,poll8160068,st06,other,,loc0031
+,ocd-id,,ocd-division/country:us/state:ca/county:sacramento,ocd-division/country:us/state:ca/county:sacrame0366,poll21783368,st06,other,,loc0030
+,ocd-id,,ocd-division/country:us/state:ca/county:san_benito,ocd-division/country:us/state:ca/county:san_ben0199,poll23198589,st06,other,,loc0031
 ,ocd-id,,ocd-division/country:us/state:ca/county:san_bernardino,ocd-division/country:us/state:ca/county:san_bernard0202,poll5652823,st06,other,,loc0032
 ,ocd-id,,ocd-division/country:us/state:ca/county:san_diego,ocd-division/country:us/state:ca/county:san_di0208,poll91978198,st06,other,,loc0033
-,ocd-id,,ocd-division/country:us/state:ca/county:san_francisco,ocd-division/country:us/state:ca/county:san_franci0215,poll99353177,st06,other,,loc0034
-,ocd-id,,ocd-division/country:us/state:ca/county:san_joaquin,ocd-division/country:us/state:ca/county:san_joaq0220,poll27163421,st06,other,,loc0035
-,ocd-id,,ocd-division/country:us/state:ca/county:san_mateo,ocd-division/country:us/state:ca/county:san_ma0223,poll31547540 poll13101045 poll11819629,st06,other,,loc0036
-,ocd-id,,ocd-division/country:us/state:ca/county:santa_barbara,ocd-division/country:us/state:ca/county:santa_barb0265,poll68074709 poll30546351 poll50676581,st06,other,,loc0037
-,ocd-id,,ocd-division/country:us/state:ca/county:santa_clara,ocd-division/country:us/state:ca/county:santa_cl0283,poll60402856,st06,other,,loc0038
-,ocd-id,,ocd-division/country:us/state:ca/county:santa_cruz,ocd-division/country:us/state:ca/county:santa_c0295,poll69160685 poll52902263,st06,other,,loc0039
+,ocd-id,,ocd-division/country:us/state:ca/county:san_francisco,ocd-division/country:us/state:ca/county:san_franci0215,poll85455370,st06,other,,loc0034
+,ocd-id,,ocd-division/country:us/state:ca/county:san_joaquin,ocd-division/country:us/state:ca/county:san_joaq0220,poll29541691,st06,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:ca/county:san_mateo,ocd-division/country:us/state:ca/county:san_ma0223,poll64532819 poll13101045 poll11819629,st06,other,,loc0036
+,ocd-id,,ocd-division/country:us/state:ca/county:santa_barbara,ocd-division/country:us/state:ca/county:santa_barb0265,poll30546351 poll41484978 poll32380723,st06,other,,loc0037
+,ocd-id,,ocd-division/country:us/state:ca/county:santa_clara,ocd-division/country:us/state:ca/county:santa_cl0283,poll64315078,st06,other,,loc0038
+,ocd-id,,ocd-division/country:us/state:ca/county:santa_cruz,ocd-division/country:us/state:ca/county:santa_c0295,poll29991416 poll52902263,st06,other,,loc0039
 ,ocd-id,,ocd-division/country:us/state:ca/county:shasta,ocd-division/country:us/state:ca/county:sha0298,poll89113059,st06,other,,loc0040
 ,ocd-id,,ocd-division/country:us/state:ca/county:solano,ocd-division/country:us/state:ca/county:sol0304,poll66624871,st06,other,,loc0041
 ,ocd-id,,ocd-division/country:us/state:ca/county:stanislaus,ocd-division/country:us/state:ca/county:stanisl0311,poll26791746,st06,other,,loc0042
