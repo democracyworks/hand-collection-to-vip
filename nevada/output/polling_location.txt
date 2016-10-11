@@ -99,9 +99,8 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "4215 Spring Mountain Rd, Las Vegas, NV 89102",,10:00 AM - 06:00 PM,,ho91103484,false,true,,,,poll19727824
 "4250 Blue Diamond Rd, Las Vegas, NV 89139",,09:00 AM - 07:00 PM,,ho86880006,false,true,,,,poll10554004
 "4421 E Bonanza Rd, Las Vegas, NV 89110",,09:00 AM - 08:00 PM,,ho68224165,false,true,,,,poll65525406
-"4421 E Bonanza Rd., Las Vegas, NV 89110",,09:00 AM - 07:00 PM,,ho48695983,false,true,,,,poll49850608
-"45 E Horizon Ridge Pkwy, Las Vegas,, NV 89101",,08:00 AM - 06:00 PM,,ho41622537,false,true,,,,poll12593498
-"4505 S. Maryland Pkwy, Las Vegas,, NV 89154",,08:00 AM - 05:00 PM,,ho86571168,false,true,,,,poll34060075
+"45 E Horizon Ridge Pkwy, Las Vegas, NV 89101",,08:00 AM - 06:00 PM,,ho39556521,false,true,,,,poll77990522
+"4505 S. Maryland Pkwy, Las Vegas, NV 89154",,08:00 AM - 05:00 PM,,ho53766091,false,true,,,,poll16523693
 "476 Albite Dr, Wellington, NV 89444",,02:00 PM - 06:00 PM,,ho68066192,false,true,,,,poll36876025
 "4775 Mcleod Dr, Las Vegas, NV 89121",,08:00 AM - 06:00 PM,,ho87857613,false,true,,,,poll88866272
 "4788 Caughlin Pkwy, Reno, NV 89519",,10:00 AM - 06:00 PM,,ho79865755,false,true,,,,poll93750034
@@ -147,5 +146,5 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "9600 W Sahara Ave, Las Vegas, NV 89117",,11:00 AM - 07:00 PM,,ho54032502,false,true,,,,poll83174147
 "9700 S Buffalo Dr, Las Vegas, NV 89178",,09:00 AM - 06:00 PM,,ho21559678,false,true,,,,poll93417510
 "9857 S. Eastern Avenue, Las Vegas, NV 89183",Trailer in the lot near PetSmar,09:00 AM - 07:00 PM,,ho46096993,false,true,,,,poll44738550
-"Grass Valley Community Center 13295 Grass Valley Rd, Winnemucca, NV 89445",,10:00 AM - 02:00 PM,,ho7073359,false,true,,,,poll40843727
+"13295 Grass Valley Rd, Winnemucca, NV 89445",,10:00 AM - 02:00 PM,,ho2455547,false,true,,,,poll36212735
 "Sahara Ave & 215 Beltway, Las Vegas, NV 89135",,09:00 AM - 07:00 PM,,ho12079446,false,true,,,,poll88993527

@@ -28,7 +28,7 @@ class PollingLocationTxt(object):
             adr += str(address_one)
 
         if not pd.isnull(address_two):
-            adr += " " + str(address_two)
+            adr += ", " + str(address_two)
 
         if not pd.isnull(city):
             city_name = str(city)
