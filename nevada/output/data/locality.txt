@@ -12,7 +12,7 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:nv/county:lyon,ocd-division/country:us/state:nv/county:l0197,poll25019260 poll49482836 poll75894415 poll16449699 poll67319339,st32,other,,loc0011
 ,ocd-id,,ocd-division/country:us/state:nv/county:mineral,ocd-division/country:us/state:nv/county:mine0043,poll47742874,st32,other,,loc0012
 ,ocd-id,,ocd-division/country:us/state:nv/county:nye,ocd-division/country:us/state:nv/county:0033,poll66138418 poll81385934,st32,other,,loc0013
-,ocd-id,,ocd-division/country:us/state:nv/county:pershing,ocd-division/country:us/state:nv/county:persh0432,poll40843727 poll69727885,st32,other,,loc0014
+,ocd-id,,ocd-division/country:us/state:nv/county:pershing,ocd-division/country:us/state:nv/county:persh0432,poll36212735 poll69727885,st32,other,,loc0014
 ,ocd-id,,ocd-division/country:us/state:nv/county:storey,ocd-division/country:us/state:nv/county:sto0192,poll45493608 poll52128210,st32,other,,loc0015
 ,ocd-id,,ocd-division/country:us/state:nv/county:washoe,ocd-division/country:us/state:nv/county:was0161,poll35689928 poll34044465 poll95775501 poll34330290 poll75676604 poll84910920 poll79889046 poll39236956 poll85142669 poll92947695 poll61873843 poll22759299 poll3146023 poll93750034 poll80782439 poll72583 poll70552191 poll66702718 poll71055582 poll73794058 poll46170501 poll47402513,st32,other,,loc0016
 ,ocd-id,,ocd-division/country:us/state:nv/county:white_pine,ocd-division/country:us/state:nv/county:white_p0394,poll35070810,st32,other,,loc0017

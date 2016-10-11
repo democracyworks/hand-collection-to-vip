@@ -146,5 +146,5 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "9600 W Sahara Ave, Las Vegas, NV 89117",,11:00 AM - 07:00 PM,,ho54032502,false,true,,,,poll83174147
 "9700 S Buffalo Dr, Las Vegas, NV 89178",,09:00 AM - 06:00 PM,,ho21559678,false,true,,,,poll93417510
 "9857 S. Eastern Avenue, Las Vegas, NV 89183",Trailer in the lot near PetSmar,09:00 AM - 07:00 PM,,ho46096993,false,true,,,,poll44738550
-"Grass Valley Community Center 13295 Grass Valley Rd, Winnemucca, NV 89445",,10:00 AM - 02:00 PM,,ho7073359,false,true,,,,poll40843727
+"13295 Grass Valley Rd, Winnemucca, NV 89445",,10:00 AM - 02:00 PM,,ho2455547,false,true,,,,poll36212735
 "Sahara Ave & 215 Beltway, Las Vegas, NV 89135",,09:00 AM - 07:00 PM,,ho12079446,false,true,,,,poll88993527
