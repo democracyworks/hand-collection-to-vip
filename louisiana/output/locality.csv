@@ -1,47 +1,47 @@
 election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
 ,ocd-id,,ocd-division/country:us/state:la/parish:acadia,aca0002,poll68766526,st22,other,,loc0001
 ,ocd-id,,ocd-division/country:us/state:la/parish:allen,al0003,poll7156515,st22,other,,loc0002
-,ocd-id,,ocd-division/country:us/state:la/parish:ascension,ascens0007,poll18185574 poll70573203,st22,other,,loc0003
-,ocd-id,,ocd-division/country:us/state:la/parish:assumption,assumpt0010,poll87048074,st22,other,,loc0004
+,ocd-id,,ocd-division/country:us/state:la/parish:ascension,ascens0007,poll48340266 poll25076442,st22,other,,loc0003
+,ocd-id,,ocd-division/country:us/state:la/parish:assumption,assumpt0010,poll59949654,st22,other,,loc0004
 ,ocd-id,,ocd-division/country:us/state:la/parish:avoyelles,avoyel0012,poll93888355,st22,other,,loc0005
 ,ocd-id,,ocd-division/country:us/state:la/parish:beauregard,beaureg0014,poll21788516,st22,other,,loc0006
-,ocd-id,,ocd-division/country:us/state:la/parish:bienville,bienvi0015,poll10619167,st22,other,,loc0007
-,ocd-id,,ocd-division/country:us/state:la/parish:bossier,boss0018,poll60758831,st22,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:la/parish:bienville,bienvi0015,poll74816226,st22,other,,loc0007
+,ocd-id,,ocd-division/country:us/state:la/parish:bossier,boss0018,poll14138297,st22,other,,loc0008
 ,ocd-id,,ocd-division/country:us/state:la/parish:caddo,ca0020,poll25014275,st22,other,,loc0009
-,ocd-id,,ocd-division/country:us/state:la/parish:calcasieu,calcas0160,poll91422313 poll88264430 poll41048699,st22,other,,loc0010
-,ocd-id,,ocd-division/country:us/state:la/parish:caldwell,caldw0024,poll54367947,st22,other,,loc0011
+,ocd-id,,ocd-division/country:us/state:la/parish:calcasieu,calcas0160,poll18871850 poll93824081 poll41048699,st22,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:la/parish:caldwell,caldw0024,poll23242953,st22,other,,loc0011
 ,ocd-id,,ocd-division/country:us/state:la/parish:cameron,came0025,poll78500355,st22,other,,loc0012
-,ocd-id,,ocd-division/country:us/state:la/parish:catahoula,cataho0027,poll67243434,st22,other,,loc0013
+,ocd-id,,ocd-division/country:us/state:la/parish:catahoula,cataho0027,poll67373376,st22,other,,loc0013
 ,ocd-id,,ocd-division/country:us/state:la/parish:claiborne,claibo0030,poll33341312,st22,other,,loc0014
-,ocd-id,,ocd-division/country:us/state:la/parish:concordia,concor0032,poll1870307,st22,other,,loc0015
+,ocd-id,,ocd-division/country:us/state:la/parish:concordia,concor0032,poll10246169,st22,other,,loc0015
 ,ocd-id,,ocd-division/country:us/state:la/parish:de_soto,de_s0033,poll76748359,st22,other,,loc0016
 ,ocd-id,,ocd-division/country:us/state:la/parish:east_baton_rouge,east_baton_ro0040,poll11061433 poll57642332 poll38988771 poll64897436,st22,other,,loc0017
 ,ocd-id,,ocd-division/country:us/state:la/parish:east_carroll,east_carr0042,poll80176273,st22,other,,loc0018
 ,ocd-id,,ocd-division/country:us/state:la/parish:east_feliciana,east_felici0043,poll25540016,st22,other,,loc0019
 ,ocd-id,,ocd-division/country:us/state:la/parish:evangeline,evangel0046,poll52476618,st22,other,,loc0020
 ,ocd-id,,ocd-division/country:us/state:la/parish:franklin,frank0048,poll62367676,st22,other,,loc0021
-,ocd-id,,ocd-division/country:us/state:la/parish:grant,gr0049,poll92460085,st22,other,,loc0022
+,ocd-id,,ocd-division/country:us/state:la/parish:grant,gr0049,poll16703195,st22,other,,loc0022
 ,ocd-id,,ocd-division/country:us/state:la/parish:iberia,ibe0052,poll99134679,st22,other,,loc0023
 ,ocd-id,,ocd-division/country:us/state:la/parish:iberville,ibervi0054,poll88965824,st22,other,,loc0024
 ,ocd-id,,ocd-division/country:us/state:la/parish:jackson,jack0056,poll39661559,st22,other,,loc0025
-,ocd-id,,ocd-division/country:us/state:la/parish:jefferson,jeffer0059,poll42402312 poll71360306 poll61252182 poll84958554,st22,other,,loc0026
+,ocd-id,,ocd-division/country:us/state:la/parish:jefferson,jeffer0059,poll42402312 poll70492503 poll71360306 poll61252182,st22,other,,loc0026
 ,ocd-id,,ocd-division/country:us/state:la/parish:jefferson_davis,jefferson_da0062,poll56857384,st22,other,,loc0027
 ,ocd-id,,ocd-division/country:us/state:la/parish:lafayette,lafaye0063,poll20632824,st22,other,,loc0028
-,ocd-id,,ocd-division/country:us/state:la/parish:lafourche,lafour0065,poll11051957 poll89355941,st22,other,,loc0029
+,ocd-id,,ocd-division/country:us/state:la/parish:lafourche,lafour0065,poll84666538 poll89355941,st22,other,,loc0029
 ,ocd-id,,ocd-division/country:us/state:la/parish:lasalle,lasa0070,poll88531758,st22,other,,loc0030
-,ocd-id,,ocd-division/country:us/state:la/parish:lincoln,linc0071,poll17377859,st22,other,,loc0031
-,ocd-id,,ocd-division/country:us/state:la/parish:livingston,livings0074,poll44435866 poll79009477,st22,other,,loc0032
-,ocd-id,,ocd-division/country:us/state:la/parish:madison,madi0076,poll84627432,st22,other,,loc0033
+,ocd-id,,ocd-division/country:us/state:la/parish:lincoln,linc0071,poll79909534,st22,other,,loc0031
+,ocd-id,,ocd-division/country:us/state:la/parish:livingston,livings0074,poll44435866 poll19960873,st22,other,,loc0032
+,ocd-id,,ocd-division/country:us/state:la/parish:madison,madi0076,poll48450173,st22,other,,loc0033
 ,ocd-id,,ocd-division/country:us/state:la/parish:morehouse,moreho0078,poll69730503,st22,other,,loc0034
-,ocd-id,,ocd-division/country:us/state:la/parish:natchitoches,natchitoc0079,poll65352879,st22,other,,loc0035
-,ocd-id,,ocd-division/country:us/state:la/parish:orleans,orle0082,poll1142425 poll64867148 poll84213150 poll98238487,st22,other,,loc0036
-,ocd-id,,ocd-division/country:us/state:la/parish:ouachita,ouach0083,poll91636170 poll6833997,st22,other,,loc0037
+,ocd-id,,ocd-division/country:us/state:la/parish:natchitoches,natchitoc0079,poll14333625,st22,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:la/parish:orleans,orle0082,poll64867148 poll19033718 poll28027483 poll85547690,st22,other,,loc0036
+,ocd-id,,ocd-division/country:us/state:la/parish:ouachita,ouach0083,poll8578793 poll91636170 poll6833997,st22,other,,loc0037
 ,ocd-id,,ocd-division/country:us/state:la/parish:plaquemines,plaquemi0165,poll56075471 poll36152083 poll87907166,st22,other,,loc0038
-,ocd-id,,ocd-division/country:us/state:la/parish:pointe_coupee,pointe_cou0087,poll41335318,st22,other,,loc0039
+,ocd-id,,ocd-division/country:us/state:la/parish:pointe_coupee,pointe_cou0087,poll17605811,st22,other,,loc0039
 ,ocd-id,,ocd-division/country:us/state:la/parish:rapides,rapi0090,poll57702615 poll40463073,st22,other,,loc0040
-,ocd-id,,ocd-division/country:us/state:la/parish:red_river,red_ri0180,poll35378719 poll99594147,st22,other,,loc0041
-,ocd-id,,ocd-division/country:us/state:la/parish:richland,richl0094,poll31020419,st22,other,,loc0042
-,ocd-id,,ocd-division/country:us/state:la/parish:sabine,sab0096,poll74240587,st22,other,,loc0043
+,ocd-id,,ocd-division/country:us/state:la/parish:red_river,red_ri0180,poll75197774 poll25858079,st22,other,,loc0041
+,ocd-id,,ocd-division/country:us/state:la/parish:richland,richl0094,poll26593522,st22,other,,loc0042
+,ocd-id,,ocd-division/country:us/state:la/parish:sabine,sab0096,poll40013590,st22,other,,loc0043
 ,ocd-id,,ocd-division/country:us/state:la/parish:st_bernard,st_bern0097,poll87622948,st22,other,,loc0044
 ,ocd-id,,ocd-division/country:us/state:la/parish:st_charles,st_char0102,poll18417175 poll43919732,st22,other,,loc0045
 ,ocd-id,,ocd-division/country:us/state:la/parish:st_helena,st_hel0103,poll58276420,st22,other,,loc0046
@@ -51,16 +51,16 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:la/parish:st_martin,st_mar0172,poll44896002,st22,other,,loc0050
 ,ocd-id,,ocd-division/country:us/state:la/parish:st_martinville,st_martinvi0116,poll45919216,st22,other,,loc0051
 ,ocd-id,,ocd-division/country:us/state:la/parish:st_mary,st_m0117,poll24935262 poll74471183 poll74543326,st22,other,,loc0052
-,ocd-id,,ocd-division/country:us/state:la/parish:st_tammany,st_tamm0119,poll15945271 poll66229332 poll3722151,st22,other,,loc0053
+,ocd-id,,ocd-division/country:us/state:la/parish:st_tammany,st_tamm0119,poll66229332 poll12568363 poll15945271,st22,other,,loc0053
 ,ocd-id,,ocd-division/country:us/state:la/parish:tangipahoa,tangipa0124,poll21032336 poll35219206,st22,other,,loc0054
-,ocd-id,,ocd-division/country:us/state:la/parish:tensas,ten0127,poll11002549,st22,other,,loc0055
+,ocd-id,,ocd-division/country:us/state:la/parish:tensas,ten0127,poll43929586,st22,other,,loc0055
 ,ocd-id,,ocd-division/country:us/state:la/parish:terrebonne,terrebo0130,poll86086032,st22,other,,loc0056
-,ocd-id,,ocd-division/country:us/state:la/parish:union,un0132,poll22789648,st22,other,,loc0057
-,ocd-id,,ocd-division/country:us/state:la/parish:vermilion,vermil0133,poll62687718,st22,other,,loc0058
-,ocd-id,,ocd-division/country:us/state:la/parish:vernon,ver0135,poll16649780,st22,other,,loc0059
+,ocd-id,,ocd-division/country:us/state:la/parish:union,un0132,poll92303514,st22,other,,loc0057
+,ocd-id,,ocd-division/country:us/state:la/parish:vermilion,vermil0133,poll94620749,st22,other,,loc0058
+,ocd-id,,ocd-division/country:us/state:la/parish:vernon,ver0135,poll54190078,st22,other,,loc0059
 ,ocd-id,,ocd-division/country:us/state:la/parish:washington,washing0156,poll70848342 poll58773341,st22,other,,loc0060
-,ocd-id,,ocd-division/country:us/state:la/parish:webster,webs0140,poll44581467 poll79994875,st22,other,,loc0061
-,ocd-id,,ocd-division/country:us/state:la/parish:west_baton_rouge,west_baton_ro0141,poll60600710,st22,other,,loc0062
+,ocd-id,,ocd-division/country:us/state:la/parish:webster,webs0140,poll77707070 poll44581467,st22,other,,loc0061
+,ocd-id,,ocd-division/country:us/state:la/parish:west_baton_rouge,west_baton_ro0141,poll81681721,st22,other,,loc0062
 ,ocd-id,,ocd-division/country:us/state:la/parish:west_carroll,west_carr0144,poll79350390,st22,other,,loc0063
-,ocd-id,,ocd-division/country:us/state:la/parish:west_feliciana,west_felici0145,poll3537468,st22,other,,loc0064
-,ocd-id,,ocd-division/country:us/state:la/parish:winn,w0147,poll72280575,st22,other,,loc0065
+,ocd-id,,ocd-division/country:us/state:la/parish:west_feliciana,west_felici0145,poll98056675,st22,other,,loc0064
+,ocd-id,,ocd-division/country:us/state:la/parish:winn,w0147,poll86023506,st22,other,,loc0065
