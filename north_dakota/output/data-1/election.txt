@@ -1,2 +1,0 @@
-id,date,name,election_type,state_id,is_statewide,registration_info,absentee_ballot_info,results_uri,polling_hours,has_election_day_registration,registration_deadline,absentee_request_deadline,hours_open_id
-e0001,2016-11-08,2016 General Election,federal,st38,true,,,,08:00 AM - 12:00 PM,false,,2016-11-07,

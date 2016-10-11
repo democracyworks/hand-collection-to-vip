@@ -278,7 +278,7 @@ if __name__ == '__main__':
     early_voting_file = config.polling_location_output + file_name
 
     colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'index',
+                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'notes', 'index',
                 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
                 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'polling_location_id']
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1, delimiter=',')

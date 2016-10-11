@@ -82,7 +82,7 @@ class ScheduleTxt(object):
 
     def get_start_date(self, start_date, county):
         string = str(start_date)
-        date = datetime.datetime.strptime(string, '%m/%d/%Y').strftime('%Y-%m-%d')
+        date = datetime.datetime.strptime(string, '%m/%d/%y').strftime('%Y-%m-%d')
 
         return date
         # return start_date + config.utc_offset
@@ -91,7 +91,7 @@ class ScheduleTxt(object):
         # create conditional when/if column is present
         string = str(end_date)
 
-        date = datetime.datetime.strptime(string, '%m/%d/%Y').strftime('%Y-%m-%d')
+        date = datetime.datetime.strptime(string, '%m/%d/%y').strftime('%Y-%m-%d')
 
         return date
 
@@ -104,6 +104,7 @@ class ScheduleTxt(object):
         """Create id"""
         # concatenate county name, or part of it (first 3/4 letters) with index
         # add leading zeros to maintain consistent id length
+
         if index <= 9:
             index_str = '000' + str(index)
 
@@ -145,7 +146,7 @@ class ScheduleTxt(object):
             lambda row: self.get_end_date(row['end_date'], row['county']), axis=1)
         #
         self.base_df['hours_open_id2'] = self.base_df.apply(
-            lambda row: self.get_hours_open_id(row['hours_open']), axis=1)
+            lambda row: self.get_hours_open_id(row['hours_open_id']), axis=1)
         #
         self.base_df['id2'] = self.base_df.apply(
             lambda row: self.create_schedule_id(row['index']), axis=1)
@@ -166,8 +167,8 @@ class ScheduleTxt(object):
         # Drop base_df columns.
         sch.drop(['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
                   'address_two', 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date', 'end_date', 'index', 'time_zone',
-                  'address_line', 'directions', 'hours', 'photo_uri', 'hours_open', 'is_drop_box', 'is_early_voting',
-                  'latitude', 'longitude', 'latlng_source', 'id'], inplace=True,
+                  'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting',
+                  'latitude', 'longitude', 'latlng_source', 'polling_location_id', 'notes'], inplace=True,
                  axis=1)
 
         # hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id,
@@ -203,17 +204,17 @@ if __name__ == '__main__':
     #
     # early_voting_file = config.schedule_data
 
-    file = "intermediate_pl_for_sch.csv"
+    file = "intermediate_doc.csv"
     early_voting_file = config.polling_location_output + file
 
 
     colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'index',
-                'address_line', 'directions', 'hours', 'photo_uri', 'hours_open', 'is_drop_box',
-                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
+                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'notes', 'index',
+                'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
+                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'polling_location_id']
 
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
-    print len("13:00:00-05:00")
+
     # early_voting_df['index'] = early_voting_df.index + 1
     ScheduleTxt(early_voting_df).write_schedule_txt()
     # ScheduleTxt(early_voting_df).format_for_schedule()

@@ -54,13 +54,14 @@ class PollingLocationTxt(object):
 
         if zip_code:
             # TODO: add zip code validation
-            zip_code = str(zip_code)
+            #print zip_code
+            zip_code = str(zip_code)[0:5]
             # print zip_code
         else:
             zip_code = ''
             print 'Missing zip_code value at row ' + index + '.'
-        address_line = address + ', ' + city + ', KS ' + zip_code
-
+        address_line = address.strip() + ', ' + city.strip() + ', KS ' + zip_code.strip()
+        print address_line
         return address_line
 
     def get_directions(self):
@@ -248,7 +249,7 @@ class PollingLocationTxt(object):
         plt = self.build_polling_location_txt()
         # Drop base_df columns.
         plt.drop(['index', 'county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone'], inplace=True, axis=1)
+                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'notes'], inplace=True, axis=1)
         plt = self.dedupe(plt)
         return plt
 
@@ -289,15 +290,15 @@ if __name__ == '__main__':
 
     early_voting_true = "true"  # True or False
     #drop_box_true =
-    state_file='kansas_final_schedule.csv'
+    state_file='kansas_early_voting_info.csv'
 
     # early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
 
     early_voting_file = config.input_folder + state_file
 
     colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone']
-    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
+                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'notes']
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
 
@@ -307,17 +308,17 @@ if __name__ == '__main__':
     # print early_voting_df["index"]
 
 
-    old_file = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/data/kansas_early_voting_info.csv"
-    new_file = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/data/reformatted_info.csv"
-
-    with open(old_file, 'rU') as csvfile:
-        reader = csv.DictReader(csvfile)
-        f = open(new_file, 'wb')
-        writer = csv.writer(f)
-        cols = ["County", "Officer", "Email", "Phone", "Address1", "Address2", "City", "State", "Zip", "Hours", "Start", "End"]
-        writer.writerow(cols)
-        for row in reader:
-            arr1 = [row["COUNTY"], row["OFFICER"], row["EMAIL"], "10/24"]
-            arr2 = [row["CITY"], row["STATE"], "10/31"]
-            writer.writerow(arr1)
-            writer.writerow(arr2)
+    # old_file = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/data/kansas_early_voting_info.csv"
+    # new_file = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/data/reformatted_info.csv"
+    #
+    # with open(old_file, 'rU') as csvfile:
+    #     reader = csv.DictReader(csvfile)
+    #     f = open(new_file, 'wb')
+    #     writer = csv.writer(f)
+    #     cols = ["County", "Officer", "Email", "Phone", "Address1", "Address2", "City", "State", "Zip", "Hours", "Start", "End"]
+    #     writer.writerow(cols)
+    #     for row in reader:
+    #         arr1 = [row["COUNTY"], row["OFFICER"], row["EMAIL"], "10/24"]
+    #         arr2 = [row["CITY"], row["STATE"], "10/31"]
+    #         writer.writerow(arr1)
+    #         writer.writerow(arr2)

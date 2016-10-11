@@ -18,8 +18,8 @@ fips_dict = {'wyoming': '56', 'colorado': '08', 'washington': '53', 'hawaii': '1
              'alabama': '01', 'massachusetts': '25'}
 
 #data_folder = "/Users/danielgilberg/Development/hand-collection-to-vip/arkansas/input/"
-data_folder = '/home/acg/democracyworks/hand-collection-to-vip/arkansas/input/'
+data_folder = '/Users/danielgilberg/Development/hand-collection-to-vip/arkansas/input/'
 
 #output = "/Users/danielgilberg/Development/hand-collection-to-vip/arkansas/output/"
 
-output = '/home/acg/democracyworks/hand-collection-to-vip/arkansas/output/'
+output = '/Users/danielgilberg/Development/hand-collection-to-vip/arkansas/output/'

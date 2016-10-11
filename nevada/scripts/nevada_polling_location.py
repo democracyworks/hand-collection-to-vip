@@ -23,8 +23,8 @@ class PollingLocationTxt(object):
         if address:
             if address.strip()[-1]== ",":
                 address = address.strip()[:-1]
-            adr = address
-            print adr
+            adr = address.lower().title()
+            #print adr
         else:
             adr = ''
 
@@ -39,8 +39,8 @@ class PollingLocationTxt(object):
         else:
             zip = ''
 
-        line= adr.strip() + ", " + city + ", NV " + zip
-        # print line, index
+        line= adr.strip() + ", " + city.strip() + ", NV " + zip
+        print line, index
         return line
 
     def get_directions(self, dirs):

@@ -239,8 +239,7 @@ if __name__ == '__main__':
 
     early_voting_file = config.output + state_file
 
-    colnames = ['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'loc_name', 'address_one', 'address_two',
-                'city', 'state', 'zip',
+    colnames = ['spr', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'name', 'adr_1', 'adr_2', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'notes', 'index','address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id']
     print len(colnames)

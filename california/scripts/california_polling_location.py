@@ -211,7 +211,7 @@ class PollingLocationTxt(object):
 
         # Drop base_df columns.
         plt.drop(['ocd-division', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time',
-                'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change', 'index', 'dirs'], inplace=True, axis=1)
+                'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change', 'index', 'dirs', 'drop_box'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
         print plt

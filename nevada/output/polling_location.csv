@@ -1,148 +1,151 @@
 address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-"885 East Musser Street, Suite 1025, Carson City, NV 89701",,10:00 AM - 06:00 PM,,ho49486490,false,true,,,,poll40344412
-"155 N Taylor St, Suite 110, Chamber Commissions, Fallon, NV 89406",,10:00 AM - 06:00 PM,,ho28109477,false,true,,,,poll84047379
-"2840 S. Needles Hwy., Laughlin, NV 89029",,08:00 AM - 06:00 PM,,ho56820667,false,true,,,,poll27973630
-"200 Michael Wendell Way, Searchlight, NV 89046",,10:00 AM - 03:00 PM,,ho69883284,false,true,,,,poll28278641
-"7075 West Ann Road, Las Vegas, NV 89130",,09:00 AM - 07:00 PM,,ho27240723,false,true,,,,poll95018499
-"300 Racetrack Road, Henderson, NV 89015",,08:00 AM - 06:00 PM,,ho13894185,false,true,,,,poll51593468
-"7394 Aliante Parkway, North Las Vegas, NV 89084",,08:00 AM - 06:00 PM,,ho32151246,false,true,,,,poll75712545
-"3150 N. Buffalo Dr., Las Vegas, NV 89128",,10:00 AM - 06:00 PM,,ho44766907,false,true,,,,poll8809940
-"4421 E BONANZA RD., Las Vegas, NV 89110",,09:00 AM - 07:00 PM,,ho29514497,false,true,,,,poll86991350
-"8350 W Cheyenne Ave, Las Vegas, NV 89129",,08:00 AM - 06:00 PM,,ho42599706,false,true,,,,poll58976252
-"9600 W Sahara Ave, Las Vegas, NV 89117",,11:00 AM - 07:00 PM,,ho54032502,false,true,,,,poll83174147
-"10250 West Charleston Blvd, Las Vegas, NV 89135",,08:00 AM - 06:00 PM,,ho6714420,false,true,,,,poll40829120
-"4055 S Durango Dr, Las Vegas, NV 89147",,08:00 AM - 06:00 PM,,ho3831623,false,true,,,,poll21358340
 "1001 S. Rainbow Blvd, Las Vegas, NV 89145",,09:00 AM - 07:00 PM,,ho32546515,false,true,,,,poll38577627
-"7151 West Craig Road, Las Vegas, NV 89129",,09:00 AM - 07:00 PM,,ho31536747,false,true,,,,poll84983972
-"280 S Green Valley Pkwy, Henderson, NV 89012",,10:00 AM - 08:00 PM,,ho41448920,false,true,,,,poll76527980
-"6450 Sky Pointe Dr, Las Vegas, NV 89131",,09:00 AM - 07:00 PM,,ho28060311,false,true,,,,poll61374261
-"8410 Farm Road, Las Vegas, NV 89131",,09:00 AM - 07:00 PM,,ho10712647,false,true,,,,poll94624352
-"190 N Boulder Hwy, Henderson, NV 89015",,09:00 AM - 07:00 PM,,ho10113401,false,true,,,,poll92315722
-"4025 Allen Ln, North Las Vegas, NV 89032",,09:00 AM - 07:00 PM,,ho33083400,false,true,,,,poll45707452
-"8275 Spring Mountain Rd, Las Vegas, NV 89117",,09:00 AM - 07:00 PM,,ho19829307,false,true,,,,poll59757128
-"4850 West Craig Road, Las Vegas, NV 89032",,08:00 AM - 06:00 PM,,ho19697040,false,true,,,,poll2590459
-"2400 W Deer Springs Way, North Las Vegas, NV 89084",,10:30 AM - 07:30 PM,,ho42644297,false,true,,,,poll15175672
-"2050 Bonnie Lane, Las Vegas, NV 89156",,08:00 AM - 06:00 PM,,ho83917264,false,true,,,,poll2027416
-"6200 W Lone Mountain Rd, Las Vegas, NV 89130",,09:00 AM - 07:00 PM,,ho94763748,false,true,,,,poll89205836
-"3200 East Cheyenne Ave, North Las Vegas, NV 89030",,08:00 AM - 06:00 PM,,ho80463747,false,true,,,,poll18628551
-"Dr. William U. Pearson Comm. Ctr. 1625 W. Carey Ave. @ M.L. King Blvd, Las Vegas, NV 89030",,09:00 AM - 07:00 PM,,ho12218854,false,true,,,,poll1891662
-"300 S. Racetrack Rd, Henderson, NV 89015",,08:00 AM - 06:00 PM,,ho20678444,false,true,,,,poll73882570
-"6670 W Cheyenne Ave,  Las Vegas, NV 89108",,09:00 AM - 07:00 PM,,ho34285760,false,true,,,,poll21807256
-"4120 S Rainbow,  Las Vegas, NV 89103",,09:00 AM - 07:00 PM,,ho10444895,false,true,,,,poll28755055
-"4775 McLeod Dr,  Las Vegas, NV 89121",,08:00 AM - 06:00 PM,,ho84043061,false,true,,,,poll8384784
-"9600 W Sahara Ave,  Las Vegas, NV 89117",,10:00 AM - 07:00 PM,,ho3687626,false,true,,,,poll20659175
-"3050 E Centennial Pkwy, North Las Vegas, NV 89081",,09:00 AM - 07:00 PM,,ho5406131,false,true,,,,poll53984982
-"1950 Village Center Cir,  Las Vegas, NV 89134",,08:00 AM - 06:00 PM,,ho16497012,false,true,,,,poll72500314
-"6450 Sky Pointe Dr,  Las Vegas, NV 89131",,09:00 AM - 07:00 PM,,ho80036056,false,true,,,,poll50139465
-"2835 S. Nellis Bl.,  Las Vegas, NV 89121",,09:00 AM - 07:00 PM,,ho43427463,false,true,,,,poll15093532
-"1755 W Alexander Rd, North Las Vegas, NV 89032",(Martin Luther King Blvd),10:30 AM - 07:30 PM,,ho41704753,false,true,,,,poll2725245
-"10360 Sun City Blvd, Las Vegas, NV 89134",,09:00 AM - 07:00 PM,,ho39720934,false,true,,,,poll91389391
-"6670 W Cheyenne Ave, Las Vegas, NV 89108",,09:00 AM - 07:00 PM,,ho32876043,false,true,,,,poll84172029
-"2401 Somersworth Dr, Henderson, NV 89044",,08:00 AM - 06:00 PM,,ho84448664,false,true,,,,poll26460142
-"7390 Aliante Pkwy, North Las Vegas, NV 89084",,08:00 AM - 06:00 PM,,ho37566262,false,true,,,,poll89353140
-"1970 VILLAGE CENTER CIRCLE, STE. 7,  Las Vegas, NV 89134",,09:00 AM - 07:00 PM,,ho86920050,false,true,,,,poll11013398
-"3130 McLeod Dr,  Las Vegas, NV 89121",,10:00 AM - 08:00 PM,,ho38344358,false,true,,,,poll73231060
-"5881 E. Charleston Blvd,  Las Vegas, NV 89142",,09:00 AM - 07:00 PM,,ho39120860,false,true,,,,poll12041917
-"10250 West Charleston Blvd,  Las Vegas, NV 89135",,08:00 AM - 06:00 PM,,ho8743303,false,true,,,,poll79049591
-"575 College Drive, Henderson, NV 89015",,08:00 AM - 06:00 PM,,ho4423028,false,true,,,,poll46641654
-"7271 S. Eastern Avenue,  Las Vegas, NV 89119",,08:00 AM - 06:00 PM,,ho23822181,false,true,,,,poll59800692
-"8410 Farm Road,  Las Vegas, NV 89131",,09:00 AM - 07:00 PM,,ho39777224,false,true,,,,poll89807843
-"6885 E Lake Mead Blvd,  Las Vegas, NV 89156",,09:00 AM - 07:00 PM,,ho38679679,false,true,,,,poll80705745
-"5975 W. Tropicana Avenue,  Las Vegas, NV 89103",,09:00 AM - 07:00 PM,,ho80548908,false,true,,,,poll705828
-"2671 Las Vegas Blvd, Las Vegas, NV 89030",,09:00 AM - 07:00 PM,,ho62848825,false,true,,,,poll68899416
-"4215 Spring Mountain Rd,  Las Vegas, NV 89102",,10:00 AM - 06:00 PM,,ho54925870,false,true,,,,poll4826968
-"1950 J St (Lake Mead Blvd),  Las Vegas, NV 89106",,09:00 AM - 05:00 PM,,ho48292767,false,true,,,,poll43731164
-"2570 E Craig Rd, North Las Vegas, NV 89030",,09:00 AM - 07:00 PM,,ho4315632,false,true,,,,poll63244356
-"9107 Del Webb Blvd, Las Vegas, NV 89134",,09:00 AM - 07:00 PM,,ho17275828,false,true,,,,poll41968044
-"9125 S Buffalo Dr, Las Vegas, NV 89113",,09:00 AM - 06:00 PM,,ho94101298,false,true,,,,poll6820255
-"25 E. Shelbourne Ave..,  Las Vegas, NV 89123",,10:00 AM - 06:00 PM,,ho93013516,false,true,,,,poll25645060
-"3150 N. Buffalo Dr, Las Vegas, NV 89128",,10:00 AM - 06:00 PM,,ho7555695,false,true,,,,poll42151842
-"10590 Southern Highlands Pkwy, Las Vegas, NV 89141",,09:00 AM - 07:00 PM,,ho94104279,false,true,,,,poll55804321
-"2450 Hampton Rd, Henderson, NV 89052",,09:00 AM - 06:00 PM,,ho32491222,false,true,,,,poll29333200
-"5175 E Tropicana Ave, Las Vegas, NV 89122",,10:30 AM - 05:30 PM,,ho45782703,false,true,,,,poll87627973
-"4055 South Durango Drive, Las Vegas, NV 89147",,08:00 AM - 06:00 PM,,ho40640384,false,true,,,,poll63108187
-"401 California Ave, Boulder City, NV 89005",,07:00 AM - 06:00 PM,,ho83817282,false,true,,,,poll36659412
-"6601 N Buffalo Dr, Las Vegas, NV 89131",,08:00 AM - 06:00 PM,,ho86156047,false,true,,,,poll14918830
-"700 College Dr, Henderson, NV 89002",,09:00 AM - 04:30 PM,,ho92212670,false,true,,,,poll15477191
-"1950 J St (Lake Mead Blvd), Las Vegas, NV 89106",,09:00 AM - 07:00 PM,,ho18610126,false,true,,,,poll60198549
-"25 E Shelbourne Ave, Las Vegas, NV 89123",,10:00 AM - 07:00 PM,,ho50923978,false,true,,,,poll70543168
-"8200 W Sahara Ave, Las Vegas, NV 89117",,09:00 AM - 07:00 PM,,ho74359974,false,true,,,,poll27249242
-"320 N Moapa Valley Blvd, Overton, NV 89040",,08:00 AM - 06:00 PM,,ho4693055,false,true,,,,poll89773122
-"7290 W Lake Mead Blvd, Las Vegas, NV 89128",,09:00 AM - 07:00 PM,,ho69813537,false,true,,,,poll71208103
-"150 N Yucca St, Mesquite, NV 89027",,08:00 AM - 07:00 PM,,ho36526216,false,true,,,,poll33495099
-"4025 Allen Lane, North Las Vegas, NV 89031",,09:00 AM - 07:00 PM,,ho46136884,false,true,,,,poll68568067
 "1951 Silver Springs Pkwy, Las Vegas, NV 89074",,08:00 AM - 06:00 PM,,ho77601018,false,true,,,,poll15067507
-"3075 North Walnut Road, Las Vegas, NV 89115",,09:00 AM - 07:00 PM,,ho60822203,false,true,,,,poll86658831
-"6301 W. Charleston Blvd., Las Vegas, NV 89146",,10:00 AM - 07:00 PM,,ho84178060,false,true,,,,poll20891911
-"3010 West Ann Road, North Las Vegas, NV 89031",,08:00 AM - 06:00 PM,,ho60308813,false,true,,,,poll9802224
-"1650 North Buffalo Drive, Las Vegas, NV 89128",,08:00 AM - 06:00 PM,,ho22534302,false,true,,,,poll87909063
-"4421 E Bonanza Rd, Las Vegas, NV 89110",,09:00 AM - 07:00 PM,,ho68224165,false,true,,,,poll65525406
-"2797 N Green Valley Pkwy, Henderson, NV 89014",,10:00 AM - 07:00 PM,,ho87842823,false,true,,,,poll12418358
-"1350 Flat Top Mesa Drive, Mesquite, NV 89034",,08:00 AM - 07:00 PM,,ho73868267,false,true,,,,poll38826303
-"8750 W Charleston Blvd,  Las Vegas , NV 89117",,09:00 AM - 07:00 PM,,ho63929035,false,true,,,,poll42102693
-"4505 S. Maryland Pkwy,  Las Vegas , NV 89154",,08:00 AM - 05:00 PM,,ho95800987,false,true,,,,poll24446165
-"101 N Pavilion Center Dr,  Las Vegas , NV 89144",,09:00 AM - 07:00 PM,,ho32364418,false,true,,,,poll85355125
-"8275 Spring Mountain Rd, Las Vegas, NV 89102",,09:00 AM - 07:00 PM,,ho43630041,false,true,,,,poll22195118
-"1650 S Hollywood Blvd, Las Vegas, NV 89142",,08:00 AM - 06:00 PM,,ho36389925,false,true,,,,poll95435922
-"45 E Horizon Ridge Pkwy,  Las Vegas , NV 89101",,08:00 AM - 06:00 PM,,ho28369422,false,true,,,,poll23902308
-"6255 W Flamingo Rd, Las Vegas, NV 89103",,08:30 AM - 05:30 PM,,ho31126682,false,true,,,,poll16427932
-"3528 S Maryland Pkwy BOULEVARD MALL, Las Vegas, NV 89169",,10:00 AM - 08:00 PM,,ho30141069,false,true,,,,poll26474823
-"1300 W SUNSET RD Kohl's Court, Henderson, NV 89014",,10:00 AM - 08:00 PM,,ho82646189,false,true,,,,poll17624771
+"4120 S Rainbow, Las Vegas, NV 89103",,09:00 AM - 07:00 PM,,ho18515771,false,true,,,,poll91743021
 "4300 Meadows Ln Sears Court, Las Vegas, NV 89107",,10:00 AM - 08:00 PM,,ho35883559,false,true,,,,poll60413605
-"7200 Arroyo Crossing Pkwy, Las Vegas, NV 89113",,09:00 AM - 07:00 PM,,ho72146058,false,true,,,,poll4305723
-"Blue Diamond Business Center Blue Diamond & Arville, Las Vegas, NV 89139",,09:00 AM - 07:00 PM,,ho15109552,false,true,,,,poll14712157
-"8060 W Tropical Pkwy, Las Vegas, NV 89149",,09:00 AM - 07:00 PM,,ho76291263,false,true,,,,poll66592078
-"6960 N 5th St, North Las Vegas, NV 89084",Trailer near Michaels,09:00 AM - 07:00 PM,,ho48126746,false,true,,,,poll59480403
-"Sahara Ave & 215 Beltway, Las Vegas, NV 89135",,09:00 AM - 07:00 PM,,ho12079446,false,true,,,,poll88993527
-"5050 South Fort Apache Road, Las Vegas, NV 89148",,09:00 AM - 07:00 PM,,ho50526265,false,true,,,,poll98108338
-"9857 S. Eastern Avenue, Las Vegas, NV 89183",Trailer in lot near PetSmart,09:00 AM - 07:00 PM,,ho46096993,false,true,,,,poll44738550
-"600 S. Grand Central Pkwy. @ W. Bonneville Ave, Las Vegas, NV 89106",,09:00 AM - 05:00 PM,,ho33454244,false,true,,,,poll17514605
-"250 North Eastern Ave., Las Vegas, NV 89101",,09:00 AM - 05:00 PM,,ho49600417,false,true,,,,poll85117804
-"3550 West Harmon Avenue, Las Vegas, NV 89103",,09:00 AM - 07:00 PM,,ho61169358,false,true,,,,poll6233190
-"1616 8th Street, 2nd Floor, Minden, NV 89423",,10:00 AM - 03:00 PM,,ho53399570,false,true,,,,poll60126049
-"236 Kingsbury Grade, Stateline, NV 89449",,10:00 AM - 03:00 PM,,ho41409472,false,true,,,,poll25295415
-"476 Albite Dr, Wellington, NV 89444",,02:00 PM - 06:00 PM,,ho68066192,false,true,,,,poll36876025
-"3620 N Sunridge, Carson City, NV 89705",,02:00 PM - 06:00 PM,,ho70092085,false,true,,,,poll9883854
-"940 Mitch Dr, Gardnerville, NV 89460",,02:00 PM - 06:00 PM,,ho23423742,false,true,,,,poll32798986
-"1450 Stephanie Ln, Minden, NV 89423",,10:00 AM - 03:00 PM,,ho65597097,false,true,,,,poll19973760
-"700 Moren Way, Elko, NV 89801",,10:00 AM - 02:00 PM,,ho26663653,false,true,,,,poll75306664
-"233 Crook Avenue, Goldfield, NV 89013",,10:00 AM - 02:00 PM,,ho79650413,false,true,,,,poll47093377
+"5881 E. Charleston Blvd, Las Vegas, NV 89142",,09:00 AM - 07:00 PM,,ho40104237,false,true,,,,poll43014848
+"6885 E Lake Mead Blvd, Las Vegas, NV 89156",,09:00 AM - 07:00 PM,,ho43557381,false,true,,,,poll19900430
+"7271 S. Eastern Avenue, Las Vegas, NV 89119",,08:00 AM - 06:00 PM,,ho27913938,false,true,,,,poll72281163
+"9107 Del Webb Blvd, Las Vegas, NV 89134",,09:00 AM - 07:00 PM,,ho17275828,false,true,,,,poll41968044
 "10 South Main Street, Eureka, NV 89316",,10:00 AM - 02:00 PM,,ho1660372,false,true,,,,poll73958267
-"50 W. 5th Street, #207, Winnemucca, NV 89445",,10:00 AM - 06:00 PM,,ho54887494,false,true,,,,poll5325875
-"625 S. Broad St., Battle Mountain, NV 89820",,08:00 AM - 02:00 PM,,ho88199681,false,true,,,,poll6742728
-"181 North Main Street, Suite 201, Pioche, NV 89043",,10:00 AM - 02:00 PM,,ho2074754,false,true,,,,poll98768768
-"27 South Main Street, Yerington, NV 89447",,10:00 AM - 02:00 PM,,ho5069662,false,true,,,,poll25019260
-"34 Lakes Blvd., Dayton, NV 89403",,01:00 PM - 07:00 PM,,ho61077009,false,true,,,,poll49482836
-"595 Silverlace Blvd, Fernley, NV 89408",,10:00 AM - 02:00 PM,,ho61487399,false,true,,,,poll67319339
-"2945 Fort Churchill St., Silver Springs, NV 89429",,12:00 PM - 04:00 PM,,ho10765040,false,true,,,,poll16449699
-"22 Day Lane, Smith, NV 89430",,03:00 PM - 06:00 PM,,ho54749230,false,true,,,,poll75894415
-"105 South ""A"" Street, Suite 1, Hawthorne, NV 89415",,10:00 AM - 02:00 PM,,ho31186866,false,true,,,,poll47742874
-"101 Radar Road, Tonopah, NV 89049",,10:00 AM - 02:00 PM,,ho30240964,false,true,,,,poll81385934
-"1520 East Basin Ave, Pahrump, NV 89060",,10:00 AM - 06:00 PM,,ho99307289,false,true,,,,poll66138418
-"398 Main Street, Lovelock, NV 89419",,08:00 AM - 06:00 PM,,ho37832851,false,true,,,,poll69727885
-"26 S. ""B"" Street, Virginia City, NV 89440",,10:00 AM - 02:00 PM,,ho2428214,false,true,,,,poll45493608
-"800 Perry Ranch Road, Lockwood, NV 89434",,10:00 AM - 02:00 PM,,ho7580384,false,true,,,,poll52128210
 "1001 E. Ninth Street, Room A135, Reno, NV 89512",,10:00 AM - 02:00 PM,,ho70366899,false,true,,,,poll39236956
-"301 S. Center St.,  Reno, NV 89501",,11:00 AM - 04:00 PM,,ho3018974,false,true,,,,poll52021985
-"845 Alder Ave, Incline Village, NV 89451",,11:00 AM - 06:00 PM,,ho80125693,false,true,,,,poll85142669
+"101 N Pavilion Center Dr, Las Vegas,, NV 89144",,09:00 AM - 07:00 PM,,ho45591858,false,true,,,,poll4125630
+"101 Radar Road, Tonopah, NV 89049",,10:00 AM - 02:00 PM,,ho30240964,false,true,,,,poll81385934
+"10140 West Flamingo Road, Las Vegas, NV 89147",,09:00 AM - 07:00 PM,,ho18218115,false,true,,,,poll14660352
+"10250 West Charleston Blvd, Las Vegas, NV 89135",,08:00 AM - 06:00 PM,,ho6714420,false,true,,,,poll40829120
+"10360 Sun City Blvd, Las Vegas, NV 89134",,09:00 AM - 07:00 PM,,ho39720934,false,true,,,,poll91389391
+"105 South ""A"" Street, Suite 1, Hawthorne, NV 89415",,10:00 AM - 02:00 PM,,ho31186866,false,true,,,,poll47742874
+"10590 Southern Highlands Pkwy, Las Vegas, NV 89141",,09:00 AM - 07:00 PM,,ho94104279,false,true,,,,poll55804321
+"1061 W Owens Ave, Las Vegas, NV 89106",,09:00 AM - 07:00 PM,,ho7611240,false,true,,,,poll57099116
+"1075 North Hills Blvd., #340, Reno, NV 89506",,11:00 AM - 06:00 PM,,ho34292658,false,true,,,,poll79889046
+"11011 Sage Park Dr, Las Vegas, NV 89135",,09:00 AM - 07:00 PM,,ho75549105,false,true,,,,poll74825745
+"1125 12Th St, Sparks, NV 89431",,11:00 AM - 04:00 PM,,ho27047430,false,true,,,,poll73794058
+"1125 Nevada State Dr, Henderson, NV 89002",,09:00 AM - 04:30 PM,,ho46216925,false,true,,,,poll43311073
+"1290 S Nellis Blvd, Las Vegas, NV 89104",,09:00 AM - 07:00 PM,,ho62297711,false,true,,,,poll27593184
+"1300 W Sunset Rd, Henderson, NV 89014",Kohl's Court,10:00 AM - 08:00 PM,,ho74414526,false,true,,,,poll94834373
 "1310 Scheels Drive #B107, Sparks, NV 89434",,10:00 AM - 06:00 PM,,ho21942880,false,true,,,,poll95775501
-"1075 North Hills Blvd #340,  Reno, NV 89506",,11:00 AM - 04:00 PM,,ho37331646,false,true,,,,poll77423250
-"1075 North Hills Blvd #340, Reno, NV 89506",,11:00 AM - 06:00 PM,,ho83783050,false,true,,,,poll36282249
-"2325 Robb Dr, Reno, NV 89523",,11:00 AM - 04:00 PM,,ho57954996,false,true,,,,poll34330290
-"2895 N. McCarran Blvd, Sparks, NV 89431",,10:00 AM - 06:00 PM,,ho18243929,false,true,,,,poll38284474
-"1630 Robb Dr, Reno, NV 89523",,10:00 AM - 06:00 PM,,ho64459372,false,true,,,,poll72583
-"701 Keystone Ave, Reno, NV 89503",,10:00 AM - 06:00 PM,,ho33328020,false,true,,,,poll84910920
-"18144 Wedge Pkwy, Reno, NV 89511",,10:00 AM - 06:00 PM,,ho15072438,false,true,,,,poll22759299
-"2389 Wingfield Hills Rd, Sparks, NV 89436",,10:00 AM - 06:00 PM,,ho5665431,false,true,,,,poll61873843
-"4001 S. Virginia Street, Reno, NV 89502",,10:00 AM - 06:00 PM,,ho98800905,false,true,,,,poll66702718
-"1901 Silverada Blvd, Reno, NV 89512",,10:00 AM - 06:00 PM,,ho4387826,false,true,,,,poll70552191
-"950 Holman Way, Sparks, NV 89431",,10:00 AM - 06:00 PM,,ho61239107,false,true,,,,poll80782439
-"3310 S. McCarran Blvd, Reno, NV 89502",,10:00 AM - 06:00 PM,,ho91856518,false,true,,,,poll14680673
-"4788 Caughlin Pkwy, Reno, NV 89519",,10:00 AM - 06:00 PM,,ho79865755,false,true,,,,poll93750034
-"370 Casazza Dr, Reno, NV 89502",,10:00 AM - 06:00 PM,,ho85709654,false,true,,,,poll47402513
+"1350 Flat Top Mesa Drive, Mesquite, NV 89034",,08:00 AM - 07:00 PM,,ho73868267,false,true,,,,poll38826303
+"1450 Stephanie Ln, Minden, NV 89423",,10:00 AM - 03:00 PM,,ho65597097,false,true,,,,poll19973760
+"1476 Albite Dr, Wellington, NV 89444",,02:00 PM - 06:00 PM,,ho49591891,false,true,,,,poll99418111
+"150 N Yucca St, Mesquite, NV 89027",,08:00 AM - 07:00 PM,,ho36526216,false,true,,,,poll33495099
+"1520 East Basin Ave, Pahrump, NV 89060",,10:00 AM - 06:00 PM,,ho99307289,false,true,,,,poll66138418
+"155 N Taylor St Suite 110, Fallon, NV 89406",Chamber Commisions,10:00 AM - 06:00 PM,,ho67737488,false,true,,,,poll1512081
 "15650A Wedge Pkwy, Reno, NV 89511",,11:00 AM - 04:00 PM,,ho6843709,false,true,,,,poll46170501
-"7100 Pyramid Hwy, Sparks, NV 89436",,11:00 AM - 04:00 PM,,ho30233031,false,true,,,,poll35689928
-"1125 12th St, Sparks, NV 89431",,11:00 AM - 04:00 PM,,ho63056105,false,true,,,,poll21900287
-"5055 Sun Valley Blvd #100, Sun Valley, NV 89433",,10:00 AM - 06:00 PM,,ho9674698,false,true,,,,poll40702135
+"1616 8Th Street, Minden, NV 89423",2nd Floor,10:00 AM - 03:00 PM,,ho58402639,false,true,,,,poll10945506
+"1625 W. Carey Ave, Las Vegas, NV 89032",Dr. William U. Pearson Comm. Ctr. . @ M.L. King Blvd,09:00 AM - 07:00 PM,,ho63164386,false,true,,,,poll63992937
+"1630 Robb Dr, Reno, NV 89523",,10:00 AM - 06:00 PM,,ho64459372,false,true,,,,poll72583
+"1650 North Buffalo Drive, Las Vegas, NV 89128",,08:00 AM - 06:00 PM,,ho22534302,false,true,,,,poll87909063
+"1650 S Hollywood Blvd, Las Vegas, NV 89142",,08:00 AM - 06:00 PM,,ho36389925,false,true,,,,poll95435922
 "1664 N Virginia St, Reno, NV 89557",,11:00 AM - 04:00 PM,,ho25622645,false,true,,,,poll92947695
+"1725 N Rainbow Blvd, Las Vegas, NV 89108",,09:00 AM - 07:00 PM,,ho50565060,false,true,,,,poll8227610
+"1755 W Alexander Rd, North Las Vegas, NV 89032",Off Martin Luther King Blvd,10:30 AM - 07:30 PM,,ho41704753,false,true,,,,poll2725245
+"181 North Main Street, Pioche, NV 89043",Suite 201,10:00 AM - 02:00 PM,,ho7084544,false,true,,,,poll96586752
+"18144 Wedge Pkwy, Reno, NV 89511",,10:00 AM - 06:00 PM,,ho15072438,false,true,,,,poll22759299
+"190 N Boulder Hwy, Henderson, NV 89015",Off E Lake Mead Dr,09:00 AM - 07:00 PM,,ho10113401,false,true,,,,poll92315722
+"1901 Silverada Blvd, Reno, NV 89512",,10:00 AM - 06:00 PM,,ho4387826,false,true,,,,poll70552191
+"1950 J St, Las Vegas, NV 89106",,09:00 AM - 05:00 PM,,ho60130311,false,true,,,,poll1733675
+"1950 Village Center Cir, Las Vegas, NV 89134",,08:00 AM - 06:00 PM,,ho68875597,false,true,,,,poll89281641
+"1970 Village Center Circle, Ste. 7, Las Vegas, NV 89134",,09:00 AM - 07:00 PM,,ho1760404,false,true,,,,poll95519226
+"200 Michael Wendell Way, Searchlight, NV 89046",,10:00 AM - 03:00 PM,,ho69883284,false,true,,,,poll28278641
+"201 South Stephanie Street, Henderson, NV 89012",,08:00 AM - 06:00 PM,,ho89596501,false,true,,,,poll76816758
+"2020 W Horizon Ridge Pkwy, Henderson, NV 89012",,08:00 AM - 06:00 PM,,ho64661490,false,true,,,,poll13782194
+"2050 Bonnie Lane, Las Vegas, NV 89156",,08:00 AM - 06:00 PM,,ho83917264,false,true,,,,poll2027416
+"22 Day Lane, Smith, NV 89430",,03:00 PM - 06:00 PM,,ho54749230,false,true,,,,poll75894415
+"2250 N Las Vegas Blvd, North Las Vegas, NV 89030",,08:00 AM - 05:00 PM,,ho38319887,false,true,,,,poll52090476
+"2325 Robb Dr, Reno, NV 89523",,11:00 AM - 04:00 PM,,ho57954996,false,true,,,,poll34330290
+"233 Crook Avenue, Goldfield, NV 89013",,10:00 AM - 02:00 PM,,ho79650413,false,true,,,,poll47093377
+"236 Kingsbury Grade, Stateline, NV 89449",,10:00 AM - 03:00 PM,,ho41409472,false,true,,,,poll25295415
+"2389 Wingfield Hills Rd, Sparks, NV 89436",,10:00 AM - 06:00 PM,,ho5665431,false,true,,,,poll61873843
+"240 S Water St, Henderson, NV 89015",,07:30 AM - 05:30 PM,,ho34748467,false,true,,,,poll52173369
+"2400 W Deer Springs Way, North Las Vegas, NV 89084",,10:30 AM - 07:30 PM,,ho42644297,false,true,,,,poll15175672
+"2401 Somersworth Dr, Henderson, NV 89044",,08:00 AM - 06:00 PM,,ho84448664,false,true,,,,poll26460142
+"2450 Hampton Rd, Henderson, NV 89052",,09:00 AM - 06:00 PM,,ho32491222,false,true,,,,poll29333200
+"25 E Shelbourne Ave, Las Vegas, NV 89123",,10:00 AM - 07:00 PM,,ho50923978,false,true,,,,poll70543168
+"250 North Eastern Ave., Las Vegas, NV 89101",,10:00 AM - 06:00 PM,,ho49600417,false,true,,,,poll85117804
+"2570 E Craig Rd, North Las Vegas, NV 89030",,09:00 AM - 07:00 PM,,ho4315632,false,true,,,,poll63244356
+"26 S. ""B"" Street, Virginia City, NV 89440",,10:00 AM - 02:00 PM,,ho2428214,false,true,,,,poll45493608
+"2667 E Windmill Parkway, Henderson, NV 89074",,08:00 AM - 06:00 PM,,ho78376934,false,true,,,,poll1504077
+"2671 Las Vegas Blvd, Las Vegas, NV 89030",,09:00 AM - 07:00 PM,,ho62848825,false,true,,,,poll68899416
+"27 South Main Street, Yerington, NV 89447",,10:00 AM - 02:00 PM,,ho5069662,false,true,,,,poll25019260
+"2797 N Green Valley Pkwy, Henderson, NV 89014",,10:00 AM - 07:00 PM,,ho87842823,false,true,,,,poll12418358
+"280 S Green Valley Pkwy, Henderson, NV 89012",,10:00 AM - 08:00 PM,,ho41448920,false,true,,,,poll76527980
+"2835 S. Nellis Bl., Las Vegas, NV 89121",,09:00 AM - 07:00 PM,,ho13473721,false,true,,,,poll1731951
+"2840 S. Needles Hwy., Laughlin, NV 89029",,08:00 AM - 06:00 PM,,ho56820667,false,true,,,,poll27973630
+"2885 East Desert Inn Road, Las Vegas, NV 89121",,09:00 AM - 07:00 PM,,ho91939436,false,true,,,,poll64610960
+"2895 N. Mccarran Blvd, Sparks, NV 89431",,10:00 AM - 06:00 PM,,ho67808363,false,true,,,,poll75676604
+"2945 Fort Churchill St., Silver Springs, NV 89429",,12:00 PM - 04:00 PM,,ho10765040,false,true,,,,poll16449699
+"300 S. Racetrack Road, Henderson, NV 89015",,08:00 AM - 06:00 PM,,ho35571444,false,true,,,,poll33811986
+"301 S. Center St., Reno, NV 89501",,11:00 AM - 04:00 PM,,ho36988547,false,true,,,,poll34044465
+"3010 West Ann Road, North Las Vegas, NV 89031",,08:00 AM - 06:00 PM,,ho60308813,false,true,,,,poll9802224
+"3050 E Centennial Pkwy, North Las Vegas, NV 89081",,09:00 AM - 07:00 PM,,ho5406131,false,true,,,,poll53984982
+"3075 North Walnut Road, Las Vegas, NV 89115",,09:00 AM - 07:00 PM,,ho60822203,false,true,,,,poll86658831
+"3130 Mcleod Dr, Las Vegas, NV 89121",,10:00 AM - 08:00 PM,,ho71815751,false,true,,,,poll60988992
+"3150 N. Buffalo Dr., Las Vegas, NV 89128",,10:00 AM - 06:00 PM,,ho44766907,false,true,,,,poll8809940
+"320 N Moapa Valley Blvd, Overton, NV 89040",,08:00 AM - 06:00 PM,,ho4693055,false,true,,,,poll89773122
+"3200 East Cheyenne Ave, North Las Vegas, NV 89030",,08:00 AM - 06:00 PM,,ho80463747,false,true,,,,poll18628551
+"3310 S. Mccarran Blvd, Reno, NV 89502",,10:00 AM - 06:00 PM,,ho11379771,false,true,,,,poll3146023
+"34 Lakes Blvd., Dayton, NV 89403",,01:00 PM - 07:00 PM,,ho61077009,false,true,,,,poll49482836
+"3528 S Maryland Pkwy, Las Vegas, NV 89169","BOULEVARD MALL, East Corridor near Christy Candy and Rear (EAST) Mall Entrance, Park in the Back of the Mall",10:00 AM - 08:00 PM,,ho84429099,false,true,,,,poll50330151
+"3550 S Rainbow Blvd, Las Vegas, NV 89103",,09:00 AM - 07:00 PM,,ho95779083,false,true,,,,poll72233059
+"3550 West Harmon Avenue (West Of Polaris Ave.), Las Vegas, NV 89103",,09:00 AM - 07:00 PM,,ho4851533,false,true,,,,poll24006117
+"3620 N Sunridge, Carson City, NV 89705",,02:00 PM - 06:00 PM,,ho70092085,false,true,,,,poll9883854
+"370 Casazza Dr, Reno, NV 89502",,10:00 AM - 06:00 PM,,ho85709654,false,true,,,,poll47402513
+"3890 South Maryland Parkway, Las Vegas, NV 89109",,09:00 AM - 07:00 PM,,ho74224200,false,true,,,,poll6695398
+"398 Main Street, Lovelock, NV 89419",,10:00 AM - 02:00 PM,,ho37832851,false,true,,,,poll69727885
+"4001 S. Virginia Street, Reno, NV 89502",,10:00 AM - 06:00 PM,,ho98800905,false,true,,,,poll66702718
+"401 California Ave, Boulder City, NV 89005",,07:00 AM - 06:00 PM,,ho83817282,false,true,,,,poll36659412
+"4025 Allen Lane, North Las Vegas, NV 89032",,09:00 AM - 07:00 PM,,ho81222826,false,true,,,,poll97845157
+"4055 South Durango Drive, Las Vegas, NV 89147",,08:00 AM - 06:00 PM,,ho40640384,false,true,,,,poll63108187
+"4215 Spring Mountain Rd, Las Vegas, NV 89102",,10:00 AM - 06:00 PM,,ho91103484,false,true,,,,poll19727824
+"4250 Blue Diamond Rd, Las Vegas, NV 89139",,09:00 AM - 07:00 PM,,ho86880006,false,true,,,,poll10554004
+"4421 E Bonanza Rd, Las Vegas, NV 89110",,09:00 AM - 08:00 PM,,ho68224165,false,true,,,,poll65525406
+"4421 E Bonanza Rd., Las Vegas, NV 89110",,09:00 AM - 07:00 PM,,ho48695983,false,true,,,,poll49850608
+"45 E Horizon Ridge Pkwy, Las Vegas,, NV 89101",,08:00 AM - 06:00 PM,,ho41622537,false,true,,,,poll12593498
+"4505 S. Maryland Pkwy, Las Vegas,, NV 89154",,08:00 AM - 05:00 PM,,ho86571168,false,true,,,,poll34060075
+"476 Albite Dr, Wellington, NV 89444",,02:00 PM - 06:00 PM,,ho68066192,false,true,,,,poll36876025
+"4775 Mcleod Dr, Las Vegas, NV 89121",,08:00 AM - 06:00 PM,,ho87857613,false,true,,,,poll88866272
+"4788 Caughlin Pkwy, Reno, NV 89519",,10:00 AM - 06:00 PM,,ho79865755,false,true,,,,poll93750034
+"4850 West Craig Road, Las Vegas, NV 89032",,08:00 AM - 06:00 PM,,ho19697040,false,true,,,,poll2590459
+"4860 W Desert Inn Rd, Las Vegas, NV 89102",,09:00 AM - 07:00 PM,,ho29123777,false,true,,,,poll18499746
+"50 W. 5Th Street, #207, Winnemucca, NV 89445",,10:00 AM - 06:00 PM,,ho15948241,false,true,,,,poll55292328
+"5050 South Fort Apache Road, Las Vegas, NV 89148",,09:00 AM - 07:00 PM,,ho50526265,false,true,,,,poll98108338
+"5055 Sun Valley Blvd, #100, Sun Valley, NV 89433",,10:00 AM - 06:00 PM,,ho11106209,false,true,,,,poll71055582
+"5175 E Tropicana Ave, Las Vegas, NV 89122",,10:30 AM - 05:30 PM,,ho45782703,false,true,,,,poll87627973
+"575 College Drive, Henderson, NV 89015",,08:00 AM - 06:00 PM,,ho4423028,false,true,,,,poll46641654
+"595 Silverlace Blvd, Fernley, NV 89408",,10:00 AM - 02:00 PM,,ho61487399,false,true,,,,poll67319339
+"5975 W. Tropicana Avenue, Las Vegas, NV 89103",,09:00 AM - 07:00 PM,,ho53626016,false,true,,,,poll17689836
+"600 S Grand Central Pkwy, Las Vegas, NV 89106",,09:00 AM - 05:00 PM,,ho11441371,false,true,,,,poll263358
+"6200 W Lone Mountain Rd, Las Vegas, NV 89130",,09:00 AM - 07:00 PM,,ho94763748,false,true,,,,poll89205836
+"625 S. Broad St., Battle Mountain, NV 89820",,08:00 AM - 02:00 PM,,ho88199681,false,true,,,,poll6742728
+"6255 W Flamingo Rd, Las Vegas, NV 89103",,08:30 AM - 05:30 PM,,ho31126682,false,true,,,,poll16427932
+"6301 W. Charleston Blvd., Las Vegas, NV 89146",,10:00 AM - 07:00 PM,,ho84178060,false,true,,,,poll20891911
+"6450 Sky Pointe Dr, Las Vegas, NV 89131",,09:00 AM - 07:00 PM,,ho28060311,false,true,,,,poll61374261
+"6601 N Buffalo Dr, Las Vegas, NV 89131",,08:00 AM - 06:00 PM,,ho86156047,false,true,,,,poll14918830
+"6670 W Cheyenne Ave, Las Vegas, NV 89108",,09:00 AM - 07:00 PM,,ho32876043,false,true,,,,poll84172029
+"6960 N 5Th St, North Las Vegas, NV 89084",Trailer Near Michaels,09:00 AM - 07:00 PM,,ho48049968,false,true,,,,poll63164290
+"700 College Dr, Henderson, NV 89002",,09:00 AM - 04:30 PM,,ho92212670,false,true,,,,poll15477191
+"700 Moren Way, Elko, NV 89801",,10:00 AM - 02:00 PM,,ho26663653,false,true,,,,poll75306664
+"701 Keystone Ave, Reno, NV 89503",,10:00 AM - 06:00 PM,,ho33328020,false,true,,,,poll84910920
+"7075 West Ann Road, Las Vegas, NV 89130",,09:00 AM - 07:00 PM,,ho27240723,false,true,,,,poll95018499
+"7100 Pyramid Hwy, Sparks, NV 89436",,11:00 AM - 04:00 PM,,ho30233031,false,true,,,,poll35689928
+"7151 West Craig Road, Las Vegas, NV 89129",,09:00 AM - 07:00 PM,,ho31536747,false,true,,,,poll84983972
+"7200 Arroyo Crossing Pkwy, Las Vegas, NV 89113",,09:00 AM - 07:00 PM,,ho72146058,false,true,,,,poll4305723
+"7290 W Lake Mead Blvd, Las Vegas, NV 89128",,09:00 AM - 07:00 PM,,ho69813537,false,true,,,,poll71208103
+"7390 Aliante Pkwy, North Las Vegas, NV 89084",,08:00 AM - 06:00 PM,,ho37566262,false,true,,,,poll89353140
+"800 Perry Ranch Road, Lockwood, NV 89434",,10:00 AM - 02:00 PM,,ho7580384,false,true,,,,poll52128210
 "801 Clark Street, Suite 4, Ely, NV 89301",,10:00 AM - 02:00 PM,,ho71418817,false,true,,,,poll35070810
+"8060 W Tropical Pkwy, Las Vegas, NV 89149",,09:00 AM - 07:00 PM,,ho76291263,false,true,,,,poll66592078
+"8200 W Sahara Ave, Las Vegas, NV 89117",,09:00 AM - 07:00 PM,,ho74359974,false,true,,,,poll27249242
+"8275 Spring Mountain Rd, Las Vegas, NV 89102",,09:00 AM - 07:00 PM,,ho43630041,false,true,,,,poll22195118
+"8350 W Cheyenne Ave, Las Vegas, NV 89129",,08:00 AM - 06:00 PM,,ho42599706,false,true,,,,poll58976252
+"8410 Farm Road, Las Vegas, NV 89131",,09:00 AM - 07:00 PM,,ho10712647,false,true,,,,poll94624352
+"845 Alder Ave, Incline Village, NV 89451",,11:00 AM - 06:00 PM,,ho80125693,false,true,,,,poll85142669
+"8750 W Charleston Blvd, Las Vegas,, NV 89117",,09:00 AM - 07:00 PM,,ho25182000,false,true,,,,poll17167773
+"885 East Musser Street, Suite 1025, Carson City, NV 89701",,10:00 AM - 06:00 PM,,ho49486490,false,true,,,,poll40344412
+"940 Mitch Dr, Gardnerville, NV 89460",,02:00 PM - 06:00 PM,,ho23423742,false,true,,,,poll32798986
+"950 Holman Way, Sparks, NV 89431",,10:00 AM - 06:00 PM,,ho61239107,false,true,,,,poll80782439
+"9600 W Sahara Ave, Las Vegas, NV 89117",,11:00 AM - 07:00 PM,,ho54032502,false,true,,,,poll83174147
+"9700 S Buffalo Dr, Las Vegas, NV 89178",,09:00 AM - 06:00 PM,,ho21559678,false,true,,,,poll93417510
+"9857 S. Eastern Avenue, Las Vegas, NV 89183",Trailer in the lot near PetSmar,09:00 AM - 07:00 PM,,ho46096993,false,true,,,,poll44738550
+"Grass Valley Community Center 13295 Grass Valley Rd, Winnemucca, NV 89445",,10:00 AM - 02:00 PM,,ho7073359,false,true,,,,poll40843727
+"Sahara Ave & 215 Beltway, Las Vegas, NV 89135",,09:00 AM - 07:00 PM,,ho12079446,false,true,,,,poll88993527

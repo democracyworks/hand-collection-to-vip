@@ -48,7 +48,7 @@ class PollingLocationTxt(object):
         else:
             raise ValueError('Missing zip code value at row ' + str(index) + '.')
 
-        final_line = address + ' ' + city_name + ", " + state + " " + zip
+        final_line = address + ', ' + city_name + ", " + state + " " + zip
         final_line = ' '.join(final_line.split())
         print final_line
         return final_line

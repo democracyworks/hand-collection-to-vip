@@ -1,0 +1,233 @@
+address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+"12200 N Pecos St, Westminster, CO 80234",,08:00 AM - 05:00 PM,,ho61707735,false,true,,,,poll69799542
+"4430 S Adams County Parkway, Brighton, CO 80601",,08:00 AM - 05:00 PM,,ho79110389,false,true,,,,poll96897133
+"5877 E 120th Ave, Thornton, CO 80602",,08:00 AM - 05:00 PM,,ho82141194,false,true,,,,poll4430758
+"300 Strong St, Brighton, CO 80601",,08:00 AM - 05:00 PM,,ho81646925,false,true,,,,poll38372537
+"3155 N Chambers Rd, Aurora, CO 80011",,08:00 AM - 05:00 PM,,ho42039329,false,true,,,,poll31259372
+"355 S First St, Bennett, CO 80102",,08:00 AM - 05:00 PM,,ho33319469,false,true,,,,poll37370478
+"4201 E 72nd Ave, Commerce City, CO 80022",,08:00 AM - 05:00 PM,,ho53656714,false,true,,,,poll7828650
+"992 W 104th Ave, Northglenn, CO 80234",,08:00 AM - 05:00 PM,,ho27374741,false,true,,,,poll87715964
+"8452 N Federal Blvd, Westminster, CO 80031",,08:00 AM - 05:00 PM,,ho92410023,false,true,,,,poll95894847
+"555 N 11th Ave, Brighton, CO 80601",,08:00 AM - 05:00 PM,,ho80666930,false,true,,,,poll64763141
+"6060 Parkway Dr, Commerce City, CO 80022",,08:00 AM - 05:00 PM,,ho4016562,false,true,,,,poll10010718
+"11151 Colorado Blvd, Thornton, CO 80233",,08:00 AM - 05:00 PM,,ho95937748,false,true,,,,poll33263184
+"7125 Mariposa St, Denver, CO 80221",,08:00 AM - 05:00 PM,,ho43150941,false,true,,,,poll8780319
+"17910 Parkside Dr N, Commerce City, CO 80022",,08:00 AM - 05:00 PM,,ho11861473,false,true,,,,poll38652488
+"3295 West 72nd Ave, Westminster, CO 80030",,08:00 AM - 05:00 PM,,ho23220559,false,true,,,,poll62026748
+"8999 Independence Way, Alamosa, CO 81101",,08:00 AM - 05:00 PM,,ho24648572,false,true,,,,poll20195063
+"1085 Peoria Street, Aurora, CO 80011",,09:00 AM - 03:00 PM,,ho27641996,false,true,,,,poll17026518
+"15771 E First Ave, Aurora, CO 80011",,09:00 AM - 03:00 PM,,ho60356243,false,true,,,,poll17205960
+"14980 E Alameda Dr, Aurora, CO 80012",,09:00 AM - 05:00 PM,,ho71924722,false,true,,,,poll14456897
+"15324 E Hampden Cir, Aurora, CO 80013",,09:00 AM - 05:00 PM,,ho37086282,false,true,,,,poll64563081
+"25901 E Arapahoe Rd, Aurora, CO 80016",,09:00 AM - 03:00 PM,,ho88843730,false,true,,,,poll13035032
+"15151 E Alameda Parkway, Aurora, CO 80012",,09:00 AM - 03:00 PM,,ho84492387,false,true,,,,poll92347286
+"13231 E Mississippi Ave, Aurora, CO 80012",,09:00 AM - 03:00 PM,,ho70312108,false,true,,,,poll51065994
+"17690 E Iliff Ave, Aurora, CO 80013",,09:00 AM - 03:00 PM,,ho25752761,false,true,,,,poll67011789
+"13801 E Yale Ave, Aurora, CO 80014",,09:00 AM - 03:00 PM,,ho88724013,false,true,,,,poll88108399
+"23911 E Arapahoe Rd, Aurora, CO 80016",,09:00 AM - 05:00 PM,,ho37320299,false,true,,,,poll1957371
+"404 E Front St, Byers, CO 80103",,09:00 AM - 05:00 PM,,ho9368241,false,true,,,,poll84215368
+"24500 E 6th Ave, Aurora, CO 80018",,09:00 AM - 03:00 PM,,ho98138420,false,true,,,,poll50277356
+"5416 S Riviera Way, Centennial, CO 80015",,09:00 AM - 03:00 PM,,ho54101183,false,true,,,,poll63656153
+"6954 S Lima St, Centennial, CO 80112",,09:00 AM - 05:00 PM,,ho49217148,false,true,,,,poll34728906
+"5428 S Biscay Cir, Centennial , CO 80015",,09:00 AM - 05:00 PM,,ho577273,false,true,,,,poll93411195
+"6972 South Vine Street, Centennial , CO 80122",,09:00 AM - 05:00 PM,,ho96326975,false,true,,,,poll84287771
+"6980 South Vine Street, Centennial , CO 80122",,09:00 AM - 05:00 PM,,ho52448759,false,true,,,,poll80477327
+"8035 S Quebeck St, Centennial, CO 80112",,09:00 AM - 03:00 PM,,ho19662618,false,true,,,,poll25081321
+"9495 E Florida Ave, Denver, CO 80247",,09:00 AM - 03:00 PM,,ho551868,false,true,,,,poll29683591
+"1000 Englewood Pkwy, Englewood, CO 80110",,09:00 AM - 05:00 PM,,ho33122078,false,true,,,,poll46388957
+"950 S Birch St, Glendale, CO 80246",,09:00 AM - 05:00 PM,,ho5551420,false,true,,,,poll50680356
+"6060 S Quebec St, Greenwood Village, CO 80111",,09:00 AM - 03:00 PM,,ho13227564,false,true,,,,poll63759349
+"5101 S Dayton St, Greenwood Village, CO 80111",,09:00 AM - 03:00 PM,,ho45222752,false,true,,,,poll53775014
+"5334 S Prince St, Littleton, CO 80120",,09:00 AM - 05:00 PM,,ho23111184,false,true,,,,poll82371974
+"5251 S Federal Blvd, Littleton, CO 80123",,09:00 AM - 05:00 PM,,ho71713888,false,true,,,,poll806119
+"6853 S Prince St, Littleton, CO 80120",,09:00 AM - 03:00 PM,,ho27252847,false,true,,,,poll48228135
+"449 San Juan St, Pagosa Springs, CO 80114",Lower level,08:00 AM - 04:00 PM,,ho7253239,false,true,,,,poll84105846
+"741 Main Street, Springfield, CO 81073",,08:30 AM - 05:00 PM,,ho57672602,false,true,,,,poll44035951
+"725 Bent Ave, Las Animas, CO 81054",,08:30 AM - 04:30 PM,,ho41963037,false,true,,,,poll3004360
+"1750 33rd Street, Boulder, CO 80301",Houston Room,08:00 AM - 06:00 PM,,ho4314965,false,true,,,,poll74138553
+"515 Coffman Street, Longmont, CO 80501",Conference Room,08:00 AM - 06:00 PM,,ho68763092,false,true,,,,poll39664691
+"1376 Miners Dr, Lafayette, CO 80026",Conference Room,08:00 AM - 06:00 PM,,ho70935889,false,true,,,,poll95731813
+"1669 Euclid Avenue, Boulder, CO 80309",Aspen Room / Room 235,08:00 AM - 06:00 PM,,ho34906551,false,true,,,,poll56391380
+"4500 19th Street, Boulder, CO 80304",Community Room,08:00 AM - 06:00 PM,,ho12763717,false,true,,,,poll51510152
+"617 Barberry Drive, Longmont, CO 80503",Community Room,08:00 AM - 06:00 PM,,ho20517449,false,true,,,,poll37585564
+"992 W Via Apia Way, Louisville, CO 80027",Training Room,08:00 AM - 06:00 PM,,ho9149392,false,true,,,,poll8827772
+"775 W Baseline Road, Lafayette, CO 80026",Reading Room,08:00 AM - 06:00 PM,,ho85621380,false,true,,,,poll66857568
+"10345 Ute Highway, Longmont, CO 80504",Fellowship Hall,08:00 AM - 06:00 PM,,ho69640844,false,true,,,,poll73543532
+"124 E Coal Creek Drive, Superior, CO 80027",Council Room,08:00 AM - 06:00 PM,,ho69160771,false,true,,,,poll25390782
+"750 N Highway 72, Nederland, CO 80466",Community Hall,08:00 AM - 06:00 PM,,ho38470634,false,true,,,,poll1721866
+"1055 Adams Circle, Boulder, CO 80303",Community Room,08:00 AM - 06:00 PM,,ho64108503,false,true,,,,poll61947427
+"6333 Lookout Road, Boulder, CO 80301",Conference Center,08:00 AM - 06:00 PM,,ho14298559,false,true,,,,poll79178545
+"4215 Grinnell Avenue, Boulder, CO 80305",Gym,08:00 AM - 06:00 PM,,ho32450012,false,true,,,,poll46155643
+"1000 Pace Street, Longmont, CO 80504",Community Room,08:00 AM - 06:00 PM,,ho60221371,false,true,,,,poll12783650
+"1777 Broadway, Boulder, CO ",,08:00 AM - 06:00 PM,,ho34779927,false,true,,,,poll4391924
+"1 DesCombes Drive, Broomfield, CO 80020",,08:00 AM - 05:00 PM,,ho13206699,false,true,,,,poll16105873
+"13201 Lowell Blvd, Broomfield, CO 80020",,08:00 AM - 05:00 PM,,ho84281680,false,true,,,,poll62121497
+"170 W Flatiron Crossing Dr, Broomfield, CO 80012",,08:00 AM - 05:00 PM,,ho45124557,false,true,,,,poll98092374
+"104 Crestone Ave, Salida, CO ",,08:00 AM - 05:00 PM,,ho72360522,false,true,,,,poll91729346
+"112 Linderman Ave, Buena Vista, CO ",,08:00 AM - 04:00 PM,,ho28715194,false,true,,,,poll39703908
+"51 S 1st St, Cheyenne Wells, CO ",,08:00 AM - 12:00 PM,,ho51580964,false,true,,,,poll19256122
+"405 Argentine Street, Georgetown, CO 80444",,10:00 AM - 02:00 PM,,ho96540201,false,true,,,,poll49956019
+"6683 County Road 13, Conejos, CO 81129",,08:00 AM - 12:00 PM,,ho26602852,false,true,,,,poll2037122
+"400 Gasper Street, San Luis, CO 81152",Suite 101,07:00 AM - 05:30 PM,,ho37696865,false,true,,,,poll70885164
+"631 Main Street, Ordway, CO 81063",Suite 102,08:00 AM - 12:00 PM,,ho56926078,false,true,,,,poll64096261
+"205 S 6th Street, Westcliffe, CO 81252",,08:00 AM - 04:00 PM,,ho3160518,false,true,,,,poll55579525
+"501 Palmer Street, Delta, CO 81416",,08:30 AM - 04:30 AM,,ho59685350,false,true,,,,poll99511595
+"196 W Hotchkiss Ave, Hotchkiss, CO 81419",,08:30 AM - 12:30 PM,,ho50255554,false,true,,,,poll54930732
+"409 N Main Street, Dove Creek , CO 81324",,08:00 AM - 12:00 PM,,ho49879249,false,true,,,,poll72199874
+"125 Stephanie Place, Castle Rock, CO 80109",,08:00 AM - 05:00 PM,,ho27143792,false,true,,,,poll69593697
+"9250 Zotos Drive, Highlands Ranch, CO 80129",,08:00 AM - 05:00 PM,,ho51101084,false,true,,,,poll19928269
+"9414 S Spruce Mountain Rd, Larkspur, CO 80118",,08:00 AM - 05:00 PM,,ho63079438,false,true,,,,poll41198165
+"9350 Heritage Hills Circle, Lone Tree, CO 80124",,08:00 AM - 05:00 PM,,ho87490011,false,true,,,,poll543058
+"17301 E Lincoln Avenue, Parker, CO 80134",,08:00 AM - 05:00 PM,,ho54680218,false,true,,,,poll27200274
+"20120 E Mainstreet, Parker, CO 80138",,08:00 AM - 05:00 PM,,ho32876673,false,true,,,,poll66557983
+"500 Broadway, Eagle, CO 81631",,08:00 AM - 05:00 PM,,ho85341422,false,true,,,,poll28361863
+"100 W Beaver Creek Blvd, Avon, CO 81620",,08:00 AM - 05:00 PM,,ho87157843,false,true,,,,poll97883875
+"20 Eagle County Rd, El Jebel, CO 81623",,08:00 AM - 05:00 PM,,ho93508264,false,true,,,,poll48083763
+"Lionshead Parking Structure, Vail, CO 81657",,08:00 AM - 05:00 PM,,ho50113790,false,true,,,,poll49016915
+"1675 W Garden of the Gods Rd, Colorado Springs, CO 80907",Suite 2202,08:00 AM - 05:00 PM,,ho64523730,false,true,,,,poll36528695
+"200 S Cascade Ave, Colorado Springs, CO 80903",,08:00 AM - 05:00 PM,,ho33366337,false,true,,,,poll28007797
+"8830 N Union Blvd, Colorado Springs, CO 80920",,08:00 AM - 05:00 PM,,ho82583113,false,true,,,,poll88461509
+"5650 Industrial Pl, Colorado Springs, CO 80903",,08:00 AM - 05:00 PM,,ho2913300,false,true,,,,poll9689482
+"6351 Wetzel Ave, Colorado Springs, CO 80913",,08:00 AM - 05:00 PM,,ho73644792,false,true,,,,poll27975571
+"645 Beacon Lite Rd, Monument, CO 80918",,08:00 AM - 05:00 PM,,ho53552804,false,true,,,,poll86680022
+"5550 N Union Blvd, Colorado Springs, CO 80918",,08:00 AM - 05:00 PM,,ho57030893,false,true,,,,poll40147855
+"7030 Old Meridian Ranch, Falcon, CO 80831",,08:00 AM - 05:00 PM,,ho43080257,false,true,,,,poll9956005
+"2755 Janitell Rd, Colorado Springs, CO 80906",,08:00 AM - 05:00 PM,,ho397867,false,true,,,,poll23094922
+"222 N Santa Fe Ave, Fountain, CO 80817",,08:00 AM - 05:00 PM,,ho64177162,false,true,,,,poll82315982
+"1175 Chapel Hills Drive, Colorado Springs, CO 80920",,08:00 AM - 05:00 PM,,ho36056281,false,true,,,,poll18702274
+"3255 Akers Drive, Colorado Springs, CO 80922",,08:00 AM - 05:00 PM,,ho99849919,false,true,,,,poll82411542
+"2020 N Academy Blvd, Colorado Springs, CO 80909",Suite 100,08:00 AM - 05:00 PM,,ho53318129,false,true,,,,poll10709892
+"606 Manitou Ave Manitou Springs 80829, Manitou Springs, CO 80829",,08:00 AM - 05:00 PM,,ho63426606,false,true,,,,poll33848065
+"1045 Lower Gold Camp Rd, Colorado Springs, CO 80905",,08:00 AM - 05:00 PM,,ho96355742,false,true,,,,poll48536998
+"1010 Golden St, Calhan, CO 80808",,08:00 AM - 01:00 PM,,ho51596291,false,true,,,,poll94394160
+"11445 Teachout Rd, Colorado Springs, CO 80908",,08:00 AM - 01:00 PM,,ho82810447,false,true,,,,poll43709850
+"400 Security Blvd, Colorado Springs, CO 80911",,08:00 AM - 12:00 AM,,ho7046059,false,true,,,,poll89208973
+"2190 Jet Wing Dr, Colorado Springs, CO 80916",,08:00 AM - 05:00 PM,,ho43050235,false,true,,,,poll89843682
+"6540 Templeton Gap Road, Colorado Springs, CO 80923",,08:00 AM - 05:00 PM,,ho20287449,false,true,,,,poll71570020
+"2318 N Cascade Ave, Colorado Springs, CO 80907",,08:00 AM - 05:00 PM,,ho40276299,false,true,,,,poll74189758
+"970 North Gate Blvd, Colorado Springs, CO 80921",,08:00 AM - 05:00 PM,,ho16219840,false,true,,,,poll67392851
+"729 S. Tejon St, Colorado Springs, CO 80903",,08:00 AM - 05:00 PM,,ho73838553,false,true,,,,poll2900295
+"2880 International Circle, Colorado Springs, CO 80910",,08:00 AM - 05:00 PM,,ho33607138,false,true,,,,poll52506905
+"15415 Gleneagle Drive, Colorado Springs, CO 80921",,08:00 AM - 05:00 PM,,ho19365993,false,true,,,,poll11626548
+"215 Comanche Street, Kiowa, CO 80117",,08:00 AM - 05:00 PM,,ho44888580,false,true,,,,poll57854279
+"615 Macon Ave, Cannon City, CO 81212",Room 207,07:30 AM - 05:00 PM,,ho53609057,false,true,,,,poll45491307
+"109 8th St, Glenwood Springs, CO 81601",Suite 200,08:30 AM - 05:00 PM,,ho37009315,false,true,,,,poll19648490
+"195 W 14th St, Rifle, CO 81650",Building D 1st Floor,08:30 AM - 05:00 PM,,ho5341058,false,true,,,,poll5980598
+"203 Eureka St, Central City, CO 80427",,09:00 AM - 01:00 PM,,ho35815146,false,true,,,,poll51141578
+"308 Byers Avenue, Hot Sulphur Springs, CO 80451",,08:30 AM - 05:00 PM,,ho7045969,false,true,,,,poll72078351
+"405 Sopris Avenue Crested Butte 81224, Crested Butte, CO 81224",,09:00 AM - 04:40 PM,,ho34315796,false,true,,,,poll70118443
+"221 North Wisconsin Street, Gunnison, CO 81230",,08:30 AM - 05:30 PM,,ho31115142,false,true,,,,poll71954125
+"401 Main Street Suite, Walsenburg, CO 81089",Suite 204,08:00 AM - 12:00 PM,,ho8618606,false,true,,,,poll45863722
+"396 LaFever Street Walden 80480, Walden, CO 80480",,08:00 AM - 12:00 PM,,ho97803964,false,true,,,,poll46791041
+"8101 Ralston Rd, Arvada, CO 80002",,07:30 AM - 05:30 PM,,ho59607727,false,true,,,,poll9012494
+"6510 Wadsworth Blvd, Arvada, CO 80003",,07:30 AM - 05:30 PM,,ho57300977,false,true,,,,poll36895768
+"3101 S Kipling St, Lakewood, CO 80227",,07:30 AM - 05:30 PM,,ho90256218,false,true,,,,poll72687525
+"555 S Allison Pkwy, Lakewood, CO 80226",,07:30 AM - 05:30 PM,,ho59557222,false,true,,,,poll25780804
+"7706 W Bowles Ave, Littleton, CO 80123",,07:30 AM - 05:30 PM,,ho94763446,false,true,,,,poll21172474
+"3500 Illinois St. Suite 1100, Golden, CO 80401",,07:30 AM - 05:30 PM,,ho73086551,false,true,,,,poll24073733
+"4990 County Hwy 73, Evergreen, CO 80439",,07:30 AM - 05:30 PM,,ho50895807,false,true,,,,poll79015726
+"15200 W 6th Ave, Golden, CO 80401",,07:30 AM - 05:30 PM,,ho17704765,false,true,,,,poll26901836
+"645 Parfet St, Lakewood, CO 80215",,07:30 AM - 05:30 PM,,ho13215771,false,true,,,,poll29818260
+"11139 Bradford Rd, Littleton, CO 80127",,07:30 AM - 05:30 PM,,ho66893509,false,true,,,,poll55454265
+"8485 Kipling St, Arvada, CO 80005",,07:30 AM - 05:30 PM,,ho35674468,false,true,,,,poll65074775
+"9444 Eagle Cliff Rd, Conifer, CO 80433",,07:30 AM - 05:30 PM,,ho95015558,false,true,,,,poll7535703
+"1305 Goff Street, Eads, CO 81036",,07:00 AM - 07:00 PM,,ho99331112,false,true,,,,poll18889272
+"251 16th Street, Burlington, CO 80807",Suite 201,08:00 AM - 04:00 PM,,ho83458281,false,true,,,,poll2165191
+"505 Harrison Ave, Leadville, CO 80461",,08:30 AM - 05:00 PM,,ho72723901,false,true,,,,poll80096771
+"98 Everett St, Durango, CO 81303",,08:00 AM - 05:00 PM,,ho66037294,false,true,,,,poll70738083
+"1199 Bayfield Parkway, Bayfield, CO 81122",,08:00 AM - 05:00 PM,,ho25154941,false,true,,,,poll72313997
+"2500 Main Ave, Durango, CO 81301",Suite C,08:00 AM - 05:00 PM,,ho43822465,false,true,,,,poll28160773
+"200 W Oak St, Fort Collins, CO 80521",1st Floor,08:00 AM - 05:00 PM,,ho60657358,false,true,,,,poll54382856
+"810 E 10th St, Loveland, CO 80537",,08:00 AM - 05:00 PM,,ho7290217,false,true,,,,poll13289914
+"170 MacGregor Ave, Estes park, CO 80517",,08:00 AM - 05:00 PM,,ho8766122,false,true,,,,poll46430206
+"Lory Student Cente, Fort Collins, CO 80523",North Ballroom,08:00 AM - 05:00 PM,,ho84905605,false,true,,,,poll79169021
+"4825 S Lemay Ave, Fort Collins, CO 80525",,08:00 AM - 05:00 PM,,ho88000381,false,true,,,,poll81509380
+"2700 S Lemay Ave, Fort Collins, CO 80525",1st Floor,08:00 AM - 05:00 PM,,ho26626221,false,true,,,,poll25964955
+"1424 E Mulberry Ave, Fort Collins, CO 80524",,08:00 AM - 05:00 PM,,ho2174782,false,true,,,,poll81811168
+"200 E First Street, Trinidad, CO 81082",#206,09:00 AM - 04:00 PM,,ho74346105,false,true,,,,poll19391024
+"103 3rd Avenue, Hugo, CO 80821",,08:00 AM - 04:30 PM,,ho84922155,false,true,,,,poll56414353
+"200 S Spruce S, Grand Junction, CO 81501",Room 40,08:00 AM - 05:00 PM,,ho69599870,false,true,,,,poll86553632
+"126 2nd St, Clifton, CO 81520",,08:00 AM - 05:00 PM,,ho64862553,false,true,,,,poll60305581
+"2785 Hwy 50, Grand Junction, CO 81503",Community Building,08:00 AM - 05:00 PM,,ho22337349,false,true,,,,poll55574113
+"630 24 1/2 Rd, Grand Junction, CO 81505",,08:00 AM - 05:00 PM,,ho28694598,false,true,,,,poll76514836
+"1100 North Ave, Grand Junction, CO 81501",University Center Room 213,08:00 AM - 05:00 PM,,ho37685681,false,true,,,,poll21931558
+"325 E Aspen Ave, Fruita, CO 81521",Lions Rooms,08:00 AM - 05:00 PM,,ho14219765,false,true,,,,poll79460306
+"1201 N Main Street, Creede, CO 81130",,08:00 AM - 12:00 PM,,ho6661910,false,true,,,,poll45595897
+"1202 N Main Street, Creede, CO 81130",,01:00 PM - 04:00 PM,,ho202427,false,true,,,,poll15113574
+"1203 N Main Street, Creede, CO 81130",,08:00 AM - 12:00 PM,,ho97324133,false,true,,,,poll59563609
+"1204 N Main Street, Creede, CO 81130",,01:00 PM - 04:00 PM,,ho83954663,false,true,,,,poll67867101
+"1205 N Main Street, Creede, CO 81130",,08:00 AM - 12:00 PM,,ho91119712,false,true,,,,poll17996558
+"1206 N Main Street, Creede, CO 81130",,08:00 AM - 12:00 PM,,ho82083641,false,true,,,,poll7144538
+"1207 N Main Street, Creede, CO 81130",,01:00 PM - 04:00 PM,,ho19677762,false,true,,,,poll74528472
+"1208 N Main Street, Creede, CO 81130",,08:00 AM - 12:00 PM,,ho45877598,false,true,,,,poll84902123
+"1209 N Main Street, Creede, CO 81130",,08:00 AM - 12:00 PM,,ho54391440,false,true,,,,poll35977917
+"1210 N Main Street, Creede, CO 81130",,01:00 PM - 04:00 PM,,ho87510990,false,true,,,,poll20974831
+"221 W Victory Way, Craig, CO 81625",Suite 200,08:00 AM - 04:45 PM,,ho87814086,false,true,,,,poll47768807
+"140 W Main St, Cortez, CO 81321",Suite 1,08:30 AM - 04:30 AM,,ho90812255,false,true,,,,poll67482386
+"320 South First Street, Montrose, CO 81401",Room 103,08:00 AM - 04:30 PM,,ho50391873,false,true,,,,poll16756309
+"230 West Main Street, Naturita, CO 81422",,08:30 AM - 04:30 PM,,ho67844930,false,true,,,,poll4135583
+"300 Main Street, Nucla, CO 81424",,08:00 AM - 04:30 PM,,ho4019156,false,true,,,,poll61523106
+"231 Ensign Street, Fort Morgan, CO 80701",,08:00 AM - 04:00 PM,,ho61975949,false,true,,,,poll83259366
+"13 W 3rd St, La Junta, CO 81050",Room 2010,08:00 AM - 05:00 PM,,ho76839507,false,true,,,,poll98131425
+"514 Fourth Street, Ouray, CO 81427",,09:00 AM - 05:00 PM,,ho18406874,false,true,,,,poll61995007
+"501 Main Street, Fairplay, CO 80440",,07:00 AM - 06:00 PM,,ho75294151,false,true,,,,poll7777405
+"59865 Hwy 285, Bailey, CO 80421",,07:00 AM - 12:00 PM,,ho8041551,false,true,,,,poll3653053
+"221 S Interocean Ave Holyoke 80734, Holyoke, CO 80734",,08:00 AM - 04:00 PM,,ho28129910,false,true,,,,poll26867566
+"435 West Main Street Aspen 81611, Aspen, CO 81611",,08:30 AM - 04:30 PM,,ho42560510,false,true,,,,poll84833503
+"301 S Main St Ste 210 Lamar 81052, Lamar, CO 81052",,08:30 AM - 04:30 PM,,ho86738656,false,true,,,,poll76592843
+"720 N Main St Ste 200, Pueblo, CO 81003",,08:00 AM - 04:30 PM,,ho31814228,false,true,,,,poll45650143
+"1001 Beulah Ave, Pueblo, CO 81004",,09:00 AM - 06:00 PM,,ho91331193,false,true,,,,poll92092338
+"298 S Joe Martinez Blvd, Pueblo West , CO 81007",,09:00 AM - 06:00 PM,,ho28953662,false,true,,,,poll16559002
+"298 S Joe Martinez Blvd, Pueblo West, CO 81007",,10:00 AM - 02:00 PM,,ho77743997,false,true,,,,poll34493619
+"1300 Jerry Murphy Rd, Pueblo, CO 81001",,09:00 AM - 06:00 PM,,ho54432910,false,true,,,,poll91787213
+"24655 US Hwy 50, Pueblo, CO 81006",,09:00 AM - 06:00 PM,,ho60385706,false,true,,,,poll98796056
+"4497 Bent Brothers Blvd, Pueblo, CO 81019",,08:00 AM - 04:30 PM,,ho86716479,false,true,,,,poll56242137
+"1032 Jennifer Drive, Meeker, CO 81641",,08:30 AM - 04:30 PM,,ho33570466,false,true,,,,poll64037064
+"17497 Hwy 64, Rangely , CO 81648",,08:30 AM - 04:30 PM,,ho28733064,false,true,,,,poll57707807
+"965 Sixth Street, Del Norte , CO 81132",,08:00 AM - 04:00 PM,,ho67456801,false,true,,,,poll19101752
+"136 6th St, Steamboat Springs , CO 80487",,08:00 AM - 04:30 PM,,ho27534347,false,true,,,,poll90365691
+"501 4th Street, Saguache , CO 81149",,08:00 AM - 04:00 PM,,ho22206,false,true,,,,poll81600695
+"1557 Greene Street, Silverton, CO 81433",,08:00 AM - 04:00 PM,,ho20476180,false,true,,,,poll59268607
+"305 West Colorado, Telluride , CO 81435",,08:15 AM - 04:30 PM,,ho63468295,false,true,,,,poll78675657
+"335 West Colorado, Telluride , CO 81435",,09:00 AM - 01:00 PM,,ho54725845,false,true,,,,poll19623493
+"336 West Colorado, Telluride , CO 81435",,08:30 AM - 04:30 PM,,ho10646274,false,true,,,,poll5967905
+"337 West Colorado, Telluride , CO 81435",,09:00 AM - 01:00 PM,,ho12591060,false,true,,,,poll12116206
+"338 West Colorado, Telluride , CO 81435",,08:30 AM - 04:30 PM,,ho84018581,false,true,,,,poll44109084
+"339 West Colorado, Telluride , CO 81435",,08:30 AM - 04:30 PM,,ho91045756,false,true,,,,poll24779697
+"315 Cedar St, Julesburg, CO 80737",,08:00 AM - 04:00 PM,,ho98808343,false,true,,,,poll63941820
+"208 E Lincoln Ave, Breckenridge, CO 80424",,08:00 AM - 05:00 PM,,ho27855809,false,true,,,,poll1296449
+"208 E Midland Ave, Woodland Park , CO 80863",,09:00 AM - 05:00 PM,,ho27512950,false,true,,,,poll4575793
+"150 Ash Avenue, Akron , CO 80720",,08:00 AM - 04:30 PM,,ho9117375,false,true,,,,poll95191955
+"1104 H Street, Greeley, CO 80631",,08:00 AM - 05:00 PM,,ho39566403,false,true,,,,poll75170666
+"4209 County Road 24 1/2, Longmont, CO 80504",,08:00 AM - 05:00 PM,,ho88135680,false,true,,,,poll23953029
+"203 S Harrison Avenue, Ft Lupton, CO 80621",,08:00 AM - 05:00 PM,,ho89108220,false,true,,,,poll39226430
+"1020 Walnut St, Windsor , CO 80550",,08:00 AM - 05:00 PM,,ho47234291,false,true,,,,poll23061559
+"3000 35th Avenue, Greeley, CO 80634",,08:00 AM - 05:00 PM,,ho4841213,false,true,,,,poll12693883
+"130 E 3rd St,  St Wray, CO 80758",,08:30 AM - 04:30 PM,,ho71854397,false,true,,,,poll15759221
+"2680 W Mexico Ave, Denver, CO 80216",,10:00 AM - 02:00 PM,,ho20444179,false,true,,,,poll4865238
+"360 N Hooker Street, Denver, CO 80219",,10:00 AM - 06:00 PM,,ho86092057,false,true,,,,poll55626878
+"2401 Welton St, Denver, CO 80219",,10:00 AM - 06:00 PM,,ho93947413,false,true,,,,poll75507047
+"2401 Welton St, Denver, CO 80205",,10:00 AM - 02:00 PM,,ho99320452,false,true,,,,poll9162185
+"9651 E Martin Luther King Jr Blvd, Denver, CO 80238",,10:00 AM - 02:00 PM,,ho88800551,false,true,,,,poll50600404
+"690 N Colorado Blvd, Denver, CO 80206",,10:00 AM - 06:00 PM,,ho96180341,false,true,,,,poll7255666
+"8085 E Hampden Ave, Denver, CO 80231",,10:00 AM - 06:00 PM,,ho83047905,false,true,,,,poll88710391
+"7100 Cherry Creek South Dr, Denver, CO 80224",,10:00 AM - 02:00 PM,,ho41270290,false,true,,,,poll46555760
+"1205 E 8th Ave, Denver, CO 80218",,10:00 AM - 06:00 PM,,ho59260432,false,true,,,,poll33875540
+"4600 N Humboldt St, Denver, CO 80216",,10:00 AM - 06:00 PM,,ho74469346,false,true,,,,poll2495047
+"200 W 14th Ave, Denver, CO 80204",,08:00 AM - 05:00 PM,,ho594903,false,true,,,,poll84164412
+"1311 W 46th Ave, Denver, CO 80211",,10:00 AM - 02:00 PM,,ho88866469,false,true,,,,poll64162666
+"1625 S University Blvd, Denver, CO 80210",,10:00 AM - 06:00 PM,,ho18749958,false,true,,,,poll58297983
+"4300 E Dartmouth Ave, Denver, CO 80222",,10:00 AM - 02:00 PM,,ho84579784,false,true,,,,poll52411446
+"4890 N Argonne Way, Denver, CO 80249",,10:00 AM - 02:00 PM,,ho32363636,false,true,,,,poll86285904
+"550 E Iliff Ave, Denver, CO 80210",,10:00 AM - 06:00 PM,,ho47682078,false,true,,,,poll66395827
+"2120 S Tennyson Way, Denver, CO 80219",,10:00 AM - 06:00 PM,,ho94594321,false,true,,,,poll671705
+"3334 N Holly St, Denver, CO 80207",,10:00 AM - 06:00 PM,,ho17377421,false,true,,,,poll33853800
+"2880 N Osceola St, Denver, CO 80212",,10:00 AM - 06:00 PM,,ho28507450,false,true,,,,poll46071337
+"65 S Elati St, Denver, CO 80223",,10:00 AM - 02:00 PM,,ho75134578,false,true,,,,poll66504232
+"15555 E 53rd Ave, Denver, CO 80239",,10:00 AM - 06:00 PM,,ho59579316,false,true,,,,poll12776632
+"729 N Ulster Way, Denver, CO 80230",,10:00 AM - 06:00 PM,,ho19328748,false,true,,,,poll50309526
+"9200 W Saratoga Pl, Denver, CO 80123",,10:00 AM - 02:00 PM,,ho12176563,false,true,,,,poll95335760
+"900 Auraria Pkwy, Denver, CO 80204",,10:00 AM - 06:00 PM,,ho43752659,false,true,,,,poll24955425
+"1701 Wynkoop St, Denver, CO 80202",,10:00 AM - 06:00 PM,,ho3083598,false,true,,,,poll10912798
+"1745 S High St, Denver, CO 80210",,10:00 AM - 06:00 PM,,ho71247503,false,true,,,,poll79463007
+"595 S Clinton St, Denver, CO 80247",,10:00 AM - 02:00 PM,,ho9384594,false,true,,,,poll22424621

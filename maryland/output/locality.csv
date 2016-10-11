@@ -1,0 +1,25 @@
+election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
+,ocd-id,,ocd-division/country:us/state:md/county:allegany,alleg0001,poll86660020,st24,other,,loc0001
+,ocd-id,,ocd-division/country:us/state:md/county:anne_arundel,anne_arun0048,poll8240125 poll29196053 poll38727764 poll8544209 poll27501571,st24,other,,loc0002
+,ocd-id,,ocd-division/country:us/state:md/county:baltimore,baltim0032,poll61581120 poll4270674 poll14630388 poll25010271 poll31487784 poll39432548 poll68270044 poll5809508 poll83446221,st24,other,,loc0003
+,ocd-id,,ocd-division/country:us/state:md/county:calvert,calv0050,poll67955036,st24,other,,loc0004
+,ocd-id,,ocd-division/country:us/state:md/county:caroline,carol0051,poll78785006,st24,other,,loc0005
+,ocd-id,,ocd-division/country:us/state:md/county:carroll,carr0052,poll81681413,st24,other,,loc0006
+,ocd-id,,ocd-division/country:us/state:md/county:cecil,ce0053,poll57182019,st24,other,,loc0007
+,ocd-id,,ocd-division/country:us/state:md/county:charles,char0055,poll83955205 poll16168163,st24,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:md/county:dorchester,dorches0056,poll79474221,st24,other,,loc0009
+,ocd-id,,ocd-division/country:us/state:md/county:frederick,freder0057,poll64927981 poll93972924 poll61783529 poll85722232,st24,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:md/county:garrett,garr0022,poll99105063 poll61562128,st24,other,,loc0011
+,ocd-id,,ocd-division/country:us/state:md/county:harford,harf0063,poll26183563 poll90011133 poll46296331 poll28203346,st24,other,,loc0012
+,ocd-id,,ocd-division/country:us/state:md/county:howard,how0067,poll17679893 poll43215415 poll53097347,st24,other,,loc0013
+,ocd-id,,ocd-division/country:us/state:md/county:kent,k0068,poll77183007,st24,other,,loc0014
+,ocd-id,,ocd-division/country:us/state:md/county:montgomery,montgom0006,poll86577910 poll5222827 poll92262372 poll42035325 poll91326451 poll66055270 poll82687583 poll39576140 poll96928085 poll55219077,st24,other,,loc0015
+,ocd-id,,ocd-division/country:us/state:md/county:prince_george~s,prince_georg0019,poll20986749 poll66366293 poll40562197 poll12537346 poll81514844 poll54444898 poll66187658 poll4692040,st24,other,,loc0016
+,ocd-id,,ocd-division/country:us/state:md/county:queen_anne~s,queen_ann0038,poll8225393 poll29088029,st24,other,,loc0017
+,ocd-id,,ocd-division/country:us/state:md/county:saint_mary~s,saint_mar0039,poll43722945,st24,other,,loc0018
+,ocd-id,,ocd-division/country:us/state:md/county:somerset,somer0040,poll19049976,st24,other,,loc0019
+,ocd-id,,ocd-division/country:us/state:md/county:talbot,tal0041,poll36468561,st24,other,,loc0020
+,ocd-id,,ocd-division/country:us/state:md/county:washington,washing0042,poll83325743,st24,other,,loc0021
+,ocd-id,,ocd-division/country:us/state:md/county:wicomico,wicom0043,poll90700657,st24,other,,loc0022
+,ocd-id,,ocd-division/country:us/state:md/county:worcester,worces0044,poll52713713,st24,other,,loc0023
+,ocd-id,,ocd-division/country:us/state:md/place:baltimore,baltimore_c0011,poll74333711 poll89226680 poll11978258 poll92939217 poll1637288 poll95896896,st24,other,,loc0024
