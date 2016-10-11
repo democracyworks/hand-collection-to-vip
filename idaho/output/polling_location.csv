@@ -1,10 +1,13 @@
 address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-"400 N Benjamin Lane, Suite 100, Boise, ID 83704",,08:00 AM - 05:00 PM,,ho10016664,false,true,,,,poll23009603
+"400 N Benjamin Lane, Suite 100, Boise, ID 83704",,07:00 AM - 06:00 PM,,ho10016664,false,true,,,,poll23009603
+"33 E. Broadway Ave., Meridien, ID 83642",,09:00 AM - 06:00 PM,,ho3357057,false,true,,,,poll82673358
+"312 E. State St., Eagle, ID 83616",,09:00 AM - 06:00 PM,,ho82880809,false,true,,,,poll17061401
+"150 N. Capitol Blvd., Boise, ID 83702",,09:00 AM - 06:00 PM,,ho40741415,false,true,,,,poll90221994
 "201 Industrial Ave, Council, ID 83612",,08:00 AM - 05:00 PM,,ho91843171,false,true,,,,poll14900050
 "141 N. 6th, Pocatello, ID 83201",,09:00 AM - 05:00 PM,,ho98137561,false,true,,,,poll7680323
-"7 East Center, Paris, ID 83261",,08:00 AM - 04:30 PM,,ho1554818,false,true,,,,poll9422550
+"7 East Center, Paris, ID 83261",,08:00 AM - 05:00 PM,,ho1554818,false,true,,,,poll9422550
 "701 W College Ave, Suite 101, St Maries, ID 83861",,09:00 AM - 05:00 PM,,ho5248499,false,true,,,,poll81133691
-"501 N Maple St, Room 105, Blackfoot, ID 83221",,08:30 AM - 04:30 PM,,ho68329894,false,true,,,,poll89028045
+"501 N Maple St, Room 105, Blackfoot, ID 83221",,08:30 AM - 12:00 PM,,ho68329894,false,true,,,,poll89028045
 "206 1st Ave South, #200, Hailey, ID 83333",,08:00 AM - 05:00 PM,,ho60144568,false,true,,,,poll33207405
 "420 Main St, Idaho City, ID 83631",,08:00 AM - 05:00 PM,,ho89264221,false,true,,,,poll38788595
 "1500 Hwy 2, Suite 124, Sandpoint, ID 83864",,09:00 AM - 05:00 PM,,ho48307151,false,true,,,,poll15853240
@@ -29,10 +32,11 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "522 South Adams,, Room 101, Moscow, ID 83843",,08:00 AM - 05:00 PM,,ho69070439,false,true,,,,poll25466781
 "206 Courthouse Drive, Salmon, ID 83467",,08:00 AM - 05:00 PM,,ho29239005,false,true,,,,poll43524876
 "134 E Main St, Rexburg, ID 83440",,08:30 AM - 04:30 PM,,ho6766149,false,true,,,,poll10712229
-"715 G Street, Rupert, ID 83350",,08:00 AM - 05:00 PM,,ho98115461,false,true,,,,poll89383951
+"715 G Street, Rupert, ID 83350",,10:00 AM - 04:00 PM,,ho98115461,false,true,,,,poll89383951
 "1225 Idaho St, Lewiston, ID 38501",,08:00 AM - 05:00 PM,,ho89949944,false,true,,,,poll86091418
+"102 Agency Road, Lapwai, ID 83540",,10:00 AM - 04:00 PM,,ho27789499,false,true,,,,poll98479650
 "10 Court Street, Malad, ID 83252",,09:00 AM - 05:00 PM,,ho12054398,false,true,,,,poll6283570
-"20381 State Hwy 78, Mercy, ID 83650",,08:30 AM - 05:00 PM,,ho9556263,false,true,,,,poll30158669
+"20381 State Hwy 78, Mercy , ID 83650",,08:30 AM - 05:00 PM,,ho27285743,false,true,,,,poll40491465
 "1130 3rd Ave N, Room 104, Payette, ID 83661",,09:00 AM - 05:00 PM,,ho7684001,false,true,,,,poll56693623
 "700 Bank Street, Ste 120, Wallace, ID 83873",,09:00 AM - 05:00 PM,,ho88160955,false,true,,,,poll33732822
 "150 Courthouse Drive, #208, Driggs, ID 83422",,09:00 AM - 05:00 PM,,ho44677157,false,true,,,,poll62489535
