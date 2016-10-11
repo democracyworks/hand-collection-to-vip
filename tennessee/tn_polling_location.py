@@ -27,15 +27,15 @@ class PollingLocationTxt(object):
         else:
             raise ValueError('Missing street value at row ' + str(index) + '.')
 
-#        if not pd.isnull(address2):
+        if not pd.isnull(address2):
             #address = street
-#            address2 = ', ' + str(re.sub(r'[^\x00-\x7f]', r' ', address2.strip()))
-#            address2 = ' '.join(address2.split())
+            address2 = ', ' + str(re.sub(r'[^\x00-\x7f]', r' ', address2.strip()))
+            address2 = ' '.join(address2.split())
             #address = address1 + ' ' + address2
             #print address2
             #print type(address)
-#        else:
-#            address2 = ''
+        else:
+            address2 = ''
 
         if city:
             city_name = city.strip()
