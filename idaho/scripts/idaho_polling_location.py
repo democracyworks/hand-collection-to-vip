@@ -250,10 +250,10 @@ if __name__ == '__main__':
 
     early_voting_true = "true"  # True or False
     #drop_box_true =
-    state_file='idaho_early_voting_info.csv'
+    #state_file='idaho_early_voting_info.csv'
 
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
-    early_voting_file = config.data_folder + state_file
+    early_voting_file = config.data_folder + config.state_file
 
     colnames = ['office_name', 'office_title', 'ocd_division','description','homepage', 'phone',
                 'email', 'name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time',

@@ -288,36 +288,30 @@ class LocalityTxt(object):
 
 if __name__ == '__main__':
 
-#    state_file = 'intermediate_doc.csv'
+#    state_file = 'texas_early_voting_info_clean.csv'
 
-#    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/alt_south_dakota/output/" + state_file
+#    colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name', 'address1',
+#                'address2', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date']
 
-#    colnames = ['ocd_division', 'email', 'county', 'location_name', 'address_1', 'address_2', 'city',
-#                'state', 'zip_code', 'source_start_time', 'source_end_time', 'source_start_date', 'source_end_date',
-#                'is_only_by_appointment', 'is_or_by_appointment', 'appointment_phone', 'is_subject_to_change',
-#                'index', 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
-#                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'polling_location_id']
+#    usecols = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name', 'address1',
+#                'address2', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date']
 
-#    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1, delimiter=',')
 
-#    early_voting_df['index'] = early_voting_df.index +1 # offsets zero based index so it starts at 1 for ids
-    #print early_voting_df
-
-    state_file = 'texas_early_voting_info_clean.csv'
+    intermediate_doc = 'intermediate_doc.csv'
 
     colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name', 'address1',
-                'address2', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date']
+            'address2', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date',
+            'index', 'address_line', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting',
+            'latitude', 'longitude', 'latlng_source', 'id']
 
-    usecols = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name', 'address1',
-                'address2', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date']
-
-
-    early_voting_df = pd.read_csv(config.input + state_file, names=colnames, usecols=usecols, encoding='utf-8', skiprows=1)
+    early_voting_df = pd.read_csv(config.output + intermediate_doc, names=colnames, encoding='utf-8', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
 
-    pl = PollingLocationTxt(early_voting_df, config.state_abbreviation_upper)
-    early_voting_df = pl.export_for_schedule_and_locality()
-    print early_voting_df
+
+#    pl = PollingLocationTxt(early_voting_df, config.state_abbreviation_upper)
+    #early_voting_df = pl.export_for_schedule_and_locality()
+#    early_voting_df = pl.export_for_locality()
+#    print early_voting_df
 
 
     lt = LocalityTxt(early_voting_df, config.state)

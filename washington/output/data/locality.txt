@@ -1,0 +1,44 @@
+election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
+,ocd-id,,ocd-division/country:us/state:washington/county:adams,adams_cou0001,53050010142,st53,other,,loc0001
+,ocd-id,,ocd-division/country:us/state:washington/county:asotin,asotin_cou0002,53050020158,st53,other,,loc0002
+,ocd-id,,ocd-division/country:us/state:washington/county:benton,benton_cou0003,53050030054,st53,other,,loc0003
+,ocd-id,,ocd-division/country:us/state:washington/county:benton,benton_cou0004,53050030055,st53,other,,loc0004
+,ocd-id,,ocd-division/country:us/state:washington/county:benton,benton_cou0005,53050030056,st53,other,,loc0005
+,ocd-id,,ocd-division/country:us/state:washington/county:chelan,chelan_cou0006,53050040014,st53,other,,loc0006
+,ocd-id,,ocd-division/country:us/state:washington/county:clallam,clallam_cou0007,53050050284,st53,other,,loc0007
+,ocd-id,,ocd-division/country:us/state:washington/county:clark,clark_cou0008,53050060242,st53,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:washington/county:columbia,columbia_cou0009,53050070159,st53,other,,loc0009
+,ocd-id,,ocd-division/country:us/state:washington/county:cowlitz,cowlitz_cou0010,53050080157,st53,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:washington/county:douglas,douglas_cou0011,53050090160,st53,other,,loc0011
+,ocd-id,,ocd-division/country:us/state:washington/county:ferry,ferry_cou0012,53050100005,st53,other,,loc0012
+,ocd-id,,ocd-division/country:us/state:washington/county:franklin,franklin_cou0013,53050110149,st53,other,,loc0013
+,ocd-id,,ocd-division/country:us/state:washington/county:garfield,garfield_cou0014,53050120161,st53,other,,loc0014
+,ocd-id,,ocd-division/country:us/state:washington/county:grant,grant_cou0015,53050130162,st53,other,,loc0015
+,ocd-id,,ocd-division/country:us/state:washington/county:grays harbor,grays_harbor_cou0017,53050140135,st53,other,,loc0017
+,ocd-id,,ocd-division/country:us/state:washington/county:island,island_cou0018,53050150163,st53,other,,loc0018
+,ocd-id,,ocd-division/country:us/state:washington/county:jefferson,jefferson_cou0019,53050160241,st53,other,,loc0019
+,ocd-id,,ocd-division/country:us/state:washington/county:king,king_cou0020,53050170433,st53,other,,loc0020
+,ocd-id,,ocd-division/country:us/state:washington/county:kitsap,kitsap_cou0021,53050180329,st53,other,,loc0021
+,ocd-id,,ocd-division/country:us/state:washington/county:kittitas,kittitas_cou0022,53050190204,st53,other,,loc0022
+,ocd-id,,ocd-division/country:us/state:washington/county:klickitat,klickitat_cou0023,53050200144,st53,other,,loc0023
+,ocd-id,,ocd-division/country:us/state:washington/county:lewis,lewis_cou0024,53050210143,st53,other,,loc0024
+,ocd-id,,ocd-division/country:us/state:washington/county:lincoln,lincoln_cou0025,53050220004,st53,other,,loc0025
+,ocd-id,,ocd-division/country:us/state:washington/county:mason,mason_cou0026,53050230137,st53,other,,loc0026
+,ocd-id,,ocd-division/country:us/state:washington/county:okanogan,okanogan_cou0027,53050240185,st53,other,,loc0027
+,ocd-id,,ocd-division/country:us/state:washington/county:pacific,pacific_cou0028,53050250039,st53,other,,loc0028
+,ocd-id,,ocd-division/country:us/state:washington/county:pend oreille,pend_oreille_cou0029,53050260045,st53,other,,loc0029
+,ocd-id,,ocd-division/country:us/state:washington/county:pierce,pierce_cou0030,53050270322,st53,other,,loc0030
+,ocd-id,,ocd-division/country:us/state:washington/county:pierce,pierce_cou0031,53050270324,st53,other,,loc0031
+,ocd-id,,ocd-division/country:us/state:washington/county:pierce,pierce_cou0032,53050270492,st53,other,,loc0032
+,ocd-id,,ocd-division/country:us/state:washington/county:san juan,san_juan_cou0033,53050280403,st53,other,,loc0033
+,ocd-id,,ocd-division/country:us/state:washington/county:skagit,skagit_cou0034,53050290164,st53,other,,loc0034
+,ocd-id,,ocd-division/country:us/state:washington/county:skamania,skamania_cou0035,53050300043,st53,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:washington/county:snohomish,snohomish_cou0036,53050310238,st53,other,,loc0036
+,ocd-id,,ocd-division/country:us/state:washington/county:spokane,spokane_cou0037,53050320034,st53,other,,loc0037
+,ocd-id,,ocd-division/country:us/state:washington/county:stevens,stevens_cou0038,53050330165,st53,other,,loc0038
+,ocd-id,,ocd-division/country:us/state:washington/county:thurston,thurston_cou0039,53050340114,st53,other,,loc0039
+,ocd-id,,ocd-division/country:us/state:washington/county:wahkiakum,wahkiakum_cou0040,53050350040,st53,other,,loc0040
+,ocd-id,,ocd-division/country:us/state:washington/county:walla walla,walla_walla_cou0041,53050360377,st53,other,,loc0041
+,ocd-id,,ocd-division/country:us/state:washington/county:whatcom,whatcom_cou0042,53050370228,st53,other,,loc0042
+,ocd-id,,ocd-division/country:us/state:washington/county:whitman,whitman_cou0043,53050380049,st53,other,,loc0043
+,ocd-id,,ocd-division/country:us/state:washington/county:yakima,yakima_cou0044,53050390303,st53,other,,loc0044
