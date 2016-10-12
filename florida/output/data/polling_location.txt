@@ -1,0 +1,356 @@
+address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+"945 N Temple Ave, Starke, FL 32091",,09:00 AM-06:00 PM,,ho62068433,false,true,,,,poll11740564
+"2650 Sistrunk Boulevard, Fort Lauderdale, FL 33306",NW 6th Street,07:00 AM-07:00 PM,,ho83868424,false,true,,,,poll77083548
+"3200 N. Federal Highway, Fort Lauderdale, FL 33306",North or Northwest Entrance,07:00 AM-07:00 PM,,ho29669764,false,true,,,,poll69576050
+"4600 SW 82nd Avenue, Davie, FL 33328",,07:00 AM-07:00 PM,,ho48277210,false,true,,,,poll71645915
+"1801 NE 6th Street, Pompano Beach, FL 33060",,07:00 AM-07:00 PM,,ho91074001,false,true,,,,poll19055751
+"1350 E. Sunrise Boulevard, Room 130, Fort Lauderdale, FL 33304",,07:00 AM-07:00 PM,,ho43121966,false,true,,,,poll70876634
+"410 SE 3rd Street, Hallandale Beach, FL 33009",,07:00 AM-07:00 PM,,ho9408296,false,true,,,,poll85491923
+"2600 Hollywood Boulevard, Hollywood, FL 33020",,07:00 AM-07:00 PM,,ho61013155,false,true,,,,poll86499863
+"2050 Civic Center Place, Mirar, FL 33025",,07:00 AM-07:00 PM,,ho74995603,false,true,,,,poll46158170
+"1100 Coconut Creek Boulevard, Coconut Creek, FL 33066",,07:00 AM-07:00 PM,,ho21835488,false,true,,,,poll69271563
+"3151 University Drive, Coral Springs, FL 33065",,07:00 AM-07:00 PM,,ho50100311,false,true,,,,poll90493361
+"445 SW 2nd Street, Deerfield Beach, FL 33441",,07:00 AM-07:00 PM,,ho6904692,false,true,,,,poll25774202
+"10559 Trails End, Parkland, FL 33076",,07:00 AM-07:00 PM,,ho69437325,false,true,,,,poll56571915
+"7300 S. Pines Blvd., Pembroke Pines, FL 33024",,07:00 AM-07:00 PM,,ho11453183,false,true,,,,poll99563328
+"16835 Sheridan Street, Pembroke Pines, FL 33331",,07:00 AM-07:00 PM,,ho63431643,false,true,,,,poll77372362
+"10650 W. Oakland Park Boulevard, Sunrise, FL 33351",,07:00 AM-07:00 PM,,ho39758327,false,true,,,,poll78041137
+"8701 W. Commercial Boulevard, Tarac, FL 33321",,07:00 AM-07:00 PM,,ho30645721,false,true,,,,poll70176067
+"4205 Bonaventure Boulevard, Weston, FL 33332",,07:00 AM-07:00 PM,,ho41395222,false,true,,,,poll30158741
+"8601 W. Broward Boulevard, Plantation, FL 33324",,07:00 AM-07:00 PM,,ho96820528,false,true,,,,poll241436
+"2020 Wilton Drive, Wilton Manors, FL 33305",,07:00 AM-07:00 PM,,ho91318497,false,true,,,,poll96045614
+"520 Martin Luther King Boulevard, Pompano Beach, FL 33060",,07:00 AM-07:00 PM,,ho93959880,false,true,,,,poll42917116
+"1519 NW 40th Avenue, Lauderhill, FL 33313",,07:00 AM-07:00 PM,,ho78345219,false,true,,,,poll92174351
+"226 Taylor St, Punta Gorda, FL 33950",2nd Floor,07:00 AM-07:00 PM,,ho93134271,false,true,,,,poll69323350
+"2050 Forrest Nelson Blvd., Port Charlotte, FL 33952",,07:00 AM-07:00 PM,,ho21986274,false,true,,,,poll48135880
+"6868 San Casa Dr., Englewood, FL 34224",,07:00 AM-07:00 PM,,ho92100522,false,true,,,,poll98828533
+"7973 Old Middleburg Rd S, Jacksonville, FL",,07:00 AM-07:00 PM,,ho53307945,false,true,,,,poll41457958
+"600 3rd St, Neptune Beach, FL 32266",,07:00 AM-07:00 PM,,ho90128629,false,true,,,,poll14708935
+"1755 Edgewood Ave W, Jacksonville, FL",,07:00 AM-07:00 PM,,ho84322472,false,true,,,,poll67594749
+"910 W 44th St, Jacksonville, FL",,07:00 AM-07:00 PM,,ho11153687,false,true,,,,poll75608003
+"1826 Dunn Ave, Jacksonville, FL",,07:00 AM-07:00 PM,,ho16855339,false,true,,,,poll24943955
+"5130 Soutel Dr, Jacksonville, FL",,07:00 AM-07:00 PM,,ho65487476,false,true,,,,poll45498622
+"3330 Kori Rd, Jacksonville, FL",,07:00 AM-07:00 PM,,ho63487152,false,true,,,,poll61101217
+"918 Edgewood Ave S, Jacksonville, FL",,07:00 AM-07:00 PM,,ho77053621,false,true,,,,poll7964299
+"12215 Sago Ave, Jacksonville, FL",,07:00 AM-07:00 PM,,ho17300548,false,true,,,,poll4630908
+"13295 Beach Blvd, Jacksonville, FL",,07:00 AM-07:00 PM,,ho85387082,false,true,,,,poll76990263
+"9900 Regency Square Blvd, Jacksonville, FL",,07:00 AM-07:00 PM,,ho8628790,false,true,,,,poll2771598
+"1513 LaSalle St, Jacksonville, FL",,07:00 AM-07:00 PM,,ho38144021,false,true,,,,poll88587357
+"10599 Deerwood Park Blvd, Jacksonville, FL",,07:00 AM-07:00 PM,,ho98780541,false,true,,,,poll69820957
+"12125 San Jose Blvd, Jacksonville, FL",,07:00 AM-07:00 PM,,ho91546622,false,true,,,,poll53236038
+"105 East Monroe St, Jacksonville, FL",,08:00 AM-05:00 PM,,ho69140389,false,true,,,,poll89192589
+"3435 University Blvd N, Jacksonville, FL",,07:00 AM-07:00 PM,,ho71238544,false,true,,,,poll54845228
+"6887 103rd St, Jacksonville, FL",,07:00 AM-07:00 PM,,ho88900920,false,true,,,,poll60238683
+"1425 Chaffee Rd S, Jacksonville, FL",,07:00 AM-07:00 PM,,ho55787793,false,true,,,,poll68759050
+"1906 Bloomingdale Ave, Valrico, FL 33596",,07:00 AM-07:00 PM,,ho478176,false,true,,,,poll59670833
+"302 W McLendon St, Plant City, FL 33563",,07:00 AM-07:00 PM,,ho37851792,false,true,,,,poll49110345
+"2607 E Dr. Martin Luther King Jr. Blvd, Tpa, FL 33610",,07:00 AM-07:00 PM,,ho20848205,false,true,,,,poll42843690
+"601 E Kennedy Blvd, Tpa, FL 33602",,07:00 AM-07:00 PM,,ho30979791,false,true,,,,poll1993935
+"3910 S Manhattan Ave, Tpa, FL 33611",,07:00 AM-07:00 PM,,ho70599501,false,true,,,,poll15368904
+"2902 West Bearss Avenue, Tpa, FL 33618",,07:00 AM-07:00 PM,,ho85991340,false,true,,,,poll8252076
+"17928 Gunn Hwy, Odessa, FL 33556",,07:00 AM-07:00 PM,,ho22037441,false,true,,,,poll77827797
+"10001 Cross Creek Blvd, Tpa, FL 33647",,07:00 AM-07:00 PM,,ho68606862,false,true,,,,poll23644434
+"8916 North Blvd, Tpa, FL 33604",,07:00 AM-07:00 PM,,ho35141297,false,true,,,,poll62197537
+"10509 Riverview Dr, Riverview, FL 33578",,07:00 AM-07:00 PM,,ho24744025,false,true,,,,poll38089113
+"2514 N Falkenburg Rd, Tpa, FL 33619",,07:00 AM-07:00 PM,,ho76187813,false,true,,,,poll27800703
+"15816 Beth Shields Way, Ruskin, FL 33573",,07:00 AM-07:00 PM,,ho91053931,false,true,,,,poll72218878
+"202 Bullard Parkway, Temple Terrace, FL 33617",,07:00 AM-07:00 PM,,ho31624841,false,true,,,,poll73769042
+"7606 Paula Drive, Suite 120, Tpa, FL 33615",,07:00 AM-07:00 PM,,ho68087987,false,true,,,,poll47361865
+"11211 Countryway Blvd, Tpa, FL 33626",,07:00 AM-07:00 PM,,ho3106167,false,true,,,,poll3562386
+"2312 W Union St, Tpa, FL 33607",,07:00 AM-07:00 PM,,ho56370087,false,true,,,,poll7752780
+"2817 S. Ads Street, Tallahassee, FL",,10:00 AM-06:00 PM,,ho85577402,false,true,,,,poll46662794
+"1583 Pedrick Road, Tallahassee, FL",,10:00 AM-06:00 PM,,ho94125865,false,true,,,,poll35307876
+"16327 Blountstown Highway, Tallahassee, FL",,10:00 AM-06:00 PM,,ho92446307,false,true,,,,poll44199441
+"3840 N. Monroe Street, Tallahassee, FL",Suite 301,10:00 AM-06:00 PM,,ho33563257,false,true,,,,poll66398218
+"301 S. Monroe Street, Tallahassee, FL",,08:00 AM-04:00 PM,,ho38129243,false,true,,,,poll73685066
+"5513 Thomasville Road, Tallahassee, FL",,10:00 AM-06:00 PM,,ho52894314,false,true,,,,poll66055999
+"8000 Old Woodville Rd, Tallahassee, FL",,10:00 AM-06:00 PM,,ho61838256,false,true,,,,poll36116135
+"2650 Sistrunk Boulevard (NW 6th Street), Fort Lauderdale, FL 33306",,07:00 AM-07:00 PM,,ho76133247,false,true,,,,poll81765484
+"3145 NW 43rd Street, Gainesville, FL 32606",Voting in the meeting room Enter on the south side.,09:00 AM-06:00 PM,,ho15865390,false,true,,,,poll61741953
+"515 N Main Street, Gainesville, FL 32601","1st floor, entrance on south side.",09:00 AM-06:00 PM,,ho40396025,false,true,,,,poll70334130
+"3020 SW 75th Street, Gainesville, FL 32608",Voting in the meeting room Entrance on west side,09:00 AM-06:00 PM,,ho46472633,false,true,,,,poll57899581
+"32 N 5th Street, Suite A, Macclenny, FL 32063",,10:00 AM-06:00 PM,,ho75427443,false,true,,,,poll17891761
+"108 E 9th St, Lynn Haven, FL 32444",,07:00 AM-07:00 PM,,ho20396760,false,true,,,,poll62522849
+"423 Lyndell Ln, Pana City Beach, FL 32407",,07:00 AM-07:00 PM,,ho78882555,false,true,,,,poll17876489
+"3728 E 3rd St, Pana City, FL 32401",,07:00 AM-07:00 PM,,ho12784292,false,true,,,,poll9492500
+"830 W 11th St, Pana City, FL 32401",,07:00 AM-07:00 PM,,ho43349543,false,true,,,,poll87467345
+"2289 A1A, Indian Harbour Beach, FL 32937",,08:00 AM-04:00 PM,,ho95988246,false,true,,,,poll39806983
+"308 Forrest Ave, Cocoa, FL 32922",,08:00 AM-04:00 PM,,ho94175109,false,true,,,,poll97061409
+"951 Kiwanis Island Park RD, Merritt Island, FL 32952",,08:00 AM-04:00 PM,,ho30193702,false,true,,,,poll83427922
+"3410 Flanagan Ave, West Melbourne, FL 32904",,08:00 AM-04:00 PM,,ho96031018,false,true,,,,poll43273912
+"1502 Port Malabar RD NE, Palm Bay, FL 32905",,08:00 AM-04:00 PM,,ho77105210,false,true,,,,poll45599144
+"450 Cogan Dr SE, Palm Bay, FL 32909",,08:00 AM-04:00 PM,,ho3402661,false,true,,,,poll42409803
+"1450 Sarno RD, Melbourne, FL 32935",,08:00 AM-04:00 PM,,ho57677476,false,true,,,,poll87283926
+"400 South St, Titusville, FL 32780",,08:00 AM-04:00 PM,,ho9715772,false,true,,,,poll53784459
+"2300 Judge Fran Jieson Way, Viera, FL 32940",,08:00 AM-04:00 PM,,ho19520194,false,true,,,,poll95138044
+"2815 Leisure Way, Melbourne, FL 32935",,08:00 AM-04:00 PM,,ho72096154,false,true,,,,poll69531272
+"20859 Central Avenue East, Blountstown, FL 32424",Room 117 1st Floor,08:00 AM-05:30 PM,,ho60903788,false,true,,,,poll8400817
+"425 W Roosevelt Blvd, Beverly Hills, FL 34465",Corner of Forest Ridge Blvd and Roosevelt Blvd,07:00 AM-07:00 PM,,ho77240101,false,true,,,,poll63267302
+"1540 N Meadowcrest Blvd, Crystal River, FL 34429",Off Hwy 44 and Meadowcrest,07:00 AM-07:00 PM,,ho80848781,false,true,,,,poll37204369
+"4100 S Grandmarch Ave, Homosassa, FL 34446",Grover Cleveland Blvd to Grandmarch Ave,07:00 AM-07:00 PM,,ho13456083,false,true,,,,poll87573131
+"212 W Main St, Inverness, FL 34450",Downtown Inverness next to the Square,07:00 AM-07:00 PM,,ho72460264,false,true,,,,poll92457318
+"500 N. Orange Ave, Green Cove Springs, FL 32043",Training Room 2,07:00 AM-07:00 PM,,ho3166674,false,true,,,,poll10576690
+"3973 Eagle Landing Pkwy, Orange Park, FL 32065",,07:00 AM-07:00 PM,,ho16688723,false,true,,,,poll82976472
+"1895 Town Center Blvd, Fleming Island, FL 32003",,07:00 AM-07:00 PM,,ho32444623,false,true,,,,poll3779443
+"7380 State Road 100, Keystone Heights, FL 32656",Suite 10,07:00 AM-07:00 PM,,ho91674851,false,true,,,,poll64236275
+"2102 Palmetto St, Middleburg, FL 32068",,07:00 AM-07:00 PM,,ho72876480,false,true,,,,poll81882194
+"2054 Plainfield Ave, Orange Park, FL 32073",,07:00 AM-07:00 PM,,ho15976087,false,true,,,,poll57396474
+"3311 Tii Trl E, Naples, FL 34112",,09:00 AM-06:00 PM,,ho61134856,false,true,,,,poll46831744
+"102 Copeland Ave N, Everglades City, FL 34139",,09:00 AM-06:00 PM,,ho23502205,false,true,,,,poll41358947
+"4701 Golden Gate Pkwy, Naples, FL 34116",,09:00 AM-06:00 PM,,ho54131915,false,true,,,,poll68056161
+"321 N First St, Immokalee, FL 34142",,09:00 AM-06:00 PM,,ho61634736,false,true,,,,poll14973396
+"2385 Orange Blossom Dr, Naples, FL 34109",,09:00 AM-06:00 PM,,ho91667539,false,true,,,,poll82455425
+"210 S Heathwood Dr, Marco Island, FL 34145",,09:00 AM-06:00 PM,,ho74685966,false,true,,,,poll83382275
+"755 8th Ave S, Naples, FL 34102",,09:00 AM-06:00 PM,,ho56390721,false,true,,,,poll35394980
+"15000 Livingston Rd, Naples, FL 34109",,09:00 AM-06:00 PM,,ho32612788,false,true,,,,poll77302826
+"3750 Enterprise Ave, Naples, FL 34104",,09:00 AM-06:00 PM,,ho43175778,false,true,,,,poll45375935
+"17579 SW SR 47, Fort White, FL 32038",Right off of 47,08:30 AM-04:30 PM,,ho3297274,false,true,,,,poll61485285
+"971 W. Duval St., Lake City, FL 32055",Old hospital building,07:00 AM-07:00 PM,,ho83122409,false,true,,,,poll26366058
+"201 E. Oak Street, Arcadia, FL 34266",Room 104,07:00 AM-03:00 PM,,ho81222739,false,true,,,,poll85362379
+"229 NE 351 HWY, Cross City, FL 32628",Suite A,08:00 AM-06:00 PM,,ho30218364,false,true,,,,poll5971199
+"916 W Michigan Ave, Pensacola, FL 32505",,07:00 AM-07:00 PM,,ho34059105,false,true,,,,poll9147241
+"3740 Stefani Road, Cantonment, FL 32533",,07:00 AM-07:00 PM,,ho31093681,false,true,,,,poll63653307
+"5740 N. 9th Avenue, Pensacola, FL 32504",,07:00 AM-07:00 PM,,ho34018119,false,true,,,,poll14122579
+"239 N. Spring Street, Pensacola, FL 32502",,07:00 AM-07:00 PM,,ho95338720,false,true,,,,poll58951317
+"213 Palafox Place, Pensacola, FL 32502",Second Floor,07:00 AM-07:00 PM,,ho26285461,false,true,,,,poll95139604
+"6450 Highway 95A North, Molino, FL 32577",,07:00 AM-07:00 PM,,ho72167130,false,true,,,,poll89646072
+"12248 Gulf Beach Highway, Pensacola, FL 32507",,07:00 AM-07:00 PM,,ho84518649,false,true,,,,poll69934071
+"2500 Palm Coast Parkway NW, Palm Coast, FL 32137",,10:00 AM-06:00 PM,,ho70511329,false,true,,,,poll14889410
+"305 Palm Coast Parkway NE, Palm Coast, FL 32137",,10:00 AM-06:00 PM,,ho53640135,false,true,,,,poll7722423
+"1769 E Moody Boulevard, Bunnell, FL 32110",Building 2 STE 101,10:00 AM-06:00 PM,,ho19566857,false,true,,,,poll21885514
+"912 NW Ave A, Carrabelle, FL 32322",Carrabelle Annex Corner of Hwy 98 & Avenue A,08:00 AM-06:00 PM,,ho28607864,false,true,,,,poll79930281
+"47 Avenue F, Apalachicola, FL 32320",Elections Main Office 1 Block Off Hwy 98,08:00 AM-06:00 PM,,ho51725328,false,true,,,,poll19522366
+"300 Maple Street, Chattahoochee, FL 32324",,08:00 AM-06:00 PM,,ho32243416,false,true,,,,poll78233753
+"203 E. 5th Ave., Havana, FL 32333",,08:00 AM-06:00 PM,,ho5955495,false,true,,,,poll68642300
+"60 MLK Blvd., Midway, FL 32343",,08:00 AM-06:00 PM,,ho50557937,false,true,,,,poll43474277
+"16 S. Madison Street, Quincy, FL 32351",,08:00 AM-06:00 PM,,ho99818159,false,true,,,,poll25444708
+"500 Ave J, Moore Haven, FL 33471",27 and Ave J,08:00 AM-04:00 PM,,ho68248841,false,true,,,,poll94669032
+"401 Long Ave, Port St. Joe, FL 32456",,08:00 AM-05:00 PM,,ho25779463,false,true,,,,poll34485295
+"314 N 2nd St, Wewahitchka, FL 32465",,07:00 AM-04:00 PM,,ho71295785,false,true,,,,poll58307997
+"1153 US HWY 41 NW, Jasper, FL 32052",,08:30 AM-05:00 PM,,ho80008261,false,true,,,,poll69488009
+"311 N. 6th Ave., Wauchula, FL 33873",,08:30 AM-05:00 PM,,ho7902309,false,true,,,,poll13627416
+"1100 S. Olympia St., Clewiston, FL 33440",In the se building as the Driver`s License Office,07:00 AM-05:00 PM,,ho74541436,false,true,,,,poll17200307
+"25 E. Hickpochee Ave., LaBelle, FL 33935",1st Floor corner of Hickpochee and Bridge St,07:00 AM-05:00 PM,,ho72262779,false,true,,,,poll1717524
+"6457 Windmere Rd, Brooksville, FL 34602",,07:00 AM-07:00 PM,,ho83319237,false,true,,,,poll29229005
+"601 E Dr. Martin Luther King Blvd., Brooksville, FL 34601",,07:00 AM-07:00 PM,,ho87879572,false,true,,,,poll15558798
+"9220 Spring Hill Dr, Spring Hill, FL 34608",,07:00 AM-07:00 PM,,ho29703286,false,true,,,,poll99934926
+"7443 Forest Oaks Blvd, Spring Hill, FL 34606",,07:00 AM-07:00 PM,,ho51115910,false,true,,,,poll83486795
+"123 E Pine St, Avon Park, FL 33825",,08:30 AM-06:00 PM,,ho5617773,false,true,,,,poll1794822
+"4500 Kenilworth Blvd, Sebring, FL 33870",,08:30 AM-06:00 PM,,ho88165925,false,true,,,,poll33278917
+"311 W Interlake Blvd, Lake Placid, FL 33852",,08:30 AM-06:00 PM,,ho30207222,false,true,,,,poll37621139
+"201 N. Oklahoma St., Suite 102, Bonifay, FL 32425",,07:00 AM-07:00 PM,,ho20514063,false,true,,,,poll81153422
+"1225 Main Street, Sebastian, FL 32958",,08:00 AM-04:00 PM,,ho51798177,false,true,,,,poll62813891
+"4375 43rd Avenue, Vero Beach, FL 32967",,08:00 AM-04:00 PM,,ho20479020,false,true,,,,poll62493858
+"1600 21st Street, Vero Beach, FL 32960",,08:00 AM-04:00 PM,,ho26519171,false,true,,,,poll61769818
+"5348 Cliff Street, Graceville, FL 32440",,08:00 AM-06:00 PM,,ho17378181,false,true,,,,poll35789186
+"2028 Third Avenue, Sneads, FL 32460",,08:00 AM-06:00 PM,,ho67937734,false,true,,,,poll55087006
+"2851 Jefferson Street, Marianna, FL 32448",,08:00 AM-06:00 PM,,ho24180743,false,true,,,,poll61124016
+"380 W Dogwood Street, Monticello, FL 32344",,08:30 AM-04:30 PM,,ho13466490,false,true,,,,poll84998114
+"120 W Main St, Mayo, FL 32066",RM 129,08:30 AM-05:30 PM,,ho68975288,false,true,,,,poll58312759
+"16729 Cagan Oaks, Clermont, FL 34714",,09:00 AM-06:00 PM,,ho81056330,false,true,,,,poll89916382
+"2525 Oakley Seaver Dr, Clermont, FL 34711",,09:00 AM-06:00 PM,,ho1195118,false,true,,,,poll86196405
+"120 N Center St, Eustis, FL 32726",,09:00 AM-06:00 PM,,ho79277343,false,true,,,,poll32136429
+"225 W Guava St, Lady Lake, FL 32159",,09:00 AM-06:00 PM,,ho78279938,false,true,,,,poll30730827
+"100 E Main St, Leesburg, FL 34748",,09:00 AM-06:00 PM,,ho5114459,false,true,,,,poll15960814
+"800 N US Hwy 27, Minneola, FL 34755",,09:00 AM-06:00 PM,,ho38502100,false,true,,,,poll23166368
+"1995 N Donnelly St, Mount Dora, FL 32757",,09:00 AM-06:00 PM,,ho22066200,false,true,,,,poll24346417
+"315 W Main St, Tavares, FL 32778",2nd Floor,09:00 AM-06:00 PM,,ho25525968,false,true,,,,poll33093143
+"17107 Ball Park Rd, Umatilla, FL 32784",,09:00 AM-06:00 PM,,ho78854159,false,true,,,,poll33052750
+"921 SW 39th  Terrace, Cape Coral, FL 33993","The Cape Coral Library is on SW 39th Ter, west of Skyline Blvd and North of Mohawk Pkwy.",10:00 AM-07:00 PM,,ho53211452,false,true,,,,poll61802958
+"881 Gunnery Road N, Lehigh Acres, FL 33971","Voting is in the Meeting Room The Library is located on the west side of Gunnery Rd, north of Lee Blvd, next to Varsity Lakes Middle School",10:00 AM-07:00 PM,,ho89571497,false,true,,,,poll78434719
+"9200 Corkscrew Palms Boulevard, Estero, FL 33928","Vote in Multi-Purpose Room, to right as you enter building Traveling south on Three Oaks Pkwy, turn right onto Corkscrew Road and proceed to Corkscrew Palms Blvd. Turn left onto Corkscrew Palms.  At stop sign, turn right onto road that circles park.  Follow road around left-hand curve to entrance of Rec Center",10:00 AM-07:00 PM,,ho54528662,false,true,,,,poll59426635
+"25987 S Tii Trail #105, Bonita Springs, FL 34134",Bonita Commons The Bonita Branch Office is located on the east side of S. Tii Trail just beyond Spring Creek across from Bonita Bay Golf Course,10:00 AM-07:00 PM,,ho18120605,false,true,,,,poll51814030
+"1039 SE 9th Avenue, Cape Coral, FL 33990","Inside the Lee County Government Center 1st Floor From the Intersection of Del Prado Blvd and Viscaya Pkwy, drive west on Viscaya Pkwy.  Continue around the curve to the left onto Country Club Blvd and turn right onto either SE 10th St (at traffic light) or SE 12th St. Turn onto SE 9th Ave.",10:00 AM-07:00 PM,,ho16282891,false,true,,,,poll86246500
+"13180 S Cleveland Avenue, Fort Myers, FL 33907","Accross from the Bell Tower Shops From Cypress Lake Dr/Daniels Pkwy, go north on S. Cleveland Ave to next traffic light (Bell Tower/Cypress Trace). Turn left, by Robb & Stucky. Park in the lot to the right of the Elections Ctr.",10:00 AM-07:00 PM,,ho52753384,false,true,,,,poll3502726
+"2000 N Recreation Park Way, North Fort Myers, FL 33903",Just north of the North Fort Myers Public Library The entrance to North Fort Myers Recreation Center is located just north of North Fort Myers Public Library on N. Recreation Way On The west side of N. Tii Trail Just beyond the intersection of N. Tii Trail and Bayshore Rd.,10:00 AM-07:00 PM,,ho38923405,false,true,,,,poll51668586
+"519 Chiquita Boulevard N, Cape Coral, FL 33993","Vote in the Meeting Room From the intersection of Pine Island Rd and Chiquita Blvd, go north on Chiquita, Past Embers Pkwy. The library is on the right side of the road, between Mariner Middle and Mariner High School",10:00 AM-07:00 PM,,ho34032477,false,true,,,,poll94201023
+"419 Royal Palm Park Road, Fort Myers, FL 33905",Reverend Suarez Hall Voting is in Rev. Suarex Hall Schandler Hall Community Park Is located on the north side of Palm Beach Blvd. across from the intersection of Ortiz Ave. and Palm Beach Blvd.  The entrance is on Royal Palm Park Rd. off Palm Beach Blvd.,10:00 AM-07:00 PM,,ho78036197,false,true,,,,poll26501540
+"55 S Homestead Road, Lehigh Acres, FL 33936","From the intersection of Alaba Rd and Homestead Rd, go southeast on Homestead, past the intersection with Arthur Ave and past the fire station to Veterans Park, on the left side of Homestead",10:00 AM-07:00 PM,,ho67490222,false,true,,,,poll41907981
+"421 S Court St, Bronson, FL 32621",,08:00 AM-06:00 PM,,ho80990840,false,true,,,,poll5726182
+"10818 NW State Rd 20, Bristol, FL 32321",Early Voting Office,08:00 AM-04:00 PM,,ho81128981,false,true,,,,poll39340794
+"112 South Main St Room 128, Trenton, FL 32693",,08:00 AM-06:00 PM,,ho95119891,false,true,,,,poll84919693
+"13145 SE HWY 484, Belleview, FL 34420",,08:00 AM-06:00 PM,,ho7246458,false,true,,,,poll43250170
+"9048 SW HWY 200, Ocala, FL 34481",,08:00 AM-06:00 PM,,ho8461516,false,true,,,,poll51147333
+"20351 Robinson Road, Dunnellon, FL 34431",,08:00 AM-06:00 PM,,ho50933146,false,true,,,,poll91795567
+"981 NE 16th Street, Ocala, FL 34470",,08:00 AM-06:00 PM,,ho17671900,false,true,,,,poll70364657
+"905 S HWY 314A, Ocklawaha, FL 32179",,08:00 AM-06:00 PM,,ho68385273,false,true,,,,poll39988046
+"5870 SW 95th Street, Ocala, FL 34476",,08:00 AM-06:00 PM,,ho43215248,false,true,,,,poll30938109
+"4345 NW 152nd Street, Reddick, FL 32686",,08:00 AM-06:00 PM,,ho54675129,false,true,,,,poll86096005
+"590 Silver Road, Ocala, FL 34472",,08:00 AM-06:00 PM,,ho99118362,false,true,,,,poll31977231
+"8445 SE 165th Mulberry Lane, The Villages, FL 32162",,08:00 AM-06:00 PM,,ho98425927,false,true,,,,poll35377146
+"18530 SE County Line Rd, Tequesta, FL 33469",,08:00 AM-05:00 PM,,ho24512997,false,true,,,,poll57221727
+"135 SE Martin Luther King, Jr. Blvd, Stuart, FL 34994",,08:00 AM-05:00 PM,,ho61751933,false,true,,,,poll14204044
+"15200 SW Ads Ave, Indiantown, FL 34956",,08:00 AM-05:00 PM,,ho12475166,false,true,,,,poll92737452
+"10595 SE Federal Hwy, Hobe Sound, FL 33455",,08:00 AM-05:00 PM,,ho22024903,false,true,,,,poll60144066
+"1150 NE Jack Willis Way, Jensen Beach, FL 34957",,08:00 AM-05:00 PM,,ho4801600,false,true,,,,poll23764776
+"2551 SW Matheson Ave, Palm City, FL 34990",,08:00 AM-05:00 PM,,ho59930019,false,true,,,,poll77663589
+"5851 SE Community Dr, Stuart, FL 34997",,08:00 AM-05:00 PM,,ho58080675,false,true,,,,poll37782787
+"1300 Biscayne Blvd, Mii, FL 33132",,07:00 AM-07:00 PM,,ho43125156,false,true,,,,poll74881026
+"8240 NW 7TH  Avenue, Mii, FL 33150",,07:00 AM-07:00 PM,,ho90306678,false,true,,,,poll27275504
+"3000 NW 199TH St, Mii Gardens, FL 33056",,07:00 AM-07:00 PM,,ho63797699,false,true,,,,poll13450028
+"1350 NW 50TH Street, Mii, FL 33142",,07:00 AM-07:00 PM,,ho56264362,false,true,,,,poll57327234
+"3443 Segovia Street, Coral Gables, FL 33134",,07:00 AM-07:00 PM,,ho48386157,false,true,,,,poll524233
+"9211 SW 152nd Street, Mii, FL 33157",,07:00 AM-07:00 PM,,ho29371444,false,true,,,,poll69701600
+"2700 NW 87th Avenue, Doral, FL 33172",,07:00 AM-07:00 PM,,ho1725177,false,true,,,,poll23478681
+"3250 S Mii Avenue, Mii, FL 33129",Se property as the old museum of science,07:00 AM-07:00 PM,,ho28351438,false,true,,,,poll74726532
+"1601 N. Krome Avenue, Homestead, FL 33030","Willi F. ""Bill"" Dickinson Comm. Center",07:00 AM-07:00 PM,,ho91081375,false,true,,,,poll25072723
+"10315 NW 12TH Street, Doral, FL 33172",,07:00 AM-07:00 PM,,ho56033454,false,true,,,,poll87304590
+"190 W 49th Street, Hialeah, FL 33012",,07:00 AM-07:00 PM,,ho39163075,false,true,,,,poll29080515
+"15205 SW 88TH Street, Mii, FL 33196",,07:00 AM-07:00 PM,,ho31813769,false,true,,,,poll38176634
+"9101 SW 97th Avenue, Mii, FL 33176",,07:00 AM-07:00 PM,,ho13796199,false,true,,,,poll17882193
+"430 NE 61ST Street, Mii, FL 33137",,07:00 AM-07:00 PM,,ho4814176,false,true,,,,poll70595993
+"1700 Convention Center Drive, Mii Beach, FL 33139",,07:00 AM-07:00 PM,,ho92929528,false,true,,,,poll69279737
+"15151 NW 82nd Avenue, Mii Lakes, FL 33016",Mary Collins Community Center,07:00 AM-07:00 PM,,ho57361452,false,true,,,,poll80622640
+"2211 NW 54th Street, Mii, FL 33142",Caleb Center,07:00 AM-07:00 PM,,ho8810615,false,true,,,,poll60317168
+"14850 SW 280TH Street, Homestead, FL 33032",,07:00 AM-07:00 PM,,ho92017826,false,true,,,,poll31017141
+"2455 NW 183rd Street, Mii Gardens, FL 33056",,07:00 AM-07:00 PM,,ho22942384,false,true,,,,poll95907055
+"2930 Aventura Boulevard, Aventura, FL 33180",,07:00 AM-07:00 PM,,ho75129493,false,true,,,,poll22546904
+"835 NE 132nd Street, North Mii, FL 33161",,07:00 AM-07:00 PM,,ho59259205,false,true,,,,poll51931914
+"7501 Collins Avenue, Mii Beach, FL 33141",,07:00 AM-07:00 PM,,ho59255874,false,true,,,,poll33970502
+"17641 Old Cutler Road, Palmetto Bay, FL 33157",,07:00 AM-07:00 PM,,ho40885179,false,true,,,,poll96856590
+"5835 SW 111TH Street, Pinecrest, FL 33156",,07:00 AM-07:00 PM,,ho8527416,false,true,,,,poll48237392
+"2111 SW 19TH Street, Mii, FL 33145",,07:00 AM-07:00 PM,,ho78858097,false,true,,,,poll89982096
+"10750 SW 211th Street, Cutler Bay, FL 33189",,07:00 AM-07:00 PM,,ho31538571,false,true,,,,poll21584757
+"111 NW 1ST Street, Mii, FL 33128",Elections Branch Office - Lobby,07:00 AM-07:00 PM,,ho82035157,false,true,,,,poll48528805
+"9445 SW 24th Street, Mii, FL 33165",,07:00 AM-07:00 PM,,ho74902248,false,true,,,,poll32446520
+"10201 Hmocks Boulevard, Mii, FL 33196",,07:00 AM-07:00 PM,,ho54964268,false,true,,,,poll10039198
+"901 SW 62nd Avenue, West Mii, FL 33144",,07:00 AM-07:00 PM,,ho80810276,false,true,,,,poll94071443
+"31009 Atlantis Dr., Big Pine Key, FL 33043",,08:30 AM-05:00 PM,,ho41179538,false,true,,,,poll77307991
+"81830 Overseas Hwy, Islorada, FL 33036",,08:30 AM-05:00 PM,,ho8002913,false,true,,,,poll76231025
+"10015 Overseas Highway, Marathon, FL 33050",,08:30 AM-05:00 PM,,ho35416242,false,true,,,,poll73468003
+"530 Whitehead St. #101, Key West, FL 33040",,08:30 AM-05:00 PM,,ho86921942,false,true,,,,poll68046241
+"102050 Overseas Highway, Key Largo, FL 33037",,08:30 AM-05:00 PM,,ho62612346,false,true,,,,poll85233963
+"45401 Mickler Street, Callahan, FL 32011","From the intersection of US Hwy 1/301 and SR200/A1A go south .3 miles on US Hwy 301, turn right on Mickler Street (at First Baptist Church), go .1 miles, County Building is on left.",07:00 AM-07:00 PM,,ho1223901,false,true,,,,poll633990
+"96135 Nassau Place, Yulee, FL 32097","From intersection of SR 200 and Nassau Place, go north on Nassau Place for .2 miles.",07:00 AM-07:00 PM,,ho59342666,false,true,,,,poll69504897
+"37177 Pecan Street, Hilliard, FL 32046","From intersection of US Hwy 1 and CR 108, go west on CR 108 for .1 miles, turn right on Pecan Street, Community Center is on right.",07:00 AM-07:00 PM,,ho45290310,false,true,,,,poll33740594
+"1200 Elm Street, Fernandina Beach, FL 32034","From intersection of South 14th Street and Elm Street (Martin Luther King, Jr. St.) go west on Elm Street for .2 miles, Recreation Center is on left.",07:00 AM-07:00 PM,,ho68344472,false,true,,,,poll41835556
+"1250 Eglin Pkwy, Shalimar, FL 32579",,07:00 AM-07:00 PM,,ho24948618,false,true,,,,poll93584415
+"1446 Commerce Dr, Crestview, FL 32539",,07:00 AM-07:00 PM,,ho26047307,false,true,,,,poll6627140
+"101 Stahlman Ave, Destin, FL 32541",,07:00 AM-07:00 PM,,ho14837659,false,true,,,,poll43161274
+"208 Partin Dr N, Niceville, FL 32578",,07:00 AM-07:00 PM,,ho85454686,false,true,,,,poll66001259
+"302 Wilson St. N, Cretview, FL 32536",Suite 102,07:00 AM-07:00 PM,,ho15803906,false,true,,,,poll69419815
+"304 NW 2nd St, Okeechobee, FL 34972",,08:30 AM-04:30 PM,,ho22636841,false,true,,,,poll60631567
+"1865 North Econlockhatchee Trail, Orlando, FL 32817",Corner of Colonial Dr.,08:00 AM-08:00 PM,,ho3823682,false,true,,,,poll12972180
+"12000 East Colonial Drive, Orlando, FL 32826",East of Alafaya Trail,08:00 AM-08:00 PM,,ho32862366,false,true,,,,poll8111752
+"519 S Central Ave., Apopka, FL 32703",On the Apopka City Hall Complex,08:00 AM-08:00 PM,,ho19802757,false,true,,,,poll9610627
+"870 North Chickasaw Trail, Orlando, FL 32825",North of Valencia College Lane,08:00 AM-08:00 PM,,ho87723910,false,true,,,,poll62798709
+"5049 Edgewater Drive, Orlando, FL 32810",North of Lee Road,08:00 AM-08:00 PM,,ho71928243,false,true,,,,poll92437299
+"4324 East Colonial Drive, Orlando, FL 32803",East of Bennet Road,08:00 AM-08:00 PM,,ho79699038,false,true,,,,poll27097251
+"7391 W. Colonial Drive, Orlando, FL 32818",West of Hiawassee Road,08:00 AM-08:00 PM,,ho25035189,false,true,,,,poll6147327
+"1400 Mayo Avenue, Maitland, FL 32751",Corner of Mayo Ave and Indian Dance Ct.,08:00 AM-08:00 PM,,ho2011972,false,true,,,,poll92938454
+"16301 Phil Ritson Way, Winter Garden, FL 34787",New exit off 429 at Schofield Rd,08:00 AM-08:00 PM,,ho81412682,false,true,,,,poll53431388
+"3800 S. Econlockhatchee Trail, Orlando, FL 32829",South of Curry Ford Road,08:00 AM-08:00 PM,,ho27416252,false,true,,,,poll35958433
+"1702 Deerfield Blvd., Orlando, FL 32837",East of South Orange Blossom Trail,08:00 AM-08:00 PM,,ho54528856,false,true,,,,poll92677540
+"5575 S. Semoran Blvd., Orlando, FL 32822",Corner of SR. 436 and Hoffner,08:00 AM-08:00 PM,,ho21614496,false,true,,,,poll34054714
+"7255 Della Drive, Orlando, FL 32819","Off Dr. Phillips Blvd., north of Sand Lake Road",08:00 AM-08:00 PM,,ho33011114,false,true,,,,poll16539953
+"119 W. Kaley Street, Orlando, FL 32806",Between Orange Ave. and I-4.,08:00 AM-08:00 PM,,ho62578021,false,true,,,,poll85904227
+"5151 Raleigh Street, Suite A, Orlando, FL 32811",In the Lila Mitchell Community Center,08:00 AM-08:00 PM,,ho41084129,false,true,,,,poll58002510
+"1821 E. Silver Star Road, Ocoee, FL 34761",East of Clarke Road,08:00 AM-08:00 PM,,ho50304018,false,true,,,,poll54227086
+"460 East New England Avenue, Winter Park, FL 32789",Across from Rollins College,08:00 AM-08:00 PM,,ho42468162,false,true,,,,poll79029608
+"3001 17th Street, St Cloud, FL 34769",,08:00 AM-08:00 PM,,ho81491798,false,true,,,,poll95679047
+"201 E Dakin Avenue, Kissimmee, FL 34741",,08:00 AM-08:00 PM,,ho80999414,false,true,,,,poll6412727
+"101 N Doverplum Avenue, Kissimmee, FL 34758",,08:00 AM-08:00 PM,,ho14268383,false,true,,,,poll20206075
+"501 Florida Parkway, Kissimmee, FL 34743",,08:00 AM-08:00 PM,,ho35636999,false,true,,,,poll33842435
+"2509 E Irlo Bronson Memorial Highway, Kissimmee, FL 34744",,08:00 AM-08:00 PM,,ho27155445,false,true,,,,poll98320123
+"305 Cpus Street, Celebration, FL 34747",,08:00 AM-08:00 PM,,ho86862246,false,true,,,,poll22775537
+"15801 Orange Boulevard, Loxahatchee, FL 33470",,07:00 AM-07:00 PM,,ho49821473,false,true,,,,poll84045460
+"725 NW 4th Street, Belle Glade, FL 33430",,07:00 AM-07:00 PM,,ho7924121,false,true,,,,poll12760937
+"400 NW 2nd Avenue, Boca Raton, FL 33432",,07:00 AM-07:00 PM,,ho58071513,false,true,,,,poll85296128
+"600 Banyan Boulevard, West Palm Beach, FL 33401",,07:00 AM-07:00 PM,,ho78159364,false,true,,,,poll61525514
+"1901 N Seacrest Boulevard, Boynton Beach, FL 33435",,07:00 AM-07:00 PM,,ho99716294,false,true,,,,poll23380199
+"11303 Cpus Drive, Palm Beach Gardens, FL 33410",,07:00 AM-07:00 PM,,ho57390776,false,true,,,,poll23506945
+"14350 Hagen Ranch Road, Delray Beach, FL 33446",,07:00 AM-07:00 PM,,ho14422866,false,true,,,,poll66335151
+"200 Military Trail, Jupiter, FL 33458",,07:00 AM-07:00 PM,,ho89195541,false,true,,,,poll44577690
+"4020 Lantana Road, Lantana, FL 33462",,07:00 AM-07:00 PM,,ho75895674,false,true,,,,poll36818837
+"16700 Jog Road, Delray Beach, FL 33446",,07:00 AM-07:00 PM,,ho35395463,false,true,,,,poll27442394
+"9067 Southern Boulevard, West Palm Beach, FL 33411",,07:00 AM-07:00 PM,,ho12078026,false,true,,,,poll65307964
+"240 S Military Trail, West Palm Beach, FL 33415",,07:00 AM-07:00 PM,,ho38211401,false,true,,,,poll99600246
+"1951 Royal Fern Drive, Wellington, FL 33414",,07:00 AM-07:00 PM,,ho86877798,false,true,,,,poll11608682
+"2409 Avenue H West, Riviera Beach, FL 33404",,07:00 AM-07:00 PM,,ho62480445,false,true,,,,poll66222712
+"18685 State Road 7 (441), Boca Raton, FL 33498",,07:00 AM-07:00 PM,,ho61130385,false,true,,,,poll65142482
+"8012 Library Rd, Hudson, FL 34667",,07:00 AM-07:00 PM,,ho26158874,false,true,,,,poll91213062
+"2818 Collier Pky, Land O` Lakes, FL 34639",,07:00 AM-07:00 PM,,ho89533761,false,true,,,,poll24019606
+"34043 State Road 54, Zephyrhills, FL 33543",,07:00 AM-07:00 PM,,ho48707746,false,true,,,,poll95209623
+"6225 Old Pasco Rd, Wesley Chapel, FL 33544",,07:00 AM-07:00 PM,,ho4883752,false,true,,,,poll78503772
+"9701 Little Rd, New Port Richey, FL 34654",,07:00 AM-07:00 PM,,ho8987940,false,true,,,,poll13654376
+"4649 Mile Stretch Dr, Holiday, FL 34690",,07:00 AM-07:00 PM,,ho98927334,false,true,,,,poll99562033
+"8731 Citizens Dr, New Port Richey, FL 34654",,07:00 AM-07:00 PM,,ho94527188,false,true,,,,poll27537750
+"1500 16th St., Palm Harbor, FL 34683",,07:00 AM-07:00 PM,,ho92648944,false,true,,,,poll91380478
+"501 First Ave. N, St. Petersburg, FL 33701",,07:00 AM-07:00 PM,,ho16156949,false,true,,,,poll35045284
+"315 Court St., Clearwater, FL 33756",Room 117,07:00 AM-07:00 PM,,ho52451375,false,true,,,,poll19446829
+"13001 Starkey Rd., Largo, FL 33773",,07:00 AM-07:00 PM,,ho84835506,false,true,,,,poll58469141
+"1617 49th St. S, Gulfport, FL 33707",,07:00 AM-07:00 PM,,ho39592646,false,true,,,,poll68250716
+"42653 Highway 27, Davenport, FL 33837",,07:00 AM-07:00 PM,,ho27084151,false,true,,,,poll9000987
+"1376 State Road 60 E, Lake Wales, FL 33853",,07:00 AM-07:00 PM,,ho27403488,false,true,,,,poll11799520
+"3425 Lake Alfred Road, Winter Haven, FL 33881",,07:00 AM-07:00 PM,,ho54839746,false,true,,,,poll98736688
+"111 N 6th Street, Haines City, FL 33844",,07:00 AM-07:00 PM,,ho73160384,false,true,,,,poll73929862
+"901 NE 5th Street, Mulberry, FL 33860",,07:00 AM-07:00 PM,,ho76750982,false,true,,,,poll60997642
+"395 Marigold Avenue, Poinciana, FL 34759",,07:00 AM-07:00 PM,,ho3360920,false,true,,,,poll65029743
+"930 E Parker Street, Lakeland, FL 33801",,07:00 AM-07:00 PM,,ho82152800,false,true,,,,poll58730778
+"1255 Polk Street, Bartow, FL 33830",,07:00 AM-07:00 PM,,ho78637359,false,true,,,,poll89839940
+"1725 Martin L King Jr Avenue, Lakeland, FL 33805",,07:00 AM-07:00 PM,,ho80320324,false,true,,,,poll52451588
+"135 S. CR 315, Interlachen, FL 32148",Former CB Club,08:30 AM-06:00 PM,,ho35133008,false,true,,,,poll62349712
+"115 N. Summit St., Crescent City, FL 32112",,08:30 AM-06:00 PM,,ho14715591,false,true,,,,poll38192044
+"2509 Crill Ave., Suite 900, Palatka, FL 32177",,08:30 AM-06:00 PM,,ho12708994,false,true,,,,poll14374472
+"6495 Caroline St, Suite F, Milton, FL 32570",Behind McDonalds on Hwy 90 in Milton,07:00 AM-07:00 PM,,ho72521002,false,true,,,,poll62674754
+"5976 Chumuckla Hwy, Pace, FL 32571",Just North of Five Points at Ball Field,07:00 AM-07:00 PM,,ho24594709,false,true,,,,poll67482862
+"5841 Gulf Breeze Pkwy (Hwy 98), Gulf Breeze, FL 32563",1 block east of the Zoo on Hwy 98 1 block east of the Zoo on Hwy 98,07:00 AM-07:00 PM,,ho66142770,false,true,,,,poll63774522
+"1370 Tiger Park Lane, Gulf Breeze, FL 32563",Next to Lowe`s at Ball Field,07:00 AM-07:00 PM,,ho61826337,false,true,,,,poll5552709
+"100 Coburn Road, Sarasota, FL 34240",Library Meeting Room East of I-75; Just of off Fruitville Rd,08:30 AM-06:00 PM,,ho20879611,false,true,,,,poll7553553
+"234 Nippino Trail E., Nokomis, FL 34275",Ge Room East of U.S. 41; Near Nippino Trail E. and Nash Ave,08:30 AM-06:00 PM,,ho93061514,false,true,,,,poll57702909
+"2801 Newtown Boulevard, Sarasota, FL 34234",Library Meeting Room East of U.S. 301; Near Dr. Martin Luther King Way and Newtown Blvd,08:30 AM-06:00 PM,,ho59518394,false,true,,,,poll43448410
+"13640 Tii Trail, North Port, FL 34287",Near U.S. 41 and S. Biscayne Dr,08:30 AM-06:00 PM,,ho6605992,false,true,,,,poll11677979
+"2001 Ads Lane, Sarasota, FL 34237",1st Floor Near S. Washington Blvd and Ads Ln,08:30 AM-06:00 PM,,ho59503893,false,true,,,,poll78542109
+"4000 Tii Trail S., Venice, FL 34293",Room 114 Near U.S. 41 and Jacaranda Blvd,08:30 AM-06:00 PM,,ho29358152,false,true,,,,poll35945377
+"8201 S. Tii Trail, Sarasota, FL 34238",Center Court Near U.S. 41 and Beneva Rd; Early Voting location is near center court of mall,08:30 AM-06:00 PM,,ho94179569,false,true,,,,poll76940753
+"215 N. Oxford Rd., Casselberry, FL 32707","On Oxford Road, just north of SR 436.",07:00 AM-07:00 PM,,ho78475323,false,true,,,,poll3675678
+"580 Greenway Blvd., Lake Mary, FL 32746",On greenwood between the high school and the middle school,07:00 AM-07:00 PM,,ho92238167,false,true,,,,poll5696357
+"245 N. Hunt Club Blvd., Longwood, FL 32779","On Hunt Club, south of Wekiva Springs Rd, north of Sand Lake Rd.",07:00 AM-07:00 PM,,ho83614285,false,true,,,,poll96407719
+"840 Orange Ave., Longwood, FL 32750","On Orange Ave., just west of the Mazda dealership",07:00 AM-07:00 PM,,ho69248817,false,true,,,,poll83293205
+"148 Oviedo Blvd., Oviedo, FL 32765","On Oviedo Blvd., north of Mitchell Hmock, and south of Broadway.",07:00 AM-07:00 PM,,ho22375319,false,true,,,,poll69685113
+"310 Division St., Oviedo, FL 32765",Just northeast of downtown Oviedo,07:00 AM-07:00 PM,,ho51408408,false,true,,,,poll11074322
+"150 N. Palmetto Ave., Sanford, FL 32771","Downtown Sanford, just north of First St.",07:00 AM-07:00 PM,,ho41450038,false,true,,,,poll95830671
+"1500 East Airport Blvd., Sanford, FL 32773",On the corner of Airport Blvd and Mellonville.,07:00 AM-07:00 PM,,ho34600557,false,true,,,,poll15283338
+"6195 South Main St., Hastings, FL 32145",,08:00 AM-06:00 PM,,ho9252864,false,true,,,,poll91501488
+"725 Flora Branch Blvd., Saint Johns, FL 32259",,08:00 AM-06:00 PM,,ho16402045,false,true,,,,poll95858232
+"101 Library Blvd., Ponte Vedra Beach, FL 32082",,08:00 AM-06:00 PM,,ho19992485,false,true,,,,poll31625710
+"6670 US 1 South, St. Augustine, FL 32086",,08:00 AM-06:00 PM,,ho51458017,false,true,,,,poll81881601
+"2200 A1A South, St. Augustine, FL 32080",,08:00 AM-06:00 PM,,ho43510467,false,true,,,,poll69713859
+"4455 Avenue A #101, St. Augustine, FL 32095",,08:00 AM-06:00 PM,,ho17555291,false,true,,,,poll92165127
+"175 Hpton Point Dr., St. Augustine, FL 32092",,08:00 AM-06:00 PM,,ho31373625,false,true,,,,poll12416808
+"900 N Main Street, Bushnell, FL 33513",,08:00 AM-06:00 PM,,ho24945998,false,true,,,,poll66395367
+"1515 St. Charles Place, The Villages, FL 32162",,08:00 AM-06:00 PM,,ho99829191,false,true,,,,poll9648102
+"1985 Laurel Manor Dr., The Villages, FL 32162",,08:00 AM-06:00 PM,,ho6586865,false,true,,,,poll45189459
+"850 Kristine Way, The Villages, FL 32163",,08:00 AM-06:00 PM,,ho88339754,false,true,,,,poll23740780
+"808 San Marino Drive, The Villages, FL 32162",,08:00 AM-06:00 PM,,ho13473566,false,true,,,,poll30407459
+"7375 Powell Road, Wildwood, FL 34785",,08:00 AM-06:00 PM,,ho66505879,false,true,,,,poll92356667
+"703 N.W. Suwannee Ave.,, Branford, FL 32008",,08:30 AM-04:30 PM,,ho16742647,false,true,,,,poll3104878
+"23728 Park Center Dr., Dowling Park,, FL 32060",,08:30 AM-04:30 PM,,ho29247951,false,true,,,,poll47156990
+"218 Parshley St., Live Oak, FL 32064",,08:30 AM-04:30 PM,,ho22323645,false,true,,,,poll54776056
+"108 N Jefferson St, Suite 202, Perry, FL 32347","2nd Floor  2nd floor, turn left off the elevator",07:00 AM-07:00 PM,,ho16858349,false,true,,,,poll89370543
+"105 E. Magnolia Ave, Daytona Beach, FL 32114",,07:00 AM-07:00 PM,,ho18155824,false,true,,,,poll51767739
+"2150 Eustace Ave, Deltona, FL 32725",,07:00 AM-07:00 PM,,ho18909394,false,true,,,,poll13715284
+"125 W. New York Ave., DeLand, FL 32720",,07:00 AM-07:00 PM,,ho80412234,false,true,,,,poll66891665
+"1001 S. Dixie Freeway, New Smyrna Beach, FL 32168",,07:00 AM-07:00 PM,,ho77644810,false,true,,,,poll13348815
+"30 S. Beach St, Ormond Beach, FL 32174",,07:00 AM-07:00 PM,,ho96082075,false,true,,,,poll22154390
+"3115-B Crawfordville Highway, Crawfordville, FL 32327",PO Box 305 - 32326  Crawfordville Across street from Bevis Funeral Home,08:00 AM-06:00 PM,,ho5474739,false,true,,,,poll7520142
+"112 St Hwy 20 West, Freeport, FL 32439",Just west of Hwy 331 Business and Public Library,08:30 AM-04:30 PM,,ho14484507,false,true,,,,poll16920107
+"31 Coastal Centre Boulevard, Santa Rosa Beach, FL 32459",Suite 300 US Hwy 331 South across from Sheriff`s Substation,08:30 AM-04:30 PM,,ho42461780,false,true,,,,poll3020427
+"571 US Hwy 90 East, DeFuniak Springs, FL 32433",Parking and entrance on 6th Street side,08:30 AM-04:30 PM,,ho95376137,false,true,,,,poll99090044
+"166 S.W. Onslow St., Greenville, FL 32331",,07:00 AM-03:00 PM,,ho79006875,false,true,,,,poll46510637
+"286 N.E. CR 255, Lee, FL 32059",,07:00 AM-03:00 PM,,ho87310126,false,true,,,,poll17454441
+"229 SW Pinckney St Rm.107, Madison, FL 32340",,07:00 AM-03:00 PM,,ho20978046,false,true,,,,poll96367052
+"509 N.E. Persimmon Dr., Pinetta, FL 32350",,10:00 AM-06:00 PM,,ho32100115,false,true,,,,poll11266935
+"8175 Lakewood Ranch Blvd, Lakewood Ranch, FL 34202",,08:00 AM-05:00 PM,,ho53980050,false,true,,,,poll38294233
+"923 6th St W, Palmetto, FL 34221",,08:00 AM-05:00 PM,,ho12862726,false,true,,,,poll82190765
+"6750 US Hwy 301, Ellenton, FL 34222",,08:00 AM-05:00 PM,,ho24700368,false,true,,,,poll98332533
+"600 301 Blvd W., Suite 118, Bradenton, FL 34205",,08:00 AM-05:00 PM,,ho80060018,false,true,,,,poll6531464
+"6417 3rd Ave W, Bradenton, FL 34209",,08:00 AM-05:00 PM,,ho21863009,false,true,,,,poll83787487
+"4132 Okeechobee Road, Ft Pierce, FL 34947",,10:00 AM-07:00 PM,,ho90763670,false,true,,,,poll93387901
+"3201 Landale Blvd, Port St. Lucie, FL 34953",,10:00 AM-07:00 PM,,ho72953962,false,true,,,,poll40112765
+"9221 SE Civic Center Place, Port St Lucie, FL 34952",,10:00 AM-07:00 PM,,ho36644422,false,true,,,,poll30007058
+"2195 SE Airoso Blvd, Port St Lucie, FL 34984",,10:00 AM-07:00 PM,,ho94089803,false,true,,,,poll27159823
+"3008 Avenue D, Ft Pierce, FL 34947",,10:00 AM-07:00 PM,,ho84356957,false,true,,,,poll94296073
+"175 W. Main St, Lake Butler, FL 32054",,08:00 AM-06:00 PM,,ho54100651,false,true,,,,poll9806525
+"1331 South BLVD, Suite 900, Chipley, FL 32428",,08:00 AM-06:00 PM,,ho74806645,false,true,,,,poll23048179
+"14236 6th St, Dade City, FL 33523",,07:00 AM-07:00 PM,,ho20377160,false,true,,,,poll55656893

@@ -1,0 +1,68 @@
+election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
+,ocd-id,,ocd-division/country:us/state:fl/county:alachua,alachua_cou0133,poll70334130 poll57899581 poll61741953,st12,other,,loc0001
+,ocd-id,,ocd-division/country:us/state:fl/county:baker,baker_cou0136,poll17891761,st12,other,,loc0002
+,ocd-id,,ocd-division/country:us/state:fl/county:bay,bay_cou0139,poll62522849 poll87467345 poll9492500 poll17876489,st12,other,,loc0003
+,ocd-id,,ocd-division/country:us/state:fl/county:bradford,bradford_cou0001,poll11740564,st12,other,,loc0004
+,ocd-id,,ocd-division/country:us/state:fl/county:brevard,brevard_cou0259,poll45599144 poll53784459 poll43273912 poll83427922 poll97061409 poll42409803 poll95138044 poll39806983 poll69531272 poll87283926,st12,other,,loc0005
+,ocd-id,,ocd-division/country:us/state:fl/county:broward,broward_cou0022,poll71645915 poll77372362 poll92174351 poll56571915 poll25774202 poll78041137 poll69271563 poll42917116 poll99563328 poll70176067 poll81765484 poll90493361 poll30158741 poll69576050 poll70876634 poll85491923 poll241436 poll96045614 poll46158170 poll86499863 poll19055751 poll77083548,st12,other,,loc0006
+,ocd-id,,ocd-division/country:us/state:fl/county:calhoun,calhoun_cou0151,poll8400817,st12,other,,loc0007
+,ocd-id,,ocd-division/country:us/state:fl/county:charlotte,charlotte_cou0089,poll48135880 poll98828533 poll69323350,st12,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:fl/county:citrus,citrus_cou0152,poll87573131 poll92457318 poll63267302 poll37204369,st12,other,,loc0009
+,ocd-id,,ocd-division/country:us/state:fl/county:clay,clay_cou0159,poll64236275 poll3779443 poll82976472 poll10576690 poll57396474 poll81882194,st12,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:fl/county:collier,collier_cou0164,poll68056161 poll46831744 poll14973396 poll45375935 poll83382275 poll35394980 poll82455425 poll77302826 poll41358947,st12,other,,loc0011
+,ocd-id,,ocd-division/country:us/state:fl/county:columbia,columbia_cou0172,poll61485285 poll26366058,st12,other,,loc0012
+,ocd-id,,ocd-division/country:us/state:fl/county:desoto,desoto_cou0245,poll85362379,st12,other,,loc0013
+,ocd-id,,ocd-division/country:us/state:fl/county:dixie,dixie_cou0174,poll5971199,st12,other,,loc0014
+,ocd-id,,ocd-division/country:us/state:fl/county:duval,duval_cou0030,poll60238683 poll89192589 poll75608003 poll88587357 poll69820957 poll4630908 poll67594749 poll14708935 poll2771598 poll24943955 poll7964299 poll68759050 poll54845228 poll76990263 poll61101217 poll45498622 poll41457958 poll53236038,st12,other,,loc0015
+,ocd-id,,ocd-division/country:us/state:fl/county:escbia,escbia_cou0179,poll63653307 poll14122579 poll58951317 poll95139604 poll89646072 poll69934071 poll9147241,st12,other,,loc0016
+,ocd-id,,ocd-division/country:us/state:fl/county:flagler,flagler_cou0183,poll14889410 poll21885514 poll7722423,st12,other,,loc0017
+,ocd-id,,ocd-division/country:us/state:fl/county:franklin,franklin_cou0186,poll79930281 poll19522366,st12,other,,loc0018
+,ocd-id,,ocd-division/country:us/state:fl/county:gadsden,gadsden_cou0311,poll43474277 poll78233753 poll68642300 poll25444708,st12,other,,loc0019
+,ocd-id,,ocd-division/country:us/state:fl/county:gilchrist,gilchrist_cou0271,poll84919693,st12,other,,loc0020
+,ocd-id,,ocd-division/country:us/state:fl/county:glades,glades_cou0191,poll94669032,st12,other,,loc0021
+,ocd-id,,ocd-division/country:us/state:fl/county:gulf,gulf_cou0192,poll34485295 poll58307997,st12,other,,loc0022
+,ocd-id,,ocd-division/country:us/state:fl/county:hardee,hardee_cou0195,poll13627416,st12,other,,loc0023
+,ocd-id,,ocd-division/country:us/state:fl/county:hendry,hendry_cou0314,poll17200307 poll1717524,st12,other,,loc0024
+,ocd-id,,ocd-division/country:us/state:fl/county:hernando,hernando_cou0199,poll99934926 poll29229005 poll83486795 poll15558798,st12,other,,loc0025
+,ocd-id,,ocd-division/country:us/state:fl/county:highlands,highlands_cou0278,poll33278917 poll1794822 poll37621139,st12,other,,loc0026
+,ocd-id,,ocd-division/country:us/state:fl/county:hillsborough,hillsborough_cou0122,poll27800703 poll62197537 poll8252076 poll72218878 poll59670833 poll15368904 poll38089113 poll23644434 poll49110345 poll73769042 poll3562386 poll1993935 poll7752780 poll77827797 poll42843690 poll47361865,st12,other,,loc0027
+,ocd-id,,ocd-division/country:us/state:fl/county:hilton,hilton_cou0194,poll69488009,st12,other,,loc0028
+,ocd-id,,ocd-division/country:us/state:fl/county:holmes,holmes_cou0279,poll81153422,st12,other,,loc0029
+,ocd-id,,ocd-division/country:us/state:fl/county:indian_river,indian_river_cou0208,poll62493858 poll62813891 poll61769818,st12,other,,loc0030
+,ocd-id,,ocd-division/country:us/state:fl/county:jackson,jackson_cou0297,poll61124016 poll35789186 poll55087006,st12,other,,loc0031
+,ocd-id,,ocd-division/country:us/state:fl/county:jefferson,jefferson_cou0212,poll84998114,st12,other,,loc0032
+,ocd-id,,ocd-division/country:us/state:fl/county:lafayette,lafayette_cou0213,poll58312759,st12,other,,loc0033
+,ocd-id,,ocd-division/country:us/state:fl/county:lake,lake_cou0216,poll33052750 poll15960814 poll23166368 poll24346417 poll32136429 poll33093143 poll86196405 poll30730827 poll89916382,st12,other,,loc0034
+,ocd-id,,ocd-division/country:us/state:fl/county:lee,lee_cou0223,poll78434719 poll51814030 poll59426635 poll41907981 poll26501540 poll3502726 poll61802958 poll51668586 poll86246500 poll94201023,st12,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:fl/county:leon,leon_cou0066,poll66055999 poll44199441 poll66398218 poll73685066 poll35307876 poll46662794 poll36116135,st12,other,,loc0036
+,ocd-id,,ocd-division/country:us/state:fl/county:levy,levy_cou0233,poll5726182,st12,other,,loc0037
+,ocd-id,,ocd-division/country:us/state:fl/county:liberty,liberty_cou0234,poll39340794,st12,other,,loc0038
+,ocd-id,,ocd-division/country:us/state:fl/county:madison,madison_cou0567,poll11266935 poll46510637 poll96367052 poll17454441,st12,other,,loc0039
+,ocd-id,,ocd-division/country:us/state:fl/county:manatee,manatee_cou0578,poll38294233 poll98332533 poll83787487 poll6531464 poll82190765,st12,other,,loc0040
+,ocd-id,,ocd-division/country:us/state:fl/county:marion,marion_cou0323,poll70364657 poll39988046 poll31977231 poll91795567 poll43250170 poll30938109 poll86096005 poll35377146 poll51147333,st12,other,,loc0041
+,ocd-id,,ocd-division/country:us/state:fl/county:martin,martin_cou0328,poll92737452 poll77663589 poll37782787 poll60144066 poll23764776 poll57221727 poll14204044,st12,other,,loc0042
+,ocd-id,,ocd-division/country:us/state:fl/county:mii-dade,mii-dade_cou0345,poll27275504 poll96856590 poll22546904 poll69701600 poll95907055 poll13450028 poll23478681 poll69279737 poll21584757 poll57327234 poll48237392 poll60317168 poll32446520 poll31017141 poll524233 poll89982096 poll25072723 poll80622640 poll74726532 poll94071443 poll48528805 poll51931914 poll33970502 poll38176634 poll87304590 poll17882193 poll70595993 poll74881026 poll10039198 poll29080515,st12,other,,loc0043
+,ocd-id,,ocd-division/country:us/state:fl/county:monroe,monroe_cou0391,poll73468003 poll68046241 poll77307991 poll76231025 poll85233963,st12,other,,loc0044
+,ocd-id,,ocd-division/country:us/state:fl/county:nassau,nassau_cou0397,poll33740594 poll633990 poll41835556 poll69504897,st12,other,,loc0045
+,ocd-id,,ocd-division/country:us/state:fl/county:okaloosa,okaloosa_cou0404,poll6627140 poll66001259 poll93584415 poll69419815 poll43161274,st12,other,,loc0046
+,ocd-id,,ocd-division/country:us/state:fl/county:okeechobee,okeechobee_cou0405,poll60631567,st12,other,,loc0047
+,ocd-id,,ocd-division/country:us/state:fl/county:orange,orange_cou0433,poll6147327 poll53431388 poll35958433 poll85904227 poll92677540 poll58002510 poll92938454 poll62798709 poll34054714 poll92437299 poll79029608 poll8111752 poll27097251 poll54227086 poll16539953 poll12972180 poll9610627,st12,other,,loc0048
+,ocd-id,,ocd-division/country:us/state:fl/county:osceola,osceola_cou0451,poll6412727 poll98320123 poll22775537 poll95679047 poll20206075 poll33842435,st12,other,,loc0049
+,ocd-id,,ocd-division/country:us/state:fl/county:palm_beach,palm_beach_cou0480,poll61525514 poll65142482 poll36818837 poll85296128 poll66335151 poll12760937 poll66222712 poll65307964 poll23380199 poll84045460 poll11608682 poll23506945 poll99600246 poll27442394 poll44577690,st12,other,,loc0050
+,ocd-id,,ocd-division/country:us/state:fl/county:pasco,pasco_cou0599,poll13654376 poll78503772 poll27537750 poll24019606 poll55656893 poll99562033 poll95209623 poll91213062,st12,other,,loc0051
+,ocd-id,,ocd-division/country:us/state:fl/county:pinellas,pinellas_cou0493,poll91380478 poll68250716 poll19446829 poll58469141 poll35045284,st12,other,,loc0052
+,ocd-id,,ocd-division/country:us/state:fl/county:polk,polk_cou0502,poll9000987 poll58730778 poll73929862 poll65029743 poll52451588 poll60997642 poll11799520 poll98736688 poll89839940,st12,other,,loc0053
+,ocd-id,,ocd-division/country:us/state:fl/county:putn,putn_cou0504,poll14374472 poll62349712 poll38192044,st12,other,,loc0054
+,ocd-id,,ocd-division/country:us/state:fl/county:santa_rosa,santa_rosa_cou0506,poll67482862 poll63774522 poll62674754 poll5552709,st12,other,,loc0055
+,ocd-id,,ocd-division/country:us/state:fl/county:sarasota,sarasota_cou0514,poll43448410 poll35945377 poll57702909 poll7553553 poll11677979 poll78542109 poll76940753,st12,other,,loc0056
+,ocd-id,,ocd-division/country:us/state:fl/county:seminole,seminole_cou0523,poll3675678 poll69685113 poll11074322 poll83293205 poll15283338 poll5696357 poll95830671 poll96407719,st12,other,,loc0057
+,ocd-id,,ocd-division/country:us/state:fl/county:st_johns,st_johns_cou0538,poll31625710 poll81881601 poll92165127 poll91501488 poll69713859 poll12416808 poll95858232,st12,other,,loc0058
+,ocd-id,,ocd-division/country:us/state:fl/county:st_lucie,st_lucie_cou0589,poll30007058 poll94296073 poll40112765 poll27159823 poll93387901,st12,other,,loc0059
+,ocd-id,,ocd-division/country:us/state:fl/county:sumter,sumter_cou0545,poll9648102 poll23740780 poll92356667 poll30407459 poll66395367 poll45189459,st12,other,,loc0060
+,ocd-id,,ocd-division/country:us/state:fl/county:suwannee,suwannee_cou0551,poll54776056 poll47156990 poll3104878,st12,other,,loc0061
+,ocd-id,,ocd-division/country:us/state:fl/county:taylor,taylor_cou0552,poll89370543,st12,other,,loc0062
+,ocd-id,,ocd-division/country:us/state:fl/county:union,union_cou0593,poll9806525,st12,other,,loc0063
+,ocd-id,,ocd-division/country:us/state:fl/county:volusia,volusia_cou0556,poll51767739 poll66891665 poll13715284 poll22154390 poll13348815,st12,other,,loc0064
+,ocd-id,,ocd-division/country:us/state:fl/county:wakulla,wakulla_cou0558,poll7520142,st12,other,,loc0065
+,ocd-id,,ocd-division/country:us/state:fl/county:walton,walton_cou0559,poll99090044 poll3020427 poll16920107,st12,other,,loc0066
+,ocd-id,,ocd-division/country:us/state:fl/county:washington,washington_cou0596,poll23048179,st12,other,,loc0067
