@@ -185,36 +185,36 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "1150 NE Jack Willis Way, Jensen Beach, FL 34957",,08:00 AM-05:00 PM,,ho4801600,false,true,,,,poll23764776
 "2551 SW Matheson Ave, Palm City, FL 34990",,08:00 AM-05:00 PM,,ho59930019,false,true,,,,poll77663589
 "5851 SE Community Dr, Stuart, FL 34997",,08:00 AM-05:00 PM,,ho58080675,false,true,,,,poll37782787
-"1300 Biscayne Blvd, Mii, FL 33132",,07:00 AM-07:00 PM,,ho43125156,false,true,,,,poll74881026
-"8240 NW 7TH  Avenue, Mii, FL 33150",,07:00 AM-07:00 PM,,ho90306678,false,true,,,,poll27275504
-"3000 NW 199TH St, Mii Gardens, FL 33056",,07:00 AM-07:00 PM,,ho63797699,false,true,,,,poll13450028
-"1350 NW 50TH Street, Mii, FL 33142",,07:00 AM-07:00 PM,,ho56264362,false,true,,,,poll57327234
-"3443 Segovia Street, Coral Gables, FL 33134",,07:00 AM-07:00 PM,,ho48386157,false,true,,,,poll524233
-"9211 SW 152nd Street, Mii, FL 33157",,07:00 AM-07:00 PM,,ho29371444,false,true,,,,poll69701600
-"2700 NW 87th Avenue, Doral, FL 33172",,07:00 AM-07:00 PM,,ho1725177,false,true,,,,poll23478681
-"3250 S Mii Avenue, Mii, FL 33129",Se property as the old museum of science,07:00 AM-07:00 PM,,ho28351438,false,true,,,,poll74726532
-"1601 N. Krome Avenue, Homestead, FL 33030","Willi F. ""Bill"" Dickinson Comm. Center",07:00 AM-07:00 PM,,ho91081375,false,true,,,,poll25072723
-"10315 NW 12TH Street, Doral, FL 33172",,07:00 AM-07:00 PM,,ho56033454,false,true,,,,poll87304590
-"190 W 49th Street, Hialeah, FL 33012",,07:00 AM-07:00 PM,,ho39163075,false,true,,,,poll29080515
-"15205 SW 88TH Street, Mii, FL 33196",,07:00 AM-07:00 PM,,ho31813769,false,true,,,,poll38176634
-"9101 SW 97th Avenue, Mii, FL 33176",,07:00 AM-07:00 PM,,ho13796199,false,true,,,,poll17882193
-"430 NE 61ST Street, Mii, FL 33137",,07:00 AM-07:00 PM,,ho4814176,false,true,,,,poll70595993
-"1700 Convention Center Drive, Mii Beach, FL 33139",,07:00 AM-07:00 PM,,ho92929528,false,true,,,,poll69279737
-"15151 NW 82nd Avenue, Mii Lakes, FL 33016",Mary Collins Community Center,07:00 AM-07:00 PM,,ho57361452,false,true,,,,poll80622640
-"2211 NW 54th Street, Mii, FL 33142",Caleb Center,07:00 AM-07:00 PM,,ho8810615,false,true,,,,poll60317168
-"14850 SW 280TH Street, Homestead, FL 33032",,07:00 AM-07:00 PM,,ho92017826,false,true,,,,poll31017141
-"2455 NW 183rd Street, Mii Gardens, FL 33056",,07:00 AM-07:00 PM,,ho22942384,false,true,,,,poll95907055
-"2930 Aventura Boulevard, Aventura, FL 33180",,07:00 AM-07:00 PM,,ho75129493,false,true,,,,poll22546904
-"835 NE 132nd Street, North Mii, FL 33161",,07:00 AM-07:00 PM,,ho59259205,false,true,,,,poll51931914
-"7501 Collins Avenue, Mii Beach, FL 33141",,07:00 AM-07:00 PM,,ho59255874,false,true,,,,poll33970502
-"17641 Old Cutler Road, Palmetto Bay, FL 33157",,07:00 AM-07:00 PM,,ho40885179,false,true,,,,poll96856590
-"5835 SW 111TH Street, Pinecrest, FL 33156",,07:00 AM-07:00 PM,,ho8527416,false,true,,,,poll48237392
-"2111 SW 19TH Street, Mii, FL 33145",,07:00 AM-07:00 PM,,ho78858097,false,true,,,,poll89982096
-"10750 SW 211th Street, Cutler Bay, FL 33189",,07:00 AM-07:00 PM,,ho31538571,false,true,,,,poll21584757
-"111 NW 1ST Street, Mii, FL 33128",Elections Branch Office - Lobby,07:00 AM-07:00 PM,,ho82035157,false,true,,,,poll48528805
-"9445 SW 24th Street, Mii, FL 33165",,07:00 AM-07:00 PM,,ho74902248,false,true,,,,poll32446520
-"10201 Hmocks Boulevard, Mii, FL 33196",,07:00 AM-07:00 PM,,ho54964268,false,true,,,,poll10039198
-"901 SW 62nd Avenue, West Mii, FL 33144",,07:00 AM-07:00 PM,,ho80810276,false,true,,,,poll94071443
+"1300 Biscayne Blvd, Mii, FL 33132",,07:00 AM-07:00 PM,,ho43125156,false,true,,,,poll78472100
+"8240 NW 7TH  Avenue, Mii, FL 33150",,07:00 AM-07:00 PM,,ho90306678,false,true,,,,poll34510262
+"3000 NW 199TH St, Mii Gardens, FL 33056",,07:00 AM-07:00 PM,,ho63797699,false,true,,,,poll73847892
+"1350 NW 50TH Street, Mii, FL 33142",,07:00 AM-07:00 PM,,ho56264362,false,true,,,,poll62322614
+"3443 Segovia Street, Coral Gables, FL 33134",,07:00 AM-07:00 PM,,ho48386157,false,true,,,,poll40268478
+"9211 SW 152nd Street, Mii, FL 33157",,07:00 AM-07:00 PM,,ho29371444,false,true,,,,poll1065940
+"2700 NW 87th Avenue, Doral, FL 33172",,07:00 AM-07:00 PM,,ho1725177,false,true,,,,poll16859441
+"3250 S Mii Avenue, Mii, FL 33129",Se property as the old museum of science,07:00 AM-07:00 PM,,ho28351438,false,true,,,,poll20326602
+"1601 N. Krome Avenue, Homestead, FL 33030","Willi F. ""Bill"" Dickinson Comm. Center",07:00 AM-07:00 PM,,ho91081375,false,true,,,,poll42260321
+"10315 NW 12TH Street, Doral, FL 33172",,07:00 AM-07:00 PM,,ho56033454,false,true,,,,poll76258919
+"190 W 49th Street, Hialeah, FL 33012",,07:00 AM-07:00 PM,,ho39163075,false,true,,,,poll75398926
+"15205 SW 88TH Street, Mii, FL 33196",,07:00 AM-07:00 PM,,ho31813769,false,true,,,,poll81129171
+"9101 SW 97th Avenue, Mii, FL 33176",,07:00 AM-07:00 PM,,ho13796199,false,true,,,,poll34647173
+"430 NE 61ST Street, Mii, FL 33137",,07:00 AM-07:00 PM,,ho4814176,false,true,,,,poll92512910
+"1700 Convention Center Drive, Mii Beach, FL 33139",,07:00 AM-07:00 PM,,ho92929528,false,true,,,,poll38691704
+"15151 NW 82nd Avenue, Mii Lakes, FL 33016",Mary Collins Community Center,07:00 AM-07:00 PM,,ho57361452,false,true,,,,poll69408433
+"2211 NW 54th Street, Mii, FL 33142",Caleb Center,07:00 AM-07:00 PM,,ho8810615,false,true,,,,poll69145084
+"14850 SW 280TH Street, Homestead, FL 33032",,07:00 AM-07:00 PM,,ho92017826,false,true,,,,poll52148351
+"2455 NW 183rd Street, Mii Gardens, FL 33056",,07:00 AM-07:00 PM,,ho22942384,false,true,,,,poll69185632
+"2930 Aventura Boulevard, Aventura, FL 33180",,07:00 AM-07:00 PM,,ho75129493,false,true,,,,poll35619327
+"835 NE 132nd Street, North Mii, FL 33161",,07:00 AM-07:00 PM,,ho59259205,false,true,,,,poll28977076
+"7501 Collins Avenue, Mii Beach, FL 33141",,07:00 AM-07:00 PM,,ho59255874,false,true,,,,poll53077213
+"17641 Old Cutler Road, Palmetto Bay, FL 33157",,07:00 AM-07:00 PM,,ho40885179,false,true,,,,poll34325076
+"5835 SW 111TH Street, Pinecrest, FL 33156",,07:00 AM-07:00 PM,,ho8527416,false,true,,,,poll2943521
+"2111 SW 19TH Street, Mii, FL 33145",,07:00 AM-07:00 PM,,ho78858097,false,true,,,,poll72435059
+"10750 SW 211th Street, Cutler Bay, FL 33189",,07:00 AM-07:00 PM,,ho31538571,false,true,,,,poll68258575
+"111 NW 1ST Street, Mii, FL 33128",Elections Branch Office - Lobby,07:00 AM-07:00 PM,,ho82035157,false,true,,,,poll46262542
+"9445 SW 24th Street, Mii, FL 33165",,07:00 AM-07:00 PM,,ho74902248,false,true,,,,poll27722009
+"10201 Hmocks Boulevard, Mii, FL 33196",,07:00 AM-07:00 PM,,ho54964268,false,true,,,,poll58352920
+"901 SW 62nd Avenue, West Mii, FL 33144",,07:00 AM-07:00 PM,,ho80810276,false,true,,,,poll90984203
 "31009 Atlantis Dr., Big Pine Key, FL 33043",,08:30 AM-05:00 PM,,ho41179538,false,true,,,,poll77307991
 "81830 Overseas Hwy, Islorada, FL 33036",,08:30 AM-05:00 PM,,ho8002913,false,true,,,,poll76231025
 "10015 Overseas Highway, Marathon, FL 33050",,08:30 AM-05:00 PM,,ho35416242,false,true,,,,poll73468003
@@ -289,9 +289,9 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "930 E Parker Street, Lakeland, FL 33801",,07:00 AM-07:00 PM,,ho82152800,false,true,,,,poll58730778
 "1255 Polk Street, Bartow, FL 33830",,07:00 AM-07:00 PM,,ho78637359,false,true,,,,poll89839940
 "1725 Martin L King Jr Avenue, Lakeland, FL 33805",,07:00 AM-07:00 PM,,ho80320324,false,true,,,,poll52451588
-"135 S. CR 315, Interlachen, FL 32148",Former CB Club,08:30 AM-06:00 PM,,ho35133008,false,true,,,,poll62349712
-"115 N. Summit St., Crescent City, FL 32112",,08:30 AM-06:00 PM,,ho14715591,false,true,,,,poll38192044
-"2509 Crill Ave., Suite 900, Palatka, FL 32177",,08:30 AM-06:00 PM,,ho12708994,false,true,,,,poll14374472
+"135 S. CR 315, Interlachen, FL 32148",Former CB Club,08:30 AM-06:00 PM,,ho35133008,false,true,,,,poll20521990
+"115 N. Summit St., Crescent City, FL 32112",,08:30 AM-06:00 PM,,ho14715591,false,true,,,,poll43642854
+"2509 Crill Ave., Suite 900, Palatka, FL 32177",,08:30 AM-06:00 PM,,ho12708994,false,true,,,,poll66281339
 "6495 Caroline St, Suite F, Milton, FL 32570",Behind McDonalds on Hwy 90 in Milton,07:00 AM-07:00 PM,,ho72521002,false,true,,,,poll62674754
 "5976 Chumuckla Hwy, Pace, FL 32571",Just North of Five Points at Ball Field,07:00 AM-07:00 PM,,ho24594709,false,true,,,,poll67482862
 "5841 Gulf Breeze Pkwy (Hwy 98), Gulf Breeze, FL 32563",1 block east of the Zoo on Hwy 98 1 block east of the Zoo on Hwy 98,07:00 AM-07:00 PM,,ho66142770,false,true,,,,poll63774522

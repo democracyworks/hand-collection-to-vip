@@ -51,6 +51,7 @@ class LocalityTxt(object):
         del county_arr[-1]
         county = "_".join(county_arr).lower()
         county = county.replace(".", "")
+        county = county.replace("-", "_")
         string = "ocd-division/country:us/state:" + config.state_lower_abbreviation +"/county:" + county.lower()
         return string
 
