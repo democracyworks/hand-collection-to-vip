@@ -377,7 +377,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "1 Ave. D, Haskell, TX, 79521",,08:30 AM-12:00 PM,,ho8637757,false,true,,,,poll54627978
 "80 N Waco, Hillboro, TX, 76645",,08:00 AM-05:00 PM,,ho29344554,false,true,,,,poll69442672
 "1410 W. Pearl St., Granbury, TX, 76048",,08:00 AM-05:00 PM,,ho83398126,false,true,,,,poll10410477
-"209 N. Parkview, Mertzon, TX, 76941",,08:00 AM-12:00 PM,,ho33591183,false,true,,,,poll76791432
+"209 N. Parkview, Mertzon, TX, 76941",,08:00 AM-05:00 PM,,ho33591183,false,true,,,,poll76791432
 "100 N. Main Ste 208, Jacksboro, TX, 76458",,07:00 AM-07:00 PM,,ho742915,false,true,,,,poll4023523
 "111 North Front Street, Fort Davis, TX, 79734",,08:00 AM-05:00 PM,,ho65627262,false,true,,,,poll43334707
 "103 S. Walnut St., Cleburne, TX, 76033",,08:00 AM-05:00 PM,,ho35283032,false,true,,,,poll81016007

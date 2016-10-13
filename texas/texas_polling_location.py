@@ -269,6 +269,6 @@ if __name__ == '__main__':
 
     pl = PollingLocationTxt(early_voting_df, state)
 
-    #pl.write_polling_location_txt()
-    pl.export_for_schedule_and_locality()
+    pl.write_polling_location_txt()
+    #pl.export_for_schedule_and_locality()
 
