@@ -1,6 +1,2 @@
 election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,id
 ,ocd-id,,ocd-division/country:us/district:dc,District of Columbia,poll9586129 poll90147054 poll99336635 poll14579613 poll17083814 poll60159842 poll93905388 poll10296097 poll66456210,st11
-election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,id
-,ocd-id,,ocd-division/country:us/district:dc,District of Columbia,poll9586129 poll90147054 poll99336635 poll14579613 poll17083814 poll60159842 poll93905388 poll10296097 poll66456210,st11
-election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,id
-,ocd-id,,ocd-division/country:us/district:dc,District of Columbia,poll9586129 poll90147054 poll99336635 poll14579613 poll17083814 poll60159842 poll93905388 poll10296097 poll66456210,st11
