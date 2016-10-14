@@ -28,7 +28,7 @@ class LocalityTxt(object):
         self.base_df = early_voting_df
         self.state = state
 
-    def create_election_administration_id(self, index):
+    def create_election_administration_id(self):
         """#"""
 
         return ''
@@ -44,59 +44,25 @@ class LocalityTxt(object):
     def get_external_identifier_value(self, external_identifier_value, city):
         """Extracts external identifier (ocd-division)."""
 
-        anoka_county = ['andover', 'anoka', 'bethel', 'blaine', 'centerville', 'circle pines', 'columbia heights',
-                        'columbus', 'coon rapids', 'east bethel', 'fridley', 'ham lake', 'hilltop', 'lexington',
-                        'lino lakes', 'linwood township', 'nowthen', 'oak grove', 'ramsey', 'st.francis',
-                        'spring lake park']
-
         if external_identifier_value:
-            #if city.lower() in anoka_county:
-            #if city.lower():
-            #    eiv = external_identifier_value + '/place:' + city.lower().replace(' ', '_')
-            #    print eiv
-            #   return eiv
             return external_identifier_value
         else:
             return ''
 
     def create_name(self, index, county, city ):
-        """
-        Creates a name by concatenating the 'locality' (town name along with town or county designation)
-        with an 'index_str' based on the Dataframes row index.'0s' are added, if necesary, to
-        maintain a consistent id length.
-        """
+        """#"""
 
-        #return 'name'
-
-        #print index, county, city
-
-        #if county:
-        #    county = county
-        #else:
         county = ''
 
-            # Get locality(town or county), and remove state abbreviation.
-        if county and city:
+        if county:
+            return county + '_' + city.replace(' ', '_').lower() + '_' + str(index)
 
-
-            locality =  county + '_' + city
-            return locality + '_' + str(index)
-                #print locality
-        elif county:
-            locality = county
-            return locality + '_' + str(index)
-
-        elif city:
-            locality = city
-            return locality + '_' + str(index)
         else:
-            print 'Missing data at row ' + str(index) + '.'
-
+            return city.replace(' ', '_').lower() + '_' + str(index)
 
 
     def create_polling_location_ids(self, polling_location_id):
         """#"""
-        print polling_location_id
 
         return polling_location_id
 
@@ -153,8 +119,8 @@ class LocalityTxt(object):
         New columns that match the 'locality.txt' template are inserted into the DataFrame, apply() is
         used to run methods that generate the values for each row of the new columns.
         """
-        #self.base_df['election_administration_id'] = self.base_df.apply(
-        #    lambda row: self.create_election_administration_id(row['index']), axis=1)
+        self.base_df['election_administration_id'] = self.base_df.apply(
+            lambda row: self.create_election_administration_id(), axis=1)
 
         self.base_df['external_identifier_type'] = self.base_df.apply(
             lambda row: self.get_external_identifier_type(), axis=1)
@@ -197,11 +163,6 @@ class LocalityTxt(object):
         loc['name'] = loc['name'].apply(lambda x: ''.join(x.split(' ')[0]))
 
         loc['grouped_index'] = loc.index + 1
-        #print loc
-
-        #loc['election_administration_id'] = loc.apply(
-        #    lambda row: self.create_election_administration_id(row['grouped_index']), axis=1)
-            #lambda row: self.create_election_administration_id(''), axis = 1)
 
         loc['id'] = loc.apply(
             lambda row: self.create_id(row['grouped_index']), axis=1)
@@ -235,29 +196,15 @@ class LocalityTxt(object):
 
 if __name__ == '__main__':
 
-
-    s = 'ocd_division county location_name address_1 address_2 directions city state zip start_time end_time start_date end_date is_only_by_appointment is_or_by_appointment	appointment_phone_num is_subject_to_change index address_line hours photo_uri hours_open_id is_drop_box is_early_voting latitude longitude latlng_source id'.split(' ')
-    print s
-    print len(s)
-
     early_voting_file = 'intermediate_doc.csv'
 
     early_voting_path = "/home/acg/democracyworks/hand-collection-to-vip/minnesota/output/" + early_voting_file
-    colnames2 = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'directions', 'city', 'state',
-                'zip', 'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment',
-                'is_or_by_appointment', 'appointment_phone_num', 'is_subject_to_change', 'index',
-                'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
-                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'polling_location_id']
-    print 2, len(colnames2)
 
     colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'directions', 'city', 'state',
                 'zip', 'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment',
                 'is_or_by_appointment', 'appointment_phone_num', 'is_subject_to_change', 'index', 'address_line',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude', 'longitude',
                 'latlng_source', 'polling_location_id', '']
-
-    print [i for i in colnames if i not in colnames2]
-    print len(colnames)
 
     early_voting_df = pd.read_csv(early_voting_path, names=colnames, encoding='utf-8', skiprows=1)
 
