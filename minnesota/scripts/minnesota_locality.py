@@ -44,15 +44,14 @@ class LocalityTxt(object):
     def get_external_identifier_value(self, external_identifier_value, city):
         """Extracts external identifier (ocd-division)."""
 
-        anoka_county = ['Andover', 'Anoka', 'Bethel', 'Blaine', 'Centerville', 'Circle Pines', 'Columbia Heights',
-                        'Columbus', 'Coon Rapids', 'East Bethel', 'Fridley', 'Ham Lake', 'Hilltop', 'Lexington',
-                        'Lino Lakes', 'Linwood Township', 'Nowthen', 'Oak Grove', 'Ramsey', 'St.Francis',
-                        'Spring Lake Park']
-
-
+        anoka_county = ['andover', 'anoka', 'bethel', 'blaine', 'centerville', 'circle pines', 'columbia heights',
+                        'columbus', 'coon rapids', 'east bethel', 'fridley', 'ham lake', 'hilltop', 'lexington',
+                        'lino lakes', 'linwood township', 'nowthen', 'oak grove', 'ramsey', 'st.francis',
+                        'spring lake park']
 
         if external_identifier_value:
-            if city in anoka_county:
+            #if city.lower() in anoka_county:
+            if city.lower():
                 eiv = external_identifier_value + '/place:' + city.lower().replace(' ', '_')
                 print eiv
                 return eiv
@@ -226,7 +225,7 @@ class LocalityTxt(object):
 if __name__ == '__main__':
 
     s = 'Andover, Anoka, Bethel, Blaine, Centerville, Circle Pines, Columbia Heights, Columbus, Coon Rapids, East Bethel, Fridley, Ham Lake, Hilltop, Lexington, Lino Lakes, Linwood Township, Nowthen, Oak Grove, Ramsey, St.Francis, Spring Lake Park'.split(', ')
-    print s
+    print [i.lower() for i in s]
 
     early_voting_file = 'intermediate_doc.csv'
 
