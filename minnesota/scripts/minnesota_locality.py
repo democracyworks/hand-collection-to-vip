@@ -51,12 +51,11 @@ class LocalityTxt(object):
 
         if external_identifier_value:
             #if city.lower() in anoka_county:
-            if city.lower():
-                eiv = external_identifier_value + '/place:' + city.lower().replace(' ', '_')
-                print eiv
-                return eiv
-            else:
-                return external_identifier_value
+            #if city.lower():
+            #    eiv = external_identifier_value + '/place:' + city.lower().replace(' ', '_')
+            #    print eiv
+            #   return eiv
+            return external_identifier_value
         else:
             return ''
 
@@ -67,11 +66,22 @@ class LocalityTxt(object):
         maintain a consistent id length.
         """
 
-        # Get locality(town or county), and remove state abbreviation.
+        #return 'name'
+
+        #print index, county, city
+
+        #if county:
+        #    county = county
+        #else:
+        county = ''
+
+            # Get locality(town or county), and remove state abbreviation.
         if county and city:
+
+
             locality =  county + '_' + city
             return locality + '_' + str(index)
-            #print locality
+                #print locality
         elif county:
             locality = county
             return locality + '_' + str(index)
@@ -86,6 +96,7 @@ class LocalityTxt(object):
 
     def create_polling_location_ids(self, polling_location_id):
         """#"""
+        print polling_location_id
 
         return polling_location_id
 
@@ -177,11 +188,11 @@ class LocalityTxt(object):
     def final_build(self):
 
         loc = self.build_locality_txt()
+        print loc
+        print loc.name
 
         loc = loc.groupby('external_identifier_value').agg(lambda x: ' '.join(set(x))).reset_index()
-
-        #loc['election_administration_id'] = loc['election_administration_id'].apply(lambda x: ''.join(x.split(' ')[0]))
-        #loc['id'] = loc['id'].apply(lambda x: ''.join(x.split(' ')[0]))
+        #print loc
 
         loc['name'] = loc['name'].apply(lambda x: ''.join(x.split(' ')[0]))
 
@@ -203,8 +214,8 @@ class LocalityTxt(object):
         final = loc.reindex(columns=cols)
 
         final.drop(['grouped_index',], inplace=True, axis=1)
-
-        print final
+        #final = loc
+        #print final
 
         return final
 
@@ -224,22 +235,34 @@ class LocalityTxt(object):
 
 if __name__ == '__main__':
 
-    s = 'Andover, Anoka, Bethel, Blaine, Centerville, Circle Pines, Columbia Heights, Columbus, Coon Rapids, East Bethel, Fridley, Ham Lake, Hilltop, Lexington, Lino Lakes, Linwood Township, Nowthen, Oak Grove, Ramsey, St.Francis, Spring Lake Park'.split(', ')
-    print [i.lower() for i in s]
+
+    s = 'ocd_division county location_name address_1 address_2 directions city state zip start_time end_time start_date end_date is_only_by_appointment is_or_by_appointment	appointment_phone_num is_subject_to_change index address_line hours photo_uri hours_open_id is_drop_box is_early_voting latitude longitude latlng_source id'.split(' ')
+    print s
+    print len(s)
 
     early_voting_file = 'intermediate_doc.csv'
 
     early_voting_path = "/home/acg/democracyworks/hand-collection-to-vip/minnesota/output/" + early_voting_file
-    colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state',
+    colnames2 = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'directions', 'city', 'state',
                 'zip', 'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment',
                 'is_or_by_appointment', 'appointment_phone_num', 'is_subject_to_change', 'index',
                 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
                 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'polling_location_id']
+    print 2, len(colnames2)
+
+    colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'directions', 'city', 'state',
+                'zip', 'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment',
+                'is_or_by_appointment', 'appointment_phone_num', 'is_subject_to_change', 'index', 'address_line',
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude', 'longitude',
+                'latlng_source', 'polling_location_id', '']
+
+    print [i for i in colnames if i not in colnames2]
+    print len(colnames)
 
     early_voting_df = pd.read_csv(early_voting_path, names=colnames, encoding='utf-8', skiprows=1)
 
     early_voting_df['index'] = early_voting_df.index + 1 # offsets zero based index so it starts at 1 for ids
-    #print early_voting_df
+    print early_voting_df
 
     lt = LocalityTxt(early_voting_df, config.state)
     lt.write_locality_txt()
