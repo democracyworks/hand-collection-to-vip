@@ -21,7 +21,7 @@ def pl():
     # state_feed_file = 'state_feed_info.csv'
     early_voting_file = 'locality.csv'
 
-    early_voting_path = config.polling_location_output + early_voting_file
+    early_voting_path = config.output + early_voting_file
     colnames = ['source_election_administration_id', 'external_identifier_type', 'external_identifier_othertype',
                 'external_identifier_value', 'name', 'source_polling_location_ids', 'state_id', 'type',
                 'other_type', 'source_id']
@@ -99,7 +99,7 @@ class StateTxt(object):
     def write_state_txt(self):
         # This method is going to populate the source CSV with all the necessary data
 
-        with open(config.polling_location_output + 'state.txt', 'ab') as f:
+        with open(config.output + 'state.txt', 'ab') as f:
             fieldnames = ["election_administration_id", 'external_identifier_type',
                           'external_identifier_othertype', 'external_identifier_value',
                           'name', 'polling_location_ids', 'id']

@@ -261,7 +261,7 @@ class PollingLocationTxt(object):
         intermediate_doc = intermediate_doc.drop_duplicates(subset=['start_time', 'end_time', 'start_date',
                                                                     'end_date', 'address_line'])
 
-        intermediate_doc.to_csv(config.polling_location_output + 'intermediate_doc.csv', index=False, encoding='utf-8')
+        intermediate_doc.to_csv(config.output + 'intermediate_doc.csv', index=False, encoding='utf-8')
 
 
     def write_polling_location_txt(self):
@@ -281,8 +281,8 @@ class PollingLocationTxt(object):
         txt_file = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/output/polling_location.txt"
         csv_file = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/output/polling_location.csv"
 
-        plt.to_csv(txt_file, index=False, encoding='utf-8')  # send to txt file
-        plt.to_csv(csv_file, index=False, encoding='utf-8')  # send to csv file
+        plt.to_csv(config.output + 'polling_location.txt', index=False, encoding='utf-8')  # send to txt file
+        plt.to_csv(config.output + 'polling_location.csv', index=False, encoding='utf-8')  # send to csv file
 
 
 if __name__ == '__main__':
@@ -291,8 +291,6 @@ if __name__ == '__main__':
     early_voting_true = "true"  # True or False
     #drop_box_true =
     state_file='kansas_early_voting_info.csv'
-
-    # early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
 
     early_voting_file = config.input_folder + state_file
 

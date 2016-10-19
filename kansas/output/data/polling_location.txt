@@ -109,7 +109,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "3830 S. Meridian Ave., Wichita, KS 67217",,12:00 PM - 07:00 PM,,ho27726773,false,true,,,,poll27726773
 "2727 E. 25th St. N., Wichita, KS 67219",,12:00 PM - 07:00 PM,,ho98322376,false,true,,,,poll98322376
 "7601 E. 13th St. N., Wichita, KS 67206",,12:00 PM - 07:00 PM,,ho27057632,false,true,,,,poll27057632
-"5555 Zoo Blvd., Wichita, KS 67212",,12:00 PM - 07:00 PM,,ho86506946,false,true,,,,poll86506946
+"7001 West 21st St, Wichita, KS 67205",,12:00 PM - 07:00 PM,,ho44435942,false,true,,,,poll44435942
 "2221 S. Oliver, Wichita, KS 67218",,12:00 PM - 07:00 PM,,ho50994791,false,true,,,,poll50994791
 "2555 Hyacinth Ln., Wichita, KS 67204",,12:00 PM - 07:00 PM,,ho243231,false,true,,,,poll243231
 "1801 East 5th Street, Valley Center, KS 67147",,12:00 PM - 07:00 PM,,ho54884411,false,true,,,,poll54884411

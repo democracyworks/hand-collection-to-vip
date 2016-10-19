@@ -192,8 +192,8 @@ class ScheduleTxt(object):
 
         print sch
 
-        sch.to_csv(config.polling_location_output + 'schedule.txt', index=False, encoding='utf-8')  # send to txt file
-        sch.to_csv(config.polling_location_output + 'schedule.csv', index=False, encoding='utf-8')  # send to csv file
+        sch.to_csv(config.output + 'schedule.txt', index=False, encoding='utf-8')  # send to txt file
+        sch.to_csv(config.output + 'schedule.csv', index=False, encoding='utf-8')  # send to csv file
 
 if __name__ == '__main__':
     early_voting_true = 'true'  # true or false
@@ -205,7 +205,7 @@ if __name__ == '__main__':
     # early_voting_file = config.schedule_data
 
     file = "intermediate_doc.csv"
-    early_voting_file = config.polling_location_output + file
+    early_voting_file = config.output + file
 
 
     colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
