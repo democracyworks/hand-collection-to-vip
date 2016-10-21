@@ -175,10 +175,10 @@ class ScheduleTxt(object):
         """#"""
         #print index, start_date
 
-
+        print start_date
         if len(start_date) == 5:
             start_date = start_date + '-16'
-            start_date = datetime.datetime.strptime(start_date, '%m-%d-%y').strftime('%Y-%m-%d')
+            start_date = datetime.datetime.strptime(start_date, '%m/%d/%y').strftime('%Y-%m-%d')
             print 'a', index, start_date
             return start_date
             #print index, start_date
@@ -197,7 +197,7 @@ class ScheduleTxt(object):
 #            return '2016-' + m + '-' + d
 
         elif len(start_date) == 7:
-            sd = tuple(start_date.split('-'))
+            sd = tuple(start_date.split('/'))
             #print sd
             #date_tup = tuple(sd.split('-'))
             #print date_tup
@@ -226,7 +226,7 @@ class ScheduleTxt(object):
 
         else:
             print index, start_date
-            sd = tuple(start_date.split('-'))
+            sd = tuple(start_date.split('/'))
             m = sd[0]
             d = sd[1]
             if len(d) == 1:
@@ -273,7 +273,7 @@ class ScheduleTxt(object):
 
         if len(end_date) == 5:
             end_date = end_date + '-16'
-            end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
+            end_date = datetime.datetime.strptime(end_date, '%m/%d/%y').strftime('%Y-%m-%d')
             #print 'a', index, end_date
             return end_date
             #print index, start_date
@@ -281,7 +281,7 @@ class ScheduleTxt(object):
 
             #print end_date
 
-            sd = tuple(end_date.split('-'))
+            sd = tuple(end_date.split('/'))
             m = str(sd[0])
             d = str(sd[1])
             if len(d) == 1:
@@ -294,7 +294,7 @@ class ScheduleTxt(object):
             return '2016-' + m + '-' + d
 
         elif len(end_date) == 7:
-            sd = tuple(end_date.split('-'))
+            sd = tuple(end_date.split('/'))
             #print sd
             #date_tup = tuple(sd.split('-'))
             #print date_tup
@@ -312,12 +312,12 @@ class ScheduleTxt(object):
 
         elif len(end_date) == 8:
             print index, end_date
-            end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
+            end_date = datetime.datetime.strptime(end_date, '%m/%d/%y').strftime('%Y-%m-%d')
             return end_date
 
 
         elif len(end_date) == 9:
-            sd = tuple(end_date.split('-'))
+            sd = tuple(end_date.split('/'))
             m = sd[0]
             d = sd[1]
             if len(d) == 1:
@@ -328,12 +328,12 @@ class ScheduleTxt(object):
             return '2016-' + m + '-' + d
 
         elif len(end_date) == 10:
-            return datetime.datetime.strptime(end_date, '%m-%d-%Y').strftime('%Y-%m-%d')
+            return datetime.datetime.strptime(end_date,'%m-%d-%Y').strftime('%Y-%m-%d')
 
 
 
         else:
-            end = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
+            end = datetime.datetime.strptime(end_date, '%m/%d/%y').strftime('%Y-%m-%d')
             return end
             #print index, start_date
 #            end = end_date
@@ -457,6 +457,7 @@ if __name__ == '__main__':
      'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date',
      'index', 'address_line', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude',
      'longitude', 'latlng_source', 'id']
+    print len(colnames)
 
     early_voting_df = pd.read_csv(config.output + intermediate_doc, names=colnames, encoding='ISO-8859-1', skiprows=1, delimiter=',')
 
