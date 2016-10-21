@@ -210,13 +210,10 @@ ocd-division/country:us/state:ga/county:fannin,Fannin County,Fannin County Board
 ocd-division/country:us/state:ga/county:fannin,Fannin County,Fannin County Board of Elections and Registration, 400 West Main Street, Suite 301,,Blue Ridge,GA,30513,09:00:00 - 04:00,17:00:00 - 04:00,10/24/16,10/28/16
 ocd-division/country:us/state:ga/county:fannin,Fannin County,Fannin County Board of Elections and Registration, 400 West Main Street, Suite 301,,Blue Ridge,GA,30513,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
 ocd-division/country:us/state:ga/county:fannin,Fannin County,Fannin County Board of Elections and Registration, 400 West Main Street, Suite 301,,Blue Ridge,GA,30513,09:00:00 - 04:00,17:00:00 - 04:00,10/31/16,11/4/16
-ocd-division/country:us/state:ga/county:fayette,Fayette County,Fayette County Elections Office,140 Stonewall Avenue West,Suite 209 A,,Fayetteville,GA,30214,08:00:00 - 04:00,17:00:00 - 04:00,10/17/16,10/21/16
-ocd-division/country:us/state:ga/county:fayette,Fayette County,Fayette County Elections Office,140 Stonewall Avenue West,Suite 209 A,,Fayetteville,GA,30214,08:00:00 - 04:00,17:00:00 - 04:00,10/24/16,10/28/16
-ocd-division/country:us/state:ga/county:fayette,Fayette County,Fayette County Elections Office,140 Stonewall Avenue West,Suite 209 A,,Fayetteville,GA,30214,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
-ocd-division/country:us/state:ga/county:fayette,Fayette County,Fayette County Elections Office,140 Stonewall Avenue West,Suite 209 A,,Fayetteville,GA,30214,08:00:00 - 04:00,17:00:00 - 04:00,10/31/16,11/4/16
-ocd-division/country:us/state:ga/county:fayette,Fayette County,Fayette County Administrative Complex,140 Stonewall Avenue West,,Public Meeting Room,Fayetteville,GA,30214,08:00:00 - 04:00,17:00:00 - 04:00,10/24/16,10/28/16
-ocd-division/country:us/state:ga/county:fayette,Fayette County,Fayette County Administrative Complex,140 Stonewall Avenue West,,Public Meeting Room,Fayetteville,GA,30214,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
-ocd-division/country:us/state:ga/county:fayette,Fayette County,Fayette County Administrative Complex,140 Stonewall Avenue West,,Public Meeting Room,Fayetteville,GA,30214,08:00:00 - 04:00,17:00:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:fayette,Fayette County,Fayette County Elections Office,140 Stonewall Avenue West,,Suite 209 A/Public Meeting Room,Fayetteville,GA,30214,08:00:00 - 04:00,17:00:00 - 04:00,10/17/16,10/21/16
+ocd-division/country:us/state:ga/county:fayette,Fayette County,Fayette County Elections Office,140 Stonewall Avenue West,,,Fayetteville,GA,30214,08:00:00 - 04:00,17:00:00 - 04:00,10/24/16,10/28/16
+ocd-division/country:us/state:ga/county:fayette,Fayette County,Fayette County Elections Office,140 Stonewall Avenue West,,,Fayetteville,GA,30214,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
+ocd-division/country:us/state:ga/county:fayette,Fayette County,Fayette County Elections Office,140 Stonewall Avenue West,,,Fayetteville,GA,30214,08:00:00 - 04:00,17:00:00 - 04:00,10/31/16,11/4/16
 ocd-division/country:us/state:ga/county:fayette,Fayette County,Peachtree City Library,201 Willow Bend Rd,,,Peachtree City,GA,30269,08:00:00 - 04:00,17:00:00 - 04:00,10/17/16,10/21/16
 ocd-division/country:us/state:ga/county:fayette,Fayette County,Peachtree City Library,201 Willow Bend Rd,,,Peachtree City,GA,30269,08:00:00 - 04:00,17:00:00 - 04:00,10/24/16,10/28/16
 ocd-division/country:us/state:ga/county:fayette,Fayette County,Peachtree City Library,201 Willow Bend Rd,,,Peachtree City,GA,30269,08:00:00 - 04:00,17:00:00 - 04:00,10/31/16,11/4/16
@@ -821,63 +818,63 @@ ocd-division/country:us/state:ga/county:spalding,Spalding County,Memorial Drive 
 ocd-division/country:us/state:ga/county:spalding,Spalding County,Memorial Drive Plaza,825 Memorial Drive,,,Griffin,GA,30224,08:00:00 - 04:00,17:00:00 - 04:00,10/28/16,10/28/16
 ocd-division/country:us/state:ga/county:spalding,Spalding County,Memorial Drive Plaza,825 Memorial Drive,,,Griffin,GA,30224,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
 ocd-division/country:us/state:ga/county:spalding,Spalding County,Memorial Drive Plaza,825 Memorial Drive,,,Griffin,GA,30224,08:00:00 - 04:00,17:00:00 - 04:00,10/31/16,10/31/16
-ocd-division/country:us/state:ga/county:spalding,Spalding County,Memorial Drive Plaza,825 Memorial Drive,,,Griffin,GA,30224,08:00:00 - 04:00,19:00:00 - 04:00,1-Nov,1-Nov
-ocd-division/country:us/state:ga/county:spalding,Spalding County,Memorial Drive Plaza,825 Memorial Drive,,,Griffin,GA,30224,08:00:00 - 04:00,17:00:00 - 04:00,2-Nov,2-Nov
-ocd-division/country:us/state:ga/county:spalding,Spalding County,Memorial Drive Plaza,825 Memorial Drive,,,Griffin,GA,30224,08:00:00 - 04:00,19:00:00 - 04:00,3-Nov,3-Nov
-ocd-division/country:us/state:ga/county:spalding,Spalding County,Memorial Drive Plaza,825 Memorial Drive,,,Griffin,GA,30224,08:00:00 - 04:00,17:00:00 - 04:00,4-Nov,4-Nov
-ocd-division/country:us/state:ga/county:walker,Walker County,Walker County Courthouse,103 S. Duke St.,Rm 110,,Lafayette,GA,30728,08:30:00 - 04:00,16:30:00 - 04:00,17-Oct,21-Oct
-ocd-division/country:us/state:ga/county:walker,Walker County,Walker County Courthouse,103 S. Duke St.,Rm 110,,Lafayette,GA,30728,08:30:00 - 04:00,16:30:00 - 04:00,24-Oct,28-Oct
-ocd-division/country:us/state:ga/county:walker,Walker County,Walker County Courthouse,103 S. Duke St.,Rm 110,,Lafayette,GA,30728,08:30:00 - 04:00,16:30:00 - 04:00,31-Oct,4-Nov
-ocd-division/country:us/state:ga/county:walker,Walker County,Georgia Northwestern Technical College,265 Bicentennial Trail,,Building 500,Rock Spring,GA,30739,09:00:00 - 04:00,16:00:00 - 04:00,29-Oct,29-Oct
-ocd-division/country:us/state:ga/county:walker,Walker County,Georgia Northwestern Technical College,265 Bicentennial Trail,,Building 500,Rock Spring,GA,30739,08:30:00 - 04:00,16:30:00 - 04:00,31-Oct,4-Nov
-ocd-division/country:us/state:ga/county:walker,Walker County,Chickamauga Civic Center,1817 Lee Clarkson Rd,,,Chickamauga,GA,30707,09:00:00 - 04:00,16:00:00 - 04:00,29-Oct,29-Oct
-ocd-division/country:us/state:ga/county:walker,Walker County,Chickamauga Civic Center,1817 Lee Clarkson Rd,,,Chickamauga,GA,30707,08:30:00 - 04:00,16:30:00 - 04:00,31-Oct,4-Nov
-ocd-division/country:us/state:ga/county:walker,Walker County,Rossville Municipal Civic Center,400 McFarland Ave,,,Rossville,GA,30741,09:00:00 - 04:00,16:00:00 - 04:00,29-Oct,29-Oct
-ocd-division/country:us/state:ga/county:walker,Walker County,Rossville Municipal Civic Center,400 McFarland Ave,,,Rossville,GA,30741,08:30:00 - 04:00,16:30:00 - 04:00,31-Oct,4-Nov
-ocd-division/country:us/state:ga/county:walker,Walker County,Lookout Mountain City Hall,1214 Lula Lake Rd,,,Lookout Mountain,GA,30750,09:00:00 - 04:00,16:00:00 - 04:00,29-Oct,29-Oct
-ocd-division/country:us/state:ga/county:walker,Walker County,Lookout Mountain City Hall,1214 Lula Lake Rd,,,Lookout Mountain,GA,30750,08:30:00 - 04:00,16:30:00 - 04:00,31-Oct,4-Nov
-ocd-division/country:us/state:ga/county:bryan,Bryan County,Bryan County Complex,66 Captain Matthew Freeman Dr,,,Richmond Hill,GA,31324,08:00:00 - 04:00,17:00:00 - 04:00,17-Oct,21-Oct
-ocd-division/country:us/state:ga/county:bryan,Bryan County,Bryan County Complex,66 Captain Matthew Freeman Dr,,,Richmond Hill,GA,31324,08:00:00 - 04:00,17:00:00 - 04:00,24-Oct,28-Oct
-ocd-division/country:us/state:ga/county:bryan,Bryan County,Bryan County Complex,66 Captain Matthew Freeman Dr,,,Richmond Hill,GA,31324,08:00:00 - 04:00,17:00:00 - 04:00,31-Oct,4-Nov
-ocd-division/country:us/state:ga/county:bryan,Bryan County,Bryan County Complex,66 Captain Matthew Freeman Dr,,,Richmond Hill,GA,31324,09:00:00 - 04:00,16:00:00 - 04:00,29-Oct,29-Oct
-ocd-division/country:us/state:ga/county:bryan,Bryan County,Bryan County Courthouse,42 Courthouse St,,,Pembroke,GA,31321,08:00:00 - 04:00,17:00:00 - 04:00,17-Oct,21-Oct
-ocd-division/country:us/state:ga/county:bryan,Bryan County,Bryan County Courthouse,42 Courthouse St,,,Pembroke,GA,31321,08:00:00 - 04:00,17:00:00 - 04:00,24-Oct,28-Oct
-ocd-division/country:us/state:ga/county:bryan,Bryan County,Bryan County Courthouse,42 Courthouse St,,,Pembroke,GA,31321,08:00:00 - 04:00,17:00:00 - 04:00,31-Oct,4-Nov
-ocd-division/country:us/state:ga/county:bryan,Bryan County,Bryan County Courthouse,42 Courthouse St,,,Pembroke,GA,31321,09:00:00 - 04:00,16:00:00 - 04:00,29-Oct,29-Oct
-ocd-division/country:us/state:ga/county:effingham,Effingham County,Board of Elections and Registration,284 Highway 119 South,,,Springfield,GA,31329,08:30:00 - 04:00,17:00:00 - 04:00,17-Oct,21-Oct
-ocd-division/country:us/state:ga/county:effingham,Effingham County,Board of Elections and Registration,284 Highway 119 South,,,Springfield,GA,31329,08:30:00 - 04:00,17:00:00 - 04:00,24-Oct,28-Oct
-ocd-division/country:us/state:ga/county:effingham,Effingham County,Board of Elections and Registration,284 Highway 119 South,,,Springfield,GA,31329,09:00:00 - 04:00,16:00:00 - 04:00,29-Oct,29-Oct
-ocd-division/country:us/state:ga/county:effingham,Effingham County,Board of Elections and Registration,284 Highway 119 South,,,Springfield,GA,31329,08:30:00 - 04:00,17:00:00 - 04:00,31-Oct,4-Nov
-ocd-division/country:us/state:ga/county:effingham,Effingham County,Old Marlow Elementary School,4752 GA Highway 17 South,,,Guyton,GA,31312,08:30:00 - 04:00,17:00:00 - 04:00,17-Oct,21-Oct
-ocd-division/country:us/state:ga/county:effingham,Effingham County,Old Marlow Elementary School,4752 GA Highway 17 South,,,Guyton,GA,31312,08:30:00 - 04:00,17:00:00 - 04:00,24-Oct,28-Oct
-ocd-division/country:us/state:ga/county:effingham,Effingham County,Old Marlow Elementary School,4752 GA Highway 17 South,,,Guyton,GA,31312,09:00:00 - 04:00,16:00:00 - 04:00,29-Oct,29-Oct
-ocd-division/country:us/state:ga/county:effingham,Effingham County,Old Marlow Elementary School,4752 GA Highway 17 South,,,Guyton,GA,31312,08:30:00 - 04:00,17:00:00 - 04:00,31-Oct,4-Nov
-ocd-division/country:us/state:ga/county:bulloch,Bulloch County,Bulloch County Annex,113 North Main Street,,Suite 201,Statesboro,GA,30458,08:00:00 - 04:00,17:00:00 - 04:00,17-Oct,21-Oct
-ocd-division/country:us/state:ga/county:bulloch,Bulloch County,Bulloch County Annex,113 North Main Street,,Suite 201,Statesboro,GA,30458,08:00:00 - 04:00,17:00:00 - 04:00,24-Oct,28-Oct
-ocd-division/country:us/state:ga/county:bulloch,Bulloch County,Bulloch County Annex,113 North Main Street,,Suite 201,Statesboro,GA,30458,09:00:00 - 04:00,16:00:00 - 04:00,29-Oct,29-Oct
-ocd-division/country:us/state:ga/county:bulloch,Bulloch County,Bulloch County Annex,113 North Main Street,,Suite 201,Statesboro,GA,30458,08:00:00 - 04:00,17:00:00 - 04:00,31-Oct,4-Nov
-ocd-division/country:us/state:ga/county:bulloch,Bulloch County,Georgia Southern University,85 GA Avenue,,Room 1042,Statesboro,GA,30458,08:00:00 - 04:00,17:00:00 - 04:00,25-Oct,27-Oct
-ocd-division/country:us/state:ga/county:bulloch,Bulloch County,Honey Bowen,1 Max Lockwood Drive,,,Statesboro,GA,30458,09:00:00 - 04:00,16:00:00 - 04:00,29-Oct,29-Oct
-ocd-division/country:us/state:ga/county:bulloch,Bulloch County,Honey Bowen,1 Max Lockwood Drive,,,Statesboro,GA,30458,08:00:00 - 04:00,17:00:00 - 04:00,31-Oct,4-Nov
-ocd-division/country:us/state:ga/county:coffee,Coffee County,Elections & Registration,224 West Ashley Street,,,Douglas,GA,31533,08:30:00 - 04:00,17:00:00 - 04:00,17-Oct,21-Oct
-ocd-division/country:us/state:ga/county:coffee,Coffee County,Elections & Registration,224 West Ashley Street,,,Douglas,GA,31533,08:30:00 - 04:00,17:00:00 - 04:00,24-Oct,28-Oct
-ocd-division/country:us/state:ga/county:coffee,Coffee County,Elections & Registration,224 West Ashley Street,,,Douglas,GA,31533,09:00:00 - 04:00,16:00:00 - 04:00,29-Oct,29-Oct
-ocd-division/country:us/state:ga/county:coffee,Coffee County,Elections & Registration,224 West Ashley Street,,,Douglas,GA,31533,08:30:00 - 04:00,17:00:00 - 04:00,31-Oct,4-Nov
-ocd-division/country:us/state:ga/county:gordon,Gordon County,Gordon County Elections and Voter Registration Office,101 S. Piedmont Street,,,Calhoun,GA,30701,08:30:00 - 04:00,17:00:00 - 04:00,17-Oct,21-Oct
-ocd-division/country:us/state:ga/county:gordon,Gordon County,Gordon County Elections and Voter Registration Office,101 S. Piedmont Street,,,Calhoun,GA,30701,08:30:00 - 04:00,17:00:00 - 04:00,24-Oct,28-Oct
-ocd-division/country:us/state:ga/county:gordon,Gordon County,Gordon County Elections and Voter Registration Office,101 S. Piedmont Street,,,Calhoun,GA,30701,09:00:00 - 04:00,16:00:00 - 04:00,29-Oct,29-Oct
-ocd-division/country:us/state:ga/county:gordon,Gordon County,Gordon County Elections and Voter Registration Office,101 S. Piedmont Street,,,Calhoun,GA,30701,08:30:00 - 04:00,17:00:00 - 04:00,31-Oct,4-Nov
-ocd-division/country:us/state:ga/county:jackson,Jackson County,The Gordon Street Center,441 Gordon Street,,,Jefferson,GA,30549,08:00:00 - 04:00,17:00:00 - 04:00,17-Oct,21-Oct
-ocd-division/country:us/state:ga/county:jackson,Jackson County,The Gordon Street Center,441 Gordon Street,,,Jefferson,GA,30549,08:00:00 - 04:00,17:00:00 - 04:00,24-Oct,28-Oct
-ocd-division/country:us/state:ga/county:jackson,Jackson County,The Gordon Street Center,441 Gordon Street,,,Jefferson,GA,30549,09:00:00 - 04:00,16:00:00 - 04:00,29-Oct,29-Oct
-ocd-division/country:us/state:ga/county:jackson,Jackson County,Commerce Parks & Rec,204 Carson Street,,,Commerce,GA,30529,07:00:00 - 04:00,19:00:00 - 04:00,31-Oct,4-Nov
-ocd-division/country:us/state:ga/county:jackson,Jackson County,Police Court Building,5040 Highway 53,,,Brasleton,GA,30517,07:00:00 - 04:00,19:00:00 - 04:00,31-Oct,4-Nov
-ocd-division/country:us/state:ga/county:jackson,Jackson County,The Gordon Street Center,441 Gordon Street,,,Jefferson,GA,30549,07:00:00 - 04:00,19:00:00 - 04:00,31-Oct,4-Nov
-ocd-division/country:us/state:ga/county:liberty,Liberty County,Historical Courthouse,100 N. Main St.,Suite 1600,,Hinesville,GA,31313,08:00:00 - 04:00,17:00:00 - 04:00,17-Oct,21-Oct
-ocd-division/country:us/state:ga/county:liberty,Liberty County,Historical Courthouse,100 N. Main St.,Suite 1600,,Hinesville,GA,31313,08:00:00 - 04:00,17:00:00 - 04:00,24-Oct,28-Oct
-ocd-division/country:us/state:ga/county:liberty,Liberty County,Historical Courthouse,100 N. Main St.,Suite 1600,,Hinesville,GA,31313,09:00:00 - 04:00,16:00:00 - 04:00,29-Oct,29-Oct
-ocd-division/country:us/state:ga/county:liberty,Liberty County,Historical Courthouse,100 N. Main St.,Suite 1600,,Hinesville,GA,31313,08:00:00 - 04:00,17:00:00 - 04:00,31-Oct,4-Nov
-ocd-division/country:us/state:ga/county:oconee,Oconee County,Oconee County Elections Office,10 Court Street ,,,Watkinsville,GA,30677,08:00:00 - 04:00,17:00:00 - 04:00,17-Oct,21-Oct
-ocd-division/country:us/state:ga/county:oconee,Oconee County,Oconee County Elections Office,10 Court Street ,,,Watkinsville,GA,30677,08:00:00 - 04:00,17:00:00 - 04:00,24-Oct,28-Oct
-ocd-division/country:us/state:ga/county:oconee,Oconee County,Oconee County Elections Office,10 Court Street ,,,Watkinsville,GA,30677,09:00:00 - 04:00,16:30:00 - 04:00,29-Oct,29-Oct
-ocd-division/country:us/state:ga/county:oconee,Oconee County,Oconee County Elections Office,10 Court Street ,,,Watkinsville,GA,30677,08:00:00 - 04:00,17:00:00 - 04:00,31-Oct,4-Nov
+ocd-division/country:us/state:ga/county:spalding,Spalding County,Memorial Drive Plaza,825 Memorial Drive,,,Griffin,GA,30224,08:00:00 - 04:00,19:00:00 - 04:00,11/1/16,11/1/16
+ocd-division/country:us/state:ga/county:spalding,Spalding County,Memorial Drive Plaza,825 Memorial Drive,,,Griffin,GA,30224,08:00:00 - 04:00,17:00:00 - 04:00,11/2/16,11/2/16
+ocd-division/country:us/state:ga/county:spalding,Spalding County,Memorial Drive Plaza,825 Memorial Drive,,,Griffin,GA,30224,08:00:00 - 04:00,19:00:00 - 04:00,11/3/16,11/3/16
+ocd-division/country:us/state:ga/county:spalding,Spalding County,Memorial Drive Plaza,825 Memorial Drive,,,Griffin,GA,30224,08:00:00 - 04:00,17:00:00 - 04:00,11/4/16,11/4/16
+ocd-division/country:us/state:ga/county:walker,Walker County,Walker County Courthouse,103 S. Duke St.,Rm 110,,Lafayette,GA,30728,08:30:00 - 04:00,16:30:00 - 04:00,10/17/16,10/21/16
+ocd-division/country:us/state:ga/county:walker,Walker County,Walker County Courthouse,103 S. Duke St.,Rm 110,,Lafayette,GA,30728,08:30:00 - 04:00,16:30:00 - 04:00,10/24/16,10/28/16
+ocd-division/country:us/state:ga/county:walker,Walker County,Walker County Courthouse,103 S. Duke St.,Rm 110,,Lafayette,GA,30728,08:30:00 - 04:00,16:30:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:walker,Walker County,Georgia Northwestern Technical College,265 Bicentennial Trail,,Building 500,Rock Spring,GA,30739,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
+ocd-division/country:us/state:ga/county:walker,Walker County,Georgia Northwestern Technical College,265 Bicentennial Trail,,Building 500,Rock Spring,GA,30739,08:30:00 - 04:00,16:30:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:walker,Walker County,Chickamauga Civic Center,1817 Lee Clarkson Rd,,,Chickamauga,GA,30707,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
+ocd-division/country:us/state:ga/county:walker,Walker County,Chickamauga Civic Center,1817 Lee Clarkson Rd,,,Chickamauga,GA,30707,08:30:00 - 04:00,16:30:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:walker,Walker County,Rossville Municipal Civic Center,400 McFarland Ave,,,Rossville,GA,30741,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
+ocd-division/country:us/state:ga/county:walker,Walker County,Rossville Municipal Civic Center,400 McFarland Ave,,,Rossville,GA,30741,08:30:00 - 04:00,16:30:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:walker,Walker County,Lookout Mountain City Hall,1214 Lula Lake Rd,,,Lookout Mountain,GA,30750,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
+ocd-division/country:us/state:ga/county:walker,Walker County,Lookout Mountain City Hall,1214 Lula Lake Rd,,,Lookout Mountain,GA,30750,08:30:00 - 04:00,16:30:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:bryan,Bryan County,Bryan County Complex,66 Captain Matthew Freeman Dr,,,Richmond Hill,GA,31324,08:00:00 - 04:00,17:00:00 - 04:00,10/17/16,10/21/16
+ocd-division/country:us/state:ga/county:bryan,Bryan County,Bryan County Complex,66 Captain Matthew Freeman Dr,,,Richmond Hill,GA,31324,08:00:00 - 04:00,17:00:00 - 04:00,10/24/16,10/28/16
+ocd-division/country:us/state:ga/county:bryan,Bryan County,Bryan County Complex,66 Captain Matthew Freeman Dr,,,Richmond Hill,GA,31324,08:00:00 - 04:00,17:00:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:bryan,Bryan County,Bryan County Complex,66 Captain Matthew Freeman Dr,,,Richmond Hill,GA,31324,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
+ocd-division/country:us/state:ga/county:bryan,Bryan County,Bryan County Courthouse,42 Courthouse St,,,Pembroke,GA,31321,08:00:00 - 04:00,17:00:00 - 04:00,10/17/16,10/21/16
+ocd-division/country:us/state:ga/county:bryan,Bryan County,Bryan County Courthouse,42 Courthouse St,,,Pembroke,GA,31321,08:00:00 - 04:00,17:00:00 - 04:00,10/24/16,10/28/16
+ocd-division/country:us/state:ga/county:bryan,Bryan County,Bryan County Courthouse,42 Courthouse St,,,Pembroke,GA,31321,08:00:00 - 04:00,17:00:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:bryan,Bryan County,Bryan County Courthouse,42 Courthouse St,,,Pembroke,GA,31321,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
+ocd-division/country:us/state:ga/county:effingham,Effingham County,Board of Elections and Registration,284 Highway 119 South,,,Springfield,GA,31329,08:30:00 - 04:00,17:00:00 - 04:00,10/17/16,10/21/16
+ocd-division/country:us/state:ga/county:effingham,Effingham County,Board of Elections and Registration,284 Highway 119 South,,,Springfield,GA,31329,08:30:00 - 04:00,17:00:00 - 04:00,10/24/16,10/28/16
+ocd-division/country:us/state:ga/county:effingham,Effingham County,Board of Elections and Registration,284 Highway 119 South,,,Springfield,GA,31329,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
+ocd-division/country:us/state:ga/county:effingham,Effingham County,Board of Elections and Registration,284 Highway 119 South,,,Springfield,GA,31329,08:30:00 - 04:00,17:00:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:effingham,Effingham County,Old Marlow Elementary School,4752 GA Highway 17 South,,,Guyton,GA,31312,08:30:00 - 04:00,17:00:00 - 04:00,10/17/16,10/21/16
+ocd-division/country:us/state:ga/county:effingham,Effingham County,Old Marlow Elementary School,4752 GA Highway 17 South,,,Guyton,GA,31312,08:30:00 - 04:00,17:00:00 - 04:00,10/24/16,10/28/16
+ocd-division/country:us/state:ga/county:effingham,Effingham County,Old Marlow Elementary School,4752 GA Highway 17 South,,,Guyton,GA,31312,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
+ocd-division/country:us/state:ga/county:effingham,Effingham County,Old Marlow Elementary School,4752 GA Highway 17 South,,,Guyton,GA,31312,08:30:00 - 04:00,17:00:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:bulloch,Bulloch County,Bulloch County Annex,113 North Main Street,,Suite 201,Statesboro,GA,30458,08:00:00 - 04:00,17:00:00 - 04:00,10/17/16,10/21/16
+ocd-division/country:us/state:ga/county:bulloch,Bulloch County,Bulloch County Annex,113 North Main Street,,Suite 201,Statesboro,GA,30458,08:00:00 - 04:00,17:00:00 - 04:00,10/24/16,10/28/16
+ocd-division/country:us/state:ga/county:bulloch,Bulloch County,Bulloch County Annex,113 North Main Street,,Suite 201,Statesboro,GA,30458,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
+ocd-division/country:us/state:ga/county:bulloch,Bulloch County,Bulloch County Annex,113 North Main Street,,Suite 201,Statesboro,GA,30458,08:00:00 - 04:00,17:00:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:bulloch,Bulloch County,Georgia Southern University,85 GA Avenue,,Room 1042,Statesboro,GA,30458,08:00:00 - 04:00,17:00:00 - 04:00,10/25/16,10/27/16
+ocd-division/country:us/state:ga/county:bulloch,Bulloch County,Honey Bowen,1 Max Lockwood Drive,,,Statesboro,GA,30458,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
+ocd-division/country:us/state:ga/county:bulloch,Bulloch County,Honey Bowen,1 Max Lockwood Drive,,,Statesboro,GA,30458,08:00:00 - 04:00,17:00:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:coffee,Coffee County,Elections & Registration,224 West Ashley Street,,,Douglas,GA,31533,08:30:00 - 04:00,17:00:00 - 04:00,10/17/16,10/21/16
+ocd-division/country:us/state:ga/county:coffee,Coffee County,Elections & Registration,224 West Ashley Street,,,Douglas,GA,31533,08:30:00 - 04:00,17:00:00 - 04:00,10/24/16,10/28/16
+ocd-division/country:us/state:ga/county:coffee,Coffee County,Elections & Registration,224 West Ashley Street,,,Douglas,GA,31533,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
+ocd-division/country:us/state:ga/county:coffee,Coffee County,Elections & Registration,224 West Ashley Street,,,Douglas,GA,31533,08:30:00 - 04:00,17:00:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:gordon,Gordon County,Gordon County Elections and Voter Registration Office,101 S. Piedmont Street,,,Calhoun,GA,30701,08:30:00 - 04:00,17:00:00 - 04:00,10/17/16,10/21/16
+ocd-division/country:us/state:ga/county:gordon,Gordon County,Gordon County Elections and Voter Registration Office,101 S. Piedmont Street,,,Calhoun,GA,30701,08:30:00 - 04:00,17:00:00 - 04:00,10/24/16,10/28/16
+ocd-division/country:us/state:ga/county:gordon,Gordon County,Gordon County Elections and Voter Registration Office,101 S. Piedmont Street,,,Calhoun,GA,30701,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
+ocd-division/country:us/state:ga/county:gordon,Gordon County,Gordon County Elections and Voter Registration Office,101 S. Piedmont Street,,,Calhoun,GA,30701,08:30:00 - 04:00,17:00:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:jackson,Jackson County,The Gordon Street Center,441 Gordon Street,,,Jefferson,GA,30549,08:00:00 - 04:00,17:00:00 - 04:00,10/17/16,10/21/16
+ocd-division/country:us/state:ga/county:jackson,Jackson County,The Gordon Street Center,441 Gordon Street,,,Jefferson,GA,30549,08:00:00 - 04:00,17:00:00 - 04:00,10/24/16,10/28/16
+ocd-division/country:us/state:ga/county:jackson,Jackson County,The Gordon Street Center,441 Gordon Street,,,Jefferson,GA,30549,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
+ocd-division/country:us/state:ga/county:jackson,Jackson County,Commerce Parks & Rec,204 Carson Street,,,Commerce,GA,30529,07:00:00 - 04:00,19:00:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:jackson,Jackson County,Police Court Building,5040 Highway 53,,,Brasleton,GA,30517,07:00:00 - 04:00,19:00:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:jackson,Jackson County,The Gordon Street Center,441 Gordon Street,,,Jefferson,GA,30549,07:00:00 - 04:00,19:00:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:liberty,Liberty County,Historical Courthouse,100 N. Main St.,Suite 1600,,Hinesville,GA,31313,08:00:00 - 04:00,17:00:00 - 04:00,10/17/16,10/21/16
+ocd-division/country:us/state:ga/county:liberty,Liberty County,Historical Courthouse,100 N. Main St.,Suite 1600,,Hinesville,GA,31313,08:00:00 - 04:00,17:00:00 - 04:00,10/24/16,10/28/16
+ocd-division/country:us/state:ga/county:liberty,Liberty County,Historical Courthouse,100 N. Main St.,Suite 1600,,Hinesville,GA,31313,09:00:00 - 04:00,16:00:00 - 04:00,10/29/16,10/29/16
+ocd-division/country:us/state:ga/county:liberty,Liberty County,Historical Courthouse,100 N. Main St.,Suite 1600,,Hinesville,GA,31313,08:00:00 - 04:00,17:00:00 - 04:00,10/31/16,11/4/16
+ocd-division/country:us/state:ga/county:oconee,Oconee County,Oconee County Elections Office,10 Court Street ,,,Watkinsville,GA,30677,08:00:00 - 04:00,17:00:00 - 04:00,10/17/16,10/21/16
+ocd-division/country:us/state:ga/county:oconee,Oconee County,Oconee County Elections Office,10 Court Street ,,,Watkinsville,GA,30677,08:00:00 - 04:00,17:00:00 - 04:00,10/24/16,10/28/16
+ocd-division/country:us/state:ga/county:oconee,Oconee County,Oconee County Elections Office,10 Court Street ,,,Watkinsville,GA,30677,09:00:00 - 04:00,16:30:00 - 04:00,10/29/16,10/29/16
+ocd-division/country:us/state:ga/county:oconee,Oconee County,Oconee County Elections Office,10 Court Street ,,,Watkinsville,GA,30677,08:00:00 - 04:00,17:00:00 - 04:00,10/31/16,11/4/16
