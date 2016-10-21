@@ -64,10 +64,10 @@ class PollingLocationTxt(object):
         print address_line
         return address_line
 
-    def get_directions(self):
+    def get_directions(self, dirs):
         """#"""
         # no direct relationship to any column
-        return ''
+        return dirs
 
     def convert_to_time(self, index, time):
        if not pd.isnull(time):
@@ -171,7 +171,7 @@ class PollingLocationTxt(object):
                                               row['city'], row['zip']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
-            lambda row: self.get_directions(), axis=1)
+            lambda row: self.get_directions(row['dirs']), axis=1)
         #
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row["start_time"], row['end_time']), axis=1)
@@ -249,7 +249,7 @@ class PollingLocationTxt(object):
         plt = self.build_polling_location_txt()
         # Drop base_df columns.
         plt.drop(['index', 'county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'notes'], inplace=True, axis=1)
+                'address_two', 'dirs', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'notes'], inplace=True, axis=1)
         plt = self.dedupe(plt)
         return plt
 
@@ -295,7 +295,7 @@ if __name__ == '__main__':
     early_voting_file = config.input_folder + state_file
 
     colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'notes']
+                'address_two', 'dirs', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'notes']
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
     pl = PollingLocationTxt(early_voting_df, early_voting_true)

@@ -33,7 +33,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "440 Fifth Street, Hollister, CA 95023",2nd Floor Room 206,08:00 AM-05:00 PM,,ho83812480,false,true,,,,poll23198589
 "777 E. Rialto Avenue, San Bernardino, CA 92415",,07:30 AM-05:30 PM,,ho52407834,false,true,,,,poll5652823
 "5600 Overland Avenue, San Diego, CA 92123",,08:00 AM-05:00 PM,,ho60954883,false,true,,,,poll91978198
-"1 Dr. Carlton B. Goodlett Place, Room 48, San Francisco, CA 94102",,08:00 AM-05:00 PM,,ho96942932,false,true,,,,poll85455370
+"1 Dr. Carlton B. Goodlett Place, San Francisco, CA 94102",Room 48,08:00 AM-05:00 PM,,ho96871219,false,true,,,,poll74514682
 "44 N San Joaquin St, Suite 340, Stockton, CA 95202",,08:00 AM-05:00 PM,,ho56015412,false,true,,,,poll29541691
 "40 Tower Road, San Mateo, CA 94402",,08:00 AM-05:00 PM,,ho10449321,false,true,,,,poll13101045
 "555 County Center, Redwood City, CA 94063",1st Floor,08:00 AM-05:00 PM,,ho8641071,false,true,,,,poll64532819
@@ -42,6 +42,11 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "511 E. Lakeside Parkway, Suite 134, Santa Maria, CA 93455",,08:00 AM-12:00 PM,,ho15268205,false,true,,,,poll41484978
 "401 E. Cypress St., Room 102, Lompoc, CA 93436",,09:00 AM-12:00 PM,,ho94890263,false,true,,,,poll32380723
 "1555 Berger Drive, San Jose, CA 95112",Bldg 2,08:00 AM-05:00 PM,,ho22006520,false,true,,,,poll64315078
+"1213 Newell Road, Palo Alto, CA 94303",,12:00 PM-05:00 PM,,ho18246009,false,true,,,,poll52672569
+"250 W. Sixth Street, Gilroy, CA 95020",,12:00 PM-05:00 PM,,ho55622978,false,true,,,,poll60079122
+"2635 Homestead Road, Santa Clara, CA 90501",,12:00 PM-05:00 PM,,ho691936,false,true,,,,poll25222355
+"491 E. Empire Street, San Jose, CA 95112",,12:00 PM-05:00 PM,,ho67690195,false,true,,,,poll62764315
+"1772 Educational Park Drive, San Jose, CA 95133",,12:00 PM-05:00 PM,,ho17936961,false,true,,,,poll77887620
 "701 Ocean Street, Room 210, Santa Cruz, CA 95060",,08:00 AM-05:00 PM,,ho24108230,false,true,,,,poll52902263
 "275 Main St, Suite 400, Watsonville, CA 95076",4th Floor,08:00 AM-05:00 PM,,ho41704246,false,true,,,,poll29991416
 "1643 Market Street, Redding, CA 96002",,08:00 AM-05:00 PM,,ho75445722,false,true,,,,poll89113059

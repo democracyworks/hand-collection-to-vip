@@ -56,9 +56,9 @@ class PollingLocationTxt(object):
         #print address
         #print type(address)
 
-        final_line = address1 + address2 + ", " + city_name + ', ' + config.state_abbreviation_upper + zip
+        final_line = address1.strip() + address2.strip() + ", " + city_name.strip() + ', ' + config.state_abbreviation_upper + zip.strip()
         final_line = ' '.join(final_line.split())
-        print index, final_line
+        #print index, final_line
         return final_line
 
 
@@ -94,9 +94,9 @@ class PollingLocationTxt(object):
         #if hour_min_sec_time_format:
         #print start_time
             #start_time = tuple(start_time.split('-'))[0].strip()
-        print index, start_time
+        #print index, start_time
         start_time = datetime.datetime.strptime(start_time, "%H:%M:%S").strftime("%I:%M %p")
-        print start_time
+        #print start_time
         #elif hour_min_time_format:
         #start_time = datetime.datetime.strptime(start_time, "%H:%M").strftime("%I:%M %p")
         #print start_time
@@ -104,7 +104,7 @@ class PollingLocationTxt(object):
 
 
         end_time = datetime.datetime.strptime(end_time, "%H:%M:%S").strftime("%I:%M %p")
-        print end_time
+        #print end_time
 
         return start_time + '-' + end_time
 
@@ -152,7 +152,7 @@ class PollingLocationTxt(object):
 
         id =  int(hashlib.sha1(ocd_division + address_line).hexdigest(), 16) % (10 ** 8)
         id = 'poll' + str(id)
-        print 'LOOK', address_line, id
+        #print 'LOOK', address_line, id
         return id
 
     def build_polling_location_txt(self):
@@ -206,7 +206,7 @@ class PollingLocationTxt(object):
     def export_for_schedule_and_locality(self):
         intermediate_doc = self.build_polling_location_txt()
 
-        print intermediate_doc
+        #print intermediate_doc
         #intermediate_doc = self.dedupe(intermediate_doc)
 
         intermediate_doc = intermediate_doc.drop_duplicates(subset=['start_time', 'end_time', 'start_date',
@@ -269,6 +269,7 @@ if __name__ == '__main__':
 
     pl = PollingLocationTxt(early_voting_df, state)
 
+    pl.export_for_schedule_and_locality()
     pl.write_polling_location_txt()
-    #pl.export_for_schedule_and_locality()
+
 
