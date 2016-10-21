@@ -168,7 +168,7 @@ class ScheduleTxt(object):
         sch.drop(['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
                   'address_two', 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date', 'end_date', 'index', 'time_zone',
                   'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting',
-                  'latitude', 'longitude', 'latlng_source', 'polling_location_id', 'notes'], inplace=True,
+                  'latitude', 'longitude', 'latlng_source', 'polling_location_id', 'notes', 'dirs'], inplace=True,
                  axis=1)
 
         # hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id,
@@ -209,7 +209,7 @@ if __name__ == '__main__':
 
 
     colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
-                'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'notes', 'index',
+                'address_two', 'dirs', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'notes', 'index',
                 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
                 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'polling_location_id']
 

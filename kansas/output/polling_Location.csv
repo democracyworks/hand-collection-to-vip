@@ -15,7 +15,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "913 Highland, Ashland, KS 67831",,08:30 AM - 12:00 PM,,ho83974220,false,true,,,,poll83974220
 "712 5th Street Suite 102, Clay Center, KS 67432",,08:00 AM - 05:00 PM,,ho73396200,false,true,,,,poll73396200
 "811 Washington, Concordia, KS 66901",,08:00 AM - 04:30 PM,,ho78837689,false,true,,,,poll78837689
-"Room 202 110 S 6th, Burlington, KS 66839",,08:00 AM - 05:00 PM,,ho56118502,false,true,,,,poll56118502
+"110 S 6th Room 202, Burlington, KS 66839",,08:00 AM - 05:00 PM,,ho20391107,false,true,,,,poll20391107
 "201 S New York Avenue, Coldwater, KS 67029",,09:00 AM - 12:00 PM,,ho37839255,false,true,,,,poll37839255
 "321 E. 10th Avenue, Winfield, KS 67156",,07:30 AM - 05:30 PM,,ho19711793,false,true,,,,poll19711793
 "111 E Forest Avenue, Girard, KS 66743",,08:00 AM - 04:30 PM,,ho7960686,false,true,,,,poll7960686
@@ -27,13 +27,13 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "1100 Massachusetts St, Lawrence, KS 66044",,08:00 AM - 05:00 PM,,ho85480065,false,true,,,,poll85480065
 "312 Massachusetts, Kinsley, KS 67547",,08:00 AM - 05:00 PM,,ho63905830,false,true,,,,poll63905830
 "127 N Pine St, Howard, KS 67349",,07:00 AM - 05:30 PM,,ho97967978,false,true,,,,poll97967978
-"1204 Fort St,, Hays, KS 67601",,08:00 AM - 04:00 PM,,ho19994593,false,true,,,,poll19994593
+"1204 Fort St, Hays, KS 67601",,08:00 AM - 04:00 PM,,ho30455086,false,true,,,,poll30455086
 "210 N Kansas, Ellsworth, KS 67439",,08:00 AM - 05:00 PM,,ho84040399,false,true,,,,poll84040399
-"Finney Co. Admin. Center 311 N. 9th St., Garden City, KS 67846",,08:00 AM - 05:00 PM,,ho14459408,false,true,,,,poll14459408
+"311 N. 9th St., Garden City, KS 67846",Finney Co. Admin. Center,08:00 AM - 05:00 PM,,ho51761086,false,true,,,,poll51761086
 "100 Gunsmoke, Dodge City, KS 67801",,09:00 AM - 04:30 PM,,ho97354625,false,true,,,,poll97354625
 "315 S Main, Ottawa, KS 66067",,08:00 AM - 04:30 PM,,ho45551726,false,true,,,,poll45551726
 "200 E. 8th Street, Junction City, KS 66441",,08:30 AM - 05:00 PM,,ho39936985,false,true,,,,poll39936985
-"520 Washington St. Suite 105, Gove, KS 67736",,08:00 AM - 04:30 PM,,ho41904618,false,true,,,,poll41904618
+"520 Washington St., Suite 105, Gove, KS 67736",,08:00 AM - 04:30 PM,,ho11729857,false,true,,,,poll11729857
 "410 N Pomeroy, Hill City, KS 67642",,08:00 AM - 05:00 PM,,ho55790840,false,true,,,,poll55790840
 "108 S Glenn, Ulysses, KS 67880",,08:00 AM - 05:00 PM,,ho36308365,false,true,,,,poll36308365
 "300 South Main Street, Cimarron, KS 67835",,08:00 AM - 05:00 PM,,ho26774577,false,true,,,,poll26774577
@@ -93,6 +93,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "1815 M. Street, Belleville, KS 66935",,07:30 AM - 04:30 PM,,ho46575900,false,true,,,,poll46575900
 "101 W Commercial, Lyons, KS 67554",,08:00 AM - 05:00 PM,,ho32829058,false,true,,,,poll32829058
 "110 Courthouse Plaza, Manhattan, KS 66502",,08:00 AM - 05:00 PM,,ho30902449,false,true,,,,poll30902449
+"1640 Anderson Ave, Manhattan, KS 66502",,10:00 AM - 05:00 PM,,ho30441286,false,true,,,,poll30441286
 "115 N Walnut, Stockton, KS 67669",,08:00 AM - 05:00 PM,,ho88652434,false,true,,,,poll88652434
 "715 Elm St, LaCrosse, KS 67548",,08:30 AM - 05:00 PM,,ho54482322,false,true,,,,poll54482322
 "401 N Main St, Russell, KS 67665",,08:00 AM - 05:00 PM,,ho47284691,false,true,,,,poll47284691
@@ -103,8 +104,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "18800 W Kellogg Dr, Goddard, KS 67052",,12:00 PM - 07:00 PM,,ho90534379,false,true,,,,poll90534379
 "5002 E. Douglas Ave., Wichita, KS 67208",,12:00 PM - 07:00 PM,,ho40553650,false,true,,,,poll40553650
 "1746 S. Greenwich Rd, Wichita, KS 67207",,12:00 PM - 07:00 PM,,ho91932875,false,true,,,,poll91932875
-"210 Hays Ave., Wichita, KS 67060",,12:00 PM - 07:00 PM,,ho97322025,false,true,,,,poll97322025
-"210 Hays Ave., Haysville, KS 67060",,09:00 AM - 04:00 PM,,ho53786233,false,true,,,,poll53786233
+"210 Hays Ave., Haysville, KS 67060",,12:00 PM - 07:00 PM,,ho53786233,false,true,,,,poll53786233
 "3033 W. 2nd St. N., Wichita, KS 67203",,12:00 PM - 07:00 PM,,ho20708707,false,true,,,,poll20708707
 "3830 S. Meridian Ave., Wichita, KS 67217",,12:00 PM - 07:00 PM,,ho27726773,false,true,,,,poll27726773
 "2727 E. 25th St. N., Wichita, KS 67219",,12:00 PM - 07:00 PM,,ho98322376,false,true,,,,poll98322376
