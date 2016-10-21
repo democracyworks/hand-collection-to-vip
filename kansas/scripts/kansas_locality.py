@@ -269,13 +269,13 @@ class LocalityTxt(object):
 
         loc = self.final_build()
 
-        loc.to_csv(config.locality_output + 'locality.txt', index=False, encoding='utf-8')  # send to txt file
-        loc.to_csv(config.locality_output + 'locality.csv', index=False, encoding='utf-8')  # send to csv file
+        loc.to_csv(config.output + 'locality.txt', index=False, encoding='utf-8')  # send to txt file
+        loc.to_csv(config.output + 'locality.csv', index=False, encoding='utf-8')  # send to csv file
 
 if __name__ == '__main__':
     file_name = 'intermediate_doc.csv'
 
-    early_voting_file = config.polling_location_output + file_name
+    early_voting_file = config.output + file_name
 
     colnames = ['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
                 'address_two', 'dirs', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'notes', 'index',

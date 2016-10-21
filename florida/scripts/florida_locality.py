@@ -19,23 +19,6 @@ class LocalityTxt(object):
         row index. '0s' are added, if necesary, to maintain a consistent id length. As currently designed the method
         works up to index 9,999"""
         return ''
-        # prefix = 'ea'
-        #
-        # if index <= 9:
-        #     index_str = '000' + str(index)
-        #     return prefix + index_str
-        #
-        # elif index in range(10,100):
-        #     index_str = '00' + str(index)
-        #     return prefix + index_str
-        #
-        # elif index >= 100:
-        #     index_str = '0' + str(index)
-        #     return prefix + index_str
-        #
-        # else:
-        #     index_str = str(index)
-        #     return prefix + index_str
 
     def get_external_identifier_type(self):
         """#"""
@@ -47,12 +30,13 @@ class LocalityTxt(object):
 
     def get_external_identifier_value(self, external_identifier_value):
         """Extracts external identifier (ocd-division)."""
+        print external_identifier_value
         county_arr = external_identifier_value.split(" ")
         del county_arr[-1]
         county = "_".join(county_arr).lower()
         county = county.replace(".", "")
-        county = county.replace("-", "_")
-        string = "ocd-division/country:us/state:" + config.state_lower_abbreviation +"/county:" + county.lower()
+        #county = county.replace("-", "_")
+        string = "ocd-division/country:us/state:" + config.state_lower_abbreviation + "/county:" + county.lower()
         return string
 
     def create_name(self, index, division_description ):

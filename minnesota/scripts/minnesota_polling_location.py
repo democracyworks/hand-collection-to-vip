@@ -56,7 +56,7 @@ class PollingLocationTxt(object):
         else:
             zip_code = ''
             print 'Missing zip_code value at row ' + index + '.'
-        address_line = address + ', ' + city + ', MN ' + zip_code
+        address_line = str(address) + ', ' + str(city) + ', MN ' + str(zip_code)
 
         return address_line
 
@@ -201,29 +201,6 @@ class PollingLocationTxt(object):
 
         return self.base_df
 
-#    def dedupe(self, dupe):
-#        """#"""
-#        return dupe.drop_duplicates(subset=['address_line', 'hours'])
-
-
-#    def export_for_schedule_and_locality(self):
-#        ex_doc = self.build_polling_location_txt()
-#        print ex_doc
-
-#        ex_doc = self.dedupe(ex_doc)
-#        print ex_doc
-
-#        ex_doc.to_csv(config.polling_location_output + 'intermediate_pl_for_schedule.csv', index=False, encoding='utf-8')
-
-#    def export_for_locality(self):
-#        ex_doc = self.build_polling_location_txt()
-        #print ex_doc
-
-#        ex_doc = self.dedupe(ex_doc)
-        #print ex_doc
-
-#        ex_doc.to_csv(config.polling_location_output + 'intermediate_pl_for_loc.csv', index=False, encoding='utf-8')
-
     def dedupe(self, dupe):
         """#"""
         return dupe.drop_duplicates(subset=['address_line'])
@@ -241,18 +218,6 @@ class PollingLocationTxt(object):
         print intermediate_doc
 
         intermediate_doc.to_csv(config.output + 'intermediate_doc.csv', index=False, encoding='utf-8')
-
-#    def format(self):
-#        plt = self.build_polling_location_txt()
-
-        # Drop base_df columns.
-#        plt.drop(['index', 'ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state', 'zip',
-#                'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment', 'is_or_by_appointment',
-#                'appointment_phone_num', 'is_subject_to_change'], inplace=True, axis=1)
-
-#        plt = self.dedupe(plt)
-#        return plt
-
 
     def write_polling_location_txt(self):
         """Drops base DataFrame columns then writes final dataframe to text or csv file"""
@@ -273,7 +238,8 @@ class PollingLocationTxt(object):
 
 
 if __name__ == '__main__':
-
+    s = 'ocd_division, county, location_name, address1, address2, dirs, city, state, zip, start_time, end_time, start_date, end_date, is_only_by_appointment, is_or_by_appointment, is_subject_to_change'.split(', ')
+    print s
     early_voting_true = 'true'  # true or false
     #drop_box_true =
     state_file='minnesota_early_voting_info.csv'
@@ -282,14 +248,15 @@ if __name__ == '__main__':
     early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/minnesota/early_voting_input/" + state_file
 
 
-    colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state', 'zip',
+    colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'dirs', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment', 'is_or_by_appointment',
-                'appointment_phone_num', 'is_subject_to_change']
+                'is_subject_to_change']
+
 
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
-    pl.write_polling_location_txt()
-    #pl.export_for_schedule_and_locality()
+    #pl.write_polling_location_txt()
+    pl.export_for_schedule_and_locality()
     #pl.export_for_schedule()

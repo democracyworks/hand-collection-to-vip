@@ -223,11 +223,11 @@ if __name__ == '__main__':
     early_voting_file = 'intermediate_doc.csv'
 
     early_voting_path = "/home/acg/democracyworks/hand-collection-to-vip/minnesota/output/" + early_voting_file
-    colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state',
+    colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'directions', 'city', 'state',
                 'zip', 'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment',
-                'is_or_by_appointment', 'appointment_phone_num', 'is_subject_to_change', 'index',
-                'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
-                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'polling_location_id']
+                'is_or_by_appointment', 'appointment_phone_num', 'is_subject_to_change', 'index', 'address_line',
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude', 'longitude',
+                'latlng_source', 'polling_location_id']
 
     early_voting_df = pd.read_csv(early_voting_path, names=colnames, encoding='utf-8', skiprows=1)
 

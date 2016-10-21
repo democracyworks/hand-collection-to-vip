@@ -1,0 +1,75 @@
+address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+"26 North Main Street, Philippi, WV 26416",,08:30 AM-04:30 PM,,ho65133765,false,true,,,,poll72461889
+"110 West King Street, Martinsburg, WV 25401",,09:00 AM-05:00 PM,,ho92961588,false,true,,,,poll63738791
+"200 State Street, Madison, WV 25130",,08:00 AM-04:00 PM,,ho64222421,false,true,,,,poll26503714
+"309 Main Street, Sutton, WV 26601",,08:00 AM-04:00 PM,,ho56217192,false,true,,,,poll30536452
+"632 Main Street, Wellsburg, WV 26070",,09:00 AM-05:00 PM,,ho89021953,false,true,,,,poll86429863
+"750 5th Avenue, Huntington, WV 25701",,08:30 AM-04:30 PM,,ho86728793,false,true,,,,poll22067836
+"363 Main Street, Grantsville, WV 26147",,08:00 AM-04:00 PM,,ho41252231,false,true,,,,poll62727510
+"246 Main Street, Clay, WV 25043",,08:00 AM-04:00 PM,,ho71392040,false,true,,,,poll23862889
+"108 East Court St., West Union, WV 26456",Ste 1,08:30 AM-04:00 PM,,ho68296045,false,true,,,,poll40808337
+"200 W. Maple Avenue, Fayetteville, WV 25840",,08:00 AM-04:00 PM,,ho75802320,false,true,,,,poll60879839
+"706 3rd Avenue, Montgomery, WV 25136",,08:00 AM-04:00 PM,,ho52074120,false,true,,,,poll17783388
+"1493 Stanaford Road, Danese, WV 25831",,08:00 AM-04:00 PM,,ho21405121,false,true,,,,poll68958242
+"10 Howard Street, Glenville, WV 26351",,08:00 AM-04:00 PM,,ho79460172,false,true,,,,poll85354860
+"5 Highland Avenue, Petersburg, WV 26847",,08:30 AM-04:30 PM,,ho1639370,false,true,,,,poll8631147
+"200 N Court St., Lewisburg, WV 24901",,08:00 AM-04:30 PM,,ho9478491,false,true,,,,poll26654309
+"19 E. Main Street, Romney, WV 26757",,08:00 AM-04:00 PM,,ho7185536,false,true,,,,poll548381
+"102 North Court Street, New Cumberland, WV 26047",,08:30 AM-04:30 PM,,ho89294103,false,true,,,,poll61445082
+"204 Washington Street, Moorefield, WV 26836",,09:00 AM-04:00 PM,,ho37400737,false,true,,,,poll26485228
+"301 W. Main Street, Clarksburg, WV 26301",,08:30 AM-04:30 PM,,ho36414934,false,true,,,,poll99399915
+"100 Court Street, Ripley, WV 25271",,08:30 AM-04:30 PM,,ho35422587,false,true,,,,poll11558437
+"323 Virginia Street, Ravenswood, WV 26164",,08:30 AM-04:30 PM,,ho21356328,false,true,,,,poll64109455
+"100 E Washington Street, Charles Town, WV 25414",,09:00 AM-05:00 PM,,ho36454373,false,true,,,,poll65372033
+"415 Quarrier Street, Charleston, WV 25301",,08:00 AM-05:00 PM,,ho30598403,false,true,,,,poll19132503
+"110 Center Avenue, Weston, WV 26452",,08:00 AM-04:00 PM,,ho98941248,false,true,,,,poll70576036
+"8000 Court Avenue, Hamlin, WV 25523",,09:00 AM-04:30 PM,,ho96449427,false,true,,,,poll61158934
+"120 Harts Creek, Harts, WV 25524",,09:00 AM-04:30 PM,,ho17730252,false,true,,,,poll15873577
+"13 Ely Fork, Sumerco, WV 25524",,09:00 AM-04:30 PM,,ho61324647,false,true,,,,poll21809675
+"300 Stratton Street, Logan, WV 25601",,08:30 AM-12:00 PM,,ho42168224,false,true,,,,poll21338766
+"200 Jackson Street, Fairmont, WV 26555",,08:30 AM-04:30 PM,,ho82663974,false,true,,,,poll53196250
+"206 Main Street, Mannington , WV 26582",,08:30 AM-04:30 PM,,ho32185334,false,true,,,,poll42306101
+"600 7th Street, Moundsville, WV 26041",,08:30 AM-04:30 PM,,ho12936130,false,true,,,,poll88225676
+"200 6th Street, Point Pleasant, WV 25550",,08:30 AM-04:30 PM,,ho70802442,false,true,,,,poll4862786
+"90 Wyoming Street, Welch, WV 24801", Ste 109,09:00 AM-05:00 PM,,ho27611699,false,true,,,,poll52376254
+"1501 Main Street, Ste 121, Princeton, WV 24740",,08:30 AM-04:30 PM,,ho31406362,false,true,,,,poll64976337
+"2224 Athens Road, Princeton, WV 24740",,08:30 AM-04:30 PM,,ho26646006,false,true,,,,poll96660151
+"1780 Stadium Drive, Bluefield, WV 24701",,08:30 AM-04:30 PM,,ho74113414,false,true,,,,poll35403503
+"3669 Coal Heritage Road, Bluewell, WV 24701",,08:30 AM-04:30 PM,,ho30960364,false,true,,,,poll84378720
+"150 Armstrong Street, Keyser, WV 26726",,08:30 AM-04:30 PM,,ho28755807,false,true,,,,poll82037147
+"78 East Second Avenue, Williamson, WV 25661",Room #125,09:00 AM-05:00 PM,,ho32213979,false,true,,,,poll902819
+"5000 Greenbag Road, Morgantown, WV 26505",Unit D-20; (on front of Mall beside Anytime Fitness enter from outside entrance from parking lot-no entrance from inside Mall),07:00 AM-07:00 PM,,ho46168223,false,true,,,,poll67313689
+"79 Buckyeye Road, Core , WV 26541",,07:00 AM-07:00 PM,,ho1486745,false,true,,,,poll8128674
+"7000 Mid-Atlantic Drive, Morgantown, WV 26505",,07:00 AM-07:00 PM,,ho85757453,false,true,,,,poll64352844
+"500 Dupont Road, Westover, WV 26501",,07:00 AM-07:00 PM,,ho57305576,false,true,,,,poll81910775
+"1 Alumni Drive, Morgantown, WV 26504",,07:00 AM-07:00 PM,,ho47296606,false,true,,,,poll33858000
+"39 Nota Street, Union, WV 24983",Ste. 1,08:30 AM-04:30 PM,,ho29659817,false,true,,,,poll77594073
+"125 Thomas Street, Peterstown, WV 24963",,08:30 AM-04:30 PM,,ho58779624,false,true,,,,poll23491766
+"77 Fairfax Street, Berkeley Springs, WV 25411",Room 102,09:00 AM-05:00 PM,,ho26965197,false,true,,,,poll44736614
+"700 Main Street, Summersville, WV 26651",,08:30 AM-04:30 PM,,ho29316514,false,true,,,,poll66743942
+"1500 Chapline Street, Wheeling, WV 26003",Room 102,09:00 AM-05:00 PM,,ho32587616,false,true,,,,poll95661263
+"100 South Main Street, Franklin, WV 26807",,08:30 AM-04:30 PM,,ho95062125,false,true,,,,poll92737992
+"301 Court Lane, St. Marys, WV 26170",,08:30 AM-04:30 PM,,ho56013369,false,true,,,,poll92688284
+"900 10th Avenue, Marlinton, WV 24954",,08:30 AM-04:30 PM,,ho69810887,false,true,,,,poll10014974
+"300 Rich Wolfe Drive, Kingwood, WV 26537",,08:30 AM-06:00 PM,,ho29916411,false,true,,,,poll21600015
+"12093 Winfield Rd., Winfield, WV 25213",,08:00 AM-04:00 PM,,ho91633970,false,true,,,,poll39344382
+"215 Main St., Beckley, WV 25802",2nd Floor (large ceremonial courtroom),08:30 AM-04:30 PM,,ho3106865,false,true,,,,poll47167279
+"4 Randolph Avenue, Elkins, WV 26241",,08:00 AM-04:30 PM,,ho66905864,false,true,,,,poll4588985
+"115 East Main St., Harrisville, WV 26362",,08:00 AM-04:00 PM,,ho60506508,false,true,,,,poll60486246
+"200 Main Street, Spencer, WV 25276",,08:30 AM-04:00 PM,,ho23129997,false,true,,,,poll84584552
+"120 Ballengee St., Hinton, WV 25951",,08:30 AM-04:30 PM,,ho60120898,false,true,,,,poll97679983
+"214 W. Main Street, Grafton, WV 26354",,08:30 AM-04:30 PM,,ho13939223,false,true,,,,poll81913813
+"52 Trap Springs Rd, Grafton, WV 26354",,08:30 AM-04:30 PM,,ho99209773,false,true,,,,poll44794557
+"211 First Street, Parsons, WV 26287",Ste. 4,08:00 AM-04:00 PM,,ho71178466,false,true,,,,poll44404323
+"121 Main Street, Middlebourne, WV 26149",,08:00 AM-04:00 PM,,ho93360532,false,true,,,,poll28528116
+"40 W. Main St., Buckhannon, WV 26201",,08:00 AM-04:30 PM,,ho21090655,false,true,,,,poll91055110
+"700 Hendricks Street, Wayne, WV 25570",,08:00 AM-04:00 PM,,ho12998187,false,true,,,,poll62657095
+"2 Court Square, Webster Springs, WV 26288",,08:30 AM-04:00 PM,,ho40015108,false,true,,,,poll20901272
+"200 Main Street, New Martinsville, WV 26155",,09:00 AM-04:30 PM,,ho23027520,false,true,,,,poll70753510
+"1 Court Square, Elizabeth, WV 26143",,08:00 AM-04:00 PM,,ho41107283,false,true,,,,poll87575784
+"315 Market Street, Parkersburg, WV 26101",,08:30 AM-04:30 PM,,ho21867812,false,true,,,,poll13443357
+"100 W. 5th Street, Williamstown, WV 26187",,08:30 AM-04:30 PM,,ho92162868,false,true,,,,poll51720431
+"609 29th Street, Vienna, WV 26105",,08:30 AM-04:30 PM,,ho49620059,false,true,,,,poll24733732
+"1695 Elizabeth Pike, Mineral Wells, WV 26150",,08:30 AM-04:30 PM,,ho76768600,false,true,,,,poll31820367
+"1340 Harris Highway, Parkersburg, WV 26101",,08:30 AM-04:30 PM,,ho28895945,false,true,,,,poll7719355
+"24 Main Avenue, Pineville, WV 24874",,08:00 AM-04:00 PM,,ho29205693,false,true,,,,poll29978300
