@@ -288,15 +288,6 @@ class LocalityTxt(object):
 
 if __name__ == '__main__':
 
-#    state_file = 'texas_early_voting_info_clean.csv'
-
-#    colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name', 'address1',
-#                'address2', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date']
-
-#    usecols = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name', 'address1',
-#                'address2', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date']
-
-
     intermediate_doc = 'intermediate_doc.csv'
 
     colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name', 'address1',
@@ -316,4 +307,3 @@ if __name__ == '__main__':
 
     lt = LocalityTxt(early_voting_df, config.state)
     lt.write_locality_txt()
-    #lt.export_for_precinct()
