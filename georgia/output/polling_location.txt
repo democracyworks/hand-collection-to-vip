@@ -247,3 +247,4 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "5040 Highway 53, Brasleton, GA 30517",,07:00 AM - 07:00 PM,,ho85897017,false,true,,,,poll14786065
 "100 N. Main St., Hinesville, GA 31313",,08:00 AM - 05:00 PM,,ho18016167,false,true,,,,poll87149796
 "101 Civic Center Dr, Thomaston, GA 30286",,08:30 AM - 04:30 PM,,ho75060974,false,true,,,,poll15448628
+"312 Nichols St., Blackshear, GA 31516",,09:00 AM - 05:00 PM,,ho97870485,false,true,,,,poll25121120
