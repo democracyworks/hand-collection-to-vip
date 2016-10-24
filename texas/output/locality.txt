@@ -12,7 +12,7 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:tx/county:bastrop,bastrop_cou0011,poll14426096 poll54654025 poll95900780 poll71355869,st48,other,,loc0011
 ,ocd-id,,ocd-division/country:us/state:tx/county:baylor,baylor_cou0012,poll51057001,st48,other,,loc0012
 ,ocd-id,,ocd-division/country:us/state:tx/county:bee,bee_cou0013,poll1235164 poll87188175,st48,other,,loc0013
-,ocd-id,,ocd-division/country:us/state:tx/county:bell,bell_cou0014,poll1859629 poll97964093 poll18247245 poll87899727 poll93934906 poll62008946,st48,other,,loc0014
+,ocd-id,,ocd-division/country:us/state:tx/county:bell,bell_cou0014,poll63870181 poll97964093 poll18247245 poll87899727 poll93934906 poll62008946,st48,other,,loc0014
 ,ocd-id,,ocd-division/country:us/state:tx/county:bexar,bexar_cou0015,poll59313813 poll33052293 poll51762624 poll51605346 poll95694516 poll21053840 poll35168153 poll17118434 poll65384336 poll6147857 poll78460235 poll12513374 poll87040538 poll65525053 poll65090364 poll42916076 poll86924345 poll90941216 poll38865423 poll88132917 poll57355676 poll65495211 poll79149239 poll6422113 poll93727780 poll62775518 poll75468273 poll48642823 poll62595925 poll90466460 poll45803968 poll94097266 poll65569723 poll36593200 poll55229482 poll215948 poll77865434 poll36635414 poll85808989 poll29594344 poll13670549 poll27095545 poll41856660,st48,other,,loc0015
 ,ocd-id,,ocd-division/country:us/state:tx/county:blanco,blanco_cou0016,poll74275812 poll58111497,st48,other,,loc0016
 ,ocd-id,,ocd-division/country:us/state:tx/county:borden,borden_cou0017,poll87336988,st48,other,,loc0017

@@ -14,7 +14,7 @@ mountain_utc_offset_7 = '-07:00'
 
 early_voting = 'true'
 
-state_file = 'Texas--CURRENT 10-23.csv'
+state_file = 'Texas--CURRENT 10-24.csv'
 
 input = '/home/acg/democracyworks/hand-collection-to-vip/texas/input/'
 #input = '/Users/danielgilberg/Development/hand-collection-to-vip/texas/input/'

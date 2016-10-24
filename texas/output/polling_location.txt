@@ -183,7 +183,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "301 Priest Drive, Killeen, TX, 76541",,08:00 AM-05:00 PM,,ho69188983,false,true,,,,poll93934906
 "2201 E. Veterans Memorial Blvd, Temple, TX, 76501",,08:00 AM-05:00 PM,,ho84702478,false,true,,,,poll87899727
 "205 East Central Ave, Salado, TX, 76501",,08:00 AM-05:00 PM,,ho68748017,false,true,,,,poll62008946
-"601 North Main, Harker Heights, TX, 76559",,08:00 AM-05:00 PM,,ho81705812,false,true,,,,poll1859629
+"601 North Main, Salado, TX, 76571",,08:00 AM-05:00 PM,,ho10247686,false,true,,,,poll63870181
 "307 Millers Crossing, Harker Heights, TX, 76548",,08:00 AM-05:00 PM,,ho92377002,false,true,,,,poll97964093
 "511 East Adams, Brownwood, TX, 76801",,08:00 AM-05:00 PM,,ho70937949,false,true,,,,poll67013638
 "414 Denver Ave# 201, Dalhart, TX, 79022",,08:30 AM-05:00 PM,,ho75703700,false,true,,,,poll48889851
