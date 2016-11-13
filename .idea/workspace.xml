@@ -2,12 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9515895-1d90-4fb4-8d64-9b170172ddcf" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/maine_pp/output/merge_test.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/georgia/config.py" afterPath="$PROJECT_DIR$/georgia/config.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/georgia/ga_polling_location.py" afterPath="$PROJECT_DIR$/georgia/ga_polling_location.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/georgia/input/georgia_early_voting_info.csv" afterPath="$PROJECT_DIR$/georgia/input/georgia_early_voting_info.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/georgia/output/data/schedule.txt" afterPath="$PROJECT_DIR$/georgia/output/data/schedule.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/georgia/output/data/state.txt" afterPath="$PROJECT_DIR$/georgia/output/data/state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/georgia/output/intermediate_doc.csv" afterPath="$PROJECT_DIR$/georgia/output/intermediate_doc.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/georgia/output/locality.csv" afterPath="$PROJECT_DIR$/georgia/output/locality.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/georgia/output/polling_location.csv" afterPath="$PROJECT_DIR$/georgia/output/polling_location.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/georgia/output/polling_location.txt" afterPath="$PROJECT_DIR$/georgia/output/polling_location.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/georgia/output/schedule.csv" afterPath="$PROJECT_DIR$/georgia/output/schedule.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/georgia/output/schedule.txt" afterPath="$PROJECT_DIR$/georgia/output/schedule.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/georgia/output/state.txt" afterPath="$PROJECT_DIR$/georgia/output/state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kansas/output/polling_Location.csv" afterPath="$PROJECT_DIR$/kansas/output/polling_Location.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maine_pp/output/for_street_seg.txt" afterPath="$PROJECT_DIR$/maine_pp/output/for_street_seg.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maine_pp/output/merge_check_for_precinct.txt" afterPath="$PROJECT_DIR$/maine_pp/output/merge_check_for_precinct.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/texas/output/data/locality.txt" afterPath="$PROJECT_DIR$/texas/output/data/locality.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/texas/output/data/polling_location.txt" afterPath="$PROJECT_DIR$/texas/output/data/polling_location.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/texas/output/data/schedule.txt" afterPath="$PROJECT_DIR$/texas/output/data/schedule.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/texas/output/data/source.txt" afterPath="$PROJECT_DIR$/texas/output/data/source.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/texas/output/data/state.txt" afterPath="$PROJECT_DIR$/texas/output/data/state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/texas/output/intermediate_doc.csv" afterPath="$PROJECT_DIR$/texas/output/intermediate_doc.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/texas/output/polling_location.csv" afterPath="$PROJECT_DIR$/texas/output/polling_location.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/texas/output/polling_location.txt" afterPath="$PROJECT_DIR$/texas/output/polling_location.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/texas/output/schedule.csv" afterPath="$PROJECT_DIR$/texas/output/schedule.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/texas/output/schedule.txt" afterPath="$PROJECT_DIR$/texas/output/schedule.txt" />
     </list>
     <ignored path="hand-collection-to-vip.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,55 +44,7 @@
     <favorites_list name="hand-collection-to-vip" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="merge_check_for_precinct.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maine_pp/output/merge_check_for_precinct.txt">
-          <provider selected="true" editor-type-id="LargeFileEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="locality_for_precinct.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maine_pp/output/locality_for_precinct.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="polling_location.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maine_pp/output/polling_location.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="for_street_seg.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/maine_pp/output/for_street_seg.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,11 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/kansas/scripts/kansas_locality.py" />
-        <option value="$PROJECT_DIR$/kansas/output/locality.txt" />
-        <option value="$PROJECT_DIR$/nueces_county_pp/config.py" />
-        <option value="$PROJECT_DIR$/nueces_county_pp/nueces_polling_location.py" />
-        <option value="$PROJECT_DIR$/nueces_county_pp/nueces_locality.py" />
         <option value="$PROJECT_DIR$/nueces_county_pp/nueces_schedule.py" />
         <option value="$PROJECT_DIR$/nueces_county_pp/output/source.txt" />
         <option value="$PROJECT_DIR$/nueces_county_pp/output/election.txt" />
@@ -111,21 +76,10 @@
         <option value="$PROJECT_DIR$/wyoming/scripts/wyoming_schedule.py" />
         <option value="$PROJECT_DIR$/wisconsin/wi_schedule.py" />
         <option value="$PROJECT_DIR$/wisconsin/output/schedule.txt" />
-        <option value="$PROJECT_DIR$/georgia/output/data/locality.txt" />
-        <option value="$PROJECT_DIR$/georgia/output/data/polling_location.txt" />
-        <option value="$PROJECT_DIR$/georgia/output/data/schedule.txt" />
-        <option value="$PROJECT_DIR$/georgia/output/data/state.txt" />
-        <option value="$PROJECT_DIR$/georgia/output/polling_location.txt" />
-        <option value="$PROJECT_DIR$/georgia/output/schedule.txt" />
-        <option value="$PROJECT_DIR$/georgia/output/locality.txt" />
-        <option value="$PROJECT_DIR$/georgia/ga_polling_location.py" />
         <option value="$PROJECT_DIR$/georgia/config.py" />
-        <option value="$PROJECT_DIR$/texas/output/locality.txt" />
         <option value="$PROJECT_DIR$/texas/output/polling_location.txt" />
         <option value="$PROJECT_DIR$/texas/output/schedule.txt" />
         <option value="$PROJECT_DIR$/texas/output/polling_location.csv" />
-        <option value="$PROJECT_DIR$/texas/output/state.txt" />
-        <option value="$PROJECT_DIR$/texas/output/locality.csv" />
         <option value="$PROJECT_DIR$/texas/output/data/polling_location.txt" />
         <option value="$PROJECT_DIR$/texas/output/data/schedule.txt" />
         <option value="$PROJECT_DIR$/texas/output/data/locality.txt" />
@@ -133,6 +87,22 @@
         <option value="$PROJECT_DIR$/texas/output/schedule.csv" />
         <option value="$PROJECT_DIR$/texas/output/intermediate_doc.csv" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/texas/output/state.txt" />
+        <option value="$PROJECT_DIR$/texas/output/locality.txt" />
+        <option value="$PROJECT_DIR$/texas/output/locality.csv" />
+        <option value="$PROJECT_DIR$/texas/output/data/source.txt" />
+        <option value="$PROJECT_DIR$/georgia/ga_polling_location.py" />
+        <option value="$PROJECT_DIR$/georgia/output/schedule.txt" />
+        <option value="$PROJECT_DIR$/georgia/output/state.txt" />
+        <option value="$PROJECT_DIR$/georgia/output/polling_location.txt" />
+        <option value="$PROJECT_DIR$/georgia/output/polling_location.csv" />
+        <option value="$PROJECT_DIR$/georgia/output/locality.txt" />
+        <option value="$PROJECT_DIR$/georgia/output/locality.csv" />
+        <option value="$PROJECT_DIR$/georgia/output/data/state.txt" />
+        <option value="$PROJECT_DIR$/georgia/output/data/schedule.txt" />
+        <option value="$PROJECT_DIR$/georgia/output/data/polling_location.txt" />
+        <option value="$PROJECT_DIR$/georgia/output/data/locality.txt" />
+        <option value="$PROJECT_DIR$/georgia/output/intermediate_doc.csv" />
       </list>
     </option>
   </component>
@@ -479,7 +449,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="maine_pp" />
+              <option name="myItemId" value="georgia" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -493,11 +463,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="maine_pp" />
+              <option name="myItemId" value="georgia" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="output" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hand-collection-to-vip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="georgia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="output" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1011,48 +1003,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/new_mexico/output/locality.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new_mexico/output/schedule.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ohio/output/schedule.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oklahoma/output/data/schedule.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2017">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/south_dakota/output/schedule.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utah/output/schedule.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/washington/output/schedule.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1177,72 +1127,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/georgia/output/data/locality.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/georgia/output/data/polling_location.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/georgia/output/data/schedule.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="442" column="73" selection-start-line="442" selection-start-column="73" selection-end-line="442" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/georgia/output/data/state.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/georgia/output/polling_location.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="293" column="124" selection-start-line="293" selection-start-column="124" selection-end-line="293" selection-end-column="124" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/georgia/output/schedule.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="442" column="0" selection-start-line="442" selection-start-column="0" selection-end-line="442" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/georgia/output/locality.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/georgia/ga_polling_location.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3201">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/georgia/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1268,22 +1152,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/texas/output/data/schedule.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/texas/output/locality.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/texas/output/locality.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1339,52 +1207,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/texas/output/state.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/texas/output/intermediate_doc.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maine_pp/output/merge_check_for_precinct.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maine_pp/output/locality_for_precinct.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maine_pp/output/merge_test.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maine_pp/output/polling_location.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1399,7 +1225,183 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/maine_pp/output/merge_test.txt">
+      <provider editor-type-id="LargeFileEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/maine_pp/output/for_street_seg.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maine_pp/output/polling_location.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texas/output/data/source.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texas/output/locality.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texas/output/state.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maine_pp/output/locality_for_precinct.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maine_pp/output/merge_check_for_precinct.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texas/output/locality.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/georgia/ga_polling_location.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/georgia/output/source.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/georgia/output/schedule.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/georgia/output/locality.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/georgia/output/polling_location.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/georgia/output/polling_location.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/georgia/output/state.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/georgia/output/locality.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/georgia/output/data/state.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/georgia/output/data/schedule.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/georgia/output/data/polling_location.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/georgia/output/data/locality.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/georgia/output/intermediate_doc.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
