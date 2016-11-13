@@ -253,12 +253,13 @@ if __name__ == '__main__':
                 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment',
                 'is_or_by_appointment', 'appointment_phone', 'is_subject_to_change']
 
-    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
     #print early_voting_df
 
     pl = PollingLocationTxt(early_voting_df, config.early_voting)
 
-    pl.write_polling_location_txt()
+
     pl.export_for_schedule_and_locality()
+    pl.write_polling_location_txt()
 

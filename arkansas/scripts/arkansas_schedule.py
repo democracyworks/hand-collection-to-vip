@@ -41,7 +41,7 @@ class ScheduleTxt(object):
 
 
     def get_sch_time(self, hours):
-        hours_arr = hours.split(" - ")
+        hours_arr = hours.split("-")
         hours = hours_arr[0].strip() + "-" + hours_arr[1].strip()
         return hours
 
@@ -155,7 +155,7 @@ class ScheduleTxt(object):
         # Drop base_df columns.
         sch.drop(['spr', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'name', 'adr_1', 'adr_2', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'notes', 'index','address_line', 'directions',
-                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'source_id', 'dirs'], inplace=True,
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'source_id'], inplace=True,
                  axis=1)
 
         # hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id,
@@ -194,12 +194,12 @@ if __name__ == '__main__':
     early_voting_file = config.output + file
 
 
-    colnames = ['spr', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'name', 'adr_1', 'adr_2', 'dirs', 'city', 'state', 'zip',
+    colnames = ['spr', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'name', 'adr_1', 'adr_2', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'notes', 'index','address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'source_id']
     print len(colnames)
 
-    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
 
     early_voting_df['index'] = early_voting_df.index + 1
 

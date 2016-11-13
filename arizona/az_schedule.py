@@ -81,7 +81,7 @@ class ScheduleTxt(object):
             #print index, start_date
 
         elif len(start_date) == 7:
-            sd = tuple(start_date.split('-'))
+            sd = tuple(start_date.split('/'))
             #print sd
             #date_tup = tuple(sd.split('-'))
             #print date_tup
@@ -99,7 +99,7 @@ class ScheduleTxt(object):
 
         else:
             print index, start_date
-            sd = tuple(start_date.split('-'))
+            sd = tuple(start_date.split('/'))
             m = sd[0]
             d = sd[1]
             if len(d) == 1:
@@ -121,7 +121,7 @@ class ScheduleTxt(object):
 
             #print end_date
 
-            sd = tuple(end_date.split('-'))
+            sd = tuple(end_date.split('/'))
             m = str(sd[0])
             d = str(sd[1])
             if len(d) == 1:
@@ -134,7 +134,7 @@ class ScheduleTxt(object):
             return '2016-' + m + '-' + d
 
         elif len(end_date) == 7:
-            sd = tuple(end_date.split('-'))
+            sd = tuple(end_date.split('/'))
             #print sd
             #date_tup = tuple(sd.split('-'))
             #print date_tup
@@ -152,12 +152,12 @@ class ScheduleTxt(object):
 
         elif len(end_date) == 8:
             print index, end_date
-            end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
+            end_date = datetime.datetime.strptime(end_date, '%m/%d/%y').strftime('%Y-%m-%d')
             return end_date
 
 
         elif len(end_date) == 9:
-            sd = tuple(end_date.split('-'))
+            sd = tuple(end_date.split('/'))
             m = sd[0]
             d = sd[1]
             if len(d) == 1:
@@ -292,8 +292,8 @@ if __name__ == '__main__':
     intermediate_doc = 'intermediate_doc.csv'
 
 
-    colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state', 'zip_code', 'start_time',
-     'end_time', 'start_date', 'end_date', 'index', 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id',
+    colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'loc_name', 'street', 'dirs', 'city', 'state', 'zip_code',
+                'start_time', 'end_time', 'start_date', 'end_date', 'notes', 'index', 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id',
      'is_drop_box', 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'id']
 
     early_voting_df = pd.read_csv(config.output + intermediate_doc, names=colnames, encoding='ISO-8859-1', skiprows=1, delimiter=',')

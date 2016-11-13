@@ -18,10 +18,10 @@ state_lower_abbreviation = "ks"
 state_upper = "Kansas"
 state = 'kansas'
 
-#input_folder = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/input/"
-input_folder = '/home/acg/democracyworks/hand-collection-to-vip/kansas/input/'
+input_folder = "/Users/danielgilberg/Development/hand-collection-to-vip/kansas/input/"
+#input_folder = '/home/acg/democracyworks/hand-collection-to-vip/kansas/input/'
 
-output = '/home/acg/democracyworks/hand-collection-to-vip/kansas/output/'
+output = '/Users/danielgilberg/Development/hand-collection-to-vip/kansas/output/'
 
 
 fips_dict = {'wyoming': '56', 'colorado': '08', 'washington': '53', 'hawaii': '15', 'tennessee': '47', 'iowa': '19',

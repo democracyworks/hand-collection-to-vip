@@ -3,3 +3,6 @@
 *.pyc
 /dev_scripts/output/
 /dev_scripts/data/
+
+/maine_pp/*
+maine_pp/*

@@ -21,7 +21,7 @@ def pl():
     # state_feed_file = 'state_feed_info.csv'
     early_voting_file = 'locality.csv'
 
-    early_voting_path = "/home/acg/democracyworks/hand-collection-to-vip/minnesota/output/" + early_voting_file
+    early_voting_path = "/Users/danielgilberg/Development/hand-collection-to-vip/minnesota/output" + early_voting_file
     colnames = ['source_election_administration_id', 'external_identifier_type', 'external_identifier_othertype',
                 'external_identifier_value', 'name', 'source_polling_location_ids', 'state_id', 'type',
                 'other_type', 'source_id']
@@ -76,10 +76,11 @@ class StateTxt(object):
 
     def polling_location_ids(self):
         """#"""
-        p = pl()
-        p = [i.split(' ') for i in p]
-        p =[item for sublist in p for item in sublist]
-        return ' '.join(p)
+        # p = pl()
+        # p = [i.split(' ') for i in p]
+        # p =[item for sublist in p for item in sublist]
+        # return ' '.join(p)
+        return ''
 
     def create_state_id(self):
         """Creates state_id from fips code."""

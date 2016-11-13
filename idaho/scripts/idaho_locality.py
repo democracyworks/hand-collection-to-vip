@@ -251,9 +251,9 @@ if __name__ == '__main__':
     early_voting_file = config.output + state_file
 
     colnames = ['office_name', 'office_title', 'ocd_division','description','homepage', 'phone',
-                'email', 'name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time',
+                'email', 'loc_name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time',
                 'end_time', 'start_date', 'end_date', 'appointment_one', 'appointment_two', 'appointment_three',
-                'subject_to_change', 'index', 'address_line', 'directions',
+                'subject_to_change', 'index', 'name', 'address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id']
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
 

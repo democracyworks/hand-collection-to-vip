@@ -15,27 +15,8 @@ class LocalityTxt(object):
         self.state = state
 
     def create_election_administration_id(self, index):
-        """Creates election_administration_ids by concatenating a prefix with an 'index_str' based on the Dataframe's
-        row index. '0s' are added, if necesary, to maintain a consistent id length. As currently designed the method
-        works up to index 9,999"""
+        """#"""
         return ''
-        # prefix = 'ea'
-        #
-        # if index <= 9:
-        #     index_str = '000' + str(index)
-        #     return prefix + index_str
-        #
-        # elif index in range(10,100):
-        #     index_str = '00' + str(index)
-        #     return prefix + index_str
-        #
-        # elif index >= 100:
-        #     index_str = '0' + str(index)
-        #     return prefix + index_str
-        #
-        # else:
-        #     index_str = str(index)
-        #     return prefix + index_str
 
     def get_external_identifier_type(self):
         """#"""
@@ -215,7 +196,7 @@ if __name__ == '__main__':
     early_voting_file = config.output + state_file
 
     colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'dirs', 'city', 'state', 'zip_code',
-                'start_time', 'end_time', 'start_date', 'end_date', 'index', 'address_line', 'directions',
+                'start_time', 'end_time', 'start_date', 'end_date', 'index', 'name', 'address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'poll_id']
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
 

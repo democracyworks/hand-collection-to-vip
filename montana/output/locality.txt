@@ -1,6 +1,6 @@
 election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
 ,ocd-id,,ocd-division/country:us/state:mt/county:beaverhead,beaverhead_county0005,poll77635771,st30,other,,loc0001
-,ocd-id,,ocd-division/country:us/state:mt/county:big_horn,big_horn_county0020,poll58894529 poll66169550 poll84282476,st30,other,,loc0002
+,ocd-id,,ocd-division/country:us/state:mt/county:big_horn,big_horn_county0020,poll16863642 poll84282476 poll52208087,st30,other,,loc0002
 ,ocd-id,,ocd-division/country:us/state:mt/county:blaine,blaine_county0027,poll29884351 poll66041645 poll87906921 poll8501250,st30,other,,loc0003
 ,ocd-id,,ocd-division/country:us/state:mt/county:broadwater,broadwater_county0038,poll92662463,st30,other,,loc0004
 ,ocd-id,,ocd-division/country:us/state:mt/county:carbon,carbon_county0041,poll23361517,st30,other,,loc0005
@@ -33,7 +33,7 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:mt/county:missoula,missoula_county0201,poll11402894,st30,other,,loc0032
 ,ocd-id,,ocd-division/country:us/state:mt/county:musselshell,musselshell_county0204,poll19907548,st30,other,,loc0033
 ,ocd-id,,ocd-division/country:us/state:mt/county:park,park_county0208,poll73987952,st30,other,,loc0034
-,ocd-id,,ocd-division/country:us/state:mt/county:petroleum,petroleum_county0213,poll62167098,st30,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:mt/county:petroleum,petroleum_county0213,poll18947377,st30,other,,loc0035
 ,ocd-id,,ocd-division/country:us/state:mt/county:phillips,phillips_county0225,poll61028000,st30,other,,loc0036
 ,ocd-id,,ocd-division/country:us/state:mt/county:pondera,pondera_county0228,poll76257047,st30,other,,loc0037
 ,ocd-id,,ocd-division/country:us/state:mt/county:powder_river,powder_river_county0239,poll38111014,st30,other,,loc0038

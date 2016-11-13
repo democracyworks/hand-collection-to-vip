@@ -17,15 +17,21 @@ class PollingLocationTxt(object):
     # (row['index'], row['address_1'], row['address_2'],
     #  row['city'], row['state'], row['zip']), axis = 1)
 
-    def get_address_line(self, index, street, adr_2, city, zip_code):
+    def get_location_name(self, name):
+        if not pd.isnull(name):
+            string = ''
+            string += name
+            string = ''.join([i if ord(i) < 128 else ' ' for i in string])
+            return string.title()
+        else:
+            return ''
+
+    def get_address_line(self, index, street, city, zip_code):
         # required: print message for exception
         # TODO: concatenate street, city, state and zip
-        adr = ''
-        if not pd.isnull(street):
-            adr += street
 
-        if not pd.isnull(adr_2):
-            adr += ", " + adr_2
+        if not pd.isnull(street):
+            adr = street
 
         if not pd.isnull(city):
             city = city
@@ -38,7 +44,7 @@ class PollingLocationTxt(object):
 
         else:
             zip = ''
-
+        print adr, city, zip
         line =  adr.strip() + ", " + city + ", AR " + str(zip)
         print line
         return line
@@ -102,7 +108,7 @@ class PollingLocationTxt(object):
     def create_hours_open_id(self, index, street, adr_2, city, zip_code):
         """#"""
         # TODO: this is the correct id/index code, correct everywhere
-        address_line = self.get_address_line(index, street, adr_2, city, zip_code)
+        address_line = self.get_address_line(index, street, city, zip_code)
         # print address_line
 
         address_line = int(hashlib.sha1(address_line).hexdigest(), 16) % (10 ** 8)
@@ -137,7 +143,7 @@ class PollingLocationTxt(object):
         # concatenate county name, or part of it (first 3/4 letters) with index
         # add leading zeros to maintain consistent id length
         if not pd.isnull(ocd_division):
-            address_line = self.get_address_line(index, street, adr_2, city, zip_code)
+            address_line = self.get_address_line(index, street, city, zip_code)
             id = int(hashlib.sha1(ocd_division + address_line).hexdigest(), 16) % (10 ** 8)
             id = 'poll' + str(id)
             return id
@@ -147,12 +153,17 @@ class PollingLocationTxt(object):
         New columns that match the 'polling_location.txt' template are inserted into the DataFrame, apply() is
         used to run methods that generate the values for each row of the new columns.
         """
+
+        self.base_df['name'] = self.base_df.apply(
+            lambda row: self.get_location_name(row['loc_name']), axis=1)
+
+
         self.base_df['address_line'] = self.base_df.apply(
-            lambda row: self.get_address_line(row['index'],  row['adr_1'], row['adr_2'],
+            lambda row: self.get_address_line(row['index'],  row['adr_1'],
                                               row['city'], row['zip']), axis = 1)
 
         self.base_df['directions'] = self.base_df.apply(
-            lambda row: self.get_directions(row["dirs"]), axis=1)
+            lambda row: self.get_directions(row["adr_2"]), axis=1)
 
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)
@@ -229,8 +240,8 @@ class PollingLocationTxt(object):
 
         # Drop base_df columns.
 
-        plt.drop(['spr', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'name', 'adr_1', 'adr_2', 'dirs', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'notes', 'index', 'dirs'], inplace=True, axis=1)
+        plt.drop(['spr', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'loc_name', 'adr_1', 'adr_2', 'city', 'state', 'zip',
+                'start_time', 'end_time', 'start_date', 'end_date', 'notes', 'index'], inplace=True, axis=1)
 
 
         plt = self.dedupe(plt)
@@ -253,7 +264,7 @@ if __name__ == '__main__':
     early_voting_file = config.data_folder + state_file
 
 
-    colnames = ['spr', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'name', 'adr_1', 'adr_2', 'dirs', 'city', 'state', 'zip',
+    colnames = ['spr', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'loc_name', 'adr_1', 'adr_2', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'notes']
     print len(colnames)
 

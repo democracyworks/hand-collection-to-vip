@@ -36,7 +36,8 @@ class PollingLocationTxt(object):
         else:
             zip_code = ''
 
-        return street + ", " + city + ", ME " + zip_code
+        line= street.strip() + ", " + city.strip() + ", ME " + zip_code
+        return line.strip()
 
     def get_directions(self):
         """#"""
@@ -55,13 +56,17 @@ class PollingLocationTxt(object):
 
     def get_hours(self, index, start_time, end_time):
         #d = datetime.strptime("10:30", "%H:%M")
+        if not pd.isnull(start_time) and not pd.isnull(end_time):
+            start_time = start_time.split("-")[0].strip()
+            end_time = end_time.split("-")[0].strip()
 
-        start_time = datetime.strptime(start_time, "%H:%M:%S")
-        start_time = start_time.strftime("%I:%M %p")
-        end_time = datetime.strptime(end_time, "%H:%M:%S")
-        end_time = end_time.strftime("%I:%M %p")
-
-        return start_time + "-" + end_time
+            start_time = datetime.strptime(start_time, "%H:%M:%S")
+            start_time = start_time.strftime("%I:%M %p")
+            end_time = datetime.strptime(end_time, "%H:%M:%S")
+            end_time = end_time.strftime("%I:%M %p")
+            return start_time + "-" + end_time
+        else:
+            return ''
 
 
 
@@ -161,7 +166,7 @@ class PollingLocationTxt(object):
 
     def dedupe(self, dupe):
         """#"""
-        return dupe.drop_duplicates(subset=['address_line'])
+        return dupe.drop_duplicates(subset=['address_line', 'id'])
 
     def dedupe_for_sch(self, dupe):
         return dupe.drop_duplicates(subset=['address_line', 'hours', 'start_date'])
@@ -203,8 +208,8 @@ class PollingLocationTxt(object):
 
         # Drop base_df columns.
         plt.drop(['office-name', 'official-title', 'types', 'ocd-division', 'description', 'homepage', 'phone',
-                'email', 'street', 'city', 'state', 'zip', 'owner', 'contacted', 'start_time', 'end_time', 'start_date',
-                'end_date', 'notes', 'index'], inplace=True, axis=1)
+                'email', 'street', 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date',
+                'end_date', 'notes', 'index', 'appt'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
         print plt
@@ -218,17 +223,17 @@ if __name__ == '__main__':
 
     early_voting_true = "true"  # True or False
     #drop_box_true =
-    state_file='maine_early_voting_info.csv'
+    state_file='maine_early_voting_info2.csv'
 
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
     early_voting_file = config.data_folder + state_file
 
     colnames = ['office-name', 'official-title', 'types', 'ocd-division', 'description', 'homepage', 'phone',
-                'email', 'street', 'city', 'state', 'zip', 'owner', 'contacted', 'start_time', 'end_time', 'start_date',
-                'end_date', 'notes']
+                'email', 'street', 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date',
+                'end_date', 'appt', 'notes']
 
 
-    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1, dtype={'zip': str})
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1, dtype={'zip': str})
     early_voting_df['index'] = early_voting_df.index + 1
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)

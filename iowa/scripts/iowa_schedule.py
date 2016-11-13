@@ -42,8 +42,17 @@ class ScheduleTxt(object):
 
     def get_sch_time(self, hours):
         hours_arr = hours.split(" - ")
-        hours = hours_arr[0] + "-" + hours_arr[1]
-        return hours.strip()
+        print hours_arr
+        if len(hours_arr[0].strip()) <8:
+
+            hours_arr[0] = "0" + hours_arr[0].strip()
+            print hours_arr
+
+        if len(hours_arr) > 1:
+            hours = hours_arr[0] + "-" + hours_arr[1]
+            return hours.strip()
+        else:
+            return hours_arr[0] + "-05:00"
         # arr = hours.split("-")
         # offset = self.utc_offset(county)
         # print arr[0] + ";00" + offset

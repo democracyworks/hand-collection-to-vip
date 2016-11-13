@@ -7,7 +7,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "25 Market St Ste 1, Aberdeen, SD 57401",,08:00 AM-05:00 PM,,ho28316302,false,true,,,,poll96423012
 "300 South Courtland 3rd Floor, Chamberlain, SD 57325",,08:00 AM-05:00 PM,,ho19480704,false,true,,,,poll80445745
 "839 5th Ave., Belle Fourche, SD 57717",,08:00 AM-05:00 PM,,ho64861556,false,true,,,,poll40066420
-"111 2nd Street NE, Mound City, SD 57646",,08:00 AM-04:30 PM,,ho45665851,false,true,,,,poll75983125
+"111 2nd Street NE, Mound City, SD 57646",,08:00 AM-12:00 PM,,ho45665851,false,true,,,,poll75983125
 "400 E Main St, Lake Andes, SD 57356",,08:00 AM-04:30 PM,,ho66320576,false,true,,,,poll6134743
 "200 Commercial Street 2nd Floor, Clark, SD 57225",,01:00 PM-05:00 PM,,ho98024055,false,true,,,,poll38723438
 "211 W. Main St Ste 200, Vermillion, SD 57069",,08:00 AM-05:00 PM,,ho32333472,false,true,,,,poll79287579
@@ -26,7 +26,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "221 East 8th Street, Burke, SD 57523",,01:00 PM-05:00 PM,,ho29592347,false,true,,,,poll50645687
 "140 South Howard, Philip, SD 57567",,01:00 PM-05:00 PM,,ho58438175,false,true,,,,poll67432999
 "300 4th St 2nd Floor, Hayti, SD 57241",,08:00 AM-05:00 PM,,ho60827592,false,true,,,,poll35363572
-"415 W. 1st Ave., Miller, SD 57362",,12:30 PM-04:30 PM,,ho6548902,false,true,,,,poll83349109
+"415 W. 1st Ave., Miller, SD 57362",,12:30 PM-05:00 PM,,ho6548902,false,true,,,,poll83349109
 "720 5th St., Alexandria, SD 57311",,01:00 PM-05:00 PM,,ho18700014,false,true,,,,poll31001773
 "410 Ramsland, Buffalo, SD 57720",,01:00 PM-05:00 PM,,ho30094753,false,true,,,,poll97690122
 "104 E Capitol Ave, Pierre, SD 57052",,08:00 AM-05:00 PM,,ho4139403,false,true,,,,poll67072662
@@ -47,8 +47,8 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "401 N. Main St. 2nd Floor, Howard, SD 57349",,01:00 PM-05:00 PM,,ho66669463,false,true,,,,poll35215585
 "415 N. Dakota Avenue, Sioux Falls, SD 57104",,08:00 AM-05:00 PM,,ho74992950,false,true,,,,poll90215382
 "101 E Pipestone Ave Ste D, Flandreau, SD 57028",,08:00 AM-05:00 PM,,ho32569388,false,true,,,,poll86536761
-"1 Positive Place, Pine Ridge, SD 57770",,08:00 AM-05:00 PM,,ho46630229,false,true,,,,poll23876517
-"906 N. River St., Hot Springs, SD 57747",,08:00 AM-05:00 PM,,ho47501868,false,true,,,,poll51147937
+"1 Positive Place, Pine Ridge, SD 57770",,08:00 AM-05:00 PM,,ho46630229,false,true,,,,poll57348404
+"906 N. River St., Hot Springs, SD 57747",,08:00 AM-05:00 PM,,ho47501868,false,true,,,,poll88326917
 "130 Kansas City St Ste 230, Rapid City, SD 57701",,08:00 AM-05:00 PM,,ho57546226,false,true,,,,poll15103554
 "100 East Main Street, Bison, SD 57620",,07:30 AM-12:00 PM,,ho72255578,false,true,,,,poll66517497
 "201 S Exene St, Gettysburg, SD 57442",,07:30 AM-12:00 PM,,ho35428799,false,true,,,,poll69062356

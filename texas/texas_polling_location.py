@@ -14,6 +14,14 @@ class PollingLocationTxt(object):
         self.state_abbreviation = state
         self.drop_box_true = drop_box_true
 
+    def get_location_name(self, name):
+        if not pd.isnull(name):
+            string = ''
+            string += name
+            return string.lower().title()
+        else:
+            return ''
+
 
     def get_address_line(self, index, address1, address2, city, state, zip_code):
         # required: print message for exception
@@ -21,19 +29,14 @@ class PollingLocationTxt(object):
         print index, city
 
         if not pd.isnull(address1):
-            #address = street
-            address1 = ''.join([i if ord(i) < 128 else ' ' for i in str(address1)])
-            #address1 = ' '.join(address1.split())
-            print 1, address1
-            #print type(address)
+            adr = address1
         else:
-            raise ValueError('Missing street value at row ' + str(index) + '.')
-            #address = ''
+            adr = ''
 
-        if not pd.isnull(address2):
-            address2 = ' ' + ''.join([i if ord(i) < 128 else ' ' for i in str(address2)])
-        else:
-            address2 = ''
+        # if not pd.isnull(address2):
+        #     address2 = ' ' + ''.join([i if ord(i) < 128 else ' ' for i in str(address2)])
+        # else:
+        #     address2 = ''
 
         if not pd.isnull(city):
             city_name = str(city)
@@ -56,17 +59,17 @@ class PollingLocationTxt(object):
         #print address
         #print type(address)
 
-        final_line = address1.strip() + address2.strip() + ", " + city_name.strip() + ', ' + config.state_abbreviation_upper + zip.strip()
+        final_line = adr.strip() + ", " + city_name.strip() + ', ' + config.state_abbreviation_upper + zip.strip()
         final_line = ' '.join(final_line.split())
         #print index, final_line
         return final_line
 
 
 
-    def get_directions(self):
+    def get_directions(self, dirs):
         """#"""
         # no direct relationship to any column
-        return ''
+        return dirs
 
     def get_hours(self, index, start_time, end_time):
         """Convert from 24 to 12 hour format."""
@@ -161,12 +164,15 @@ class PollingLocationTxt(object):
         used to run methods that generate the values for each row of the new columns.
         """
 
+        self.base_df['name'] = self.base_df.apply(
+            lambda row: self.get_location_name(row['location_name']), axis=1)
+
         self.base_df['address_line'] = self.base_df.apply(
             lambda row: self.get_address_line(row['index'], row['address1'], row['address2'],
                                               row['city'], row['state'], row['zip_code']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
-            lambda row: self.get_directions(), axis=1)
+            lambda row: self.get_directions(row['address2']), axis=1)
 
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)
@@ -228,7 +234,7 @@ class PollingLocationTxt(object):
 
         plt = self.build_polling_location_txt()
 
-        cols = ['address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting',
+        cols = ['name', 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting',
                 'latitude', 'longitude', 'latlng_source', 'id']
 
         plt = plt.reindex(columns=cols)

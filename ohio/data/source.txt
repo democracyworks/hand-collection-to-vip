@@ -1,2 +1,0 @@
-date_time,description,name,organization_uri,terms_of_use_uri,vip_id,version,id
-2016-08-25T15:33:29,,Democracy Works,,,39,5.1,source01

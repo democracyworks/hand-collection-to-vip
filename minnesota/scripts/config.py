@@ -15,7 +15,7 @@ early_voting = 'true'
 
 
 
-output = '/home/acg/democracyworks/hand-collection-to-vip/minnesota/output/'
+output = '/Users/danielgilberg/Development/hand-collection-to-vip/minnesota/output/'
 
 locality_output = '/home/acg/democracyworks/hand-collection-to-vip/minnesota/output/'
 
@@ -32,3 +32,28 @@ fips_dict = {'wyoming': '56', 'colorado': '08', 'washington': '53', 'hawaii': '1
              'pennsylvania': '42', 'florida': '12', 'alaska': '02', 'kentucky': '21', 'missouri': '29',
              'nebraska': '31', 'new hampshire': '33', 'idaho': '16', 'west virginia': '54', 'south carolina': '45',
              'ohio': '39', 'alabama': '01', 'massachusetts': '25'}
+
+county_sites ={
+    "Anoka": " poll82088472",
+    "Cass": " poll47531787 poll67855797 poll29747187 poll68719174",
+    "Dakota": " poll63374282 poll7327913 poll58386470",
+    "Goodhue": " poll35176376",
+    "Hennepin": " poll77088072",
+    "McLeod": " poll56622594",
+    "Wabasha": " poll817696",
+    "Wright": " poll80347573",
+    "Ramsey": " poll94387082"
+}
+
+random_count = {
+    "anoka": 22,
+    "cass": 3,
+    "dakota": 9,
+    "goodhue": 5,
+    "hennepin": 44,
+    "mcleod": 2,
+    "st louis": 18,
+    "Wabasha": 2,
+    "Wright": 7,
+    "Ramsey": 14
+}

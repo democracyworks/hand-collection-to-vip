@@ -1,351 +1,375 @@
-address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-"Adams County Court House, 507 Vermont, Quincy, IL, 62306",,08:30 AM - 04:30 PM,,ho19788431,false,true,,,,poll83156405
-"Alexander County Clerk, 2000 Washington Avenue, Cairo, IL, 62914",,08:00 AM - 12:00 PM,,ho31248879,false,true,,,,poll94517834
-"Bond County Clerk County Office, 203 West College, Greenville, IL, 62246",,08:00 AM - 04:00 PM,,ho33415971,false,true,,,,poll77680244
-"Boone County Clerk Office, 1212 Logan Avenue, Ste 103  , Belvidere, IL, 61008",,08:30 AM - 05:00 PM,,ho94928894,false,true,,,,poll2460143
-"Brown County Court House, 200 Court Street, Room 4, Mt. Sterling, IL, 62353",,08:30 AM - 04:30 PM,,ho46763889,false,true,,,,poll7978893
-"Clerk Office in Bureau County Court House, 700 South Main Street, Room 104, Princeton, IL, 61356",,08:00 AM - 04:00 PM,,ho54022936,false,true,,,,poll65732923
-"Princeton Moose Lodge, 1339 North Euclid Ave, Princeton, IL, 61356",,08:00 AM - 04:00 PM,,ho78762374,false,true,,,,poll56479042
-"Spring Valley City Hall, 215 North Greenwood, #2, Spring Valley, IL, 61362",,09:00 AM - 03:00 PM,,ho55160040,false,true,,,,poll34502051
-"Calhoun County Clerk Office, 106 North County Road, Hardin, IL, 62047",,08:30 AM - 04:30 PM,,ho22004516,false,true,,,,poll32046900
-"Carroll County Clerk Office, 301 North Main, Mt. Carroll, IL, 61053",,08:30 AM - 04:30 PM,,ho62318708,false,true,,,,poll4733112
-"Cass County Clerk Office, 100 East Springfield Street, Virginia, IL, 62691",,08:30 AM - 04:30 PM,,ho13449920,false,true,,,,poll23212846
-"Beardstown County Clerk Office, 105 West 3rd St, Beardstown, IL, 62618",,08:00 AM - 05:00 PM,,ho4214244,false,true,,,,poll14988931
-"Christian County Clerk Office, 101 South Main, 2nd Floor, Taylorville, IL, 62568",,08:00 AM - 04:00 PM,,ho99241514,false,true,,,,poll49915645
-"Clark County Clerk's Office, 501 Archer, Marshall, IL, 62441",,08:00 AM - 04:00 PM,,ho91291441,false,true,,,,poll78914713
-"Clay County Court House, 111 Chestnut, Room 106, Louisville, IL, 62858",,08:00 AM - 04:00 PM,,ho4419030,false,true,,,,poll83495860
-"Clinton County Clerk, 850 Fairfax, Carlyle, IL, 62231",,08:00 AM - 04:30 PM,,ho27030765,false,true,,,,poll74370096
-"Coles County Clerk Office, 651 Jackson Avenue, Room 122, Charleston, IL, 61920",,08:30 AM - 04:30 PM,,ho82707645,false,true,,,,poll22709069
-"Mattoon City Clerk Office, 208 North 19th St, Mattoon, IL, 61938",,08:00 AM - 04:30 PM,,ho19894155,false,true,,,,poll80599415
-"Eastern Illinois University, 600 Lincoln Ave, Charleston, IL, 61920",,10:00 AM - 05:00 PM,,ho35469860,false,true,,,,poll21865643
-"Cook County Clerk's Office, 69 West Washington, Ste 500, Chicago, IL, 60602",,09:00 AM - 05:00 PM,,ho14820626,false,true,,,,poll953008
-"Alsip Village Hall, 4500 W. 123rd St., Alsip, IL, 60803",,09:00 AM - 05:00 PM,,ho20239147,false,true,,,,poll82422018
-"Arlington Heights Village Hall, 33 S. Arlington Heights Rd, Arlington Heights, IL, 60005",,09:00 AM - 05:00 PM,,ho64094944,false,true,,,,poll79732729
-"Barrington Hills Village Hall, 112 Algonquin Rd., Barrington Hills, IL, 60010",,09:00 AM - 05:00 PM,,ho63461920,false,true,,,,poll96972782
-"Bellwood Village Hall, 3200 Washington Blvd, Bellwood, IL, 60104",,09:00 AM - 05:00 PM,,ho8619341,false,true,,,,poll83188947
-"Berwyn City Hall, 6700 W. 26th St, Berwyn, IL, 60402",,09:00 AM - 05:00 PM,,ho51124587,false,true,,,,poll61214834
-"Brookfield Village Hall, 8820 Brookfield Ave, Brookfield, IL, 60513",,09:00 AM - 05:00 PM,,ho18728147,false,true,,,,poll89613122
-"Burbank (Prairie Trails Library District), 8449 S. Moody Ave, Burbank, IL, 60459",,09:00 AM - 05:00 PM,,ho46825439,false,true,,,,poll40894389
-"Calumet City Public Library, 660 S. Manistee Ave, Calumet City, IL, 60409",,09:00 AM - 05:00 PM,,ho70944257,false,true,,,,poll58048133
-"Calumet Township Community Center, 12633 S. Ashland Ave, Calumet Park, IL, 60827",,09:00 AM - 05:00 PM,,ho15242805,false,true,,,,poll33191638
-"Cicero Community Center, 2250 S. 49th Ave, Cicero, IL, 60804",,09:00 AM - 05:00 PM,,ho14475251,false,true,,,,poll81933795
-"Cicero PSO Building, 5410 W. 34th St, Cicero, IL, 60804",,09:00 AM - 05:00 PM,,ho8005802,false,true,,,,poll60060925
-"Crestwood (Andrew Biela Senior Citizen Center), 4545 Midlothian Turnpike, Crestwood, IL, 60445",,09:00 AM - 05:00 PM,,ho32182746,false,true,,,,poll64206032
-"Des Plaines Public Library, 1501 Ellinwood St, Des Plaines, IL, 60016",,09:00 AM - 05:00 PM,,ho63588137,false,true,,,,poll13977882
-"Elk Grove Village Hall, 901 Wellington Ave, Elk Grove Village, IL, 60007",,09:00 AM - 05:00 PM,,ho96179107,false,true,,,,poll7468263
-"Elmwood Park Village Hall, 11 W. Conti Pkwy, Elmwood Park, IL, 60707",,09:00 AM - 05:00 PM,,ho11054841,false,true,,,,poll59517067
-"Evanston Civic Center, 2100 Ridge Ave, Evanston, IL, 60201",,09:00 AM - 05:00 PM,,ho48238686,false,true,,,,poll1242044
-"Franklin Park Village Hall, 9500 Belmont Ave, Franklin Park, IL, 60131",,09:00 AM - 05:00 PM,,ho62105737,false,true,,,,poll61441538
-"Glenview Village Hall, 2500 E. Lake Ave, Glenview, IL, 60025",,09:00 AM - 05:00 PM,,ho89839322,false,true,,,,poll60903754
-"Hodgkins Village Hall, 8990 Lyons St, Hodgkins, IL, 60525",,09:00 AM - 05:00 PM,,ho52347423,false,true,,,,poll89493793
-"Hoffman Estates Village Hall, 1900 Hassell Rd, Hoffman Estates, IL, 60169",,09:00 AM - 05:00 PM,,ho68645700,false,true,,,,poll53518543
-"Lansing Public Library, 2750 Indiana Ave, Lansing, IL, 60438",,09:00 AM - 05:00 PM,,ho14930399,false,true,,,,poll80028737
-"Lemont Township Hall, 1115 Warner Ave, Lemont, IL, 60439",,09:00 AM - 05:00 PM,,ho8077848,false,true,,,,poll16517973
-"Lynwood Senior Youth Center, 21490 Lincoln Hwy, Lynwood, IL, 60411",,09:00 AM - 05:00 PM,,ho59724782,false,true,,,,poll63477162
-"Matteson Community Center, 20642 Matteson Ave, Matteson, IL, 60443",,09:00 AM - 05:00 PM,,ho77123008,false,true,,,,poll41926417
-"Melrose Park Village Hall, 1000 N. 25th Ave, Melrose Park, IL, 60160",,09:00 AM - 05:00 PM,,ho22275787,false,true,,,,poll24646594
-"Mount Prospect Village Hall, 50 S. Emerson St, Mount Prospect, IL, 60056",,09:00 AM - 05:00 PM,,ho80236975,false,true,,,,poll44636428
-"Niles Village Hall, 1000 Civic Center Drive, Niles, IL, 60714",,09:00 AM - 05:00 PM,,ho7117329,false,true,,,,poll86880600
-"Norridge Village Hall, 4000 N. Olcott Ave, Norridge, IL, 60706",,09:00 AM - 05:00 PM,,ho61102164,false,true,,,,poll20998992
-"Northbrook Village Hall, 1225 Cedar Lane, Northbrook, IL, 60062",,09:00 AM - 05:00 PM,,ho98278960,false,true,,,,poll30881325
-"Oak Forest City Hall, 15440 S. Central Ave, Oak Forest, IL, 60452",,09:00 AM - 05:00 PM,,ho88900272,false,true,,,,poll66483854
-"Oak Lawn Village Hall, 9446 S. Raymond Ave, Oak Lawn, IL, 60453",,09:00 AM - 05:00 PM,,ho9333682,false,true,,,,poll70109269
-"Oak Park Village Hall, 123 Madison St, Oak Park, IL, 60302",,09:00 AM - 05:00 PM,,ho33877803,false,true,,,,poll88944143
-"Olympia Fields (Brookdale Senior Living), 3633 Breakers Dr, Olympia Fields, IL, 60461",,09:00 AM - 05:00 PM,,ho86454503,false,true,,,,poll94302423
-"Orland Township Hall, 14807 Ravinia Ave, Orland Park, IL, 60462",,09:00 AM - 05:00 PM,,ho66763955,false,true,,,,poll69903038
-"Palatine Village Hall, 200 E. Wood St, Palatine, IL, 60067",,09:00 AM - 05:00 PM,,ho31638898,false,true,,,,poll602255
-"Palos Hills Community Center, 8455 W. 103rd St., Palos Hills, IL, 60456",,09:00 AM - 05:00 PM,,ho22648135,false,true,,,,poll14242331
-"Park Forest Village Hall, 350 Victory Blvd, Park Forest, IL, 60466",,09:00 AM - 05:00 PM,,ho36896937,false,true,,,,poll95401911
-"Park Ridge (Maine Park Leisure Center), 2701 W. Sibley St, Park Ridge, IL, 60068",,09:00 AM - 05:00 PM,,ho16739419,false,true,,,,poll11093416
-"Schaumburg (Trickster Art Gallery), 190 S. Roselle Rd, Schaumburg, IL, 60193",,09:00 AM - 05:00 PM,,ho12308425,false,true,,,,poll70984111
-"Skokie Village Hall, 5127 Oakton St, Skokie, IL, 60077",,09:00 AM - 05:00 PM,,ho14034496,false,true,,,,poll73087244
-"South Holland (Thornton Township Hall), 333 E. 162nd St, South Holland, IL, 60473",,09:00 AM - 05:00 PM,,ho22246479,false,true,,,,poll782225
-"Stickney-Forest View Public Library, 6800 W. 43rd St, Stickney, IL, 60402",,09:00 AM - 05:00 PM,,ho67409336,false,true,,,,poll24112134
-"Streamwood Village Hall, 301 E. Irving Park Rd, Streamwood, IL, 60107",,09:00 AM - 05:00 PM,,ho44140473,false,true,,,,poll56293541
-"Tinley Park Village Hall, 16250 S. Oak Park Ave, Tinley Park, IL, 60477",,09:00 AM - 05:00 PM,,ho53250968,false,true,,,,poll72491214
-"Wheeling (Korean Cultural Center of Chicago), 9710 Capitol Dr, Wheeling, IL, 60090",,09:00 AM - 05:00 PM,,ho3889672,false,true,,,,poll26030565
-"Wilmette (Centennial Park), 2300 Old Glenview Rd, Wilmette, IL, 60091",,09:00 AM - 05:00 PM,,ho10523699,false,true,,,,poll29522934
-"Bridgeview Courthouse, 10220 S. 76th Ave. Room 238, Bridgeview, IL, 60455",,09:00 AM - 05:00 PM,,ho86886545,false,true,,,,poll60195587
-"Markham Courthouse, 16501 S. Kedzie Ave. Room 238, Markham, IL, 60428",,09:00 AM - 05:00 PM,,ho88663142,false,true,,,,poll1452034
-"Maywood Courthouse - Whitcomb Building, 1311 Maybrook Sq. Room 104, Maywood, IL, 60153",,09:00 AM - 05:00 PM,,ho29001083,false,true,,,,poll81861943
-"Rolling Meadows Courthouse, 2121 Euclid Ave. Room 238, Rolling Meadows, IL, 60008",,09:00 AM - 05:00 PM,,ho6075467,false,true,,,,poll47917892
-"Skokie Courthouse, 5600 W. Old Orchard Rd. Room 149, Skokie, IL, 60077",,09:00 AM - 05:00 PM,,ho38388388,false,true,,,,poll31762987
-"Crawford Country Clerk Office, 100 Douglas, Robinson, IL, 62454",,08:00 AM - 04:00 PM,,ho5732027,false,true,,,,poll20822778
-"Cumberland County Clerk's Office, 140 Courthouse Square, Toledo, IL, 62468",,08:00 AM - 04:00 PM,,ho70452929,false,true,,,,poll31342933
-"De Witt County Clerk Office, 201 West Washington Street, Clinton, IL, 61727",,08:30 AM - 04:30 PM,,ho75046074,false,true,,,,poll47988002
-"Sycamore Campus Legislative Center in the Gathertorium, 200 N. Main Street, Sycamore, IL, 60178",,08:30 AM - 04:30 PM,,ho57119126,false,true,,,,poll73049417
-"DeKalb Township Building, 2323 S. 4th Street, DeKalb, IL, 60115",,08:30 AM - 04:30 PM,,ho50879746,false,true,,,,poll84794102
-"NIU-Holmes Student Center - Blackhawk Annex, 340 Carroll Ave, DeKalb, IL, 60115",,12:00 PM - 07:00 PM,,ho56286984,false,true,,,,poll53980205
-"Kirkland City Hall, 511 W. Main St., Kirkland, IL, 60146",,08:30 AM - 04:00 PM,,ho46824393,false,true,,,,poll97766168
-"Sandwich Fire Station, 310 E. Railroad St., Sandwich, IL, 60548",,08:30 AM - 04:00 PM,,ho63511300,false,true,,,,poll58335411
-"County Clerk Office, 401 South Center, Ste 203, Tuscola, IL, 61953",,08:30 AM - 04:30 PM,,ho92582033,false,true,,,,poll53949844
-"DuPage County Election Commission Office, 421 North County Farm Road, Wheaton, IL, 60187",,08:30 AM - 04:30 PM,,ho14966730,false,true,,,,poll99009450
-"Naperville Municipal Center, 400 S. Eagle St, Naperville, IL, 60540",,08:30 AM - 07:30 PM,,ho84024117,false,true,,,,poll93149686
-"Olive Trees Condominiums, 200 E. Bradley, Naperville, IL, 60563",,08:30 AM - 07:30 PM,,ho90331356,false,true,,,,poll71070200
-"Stratford Square Mall, 152 Stratford Square, Bloomingdale, IL, 60108",,08:30 AM - 07:30 PM,,ho19992111,false,true,,,,poll47851622
-"Fox Valley Mall, 195 Fox Valley Center Dr., Aurora, IL, 60504",,08:30 AM - 07:30 PM,,ho68083257,false,true,,,,poll37667103
-"Addison Township Office, 401 N. Addison Rd., Addison, IL, 60101",,08:30 AM - 07:30 PM,,ho59536839,false,true,,,,poll23388892
-"Bartlett Community Center, 700 S. Bartlett Rd., Bartlett, IL, 60103",,08:30 AM - 07:30 PM,,ho9112045,false,true,,,,poll34746028
-"Downers Grove Village Hall, 801 Burlington Ave., Downers Grove, IL, 60515",,08:30 AM - 07:30 PM,,ho69612494,false,true,,,,poll68634541
-"Elmhurst City Hall, 209 N. York St., Elmhurst, IL, 60126",,08:30 AM - 07:30 PM,,ho76028476,false,true,,,,poll30148101
-"Glen Ellyn Civic Center, 535 Duane St., Glen Ellyn, IL, 60137",,08:30 AM - 07:30 PM,,ho15820559,false,true,,,,poll50190767
-"Edgar Clerk County Court House, 115 West Court Street, Room ""j"", Paris, IL, 61944",,08:00 AM - 04:00 PM,,ho8587207,false,true,,,,poll61394825
-"Edwards County Courthouse, 50 East Main, Albion, IL, 62806",,08:00 AM - 04:00 PM,,ho79859565,false,true,,,,poll8083798
-"Effingham County Clerk Office, 101 North 4th, Ste 201, Effingham, IL, 62401",,08:00 AM - 04:00 PM,,ho33156075,false,true,,,,poll21939122
-"Fayette County Clerk Office, 221 South 7th Street, Vandalia, IL, 62471",,08:00 AM - 04:00 PM,,ho9678321,false,true,,,,poll61281367
-"Ford County Clerk Office, 200 West State Street, Room 101, Paxton, IL, 60957",,08:30 AM - 04:30 PM,,ho78860055,false,true,,,,poll72248478
-"Franklin County Clerk Office, 202 West Main, Benton, IL, 62812",,08:00 AM - 04:00 PM,,ho4344605,false,true,,,,poll83309047
-"Christopher City Hall, 208 N. Thomas, Christopher, IL, 62822",,08:30 AM - 11:30 AM,,ho12115014,false,true,,,,poll55030098
-"Denning Township, 217 S Horn St., West Frankfort, IL, 62896",,12:30 PM - 05:30 PM,,ho65529867,false,true,,,,poll98132160
-"Fulton County Courthouse, 100 Main St, Lewistown, IL, 61542",,08:00 AM - 04:00 PM,,ho58647206,false,true,,,,poll37611134
-"Gallatin County Clerk Office, 484 North Lincoln Boulevard West, Shawneetown, IL, 62984",,08:00 AM - 04:00 PM,,ho56312789,false,true,,,,poll59796072
-"Greene County Clerk Office, 519 North Main Street, Carrollton, IL, 62016",,08:00 AM - 04:00 PM,,ho86996632,false,true,,,,poll47483506
-"Grundy County Courthouse Lobby, 111 East Washington St, Morris, IL, 60450",,08:30 AM - 04:00 PM,,ho44699288,false,true,,,,poll33638795
-"Hamilton County Clerk's Office, 100 South Jackson Street, Mcleansboro, IL, 62859",,08:00 AM - 04:30 PM,,ho10445773,false,true,,,,poll38610511
-"Hancock County Clerk Office, 500 Main Street, Carthage, IL, 62321",,08:00 AM - 12:00 PM,,ho60434469,false,true,,,,poll63413601
-"Hardin County Clerk Office, Main and Market Streets, Elizabethtown, IL, 62931",,08:00 AM - 04:00 PM,,ho36182109,false,true,,,,poll10053906
-"Henderson County Clerk's Office, 307 Warren St, Oquawka, IL, 61469",,08:00 AM - 04:00 PM,,ho93262064,false,true,,,,poll36189199
-"Henry County Clerk Office, 307 West Center Street, Cambridge, IL, 61238",,08:00 AM - 04:30 PM,,ho41670507,false,true,,,,poll23198419
-"The County Clerk's Office in the Administrative Center, 1001 E. Grant St., Watseka, IL, 60970",,08:30 AM - 04:30 PM,,ho51366112,false,true,,,,poll4767424
-"Jackson County Court House, 1001 Walnut Street, Murphysboro, IL, 62966",,08:00 AM - 04:00 PM,,ho759905,false,true,,,,poll45334653
-"Carbondale Civic Center, 200 S Illinois Ave, Carbondale, IL, 62901",,09:00 AM - 03:00 PM,,ho52332831,false,true,,,,poll30219493
-"SIU Student Center, 255 Lincoln Dr, Carbondale, IL, 62901",,09:00 AM - 03:00 PM,,ho24574185,false,true,,,,poll93129095
-"Jasper County Clerk Office, 204 West Washington Street, Ste 2, Newton, IL, 62448",,08:00 AM - 04:00 PM,,ho41330553,false,true,,,,poll17156632
-"Jefferson County Court House, 100 South 10th Street, Room 105, Mt. Vernon, IL, 62864",,08:00 AM - 04:00 PM,,ho91998127,false,true,,,,poll85041380
-"Jersey County Clerk Office, 200 North Lafayette Street, Jerseyville, IL, 62052",,08:00 AM - 04:00 PM,,ho7046922,false,true,,,,poll17087277
-"Jo Daviess County Clerk Office, 330 North Bench Street, Room 108, Galena, IL, 61036",,08:00 AM - 04:00 PM,,ho74606068,false,true,,,,poll88436980
-"Johnson County Clerk Office, 117 North 5th Street, Vienna, IL, 62995",,08:00 AM - 12:00 PM,,ho42438385,false,true,,,,poll32178297
-"Autumn Ridge, 1000 Galeener St, Vienna, IL, 62995",,04:00 PM - 07:00 PM,,ho35737914,false,true,,,,poll87305992
-"Goreville City Hall, 105 W Collins St, Goreville, IL, 62939",,09:00 AM - 07:00 PM,,ho90768269,false,true,,,,poll10323077
-"New Simpson Hill School, 95 Tunnel Hill Rd, Tunnel Hill, IL, 62972",,04:00 PM - 07:00 PM,,ho8283224,false,true,,,,poll67556170
-"Kane County Clerk's Office, 719 S Batavia Ave, Bldg. B, Geneva, IL, 60134",,08:30 AM - 04:30 PM,,ho37867813,false,true,,,,poll40679062
-"Kane County Branch Court Conference Center, 530 S Randall Rd, St Charles, IL, 60174",,09:00 AM - 05:00 PM,,ho36201816,false,true,,,,poll51105097
-"Carpentersville Fire Station No. 3, 5000 Sleepy Hollow Rd, Carpentersville, IL, 60110",,09:00 AM - 05:00 PM,,ho94263260,false,true,,,,poll13351760
-"Gail Borden Library, 270 N Grove Ave, Elgin, IL, 60120",,09:00 AM - 05:00 PM,,ho84639722,false,true,,,,poll58983673
-"Elgin Township, 729 S McLean Blvd, Elgin, IL, 60123",,09:00 AM - 05:00 PM,,ho75838387,false,true,,,,poll72904346
-"Campton Community Center, 5N082 Old LaFox Rd, Campton Hills, IL, 60175",,09:00 AM - 03:00 PM,,ho9275542,false,true,,,,poll4946762
-"City of Batavia, 100 N Island Ave, Batavia, IL, 60510",,09:00 AM - 03:30 PM,,ho90107409,false,true,,,,poll73770568
-"City of St. Charles, 2 E Main St, St Charles, IL, 60174",,09:00 AM - 03:30 PM,,ho49642672,false,true,,,,poll75400912
-"Dundee Township, 611 E Main St., Suite 201, East Dundee, IL, 60118",,09:00 AM - 03:30 PM,,ho64740412,false,true,,,,poll64221570
-"Village of Montgomery, 200 N River St, Montgomery, IL, 60538",,09:30 AM - 02:00 PM,,ho36727721,false,true,,,,poll73113684
-"Village of West Dundee, 102 S Second St, West Dundee, IL, 60118",,09:00 AM - 04:00 PM,,ho17155471,false,true,,,,poll39113443
-"Del Webb Sun City, 12880 Del Webb Blvd, Huntley, IL, 60142",,10:00 AM - 04:30 PM,,ho99779084,false,true,,,,poll5848516
-"Ella Johnson Library, 109 S State St., Hampshire, IL, 60140",,12:00 PM - 06:00 PM,,ho94875716,false,true,,,,poll58804502
-"Sugar Grove Library, 125 S. Municipal Dr, Sugar Grove, IL, 60554",,12:00 PM - 06:00 PM,,ho52680360,false,true,,,,poll70893079
-"Edgewater by Del Webb, 2554 Edgewater Dr, Elgin, IL, 60124",,10:00 AM - 07:00 PM,,ho15554149,false,true,,,,poll70210842
-"The Holmstad, 700 W Fabyan Pkwy, Batavia, IL, 60510",,10:00 AM - 03:00 PM,,ho91626950,false,true,,,,poll64279978
-"Town & Country Library, 320 E North St, Elburn, IL, 60119",,12:00 PM - 07:00 PM,,ho43354253,false,true,,,,poll87105587
-"Jewel Osco, 652 Kirk Rd, St Charles, IL, 60174",,09:30 AM - 04:30 PM,,ho52496977,false,true,,,,poll90177066
-"Jewel Osco, 800 N Main St, Elburn, IL, 60119",,09:30 AM - 04:30 PM,,ho34533473,false,true,,,,poll24298789
-"Cambridge Lakes Community Center, 1125 Wester Blvd, Pingree Grove, IL, 60140",,09:30 AM - 04:30 PM,,ho9911484,false,true,,,,poll86808255
-"North Aurora Police Department, 200 S Lincolnway St, North Aurora, IL, 60542",,09:30 AM - 04:30 PM,,ho70593632,false,true,,,,poll69933521
-"Jewel Osco, 1660 Larkin Ave, Elgin, IL, 60123",,09:30 AM - 04:30 PM,,ho25280179,false,true,,,,poll85349104
-"Jewel Osco, 1250 W. Main St, West Dundee, IL, 60118",,09:30 AM - 04:30 PM,,ho53038795,false,true,,,,poll64362236
-"Jewel Osco, 465 N State RTE 47, Sugar Grove, IL, 60554",,09:30 AM - 04:30 PM,,ho97423157,false,true,,,,poll85544128
-"Jewel Osco, 119 S Randall Rd, Batavia, IL, 60510",,09:30 AM - 04:30 PM,,ho13064136,false,true,,,,poll43778172
-"Kankakee County Clerk Office, 189 East Court Street, Kankakee, IL, 60901",,08:30 AM - 04:30 PM,,ho14542194,false,true,,,,poll29975636
-"Leo Hassett Community Building, 211 N. Main St, Manteno, IL, 60950",,12:00 PM - 06:00 PM,,ho2333611,false,true,,,,poll1535351
-"Bourbonnais Municipal Building, 700 Main St NW, Bourbonnais, IL, 60914",,12:00 PM - 06:00 PM,,ho39055220,false,true,,,,poll63921176
-"Kendall County Clerk Office, 111 West Fox Street, Room 103, Yorkville, IL, 60560",,08:00 AM - 04:30 PM,,ho72937917,false,true,,,,poll83430868
-"Plano City Hall, 7 N James St., Plano, IL, 60545",,01:00 PM - 07:00 PM,,ho10786227,false,true,,,,poll60752133
-"Oswego City Hall, 100 Parkers Mill , Oswego, IL, 60543",,08:00 AM - 04:30 PM,,ho16356256,false,true,,,,poll47745015
-"Knox County Court House, 200 South Cherry, Galesburg, IL, 61401",,08:30 AM - 04:30 PM,,ho55647335,false,true,,,,poll63463920
-"Lake County Clerk's office, 18 N. County St., Room 101, Waukegan, IL, 60085",,09:00 AM - 05:00 PM,,ho88046831,false,true,,,,poll6041266
-"Antioch Township Office, 1625 Deep Lake Rd., Lake Villa, IL, 60046",,09:00 AM - 05:00 PM,,ho39613908,false,true,,,,poll27663393
-"Ela Township Office, 1155 E. Route 22, Lake Zurich, IL, 60047",,09:00 AM - 05:00 PM,,ho87277787,false,true,,,,poll1781171
-"Fremont Public Library, 1170 N. Midlothian Rd., Mundelein, IL, 60060",,09:00 AM - 05:00 PM,,ho41422753,false,true,,,,poll84287684
-"Highland Park Police Station, 1677 Old Deerfield Rd., Highland Park, IL, 60035",,09:00 AM - 05:00 PM,,ho37323246,false,true,,,,poll84573307
-"Lake Barrington Village Hall, 23860 N. Old Barrington Rd., Lake Barrington, IL, 60010",,09:00 AM - 05:00 PM,,ho61370286,false,true,,,,poll12794854
-"Lake County Central Permit Facility, 500 W. Winchester Rd., Libertyville, IL, 60048",,09:00 AM - 05:00 PM,,ho49144830,false,true,,,,poll84073133
-"Lake Forest City Hall, 220 E. Deerpath Rd, Lake Forest, IL, 60045",,09:00 AM - 05:00 PM,,ho66568670,false,true,,,,poll26989360
-"Round Lake Village Hall, 442 N. Cedar Lake Rd., Round Lake, IL, 60073",,09:00 AM - 05:00 PM,,ho82701974,false,true,,,,poll11092177
-"Vernon Township Office, 3050 N. Main St., Buffalo Grove, IL, 60089",,09:00 AM - 05:00 PM,,ho53278062,false,true,,,,poll64917298
-"Zion City Hall, 2828 Sheridan Rd., Zion, IL, 60099",,09:00 AM - 05:00 PM,,ho52467001,false,true,,,,poll87745512
-"Gurnee Village Hall, 325 N. O'Plaine Rd, Gurnee, IL, 60031",,09:00 AM - 05:00 PM,,ho36399094,false,true,,,,poll28627541
-"Jane Addams Center, Bowen Park, 95 Jack Benny Dr, Waukegan, IL, 60087",,09:00 AM - 05:00 PM,,ho32849096,false,true,,,,poll45165376
-"Lake County Courthouse and Administrative Complex, 18 N. County St., Waukegan, IL, 60085",,09:00 AM - 05:00 PM,,ho81276060,false,true,,,,poll61536853
-"North Chicago City Hall, 1850 Lewis Ave, North Chicago, IL, 60064",,09:00 AM - 05:00 PM,,ho67173818,false,true,,,,poll7953916
-"LaSalle County Clerk Office, 707 East Etna Road, Ottawa, IL, 61350",,08:00 AM - 04:30 PM,,ho69962924,false,true,,,,poll13314651
-"Lawrence County Courthouse, 1100 State Street, Lawrenceville, IL, 62439",,09:00 AM - 05:00 PM,,ho15221617,false,true,,,,poll46301379
-"Old Court House, 1st Floor, 112 East 2nd, Dixon, IL, 61021",,08:15 AM - 04:15 PM,,ho60976183,false,true,,,,poll96069298
-"Livingston County Clerk Office, 112 W Madison St, Pontiac, IL, 61764",,08:00 AM - 04:30 PM,,ho90950614,false,true,,,,poll72838314
-"Logan County Clerk Office, 601 Broadway, Room 20, Lincoln, IL, 62656",,08:30 AM - 04:30 PM,,ho99799100,false,true,,,,poll13474752
-"Macon County Clerk's Office, 141 South Main St, Room 119, Decatur, IL, 62523",,08:30 AM - 04:30 PM,,ho95206787,false,true,,,,poll30589998
-"Madison County Administration Building, 157 Main Street, 1st Floor, Edwardsville, IL, 62025",,08:30 AM - 04:30 PM,,ho41643744,false,true,,,,poll57622428
-"Granite City Township Building, 2060A Delmar Ave., Granite City, IL, 62040",,08:30 AM - 04:30 PM,,ho22014599,false,true,,,,poll98495060
-"Alton Law Enforcement Center, 1700 Broadway, Alton, IL, 62002",,08:30 AM - 04:30 PM,,ho80725671,false,true,,,,poll88456179
-"E. Southern Illinois University, 6 Hairpin Drive, Edwardsville, IL, 62026",,12:00 PM - 05:00 PM,,ho94453524,false,true,,,,poll87741814
-"Bethalto Village Hall, 213 N. Prairie St., Bethalto, IL, 62010",,12:00 PM - 06:00 PM,,ho40920915,false,true,,,,poll33779178
-"Collinsville Senior Citizen Center, 420 E. Main St., Collinsville, IL, 62234",,12:00 PM - 06:00 PM,,ho57408156,false,true,,,,poll45885746
-"Lewis & Clark College, Trimpe Advanced Technology Center, Ahlemeyer Atrium, Godfrey Road, Godfrey, IL, 62035",,12:00 PM - 06:00 PM,,ho73987399,false,true,,,,poll11120465
-"Latzer Memorial Public Library, 1001 9th Street, Highland, IL, 62249",,12:00 PM - 06:00 PM,,ho42447300,false,true,,,,poll71727611
-"Madison Fire Station, 1800 3rd Street, Madison, IL, 62060",,12:00 PM - 06:00 PM,,ho4436427,false,true,,,,poll12325853
-"Troy City Hall, 116 E. Market Street, Troy, IL, 62294",,12:00 PM - 06:00 PM,,ho23181952,false,true,,,,poll57138870
-"Wood River Township Office, 33 S. 9th Street, East Alton, IL, 62024",,12:00 PM - 06:00 PM,,ho94688240,false,true,,,,poll88447723
-"Marion County Court House, Room 202, 100 East Main Street, Salem, IL, 62881",,08:00 AM - 04:00 PM,,ho70051838,false,true,,,,poll94554964
-"Marshall County Clerk Office, 122 North Prairie, Lacon, IL, 61540-0328",,08:30 AM - 04:30 PM,,ho53060594,false,true,,,,poll10343037
-"Mason County Clerk Office, 125 N Plum, Havana, IL, 62644-0077",,08:00 AM - 04:00 PM,,ho71412624,false,true,,,,poll62394938
-"Massac County Clerk Office, 1 Superman Square, Metropolis, IL, 62960",,08:00 AM - 12:00 PM,,ho6258826,false,true,,,,poll66097044
-"McDonough County Registration Basement, 1 Courthouse Square, Macomb, IL, 61455",,08:00 AM - 04:00 PM,,ho79940485,false,true,,,,poll46758890
-"Western Illinois University, 1 University Cir, Macomb, IL, 61455",,10:00 AM - 05:00 PM,,ho10176942,false,true,,,,poll46980716
-"McHenry County Clerk's Office, 667 Ware Rd., Ste 107, Woodstock, IL, 60098",,08:30 AM - 04:30 PM,,ho95790051,false,true,,,,poll27814378
-"McHenry County Administration Building, 667 Ware Rd., 2nd Floor, Conference Room A, Woodstock, IL, 60098",,08:30 AM - 04:30 PM,,ho26550481,false,true,,,,poll40638387
-"Algonquin Township Offices, 3702 US Hwy 14, Building 6B, Road District Community Room, Crystal Lake, IL, 60014",,09:00 AM - 04:00 PM,,ho30152622,false,true,,,,poll13679468
-"City of Crystal Lake, 100 W Municipal Complex, Room P106, Crystal Lake, IL, 60014",,08:30 AM - 04:30 PM,,ho5126708,false,true,,,,poll39682566
-"Huntley Park District, 12015 Mill St, Huntley, IL, 60142",,08:30 AM - 04:30 PM,,ho3830869,false,true,,,,poll56191575
-"Lake in the Hills Village Hall, 600 Harvest Gate, Lake in the Hills, IL, 60156",,08:30 AM - 04:30 PM,,ho854291,false,true,,,,poll6429005
-"McHenry City Hall, 333 S Green S, McHenry, IL, 60050",,08:30 AM - 04:30 PM,,ho83798889,false,true,,,,poll63660160
-"McHenry Township Offices, 3703 N. Richmond Rd., Johnsburg, IL, 60051",,08:30 AM - 04:00 PM,,ho73820787,false,true,,,,poll55834909
-"Nunda Township Offices, 3510 Bay Rd, Annex, Crystal Lake, IL, 60012",,08:30 AM - 03:30 PM,,ho86554773,false,true,,,,poll18852220
-"Dunham Township Office, 107 Airport Rd, Harvard, IL, 60033",,09:00 AM - 04:00 PM,,ho59442933,false,true,,,,poll56440753
-"Marengo City Hall, 132 E Prairie St, Marengo , IL, 60152",,09:00 AM - 04:00 PM,,ho17659483,false,true,,,,poll99203933
-"McLean County Clerk's Office, 115 E. Washington, Bloomington, IL, 61701",,08:30 AM - 04:30 PM,,ho23431959,false,true,,,,poll31126480
-"Eastland Mall, JC Penney Corridor, 1615 E. Empire St., Bloomington, IL, 61701",,12:00 PM - 06:00 PM,,ho71783295,false,true,,,,poll91770329
-"ISU Bone Student Center, Faculty/Staff Commons, 100 N University St., Normal, IL, 61761",,10:00 AM - 05:00 PM,,ho7041386,false,true,,,,poll49646598
-"ISU--Watterson Towers - Rosa Parks Room, 301 S Fell Ave, Normal, IL, 61761",,12:00 PM - 07:00 PM,,ho81611989,false,true,,,,poll12299573
-"ISU--Milner Library - Room 164 D, 201 N School St., Normal, IL, 61761",,12:00 PM - 07:00 PM,,ho26863850,false,true,,,,poll98381198
-"Menard County Clerk's office, Menard County Courthouse, 102 S. 7th Street, Petersburg, IL, 62675",,08:30 AM - 04:30 PM,,ho28766708,false,true,,,,poll52225252
-"Mercer County Clerk Office, Mercer County Courthouse, 100 SE 3rd St, Aleda, IL, 61231",,08:00 AM - 04:00 PM,,ho60113233,false,true,,,,poll30724146
-"Monroe County Courthouse, County Clerk's Office, 100 South Main Street, Waterloo, IL, 62298",,08:00 AM - 04:30 PM,,ho21585663,false,true,,,,poll48760304
-"Historic Courthouse Basement, #1 Courthouse Square, Hillsboro, IL, 62049",,08:00 AM - 04:00 PM,,ho21295728,false,true,,,,poll38505244
-"Morgan County Clerk Office, 300 West State Street, Jacksonville, IL, 62651",,08:30 AM - 04:30 PM,,ho51298555,false,true,,,,poll39405711
-"Moultrie County Clerk's Office, 10 South Main, Ste 6, Sullivan, IL, 61951",,08:30 AM - 04:30 PM,,ho38299560,false,true,,,,poll52074826
-"Ogle County Clerk's Office, 105 S. 5th St.-Suite 104, Oregon, IL, 61061",,08:30 AM - 04:30 PM,,ho41393489,false,true,,,,poll6113096
-"Peoria Election Office, 542 SW Adams, Peoria, IL, 61602",,08:30 AM - 04:30 PM,,ho97529894,false,true,,,,poll80278823
-"ICC North, 5407 N University, Peoria, IL, 61635",,10:00 AM - 06:00 PM,,ho20141512,false,true,,,,poll78865649
-"Princeville Library, 207 N Walnut St, Princeville, IL, 61559",,10:00 AM - 06:00 PM,,ho6819390,false,true,,,,poll3961372
-"Hanna City Methodist Church, 12208 W Farmington Rd, Hanna City, IL, 61536",,10:00 AM - 06:00 PM,,ho39978771,false,true,,,,poll64722192
-"Brimfield Library, 111 S Galena Ave, Brimfield, IL, 61517",,10:00 AM - 06:00 PM,,ho37485492,false,true,,,,poll96564028
-"Lake Camelot Clubhouse, 9278 W Lake Camelot Dr, Mapleton, IL, 61547",,10:00 AM - 06:00 PM,,ho49756245,false,true,,,,poll26044136
-"Alpha Park Library, 3527 Airport Road, Bartonville, IL, 61607",,10:00 AM - 06:00 PM,,ho97493454,false,true,,,,poll42402380
-"Dunlap Library, 302 N 1st St, Dunlap, IL, 61525",,10:00 AM - 06:00 PM,,ho62834656,false,true,,,,poll50784385
-"Peoria Heights Library, 816 E Glen Ave, Peoria Heights, IL, 61616",,10:00 AM - 06:00 PM,,ho33748178,false,true,,,,poll76593093
-"Elmwood Methodist Church, 821 W Main St, Elmwood, IL, 61529",,10:00 AM - 06:00 PM,,ho13898529,false,true,,,,poll46030453
-"Chillicothe Library, 430 N Bradley Ave, Chillicothe, IL, 61523",,10:00 AM - 06:00 PM,,ho33953120,false,true,,,,poll94264616
-"Kickapoo Township Hall, 10025 US-150, Edwards, IL, 61528",,10:00 AM - 06:00 PM,,ho4858591,false,true,,,,poll59331038
-"West Peoria City Hall:, 2506 W Rohmann Ave, West Peoria, IL, 61604",,10:00 AM - 06:00 PM,,ho44336867,false,true,,,,poll61844668
-"Perry County City Clerk's Offie, 3764 State Route 13/127, Room 204, Pinckneyville, IL, 62274",,08:00 AM - 04:00 PM,,ho66558218,false,true,,,,poll24593091
-"Du Quoin City Hall, 28 S. Washington Street, Du Quion, IL, 62832",,04:00 PM - 07:00 PM,,ho38841816,false,true,,,,poll90110321
-"Piatt County Clerk's Office, 101 W. Washington, Monticello, IL, 61856",,08:30 AM - 04:30 PM,,ho81555482,false,true,,,,poll43238432
-"Pike County Clerk's Office, 121 E Washington, Pittsfield, IL, 62363",,08:30 AM - 04:30 PM,,ho27938755,false,true,,,,poll38431408
-"Pope County Court House, 310 East Main St, Golconda, IL, 62938",,08:00 AM - 12:00 PM,,ho53892808,false,true,,,,poll72640173
-"Putnam County Clerk's Office, 120 N. 4th Street, Hennepin, IL, 61327",,09:00 AM - 04:30 PM,,ho62947740,false,true,,,,poll10645516
-"Randolph County Clerk Office, #1 Taylor Street, Room 202, Chester, IL, 62233",,08:00 AM - 04:00 PM,,ho73331551,false,true,,,,poll47014206
-"County Clerk Temporary Office at Celebrations, 224 East Maine, Olney, IL, 62450",,08:00 AM - 04:00 PM,,ho99885783,false,true,,,,poll24863336
-"Rock Island County Clerk Office, 1504 Third Avenue, Rock Island, IL, 61201",,08:00 AM - 04:30 PM,,ho42052408,false,true,,,,poll39385205
-"Saline County Clerk's Election Office, Saline County Courthouse, 10 East Poplar Street, Harrisburg, IL, 62946",,08:00 AM - 04:00 PM,,ho38338451,false,true,,,,poll88667235
-"County Complex, 200 South 9th Street, Room 105, Springfield, IL, 62701",,08:30 AM - 05:00 PM,,ho50928578,false,true,,,,poll49935924
-"County Clerk-Recorder's Office, 102 South Congress St., Rushville, IL, 62681",,08:00 AM - 04:00 PM,,ho84012421,false,true,,,,poll25607932
-"Scott County Clerk's Office, 35 East Market Street, Winchester, IL, 62694",,08:00 AM - 04:00 PM,,ho89954569,false,true,,,,poll85547108
-"County Clerk's office, 301 E. Main St, Shelbyville, IL, 62565",,08:00 AM - 04:00 PM,,ho63230888,false,true,,,,poll82260707
-"St Clair County Clerk's Office, Election Dept, 2nd Floor, 10 Public Square, Belleville, IL, 62220",,08:30 AM - 05:00 PM,,ho74828133,false,true,,,,poll88608372
-"Caseyville Township Office, 10001 Bunkum Rd, Fairview Heights, IL, 62208",,09:00 AM - 05:00 PM,,ho30707064,false,true,,,,poll45283244
-"O'Fallon Township Office, 801 East State St, O'Fallon, IL, 62269",,09:00 AM - 05:00 PM,,ho56223553,false,true,,,,poll69552780
-"High Mount School, 1721 Boul Ave., Swansea, IL, 62226",,11:00 AM - 04:00 PM,,ho87051162,false,true,,,,poll50242127
-"Centreville Township Building, 4831 Bond Ave., Alorton, IL, 62207",,11:00 AM - 05:00 PM,,ho12917991,false,true,,,,poll81399538
-"Whiteside Middle School, 111 Warrior Way, Belleville, IL, 62221",,11:00 AM - 04:00 PM,,ho3179138,false,true,,,,poll34288103
-"B.A.S.S.C., (off Green Mount Rd.), 2411 Pathways Crossing, Belleville, IL, 62221",,11:00 AM - 04:00 PM,,ho78578123,false,true,,,,poll14232596
-"VFW Post #1699, 621 Water St., Cahokia, IL, 62206",,11:00 AM - 05:00 PM,,ho66911705,false,true,,,,poll94799649
-"Stark County Clerk's Office, 130 West Main, Toulon, IL, 61483",,08:30 AM - 04:30 PM,,ho67108018,false,true,,,,poll24346363
-"Stephenson County Clerk Office, 50 West Douglas, Ste 500, Freeport, IL, 61032",,08:30 AM - 04:30 PM,,ho27930190,false,true,,,,poll44883215
-"Tazewell County Clerk Office, McKenzie Building, 11 South 4th Street, Ste 203, Pekin, IL, 61554",,08:30 AM - 05:00 PM,,ho90145988,false,true,,,,poll90537135
-"Hopedale Village Hall, 200 Main St, Hopedale, IL, 61747",,07:00 AM - 10:00 AM,,ho14686135,false,true,,,,poll90644454
-"Mackinaw Village Hall, 100 E. Fast St, Mackinaw, IL, 61755",,07:00 AM - 10:00 AM,,ho41566736,false,true,,,,poll99132128
-"Delavan Township, 212 Locust St, Delavan, IL, 61734",,07:00 AM - 10:00 AM,,ho25006325,false,true,,,,poll66625337
-"Morton Township, 300 W. Jefferson St., Morton, IL, 61550",,07:00 AM - 10:00 AM,,ho83569506,false,true,,,,poll98443139
-"Washington Township, 58 Valley Forge Rd., Washington, IL, 61571",,07:00 AM - 10:00 AM,,ho69458919,false,true,,,,poll91723775
-"Folepi's Market Place, 2200 E. Washington St., East Peoria, IL, 61611",,07:00 AM - 10:00 AM,,ho26472583,false,true,,,,poll78640383
-"Union County Courthouse, 309 West Market, Room 116, Jonesboro, IL, 62952",,08:00 AM - 04:00 PM,,ho43049741,false,true,,,,poll87261345
-"Vermillion County Courthouse Annex, 6 North Vermilion, Floor 1, Danville, IL, 61832",,08:00 AM - 04:30 PM,,ho94847000,false,true,,,,poll31676102
-"Wabash County Courthouse, 401 Market Street, Mt. Carmel, IL, 62863",,09:00 AM - 05:00 PM,,ho23322684,false,true,,,,poll18167599
-"Warren County Courthouse, 100 West Broadway, Monmouth, IL, 61462",,08:00 AM - 04:30 PM,,ho15384044,false,true,,,,poll22901066
-"Washington County Courthouse, 101 East St. Louis Street, Nashville, IL, 62263",,08:00 AM - 04:00 PM,,ho38506507,false,true,,,,poll90899255
-"Wayne County Courthouse, 301 East Main, Fairfield, IL, 62837",,08:00 AM - 04:30 PM,,ho69845574,false,true,,,,poll49873733
-"White County Courthouse, 301 East Main, Carmi, IL, 62821",,08:00 AM - 04:00 PM,,ho28594494,false,true,,,,poll23190435
-"Whiteside County Courthouse, 200 East Knox Street, Morrison, IL, 61270",,08:30 AM - 04:30 PM,,ho5526307,false,true,,,,poll67148766
-"Will County Office Building, 302 North Chicago Street, Joliet, IL, 60432",,08:30 AM - 04:30 PM,,ho90771092,false,true,,,,poll38913921
-"Williamson County Admin Building, 407 North Monroe Street, Ste 119, Marion, IL, 62959",,08:00 AM - 04:00 PM,,ho46793517,false,true,,,,poll56785243
-"Winnebago County Administration Building, 404 Elm Street, Ste 101, Rockford, IL, 61101",,08:00 AM - 05:00 PM,,ho88270527,false,true,,,,poll96164929
-"County Board Room, 107 E Court St, Eureka, IL, 61540",,08:00 AM - 05:00 PM,,ho97702471,false,true,,,,poll1384855
-"Aurora Election Commission Office and Philips Park Stover Visitor Center, 1000 Ray Moses Drive, Aurora, IL, 60505",,09:00 AM - 05:00 PM,,ho45839089,false,true,,,,poll56916540
-"Eola Public Library, 555 South Eola Road, Aurora, IL, 60504",,10:00 AM - 06:00 PM,,ho12691201,false,true,,,,poll14647805
-"Bloomington Board of Elections, Room 403, 115 E. Washington St, Bloomington, IL, 61701",,08:30 AM - 04:30 PM,,ho53062027,false,true,,,,poll13193116
-"Eastland Mall, corridor outside JCPenney, 1615 E. Empire St, Bloomington, IL, 61701",,12:00 PM - 06:00 PM,,ho86172362,false,true,,,,poll94778883
-"Danville Election Commission Office, 6 N. Vermilion, Danville, IL, 61832",,08:00 AM - 04:30 PM,,ho94867345,false,true,,,,poll72474985
-"East St. Louis City Hall, 301 River Park Drive, Ste 300, East St. Louis, IL, 62201",,08:30 AM - 04:30 PM,,ho63335088,false,true,,,,poll4143646
-"Galesburg City Hall, Galesburg Election Office, 55 W. Tompkins St, Galesburg, IL, 61402-1387",,08:00 AM - 06:00 PM,,ho89858830,false,true,,,,poll66824514
-"Rockford Board of Elections, 301 South 6th Street, Rockford, IL, 61104",,08:00 AM - 05:00 PM,,ho42729740,false,true,,,,poll85727837
-"Emmanual Epispocal Church, 412 North Church St, Rockford, IL, 61103",,08:00 AM - 05:00 PM,,ho29921177,false,true,,,,poll61928570
-"Kewanee City Hall, 401 E 3rd St, Kewanee, IL, 61443",,08:00 AM - 04:00 PM,,ho57480816,false,true,,,,poll88287854
-"Geneseo City Hall, 115 S Oakwood Ave, Geneseo, IL, 61254",,08:00 AM - 04:00 PM,,ho80657478,false,true,,,,poll30570317
-"Galva City Hall, 311 NW 4th Ave. , Galva, IL, 61434",,08:00 AM - 04:00 PM,,ho6473103,false,true,,,,poll40920161
-"Colona City Clerk's Office, 100 East 9th Ave, Colona, IL, 61241",,08:00 AM - 04:00 PM,,ho3461112,false,true,,,,poll44043567
-"Orion City Hall, 1202 4th St, Orion, IL, 61273",,08:00 AM - 04:00 PM,,ho65235945,false,true,,,,poll46455393
-"Macoupin County Court House, 201 East Main, Carlinville, IL, 62626",,08:30 AM - 04:30 PM,,ho33097758,false,true,,,,poll45111594
-"Girard City Hall, 111 W. Madison St. , Girard, IL, 62640",,09:00 AM - 12:00 PM,,ho74028224,false,true,,,,poll89891572
-"Gillespie Civic Center, 115 N Macoupin St, Gillespie, IL, 62033",,09:00 AM - 12:00 PM,,ho32709394,false,true,,,,poll19070218
-"Pulaksi County Clerk's office, 500 Illinois Avenue, Mound City, IL, 62963",,08:00 AM - 12:00 PM,,ho94389221,false,true,,,,poll35730833
-"City of Chicago, 69 W Washington St., Lower Level, Chicago, IL, 60602",,09:00 AM - 05:00 PM,,ho8455396,false,true,,,,poll25877217
-"City of Chicago, 15 Washington St. , Chicago, IL, 60602",,09:00 AM - 05:00 PM,,ho70225922,false,true,,,,poll50173474
-"Goldblatts Building, 1615 W Chicago, Chicago, IL, 60602",,09:00 AM - 05:00 PM,,ho23766159,false,true,,,,poll69854586
-"Near North Library, 310 W Division St. , Chicago, IL, 60610",,09:00 AM - 05:00 PM,,ho51506844,false,true,,,,poll35182530
-"Chicago Bee Library, 3647 S State, Chicago, IL, 60609",,09:00 AM - 05:00 PM,,ho12361119,false,true,,,,poll38638801
-"Dr. M. L. King Center, 4314 S Cottage Grove, Chicago, IL, 60653",,09:00 AM - 05:00 PM,,ho78790277,false,true,,,,poll39185563
-"Jackson Park, 6401 S Stony Island, Chicago, IL, 60637",,09:00 AM - 05:00 PM,,ho36965751,false,true,,,,poll24740975
-"Whitney Young Library, 7901 S M.L. King Jr. Dr. , Chicago, IL, 60619",,09:00 AM - 05:00 PM,,ho50285494,false,true,,,,poll6889614
-"Jeffery Manor Library, 2401 E 100th St., Chicago, IL, 60617",,09:00 AM - 05:00 PM,,ho70143690,false,true,,,,poll41563417
-"Olive Harvey College, 10001 S Woodlawn Ave. , Chicago, IL, 60628",,09:00 AM - 05:00 PM,,ho10062822,false,true,,,,poll57071567
-"Palmer Park, 201 E 111th St, Chicago, IL, 60628",,09:00 AM - 05:00 PM,,ho45658351,false,true,,,,poll33793647
-"Vodak/East Side, 3710 E 106th St, Chicago, IL, 60617",,09:00 AM - 05:00 PM,,ho24301082,false,true,,,,poll47149944
-"District 9 Police, 3120 S Halsted, Chicago, IL, 60608",,09:00 AM - 05:00 PM,,ho75521918,false,true,,,,poll27842319
-"McKinley Park, 2210 W Pershing Rd. , Chicago, IL, 60609",,09:00 AM - 05:00 PM,,ho23808963,false,true,,,,poll6192984
-"West Lawn Park, 4233 W 65th St, Chicago, IL, 60621",,09:00 AM - 05:00 PM,,ho35795277,false,true,,,,poll88649469
-"Archer Heights Library, 5055 S Archer Ave. , Chicago, IL, 60632",,09:00 AM - 05:00 PM,,ho5051085,false,true,,,,poll19533604
-"Gage Park, 2411 W 55th St., Chicago, IL, 60632",,09:00 AM - 05:00 PM,,ho86988572,false,true,,,,poll40063566
-"Lindblom Park, 6054 S Damen Ave, Chicago, IL, 60636",,09:00 AM - 05:00 PM,,ho77571111,false,true,,,,poll36050516
-"Thurgood Marshall Library, 7506 S Racine Ave, Chicago, IL, 60620",,09:00 AM - 05:00 PM,,ho27260007,false,true,,,,poll13313992
-"Wrightwood-Ashburn Library, 8530 S Kedzie Ave, Chicago, IL, 60652",,09:00 AM - 05:00 PM,,ho68177420,false,true,,,,poll14549007
-"Mt. Greenwood Park, 3721 W 111th St, Chicago, IL, 60655",,09:00 AM - 05:00 PM,,ho28774605,false,true,,,,poll61977419
-"Coleman Library, 731 E 63rd St, Chicago, IL, 60637",,09:00 AM - 05:00 PM,,ho50150835,false,true,,,,poll15468097
-"Woodson Regional Library, 9525 S Halsted St. , Chicago, IL, 60628",,09:00 AM - 05:00 PM,,ho61927369,false,true,,,,poll81172405
-"Toman Library, 2708 S Pulaski Rd. , Chicago, IL, 60632",,09:00 AM - 05:00 PM,,ho68890138,false,true,,,,poll47780331
-"Clearing Library, 6423 W 63rd Pl, Chicago, IL, 60638",,09:00 AM - 05:00 PM,,ho93046961,false,true,,,,poll33445840
-"Douglass Library, 3353 W 13th St, Chicago, IL, 60623",,09:00 AM - 05:00 PM,,ho6998731,false,true,,,,poll51336281
-"Chinatown Library, 2100 S Wentworth Ave. , Chicago, IL, 60616",,09:00 AM - 05:00 PM,,ho97428327,false,true,,,,poll7649855
-"Humboldt Park Library, 1605 N Troy St. , Chicago, IL, 60647",,09:00 AM - 05:00 PM,,ho92868234,false,true,,,,poll9146970
-"Eckhart Park, 1330 W Chicago Ave., Chicago, IL, 60642",,09:00 AM - 05:00 PM,,ho45419907,false,true,,,,poll65313090
-"W. Side Learning Center, 4624 W Madison St. , Chicago, IL, 60644",,09:00 AM - 05:00 PM,,ho45853467,false,true,,,,poll83764692
-"Amundsen Park, 6200 W Bloomingdale Ave. , Chicago, IL, 60639",,09:00 AM - 05:00 PM,,ho34492362,false,true,,,,poll33190155
-"Kilbourn Park, 3501 N Kilbourn Ave, Chicago, IL, 60641",,09:00 AM - 05:00 PM,,ho47756533,false,true,,,,poll76091306
-"Portage Cragin Library, 5108 W Belmont Ave, Chicago, IL, 60641",,09:00 AM - 05:00 PM,,ho77385806,false,true,,,,poll42582913
-"Bucktown-Wicker Park Library, 1701 N Milwaukee Ave, Chicago, IL, 60647",,09:00 AM - 05:00 PM,,ho70177572,false,true,,,,poll98992476
-"McFetridge Sports Center, 3843 N California Ave, Chicago, IL, 60618",,09:00 AM - 05:00 PM,,ho66822815,false,true,,,,poll32322395
-"West Pullman Library, 830 W 119th St, Chicago, IL, 60643",,09:00 AM - 05:00 PM,,ho54111580,false,true,,,,poll8143157
-"NEIU-El-Centro, 3390 N Avondale Ave. , Chicago, IL, 60618",,09:00 AM - 05:00 PM,,ho872156,false,true,,,,poll98850735
-"West Belmont Library, 3104 N Narragansett Ave. , Chicago, IL, 60634",,09:00 AM - 05:00 PM,,ho62922636,false,true,,,,poll80937015
-"West Chicago Library, 4856 W Chicago Ave. , Chicago, IL, 60651",,09:00 AM - 05:00 PM,,ho40677461,false,true,,,,poll77283905
-"Hiawatha Park, 8029 W Forest Preserve Dr. , Chicago, IL, 60634",,09:00 AM - 05:00 PM,,ho63829514,false,true,,,,poll50561118
-"N. Park Village Adm. Bldg., 5801 N Pulaski Rd. , Chicago, IL, 60646",,09:00 AM - 05:00 PM,,ho60714261,false,true,,,,poll91561115
-"Budlong Woods Library, 5630 N Lincoln Ave., Chicago, IL, 60659",,09:00 AM - 05:00 PM,,ho5006422,false,true,,,,poll24932752
-"Roden Library, 6083 N Northwest Hwy, Chicago, IL, 60631",,09:00 AM - 05:00 PM,,ho63536773,false,true,,,,poll69501411
-"Museum of Broadcast Communications, 360 N State St. , Chicago, IL, 60654",,09:00 AM - 05:00 PM,,ho279091,false,true,,,,poll74040558
-"Lincoln Park Library, 1150 W Fullerton Ave., Chicago, IL, 60614",,09:00 AM - 05:00 PM,,ho41563700,false,true,,,,poll50731702
-"Merlo Library, 644 W Belmont Ave, Chicago, IL, 60657",,09:00 AM - 05:00 PM,,ho1418952,false,true,,,,poll1966106
-"District 16 Police, 5151 N Milwaukee Ave, Chicago, IL, 60630",,09:00 AM - 05:00 PM,,ho98844049,false,true,,,,poll58837915
-"Truman College, 1145 W Wilson Ave, Chicago, IL, 60640",,09:00 AM - 05:00 PM,,ho92636150,false,true,,,,poll41452064
-"Welles Park, 2333 W Sunnyside Ave, Chicago, IL, 60625",,09:00 AM - 05:00 PM,,ho92899526,false,true,,,,poll13904594
-"Edgewater Library, 6000 N Broadway, Chicago, IL, 60660",,09:00 AM - 05:00 PM,,ho86130001,false,true,,,,poll53888752
-"Pottawattomie Park, 7340 N Rogers Ave, Chicago, IL, 60626",,09:00 AM - 05:00 PM,,ho86454292,false,true,,,,poll13062235
-"Warren Park, 6601 N Western Ave, Chicago, IL, 60645",,09:00 AM - 05:00 PM,,ho11112854,false,true,,,,poll7560088
-"Chicago State Univ., Cordell Reid Building, 9501 S ML King Drive, Chicago, IL, 60628",,10:00 AM - 05:00 PM,,ho9239589,false,true,,,,poll13032458
-"UIC, Student Center East, Room 613, 750 S Halsted St, Chicago, IL, 60607",,10:00 AM - 05:00 PM,,ho6994540,false,true,,,,poll20764651
-"NE IL Univ., Student Union Bldg., 5500 N St Louis Ave, Chicago, IL, 60625",,10:00 AM - 05:00 PM,,ho50664608,false,true,,,,poll82098980
-"County Clerk Office, 1776 East Washington, Urbana, IL, 61802",,08:00 AM - 04:30 PM,,ho23896072,false,true,,,,poll49197011
-"UI Campus: Illini Union, Federal Room (basement), 1401 West Green St. , Urbana, IL, 61801",,08:00 AM - 04:30 PM,,ho43048989,false,true,,,,poll44139726
-"North Champaign: The Church of the Living God, 312 East Bradley, Champaign, IL, 61820",,08:00 AM - 04:30 PM,,ho24599700,false,true,,,,poll29563368
-"West Champaign: Leonhard Recreation Center, 2307 Sangamon Drive, Champaign, IL, 61821",,08:00 AM - 04:30 PM,,ho79200964,false,true,,,,poll12464012
-"Southwest Champaign: Meadowbrook Community Church, 1902 South Duncan Road, Champaign, IL, 61822",,08:00 AM - 04:30 PM,,ho72877039,false,true,,,,poll77491029
-"Mahomet: Lake of the Woods Pavilion, Lake of the Woods Rd. , Mahomet, IL, 61853",,08:00 AM - 04:30 PM,,ho1617286,false,true,,,,poll11224965
-"Rantoul: The Gathering Place (First United Methodist Church), 200 South Century Blvd, Rantoul, IL, 61866",,08:00 AM - 04:30 PM,,ho78853776,false,true,,,,poll81135010
-"St. Joseph: Prince of Peace Lutheran Church, 802 East Douglas St. , St. Joseph, IL, 61873",,08:00 AM - 04:30 PM,,ho81208618,false,true,,,,poll67216359
-"Tolono Public Library, 111 East Main St. , Tolono, IL, 61880",,08:00 AM - 04:30 PM,,ho61520202,false,true,,,,poll99409783
+name,address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+Adams County Court House,"507 Vermont, Quincy, IL, 62301",,08:30 AM - 04:30 PM,,ho20454805,false,true,,,,poll31077257
+Alexander County Clerk,"2000 Washington Avenue, Cairo, IL, 62914",,08:00 AM - 12:00 PM,,ho15230827,false,true,,,,poll455473
+Bond County Clerk County Office,"203 West College, Greenville, IL, 62246",,08:00 AM - 04:00 PM,,ho97026573,false,true,,,,poll30368027
+Boone County Clerk Office,"1212 Logan Avenue, Ste 103, Belvidere, IL, 61008",,08:30 AM - 05:00 PM,,ho71785435,false,true,,,,poll38707059
+Brown County Court House,"200 Court Street, Mt. Sterling, IL, 62353",Room 4,08:30 AM - 04:30 PM,,ho21216438,false,true,,,,poll56487458
+Clerk Office in Bureau County Court House,"700 South Main Street, Princeton, IL, 61356",Room 104,08:00 AM - 04:00 PM,,ho10351172,false,true,,,,poll60506096
+Princeton Moose Lodge,"1339 North Euclid Ave, Princeton, IL, 61356",,08:00 AM - 04:00 PM,,ho76758926,false,true,,,,poll1555226
+Spring Valley City Hall,"215 North Greenwood, #2, Spring Valley, IL, 61362",,09:00 AM - 03:00 PM,,ho32034302,false,true,,,,poll41604341
+Calhoun County Clerk Office,"106 North County Road, Hardin, IL, 62047",,08:30 AM - 04:30 PM,,ho23700253,false,true,,,,poll17676132
+Carroll County Clerk Office,"301 North Main, Mt. Carroll, IL, 61053",,08:30 AM - 04:30 PM,,ho4408755,false,true,,,,poll68623251
+Cass County Clerk Office,"100 East Springfield Street, Virginia, IL, 62691",,08:30 AM - 04:30 PM,,ho38353525,false,true,,,,poll51959089
+Beardstown County Clerk Office,"105 West 3rd St, Beardstown, IL, 62618",,08:00 AM - 05:00 PM,,ho11117794,false,true,,,,poll9126647
+Christian County Clerk Office,"101 South Main, Taylorville, IL, 62568",2nd Floor,08:00 AM - 04:00 PM,,ho31987397,false,true,,,,poll34741549
+Clark County Clerk's Office,"501 Archer, Marshall, IL, 62441",,08:00 AM - 04:00 PM,,ho92907567,false,true,,,,poll73219600
+Clay County Court House,"111 Chestnut, Louisville, IL, 62858",Room 106,08:00 AM - 04:00 PM,,ho81816838,false,true,,,,poll62866531
+Clinton County Clerk,"850 Fairfax, Carlyle, IL, 62231",,08:00 AM - 04:30 PM,,ho20405902,false,true,,,,poll9661923
+Coles County Clerk Office,"651 Jackson Avenue, Charleston, IL, 61920",Room 122,08:30 AM - 04:30 PM,,ho91187969,false,true,,,,poll99892409
+Mattoon City Clerk Office,"208 North 19th St, Mattoon, IL, 61938",,08:00 AM - 04:30 PM,,ho18993486,false,true,,,,poll57714966
+Eastern Illinois University,"600 Lincoln Ave, Charleston, IL, 61920","Martin Luther King, Jr.; University Union Bridge Lounge",10:00 AM - 05:00 PM,,ho16884533,false,true,,,,poll10908144
+Alsip Village Hall,"4500 W. 123rd St., Alsip, IL, 60803",,09:00 AM - 05:00 PM,,ho53960984,false,true,,,,poll20605088
+Arlington Heights Village Hall,"33 S. Arlington Heights Rd, Arlington Heights, IL, 60005",,09:00 AM - 05:00 PM,,ho36204145,false,true,,,,poll67957720
+Barrington Hills Village Hall,"112 Algonquin Rd., Barrington Hills, IL, 60010",,09:00 AM - 05:00 PM,,ho39727483,false,true,,,,poll53429476
+Bellwood Village Hall,"3200 Washington Blvd, Bellwood, IL, 60104",,09:00 AM - 05:00 PM,,ho23021297,false,true,,,,poll47510974
+Berwyn City Hall,"6700 W. 26th St, Berwyn, IL, 60402",,09:00 AM - 05:00 PM,,ho25333594,false,true,,,,poll32452024
+Bridgeview Courthouse,"10220 S. 76th Ave., Bridgeview, IL, 60455",Room 238,09:00 AM - 05:00 PM,,ho5985654,false,true,,,,poll51523528
+Brookfield Village Hall,"8820 Brookfield Ave, Brookfield, IL, 60513",,09:00 AM - 05:00 PM,,ho66071924,false,true,,,,poll45746752
+Burbank (Prairie Trails Library District),"8449 S. Moody Ave, Burbank, IL, 60459",,09:00 AM - 05:00 PM,,ho99370646,false,true,,,,poll11753597
+Calumet City Public Library,"660 S. Manistee Ave, Calumet City, IL, 60409",,09:00 AM - 05:00 PM,,ho5672968,false,true,,,,poll62670290
+Calumet Township Community Center,"12633 S. Ashland Ave, Calumet Park, IL, 60827",,09:00 AM - 05:00 PM,,ho55420028,false,true,,,,poll90477197
+Cicero Community Center,"2250 S. 49th Ave, Cicero, IL, 60804",,09:00 AM - 05:00 PM,,ho8287073,false,true,,,,poll85540292
+Cicero PSO Building,"5410 W. 34th St, Cicero, IL, 60804",,09:00 AM - 05:00 PM,,ho9818855,false,true,,,,poll26617267
+Cook County Clerk's Office,"69 West Washington, Chicago, IL, 60602",Ste 500,09:00 AM - 05:00 PM,,ho27241060,false,true,,,,poll3548405
+Crestwood (Andrew Biela Senior Citizen Center),"4545 Midlothian Turnpike, Crestwood, IL, 60445",,09:00 AM - 05:00 PM,,ho64062322,false,true,,,,poll12675102
+Des Plaines Public Library,"1501 Ellinwood St, Des Plaines, IL, 60016",,09:00 AM - 05:00 PM,,ho44438966,false,true,,,,poll60357629
+Elk Grove Village Hall,"901 Wellington Ave, Elk Grove Village, IL, 60007",,09:00 AM - 05:00 PM,,ho28995278,false,true,,,,poll26047121
+Elmwood Park Village Hall,"11 W. Conti Pkwy, Elmwood Park, IL, 60707",,09:00 AM - 05:00 PM,,ho95898686,false,true,,,,poll99036536
+Evanston Civic Center,"2100 Ridge Ave, Evanston, IL, 60201",,09:00 AM - 05:00 PM,,ho59356937,false,true,,,,poll51919532
+Franklin Park Village Hall,"9500 Belmont Ave, Franklin Park, IL, 60131",,09:00 AM - 05:00 PM,,ho81612897,false,true,,,,poll76510306
+Glenview Village Hall,"2500 E. Lake Ave, Glenview, IL, 60025",,09:00 AM - 05:00 PM,,ho87723499,false,true,,,,poll64996771
+Hodgkins Village Hall,"8990 Lyons St, Hodgkins, IL, 60525",,09:00 AM - 05:00 PM,,ho41440674,false,true,,,,poll93434760
+Hoffman Estates Village Hall,"1900 Hassell Rd, Hoffman Estates, IL, 60169",,09:00 AM - 05:00 PM,,ho55006564,false,true,,,,poll89572274
+Lansing Public Library,"2750 Indiana Ave, Lansing, IL, 60438",,09:00 AM - 05:00 PM,,ho7760027,false,true,,,,poll64500395
+Lemont Township Hall,"1115 Warner Ave, Lemont, IL, 60439",,09:00 AM - 05:00 PM,,ho2361984,false,true,,,,poll66208792
+Lynwood Senior Youth Center,"21490 Lincoln Hwy, Lynwood, IL, 60411",,09:00 AM - 05:00 PM,,ho54946082,false,true,,,,poll51649804
+Markham Courthouse,"16501 S. Kedzie Ave., Markham, IL, 60428",Room 238,09:00 AM - 05:00 PM,,ho78379625,false,true,,,,poll27939442
+Matteson Community Center,"20642 Matteson Ave, Matteson, IL, 60443",,09:00 AM - 05:00 PM,,ho46121648,false,true,,,,poll71950128
+Maywood Courthouse - Whitcomb Building,"1311 Maybrook Sq., Maywood, IL, 60153",Room 104,09:00 AM - 05:00 PM,,ho66238681,false,true,,,,poll64204080
+Melrose Park Village Hall,"1000 N. 25th Ave, Melrose Park, IL, 60160",,09:00 AM - 05:00 PM,,ho79969699,false,true,,,,poll17334584
+Mount Prospect Village Hall,"50 S. Emerson St, Mount Prospect, IL, 60056",,09:00 AM - 05:00 PM,,ho38512779,false,true,,,,poll39552159
+Niles Village Hall,"1000 Civic Center Drive, Niles, IL, 60714",,09:00 AM - 05:00 PM,,ho54243811,false,true,,,,poll80794170
+Norridge Village Hall,"4000 N. Olcott Ave, Norridge, IL, 60706",,09:00 AM - 05:00 PM,,ho72056873,false,true,,,,poll40122168
+Northbrook Village Hall,"1225 Cedar Lane, Northbrook, IL, 60062",,09:00 AM - 05:00 PM,,ho93627904,false,true,,,,poll12477252
+Oak Forest City Hall,"15440 S. Central Ave, Oak Forest, IL, 60452",,09:00 AM - 05:00 PM,,ho99086071,false,true,,,,poll36820519
+Oak Lawn Village Hall,"9446 S. Raymond Ave, Oak Lawn, IL, 60453",,09:00 AM - 05:00 PM,,ho25965144,false,true,,,,poll83226125
+Oak Park Village Hall,"123 Madison St, Oak Park, IL, 60302",,09:00 AM - 05:00 PM,,ho64101865,false,true,,,,poll18417071
+Olympia Fields (Brookdale Senior Living),"3633 Breakers Dr, Olympia Fields, IL, 60461",,09:00 AM - 05:00 PM,,ho47744546,false,true,,,,poll68929311
+Orland Township Hall,"14807 Ravinia Ave, Orland Park, IL, 60462",,09:00 AM - 05:00 PM,,ho83569827,false,true,,,,poll75034935
+Palatine Village Hall,"200 E. Wood St, Palatine, IL, 60067",,09:00 AM - 05:00 PM,,ho45515472,false,true,,,,poll51413935
+Palos Hills Community Center,"8455 W. 103rd St., Palos Hills, IL, 60456",,09:00 AM - 05:00 PM,,ho86117457,false,true,,,,poll25235028
+Park Forest Village Hall,"350 Victory Blvd, Park Forest, IL, 60466",,09:00 AM - 05:00 PM,,ho24072374,false,true,,,,poll94032733
+Park Ridge (Maine Park Leisure Center),"2701 W. Sibley St, Park Ridge, IL, 60068",,09:00 AM - 05:00 PM,,ho97579639,false,true,,,,poll21925327
+Rolling Meadows Courthouse,"2121 Euclid Ave., Rolling Meadows, IL, 60008",Room 238,09:00 AM - 05:00 PM,,ho88121788,false,true,,,,poll16310449
+Schaumburg (Trickster Art Gallery),"190 S. Roselle Rd, Schaumburg, IL, 60193",,09:00 AM - 05:00 PM,,ho39247105,false,true,,,,poll5913607
+Skokie Courthouse,"5600 W. Old Orchard Rd., Skokie, IL, 60077",Room 149,09:00 AM - 05:00 PM,,ho85838271,false,true,,,,poll19869081
+Skokie Village Hall,"5127 Oakton St, Skokie, IL, 60077",,09:00 AM - 05:00 PM,,ho90026705,false,true,,,,poll51256641
+South Holland (Thornton Township Hall),"333 E. 162nd St, South Holland, IL, 60473",,09:00 AM - 05:00 PM,,ho60849167,false,true,,,,poll39771657
+Stickney-Forest View Public Library,"6800 W. 43rd St, Stickney, IL, 60402",,09:00 AM - 05:00 PM,,ho33815043,false,true,,,,poll80148234
+Streamwood Village Hall,"301 E. Irving Park Rd, Streamwood, IL, 60107",,09:00 AM - 05:00 PM,,ho27457317,false,true,,,,poll9655821
+Tinley Park Village Hall,"16250 S. Oak Park Ave, Tinley Park, IL, 60477",,09:00 AM - 05:00 PM,,ho23553447,false,true,,,,poll11717014
+Wheeling (Korean Cultural Center of Chicago),"9710 Capitol Dr, Wheeling, IL, 60090",,09:00 AM - 05:00 PM,,ho48350666,false,true,,,,poll67059489
+Wilmette (Centennial Park),"2300 Old Glenview Rd, Wilmette, IL, 60091",,09:00 AM - 05:00 PM,,ho99136947,false,true,,,,poll77909625
+Crawford Country Clerk Office,"100 Douglas, Robinson, IL, 62454",,08:00 AM - 04:00 PM,,ho32207719,false,true,,,,poll80014404
+Cumberland County Clerk's Office,"140 Courthouse Square, Toledo, IL, 62468",,08:00 AM - 04:00 PM,,ho68760562,false,true,,,,poll7939656
+De Witt County Clerk Office,"201 West Washington Street, Clinton, IL, 61727",,08:30 AM - 04:30 PM,,ho45470746,false,true,,,,poll48978701
+Sycamore Campus Legislative Center in the Gathertorium,"200 N. Main Street, Sycamore, IL, 60178",,08:30 AM - 04:30 PM,,ho64633012,false,true,,,,poll5632533
+DeKalb Township Building,"2323 S. 4th Street, DeKalb, IL, 60115",,08:30 AM - 04:30 PM,,ho78781209,false,true,,,,poll56492074
+NIU-Holmes Student Center - Blackhawk Annex,"340 Carroll Ave, DeKalb, IL, 60115",,12:00 PM - 07:00 PM,,ho15958878,false,true,,,,poll44604994
+Kirkland City Hall,"511 W. Main St., Kirkland, IL, 60146",,08:30 AM - 04:00 PM,,ho84988180,false,true,,,,poll12527178
+Sandwich Fire Station,"310 E. Railroad St., Sandwich, IL, 60548",,08:30 AM - 04:00 PM,,ho80568272,false,true,,,,poll86629586
+County Clerk Office,"401 South Center, Tuscola, IL, 61953",Ste 203,08:30 AM - 04:30 PM,,ho41306262,false,true,,,,poll45135532
+DuPage County Election Commission Office,"421 North County Farm Road, Wheaton, IL, 60187",,08:30 AM - 04:30 PM,,ho83502591,false,true,,,,poll25798175
+Naperville Municipal Center,"400 S. Eagle St, Naperville, IL, 60540",,08:30 AM - 07:30 PM,,ho10471767,false,true,,,,poll27431353
+Olive Trees Condominiums,"200 E. Bailey Rd., Naperville, IL, 60563",Clubhouse,08:30 AM - 07:30 PM,,ho60753190,false,true,,,,poll54790161
+Stratford Square Mall,"152 Stratford Square, Bloomingdale, IL, 60108",,08:30 AM - 07:30 PM,,ho10465354,false,true,,,,poll50502686
+Fox Valley Mall,"195 Fox Valley Center Dr., Aurora, IL, 60504",,08:30 AM - 07:30 PM,,ho55839505,false,true,,,,poll87206576
+Addison Township Office,"401 N. Addison Rd., Addison, IL, 60101",,08:30 AM - 07:30 PM,,ho34827568,false,true,,,,poll91638745
+Bartlett Community Center,"700 S. Bartlett Rd., Bartlett, IL, 60103",,08:30 AM - 07:30 PM,,ho58910647,false,true,,,,poll29995990
+Downers Grove Village Hall,"801 Burlington Ave., Downers Grove, IL, 60515",,08:30 AM - 07:30 PM,,ho96964216,false,true,,,,poll93960232
+Elmhurst City Hall,"209 N. York St., Elmhurst, IL, 60126",,08:30 AM - 07:30 PM,,ho7378576,false,true,,,,poll46495303
+Glen Ellyn Civic Center,"535 Duane St., Glen Ellyn, IL, 60137",,08:30 AM - 07:30 PM,,ho90630815,false,true,,,,poll43985802
+Yorktown Shopping Center,"203 Yorktown Mall Drive, Lombard, IL, 60148",,08:30 AM - 07:30 PM,,ho19519950,false,true,,,,poll3145980
+Edgar Clerk County Court House,"115 West Court Street, Paris, IL, 61944",Room J,08:00 AM - 04:00 PM,,ho70663314,false,true,,,,poll79258205
+Edwards County Courthouse,"50 East Main, Albion, IL, 62806",,08:00 AM - 04:00 PM,,ho83709760,false,true,,,,poll71754423
+Effingham County Clerk Office,"101 North 4th, Effingham, IL, 62401",Ste 201,08:00 AM - 04:00 PM,,ho89494206,false,true,,,,poll17686961
+Fayette County Clerk Office,"221 South 7th Street, Vandalia, IL, 62471",,08:00 AM - 04:00 PM,,ho48813584,false,true,,,,poll55270677
+Ford County Clerk Office,"200 West State Street, Room 101, Paxton, IL, 60957",Room 101,08:30 AM - 04:30 PM,,ho86159793,false,true,,,,poll21017807
+Franklin County Clerk Office,"202 West Main, Benton, IL, 62812",,08:00 AM - 04:00 PM,,ho99850235,false,true,,,,poll46804792
+Denning Township,"217 S Horn St., West Frankfort, IL, 62896",,12:30 PM - 03:30 PM,,ho66373973,false,true,,,,poll1790420
+Fulton County Courthouse,"100 Main St, Lewistown, IL, 61542",,08:00 AM - 04:00 PM,,ho11379046,false,true,,,,poll22916162
+Gallatin County Clerk Office,"484 North Lincoln Boulevard West, Shawneetown, IL, 62984",,08:00 AM - 04:00 PM,,ho5056620,false,true,,,,poll24139944
+Greene County Clerk Office,"519 North Main Street, Carrollton, IL, 62016",,08:00 AM - 04:00 PM,,ho79316741,false,true,,,,poll3082887
+Grundy County Courthouse Lobby,"111 East Washington St, Morris, IL, 60450",,08:30 AM - 04:00 PM,,ho70647430,false,true,,,,poll40694848
+Hamilton County Clerk's Office,"100 South Jackson Street, Mcleansboro, IL, 62859",,08:00 AM - 04:30 PM,,ho59450971,false,true,,,,poll19196022
+Hancock County Clerk Office,"500 Main Street, Carthage, IL, 62321",,08:00 AM - 12:00 PM,,ho53918352,false,true,,,,poll99135910
+Hardin County Clerk Office,"Main and Market Streets, Elizabethtown, IL, 62931",,08:00 AM - 04:00 PM,,ho51367521,false,true,,,,poll77068400
+Henderson County Clerk's Office,"307 Warren St, Oquawka, IL, 61469",,08:00 AM - 04:00 PM,,ho54754747,false,true,,,,poll11405840
+Henry County Clerk Office,"307 West Center Street, Cambridge, IL, 61238",,08:00 AM - 04:30 PM,,ho61348317,false,true,,,,poll44868648
+The County Clerk_  s Office in the Administrative Center,"1001 E. Grant St., Watseka, IL, 60970",,08:30 AM - 04:30 PM,,ho77416392,false,true,,,,poll37337672
+Jackson County Court House,"1001 Walnut Street, Murphysboro, IL, 62966",,08:00 AM - 04:00 PM,,ho88476410,false,true,,,,poll11996262
+Carbondale Civic Center,"200 S Illinois Ave, Carbondale, IL, 62901",,09:00 AM - 03:00 PM,,ho45433458,false,true,,,,poll17665976
+SIU Student Center,"1255 Lincoln Dr, Carbondale, IL, 62901",,09:00 AM - 03:00 PM,,ho31370139,false,true,,,,poll83429273
+Jasper County Clerk Office,"204 West Washington Street, Newton, IL, 62448",Ste 2,08:00 AM - 04:00 PM,,ho39748912,false,true,,,,poll64822494
+Jefferson County Court House,"100 South 10th Street, Mt. Vernon, IL, 62864",Room 105,08:00 AM - 04:15 PM,,ho50403403,false,true,,,,poll1930747
+Jersey County Clerk Office,"200 North Lafayette Street, Jerseyville, IL, 62052",,08:00 AM - 04:00 PM,,ho85344188,false,true,,,,poll36571483
+Jo Daviess County Clerk Office,"330 North Bench Street, Galena, IL, 61036",Room 108,08:00 AM - 04:00 PM,,ho65088883,false,true,,,,poll76964911
+Johnson County Clerk Office,"117 North 5th Street, Vienna, IL, 62995",,08:00 AM - 12:00 PM,,ho95429535,false,true,,,,poll52970361
+Autumn Ridge,"1000 Galeener St, Vienna, IL, 62995",,04:00 PM - 07:00 PM,,ho54220876,false,true,,,,poll8890089
+Goreville City Hall,"105 W Collins St, Goreville, IL, 62939",,09:00 AM - 07:00 PM,,ho74212194,false,true,,,,poll23143746
+New Simpson Hill School,"95 Tunnel Hill Rd, Tunnel Hill, IL, 62972",,04:00 PM - 07:00 PM,,ho56935540,false,true,,,,poll15888843
+Kane County Clerk_  s Office,"719 S Batavia Ave, Geneva, IL, 60134",Bldg B,08:30 AM - 04:30 PM,,ho64005346,false,true,,,,poll19543168
+Kane County Clerk_  s Office,"719 S Batavia Ave, Bldg. B, Geneva, IL, 60134",,08:30 AM - 04:30 PM,,ho94923674,false,true,,,,poll70187962
+Kane County Branch Court Conference Center,"530 S Randall Rd, St Charles, IL, 60174",,09:00 AM - 05:00 PM,,ho23111059,false,true,,,,poll11928653
+Carpentersville Fire Station No. 3,"5000 Sleepy Hollow Rd, Carpentersville, IL, 60110",,09:00 AM - 05:00 PM,,ho79586259,false,true,,,,poll14979808
+Gail Borden Library,"270 N Grove Ave, Elgin, IL, 60120",,09:00 AM - 05:00 PM,,ho91860476,false,true,,,,poll30088579
+Elgin Township,"729 S McLean Blvd, Elgin, IL, 60123",,09:00 AM - 05:00 PM,,ho78478134,false,true,,,,poll86590346
+Campton Community Center,"5N082 Old LaFox Rd, Campton Hills, IL, 60175",,09:00 AM - 03:00 PM,,ho35688253,false,true,,,,poll46587505
+City of Batavia,"100 N Island Ave, Batavia, IL, 60510",,09:00 AM - 03:30 PM,,ho37470286,false,true,,,,poll8203237
+City of St. Charles,"2 E Main St, St Charles, IL, 60174",,09:00 AM - 03:30 PM,,ho61163341,false,true,,,,poll87088892
+Dundee Township,"611 E Main St, East Dundee, IL, 60118",Suite 201,09:00 AM - 03:30 PM,,ho19995707,false,true,,,,poll39447118
+Village of Montgomery,"200 N River St, Montgomery, IL, 60538",,09:30 AM - 02:00 PM,,ho83650031,false,true,,,,poll81177436
+Village of West Dundee,"102 S Second St, West Dundee, IL, 60118",,09:00 AM - 04:00 PM,,ho53063988,false,true,,,,poll32295236
+Del Webb Sun City,"12880 Del Webb Blvd, Huntley, IL, 60142",,10:00 AM - 04:30 PM,,ho12225102,false,true,,,,poll60885794
+Ella Johnson Library,"109 S State St., Hampshire, IL, 60140",,12:00 PM - 06:00 PM,,ho6147045,false,true,,,,poll4183773
+Sugar Grove Library,"125 S. Municipal Dr, Sugar Grove, IL, 60554",,12:00 PM - 06:00 PM,,ho7167227,false,true,,,,poll21884697
+Edgewater by Del Webb,"2554 Edgewater Dr, Elgin, IL, 60124",,10:00 AM - 07:00 PM,,ho11470373,false,true,,,,poll48748819
+The Holmstad,"700 W Fabyan Pkwy, Batavia, IL, 60510",,10:00 AM - 03:00 PM,,ho53929713,false,true,,,,poll61850209
+Town & Country Library,"320 E North St, Elburn, IL, 60119",,12:00 PM - 07:00 PM,,ho63688498,false,true,,,,poll75502425
+Jewel Osco,"652 Kirk Rd, St Charles, IL, 60174",,09:30 AM - 04:30 PM,,ho85410679,false,true,,,,poll70550498
+Jewel Osco,"800 N Main St, Elburn, IL, 60119",,09:30 AM - 04:30 PM,,ho22666733,false,true,,,,poll54912777
+Cambridge Lakes Community Center,"1125 Wester Blvd, Pingree Grove, IL, 60140",,09:30 AM - 04:30 PM,,ho89033687,false,true,,,,poll27582400
+North Aurora Police Department,"200 S Lincolnway St, North Aurora, IL, 60542",,09:30 AM - 04:30 PM,,ho54006991,false,true,,,,poll35828552
+Jewel Osco,"1660 Larkin Ave, Elgin, IL, 60123",,09:30 AM - 04:30 PM,,ho75373925,false,true,,,,poll99842906
+Jewel Osco,"1250 W. Main St, West Dundee, IL, 60118",,09:30 AM - 04:30 PM,,ho12451286,false,true,,,,poll91475375
+Jewel Osco,"465 N State RTE 47, Sugar Grove, IL, 60554",,09:30 AM - 04:30 PM,,ho52035078,false,true,,,,poll58622820
+Jewel Osco,"119 S Randall Rd, Batavia, IL, 60510",,09:30 AM - 04:30 PM,,ho54637248,false,true,,,,poll4208165
+Kankakee County Clerk Office,"189 East Court Street, Kankakee, IL, 60901",,08:30 AM - 04:30 PM,,ho93071542,false,true,,,,poll68502434
+Leo Hassett Community Building,"211 N. Main St, Manteno, IL, 60950",,12:00 PM - 06:00 PM,,ho68351996,false,true,,,,poll63765860
+Bourbonnais Municipal Building (Upstairs),"700 Main St NW, Bourbonnais, IL, 60914",Upstairs,12:00 PM - 06:00 PM,,ho98983872,false,true,,,,poll94212382
+Kendall County Clerk Office,"111 West Fox Street, Yorkville, IL, 60560",Room 103,08:00 AM - 04:30 PM,,ho72557714,false,true,,,,poll64049924
+Plano City Hall,"7 N James St., Plano, IL, 60545","B&Z Entrance Door, Conference Room",01:00 PM - 07:00 PM,,ho98298897,false,true,,,,poll73464251
+Oswego City Hall,"100 Parkers Mill, Oswego, IL, 60543",Community Room,08:00 AM - 04:30 PM,,ho865243,false,true,,,,poll34034326
+Knox County Court House,"200 South Cherry, Galesburg, IL, 61401",,08:30 AM - 04:30 PM,,ho44524742,false,true,,,,poll16974189
+Galesburg City Hall,"55 W Tompkins, Galesburg, IL, 61401",,08:00 AM - 06:00 PM,,ho17520394,false,true,,,,poll5108715
+Lake County Clerk's office,"18 N. County St., Waukegan, IL, 60085",Room 101,09:00 AM - 09:00 AM,,ho2633440,false,true,,,,poll72607268
+Antioch Township Office,"1625 Deep Lake Rd., Lake Villa, IL, 60046",,09:00 AM - 05:00 PM,,ho19125435,false,true,,,,poll22508272
+Ela Township Office,"1155 E. Route 22, Lake Zurich, IL, 60047",,09:00 AM - 05:00 PM,,ho11039275,false,true,,,,poll10661449
+Fremont Public Library,"1170 N. Midlothian Rd., Mundelein, IL, 60060",,09:00 AM - 05:00 PM,,ho86635935,false,true,,,,poll72328177
+Highland Park Police Station,"1677 Old Deerfield Rd., Highland Park, IL, 60035",,09:00 AM - 05:00 PM,,ho57397085,false,true,,,,poll21544750
+Lake Barrington Village Hall,"23860 N. Old Barrington Rd., Lake Barrington, IL, 60010",,09:00 AM - 05:00 PM,,ho38087754,false,true,,,,poll18246833
+Lake County Central Permit Facility,"500 W. Winchester Rd., Libertyville, IL, 60048",,09:00 AM - 05:00 PM,,ho24178845,false,true,,,,poll25253377
+Lake Forest City Hall,"220 E. Deerpath Rd, Lake Forest, IL, 60045",,09:00 AM - 05:00 PM,,ho91987495,false,true,,,,poll99171795
+Round Lake Village Hall,"442 N. Cedar Lake Rd., Round Lake, IL, 60073",,09:00 AM - 05:00 PM,,ho85703708,false,true,,,,poll32055606
+Vernon Township Office,"3050 N. Main St., Buffalo Grove, IL, 60089",,09:00 AM - 05:00 PM,,ho10166162,false,true,,,,poll25041335
+Zion City Hall,"2828 Sheridan Rd., Zion, IL, 60099",,09:00 AM - 05:00 PM,,ho64382428,false,true,,,,poll36649234
+Gurnee Village Hall,"325 N. O'Plaine Rd, Gurnee, IL, 60031",,09:00 AM - 05:00 PM,,ho27490463,false,true,,,,poll90864857
+"Jane Addams Center, Bowen Park","95 Jack Benny Dr, Waukegan, IL, 60087",,09:00 AM - 05:00 PM,,ho40105288,false,true,,,,poll40555838
+North Chicago City Hall,"1850 Lewis Ave, North Chicago, IL, 60064",,09:00 AM - 05:00 PM,,ho44988911,false,true,,,,poll76422206
+LaSalle County Clerk Office,"707 East Etna Road, Ottawa, IL, 61350",,08:00 AM - 04:30 PM,,ho76295289,false,true,,,,poll90863627
+Lawrence County Courthouse,"1100 State Street, Lawrenceville, IL, 62439",,09:00 AM - 05:00 PM,,ho1528292,false,true,,,,poll76562502
+"Old Court House, 1st Floor","112 East 2nd, Dixon, IL, 61021",,08:15 AM - 04:15 PM,,ho65467552,false,true,,,,poll89459923
+Livingston County Clerk Office,"112 W Madison St, Pontiac, IL, 61764",,08:00 AM - 04:30 PM,,ho92804540,false,true,,,,poll41330310
+Logan County Clerk Office,"601 Broadway, Lincoln, IL, 62656",Room 20,08:30 AM - 04:30 PM,,ho56451115,false,true,,,,poll41852838
+Macon County Clerk's Office,"141 South Main St, Decatur, IL, 62523",Room 119,08:30 AM - 04:30 PM,,ho53428553,false,true,,,,poll49601148
+Madison County Administration Building,"157 Main Street, Edwardsville, IL, 62025",1st Floor,08:30 AM - 04:30 PM,,ho33737591,false,true,,,,poll64429170
+Granite City Township Building,"2060A Delmar Ave., Granite City, IL, 62040",,08:30 AM - 04:30 PM,,ho95523731,false,true,,,,poll2819772
+Alton Law Enforcement Center,"1700 Broadway, Alton, IL, 62002",,08:30 AM - 04:30 PM,,ho82613920,false,true,,,,poll70934250
+E. Southern Illinois University,"6 Hairpin Drive, Edwardsville, IL, 62026","Willow Room, Morris Center",12:00 PM - 05:00 PM,,ho49657563,false,true,,,,poll94716949
+Bethalto Village Hall,"213 N. Prairie St., Bethalto, IL, 62010",,12:00 PM - 06:00 PM,,ho62839552,false,true,,,,poll50102078
+Collinsville Senior Citizen Center,"420 E. Main St., Collinsville, IL, 62234",,12:00 PM - 06:00 PM,,ho93225896,false,true,,,,poll48044613
+"Lewis & Clark College, Trimpe Advanced Technology Center, Ahlemeyer Atrium","Godfrey Road, Godfrey, IL, 62035",,12:00 PM - 06:00 PM,,ho44154599,false,true,,,,poll92591830
+Latzer Memorial Public Library,"1001 9th Street, Highland, IL, 62249",,12:00 PM - 06:00 PM,,ho94335168,false,true,,,,poll21171624
+Madison Fire Station,"1800 3rd Street, Madison, IL, 62060",,12:00 PM - 06:00 PM,,ho68839386,false,true,,,,poll43462025
+Troy City Hall,"116 E. Market Street, Troy, IL, 62294",,12:00 PM - 06:00 PM,,ho37707401,false,true,,,,poll11658833
+Wood River Township Office,"33 S. 9th Street, East Alton, IL, 62024",,12:00 PM - 06:00 PM,,ho60651603,false,true,,,,poll96375090
+"Marion County Court House, Room 202","100 East Main Street, Salem, IL, 62881",,08:00 AM - 04:00 PM,,ho16764825,false,true,,,,poll45813353
+Marshall County Clerk Office,"122 North Prairie, Lacon, IL, 61540-0328",,08:30 AM - 04:30 PM,,ho85600186,false,true,,,,poll21097966
+Mason County Clerk Office,"100 N. Broadway Street, Havana, IL, 62644-0077",,08:00 AM - 04:00 PM,,ho38172936,false,true,,,,poll67388408
+Massac County Clerk Office,"1 Superman Square, Metropolis, IL, 62960",,08:00 AM - 12:00 PM,,ho14792853,false,true,,,,poll66346557
+McDonough County Registration Basement,"1 Courthouse Square, Macomb, IL, 61455",,08:00 AM - 04:00 PM,,ho17829534,false,true,,,,poll28544110
+Western Illinois University,"1 University Cir, Macomb, IL, 61455",,10:00 AM - 05:00 PM,,ho93361805,false,true,,,,poll56788226
+McHenry County Clerk's Office,"667 Ware Rd., Woodstock, IL, 60098","Suite 107 from 9/29-10/21; 2nd Floor, Conference Room A from 10/24-11/7",08:30 AM - 04:30 PM,,ho35097774,false,true,,,,poll93431915
+Algonquin Township Offices,"3702 US Hwy 14, Crystal Lake, IL, 60014","Building 6B, Road District Community Room",09:00 AM - 04:00 PM,,ho82016247,false,true,,,,poll86296298
+City of Crystal Lake,"100 W Municipal Complex, Room P106, Crystal Lake, IL, 60014",Room P106,08:30 AM - 04:30 PM,,ho25604027,false,true,,,,poll1216259
+Huntley Park District,"12015 Mill St, Huntley, IL, 60142",,08:30 AM - 04:30 PM,,ho4090230,false,true,,,,poll54561826
+Lake in the Hills Village Hall,"600 Harvest Gate, Lake in the Hills, IL, 60156",Executive Conference Room (Enter thru Board Room),08:30 AM - 04:30 PM,,ho82539635,false,true,,,,poll86874090
+McHenry City Hall,"333 S Green St, McHenry, IL, 60050",Court entrance only,08:30 AM - 04:30 PM,,ho30300544,false,true,,,,poll85789880
+McHenry Township Offices,"3703 N. Richmond Rd., Johnsburg, IL, 60051",,08:30 AM - 04:00 PM,,ho88817848,false,true,,,,poll11620072
+Nunda Township Offices,"3510 Bay Rd, Annex, Crystal Lake, IL, 60012",,08:30 AM - 03:30 PM,,ho4247058,false,true,,,,poll75070482
+Dunham Township Office,"107 Airport Rd, Harvard, IL, 60033",,09:00 AM - 04:00 PM,,ho31156244,false,true,,,,poll3819425
+Marengo City Hall,"132 E Prairie St, Marengo, IL, 60152",Upper Chamber,09:00 AM - 04:00 PM,,ho54904964,false,true,,,,poll83797487
+McLean County Clerk's Office,"115 E. Washington St, Bloomington, IL, 61701",,08:30 AM - 04:30 PM,,ho73375167,false,true,,,,poll54665799
+"ISU Bone Student Center, Faculty/Staff Commons","100 N University St., Normal, IL, 61761",,10:00 AM - 05:00 PM,,ho53599900,false,true,,,,poll93660547
+ISU--Watterson Towers - Rosa Parks Room,"301 S Fell Ave, Normal, IL, 61761",,12:00 PM - 07:00 PM,,ho25746686,false,true,,,,poll33929153
+ISU--Milner Library - Room 164 D,"201 N School St., Normal, IL, 61761",,12:00 PM - 07:00 PM,,ho10629783,false,true,,,,poll62516514
+"Menard County Clerk's office, Menard County Courthouse","102 S. 7th Street, Petersburg, IL, 62675",,08:30 AM - 04:30 PM,,ho82202596,false,true,,,,poll38588549
+"Mercer County Clerk Office, Mercer County Courthouse","100 SE 3rd St, Aleda, IL, 61231",,08:00 AM - 04:00 PM,,ho85923263,false,true,,,,poll92973583
+"Monroe County Courthouse, County Clerk's Office","100 South Main Street, Waterloo, IL, 62298",,08:00 AM - 04:30 PM,,ho81975168,false,true,,,,poll42948698
+Historic Courthouse Basement,"#1 Courthouse Square, Hillsboro, IL, 62049",,08:00 AM - 04:00 PM,,ho39284004,false,true,,,,poll78016200
+Morgan County Clerk Office,"300 West State Street, Jacksonville, IL, 62651",,08:30 AM - 04:30 PM,,ho59784633,false,true,,,,poll217599
+Moultrie County Clerk's Office,"10 South Main, Sullivan, IL, 61951",Ste 5,08:30 AM - 05:00 PM,,ho67531103,false,true,,,,poll91905840
+Ogle County Clerk_  s Office,"105 S. 5th St., Oregon, IL, 61061",Suite 104,08:30 AM - 04:30 PM,,ho4219874,false,true,,,,poll47457632
+Flagg Township Building,"303 W Route 38, Rochelle, IL, 61068",,09:00 AM - 04:00 PM,,ho20992075,false,true,,,,poll79398021
+Peoria Election Office,"542 SW Adams, Peoria, IL, 61602",,08:30 AM - 04:30 PM,,ho79553755,false,true,,,,poll95510128
+ICC North,"5407 N University, Peoria, IL, 61635",,10:00 AM - 06:00 PM,,ho51122090,false,true,,,,poll71874908
+Princeville Library,"207 N Walnut St, Princeville, IL, 61559",,10:00 AM - 06:00 PM,,ho77423116,false,true,,,,poll7305236
+Hanna City Methodist Church,"12208 W Farmington Rd, Hanna City, IL, 61536",,10:00 AM - 06:00 PM,,ho8599975,false,true,,,,poll70874113
+Brimfield Library,"111 S Galena Ave, Brimfield, IL, 61517",,10:00 AM - 06:00 PM,,ho95910655,false,true,,,,poll23144337
+Lake Camelot Clubhouse,"9278 W Lake Camelot Dr, Mapleton, IL, 61547",,10:00 AM - 06:00 PM,,ho27022183,false,true,,,,poll94764800
+Alpha Park Library,"3527 Airport Road, Bartonville, IL, 61607",,10:00 AM - 06:00 PM,,ho46797515,false,true,,,,poll47658099
+Dunlap Library,"302 N 1st St, Dunlap, IL, 61525",,10:00 AM - 06:00 PM,,ho86923340,false,true,,,,poll45430101
+Peoria Heights Library,"816 E Glen Ave, Peoria Heights, IL, 61616",,10:00 AM - 06:00 PM,,ho1309168,false,true,,,,poll23742862
+Elmwood Methodist Church,"821 W Main St, Elmwood, IL, 61529",,10:00 AM - 06:00 PM,,ho76188112,false,true,,,,poll7247120
+Chillicothe Library,"430 N Bradley Ave, Chillicothe, IL, 61523",,10:00 AM - 06:00 PM,,ho62800957,false,true,,,,poll22315050
+Kickapoo Township Hall,"10025 US-150, Edwards, IL, 61528",,10:00 AM - 06:00 PM,,ho80036216,false,true,,,,poll76609970
+West Peoria City Hall:,"2506 W Rohmann Ave, West Peoria, IL, 61604",,10:00 AM - 06:00 PM,,ho86021183,false,true,,,,poll80122837
+Perry County City Clerk's Offie,"3764 State Route 13/127, Pinckneyville, IL, 62274",Room 204,08:00 AM - 04:00 PM,,ho17013470,false,true,,,,poll88256983
+Du Quoin City Hall,"28 S. Washington Street, Du Quion, IL, 62832",,04:00 PM - 07:00 PM,,ho61555913,false,true,,,,poll33761253
+Piatt County Clerk's Office,"101 W. Washington, Monticello, IL, 61856",,08:30 AM - 04:30 PM,,ho24055334,false,true,,,,poll3015042
+Pike County Clerk's Office,"121 E Washington, Pittsfield, IL, 62363",,08:30 AM - 04:30 PM,,ho71927889,false,true,,,,poll38354543
+Pope County Court House,"310 East Main St, Golconda, IL, 62938",,08:00 AM - 12:00 PM,,ho47724054,false,true,,,,poll26870123
+Putnam County Clerk's Office,"120 N. 4th Street, Hennepin, IL, 61327",,08:30 AM - 04:30 PM,,ho9214836,false,true,,,,poll10873516
+Randolph County Clerk Office,"#1 Taylor Street, Chester, IL, 62233",Room 202,08:00 AM - 04:00 PM,,ho16113083,false,true,,,,poll36364686
+County Clerk Temporary Office at Celebrations,"224 East Maine, Olney, IL, 62450",,08:00 AM - 04:00 PM,,ho68631707,false,true,,,,poll21367040
+Rock Island County Clerk Office,"1504 Third Avenue, Rock Island, IL, 61201",,08:00 AM - 04:30 PM,,ho94714258,false,true,,,,poll16102408
+"Saline County Clerk's Election Office, Saline County Courthouse","10 East Poplar Street, Harrisburg, IL, 62946",,08:00 AM - 04:00 PM,,ho45017861,false,true,,,,poll58946108
+County Complex,"200 South 9th Street, Springfield, IL, 62701",Room 105,08:30 AM - 05:00 PM,,ho26853738,false,true,,,,poll62099408
+County Clerk-Recorder's Office,"102 South Congress St., Rushville, IL, 62681",,08:00 AM - 04:00 PM,,ho41022028,false,true,,,,poll25395110
+Scott County Clerk's Office,"35 East Market Street, Winchester, IL, 62694",,08:00 AM - 04:00 PM,,ho3716599,false,true,,,,poll66286510
+County Clerk's office,"301 E. Main St, Shelbyville, IL, 62565",,08:00 AM - 04:00 PM,,ho7333704,false,true,,,,poll25520324
+"St Clair County Clerk's Office, Election Dept, 2nd Floor","10 Public Square, Belleville, IL, 62220",,08:30 AM - 05:00 PM,,ho58598086,false,true,,,,poll96565433
+Caseyville Township Office,"10001 Bunkum Rd, Fairview Heights, IL, 62208",,09:00 AM - 05:00 PM,,ho87956706,false,true,,,,poll64661106
+O_  Fallon Township Office,"801 East State St, O'Fallon, IL, 62269",,09:00 AM - 05:00 PM,,ho79208052,false,true,,,,poll64511140
+High Mount School,"1721 Boul Ave., Swansea, IL, 62226",,11:00 AM - 04:00 PM,,ho33890946,false,true,,,,poll14180831
+Centreville Township Building,"4831 Bond Ave., Alorton, IL, 62207",,11:00 AM - 05:00 PM,,ho53037989,false,true,,,,poll49803905
+Whiteside Middle School,"111 Warrior Way, Belleville, IL, 62221",,11:00 AM - 04:00 PM,,ho71300613,false,true,,,,poll79713608
+"B.A.S.S.C., (off Green Mount Rd.)","2411 Pathways Crossing, Belleville, IL, 62221",,11:00 AM - 04:00 PM,,ho5895472,false,true,,,,poll37047419
+VFW Post #1699,"621 Water St., Cahokia, IL, 62206",,11:00 AM - 05:00 PM,,ho62730282,false,true,,,,poll31805584
+Stark County Clerk's Office,"130 West Main, Toulon, IL, 61483",,08:30 AM - 04:30 PM,,ho64380735,false,true,,,,poll7632550
+Stephenson County Clerk Office,"50 West Douglas, Freeport, IL, 61032",Ste 500,08:30 AM - 04:30 PM,,ho66935928,false,true,,,,poll60763364
+"Tazewell County Clerk Office, McKenzie Building","11 South 4th Street, Pekin, IL, 61554",Ste 203,08:30 AM - 05:00 PM,,ho65129844,false,true,,,,poll45562271
+Hopedale Village Hall,"200 Main St, Hopedale, IL, 61747",,07:00 AM - 10:00 AM,,ho23753972,false,true,,,,poll57040264
+Mackinaw Village Hall,"100 E. Fast St, Mackinaw, IL, 61755",,07:00 AM - 10:00 AM,,ho2292421,false,true,,,,poll84861083
+Delavan Township,"212 Locust St, Delavan, IL, 61734",,07:00 AM - 10:00 AM,,ho7497564,false,true,,,,poll91579418
+Morton Township,"300 W. Jefferson St., Morton, IL, 61550",,07:00 AM - 10:00 AM,,ho62846156,false,true,,,,poll56633759
+Washington Township,"58 Valley Forge Rd., Washington, IL, 61571",,07:00 AM - 10:00 AM,,ho93778250,false,true,,,,poll76892491
+Folepi_  s Market Place,"2200 E. Washington St., East Peoria, IL, 61611",,07:00 AM - 10:00 AM,,ho42108250,false,true,,,,poll39468462
+Union County Courthouse,"309 West Market, Jonesboro, IL, 62952",Room 116,08:00 AM - 04:00 PM,,ho28597255,false,true,,,,poll77703722
+Vermillion County Courthouse Annex,"6 North Vermilion, Danville, IL, 61832",Floor 1,08:00 AM - 04:30 PM,,ho46795467,false,true,,,,poll99722641
+Wabash County Courthouse,"401 Market Street, Mt. Carmel, IL, 62863",,08:00 AM - 05:00 PM,,ho70012373,false,true,,,,poll87116057
+Warren County Courthouse,"100 West Broadway, Monmouth, IL, 61462",,08:00 AM - 04:30 PM,,ho61703063,false,true,,,,poll45965087
+Washington County Courthouse,"101 East St. Louis Street, Nashville, IL, 62263",,08:00 AM - 04:00 PM,,ho71131619,false,true,,,,poll69302921
+Wayne County Courthouse,"301 East Main, Fairfield, IL, 62837",,08:00 AM - 04:30 PM,,ho2580527,false,true,,,,poll99212755
+White County Courthouse,"301 East Main, Carmi, IL, 62821",,08:00 AM - 04:00 PM,,ho68165581,false,true,,,,poll4223154
+Whiteside County Courthouse,"200 East Knox Street, Morrison, IL, 61270",,08:30 AM - 04:30 PM,,ho45564222,false,true,,,,poll31830877
+Will County Office Building,"302 North Chicago Street, Joliet, IL, 60432",,08:30 AM - 04:30 PM,,ho29541465,false,true,,,,poll16477107
+City of Naperville,"400 S Eagle St., Naperville, IL, 60540",,08:30 AM - 04:30 PM,,ho64826429,false,true,,,,poll92510582
+Fountaindale Public Library,"300 W Briarcliff Rd., Bolingbrook, IL, 60440",,08:30 AM - 04:30 PM,,ho40524068,false,true,,,,poll99159068
+Governors State University,"1 University Pkwy., University Park, IL, 60484",,10:00 AM - 05:00 PM,,ho35318442,false,true,,,,poll23440350
+Joliet Park District ,"3000 W. Jefferson St., Joliet, IL, 60435",,08:30 AM - 04:30 PM,,ho97616447,false,true,,,,poll8881807
+Wheatland Township ,"4232 Tower Ct., Naperville, IL, 60564",,08:30 AM - 04:30 PM,,ho1043935,false,true,,,,poll46771247
+City of Braidwood ,"141 W. Main St., Braidwood, IL, 60408",,09:00 AM - 04:30 PM,,ho34799555,false,true,,,,poll57006363
+City of Wilmington,"1165 S. Water St.,, Wilmington, IL, 60481",,09:00 AM - 03:30 PM,,ho37197255,false,true,,,,poll55680506
+Crete Township,"1367 Wood St., Crete, IL, 60417",,08:30 AM - 03:30 PM,,ho25100026,false,true,,,,poll4678025
+Frankfort Township ,"11000 W. Lincoln Hwy., Frankfort, IL, 60423",,08:30 AM - 04:00 PM,,ho61900563,false,true,,,,poll55900675
+Homer Township ,"14350 W. 151st St., Homer Glen, IL, 60491",,09:00 AM - 04:00 PM,,ho18208005,false,true,,,,poll32434384
+Lockport Township,"222 E. 9th St., Lockport, IL, 60441",,09:00 AM - 04:30 PM,,ho61395547,false,true,,,,poll15267150
+Troy Township ,"25448 W. Seil Rd., Shorewood, IL, 60404",,08:30 AM - 03:30 PM,,ho29884705,false,true,,,,poll55742312
+Village of Channahon ,"24555 S. Navajo Dr., Channahon, IL, 60410",,08:30 AM - 11:30 AM,,ho85058022,false,true,,,,poll12185794
+Village of Elwood ,"401 E. Mississippi Ave, Elwood, IL, 60421",,09:00 AM - 04:00 PM,,ho32276640,false,true,,,,poll40840671
+Village of Frankfort,"432 W. Nebraska St., Frankfort, IL, 60423",,08:30 AM - 04:00 PM,,ho69714482,false,true,,,,poll39724153
+Village of Homer Glen,"14240 W. 151st St., Homer Glen, IL, 60491",,09:00 AM - 12:00 PM,,ho48124566,false,true,,,,poll12256100
+Village of Manhattan,"260 Market Pl, Manhattan, IL, 60442",,09:00 AM - 04:30 PM,,ho37056993,false,true,,,,poll33323820
+Village of Mokena ,"11004 Carpenter St., Mokena, IL, 60448",,08:30 AM - 04:00 PM,,ho24756570,false,true,,,,poll12778220
+Village of Monee ,"5130 w. Court St., Monee, IL, 60449",,09:00 AM - 12:00 PM,,ho26124137,false,true,,,,poll12019069
+Village of New Lenox,"1 Veterans Pkwy., New Lenox, IL, 60451",,09:00 AM - 04:00 PM,,ho52289087,false,true,,,,poll43839727
+Village of Peotone ,"208 E. Main St., Peotone, IL, 60468",,09:00 AM - 03:00 PM,,ho15906353,false,true,,,,poll10642560
+Village of Plainfield,"24401 W. Lockport St, Plainield, IL, 60544",,09:00 AM - 04:00 PM,,ho26737205,false,true,,,,poll11980570
+Village of Romeoville,"1050 W. Romeo Rd., Romeoville, IL, 60446",,09:00 AM - 04:30 PM,,ho53025609,false,true,,,,poll79451473
+Village of Shorewood,"1 Towne Center Blvd., Shorewood, IL, 60404",,08:30 AM - 04:00 PM,,ho16531974,false,true,,,,poll31916268
+Washington Township,"30200 Town Center Rd., Beecher, IL, 60401",,09:00 AM - 03:00 PM,,ho43314976,false,true,,,,poll53009781
+Williamson County Admin Building,"407 North Monroe Street, Marion, IL, 62959",Ste 119,08:00 AM - 04:00 PM,,ho3010954,false,true,,,,poll9744469
+Winnebago County Administration Building,"404 Elm Street, Rockford, IL, 61101",Ste 101,08:00 AM - 05:00 PM,,ho87297512,false,true,,,,poll6648195
+County Board Room,"107 E Court St, Eureka, IL, 61540",,08:00 AM - 05:00 PM,,ho23100429,false,true,,,,poll19513560
+Aurora Election Commission Office and Philips Park Stover Visitor Center,"1000 Ray Moses Drive, Aurora, IL, 60505",,09:00 AM - 05:00 PM,,ho14071603,false,true,,,,poll16163126
+Eola Public Library,"555 South Eola Road, Aurora, IL, 60504",,10:00 AM - 06:00 PM,,ho54809751,false,true,,,,poll86519112
+"Eastland Mall, corridor outside JCPenney","1615 E. Empire St, Bloomington, IL, 61701",,12:00 PM - 06:00 PM,,ho74074362,false,true,,,,poll38130698
+Danville Election Commission Office,"6 N. Vermilion, Danville, IL, 61832",,08:00 AM - 04:30 PM,,ho63610286,false,true,,,,poll76417031
+East St. Louis City Hall,"301 River Park Drive, East St. Louis, IL, 62201",Ste 300,08:30 AM - 04:30 PM,,ho7135398,false,true,,,,poll74233494
+"Galesburg City Hall, Galesburg Election Office","55 W. Tompkins St, Galesburg, IL, 61402-1387",,08:00 AM - 06:00 PM,,ho22246578,false,true,,,,poll21519179
+Rockford Board of Elections,"301 South 6th Street, Rockford, IL, 61104",,08:00 AM - 05:00 PM,,ho14182574,false,true,,,,poll40569093
+Emmanual Epispocal Church,"412 North Church St, Rockford, IL, 61103",,08:00 AM - 05:00 PM,,ho14862447,false,true,,,,poll5547606
+Kewanee City Hall,"401 E 3rd St, Kewanee, IL, 61443",,08:00 AM - 04:00 PM,,ho4288898,false,true,,,,poll61680014
+Geneseo City Hall,"115 S Oakwood Ave, Geneseo, IL, 61254",,08:00 AM - 04:00 PM,,ho16277209,false,true,,,,poll26237570
+Galva City Hall,"311 NW 4th Ave., Galva, IL, 61434",,08:00 AM - 04:00 PM,,ho10855555,false,true,,,,poll8666874
+Colona City Clerk's Office,"100 East 9th Ave, Colona, IL, 61241",,08:00 AM - 04:00 PM,,ho46183383,false,true,,,,poll14961876
+Orion City Hall,"1202 4th St, Orion, IL, 61273",,08:00 AM - 04:00 PM,,ho87006118,false,true,,,,poll79591711
+Macoupin County Court House,"201 East Main, Carlinville, IL, 62626",,08:30 AM - 04:30 PM,,ho64903149,false,true,,,,poll50970458
+Girard City Hall,"111 W. Madison St., Girard, IL, 62640",,09:00 AM - 12:00 PM,,ho17384049,false,true,,,,poll95580113
+Gillespie Civic Center,"115 N Macoupin St, Gillespie, IL, 62033",,09:00 AM - 12:00 PM,,ho10336704,false,true,,,,poll67507549
+Pulaksi County Clerk's office,"500 Illinois Avenue, Mound City, IL, 62963",,08:00 AM - 12:00 PM,,ho71154923,false,true,,,,poll60719597
+City of Chicago,"69 W Washington St., Chicago, IL, 60602",Lower Level,09:00 AM - 05:00 PM,,ho12905712,false,true,,,,poll9401676
+City of Chicago,"15 Washington St., Chicago, IL, 60602",,09:00 AM - 05:00 PM,,ho78775500,false,true,,,,poll48247752
+Goldblatts Building,"1615 W Chicago, Chicago, IL, 60602",,09:00 AM - 05:00 PM,,ho60294442,false,true,,,,poll2827460
+Near North Library,"310 W Division St., Chicago, IL, 60610",,09:00 AM - 05:00 PM,,ho9488752,false,true,,,,poll67997393
+Chicago Bee Library,"3647 S State, Chicago, IL, 60609",,09:00 AM - 05:00 PM,,ho80995806,false,true,,,,poll94583840
+Dr. M. L. King Center,"4314 S Cottage Grove, Chicago, IL, 60653",,09:00 AM - 05:00 PM,,ho22820135,false,true,,,,poll64722359
+Jackson Park,"6401 S Stony Island, Chicago, IL, 60637",,09:00 AM - 05:00 PM,,ho98853784,false,true,,,,poll34803540
+Whitney Young Library,"7901 S M.L. King Jr. Dr., Chicago, IL, 60619",,09:00 AM - 05:00 PM,,ho62872903,false,true,,,,poll56323650
+Jeffery Manor Library,"2401 E 100th St., Chicago, IL, 60617",,09:00 AM - 05:00 PM,,ho78137853,false,true,,,,poll87212222
+Olive Harvey College,"10001 S Woodlawn Ave., Chicago, IL, 60628",,09:00 AM - 05:00 PM,,ho47097266,false,true,,,,poll11009938
+Palmer Park,"201 E 111th St, Chicago, IL, 60628",,09:00 AM - 05:00 PM,,ho5917189,false,true,,,,poll57157144
+Vodak/East Side,"3710 E 106th St, Chicago, IL, 60617",,09:00 AM - 05:00 PM,,ho37194793,false,true,,,,poll70002432
+District 9 Police,"3120 S Halsted, Chicago, IL, 60608",,09:00 AM - 05:00 PM,,ho52319227,false,true,,,,poll82342849
+McKinley Park,"2210 W Pershing Rd., Chicago, IL, 60609",,09:00 AM - 05:00 PM,,ho91125603,false,true,,,,poll94281631
+West Lawn Park,"4233 W 65th St, Chicago, IL, 60621",,09:00 AM - 05:00 PM,,ho55561949,false,true,,,,poll19777692
+Archer Heights Library,"5055 S Archer Ave., Chicago, IL, 60632",,09:00 AM - 05:00 PM,,ho23263682,false,true,,,,poll87798004
+Gage Park,"2411 W 55th St., Chicago, IL, 60632",,09:00 AM - 05:00 PM,,ho83221743,false,true,,,,poll27943549
+Lindblom Park,"6054 S Damen Ave, Chicago, IL, 60636",,09:00 AM - 05:00 PM,,ho96092187,false,true,,,,poll81107556
+Thurgood Marshall Library,"7506 S Racine Ave, Chicago, IL, 60620",,09:00 AM - 05:00 PM,,ho83001144,false,true,,,,poll65041420
+Wrightwood-Ashburn Library,"8530 S Kedzie Ave, Chicago, IL, 60652",,09:00 AM - 05:00 PM,,ho95545455,false,true,,,,poll59551832
+Mt. Greenwood Park,"3721 W 111th St, Chicago, IL, 60655",,09:00 AM - 05:00 PM,,ho47334989,false,true,,,,poll61284416
+Coleman Library,"731 E 63rd St, Chicago, IL, 60637",,09:00 AM - 05:00 PM,,ho30073823,false,true,,,,poll65233832
+Woodson Regional Library,"9525 S Halsted St., Chicago, IL, 60628",,09:00 AM - 05:00 PM,,ho411200,false,true,,,,poll61352479
+Toman Library,"2708 S Pulaski Rd., Chicago, IL, 60632",,09:00 AM - 05:00 PM,,ho76057655,false,true,,,,poll67841597
+Clearing Library,"6423 W 63rd Pl, Chicago, IL, 60638",,09:00 AM - 05:00 PM,,ho50909969,false,true,,,,poll17159689
+Douglass Library,"3353 W 13th St, Chicago, IL, 60623",,09:00 AM - 05:00 PM,,ho11554252,false,true,,,,poll63557653
+Chinatown Library,"2100 S Wentworth Ave., Chicago, IL, 60616",,09:00 AM - 05:00 PM,,ho78027232,false,true,,,,poll50683490
+Humboldt Park Library,"1605 N Troy St., Chicago, IL, 60647",,09:00 AM - 05:00 PM,,ho60326101,false,true,,,,poll5127624
+Eckhart Park,"1330 W Chicago Ave., Chicago, IL, 60642",,09:00 AM - 05:00 PM,,ho99772448,false,true,,,,poll57023444
+W. Side Learning Center,"4624 W Madison St., Chicago, IL, 60644",,09:00 AM - 05:00 PM,,ho72366406,false,true,,,,poll20122109
+Amundsen Park,"6200 W Bloomingdale Ave., Chicago, IL, 60639",,09:00 AM - 05:00 PM,,ho3057601,false,true,,,,poll69561605
+Kilbourn Park,"3501 N Kilbourn Ave, Chicago, IL, 60641",,09:00 AM - 05:00 PM,,ho22243361,false,true,,,,poll93267923
+Portage Cragin Library,"5108 W Belmont Ave, Chicago, IL, 60641",,09:00 AM - 05:00 PM,,ho55510736,false,true,,,,poll71206004
+Bucktown-Wicker Park Library,"1701 N Milwaukee Ave, Chicago, IL, 60647",,09:00 AM - 05:00 PM,,ho32526133,false,true,,,,poll84854583
+McFetridge Sports Center,"3843 N California Ave, Chicago, IL, 60618",,09:00 AM - 05:00 PM,,ho19994440,false,true,,,,poll50942129
+West Pullman Library,"830 W 119th St, Chicago, IL, 60643",,09:00 AM - 05:00 PM,,ho74908942,false,true,,,,poll4230847
+NEIU-El-Centro,"3390 N Avondale Ave., Chicago, IL, 60618",,09:00 AM - 05:00 PM,,ho32246222,false,true,,,,poll99893291
+West Belmont Library,"3104 N Narragansett Ave., Chicago, IL, 60634",,09:00 AM - 05:00 PM,,ho96598977,false,true,,,,poll28665573
+West Chicago Library,"4856 W Chicago Ave., Chicago, IL, 60651",,09:00 AM - 05:00 PM,,ho64307262,false,true,,,,poll68837894
+Hiawatha Park,"8029 W Forest Preserve Dr., Chicago, IL, 60634",,09:00 AM - 05:00 PM,,ho24720726,false,true,,,,poll87657441
+N. Park Village Adm. Bldg.,"5801 N Pulaski Rd., Chicago, IL, 60646",,09:00 AM - 05:00 PM,,ho43311184,false,true,,,,poll76910405
+Budlong Woods Library,"5630 N Lincoln Ave., Chicago, IL, 60659",,09:00 AM - 05:00 PM,,ho18888659,false,true,,,,poll37639722
+Roden Library,"6083 N Northwest Hwy, Chicago, IL, 60631",,09:00 AM - 05:00 PM,,ho2142235,false,true,,,,poll96023609
+Museum of Broadcast Communications,"360 N State St., Chicago, IL, 60654",,09:00 AM - 05:00 PM,,ho90901194,false,true,,,,poll69618202
+Lincoln Park Library,"1150 W Fullerton Ave., Chicago, IL, 60614",,09:00 AM - 05:00 PM,,ho34486461,false,true,,,,poll97220600
+Merlo Library,"644 W Belmont Ave, Chicago, IL, 60657",,09:00 AM - 05:00 PM,,ho77661829,false,true,,,,poll60772135
+District 16 Police,"5151 N Milwaukee Ave, Chicago, IL, 60630",,09:00 AM - 05:00 PM,,ho29420596,false,true,,,,poll75425625
+Truman College,"1145 W Wilson Ave, Chicago, IL, 60640",,09:00 AM - 05:00 PM,,ho79702313,false,true,,,,poll89412508
+Welles Park,"2333 W Sunnyside Ave, Chicago, IL, 60625",,09:00 AM - 05:00 PM,,ho98417232,false,true,,,,poll75074563
+Edgewater Library,"6000 N Broadway, Chicago, IL, 60660",,09:00 AM - 05:00 PM,,ho77320806,false,true,,,,poll90256343
+Pottawattomie Park,"7340 N Rogers Ave, Chicago, IL, 60626",,09:00 AM - 05:00 PM,,ho32170286,false,true,,,,poll61419793
+Warren Park,"6601 N Western Ave, Chicago, IL, 60645",,09:00 AM - 05:00 PM,,ho50137630,false,true,,,,poll88299171
+"Chicago State Univ., Cordell Reid Building","9501 S ML King Drive, Chicago, IL, 60628",,10:00 AM - 05:00 PM,,ho26443885,false,true,,,,poll31397797
+"UIC, Student Center East, Room 613","750 S Halsted St, Chicago, IL, 60607",,10:00 AM - 05:00 PM,,ho12033517,false,true,,,,poll40566458
+"NE IL Univ., Student Union Bldg.,","5500 N St Louis Ave, Chicago, IL, 60625",,10:00 AM - 05:00 PM,,ho92837605,false,true,,,,poll12118945
+County Clerk Office,"1776 East Washington, Urbana, IL, 61802",,08:00 AM - 04:30 PM,,ho93515161,false,true,,,,poll1360343
+"UI Campus: Illini Union, Federal Room (basement)","1401 West Green St., Urbana, IL, 61801",,08:00 AM - 04:30 PM,,ho19125434,false,true,,,,poll60745687
+North Champaign: The Church of the Living God,"312 East Bradley, Champaign, IL, 61820",,08:00 AM - 04:30 PM,,ho1082477,false,true,,,,poll82753274
+West Champaign: Leonhard Recreation Center,"2307 Sangamon Drive, Champaign, IL, 61821",,08:00 AM - 04:30 PM,,ho22554070,false,true,,,,poll91081739
+Southwest Champaign: Meadowbrook Community Church,"1902 South Duncan Road, Champaign, IL, 61822",,08:00 AM - 04:30 PM,,ho89671653,false,true,,,,poll14418819
+Mahomet: Lake of the Woods Pavilion,"Lake of the Woods Rd., Mahomet, IL, 61853",,08:00 AM - 04:30 PM,,ho81508608,false,true,,,,poll3165213
+Rantoul: The Gathering Place (First United Methodist Church),"200 South Century Blvd, Rantoul, IL, 61866",,08:00 AM - 04:30 PM,,ho24382973,false,true,,,,poll50455901
+St. Joseph: Prince of Peace Lutheran Church,"802 East Douglas St., St. Joseph, IL, 61873",,08:00 AM - 04:30 PM,,ho84648088,false,true,,,,poll72281782
+Tolono Public Library,"111 East Main St., Tolono, IL, 61880",,08:00 AM - 04:30 PM,,ho47506412,false,true,,,,poll43168783

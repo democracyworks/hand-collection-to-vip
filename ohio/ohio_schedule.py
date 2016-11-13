@@ -77,14 +77,14 @@ class ScheduleTxt(object):
     def get_start_date(self, start_date, start_time):
         """#"""
 
-        start_date = datetime.datetime.strptime(start_date, '%m-%d-%Y').strftime('%Y-%m-%d')
+        start_date = datetime.datetime.strptime(start_date, '%m/%d/%y').strftime('%Y-%m-%d')
 
         return start_date
 
     def get_end_date(self, end_date, start_time):
         """#"""
 
-        end_date = datetime.datetime.strptime(end_date, '%m-%d-%Y').strftime('%Y-%m-%d')
+        end_date = datetime.datetime.strptime(end_date, '%m/%d/%y').strftime('%Y-%m-%d')
 
         return end_date
 
@@ -175,7 +175,7 @@ if __name__ == '__main__':
     state_file = 'ohio_early_voting_info.csv'
 
     #early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/ohio/output/" + state_file
-    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/ohio/early_voting_input/" + state_file
+    early_voting_file = config.input + state_file
 
  #   colnames = ['ocd-division', 'email', 'county', 'location_name', 'address_1', 'address_2', 'city',
  #               'state', 'zip_code', 'source_start_time', 'source_end_time', 'source_start_date', 'source_end_date',

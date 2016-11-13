@@ -50,7 +50,7 @@ class SourceTxt(object):
     def write_source_txt(self):
         # This method is going to populate the source CSV with all the necessary data
 
-        with open(config.source_output, 'ab') as f:
+        with open(config.output + "source.txt", 'ab') as f:
             fieldnames = ["date_time", 'description', 'name', 'organization_uri', 'terms_of_use_uri', 'vip_id', 'version',
                           'id']
             writer = csv.DictWriter(f, fieldnames=fieldnames)

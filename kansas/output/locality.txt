@@ -1,0 +1,106 @@
+election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
+,ocd-id,,ocd-division/country:us/state:ks/county:allen,allen_lola_4,poll46088214,st20,other,,loc0001
+,ocd-id,,ocd-division/country:us/state:ks/county:anderson,anderson_garnett_5,poll22014036,st20,other,,loc0002
+,ocd-id,,ocd-division/country:us/state:ks/county:atchison,atchison_atchison_9,poll91894833,st20,other,,loc0003
+,ocd-id,,ocd-division/country:us/state:ks/county:barber,barber_medicine,poll13751350,st20,other,,loc0004
+,ocd-id,,ocd-division/country:us/state:ks/county:barton,barton_great,poll92877893,st20,other,,loc0005
+,ocd-id,,ocd-division/country:us/state:ks/county:bourbon,bourbon_ft,poll49681936,st20,other,,loc0006
+,ocd-id,,ocd-division/country:us/state:ks/county:brown,brown_hiawatha_24,poll11298506,st20,other,,loc0007
+,ocd-id,,ocd-division/country:us/state:ks/county:butler,butler_el,poll35100449 poll90630924,st20,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:ks/county:chase,chase_cottonwood,poll79817034,st20,other,,loc0009
+,ocd-id,,ocd-division/country:us/state:ks/county:chautauqua,chautauqua_sedan_37,poll76569633,st20,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:ks/county:cherokee,cherokee_columbus_40,poll12349079,st20,other,,loc0011
+,ocd-id,,ocd-division/country:us/state:ks/county:cheyenne,cheyenne_st,poll65099163,st20,other,,loc0012
+,ocd-id,,ocd-division/country:us/state:ks/county:clark,clark_ashland_48,poll83974220,st20,other,,loc0013
+,ocd-id,,ocd-division/country:us/state:ks/county:clay,clay_clay,poll73396200,st20,other,,loc0014
+,ocd-id,,ocd-division/country:us/state:ks/county:cloud,cloud_concordia_60,poll78837689,st20,other,,loc0015
+,ocd-id,,ocd-division/country:us/state:ks/county:coffey,coffey_burlington_63,poll20391107,st20,other,,loc0016
+,ocd-id,,ocd-division/country:us/state:ks/county:comanche,comanche_coldwater_68,poll37839255,st20,other,,loc0017
+,ocd-id,,ocd-division/country:us/state:ks/county:cowley,cowley_winfield_76,poll19711793,st20,other,,loc0018
+,ocd-id,,ocd-division/country:us/state:ks/county:crawford,crawford_pittsburg_82,poll7960686 poll87848409 poll84132479,st20,other,,loc0019
+,ocd-id,,ocd-division/country:us/state:ks/county:decatur,decatur_oberlin_85,poll88393637,st20,other,,loc0020
+,ocd-id,,ocd-division/country:us/state:ks/county:dickinson,dickinson_abilene_91,poll87225355,st20,other,,loc0021
+,ocd-id,,ocd-division/country:us/state:ks/county:doniphan,doniphan_troy_96,poll28018905,st20,other,,loc0022
+,ocd-id,,ocd-division/country:us/state:ks/county:douglas,douglas_lawrence_106,poll69358390 poll56544446 poll71154562 poll91154019 poll29484943 poll77975598 poll85480065,st20,other,,loc0023
+,ocd-id,,ocd-division/country:us/state:ks/county:edwards,edwards_kinsley_110,poll63905830,st20,other,,loc0024
+,ocd-id,,ocd-division/country:us/state:ks/county:elk,elk_howard_115,poll97967978,st20,other,,loc0025
+,ocd-id,,ocd-division/country:us/state:ks/county:ellis,ellis_hays_117,poll30455086,st20,other,,loc0026
+,ocd-id,,ocd-division/country:us/state:ks/county:ellsworth,ellsworth_ellsworth_124,poll84040399,st20,other,,loc0027
+,ocd-id,,ocd-division/country:us/state:ks/county:finney,finney_garden,poll51761086,st20,other,,loc0028
+,ocd-id,,ocd-division/country:us/state:ks/county:ford,ford_dodge,poll97354625,st20,other,,loc0029
+,ocd-id,,ocd-division/country:us/state:ks/county:franklin,franklin_ottawa_136,poll45551726,st20,other,,loc0030
+,ocd-id,,ocd-division/country:us/state:ks/county:geary,geary_junction,poll39936985,st20,other,,loc0031
+,ocd-id,,ocd-division/country:us/state:ks/county:gove,gove_gove_148,poll11729857,st20,other,,loc0032
+,ocd-id,,ocd-division/country:us/state:ks/county:graham,graham_hill,poll55790840,st20,other,,loc0033
+,ocd-id,,ocd-division/country:us/state:ks/county:grant,grant_ulysses_153,poll36308365,st20,other,,loc0034
+,ocd-id,,ocd-division/country:us/state:ks/county:gray,gray_cimarron_158,poll26774577,st20,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:ks/county:greeley,greeley_tribune_159,poll70110386,st20,other,,loc0036
+,ocd-id,,ocd-division/country:us/state:ks/county:greenwood,greenwood_eureka_166,poll36479759,st20,other,,loc0037
+,ocd-id,,ocd-division/country:us/state:ks/county:hamilton,hamilton_syracuse_170,poll73486943,st20,other,,loc0038
+,ocd-id,,ocd-division/country:us/state:ks/county:harper,harper_anthony_173,poll5482228,st20,other,,loc0039
+,ocd-id,,ocd-division/country:us/state:ks/county:harvey,harvey_newton_177,poll82388413,st20,other,,loc0040
+,ocd-id,,ocd-division/country:us/state:ks/county:haskell,haskell_sublette_179,poll24914065,st20,other,,loc0041
+,ocd-id,,ocd-division/country:us/state:ks/county:hodgeman,hodgeman_jetmore_180,poll45754666,st20,other,,loc0042
+,ocd-id,,ocd-division/country:us/state:ks/county:jackson,jackson_highland_193,poll38418722 poll80717808 poll65215201 poll85119386,st20,other,,loc0043
+,ocd-id,,ocd-division/country:us/state:ks/county:jefferson,jefferson_oskaloosa_196,poll95871056,st20,other,,loc0044
+,ocd-id,,ocd-division/country:us/state:ks/county:jewell,jewell_mankato_204,poll31269569,st20,other,,loc0045
+,ocd-id,,ocd-division/country:us/state:ks/county:johnson,johnson_shawnee_229,poll65784832 poll59583963 poll32370224 poll45164239 poll1159718 poll84167790,st20,other,,loc0046
+,ocd-id,,ocd-division/country:us/state:ks/county:kearny,kearny_lakin_238,poll48011121,st20,other,,loc0047
+,ocd-id,,ocd-division/country:us/state:ks/county:kingman,kingman_kingman_244,poll73638989,st20,other,,loc0048
+,ocd-id,,ocd-division/country:us/state:ks/county:kiowa,kiowa_greensburg_249,poll24892030,st20,other,,loc0049
+,ocd-id,,ocd-division/country:us/state:ks/county:labette,labette_oswego_254,poll87186618,st20,other,,loc0050
+,ocd-id,,ocd-division/country:us/state:ks/county:lane,lane_dighton_256,poll25637587,st20,other,,loc0051
+,ocd-id,,ocd-division/country:us/state:ks/county:leavenworth,leavenworth_leavenworth_263,poll99781800,st20,other,,loc0052
+,ocd-id,,ocd-division/country:us/state:ks/county:lincoln,lincoln_lincoln_267,poll10791726,st20,other,,loc0053
+,ocd-id,,ocd-division/country:us/state:ks/county:linn,linn_mound,poll53208996,st20,other,,loc0054
+,ocd-id,,ocd-division/country:us/state:ks/county:logan,logan_oakley_273,poll35937091,st20,other,,loc0055
+,ocd-id,,ocd-division/country:us/state:ks/county:lyon,lyon_emporia_276,poll91932231,st20,other,,loc0056
+,ocd-id,,ocd-division/country:us/state:ks/county:marion,marion_marion_281,poll14727303,st20,other,,loc0057
+,ocd-id,,ocd-division/country:us/state:ks/county:marshall,marshall_marysville_289,poll43927063,st20,other,,loc0058
+,ocd-id,,ocd-division/country:us/state:ks/county:mcpherson,mcpherson_mcpherson_292,poll93723938,st20,other,,loc0059
+,ocd-id,,ocd-division/country:us/state:ks/county:meade,meade_meade_296,poll19823926,st20,other,,loc0060
+,ocd-id,,ocd-division/country:us/state:ks/county:miami,miami_paola_300,poll35035398,st20,other,,loc0061
+,ocd-id,,ocd-division/country:us/state:ks/county:mitchell,mitchell_beloit_309,poll39808350,st20,other,,loc0062
+,ocd-id,,ocd-division/country:us/state:ks/county:montgomery,montgomery_independence_310,poll606214,st20,other,,loc0063
+,ocd-id,,ocd-division/country:us/state:ks/county:morris,morris_council,poll29403476,st20,other,,loc0064
+,ocd-id,,ocd-division/country:us/state:ks/county:morton,morton_elkhart_318,poll10227693,st20,other,,loc0065
+,ocd-id,,ocd-division/country:us/state:ks/county:nemaha,nemaha_seneca_325,poll13473456,st20,other,,loc0066
+,ocd-id,,ocd-division/country:us/state:ks/county:neosho,neosho_erie_330,poll10592309,st20,other,,loc0067
+,ocd-id,,ocd-division/country:us/state:ks/county:ness,ness_ness,poll4964011,st20,other,,loc0068
+,ocd-id,,ocd-division/country:us/state:ks/county:norton,norton_norton_339,poll27872103,st20,other,,loc0069
+,ocd-id,,ocd-division/country:us/state:ks/county:osage,osage_lyndon_340,poll41005617,st20,other,,loc0070
+,ocd-id,,ocd-division/country:us/state:ks/county:osborne,osborne_osborne_348,poll3045406,st20,other,,loc0071
+,ocd-id,,ocd-division/country:us/state:ks/county:ottawa,ottawa_minneapolis_358,poll58907627,st20,other,,loc0072
+,ocd-id,,ocd-division/country:us/state:ks/county:pawnee,pawnee_larned_359,poll70160908,st20,other,,loc0073
+,ocd-id,,ocd-division/country:us/state:ks/county:phillips,phillips_phillipsburg_366,poll9764972,st20,other,,loc0074
+,ocd-id,,ocd-division/country:us/state:ks/county:pottawatomie,pottawatomie_westmoreland_369,poll20735871,st20,other,,loc0075
+,ocd-id,,ocd-division/country:us/state:ks/county:pratt,pratt_pratt_373,poll90758429,st20,other,,loc0076
+,ocd-id,,ocd-division/country:us/state:ks/county:rawlins,rawlins_atwood_378,poll80890185,st20,other,,loc0077
+,ocd-id,,ocd-division/country:us/state:ks/county:reno,reno_hutchinson_380,poll87330415 poll85323380 poll57548998,st20,other,,loc0078
+,ocd-id,,ocd-division/country:us/state:ks/county:republic,republic_belleville_388,poll46575900,st20,other,,loc0079
+,ocd-id,,ocd-division/country:us/state:ks/county:rice,rice_lyons_389,poll32829058,st20,other,,loc0080
+,ocd-id,,ocd-division/country:us/state:ks/county:riley,riley_manhattan_400,poll30902449 poll30441286,st20,other,,loc0081
+,ocd-id,,ocd-division/country:us/state:ks/county:rooks,rooks_stockton_409,poll88652434,st20,other,,loc0082
+,ocd-id,,ocd-division/country:us/state:ks/county:rush,rush_lacrosse_414,poll54482322,st20,other,,loc0083
+,ocd-id,,ocd-division/country:us/state:ks/county:russell,russell_russell_416,poll47284691,st20,other,,loc0084
+,ocd-id,,ocd-division/country:us/state:ks/county:saline,saline_salina_421,poll75726451,st20,other,,loc0085
+,ocd-id,,ocd-division/country:us/state:ks/county:scott,scott_scott,poll12576203,st20,other,,loc0086
+,ocd-id,,ocd-division/country:us/state:ks/county:sedgwick,sedgwick_wichita_485,poll40553650 poll50994791 poll53786233 poll243231 poll54884411 poll90534379 poll20708707 poll27057632 poll96295156 poll91932875 poll32719906 poll85110866 poll27726773 poll58040912 poll98322376 poll86506946,st20,other,,loc0087
+,ocd-id,,ocd-division/country:us/state:ks/county:seward,seward_liberal_494,poll25374915,st20,other,,loc0088
+,ocd-id,,ocd-division/country:us/state:ks/county:shawnee,shawnee_topeka_496,poll91387856,st20,other,,loc0089
+,ocd-id,,ocd-division/country:us/state:ks/county:sheridan,sheridan_hoxie_502,poll5808555,st20,other,,loc0090
+,ocd-id,,ocd-division/country:us/state:ks/county:sherman,sherman_goodland_510,poll73030319,st20,other,,loc0091
+,ocd-id,,ocd-division/country:us/state:ks/county:smith,smith_smith,poll12746312,st20,other,,loc0092
+,ocd-id,,ocd-division/country:us/state:ks/county:stafford,stafford_st.,poll64183587,st20,other,,loc0093
+,ocd-id,,ocd-division/country:us/state:ks/county:stanton,stanton_johnson_528,poll50080543,st20,other,,loc0094
+,ocd-id,,ocd-division/country:us/state:ks/county:stevens,stevens_hugoton_531,poll58413211,st20,other,,loc0095
+,ocd-id,,ocd-division/country:us/state:ks/county:sumner,sumner_wellington_532,poll88872326,st20,other,,loc0096
+,ocd-id,,ocd-division/country:us/state:ks/county:thomas,thomas_colby_535,poll77877776,st20,other,,loc0097
+,ocd-id,,ocd-division/country:us/state:ks/county:trego,trego_wakeeney_541,poll23730737,st20,other,,loc0098
+,ocd-id,,ocd-division/country:us/state:ks/county:wabaunsee,wabaunsee_alma_545,poll58876664,st20,other,,loc0099
+,ocd-id,,ocd-division/country:us/state:ks/county:wallace,wallace_sharon,poll68324648,st20,other,,loc0100
+,ocd-id,,ocd-division/country:us/state:ks/county:washington,washington_washington_555,poll212146,st20,other,,loc0101
+,ocd-id,,ocd-division/country:us/state:ks/county:wichita,wichita_leoti_560,poll61345820,st20,other,,loc0102
+,ocd-id,,ocd-division/country:us/state:ks/county:wilson,wilson_fredonia_562,poll84042329,st20,other,,loc0103
+,ocd-id,,ocd-division/country:us/state:ks/county:woodson,woodson_yates,poll74342879,st20,other,,loc0104
+,ocd-id,,ocd-division/country:us/state:ks/county:wyandotte,wyandotte_kansas,poll55942635 poll43875478 poll41720604,st20,other,,loc0105

@@ -15,42 +15,42 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:wv/county:hampshire,ocd-division/country:us/state:wv/county:hampsh0059,poll548381,st54,other,,loc0014
 ,ocd-id,,ocd-division/country:us/state:wv/county:hancock,ocd-division/country:us/state:wv/county:hanc0064,poll61445082,st54,other,,loc0015
 ,ocd-id,,ocd-division/country:us/state:wv/county:hardy,ocd-division/country:us/state:wv/county:ha0065,poll26485228,st54,other,,loc0016
-,ocd-id,,ocd-division/country:us/state:wv/county:harrison,ocd-division/country:us/state:wv/county:harri0071,poll99399915,st54,other,,loc0017
-,ocd-id,,ocd-division/country:us/state:wv/county:jackson,ocd-division/country:us/state:wv/county:jack0079,poll11558437 poll64109455,st54,other,,loc0018
-,ocd-id,,ocd-division/country:us/state:wv/county:jefferson,ocd-division/country:us/state:wv/county:jeffer0081,poll65372033,st54,other,,loc0019
-,ocd-id,,ocd-division/country:us/state:wv/county:kanawha,ocd-division/country:us/state:wv/county:kana0086,poll19132503,st54,other,,loc0020
-,ocd-id,,ocd-division/country:us/state:wv/county:lewis,ocd-division/country:us/state:wv/county:le0087,poll70576036,st54,other,,loc0021
-,ocd-id,,ocd-division/country:us/state:wv/county:lincoln,ocd-division/country:us/state:wv/county:linc0100,poll61158934 poll15873577 poll21809675,st54,other,,loc0022
-,ocd-id,,ocd-division/country:us/state:wv/county:logan,ocd-division/country:us/state:wv/county:lo0105,poll21338766,st54,other,,loc0023
-,ocd-id,,ocd-division/country:us/state:wv/county:marion,ocd-division/country:us/state:wv/county:mar0112,poll53196250 poll42306101,st54,other,,loc0024
-,ocd-id,,ocd-division/country:us/state:wv/county:marshall,ocd-division/country:us/state:wv/county:marsh0119,poll88225676,st54,other,,loc0025
-,ocd-id,,ocd-division/country:us/state:wv/county:mason,ocd-division/country:us/state:wv/county:ma0123,poll4862786,st54,other,,loc0026
-,ocd-id,,ocd-division/country:us/state:wv/county:mcdowell,ocd-division/country:us/state:wv/county:mcdow0127,poll52376254,st54,other,,loc0027
-,ocd-id,,ocd-division/country:us/state:wv/county:mercer,ocd-division/country:us/state:wv/county:mer0138,poll84378720 poll64976337 poll35403503 poll96660151,st54,other,,loc0028
-,ocd-id,,ocd-division/country:us/state:wv/county:mineral,ocd-division/country:us/state:wv/county:mine0145,poll82037147,st54,other,,loc0029
-,ocd-id,,ocd-division/country:us/state:wv/county:mingo,ocd-division/country:us/state:wv/county:mi0149,poll902819,st54,other,,loc0030
+,ocd-id,,ocd-division/country:us/state:wv/county:harrison,ocd-division/country:us/state:wv/county:harri0071,poll99399915 poll1714892 poll94778599,st54,other,,loc0017
+,ocd-id,,ocd-division/country:us/state:wv/county:jackson,ocd-division/country:us/state:wv/county:jack0084,poll11558437 poll64109455,st54,other,,loc0018
+,ocd-id,,ocd-division/country:us/state:wv/county:jefferson,ocd-division/country:us/state:wv/county:jeffer0089,poll65372033,st54,other,,loc0019
+,ocd-id,,ocd-division/country:us/state:wv/county:kanawha,ocd-division/country:us/state:wv/county:kana0091,poll19132503,st54,other,,loc0020
+,ocd-id,,ocd-division/country:us/state:wv/county:lewis,ocd-division/country:us/state:wv/county:le0095,poll70576036,st54,other,,loc0021
+,ocd-id,,ocd-division/country:us/state:wv/county:lincoln,ocd-division/country:us/state:wv/county:linc0110,poll61158934 poll15873577 poll21809675,st54,other,,loc0022
+,ocd-id,,ocd-division/country:us/state:wv/county:logan,ocd-division/country:us/state:wv/county:lo0116,poll21338766,st54,other,,loc0023
+,ocd-id,,ocd-division/country:us/state:wv/county:marion,ocd-division/country:us/state:wv/county:mar0119,poll53196250 poll42306101,st54,other,,loc0024
+,ocd-id,,ocd-division/country:us/state:wv/county:marshall,ocd-division/country:us/state:wv/county:marsh0125,poll88225676,st54,other,,loc0025
+,ocd-id,,ocd-division/country:us/state:wv/county:mason,ocd-division/country:us/state:wv/county:ma0131,poll4862786,st54,other,,loc0026
+,ocd-id,,ocd-division/country:us/state:wv/county:mcdowell,ocd-division/country:us/state:wv/county:mcdow0135,poll52376254,st54,other,,loc0027
+,ocd-id,,ocd-division/country:us/state:wv/county:mercer,ocd-division/country:us/state:wv/county:mer0151,poll84378720 poll64976337 poll35403503 poll96660151,st54,other,,loc0028
+,ocd-id,,ocd-division/country:us/state:wv/county:mineral,ocd-division/country:us/state:wv/county:mine0153,poll82037147,st54,other,,loc0029
+,ocd-id,,ocd-division/country:us/state:wv/county:mingo,ocd-division/country:us/state:wv/county:mi0157,poll902819,st54,other,,loc0030
 ,ocd-id,,ocd-division/country:us/state:wv/county:monongalia,ocd-division/country:us/state:wv/county:mononga0159,poll8128674 poll33858000 poll81910775 poll67313689 poll64352844,st54,other,,loc0031
-,ocd-id,,ocd-division/country:us/state:wv/county:monroe,ocd-division/country:us/state:wv/county:mon0165,poll77594073 poll23491766,st54,other,,loc0032
-,ocd-id,,ocd-division/country:us/state:wv/county:morgan,ocd-division/country:us/state:wv/county:mor0169,poll44736614,st54,other,,loc0033
-,ocd-id,,ocd-division/country:us/state:wv/county:nicholas,ocd-division/country:us/state:wv/county:nicho0173,poll66743942,st54,other,,loc0034
-,ocd-id,,ocd-division/country:us/state:wv/county:ohio,ocd-division/country:us/state:wv/county:o0175,poll95661263,st54,other,,loc0035
-,ocd-id,,ocd-division/country:us/state:wv/county:pendleton,ocd-division/country:us/state:wv/county:pendle0179,poll92737992,st54,other,,loc0036
-,ocd-id,,ocd-division/country:us/state:wv/county:pleasants,ocd-division/country:us/state:wv/county:pleasa0180,poll92688284,st54,other,,loc0037
-,ocd-id,,ocd-division/country:us/state:wv/county:pocahontas,ocd-division/country:us/state:wv/county:pocahon0187,poll10014974,st54,other,,loc0038
-,ocd-id,,ocd-division/country:us/state:wv/county:preston,ocd-division/country:us/state:wv/county:pres0188,poll21600015,st54,other,,loc0039
-,ocd-id,,ocd-division/country:us/state:wv/county:putnam,ocd-division/country:us/state:wv/county:put0191,poll39344382,st54,other,,loc0040
-,ocd-id,,ocd-division/country:us/state:wv/county:raleigh,ocd-division/country:us/state:wv/county:rale0201,poll47167279,st54,other,,loc0041
-,ocd-id,,ocd-division/country:us/state:wv/county:randolph,ocd-division/country:us/state:wv/county:rando0202,poll4588985,st54,other,,loc0042
-,ocd-id,,ocd-division/country:us/state:wv/county:ritchie,ocd-division/country:us/state:wv/county:ritc0207,poll60486246,st54,other,,loc0043
-,ocd-id,,ocd-division/country:us/state:wv/county:roane,ocd-division/country:us/state:wv/county:ro0213,poll84584552,st54,other,,loc0044
-,ocd-id,,ocd-division/country:us/state:wv/county:summers,ocd-division/country:us/state:wv/county:summ0216,poll97679983,st54,other,,loc0045
-,ocd-id,,ocd-division/country:us/state:wv/county:taylor,ocd-division/country:us/state:wv/county:tay0220,poll81913813 poll44794557,st54,other,,loc0046
-,ocd-id,,ocd-division/country:us/state:wv/county:tucker,ocd-division/country:us/state:wv/county:tuc0226,poll44404323,st54,other,,loc0047
-,ocd-id,,ocd-division/country:us/state:wv/county:tyler,ocd-division/country:us/state:wv/county:ty0231,poll28528116,st54,other,,loc0048
-,ocd-id,,ocd-division/country:us/state:wv/county:upshur,ocd-division/country:us/state:wv/county:ups0235,poll91055110,st54,other,,loc0049
-,ocd-id,,ocd-division/country:us/state:wv/county:wayne,ocd-division/country:us/state:wv/county:wa0238,poll62657095,st54,other,,loc0050
-,ocd-id,,ocd-division/country:us/state:wv/county:webster,ocd-division/country:us/state:wv/county:webs0246,poll20901272,st54,other,,loc0051
-,ocd-id,,ocd-division/country:us/state:wv/county:wetzel,ocd-division/country:us/state:wv/county:wet0251,poll70753510,st54,other,,loc0052
-,ocd-id,,ocd-division/country:us/state:wv/county:wirt,ocd-division/country:us/state:wv/county:w0258,poll87575784,st54,other,,loc0053
-,ocd-id,,ocd-division/country:us/state:wv/county:wood,ocd-division/country:us/state:wv/county:w0263,poll13443357 poll51720431 poll31820367 poll7719355 poll24733732,st54,other,,loc0054
-,ocd-id,,ocd-division/country:us/state:wv/county:wyoming,ocd-division/country:us/state:wv/county:wyom0274,poll29978300,st54,other,,loc0055
+,ocd-id,,ocd-division/country:us/state:wv/county:monroe,ocd-division/country:us/state:wv/county:mon0172,poll77594073 poll23491766,st54,other,,loc0032
+,ocd-id,,ocd-division/country:us/state:wv/county:morgan,ocd-division/country:us/state:wv/county:mor0176,poll44736614,st54,other,,loc0033
+,ocd-id,,ocd-division/country:us/state:wv/county:nicholas,ocd-division/country:us/state:wv/county:nicho0181,poll66743942,st54,other,,loc0034
+,ocd-id,,ocd-division/country:us/state:wv/county:ohio,ocd-division/country:us/state:wv/county:o0182,poll95661263,st54,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:wv/county:pendleton,ocd-division/country:us/state:wv/county:pendle0184,poll92737992,st54,other,,loc0036
+,ocd-id,,ocd-division/country:us/state:wv/county:pleasants,ocd-division/country:us/state:wv/county:pleasa0188,poll92688284,st54,other,,loc0037
+,ocd-id,,ocd-division/country:us/state:wv/county:pocahontas,ocd-division/country:us/state:wv/county:pocahon0192,poll10014974,st54,other,,loc0038
+,ocd-id,,ocd-division/country:us/state:wv/county:preston,ocd-division/country:us/state:wv/county:pres0197,poll21600015,st54,other,,loc0039
+,ocd-id,,ocd-division/country:us/state:wv/county:putnam,ocd-division/country:us/state:wv/county:put0199,poll39344382,st54,other,,loc0040
+,ocd-id,,ocd-division/country:us/state:wv/county:raleigh,ocd-division/country:us/state:wv/county:rale0209,poll47167279,st54,other,,loc0041
+,ocd-id,,ocd-division/country:us/state:wv/county:randolph,ocd-division/country:us/state:wv/county:rando0213,poll4588985,st54,other,,loc0042
+,ocd-id,,ocd-division/country:us/state:wv/county:ritchie,ocd-division/country:us/state:wv/county:ritc0214,poll60486246,st54,other,,loc0043
+,ocd-id,,ocd-division/country:us/state:wv/county:roane,ocd-division/country:us/state:wv/county:ro0221,poll84584552,st54,other,,loc0044
+,ocd-id,,ocd-division/country:us/state:wv/county:summers,ocd-division/country:us/state:wv/county:summ0223,poll97679983,st54,other,,loc0045
+,ocd-id,,ocd-division/country:us/state:wv/county:taylor,ocd-division/country:us/state:wv/county:tay0231,poll81913813 poll44794557,st54,other,,loc0046
+,ocd-id,,ocd-division/country:us/state:wv/county:tucker,ocd-division/country:us/state:wv/county:tuc0237,poll44404323,st54,other,,loc0047
+,ocd-id,,ocd-division/country:us/state:wv/county:tyler,ocd-division/country:us/state:wv/county:ty0240,poll28528116,st54,other,,loc0048
+,ocd-id,,ocd-division/country:us/state:wv/county:upshur,ocd-division/country:us/state:wv/county:ups0244,poll91055110,st54,other,,loc0049
+,ocd-id,,ocd-division/country:us/state:wv/county:wayne,ocd-division/country:us/state:wv/county:wa0249,poll62657095,st54,other,,loc0050
+,ocd-id,,ocd-division/country:us/state:wv/county:webster,ocd-division/country:us/state:wv/county:webs0255,poll20901272,st54,other,,loc0051
+,ocd-id,,ocd-division/country:us/state:wv/county:wetzel,ocd-division/country:us/state:wv/county:wet0264,poll70753510,st54,other,,loc0052
+,ocd-id,,ocd-division/country:us/state:wv/county:wirt,ocd-division/country:us/state:wv/county:w0269,poll87575784,st54,other,,loc0053
+,ocd-id,,ocd-division/country:us/state:wv/county:wood,ocd-division/country:us/state:wv/county:w0272,poll13443357 poll51720431 poll31820367 poll7719355 poll24733732,st54,other,,loc0054
+,ocd-id,,ocd-division/country:us/state:wv/county:wyoming,ocd-division/country:us/state:wv/county:wyom0283,poll29978300,st54,other,,loc0055

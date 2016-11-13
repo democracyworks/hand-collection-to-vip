@@ -15,7 +15,7 @@ early_voting = 'true'
 
 output = '/Users/danielgilberg/Development/hand-collection-to-vip/ohio/output/'
 
-input = '/Users/danielgilberg/Development/hand-collection-to-vip/ohio/input/'
+input = '/Users/danielgilberg/Development/hand-collection-to-vip/ohio/early_voting_input/'
 
 source_output = "/home/acg/democracyworks/hand-collection-to-vip/ohio/output/source.txt"
 

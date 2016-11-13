@@ -10,9 +10,11 @@ early_voting = 'true'
 
 state_file = 'washington_early_voting_info2.csv'
 
-input = '/home/acg/democracyworks/hand-collection-to-vip/' + state + '/input/'
+#/Users/danielgilberg/Development/hand-collection-to-vip/washington/output
 
-output = '/home/acg/democracyworks/hand-collection-to-vip/' + state + '/output/'
+input = '/Users/danielgilberg/Development/hand-collection-to-vip/' + state + '/input/'
+
+output = '/Users/danielgilberg/Development/hand-collection-to-vip/' + state + '/output/'
 
 
 fips_dict = {'wyoming': '56', 'colorado': '08', 'washington': '53', 'hawaii': '15', 'tennessee': '47', 'iowa': '19',

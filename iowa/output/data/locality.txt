@@ -1,100 +1,100 @@
 election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
-,ocd-id,,ocd-division/country:us/state:ia/county:adair,ocd-division/country:us/state:ia/county:ad0005,poll14791178,st19,other,,loc0001
-,ocd-id,,ocd-division/country:us/state:ia/county:adams,ocd-division/country:us/state:ia/county:ad0009,poll93095200,st19,other,,loc0002
-,ocd-id,,ocd-division/country:us/state:ia/county:allamakee,ocd-division/country:us/state:ia/county:allama0019,poll8172061,st19,other,,loc0003
-,ocd-id,,ocd-division/country:us/state:ia/county:appanoose,ocd-division/country:us/state:ia/county:appano0028,poll27383628,st19,other,,loc0004
-,ocd-id,,ocd-division/country:us/state:ia/county:audubon,ocd-division/country:us/state:ia/county:audu0029,poll87934461,st19,other,,loc0005
-,ocd-id,,ocd-division/country:us/state:ia/county:benton,ocd-division/country:us/state:ia/county:ben0040,poll48838814,st19,other,,loc0006
-,ocd-id,,ocd-division/country:us/state:ia/county:black_hawk,ocd-division/country:us/state:ia/county:black_h0047,poll73569291,st19,other,,loc0007
-,ocd-id,,ocd-division/country:us/state:ia/county:boone,ocd-division/country:us/state:ia/county:bo0050,poll69754011,st19,other,,loc0008
-,ocd-id,,ocd-division/country:us/state:ia/county:bremer,ocd-division/country:us/state:ia/county:bre0060,poll83021415,st19,other,,loc0009
-,ocd-id,,ocd-division/country:us/state:ia/county:buchanan,ocd-division/country:us/state:ia/county:bucha0070,poll71941539,st19,other,,loc0010
-,ocd-id,,ocd-division/country:us/state:ia/county:buena_vista,ocd-division/country:us/state:ia/county:buena_vi0074,poll57133332,st19,other,,loc0011
-,ocd-id,,ocd-division/country:us/state:ia/county:butler,ocd-division/country:us/state:ia/county:but0084,poll6870963,st19,other,,loc0012
-,ocd-id,,ocd-division/country:us/state:ia/county:calhoun,ocd-division/country:us/state:ia/county:calh0088,poll67967901,st19,other,,loc0013
-,ocd-id,,ocd-division/country:us/state:ia/county:carroll,ocd-division/country:us/state:ia/county:carr0098,poll85150652,st19,other,,loc0014
-,ocd-id,,ocd-division/country:us/state:ia/county:cass,ocd-division/country:us/state:ia/county:c0099,poll34714052,st19,other,,loc0015
-,ocd-id,,ocd-division/country:us/state:ia/county:cedar,ocd-division/country:us/state:ia/county:ce0110,poll87431668,st19,other,,loc0016
-,ocd-id,,ocd-division/country:us/state:ia/county:cerro_gordo,ocd-division/country:us/state:ia/county:cerro_go0118,poll18760559,st19,other,,loc0017
-,ocd-id,,ocd-division/country:us/state:ia/county:cherokee,ocd-division/country:us/state:ia/county:chero0125,poll86430788,st19,other,,loc0018
-,ocd-id,,ocd-division/country:us/state:ia/county:chickasaw,ocd-division/country:us/state:ia/county:chicka0127,poll76044772,st19,other,,loc0019
-,ocd-id,,ocd-division/country:us/state:ia/county:clarke,ocd-division/country:us/state:ia/county:cla0135,poll85956634,st19,other,,loc0020
-,ocd-id,,ocd-division/country:us/state:ia/county:clay,ocd-division/country:us/state:ia/county:c0147,poll50970635,st19,other,,loc0021
-,ocd-id,,ocd-division/country:us/state:ia/county:clayton,ocd-division/country:us/state:ia/county:clay0154,poll28233798,st19,other,,loc0022
-,ocd-id,,ocd-division/country:us/state:ia/county:clinton,ocd-division/country:us/state:ia/county:clin0161,poll65721645,st19,other,,loc0023
-,ocd-id,,ocd-division/country:us/state:ia/county:crawford,ocd-division/country:us/state:ia/county:crawf0168,poll25784033,st19,other,,loc0024
-,ocd-id,,ocd-division/country:us/state:ia/county:dallas,ocd-division/country:us/state:ia/county:dal0169,poll38145007,st19,other,,loc0025
-,ocd-id,,ocd-division/country:us/state:ia/county:davis,ocd-division/country:us/state:ia/county:da0179,poll53810719,st19,other,,loc0026
-,ocd-id,,ocd-division/country:us/state:ia/county:decatur,ocd-division/country:us/state:ia/county:deca0188,poll86670394,st19,other,,loc0027
-,ocd-id,,ocd-division/country:us/state:ia/county:delaware,ocd-division/country:us/state:ia/county:delaw0190,poll17801144,st19,other,,loc0028
-,ocd-id,,ocd-division/country:us/state:ia/county:des_moines,ocd-division/country:us/state:ia/county:des_moi0201,poll99048111,st19,other,,loc0029
-,ocd-id,,ocd-division/country:us/state:ia/county:dickinson,ocd-division/country:us/state:ia/county:dickin0206,poll71764611,st19,other,,loc0030
-,ocd-id,,ocd-division/country:us/state:ia/county:dubuque,ocd-division/country:us/state:ia/county:dubu0213,poll4343902,st19,other,,loc0031
-,ocd-id,,ocd-division/country:us/state:ia/county:emmet,ocd-division/country:us/state:ia/county:em0219,poll7315141,st19,other,,loc0032
-,ocd-id,,ocd-division/country:us/state:ia/county:fayette,ocd-division/country:us/state:ia/county:faye0225,poll98485556,st19,other,,loc0033
-,ocd-id,,ocd-division/country:us/state:ia/county:floyd,ocd-division/country:us/state:ia/county:fl0237,poll54281601,st19,other,,loc0034
-,ocd-id,,ocd-division/country:us/state:ia/county:franklin,ocd-division/country:us/state:ia/county:frank0239,poll97128090,st19,other,,loc0035
-,ocd-id,,ocd-division/country:us/state:ia/county:fremont,ocd-division/country:us/state:ia/county:frem0252,poll15750400,st19,other,,loc0036
-,ocd-id,,ocd-division/country:us/state:ia/county:greene,ocd-division/country:us/state:ia/county:gre0253,poll59698386,st19,other,,loc0037
-,ocd-id,,ocd-division/country:us/state:ia/county:grundy,ocd-division/country:us/state:ia/county:gru0263,poll95481236,st19,other,,loc0038
-,ocd-id,,ocd-division/country:us/state:ia/county:guthrie,ocd-division/country:us/state:ia/county:guth0273,poll87238442,st19,other,,loc0039
-,ocd-id,,ocd-division/country:us/state:ia/county:hamilton,ocd-division/country:us/state:ia/county:hamil0279,poll79223546,st19,other,,loc0040
-,ocd-id,,ocd-division/country:us/state:ia/county:hancock,ocd-division/country:us/state:ia/county:hanc0282,poll83440326,st19,other,,loc0041
-,ocd-id,,ocd-division/country:us/state:ia/county:hardin,ocd-division/country:us/state:ia/county:har0293,poll41086404,st19,other,,loc0042
-,ocd-id,,ocd-division/country:us/state:ia/county:harrison,ocd-division/country:us/state:ia/county:harri0296,poll26815894,st19,other,,loc0043
-,ocd-id,,ocd-division/country:us/state:ia/county:henry,ocd-division/country:us/state:ia/county:he0308,poll72644362,st19,other,,loc0044
-,ocd-id,,ocd-division/country:us/state:ia/county:howard,ocd-division/country:us/state:ia/county:how0309,poll70275308,st19,other,,loc0045
-,ocd-id,,ocd-division/country:us/state:ia/county:humboldt,ocd-division/country:us/state:ia/county:humbo0316,poll72951788,st19,other,,loc0046
-,ocd-id,,ocd-division/country:us/state:ia/county:ida,ocd-division/country:us/state:ia/county:0329,poll65943527,st19,other,,loc0047
-,ocd-id,,ocd-division/country:us/state:ia/county:iowa,ocd-division/country:us/state:ia/county:i0336,poll81501840,st19,other,,loc0048
-,ocd-id,,ocd-division/country:us/state:ia/county:jackson,ocd-division/country:us/state:ia/county:jack0339,poll9786260,st19,other,,loc0049
-,ocd-id,,ocd-division/country:us/state:ia/county:jasper,ocd-division/country:us/state:ia/county:jas0346,poll34059786,st19,other,,loc0050
-,ocd-id,,ocd-division/country:us/state:ia/county:jefferson,ocd-division/country:us/state:ia/county:jeffer0351,poll83131838,st19,other,,loc0051
-,ocd-id,,ocd-division/country:us/state:ia/county:johnson,ocd-division/country:us/state:ia/county:john0362,poll15312266,st19,other,,loc0052
-,ocd-id,,ocd-division/country:us/state:ia/county:jones,ocd-division/country:us/state:ia/county:jo0371,poll58242539,st19,other,,loc0053
-,ocd-id,,ocd-division/country:us/state:ia/county:keokuk,ocd-division/country:us/state:ia/county:keo0378,poll49889872,st19,other,,loc0054
-,ocd-id,,ocd-division/country:us/state:ia/county:kossuth,ocd-division/country:us/state:ia/county:koss0385,poll95484487,st19,other,,loc0055
-,ocd-id,,ocd-division/country:us/state:ia/county:lee,ocd-division/country:us/state:ia/county:0389,poll54671742,st19,other,,loc0056
-,ocd-id,,ocd-division/country:us/state:ia/county:linn,ocd-division/country:us/state:ia/county:l0399,poll6847514,st19,other,,loc0057
-,ocd-id,,ocd-division/country:us/state:ia/county:louisa,ocd-division/country:us/state:ia/county:lou0403,poll68185018,st19,other,,loc0058
-,ocd-id,,ocd-division/country:us/state:ia/county:lucas,ocd-division/country:us/state:ia/county:lu0409,poll65359540,st19,other,,loc0059
-,ocd-id,,ocd-division/country:us/state:ia/county:lyon,ocd-division/country:us/state:ia/county:l0418,poll26161968,st19,other,,loc0060
-,ocd-id,,ocd-division/country:us/state:ia/county:madison,ocd-division/country:us/state:ia/county:madi0421,poll25197463,st19,other,,loc0061
-,ocd-id,,ocd-division/country:us/state:ia/county:mahaska,ocd-division/country:us/state:ia/county:maha0432,poll39586379,st19,other,,loc0062
-,ocd-id,,ocd-division/country:us/state:ia/county:marion,ocd-division/country:us/state:ia/county:mar0436,poll10768128,st19,other,,loc0063
-,ocd-id,,ocd-division/country:us/state:ia/county:marshall,ocd-division/country:us/state:ia/county:marsh0448,poll67019942,st19,other,,loc0064
-,ocd-id,,ocd-division/country:us/state:ia/county:mills,ocd-division/country:us/state:ia/county:mi0453,poll81748603,st19,other,,loc0065
-,ocd-id,,ocd-division/country:us/state:ia/county:mitchell,ocd-division/country:us/state:ia/county:mitch0457,poll82209940,st19,other,,loc0066
-,ocd-id,,ocd-division/country:us/state:ia/county:monona,ocd-division/country:us/state:ia/county:mon0469,poll26423419,st19,other,,loc0067
-,ocd-id,,ocd-division/country:us/state:ia/county:monroe,ocd-division/country:us/state:ia/county:mon0470,poll3581631,st19,other,,loc0068
-,ocd-id,,ocd-division/country:us/state:ia/county:montgomery,ocd-division/country:us/state:ia/county:montgom0477,poll62934677,st19,other,,loc0069
-,ocd-id,,ocd-division/country:us/state:ia/county:muscatine,ocd-division/country:us/state:ia/county:muscat0489,poll57240228,st19,other,,loc0070
-,ocd-id,,ocd-division/country:us/state:ia/county:osceola,ocd-division/country:us/state:ia/county:osce0499,poll28358888,st19,other,,loc0071
-,ocd-id,,ocd-division/country:us/state:ia/county:o~brien,ocd-division/country:us/state:ia/county:o~br0491,poll69201198,st19,other,,loc0072
-,ocd-id,,ocd-division/country:us/state:ia/county:page,ocd-division/country:us/state:ia/county:p0508,poll75827843,st19,other,,loc0073
-,ocd-id,,ocd-division/country:us/state:ia/county:palo_alto,ocd-division/country:us/state:ia/county:palo_a0518,poll70296677,st19,other,,loc0074
-,ocd-id,,ocd-division/country:us/state:ia/county:plymouth,ocd-division/country:us/state:ia/county:plymo0519,poll17530275,st19,other,,loc0075
-,ocd-id,,ocd-division/country:us/state:ia/county:pocahontas,ocd-division/country:us/state:ia/county:pocahon0531,poll42955752,st19,other,,loc0076
-,ocd-id,,ocd-division/country:us/state:ia/county:polk,ocd-division/country:us/state:ia/county:p0535,poll92682210,st19,other,,loc0077
-,ocd-id,,ocd-division/country:us/state:ia/county:pottawattamie,ocd-division/country:us/state:ia/county:pottawatta0542,poll766212,st19,other,,loc0078
-,ocd-id,,ocd-division/country:us/state:ia/county:poweshiek,ocd-division/country:us/state:ia/county:powesh0549,poll33101612,st19,other,,loc0079
-,ocd-id,,ocd-division/country:us/state:ia/county:ringgold,ocd-division/country:us/state:ia/county:ringg0560,poll91404020,st19,other,,loc0080
-,ocd-id,,ocd-division/country:us/state:ia/county:sac,ocd-division/country:us/state:ia/county:0563,poll68680903,st19,other,,loc0081
-,ocd-id,,ocd-division/country:us/state:ia/county:scott,ocd-division/country:us/state:ia/county:sc0569,poll5345848,st19,other,,loc0082
-,ocd-id,,ocd-division/country:us/state:ia/county:shelby,ocd-division/country:us/state:ia/county:she0580,poll10802234,st19,other,,loc0083
-,ocd-id,,ocd-division/country:us/state:ia/county:sioux,ocd-division/country:us/state:ia/county:si0588,poll57655089,st19,other,,loc0084
-,ocd-id,,ocd-division/country:us/state:ia/county:story,ocd-division/country:us/state:ia/county:st0591,poll65837059,st19,other,,loc0085
-,ocd-id,,ocd-division/country:us/state:ia/county:tama,ocd-division/country:us/state:ia/county:t0602,poll24992183,st19,other,,loc0086
-,ocd-id,,ocd-division/country:us/state:ia/county:taylor,ocd-division/country:us/state:ia/county:tay0609,poll37956035,st19,other,,loc0087
-,ocd-id,,ocd-division/country:us/state:ia/county:union,ocd-division/country:us/state:ia/county:un0616,poll33649939,st19,other,,loc0088
-,ocd-id,,ocd-division/country:us/state:ia/county:van_buren,ocd-division/country:us/state:ia/county:van_bu0620,poll90855294,st19,other,,loc0089
-,ocd-id,,ocd-division/country:us/state:ia/county:wapello,ocd-division/country:us/state:ia/county:wape0629,poll78994815,st19,other,,loc0090
-,ocd-id,,ocd-division/country:us/state:ia/county:warren,ocd-division/country:us/state:ia/county:war0632,poll15355883,st19,other,,loc0091
-,ocd-id,,ocd-division/country:us/state:ia/county:washington,ocd-division/country:us/state:ia/county:washing0644,poll16684280,st19,other,,loc0092
-,ocd-id,,ocd-division/country:us/state:ia/county:wayne,ocd-division/country:us/state:ia/county:wa0647,poll8761242,st19,other,,loc0093
-,ocd-id,,ocd-division/country:us/state:ia/county:webster,ocd-division/country:us/state:ia/county:webs0652,poll80024009,st19,other,,loc0094
-,ocd-id,,ocd-division/country:us/state:ia/county:winnebago,ocd-division/country:us/state:ia/county:winneb0663,poll33103422,st19,other,,loc0095
-,ocd-id,,ocd-division/country:us/state:ia/county:winneshiek,ocd-division/country:us/state:ia/county:winnesh0667,poll13826294,st19,other,,loc0096
-,ocd-id,,ocd-division/country:us/state:ia/county:woodbury,ocd-division/country:us/state:ia/county:woodb0673,poll10163260,st19,other,,loc0097
-,ocd-id,,ocd-division/country:us/state:ia/county:worth,ocd-division/country:us/state:ia/county:wo0686,poll35169275,st19,other,,loc0098
-,ocd-id,,ocd-division/country:us/state:ia/county:wright,ocd-division/country:us/state:ia/county:wri0687,poll89952829,st19,other,,loc0099
+,ocd-id,,ocd-division/country:us/state:ia/county:adair,adair_cou0002,poll89206310,st19,other,,loc0001
+,ocd-id,,ocd-division/country:us/state:ia/county:adams,adams_cou0010,poll20301496,st19,other,,loc0002
+,ocd-id,,ocd-division/country:us/state:ia/county:allamakee,allamakee_cou0020,poll45848876,st19,other,,loc0003
+,ocd-id,,ocd-division/country:us/state:ia/county:appanoose,appanoose_cou0030,poll48400473,st19,other,,loc0004
+,ocd-id,,ocd-division/country:us/state:ia/county:audubon,audubon_cou0041,poll96603645,st19,other,,loc0005
+,ocd-id,,ocd-division/country:us/state:ia/county:benton,benton_cou0048,poll68640844,st19,other,,loc0006
+,ocd-id,,ocd-division/country:us/state:ia/county:black_hawk,black_h0928,poll67631698 poll54499049 poll12021032 poll14039586 poll43152654 poll23530765 poll91335201 poll73948378 poll9681141 poll6385881,st19,other,,loc0007
+,ocd-id,,ocd-division/country:us/state:ia/county:boone,boone_cou0068,poll63504723,st19,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:ia/county:bremer,bremer_cou0076,poll1797467 poll55670456,st19,other,,loc0009
+,ocd-id,,ocd-division/country:us/state:ia/county:buchanan,buchanan_cou0090,poll16391771,st19,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:ia/county:buena_vista,buena_vi0935,poll23552292 poll37544739 poll60885623,st19,other,,loc0011
+,ocd-id,,ocd-division/country:us/state:ia/county:butler,butler_cou0103,poll21948305,st19,other,,loc0012
+,ocd-id,,ocd-division/country:us/state:ia/county:calhoun,calhoun_cou0109,poll81949606,st19,other,,loc0013
+,ocd-id,,ocd-division/country:us/state:ia/county:carroll,carroll_cou0118,poll72102720,st19,other,,loc0014
+,ocd-id,,ocd-division/country:us/state:ia/county:cass,cass_cou0129,poll27009282,st19,other,,loc0015
+,ocd-id,,ocd-division/country:us/state:ia/county:cedar,cedar_cou0140,poll2532210,st19,other,,loc0016
+,ocd-id,,ocd-division/country:us/state:ia/county:cerro_gordo,cerro_gordo_cou0152,poll51723479,st19,other,,loc0017
+,ocd-id,,ocd-division/country:us/state:ia/county:cherokee,cherokee_cou0158,poll8354181,st19,other,,loc0018
+,ocd-id,,ocd-division/country:us/state:ia/county:chickasaw,chickasaw_cou0170,poll24514705,st19,other,,loc0019
+,ocd-id,,ocd-division/country:us/state:ia/county:clarke,clarke_cou0180,poll55030290,st19,other,,loc0020
+,ocd-id,,ocd-division/country:us/state:ia/county:clay,clay_cou0188,poll16805478,st19,other,,loc0021
+,ocd-id,,ocd-division/country:us/state:ia/county:clayton,clayton_cou0195,poll61944465,st19,other,,loc0022
+,ocd-id,,ocd-division/country:us/state:ia/county:clinton,clin0937,poll46526790 poll44209239,st19,other,,loc0023
+,ocd-id,,ocd-division/country:us/state:ia/county:crawford,crawford_cou0216,poll8813362 poll88031588,st19,other,,loc0024
+,ocd-id,,ocd-division/country:us/state:ia/county:dallas,dallas_cou0218,poll44253097 poll4147482 poll54375417 poll36994123 poll73062066 poll56383578 poll63676387,st19,other,,loc0025
+,ocd-id,,ocd-division/country:us/state:ia/county:davis,davis_cou0228,poll2281505,st19,other,,loc0026
+,ocd-id,,ocd-division/country:us/state:ia/county:decatur,decatur_cou0241,poll72233784,st19,other,,loc0027
+,ocd-id,,ocd-division/country:us/state:ia/county:delaware,delaware_cou0249,poll98164114,st19,other,,loc0028
+,ocd-id,,ocd-division/country:us/state:ia/county:des_moines,des_moines_cou0259,poll54849635,st19,other,,loc0029
+,ocd-id,,ocd-division/country:us/state:ia/county:dickinson,dickinson_cou0268,poll22126720,st19,other,,loc0030
+,ocd-id,,ocd-division/country:us/state:ia/county:dubuque,dubu0958,poll14653240 poll78785936 poll74542196 poll62630087 poll30065640 poll53063019 poll29943421 poll21846812 poll38869551 poll59176477 poll61795525 poll87163716 poll55813222 poll50565963,st19,other,,loc0031
+,ocd-id,,ocd-division/country:us/state:ia/county:emmet,emmet_cou0278,poll79256964,st19,other,,loc0032
+,ocd-id,,ocd-division/country:us/state:ia/county:fayette,fayette_cou0291,poll20398985 poll48417040,st19,other,,loc0033
+,ocd-id,,ocd-division/country:us/state:ia/county:floyd,floyd_cou0294,poll70560340,st19,other,,loc0034
+,ocd-id,,ocd-division/country:us/state:ia/county:franklin,franklin_cou0310,poll57198513,st19,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:ia/county:fremont,fremont_cou0321,poll12431361,st19,other,,loc0036
+,ocd-id,,ocd-division/country:us/state:ia/county:greene,greene_cou0323,poll73674411,st19,other,,loc0037
+,ocd-id,,ocd-division/country:us/state:ia/county:grundy,grundy_cou0339,poll89947521,st19,other,,loc0038
+,ocd-id,,ocd-division/country:us/state:ia/county:guthrie,guthrie_cou0346,poll58637192,st19,other,,loc0039
+,ocd-id,,ocd-division/country:us/state:ia/county:hamilton,hamilton_cou0349,poll11014818,st19,other,,loc0040
+,ocd-id,,ocd-division/country:us/state:ia/county:hancock,hancock_cou0361,poll65156777,st19,other,,loc0041
+,ocd-id,,ocd-division/country:us/state:ia/county:hardin,har0966,poll77021934 poll95082861,st19,other,,loc0042
+,ocd-id,,ocd-division/country:us/state:ia/county:harrison,harrison_cou0376,poll32613277,st19,other,,loc0043
+,ocd-id,,ocd-division/country:us/state:ia/county:henry,he0967,poll8814778 poll96192137,st19,other,,loc0044
+,ocd-id,,ocd-division/country:us/state:ia/county:howard,howard_cou0400,poll12338026,st19,other,,loc0045
+,ocd-id,,ocd-division/country:us/state:ia/county:humboldt,humboldt_cou0409,poll90803055,st19,other,,loc0046
+,ocd-id,,ocd-division/country:us/state:ia/county:ida,ida_cou0416,poll87846573,st19,other,,loc0047
+,ocd-id,,ocd-division/country:us/state:ia/county:iowa,iowa_cou0424,poll19186953,st19,other,,loc0048
+,ocd-id,,ocd-division/country:us/state:ia/county:jackson,jackson_cou0433,poll72978152,st19,other,,loc0049
+,ocd-id,,ocd-division/country:us/state:ia/county:jasper,jasper_cou0445,poll67971076,st19,other,,loc0050
+,ocd-id,,ocd-division/country:us/state:ia/county:jefferson,jefferson_cou0454,poll60977011,st19,other,,loc0051
+,ocd-id,,ocd-division/country:us/state:ia/county:johnson,john0988,poll29213988 poll24911979 poll24055621 poll68962166 poll45934829 poll51765436 poll39292559 poll97065314 poll60451471 poll41528091,st19,other,,loc0052
+,ocd-id,,ocd-division/country:us/state:ia/county:jones,jones_cou0474,poll2490976,st19,other,,loc0053
+,ocd-id,,ocd-division/country:us/state:ia/county:keokuk,keokuk_cou0482,poll14000712,st19,other,,loc0054
+,ocd-id,,ocd-division/country:us/state:ia/county:kossuth,kossuth_cou0488,poll41203372,st19,other,,loc0055
+,ocd-id,,ocd-division/country:us/state:ia/county:lee,lee_cou0498,poll70070998,st19,other,,loc0056
+,ocd-id,,ocd-division/country:us/state:ia/county:linn,linn_cou0511,poll70782177 poll56002498 poll33310522 poll92413160 poll47388015 poll2429341 poll98792323 poll56776700 poll84696315 poll13741426 poll6849162 poll94368567 poll62382011,st19,other,,loc0057
+,ocd-id,,ocd-division/country:us/state:ia/county:louisa,lou01030,poll14252522 poll68651735,st19,other,,loc0058
+,ocd-id,,ocd-division/country:us/state:ia/county:lucas,lucas_cou0521,poll13921507,st19,other,,loc0059
+,ocd-id,,ocd-division/country:us/state:ia/county:lyon,lyon_cou0534,poll25429887,st19,other,,loc0060
+,ocd-id,,ocd-division/country:us/state:ia/county:madison,madison_cou0541,poll8011744,st19,other,,loc0061
+,ocd-id,,ocd-division/country:us/state:ia/county:mahaska,mahaska_cou0548,poll56978650 poll27817179,st19,other,,loc0062
+,ocd-id,,ocd-division/country:us/state:ia/county:marion,mar01032,poll71899369 poll86683485,st19,other,,loc0063
+,ocd-id,,ocd-division/country:us/state:ia/county:marshall,marsh01033,poll10069571 poll63505747,st19,other,,loc0064
+,ocd-id,,ocd-division/country:us/state:ia/county:mills,mills_cou0578,poll92353441,st19,other,,loc0065
+,ocd-id,,ocd-division/country:us/state:ia/county:mitchell,mitchell_cou0590,poll4615718,st19,other,,loc0066
+,ocd-id,,ocd-division/country:us/state:ia/county:monona,monona_cou0594,poll41573026,st19,other,,loc0067
+,ocd-id,,ocd-division/country:us/state:ia/county:monroe,monroe_cou0608,poll71743479,st19,other,,loc0068
+,ocd-id,,ocd-division/country:us/state:ia/county:montgomery,montgomery_cou0618,poll63802161,st19,other,,loc0069
+,ocd-id,,ocd-division/country:us/state:ia/county:muscatine,muscatine_cou0621,poll65683030 poll46235903 poll92340336,st19,other,,loc0070
+,ocd-id,,ocd-division/country:us/state:ia/county:o'brien,o'brien_cou0638,poll83451645,st19,other,,loc0071
+,ocd-id,,ocd-division/country:us/state:ia/county:osceola,osceola_cou0639,poll36417773,st19,other,,loc0072
+,ocd-id,,ocd-division/country:us/state:ia/county:page,page_cou0656,poll14265736,st19,other,,loc0073
+,ocd-id,,ocd-division/country:us/state:ia/county:palo_alto,palo_alto_cou0657,poll56622291 poll97828936 poll38655520 poll9818799,st19,other,,loc0074
+,ocd-id,,ocd-division/country:us/state:ia/county:plymouth,plymouth_cou0666,poll82692193,st19,other,,loc0075
+,ocd-id,,ocd-division/country:us/state:ia/county:pocahontas,pocahontas_cou0680,poll40163495,st19,other,,loc0076
+,ocd-id,,ocd-division/country:us/state:ia/county:polk,p01041,poll15557048 poll40692633 poll13182330 poll46441410 poll33080605 poll19737710 poll93535799 poll91144752 poll57482748 poll95872444 poll46278383 poll59679327 poll92606310,st19,other,,loc0077
+,ocd-id,,ocd-division/country:us/state:ia/county:pottawattamie,pottawattamie_cou0696,poll91043789 poll20681563 poll4921510,st19,other,,loc0078
+,ocd-id,,ocd-division/country:us/state:ia/county:poweshiek,poweshiek_cou0709,poll99714919 poll17043679 poll26073205 poll28121642,st19,other,,loc0079
+,ocd-id,,ocd-division/country:us/state:ia/county:ringgold,ringgold_cou0718,poll28441660,st19,other,,loc0080
+,ocd-id,,ocd-division/country:us/state:ia/county:sac,sac_cou0728,poll52616846,st19,other,,loc0081
+,ocd-id,,ocd-division/country:us/state:ia/county:scott,scott_cou0756,poll37195318 poll3698364 poll57888942 poll75314845 poll14260547 poll50755938,st19,other,,loc0082
+,ocd-id,,ocd-division/country:us/state:ia/county:shelby,shelby_cou0779,poll57633855,st19,other,,loc0083
+,ocd-id,,ocd-division/country:us/state:ia/county:sioux,sioux_cou0780,poll38413611,st19,other,,loc0084
+,ocd-id,,ocd-division/country:us/state:ia/county:story,story_cou0790,poll43859634 poll41156838 poll866468 poll16897099 poll18750884 poll63572176,st19,other,,loc0085
+,ocd-id,,ocd-division/country:us/state:ia/county:tama,tama_cou0799,poll57893523 poll50694956,st19,other,,loc0086
+,ocd-id,,ocd-division/country:us/state:ia/county:taylor,taylor_cou0814,poll59591884,st19,other,,loc0087
+,ocd-id,,ocd-division/country:us/state:ia/county:union,union_cou0820,poll67212027,st19,other,,loc0088
+,ocd-id,,ocd-division/country:us/state:ia/county:van_buren,van_buren_cou0832,poll17027211,st19,other,,loc0089
+,ocd-id,,ocd-division/country:us/state:ia/county:wapello,wape01089,poll95675442 poll72100386 poll5077059,st19,other,,loc0090
+,ocd-id,,ocd-division/country:us/state:ia/county:warren,warren_cou0850,poll78346057 poll53900381,st19,other,,loc0091
+,ocd-id,,ocd-division/country:us/state:ia/county:washington,washington_cou0860,poll43462516,st19,other,,loc0092
+,ocd-id,,ocd-division/country:us/state:ia/county:wayne,wayne_cou0863,poll57008249,st19,other,,loc0093
+,ocd-id,,ocd-division/country:us/state:ia/county:webster,webster_cou0876,poll3955708,st19,other,,loc0094
+,ocd-id,,ocd-division/country:us/state:ia/county:winnebago,winnebago_cou0879,poll12867418,st19,other,,loc0095
+,ocd-id,,ocd-division/country:us/state:ia/county:winneshiek,winnesh01093,poll45471517 poll54026249,st19,other,,loc0096
+,ocd-id,,ocd-division/country:us/state:ia/county:woodbury,woodb01100,poll34538251 poll21711116 poll41055763 poll85231195 poll79303846 poll59722456 poll34887975,st19,other,,loc0097
+,ocd-id,,ocd-division/country:us/state:ia/county:worth,worth_cou0914,poll99505187,st19,other,,loc0098
+,ocd-id,,ocd-division/country:us/state:ia/county:wright,wright_cou0920,poll35199318,st19,other,,loc0099

@@ -14,7 +14,7 @@ class PollingLocationTxt(object):
         self.drop_box_true = drop_box_true
         self.early_voting_true = early_voting_true
 
-    def get_address_line(self, index, location_name, address_1, address_2, city, zip_code):
+    def get_address_line(self, index, location_name, address_1, city, zip_code):
         # required: print message for exception
         # TODO: concatenate street, city, state and zip
         #if address_1:
@@ -24,16 +24,11 @@ class PollingLocationTxt(object):
 
         # 'location', 'address_1', 'address_2', 'city', 'state', 'zip'
 
-        if not pd.isnull(location_name):
-            street_address =  str(location_name) + ', ' +str(address_1)
+        if not pd.isnull(address_1):
+            street_address = str(address_1)
             print street_address
         else:
             street_address = address_1
-
-        if not pd.isnull(address_2):
-            street_address =  str(street_address) + ', ' + str(address_2)
-        else:
-            street_address = street_address
 
         if city:
             city_name = city
@@ -67,10 +62,10 @@ class PollingLocationTxt(object):
         return text
 
 
-    def get_directions(self):
+    def get_directions(self, dirs):
         """#"""
         # no direct relationship to any column
-        return ''
+        return dirs
 
     def get_hours(self, index, start_time, end_time):
         """Convert from 24 to 12 hour format."""
@@ -91,7 +86,7 @@ class PollingLocationTxt(object):
     def create_hours_open_id(self, index, location_name, address_1, address_2, city, zip_code):
         """#"""
 
-        address_line = self.get_address_line(index, location_name, address_1, address_2, city, zip_code)
+        address_line = self.get_address_line(index, location_name, address_1, city, zip_code)
         #print address_line
 
         address_line = int(hashlib.sha1(address_line).hexdigest(), 16) % (10 ** 8)
@@ -125,7 +120,7 @@ class PollingLocationTxt(object):
         # concatenate county name, or part of it (first 3/4 letters) with index
         # add leading zeros to maintain consistent id length
 
-        address_line = self.get_address_line(index, location_name, address_1, address_2, city, zip_code)
+        address_line = self.get_address_line(index, location_name, address_1, city, zip_code)
 
         id =  int(hashlib.sha1(config.state + address_line).hexdigest(), 16) % (10 ** 8)
         id = 'poll' + str(id)
@@ -160,10 +155,10 @@ class PollingLocationTxt(object):
 
         self.base_df['address_line'] = self.base_df.apply(
             lambda row: self.get_address_line(row['index'], row['location_name'], row['address_1'],
-                                              row['address_2'], row['city'], row['zip_code']), axis=1)
+                                               row['city'], row['zip_code']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
-            lambda row: self.get_directions(), axis=1)
+            lambda row: self.get_directions(row['address_2']), axis=1)
 
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)
@@ -254,7 +249,7 @@ if __name__ == '__main__':
     state_file='ohio_early_voting_info.csv'
 
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
-    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/ohio/early_voting_input/" + state_file
+    early_voting_file = config.input + state_file
 
     colnames = ['ocd_division', 'homepage_url', 'county', 'location_name', 'address_1', 'address_2', 'city',
                 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment',
@@ -268,6 +263,7 @@ if __name__ == '__main__':
 
     pl = PollingLocationTxt(early_voting_df, config.early_voting)
 
-    #pl.write_polling_location_txt()
     pl.export_for_schedule_and_locality()
+    pl.write_polling_location_txt()
+
 

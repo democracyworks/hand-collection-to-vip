@@ -2,6 +2,7 @@ import pandas as pd
 import time
 import config
 from time import strftime
+from datetime import datetime
 import hashlib
 
 class PollingLocationTxt(object):
@@ -27,9 +28,6 @@ class PollingLocationTxt(object):
         if not pd.isnull(address_one):
             adr += str(address_one)
 
-        if not pd.isnull(address_two):
-            adr += " " + str(address_two)
-
         if not pd.isnull(city):
             city_name = str(city)
         else:
@@ -42,20 +40,23 @@ class PollingLocationTxt(object):
 
         return adr.strip() + ", " + city_name + ", " + config.state_abbreviation + zip
 
-    def get_directions(self):
+    def get_directions(self, dirs):
         """#"""
         # no direct relationship to any column
-        return ''
+        return dirs
 
     def get_start_time(self, time):
         arr = time.split(" ")
         hours = arr[0].split(":")[0] + ":" + arr[0].split(":")[1]
-        return hours + " " + "AM"
+        d = datetime.strptime(hours, "%H:%M")
+        return d.strftime("%I:%M %p")
+        # return hours + " " + "AM"
 
     def get_end_time(self, time):
         arr = time.split(" ")
         hours = arr[0].split(":")[0] + ":" + arr[0].split(":")[1]
-        return hours + " " + "PM"
+        d = datetime.strptime(hours, "%H:%M")
+        return d.strftime("%I:%M %p")
 
     def get_hours(self, index, start_time, end_time):
         start_time = self.get_start_time(start_time)
@@ -126,7 +127,7 @@ class PollingLocationTxt(object):
                                               row['address_two'], row['city'], row['zip']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
-            lambda row: self.get_directions(), axis=1)
+            lambda row: self.get_directions(row['address_two']), axis=1)
 
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)
@@ -154,7 +155,7 @@ class PollingLocationTxt(object):
             lambda row: self.get_latlng_source(), axis=1)
 
         self.base_df['id'] = self.base_df.apply(
-            lambda row: self.create_id(row['index'], row['ocd-division'], row['name'],row['address_one'],
+            lambda row: self.create_id(row['index'], row['county'], row['name'],row['address_one'],
                                        row['address_two'], row['city'], row['zip']), axis=1)
 
         return self.base_df

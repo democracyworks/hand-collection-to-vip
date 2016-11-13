@@ -19,14 +19,14 @@ fips_dict = {'wyoming': '56', 'colorado': '08', 'washington': '53', 'hawaii': '1
 
 #data_folder = "/Users/danielgilberg/Development/hand-collection-to-vip/wyoming/input/"
 
-#data_folder = "/Users/danielgilberg/Development/hand-collection-to-vip/wyoming/input/"
-data_folder = '/home/acg/democracyworks/hand-collection-to-vip/wyoming/input/'
+data_folder = "/Users/danielgilberg/Development/hand-collection-to-vip/wyoming/input/"
+#data_folder = '/home/acg/democracyworks/hand-collection-to-vip/wyoming/input/'
 
-#output = "/Users/danielgilberg/Development/hand-collection-to-vip/wyoming/output/"
+output = "/Users/danielgilberg/Development/hand-collection-to-vip/wyoming/output/"
 
-output = '/home/acg/democracyworks/hand-collection-to-vip/wyoming/output/'
+#output = '/home/acg/democracyworks/hand-collection-to-vip/wyoming/output/'
 
 
-utc_offset = "-07:00"
+utc_offset = "07:00"
 
 source_output = "/Users/danielgilberg/Development/hand-collection-to-vip/wyoming/output/source.txt"

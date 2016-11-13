@@ -99,19 +99,19 @@ class ScheduleTxt(object):
     def get_start_date(self, start_date):
 
         string = str(start_date)
-        date = datetime.datetime.strptime(string, '%m-%d-%Y').strftime('%Y-%m-%d')
+        date = datetime.datetime.strptime(string, '%m/%d/%y').strftime('%Y-%m-%d')
         return date
         # return start_date + config.utc_offset
 
     def get_end_date(self, end_date):
         # create conditional when/if column is present
         string = str(end_date)
-        date = datetime.datetime.strptime(string, '%m-%d-%Y').strftime('%Y-%m-%d')
+        date = datetime.datetime.strptime(string, '%m/%d/%y').strftime('%Y-%m-%d')
         return date
         try:
             print start_date
             string = str(start_date)
-            date = datetime.datetime.strptime(string, '%m-%d-%Y').strftime('%Y-%m-%d')
+            date = datetime.datetime.strptime(string, '%m/%d/%y').strftime('%Y-%m-%d')
             return date
             # return start_date + config.utc_offset
         except:
@@ -231,9 +231,9 @@ if __name__ == '__main__':
 
 
     colnames = ['office_name', 'office_title', 'ocd_division','description','homepage', 'phone',
-                'email', 'name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time',
+                'email', 'loc_name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time',
                 'end_time', 'start_date', 'end_date', 'appointment_one', 'appointment_two', 'appointment_three',
-                'subject_to_change', 'index', 'address_line', 'directions',
+                'subject_to_change', 'index', 'name', 'address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id']
     print len(colnames)
 

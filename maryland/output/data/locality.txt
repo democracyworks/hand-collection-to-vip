@@ -16,8 +16,8 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:md/county:montgomery,montgom0006,poll86577910 poll5222827 poll92262372 poll42035325 poll91326451 poll66055270 poll82687583 poll39576140 poll96928085 poll55219077,st24,other,,loc0015
 ,ocd-id,,ocd-division/country:us/state:md/county:prince_george~s,prince_georg0019,poll20986749 poll66366293 poll40562197 poll12537346 poll81514844 poll54444898 poll66187658 poll4692040,st24,other,,loc0016
 ,ocd-id,,ocd-division/country:us/state:md/county:queen_anne~s,queen_ann0038,poll8225393 poll29088029,st24,other,,loc0017
-,ocd-id,,ocd-division/country:us/state:md/county:saint_mary~s,saint_mar0039,poll43722945,st24,other,,loc0018
-,ocd-id,,ocd-division/country:us/state:md/county:somerset,somer0040,poll19049976,st24,other,,loc0019
+,ocd-id,,ocd-division/country:us/state:md/county:somerset,somer0040,poll19049976,st24,other,,loc0018
+,ocd-id,,ocd-division/country:us/state:md/county:st_mary~s,st._mar0039,poll14501113,st24,other,,loc0019
 ,ocd-id,,ocd-division/country:us/state:md/county:talbot,tal0041,poll36468561,st24,other,,loc0020
 ,ocd-id,,ocd-division/country:us/state:md/county:washington,washing0042,poll83325743,st24,other,,loc0021
 ,ocd-id,,ocd-division/country:us/state:md/county:wicomico,wicom0043,poll90700657,st24,other,,loc0022

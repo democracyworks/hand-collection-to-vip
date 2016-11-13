@@ -23,10 +23,6 @@ class PollingLocationTxt(object):
         adr = ''
         if not pd.isnull(street):
             adr += street
-
-        if not pd.isnull(adr_2):
-            adr += ", " + adr_2
-
         if not pd.isnull(city):
             city = city
         else:
@@ -43,10 +39,26 @@ class PollingLocationTxt(object):
         print line
         return line
 
-    def get_directions(self, dirs):
+    def get_location_name(self, name):
+        if not pd.isnull(name):
+            string = ''
+            string += name
+            return string
+        else:
+            return ''
+
+    def get_directions(self, dirs1, dirs2):
         """#"""
         # no direct relationship to any column
-        return dirs
+        dirs = ''
+
+        if not pd.isnull(dirs1):
+            dirs += dirs1 + " "
+
+        if not pd.isnull(dirs2):
+            dirs += dirs2
+
+        return dirs.strip()
 
 
     def convert_to_time(self, index, time):
@@ -147,12 +159,18 @@ class PollingLocationTxt(object):
         New columns that match the 'polling_location.txt' template are inserted into the DataFrame, apply() is
         used to run methods that generate the values for each row of the new columns.
         """
+
+        self.base_df['name'] = self.base_df.apply(
+            lambda row: self.get_location_name(row['loc_name']), axis=1)
+
+
         self.base_df['address_line'] = self.base_df.apply(
             lambda row: self.get_address_line(row['index'],  row['address_1'], row['address_2'],
                                               row['city'], row['zip_code']), axis = 1)
 
+
         self.base_df['directions'] = self.base_df.apply(
-            lambda row: self.get_directions(row['dirs']), axis=1)
+            lambda row: self.get_directions(row['dirs'], row['address_2']), axis=1)
 
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)
@@ -229,7 +247,7 @@ class PollingLocationTxt(object):
 
         # Drop base_df columns.
 
-        plt.drop(['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state', 'zip_code',
+        plt.drop(['ocd_division', 'county', 'loc_name', 'address_1', 'address_2', 'city', 'state', 'zip_code',
                 'start_time', 'end_time', 'start_date', 'end_date', 'index', 'dirs'], inplace=True, axis=1)
 
 
@@ -246,7 +264,7 @@ if __name__ == '__main__':
     #s = 'ocd_division county location_name address_1 address_2 city state zip_code start_time end_time start_date end_date'.split(' ')
     #print s
 
-    colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'dirs', 'city', 'state', 'zip_code',
+    colnames = ['ocd_division', 'county', 'loc_name', 'address_1', 'address_2', 'dirs', 'city', 'state', 'zip_code',
                 'start_time', 'end_time', 'start_date', 'end_date']
 
 

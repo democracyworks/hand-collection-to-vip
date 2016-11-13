@@ -17,6 +17,14 @@ class PollingLocationTxt(object):
     # (row['index'], row['address_1'], row['address_2'],
     #  row['city'], row['state'], row['zip']), axis = 1)
 
+    def get_location_name(self, name):
+        if not pd.isnull(name):
+            string = ''
+            string += name
+            return string
+        else:
+            return ''
+
     def get_address_line(self, index, name, address_one, address_two, city, zip_code):
         # required: print message for exception
         # TODO: concatenate street, city, state and zip
@@ -152,6 +160,9 @@ class PollingLocationTxt(object):
         New columns that match the 'polling_location.txt' template are inserted into the DataFrame, apply() is
         used to run methods that generate the values for each row of the new columns.
         """
+        self.base_df['name'] = self.base_df.apply(
+            lambda row: self.get_location_name(row["loc_name"]), axis=1)
+
         self.base_df['address_line'] = self.base_df.apply(
             lambda row: self.get_address_line(row['index'], row['name'], row['address_one'],
                                               row['address_two'], row['city'], row['zip']), axis=1)
@@ -222,8 +233,7 @@ class PollingLocationTxt(object):
         # print intermediate_doc
         # intermediate_doc = self.dedupe(intermediate_doc)
 
-        intermediate_doc = intermediate_doc.drop_duplicates(subset=['start_time', 'end_time', 'start_date',
-                                                                    'end_date', 'address_line'])
+        intermediate_doc = intermediate_doc.drop_duplicates(subset=['start_time', 'end_time', 'start_date', 'end_date', 'address_line'])
 
         intermediate_doc.to_csv(config.output + 'intermediate_doc.csv', index=False, encoding='utf-8')
 
@@ -234,7 +244,7 @@ class PollingLocationTxt(object):
 
         # Drop base_df columns.
         plt.drop(['office_name', 'office_title', 'ocd_division','description','homepage', 'phone',
-                'email', 'name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time',
+                'email', 'loc_name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time',
                 'end_time', 'start_date', 'end_date', 'appointment_one', 'appointment_two', 'appointment_three',
                 'subject_to_change', 'index'], inplace=True, axis=1)
 
@@ -256,7 +266,7 @@ if __name__ == '__main__':
     early_voting_file = config.data_folder + config.state_file
 
     colnames = ['office_name', 'office_title', 'ocd_division','description','homepage', 'phone',
-                'email', 'name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time',
+                'email', 'loc_name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time',
                 'end_time', 'start_date', 'end_date', 'appointment_one', 'appointment_two', 'appointment_three',
                 'subject_to_change']
 

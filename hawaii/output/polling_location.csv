@@ -1,10 +1,10 @@
-address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-"County of Hawaii Aupuni Center, 101 Pauahi Street, Suite 1, Hilo, Hawaii 96720",Conference Room,08:00 AM - 04:00 PM,,ho15416000,false,true,,,,poll15416000
-"West Hawaii Civic Center, 74-5044 Ane Keohokalole Highway, Kailua Kona, Hawaii 96740",Community Room (Building G),08:00 AM - 04:00 PM,,ho65814980,false,true,,,,poll65814980
-"Waimea Community Center, 65-1260 Kawaihae Road, Kamuela, Hawaii 96743",,08:00 AM - 04:00 PM,,ho68303565,false,true,,,,poll68303565
-"Pahala Community Center, 96-1149 Kamani Street, Pahala, Hawaii 96777",,09:00 AM - 12:00 PM,,ho87276129,false,true,,,,poll87276129
-"Lihue Neighborhood Center, 3353 Eono Street, Lihue, Hawaii 96766",,08:00 AM - 04:00 PM,,ho62640353,false,true,,,,poll62640353
-"Office of the County Clerk, 200 South High Street, Room #708, Wailuku, Hawaii 96793",,08:00 AM - 04:00 PM,,ho18090795,false,true,,,,poll18090795
-"Mitchell Pauole Center, 90 Ainoa Street, Kaunakakai, Hawaii 96748",Conference Room,08:00 AM - 12:00 PM,,ho86599605,false,true,,,,poll86599605
-"Honolulu Hale, 530 South King Street, Honolulu, Hawaii 96813",,08:00 AM - 04:00 PM,,ho25507809,false,true,,,,poll25507809
-"Kapolei Hale, 1000 Uluohia Street, Kapolei, Hawaii 96707",,08:00 AM - 04:00 PM,,ho907021,false,true,,,,poll907021
+name,address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+County of Hawaii Aupuni Center,"101 Pauahi Street, Suite 1, Hilo, Hawaii 96720",Conference Room,08:00 AM - 04:00 PM,,ho16176166,false,true,,,,poll16176166
+West Hawaii Civic Center,"74-5044 Ane Keohokalole Highway, Kailua Kona, Hawaii 96740",Community Room (Building G),08:00 AM - 04:00 PM,,ho12878605,false,true,,,,poll12878605
+Waimea Community Center,"65-1260 Kawaihae Road, Kamuela, Hawaii 96743",,08:00 AM - 04:00 PM,,ho9274332,false,true,,,,poll9274332
+Pahala Community Center,"96-1149 Kamani Street, Pahala, Hawaii 96777",,09:00 AM - 12:00 PM,,ho62356581,false,true,,,,poll62356581
+Lihue Neighborhood Center,"3353 Eono Street, Lihue, Hawaii 96766",,08:00 AM - 04:00 PM,,ho80852316,false,true,,,,poll80852316
+Office of the County Clerk,"200 South High Street, Room #708, Wailuku, Hawaii 96793",,08:00 AM - 04:00 PM,,ho79222736,false,true,,,,poll79222736
+Mitchell Pauole Center,"90 Ainoa Street, Kaunakakai, Hawaii 96748",Conference Room,08:00 AM - 12:00 PM,,ho67754535,false,true,,,,poll67754535
+Honolulu Hale,"530 South King Street, Honolulu, Hawaii 96813",,08:00 AM - 04:00 PM,,ho97255321,false,true,,,,poll97255321
+Kapolei Hale,"1000 Uluohia Street, Kapolei, Hawaii 96707",,08:00 AM - 04:00 PM,,ho47097558,false,true,,,,poll47097558

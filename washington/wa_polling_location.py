@@ -21,24 +21,7 @@ class PollingLocationTxt(object):
         print index, city
 
         if not pd.isnull(address1):
-            #address = street
-            address1 = str(re.sub(r'[^\x00-\x7f]', r' ', address1.strip()))
-            #address1 = ' '.join(address1.split())
-            print 1, address1
-            #print type(address)
-        else:
-            raise ValueError('Missing street value at row ' + str(index) + '.')
-            #address = ''
-
-        if not pd.isnull(address2):
-            #address = street
-            address2 = ', ' + str(re.sub(r'[^\x00-\x7f]', r' ', address2.strip()))
-            #address2 = ' '.join(address2.split())
-            #address = address1 + ' ' + address2
-            #print address2
-            #print type(address)
-        else:
-            address2 = ''
+            adr = address1
 
         if not pd.isnull(city):
             city_name = str(city)
@@ -61,17 +44,24 @@ class PollingLocationTxt(object):
         #print address
         #print type(address)
 
-        final_line = address1 +  address2 + ", " + city_name + ', ' + config.state_abbreviation_upper + ' ' + zip
+        final_line = adr.strip() +  ", " + city_name + ', ' + config.state_abbreviation_upper + ' ' + zip
         final_line = ' '.join(final_line.split())
         #print index, final_line
         return final_line
 
 
 
-    def get_directions(self):
+    def get_directions(self, dirs1, dirs2):
         """#"""
         # no direct relationship to any column
-        return ''
+        if not pd.isnull(dirs1) and not pd.isnull(dirs2):
+            return dirs1 + " " + dirs2
+        elif not pd.isnull(dirs1):
+            return dirs1
+        elif not pd.isnull(dirs2):
+            return dirs2
+        else:
+            return ''
 
     def get_hours(self, index, start_time, end_time):
         """Convert from 24 to 12 hour format."""
@@ -176,7 +166,7 @@ class PollingLocationTxt(object):
                                               row['city'], row['state'], row['zip_code']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
-            lambda row: self.get_directions(), axis=1)
+            lambda row: self.get_directions(row['address2'], row['dirs']), axis=1)
 
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)
@@ -246,7 +236,7 @@ class PollingLocationTxt(object):
 
         # Drop base_df columns.
         plt.drop(['index', 'name', 'location_name', 'address1', 'address2', 'address_line3', 'city',
-                'state', 'zip_code', 'directions', 'voter_services', 'start_date', 'end_date', 'start_time',
+                'state', 'zip_code', 'dirs', 'voter_services', 'start_date', 'end_date', 'start_time',
                 'end_time', 'days_times_open', 'ev_id', 'locality_id', 'county', 'locality_id'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
@@ -265,7 +255,7 @@ if __name__ == '__main__':
     #state_file='texas_early_voting_info_clean.csv'
 
     colnames = ['name', 'location_name', 'address1', 'address2', 'address_line3', 'city',
-                'state', 'zip_code', 'directions', 'voter_services', 'start_date', 'end_date', 'start_time',
+                'state', 'zip_code', 'dirs', 'voter_services', 'start_date', 'end_date', 'start_time',
                 'end_time', 'days_times_open', 'ev_id', 'locality_id', 'county']
 
 
@@ -278,6 +268,7 @@ if __name__ == '__main__':
 
     pl = PollingLocationTxt(early_voting_df, state)
 
-    #pl.write_polling_location_txt()
+    #
     pl.export_for_schedule_and_locality()
+    pl.write_polling_location_txt()
 

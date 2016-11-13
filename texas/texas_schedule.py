@@ -181,26 +181,9 @@ class ScheduleTxt(object):
             start_date = datetime.datetime.strptime(start_date, '%m/%d/%y').strftime('%Y-%m-%d')
             print 'a', index, start_date
             return start_date
-            #print index, start_date
-
-#        elif len(start_date) == 4:
-
-#            print start_date
-
-#            sd = tuple(start_date.split('-'))
-#            print sd
-#            m = str(sd[0])
-#            d = '0' + str(sd[1])
-            #y = '16'
-            #e = str(m + '-' + d + '-' + y)
-            #print type(e)
-#            return '2016-' + m + '-' + d
 
         elif len(start_date) == 7:
             sd = tuple(start_date.split('/'))
-            #print sd
-            #date_tup = tuple(sd.split('-'))
-            #print date_tup
             m = sd[0]
             d= sd[1]
             if len(d) == 1:
@@ -213,17 +196,6 @@ class ScheduleTxt(object):
             print 'b', index, start_date
             return  start_date
 
-        #elif len(start_date) == 8:
-        #    print index, start_date
-        #    sd = tuple(start_date.split('-'))
-        #    m = sd[0]
-        #    d = sd[1]
-        #    return '2016-' + m + d
-
-            #end_date = datetime.datetime.strptime(start_date, '%m-%d-%y').strftime('%Y-%m-%d')
-            #print index, end_date
-            #return end_date
-
         else:
             print index, start_date
             sd = tuple(start_date.split('/'))
@@ -234,37 +206,6 @@ class ScheduleTxt(object):
             else:
                 d = d
             return '2016-' + m + '-' + d
-            #print index, start_date
-            #sd = start_date
-            #sd = datetime.datetime.strptime(start_date, '%m-%d-%y').strftime('%Y-%m-%d')
-            #sd = tuple(start_date.split('-'))
-
-            #d = '2016-' + sd[0] + '-' + sd[1]
-            #print d
-            #return d
-
-#            try:
-#                sd = datetime.datetime.strptime(start_date, '%m-%d-%y').strftime('%Y-%m-%d')
-           #     print 'c', index, sd
-#                return sd
-#            except:
-           #     sd = datetime.datetime.strptime(start_date, '%m-%d-%y').strftime('%Y-%m-%d')
-
-                #print 'd', index, sd
-#                pass
-
-            #print 'c', index, start_date
-            #return start_date
-
-        # takes utc offset from start time
-        #utc_offset = tuple(start_time.split(' - '))[1]
-        #utc_offset = '0' + utc_offset
-
-        #start_date = datetime.datetime.strptime(start_date, '%m-%d-%y').strftime('%Y-%m-%d')
-        #print index, start_date
-
-        #return start_date
-
 
     def get_end_date(self, index, end_date):
         """#"""
@@ -306,7 +247,7 @@ class ScheduleTxt(object):
                 d = d
             y= '16'
             end_date = m + '-' + d + '-' + y
-            end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
+            end_date = datetime.datetime.strptime(end_date, '%m/%d/%y').strftime('%Y-%m-%d')
             #print 'b', index, end_date
             return  end_date
 
@@ -328,37 +269,13 @@ class ScheduleTxt(object):
             return '2016-' + m + '-' + d
 
         elif len(end_date) == 10:
-            return datetime.datetime.strptime(end_date,'%m-%d-%Y').strftime('%Y-%m-%d')
+            return datetime.datetime.strptime(end_date,'%m/%d/%Y').strftime('%Y-%m-%d')
 
 
 
         else:
             end = datetime.datetime.strptime(end_date, '%m/%d/%y').strftime('%Y-%m-%d')
             return end
-            #print index, start_date
-#            end = end_date
-            #sd = tuple(start_date.split('-'))
-
-            #d = '2016-' + sd[0] + '-' + sd[1]
-            #print d
-            #return d
-
-#            try:
-#                end = datetime.datetime.strptime(end, '%m-%d-%y').strftime('%Y-%m-%d')
-#                return end
-           #     print 'c', index, sd
-           #     return sd
-#            except:
-           #     sd = datetime.datetime.strptime(start_date, '%m-%d-%y').strftime('%Y-%m-%d')
-
-                #print 'd', index, sd
-#                pass
-
-        #mdy = self.format_date(start_date)
-        #end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
-
-        #print end_date + '-' + utc_offset
-        #return end_date
 
     def get_hours_open_id(self, hours_open_id):
         """#"""
@@ -455,7 +372,7 @@ if __name__ == '__main__':
 
     colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name', 'address1', 'address2',
      'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date',
-     'index', 'address_line', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude',
+     'index', 'name', 'address_line', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude',
      'longitude', 'latlng_source', 'id']
     print len(colnames)
 

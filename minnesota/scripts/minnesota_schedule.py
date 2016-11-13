@@ -44,8 +44,8 @@ class ScheduleTxt(object):
 
     def get_sch_start_time(self, start_time, start_date):
         """Replace AM or PM with ':00' and concatenate with utc offset"""
-        diff1 = '11-07'
-        diff2 = '11-06'
+        diff1 = '11/7'
+        diff2 = '11/6'
 
         if diff1 in start_date or diff2 in start_date:
             utc_offset = config.utc_offset_6
@@ -62,8 +62,8 @@ class ScheduleTxt(object):
     def get_end_time(self, end_time, start_date):
         """Replace AM or PM with ':00' and concatenate with utc offset."""
 
-        diff1 = '11-07'
-        diff2 = '11-06'
+        diff1 = '11/7'
+        diff2 = '11/6'
 
         if diff1 in start_date or diff2 in start_date:
             utc_offset = config.utc_offset_6
@@ -98,7 +98,7 @@ class ScheduleTxt(object):
         else:
             utc_offset = config.utc_offset_5
 
-        start_date = datetime.datetime.strptime(start_date, '%m-%d-%Y').strftime('%Y-%m-%d')
+        start_date = datetime.datetime.strptime(start_date, '%m/%d/%y').strftime('%Y-%m-%d')
         return start_date
 
     def get_end_date(self, end_date, start_date):
@@ -112,7 +112,7 @@ class ScheduleTxt(object):
         else:
             utc_offset = config.utc_offset_5
 
-        end_date = datetime.datetime.strptime(end_date, '%m-%d-%Y').strftime('%Y-%m-%d')
+        end_date = datetime.datetime.strptime(end_date, '%m/%d/%y').strftime('%Y-%m-%d')
         return end_date
 
     def get_hours_open_id(self, hours_open_id):
@@ -189,7 +189,7 @@ class ScheduleTxt(object):
                 'zip', 'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment',
                 'is_or_by_appointment', 'appointment_phone_num', 'is_subject_to_change', 'index',
                 'address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box',
-                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'polling_location_id'], inplace=True, axis=1)
+                'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'polling_location_id', 'dirs'], inplace=True, axis=1)
 
         # Drop base_df columns.
         #sch.drop(['address_line', 'directions', 'hours', 'photo_uri', 'is_drop_box', 'is_early_voting',
@@ -222,10 +222,10 @@ if __name__ == '__main__':
 
     early_voting_file = 'intermediate_doc.csv'
 
-    early_voting_path = "/home/acg/democracyworks/hand-collection-to-vip/minnesota/output/" + early_voting_file
-    colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'directions', 'city', 'state',
+    early_voting_path = config.output + early_voting_file
+    colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'dirs', 'city', 'state',
                 'zip', 'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment',
-                'is_or_by_appointment', 'appointment_phone_num', 'is_subject_to_change', 'index', 'address_line',
+                'is_or_by_appointment', 'appointment_phone_num', 'is_subject_to_change', 'index', 'address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude', 'longitude',
                 'latlng_source', 'polling_location_id']
 

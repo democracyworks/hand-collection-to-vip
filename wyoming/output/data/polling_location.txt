@@ -1,24 +1,24 @@
-address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-"525 Grand Ave, Ste 202, Laramie, WY 82070",,09:00 AM - 05:00 PM,,ho64748867,false,true,,,,poll12173399
-"420 West C Street, Basin, WY 82410",,08:00 AM - 05:00 PM,,ho90801537,false,true,,,,poll87376340
-"500 S. Gillette Ave., Ste 1600, Gillette, WY 82716",,08:00 AM - 05:00 PM,,ho91692901,false,true,,,,poll32736933
-"415 W Pine St, Rawlins, WY 82301",,08:00 AM - 05:00 PM,,ho60664403,false,true,,,,poll22969971
-"107 North 5th Street, Ste 114, Douglas, WY 82633",,08:00 AM - 05:00 PM,,ho10027152,false,true,,,,poll20335819
-"309 Cleveland Street, Sundance, WY 82729",,08:00 AM - 05:00 PM,,ho12993656,false,true,,,,poll7680626
-"450 North 2nd Street, Rm 220, Lander, WY 82520",,08:00 AM - 05:00 PM,,ho31317667,false,true,,,,poll75027890
-"2125 East A Street, Torrington, WY 82240",,07:30 AM - 04:00 PM,,ho38410335,false,true,,,,poll79953279
-"415 Arapahoe, Thermopolis, WY 82443",,08:00 AM - 05:00 PM,,ho99245616,false,true,,,,poll60829909
-"76 North Main Street, Buffalo, WY 82834",,08:00 AM - 05:00 PM,,ho83084991,false,true,,,,poll51766198
-"309 West 20th Street, Cheyenne, WY 82001",,08:30 AM - 04:45 PM,,ho56787583,false,true,,,,poll69282065
-"925 Sage Avenue, Ste 101, Kemmerer, WY 83101",,08:00 AM - 05:00 PM,,ho33789664,false,true,,,,poll22406549
-"200 North Center Street, Suite 154, Casper, WY 82601",,08:00 AM - 05:00 PM,,ho2625929,false,true,,,,poll3035989
-"424 South Elm, Lusk, WY 82225",,08:00 AM - 04:00 PM,,ho18174767,false,true,,,,poll69323197
-"1002 Sheridan Ave, Cody, WY 82414",,08:00 AM - 05:00 PM,,ho60618994,false,true,,,,poll74762301
-"800 9th St., Wheatland, WY 82201",,07:00 AM - 04:00 PM,,ho68028350,false,true,,,,poll8923648
-"224 South Main Street, Suite B-2, Sheridan, WY 82801",,08:00 AM - 05:00 PM,,ho74954860,false,true,,,,poll2610323
-"21 S. Tyler, Pinedale, WY 82941",,08:00 AM - 05:00 PM,,ho78984478,false,true,,,,poll57229684
-"80 West Flaming Gorge Way, Ste 150, Green River, WY 82935",,08:00 AM - 05:00 PM,,ho33830206,false,true,,,,poll44492679
-"200 S. Willow St., Jackson, WY 83001",,08:00 AM - 05:00 PM,,ho3308459,false,true,,,,poll65174650
-"225 9th Street, Evanston, WY 82930",,08:00 AM - 05:00 PM,,ho10538910,false,true,,,,poll17806882
-"1001 Big Horn Avenue, Worland, WY 82401",,08:00 AM - 05:00 PM,,ho80050776,false,true,,,,poll33230440
-"1 West Main, Newcastle, WY 82701",,08:00 AM - 04:30 PM,,ho31544990,false,true,,,,poll29703850
+name,address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+Albany County Courthouse,"525 Grand Ave, Ste 202, Laramie, WY 82070",,09:00 AM - 05:00 PM,,ho64748867,false,true,,,,poll12173399
+Big Horn County Courthouse,"420 West C Street, Basin, WY 82410",,08:00 AM - 05:00 PM,,ho90801537,false,true,,,,poll87376340
+Campbell County Courthouse,"500 S. Gillette Ave., Ste 1600, Gillette, WY 82716",,08:00 AM - 05:00 PM,,ho91692901,false,true,,,,poll32736933
+Carbon County Courthouse,"415 W Pine St, Rawlins, WY 82301",,08:00 AM - 05:00 PM,,ho60664403,false,true,,,,poll22969971
+Converse County Courthouse,"107 North 5th Street, Ste 114, Douglas, WY 82633",,08:00 AM - 05:00 PM,,ho10027152,false,true,,,,poll20335819
+Crook County Courthouse,"309 Cleveland Street, Sundance, WY 82729",,08:00 AM - 05:00 PM,,ho12993656,false,true,,,,poll7680626
+Fremont County Courthouse,"450 North 2nd Street, Rm 220, Lander, WY 82520",,08:00 AM - 05:00 PM,,ho31317667,false,true,,,,poll75027890
+Goshen County Courthouse,"2125 East A Street, Torrington, WY 82240",,07:30 AM - 04:00 PM,,ho38410335,false,true,,,,poll79953279
+Hot Springs County Courthouse,"415 Arapahoe, Thermopolis, WY 82443",,08:00 AM - 05:00 PM,,ho99245616,false,true,,,,poll60829909
+Johnson County Courthouse,"76 North Main Street, Buffalo, WY 82834",,08:00 AM - 05:00 PM,,ho83084991,false,true,,,,poll51766198
+Laramie County Courthouse,"309 West 20th Street, Cheyenne, WY 82001",,08:30 AM - 04:45 PM,,ho56787583,false,true,,,,poll69282065
+Lincoln County Courthouse,"925 Sage Avenue, Ste 101, Kemmerer, WY 83101",,08:00 AM - 05:00 PM,,ho33789664,false,true,,,,poll22406549
+Natrona County Courthouse,"200 North Center Street, Suite 154, Casper, WY 82601",,08:00 AM - 05:00 PM,,ho2625929,false,true,,,,poll3035989
+Niobara County Courthouse,"424 South Elm, Lusk, WY 82225",,08:00 AM - 04:00 PM,,ho18174767,false,true,,,,poll69323197
+Park County Courthouse,"1002 Sheridan Ave, Cody, WY 82414",,08:00 AM - 05:00 PM,,ho60618994,false,true,,,,poll74762301
+Park County Courthouse,"800 9th St., Wheatland, WY 82201",,07:00 AM - 04:00 PM,,ho68028350,false,true,,,,poll8923648
+Sheridan County Courthouse,"224 South Main Street, Suite B-2, Sheridan, WY 82801",,08:00 AM - 05:00 PM,,ho74954860,false,true,,,,poll2610323
+Sublette County Courthouse,"21 S. Tyler, Pinedale, WY 82941",,08:00 AM - 05:00 PM,,ho78984478,false,true,,,,poll57229684
+Sweetwater County Courthouse,"80 West Flaming Gorge Way, Ste 150, Green River, WY 82935",,08:00 AM - 05:00 PM,,ho33830206,false,true,,,,poll44492679
+Teton County Courthouse,"200 S. Willow St., Jackson, WY 83001",,08:00 AM - 05:00 PM,,ho3308459,false,true,,,,poll65174650
+Uinta County Courthouse,"225 9th Street, Evanston, WY 82930",,08:00 AM - 05:00 PM,,ho10538910,false,true,,,,poll17806882
+Washakie County Courthouse,"1001 Big Horn Avenue, Worland, WY 82401",,08:00 AM - 05:00 PM,,ho80050776,false,true,,,,poll33230440
+Weston County Courthouse,"1 West Main, Newcastle, WY 82701",,08:00 AM - 04:30 PM,,ho31544990,false,true,,,,poll29703850

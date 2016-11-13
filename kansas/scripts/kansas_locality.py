@@ -223,13 +223,15 @@ class LocalityTxt(object):
 
         loc = self.build_locality_txt()
 
+
+
         # Drop base_df columns.
         loc.drop(['county', 'officer', 'email', 'blank', 'phone', 'fax', 'address_one',
                 'address_two', 'city', 'state', 'zip', 'start_time', 'end_time','start_date', 'end_date', 'time_zone', 'index',
                 'address_line', 'directions', 'hours', 'photo_uri', 'is_drop_box',
                 'is_early_voting', 'latitude', 'longitude', 'latlng_source', 'polling_location_id'], inplace=True, axis=1)
 
-        loc = loc.groupby('hours_open_id').agg(lambda x: ' '.join(set(x))).reset_index()
+        loc = loc.groupby('external_identifier_value').agg(lambda x: ' '.join(set(x))).reset_index()
 
         #loc['election_administration_id'] = loc['election_administration_id'].apply(lambda x: ''.join(x.split(' ')[0]))
         #loc['id'] = loc['id'].apply(lambda x: ''.join(x.split(' ')[0]))

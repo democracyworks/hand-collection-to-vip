@@ -70,8 +70,9 @@ class StateTxt(object):
 
     def polling_location_ids(self):
         """#"""
-        p = pl()
-        return ' '.join(str(i) for i in p)
+        # p = pl()
+        # return ' '.join(str(i) for i in p)
+        return ''
 
     def create_state_id(self):
         """Creates state_id from fips code."""
