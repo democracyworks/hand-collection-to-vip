@@ -18,11 +18,9 @@ class SourceTxt(object):
 
 
     def get_vip_id(self):
-        #the vip_id is the FIPS code for the state, which is available in the config file
+        #the vip_id is the FIPS code for the state, which is available in the dictionary below
         if self.state in config.fips_dict:
-            p = config.fips_dict[self.state]
-            print p
-            return p
+            return config.fips_dict[self.state]
         else:
             return ''
 
@@ -52,7 +50,7 @@ class SourceTxt(object):
     def write_source_txt(self):
         # This method is going to populate the source CSV with all the necessary data
 
-        with open(config.source_output, 'ab') as f:
+        with open(config.output + 'source.txt', 'ab') as f:
             fieldnames = ["date_time", 'description', 'name', 'organization_uri', 'terms_of_use_uri', 'vip_id', 'version',
                           'id']
             writer = csv.DictWriter(f, fieldnames=fieldnames)

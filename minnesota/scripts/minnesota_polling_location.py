@@ -203,7 +203,7 @@ class PollingLocationTxt(object):
 
     def dedupe(self, dupe):
         """#"""
-        return dupe.drop_duplicates(subset=['address_line'])
+        return dupe.drop_duplicates(subset=['ocd_division','address_line'])
 
     def export_for_schedule_and_locality(self):
         intermediate_doc = self.build_polling_location_txt()
@@ -226,12 +226,18 @@ class PollingLocationTxt(object):
         #print plt
 
         # Drop base_df columns.
-        plt.drop(['index', 'ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment', 'is_or_by_appointment',
-                'appointment_phone_num', 'is_subject_to_change'], inplace=True, axis=1)
+     #   plt.drop(['index', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state', 'zip',
+     #           'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment', 'is_or_by_appointment',
+     #           'is_subject_to_change'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
         print plt
+
+        # reorder columns
+        cols =['address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting',
+               'latitude', 'longitude', 'latlng_source', 'id']
+
+        plt = plt.reindex(columns=cols)
 
         plt.to_csv(config.output + 'polling_location.txt', index=False, encoding='utf-8')  # send to txt file
         plt.to_csv(config.output + 'polling_location.csv', index=False, encoding='utf-8')  # send to csv file
@@ -242,7 +248,9 @@ if __name__ == '__main__':
     print s
     early_voting_true = 'true'  # true or false
     #drop_box_true =
-    state_file='minnesota_early_voting_info.csv'
+    #state_file='minnesota_early_voting_info.csv'
+
+    state_file = 'Minnesota Early Voting Information - Clean (4).csv'
 
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
     early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/minnesota/early_voting_input/" + state_file
