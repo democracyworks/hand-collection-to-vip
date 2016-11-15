@@ -63,6 +63,7 @@ class LocalityTxt(object):
 
     def create_polling_location_ids(self, polling_location_id, ocd_division, county):
         """#"""
+        #Some counties in MN have town sites AND county sites, this code is written to accomodate that
         if "place:" in ocd_division and county in config.county_sites:
             #print county, polling_location_id, config.county_sites
             polling_location_id +=  config.county_sites[county]
