@@ -40,10 +40,18 @@ class PollingLocationTxt(object):
 
         return st.strip() + ", " + city + ", " + config.state_abbreviation + " " + zip
 
-    def get_directions(self, dirs):
+    def get_directions(self, dirs1, dirs2):
         """#"""
         # no direct relationship to any column
-        return dirs
+        dirs = ''
+
+        if not pd.isnull(dirs1):
+            dirs += dirs1 + " "
+
+        if not pd.isnull(dirs2):
+            dirs += dirs2 + " "
+
+        return dirs.strip()
 
 
     def convert_to_time(self, index, time):
@@ -154,7 +162,7 @@ class PollingLocationTxt(object):
             lambda row: self.get_address_line(row['index'], row['adr_1'], row['city'], row['zip']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
-            lambda row: self.get_directions(row['dirs']), axis=1)
+            lambda row: self.get_directions(row['dirs'], row['adr_2']), axis=1)
 
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)

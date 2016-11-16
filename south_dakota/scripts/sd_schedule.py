@@ -41,6 +41,11 @@ class ScheduleTxt(object):
         """#"""
 
         arr = start_time.split(" - ")
+        if len(arr[0]) < 8:
+            arr[0] = "0" + arr[0]
+
+        if len(arr[1])<5:
+            arr[1] = "0" + arr[1]
         return arr[0] + "-" + arr[1]
 
         # start = tuple(start_time.split(' - '))[0]
@@ -112,7 +117,7 @@ class ScheduleTxt(object):
         #utc_offset = tuple(start_time.split(' - '))[1]
         #utc_offset = '0' + utc_offset
 
-        start_date = datetime.datetime.strptime(start_date, '%m-%d-%Y').strftime('%Y-%m-%d')
+        start_date = datetime.datetime.strptime(start_date, '%m/%d/%y').strftime('%Y-%m-%d')
 
         return start_date
 
@@ -126,7 +131,7 @@ class ScheduleTxt(object):
         #print utc_offset
 
         #mdy = self.format_date(start_date)
-        end_date = datetime.datetime.strptime(end_date, '%m-%d-%Y').strftime('%Y-%m-%d')
+        end_date = datetime.datetime.strptime(end_date, '%m/%d/%y').strftime('%Y-%m-%d')
 
         #print end_date + '-' + utc_offset
         return end_date
@@ -216,7 +221,7 @@ if __name__ == '__main__':
 
     state_file = 'intermediate_doc.csv'
 
-    early_voting_file = config.input + state_file
+    early_voting_file = config.output + state_file
 
     colnames = ['ocd-division', 'email', 'county', 'location_name', 'address_1', 'address_2', 'city',
                 'state', 'zip_code', 'source_start_time', 'source_end_time', 'source_start_date', 'source_end_date',
@@ -225,7 +230,7 @@ if __name__ == '__main__':
                 'longitude', 'latlng_source', 'polling_location_id']
 
 
-    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1, delimiter=',')
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1, delimiter=',')
 
     early_voting_df['index'] = early_voting_df.index +1 # offsets zero based index so it starts at 1 for ids
     #print early_voting_df

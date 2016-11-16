@@ -222,7 +222,7 @@ class PollingLocationTxt(object):
 
         # Drop base_df columns.
         plt.drop(['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'city', 'state', 'zip',
-                'start_time', 'end_time', 'start_date', 'end_date', 'notes', 'index', 'dirs', 'subject_to_change'], inplace=True, axis=1)
+                'start_time', 'end_time', 'start_date', 'end_date', 'notes', 'index',  'subject_to_change', 'dirs', 'loc_name'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
         print plt
@@ -241,7 +241,7 @@ if __name__ == '__main__':
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
     early_voting_file = config.data_folder + state_file
 
-    colnames = ['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'dirs','city', 'state', 'zip',
+    colnames = ['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'loc_name','street', 'dirs', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'subject_to_change','notes']
 
 

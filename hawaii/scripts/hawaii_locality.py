@@ -242,7 +242,8 @@ if __name__ == '__main__':
 
     early_voting_file = config.output + state_file
 
-    colnames = ['county', 'address', 'instructions', 'start_time', 'end_time', 'start_date', 'count', 'end_date', 'address_line', 'directions',
+    colnames = ['county', 'loc_name', 'address', 'instructions', 'start_time', 'end_time', 'start_date', 'count', 'end_date',
+                'index', 'name', 'address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'polling_location_id']
     print len(colnames)
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)

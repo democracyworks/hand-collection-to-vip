@@ -47,12 +47,12 @@ election_administration_id,external_identifier_type,external_identifier_othertyp
 ,ocd-id,,ocd-division/country:us/state:sd/county:miner,miner_cou0046,poll35215585,st46,other,,loc0046
 ,ocd-id,,ocd-division/country:us/state:sd/county:minnehaha,minnehaha_cou0047,poll90215382,st46,other,,loc0047
 ,ocd-id,,ocd-division/country:us/state:sd/county:moody,moody_cou0048,poll86536761,st46,other,,loc0048
-,ocd-id,,ocd-division/country:us/state:sd/county:oglala_lakota,oglala_lakota_cou0049,poll51147937 poll23876517,st46,other,,loc0049
-,ocd-id,,ocd-division/country:us/state:sd/county:pennington,pennington_cou0050,poll15103554,st46,other,,loc0050
-,ocd-id,,ocd-division/country:us/state:sd/county:perkins,perkins_cou0051,poll66517497,st46,other,,loc0051
-,ocd-id,,ocd-division/country:us/state:sd/county:potter,potter_cou0052,poll69062356,st46,other,,loc0052
-,ocd-id,,ocd-division/country:us/state:sd/county:roberts,roberts_cou0053,poll35183156,st46,other,,loc0053
-,ocd-id,,ocd-division/country:us/state:sd/county:sanborn,sanborn_cou0054,poll37627034,st46,other,,loc0054
+,ocd-id,,ocd-division/country:us/state:sd/county:pennington,pennington_cou0049,poll15103554,st46,other,,loc0049
+,ocd-id,,ocd-division/country:us/state:sd/county:perkins,perkins_cou0050,poll66517497,st46,other,,loc0050
+,ocd-id,,ocd-division/country:us/state:sd/county:potter,potter_cou0051,poll69062356,st46,other,,loc0051
+,ocd-id,,ocd-division/country:us/state:sd/county:roberts,roberts_cou0052,poll35183156,st46,other,,loc0052
+,ocd-id,,ocd-division/country:us/state:sd/county:sanborn,sanborn_cou0053,poll37627034,st46,other,,loc0053
+,ocd-id,,ocd-division/country:us/state:sd/county:shannon,shannon_cou0054,poll57348404 poll88326917,st46,other,,loc0054
 ,ocd-id,,ocd-division/country:us/state:sd/county:spink,spink_cou0055,poll12529796,st46,other,,loc0055
 ,ocd-id,,ocd-division/country:us/state:sd/county:stanley,stanley_cou0056,poll82465289,st46,other,,loc0056
 ,ocd-id,,ocd-division/country:us/state:sd/county:sully,sully_cou0057,poll45814323,st46,other,,loc0057

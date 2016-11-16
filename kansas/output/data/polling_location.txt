@@ -25,6 +25,12 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "109 E 1st, Ste. 207, Abilene, KS 67410",,08:00 AM - 05:00 PM,,ho87225355,false,true,,,,poll87225355
 "120 E Chestnut St, Troy, KS 66087",,08:00 AM - 05:00 PM,,ho28018905,false,true,,,,poll28018905
 "1100 Massachusetts St, Lawrence, KS 66044",,08:00 AM - 05:00 PM,,ho85480065,false,true,,,,poll85480065
+"1421 Research Park Dr., Lawrence, KS 66049",,10:00 AM - 05:00 PM,,ho71154562,false,true,,,,poll71154562
+"2120 Harper St, Lawrence, KS 66046",,10:00 AM - 05:00 PM,,ho29484943,false,true,,,,poll29484943
+"1299 Oread Ave, Lawrence, KS 66045",,10:00 AM - 05:00 PM,,ho56544446,false,true,,,,poll56544446
+"327 Elmore St, Lecompton, KS 66050",,09:00 AM - 03:00 PM,,ho77975598,false,true,,,,poll77975598
+"4 E. 7th St., Eudora, KS 66025",,09:00 AM - 03:00 PM,,ho91154019,false,true,,,,poll91154019
+"610 High Street, Baldwin City, KS 66006",,09:00 AM - 03:00 PM,,ho69358390,false,true,,,,poll69358390
 "312 Massachusetts, Kinsley, KS 67547",,08:00 AM - 05:00 PM,,ho63905830,false,true,,,,poll63905830
 "127 N Pine St, Howard, KS 67349",,07:00 AM - 05:30 PM,,ho97967978,false,true,,,,poll97967978
 "1204 Fort St, Hays, KS 67601",,08:00 AM - 04:00 PM,,ho30455086,false,true,,,,poll30455086
@@ -46,7 +52,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "500 Main, Jetmore, KS 67854",,01:00 PM - 05:00 PM,,ho45754666,false,true,,,,poll45754666
 "400 New York, Holton, KS 66436",,08:00 AM - 04:30 PM,,ho85119386,false,true,,,,poll85119386
 "15372 K Rd., Mayetta, KS 66509",,10:00 AM - 06:00 PM,,ho80717808,false,true,,,,poll80717808
-"430 South Arizona St., Holton, KS 64636",,08:00 AM - 06:00 PM,,ho74278432,false,true,,,,poll74278432
+"430 South Arizona St., Holton, KS 66436",,08:00 AM - 06:00 PM,,ho65215201,false,true,,,,poll65215201
 "606 W Main St, Highland, KS 66035",,08:00 AM - 08:00 PM,,ho38418722,false,true,,,,poll38418722
 "300 Jefferson St, Oskaloosa, KS 66066",,08:00 AM - 04:30 PM,,ho95871056,false,true,,,,poll95871056
 "307 N Commercial, Mankato, KS 66956",,01:30 PM - 04:30 PM,,ho31269569,false,true,,,,poll31269569
@@ -109,7 +115,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "3830 S. Meridian Ave., Wichita, KS 67217",,12:00 PM - 07:00 PM,,ho27726773,false,true,,,,poll27726773
 "2727 E. 25th St. N., Wichita, KS 67219",,12:00 PM - 07:00 PM,,ho98322376,false,true,,,,poll98322376
 "7601 E. 13th St. N., Wichita, KS 67206",,12:00 PM - 07:00 PM,,ho27057632,false,true,,,,poll27057632
-"7001 West 21st St, Wichita, KS 67205",,12:00 PM - 07:00 PM,,ho44435942,false,true,,,,poll44435942
+"5555 Zoo Blvd., Wichita, KS 67212",,12:00 PM - 07:00 PM,,ho86506946,false,true,,,,poll86506946
 "2221 S. Oliver, Wichita, KS 67218",,12:00 PM - 07:00 PM,,ho50994791,false,true,,,,poll50994791
 "2555 Hyacinth Ln., Wichita, KS 67204",,12:00 PM - 07:00 PM,,ho243231,false,true,,,,poll243231
 "1801 East 5th Street, Valley Center, KS 67147",,12:00 PM - 07:00 PM,,ho54884411,false,true,,,,poll54884411
@@ -134,3 +140,4 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "105 W Rutledge Room 103, Yates Center, KS 66783",,01:00 PM - 05:00 PM,,ho74342879,false,true,,,,poll74342879
 "850 State Avenue, Kansas City, KS 66101",,08:00 AM - 06:00 PM,,ho41720604,false,true,,,,poll41720604
 "849b N 47th Street, Kansas City, KS 66102",,11:00 AM - 07:00 PM,,ho55942635,false,true,,,,poll55942635
+"2901 N 72nd Street, Kansas City, KS 66109",,11:00 AM - 07:00 PM,,ho43875478,false,true,,,,poll43875478

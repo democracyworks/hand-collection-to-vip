@@ -5,7 +5,7 @@ state_lower_abbreviation = "id"
 state = "Idaho"
 state_lower = 'idaho'
 
-state_file = 'Idaho Early Voting Information - Data.csv'
+state_file = 'idaho_early_voting_info.csv'
 
 fips_dict = {'wyoming': '56', 'colorado': '08', 'washington': '53', 'hawaii': '15', 'tennessee': '47', 'iowa': '19',
              'nevada': '32', 'maine': '23', 'north dakota': '38', 'mississippi': '28', 'south dakota': '46',

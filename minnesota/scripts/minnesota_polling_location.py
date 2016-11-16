@@ -31,17 +31,22 @@ class PollingLocationTxt(object):
         self.drop_box_true = drop_box_true
         self.early_voting_true = early_voting_true
 
+    def get_location_name(self, name):
+        if not pd.isnull(name):
+            string = ''
+            string += name
+            string = ''.join([i if ord(i) < 128 else ' ' for i in string])
+            return string
+        else:
+            return ''
 
     def get_address_line(self, index, address_1, address_2, city, zip_code):
         # required: print message for exception
         # TODO: concatenate street, city, state and zip
-        if address_1 and not pd.isnull(address_2):
-            address = str(address_1) + ' ' + str(address_2)
-        elif address_1:
+        if not pd.isnull(address_1):
             address = address_1
         else:
             address = ''
-            print 'Missing address value at row ' + index + '.'
 
         if city:
             city = city
@@ -60,10 +65,13 @@ class PollingLocationTxt(object):
 
         return address_line
 
-    def get_directions(self):
+    def get_directions(self,dirs):
         """#"""
         # no direct relationship to any column
-        return ''
+        if not pd.isnull(dirs):
+            return dirs + " "
+        else:
+            return " "
 
     def convert_to_time(self, index, time):
        if not pd.isnull(time):
@@ -163,12 +171,17 @@ class PollingLocationTxt(object):
         New columns that match the 'polling_location.txt' template are inserted into the DataFrame, apply() is
         used to run methods that generate the values for each row of the new columns.
         """
+
+        self.base_df['name'] = self.base_df.apply(
+            lambda row: self.get_location_name(row['location_name']), axis=1)
+
+
         self.base_df['address_line'] = self.base_df.apply(
             lambda row: self.get_address_line(row['index'], row['address_1'], row['address_2'],
                                               row['city'], row['zip']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
-            lambda row: self.get_directions(), axis=1)
+            lambda row: self.get_directions(row['address_2']), axis=1)
 
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)
@@ -203,7 +216,7 @@ class PollingLocationTxt(object):
 
     def dedupe(self, dupe):
         """#"""
-        return dupe.drop_duplicates(subset=['ocd_division','address_line'])
+        return dupe.drop_duplicates(subset=['address_line'])
 
     def export_for_schedule_and_locality(self):
         intermediate_doc = self.build_polling_location_txt()
@@ -226,18 +239,12 @@ class PollingLocationTxt(object):
         #print plt
 
         # Drop base_df columns.
-     #   plt.drop(['index', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state', 'zip',
-     #           'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment', 'is_or_by_appointment',
-     #           'is_subject_to_change'], inplace=True, axis=1)
+        plt.drop(['index', 'ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'dirs', 'city', 'state', 'zip',
+                'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment', 'is_or_by_appointment',
+                'is_subject_to_change'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
         print plt
-
-        # reorder columns
-        cols =['address_line', 'directions', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting',
-               'latitude', 'longitude', 'latlng_source', 'id']
-
-        plt = plt.reindex(columns=cols)
 
         plt.to_csv(config.output + 'polling_location.txt', index=False, encoding='utf-8')  # send to txt file
         plt.to_csv(config.output + 'polling_location.csv', index=False, encoding='utf-8')  # send to csv file
@@ -248,12 +255,10 @@ if __name__ == '__main__':
     print s
     early_voting_true = 'true'  # true or false
     #drop_box_true =
-    #state_file='minnesota_early_voting_info.csv'
+    state_file='minnesota_early_voting_info.csv'
 
-    state_file = 'Minnesota Early Voting Information - Clean (4).csv'
-
-    #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
-    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/minnesota/early_voting_input/" + state_file
+    early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/minnesota/early_voting_input/" + state_file
+    #early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/minnesota/early_voting_input/" + state_file
 
 
     colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'dirs', 'city', 'state', 'zip',
@@ -265,6 +270,6 @@ if __name__ == '__main__':
     early_voting_df['index'] = early_voting_df.index + 1
 
     pl = PollingLocationTxt(early_voting_df, early_voting_true)
-    #pl.write_polling_location_txt()
+    #
     pl.export_for_schedule_and_locality()
-    #pl.export_for_schedule()
+    pl.write_polling_location_txt()

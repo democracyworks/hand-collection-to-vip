@@ -5,7 +5,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "1800 N University Dr, Fargo, ND 58102",,10:00 AM - 07:00 PM,,ho47977112,false,true,,,,poll9311428
 "2050 Governor's Dr, Casselton, ND 58012",,10:00 AM - 07:00 PM,,ho19361141,false,true,,,,poll42155907
 "1200 S 42nd St, Grand Forks, ND 58201",,10:00 AM - 06:00 PM,,ho60314806,false,true,,,,poll70550119
-"210 2nd Ave. NW, Mandan, ND 58554",,12:00 PM - 05:00 PM,,ho82218568,false,true,,,,poll95610056
+"210 2nd Ave. NW, Mandan, ND 58554",,12:00 PM - 05:30 PM,,ho82218568,false,true,,,,poll95610056
 "51 3rd Street East, Dickinson, ND 58601",,08:00 AM - 05:00 PM,,ho79998215,false,true,,,,poll97479369
 "511 2nd Ave. SE, Jamestown, ND 58401",Ste. 102,08:00 AM - 05:00 PM,,ho61339843,false,true,,,,poll5355489
 "225 SE Third St, Minot, ND 58701",1st Fl,10:00 AM - 06:00 PM,,ho70525056,false,true,,,,poll95822054

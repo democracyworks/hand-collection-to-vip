@@ -292,10 +292,10 @@ if __name__ == '__main__':
 
     colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name', 'address1',
             'address2', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date',
-            'index', 'address_line', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting',
+            'index', 'name', 'address_line', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting',
             'latitude', 'longitude', 'latlng_source', 'id']
 
-    early_voting_df = pd.read_csv(config.output + intermediate_doc, names=colnames, encoding='utf-8', skiprows=1)
+    early_voting_df = pd.read_csv(config.output + intermediate_doc, names=colnames, encoding='ISO-8859-1', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
 
 

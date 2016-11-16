@@ -47,7 +47,10 @@ class LocalityTxt(object):
 
     def get_external_identifier_value(self, external_identifier_value):
         """Extracts external identifier (ocd-division)."""
-        return external_identifier_value
+        county = external_identifier_value.lower().replace("county", '').strip().replace(" ", "_")
+        #ocd - division / country:us / state:ia / county:black_hawk
+        string = "ocd-division/country:us/state:ia/county:" + county
+        return string
 
 
     def create_name(self, index, division_description ):
@@ -150,10 +153,10 @@ class LocalityTxt(object):
             lambda row: self.get_external_identifier_othertype(), axis=1)
 
         self.base_df['external_identifier_value'] = self.base_df.apply(
-            lambda row: self.get_external_identifier_value(row['ocd-division']), axis=1)
+            lambda row: self.get_external_identifier_value(row['county']), axis=1)
 
         self.base_df['name'] = self.base_df.apply(
-            lambda row: self.create_name(row['index'], row['ocd-division']), axis=1)
+            lambda row: self.create_name(row['index'], row['county']), axis=1)
 
         self.base_df['polling_location_ids'] = self.base_df.apply(
             lambda row: self.create_polling_location_ids(row['id']), axis=1)
@@ -196,7 +199,7 @@ class LocalityTxt(object):
     def final_build(self):
         loc = self.build_locality_txt()
 
-        loc = loc.groupby(['ocd-division']).agg(lambda x: ' '.join(set(x))).reset_index()
+        loc = loc.groupby(['external_identifier_value']).agg(lambda x: ' '.join(set(x))).reset_index()
         # print loc
 
         loc['name'] = loc['name'].apply(lambda x: ''.join(x.split(' ')[0]))

@@ -51,6 +51,7 @@ class LocalityTxt(object):
 
         county = external_identifier_value.lower().replace(" ", "_")
         county = county.replace("'", "~")
+        county = county.replace(".", "")
         print county
         if external_identifier_value == "Baltimore City":
             string = "ocd-division/country:us/state:" + config.state_lower_abbreviation +"/place:" + county.split("_")[0]

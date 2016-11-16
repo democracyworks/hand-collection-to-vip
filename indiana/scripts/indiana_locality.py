@@ -155,7 +155,7 @@ class LocalityTxt(object):
             lambda row: self.create_name(row['index'], row['ocd_division']), axis=1)
 
         self.base_df['polling_location_ids'] = self.base_df.apply(
-            lambda row: self.create_polling_location_ids(row['id']), axis=1)
+            lambda row: self.create_polling_location_ids(row['source_id']), axis=1)
 
         self.base_df['state_id'] = self.base_df.apply(
             lambda row: self.create_state_id(), axis=1)
@@ -237,10 +237,10 @@ if __name__ == '__main__':
 
     early_voting_file = config.output + state_file
 
-    colnames = ['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'street', 'dirs','city', 'state', 'zip',
+    colnames = ['office-name', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'loc_name', 'street', 'dirs','city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'subject_to_change','notes',
                 'index', 'address_line', 'directions',
-                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id']
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'source_id']
     print len(colnames)
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
 

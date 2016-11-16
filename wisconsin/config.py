@@ -16,9 +16,11 @@ state_file = 'wisconsin_early_voting_info.csv'
 
 state_feed = ''
 
-input = '/home/acg/democracyworks/hand-collection-to-vip/'+ state + '/input/'
+input = '/Users/danielgilberg/Development/hand-collection-to-vip/'+ state + '/input/'
 
-output = '/home/acg/democracyworks/hand-collection-to-vip/' + state + '/output/'
+#/Users/danielgilberg/Development/hand-collection-to-vip/wisconsin/output
+
+output = '/Users/danielgilberg/Development/hand-collection-to-vip/' + state + '/output/'
 
 
 fips_dict = {'wyoming': '56', 'colorado': '08', 'washington': '53', 'hawaii': '15', 'tennessee': '47', 'iowa': '19',

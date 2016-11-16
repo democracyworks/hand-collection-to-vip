@@ -1,8 +1,8 @@
 address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
 "2 S Pacific St No 3, Dillon, MT 59725",,08:00 AM-05:00 PM,,ho13910202,false,true,,,,poll77635771
 "121 3rd St W Room 203, Hardin, MT 59034",,08:00 AM-05:00 PM,,ho15919580,false,true,,,,poll84282476
-"Northern Cheyenne Tribal School Gymnasium, #1 Campus Dr, Busby, MT 59016",,10:00 AM-03:00 PM,,ho62901730,false,true,,,,poll66169550
-"Little Big Horn College Student Union Bldg, 8645 South Weaver Drive, Crow Agency, MT 59022",,09:00 AM-01:00 PM,,ho94828584,false,true,,,,poll58894529
+"1 Campus Dr, Busby, MT 59016",,10:00 AM-03:00 PM,,ho71863216,false,true,,,,poll16863642
+"8645 South Weaver Drive, Crow Agency, MT 59022",,09:00 AM-01:00 PM,,ho99779672,false,true,,,,poll52208087
 "420 Ohio St, Chinook, MT 59523",,08:00 AM-05:00 PM,,ho53519990,false,true,,,,poll8501250
 "210 Chippewa Ave Fort Belknap Agency, Harlem, MT 59526",,10:00 AM-05:00 PM,,ho29238835,false,true,,,,poll29884351
 "197 Thunderbird Lane, Hays, MT 59527",,10:00 AM-04:00 PM,,ho56118358,false,true,,,,poll66041645
@@ -38,7 +38,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "200 W Broadway, Missoula, MT 59802",,08:00 AM-05:00 PM,,ho73966832,false,true,,,,poll11402894
 "506 Main, Roundup, MT 59072",,08:00 AM-05:00 PM,,ho33010691,false,true,,,,poll19907548
 "414 E Callender St, Livingston, MT 59047",,08:00 AM-05:00 PM,,ho47812967,false,true,,,,poll73987952
-"302 East Main, Winnett, MT 42678",,08:00 AM-12:00 PM,,ho36640947,false,true,,,,poll62167098
+"302 East Main, Winnett, MT 59087",,08:00 AM-12:00 PM,,ho41924579,false,true,,,,poll18947377
 "314 S Second Ave W, Malta, MT 59538",,08:00 AM-05:00 PM,,ho41884188,false,true,,,,poll61028000
 "20 4th Ave SW, Conrad, MT 59425",,08:00 AM-05:00 PM,,ho73882782,false,true,,,,poll76257047
 "119 N Park Ave, Broadus, MT 59317",,08:00 AM-12:00 PM,,ho81728819,false,true,,,,poll38111014

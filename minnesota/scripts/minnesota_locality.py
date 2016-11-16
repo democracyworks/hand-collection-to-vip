@@ -61,9 +61,12 @@ class LocalityTxt(object):
             return city.replace(' ', '_').lower() + '_' + str(index)
 
 
-    def create_polling_location_ids(self, polling_location_id):
+    def create_polling_location_ids(self, polling_location_id, ocd_division, county):
         """#"""
-
+        #Some counties in MN have town sites AND county sites, this code is written to accomodate that
+        if "place:" in ocd_division and county in config.county_sites:
+            #print county, polling_location_id, config.county_sites
+            polling_location_id +=  config.county_sites[county]
         return polling_location_id
 
     def create_state_id(self):
@@ -135,7 +138,7 @@ class LocalityTxt(object):
             lambda row: self.create_name(row['index'], row['county'], row['city']), axis=1)
 
         self.base_df['polling_location_ids'] = self.base_df.apply(
-            lambda row: self.create_polling_location_ids(row['polling_location_id']), axis=1)
+            lambda row: self.create_polling_location_ids(row['polling_location_id'], row["ocd_division"], row["county"]), axis=1)
 
         self.base_df['state_id'] = self.base_df.apply(
             lambda row: self.create_state_id(), axis=1)
@@ -190,21 +193,21 @@ class LocalityTxt(object):
 
         loc = self.final_build()
 
-        loc.to_csv(config.locality_output + 'locality.txt', index=False, encoding='utf-8')  # send to txt file
-        loc.to_csv(config.locality_output + 'locality.csv', index=False, encoding='utf-8')  # send to csv file
+        loc.to_csv(config.output + 'locality.txt', index=False, encoding='utf-8')  # send to txt file
+        loc.to_csv(config.output + 'locality.csv', index=False, encoding='utf-8')  # send to csv file
 
 
 if __name__ == '__main__':
 
     early_voting_file = 'intermediate_doc.csv'
 
-    early_voting_path = "/home/acg/democracyworks/hand-collection-to-vip/minnesota/output/" + early_voting_file
+    early_voting_path = "/Users/danielgilberg/Development/hand-collection-to-vip/minnesota/output/" + early_voting_file
 
-    colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'directions', 'city', 'state',
+    colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'dirs', 'city', 'state',
                 'zip', 'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment',
-                'is_or_by_appointment', 'appointment_phone_num', 'is_subject_to_change', 'index', 'address_line',
+                'is_or_by_appointment', 'appointment_phone_num', 'is_subject_to_change', 'index', 'address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude', 'longitude',
-                'latlng_source', 'polling_location_id', '']
+                'latlng_source', 'polling_location_id']
 
     early_voting_df = pd.read_csv(early_voting_path, names=colnames, encoding='utf-8', skiprows=1)
 

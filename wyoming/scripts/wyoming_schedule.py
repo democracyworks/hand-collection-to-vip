@@ -40,11 +40,24 @@ class ScheduleTxt(object):
         return self.dedupe(sch_base_df)
 
 
-    def get_sch_time(self, hours):
-        if len(hours) > 14:
-            return hours.split(" - ")[0] + config.utc_offset
+    def get_sch_time(self, hours, date):
+        if not pd.isnull(hours):
+            #print hours
+            hours_arr = hours.split(" - ")
+            if len(hours_arr[0]) < 8:
+                hours_arr[0] = "0" + hours_arr[0]
+            time = hours_arr[0]
+            print date
+            if "11-06" in date or "11-07" in date:
+                offset = "08:00"
+            else:
+                offset = config.utc_offset
+
+            hours = time + "-" + offset
+            print hours
+            return hours.strip()
         else:
-            return "0" + hours.split(" - ")[0] + config.utc_offset
+            return ''
         # arr = hours.split("-")
         # offset = self.utc_offset(county)
         # print arr[0] + ";00" + offset
@@ -96,6 +109,7 @@ class ScheduleTxt(object):
         """Create id"""
         # concatenate county name, or part of it (first 3/4 letters) with index
         # add leading zeros to maintain consistent id length
+        print index
         if index <= 9:
             index_str = '000' + str(index)
 
@@ -116,10 +130,10 @@ class ScheduleTxt(object):
         """
 
         self.base_df['start_time2'] = self.base_df.apply(
-            lambda row: self.get_sch_time(row["start_time"]), axis=1)
+            lambda row: self.get_sch_time(row["start_time"], row['start_date']), axis=1)
 
         self.base_df['end_time2'] = self.base_df.apply(
-            lambda row: self.get_sch_time(row['end_time']), axis=1)
+            lambda row: self.get_sch_time(row['end_time'], row['start_date']), axis=1)
 
         self.base_df['is_only_by_appointment2'] = self.base_df.apply(
             lambda row: self.is_only_by_appointment(), axis=1)
@@ -159,7 +173,7 @@ class ScheduleTxt(object):
         sch.drop(['ocd_division', 'email', 'county', 'name', 'adr_1', 'adr_2', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'appt1', 'appt2', 'appt3', 'index',
                 'subject_to_change', 'address_line', 'directions',
-                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'polling_id'], inplace=True,
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'polling_id', 'loc_name'], inplace=True,
                  axis=1)
 
         # hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id,
@@ -198,9 +212,9 @@ if __name__ == '__main__':
     early_voting_file = config.output + file
 
 
-    colnames = [ 'ocd_division', 'email', 'county', 'name', 'adr_1', 'adr_2', 'city', 'state',
-                 'zip', 'start_time', 'end_time', 'start_date', 'end_date', 'appt1', 'appt2', 'appt3', 'subject_to_change',
-                 'index','address_line', 'directions',
+    colnames = [ 'ocd_division', 'email', 'county', 'loc_name', 'adr_1', 'adr_2', 'city', 'state',
+                 'zip', 'start_time', 'end_time', 'start_date', 'end_date', 'appt1', 'appt2', 'appt3', 'subject_to_change', 'index',
+                 'name','address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'polling_id']
     print len(colnames)
 

@@ -296,7 +296,7 @@ if __name__ == '__main__':
 
 
     colnames = ['county', 'site', 'loc_name', 'adr_1', 'adr_2', 'adr_3', 'city', 'state', 'zip', 'dirs', 'services',
-                'start_date', 'end_date', 'start_time', 'end_time', 'index', 'address_line', 'directions',
+                'start_date', 'end_date', 'start_time', 'end_time', 'index', 'name', 'address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'poll_id']
 
     early_voting_df = pd.read_csv(config.output + intermediate_doc, names=colnames, encoding='ISO-8859-1', skiprows=1, delimiter=',')

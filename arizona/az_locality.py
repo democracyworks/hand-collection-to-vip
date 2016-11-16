@@ -305,13 +305,13 @@ if __name__ == '__main__':
 
     state_file = config.state_file
 
-    colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state', 'zip_code',
-                'start_time', 'end_time', 'start_date', 'end_date']
+    colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'loc_name', 'street', 'dirs', 'city', 'state', 'zip_code',
+                'start_time', 'end_time', 'start_date', 'end_date', 'notes']
 
-    usecols = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'street', 'city', 'state', 'zip_code',
-                'start_time', 'end_time', 'start_date', 'end_date']
+    usecols = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'loc_name', 'street', 'dirs', 'city', 'state', 'zip_code',
+                'start_time', 'end_time', 'start_date', 'end_date', 'notes']
 
-    early_voting_df = pd.read_csv(config.input_path + state_file, names=colnames, usecols=usecols, encoding='utf-8', skiprows=1)
+    early_voting_df = pd.read_csv(config.input_path + state_file, names=colnames, usecols=usecols, encoding='ISO-8859-1', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
 
     pl = PollingLocationTxt(early_voting_df, config.state_abbreviation_upper)

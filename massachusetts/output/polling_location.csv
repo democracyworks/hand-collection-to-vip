@@ -1,474 +1,473 @@
-address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-"500 Gliniewicz Way, Abington, MA 02351.",,08:30 AM - 07:00 PM,,ho2545626,false,true,,,,poll84119374
-"472 Main Street, Acton, MA 01720.",,08:00 AM - 08:00 PM,,ho99055524,false,true,,,,poll4232521
-"122 Main St., Acushnet, MA 02743.",,08:00 AM - 04:00 PM,,ho87376366,false,true,,,,poll24365047
-"8 Park Street, Adams, MA 01220.",,08:00 AM - 05:00 PM,,ho24839791,false,true,,,,poll36988701
-"36 Main Street, Agawam, MA 01001.",,08:30 AM - 04:30 PM,,ho68832854,false,true,,,,poll45138387
-"954 Main Street, Agawam, MA 01001.",,10:00 AM - 02:00 PM,,ho94684883,false,true,,,,poll78503108
-"750 Cooper Street, Agawam, MA 01001.",,10:00 AM - 02:00 PM,,ho71144992,false,true,,,,poll45374327
-"5 Alford Center Road, Alford, MA 01230.",,08:00 AM - 11:00 AM,,ho40108610,false,true,,,,poll50338726
-"62 Friend Street, Amesbury, MA 01913.",,08:00 AM - 04:00 PM,,ho88232883,false,true,,,,poll93536525
-"4 Boltwood Avenue, Amherst, MA 01002.",,08:00 AM - 05:00 PM,,ho56501673,false,true,,,,poll45402270
-"41 Campus Center Way, Amherst, MA 01003.",,10:00 AM - 04:00 PM,,ho4907374,false,true,,,,poll66136542
-"1046 South East St, Amherst, MA 01002.",,09:00 AM - 03:00 PM,,ho9570545,false,true,,,,poll8821762
-"603 East Pleasant St, Amherst, MA 01002.",,09:00 AM - 03:00 PM,,ho58685085,false,true,,,,poll69579659
-"36 Bartlet Street, Andover, MA 01810.",,08:30 AM - 04:30 PM,,ho63682139,false,true,,,,poll63618039
-"65 State Rd, Aquinnah, MA 02535.",,12:00 PM - 04:00 PM,,ho6164596,false,true,,,,poll26918808
-"730 Massachusetts Avenue, Arlington, MA 02476.",,08:00 AM - 04:00 PM,,ho39821257,false,true,,,,poll451344
-"32 Main St, Ashburnham, MA 01430.",,08:00 AM - 07:00 PM,,ho57411318,false,true,,,,poll38651107
-"895 Main Street, Ashby, MA 01431.",,08:00 AM - 12:00 PM,,ho533384,false,true,,,,poll81586163
-"412 Main St, Ashfield, MA 01330.",,09:00 AM - 04:00 PM,,ho4654619,false,true,,,,poll96086399
-"101 Main Street, Ashland, MA 01721.",,08:00 AM - 04:00 PM,,ho10832153,false,true,,,,poll58413796
-"584 Main St, Athol, MA 01331.",,08:00 AM - 05:00 PM,,ho35919521,false,true,,,,poll34169985
-"77 Park Street, Attleboro, MA 02703.",,08:30 AM - 04:30 PM,,ho70823408,false,true,,,,poll22238081
-"104 Central Street, Auburn, MA 01501.",,08:00 AM - 07:00 PM,,ho64776948,false,true,,,,poll36543129
-"65 East Main Street, Avon, MA 02322.",,08:30 AM - 04:30 PM,,ho40183845,false,true,,,,poll96241337
-"1 Main Street, Ayer, MA 01432.",,08:00 AM - 04:00 PM,,ho96401958,false,true,,,,poll10385046
-"367 Main Street, Hyannis, MA 02601.",,08:30 AM - 04:30 PM,,ho69347566,false,true,,,,poll18395194
-"1200 Phinney'S Lane, Hyannis, MA 02601.",,08:00 AM - 02:00 PM,,ho85528398,false,true,,,,poll58285025
-"40 West Street, Barre, MA 01005.",,07:00 PM - 09:00 PM,,ho76551960,false,true,,,,poll39811961
-"557 Main St, Becket, MA 01123.",,08:30 AM - 04:30 PM,,ho1421508,false,true,,,,poll36328227
-"10 Mudge Way, Bedford, MA 01730.",,08:00 AM - 04:00 PM,,ho30679858,false,true,,,,poll44668855
-"2 Jabish Street, Belchertown, MA 01007.",,08:00 AM - 05:00 PM,,ho16560656,false,true,,,,poll43835836
-"10 Mechanic St, Bellingham, MA 02019.",,08:30 AM - 07:00 PM,,ho88508859,false,true,,,,poll76110141
-"455 Concord Avenue, Belmont, MA 02478.",,08:00 AM - 05:00 PM,,ho14297393,false,true,,,,poll47415257
-"1 North Main Street, Berkley, MA 02779.",,09:30 AM - 02:30 PM,,ho81924567,false,true,,,,poll19541409
-"23 Linden St, Berlin, MA 01503.",,11:00 AM - 02:00 PM,,ho44100126,false,true,,,,poll57410962
-"38 Church Street, Bernardston, MA 01337.",,08:30 AM - 11:30 AM,,ho38867910,false,true,,,,poll40744735
-"191 Cabot Street, Beverly, MA 01915.",,08:30 AM - 04:30 PM,,ho18583694,false,true,,,,poll91025305
-"365 Boston Road, Billerica, MA 01821.",,08:30 AM - 04:00 PM,,ho46575678,false,true,,,,poll93978979
-"15 St. Paul Street, Blackstone, MA 01504.",,08:30 AM - 04:30 PM,,ho13268226,false,true,,,,poll78156951
-"1 Russell Stage Road, Blandford, MA 01008.",,05:00 PM - 07:00 PM,,ho57380604,false,true,,,,poll54706788
-"663 Main St., Bolton, MA 01740.",,09:00 AM - 02:30 PM,,ho93579175,false,true,,,,poll26303124
-"1 City Hall Plaza, Boston, MA 02201.",,09:00 AM - 08:00 PM,,ho87175148,false,true,,,,poll27961054
-"38 Oak Street, Boston, MA 02111.",,02:00 PM - 08:00 PM,,ho9845999,false,true,,,,poll60550047
-"566 Columbus Avenue, Boston, MA 02118.",,02:00 PM - 08:00 PM,,ho12778589,false,true,,,,poll55384557
-"61 Bayswater Street, Boston, MA 02128.",,02:00 PM - 08:00 PM,,ho27830221,false,true,,,,poll88736818
-"1353 Dorchester Avenue, Boston, MA 02122.",,02:00 PM - 08:00 PM,,ho42187139,false,true,,,,poll34944748
-"690 Washington Street, Boston, MA 02124.",,02:00 PM - 08:00 PM,,ho14008825,false,true,,,,poll99597518
-"1179 River Street, Boston, MA 02136.",,02:00 PM - 08:00 PM,,ho12828900,false,true,,,,poll16747840
-"174 Ipswich Street, Boston, MA 02215.",,02:00 PM - 08:00 PM,,ho63879191,false,true,,,,poll43890392
-"20 South Street, Boston, MA 02130.",,02:00 PM - 08:00 PM,,ho67975079,false,true,,,,poll1618123
-"300 North Harvard Street, Boston, MA 02134.",,02:00 PM - 08:00 PM,,ho53541204,false,true,,,,poll93381932
-"1961 Centre Street West, Boston, MA 02132.",,12:00 PM - 06:00 PM,,ho39065077,false,true,,,,poll95532010
-"200 D Street South, Boston, MA 02127.",,12:00 PM - 06:00 PM,,ho65387937,false,true,,,,poll41583632
-"209 Sumner Street, Boston, MA 02128.",,12:00 PM - 06:00 PM,,ho97175898,false,true,,,,poll45671116
-"27 Richmond Street, Boston, MA 02124.",,12:00 PM - 06:00 PM,,ho91435448,false,true,,,,poll12023894
-"5 Mildred Avenue, Boston, MA 02126.",,12:00 PM - 06:00 PM,,ho86152953,false,true,,,,poll77489295
-"500 Cambridge Street, Boston, MA 02134.",,12:00 PM - 06:00 PM,,ho4182284,false,true,,,,poll69498515
-"51 Geneva Avenue, Boston, MA 02121.",,12:00 PM - 06:00 PM,,ho69547990,false,true,,,,poll57482922
-"700 Boylston Street, Boston, MA 02120.",,12:00 PM - 06:00 PM,,ho74627498,false,true,,,,poll52793621
-"2300 Washington Street, Boston, MA 02119.",,12:00 PM - 06:00 PM,,ho48299,false,true,,,,poll41323515
-"280 Martin L King Blvd, Boston, MA 02119.",,02:00 PM - 08:00 PM,,ho82809469,false,true,,,,poll58553817
-"50 Bunker Hill Street, Boston, MA 02129.",,02:00 PM - 08:00 PM,,ho54303616,false,true,,,,poll31841544
-"41 Berkeley Street, Boston, MA 02116.",,02:00 PM - 08:00 PM,,ho46207503,false,true,,,,poll79828278
-"543 Columbia Road, Boston, MA 02125.",,02:00 PM - 08:00 PM,,ho78552700,false,true,,,,poll98647628
-"6 Cummins Hwy, Boston, MA 02131.",,02:00 PM - 08:00 PM,,ho36956184,false,true,,,,poll29446018
-"1257 Blue Hill Avenue, Boston, MA 02126.",,02:00 PM - 08:00 PM,,ho13147095,false,true,,,,poll8874525
-"100 South Huntington Street, Boston, MA 02130.",,11:00 AM - 05:00 PM,,ho1833617,false,true,,,,poll19999652
-"1481 Tremont Street, Boston, MA 02120.",,11:00 AM - 05:00 PM,,ho26690328,false,true,,,,poll39705130
-"20 Chestnut Hill Avenue, Boston, MA 02135.",,11:00 AM - 05:00 PM,,ho93233968,false,true,,,,poll80342625
-"24 Perry Avenue, Buzzards Bay, MA 02532.",,08:30 AM - 04:30 PM,,ho46477408,false,true,,,,poll7685320
-"29 Middle Rd, Boxborough, MA 01719.",,08:00 AM - 08:00 PM,,ho2091433,false,true,,,,poll31403194
-"7A Spofford Rd, Boxford, MA 01921.",,08:00 AM - 04:30 PM,,ho19427060,false,true,,,,poll56367815
-"221 Main St, Boylston, MA 01505.",,08:00 AM - 02:00 PM,,ho9680926,false,true,,,,poll81369312
-"1 John F Kennedy Memorial Drive, Braintree, MA 02184.",,08:30 AM - 04:30 PM,,ho82239960,false,true,,,,poll80515638
-"2198 Main Street, Brewster, MA 02631.",,08:30 AM - 04:00 PM,,ho87014077,false,true,,,,poll58996744
-"66 Central Square, Bridgewater, MA 02324.",,08:00 AM - 04:00 PM,,ho92936811,false,true,,,,poll12616851
-"21 Main St, Brimfield, MA 01010.",,05:00 PM - 08:00 PM,,ho87332809,false,true,,,,poll91858560
-"200 Westgate Dr, Brockton, MA 02301.",,08:30 AM - 06:00 PM,,ho84556343,false,true,,,,poll63744802
-"6 Central Street, Brookfield, MA 01506.",,09:00 AM - 03:00 PM,,ho82670792,false,true,,,,poll96945076
-"1281 West Roxbury Parkway, Brookline, MA 02467.",,08:00 AM - 08:00 PM,,ho34006276,false,true,,,,poll41127774
-"333 Washington Street, Brookline, MA 02445.",,08:00 AM - 05:00 PM,,ho36123901,false,true,,,,poll84702893
-"50 Pleasant Street, Brookline, MA 02446.",,08:00 AM - 08:00 PM,,ho26250289,false,true,,,,poll58704474
-"17 State Street, Buckland, MA 01370.",,07:30 AM - 03:00 PM,,ho43398002,false,true,,,,poll26679778
-"29 Center St, Burlington, MA 01803.",,08:30 AM - 04:30 PM,,ho38555682,false,true,,,,poll24721258
-"51 Inman St, Cambridge, MA 02139.",,08:30 AM - 08:00 PM,,ho7604542,false,true,,,,poll71457541
-"125 Sixth Street, Cambridge, MA 02139.",,12:00 PM - 08:00 PM,,ho32357923,false,true,,,,poll81095376
-"250 Fresh Pond Parkway, Cambridge, MA 02138.",,12:00 PM - 08:00 PM,,ho45287369,false,true,,,,poll3772301
-"449 Broadway, Cambridge, MA 02138.",,12:00 PM - 08:00 PM,,ho54406444,false,true,,,,poll45190943
-"70 Rindge Ave, Cambridge, MA 02140.",,12:00 PM - 08:00 PM,,ho18914379,false,true,,,,poll42631717
-"801 Washington St, Canton, MA 02021.",,09:00 AM - 05:00 PM,,ho21777928,false,true,,,,poll24253420
-"66 Westford St, Carlisle, MA 01741.",,09:00 AM - 03:00 PM,,ho51650211,false,true,,,,poll61716772
-"108 Main St, Carver, MA 02330.",,08:00 AM - 04:00 PM,,ho53411626,false,true,,,,poll40767584
-"75 Cranberry Rd, Carver, MA 02330.",,08:00 AM - 04:00 PM,,ho93597777,false,true,,,,poll12331597
-"157 Main Street, Charlemont, MA 01339.",,08:00 AM - 02:30 PM,,ho16967423,false,true,,,,poll41773090
-"37 Main Street, Charlton, MA 01507.",,07:30 AM - 05:00 PM,,ho22314303,false,true,,,,poll23631849
-"88 Masonic Hill Road, Charlton, MA 01507.",,09:00 AM - 01:00 PM,,ho61018462,false,true,,,,poll47919885
-"549 Main Street, Chatham, MA 02633.",,08:00 AM - 04:00 PM,,ho2981249,false,true,,,,poll23409704
-"50 Billerica Rd., Chelmsford, MA 01824.",,08:30 AM - 04:00 PM,,ho54014010,false,true,,,,poll12142432
-"500 Broadway, Chelsea, MA 02150.",,08:00 AM - 04:00 PM,,ho99889838,false,true,,,,poll66761053
-"80 Church Street, Cheshire, MA 01225.",,09:00 AM - 05:00 PM,,ho82737890,false,true,,,,poll57033234
-"15 Middlefield Rd., Chester, MA 01011.",,06:00 PM - 08:00 PM,,ho94712591,false,true,,,,poll42501071
-"422 Main Road, Chesterfield, MA 01012.",,06:30 PM - 08:30 PM,,ho23229334,false,true,,,,poll26419073
-"274 Front St, Chicopee, MA 01013.",,09:00 AM - 05:00 PM,,ho60505044,false,true,,,,poll37248966
-"401 Middle Rd, Chilmark, MA 02535.",,08:00 AM - 12:00 PM,,ho34595093,false,true,,,,poll15911183
-"111 River Road, Clarksburg, MA 01247.",,09:00 AM - 12:00 PM,,ho5114983,false,true,,,,poll36626106
-"242 Church Street, Clinton, MA 01510.",,08:00 AM - 04:00 PM,,ho24538762,false,true,,,,poll53449340
-"41 Highland Avenue, Cohasset, MA 02025.",,08:30 AM - 04:30 PM,,ho72794414,false,true,,,,poll1322229
-"55 Main Rd, Colrain, MA 01340.",,11:00 AM - 04:00 PM,,ho38862812,false,true,,,,poll2205180
-"22 Monument Square, Concord, MA 01742.",,08:30 AM - 04:30 PM,,ho30619327,false,true,,,,poll44673216
-"32 Main St, Conway, MA 01341.",,09:00 AM - 12:00 PM,,ho928877,false,true,,,,poll89842176
-"5 Academy Hill, Conway, MA 01341.",,09:00 AM - 12:00 PM,,ho18751936,false,true,,,,poll17612846
-"33 Main St, Cummington, MA 01026.",,03:30 PM - 07:30 PM,,ho97938694,false,true,,,,poll29691138
-"462 Main Street, Dalton, MA 01226.",,08:00 AM - 04:30 PM,,ho86384545,false,true,,,,poll72578264
-"1 Sylvan Street, Danvers, MA 01923.",,08:00 AM - 05:00 PM,,ho39481443,false,true,,,,poll95050346
-"400 Slocum Road, Dartmouth, MA 02747.",,08:30 AM - 04:30 PM,,ho93626127,false,true,,,,poll10798084
-"285 Old Westport Road, Dartmouth, MA 02747.",,06:00 PM - 08:00 PM,,ho3174033,false,true,,,,poll99285409
-"26 Bryant Street, Dedham, MA 02026.",,08:30 AM - 05:00 PM,,ho8793826,false,true,,,,poll85640342
-"5000 Great Meadow Road, Dedham, MA 02026.",,10:00 AM - 03:00 PM,,ho57418901,false,true,,,,poll33416823
-"8 Conway Street South, Deerfield, MA 01373.",,09:00 AM - 04:00 PM,,ho76975925,false,true,,,,poll65729388
-"685 Route 134 South, Dennis, MA 02660.",,08:30 AM - 04:30 PM,,ho59937301,false,true,,,,poll90622021
-"979 Somerset Avenue, Dighton, MA 02715.",,07:30 AM - 04:30 PM,,ho13037656,false,true,,,,poll34162260
-"29 Depot St, Douglas, MA 01516.",,08:30 AM - 04:00 PM,,ho91876554,false,true,,,,poll72763171
-"5 Springdale Avenue, Dover, MA 02030.",,09:00 AM - 01:00 PM,,ho18549322,false,true,,,,poll66382790
-"62 Arlington St., Dracut, MA 01826.",,08:30 AM - 04:30 PM,,ho57803568,false,true,,,,poll89858472
-"71 West Main Street, Dudley, MA 01571.",,08:00 AM - 04:30 PM,,ho37602306,false,true,,,,poll94689705
-"511 Main Street, Dunstable, MA 01827.",,06:00 PM - 08:00 PM,,ho19316610,false,true,,,,poll61265163
-"878 Tremont St, Duxbury, MA 02332.",,08:00 AM - 08:00 PM,,ho88271375,false,true,,,,poll1767693
-"175 Central Street East, East Bridgewater, MA 02333.",,08:30 AM - 08:00 PM,,ho92866293,false,true,,,,poll54702648
-"122 Connie Mack Dr, East Brookfield, MA 01515.",,11:00 AM - 02:00 PM,,ho67543123,false,true,,,,poll39263478
-"60 Center Square, East Longmeadow, MA 01028.",,08:00 AM - 04:00 PM,,ho18962973,false,true,,,,poll71785435
-"2500 State Highway, Eastham, MA 02642.",,08:00 AM - 04:00 PM,,ho49742990,false,true,,,,poll46005435
-"50 Payson Ave, Easthampton, MA 01027.",,07:30 AM - 05:00 PM,,ho552676,false,true,,,,poll17074838
-"15 Barrows Street, Easton, MA 02356.",,08:30 AM - 02:30 PM,,ho77571973,false,true,,,,poll307703
-"136 Elm Street, Easton, MA 02356.",,08:30 AM - 08:00 PM,,ho48990989,false,true,,,,poll18080447
-"70 Main Street Edgartown, Edgartown, MA 02356.",,08:00 AM - 04:00 PM,,ho13867291,false,true,,,,poll12279287
-"171 Egremont Plain Road, Egremont, MA 01230.",,01:00 PM - 03:00 PM,,ho94579342,false,true,,,,poll73477510
-"12 East Main Street, Erving, MA 01344.",,09:00 AM - 05:00 PM,,ho22244293,false,true,,,,poll5698737
-"74 Martin St, Essex, MA 01929.",,07:30 AM - 03:30 PM,,ho39261504,false,true,,,,poll65236489
-"17 Picking Street, Essex, MA 01929.",,12:00 PM - 06:00 PM,,ho99237058,false,true,,,,poll48315195
-"484 Broadway, Everett, MA 02149.",,08:00 AM - 07:30 PM,,ho94855425,false,true,,,,poll29023943
-"146 Washington Street, Fairhaven, MA 02719.",,08:30 AM - 04:38 PM,,ho42980986,false,true,,,,poll68235433
-"40 Center Street, Fairhaven, MA 02719.",,10:00 AM - 02:00 PM,,ho92386528,false,true,,,,poll85003948
-"1 Government Center, Fall River, MA 02722.",,09:00 AM - 07:00 PM,,ho45737894,false,true,,,,poll30923034
-"59 Town Hall Square, Falmouth, MA 02540.",,08:00 AM - 04:30 PM,,ho84966449,false,true,,,,poll30862227
-"166 Boulder Drive, Fitchburg, MA 01420.",,10:00 AM - 06:00 PM,,ho72952394,false,true,,,,poll6015229
-"379 Mohawk Trail, Florida, MA 01343.",,06:00 PM - 07:30 PM,,ho57835895,false,true,,,,poll92605488
-"40 South Street, Foxborough, MA 02035.",,08:30 AM - 04:00 PM,,ho35772622,false,true,,,,poll21950502
-"150 Concord Street, Framingham, MA 01702.",,08:30 AM - 05:00 PM,,ho24168993,false,true,,,,poll78378043
-"746 Water Street, Framingham, MA 01701.",,10:00 AM - 02:00 PM,,ho56476444,false,true,,,,poll45087435
-"355 East Central St., Franklin, MA 02038.",,08:00 AM - 04:00 PM,,ho14021317,false,true,,,,poll49504187
-"3 North Main St, Freetown, MA 02702.",,08:00 AM - 04:00 PM,,ho46325289,false,true,,,,poll80136651
-"227 Chace Rd, Freetown, MA 02717.",,10:00 AM - 01:00 PM,,ho95267911,false,true,,,,poll27707468
-"95 Pleasant Street, Gardner, MA 01440.",,08:00 AM - 04:30 PM,,ho4740331,false,true,,,,poll96033433
-"1 Library St., Georgetown, MA 01833.",,08:00 AM - 01:30 PM,,ho35186069,false,true,,,,poll56576990
-"325 Main Road, Gill, MA 01354.",,09:00 AM - 04:00 PM,,ho83777861,false,true,,,,poll12364165
-"9 Dale Ave, Gloucester, MA 01930.",,08:30 AM - 04:00 PM,,ho83378699,false,true,,,,poll78259049
-"40 Main Street, Goshen, MA 01032.",,08:00 AM - 02:00 PM,,ho27281961,false,true,,,,poll91646999
-"28 Tower Hill Road, Cuttyhunk, MA 02713.",,09:00 AM - 03:30 PM,,ho50185799,false,true,,,,poll35167812
-"30 Providence Road, Grafton, MA 01519.",,08:30 AM - 04:30 PM,,ho98347314,false,true,,,,poll2801195
-"1 Library Lane, Granby, MA 01033.",,09:00 AM - 04:00 PM,,ho61818384,false,true,,,,poll9612297
-"707 Main Road, Granville, MA 01034.",,06:30 PM - 07:30 PM,,ho86168450,false,true,,,,poll93508180
-"334 Main Street, Great Barrington, MA 01230.",,08:30 AM - 04:00 PM,,ho99776634,false,true,,,,poll25732983
-"917 Main Street, Great Barrington, MA 01230.",,10:00 AM - 02:00 PM,,ho26809293,false,true,,,,poll78936749
-"1062 Main St North, Great Barrington, MA 01230.",,10:00 AM - 02:00 PM,,ho96230787,false,true,,,,poll28551657
-"14 Court Square, Greenfield, MA 01301.",,08:30 AM - 05:00 PM,,ho84694406,false,true,,,,poll35129882
-"173 Main Street, Groton, MA 01450.",,08:00 AM - 07:00 PM,,ho50326828,false,true,,,,poll66091309
-"183 Main St, Groveland, MA 01834.",,09:00 AM - 08:00 PM,,ho57945031,false,true,,,,poll38309265
-"100 Middle St, Hadley, MA 01035.",,09:00 AM - 04:00 PM,,ho18873584,false,true,,,,poll99376751
-"499 Plymouth St., Halifax, MA 02338.",,08:00 AM - 04:00 PM,,ho31499920,false,true,,,,poll90594485
-"577 Bay Rd, Hamilton, MA 01982.",,08:00 AM - 04:30 PM,,ho84204076,false,true,,,,poll54195587
-"625 Main Street, Hampden, MA 01036.",,09:00 AM - 03:00 PM,,ho47312214,false,true,,,,poll47323748
-"104 Allen Street, Hampden, MA 01036.",,09:00 AM - 03:00 PM,,ho46412661,false,true,,,,poll76912610
-"3650 Hancock Road, Hancock, MA 01237.",,09:00 AM - 12:00 PM,,ho19938740,false,true,,,,poll88295587
-"550 Hanover Street, Hanover, MA 02339.",,08:00 AM - 04:00 PM,,ho66001492,false,true,,,,poll79526123
-"542 Liberty Street, Hanson, MA 02341.",,08:00 AM - 01:00 PM,,ho61162426,false,true,,,,poll21189614
-"307 Main St., Hardwick, MA 01031.",,08:30 AM - 04:00 PM,,ho80381015,false,true,,,,poll55457395
-"13 Ayer Road, Harvard, MA 01451.",,08:00 AM - 04:30 PM,,ho62227236,false,true,,,,poll89823265
-"732 Main Street, Harwich, MA 02645.",,08:30 AM - 08:00 PM,,ho85645340,false,true,,,,poll16701836
-"59 Main Street, Hatfield, MA 01038.",,09:00 AM - 04:30 PM,,ho87488926,false,true,,,,poll12316349
-"4 Summer St, Haverhill, MA 01830.",,08:00 AM - 04:00 PM,,ho78998384,false,true,,,,poll97031847
-"123 High St, Haverhill, MA 01832.",,09:00 AM - 03:00 PM,,ho54340236,false,true,,,,poll96298087
-"486 South Main St, Haverhill, MA 01835.",,09:00 AM - 03:00 PM,,ho19670570,false,true,,,,poll41989446
-"500 Primrose St, Haverhill, MA 01830.",,09:00 AM - 03:00 PM,,ho49912196,false,true,,,,poll11536791
-"8 Pudding Hollow Rd, Hawley, MA 01339.",,09:00 AM - 12:00 PM,,ho9614018,false,true,,,,poll1751348
-"1 East Main Street, Heath, MA 01346.",,09:00 AM - 12:00 PM,,ho70736335,false,true,,,,poll98636135
-"210 Central Street, Hingham, MA 02043.",,07:00 AM - 04:30 PM,,ho39316789,false,true,,,,poll28553191
-"39 South Street, Hinsdale, MA 01235.",,06:30 PM - 08:00 PM,,ho75060278,false,true,,,,poll47060516
-"50 North Franklin Street, Holbrook, MA 02343.",,08:00 AM - 04:00 PM,,ho3873177,false,true,,,,poll8669406
-"1196 Main Street, Holden, MA 01520.",,08:00 AM - 04:00 PM,,ho40187731,false,true,,,,poll26928181
-"27 Sturbridge Rd, Holland, MA 01521.",,05:30 PM - 08:30 PM,,ho63671064,false,true,,,,poll51473734
-"703 Washington Street, Holliston, MA 01746.",,08:30 AM - 04:30 PM,,ho88536685,false,true,,,,poll9771396
-"536 Dwight Street, Holyoke, MA 01040.",,08:00 AM - 09:00 AM,,ho31849573,false,true,,,,poll96173671
-"536 Dwight Street, Holyoke, MA 01041.",,09:00 AM - 04:00 PM,,ho516267,false,true,,,,poll53376017
-"536 Dwight Street, Holyoke, MA 01042.",,04:00 PM - 04:30 PM,,ho71220013,false,true,,,,poll10779343
-"536 Dwight Street, Holyoke, MA 01043.",,08:00 AM - 04:30 PM,,ho36253845,false,true,,,,poll91765881
-"291 Pine Street, Holyoke, MA 01040.",,09:00 AM - 01:00 PM,,ho41404,false,true,,,,poll43792986
-"110 Cherry Street, Holyoke, MA 01040.",,09:00 AM - 01:00 PM,,ho99877938,false,true,,,,poll85358950
-"500 Beech Street, Holyoke, MA 01040.",,07:30 AM - 10:30 AM,,ho50698914,false,true,,,,poll28654748
-"78 Hopedale Street, Hopedale, MA 01747.",,08:00 AM - 07:00 PM,,ho32864818,false,true,,,,poll73366458
-"18 Main Street, Hopkinton, MA 01748.",,08:00 AM - 04:30 PM,,ho51871579,false,true,,,,poll18747819
-"7 Main St, Hubbardston, MA 01452.",,02:00 PM - 08:00 PM,,ho66690596,false,true,,,,poll40553401
-"7A Main St, Hubbardston, MA 01452.",,09:00 AM - 12:00 PM,,ho16358116,false,true,,,,poll20174677
-"78 Main Street, Hudson, MA 01749.",,08:00 AM - 04:30 PM,,ho64117716,false,true,,,,poll64889603
-"253 Atlantic Avenue, Hull, MA 02045.",,08:00 AM - 04:30 PM,,ho39059658,false,true,,,,poll20053704
-"24 Russell Rd, Huntington, MA 01050.",,09:00 AM - 03:00 PM,,ho61731703,false,true,,,,poll86476267
-"25 Green St, Ipswich, MA 01938.",,08:00 AM - 07:00 PM,,ho55421572,false,true,,,,poll72842849
-"26 Evergreen Street, Kingston, MA 02364.",,08:30 AM - 04:00 PM,,ho65335180,false,true,,,,poll34324773
-"346 Bedford Street, Lakeville, MA 02347.",,08:00 AM - 07:00 PM,,ho4713632,false,true,,,,poll36635634
-"695 Main Street, Lancaster, MA 01523.",,09:00 AM - 05:00 PM,,ho39335333,false,true,,,,poll87473933
-"717 Main Street, Lancaster, MA 01523.",,06:00 PM - 08:00 PM,,ho36590170,false,true,,,,poll18192602
-"39 Harvard Road, Lancaster, MA 01523.",,07:00 AM - 09:00 AM,,ho90207249,false,true,,,,poll30602090
-"83 North Main Street, Lanesborough, MA 01237.",,08:00 AM - 12:00 PM,,ho47137416,false,true,,,,poll86249011
-"200 Common St., Lawrence, MA 01840.",,08:30 AM - 04:30 PM,,ho42200708,false,true,,,,poll81864072
-"32 Main St, Lee, MA 01238.",,08:30 AM - 04:00 PM,,ho36746542,false,true,,,,poll95859342
-"3 Washburn Square, Leicester, MA 01524.",,08:00 AM - 05:00 PM,,ho51585479,false,true,,,,poll37092945
-"6 Walker St., Lenox, MA 01240.",,08:30 AM - 04:00 PM,,ho40638761,false,true,,,,poll20239149
-"25 West Street, Leominster, MA 01453.",,08:30 AM - 04:00 PM,,ho42359963,false,true,,,,poll47782418
-"9 Montague Rd, Leverett, MA 01054.",,09:30 AM - 01:30 PM,,ho97439204,false,true,,,,poll75179996
-"1605 Massachusetts Avenue, Lexington, MA 02420.",,08:30 AM - 04:30 PM,,ho75401554,false,true,,,,poll24724822
-"16 W. Leyden Rd., Leyden, MA 01337.",,06:00 PM - 08:00 PM,,ho90738158,false,true,,,,poll94522632
-"16 Lincoln Road, Lincoln, MA 01773.",,08:30 AM - 04:30 PM,,ho15601545,false,true,,,,poll13693482
-"37 Shattuck St, Littleton, MA 01460.",,08:00 AM - 03:00 PM,,ho54669229,false,true,,,,poll91126439
-"231 Maple Road, Longmeadow, MA 01106.",,08:15 AM - 04:30 PM,,ho43192889,false,true,,,,poll6709126
-"375 Merrimack St., Lowell, MA 01852.",,08:00 AM - 05:00 PM,,ho44553141,false,true,,,,poll47161719
-"101 W Forest St., Lowell, MA 01851.",,04:00 PM - 08:00 PM,,ho88312144,false,true,,,,poll50176941
-"220 Pawtucket St., Lowell, MA 01854.",,04:00 PM - 08:00 PM,,ho76883186,false,true,,,,poll22884819
-"241 W. Sixth St., Lowell, MA 01850.",,04:00 PM - 08:00 PM,,ho55143766,false,true,,,,poll46824736
-"246 Market St., Lowell, MA 01852.",,04:00 PM - 08:00 PM,,ho14707047,false,true,,,,poll49724764
-"517 Moody St., Lowell, MA 01854.",,04:00 PM - 08:00 PM,,ho82641299,false,true,,,,poll29834208
-"276 Broadway St., Lowell, MA 01854.",,09:00 AM - 05:00 PM,,ho48031507,false,true,,,,poll48516537
-"122 Western Ave., Lowell, MA 01851.",,10:00 AM - 02:00 PM,,ho56193723,false,true,,,,poll28879613
-"265 School St., Lowell, MA 01851.",,10:00 AM - 02:00 PM,,ho21975075,false,true,,,,poll31582949
-"365 West Meadow Rd., Lowell, MA 01854.",,04:00 PM - 08:00 PM,,ho98365893,false,true,,,,poll21279574
-"35 Warren St., Lowell, MA 01852.",,04:00 PM - 08:00 PM,,ho10739836,false,true,,,,poll9870261
-"1140 Gorham St., Lowell, MA 01852.",,04:00 PM - 08:00 PM,,ho21147491,false,true,,,,poll62258560
-"115 Douglas Rd., Lowell, MA 01852.",,04:00 PM - 08:00 PM,,ho3734729,false,true,,,,poll45718826
-"488 Chapin Street, Ludlow, MA 01056.",,08:30 AM - 04:30 PM,,ho76595973,false,true,,,,poll54908752
-"17 Main Street, Lunenburg, MA 01462.",,08:00 AM - 04:00 PM,,ho61437180,false,true,,,,poll70217047
-"3 City Hall Square, Lynn, MA 01901.",,08:30 AM - 04:00 PM,,ho37730141,false,true,,,,poll66461125
-"590 Washington Street, Lynn, MA 01901.",,10:00 AM - 02:00 PM,,ho57450237,false,true,,,,poll99822974
-"55 Summer Street, Lynnfield, MA 01940.",,08:00 AM - 04:30 PM,,ho4729614,false,true,,,,poll29733717
-"200 Pleasant St., Malden, MA 02148.",,08:00 AM - 04:00 PM,,ho44417464,false,true,,,,poll94332648
-"800 Eastern Ave., Malden, MA 02148.",,08:00 AM - 12:00 PM,,ho40889352,false,true,,,,poll17926907
-"10 Central Street, Manchester-By-The-Sea, MA 01944.",,08:30 AM - 05:00 PM,,ho82262944,false,true,,,,poll99997187
-"6 Park Row, Mansfield, MA 02048.",,08:00 AM - 04:00 PM,,ho15619272,false,true,,,,poll54795404
-"188 Washington Street, Marblehead, MA 01945.",,08:00 AM - 05:00 PM,,ho69719029,false,true,,,,poll52730481
-"2 Spring St, Marion, MA 02738.",,08:00 AM - 04:30 PM,,ho68967538,false,true,,,,poll17439303
-"140 Main Street, Marlborough, MA 01752.",,08:30 AM - 07:00 PM,,ho3631495,false,true,,,,poll55416726
-"870 Moraine St, Marshfield, MA 02050.",,08:00 AM - 07:00 PM,,ho42343828,false,true,,,,poll16554280
-"16 Great Neck Road North, Mashpee, MA 02649.",,08:30 AM - 04:30 PM,,ho73618479,false,true,,,,poll92037158
-"16 Main Street, Mattapoisett, MA 02739.",,08:00 AM - 04:00 PM,,ho26930275,false,true,,,,poll14132552
-"195 Main St, Maynard, MA 01754.",,08:00 AM - 04:00 PM,,ho44942785,false,true,,,,poll37100626
-"459 Main St, Medfield, MA 02052.",,08:30 AM - 04:30 PM,,ho17807439,false,true,,,,poll41020666
-"85 George P Hasset Drive, Medford, MA 02155.",,08:30 AM - 04:30 PM,,ho32946437,false,true,,,,poll73986247
-"155 Village St, Medway, MA 02053.",,07:30 AM - 05:30 PM,,ho33478021,false,true,,,,poll4310684
-"562 Main Street, Melrose, MA 02176.",,08:30 AM - 04:00 PM,,ho31894745,false,true,,,,poll34502360
-"20 Main St., Mendon, MA 01756.",,08:00 AM - 05:00 PM,,ho22913661,false,true,,,,poll54344315
-"2 School Street, Merrimac, MA 01860.",,09:00 AM - 07:00 PM,,ho14651865,false,true,,,,poll83142108
-"90 Hampshire Street, Methuen, MA 01844.",,08:00 AM - 04:30 PM,,ho81228113,false,true,,,,poll10418864
-"20 Centre Street, Middleborough, MA 02346.",,08:45 AM - 05:00 PM,,ho99934214,false,true,,,,poll48691098
-"188 Skyline Trail, Middlefield, MA 02346.",,09:00 AM - 12:00 PM,,ho93709510,false,true,,,,poll72602731
-"48 South Main Street, Middleton, MA 01949.",,09:00 AM - 04:00 PM,,ho15495038,false,true,,,,poll43695150
-"52 Main Street, Milford, MA 01757.",,08:30 AM - 05:00 PM,,ho79260240,false,true,,,,poll94765401
-"127 Elm Street, Millbury, MA 01527.",,08:30 AM - 04:30 PM,,ho96587972,false,true,,,,poll68393739
-"900 Main Street, Millis, MA 02054.",,08:30 AM - 07:30 PM,,ho74602776,false,true,,,,poll94669040
-"169 Main Street, Millville, MA 01529.",,09:00 AM - 01:00 PM,,ho38578205,false,true,,,,poll39080946
-"525 Canton Ave, Milton, MA 02186.",,08:00 AM - 05:00 PM,,ho59836454,false,true,,,,poll16945761
-"3 School St, Monroe, MA 01350.",,08:00 AM - 12:00 PM,,ho67918856,false,true,,,,poll39110550
-"110 Main St., Monson, MA 01057.",,08:00 AM - 06:00 PM,,ho96449409,false,true,,,,poll79692539
-"106 Main St, Monson, MA 01057.",,10:00 AM - 02:00 PM,,ho38688987,false,true,,,,poll75820480
-"1 Avenue A, Turners Falls, MA 01376.",,08:30 AM - 05:30 PM,,ho81531190,false,true,,,,poll18879389
-"435 Main Road, Monterey, MA 01245.",,09:00 AM - 12:00 PM,,ho83042729,false,true,,,,poll41549800
-"161 Main Road, Montgomery, MA 01085.",,12:00 PM - 02:00 PM,,ho87600565,false,true,,,,poll98748977
-"334 Nahant Road, Nahant, MA 01908.",,08:00 AM - 04:00 PM,,ho41646529,false,true,,,,poll25869631
-"16 Broad Street, Nantucket, MA 02554.",,08:00 AM - 04:00 PM,,ho64916192,false,true,,,,poll4534471
-"13 East Central St., Natick, MA 01760.",,08:00 AM - 05:00 PM,,ho48191762,false,true,,,,poll60405540
-"1471 Highland Avenue, Needham, MA 02492.",,09:00 AM - 05:00 PM,,ho79811699,false,true,,,,poll40431391
-"133 William St., New Bedford, MA 02740.",,08:00 AM - 04:00 PM,,ho96477640,false,true,,,,poll24852753
-"1911 Acushnet Ave., New Bedford, MA 02746.",,01:00 PM - 07:00 PM,,ho76071148,false,true,,,,poll33093412
-"3 Rodney French Blvd., New Bedford, MA 02744.",,01:00 PM - 07:00 PM,,ho47575180,false,true,,,,poll4519953
-"133 William St., New Bedford, MA 02746.",,08:00 AM - 05:00 PM,,ho1982533,false,true,,,,poll81410
-"20 Memorial Drive, New Braintree, MA 01531.",,07:00 PM - 09:00 PM,,ho87002954,false,true,,,,poll14872549
-"807 Mill River Southfield Rd, New Marlborough, MA 01244.",,08:00 AM - 04:00 PM,,ho76883043,false,true,,,,poll46357190
-"12 Kent Way, Newbury, MA 01922.",,08:00 AM - 04:00 PM,,ho14704729,false,true,,,,poll25617438
-"60 Pleasant Street, Newburyport, MA 01950.",,08:00 AM - 04:00 PM,,ho52384430,false,true,,,,poll51930676
-"1000 Commonwealth Avenue, Newton, MA 02459.",,08:30 AM - 08:00 PM,,ho75649130,false,true,,,,poll63852994
-"677 Winchester Street, Newton, MA 02459.",,01:00 PM - 04:00 PM,,ho75336737,false,true,,,,poll78881177
-"120 Seminary Ave, Newton, MA 02466.",,10:00 AM - 12:00 PM,,ho67189233,false,true,,,,poll85086007
-"2300 Washington Street, Newton, MA 02462.",,01:30 PM - 03:30 PM,,ho36037664,false,true,,,,poll22178886
-"160 Stanton Ave #1, Newton, MA 02466.",,01:00 PM - 04:00 PM,,ho59905304,false,true,,,,poll83977109
-"140 Brandeis Rd, Newton, MA 02459.",,12:00 PM - 05:00 PM,,ho5757150,false,true,,,,poll49444581
-"457 Walnut St, Newton, MA 02460.",,12:00 PM - 05:00 PM,,ho46903650,false,true,,,,poll99808245
-"430 Centre St, Newton, MA 02458.",,09:00 AM - 12:00 PM,,ho24461690,false,true,,,,poll39715374
-"1 Liberty Lane, Norfolk, MA 02056.",,08:00 AM - 07:00 PM,,ho23703960,false,true,,,,poll64144965
-"10 Main Street, North Adams, MA 01247.",,08:00 AM - 04:30 PM,,ho44992780,false,true,,,,poll92380630
-"120 Main Street, North Andover, MA 01845.",,08:00 AM - 04:30 PM,,ho24280380,false,true,,,,poll75068458
-"43 S. Washington St, North Attleborough, MA 02760.",,08:00 AM - 06:00 PM,,ho66067196,false,true,,,,poll92259261
-"215 North Main Street, North Brookfield, MA 01535.",,09:00 AM - 08:00 PM,,ho30866714,false,true,,,,poll88721276
-"235 North Street, North Reading, MA 01864.",,08:00 AM - 04:00 PM,,ho98044203,false,true,,,,poll99708494
-"210 Main Street, Northampton, MA 01060.",,08:30 AM - 08:30 PM,,ho18089888,false,true,,,,poll3707366
-"63 Main Street, Northborough, MA 01532.",,08:00 AM - 04:00 PM,,ho90572009,false,true,,,,poll30809437
-"238 West Main Street, Northborough, MA 01532.",,09:30 AM - 12:00 PM,,ho58894182,false,true,,,,poll15380462
-"119 Bearfoot Road, Northborough, MA 01532.",,09:00 AM - 12:00 PM,,ho72997048,false,true,,,,poll36678713
-"7 Main Street, Northbridge, MA 01588.",,08:30 AM - 07:00 PM,,ho96720238,false,true,,,,poll46563978
-"69 Main Street, Northfield, MA 01360.",,08:00 AM - 04:00 PM,,ho39275202,false,true,,,,poll15688469
-"70 E. Main Street, Norton, MA 02766.",,08:30 AM - 04:30 PM,,ho51146169,false,true,,,,poll52170776
-"345 Main St, Norwell, MA 02061.",,08:00 AM - 05:00 PM,,ho47161889,false,true,,,,poll72229522
-"566 Washington Street, Norwood, MA 02062.",,08:00 AM - 04:00 PM,,ho63057350,false,true,,,,poll56430462
-"56 School Street, Oak Bluffs, MA 02557.",,08:30 AM - 04:00 PM,,ho38917349,false,true,,,,poll36092532
-"2 Coldbrook Rd., Oakham, MA 01068.",,06:00 PM - 07:30 PM,,ho48772593,false,true,,,,poll75159617
-"6 Prospect St., Orange, MA 01346.",,08:00 AM - 12:30 PM,,ho28926113,false,true,,,,poll57466518
-"19 School Road, Orleans, MA 02653.",,08:30 AM - 04:30 PM,,ho55976702,false,true,,,,poll6521793
-"1 North Main Rd, Otis, MA 01253.",,08:00 AM - 03:00 PM,,ho97925268,false,true,,,,poll28669100
-"325 Main Street, Oxford, MA 01540.",,09:00 AM - 04:30 PM,,ho4186244,false,true,,,,poll7760438
-"4417 Main St., Palmer, MA 01069.",,08:30 AM - 07:30 PM,,ho53415134,false,true,,,,poll2625612
-"697 Pleasant St., Paxton, MA 01612.",,09:00 AM - 07:00 PM,,ho12956935,false,true,,,,poll58137785
-"24 Lowell Street, Peabody, MA 01960.",,08:30 AM - 04:00 PM,,ho5478255,false,true,,,,poll74771618
-"603 Lowell Street, Peabody, MA 01960.",,09:00 AM - 04:00 PM,,ho21462358,false,true,,,,poll73378904
-"75R Central Street, Peabody, MA 01960.",,10:00 AM - 01:00 PM,,ho87880889,false,true,,,,poll84661705
-"351 Amherst Rd, Pelham, MA 01002.",,10:30 AM - 01:30 PM,,ho56180355,false,true,,,,poll75048363
-"2 South Valley Road, Pelham, MA 01002.",,04:00 PM - 08:00 PM,,ho39793262,false,true,,,,poll2912618
-"100 Center St, Pembroke, MA 02359.",,09:00 AM - 06:00 PM,,ho4127254,false,true,,,,poll14086813
-"1 Main Street, Pepperell, MA 01463.",,08:00 AM - 06:00 PM,,ho93755542,false,true,,,,poll56604559
-"3 East Main Road, Peru, MA 01235.",,05:30 PM - 08:00 PM,,ho74529835,false,true,,,,poll4663844
-"3 South Main Street, Petersham, MA 01366.",,05:30 PM - 07:00 PM,,ho12630160,false,true,,,,poll15644519
-"50 The Common, Phillipston, MA 010331",,08:00 AM - 08:00 PM,,ho56139380,false,true,,,,poll72956096
-"70 Allen Street, Pittsfield, MA 01201.",,08:30 AM - 04:00 PM,,ho47110512,false,true,,,,poll16578691
-"304 Main St, Plainfield, MA 01070.",,05:00 PM - 07:00 PM,,ho17497939,false,true,,,,poll88685348
-"142 South St, Plainville, MA 02762.",,08:00 AM - 08:00 PM,,ho84202034,false,true,,,,poll28591920
-"11 Lincoln Street, Plymouth, MA 02360.",,07:30 AM - 04:00 PM,,ho452783,false,true,,,,poll72596025
-"12 Strand Avenue, Plymouth, MA 02360.",,01:00 PM - 05:00 PM,,ho11768737,false,true,,,,poll91774773
-"5 Palmer Road, Plympton, MA 02367.",,09:00 AM - 02:00 PM,,ho19942906,false,true,,,,poll52747045
-"6 Town Hall Dr, Princeton, MA 01541.",,08:00 AM - 03:30 PM,,ho60254518,false,true,,,,poll19003097
-"260 Commercial St, Provincetown, MA 02657.",,08:00 AM - 05:00 PM,,ho4181549,false,true,,,,poll16914896
-"1305 Hancock St, Quincy, MA 02169.",,08:30 AM - 07:00 PM,,ho76666748,false,true,,,,poll76454254
-"316 Hancock St, Quincy, MA 02171.",,08:30 AM - 05:00 PM,,ho94092414,false,true,,,,poll62693967
-"41 South Main Street, Randolph, MA 02368.",,08:30 AM - 07:00 PM,,ho42379085,false,true,,,,poll68577041
-"558 South Main Street, Raynham, MA 02767.",,08:30 AM - 04:30 PM,,ho35185323,false,true,,,,poll47568775
-"16 Lowell Street, Reading, MA 01867.",,07:30 AM - 05:30 PM,,ho94379447,false,true,,,,poll26959806
-"148 Peck Street, Rehoboth, MA 02769.",,08:00 AM - 04:00 PM,,ho30421822,false,true,,,,poll31631945
-"55 Bay State Road, Rehoboth, MA 02769.",,10:00 AM - 04:00 PM,,ho61221266,false,true,,,,poll30144029
-"249 Broadway, Revere, MA 02151.",,08:15 AM - 05:00 PM,,ho90727088,false,true,,,,poll63290274
-"281 Broadway, Revere, MA 02151.",,09:00 AM - 02:00 PM,,ho63821270,false,true,,,,poll155155
-"1529 State Rd, Richmond, MA 01254.",,08:30 AM - 01:30 PM,,ho36207412,false,true,,,,poll20727509
-"1 Constitution Way, Rochester, MA 02770.",,09:00 AM - 12:00 PM,,ho96766594,false,true,,,,poll83982266
-"242 Union St, Rockland, MA 02370.",,08:30 AM - 04:30 PM,,ho64586317,false,true,,,,poll52938770
-"34 Broadway, Rockport, MA 01966.",,08:00 AM - 04:00 PM,,ho571734,false,true,,,,poll23536790
-"321 Zoar Road, Rowe, MA 01367.",,04:00 PM - 07:00 PM,,ho37312326,false,true,,,,poll71813767
-"139 Main St, Rowley, MA 01969.",,08:00 AM - 08:00 PM,,ho24160537,false,true,,,,poll70693811
-"5 School St., Royalston, MA 01368.",,09:00 AM - 01:00 PM,,ho46635453,false,true,,,,poll42900718
-"65 Main Street, Russell, MA 01071.",,05:30 PM - 07:30 PM,,ho36701218,false,true,,,,poll74255618
-"250 Main Street, Rutland, MA 01543.",,08:00 AM - 04:30 PM,,ho82251199,false,true,,,,poll95559812
-"93 Washington St, Salem, MA 01970.",,08:00 AM - 04:00 PM,,ho7868479,false,true,,,,poll72087208
-"77 Willson St, Salem, MA 01970.",,08:00 AM - 07:00 PM,,ho27590852,false,true,,,,poll67516878
-"45 Congress St, Salem, MA 01970.",,08:00 AM - 01:00 PM,,ho10037127,false,true,,,,poll5258156
-"5 Beach Rd, Salisbury, MA 01952.",,08:30 AM - 06:00 PM,,ho642169,false,true,,,,poll19290680
-"66 Sandisfield Rd, Sandisfield, MA 01255.",,08:00 AM - 04:00 PM,,ho39945736,false,true,,,,poll75450334
-"145 Main Street, Sandwich, MA 02563.",,08:30 AM - 04:30 PM,,ho26391379,false,true,,,,poll29211352
-"298 Central Street, Saugus, MA 01906.",,08:30 AM - 07:00 PM,,ho79451741,false,true,,,,poll97922067
-"720 Main Rd, Savoy, MA 01256.",,09:00 AM - 01:00 PM,,ho50757992,false,true,,,,poll30854624
-"600 Chief Justice Cushing Way, Scituate, MA 02066.",,08:30 AM - 04:45 PM,,ho96048648,false,true,,,,poll7096929
-"100 Peck Street, Seekonk, MA 02771.",,08:30 AM - 04:30 PM,,ho21974623,false,true,,,,poll91798440
-"90 South Main Street, Sharon, MA 02067.",,08:30 AM - 05:00 PM,,ho7488420,false,true,,,,poll75337793
-"21 Depot Square, Sheffield, MA 01257.",,09:00 AM - 04:00 PM,,ho73589408,false,true,,,,poll9745374
-"51 Bridge Street, Shelburne, MA 01370.",,10:00 AM - 05:00 PM,,ho9318439,false,true,,,,poll23278563
-"19 Washington Street, Sherborn, MA 01770.",,08:00 AM - 12:00 PM,,ho90352235,false,true,,,,poll98860206
-"7 Keady Way, Shirley, MA 01464.",,08:00 AM - 07:00 PM,,ho65257369,false,true,,,,poll26512422
-"100 Maple Ave., Shrewsbury, MA 01545.",,08:00 AM - 04:30 PM,,ho12100980,false,true,,,,poll17837004
-"1 Cooleyville Rd, Shutesbury, MA 01072.",,03:30 PM - 06:00 PM,,ho84883058,false,true,,,,poll67161115
-"140 Wood Street, Somerset, MA 02726.",,08:30 AM - 04:00 PM,,ho7716519,false,true,,,,poll68584697
-"93 Highland Ave, Somerville, MA 02143.",,08:30 AM - 04:30 PM,,ho14007625,false,true,,,,poll51311341
-"116 Main Street, South Hadley, MA 01075.",,07:00 AM - 05:00 PM,,ho87941624,false,true,,,,poll45831354
-"45 Dayton Street, South Hadley, MA 01075.",,09:00 AM - 01:00 PM,,ho2587409,false,true,,,,poll93476415
-"210 College Hwy, Southampton, MA 01073.",,08:30 AM - 04:00 PM,,ho28263558,false,true,,,,poll52207927
-"17 Common Street, Southborough, MA 01772.",,08:00 AM - 05:00 PM,,ho76421201,false,true,,,,poll5276804
-"41 Elm Street, Southbridge, MA 01550.",,08:00 AM - 04:00 PM,,ho37715356,false,true,,,,poll54712456
-"454 College Highway, Southwick, MA 01077.",,08:30 AM - 04:30 PM,,ho44302540,false,true,,,,poll86273980
-"157 Main Street, Spencer, MA 01562.",,07:30 AM - 04:30 PM,,ho25901662,false,true,,,,poll81422412
-"36 Court Street, Springfield, MA 01103.",,08:30 AM - 06:00 PM,,ho84589009,false,true,,,,poll22320446
-"1516 Sumner Ave, Springfield, MA 01118.",,09:00 AM - 03:00 PM,,ho16898945,false,true,,,,poll29113100
-"773 Libery Street, Springfield, MA 01104.",,09:00 AM - 03:00 PM,,ho19999592,false,true,,,,poll94282081
-"1187 Parker Street, Springfield, MA 01129.",,02:00 PM - 06:00 PM,,ho61970704,false,true,,,,poll68941746
-"359 Plainfield Street, Springfield, MA 01107.",,02:00 PM - 06:00 PM,,ho78691733,false,true,,,,poll14175168
-"204 Boston Road, Springfield, MA 01109.",,02:00 PM - 06:00 PM,,ho90819060,false,true,,,,poll15226601
-"44 Oak Street, Springfield, MA 01151.",,02:00 PM - 06:00 PM,,ho92226786,false,true,,,,poll59836106
-"380 Belmont Avenue, Springfield, MA 01108.",,02:00 PM - 06:00 PM,,ho99363936,false,true,,,,poll47581535
-"765 State Street, Springfield, MA 01109.",,02:00 PM - 06:00 PM,,ho87194848,false,true,,,,poll82164077
-"25 Barney Lane, Springfield, MA 01108.",,12:00 PM - 06:00 PM,,ho37226767,false,true,,,,poll57008252
-"1 Park Street, Sterling, MA 01564.",,07:30 AM - 05:00 PM,,ho18261414,false,true,,,,poll29426164
-"50 Main St, Stockbridge, MA 01262.",,09:00 AM - 12:00 PM,,ho70871264,false,true,,,,poll7958398
-"35 Central Street, Stoneham, MA 02180.",,08:00 AM - 04:00 PM,,ho88102933,false,true,,,,poll87881657
-"10 Pearl St, Stoughton, MA 02072.",,08:30 AM - 04:30 PM,,ho67033573,false,true,,,,poll87677645
-"380 Great Road, Stow, MA 01775.",,08:00 AM - 04:00 PM,,ho96394439,false,true,,,,poll10938391
-"308 Main Street, Sturbridge, MA 01566.",,08:00 AM - 07:00 PM,,ho94023265,false,true,,,,poll35135577
-"322 Concord Road, Sudbury, MA 01776.",,08:30 AM - 04:30 PM,,ho37017759,false,true,,,,poll50116434
-"12 School Street, Sunderland, MA 01375.",,08:00 AM - 06:00 PM,,ho35849606,false,true,,,,poll10380327
-"4 Uxbridge Rd., Sutton, MA 01590.",,08:00 AM - 04:00 PM,,ho16456014,false,true,,,,poll59771680
-"22 Monument Ave, Swampscott, MA 01907.",,08:00 AM - 08:00 PM,,ho29589671,false,true,,,,poll92906299
-"285 Wilbur Avenue, Swansea, MA 02777.",,09:00 AM - 04:00 PM,,ho52178042,false,true,,,,poll85792342
-"141 Oak Street, Taunton, MA 02780.",,08:00 AM - 04:00 PM,,ho52207754,false,true,,,,poll55610549
-"160 Patriots Rd., Templeton, MA 01468.",,07:00 AM - 08:00 PM,,ho9174157,false,true,,,,poll81574740
-"16 Senior Dr., Templeton, MA 01436.",,10:00 AM - 12:00 PM,,ho76349450,false,true,,,,poll71548900
-"1009 Main St, Tewksbury, MA 01876.",,07:30 AM - 04:30 PM,,ho39357372,false,true,,,,poll26967771
-"51 Spring St, Tisbury, MA 02568.",,08:30 AM - 04:30 PM,,ho36702232,false,true,,,,poll85028561
-"241 West Granville Road, Tolland, MA 01034.",,10:00 AM - 07:00 PM,,ho83996495,false,true,,,,poll64306445
-"8 West Common Street, Topsfield, MA 01983.",,08:00 AM - 04:00 PM,,ho88153913,false,true,,,,poll80995543
-"272 Main Street, Townsend, MA 01469.",,09:00 AM - 04:00 PM,,ho31239579,false,true,,,,poll68313761
-"272 Main Street, Townsend, MA ",,09:00 AM - 04:00 PM,,ho37350359,false,true,,,,poll5659276
-"24 Town Hall Rd, Truro, MA 02666.",,08:00 AM - 04:00 PM,,ho91528334,false,true,,,,poll71217974
-"25 Bryant Lane, Tyngsborough, MA 01879.",,08:30 AM - 04:00 PM,,ho19285743,false,true,,,,poll27232764
-"116 Main Rd, Tyringham, MA 01264.",,06:00 PM - 08:00 PM,,ho82229718,false,true,,,,poll31602907
-"1 Main St, Upton, MA 01568.",,08:00 AM - 04:00 PM,,ho69048756,false,true,,,,poll14215012
-"2 Farm St, Upton, MA 01568.",,10:00 AM - 12:00 PM,,ho54067122,false,true,,,,poll52337380
-"21 South Main St, Uxbridge, MA 01569.",,07:30 AM - 05:00 PM,,ho34920990,false,true,,,,poll32485257
-"36 South Main St, Uxbridge, MA 01569.",,01:00 PM - 03:00 PM,,ho27383680,false,true,,,,poll31333981
-"1 Lafayette St, Wakefield, MA 01880.",,08:00 AM - 04:30 PM,,ho18038591,false,true,,,,poll39532436
-"3 Hollow Road, Wales, MA 01081.",,09:00 AM - 03:00 PM,,ho2151950,false,true,,,,poll29495212
-"135 School Street, Walpole, MA 02081.",,08:00 AM - 04:00 PM,,ho77679315,false,true,,,,poll81140093
-"610 Main Street, Waltham, MA 02452.",,08:30 AM - 04:30 PM,,ho3573307,false,true,,,,poll96950792
-"322 Totten Pond Road, Waltham, MA 02451.",,08:30 AM - 05:00 PM,,ho46923671,false,true,,,,poll91346827
-"126 Main St., Ware, MA 01082.",,08:00 AM - 04:00 PM,,ho80984011,false,true,,,,poll70069811
-"54 Marion Road, Wareham, MA 02571.",,08:15 AM - 04:00 PM,,ho77758210,false,true,,,,poll92037626
-"48 High Street, Warren, MA 01938.",,08:00 AM - 03:00 PM,,ho73473222,false,true,,,,poll60840134
-"12 Athol Road, Warwick, MA 01378.",,12:00 PM - 02:00 PM,,ho92007550,false,true,,,,poll34141971
-"8 Summit Hill Rd, Washington, MA 01223.",,07:00 PM - 09:00 PM,,ho9229729,false,true,,,,poll79769033
-"149 Main Street, Watertown, MA 02472.",,08:30 AM - 05:00 PM,,ho42130644,false,true,,,,poll27843545
-"41 Cochituate Rd, Wayland, MA 01778.",,08:00 AM - 07:00 PM,,ho73325717,false,true,,,,poll36908123
-"350 Main Street, Webster, MA 01570.",,08:00 AM - 07:00 PM,,ho68278997,false,true,,,,poll79638262
-"90 Washington St, Wellesley, MA 02481.",,08:00 AM - 08:00 PM,,ho2604171,false,true,,,,poll79458071
-"106 Central Street, Wellesley, MA 02481.",,05:00 PM - 08:00 PM,,ho83899196,false,true,,,,poll62662476
-"27 Washington St, Wellesley, MA 01930.",,11:00 AM - 02:00 PM,,ho76380109,false,true,,,,poll71387011
-"125 Oakland St, Wellesley, MA 02481.",,03:00 PM - 05:00 PM,,ho18695902,false,true,,,,poll9126547
-"21 Babson College Drive, Wellesley, MA 02482.",,06:00 PM - 08:00 PM,,ho11395840,false,true,,,,poll89984958
-"300 Main Street, Wellfleet, MA 02667.",,08:00 AM - 12:00 PM,,ho20106159,false,true,,,,poll25072911
-"9 Morse Village Rd, Wendell, MA 01379.",,09:00 AM - 12:00 PM,,ho30800836,false,true,,,,poll15403494
-"138 Main Street, Wenham, MA 01984.",,09:00 AM - 04:30 PM,,ho44153837,false,true,,,,poll73684486
-"140 Worcester Street, West Boylston, MA 01583.",,09:00 AM - 04:00 PM,,ho70148677,false,true,,,,poll63602913
-"65 N Main St, West Bridgewater, MA 02379.",,08:00 AM - 04:00 PM,,ho48391387,false,true,,,,poll73462001
-"2 East Main Street, West Brookfield, MA 01585.",,09:00 AM - 02:00 PM,,ho1203399,false,true,,,,poll58128909
-"381 Main Street, West Newbury, MA 01985.",,08:00 AM - 04:30 PM,,ho11159341,false,true,,,,poll78953037
-"26 Central Street, West Springfield, MA 01089.",,08:00 AM - 04:30 PM,,ho25023542,false,true,,,,poll55633397
-"21 State Line Rd, West Stockbridge, MA 01266.",,01:30 PM - 04:00 PM,,ho12895180,false,true,,,,poll26269786
-"1059 State Rd, West Tisbury, MA 02568.",,08:30 AM - 04:30 PM,,ho98822978,false,true,,,,poll34050111
-"34 West Main St, Westborough, MA 01581.",,08:00 AM - 05:00 PM,,ho3216557,false,true,,,,poll26533782
-"59 Court St, Westfield, MA 01085.",,09:00 AM - 05:00 PM,,ho58922593,false,true,,,,poll94141621
-"55 Main Street, Westford, MA 01886.",,08:00 AM - 04:00 PM,,ho14762287,false,true,,,,poll40537950
-"1 South Rd, Westhampton, MA 01027.",,06:00 PM - 08:00 PM,,ho12293077,false,true,,,,poll8116203
-"11 South Street, Westminster, MA 01473.",,08:00 AM - 04:30 PM,,ho85589828,false,true,,,,poll24084428
-"11 Town House Rd, Weston, MA 02493.",,08:30 AM - 05:00 PM,,ho83388900,false,true,,,,poll66378288
-"816 Main Road, Westport, MA 02790.",,08:30 AM - 04:00 PM,,ho67622511,false,true,,,,poll79338243
-"50 Carby Street, Westwood, MA 02090.",,08:30 AM - 04:30 PM,,ho90921692,false,true,,,,poll82606413
-"75 Middle Street, Weymouth, MA 02189.",,07:30 AM - 04:30 PM,,ho80733938,false,true,,,,poll22806532
-"4 Sandy Lane, Whately, MA 01093.",,08:15 AM - 07:00 PM,,ho19582615,false,true,,,,poll64547685
-"54 South Ave, Whitman, MA 02382.",,08:00 AM - 04:00 PM,,ho32166153,false,true,,,,poll19167468
-"240 Springfield Street, Wilbraham, MA 01013.",,08:30 AM - 04:30 PM,,ho4265003,false,true,,,,poll9929694
-"141 Main Street, Haydenville, MA 01039.",,08:30 AM - 07:00 PM,,ho55520279,false,true,,,,poll36120380
-"31 North Street, Williamstown, MA 01267.",,08:30 AM - 04:30 PM,,ho16845020,false,true,,,,poll64765814
-"118 Church Street, Williamstown, MA 01267.",,05:00 PM - 07:00 PM,,ho90068708,false,true,,,,poll53173422
-"121 Glen Road, Wilmington, MA 01887.",,08:30 AM - 07:00 PM,,ho68296645,false,true,,,,poll31867128
-"109 Front Street, Winchendon, MA 01475.",,08:00 AM - 06:00 PM,,ho899287,false,true,,,,poll37493697
-"71 Mt Vernon St, Winchester, MA 01890.",,08:00 AM - 07:00 PM,,ho75830162,false,true,,,,poll6292550
-"1927 Route 9, Windsor, MA 01270.",,05:00 PM - 08:00 PM,,ho13691879,false,true,,,,poll28458735
-"One Metcalf Square, Winthrop, MA 02152.",,08:00 AM - 04:30 PM,,ho22380854,false,true,,,,poll65020167
-"10 Common Street, Woburn, MA 01801.",,09:00 AM - 04:30 PM,,ho33451916,false,true,,,,poll34772687
-"90 Holden Street, Worcester, MA 01606.",,08:45 AM - 07:00 PM,,ho67844119,false,true,,,,poll63417783
-"28 Mulberry Street, Worcester, MA 01605.",,08:45 AM - 07:00 PM,,ho86233482,false,true,,,,poll96135325
-"128 Providence Street, Worcester, MA 01604.",,08:45 AM - 07:00 PM,,ho33628662,false,true,,,,poll93706343
-"50 Main Street, Worcester, MA 01610.",,08:45 AM - 07:00 PM,,ho65409407,false,true,,,,poll35312004
-"280 May St, Worcester, MA 01602.",,08:45 AM - 07:00 PM,,ho52922735,false,true,,,,poll81748785
-"950 Main Street, Worcester, MA 01610.",,10:00 AM - 07:00 PM,,ho90898285,false,true,,,,poll24267264
-"160 Huntington Rd, Worthington, MA 01098.",,10:00 AM - 05:00 PM,,ho4942368,false,true,,,,poll28088173
-"79 South Street, Wrentham, MA 02093.",,08:00 AM - 04:00 PM,,ho24831026,false,true,,,,poll13444021
-"1146 Route 28, Yarmouth, MA 02664.",,08:30 AM - 04:30 PM,,ho46086913,false,true,,,,poll2150153
+name,address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+Abington Town Hall,"500 Gliniewicz Way, Abington, MA 02351",,08:30 AM - 07:00 PM,,ho75392105,false,true,,,,poll70896112
+Town Hall,"472 Main Street, Acton, MA 01720",,08:00 AM - 08:00 PM,,ho60318504,false,true,,,,poll61979805
+Town Hall - Meeting Room,"122 Main St., Acushnet, MA 02743",,08:00 AM - 04:00 PM,,ho69994203,false,true,,,,poll72012309
+Town Hall,"8 Park Street, Adams, MA 01220",,08:00 AM - 05:00 PM,,ho24391475,false,true,,,,poll49323677
+Agawam Town Hall,"36 Main Street, Agawam, MA 01001",,08:30 AM - 04:30 PM,,ho70560191,false,true,,,,poll5893140
+Agawam Senior Center,"954 Main Street, Agawam, MA 01001",,10:00 AM - 02:00 PM,,ho92058859,false,true,,,,poll60093269
+Agawam Public Library,"750 Cooper Street, Agawam, MA 01001",,10:00 AM - 02:00 PM,,ho90775655,false,true,,,,poll27070063
+Alford Town Offices,"5 Alford Center Road, Alford, MA 01230",,08:00 AM - 11:00 AM,,ho85687536,false,true,,,,poll16340626
+City Hall,"62 Friend Street, Amesbury, MA 01913",,08:00 AM - 04:00 PM,,ho54120212,false,true,,,,poll51775109
+Town Hall,"4 Boltwood Avenue, Amherst, MA 01002",,08:00 AM - 05:00 PM,,ho66532956,false,true,,,,poll70432579
+The Spot - Student Union ,"41 Campus Center Way, Amherst, MA 01003",,10:00 AM - 04:00 PM,,ho39400289,false,true,,,,poll47790335
+Munson Memorial Library,"1046 South East St, Amherst, MA 01002",,09:00 AM - 03:00 PM,,ho73205408,false,true,,,,poll52195483
+North Fire Station,"603 East Pleasant St, Amherst, MA 01002",,09:00 AM - 03:00 PM,,ho99754987,false,true,,,,poll65222968
+Town Office Building,"36 Bartlet Street, Andover, MA 01810",,08:30 AM - 04:30 PM,,ho78024764,false,true,,,,poll84711904
+Aquinnah Town Hall,"65 State Rd, Aquinnah, MA 02535",,12:00 PM - 04:00 PM,,ho1678064,false,true,,,,poll72383388
+Arlington Town Hall,"730 Massachusetts Avenue, Arlington, MA 02476",,08:00 AM - 04:00 PM,,ho73288343,false,true,,,,poll94312367
+Ashburnham Town Hall,"32 Main St, Ashburnham, MA 01430",,08:00 AM - 07:00 PM,,ho56570043,false,true,,,,poll9688308
+Ashby Town Hall,"895 Main Street, Ashby, MA 01431",,08:00 AM - 12:00 PM,,ho62200206,false,true,,,,poll95323428
+Ashfield Town Hall,"412 Main St, Ashfield, MA 01330",,09:00 AM - 04:00 PM,,ho44716811,false,true,,,,poll4676870
+Ashland Town Hall,"101 Main Street, Ashland, MA 01721",,08:00 AM - 04:00 PM,,ho73206970,false,true,,,,poll75559033
+Athol Town Hall,"584 Main St, Athol, MA 01331",,08:00 AM - 05:00 PM,,ho27204500,false,true,,,,poll15604775
+City Hall,"77 Park Street, Attleboro, MA 02703",,08:30 AM - 04:30 PM,,ho71599592,false,true,,,,poll22663089
+Auburn Town Hall,"104 Central Street, Auburn, MA 01501",,08:00 AM - 07:00 PM,,ho52048660,false,true,,,,poll92626415
+Avon Town Hall,"65 East Main Street, Avon, MA 02322",,08:30 AM - 04:30 PM,,ho74067265,false,true,,,,poll68940208
+Town Hall,"1 Main Street, Ayer, MA 01432",,08:00 AM - 04:00 PM,,ho16069299,false,true,,,,poll41390256
+Town Hall,"367 Main Street, Hyannis, MA 02601",,08:30 AM - 04:30 PM,,ho22861558,false,true,,,,poll7182288
+Barnstable Police Departm,"1200 Phinney'S Lane, Hyannis, MA 02601",,08:00 AM - 02:00 PM,,ho17630891,false,true,,,,poll44021254
+Henry Woods Building,"40 West Street, Barre, MA 01005",,07:00 PM - 09:00 PM,,ho66360189,false,true,,,,poll58577615
+Town Hall,"557 Main St, Becket, MA 01123",,08:30 AM - 04:30 PM,,ho69944582,false,true,,,,poll24314142
+Town Hall,"10 Mudge Way, Bedford, MA 01730",,08:00 AM - 04:00 PM,,ho27972686,false,true,,,,poll88359428
+Town Hall,"2 Jabish Street, Belchertown, MA 01007",,08:00 AM - 05:00 PM,,ho71862434,false,true,,,,poll95335133
+Municipal Center,"10 Mechanic St, Bellingham, MA 02019",,08:30 AM - 07:00 PM,,ho12374423,false,true,,,,poll54148911
+Town Hall,"455 Concord Avenue, Belmont, MA 02478",,08:00 AM - 05:00 PM,,ho33716591,false,true,,,,poll12187098
+Berkley Town Hall,"1 North Main Street, Berkley, MA 02779",,09:30 AM - 02:30 PM,,ho68671451,false,true,,,,poll80830239
+Town Offices,"23 Linden St, Berlin, MA 01503",,11:00 AM - 02:00 PM,,ho89487407,false,true,,,,poll85936630
+Bernardston Town Hall,"38 Church Street, Bernardston, MA 01337",,08:30 AM - 11:30 AM,,ho13731432,false,true,,,,poll63815961
+Beverly City Hall,"191 Cabot Street, Beverly, MA 01915",,08:30 AM - 04:30 PM,,ho97515642,false,true,,,,poll40702028
+Billerica ,"365 Boston Road, Billerica, MA 01821",,08:30 AM - 04:00 PM,,ho98668720,false,true,,,,poll63082530
+Municipal Center,"15 St. Paul Street, Blackstone, MA 01504",,08:30 AM - 04:30 PM,,ho71265512,false,true,,,,poll46469195
+Town Offices,"1 Russell Stage Road, Blandford, MA 01008",,05:00 PM - 07:00 PM,,ho78557472,false,true,,,,poll77445800
+Town Hall,"663 Main St., Bolton, MA 01740",,09:00 AM - 02:30 PM,,ho6043242,false,true,,,,poll47170190
+City Hall,"1 City Hall Plaza, Boston, MA 02201",,09:00 AM - 08:00 PM,,ho1572885,false,true,,,,poll3866003
+Metropolitan Codominiums,"38 Oak Street, Boston, MA 02111",,02:00 PM - 08:00 PM,,ho93588041,false,true,,,,poll95495186
+Harriet Tubman House,"566 Columbus Avenue, Boston, MA 02118",,02:00 PM - 08:00 PM,,ho89084175,false,true,,,,poll91871837
+Orient Heights Yach Club,"61 Bayswater Street, Boston, MA 02128",,02:00 PM - 08:00 PM,,ho15449514,false,true,,,,poll78539947
+Dothouse Health,"1353 Dorchester Avenue, Boston, MA 02122",,02:00 PM - 08:00 PM,,ho3269396,false,true,,,,poll60573890
+Codman Square Library,"690 Washington Street, Boston, MA 02124",,02:00 PM - 08:00 PM,,ho44102467,false,true,,,,poll94227993
+Hyde Park Municipal,"1179 River Street, Boston, MA 02136",,02:00 PM - 08:00 PM,,ho12668267,false,true,,,,poll33381307
+Boston Arts Academy,"174 Ipswich Street, Boston, MA 02215",,02:00 PM - 08:00 PM,,ho82693472,false,true,,,,poll10264627
+Curtis Hall,"20 South Street, Boston, MA 02130",,02:00 PM - 08:00 PM,,ho17416220,false,true,,,,poll61894636
+Honan Library,"300 North Harvard Street, Boston, MA 02134",,02:00 PM - 08:00 PM,,ho87885285,false,true,,,,poll46056698
+West Roxbury Library,"1961 Centre Street West, Boston, MA 02132",,12:00 PM - 06:00 PM,,ho23261631,false,true,,,,poll19448109
+James F Condon School,"200 D Street South, Boston, MA 02127",,12:00 PM - 06:00 PM,,ho85810701,false,true,,,,poll84525811
+Bha Heritage Apartments,"209 Sumner Street, Boston, MA 02128",,12:00 PM - 06:00 PM,,ho11099686,false,true,,,,poll13518533
+Lower Mills Library,"27 Richmond Street, Boston, MA 02124",,12:00 PM - 06:00 PM,,ho99537598,false,true,,,,poll95450213
+Mildred Ave Community Ctr,"5 Mildred Avenue, Boston, MA 02126",,12:00 PM - 06:00 PM,,ho77175873,false,true,,,,poll90600935
+Jackson Mann School,"500 Cambridge Street, Boston, MA 02134",,12:00 PM - 06:00 PM,,ho211727,false,true,,,,poll10067305
+Grove Hall Community Ctr,"51 Geneva Avenue, Boston, MA 02121",,12:00 PM - 06:00 PM,,ho97435375,false,true,,,,poll74596389
+Copley Square Library,"700 Boylston Street, Boston, MA 02120",,12:00 PM - 06:00 PM,,ho38228399,false,true,,,,poll31462532
+Bruce C Bolling ,"2300 Washington Street, Boston, MA 02119",,12:00 PM - 06:00 PM,,ho26428490,false,true,,,,poll68207305
+Dr Martin L King Jr Tower,"280 Martin L King Blvd, Boston, MA 02119",,02:00 PM - 08:00 PM,,ho92323583,false,true,,,,poll77521585
+Harvard / Kent School,"50 Bunker Hill Street, Boston, MA 02129",,02:00 PM - 08:00 PM,,ho11448079,false,true,,,,poll42012483
+Benjamin Franklin,"41 Berkeley Street, Boston, MA 02116",,02:00 PM - 08:00 PM,,ho51807501,false,true,,,,poll30392023
+Strand Theatre,"543 Columbia Road, Boston, MA 02125",,02:00 PM - 08:00 PM,,ho40325304,false,true,,,,poll34927945
+Roslindale Community Ctr,"6 Cummins Hwy, Boston, MA 02131",,02:00 PM - 08:00 PM,,ho54545648,false,true,,,,poll19787464
+Morning Star Baptist,"1257 Blue Hill Avenue, Boston, MA 02126",,02:00 PM - 08:00 PM,,ho58135237,false,true,,,,poll12473231
+Back Of The Hill Apts,"100 South Huntington Street, Boston, MA 02130",,11:00 AM - 05:00 PM,,ho83711479,false,true,,,,poll73535445
+Bcyf Tobin Community Ctr,"1481 Tremont Street, Boston, MA 02120",,11:00 AM - 05:00 PM,,ho53616447,false,true,,,,poll59317540
+Veronica B Smith Senior,"20 Chestnut Hill Avenue, Boston, MA 02135",,11:00 AM - 05:00 PM,,ho50741170,false,true,,,,poll83696328
+Town Hall ,"24 Perry Avenue, Buzzards Bay, MA 02532",,08:30 AM - 04:30 PM,,ho86048161,false,true,,,,poll5856175
+Boxborough Town Hall,"29 Middle Rd, Boxborough, MA 01719",,08:00 AM - 08:00 PM,,ho32697921,false,true,,,,poll61768486
+Boxford Town Hall,"7A Spofford Rd, Boxford, MA 01921",,08:00 AM - 04:30 PM,,ho46368740,false,true,,,,poll32476732
+Town Hall,"221 Main St, Boylston, MA 01505",,08:00 AM - 02:00 PM,,ho36068885,false,true,,,,poll60652328
+Braintree Town Hall ,"1 John F Kennedy Memorial Drive, Braintree, MA 02184",,08:30 AM - 04:30 PM,,ho90564622,false,true,,,,poll46748562
+Town Clerk'S Office,"2198 Main Street, Brewster, MA 02631",,08:30 AM - 04:00 PM,,ho76635766,false,true,,,,poll41490436
+Academy Building,"66 Central Square, Bridgewater, MA 02324",,08:00 AM - 04:00 PM,,ho10709307,false,true,,,,poll57400357
+Town Clerk'S Office,"21 Main St, Brimfield, MA 01010",,05:00 PM - 08:00 PM,,ho85790042,false,true,,,,poll99444171
+Westgate Mall - South Ent,"200 Westgate Dr, Brockton, MA 02301",,08:30 AM - 06:00 PM,,ho19313941,false,true,,,,poll96189737
+Brookfield Town Hall,"6 Central Street, Brookfield, MA 01506",,09:00 AM - 03:00 PM,,ho83688578,false,true,,,,poll4764473
+Municipal Golf Course,"1281 West Roxbury Parkway, Brookline, MA 02467",,08:00 AM - 08:00 PM,,ho91481261,false,true,,,,poll41190154
+Brookline Town Hall,"333 Washington Street, Brookline, MA 02445",,08:00 AM - 05:00 PM,,ho73775050,false,true,,,,poll23556787
+Ralph Sussman House,"50 Pleasant Street, Brookline, MA 02446",,08:00 AM - 08:00 PM,,ho81877436,false,true,,,,poll26627760
+Buckland Town Hall,"17 State Street, Buckland, MA 01370",,07:30 AM - 03:00 PM,,ho3480594,false,true,,,,poll42231445
+Town Hall,"29 Center St, Burlington, MA 01803",,08:30 AM - 04:30 PM,,ho65926785,false,true,,,,poll90079861
+Election Comm Office,"51 Inman St, Cambridge, MA 02139",,08:30 AM - 08:00 PM,,ho11913463,false,true,,,,poll77690299
+Police Department,"125 Sixth Street, Cambridge, MA 02139",,12:00 PM - 08:00 PM,,ho88504594,false,true,,,,poll20309329
+Cambridge Water Dept,"250 Fresh Pond Parkway, Cambridge, MA 02138",,12:00 PM - 08:00 PM,,ho57944427,false,true,,,,poll15642496
+Main Library,"449 Broadway, Cambridge, MA 02138",,12:00 PM - 08:00 PM,,ho87118748,false,true,,,,poll17733619
+O'Neill Library,"70 Rindge Ave, Cambridge, MA 02140",,12:00 PM - 08:00 PM,,ho28045293,false,true,,,,poll49809549
+Canton Town Hall,"801 Washington St, Canton, MA 02021",,09:00 AM - 05:00 PM,,ho61906844,false,true,,,,poll64803247
+Carlisle Town Hall,"66 Westford St, Carlisle, MA 01741",,09:00 AM - 03:00 PM,,ho4098036,false,true,,,,poll89277953
+Town Hall,"108 Main St, Carver, MA 02330",,08:00 AM - 04:00 PM,,ho8390326,false,true,,,,poll4318812
+Cranberry Village,"75 Cranberry Rd, Carver, MA 02330",,08:00 AM - 04:00 PM,,ho31208471,false,true,,,,poll82995571
+Town Hall,"157 Main Street, Charlemont, MA 01339",,08:00 AM - 02:30 PM,,ho21572781,false,true,,,,poll64447266
+Town Clerk'S Office,"37 Main Street, Charlton, MA 01507",,07:30 AM - 05:00 PM,,ho46116305,false,true,,,,poll87472409
+Overlook Community/Mhs,"88 Masonic Hill Road, Charlton, MA 01507",,09:00 AM - 01:00 PM,,ho53363873,false,true,,,,poll39730151
+Chatham Town Offices,"549 Main Street, Chatham, MA 02633",,08:00 AM - 04:00 PM,,ho61684967,false,true,,,,poll14647167
+Town Offices,"50 Billerica Rd., Chelmsford, MA 01824",,08:30 AM - 04:00 PM,,ho96466380,false,true,,,,poll81207812
+Chelsea City Hall,"500 Broadway, Chelsea, MA 02150",,08:00 AM - 04:00 PM,,ho32901427,false,true,,,,poll67046332
+Cheshire  Town  Hall   ,"80 Church Street, Cheshire, MA 01225",,09:00 AM - 05:00 PM,,ho94035448,false,true,,,,poll99923861
+Chester Town Hall,"15 Middlefield Rd., Chester, MA 01011",,06:00 PM - 08:00 PM,,ho28623220,false,true,,,,poll7165102
+Chesterfield Town Office,"422 Main Road, Chesterfield, MA 01012",,06:30 PM - 08:30 PM,,ho9240119,false,true,,,,poll34415370
+City Hall,"274 Front St, Chicopee, MA 01013",,09:00 AM - 05:00 PM,,ho69499486,false,true,,,,poll9319532
+Chilmark Town Hall,"401 Middle Rd, Chilmark, MA 02535",,08:00 AM - 12:00 PM,,ho17085097,false,true,,,,poll78441538
+Town Hall,"111 River Road, Clarksburg, MA 01247",,09:00 AM - 12:00 PM,,ho84760671,false,true,,,,poll78931038
+Clinton Town Hall,"242 Church Street, Clinton, MA 01510",,08:00 AM - 04:00 PM,,ho47159872,false,true,,,,poll32213674
+Town Hall,"41 Highland Avenue, Cohasset, MA 02025",,08:30 AM - 04:30 PM,,ho83609650,false,true,,,,poll40062540
+Colrain Town Office,"55 Main Rd, Colrain, MA 01340",,11:00 AM - 04:00 PM,,ho11486165,false,true,,,,poll68488225
+Concord Town House,"22 Monument Square, Concord, MA 01742",,08:30 AM - 04:30 PM,,ho82122802,false,true,,,,poll43079905
+Town Office Building,"32 Main St, Conway, MA 01341",,09:00 AM - 12:00 PM,,ho21602832,false,true,,,,poll40882707
+Town Hall,"5 Academy Hill, Conway, MA 01341",,09:00 AM - 12:00 PM,,ho76236999,false,true,,,,poll48155136
+Town Of Cummington,"33 Main St, Cummington, MA 01026",,03:30 PM - 07:30 PM,,ho85143572,false,true,,,,poll44225725
+Dalton,"462 Main Street, Dalton, MA 01226",,08:00 AM - 04:30 PM,,ho44244625,false,true,,,,poll70454965
+Danvers Town Hall,"1 Sylvan Street, Danvers, MA 01923",,08:00 AM - 05:00 PM,,ho48067138,false,true,,,,poll97472526
+Town Hall,"400 Slocum Road, Dartmouth, MA 02747",,08:30 AM - 04:30 PM,,ho10718397,false,true,,,,poll72273869
+Umass Dartmouth,"285 Old Westport Road, Dartmouth, MA 02747",,06:00 PM - 08:00 PM,,ho88515166,false,true,,,,poll69167387
+Dedham Town Hall,"26 Bryant Street, Dedham, MA 02026",,08:30 AM - 05:00 PM,,ho92062130,false,true,,,,poll74972805
+New Bridge On The Charles,"5000 Great Meadow Road, Dedham, MA 02026",,10:00 AM - 03:00 PM,,ho84972122,false,true,,,,poll12047714
+Town Offices,"8 Conway Street South, Deerfield, MA 01373",,09:00 AM - 04:00 PM,,ho75819690,false,true,,,,poll3676274
+Dennis Town Hall,"685 Route 134 South, Dennis, MA 02660",,08:30 AM - 04:30 PM,,ho75338737,false,true,,,,poll49622112
+Dighton Town Hall,"979 Somerset Avenue, Dighton, MA 02715",,07:30 AM - 04:30 PM,,ho27588525,false,true,,,,poll82683557
+Municipal Center,"29 Depot St, Douglas, MA 01516",,08:30 AM - 04:00 PM,,ho66713691,false,true,,,,poll76457244
+Town House,"5 Springdale Avenue, Dover, MA 02030",,09:00 AM - 01:00 PM,,ho39834075,false,true,,,,poll16352037
+Dracut Town Hall ,"62 Arlington St., Dracut, MA 01826",,08:30 AM - 04:30 PM,,ho55662217,false,true,,,,poll48657611
+Dudley Municipal Complex,"71 West Main Street, Dudley, MA 01571",,08:00 AM - 04:30 PM,,ho483510,false,true,,,,poll8729004
+Office Of The Town Clerk,"511 Main Street, Dunstable, MA 01827",,06:00 PM - 08:00 PM,,ho10911489,false,true,,,,poll70128240
+Town Clerk'S Office,"878 Tremont St, Duxbury, MA 02332",,08:00 AM - 08:00 PM,,ho40635350,false,true,,,,poll66282114
+Town Hall,"175 Central Street East, East Bridgewater, MA 02333",,08:30 AM - 08:00 PM,,ho52627678,false,true,,,,poll8178500
+Town Hall,"122 Connie Mack Dr, East Brookfield, MA 01515",,11:00 AM - 02:00 PM,,ho29381530,false,true,,,,poll47035574
+East Longmeadow Town Hall,"60 Center Square, East Longmeadow, MA 01028",,08:00 AM - 04:00 PM,,ho78047310,false,true,,,,poll26367419
+Town Hall,"2500 State Highway, Eastham, MA 02642",,08:00 AM - 04:00 PM,,ho48414346,false,true,,,,poll72601430
+Municipal Building,"50 Payson Ave, Easthampton, MA 01027",,07:30 AM - 05:00 PM,,ho2385432,false,true,,,,poll82534555
+Frothingham Hall ,"15 Barrows Street, Easton, MA 02356",,08:30 AM - 02:30 PM,,ho24342449,false,true,,,,poll53438639
+Office Of The Town Clerk,"136 Elm Street, Easton, MA 02356",,08:30 AM - 08:00 PM,,ho32887266,false,true,,,,poll80665077
+Edgartown Town Hall,"70 Main Street Edgartown, Edgartown, MA 02356",,08:00 AM - 04:00 PM,,ho87720647,false,true,,,,poll2493385
+Egremont Town Hall,"171 Egremont Plain Road, Egremont, MA 01230",,01:00 PM - 03:00 PM,,ho74660874,false,true,,,,poll83222675
+Town Hall,"12 East Main Street, Erving, MA 01344",,09:00 AM - 05:00 PM,,ho17990247,false,true,,,,poll34092481
+Essex Town Offices,"74 Martin St, Essex, MA 01929",,07:30 AM - 03:30 PM,,ho14259527,false,true,,,,poll30197727
+Essex Senior Center,"17 Picking Street, Essex, MA 01929",,12:00 PM - 06:00 PM,,ho19771296,false,true,,,,poll12902351
+Everett City Hall,"484 Broadway, Everett, MA 02149",,08:00 AM - 07:30 PM,,ho39991637,false,true,,,,poll9842291
+Fairhaven Fire Station ,"146 Washington Street, Fairhaven, MA 02719",,08:30 AM - 04:38 PM,,ho7013577,false,true,,,,poll47237649
+Fairhaven Town Hall,"40 Center Street, Fairhaven, MA 02719",,10:00 AM - 02:00 PM,,ho15201045,false,true,,,,poll59202448
+Government Center,"1 Government Center, Fall River, MA 02722",,09:00 AM - 07:00 PM,,ho28082952,false,true,,,,poll67674200
+Town Hall,"59 Town Hall Square, Falmouth, MA 02540",,08:00 AM - 04:30 PM,,ho19384281,false,true,,,,poll41509992
+Municipal Office Building,"166 Boulder Drive, Fitchburg, MA 01420",,10:00 AM - 06:00 PM,,ho42937260,false,true,,,,poll88098553
+Florida,"379 Mohawk Trail, Florida, MA 01343",,06:00 PM - 07:30 PM,,ho95059046,false,true,,,,poll7175382
+Town Hall,"40 South Street, Foxborough, MA 02035",,08:30 AM - 04:00 PM,,ho28414508,false,true,,,,poll7308892
+Nevins Hall,"150 Concord Street, Framingham, MA 01702",,08:30 AM - 05:00 PM,,ho978634,false,true,,,,poll427933
+Mcauliffe Library,"746 Water Street, Framingham, MA 01701",,10:00 AM - 02:00 PM,,ho35895704,false,true,,,,poll70742707
+Franklin Town Hall,"355 East Central St., Franklin, MA 02038",,08:00 AM - 04:00 PM,,ho13384663,false,true,,,,poll53031612
+New Salem,"24 S Main St, New Salem, MA 01355",,06:00 PM - 09:00 PM,,ho91323182,false,true,,,,poll60117378
+Town Hall,"3 North Main St, Freetown, MA 02702",,08:00 AM - 04:00 PM,,ho42941582,false,true,,,,poll77691460
+Council On Aging,"227 Chace Rd, Freetown, MA 02717",,10:00 AM - 01:00 PM,,ho8995824,false,true,,,,poll23187662
+City Hall,"95 Pleasant Street, Gardner, MA 01440",,08:00 AM - 04:30 PM,,ho64851252,false,true,,,,poll16077270
+Georgetown Town Hall,"1 Library St., Georgetown, MA 01833",,08:00 AM - 01:30 PM,,ho27893051,false,true,,,,poll73552809
+Town Hall,"325 Main Road, Gill, MA 01354",,09:00 AM - 04:00 PM,,ho11552901,false,true,,,,poll67853316
+City Hall,"9 Dale Ave, Gloucester, MA 01930",,08:30 AM - 04:00 PM,,ho7473185,false,true,,,,poll17291860
+Town Clerk'S Office,"40 Main Street, Goshen, MA 01032",,08:00 AM - 02:00 PM,,ho78551009,false,true,,,,poll96804253
+Gosnold Town Hall,"28 Tower Hill Road, Cuttyhunk, MA 02713",,09:00 AM - 03:30 PM,,ho12247245,false,true,,,,poll20281678
+Grafton Municipal Center,"30 Providence Road, Grafton, MA 01519",,08:30 AM - 04:30 PM,,ho94452554,false,true,,,,poll35044557
+Old Carnegie Library,"1 Library Lane, Granby, MA 01033",,09:00 AM - 04:00 PM,,ho47184051,false,true,,,,poll13797146
+Granville Town Hall,"707 Main Road, Granville, MA 01034",,06:30 PM - 07:30 PM,,ho29357184,false,true,,,,poll47453985
+Town Hall Reg Hrs,"334 Main Street, Great Barrington, MA 01230",,08:30 AM - 04:00 PM,,ho45505364,false,true,,,,poll24644210
+Senior Center,"917 Main Street, Great Barrington, MA 01230",,10:00 AM - 02:00 PM,,ho17538099,false,true,,,,poll89944094
+Housatonic Community Ctr,"1062 Main St North, Great Barrington, MA 01230",,10:00 AM - 02:00 PM,,ho91218593,false,true,,,,poll58752451
+Greenfield Town Hall,"14 Court Square, Greenfield, MA 01301",,08:30 AM - 05:00 PM,,ho62456623,false,true,,,,poll15110071
+Town Hall,"173 Main Street, Groton, MA 01450",,08:00 AM - 07:00 PM,,ho66915827,false,true,,,,poll98189250
+Town Hall,"183 Main St, Groveland, MA 01834",,09:00 AM - 08:00 PM,,ho12183578,false,true,,,,poll63565536
+Town Hall,"100 Middle St, Hadley, MA 01035",,09:00 AM - 04:00 PM,,ho54991398,false,true,,,,poll55468586
+Town Hall,"499 Plymouth St., Halifax, MA 02338",,08:00 AM - 04:00 PM,,ho33393820,false,true,,,,poll73190057
+Hamilton Town Hall,"577 Bay Rd, Hamilton, MA 01982",,08:00 AM - 04:30 PM,,ho72651470,false,true,,,,poll60450383
+Hampden Town House,"625 Main Street, Hampden, MA 01036",,09:00 AM - 03:00 PM,,ho18333667,false,true,,,,poll23442727
+Hampden Senior Center,"104 Allen Street, Hampden, MA 01036",,09:00 AM - 03:00 PM,,ho82666726,false,true,,,,poll84594947
+Hancock Town Hall,"3650 Hancock Road, Hancock, MA 01237",,09:00 AM - 12:00 PM,,ho68193752,false,true,,,,poll88832539
+Town Hall,"550 Hanover Street, Hanover, MA 02339",,08:00 AM - 04:00 PM,,ho47339406,false,true,,,,poll59546963
+Hanson Town Hall,"542 Liberty Street, Hanson, MA 02341",,08:00 AM - 01:00 PM,,ho12134578,false,true,,,,poll97729375
+Hardwick Municipal Build.,"307 Main St., Hardwick, MA 01031",,08:30 AM - 04:00 PM,,ho6515409,false,true,,,,poll88975682
+Town Hall,"13 Ayer Road, Harvard, MA 01451",,08:00 AM - 04:30 PM,,ho44196352,false,true,,,,poll86184237
+Town Of Harwich,"732 Main Street, Harwich, MA 02645",,08:30 AM - 08:00 PM,,ho23477901,false,true,,,,poll70126192
+Memorial Town Hall,"59 Main Street, Hatfield, MA 01038",,09:00 AM - 04:30 PM,,ho34162895,false,true,,,,poll79459025
+City Hall - Basement,"4 Summer St, Haverhill, MA 01830",,08:00 AM - 04:00 PM,,ho55315273,false,true,,,,poll36498953
+High Street Fire Station,"123 High St, Haverhill, MA 01832",,09:00 AM - 03:00 PM,,ho79977638,false,true,,,,poll72284605
+Bradford Fire Station,"486 South Main St, Haverhill, MA 01835",,09:00 AM - 03:00 PM,,ho13259550,false,true,,,,poll71455541
+Dpw Offices - In Back,"500 Primrose St, Haverhill, MA 01830",,09:00 AM - 03:00 PM,,ho11669648,false,true,,,,poll9770927
+Town Office,"8 Pudding Hollow Rd, Hawley, MA 01339",,09:00 AM - 12:00 PM,,ho92282572,false,true,,,,poll68748642
+Town Hall,"1 East Main Street, Heath, MA 01346",,09:00 AM - 12:00 PM,,ho2357083,false,true,,,,poll91596338
+Hingham Town Hall,"210 Central Street, Hingham, MA 02043",,07:00 AM - 04:30 PM,,ho91403564,false,true,,,,poll26964505
+Town Of Hinsdale,"39 South Street, Hinsdale, MA 01235",,06:30 PM - 08:00 PM,,ho31856404,false,true,,,,poll83883362
+Town Hall,"50 North Franklin Street, Holbrook, MA 02343",,08:00 AM - 04:00 PM,,ho11877896,false,true,,,,poll30972489
+Town Hall,"1196 Main Street, Holden, MA 01520",,08:00 AM - 04:00 PM,,ho28514836,false,true,,,,poll12990135
+Holland Town Hall,"27 Sturbridge Rd, Holland, MA 01521",,05:30 PM - 08:30 PM,,ho4516781,false,true,,,,poll19473996
+Town Hall,"703 Washington Street, Holliston, MA 01746",,08:30 AM - 04:30 PM,,ho57459905,false,true,,,,poll98907248
+Registrar Of Voter'S ,"536 Dwight Street, Holyoke, MA 01040",,08:00 AM - 09:00 AM,,ho21831760,false,true,,,,poll21896065
+City Hall Auditorium,"536 Dwight Street, Holyoke, MA 01041",,09:00 AM - 04:00 PM,,ho98631117,false,true,,,,poll21787887
+Registrar Of Voter'S ,"536 Dwight Street, Holyoke, MA 01042",,04:00 PM - 04:30 PM,,ho62369733,false,true,,,,poll65330870
+Registrar Of Voter'S ,"536 Dwight Street, Holyoke, MA 01043",,08:00 AM - 04:30 PM,,ho79160056,false,true,,,,poll31688198
+Holyoke Senior Center,"291 Pine Street, Holyoke, MA 01040",,09:00 AM - 01:00 PM,,ho11674301,false,true,,,,poll45423337
+Holyoke Soldier'S Home,"110 Cherry Street, Holyoke, MA 01040",,09:00 AM - 01:00 PM,,ho19508487,false,true,,,,poll84619522
+Holyoke High School,"500 Beech Street, Holyoke, MA 01040",,07:30 AM - 10:30 AM,,ho37027481,false,true,,,,poll95047246
+Hopedale Town Hall,"78 Hopedale Street, Hopedale, MA 01747",,08:00 AM - 07:00 PM,,ho4546720,false,true,,,,poll31345716
+Town Hall,"18 Main Street, Hopkinton, MA 01748",,08:00 AM - 04:30 PM,,ho72252321,false,true,,,,poll52104846
+Library/Town Offices Bldg,"7 Main St, Hubbardston, MA 01452",,02:00 PM - 08:00 PM,,ho83120969,false,true,,,,poll44122137
+Senior Center/Slade Bldg,"7A Main St, Hubbardston, MA 01452",,09:00 AM - 12:00 PM,,ho64794458,false,true,,,,poll15707025
+Town Hall,"78 Main Street, Hudson, MA 01749",,08:00 AM - 04:30 PM,,ho34942133,false,true,,,,poll35243033
+Town Hall,"253 Atlantic Avenue, Hull, MA 02045",,08:00 AM - 04:30 PM,,ho87586686,false,true,,,,poll26510275
+Town Hall,"24 Russell Rd, Huntington, MA 01050",,09:00 AM - 03:00 PM,,ho61900327,false,true,,,,poll68277175
+Town Hall,"25 Green St, Ipswich, MA 01938",,08:00 AM - 07:00 PM,,ho89479518,false,true,,,,poll95628606
+Kingston Town House,"26 Evergreen Street, Kingston, MA 02364",,08:30 AM - 04:00 PM,,ho75466345,false,true,,,,poll75735467
+Town Hall,"346 Bedford Street, Lakeville, MA 02347",,08:00 AM - 07:00 PM,,ho79538771,false,true,,,,poll40471506
+Lancaster Town Hall,"695 Main Street, Lancaster, MA 01523",,09:00 AM - 05:00 PM,,ho55166004,false,true,,,,poll97330073
+Thayer Memorial Library,"717 Main Street, Lancaster, MA 01523",,06:00 PM - 08:00 PM,,ho6862207,false,true,,,,poll11613000
+Lancaster Community Cntr,"39 Harvard Road, Lancaster, MA 01523",,07:00 AM - 09:00 AM,,ho86980945,false,true,,,,poll29889720
+Newton Memorial Town Hall,"83 North Main Street, Lanesborough, MA 01237",,08:00 AM - 12:00 PM,,ho65607054,false,true,,,,poll47814512
+Election Division,"200 Common St., Lawrence, MA 01840",,08:30 AM - 04:30 PM,,ho20024494,false,true,,,,poll57214393
+Memorial Hall,"32 Main St, Lee, MA 01238",,08:30 AM - 04:00 PM,,ho77925350,false,true,,,,poll87975882
+Leicester Town Hall,"3 Washburn Square, Leicester, MA 01524",,08:00 AM - 05:00 PM,,ho46280248,false,true,,,,poll25732386
+Lenox Town Hall,"6 Walker St., Lenox, MA 01240",,08:30 AM - 04:00 PM,,ho32638745,false,true,,,,poll23335906
+City Hall,"25 West Street, Leominster, MA 01453",,08:30 AM - 04:00 PM,,ho93302005,false,true,,,,poll91778109
+Town Hall,"9 Montague Rd, Leverett, MA 01054",,09:30 AM - 01:30 PM,,ho71608489,false,true,,,,poll4249225
+Cary Memorial Building,"1605 Massachusetts Avenue, Lexington, MA 02420",,08:30 AM - 04:30 PM,,ho67647057,false,true,,,,poll60301845
+Leyden Town Hall,"16 W. Leyden Rd., Leyden, MA 01337",,06:00 PM - 08:00 PM,,ho50681064,false,true,,,,poll81284007
+Town Offices,"16 Lincoln Road, Lincoln, MA 01773",,08:30 AM - 04:30 PM,,ho15132086,false,true,,,,poll62855297
+Littleton Town Hall,"37 Shattuck St, Littleton, MA 01460",,08:00 AM - 03:00 PM,,ho22842074,false,true,,,,poll39797978
+Council On Aging,"231 Maple Road, Longmeadow, MA 01106",,08:15 AM - 04:30 PM,,ho7438808,false,true,,,,poll29124203
+Lowell City Hall,"375 Merrimack St., Lowell, MA 01852",,08:00 AM - 05:00 PM,,ho64800573,false,true,,,,poll85612597
+Temple Emanuel,"101 W Forest St., Lowell, MA 01851",,04:00 PM - 08:00 PM,,ho58327338,false,true,,,,poll53172010
+Uml University Crossing,"220 Pawtucket St., Lowell, MA 01854",,04:00 PM - 08:00 PM,,ho18602836,false,true,,,,poll8152528
+St. Louis School Hall,"241 W. Sixth St., Lowell, MA 01850",,04:00 PM - 08:00 PM,,ho31520941,false,true,,,,poll95321535
+Lowell Telecommunications,"246 Market St., Lowell, MA 01852",,04:00 PM - 08:00 PM,,ho76346251,false,true,,,,poll74185789
+Cba,"517 Moody St., Lowell, MA 01854",,04:00 PM - 08:00 PM,,ho42104089,false,true,,,,poll5180973
+Lowell Senior Center,"276 Broadway St., Lowell, MA 01854",,09:00 AM - 05:00 PM,,ho68362367,false,true,,,,poll2662410
+Western Ave. Studios,"122 Western Ave., Lowell, MA 01851",,10:00 AM - 02:00 PM,,ho33265943,false,true,,,,poll57022368
+Cmaa,"265 School St., Lowell, MA 01851",,10:00 AM - 02:00 PM,,ho34274124,false,true,,,,poll9339478
+Wang School,"365 West Meadow Rd., Lowell, MA 01854",,04:00 PM - 08:00 PM,,ho69175665,false,true,,,,poll9616800
+Utec,"35 Warren St., Lowell, MA 01852",,04:00 PM - 08:00 PM,,ho44808311,false,true,,,,poll54703616
+Butler School,"1140 Gorham St., Lowell, MA 01852",,04:00 PM - 08:00 PM,,ho11964064,false,true,,,,poll9787222
+Reilly School,"115 Douglas Rd., Lowell, MA 01852",,04:00 PM - 08:00 PM,,ho77600417,false,true,,,,poll82816847
+Town Hall Ludlow Ma,"488 Chapin Street, Ludlow, MA 01056",,08:30 AM - 04:30 PM,,ho76193118,false,true,,,,poll83630698
+Lunenburg Town Hall,"17 Main Street, Lunenburg, MA 01462",,08:00 AM - 04:00 PM,,ho81218157,false,true,,,,poll3849265
+Lynn City Hall,"3 City Hall Square, Lynn, MA 01901",,08:30 AM - 04:00 PM,,ho32265226,false,true,,,,poll24306246
+Lynn Museum,"590 Washington Street, Lynn, MA 01901",,10:00 AM - 02:00 PM,,ho13354782,false,true,,,,poll92976913
+Lynnfield Town Hall,"55 Summer Street, Lynnfield, MA 01940",,08:00 AM - 04:30 PM,,ho49941673,false,true,,,,poll45548157
+City Council Chamber,"200 Pleasant St., Malden, MA 02148",,08:00 AM - 04:00 PM,,ho23669907,false,true,,,,poll60287927
+Malden Police Station,"800 Eastern Ave., Malden, MA 02148",,08:00 AM - 12:00 PM,,ho69727381,false,true,,,,poll25541159
+Town Hall,"10 Central Street, Manchester-By-The-Sea, MA 01944",,08:30 AM - 05:00 PM,,ho79248014,false,true,,,,poll11923689
+Mansfield Municipal Ctr,"6 Park Row, Mansfield, MA 02048",,08:00 AM - 04:00 PM,,ho94655471,false,true,,,,poll58614696
+Abbot Hall,"188 Washington Street, Marblehead, MA 01945",,08:00 AM - 05:00 PM,,ho77960823,false,true,,,,poll45928980
+Marion Town House,"2 Spring St, Marion, MA 02738",,08:00 AM - 04:30 PM,,ho79450619,false,true,,,,poll29317614
+City Hall,"140 Main Street, Marlborough, MA 01752",,08:30 AM - 07:00 PM,,ho4760058,false,true,,,,poll14052738
+Marshfield Town Hall,"870 Moraine St, Marshfield, MA 02050",,08:00 AM - 07:00 PM,,ho34660931,false,true,,,,poll18028196
+Mashpee Town Hall,"16 Great Neck Road North, Mashpee, MA 02649",,08:30 AM - 04:30 PM,,ho53667116,false,true,,,,poll97646102
+Town Hall,"16 Main Street, Mattapoisett, MA 02739",,08:00 AM - 04:00 PM,,ho95701347,false,true,,,,poll48301125
+Maynard Town Hall,"195 Main St, Maynard, MA 01754",,08:00 AM - 04:00 PM,,ho83572304,false,true,,,,poll58292255
+Medfield Town Hall,"459 Main St, Medfield, MA 02052",,08:30 AM - 04:30 PM,,ho27202516,false,true,,,,poll19247454
+Meford City Hall,"85 George P Hasset Drive, Medford, MA 02155",,08:30 AM - 04:30 PM,,ho46432966,false,true,,,,poll62795761
+Medway Town Hall,"155 Village St, Medway, MA 02053",,07:30 AM - 05:30 PM,,ho13084242,false,true,,,,poll43134797
+Melrose City Hall,"562 Main Street, Melrose, MA 02176",,08:30 AM - 04:00 PM,,ho38890290,false,true,,,,poll31933954
+Mendon Town Hall,"20 Main St., Mendon, MA 01756",,08:00 AM - 05:00 PM,,ho89967210,false,true,,,,poll84482477
+Merrimac Town Hall,"2 School Street, Merrimac, MA 01860",,09:00 AM - 07:00 PM,,ho78639127,false,true,,,,poll91613811
+Sanborn Hall,"90 Hampshire Street, Methuen, MA 01844",,08:00 AM - 04:30 PM,,ho52579282,false,true,,,,poll96628669
+Town Clerk'S Office,"20 Centre Street, Middleborough, MA 02346",,08:45 AM - 05:00 PM,,ho19092841,false,true,,,,poll75311291
+Middlefield Town Hall,"188 Skyline Trail, Middlefield, MA 02346",,09:00 AM - 12:00 PM,,ho83306553,false,true,,,,poll89104570
+Memorial Hall,"48 South Main Street, Middleton, MA 01949",,09:00 AM - 04:00 PM,,ho93040149,false,true,,,,poll50991794
+Town Hall,"52 Main Street, Milford, MA 01757",,08:30 AM - 05:00 PM,,ho13641137,false,true,,,,poll27824534
+Millbury Town Hall,"127 Elm Street, Millbury, MA 01527",,08:30 AM - 04:30 PM,,ho92535516,false,true,,,,poll43530928
+Veterans Memorial Bldg,"900 Main Street, Millis, MA 02054",,08:30 AM - 07:30 PM,,ho97007446,false,true,,,,poll66291922
+Millville Library,"169 Main Street, Millville, MA 01529",,09:00 AM - 01:00 PM,,ho92454055,false,true,,,,poll33518730
+Town Hall,"525 Canton Ave, Milton, MA 02186",,08:00 AM - 05:00 PM,,ho34099791,false,true,,,,poll65058497
+Monroe Town Hall,"3 School St, Monroe, MA 01350",,08:00 AM - 12:00 PM,,ho75715162,false,true,,,,poll6882387
+Monson Town Hall,"110 Main St., Monson, MA 01057",,08:00 AM - 06:00 PM,,ho89300582,false,true,,,,poll47420117
+Monson Senior Center,"106 Main St, Monson, MA 01057",,10:00 AM - 02:00 PM,,ho52832242,false,true,,,,poll568675
+Montague Town Hall ,"1 Avenue A, Turners Falls, MA 01376",,08:30 AM - 05:30 PM,,ho13263835,false,true,,,,poll76030516
+Town Of Monterey,"435 Main Road, Monterey, MA 01245",,09:00 AM - 12:00 PM,,ho15758721,false,true,,,,poll11035062
+Montgomery Town Hall,"161 Main Road, Montgomery, MA 01085",,12:00 PM - 02:00 PM,,ho89825529,false,true,,,,poll69446036
+Nahant Town Hall,"334 Nahant Road, Nahant, MA 01908",,08:00 AM - 04:00 PM,,ho96201519,false,true,,,,poll74532467
+Nantucket Town Building,"16 Broad Street, Nantucket, MA 02554",,08:00 AM - 04:00 PM,,ho25008222,false,true,,,,poll81617541
+Natick Town Hall,"13 East Central St., Natick, MA 01760",,08:00 AM - 05:00 PM,,ho66535823,false,true,,,,poll39851835
+Town Hall,"1471 Highland Avenue, Needham, MA 02492",,09:00 AM - 05:00 PM,,ho87552367,false,true,,,,poll15238806
+City Hall,"133 William St., New Bedford, MA 02740",,08:00 AM - 04:00 PM,,ho23013466,false,true,,,,poll81849883
+Wilks Branch Library,"1911 Acushnet Ave., New Bedford, MA 02746",,01:00 PM - 07:00 PM,,ho58878996,false,true,,,,poll9127513
+Howland Green Library,"3 Rodney French Blvd., New Bedford, MA 02744",,01:00 PM - 07:00 PM,,ho8419135,false,true,,,,poll78191391
+New Braintree Town Hall,"20 Memorial Drive, New Braintree, MA 01531",,07:00 PM - 09:00 PM,,ho30298250,false,true,,,,poll64768892
+Town Of New Marlborough ,"807 Mill River Southfield Rd, New Marlborough, MA 01244",,08:00 AM - 04:00 PM,,ho33134591,false,true,,,,poll31063510
+Town Hall,"12 Kent Way, Newbury, MA 01922",,08:00 AM - 04:00 PM,,ho78823729,false,true,,,,poll51684631
+Newburyport,"60 Pleasant Street, Newburyport, MA 01950",,08:00 AM - 04:00 PM,,ho2154950,false,true,,,,poll52218660
+Newton City Hall,"1000 Commonwealth Avenue, Newton, MA 02459",,08:30 AM - 08:00 PM,,ho10866693,false,true,,,,poll17460780
+Coleman House,"677 Winchester Street, Newton, MA 02459",,01:00 PM - 04:00 PM,,ho33437559,false,true,,,,poll93154835
+Lasell Village,"120 Seminary Ave, Newton, MA 02466",,10:00 AM - 12:00 PM,,ho60547394,false,true,,,,poll67860762
+Falls At Cordingly Dam,"2300 Washington Street, Newton, MA 02462",,01:30 PM - 03:30 PM,,ho73552721,false,true,,,,poll88032793
+Golda Meir House,"160 Stanton Ave #1, Newton, MA 02466",,01:00 PM - 04:00 PM,,ho70822064,false,true,,,,poll89025218
+Newton South High School,"140 Brandeis Rd, Newton, MA 02459",,12:00 PM - 05:00 PM,,ho49898535,false,true,,,,poll59546545
+Newton North High School,"457 Walnut St, Newton, MA 02460",,12:00 PM - 05:00 PM,,ho45625755,false,true,,,,poll13261979
+Evans Park,"430 Centre St, Newton, MA 02458",,09:00 AM - 12:00 PM,,ho42775987,false,true,,,,poll15652564
+Town Clerks Office,"1 Liberty Lane, Norfolk, MA 02056",,08:00 AM - 07:00 PM,,ho71383864,false,true,,,,poll65872914
+City Hall,"10 Main Street, North Adams, MA 01247",,08:00 AM - 04:30 PM,,ho79608431,false,true,,,,poll46172931
+North Andover Town Hall,"120 Main Street, North Andover, MA 01845",,08:00 AM - 04:30 PM,,ho77855557,false,true,,,,poll30677771
+North Attleboro Town Hall,"43 S. Washington St, North Attleborough, MA 02760",,08:00 AM - 06:00 PM,,ho82966245,false,true,,,,poll47547997
+Town Clerk'S Office,"215 North Main Street, North Brookfield, MA 01535",,09:00 AM - 08:00 PM,,ho83529169,false,true,,,,poll94136820
+Town Hall,"235 North Street, North Reading, MA 01864",,08:00 AM - 04:00 PM,,ho38108007,false,true,,,,poll97994508
+City Hall,"210 Main Street, Northampton, MA 01060",,08:30 AM - 08:30 PM,,ho85020068,false,true,,,,poll72978312
+Town Hall Offices,"63 Main Street, Northborough, MA 01532",,08:00 AM - 04:00 PM,,ho86352192,false,true,,,,poll48235306
+Beaumont/Whitney Place,"238 West Main Street, Northborough, MA 01532",,09:30 AM - 12:00 PM,,ho95137092,false,true,,,,poll71151073
+Senior Center,"119 Bearfoot Road, Northborough, MA 01532",,09:00 AM - 12:00 PM,,ho86014971,false,true,,,,poll38055275
+Town Hall,"7 Main Street, Northbridge, MA 01588",,08:30 AM - 07:00 PM,,ho75442764,false,true,,,,poll18681062
+Town Hall,"69 Main Street, Northfield, MA 01360",,08:00 AM - 04:00 PM,,ho47597956,false,true,,,,poll52741156
+Town Of Norton,"70 E. Main Street, Norton, MA 02766",,08:30 AM - 04:30 PM,,ho58937010,false,true,,,,poll88775759
+Norwell Town Hall-Gym ,"345 Main St, Norwell, MA 02061",,08:00 AM - 05:00 PM,,ho58290089,false,true,,,,poll49951968
+Town Clerk'S Office,"566 Washington Street, Norwood, MA 02062",,08:00 AM - 04:00 PM,,ho73980233,false,true,,,,poll28274927
+Town Hall Lower Level,"56 School Street, Oak Bluffs, MA 02557",,08:30 AM - 04:00 PM,,ho44233562,false,true,,,,poll97136631
+Oakham Town Hall ,"2 Coldbrook Rd., Oakham, MA 01068",,06:00 PM - 07:30 PM,,ho49813021,false,true,,,,poll61639179
+Town Hall,"6 Prospect St., Orange, MA 01346",,08:00 AM - 12:30 PM,,ho93338626,false,true,,,,poll7345600
+Orleans Town Hall,"19 School Road, Orleans, MA 02653",,08:30 AM - 04:30 PM,,ho59506101,false,true,,,,poll44738094
+Otis Town Hall,"1 North Main Rd, Otis, MA 01253",,08:00 AM - 03:00 PM,,ho2143590,false,true,,,,poll87535234
+Oxford Town Hall,"325 Main Street, Oxford, MA 01540",,09:00 AM - 04:30 PM,,ho35139341,false,true,,,,poll75086204
+Palmer Town Hall,"4417 Main St., Palmer, MA 01069",,08:30 AM - 07:30 PM,,ho71577055,false,true,,,,poll1118698
+Paxton Town Hall,"697 Pleasant St., Paxton, MA 01612",,09:00 AM - 07:00 PM,,ho59731539,false,true,,,,poll85456518
+Peabody City Hall,"24 Lowell Street, Peabody, MA 01960",,08:30 AM - 04:00 PM,,ho11304136,false,true,,,,poll71142478
+West Branch Library,"603 Lowell Street, Peabody, MA 01960",,09:00 AM - 04:00 PM,,ho70090591,false,true,,,,poll11376044
+Torigian Senior Center,"75R Central Street, Peabody, MA 01960",,10:00 AM - 01:00 PM,,ho96361698,false,true,,,,poll17788073
+Town Office Rhodes Bldg ,"351 Amherst Rd, Pelham, MA 01002",,10:30 AM - 01:30 PM,,ho89868984,false,true,,,,poll55437004
+Pelham Community Center,"2 South Valley Road, Pelham, MA 01002",,04:00 PM - 08:00 PM,,ho1953806,false,true,,,,poll65753302
+Town Hall Clerks Office,"100 Center St, Pembroke, MA 02359",,09:00 AM - 06:00 PM,,ho85010432,false,true,,,,poll68499758
+Town Hall,"1 Main Street, Pepperell, MA 01463",,08:00 AM - 06:00 PM,,ho49859727,false,true,,,,poll74817857
+Peru Town Hall,"3 East Main Road, Peru, MA 01235",,05:30 PM - 08:00 PM,,ho71233959,false,true,,,,poll96784063
+Town Clerk'S Office,"3 South Main Street, Petersham, MA 01366",,05:30 PM - 07:00 PM,,ho40894012,false,true,,,,poll18201539
+Phillipston Town Hall,"50 The Common, Phillipston, MA 010331",,08:00 AM - 08:00 PM,,ho56139380,false,true,,,,poll72956096
+City Hall,"70 Allen Street, Pittsfield, MA 01201",,08:30 AM - 04:00 PM,,ho89547347,false,true,,,,poll33286464
+Plainfield Town Offices,"304 Main St, Plainfield, MA 01070",,05:00 PM - 07:00 PM,,ho35231348,false,true,,,,poll63468242
+Plainville Town Hall,"142 South St, Plainville, MA 02762",,08:00 AM - 08:00 PM,,ho83374663,false,true,,,,poll67612250
+Town Hall,"11 Lincoln Street, Plymouth, MA 02360",,07:30 AM - 04:00 PM,,ho31062732,false,true,,,,poll48523525
+Manomet Branch Library,"12 Strand Avenue, Plymouth, MA 02360",,01:00 PM - 05:00 PM,,ho72535014,false,true,,,,poll69709282
+Plympton Town House,"5 Palmer Road, Plympton, MA 02367",,09:00 AM - 02:00 PM,,ho24429003,false,true,,,,poll95674918
+Town Hall,"6 Town Hall Dr, Princeton, MA 01541",,08:00 AM - 03:30 PM,,ho7746711,false,true,,,,poll6557129
+Town Hall,"260 Commercial St, Provincetown, MA 02657",,08:00 AM - 05:00 PM,,ho65745879,false,true,,,,poll35661629
+Quincy City Hall,"1305 Hancock St, Quincy, MA 02169",,08:30 AM - 07:00 PM,,ho74784801,false,true,,,,poll33804989
+North Quincy High School,"316 Hancock St, Quincy, MA 02171",,08:30 AM - 05:00 PM,,ho39232035,false,true,,,,poll63923007
+Town Hall,"41 South Main Street, Randolph, MA 02368",,08:30 AM - 07:00 PM,,ho3718184,false,true,,,,poll81934437
+Town Hall,"558 South Main Street, Raynham, MA 02767",,08:30 AM - 04:30 PM,,ho82697996,false,true,,,,poll92907938
+Town Hall,"16 Lowell Street, Reading, MA 01867",,07:30 AM - 05:30 PM,,ho99397561,false,true,,,,poll13284087
+Rehoboth Town Hall,"148 Peck Street, Rehoboth, MA 02769",,08:00 AM - 04:00 PM,,ho97629547,false,true,,,,poll82051
+Rehoboth Senior Center,"55 Bay State Road, Rehoboth, MA 02769",,10:00 AM - 04:00 PM,,ho23125146,false,true,,,,poll93591983
+American Legion Building,"249 Broadway, Revere, MA 02151",,08:15 AM - 05:00 PM,,ho63023166,false,true,,,,poll13332592
+Revere City Hall,"281 Broadway, Revere, MA 02151",,09:00 AM - 02:00 PM,,ho41384288,false,true,,,,poll52098383
+Richmond Town Hall,"1529 State Rd, Richmond, MA 01254",,08:30 AM - 01:30 PM,,ho4136086,false,true,,,,poll28161551
+Rochester Town Hall,"1 Constitution Way, Rochester, MA 02770",,09:00 AM - 12:00 PM,,ho93381201,false,true,,,,poll20291997
+Town Hall,"242 Union St, Rockland, MA 02370",,08:30 AM - 04:30 PM,,ho85802357,false,true,,,,poll30558356
+Rockport Town Hall,"34 Broadway, Rockport, MA 01966",,08:00 AM - 04:00 PM,,ho22896365,false,true,,,,poll86403073
+Rowe Town Hall,"321 Zoar Road, Rowe, MA 01367",,04:00 PM - 07:00 PM,,ho8329304,false,true,,,,poll70213801
+Rowley Town Hall ,"139 Main St, Rowley, MA 01969",,08:00 AM - 08:00 PM,,ho29965697,false,true,,,,poll80881184
+Town Clerk'S Office,"5 School St., Royalston, MA 01368",,09:00 AM - 01:00 PM,,ho5688337,false,true,,,,poll4773410
+Russell Town Hall,"65 Main Street, Russell, MA 01071",,05:30 PM - 07:30 PM,,ho84408639,false,true,,,,poll98868872
+Community Hall,"250 Main Street, Rutland, MA 01543",,08:00 AM - 04:30 PM,,ho59979554,false,true,,,,poll48482793
+City Hall,"93 Washington St, Salem, MA 01970",,08:00 AM - 04:00 PM,,ho84339384,false,true,,,,poll98441654
+Salem High Auditorium,"77 Willson St, Salem, MA 01970",,08:00 AM - 07:00 PM,,ho48775327,false,true,,,,poll32365106
+Salem Academycharter Schl,"45 Congress St, Salem, MA 01970",,08:00 AM - 01:00 PM,,ho27885086,false,true,,,,poll93811791
+Salisbury Town Hall,"5 Beach Rd, Salisbury, MA 01952",,08:30 AM - 06:00 PM,,ho17213870,false,true,,,,poll10169507
+Town Hall Annex,"66 Sandisfield Rd, Sandisfield, MA 01255",,08:00 AM - 04:00 PM,,ho8735282,false,true,,,,poll39994263
+Town Hall Annex,"145 Main Street, Sandwich, MA 02563",,08:30 AM - 04:30 PM,,ho87264843,false,true,,,,poll78828226
+Saugus Town Hall,"298 Central Street, Saugus, MA 01906",,08:30 AM - 07:00 PM,,ho78724265,false,true,,,,poll82784974
+Senior Center,"720 Main Rd, Savoy, MA 01256",,09:00 AM - 01:00 PM,,ho21295105,false,true,,,,poll68769802
+Scituate Town Hall,"600 Chief Justice Cushing Way, Scituate, MA 02066",,08:30 AM - 04:45 PM,,ho38367448,false,true,,,,poll69862233
+Seekonk Town Hall,"100 Peck Street, Seekonk, MA 02771",,08:30 AM - 04:30 PM,,ho29897592,false,true,,,,poll56437411
+Sharon Town Hall,"90 South Main Street, Sharon, MA 02067",,08:30 AM - 05:00 PM,,ho57461087,false,true,,,,poll65964448
+Town Hall,"21 Depot Square, Sheffield, MA 01257",,09:00 AM - 04:00 PM,,ho91836173,false,true,,,,poll7949509
+Shelburne Town Hall,"51 Bridge Street, Shelburne, MA 01370",,10:00 AM - 05:00 PM,,ho54769747,false,true,,,,poll95012530
+Sherborn Town Hall,"19 Washington Street, Sherborn, MA 01770",,08:00 AM - 12:00 PM,,ho68745581,false,true,,,,poll11422341
+Town Offices,"7 Keady Way, Shirley, MA 01464",,08:00 AM - 07:00 PM,,ho91685373,false,true,,,,poll11370215
+Town Hall,"100 Maple Ave., Shrewsbury, MA 01545",,08:00 AM - 04:30 PM,,ho16621304,false,true,,,,poll95005326
+Town Hall ,"1 Cooleyville Rd, Shutesbury, MA 01072",,03:30 PM - 06:00 PM,,ho60731225,false,true,,,,poll82013068
+Town Office Building,"140 Wood Street, Somerset, MA 02726",,08:30 AM - 04:00 PM,,ho60310445,false,true,,,,poll16954341
+Somerville City Hall,"93 Highland Ave, Somerville, MA 02143",,08:30 AM - 04:30 PM,,ho78602079,false,true,,,,poll58092712
+South Hadley Town Hall,"116 Main Street, South Hadley, MA 01075",,07:00 AM - 05:00 PM,,ho13573290,false,true,,,,poll5496774
+Council On Aging,"45 Dayton Street, South Hadley, MA 01075",,09:00 AM - 01:00 PM,,ho46491370,false,true,,,,poll62735961
+Town Hall-Clerks Office,"210 College Hwy, Southampton, MA 01073",,08:30 AM - 04:00 PM,,ho36671343,false,true,,,,poll76209654
+Town House,"17 Common Street, Southborough, MA 01772",,08:00 AM - 05:00 PM,,ho76872070,false,true,,,,poll64134895
+Town Hall,"41 Elm Street, Southbridge, MA 01550",,08:00 AM - 04:00 PM,,ho18837133,false,true,,,,poll11911785
+Town Hall,"454 College Highway, Southwick, MA 01077",,08:30 AM - 04:30 PM,,ho36970665,false,true,,,,poll60025984
+Town Hall,"157 Main Street, Spencer, MA 01562",,07:30 AM - 04:30 PM,,ho31099996,false,true,,,,poll45044023
+City Hall,"36 Court Street, Springfield, MA 01103",,08:30 AM - 06:00 PM,,ho17410032,false,true,,,,poll14672041
+Mayflower Senior Center,"1516 Sumner Ave, Springfield, MA 01118",,09:00 AM - 03:00 PM,,ho24504526,false,true,,,,poll25955330
+Hungry Hill Senior Center,"773 Libery Street, Springfield, MA 01104",,09:00 AM - 03:00 PM,,ho20873398,false,true,,,,poll95025160
+16 Acres Library,"1187 Parker Street, Springfield, MA 01129",,02:00 PM - 06:00 PM,,ho36008803,false,true,,,,poll92834145
+Brightwood Library,"359 Plainfield Street, Springfield, MA 01107",,02:00 PM - 06:00 PM,,ho9919081,false,true,,,,poll76927213
+Pine Point Library Expres,"204 Boston Road, Springfield, MA 01109",,02:00 PM - 06:00 PM,,ho95832241,false,true,,,,poll83049108
+Indian Orchard Library,"44 Oak Street, Springfield, MA 01151",,02:00 PM - 06:00 PM,,ho19821090,false,true,,,,poll87216561
+Forest Park Library,"380 Belmont Avenue, Springfield, MA 01108",,02:00 PM - 06:00 PM,,ho95170830,false,true,,,,poll72106649
+Mason Square Library,"765 State Street, Springfield, MA 01109",,02:00 PM - 06:00 PM,,ho74870781,false,true,,,,poll42924220
+Forest Park Manor,"25 Barney Lane, Springfield, MA 01108",,12:00 PM - 06:00 PM,,ho34413369,false,true,,,,poll72032139
+Butterick Town Hall,"1 Park Street, Sterling, MA 01564",,07:30 AM - 05:00 PM,,ho96907120,false,true,,,,poll63790063
+Town Hall,"50 Main St, Stockbridge, MA 01262",,09:00 AM - 12:00 PM,,ho27946869,false,true,,,,poll51575745
+Office Of The Town Clerk,"35 Central Street, Stoneham, MA 02180",,08:00 AM - 04:00 PM,,ho13206717,false,true,,,,poll83506435
+Town Hall,"10 Pearl St, Stoughton, MA 02072",,08:30 AM - 04:30 PM,,ho56627729,false,true,,,,poll50103220
+Stow Town Building,"380 Great Road, Stow, MA 01775",,08:00 AM - 04:00 PM,,ho18943715,false,true,,,,poll94850764
+Sturbridge Town Hall,"308 Main Street, Sturbridge, MA 01566",,08:00 AM - 07:00 PM,,ho76908153,false,true,,,,poll38800034
+Sudbury Town Hall,"322 Concord Road, Sudbury, MA 01776",,08:30 AM - 04:30 PM,,ho97619169,false,true,,,,poll9068651
+Sunderland Town Offices,"12 School Street, Sunderland, MA 01375",,08:00 AM - 06:00 PM,,ho15903205,false,true,,,,poll38857520
+Sutton Town Hall,"4 Uxbridge Rd., Sutton, MA 01590",,08:00 AM - 04:00 PM,,ho90293621,false,true,,,,poll56022107
+Swampscott Town Hall,"22 Monument Ave, Swampscott, MA 01907",,08:00 AM - 08:00 PM,,ho81629157,false,true,,,,poll19848189
+Swansea Ambulance Corps,"285 Wilbur Avenue, Swansea, MA 02777",,09:00 AM - 04:00 PM,,ho69147106,false,true,,,,poll83326366
+Temporary City Hall,"141 Oak Street, Taunton, MA 02780",,08:00 AM - 04:00 PM,,ho79856096,false,true,,,,poll6469548
+Town Hall,"160 Patriots Rd., Templeton, MA 01468",,07:00 AM - 08:00 PM,,ho12644443,false,true,,,,poll60029465
+Senior Center,"16 Senior Dr., Templeton, MA 01436",,10:00 AM - 12:00 PM,,ho50937142,false,true,,,,poll46591633
+Town Hall,"1009 Main St, Tewksbury, MA 01876",,07:30 AM - 04:30 PM,,ho79744505,false,true,,,,poll29395690
+Town Hall,"51 Spring St, Tisbury, MA 02568",,08:30 AM - 04:30 PM,,ho16847777,false,true,,,,poll45708226
+Tolland Town Hall,"241 West Granville Road, Tolland, MA 01034",,10:00 AM - 07:00 PM,,ho7177212,false,true,,,,poll37264685
+Town Hall,"8 West Common Street, Topsfield, MA 01983",,08:00 AM - 04:00 PM,,ho94019317,false,true,,,,poll22581990
+Memorial Hall,"272 Main Street, Townsend, MA 01469",,09:00 AM - 04:00 PM,,ho19590818,false,true,,,,poll6047158
+Truro Town Hall,"24 Town Hall Rd, Truro, MA 02666",,08:00 AM - 04:00 PM,,ho96466216,false,true,,,,poll9995524
+Town Hall,"25 Bryant Lane, Tyngsborough, MA 01879",,08:30 AM - 04:00 PM,,ho27933985,false,true,,,,poll3716906
+Tyringham Town Hall,"116 Main Rd, Tyringham, MA 01264",,06:00 PM - 08:00 PM,,ho33423006,false,true,,,,poll58343993
+Town Hall,"1 Main St, Upton, MA 01568",,08:00 AM - 04:00 PM,,ho27037346,false,true,,,,poll59383415
+Upton Senior Center,"2 Farm St, Upton, MA 01568",,10:00 AM - 12:00 PM,,ho4902336,false,true,,,,poll90734353
+Uxbridge Town Hall,"21 South Main St, Uxbridge, MA 01569",,07:30 AM - 05:00 PM,,ho29427672,false,true,,,,poll51821662
+Uxbridge Senior Center,"36 South Main St, Uxbridge, MA 01569",,01:00 PM - 03:00 PM,,ho10649319,false,true,,,,poll38329518
+Town Of Wakefield,"1 Lafayette St, Wakefield, MA 01880",,08:00 AM - 04:30 PM,,ho7171423,false,true,,,,poll94530538
+Wales Town Offices,"3 Hollow Road, Wales, MA 01081",,09:00 AM - 03:00 PM,,ho7222710,false,true,,,,poll39868896
+Town Hall,"135 School Street, Walpole, MA 02081",,08:00 AM - 04:00 PM,,ho50823224,false,true,,,,poll29692160
+Waltham City Hall,"610 Main Street, Waltham, MA 02452",,08:30 AM - 04:30 PM,,ho23929190,false,true,,,,poll83102358
+Prospect Hill Park,"322 Totten Pond Road, Waltham, MA 02451",,08:30 AM - 05:00 PM,,ho49147810,false,true,,,,poll44841684
+Ware Town Hall,"126 Main St., Ware, MA 01082",,08:00 AM - 04:00 PM,,ho39996052,false,true,,,,poll87476036
+Wareham Memorial Town Hal,"54 Marion Road, Wareham, MA 02571",,08:15 AM - 04:00 PM,,ho44405598,false,true,,,,poll50034630
+Shepard Municipal Bldg.,"48 High Street, Warren, MA 01938",,08:00 AM - 03:00 PM,,ho89234911,false,true,,,,poll56431491
+Town Clerk'S Office,"12 Athol Road, Warwick, MA 01378",,12:00 PM - 02:00 PM,,ho19095630,false,true,,,,poll44049846
+Washington Town Hall,"8 Summit Hill Rd, Washington, MA 01223",,07:00 PM - 09:00 PM,,ho8449306,false,true,,,,poll10525271
+Administrative Building,"149 Main Street, Watertown, MA 02472",,08:30 AM - 05:00 PM,,ho59379698,false,true,,,,poll28573474
+Wayland Town Building,"41 Cochituate Rd, Wayland, MA 01778",,08:00 AM - 07:00 PM,,ho26615348,false,true,,,,poll64479453
+Webster Town Hall,"350 Main Street, Webster, MA 01570",,08:00 AM - 07:00 PM,,ho63066617,false,true,,,,poll80699
+Warren Recreation Buildin,"90 Washington St, Wellesley, MA 02481",,08:00 AM - 08:00 PM,,ho16615991,false,true,,,,poll26848893
+Wellesley College,"106 Central Street, Wellesley, MA 02481",,05:00 PM - 08:00 PM,,ho65364603,false,true,,,,poll92504173
+Waterstone,"27 Washington St, Wellesley, MA 01930",,11:00 AM - 02:00 PM,,ho44235020,false,true,,,,poll98818884
+Mt St Vincent,"125 Oakland St, Wellesley, MA 02481",,03:00 PM - 05:00 PM,,ho24675827,false,true,,,,poll80905522
+Babson College,"21 Babson College Drive, Wellesley, MA 02482",,06:00 PM - 08:00 PM,,ho73575159,false,true,,,,poll74735858
+Town Hall,"300 Main Street, Wellfleet, MA 02667",,08:00 AM - 12:00 PM,,ho86931351,false,true,,,,poll54458387
+Town Office Building,"9 Morse Village Rd, Wendell, MA 01379",,09:00 AM - 12:00 PM,,ho45943430,false,true,,,,poll7556324
+Wenham Town Hall,"138 Main Street, Wenham, MA 01984",,09:00 AM - 04:30 PM,,ho61449184,false,true,,,,poll89964830
+Town Hall,"140 Worcester Street, West Boylston, MA 01583",,09:00 AM - 04:00 PM,,ho35036550,false,true,,,,poll24502839
+West Bridgewater Town Hal,"65 N Main St, West Bridgewater, MA 02379",,08:00 AM - 04:00 PM,,ho12567345,false,true,,,,poll99369501
+Town Clerk'S Office,"2 East Main Street, West Brookfield, MA 01585",,09:00 AM - 02:00 PM,,ho32271192,false,true,,,,poll62885730
+West Newbury Town Offices,"381 Main Street, West Newbury, MA 01985",,08:00 AM - 04:30 PM,,ho25745701,false,true,,,,poll41080143
+Municipal Office Bldg.,"26 Central Street, West Springfield, MA 01089",,08:00 AM - 04:30 PM,,ho90415372,false,true,,,,poll45711241
+Town Offices,"21 State Line Rd, West Stockbridge, MA 01266",,01:30 PM - 04:00 PM,,ho73494499,false,true,,,,poll72875706
+West Tisbury Town Hall,"1059 State Rd, West Tisbury, MA 02568",,08:30 AM - 04:30 PM,,ho71415551,false,true,,,,poll46699113
+Town Hall,"34 West Main St, Westborough, MA 01581",,08:00 AM - 05:00 PM,,ho68990876,false,true,,,,poll29273804
+Westfield City Hall,"59 Court St, Westfield, MA 01085",,09:00 AM - 05:00 PM,,ho88263186,false,true,,,,poll74225608
+Town Hall,"55 Main Street, Westford, MA 01886",,08:00 AM - 04:00 PM,,ho45917542,false,true,,,,poll79047360
+Town Hall,"1 South Rd, Westhampton, MA 01027",,06:00 PM - 08:00 PM,,ho5485020,false,true,,,,poll33616456
+Westminster Town Hall,"11 South Street, Westminster, MA 01473",,08:00 AM - 04:30 PM,,ho32714733,false,true,,,,poll14595478
+Weston Town Hall,"11 Town House Rd, Weston, MA 02493",,08:30 AM - 05:00 PM,,ho25508202,false,true,,,,poll55478713
+Town Hall,"816 Main Road, Westport, MA 02790",,08:30 AM - 04:00 PM,,ho26038309,false,true,,,,poll99227309
+Municipal Office Building,"50 Carby Street, Westwood, MA 02090",,08:30 AM - 04:30 PM,,ho54969628,false,true,,,,poll67672940
+Town Hall,"75 Middle Street, Weymouth, MA 02189",,07:30 AM - 04:30 PM,,ho40918446,false,true,,,,poll85483376
+Whately Town Offices,"4 Sandy Lane, Whately, MA 01093",,08:15 AM - 07:00 PM,,ho40033250,false,true,,,,poll37137347
+Whitman Town Hall,"54 South Ave, Whitman, MA 02382",,08:00 AM - 04:00 PM,,ho7836418,false,true,,,,poll70393884
+Wilbraham Town Hall,"240 Springfield Street, Wilbraham, MA 01013",,08:30 AM - 04:30 PM,,ho35475820,false,true,,,,poll22531006
+Town Office,"141 Main Street, Haydenville, MA 01039",,08:30 AM - 07:00 PM,,ho10182650,false,true,,,,poll61548799
+Town Hall,"31 North Street, Williamstown, MA 01267",,08:30 AM - 04:30 PM,,ho62206903,false,true,,,,poll72539860
+Harper Center,"118 Church Street, Williamstown, MA 01267",,05:00 PM - 07:00 PM,,ho12453206,false,true,,,,poll69876813
+Town Hall,"121 Glen Road, Wilmington, MA 01887",,08:30 AM - 07:00 PM,,ho37246559,false,true,,,,poll18953759
+Town Of Winchendon,"109 Front Street, Winchendon, MA 01475",,08:00 AM - 06:00 PM,,ho14298716,false,true,,,,poll76244313
+Winchester Town Hall,"71 Mt Vernon St, Winchester, MA 01890",,08:00 AM - 07:00 PM,,ho86671630,false,true,,,,poll13593050
+Windsor Town Hall,"1927 Route 9, Windsor, MA 01270",,05:00 PM - 08:00 PM,,ho89511721,false,true,,,,poll9990874
+Winthrop Town Hall,"One Metcalf Square, Winthrop, MA 02152",,08:00 AM - 04:30 PM,,ho40109568,false,true,,,,poll26506797
+Office Of City Clerk ,"10 Common Street, Woburn, MA 01801",,09:00 AM - 04:30 PM,,ho73227801,false,true,,,,poll95601675
+Unitarian Univers. Church,"90 Holden Street, Worcester, MA 01606",,08:45 AM - 07:00 PM,,ho85283207,false,true,,,,poll53689777
+Our Lady Mt. Carmel,"28 Mulberry Street, Worcester, MA 01605",,08:45 AM - 07:00 PM,,ho12481533,false,true,,,,poll35188895
+Worcester Senior Center,"128 Providence Street, Worcester, MA 01604",,08:45 AM - 07:00 PM,,ho14475415,false,true,,,,poll39839801
+Clark University,"50 Main Street, Worcester, MA 01610",,08:45 AM - 07:00 PM,,ho38682174,false,true,,,,poll29059118
+Worcester State Universit,"280 May St, Worcester, MA 01602",,08:45 AM - 07:00 PM,,ho69460230,false,true,,,,poll84472883
+Clark University,"950 Main Street, Worcester, MA 01610",,10:00 AM - 07:00 PM,,ho3219895,false,true,,,,poll3398908
+Town Hall,"160 Huntington Rd, Worthington, MA 01098",,10:00 AM - 05:00 PM,,ho21177151,false,true,,,,poll15017333
+Wrentham Town Hall,"79 South Street, Wrentham, MA 02093",,08:00 AM - 04:00 PM,,ho76224919,false,true,,,,poll46190128
+Town Hall -Clerk'S Office,"1146 Route 28, Yarmouth, MA 02664",,08:30 AM - 04:30 PM,,ho72057031,false,true,,,,poll23740178

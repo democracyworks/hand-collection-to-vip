@@ -1,79 +1,78 @@
 address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
 "568  Nw Court Circle, Crowley, LA 70526",,08:30 AM-06:00 PM,,ho68766526,false,true,,,,poll68766526
 "105 N Fifth St, Oberlin, LA 70655",,08:30 AM-06:00 PM,,ho7156515,false,true,,,,poll7156515
-"828 S Irma Blvd, Rm #205, Gonzales, LA 70737",,08:30 AM-06:00 PM,,ho33761592,false,true,,,,poll33761592
+"828 S Irma Blvd, Gonzales, LA 70737",Rm 205,08:30 AM-06:00 PM,,ho91751003,false,true,,,,poll91751003
 "300 Houmas St, Donaldsonville, LA 70346",,08:30 AM-06:00 PM,,ho25076442,false,true,,,,poll25076442
 "4809 Highway 1, Napoleonville, LA 70390",,08:30 AM-06:00 PM,,ho59949654,false,true,,,,poll59949654
-"312 N Main,  Suite E, Marksville, LA 71351",,08:30 AM-06:00 PM,,ho93888355,false,true,,,,poll93888355
+"312 N Main, Marksville, LA 71351",Suite E,08:30 AM-06:00 PM,,ho57144884,false,true,,,,poll57144884
 "204 S Stewart, Deridder, LA 70634",,08:30 AM-06:00 PM,,ho21788516,false,true,,,,poll21788516
-"100 Courthouse Dr, Ste 1400, Arcadia, LA 71001",(200 GAP FARM RD),08:30 AM-06:00 PM,,ho74816226,false,true,,,,poll74816226
+"100 Courthouse Dr, Arcadia, LA 71001","Ste. 1400, (200 GAP FARM RD)",08:30 AM-06:00 PM,,ho15591197,false,true,,,,poll15591197
 "204 Burt Blvd, Benton, LA 71006",Second Floor,08:30 AM-06:00 PM,,ho14138297,false,true,,,,poll14138297
-"525 Marshall, Suite 103, Shreveport, LA 71101",,08:30 AM-06:00 PM,,ho25014275,false,true,,,,poll25014275
+"525 Marshall, Shreveport, LA 71101",Suite 103,08:30 AM-06:00 PM,,ho76167733,false,true,,,,poll76167733
 "1000 Ryan St, Lake Charles, LA 70601",Room 7,08:30 AM-06:00 PM,,ho93824081,false,true,,,,poll93824081
 "201 Main St., Columbia, LA 71418",Suite 4,08:30 AM-06:00 PM,,ho23242953,false,true,,,,poll23242953
 "148 Smith Circle, Cameron, LA 70631",,08:30 AM-06:00 PM,,ho78500355,false,true,,,,poll78500355
 "301 Bushley St, Harrisonburg, LA 71340",Room 103,08:30 AM-06:00 PM,,ho67373376,false,true,,,,poll67373376
-"507 W. Main St, Ste 1, Homer, LA 71040",,08:30 AM-06:00 PM,,ho22475931,false,true,,,,poll22475931
+"507 W. Main St, Homer, LA 71040",Ste 1,08:30 AM-06:00 PM,,ho60772044,false,true,,,,poll60772044
 "4001 Carter St., Vidalia, LA 71373",Suite K,08:30 AM-06:00 PM,,ho10246169,false,true,,,,poll10246169
 "105 Franklin St, Mansfield, LA 71052",,08:30 AM-06:00 PM,,ho76748359,false,true,,,,poll76748359
 "2250 Main St, Baker, LA 70714",,08:30 AM-06:00 PM,,ho57642332,false,true,,,,poll57642332
 "11010 Coursey Blvd, Baton Rouge, LA 70816",,08:30 AM-06:00 PM,,ho11061433,false,true,,,,poll11061433
-"222 St.Louis St, #201, Baton Rouge, LA 70802",,08:30 AM-06:00 PM,,ho64897436,false,true,,,,poll64897436
+"222 St.Louis St, Baton Rouge, LA 70802",#201,08:30 AM-06:00 PM,,ho61076665,false,true,,,,poll61076665
 "400 1St St., Lake Providence, LA 71254",,08:30 AM-06:00 PM,,ho80176273,false,true,,,,poll80176273
 "11048 Bank St., Clinton, LA 70722",,08:30 AM-06:00 PM,,ho25540016,false,true,,,,poll25540016
-"200 Court St, Ste 102, Ville Platte, LA 70586",,08:30 AM-06:00 PM,,ho52476618,false,true,,,,poll52476618
+"200 Court St, Ville Platte, LA 70586",Ste 102,08:30 AM-06:00 PM,,ho65416276,false,true,,,,poll65416276
 "6560 Main St, Winnsboro, LA 71295",,08:30 AM-06:00 PM,,ho62367676,false,true,,,,poll62367676
 "200 Main St, Colfax, LA 71417",,08:30 AM-06:00 PM,,ho16703195,false,true,,,,poll16703195
-"300 S. Iberia St., Ste 110, New Iberia, LA 70560",,08:30 AM-06:00 PM,,ho68625488,false,true,,,,poll68625488
+"300 S. Iberia St., New Iberia, LA 70560",Ste 110,08:30 AM-06:00 PM,,ho9633328,false,true,,,,poll9633328
 "58050 Meriam St., Plaquemine, LA 70764",,08:30 AM-06:00 PM,,ho88965824,false,true,,,,poll88965824
-"500 E. Court St., Room 102, Jonesboro, LA 71251",,08:30 AM-06:00 PM,,ho39661559,false,true,,,,poll39661559
-"1221 Elmwood Park Blvd., Rm 502, Harahan, LA 70123",,08:30 AM-06:00 PM,,ho71360306,false,true,,,,poll71360306
+"500 E. Court St., Jonesboro, LA 71251",Room 102,08:30 AM-06:00 PM,,ho40234345,false,true,,,,poll40234345
+"1221 Elmwood Park Blvd., Harahan, LA 70123",Rm 502,08:30 AM-06:00 PM,,ho93851556,false,true,,,,poll93851556
 "5001 West Bank Expressway, Marrero, LA 70072",Suite C-2,08:30 AM-06:00 PM,,ho70492503,false,true,,,,poll70492503
 "302 N Cutting Ave, Jennings, LA 70546",,08:30 AM-06:00 PM,,ho56857384,false,true,,,,poll56857384
-"1010 Lafayette St., Suite 313, Lafayette, LA 70501",,08:30 AM-06:00 PM,,ho20632824,false,true,,,,poll20632824
+"1010 Lafayette St., Lafayette, LA 70501",Suite 313,08:30 AM-06:00 PM,,ho15597282,false,true,,,,poll15597282
 "16241 East Main Street, Galliano, LA 70354",Suite B23,08:30 AM-06:00 PM,,ho84666538,false,true,,,,poll84666538
 "307 West 4Th Street, Thibodaux, LA 70301",,08:30 AM-06:00 PM,,ho89355941,false,true,,,,poll89355941
 "1009 Courthouse St, Jena, LA 71342",,08:30 AM-06:00 PM,,ho88531758,false,true,,,,poll88531758
-"100 W. Texas Ave., Rm 10, Ruston, LA 71270",,08:30 AM-06:00 PM,,ho79909534,false,true,,,,poll79909534
+"100 W. Texas Ave., Ruston, LA 71270",Rm 10,08:30 AM-06:00 PM,,ho18766427,false,true,,,,poll18766427
 "29938 S Magnolia St, Livingston, LA 70754",,08:30 AM-06:00 PM,,ho44435866,false,true,,,,poll44435866
 "100 N Cedar St., Tallulah, LA 71282",,08:30 AM-06:00 PM,,ho48450173,false,true,,,,poll48450173
 "129 N. Franklin, Bastrop, LA 71220",,08:30 AM-06:00 PM,,ho69730503,false,true,,,,poll69730503
 "200 Church St., Natchitoches, LA 71457",Office 103,08:30 AM-06:00 PM,,ho14333625,false,true,,,,poll14333625
 "1300 Perdido St., New Orleans, LA 70112",,08:30 AM-06:00 PM,,ho19033718,false,true,,,,poll19033718
-"1650 Desiard St, Suite 125, Monroe, LA 71201",,08:30 AM-06:00 PM,,ho8578793,false,true,,,,poll8578793
+"1650 Desiard St, Monroe, LA 71201",Suite 125,08:30 AM-06:00 PM,,ho34555665,false,true,,,,poll34555665
 "28028 Hwy 23, Port Sulphur, LA 70083",,08:30 AM-06:00 PM,,ho87907166,false,true,,,,poll87907166
 "211 East Main Street, New Roads, LA 70760",,08:30 AM-06:00 PM,,ho17605811,false,true,,,,poll17605811
 "701 Murray St., Alexandria, LA 71301",,08:30 AM-06:00 PM,,ho57702615,false,true,,,,poll57702615
-"615 E. Carroll St, #104, Coushatta, LA 71019",,08:30 AM-06:00 PM,,ho25858079,false,true,,,,poll25858079
-"708 Julia St., #B-102, Rayville, LA 71269",,08:30 AM-06:00 PM,,ho26593522,false,true,,,,poll26593522
-"400 Capitol St., #107, Many, LA 71449",,08:30 AM-06:00 PM,,ho40013590,false,true,,,,poll40013590
+"708 Julia St., Rayville, LA 71269",#B-102,08:30 AM-06:00 PM,,ho17081129,false,true,,,,poll17081129
+"400 Capitol St., Many, LA 71449",#107,08:30 AM-06:00 PM,,ho32152985,false,true,,,,poll32152985
 "8201 W. Judge Perez, Chalmette, LA 70043",,08:30 AM-06:00 PM,,ho87622948,false,true,,,,poll87622948
 "14564 River Road, New Sarpy, LA 70078",,08:30 AM-06:00 PM,,ho18417175,false,true,,,,poll18417175
-"15045 River Rd., #189, Hahnville, LA 70057",,08:30 AM-06:00 PM,,ho24849351,false,true,,,,poll24849351
+"15045 River Rd, Hahnville, LA 70057",#189,08:30 AM-06:00 PM,,ho8849545,false,true,,,,poll8849545
 "48 Kendrick Street, Greensburg, LA 70441",,08:30 AM-06:00 PM,,ho58276420,false,true,,,,poll58276420
-"Courthouse, 5800 La 44, Convent, LA 70723",,08:30 AM-06:00 PM,,ho25653493,false,true,,,,poll25653493
+"5800 La 44, Convent, LA 70723",,08:30 AM-06:00 PM,,ho35837910,false,true,,,,poll35837910
 "2631 La 20 West, Vacherie, LA 70090",,08:30 AM-06:00 PM,,ho8649043,false,true,,,,poll8649043
 "1801 W. Airline Hwy., Laplace, LA 70068",,08:30 AM-06:00 PM,,ho33001058,false,true,,,,poll33001058
 "2393 Hwy. 18, Edgard, LA 70049",,08:30 AM-06:00 PM,,ho1004778,false,true,,,,poll1004778
 "118 S. Court St., Opelousas, LA 70570",,08:30 AM-06:00 PM,,ho38995184,false,true,,,,poll38995184
 "415 Saint Martin Street, St Martinville, LA 70582",,08:30 AM-06:00 PM,,ho45919216,false,true,,,,poll45919216
-"500 Main St., Ste. 301, Franklin, LA 70538",,08:30 AM-06:00 PM,,ho24935262,false,true,,,,poll24935262
-"520 Old Spanish Trail, Suite 4C, Slidell, LA 70458",,08:30 AM-06:00 PM,,ho12568363,false,true,,,,poll12568363
+"500 Main St., Franklin, LA 70538",Ste 301,08:30 AM-06:00 PM,,ho16897891,false,true,,,,poll16897891
+"520 Old Spanish Trail, Slidell, LA 70458",Suite 4C,08:30 AM-06:00 PM,,ho16563510,false,true,,,,poll16563510
 "601 N Jefferson Ave, Covington, LA 70433",,08:30 AM-06:00 PM,,ho15945271,false,true,,,,poll15945271
-"110 N. Bay St., #103, Amite, LA 70422",,08:30 AM-06:00 PM,,ho35219206,false,true,,,,poll35219206
+"110 N. Bay St., Amite, LA 70422",#103,08:30 AM-06:00 PM,,ho35024042,false,true,,,,poll35024042
 "15475 Club Deluxe Rd, Hammond, LA 70403",,08:30 AM-06:00 PM,,ho21032336,false,true,,,,poll21032336
 "203 Hancock St., St Joseph, LA 71366",,08:30 AM-06:00 PM,,ho43929586,false,true,,,,poll43929586
-"8026 Main Street, Suite 101, Houma, LA 70360",,08:30 AM-06:00 PM,,ho86086032,false,true,,,,poll86086032
+"8026 Main Street, Houma, LA 70360",Suite 101,08:30 AM-06:00 PM,,ho22514976,false,true,,,,poll22514976
 "303-C E. Water St, Farmerville, LA 71241",,08:30 AM-06:00 PM,,ho92303514,false,true,,,,poll92303514
-"100 N. State St., #120, Abbeville, LA 70510",,08:30 AM-06:00 PM,,ho94620749,false,true,,,,poll94620749
+"100 N. State St, Abbeville, LA 70510",#120,08:30 AM-06:00 PM,,ho23767137,false,true,,,,poll23767137
 "301 E. Courthouse St., Leesville, LA 71446",,08:30 AM-06:00 PM,,ho54190078,false,true,,,,poll54190078
 "900 Washington St., Franklinton, LA 70438",,08:30 AM-06:00 PM,,ho70848342,false,true,,,,poll70848342
 "410 Main Street, Minden, LA 71055",,08:30 AM-06:00 PM,,ho44581467,false,true,,,,poll44581467
-"883 7Th Street, Suite A, Port Allen, LA 70767",,08:30 AM-06:00 PM,,ho81681721,false,true,,,,poll81681721
-"305 E. Main St., Rm. 108, Oak Grove, LA 71263",,08:30 AM-06:00 PM,,ho79350390,false,true,,,,poll79350390
+"883 7Th Street, Port Allen, LA 70767",Suite A,08:30 AM-06:00 PM,,ho70833977,false,true,,,,poll70833977
+"305 E. Main St., Oak Grove, LA 71263",Rm 108,08:30 AM-06:00 PM,,ho65226272,false,true,,,,poll65226272
 "5932 Commerce St, St Francisville, LA 70775",,08:30 AM-06:00 PM,,ho98056675,false,true,,,,poll98056675
-"119 W. Main St., #105, Winnfield, LA 71483",,08:30 AM-06:00 PM,,ho86023506,false,true,,,,poll86023506
-"225 Morgan St,  Rm#105, New Orleans, LA 70114",,08:30 AM-06:00 PM,,ho28027483,false,true,,,,poll28027483
+"119 W. Main St., Winnfield, LA 71483",#105,08:30 AM-06:00 PM,,ho7236689,false,true,,,,poll7236689
+"225 Morgan St, New Orleans, LA 70114",Rm 105,08:30 AM-06:00 PM,,ho33657975,false,true,,,,poll33657975
 "3851 Essen Lane, Baton Rouge, LA 70809",,08:30 AM-06:00 PM,,ho38988771,false,true,,,,poll38988771
 "500 A N. Huntington St, Sulphur, LA 70663",BLDG B,08:30 AM-06:00 PM,,ho18871850,false,true,,,,poll18871850
 "1710 Sullivan Drive, Bogalusa, LA 70427",,08:30 AM-06:00 PM,,ho58773341,false,true,,,,poll58773341
@@ -92,4 +91,4 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "301 Third St, Morgan City, LA 70380",,08:30 AM-06:00 PM,,ho74543326,false,true,,,,poll74543326
 "615 E Carroll St, Coushatta, LA 71019",RM #104,08:30 AM-06:00 PM,,ho75197774,false,true,,,,poll75197774
 "2450 Hwy 28 E, Pineville, LA 71360",,08:30 AM-06:00 PM,,ho40463073,false,true,,,,poll40463073
-"10130 Crossing Way, Suite 360, Denham Springs, LA 70726",,08:30 AM-06:00 PM,,ho19960873,false,true,,,,poll19960873
+"10130 Crossing Way, Denham Springs, LA 70726",Suite 360,08:30 AM-06:00 PM,,ho857085,false,true,,,,poll857085

@@ -40,11 +40,16 @@ class ScheduleTxt(object):
         return self.dedupe(sch_base_df)
 
 
-    def get_sch_time(self, hours, date):
-        if len(hours) == 7:
-            hours = "0" + hours
-        offset = self.add_offset(date)
-        return hours + offset
+    def get_sch_time(self, hours, date, appt):
+
+        if pd.isnull(appt):
+            hours = hours.replace(" - ", "-")
+            if len(hours) < 14:
+                hours = "0" + hours
+
+            return hours.strip()
+        else:
+            return ''
 
         # arr = hours.split("-")
         # offset = self.utc_offset(county)
@@ -78,8 +83,11 @@ class ScheduleTxt(object):
 
 
 
-    def is_only_by_appointment(self):
-        return ''
+    def is_only_by_appointment(self, appt):
+        if not pd.isnull(appt):
+            return 'true'
+        else:
+            return ''
 
     def is_or_by_appointment(self):
         return ''
@@ -130,13 +138,13 @@ class ScheduleTxt(object):
         """
 
         self.base_df['start_time2'] = self.base_df.apply(
-            lambda row: self.get_sch_time(row["start_time"], row['start_date']), axis=1)
+            lambda row: self.get_sch_time(row["start_time"], row['start_date'], row['appt']), axis=1)
 
         self.base_df['end_time2'] = self.base_df.apply(
-            lambda row: self.get_sch_time(row['end_time'], row['start_date']), axis=1)
+            lambda row: self.get_sch_time(row['end_time'], row['start_date'], row['appt']), axis=1)
 
         self.base_df['is_only_by_appointment2'] = self.base_df.apply(
-            lambda row: self.is_only_by_appointment(), axis=1)
+            lambda row: self.is_only_by_appointment(row["appt"]), axis=1)
 
         self.base_df['is_or_by_appointment2'] = self.base_df.apply(
             lambda row: self.is_or_by_appointment(), axis=1)
@@ -171,10 +179,10 @@ class ScheduleTxt(object):
 
         # Drop base_df columns.
         sch.drop(['office-name', 'official-title', 'types', 'ocd-division', 'description', 'homepage', 'phone',
-                'email', 'street', 'city', 'state', 'zip', 'owner', 'contacted', 'start_time', 'end_time', 'start_date',
+                'email', 'street', 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date',
                 'end_date', 'notes',
                 'index', 'address_line', 'directions',
-                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'source_id'], inplace=True,
+                'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'source_id', 'appt'], inplace=True,
                  axis=1)
 
         # hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id,
@@ -214,8 +222,8 @@ if __name__ == '__main__':
 
 
     colnames = ['office-name', 'official-title', 'types', 'ocd-division', 'description', 'homepage', 'phone',
-                'email', 'street', 'city', 'state', 'zip', 'owner', 'contacted', 'start_time', 'end_time', 'start_date',
-                'end_date', 'notes',
+                'email', 'street', 'city', 'state', 'zip', 'start_time', 'end_time', 'start_date',
+                'end_date', 'appt', 'notes',
                 'index', 'address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'source_id']
 

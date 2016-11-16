@@ -38,11 +38,33 @@ class ScheduleTxt(object):
 
     def get_start_time(self, index, office_name, start_time, start_date, hours_open_id):
         """#"""
-        print index, start_time
+        #print index, start_time
+        #print index, start_time, start_date, hours_open_id
 
-        start_time = str(start_time).strip().replace(' - ', '-')
 
-        return ''.join([i if ord(i) < 128 else ' ' for i in start_time])
+        if not pd.isnull(start_time):
+            #print start_date
+            start_time = str(start_time).strip().replace(' - ', '-')
+            time_arr = start_time.split("-")
+            time = time_arr[0].strip()
+            #print time_arr[1]
+            offset = time_arr[1].strip()
+            #print index, time, offset
+            #print index, offset, len(offset)
+            if len(time) < 8:
+                time = "0" + time
+
+            if len(offset) < 5:
+                offset = "0" + offset
+
+            if not pd.isnull(start_date):
+                if "11/6" in start_date or "11/7" in start_date:
+                    offset = "06:00"
+
+            return time + "-" + offset
+        else:
+            return ''
+
 
         #if start_time:
         #    if len(start_time.replace(' - ', '-')) == 13:
@@ -60,12 +82,27 @@ class ScheduleTxt(object):
         #    start_time = ''
                 #raise ValueError('Missing start_time value at row ' + str(index) + '.')
 
-    def get_end_time(self, index, end_time):
+    def get_end_time(self, index, end_time, date):
         """#"""
-        #print 1, index, end_time
-        end_time = str(end_time).strip().replace(' - ', '-')
+        print 1, index, end_time
+        if not pd.isnull(end_time):
+            end_time = str(end_time).strip().replace(' - ', '-')
+            time_arr = end_time.split("-")
+            time = time_arr[0].strip()
+            # print time_arr[1]
+            offset = time_arr[1].strip()
+            # print index, time, offset
+            # print index, offset, len(offset)
+            if len(time) < 8:
+                time = "0" + time
 
-        return ''.join([i if ord(i) < 128 else ' ' for i in end_time])
+            if not pd.isnull(date):
+                if "11/6" in date or "11/7" in date:
+                    offset = "06:00"
+
+            return time + "-" + offset
+        else:
+            return ''
 
         #return str(end_time).strip().replace(' - ', '-')
 
@@ -82,10 +119,10 @@ class ScheduleTxt(object):
         #    pass
 
     def is_only_by_appointment(self, is_only_by_appointment):
-        return str(is_only_by_appointment).lower()
+        return str(is_only_by_appointment).lower().strip()
 
     def is_or_by_appointment(self, is_or_by_appointment):
-        return str(is_or_by_appointment).lower()
+        return str(is_or_by_appointment).lower().strip()
 
     def is_subject_to_change(self):
         # create conditional when/if column is present
@@ -93,7 +130,7 @@ class ScheduleTxt(object):
 
     def get_start_date(self, index, start_date):
         """#"""
-        #print 3, index, start_date
+        print 3, index, start_date
 
         try:
 
@@ -105,7 +142,7 @@ class ScheduleTxt(object):
                 #print index, start_date
 
             elif len(start_date) == 7:
-                sd = tuple(start_date.split('-'))
+                sd = tuple(start_date.split('/'))
                 #print sd
                 #date_tup = tuple(sd.split('-'))
                 #print date_tup
@@ -123,7 +160,7 @@ class ScheduleTxt(object):
 
             else:
                 #print index, start_date
-                sd = tuple(start_date.split('-'))
+                sd = tuple(start_date.split('/'))
                 m = sd[0]
                 d = sd[1]
                 if len(d) == 1:
@@ -136,9 +173,9 @@ class ScheduleTxt(object):
 
     def get_end_date(self, index, end_date):
         """#"""
-        print 4, index, end_date
-        end_date = str(end_date)
 
+        end_date = str(end_date)
+        print 4, index, end_date, len(end_date)
         try:
             if len(end_date) == 5:
                 end_date = end_date + '-16'
@@ -150,7 +187,7 @@ class ScheduleTxt(object):
 
                 #print end_date
 
-                sd = tuple(end_date.split('-'))
+                sd = tuple(end_date.split('/'))
                 m = str(sd[0])
                 d = str(sd[1])
                 if len(d) == 1:
@@ -163,7 +200,7 @@ class ScheduleTxt(object):
                 return '2016-' + m + '-' + d
 
             elif len(end_date) == 7:
-                sd = tuple(end_date.split('-'))
+                sd = tuple(end_date.split('/'))
                 #print sd
                 #date_tup = tuple(sd.split('-'))
                 #print date_tup
@@ -181,12 +218,12 @@ class ScheduleTxt(object):
 
             elif len(end_date) == 8:
                 #print index, end_date
-                end_date = datetime.datetime.strptime(end_date, '%m-%d-%y').strftime('%Y-%m-%d')
+                end_date = datetime.datetime.strptime(end_date, '%m/%d/%y').strftime('%Y-%m-%d')
                 return end_date
 
 
             elif len(end_date) == 9:
-                sd = tuple(end_date.split('-'))
+                sd = tuple(end_date.split('/'))
                 m = sd[0]
                 d = sd[1]
                 if len(d) == 1:
@@ -242,7 +279,7 @@ class ScheduleTxt(object):
                                             row['hours_open_id']), axis=1)
 
         self.base_df['end_time'] = self.base_df.apply(
-            lambda row: self.get_end_time(row['index'], row['end_time']), axis=1)
+            lambda row: self.get_end_time(row['index'], row['end_time'], row['start_date']), axis=1)
 
         self.base_df['is_only_by_appointment'] = self.base_df.apply(
             lambda row: self.is_only_by_appointment(row['is_only_by_appointment']), axis=1)
@@ -303,10 +340,10 @@ class ScheduleTxt(object):
 
 if __name__ == '__main__':
 
-    intermediate_doc = 'intermediate_doc2.csv'
+    intermediate_doc = 'intermediate_doc.csv'
 
     s = 'county official_name phone email ocd_division phone location_name address1 address2 city state zip_code start_time end_time start_date end_date is_only_by_appointment is_or_by_appointment directions notes index address_line hours photo_uri hours_open_id is_drop_box is_early_voting latitude longitude latlng_source	id'.split(' ')
-    print s
+    #print s
 
     #colnames = ['county', 'official_title', 'types', 'ocd_division', 'division_description', 'homepage_url',
     #            'phone', 'email', 'street', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date',
@@ -320,6 +357,7 @@ if __name__ == '__main__':
                 'is_only_by_appointment', 'is_or_by_appointment', 'directions', 'notes', 'index', 'address_line',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude', 'longitude',
                 'latlng_source', 'id']
+    print len(colnames)
 
 
     #s = 'county, ocd_division, homepage_url, phone, name, address1, address2, city, state, zip_code, start_time, end_time, start_date, end_date, index, address_line, directions, hours, photo_uri, hours_open_id, is_drop_box, is_early_voting, latitude, longitude, latlng_source, id'.split(', ')

@@ -1,507 +1,128 @@
-address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
-"305 Eagle Lane, Belen, NM 87002",,10:00 AM - 06:00 PM,,ho47617096,false,true,,,,poll47617096
-"306 Eagle Lane, Belen, NM 87002",,10:00 AM - 06:00 PM,,ho39982947,false,true,,,,poll39982947
-"307 Eagle Lane, Belen, NM 87002",,10:00 AM - 06:00 PM,,ho23684889,false,true,,,,poll23684889
-"2 Dove Rd., Santa Ana Pueblo, NM 87004",,10:00 AM - 07:00 PM,,ho3216131,false,true,,,,poll3216131
-"143 North Santa Fe Trail, Sandia Pueblo, NM 87004",,10:00 AM - 07:00 PM,,ho47340341,false,true,,,,poll47340341
-"Highway 197, Torreon, NM 87013",,10:00 AM - 07:00 PM,,ho79346548,false,true,,,,poll79346548
-"46 Old Highway 126, Cuba, NM 87013",,10:00 AM - 07:00 PM,,ho48360755,false,true,,,,poll48360755
-"47 Old Highway 126, Cuba, NM 87013",,10:00 AM - 07:00 PM,,ho17130790,false,true,,,,poll17130790
-"48 Old Highway 126, Cuba, NM 87013",,10:00 AM - 07:00 PM,,ho12270043,false,true,,,,poll12270043
-"25 East Frontage Road, Edgewood, NM 87015",,10:00 AM - 06:00 PM,,ho73304388,false,true,,,,poll73304388
-"26 East Frontage Road, Edgewood, NM 87015",,12:00 PM - 08:00 PM,,ho49654716,false,true,,,,poll49654716
-"27 East Frontage Road, Edgewood, NM 87015",,10:00 AM - 06:00 PM,,ho57698368,false,true,,,,poll57698368
-"28 East Frontage Road, Edgewood, NM 87015",,12:00 PM - 08:00 PM,,ho78643413,false,true,,,,poll78643413
-"29 East Frontage Road, Edgewood, NM 87015",,10:00 AM - 06:00 PM,,ho45642047,false,true,,,,poll45642047
-"205 9th St, Estancia, NM 87016",,07:30 AM - 05:30 PM,,ho46992089,false,true,,,,poll46992089
-"206 9th St, Estancia, NM 87016",,10:00 AM - 06:00 PM,,ho56517234,false,true,,,,poll56517234
-"207 9th St, Estancia, NM 87016",,07:30 AM - 05:30 PM,,ho40558944,false,true,,,,poll40558944
-"208 9th St, Estancia, NM 87016",,10:00 AM - 06:00 PM,,ho62843809,false,true,,,,poll62843809
-"209 9th St, Estancia, NM 87016",,07:30 AM - 05:30 PM,,ho60563086,false,true,,,,poll60563086
-"210 9th St, Estancia, NM 87016",,10:00 AM - 06:00 PM,,ho20646589,false,true,,,,poll20646589
-"211 9th St, Estancia, NM 87016",,07:30 AM - 05:30 PM,,ho630598,false,true,,,,poll630598
-"212 9th St, Estancia, NM 87016",,10:00 AM - 06:00 PM,,ho49389469,false,true,,,,poll49389469
-"515 W. High St., Grants, NM 87020",,08:00 AM - 05:00 PM,,ho44356542,false,true,,,,poll44356542
-"516 W. High St., Grants, NM 87020",,08:00 AM - 05:00 PM,,ho33382423,false,true,,,,poll33382423
-"517 W. High St., Grants, NM 87020",,10:00 AM - 06:00 PM,,ho87645918,false,true,,,,poll87645918
-"518 W. High St., Grants, NM 87020",,08:00 AM - 05:00 PM,,ho69509884,false,true,,,,poll69509884
-"519 W. High St., Grants, NM 87020",,10:00 AM - 06:00 PM,,ho6988372,false,true,,,,poll6988372
-"520 W. High St., Grants, NM 87020",,08:00 AM - 05:00 PM,,ho44385539,false,true,,,,poll44385539
-"521 W. High St., Grants, NM 87020",,10:00 AM - 06:00 PM,,ho95985492,false,true,,,,poll95985492
-"5117 Highway 4, Jemez Pueblo, NM 87024",,10:00 AM - 07:00 PM,,ho40390467,false,true,,,,poll40390467
-"117 Tribal Rd. 7036, To'Hajiilee, NM 87026",,08:00 AM - 12:00 PM,,ho58582591,false,true,,,,poll58582591
-"118 Tribal Rd. 7036, To'Hajiilee, NM 87026",,10:00 AM - 08:00 PM,,ho42689351,false,true,,,,poll42689351
-"119 Tribal Rd. 7036, To'Hajiilee, NM 87026",,08:00 AM - 12:00 PM,,ho66955357,false,true,,,,poll66955357
-"120 Tribal Rd. 7036, To'Hajiilee, NM 87026",,10:00 AM - 08:00 PM,,ho60293815,false,true,,,,poll60293815
-"121 Tribal Rd. 7036, To'Hajiilee, NM 87026",,08:00 AM - 12:00 PM,,ho63887783,false,true,,,,poll63887783
-"22 Capital, Laguna, NM 87026",,08:00 AM - 04:00 PM,,ho88987841,false,true,,,,poll88987841
-"23 Capital, Laguna, NM 87026",,08:00 AM - 04:00 PM,,ho63440043,false,true,,,,poll63440043
-"24 Capital, Laguna, NM 87026",,08:00 AM - 04:00 PM,,ho92208532,false,true,,,,poll92208532
-"444 Luna Ave, Los Lunas, NM 87031",,08:00 AM - 05:00 PM,,ho5375025,false,true,,,,poll5375025
-"445 Luna Ave, Los Lunas, NM 87031",,08:00 AM - 05:00 PM,,ho23832036,false,true,,,,poll23832036
-"446 Luna Ave, Los Lunas, NM 87031",,10:00 AM - 06:00 PM,,ho17187563,false,true,,,,poll17187563
-"447 Luna Ave, Los Lunas, NM 87031",,10:00 AM - 06:00 PM,,ho45304397,false,true,,,,poll45304397
-"448 Luna Ave, Los Lunas, NM 87031",,10:00 AM - 06:00 PM,,ho15796684,false,true,,,,poll15796684
-"1300 West I-40 Frontage Road, Gallup, NM 87031",,10:00 AM - 06:00 PM,,ho59185868,false,true,,,,poll59185868
-"1301 West I-40 Frontage Road, Gallup, NM 87031",,12:00 PM - 08:00 PM,,ho52713792,false,true,,,,poll52713792
-"1302 West I-40 Frontage Road, Gallup, NM 87031",,10:00 AM - 06:00 PM,,ho21290864,false,true,,,,poll21290864
-"1303 West I-40 Frontage Road, Gallup, NM 87031",,12:00 PM - 08:00 PM,,ho2807746,false,true,,,,poll2807746
-"1304 West I-40 Frontage Road, Gallup, NM 87031",,10:00 AM - 06:00 PM,,ho79908277,false,true,,,,poll79908277
-"33A Pinsbaari Drive, Acoma, NM 87034",,08:00 AM - 04:00 PM,,ho81338829,false,true,,,,poll81338829
-"202 Broadway Ave., Moriarty, NM 87035",,10:00 AM - 06:00 PM,,ho32556519,false,true,,,,poll32556519
-"203 Broadway Ave., Moriarty, NM 87035",,10:00 AM - 06:00 PM,,ho79869588,false,true,,,,poll79869588
-"204 Broadway Ave., Moriarty, NM 87035",,10:00 AM - 06:00 PM,,ho50292015,false,true,,,,poll50292015
-"255 Cochiti St, Cochiti, NM 87041",,10:00 AM - 07:00 PM,,ho54239899,false,true,,,,poll54239899
-"7 Paseo De San Antonio, Placitas, NM 87043",,10:00 AM - 07:00 PM,,ho30688713,false,true,,,,poll30688713
-"8 Paseo De San Antonio, Placitas, NM 87043",,10:00 AM - 07:00 PM,,ho73064733,false,true,,,,poll73064733
-"9 Paseo De San Antonio, Placitas, NM 87043",,10:00 AM - 07:00 PM,,ho27819258,false,true,,,,poll27819258
-"800 South Hill Rd., Bernalillo, NM 87044",,10:00 AM - 07:00 PM,,ho30538808,false,true,,,,poll30538808
-"801 South Hill Rd., Bernalillo, NM 87044",,10:00 AM - 07:00 PM,,ho94306550,false,true,,,,poll94306550
-"802 South Hill Rd., Bernalillo, NM 87044",,10:00 AM - 07:00 PM,,ho5229547,false,true,,,,poll5229547
-"4326 Corrales Rd., Corrales, NM 87048",,10:00 AM - 07:00 PM,,ho27634171,false,true,,,,poll27634171
-"4327 Corrales Rd., Corrales, NM 87048",,10:00 AM - 07:00 PM,,ho58661057,false,true,,,,poll58661057
-"4328 Corrales Rd., Corrales, NM 87048",,10:00 AM - 07:00 PM,,ho74112901,false,true,,,,poll74112901
-"5 Cedar Rd., San Felipe Pueblo, NM 87049",,10:00 AM - 07:00 PM,,ho13182757,false,true,,,,poll13182757
-"Tesuque St., Santo Domingo Pueblo, NM 87052",,10:00 AM - 07:00 PM,,ho97196511,false,true,,,,poll97196511
-"135 Capitol Square Dr, Zia Pueblo, NM 87053",,10:00 AM - 07:00 PM,,ho12572993,false,true,,,,poll12572993
-"12 Camino Municipal, Tijeras, NM 87059",,08:00 AM - 08:00 PM,,ho77300808,false,true,,,,poll77300808
-"13 Camino Municipal, Tijeras, NM 87059",,08:00 AM - 08:00 PM,,ho45019167,false,true,,,,poll45019167
-"14 Camino Municipal, Tijeras, NM 87059",,08:00 AM - 08:00 PM,,ho96161565,false,true,,,,poll96161565
-"1455 W. Bosque Loop, Bosque Farms, NM 87068",,10:00 AM - 06:00 PM,,ho93089134,false,true,,,,poll93089134
-"1456 W. Bosque Loop, Bosque Farms, NM 87068",,10:00 AM - 06:00 PM,,ho77593549,false,true,,,,poll77593549
-"1457 W. Bosque Loop, Bosque Farms, NM 87068",,10:00 AM - 06:00 PM,,ho83752877,false,true,,,,poll83752877
-"1500 Lomas Blvd NW,Suite A, Albuquerque, NM 87104",,08:00 AM - 08:00 PM,,ho40174841,false,true,,,,poll40174841
-"1501 Lomas Blvd NW,Suite A, Albuquerque, NM 87104",,08:00 AM - 08:00 PM,,ho58924905,false,true,,,,poll58924905
-"1502 Lomas Blvd NW,Suite A, Albuquerque, NM 87104",,08:00 AM - 08:00 PM,,ho81887727,false,true,,,,poll81887727
-"1503 Lomas Blvd NW,Suite A, Albuquerque, NM 87104",,08:00 AM - 08:00 PM,,ho68064266,false,true,,,,poll68064266
-"2008 Larrazolo Rd. SW, Albuquerque, NM 87105",,08:00 AM - 08:00 PM,,ho39589751,false,true,,,,poll39589751
-"2009 Larrazolo Rd. SW, Albuquerque, NM 87105",,08:00 AM - 08:00 PM,,ho39506237,false,true,,,,poll39506237
-"2010 Larrazolo Rd. SW, Albuquerque, NM 87105",,08:00 AM - 08:00 PM,,ho53372215,false,true,,,,poll53372215
-"6080 Isleta Blvd. SW, Albuquerque, NM 87105",,08:00 AM - 08:00 PM,,ho14041129,false,true,,,,poll14041129
-"6081 Isleta Blvd. SW, Albuquerque, NM 87105",,08:00 AM - 08:00 PM,,ho92318816,false,true,,,,poll92318816
-"6082 Isleta Blvd. SW, Albuquerque, NM 87105",,08:00 AM - 08:00 PM,,ho78965483,false,true,,,,poll78965483
-"1 University of New Mexico, Albuquerque, NM 87106",,08:00 AM - 08:00 PM,,ho31049066,false,true,,,,poll31049066
-"2 University of New Mexico, Albuquerque, NM 87106",,08:00 AM - 08:00 PM,,ho5904252,false,true,,,,poll5904252
-"3 University of New Mexico, Albuquerque, NM 87106",,08:00 AM - 08:00 PM,,ho52529605,false,true,,,,poll52529605
-"6601 4th St NW, Suite K, L, Albuquerque, NM 87107",,08:00 AM - 08:00 PM,,ho85128097,false,true,,,,poll85128097
-"6602 4th St NW, Suite K, L, Albuquerque, NM 87107",,08:00 AM - 08:00 PM,,ho24138154,false,true,,,,poll24138154
-"6603 4th St NW, Suite K, L, Albuquerque, NM 87107",,08:00 AM - 08:00 PM,,ho94273881,false,true,,,,poll94273881
-"301 San Pedro Dr SE Suite B, C, D, E, Albuquerque, NM 87108",,08:00 AM - 08:00 PM,,ho91952681,false,true,,,,poll91952681
-"302 San Pedro Dr SE Suite B, C, D, E, Albuquerque, NM 87108",,08:00 AM - 08:00 PM,,ho43686298,false,true,,,,poll43686298
-"303 San Pedro Dr SE Suite B, C, D, E, Albuquerque, NM 87108",,08:00 AM - 08:00 PM,,ho90599462,false,true,,,,poll90599462
-"6001 San Mateo Blvd. Sute B-3, Albuquerque, NM 87109",,08:00 AM - 08:00 PM,,ho52767140,false,true,,,,poll52767140
-"6002 San Mateo Blvd. Sute B-3, Albuquerque, NM 87109",,08:00 AM - 08:00 PM,,ho7634688,false,true,,,,poll7634688
-"6003 San Mateo Blvd. Sute B-3, Albuquerque, NM 87109",,08:00 AM - 08:00 PM,,ho62358450,false,true,,,,poll62358450
-"5339 Menaul Blvd. NE, Albuquerque, NM 87110",,08:00 AM - 08:00 PM,,ho27812686,false,true,,,,poll27812686
-"5340 Menaul Blvd. NE, Albuquerque, NM 87110",,08:00 AM - 08:00 PM,,ho49369033,false,true,,,,poll49369033
-"5341 Menaul Blvd. NE, Albuquerque, NM 87110",,08:00 AM - 08:00 PM,,ho74917279,false,true,,,,poll74917279
-"12500 Montgomery Blvd NE, Suite 101, Albuquerque, NM 87111",,08:00 AM - 08:00 PM,,ho61314906,false,true,,,,poll61314906
-"12501 Montgomery Blvd NE, Suite 101, Albuquerque, NM 87111",,08:00 AM - 08:00 PM,,ho90436477,false,true,,,,poll90436477
-"12502 Montgomery Blvd NE, Suite 101, Albuquerque, NM 87111",,08:00 AM - 08:00 PM,,ho25275960,false,true,,,,poll25275960
-"4200 Wyoming Blvd NE Suite B-2, Albuquerque, NM 87111",,08:00 AM - 08:00 PM,,ho97019903,false,true,,,,poll97019903
-"4201 Wyoming Blvd NE Suite B-2, Albuquerque, NM 87111",,08:00 AM - 08:00 PM,,ho18165994,false,true,,,,poll18165994
-"4202 Wyoming Blvd NE Suite B-2, Albuquerque, NM 87111",,08:00 AM - 08:00 PM,,ho26776927,false,true,,,,poll26776927
-"6500 Holly Ave NE, Suite A6, Albuquerque, NM 87113",,08:00 AM - 08:00 PM,,ho35244151,false,true,,,,poll35244151
-"6501 Holly Ave NE, Suite A6, Albuquerque, NM 87113",,08:00 AM - 08:00 PM,,ho76262987,false,true,,,,poll76262987
-"6502 Holly Ave NE, Suite A6, Albuquerque, NM 87113",,08:00 AM - 08:00 PM,,ho92764043,false,true,,,,poll92764043
-"8201 Golf Course Rd NW, Suite C-1, Albuquerque, NM 87114",,08:00 AM - 08:00 PM,,ho92168968,false,true,,,,poll92168968
-"8202 Golf Course Rd NW, Suite C-1, Albuquerque, NM 87114",,08:00 AM - 08:00 PM,,ho52422270,false,true,,,,poll52422270
-"8203 Golf Course Rd NW, Suite C-1, Albuquerque, NM 87114",,08:00 AM - 08:00 PM,,ho25768655,false,true,,,,poll25768655
-"9421 Coors Blvd. NW Ste. G&H, Albuquerque, NM 87114",,08:00 AM - 08:00 PM,,ho18771880,false,true,,,,poll18771880
-"9422 Coors Blvd. NW Ste. G&H, Albuquerque, NM 87114",,08:00 AM - 08:00 PM,,ho62187654,false,true,,,,poll62187654
-"9423 Coors Blvd. NW Ste. G&H, Albuquerque, NM 87114",,08:00 AM - 08:00 PM,,ho8476866,false,true,,,,poll8476866
-"5201 Ouray NW Ste. D-2, Albuquerque, NM 87120",,08:00 AM - 08:00 PM,,ho33884294,false,true,,,,poll33884294
-"5202 Ouray NW Ste. D-2, Albuquerque, NM 87120",,08:00 AM - 08:00 PM,,ho90855694,false,true,,,,poll90855694
-"5203 Ouray NW Ste. D-2, Albuquerque, NM 87120",,08:00 AM - 08:00 PM,,ho95412679,false,true,,,,poll95412679
-"120 98th St. NW, Suite A5, Albuquerque, NM 87121",,08:00 AM - 08:00 PM,,ho44584008,false,true,,,,poll44584008
-"121 98th St. NW, Suite A5, Albuquerque, NM 87121",,08:00 AM - 08:00 PM,,ho32843864,false,true,,,,poll32843864
-"122 98th St. NW, Suite A5, Albuquerque, NM 87121",,08:00 AM - 08:00 PM,,ho7657394,false,true,,,,poll7657394
-"13140 Central Ave SE, Suite 1420, Albuquerque, NM 87123",,08:00 AM - 08:00 PM,,ho20937223,false,true,,,,poll20937223
-"13141 Central Ave SE, Suite 1420, Albuquerque, NM 87123",,08:00 AM - 08:00 PM,,ho31279711,false,true,,,,poll31279711
-"13142 Central Ave SE, Suite 1420, Albuquerque, NM 87123",,08:00 AM - 08:00 PM,,ho19711910,false,true,,,,poll19711910
-"3200 Civic Center Circle, Rio Rancho, NM 87124",,10:00 AM - 07:00 PM,,ho4417823,false,true,,,,poll4417823
-"3201 Civic Center Circle, Rio Rancho, NM 87124",,10:00 AM - 07:00 PM,,ho34859521,false,true,,,,poll34859521
-"3202 Civic Center Circle, Rio Rancho, NM 87124",,10:00 AM - 07:00 PM,,ho20299325,false,true,,,,poll20299325
-"950 Pinetree Rd. NE, Rio Rancho, NM 87124",,10:00 AM - 07:00 PM,,ho99706517,false,true,,,,poll99706517
-"951 Pinetree Rd. NE, Rio Rancho, NM 87124",,10:00 AM - 07:00 PM,,ho25209690,false,true,,,,poll25209690
-"952 Pinetree Rd. NE, Rio Rancho, NM 87124",,10:00 AM - 07:00 PM,,ho10326033,false,true,,,,poll10326033
-"138 Frontage Rd., Rio Rancho, NM 87124",,10:00 AM - 07:00 PM,,ho70557568,false,true,,,,poll70557568
-"139 Frontage Rd., Rio Rancho, NM 87124",,10:00 AM - 07:00 PM,,ho91848748,false,true,,,,poll91848748
-"140 Frontage Rd., Rio Rancho, NM 87124",,10:00 AM - 07:00 PM,,ho81959085,false,true,,,,poll81959085
-"755 Loma Colorado Dr NE, Rio Rancho, NM 87124",,10:00 AM - 07:00 PM,,ho18195669,false,true,,,,poll18195669
-"756 Loma Colorado Dr NE, Rio Rancho, NM 87124",,10:00 AM - 07:00 PM,,ho70461961,false,true,,,,poll70461961
-"757 Loma Colorado Dr NE, Rio Rancho, NM 87124",,10:00 AM - 07:00 PM,,ho14368897,false,true,,,,poll14368897
-"1500 Idalia Rd, Bernalillo, NM 87144",,08:00 AM - 05:00 PM,,ho64755063,false,true,,,,poll64755063
-"1501 Idalia Rd, Bernalillo, NM 87144",,10:00 AM - 05:00 PM,,ho4385675,false,true,,,,poll4385675
-"1502 Idalia Rd, Bernalillo, NM 87144",,08:00 AM - 05:00 PM,,ho40820255,false,true,,,,poll40820255
-"1503 Idalia Rd, Bernalillo, NM 87144",,10:00 AM - 05:00 PM,,ho33634643,false,true,,,,poll33634643
-"1504 Idalia Rd, Bernalillo, NM 87144",,08:00 AM - 05:00 PM,,ho93502067,false,true,,,,poll93502067
-"1505 Idalia Rd, Bernalillo, NM 87144",,10:00 AM - 05:00 PM,,ho596004,false,true,,,,poll596004
-"1506 Idalia Rd, Bernalillo, NM 87144",,08:00 AM - 05:00 PM,,ho32156837,false,true,,,,poll32156837
-"1507 Idalia Rd, Bernalillo, NM 87144",,10:00 AM - 05:00 PM,,ho62092966,false,true,,,,poll62092966
-"4330 Meadowlark  CT. SE, Rio Rancho, NM 87144",,10:00 AM - 07:00 PM,,ho40108114,false,true,,,,poll40108114
-"4331 Meadowlark  CT. SE, Rio Rancho, NM 87144",,10:00 AM - 07:00 PM,,ho65434940,false,true,,,,poll65434940
-"4332 Meadowlark  CT. SE, Rio Rancho, NM 87144",,10:00 AM - 07:00 PM,,ho96152474,false,true,,,,poll96152474
-"207 W. Hill Ave., Gallup, NM 87301",,08:00 AM - 05:00 PM,,ho19200967,false,true,,,,poll19200967
-"208 W. Hill Ave., Gallup, NM 87301",,10:00 AM - 06:00 PM,,ho29869729,false,true,,,,poll29869729
-"209 W. Hill Ave., Gallup, NM 87301",,08:00 AM - 05:00 PM,,ho14922188,false,true,,,,poll14922188
-"210 W. Hill Ave., Gallup, NM 87301",,10:00 AM - 06:00 PM,,ho38310783,false,true,,,,poll38310783
-"211 W. Hill Ave., Gallup, NM 87301",,08:00 AM - 05:00 PM,,ho38320316,false,true,,,,poll38320316
-"212 W. Hill Ave., Gallup, NM 87301",,10:00 AM - 06:00 PM,,ho22272788,false,true,,,,poll22272788
-"213 W. Hill Ave., Gallup, NM 87301",,08:00 AM - 05:00 PM,,ho99641021,false,true,,,,poll99641021
-"214 W. Hill Ave., Gallup, NM 87301",,10:00 AM - 06:00 PM,,ho47243583,false,true,,,,poll47243583
-"BIA Route 125, Mt View Community, Ramah, NM 87321",,08:00 AM - 04:00 PM,,ho38594267,false,true,,,,poll38594267
-"BIA Route 126, Mt View Community, Ramah, NM 87321",,08:00 AM - 04:00 PM,,ho58191602,false,true,,,,poll58191602
-"BIA Route 127, Mt View Community, Ramah, NM 87321",,08:00 AM - 04:00 PM,,ho6937458,false,true,,,,poll6937458
-"1203 State Hwy 53, Zuni, NM 87327",,09:00 AM - 05:00 PM,,ho67301381,false,true,,,,poll67301381
-"1204 State Hwy 53, Zuni, NM 87327",,12:00 PM - 08:00 PM,,ho16012356,false,true,,,,poll16012356
-"1205 State Hwy 53, Zuni, NM 87327",,09:00 AM - 05:00 PM,,ho67976580,false,true,,,,poll67976580
-"1206 State Hwy 53, Zuni, NM 87327",,12:00 PM - 08:00 PM,,ho98293934,false,true,,,,poll98293934
-"1207 State Hwy 53, Zuni, NM 87327",,09:00 AM - 05:00 PM,,ho99397422,false,true,,,,poll99397422
-"Mile Marker 13 N Hwy 491, Twin Lakes, NM 87375",,10:00 AM - 06:00 PM,,ho80306285,false,true,,,,poll80306285
-"Mile Marker 13 N Hwy 492, Twin Lakes, NM 87375",,12:00 PM - 08:00 PM,,ho85872314,false,true,,,,poll85872314
-"Mile Marker 13 N Hwy 493, Twin Lakes, NM 87375",,10:00 AM - 06:00 PM,,ho86320546,false,true,,,,poll86320546
-"Mile Marker 13 N Hwy 494, Twin Lakes, NM 87375",,12:00 PM - 08:00 PM,,ho43444536,false,true,,,,poll43444536
-"Mile Marker 13 N Hwy 495, Twin Lakes, NM 87375",,10:00 AM - 06:00 PM,,ho66180143,false,true,,,,poll66180143
-"3044 E. Main St., Farmington, NM 87402",,10:00 AM - 06:00 PM,,ho37118173,false,true,,,,poll37118173
-"3045 E. Main St., Farmington, NM 87402",,11:00 AM - 07:00 PM,,ho94083613,false,true,,,,poll94083613
-"3046 E. Main St., Farmington, NM 87402",,10:00 AM - 06:00 PM,,ho37916785,false,true,,,,poll37916785
-"3047 E. Main St., Farmington, NM 87402",,11:00 AM - 07:00 PM,,ho52343220,false,true,,,,poll52343220
-"3048 E. Main St., Farmington, NM 87402",,10:00 AM - 06:00 PM,,ho94323623,false,true,,,,poll94323623
-"100 South Oliver Drive, Suite 200, Aztec, NM 87410",,07:00 AM - 05:30 PM,,ho66070428,false,true,,,,poll66070428
-"101 South Oliver Drive, Suite 200, Aztec, NM 87410",,07:00 AM - 07:00 PM,,ho2385765,false,true,,,,poll2385765
-"102 South Oliver Drive, Suite 200, Aztec, NM 87410",,10:00 AM - 06:00 PM,,ho86583736,false,true,,,,poll86583736
-"103 South Oliver Drive, Suite 200, Aztec, NM 87410",,07:00 AM - 07:00 PM,,ho34505066,false,true,,,,poll34505066
-"104 South Oliver Drive, Suite 200, Aztec, NM 87410",,10:00 AM - 06:00 PM,,ho85111717,false,true,,,,poll85111717
-"105 South Oliver Drive, Suite 200, Aztec, NM 87410",,07:00 AM - 07:00 PM,,ho49707970,false,true,,,,poll49707970
-"106 South Oliver Drive, Suite 200, Aztec, NM 87410",,10:00 AM - 06:00 PM,,ho42025819,false,true,,,,poll42025819
-"336 S. First St., Bloomfield, NM 87413",,10:00 AM - 06:00 PM,,ho7746169,false,true,,,,poll7746169
-"337 S. First St., Bloomfield, NM 87413",,11:00 AM - 06:00 PM,,ho65147612,false,true,,,,poll65147612
-"338 S. First St., Bloomfield, NM 87413",,10:00 AM - 06:00 PM,,ho44412556,false,true,,,,poll44412556
-"339 S. First St., Bloomfield, NM 87413",,11:00 AM - 06:00 PM,,ho82782020,false,true,,,,poll82782020
-"340 S. First St., Bloomfield, NM 87413",,10:00 AM - 06:00 PM,,ho90396091,false,true,,,,poll90396091
-"Behind Wells Fargo Bank, Shiprock, NM 87420",,10:00 AM - 06:00 PM,,ho74812149,false,true,,,,poll74812149
-"NM # 56.5 U.S. Highway 494, Newcomb, NM 87455",,10:00 AM - 06:00 PM,,ho82912582,false,true,,,,poll82912582
-"NM # 56.5 U.S. Highway 495, Newcomb, NM 87455",,11:00 AM - 07:00 PM,,ho1393740,false,true,,,,poll1393740
-"NM # 56.5 U.S. Highway 496, Newcomb, NM 87455",,10:00 AM - 06:00 PM,,ho49036076,false,true,,,,poll49036076
-"NM # 56.5 U.S. Highway 497, Newcomb, NM 87455",,11:00 AM - 07:00 PM,,ho86904481,false,true,,,,poll86904481
-"NM # 56.5 U.S. Highway 498, Newcomb, NM 87455",,10:00 AM - 06:00 PM,,ho72143627,false,true,,,,poll72143627
-"105 Grant Ave, Santa Fe, NM 87504",,10:00 AM - 06:00 PM,,ho78303991,false,true,,,,poll78303991
-"106 Grant Ave, Santa Fe, NM 87504",,08:00 AM - 05:00 PM,,ho96578283,false,true,,,,poll96578283
-"107 Grant Ave, Santa Fe, NM 87504",,10:00 AM - 06:00 PM,,ho31675200,false,true,,,,poll31675200
-"108 Grant Ave, Santa Fe, NM 87504",,08:00 AM - 05:00 PM,,ho51138501,false,true,,,,poll51138501
-"109 Grant Ave, Santa Fe, NM 87504",,10:00 AM - 06:00 PM,,ho49022088,false,true,,,,poll49022088
-"121 Siringo Rd., Santa Fe, NM 87505",,10:00 AM - 06:00 PM,,ho10625697,false,true,,,,poll10625697
-"122 Siringo Rd., Santa Fe, NM 87505",,12:00 PM - 08:00 PM,,ho26529217,false,true,,,,poll26529217
-"123 Siringo Rd., Santa Fe, NM 87505",,10:00 AM - 06:00 PM,,ho50721262,false,true,,,,poll50721262
-"124 Siringo Rd., Santa Fe, NM 87505",,12:00 PM - 08:00 PM,,ho5539786,false,true,,,,poll5539786
-"125 Siringo Rd., Santa Fe, NM 87505",,10:00 AM - 06:00 PM,,ho79487047,false,true,,,,poll79487047
-"5 W. Gutierrez Ste. 9, Pojoaque Pueblo Plaza, Pojoaque, NM 87506",,10:00 AM - 06:00 PM,,ho51190603,false,true,,,,poll51190603
-"6 W. Gutierrez Ste. 9, Pojoaque Pueblo Plaza, Pojoaque, NM 87506",,12:00 PM - 08:00 PM,,ho54957275,false,true,,,,poll54957275
-"7 W. Gutierrez Ste. 9, Pojoaque Pueblo Plaza, Pojoaque, NM 87506",,10:00 AM - 06:00 PM,,ho15579097,false,true,,,,poll15579097
-"8 W. Gutierrez Ste. 9, Pojoaque Pueblo Plaza, Pojoaque, NM 87506",,12:00 PM - 08:00 PM,,ho67978083,false,true,,,,poll67978083
-"9 W. Gutierrez Ste. 9, Pojoaque Pueblo Plaza, Pojoaque, NM 87506",,10:00 AM - 06:00 PM,,ho41770973,false,true,,,,poll41770973
-"3229 Rodeo Rd, Santa Fe, NM 87507",,10:00 AM - 06:00 PM,,ho96412146,false,true,,,,poll96412146
-"3230 Rodeo Rd, Santa Fe, NM 87507",,12:00 PM - 08:00 PM,,ho56722592,false,true,,,,poll56722592
-"3231 Rodeo Rd, Santa Fe, NM 87507",,10:00 AM - 06:00 PM,,ho45156632,false,true,,,,poll45156632
-"3232 Rodeo Rd, Santa Fe, NM 87507",,12:00 PM - 08:00 PM,,ho78052767,false,true,,,,poll78052767
-"3233 Rodeo Rd, Santa Fe, NM 87507",,10:00 AM - 06:00 PM,,ho97513279,false,true,,,,poll97513279
-"16 Avenida Torreon, Eldorado, NM 87508",,10:00 AM - 06:00 PM,,ho49586444,false,true,,,,poll49586444
-"17 Avenida Torreon, Eldorado, NM 87508",,12:00 PM - 08:00 PM,,ho76814386,false,true,,,,poll76814386
-"18 Avenida Torreon, Eldorado, NM 87508",,10:00 AM - 06:00 PM,,ho66105344,false,true,,,,poll66105344
-"19 Avenida Torreon, Eldorado, NM 87508",,12:00 PM - 08:00 PM,,ho83334775,false,true,,,,poll83334775
-"20 Avenida Torreon, Eldorado, NM 87508",,10:00 AM - 06:00 PM,,ho90262565,false,true,,,,poll90262565
-"25 Hawk Dr, Dulce, NM 87528",,10:00 AM - 06:00 PM,,ho96537896,false,true,,,,poll96537896
-"2010 Industrial Park Rd., Espanola, NM 87532",,10:00 AM - 06:00 PM,,ho24830069,false,true,,,,poll24830069
-"2011 Industrial Park Rd., Espanola, NM 87532",,10:00 AM - 06:00 PM,,ho39279829,false,true,,,,poll39279829
-"2012 Industrial Park Rd., Espanola, NM 87532",,10:00 AM - 06:00 PM,,ho91247664,false,true,,,,poll91247664
-"636 One Kee St, Espanola, NM 87532",,10:00 AM - 03:00 PM,,ho92159587,false,true,,,,poll92159587
-"637 One Kee St, Espanola, NM 87532",,08:00 AM - 03:00 PM,,ho94760000,false,true,,,,poll94760000
-"1000 Central Ave., Los Alamos, NM 87544",,08:00 AM - 05:00 PM,,ho76631898,false,true,,,,poll76631898
-"1001 Central Ave., Los Alamos, NM 87544",,08:00 AM - 05:00 PM,,ho76912524,false,true,,,,poll76912524
-"1002 Central Ave., Los Alamos, NM 87544",,08:00 AM - 06:00 PM,,ho34050691,false,true,,,,poll34050691
-"1003 Central Ave., Los Alamos, NM 87544",,08:00 AM - 06:00 PM,,ho76343544,false,true,,,,poll76343544
-"1004 Central Ave., Los Alamos, NM 87544",,08:00 AM - 06:00 PM,,ho2392048,false,true,,,,poll2392048
-"1005 Central Ave., Los Alamos, NM 87544",,10:00 AM - 06:00 PM,,ho399346,false,true,,,,poll399346
-"10 Sherwood Blvd., White Rock, NM 87544",,06:00 AM - 06:00 PM,,ho54952378,false,true,,,,poll54952378
-"11 Sherwood Blvd., White Rock, NM 87544",,06:00 AM - 06:00 PM,,ho66745427,false,true,,,,poll66745427
-"12 Sherwood Blvd., White Rock, NM 87544",,06:00 AM - 06:00 PM,,ho37623893,false,true,,,,poll37623893
-"13 Sherwood Blvd., White Rock, NM 87544",,10:00 AM - 06:00 PM,,ho72210704,false,true,,,,poll72210704
-"14136 State Road 75, Penasco, NM 87553",,10:00 AM - 06:00 PM,,ho29181396,false,true,,,,poll29181396
-"14137 State Road 75, Penasco, NM 87553",,10:00 AM - 06:00 PM,,ho99339572,false,true,,,,poll99339572
-"MM 70, NM Highway 3, Ribera, NM 87560",,10:00 AM - 06:00 PM,,ho22301296,false,true,,,,poll22301296
-"MM 70, NM Highway 4, Ribera, NM 87560",,10:00 AM - 06:00 PM,,ho10157874,false,true,,,,poll10157874
-"MM 70, NM Highway 5, Ribera, NM 87560",,10:00 AM - 06:00 PM,,ho86125541,false,true,,,,poll86125541
-"2500 Old St Rd 3, Questa, NM 87566",,10:00 AM - 06:00 PM,,ho95589904,false,true,,,,poll95589904
-"2501 Old St Rd 3, Questa, NM 87566",,10:00 AM - 06:00 PM,,ho30281295,false,true,,,,poll30281295
-"2502 Old St Rd 3, Questa, NM 87566",,10:00 AM - 06:00 PM,,ho65742108,false,true,,,,poll65742108
-"217 N. Cross Place, Ohkay Owingeh, NM 87566",,09:00 AM - 06:00 PM,,ho12896292,false,true,,,,poll12896292
-"218 N. Cross Place, Ohkay Owingeh, NM 87566",,09:00 AM - 06:00 PM,,ho60705009,false,true,,,,poll60705009
-"219 N. Cross Place, Ohkay Owingeh, NM 87566",,09:00 AM - 06:00 PM,,ho59839124,false,true,,,,poll59839124
-"105 Albright Street, Suite D, Taos, NM 87571",,08:00 AM - 05:00 PM,,ho41494668,false,true,,,,poll41494668
-"106 Albright Street, Suite D, Taos, NM 87571",,08:00 AM - 05:00 PM,,ho53496795,false,true,,,,poll53496795
-"107 Albright Street, Suite D, Taos, NM 87571",,08:00 AM - 05:00 PM,,ho30531826,false,true,,,,poll30531826
-"108 Albright Street, Suite D, Taos, NM 87571",,08:00 AM - 06:00 PM,,ho81205969,false,true,,,,poll81205969
-"109 Albright Street, Suite D, Taos, NM 87571",,08:00 AM - 05:00 PM,,ho46825110,false,true,,,,poll46825110
-"110 Albright Street, Suite D, Taos, NM 87571",,08:00 AM - 06:00 PM,,ho9030695,false,true,,,,poll9030695
-"111 Albright Street, Suite D, Taos, NM 87571",,08:00 AM - 05:00 PM,,ho13169283,false,true,,,,poll13169283
-"489 Blueberry Hill Rd, Taos, NM 87571",,10:00 AM - 06:00 PM,,ho90239704,false,true,,,,poll90239704
-"490 Blueberry Hill Rd, Taos, NM 87571",,10:00 AM - 06:00 PM,,ho52927611,false,true,,,,poll52927611
-"491 Blueberry Hill Rd, Taos, NM 87571",,10:00 AM - 06:00 PM,,ho48123629,false,true,,,,poll48123629
-"7 Main Street, Tierra Amarilla, NM 87575",,08:00 AM - 05:00 PM,,ho80326294,false,true,,,,poll80326294
-"8 Main Street, Tierra Amarilla, NM 87575",,08:00 AM - 05:00 PM,,ho65150972,false,true,,,,poll65150972
-"9 Main Street, Tierra Amarilla, NM 87575",,08:00 AM - 05:00 PM,,ho28412741,false,true,,,,poll28412741
-"10 Main Street, Tierra Amarilla, NM 87575",,08:00 AM - 05:00 PM,,ho24872194,false,true,,,,poll24872194
-"11 Main Street, Tierra Amarilla, NM 87575",,08:00 AM - 05:00 PM,,ho1383110,false,true,,,,poll1383110
-"12 Main Street, Tierra Amarilla, NM 87575",,10:00 AM - 06:00 PM,,ho50925274,false,true,,,,poll50925274
-"500 W. National Ave., Ste.113, Las Vegas, NM 87701",,08:00 AM - 05:00 PM,,ho86639457,false,true,,,,poll86639457
-"501 W. National Ave., Ste.113, Las Vegas, NM 87701",,10:00 AM - 06:00 PM,,ho10809024,false,true,,,,poll10809024
-"502 W. National Ave., Ste.113, Las Vegas, NM 87701",,08:00 AM - 05:00 PM,,ho5754675,false,true,,,,poll5754675
-"503 W. National Ave., Ste.113, Las Vegas, NM 87701",,10:00 AM - 06:00 PM,,ho55138560,false,true,,,,poll55138560
-"504 W. National Ave., Ste.113, Las Vegas, NM 87701",,08:00 AM - 05:00 PM,,ho84808902,false,true,,,,poll84808902
-"505 W. National Ave., Ste.113, Las Vegas, NM 87701",,10:00 AM - 06:00 PM,,ho13877080,false,true,,,,poll13877080
-"506 W. National Ave., Ste.113, Las Vegas, NM 87701",,08:00 AM - 05:00 PM,,ho87958255,false,true,,,,poll87958255
-"507 W. National Ave., Ste.113, Las Vegas, NM 87701",,10:00 AM - 06:00 PM,,ho53213795,false,true,,,,poll53213795
-"3388 Mountain View Blvd, Angel Fire, NM 87710",,08:00 AM - 05:00 PM,,ho63277691,false,true,,,,poll63277691
-"3389 Mountain View Blvd, Angel Fire, NM 87710",,08:00 AM - 05:00 PM,,ho58361437,false,true,,,,poll58361437
-"356 E 9th St, Cimarron, NM 87714",,08:00 AM - 05:00 PM,,ho68606294,false,true,,,,poll68606294
-"151 Willow Creek Dr, Eagle Nest, NM 87718",,08:00 AM - 05:00 PM,,ho9490124,false,true,,,,poll9490124
-"1 Courthouse Rd. MM 29.5, Mora, NM 87732",,08:00 AM - 05:00 PM,,ho67655714,false,true,,,,poll67655714
-"2 Courthouse Rd. MM 29.5, Mora, NM 87732",,10:00 AM - 06:00 PM,,ho4077603,false,true,,,,poll4077603
-"3 Courthouse Rd. MM 29.5, Mora, NM 87732",,08:00 AM - 05:00 PM,,ho88402422,false,true,,,,poll88402422
-"4 Courthouse Rd. MM 29.5, Mora, NM 87732",,10:00 AM - 06:00 PM,,ho98242768,false,true,,,,poll98242768
-"5 Courthouse Rd. MM 29.5, Mora, NM 87732",,08:00 AM - 05:00 PM,,ho60148445,false,true,,,,poll60148445
-"6 Courthouse Rd. MM 29.5, Mora, NM 87732",,10:00 AM - 06:00 PM,,ho77328371,false,true,,,,poll77328371
-"7 Courthouse Rd. MM 29.5, Mora, NM 87732",,08:00 AM - 05:00 PM,,ho80403976,false,true,,,,poll80403976
-"8 Courthouse Rd. MM 29.5, Mora, NM 87732",,10:00 AM - 06:00 PM,,ho88855751,false,true,,,,poll88855751
-"35 Pine Street, Mosquero, NM 87733",,08:00 AM - 04:00 PM,,ho36164719,false,true,,,,poll36164719
-"36 Pine Street, Mosquero, NM 87733",,10:00 AM - 06:00 PM,,ho23823241,false,true,,,,poll23823241
-"37 Pine Street, Mosquero, NM 87733",,08:00 AM - 04:00 PM,,ho56006914,false,true,,,,poll56006914
-"38 Pine Street, Mosquero, NM 87733",,10:00 AM - 06:00 PM,,ho56703029,false,true,,,,poll56703029
-"39 Pine Street, Mosquero, NM 87733",,08:00 AM - 04:00 PM,,ho84160780,false,true,,,,poll84160780
-"40 Pine Street, Mosquero, NM 87733",,10:00 AM - 06:00 PM,,ho6990420,false,true,,,,poll6990420
-"41 Pine Street, Mosquero, NM 87733",,08:00 AM - 04:00 PM,,ho29422103,false,true,,,,poll29422103
-"42 Pine Street, Mosquero, NM 87733",,10:00 AM - 06:00 PM,,ho98362663,false,true,,,,poll98362663
-"230 North 3rd Street, Raton, NM 87740",,08:00 AM - 05:00 PM,,ho30758530,false,true,,,,poll30758530
-"231 North 3rd Street, Raton, NM 87740",,10:00 AM - 06:00 PM,,ho17707490,false,true,,,,poll17707490
-"232 North 3rd Street, Raton, NM 87740",,08:00 AM - 05:00 PM,,ho28431667,false,true,,,,poll28431667
-"233 North 3rd Street, Raton, NM 87740",,10:00 AM - 06:00 PM,,ho5790768,false,true,,,,poll5790768
-"234 North 3rd Street, Raton, NM 87740",,08:00 AM - 05:00 PM,,ho3772737,false,true,,,,poll3772737
-"235 North 3rd Street, Raton, NM 87740",,10:00 AM - 06:00 PM,,ho33767786,false,true,,,,poll33767786
-"236 North 3rd Street, Raton, NM 87740",,08:00 AM - 05:00 PM,,ho50606499,false,true,,,,poll50606499
-"237 North 3rd Street, Raton, NM 87740",,10:00 AM - 06:00 PM,,ho5175567,false,true,,,,poll5175567
-"516 Maxwell Ave, Springer, NM 87747",,08:00 AM - 05:00 PM,,ho57154963,false,true,,,,poll57154963
-"200 Church Street, Socorro, NM 87801",,08:00 AM - 05:00 PM,,ho34877166,false,true,,,,poll34877166
-"201 Church Street, Socorro, NM 87801",,08:00 AM - 05:00 PM,,ho69238604,false,true,,,,poll69238604
-"202 Church Street, Socorro, NM 87801",,08:00 AM - 05:00 PM,,ho30040523,false,true,,,,poll30040523
-"203 Church Street, Socorro, NM 87801",,08:00 AM - 05:00 PM,,ho76739441,false,true,,,,poll76739441
-"204 Church Street, Socorro, NM 87801",,09:00 AM - 05:00 PM,,ho40021239,false,true,,,,poll40021239
-"16 Old State Road 60, Datil, NM 87821",,08:00 AM - 04:30 PM,,ho1857983,false,true,,,,poll1857983
-"500 9th St., Magdalena, NM 87825",,09:00 AM - 05:00 PM,,ho21424790,false,true,,,,poll21424790
-"501 9th St., Magdalena, NM 87825",,10:00 AM - 06:00 PM,,ho75032824,false,true,,,,poll75032824
-"502 9th St., Magdalena, NM 87825",,09:00 AM - 05:00 PM,,ho34413271,false,true,,,,poll34413271
-"503 9th St., Magdalena, NM 87825",,10:00 AM - 06:00 PM,,ho77586055,false,true,,,,poll77586055
-"504 9th St., Magdalena, NM 87825",,09:00 AM - 05:00 PM,,ho50990606,false,true,,,,poll50990606
-"27 lopez Street, Quemado, NM 87829",,08:00 AM - 04:30 PM,,ho91975651,false,true,,,,poll91975651
-"101 Main St, Reserve, NM 87830",,08:00 AM - 04:30 PM,,ho17955328,false,true,,,,poll17955328
-"102 Main St, Reserve, NM 87830",,10:00 AM - 06:00 PM,,ho24732255,false,true,,,,poll24732255
-"103 Main St, Reserve, NM 87830",,08:00 AM - 04:30 PM,,ho53741294,false,true,,,,poll53741294
-"104 Main St, Reserve, NM 87830",,10:00 AM - 06:00 PM,,ho7651771,false,true,,,,poll7651771
-"105 Main St, Reserve, NM 87830",,08:00 AM - 04:30 PM,,ho63590724,false,true,,,,poll63590724
-"106 Main St, Reserve, NM 87830",,10:00 AM - 06:00 PM,,ho91122996,false,true,,,,poll91122996
-"107 Main St, Reserve, NM 87830",,08:00 AM - 04:30 PM,,ho8588794,false,true,,,,poll8588794
-"108 Main St, Reserve, NM 87830",,10:00 AM - 06:00 PM,,ho46887443,false,true,,,,poll46887443
-"100 N. Date St., T or C, NM 87901",,08:00 AM - 05:00 PM,,ho70992321,false,true,,,,poll70992321
-"101 N. Date St., T or C, NM 87901",,10:00 AM - 06:00 PM,,ho69681923,false,true,,,,poll69681923
-"102 N. Date St., T or C, NM 87901",,08:00 AM - 05:00 PM,,ho93281999,false,true,,,,poll93281999
-"103 N. Date St., T or C, NM 87901",,10:00 AM - 06:00 PM,,ho29778042,false,true,,,,poll29778042
-"104 N. Date St., T or C, NM 87901",,08:00 AM - 05:00 PM,,ho73744818,false,true,,,,poll73744818
-"105 N. Date St., T or C, NM 87901",,10:00 AM - 06:00 PM,,ho82138787,false,true,,,,poll82138787
-"106 N. Date St., T or C, NM 87901",,08:00 AM - 05:00 PM,,ho11817322,false,true,,,,poll11817322
-"107 N. Date St., T or C, NM 87901",,10:00 AM - 06:00 PM,,ho78259351,false,true,,,,poll78259351
-"219 E Hill St, Hatch, NM 87937",,11:00 AM - 07:00 PM,,ho74718193,false,true,,,,poll74718193
-"220 E Hill St, Hatch, NM 87937",,11:00 AM - 07:00 PM,,ho59969160,false,true,,,,poll59969160
-"221 E Hill St, Hatch, NM 87937",,11:00 AM - 07:00 PM,,ho74452955,false,true,,,,poll74452955
-"200 E Picacho Ave, Las Cruces, NM 88001",,11:00 AM - 07:00 PM,,ho61784048,false,true,,,,poll61784048
-"201 E Picacho Ave, Las Cruces, NM 88001",,11:00 AM - 07:00 PM,,ho73841966,false,true,,,,poll73841966
-"202 E Picacho Ave, Las Cruces, NM 88001",,11:00 AM - 07:00 PM,,ho19798976,false,true,,,,poll19798976
-"845 N Motel Blvd., Las Cruces, NM 88007",,08:00 AM - 05:00 PM,,ho50244425,false,true,,,,poll50244425
-"846 N Motel Blvd., Las Cruces, NM 88007",,10:00 AM - 06:00 PM,,ho60982947,false,true,,,,poll60982947
-"847 N Motel Blvd., Las Cruces, NM 88007",,08:00 AM - 05:00 PM,,ho27143816,false,true,,,,poll27143816
-"848 N Motel Blvd., Las Cruces, NM 88007",,10:00 AM - 06:00 PM,,ho41202574,false,true,,,,poll41202574
-"849 N Motel Blvd., Las Cruces, NM 88007",,08:00 AM - 05:00 PM,,ho42591330,false,true,,,,poll42591330
-"850 N Motel Blvd., Las Cruces, NM 88007",,10:00 AM - 06:00 PM,,ho88829929,false,true,,,,poll88829929
-"851 N Motel Blvd., Las Cruces, NM 88007",,08:00 AM - 05:00 PM,,ho71735364,false,true,,,,poll71735364
-"852 N Motel Blvd., Las Cruces, NM 88007",,10:00 AM - 06:00 PM,,ho70598396,false,true,,,,poll70598396
-"4201 Northrise Dr, Las Cruces, NM 88011",,11:00 AM - 07:00 PM,,ho61977867,false,true,,,,poll61977867
-"4202 Northrise Dr, Las Cruces, NM 88011",,11:00 AM - 07:00 PM,,ho67558590,false,true,,,,poll67558590
-"4203 Northrise Dr, Las Cruces, NM 88011",,11:00 AM - 07:00 PM,,ho74866675,false,true,,,,poll74866675
-"600 N 4th St, Anthony, NM 88021",,11:00 AM - 07:00 PM,,ho98728668,false,true,,,,poll98728668
-"601 N 4th St, Anthony, NM 88021",,11:00 AM - 07:00 PM,,ho68894911,false,true,,,,poll68894911
-"602 N 4th St, Anthony, NM 88021",,11:00 AM - 07:00 PM,,ho74807482,false,true,,,,poll74807482
-"290 Hurley Ave., Bayard, NM 88023",,09:00 AM - 06:00 PM,,ho85657958,false,true,,,,poll85657958
-"291 Hurley Ave., Bayard, NM 88023",,09:00 AM - 06:00 PM,,ho42235011,false,true,,,,poll42235011
-"292 Hurley Ave., Bayard, NM 88023",,09:00 AM - 06:00 PM,,ho46806037,false,true,,,,poll46806037
-"700 S. Silver Ave., Deming, NM 88030",,08:00 AM - 05:00 PM,,ho48279663,false,true,,,,poll48279663
-"701 S. Silver Ave., Deming, NM 88030",,08:00 AM - 05:00 PM,,ho30025456,false,true,,,,poll30025456
-"702 S. Silver Ave., Deming, NM 88030",,08:00 AM - 05:00 PM,,ho22417303,false,true,,,,poll22417303
-"703 S. Silver Ave., Deming, NM 88030",,11:00 AM - 07:00 PM,,ho13236447,false,true,,,,poll13236447
-"704 S. Silver Ave., Deming, NM 88030",,09:00 AM - 05:00 PM,,ho15513948,false,true,,,,poll15513948
-"705 S. Silver Ave., Deming, NM 88030",,08:00 AM - 05:00 PM,,ho50458484,false,true,,,,poll50458484
-"706 S. Silver Ave., Deming, NM 88030",,11:00 AM - 07:00 PM,,ho58682038,false,true,,,,poll58682038
-"707 S. Silver Ave., Deming, NM 88030",,09:00 AM - 05:00 PM,,ho25743119,false,true,,,,poll25743119
-"2300 E. Pine, Deming, NM 88030",,09:00 AM - 05:00 PM,,ho31326265,false,true,,,,poll31326265
-"2301 E. Pine, Deming, NM 88030",,11:00 AM - 07:00 PM,,ho89745471,false,true,,,,poll89745471
-"2302 E. Pine, Deming, NM 88030",,09:00 AM - 05:00 PM,,ho25121505,false,true,,,,poll25121505
-"2303 E. Pine, Deming, NM 88030",,11:00 AM - 07:00 PM,,ho32097250,false,true,,,,poll32097250
-"2304 E. Pine, Deming, NM 88030",,09:00 AM - 05:00 PM,,ho18831871,false,true,,,,poll18831871
-"21 Menges Lane, Glenwood, NM 88039",,08:00 AM - 04:30 PM,,ho46919956,false,true,,,,poll46919956
-"300 Shakespeare, Lordsburg, NM 88045",,09:00 AM - 05:00 PM,,ho28017967,false,true,,,,poll28017967
-"301 Shakespeare, Lordsburg, NM 88045",,10:00 AM - 06:00 PM,,ho3251227,false,true,,,,poll3251227
-"302 Shakespeare, Lordsburg, NM 88045",,09:00 AM - 05:00 PM,,ho41954999,false,true,,,,poll41954999
-"303 Shakespeare, Lordsburg, NM 88045",,10:00 AM - 06:00 PM,,ho55360028,false,true,,,,poll55360028
-"304 Shakespeare, Lordsburg, NM 88045",,09:00 AM - 05:00 PM,,ho65339558,false,true,,,,poll65339558
-"305 Shakespeare, Lordsburg, NM 88045",,10:00 AM - 06:00 PM,,ho20614398,false,true,,,,poll20614398
-"306 Shakespeare, Lordsburg, NM 88045",,09:00 AM - 05:00 PM,,ho47356307,false,true,,,,poll47356307
-"307 Shakespeare, Lordsburg, NM 88045",,10:00 AM - 06:00 PM,,ho42509315,false,true,,,,poll42509315
-"1400 HWY 180 E, Silver City, NM 88061",,08:00 AM - 05:00 PM,,ho10335570,false,true,,,,poll10335570
-"1401 HWY 180 E, Silver City, NM 88061",,08:00 AM - 05:00 PM,,ho87626642,false,true,,,,poll87626642
-"1402 HWY 180 E, Silver City, NM 88061",,08:00 AM - 05:00 PM,,ho90587279,false,true,,,,poll90587279
-"1403 HWY 180 E, Silver City, NM 88061",,08:00 AM - 05:00 PM,,ho56981520,false,true,,,,poll56981520
-"3365 McNutt Rd, Sunland Park, NM 88063",,11:00 AM - 07:00 PM,,ho19543610,false,true,,,,poll19543610
-"3366 McNutt Rd, Sunland Park, NM 88063",,11:00 AM - 07:00 PM,,ho64626283,false,true,,,,poll64626283
-"3367 McNutt Rd, Sunland Park, NM 88063",,11:00 AM - 07:00 PM,,ho87116052,false,true,,,,poll87116052
-"827 Luna Street, Chaparral, NM 88081",,10:00 AM - 06:00 PM,,ho21230804,false,true,,,,poll21230804
-"755 Prescott Anthony Dr., Chaparral, NM 88081",,11:00 AM - 07:00 PM,,ho65244351,false,true,,,,poll65244351
-"756 Prescott Anthony Dr., Chaparral, NM 88081",,11:00 AM - 07:00 PM,,ho50200939,false,true,,,,poll50200939
-"757 Prescott Anthony Dr., Chaparral, NM 88081",,11:00 AM - 07:00 PM,,ho70064800,false,true,,,,poll70064800
-"417 Gidding Suite #140, Clovis, NM 88101",,08:00 AM - 05:00 PM,,ho96814812,false,true,,,,poll96814812
-"418 Gidding Suite #140, Clovis, NM 88101",,08:00 AM - 05:00 PM,,ho18593934,false,true,,,,poll18593934
-"419 Gidding Suite #140, Clovis, NM 88101",,08:00 AM - 05:00 PM,,ho67989799,false,true,,,,poll67989799
-"420 Gidding Suite #140, Clovis, NM 88101",,08:00 AM - 05:00 PM,,ho73122475,false,true,,,,poll73122475
-"2809 North Prince St., Clovis, NM 88101",,10:00 AM - 06:00 PM,,ho91871033,false,true,,,,poll91871033
-"2810 North Prince St., Clovis, NM 88101",,10:00 AM - 06:00 PM,,ho58829839,false,true,,,,poll58829839
-"2811 North Prince St., Clovis, NM 88101",,10:00 AM - 06:00 PM,,ho32126107,false,true,,,,poll32126107
-"248 East Ave C, Fort Summer, NM 88119",,08:00 AM - 04:30 PM,,ho8980694,false,true,,,,poll8980694
-"249 East Ave C, Fort Summer, NM 88119",,10:00 AM - 06:00 PM,,ho91817043,false,true,,,,poll91817043
-"250 East Ave C, Fort Summer, NM 88119",,08:00 AM - 04:30 PM,,ho19222892,false,true,,,,poll19222892
-"251 East Ave C, Fort Summer, NM 88119",,10:00 AM - 06:00 PM,,ho47403949,false,true,,,,poll47403949
-"252 East Ave C, Fort Summer, NM 88119",,08:00 AM - 04:30 PM,,ho51958973,false,true,,,,poll51958973
-"253 East Ave C, Fort Summer, NM 88119",,10:00 AM - 06:00 PM,,ho96727774,false,true,,,,poll96727774
-"254 East Ave C, Fort Summer, NM 88119",,08:00 AM - 04:30 PM,,ho20161312,false,true,,,,poll20161312
-"255 East Ave C, Fort Summer, NM 88119",,10:00 AM - 06:00 PM,,ho82014919,false,true,,,,poll82014919
-"109 West 1st Street, Portales, NM 88130",,08:00 AM - 05:00 PM,,ho24704409,false,true,,,,poll24704409
-"110 West 1st Street, Portales, NM 88130",,10:00 AM - 06:00 PM,,ho8842287,false,true,,,,poll8842287
-"111 West 1st Street, Portales, NM 88130",,08:00 AM - 05:00 PM,,ho84845721,false,true,,,,poll84845721
-"112 West 1st Street, Portales, NM 88130",,10:00 AM - 06:00 PM,,ho74074650,false,true,,,,poll74074650
-"113 West 1st Street, Portales, NM 88130",,08:00 AM - 05:00 PM,,ho12006845,false,true,,,,poll12006845
-"114 West 1st Street, Portales, NM 88130",,10:00 AM - 06:00 PM,,ho45542853,false,true,,,,poll45542853
-"115 West 1st Street, Portales, NM 88130",,08:00 AM - 05:00 PM,,ho89538672,false,true,,,,poll89538672
-"116 West 1st Street, Portales, NM 88130",,10:00 AM - 06:00 PM,,ho62690489,false,true,,,,poll62690489
-"200 E. 7th Street, Portales, NM 88130",,10:00 AM - 06:00 PM,,ho78460279,false,true,,,,poll78460279
-"201 E. 7th Street, Portales, NM 88130",,12:00 PM - 08:00 PM,,ho26523576,false,true,,,,poll26523576
-"202 E. 7th Street, Portales, NM 88130",,10:00 AM - 06:00 PM,,ho88082680,false,true,,,,poll88082680
-"203 E. 7th Street, Portales, NM 88130",,12:00 PM - 08:00 PM,,ho41198838,false,true,,,,poll41198838
-"204 E. 7th Street, Portales, NM 88130",,10:00 AM - 06:00 PM,,ho80393053,false,true,,,,poll80393053
-"4501 N. Main St., Roswell, NM 88201",,10:00 AM - 06:00 PM,,ho73232612,false,true,,,,poll73232612
-"4502 N. Main St., Roswell, NM 88201",,10:00 AM - 06:00 PM,,ho68127589,false,true,,,,poll68127589
-"4503 N. Main St., Roswell, NM 88201",,10:00 AM - 06:00 PM,,ho90265272,false,true,,,,poll90265272
-"1 St. Marys Pl., Roswell, NM 88202",,08:00 AM - 05:00 PM,,ho26585032,false,true,,,,poll26585032
-"2 St. Marys Pl., Roswell, NM 88202",,08:00 AM - 05:00 PM,,ho36659236,false,true,,,,poll36659236
-"3 St. Marys Pl., Roswell, NM 88202",,10:00 AM - 06:00 PM,,ho68321102,false,true,,,,poll68321102
-"4 St. Marys Pl., Roswell, NM 88202",,08:00 AM - 05:00 PM,,ho66512307,false,true,,,,poll66512307
-"5 St. Marys Pl., Roswell, NM 88202",,10:00 AM - 06:00 PM,,ho63520360,false,true,,,,poll63520360
-"6 St. Marys Pl., Roswell, NM 88202",,08:00 AM - 05:00 PM,,ho19722506,false,true,,,,poll19722506
-"7 St. Marys Pl., Roswell, NM 88202",,10:00 AM - 06:00 PM,,ho93866147,false,true,,,,poll93866147
-"605 S. First St., Artesia, NM 88210",,08:00 AM - 04:00 PM,,ho72062504,false,true,,,,poll72062504
-"606 S. First St., Artesia, NM 88210",,08:00 AM - 05:00 PM,,ho76953695,false,true,,,,poll76953695
-"607 S. First St., Artesia, NM 88210",,08:00 AM - 04:00 PM,,ho95504399,false,true,,,,poll95504399
-"608 S. First St., Artesia, NM 88210",,08:00 AM - 05:00 PM,,ho40125585,false,true,,,,poll40125585
-"609 S. First St., Artesia, NM 88210",,08:00 AM - 04:00 PM,,ho82866913,false,true,,,,poll82866913
-"325 S. Main St., Carlsbad, NM 88220",,08:00 AM - 05:00 PM,,ho74457316,false,true,,,,poll74457316
-"326 S. Main St., Carlsbad, NM 88220",,08:00 AM - 05:00 PM,,ho96322546,false,true,,,,poll96322546
-"327 S. Main St., Carlsbad, NM 88220",,08:00 AM - 05:00 PM,,ho21289542,false,true,,,,poll21289542
-"328 S. Main St., Carlsbad, NM 88220",,08:00 AM - 05:00 PM,,ho363375,false,true,,,,poll363375
-"503 E Argyle, Hagerman, NM 88232",,08:00 AM - 05:00 PM,,ho33214235,false,true,,,,poll33214235
-"504 E Argyle, Hagerman, NM 88232",,08:00 AM - 05:00 PM,,ho39859312,false,true,,,,poll39859312
-"505 E Argyle, Hagerman, NM 88232",,08:00 AM - 05:00 PM,,ho41453796,false,true,,,,poll41453796
-"506 E Argyle, Hagerman, NM 88232",,08:00 AM - 05:00 PM,,ho39568810,false,true,,,,poll39568810
-"5101 N Lovington Hwy, Hobbs, NM 88240",,09:00 AM - 06:00 PM,,ho21387721,false,true,,,,poll21387721
-"5102 N Lovington Hwy, Hobbs, NM 88240",,09:00 AM - 06:00 PM,,ho21377995,false,true,,,,poll21377995
-"5103 N Lovington Hwy, Hobbs, NM 88240",,09:00 AM - 06:00 PM,,ho77349694,false,true,,,,poll77349694
-"1019 East Bender Boulevard, Hobbs, NM 88240",,09:00 AM - 06:00 PM,,ho85637303,false,true,,,,poll85637303
-"1020 East Bender Boulevard, Hobbs, NM 88240",,09:00 AM - 06:00 PM,,ho2412456,false,true,,,,poll2412456
-"1021 East Bender Boulevard, Hobbs, NM 88240",,09:00 AM - 06:00 PM,,ho24614885,false,true,,,,poll24614885
-"Twelfth & Avenue I, Eunice, NM 88252",,09:00 AM - 06:00 PM,,ho54329374,false,true,,,,poll54329374
-"309 South Main, Jal, NM 88252",,09:00 AM - 06:00 PM,,ho10862383,false,true,,,,poll10862383
-"310 South Main, Jal, NM 88252",,09:00 AM - 06:00 PM,,ho32917571,false,true,,,,poll32917571
-"311 South Main, Jal, NM 88252",,09:00 AM - 06:00 PM,,ho81447840,false,true,,,,poll81447840
-"100 North Main, Lovington, NM 88260",,08:00 AM - 05:00 PM,,ho75049786,false,true,,,,poll75049786
-"101 North Main, Lovington, NM 88260",,08:00 AM - 05:00 PM,,ho10258228,false,true,,,,poll10258228
-"102 North Main, Lovington, NM 88260",,09:00 AM - 06:00 PM,,ho87449224,false,true,,,,poll87449224
-"103 North Main, Lovington, NM 88260",,08:00 AM - 05:00 PM,,ho3482055,false,true,,,,poll3482055
-"104 North Main, Lovington, NM 88260",,09:00 AM - 06:00 PM,,ho17258201,false,true,,,,poll17258201
-"105 North Main, Lovington, NM 88260",,08:00 AM - 05:00 PM,,ho82629112,false,true,,,,poll82629112
-"106 North Main, Lovington, NM 88260",,09:00 AM - 06:00 PM,,ho54235201,false,true,,,,poll54235201
-"300 Central Avenue, Carrizozo, NM 88301",,08:00 AM - 05:00 PM,,ho81837598,false,true,,,,poll81837598
-"301 Central Avenue, Carrizozo, NM 88301",,08:00 AM - 05:00 PM,,ho78446768,false,true,,,,poll78446768
-"302 Central Avenue, Carrizozo, NM 88301",,10:00 AM - 06:00 PM,,ho57604105,false,true,,,,poll57604105
-"303 Central Avenue, Carrizozo, NM 88301",,08:00 AM - 05:00 PM,,ho45026139,false,true,,,,poll45026139
-"304 Central Avenue, Carrizozo, NM 88301",,10:00 AM - 06:00 PM,,ho30518274,false,true,,,,poll30518274
-"305 Central Avenue, Carrizozo, NM 88301",,08:00 AM - 05:00 PM,,ho7995412,false,true,,,,poll7995412
-"306 Central Avenue, Carrizozo, NM 88301",,10:00 AM - 06:00 PM,,ho34910087,false,true,,,,poll34910087
-"1101 New York Ave, Suite C, Alamogordo, NM 88310",,08:00 AM - 05:00 PM,,ho32800184,false,true,,,,poll32800184
-"1102 New York Ave, Suite C, Alamogordo, NM 88310",,10:00 AM - 06:00 PM,,ho85615726,false,true,,,,poll85615726
-"1103 New York Ave, Suite C, Alamogordo, NM 88310",,08:00 AM - 05:00 PM,,ho65102955,false,true,,,,poll65102955
-"1104 New York Ave, Suite C, Alamogordo, NM 88310",,10:00 AM - 06:00 PM,,ho25158484,false,true,,,,poll25158484
-"1105 New York Ave, Suite C, Alamogordo, NM 88310",,08:00 AM - 05:00 PM,,ho26394043,false,true,,,,poll26394043
-"1106 New York Ave, Suite C, Alamogordo, NM 88310",,10:00 AM - 06:00 PM,,ho82847149,false,true,,,,poll82847149
-"1107 New York Ave, Suite C, Alamogordo, NM 88310",,08:00 AM - 05:00 PM,,ho10630960,false,true,,,,poll10630960
-"1108 New York Ave, Suite C, Alamogordo, NM 88310",,10:00 AM - 06:00 PM,,ho25081184,false,true,,,,poll25081184
-"401 Fairgrounds Rd., Alamogordo, NM 88310",,10:00 AM - 06:00 PM,,ho71866975,false,true,,,,poll71866975
-"402 Fairgrounds Rd., Alamogordo, NM 88310",,10:00 AM - 06:00 PM,,ho36734785,false,true,,,,poll36734785
-"403 Fairgrounds Rd., Alamogordo, NM 88310",,10:00 AM - 06:00 PM,,ho93326533,false,true,,,,poll93326533
-"201 Burro Ave., Cloudcroft, NM 88317",,10:00 AM - 06:00 PM,,ho17706720,false,true,,,,poll17706720
-"287 Carrizo Canyon Rd., Mescalero, NM 88340",,10:00 AM - 06:00 PM,,ho45929450,false,true,,,,poll45929450
-"237 Service Rd, Ruidoso, NM 88345",,10:00 AM - 06:00 PM,,ho35478273,false,true,,,,poll35478273
-"238 Service Rd, Ruidoso, NM 88345",,10:00 AM - 06:00 PM,,ho91722600,false,true,,,,poll91722600
-"239 Service Rd, Ruidoso, NM 88345",,10:00 AM - 06:00 PM,,ho14251930,false,true,,,,poll14251930
-"609 St Francis Dr, Tularosa, NM 88352",,10:00 AM - 06:00 PM,,ho37196142,false,true,,,,poll37196142
-"300 South Third St., Tucumcari, NM 88401",,08:00 AM - 05:00 PM,,ho40178275,false,true,,,,poll40178275
-"301 South Third St., Tucumcari, NM 88401",,10:00 AM - 06:00 PM,,ho69496159,false,true,,,,poll69496159
-"302 South Third St., Tucumcari, NM 88401",,08:00 AM - 05:00 PM,,ho37615088,false,true,,,,poll37615088
-"303 South Third St., Tucumcari, NM 88401",,10:00 AM - 06:00 PM,,ho82131794,false,true,,,,poll82131794
-"304 South Third St., Tucumcari, NM 88401",,08:00 AM - 05:00 PM,,ho55499093,false,true,,,,poll55499093
-"305 South Third St., Tucumcari, NM 88401",,10:00 AM - 06:00 PM,,ho98515954,false,true,,,,poll98515954
-"306 South Third St., Tucumcari, NM 88401",,08:00 AM - 05:00 PM,,ho28626326,false,true,,,,poll28626326
-"307 South Third St., Tucumcari, NM 88401",,10:00 AM - 06:00 PM,,ho50008482,false,true,,,,poll50008482
-"200 Court St, Clayton, NM 88415",,08:00 AM - 12:00 PM,,ho48730983,false,true,,,,poll48730983
-"201 Court St, Clayton, NM 88415",,01:00 PM - 05:00 PM,,ho59071677,false,true,,,,poll59071677
-"202 Court St, Clayton, NM 88415",,08:00 AM - 12:00 PM,,ho17870043,false,true,,,,poll17870043
-"203 Court St, Clayton, NM 88415",,01:00 PM - 05:00 PM,,ho68692158,false,true,,,,poll68692158
-"204 Court St, Clayton, NM 88415",,08:00 AM - 12:00 PM,,ho95885362,false,true,,,,poll95885362
-"205 Court St, Clayton, NM 88415",,01:00 PM - 05:00 PM,,ho44224405,false,true,,,,poll44224405
-"206 Court St, Clayton, NM 88415",,08:00 AM - 12:00 PM,,ho96802341,false,true,,,,poll96802341
-"207 Court St, Clayton, NM 88415",,01:00 PM - 05:00 PM,,ho77435851,false,true,,,,poll77435851
-"205 court St, Clayton, NM 88415",,10:00 AM - 06:00 PM,,ho15639569,false,true,,,,poll15639569
-"206 court St, Clayton, NM 88415",,08:00 AM - 12:00 PM,,ho91344512,false,true,,,,poll91344512
-"207 court St, Clayton, NM 88415",,01:00 PM - 05:00 PM,,ho13433106,false,true,,,,poll13433106
-"208 court St, Clayton, NM 88415",,10:00 AM - 06:00 PM,,ho97152145,false,true,,,,poll97152145
-"209 court St, Clayton, NM 88415",,08:00 AM - 12:00 PM,,ho13444589,false,true,,,,poll13444589
-"210 court St, Clayton, NM 88415",,01:00 PM - 05:00 PM,,ho15623158,false,true,,,,poll15623158
-"211 court St, Clayton, NM 88415",,10:00 AM - 06:00 PM,,ho78990424,false,true,,,,poll78990424
-"1448 Historis Route 66, Santa Rosa, NM 88435",,08:00 AM - 04:00 PM,,ho62948082,false,true,,,,poll62948082
-"1449 Historis Route 66, Santa Rosa, NM 88435",,08:00 AM - 04:00 PM,,ho6884736,false,true,,,,poll6884736
-"1450 Historis Route 66, Santa Rosa, NM 88435",,10:00 AM - 06:00 PM,,ho93576885,false,true,,,,poll93576885
-"1451 Historis Route 66, Santa Rosa, NM 88435",,08:00 AM - 04:00 PM,,ho88757278,false,true,,,,poll88757278
-"1452 Historis Route 66, Santa Rosa, NM 88435",,10:00 AM - 06:00 PM,,ho9549059,false,true,,,,poll9549059
-"1453 Historis Route 66, Santa Rosa, NM 88435",,08:00 AM - 04:00 PM,,ho60663140,false,true,,,,poll60663140
-"1454 Historis Route 66, Santa Rosa, NM 88435",,10:00 AM - 06:00 PM,,ho26264126,false,true,,,,poll26264126
-"Navajo Election Office at the OLD PUBLIC Safety Building, Crownpoint, NM 87313",,09:00 AM - 05:00 PM,,ho37545868,false,true,,,,poll37545868
-"Navajo Election Office at the OLD PUBLIC Safety Building, Crownpoint, NM 87314",,09:00 AM - 05:00 PM,,ho89554223,false,true,,,,poll89554223
-"Navajo Election Office at the OLD PUBLIC Safety Building, Crownpoint, NM 87315",,09:00 AM - 05:00 PM,,ho36573406,false,true,,,,poll36573406
-"# 65 First Avenue, Thoreau, NM 87323",,10:00 AM - 06:00 PM,,ho10173822,false,true,,,,poll10173822
-"# 65 First Avenue, Thoreau, NM 87324",,12:00 PM - 08:00 PM,,ho13954558,false,true,,,,poll13954558
-"# 65 First Avenue, Thoreau, NM 87325",,10:00 AM - 06:00 PM,,ho41620405,false,true,,,,poll41620405
-"# 65 First Avenue, Thoreau, NM 87326",,12:00 PM - 08:00 PM,,ho35595506,false,true,,,,poll35595506
-"# 65 First Avenue, Thoreau, NM 87327",,10:00 AM - 06:00 PM,,ho1019209,false,true,,,,poll1019209
+name,address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+Belen Community Center,"305 Eagle Lane, Belen, NM 87002",,10:00 AM - 06:00 PM,,ho47617096,false,true,,,,poll47617096
+Santa Ana Pueblo Community Center,"2 Dove Rd., Santa Ana Pueblo, NM 87004",,10:00 AM - 07:00 PM,,ho3216131,false,true,,,,poll3216131
+Sandia Pueblo Aquatic Center,"143 North Santa Fe Trail, Sandia Pueblo, NM 87004",,10:00 AM - 07:00 PM,,ho47340341,false,true,,,,poll47340341
+Torreon Chapter House,"Highway 197, Torreon, NM 87013",,10:00 AM - 07:00 PM,,ho79346548,false,true,,,,poll79346548
+Eichwald Center,"46 Old Highway 126, Cuba, NM 87013",,10:00 AM - 07:00 PM,,ho48360755,false,true,,,,poll48360755
+Edgewood Fire Station,"25 East Frontage Road, Edgewood, NM 87015",,10:00 AM - 06:00 PM,,ho73304388,false,true,,,,poll73304388
+Torrance County Clerk's Office,"205 9th St, Estancia, NM 87016",,07:30 AM - 05:30 PM,,ho46992089,false,true,,,,poll46992089
+Cibola County Complex,"515 W. High St., Grants, NM 87020",,08:00 AM - 05:00 PM,,ho44356542,false,true,,,,poll44356542
+Jemez Pueblo Civic Center,"5117 Highway 4, Jemez Pueblo, NM 87024",,10:00 AM - 07:00 PM,,ho40390467,false,true,,,,poll40390467
+Desiderio Community Center,"117 Tribal Rd. 7036, To'Hajiilee, NM 87026",,08:00 AM - 12:00 PM,,ho58582591,false,true,,,,poll58582591
+Laguna Tribal Building,"22 Capital, Laguna, NM 87026",,08:00 AM - 04:00 PM,,ho88987841,false,true,,,,poll88987841
+Valencia County Courthouse - Clerk's Office,"444 Luna Ave, Los Lunas, NM 87031",,08:00 AM - 05:00 PM,,ho5375025,false,true,,,,poll5375025
+Rio West Mall,"1300 West I-40 Frontage Road, Gallup, NM 87031",,10:00 AM - 06:00 PM,,ho59185868,false,true,,,,poll59185868
+Acoma Tribal Auditorium,"33A Pinsbaari Drive, Acoma, NM 87034",,08:00 AM - 04:00 PM,,ho81338829,false,true,,,,poll81338829
+Moriarty Civic Center,"202 Broadway Ave., Moriarty, NM 87035",,10:00 AM - 06:00 PM,,ho32556519,false,true,,,,poll32556519
+Cochiti Pueblo Community Center,"255 Cochiti St, Cochiti, NM 87041",,10:00 AM - 07:00 PM,,ho54239899,false,true,,,,poll54239899
+Las Placitas Presbyterian Church,"7 Paseo De San Antonio, Placitas, NM 87043",,10:00 AM - 07:00 PM,,ho30688713,false,true,,,,poll30688713
+Sandoval County Voting Machine Warehouse,"800 South Hill Rd., Bernalillo, NM 87044",,10:00 AM - 07:00 PM,,ho30538808,false,true,,,,poll30538808
+Corrales Community Center,"4326 Corrales Rd., Corrales, NM 87048",,10:00 AM - 07:00 PM,,ho27634171,false,true,,,,poll27634171
+San Felipe Pueblo Senior Center,"5 Cedar Rd., San Felipe Pueblo, NM 87049",,10:00 AM - 07:00 PM,,ho13182757,false,true,,,,poll13182757
+Santo Domingo Pueblo Community Center,"Tesuque St., Santo Domingo Pueblo, NM 87052",,10:00 AM - 07:00 PM,,ho97196511,false,true,,,,poll97196511
+Zia Pueblo Community Center,"135 Capitol Square Dr, Zia Pueblo, NM 87053",,10:00 AM - 07:00 PM,,ho12572993,false,true,,,,poll12572993
+Tijeras City Hall,"12 Camino Municipal, Tijeras, NM 87059",,08:00 AM - 08:00 PM,,ho77300808,false,true,,,,poll77300808
+Bosque Farms Public Library,"1455 W. Bosque Loop, Bosque Farms, NM 87068",,10:00 AM - 06:00 PM,,ho93089134,false,true,,,,poll93089134
+Clerk's Annex,"1500 Lomas Blvd NW,Suite A, Albuquerque, NM 87104",,08:00 AM - 08:00 PM,,ho40174841,false,true,,,,poll40174841
+South Valley Multi Gen Center,"2008 Larrazolo Rd. SW, Albuquerque, NM 87105",,08:00 AM - 08:00 PM,,ho39589751,false,true,,,,poll39589751
+Bernalillo County Visitor and Cultural Center,"6080 Isleta Blvd. SW, Albuquerque, NM 87105",,08:00 AM - 08:00 PM,,ho14041129,false,true,,,,poll14041129
+University of New Mexico Student Union Building,"1 University of New Mexico, Albuquerque, NM 87106",,08:00 AM - 08:00 PM,,ho31049066,false,true,,,,poll31049066
+Los Ranchos Villa,"6601 4th St NW, Suite K, L, Albuquerque, NM 87107",,08:00 AM - 08:00 PM,,ho85128097,false,true,,,,poll85128097
+Central Mercado,"301 San Pedro Dr SE Suite B, C, D, E, Albuquerque, NM 87108",,08:00 AM - 08:00 PM,,ho91952681,false,true,,,,poll91952681
+Fiesta del Norte Shopping Center,"6001 San Mateo Blvd. Sute B-3, Albuquerque, NM 87109",,08:00 AM - 08:00 PM,,ho52767140,false,true,,,,poll52767140
+Daskalos Center,"5339 Menaul Blvd. NE, Albuquerque, NM 87110",,08:00 AM - 08:00 PM,,ho27812686,false,true,,,,poll27812686
+Caracol Plaza,"12500 Montgomery Blvd NE, Suite 101, Albuquerque, NM 87111",,08:00 AM - 08:00 PM,,ho61314906,false,true,,,,poll61314906
+Los Altos Plaza,"4200 Wyoming Blvd NE Suite B-2, Albuquerque, NM 87111",,08:00 AM - 08:00 PM,,ho97019903,false,true,,,,poll97019903
+Holly Plaza,"6500 Holly Ave NE, Suite A6, Albuquerque, NM 87113",,08:00 AM - 08:00 PM,,ho35244151,false,true,,,,poll35244151
+Petroglyph Plaza,"8201 Golf Course Rd NW, Suite C-1, Albuquerque, NM 87114",,08:00 AM - 08:00 PM,,ho92168968,false,true,,,,poll92168968
+Sun Country Plaza,"9421 Coors Blvd. NW Ste. G&H, Albuquerque, NM 87114",,08:00 AM - 08:00 PM,,ho18771880,false,true,,,,poll18771880
+Westbluff Center,"5201 Ouray NW Ste. D-2, Albuquerque, NM 87120",,08:00 AM - 08:00 PM,,ho33884294,false,true,,,,poll33884294
+98th and Central Shopping Center,"120 98th St. NW, Suite A5, Albuquerque, NM 87121",,08:00 AM - 08:00 PM,,ho44584008,false,true,,,,poll44584008
+Four Hills Shopping Center,"13140 Central Ave SE, Suite 1420, Albuquerque, NM 87123",,08:00 AM - 08:00 PM,,ho20937223,false,true,,,,poll20937223
+Rio Rancho City Hall,"3200 Civic Center Circle, Rio Rancho, NM 87124",,10:00 AM - 07:00 PM,,ho4417823,false,true,,,,poll4417823
+Esther Bone Memorial Library,"950 Pinetree Rd. NE, Rio Rancho, NM 87124",,10:00 AM - 07:00 PM,,ho99706517,false,true,,,,poll99706517
+Calvary Chapel of Rio Rancho,"138 Frontage Rd., Rio Rancho, NM 87124",,10:00 AM - 07:00 PM,,ho70557568,false,true,,,,poll70557568
+Rio Rancho Public Library,"755 Loma Colorado Dr NE, Rio Rancho, NM 87124",,10:00 AM - 07:00 PM,,ho18195669,false,true,,,,poll18195669
+Sandoval County Administration Building D,"1500 Idalia Rd, Bernalillo, NM 87144",,08:00 AM - 05:00 PM,,ho64755063,false,true,,,,poll64755063
+Meadowlark Senior Center,"4330 Meadowlark  CT. SE, Rio Rancho, NM 87144",,10:00 AM - 07:00 PM,,ho40108114,false,true,,,,poll40108114
+McKinley County Clerk's Office,"207 W. Hill Ave., Gallup, NM 87301",,08:00 AM - 05:00 PM,,ho19200967,false,true,,,,poll19200967
+Ramah Training Center,"BIA Route 125, Mt View Community, Ramah, NM 87321",,08:00 AM - 04:00 PM,,ho38594267,false,true,,,,poll38594267
+Zuni Tribal Building,"1203 State Hwy 53, Zuni, NM 87327",,09:00 AM - 05:00 PM,,ho67301381,false,true,,,,poll67301381
+Twin Lakes Chapter House,"Mile Marker 13 N Hwy 491, Twin Lakes, NM 87375",,10:00 AM - 06:00 PM,,ho80306285,false,true,,,,poll80306285
+Gateway Museum,"3044 E. Main St., Farmington, NM 87402",,10:00 AM - 06:00 PM,,ho37118173,false,true,,,,poll37118173
+San Juan County Clerk's Office,"100 South Oliver Drive, Suite 200, Aztec, NM 87410",,07:00 AM - 05:30 PM,,ho66070428,false,true,,,,poll66070428
+Bloomfield Cultural Center,"336 S. First St., Bloomfield, NM 87413",,10:00 AM - 06:00 PM,,ho7746169,false,true,,,,poll7746169
+Shiprock Fire Station,"Behind Wells Fargo Bank, Shiprock, NM 87420",,10:00 AM - 06:00 PM,,ho74812149,false,true,,,,poll74812149
+Newcomb Fire Station,"NM # 56.5 U.S. Highway 494, Newcomb, NM 87455",,10:00 AM - 06:00 PM,,ho82912582,false,true,,,,poll82912582
+Santa Fe County Clerk's Office,"105 Grant Ave, Santa Fe, NM 87504",,10:00 AM - 06:00 PM,,ho78303991,false,true,,,,poll78303991
+Christian Life Church,"121 Siringo Rd., Santa Fe, NM 87505",,10:00 AM - 06:00 PM,,ho10625697,false,true,,,,poll10625697
+Pojoaque County Satellite Office,"5 W. Gutierrez Ste. 9, Pojoaque Pueblo Plaza, Pojoaque, NM 87506",,10:00 AM - 06:00 PM,,ho51190603,false,true,,,,poll51190603
+Santa Fe County Fair Building,"3229 Rodeo Rd, Santa Fe, NM 87507",,10:00 AM - 06:00 PM,,ho96412146,false,true,,,,poll96412146
+Eldorado Senior Center,"16 Avenida Torreon, Eldorado, NM 87508",,10:00 AM - 06:00 PM,,ho49586444,false,true,,,,poll49586444
+Jicarilla Apache Nation Tribal Bldg.,"25 Hawk Dr, Dulce, NM 87528",,10:00 AM - 06:00 PM,,ho96537896,false,true,,,,poll96537896
+Health Commons,"2010 Industrial Park Rd., Espanola, NM 87532",,10:00 AM - 06:00 PM,,ho24830069,false,true,,,,poll24830069
+Santa Clara Senior Center,"636 One Kee St, Espanola, NM 87532",,10:00 AM - 03:00 PM,,ho92159587,false,true,,,,poll92159587
+Los Alamos County Clerk's Office,"1000 Central Ave., Los Alamos, NM 87544",,08:00 AM - 05:00 PM,,ho76631898,false,true,,,,poll76631898
+White Rock Branch Library,"10 Sherwood Blvd., White Rock, NM 87544",,06:00 AM - 06:00 PM,,ho54952378,false,true,,,,poll54952378
+Penasco Community Center,"14136 State Road 75, Penasco, NM 87553",,10:00 AM - 06:00 PM,,ho29181396,false,true,,,,poll29181396
+San Miguel Senior Citizens Center,"MM 70, NM Highway 3, Ribera, NM 87560",,10:00 AM - 06:00 PM,,ho22301296,false,true,,,,poll22301296
+Questa Municipal Hall,"2500 Old St Rd 3, Questa, NM 87566",,10:00 AM - 06:00 PM,,ho95589904,false,true,,,,poll95589904
+Ohkay Owingeh Senior Center,"217 N. Cross Place, Ohkay Owingeh, NM 87566",,09:00 AM - 06:00 PM,,ho12896292,false,true,,,,poll12896292
+Taos County Courthouse - Clerk's Office,"105 Albright Street, Suite D, Taos, NM 87571",,08:00 AM - 05:00 PM,,ho41494668,false,true,,,,poll41494668
+Old Armory,"489 Blueberry Hill Rd, Taos, NM 87571",,10:00 AM - 06:00 PM,,ho90239704,false,true,,,,poll90239704
+Tierra Amarilla Clerk's Office,"7 Main Street, Tierra Amarilla, NM 87575",,08:00 AM - 05:00 PM,,ho80326294,false,true,,,,poll80326294
+San Miguel County Clerk's Office,"500 W. National Ave., Ste.113, Las Vegas, NM 87701",,08:00 AM - 05:00 PM,,ho86639457,false,true,,,,poll86639457
+Angel Fire Village Hall,"3388 Mountain View Blvd, Angel Fire, NM 87710",,08:00 AM - 05:00 PM,,ho63277691,false,true,,,,poll63277691
+Cimarron Village Hall,"356 E 9th St, Cimarron, NM 87714",,08:00 AM - 05:00 PM,,ho68606294,false,true,,,,poll68606294
+Eagle Nest Community Center,"151 Willow Creek Dr, Eagle Nest, NM 87718",,08:00 AM - 05:00 PM,,ho9490124,false,true,,,,poll9490124
+Mora County Courthouse - Clerk's Office,"1 Courthouse Rd. MM 29.5, Mora, NM 87732",,08:00 AM - 05:00 PM,,ho67655714,false,true,,,,poll67655714
+Harding County Courthouse - County Clerk's Office,"35 Pine Street, Mosquero, NM 87733",,08:00 AM - 04:00 PM,,ho36164719,false,true,,,,poll36164719
+Colfax County Clerk's Office,"230 North 3rd Street, Raton, NM 87740",,08:00 AM - 05:00 PM,,ho30758530,false,true,,,,poll30758530
+Springer Luna Community College,"516 Maxwell Ave, Springer, NM 87747",,08:00 AM - 05:00 PM,,ho57154963,false,true,,,,poll57154963
+Socorro County Clerk's Office,"200 Church Street, Socorro, NM 87801",,08:00 AM - 05:00 PM,,ho34877166,false,true,,,,poll34877166
+Datil Fire Station,"16 Old State Road 60, Datil, NM 87821",,08:00 AM - 04:30 PM,,ho1857983,false,true,,,,poll1857983
+Magdalena Senior Center,"500 9th St., Magdalena, NM 87825",,09:00 AM - 05:00 PM,,ho21424790,false,true,,,,poll21424790
+Quemado Community Center,"27 lopez Street, Quemado, NM 87829",,08:00 AM - 04:30 PM,,ho91975651,false,true,,,,poll91975651
+Catron County Courthouse,"101 Main St, Reserve, NM 87830",,08:00 AM - 04:30 PM,,ho17955328,false,true,,,,poll17955328
+Sierra County Clerk's Office,"100 N. Date St., T or C, NM 87901",,08:00 AM - 05:00 PM,,ho70992321,false,true,,,,poll70992321
+DACC Hatch Learning Center,"219 E Hill St, Hatch, NM 87937",,11:00 AM - 07:00 PM,,ho74718193,false,true,,,,poll74718193
+Thomas Branigan Memorial Library,"200 E Picacho Ave, Las Cruces, NM 88001",,11:00 AM - 07:00 PM,,ho61784048,false,true,,,,poll61784048
+Dona Ana County Government Center,"845 N Motel Blvd., Las Cruces, NM 88007",,08:00 AM - 05:00 PM,,ho50244425,false,true,,,,poll50244425
+Sonoma Elementary School,"4201 Northrise Dr, Las Cruces, NM 88011",,11:00 AM - 07:00 PM,,ho61977867,false,true,,,,poll61977867
+Anthony Elementary School,"600 N 4th St, Anthony, NM 88021",,11:00 AM - 07:00 PM,,ho98728668,false,true,,,,poll98728668
+Bayard Community Center,"290 Hurley Ave., Bayard, NM 88023",,09:00 AM - 06:00 PM,,ho85657958,false,true,,,,poll85657958
+Luna County Clerk's Office,"700 S. Silver Ave., Deming, NM 88030",,08:00 AM - 05:00 PM,,ho48279663,false,true,,,,poll48279663
+Mimbres Valley Learning Center,"2300 E. Pine, Deming, NM 88030",,09:00 AM - 05:00 PM,,ho31326265,false,true,,,,poll31326265
+Glenwood Community Center,"21 Menges Lane, Glenwood, NM 88039",,08:00 AM - 04:30 PM,,ho46919956,false,true,,,,poll46919956
+Hidalgo County Courthouse,"300 Shakespeare, Lordsburg, NM 88045",,09:00 AM - 05:00 PM,,ho28017967,false,true,,,,poll28017967
+Grant County Clerk's Office,"1400 HWY 180 E, Silver City, NM 88061",,08:00 AM - 05:00 PM,,ho10335570,false,true,,,,poll10335570
+Dona Ana Community College Sunland Park Learning Center,"3365 McNutt Rd, Sunland Park, NM 88063",,11:00 AM - 07:00 PM,,ho19543610,false,true,,,,poll19543610
+Chaparral Far South Fire Station,"827 Luna Street, Chaparral, NM 88081",,10:00 AM - 06:00 PM,,ho21230804,false,true,,,,poll21230804
+Dona Ana Community College Chaparral Learning Center,"755 Prescott Anthony Dr., Chaparral, NM 88081",,11:00 AM - 07:00 PM,,ho65244351,false,true,,,,poll65244351
+Curry County Clerk's Office,"417 Gidding Suite #140, Clovis, NM 88101",,08:00 AM - 05:00 PM,,ho96814812,false,true,,,,poll96814812
+North Plains Mall,"2809 North Prince St., Clovis, NM 88101",,10:00 AM - 06:00 PM,,ho91871033,false,true,,,,poll91871033
+De Baca County Clerk,"248 East Ave C, Fort Summer, NM 88119",,08:00 AM - 04:30 PM,,ho8980694,false,true,,,,poll8980694
+Roosevelt County Clerk,"109 West 1st Street, Portales, NM 88130",,08:00 AM - 05:00 PM,,ho24704409,false,true,,,,poll24704409
+Memorial Building,"200 E. 7th Street, Portales, NM 88130",,10:00 AM - 06:00 PM,,ho78460279,false,true,,,,poll78460279
+Roswell Mall - Main Entrance,"4501 N. Main St., Roswell, NM 88201",,10:00 AM - 06:00 PM,,ho73232612,false,true,,,,poll73232612
+Roswell Clerk's Office,"1 St. Marys Pl., Roswell, NM 88202",,08:00 AM - 05:00 PM,,ho26585032,false,true,,,,poll26585032
+Eddy County Clerk Sub-Office,"605 S. First St., Artesia, NM 88210",,08:00 AM - 04:00 PM,,ho72062504,false,true,,,,poll72062504
+Eddy County Clerk's Office,"325 S. Main St., Carlsbad, NM 88220",,08:00 AM - 05:00 PM,,ho74457316,false,true,,,,poll74457316
+Hagerman Joy Center,"503 E Argyle, Hagerman, NM 88232",,08:00 AM - 05:00 PM,,ho33214235,false,true,,,,poll33214235
+Lea County Event Center,"5101 N Lovington Hwy, Hobbs, NM 88240",,09:00 AM - 06:00 PM,,ho21387721,false,true,,,,poll21387721
+Lea County Annex Office Complex,"1019 East Bender Boulevard, Hobbs, NM 88240",,09:00 AM - 06:00 PM,,ho85637303,false,true,,,,poll85637303
+Eunice Community Center,"Twelfth & Avenue I, Eunice, NM 88252",,09:00 AM - 06:00 PM,,ho54329374,false,true,,,,poll54329374
+Jal City Hall,"309 South Main, Jal, NM 88252",,09:00 AM - 06:00 PM,,ho10862383,false,true,,,,poll10862383
+Lea County Clerk's Office,"100 North Main, Lovington, NM 88260",,08:00 AM - 05:00 PM,,ho75049786,false,true,,,,poll75049786
+Lincoln County Courthouse,"300 Central Avenue, Carrizozo, NM 88301",,08:00 AM - 05:00 PM,,ho81837598,false,true,,,,poll81837598
+Otero County Administration Bldg. - Clerk's Office,"1101 New York Ave, Suite C, Alamogordo, NM 88310",,08:00 AM - 05:00 PM,,ho32800184,false,true,,,,poll32800184
+Otero County Fairgrounds,"401 Fairgrounds Rd., Alamogordo, NM 88310",,10:00 AM - 06:00 PM,,ho71866975,false,true,,,,poll71866975
+Cloudcroft Council Chambers,"201 Burro Ave., Cloudcroft, NM 88317",,10:00 AM - 06:00 PM,,ho17706720,false,true,,,,poll17706720
+Inn of the Mountain Gods,"287 Carrizo Canyon Rd., Mescalero, NM 88340",,10:00 AM - 06:00 PM,,ho45929450,false,true,,,,poll45929450
+Horton Complex,"237 Service Rd, Ruidoso, NM 88345",,10:00 AM - 06:00 PM,,ho35478273,false,true,,,,poll35478273
+Tularosa Public Safety Facility - Court Room,"609 St Francis Dr, Tularosa, NM 88352",,10:00 AM - 06:00 PM,,ho37196142,false,true,,,,poll37196142
+Quay County Courthouse - Clerk's Office,"300 South Third St., Tucumcari, NM 88401",,08:00 AM - 05:00 PM,,ho40178275,false,true,,,,poll40178275
+Union County Clerk's Office,"200 Court St, Clayton, NM 88415",,08:00 AM - 12:00 PM,,ho48730983,false,true,,,,poll48730983
+Guadalupe County Clerk's Office,"1448 Historis Route 66, Santa Rosa, NM 88435",,08:00 AM - 04:00 PM,,ho62948082,false,true,,,,poll62948082
+Crownpoint,"Navajo Election Office at the OLD PUBLIC Safety Building, Crownpoint, NM 87313",,09:00 AM - 05:00 PM,,ho37545868,false,true,,,,poll37545868
+Thoreau Fire Station,"# 65 First Avenue, Thoreau, NM 87323",,10:00 AM - 06:00 PM,,ho10173822,false,true,,,,poll10173822

@@ -1,349 +1,349 @@
 election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
-,ocd-id,,ocd-division/country:us/state:ma/place:abington,abing0008,poll84119374,st25,other,,loc0001
-,ocd-id,,ocd-division/country:us/state:ma/place:acton,ac0015,poll4232521,st25,other,,loc0002
-,ocd-id,,ocd-division/country:us/state:ma/place:acushnet,acush0030,poll24365047,st25,other,,loc0003
-,ocd-id,,ocd-division/country:us/state:ma/place:adams,ad0041,poll36988701,st25,other,,loc0004
-,ocd-id,,ocd-division/country:us/state:ma/place:agawam,aga0051,poll78503108 poll45138387 poll45374327,st25,other,,loc0005
-,ocd-id,,ocd-division/country:us/state:ma/place:alford,alf0058,poll50338726,st25,other,,loc0006
-,ocd-id,,ocd-division/country:us/state:ma/place:amesbury,amesb0063,poll93536525,st25,other,,loc0007
-,ocd-id,,ocd-division/country:us/state:ma/place:amherst,amhe0083,poll69579659 poll45402270 poll8821762 poll66136542,st25,other,,loc0008
-,ocd-id,,ocd-division/country:us/state:ma/place:andover,ando0091,poll63618039,st25,other,,loc0009
-,ocd-id,,ocd-division/country:us/state:ma/place:aquinnah,aquin0095,poll26918808,st25,other,,loc0010
-,ocd-id,,ocd-division/country:us/state:ma/place:arlington,arling0111,poll451344,st25,other,,loc0011
-,ocd-id,,ocd-division/country:us/state:ma/place:ashburnham,ashburn0118,poll38651107,st25,other,,loc0012
-,ocd-id,,ocd-division/country:us/state:ma/place:ashby,as0130,poll81586163,st25,other,,loc0013
-,ocd-id,,ocd-division/country:us/state:ma/place:ashfield,ashfi0138,poll96086399,st25,other,,loc0014
-,ocd-id,,ocd-division/country:us/state:ma/place:ashland,ashl0149,poll58413796,st25,other,,loc0015
-,ocd-id,,ocd-division/country:us/state:ma/place:athol,at0159,poll34169985,st25,other,,loc0016
-,ocd-id,,ocd-division/country:us/state:ma/place:attleboro,attleb0169,poll22238081,st25,other,,loc0017
-,ocd-id,,ocd-division/country:us/state:ma/place:auburn,aub0179,poll36543129,st25,other,,loc0018
-,ocd-id,,ocd-division/country:us/state:ma/place:avon,a0194,poll96241337,st25,other,,loc0019
-,ocd-id,,ocd-division/country:us/state:ma/place:ayer,a0204,poll10385046,st25,other,,loc0020
-,ocd-id,,ocd-division/country:us/state:ma/place:barnstable,barnsta0209,poll18395194 poll58285025,st25,other,,loc0021
-,ocd-id,,ocd-division/country:us/state:ma/place:barre,ba0217,poll39811961,st25,other,,loc0022
-,ocd-id,,ocd-division/country:us/state:ma/place:becket,bec0232,poll36328227,st25,other,,loc0023
-,ocd-id,,ocd-division/country:us/state:ma/place:bedford,bedf0240,poll44668855,st25,other,,loc0024
-,ocd-id,,ocd-division/country:us/state:ma/place:belchertown,belchert0245,poll43835836,st25,other,,loc0025
-,ocd-id,,ocd-division/country:us/state:ma/place:bellingham,belling0262,poll76110141,st25,other,,loc0026
-,ocd-id,,ocd-division/country:us/state:ma/place:belmont,belm0268,poll47415257,st25,other,,loc0027
-,ocd-id,,ocd-division/country:us/state:ma/place:berkley,berk0284,poll19541409,st25,other,,loc0028
-,ocd-id,,ocd-division/country:us/state:ma/place:berlin,ber0291,poll57410962,st25,other,,loc0029
-,ocd-id,,ocd-division/country:us/state:ma/place:bernardston,bernards0296,poll40744735,st25,other,,loc0030
-,ocd-id,,ocd-division/country:us/state:ma/place:beverly,beve0310,poll91025305,st25,other,,loc0031
-,ocd-id,,ocd-division/country:us/state:ma/place:billerica,biller0321,poll93978979,st25,other,,loc0032
-,ocd-id,,ocd-division/country:us/state:ma/place:blackstone,blackst0338,poll78156951,st25,other,,loc0033
-,ocd-id,,ocd-division/country:us/state:ma/place:blandford,blandf0340,poll54706788,st25,other,,loc0034
-,ocd-id,,ocd-division/country:us/state:ma/place:bolton,bol0347,poll26303124,st25,other,,loc0035
-,ocd-id,,ocd-division/country:us/state:ma/place:boston,bos0362,poll60550047 poll69498515 poll16747840 poll88736818 poll80342625 poll79828278 poll12023894 poll29446018 poll41323515 poll41583632 poll1618123 poll55384557 poll45671116 poll19999652 poll58553817 poll43890392 poll39705130 poll99597518 poll95532010 poll31841544 poll34944748 poll8874525 poll27961054 poll52793621 poll98647628 poll77489295 poll57482922 poll93381932,st25,other,,loc0036
-,ocd-id,,ocd-division/country:us/state:ma/place:bourne,bou0400,poll7685320,st25,other,,loc0037
-,ocd-id,,ocd-division/country:us/state:ma/place:boxborough,boxboro0410,poll31403194,st25,other,,loc0038
-,ocd-id,,ocd-division/country:us/state:ma/place:boxford,boxf0420,poll56367815,st25,other,,loc0039
-,ocd-id,,ocd-division/country:us/state:ma/place:boylston,boyls0431,poll81369312,st25,other,,loc0040
-,ocd-id,,ocd-division/country:us/state:ma/place:braintree,braint0442,poll80515638,st25,other,,loc0041
-,ocd-id,,ocd-division/country:us/state:ma/place:brewster,brews0446,poll58996744,st25,other,,loc0042
-,ocd-id,,ocd-division/country:us/state:ma/place:bridgewater,bridgewa0461,poll12616851,st25,other,,loc0043
-,ocd-id,,ocd-division/country:us/state:ma/place:brimfield,brimfi0470,poll91858560,st25,other,,loc0044
-,ocd-id,,ocd-division/country:us/state:ma/place:brockton,brock0480,poll63744802,st25,other,,loc0045
-,ocd-id,,ocd-division/country:us/state:ma/place:brookfield,brookfi0489,poll96945076,st25,other,,loc0046
-,ocd-id,,ocd-division/country:us/state:ma/place:brookline,brookl0500,poll84702893 poll58704474 poll41127774,st25,other,,loc0047
-,ocd-id,,ocd-division/country:us/state:ma/place:buckland,buckl0518,poll26679778,st25,other,,loc0048
-,ocd-id,,ocd-division/country:us/state:ma/place:burlington,burling0529,poll24721258,st25,other,,loc0049
-,ocd-id,,ocd-division/country:us/state:ma/place:cambridge,cambri0534,poll81095376 poll42631717 poll45190943 poll71457541 poll3772301,st25,other,,loc0050
-,ocd-id,,ocd-division/country:us/state:ma/place:canton,can0585,poll24253420,st25,other,,loc0051
-,ocd-id,,ocd-division/country:us/state:ma/place:carlisle,carli0603,poll61716772,st25,other,,loc0052
-,ocd-id,,ocd-division/country:us/state:ma/place:carver,car0614,poll12331597 poll40767584,st25,other,,loc0053
-,ocd-id,,ocd-division/country:us/state:ma/place:charlemont,charlem0621,poll41773090,st25,other,,loc0054
-,ocd-id,,ocd-division/country:us/state:ma/place:charlton,charl0629,poll47919885 poll23631849,st25,other,,loc0055
-,ocd-id,,ocd-division/country:us/state:ma/place:chatham,chat0639,poll23409704,st25,other,,loc0056
-,ocd-id,,ocd-division/country:us/state:ma/place:chelmsford,chelmsf0652,poll12142432,st25,other,,loc0057
-,ocd-id,,ocd-division/country:us/state:ma/place:chelsea,chel0662,poll66761053,st25,other,,loc0058
-,ocd-id,,ocd-division/country:us/state:ma/place:cheshire,chesh0673,poll57033234,st25,other,,loc0059
-,ocd-id,,ocd-division/country:us/state:ma/place:chester,ches0686,poll42501071,st25,other,,loc0060
-,ocd-id,,ocd-division/country:us/state:ma/place:chesterfield,chesterfi0690,poll26419073,st25,other,,loc0061
-,ocd-id,,ocd-division/country:us/state:ma/place:chicopee,chico0691,poll37248966,st25,other,,loc0062
-,ocd-id,,ocd-division/country:us/state:ma/place:chilmark,chilm0711,poll15911183,st25,other,,loc0063
-,ocd-id,,ocd-division/country:us/state:ma/place:clarksburg,clarksb0713,poll36626106,st25,other,,loc0064
-,ocd-id,,ocd-division/country:us/state:ma/place:clinton,clin0721,poll53449340,st25,other,,loc0065
-,ocd-id,,ocd-division/country:us/state:ma/place:cohasset,cohas0731,poll1322229,st25,other,,loc0066
-,ocd-id,,ocd-division/country:us/state:ma/place:colrain,colr0736,poll2205180,st25,other,,loc0067
-,ocd-id,,ocd-division/country:us/state:ma/place:concord,conc0750,poll44673216,st25,other,,loc0068
-,ocd-id,,ocd-division/country:us/state:ma/place:conway,con0760,poll89842176 poll17612846,st25,other,,loc0069
-,ocd-id,,ocd-division/country:us/state:ma/place:cummington,cumming0761,poll29691138,st25,other,,loc0070
-,ocd-id,,ocd-division/country:us/state:ma/place:dalton,dal0770,poll72578264,st25,other,,loc0071
-,ocd-id,,ocd-division/country:us/state:ma/place:danvers,danv0780,poll95050346,st25,other,,loc0072
-,ocd-id,,ocd-division/country:us/state:ma/place:dartmouth,dartmo0786,poll10798084 poll99285409,st25,other,,loc0073
-,ocd-id,,ocd-division/country:us/state:ma/place:dedham,ded0798,poll85640342 poll33416823,st25,other,,loc0074
-,ocd-id,,ocd-division/country:us/state:ma/place:deerfield,deerfi0812,poll65729388,st25,other,,loc0075
-,ocd-id,,ocd-division/country:us/state:ma/place:dennis,den0829,poll90622021,st25,other,,loc0076
-,ocd-id,,ocd-division/country:us/state:ma/place:dighton,digh0831,poll34162260,st25,other,,loc0077
-,ocd-id,,ocd-division/country:us/state:ma/place:douglas,doug0847,poll72763171,st25,other,,loc0078
-,ocd-id,,ocd-division/country:us/state:ma/place:dover,do0860,poll66382790,st25,other,,loc0079
-,ocd-id,,ocd-division/country:us/state:ma/place:dracut,dra0863,poll89858472,st25,other,,loc0080
-,ocd-id,,ocd-division/country:us/state:ma/place:dudley,dud0880,poll94689705,st25,other,,loc0081
-,ocd-id,,ocd-division/country:us/state:ma/place:dunstable,dunsta0889,poll61265163,st25,other,,loc0082
-,ocd-id,,ocd-division/country:us/state:ma/place:duxbury,duxb0902,poll1767693,st25,other,,loc0083
-,ocd-id,,ocd-division/country:us/state:ma/place:east_bridgewater,east_bridgewa0909,poll54702648,st25,other,,loc0084
-,ocd-id,,ocd-division/country:us/state:ma/place:east_brookfield,east_brookfi0925,poll39263478,st25,other,,loc0085
-,ocd-id,,ocd-division/country:us/state:ma/place:east_longmeadow,east_longmea0933,poll71785435,st25,other,,loc0086
-,ocd-id,,ocd-division/country:us/state:ma/place:eastham,east0942,poll46005435,st25,other,,loc0087
-,ocd-id,,ocd-division/country:us/state:ma/place:easthampton,easthamp0957,poll17074838,st25,other,,loc0088
-,ocd-id,,ocd-division/country:us/state:ma/place:easton,eas0971,poll307703 poll18080447,st25,other,,loc0089
-,ocd-id,,ocd-division/country:us/state:ma/place:edgartown,edgart0982,poll12279287,st25,other,,loc0090
-,ocd-id,,ocd-division/country:us/state:ma/place:egremont,egrem0990,poll73477510,st25,other,,loc0091
-,ocd-id,,ocd-division/country:us/state:ma/place:erving,erv01000,poll5698737,st25,other,,loc0092
-,ocd-id,,ocd-division/country:us/state:ma/place:essex,es01014,poll65236489 poll48315195,st25,other,,loc0093
-,ocd-id,,ocd-division/country:us/state:ma/place:everett,ever01020,poll29023943,st25,other,,loc0094
-,ocd-id,,ocd-division/country:us/state:ma/place:fairhaven,fairha01029,poll68235433 poll85003948,st25,other,,loc0095
-,ocd-id,,ocd-division/country:us/state:ma/place:fall_river,fall_ri01040,poll30923034,st25,other,,loc0096
-,ocd-id,,ocd-division/country:us/state:ma/place:falmouth,falmo01054,poll30862227,st25,other,,loc0097
-,ocd-id,,ocd-division/country:us/state:ma/place:fitchburg,fitchb01060,poll6015229,st25,other,,loc0098
-,ocd-id,,ocd-division/country:us/state:ma/place:florida,flor01070,poll92605488,st25,other,,loc0099
-,ocd-id,,ocd-division/country:us/state:ma/place:foxborough,foxboro01079,poll21950502,st25,other,,loc0100
-,ocd-id,,ocd-division/country:us/state:ma/place:framingham,framing01085,poll45087435 poll78378043,st25,other,,loc0101
-,ocd-id,,ocd-division/country:us/state:ma/place:franklin,frank01110,poll49504187,st25,other,,loc0102
-,ocd-id,,ocd-division/country:us/state:ma/place:freetown,freet01119,poll27707468 poll80136651,st25,other,,loc0103
-,ocd-id,,ocd-division/country:us/state:ma/place:gardner,gard01130,poll96033433,st25,other,,loc0104
-,ocd-id,,ocd-division/country:us/state:ma/place:georgetown,georget01135,poll56576990,st25,other,,loc0105
-,ocd-id,,ocd-division/country:us/state:ma/place:gill,g01149,poll12364165,st25,other,,loc0106
-,ocd-id,,ocd-division/country:us/state:ma/place:gloucester,glouces01151,poll78259049,st25,other,,loc0107
-,ocd-id,,ocd-division/country:us/state:ma/place:goshen,gos01163,poll91646999,st25,other,,loc0108
-,ocd-id,,ocd-division/country:us/state:ma/place:gosnold,gosn01166,poll35167812,st25,other,,loc0109
-,ocd-id,,ocd-division/country:us/state:ma/place:grafton,graf01181,poll2801195,st25,other,,loc0110
-,ocd-id,,ocd-division/country:us/state:ma/place:granby,gra01191,poll9612297,st25,other,,loc0111
-,ocd-id,,ocd-division/country:us/state:ma/place:granville,granvi01197,poll93508180,st25,other,,loc0112
-,ocd-id,,ocd-division/country:us/state:ma/place:great_barrington,great_barring01208,poll28551657 poll78936749 poll25732983,st25,other,,loc0113
-,ocd-id,,ocd-division/country:us/state:ma/place:greenfield,greenfi01221,poll35129882,st25,other,,loc0114
-,ocd-id,,ocd-division/country:us/state:ma/place:groton,gro01234,poll66091309,st25,other,,loc0115
-,ocd-id,,ocd-division/country:us/state:ma/place:groveland,grovel01243,poll38309265,st25,other,,loc0116
-,ocd-id,,ocd-division/country:us/state:ma/place:hadley,had01256,poll99376751,st25,other,,loc0117
-,ocd-id,,ocd-division/country:us/state:ma/place:halifax,hali01262,poll90594485,st25,other,,loc0118
-,ocd-id,,ocd-division/country:us/state:ma/place:hamilton,hamil01274,poll54195587,st25,other,,loc0119
-,ocd-id,,ocd-division/country:us/state:ma/place:hampden,hamp01281,poll76912610 poll47323748,st25,other,,loc0120
-,ocd-id,,ocd-division/country:us/state:ma/place:hancock,hanc01290,poll88295587,st25,other,,loc0121
-,ocd-id,,ocd-division/country:us/state:ma/place:hanover,hano01299,poll79526123,st25,other,,loc0122
-,ocd-id,,ocd-division/country:us/state:ma/place:hanson,han01314,poll21189614,st25,other,,loc0123
-,ocd-id,,ocd-division/country:us/state:ma/place:hardwick,hardw01334,poll55457395,st25,other,,loc0124
-,ocd-id,,ocd-division/country:us/state:ma/place:harvard,harv01342,poll89823265,st25,other,,loc0125
-,ocd-id,,ocd-division/country:us/state:ma/place:harwich,harw01354,poll16701836,st25,other,,loc0126
-,ocd-id,,ocd-division/country:us/state:ma/place:hatfield,hatfi01360,poll12316349,st25,other,,loc0127
-,ocd-id,,ocd-division/country:us/state:ma/place:haverhill,haverh01376,poll41989446 poll11536791 poll97031847 poll96298087,st25,other,,loc0128
-,ocd-id,,ocd-division/country:us/state:ma/place:hawley,haw01379,poll1751348,st25,other,,loc0129
-,ocd-id,,ocd-division/country:us/state:ma/place:heath,he01381,poll98636135,st25,other,,loc0130
-,ocd-id,,ocd-division/country:us/state:ma/place:hingham,hing01394,poll28553191,st25,other,,loc0131
-,ocd-id,,ocd-division/country:us/state:ma/place:hinsdale,hinsd01399,poll47060516,st25,other,,loc0132
-,ocd-id,,ocd-division/country:us/state:ma/place:holbrook,holbr01411,poll8669406,st25,other,,loc0133
-,ocd-id,,ocd-division/country:us/state:ma/place:holden,hol01420,poll26928181,st25,other,,loc0134
-,ocd-id,,ocd-division/country:us/state:ma/place:holland,holl01423,poll51473734,st25,other,,loc0135
-,ocd-id,,ocd-division/country:us/state:ma/place:holliston,hollis01431,poll9771396,st25,other,,loc0136
-,ocd-id,,ocd-division/country:us/state:ma/place:holyoke,holy01442,poll85358950 poll10779343 poll28654748 poll53376017 poll91765881 poll96173671 poll43792986,st25,other,,loc0137
-,ocd-id,,ocd-division/country:us/state:ma/place:hopedale,hoped01472,poll73366458,st25,other,,loc0138
-,ocd-id,,ocd-division/country:us/state:ma/place:hopkinton,hopkin01490,poll18747819,st25,other,,loc0139
-,ocd-id,,ocd-division/country:us/state:ma/place:hubbardston,hubbards01500,poll40553401 poll20174677,st25,other,,loc0140
-,ocd-id,,ocd-division/country:us/state:ma/place:hudson,hud01510,poll64889603,st25,other,,loc0141
-,ocd-id,,ocd-division/country:us/state:ma/place:hull,h01517,poll20053704,st25,other,,loc0142
-,ocd-id,,ocd-division/country:us/state:ma/place:huntington,hunting01523,poll86476267,st25,other,,loc0143
-,ocd-id,,ocd-division/country:us/state:ma/place:ipswich,ipsw01535,poll72842849,st25,other,,loc0144
-,ocd-id,,ocd-division/country:us/state:ma/place:kingston,kings01550,poll34324773,st25,other,,loc0145
-,ocd-id,,ocd-division/country:us/state:ma/place:lakeville,lakevi01561,poll36635634,st25,other,,loc0146
-,ocd-id,,ocd-division/country:us/state:ma/place:lancaster,lancas01574,poll18192602 poll87473933 poll30602090,st25,other,,loc0147
-,ocd-id,,ocd-division/country:us/state:ma/place:lanesborough,lanesboro01584,poll86249011,st25,other,,loc0148
-,ocd-id,,ocd-division/country:us/state:ma/place:lawrence,lawre01595,poll81864072,st25,other,,loc0149
-,ocd-id,,ocd-division/country:us/state:ma/place:lee,01598,poll95859342,st25,other,,loc0150
-,ocd-id,,ocd-division/country:us/state:ma/place:leicester,leices01609,poll37092945,st25,other,,loc0151
-,ocd-id,,ocd-division/country:us/state:ma/place:lenox,le01619,poll20239149,st25,other,,loc0152
-,ocd-id,,ocd-division/country:us/state:ma/place:leominster,leomins01635,poll47782418,st25,other,,loc0153
-,ocd-id,,ocd-division/country:us/state:ma/place:leverett,lever01649,poll75179996,st25,other,,loc0154
-,ocd-id,,ocd-division/country:us/state:ma/place:lexington,lexing01652,poll24724822,st25,other,,loc0155
-,ocd-id,,ocd-division/country:us/state:ma/place:leyden,ley01661,poll94522632,st25,other,,loc0156
-,ocd-id,,ocd-division/country:us/state:ma/place:lincoln,linc01674,poll13693482,st25,other,,loc0157
-,ocd-id,,ocd-division/country:us/state:ma/place:littleton,little01682,poll91126439,st25,other,,loc0158
-,ocd-id,,ocd-division/country:us/state:ma/place:longmeadow,longmea01686,poll6709126,st25,other,,loc0159
-,ocd-id,,ocd-division/country:us/state:ma/place:lowell,low01718,poll48516537 poll62258560 poll22884819 poll47161719 poll21279574 poll46824736 poll31582949 poll29834208 poll50176941 poll49724764 poll45718826 poll28879613 poll9870261,st25,other,,loc0160
-,ocd-id,,ocd-division/country:us/state:ma/place:ludlow,lud01719,poll54908752,st25,other,,loc0161
-,ocd-id,,ocd-division/country:us/state:ma/place:lunenburg,lunenb01741,poll70217047,st25,other,,loc0162
-,ocd-id,,ocd-division/country:us/state:ma/place:lynn,l01756,poll66461125 poll99822974,st25,other,,loc0163
-,ocd-id,,ocd-division/country:us/state:ma/place:lynnfield,lynnfi01770,poll29733717,st25,other,,loc0164
-,ocd-id,,ocd-division/country:us/state:ma/place:malden,mal01781,poll94332648 poll17926907,st25,other,,loc0165
-,ocd-id,,ocd-division/country:us/state:ma/place:manchester-by-the-sea,manchester-by-the-01791,poll99997187,st25,other,,loc0166
-,ocd-id,,ocd-division/country:us/state:ma/place:mansfield,mansfi01795,poll54795404,st25,other,,loc0167
-,ocd-id,,ocd-division/country:us/state:ma/place:marblehead,marbleh01816,poll52730481,st25,other,,loc0168
-,ocd-id,,ocd-division/country:us/state:ma/place:marion,mar01821,poll17439303,st25,other,,loc0169
-,ocd-id,,ocd-division/country:us/state:ma/place:marlborough,marlboro01837,poll55416726,st25,other,,loc0170
-,ocd-id,,ocd-division/country:us/state:ma/place:marshfield,marshfi01845,poll16554280,st25,other,,loc0171
-,ocd-id,,ocd-division/country:us/state:ma/place:mashpee,mash01854,poll92037158,st25,other,,loc0172
-,ocd-id,,ocd-division/country:us/state:ma/place:mattapoisett,mattapois01870,poll14132552,st25,other,,loc0173
-,ocd-id,,ocd-division/country:us/state:ma/place:maynard,mayn01872,poll37100626,st25,other,,loc0174
-,ocd-id,,ocd-division/country:us/state:ma/place:medfield,medfi01891,poll41020666,st25,other,,loc0175
-,ocd-id,,ocd-division/country:us/state:ma/place:medford,medf01903,poll73986247,st25,other,,loc0176
-,ocd-id,,ocd-division/country:us/state:ma/place:medway,med01908,poll4310684,st25,other,,loc0177
-,ocd-id,,ocd-division/country:us/state:ma/place:melrose,melr01921,poll34502360,st25,other,,loc0178
-,ocd-id,,ocd-division/country:us/state:ma/place:mendon,men01925,poll54344315,st25,other,,loc0179
-,ocd-id,,ocd-division/country:us/state:ma/place:merrimac,merri01941,poll83142108,st25,other,,loc0180
-,ocd-id,,ocd-division/country:us/state:ma/place:methuen,meth01952,poll10418864,st25,other,,loc0181
-,ocd-id,,ocd-division/country:us/state:ma/place:middleborough,middleboro01968,poll48691098,st25,other,,loc0182
-,ocd-id,,ocd-division/country:us/state:ma/place:middlefield,middlefi01970,poll72602731,st25,other,,loc0183
-,ocd-id,,ocd-division/country:us/state:ma/place:middleton,middle01981,poll43695150,st25,other,,loc0184
-,ocd-id,,ocd-division/country:us/state:ma/place:milford,milf01987,poll94765401,st25,other,,loc0185
-,ocd-id,,ocd-division/country:us/state:ma/place:millbury,millb02000,poll68393739,st25,other,,loc0186
-,ocd-id,,ocd-division/country:us/state:ma/place:millis,mil02004,poll94669040,st25,other,,loc0187
-,ocd-id,,ocd-division/country:us/state:ma/place:millville,millvi02024,poll39080946,st25,other,,loc0188
-,ocd-id,,ocd-division/country:us/state:ma/place:milton,mil02031,poll16945761,st25,other,,loc0189
-,ocd-id,,ocd-division/country:us/state:ma/place:monroe,mon02040,poll39110550,st25,other,,loc0190
-,ocd-id,,ocd-division/country:us/state:ma/place:monson,mon02050,poll75820480 poll79692539,st25,other,,loc0191
-,ocd-id,,ocd-division/country:us/state:ma/place:montague,monta02061,poll18879389,st25,other,,loc0192
-,ocd-id,,ocd-division/country:us/state:ma/place:monterey,monte02063,poll41549800,st25,other,,loc0193
-,ocd-id,,ocd-division/country:us/state:ma/place:montgomery,montgom02067,poll98748977,st25,other,,loc0194
-,ocd-id,,ocd-division/country:us/state:ma/place:nahant,nah02078,poll25869631,st25,other,,loc0195
-,ocd-id,,ocd-division/country:us/state:ma/place:nantucket,nantuc02082,poll4534471,st25,other,,loc0196
-,ocd-id,,ocd-division/country:us/state:ma/place:natick,nat02092,poll60405540,st25,other,,loc0197
-,ocd-id,,ocd-division/country:us/state:ma/place:needham,need02108,poll40431391,st25,other,,loc0198
-,ocd-id,,ocd-division/country:us/state:ma/place:new_bedford,new_bedf02115,poll81410 poll24852753 poll4519953 poll33093412,st25,other,,loc0199
-,ocd-id,,ocd-division/country:us/state:ma/place:new_braintree,new_braint02127,poll14872549,st25,other,,loc0200
-,ocd-id,,ocd-division/country:us/state:ma/place:new_marlborough,new_marlboro02138,poll46357190,st25,other,,loc0201
-,ocd-id,,ocd-division/country:us/state:ma/place:newbury,newb02146,poll25617438,st25,other,,loc0202
-,ocd-id,,ocd-division/country:us/state:ma/place:newburyport,newburyp02153,poll51930676,st25,other,,loc0203
-,ocd-id,,ocd-division/country:us/state:ma/place:newton,new02179,poll22178886 poll39715374 poll78881177 poll83977109 poll99808245 poll85086007 poll49444581 poll63852994,st25,other,,loc0204
-,ocd-id,,ocd-division/country:us/state:ma/place:norfolk,norf02190,poll64144965,st25,other,,loc0205
-,ocd-id,,ocd-division/country:us/state:ma/place:north_adams,north_ad02192,poll92380630,st25,other,,loc0206
-,ocd-id,,ocd-division/country:us/state:ma/place:north_andover,north_ando02205,poll75068458,st25,other,,loc0207
-,ocd-id,,ocd-division/country:us/state:ma/place:north_attleborough,north_attleboro02224,poll92259261,st25,other,,loc0208
-,ocd-id,,ocd-division/country:us/state:ma/place:north_brookfield,north_brookfi02226,poll88721276,st25,other,,loc0209
-,ocd-id,,ocd-division/country:us/state:ma/place:north_reading,north_read02242,poll99708494,st25,other,,loc0210
-,ocd-id,,ocd-division/country:us/state:ma/place:northampton,northamp02248,poll3707366,st25,other,,loc0211
-,ocd-id,,ocd-division/country:us/state:ma/place:northborough,northboro02267,poll15380462 poll30809437 poll36678713,st25,other,,loc0212
-,ocd-id,,ocd-division/country:us/state:ma/place:northbridge,northbri02276,poll46563978,st25,other,,loc0213
-,ocd-id,,ocd-division/country:us/state:ma/place:northfield,northfi02279,poll15688469,st25,other,,loc0214
-,ocd-id,,ocd-division/country:us/state:ma/place:norton,nor02300,poll52170776,st25,other,,loc0215
-,ocd-id,,ocd-division/country:us/state:ma/place:norwell,norw02310,poll72229522,st25,other,,loc0216
-,ocd-id,,ocd-division/country:us/state:ma/place:norwood,norw02313,poll56430462,st25,other,,loc0217
-,ocd-id,,ocd-division/country:us/state:ma/place:oak_bluffs,oak_blu02324,poll36092532,st25,other,,loc0218
-,ocd-id,,ocd-division/country:us/state:ma/place:oakham,oak02335,poll75159617,st25,other,,loc0219
-,ocd-id,,ocd-division/country:us/state:ma/place:orange,ora02351,poll57466518,st25,other,,loc0220
-,ocd-id,,ocd-division/country:us/state:ma/place:orleans,orle02353,poll6521793,st25,other,,loc0221
-,ocd-id,,ocd-division/country:us/state:ma/place:otis,o02364,poll28669100,st25,other,,loc0222
-,ocd-id,,ocd-division/country:us/state:ma/place:oxford,oxf02381,poll7760438,st25,other,,loc0223
-,ocd-id,,ocd-division/country:us/state:ma/place:palmer,pal02388,poll2625612,st25,other,,loc0224
-,ocd-id,,ocd-division/country:us/state:ma/place:paxton,pax02393,poll58137785,st25,other,,loc0225
-,ocd-id,,ocd-division/country:us/state:ma/place:peabody,peab02426,poll74771618 poll73378904 poll84661705,st25,other,,loc0226
-,ocd-id,,ocd-division/country:us/state:ma/place:pelham,pel02432,poll75048363 poll2912618,st25,other,,loc0227
-,ocd-id,,ocd-division/country:us/state:ma/place:pembroke,pembr02444,poll14086813,st25,other,,loc0228
-,ocd-id,,ocd-division/country:us/state:ma/place:pepperell,pepper02449,poll56604559,st25,other,,loc0229
-,ocd-id,,ocd-division/country:us/state:ma/place:peru,p02456,poll4663844,st25,other,,loc0230
-,ocd-id,,ocd-division/country:us/state:ma/place:petersham,peters02460,poll15644519,st25,other,,loc0231
-,ocd-id,,ocd-division/country:us/state:ma/place:phillipston,phillips02470,poll72956096,st25,other,,loc0232
-,ocd-id,,ocd-division/country:us/state:ma/place:pittsfield,pittsfi02481,poll16578691,st25,other,,loc0233
-,ocd-id,,ocd-division/country:us/state:ma/place:plainfield,plainfi02487,poll88685348,st25,other,,loc0234
-,ocd-id,,ocd-division/country:us/state:ma/place:plainville,plainvi02494,poll28591920,st25,other,,loc0235
-,ocd-id,,ocd-division/country:us/state:ma/place:plymouth,plymo02508,poll91774773 poll72596025,st25,other,,loc0236
-,ocd-id,,ocd-division/country:us/state:ma/place:plympton,plymp02522,poll52747045,st25,other,,loc0237
-,ocd-id,,ocd-division/country:us/state:ma/place:princeton,prince02530,poll19003097,st25,other,,loc0238
-,ocd-id,,ocd-division/country:us/state:ma/place:provincetown,provincet02541,poll16914896,st25,other,,loc0239
-,ocd-id,,ocd-division/country:us/state:ma/place:quincy,qui02548,poll76454254 poll62693967,st25,other,,loc0240
-,ocd-id,,ocd-division/country:us/state:ma/place:randolph,rando02561,poll68577041,st25,other,,loc0241
-,ocd-id,,ocd-division/country:us/state:ma/place:raynham,rayn02568,poll47568775,st25,other,,loc0242
-,ocd-id,,ocd-division/country:us/state:ma/place:reading,read02579,poll26959806,st25,other,,loc0243
-,ocd-id,,ocd-division/country:us/state:ma/place:rehoboth,rehob02597,poll30144029 poll31631945,st25,other,,loc0244
-,ocd-id,,ocd-division/country:us/state:ma/place:revere,rev02609,poll155155 poll63290274,st25,other,,loc0245
-,ocd-id,,ocd-division/country:us/state:ma/place:richmond,richm02610,poll20727509,st25,other,,loc0246
-,ocd-id,,ocd-division/country:us/state:ma/place:rochester,roches02629,poll83982266,st25,other,,loc0247
-,ocd-id,,ocd-division/country:us/state:ma/place:rockland,rockl02645,poll52938770,st25,other,,loc0248
-,ocd-id,,ocd-division/country:us/state:ma/place:rockport,rockp02663,poll23536790,st25,other,,loc0249
-,ocd-id,,ocd-division/country:us/state:ma/place:rowe,r02668,poll71813767,st25,other,,loc0250
-,ocd-id,,ocd-division/country:us/state:ma/place:rowley,row02671,poll70693811,st25,other,,loc0251
-,ocd-id,,ocd-division/country:us/state:ma/place:royalston,royals02683,poll42900718,st25,other,,loc0252
-,ocd-id,,ocd-division/country:us/state:ma/place:russell,russ02686,poll74255618,st25,other,,loc0253
-,ocd-id,,ocd-division/country:us/state:ma/place:rutland,rutl02698,poll95559812,st25,other,,loc0254
-,ocd-id,,ocd-division/country:us/state:ma/place:salem,sa02706,poll67516878 poll5258156 poll72087208,st25,other,,loc0255
-,ocd-id,,ocd-division/country:us/state:ma/place:salisbury,salisb02720,poll19290680,st25,other,,loc0256
-,ocd-id,,ocd-division/country:us/state:ma/place:sandisfield,sandisfi02725,poll75450334,st25,other,,loc0257
-,ocd-id,,ocd-division/country:us/state:ma/place:sandwich,sandw02744,poll29211352,st25,other,,loc0258
-,ocd-id,,ocd-division/country:us/state:ma/place:saugus,sau02751,poll97922067,st25,other,,loc0259
-,ocd-id,,ocd-division/country:us/state:ma/place:savoy,sa02758,poll30854624,st25,other,,loc0260
-,ocd-id,,ocd-division/country:us/state:ma/place:scituate,scitu02769,poll7096929,st25,other,,loc0261
-,ocd-id,,ocd-division/country:us/state:ma/place:seekonk,seek02780,poll91798440,st25,other,,loc0262
-,ocd-id,,ocd-division/country:us/state:ma/place:sharon,sha02789,poll75337793,st25,other,,loc0263
-,ocd-id,,ocd-division/country:us/state:ma/place:sheffield,sheffi02793,poll9745374,st25,other,,loc0264
-,ocd-id,,ocd-division/country:us/state:ma/place:shelburne,shelbu02808,poll23278563,st25,other,,loc0265
-,ocd-id,,ocd-division/country:us/state:ma/place:sherborn,sherb02811,poll98860206,st25,other,,loc0266
-,ocd-id,,ocd-division/country:us/state:ma/place:shirley,shir02825,poll26512422,st25,other,,loc0267
-,ocd-id,,ocd-division/country:us/state:ma/place:shrewsbury,shrewsb02840,poll17837004,st25,other,,loc0268
-,ocd-id,,ocd-division/country:us/state:ma/place:shutesbury,shutesb02851,poll67161115,st25,other,,loc0269
-,ocd-id,,ocd-division/country:us/state:ma/place:somerset,somer02860,poll68584697,st25,other,,loc0270
-,ocd-id,,ocd-division/country:us/state:ma/place:somerville,somervi02874,poll51311341,st25,other,,loc0271
-,ocd-id,,ocd-division/country:us/state:ma/place:south_hadley,south_had02885,poll45831354 poll93476415,st25,other,,loc0272
-,ocd-id,,ocd-division/country:us/state:ma/place:southampton,southamp02891,poll52207927,st25,other,,loc0273
-,ocd-id,,ocd-division/country:us/state:ma/place:southborough,southboro02908,poll5276804,st25,other,,loc0274
-,ocd-id,,ocd-division/country:us/state:ma/place:southbridge,southbri02911,poll54712456,st25,other,,loc0275
-,ocd-id,,ocd-division/country:us/state:ma/place:southwick,southw02928,poll86273980,st25,other,,loc0276
-,ocd-id,,ocd-division/country:us/state:ma/place:spencer,spen02940,poll81422412,st25,other,,loc0277
-,ocd-id,,ocd-division/country:us/state:ma/place:springfield,springfi02964,poll57008252 poll59836106 poll82164077 poll15226601 poll14175168 poll47581535 poll94282081 poll22320446 poll68941746 poll29113100,st25,other,,loc0278
-,ocd-id,,ocd-division/country:us/state:ma/place:sterling,sterl02969,poll29426164,st25,other,,loc0279
-,ocd-id,,ocd-division/country:us/state:ma/place:stockbridge,stockbri02993,poll7958398,st25,other,,loc0280
-,ocd-id,,ocd-division/country:us/state:ma/place:stoneham,stone03005,poll87881657,st25,other,,loc0281
-,ocd-id,,ocd-division/country:us/state:ma/place:stoughton,stough03016,poll87677645,st25,other,,loc0282
-,ocd-id,,ocd-division/country:us/state:ma/place:stow,s03028,poll10938391,st25,other,,loc0283
-,ocd-id,,ocd-division/country:us/state:ma/place:sturbridge,sturbri03040,poll35135577,st25,other,,loc0284
-,ocd-id,,ocd-division/country:us/state:ma/place:sudbury,sudb03048,poll50116434,st25,other,,loc0285
-,ocd-id,,ocd-division/country:us/state:ma/place:sunderland,sunderl03060,poll10380327,st25,other,,loc0286
-,ocd-id,,ocd-division/country:us/state:ma/place:sutton,sut03070,poll59771680,st25,other,,loc0287
-,ocd-id,,ocd-division/country:us/state:ma/place:swampscott,swampsc03078,poll92906299,st25,other,,loc0288
-,ocd-id,,ocd-division/country:us/state:ma/place:swansea,swan03095,poll85792342,st25,other,,loc0289
-,ocd-id,,ocd-division/country:us/state:ma/place:taunton,taun03097,poll55610549,st25,other,,loc0290
-,ocd-id,,ocd-division/country:us/state:ma/place:templeton,temple03116,poll81574740 poll71548900,st25,other,,loc0291
-,ocd-id,,ocd-division/country:us/state:ma/place:tewksbury,tewksb03130,poll26967771,st25,other,,loc0292
-,ocd-id,,ocd-division/country:us/state:ma/place:tisbury,tisb03132,poll85028561,st25,other,,loc0293
-,ocd-id,,ocd-division/country:us/state:ma/place:tolland,toll03133,poll64306445,st25,other,,loc0294
-,ocd-id,,ocd-division/country:us/state:ma/place:topsfield,topsfi03137,poll80995543,st25,other,,loc0295
-,ocd-id,,ocd-division/country:us/state:ma/place:townsend,towns03157,poll5659276 poll68313761,st25,other,,loc0296
-,ocd-id,,ocd-division/country:us/state:ma/place:truro,tr03159,poll71217974,st25,other,,loc0297
-,ocd-id,,ocd-division/country:us/state:ma/place:tyngsborough,tyngsboro03178,poll27232764,st25,other,,loc0298
-,ocd-id,,ocd-division/country:us/state:ma/place:tyringham,tyring03182,poll31602907,st25,other,,loc0299
-,ocd-id,,ocd-division/country:us/state:ma/place:upton,up03191,poll14215012 poll52337380,st25,other,,loc0300
-,ocd-id,,ocd-division/country:us/state:ma/place:uxbridge,uxbri03199,poll31333981 poll32485257,st25,other,,loc0301
-,ocd-id,,ocd-division/country:us/state:ma/place:wakefield,wakefi03209,poll39532436,st25,other,,loc0302
-,ocd-id,,ocd-division/country:us/state:ma/place:wales,wa03222,poll29495212,st25,other,,loc0303
-,ocd-id,,ocd-division/country:us/state:ma/place:walpole,walp03226,poll81140093,st25,other,,loc0304
-,ocd-id,,ocd-division/country:us/state:ma/place:waltham,walt03242,poll96950792 poll91346827,st25,other,,loc0305
-,ocd-id,,ocd-division/country:us/state:ma/place:ware,w03253,poll70069811,st25,other,,loc0306
-,ocd-id,,ocd-division/country:us/state:ma/place:wareham,ware03265,poll92037626,st25,other,,loc0307
-,ocd-id,,ocd-division/country:us/state:ma/place:warren,war03270,poll60840134,st25,other,,loc0308
-,ocd-id,,ocd-division/country:us/state:ma/place:warwick,warw03281,poll34141971,st25,other,,loc0309
-,ocd-id,,ocd-division/country:us/state:ma/place:washington,washing03288,poll79769033,st25,other,,loc0310
-,ocd-id,,ocd-division/country:us/state:ma/place:watertown,watert03296,poll27843545,st25,other,,loc0311
-,ocd-id,,ocd-division/country:us/state:ma/place:wayland,wayl03308,poll36908123,st25,other,,loc0312
-,ocd-id,,ocd-division/country:us/state:ma/place:webster,webs03317,poll79638262,st25,other,,loc0313
-,ocd-id,,ocd-division/country:us/state:ma/place:wellesley,welles03334,poll79458071 poll89984958 poll62662476 poll9126547 poll71387011,st25,other,,loc0314
-,ocd-id,,ocd-division/country:us/state:ma/place:wellfleet,wellfl03353,poll25072911,st25,other,,loc0315
-,ocd-id,,ocd-division/country:us/state:ma/place:wendell,wend03364,poll15403494,st25,other,,loc0316
-,ocd-id,,ocd-division/country:us/state:ma/place:wenham,wen03371,poll73684486,st25,other,,loc0317
-,ocd-id,,ocd-division/country:us/state:ma/place:west_boylston,west_boyls03379,poll63602913,st25,other,,loc0318
-,ocd-id,,ocd-division/country:us/state:ma/place:west_bridgewater,west_bridgewa03395,poll73462001,st25,other,,loc0319
-,ocd-id,,ocd-division/country:us/state:ma/place:west_brookfield,west_brookfi03403,poll58128909,st25,other,,loc0320
-,ocd-id,,ocd-division/country:us/state:ma/place:west_newbury,west_newb03417,poll78953037,st25,other,,loc0321
-,ocd-id,,ocd-division/country:us/state:ma/place:west_springfield,west_springfi03419,poll55633397,st25,other,,loc0322
-,ocd-id,,ocd-division/country:us/state:ma/place:west_stockbridge,west_stockbri03432,poll26269786,st25,other,,loc0323
-,ocd-id,,ocd-division/country:us/state:ma/place:west_tisbury,west_tisb03441,poll34050111,st25,other,,loc0324
-,ocd-id,,ocd-division/country:us/state:ma/place:westborough,westboro03449,poll26533782,st25,other,,loc0325
-,ocd-id,,ocd-division/country:us/state:ma/place:westfield,westfi03457,poll94141621,st25,other,,loc0326
-,ocd-id,,ocd-division/country:us/state:ma/place:westford,westf03471,poll40537950,st25,other,,loc0327
-,ocd-id,,ocd-division/country:us/state:ma/place:westhampton,westhamp03476,poll8116203,st25,other,,loc0328
-,ocd-id,,ocd-division/country:us/state:ma/place:westminster,westmins03488,poll24084428,st25,other,,loc0329
-,ocd-id,,ocd-division/country:us/state:ma/place:weston,wes03499,poll66378288,st25,other,,loc0330
-,ocd-id,,ocd-division/country:us/state:ma/place:westport,westp03503,poll79338243,st25,other,,loc0331
-,ocd-id,,ocd-division/country:us/state:ma/place:westwood,westw03515,poll82606413,st25,other,,loc0332
-,ocd-id,,ocd-division/country:us/state:ma/place:weymouth,weymo03533,poll22806532,st25,other,,loc0333
-,ocd-id,,ocd-division/country:us/state:ma/place:whately,what03544,poll64547685,st25,other,,loc0334
-,ocd-id,,ocd-division/country:us/state:ma/place:whitman,whit03550,poll19167468,st25,other,,loc0335
-,ocd-id,,ocd-division/country:us/state:ma/place:wilbraham,wilbra03562,poll9929694,st25,other,,loc0336
-,ocd-id,,ocd-division/country:us/state:ma/place:williamsburg,williamsb03576,poll36120380,st25,other,,loc0337
-,ocd-id,,ocd-division/country:us/state:ma/place:williamstown,williamst03579,poll64765814 poll53173422,st25,other,,loc0338
-,ocd-id,,ocd-division/country:us/state:ma/place:wilmington,wilming03596,poll31867128,st25,other,,loc0339
-,ocd-id,,ocd-division/country:us/state:ma/place:winchendon,winchen03608,poll37493697,st25,other,,loc0340
-,ocd-id,,ocd-division/country:us/state:ma/place:winchester,winches03615,poll6292550,st25,other,,loc0341
-,ocd-id,,ocd-division/country:us/state:ma/place:windsor,wind03622,poll28458735,st25,other,,loc0342
-,ocd-id,,ocd-division/country:us/state:ma/place:winthrop,winth03630,poll65020167,st25,other,,loc0343
-,ocd-id,,ocd-division/country:us/state:ma/place:woburn,wob03641,poll34772687,st25,other,,loc0344
-,ocd-id,,ocd-division/country:us/state:ma/place:worcester,worces03650,poll35312004 poll63417783 poll96135325 poll81748785 poll24267264 poll93706343,st25,other,,loc0345
-,ocd-id,,ocd-division/country:us/state:ma/place:worthington,worthing03670,poll28088173,st25,other,,loc0346
-,ocd-id,,ocd-division/country:us/state:ma/place:wrentham,wrent03676,poll13444021,st25,other,,loc0347
-,ocd-id,,ocd-division/country:us/state:ma/place:yarmouth,yarmo03691,poll2150153,st25,other,,loc0348
+,ocd-id,,ocd-division/country:us/state:ma/place:abington,abing0008,poll70896112,st25,other,,loc0001
+,ocd-id,,ocd-division/country:us/state:ma/place:acton,ac0015,poll61979805,st25,other,,loc0002
+,ocd-id,,ocd-division/country:us/state:ma/place:acushnet,acush0030,poll72012309,st25,other,,loc0003
+,ocd-id,,ocd-division/country:us/state:ma/place:adams,ad0041,poll49323677,st25,other,,loc0004
+,ocd-id,,ocd-division/country:us/state:ma/place:agawam,aga0051,poll60093269 poll27070063 poll5893140,st25,other,,loc0005
+,ocd-id,,ocd-division/country:us/state:ma/place:alford,alf0058,poll16340626,st25,other,,loc0006
+,ocd-id,,ocd-division/country:us/state:ma/place:amesbury,amesb0063,poll51775109,st25,other,,loc0007
+,ocd-id,,ocd-division/country:us/state:ma/place:amherst,amhe0083,poll52195483 poll70432579 poll65222968 poll47790335,st25,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:ma/place:andover,ando0091,poll84711904,st25,other,,loc0009
+,ocd-id,,ocd-division/country:us/state:ma/place:aquinnah,aquin0095,poll72383388,st25,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:ma/place:arlington,arling0111,poll94312367,st25,other,,loc0011
+,ocd-id,,ocd-division/country:us/state:ma/place:ashburnham,ashburn0118,poll9688308,st25,other,,loc0012
+,ocd-id,,ocd-division/country:us/state:ma/place:ashby,as0130,poll95323428,st25,other,,loc0013
+,ocd-id,,ocd-division/country:us/state:ma/place:ashfield,ashfi0138,poll4676870,st25,other,,loc0014
+,ocd-id,,ocd-division/country:us/state:ma/place:ashland,ashl0149,poll75559033,st25,other,,loc0015
+,ocd-id,,ocd-division/country:us/state:ma/place:athol,at0159,poll15604775,st25,other,,loc0016
+,ocd-id,,ocd-division/country:us/state:ma/place:attleboro,attleb0169,poll22663089,st25,other,,loc0017
+,ocd-id,,ocd-division/country:us/state:ma/place:auburn,aub0179,poll92626415,st25,other,,loc0018
+,ocd-id,,ocd-division/country:us/state:ma/place:avon,a0194,poll68940208,st25,other,,loc0019
+,ocd-id,,ocd-division/country:us/state:ma/place:ayer,a0204,poll41390256,st25,other,,loc0020
+,ocd-id,,ocd-division/country:us/state:ma/place:barnstable,barnsta0209,poll7182288 poll44021254,st25,other,,loc0021
+,ocd-id,,ocd-division/country:us/state:ma/place:barre,ba0217,poll58577615,st25,other,,loc0022
+,ocd-id,,ocd-division/country:us/state:ma/place:becket,bec0232,poll24314142,st25,other,,loc0023
+,ocd-id,,ocd-division/country:us/state:ma/place:bedford,bedf0240,poll88359428,st25,other,,loc0024
+,ocd-id,,ocd-division/country:us/state:ma/place:belchertown,belchert0245,poll95335133,st25,other,,loc0025
+,ocd-id,,ocd-division/country:us/state:ma/place:bellingham,belling0262,poll54148911,st25,other,,loc0026
+,ocd-id,,ocd-division/country:us/state:ma/place:belmont,belm0268,poll12187098,st25,other,,loc0027
+,ocd-id,,ocd-division/country:us/state:ma/place:berkley,berk0284,poll80830239,st25,other,,loc0028
+,ocd-id,,ocd-division/country:us/state:ma/place:berlin,ber0291,poll85936630,st25,other,,loc0029
+,ocd-id,,ocd-division/country:us/state:ma/place:bernardston,bernards0296,poll63815961,st25,other,,loc0030
+,ocd-id,,ocd-division/country:us/state:ma/place:beverly,beve0310,poll40702028,st25,other,,loc0031
+,ocd-id,,ocd-division/country:us/state:ma/place:billerica,biller0321,poll63082530,st25,other,,loc0032
+,ocd-id,,ocd-division/country:us/state:ma/place:blackstone,blackst0338,poll46469195,st25,other,,loc0033
+,ocd-id,,ocd-division/country:us/state:ma/place:blandford,blandf0340,poll77445800,st25,other,,loc0034
+,ocd-id,,ocd-division/country:us/state:ma/place:bolton,bol0347,poll47170190,st25,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:ma/place:boston,bos0362,poll68207305 poll13518533 poll10264627 poll83696328 poll73535445 poll95495186 poll19448109 poll91871837 poll19787464 poll94227993 poll31462532 poll34927945 poll60573890 poll59317540 poll95450213 poll84525811 poll10067305 poll33381307 poll74596389 poll77521585 poll90600935 poll3866003 poll12473231 poll30392023 poll42012483 poll61894636 poll46056698 poll78539947,st25,other,,loc0036
+,ocd-id,,ocd-division/country:us/state:ma/place:bourne,bou0400,poll5856175,st25,other,,loc0037
+,ocd-id,,ocd-division/country:us/state:ma/place:boxborough,boxboro0410,poll61768486,st25,other,,loc0038
+,ocd-id,,ocd-division/country:us/state:ma/place:boxford,boxf0420,poll32476732,st25,other,,loc0039
+,ocd-id,,ocd-division/country:us/state:ma/place:boylston,boyls0431,poll60652328,st25,other,,loc0040
+,ocd-id,,ocd-division/country:us/state:ma/place:braintree,braint0442,poll46748562,st25,other,,loc0041
+,ocd-id,,ocd-division/country:us/state:ma/place:brewster,brews0446,poll41490436,st25,other,,loc0042
+,ocd-id,,ocd-division/country:us/state:ma/place:bridgewater,bridgewa0461,poll57400357,st25,other,,loc0043
+,ocd-id,,ocd-division/country:us/state:ma/place:brimfield,brimfi0470,poll99444171,st25,other,,loc0044
+,ocd-id,,ocd-division/country:us/state:ma/place:brockton,brock0480,poll96189737,st25,other,,loc0045
+,ocd-id,,ocd-division/country:us/state:ma/place:brookfield,brookfi0489,poll4764473,st25,other,,loc0046
+,ocd-id,,ocd-division/country:us/state:ma/place:brookline,brookl0500,poll26627760 poll23556787 poll41190154,st25,other,,loc0047
+,ocd-id,,ocd-division/country:us/state:ma/place:buckland,buckl0518,poll42231445,st25,other,,loc0048
+,ocd-id,,ocd-division/country:us/state:ma/place:burlington,burling0529,poll90079861,st25,other,,loc0049
+,ocd-id,,ocd-division/country:us/state:ma/place:cambridge,cambri0534,poll15642496 poll49809549 poll77690299 poll17733619 poll20309329,st25,other,,loc0050
+,ocd-id,,ocd-division/country:us/state:ma/place:canton,can0585,poll64803247,st25,other,,loc0051
+,ocd-id,,ocd-division/country:us/state:ma/place:carlisle,carli0603,poll89277953,st25,other,,loc0052
+,ocd-id,,ocd-division/country:us/state:ma/place:carver,car0614,poll82995571 poll4318812,st25,other,,loc0053
+,ocd-id,,ocd-division/country:us/state:ma/place:charlemont,charlem0621,poll64447266,st25,other,,loc0054
+,ocd-id,,ocd-division/country:us/state:ma/place:charlton,charl0629,poll87472409 poll39730151,st25,other,,loc0055
+,ocd-id,,ocd-division/country:us/state:ma/place:chatham,chat0639,poll14647167,st25,other,,loc0056
+,ocd-id,,ocd-division/country:us/state:ma/place:chelmsford,chelmsf0652,poll81207812,st25,other,,loc0057
+,ocd-id,,ocd-division/country:us/state:ma/place:chelsea,chel0662,poll67046332,st25,other,,loc0058
+,ocd-id,,ocd-division/country:us/state:ma/place:cheshire,chesh0673,poll99923861,st25,other,,loc0059
+,ocd-id,,ocd-division/country:us/state:ma/place:chester,ches0686,poll7165102,st25,other,,loc0060
+,ocd-id,,ocd-division/country:us/state:ma/place:chesterfield,chesterfi0690,poll34415370,st25,other,,loc0061
+,ocd-id,,ocd-division/country:us/state:ma/place:chicopee,chico0691,poll9319532,st25,other,,loc0062
+,ocd-id,,ocd-division/country:us/state:ma/place:chilmark,chilm0711,poll78441538,st25,other,,loc0063
+,ocd-id,,ocd-division/country:us/state:ma/place:clarksburg,clarksb0713,poll78931038,st25,other,,loc0064
+,ocd-id,,ocd-division/country:us/state:ma/place:clinton,clin0721,poll32213674,st25,other,,loc0065
+,ocd-id,,ocd-division/country:us/state:ma/place:cohasset,cohas0731,poll40062540,st25,other,,loc0066
+,ocd-id,,ocd-division/country:us/state:ma/place:colrain,colr0736,poll68488225,st25,other,,loc0067
+,ocd-id,,ocd-division/country:us/state:ma/place:concord,conc0750,poll43079905,st25,other,,loc0068
+,ocd-id,,ocd-division/country:us/state:ma/place:conway,con0760,poll48155136 poll40882707,st25,other,,loc0069
+,ocd-id,,ocd-division/country:us/state:ma/place:cummington,cumming0761,poll44225725,st25,other,,loc0070
+,ocd-id,,ocd-division/country:us/state:ma/place:dalton,dal0770,poll70454965,st25,other,,loc0071
+,ocd-id,,ocd-division/country:us/state:ma/place:danvers,danv0780,poll97472526,st25,other,,loc0072
+,ocd-id,,ocd-division/country:us/state:ma/place:dartmouth,dartmo0786,poll69167387 poll72273869,st25,other,,loc0073
+,ocd-id,,ocd-division/country:us/state:ma/place:dedham,ded0798,poll74972805 poll12047714,st25,other,,loc0074
+,ocd-id,,ocd-division/country:us/state:ma/place:deerfield,deerfi0812,poll3676274,st25,other,,loc0075
+,ocd-id,,ocd-division/country:us/state:ma/place:dennis,den0829,poll49622112,st25,other,,loc0076
+,ocd-id,,ocd-division/country:us/state:ma/place:dighton,digh0831,poll82683557,st25,other,,loc0077
+,ocd-id,,ocd-division/country:us/state:ma/place:douglas,doug0847,poll76457244,st25,other,,loc0078
+,ocd-id,,ocd-division/country:us/state:ma/place:dover,do0860,poll16352037,st25,other,,loc0079
+,ocd-id,,ocd-division/country:us/state:ma/place:dracut,dra0863,poll48657611,st25,other,,loc0080
+,ocd-id,,ocd-division/country:us/state:ma/place:dudley,dud0880,poll8729004,st25,other,,loc0081
+,ocd-id,,ocd-division/country:us/state:ma/place:dunstable,dunsta0889,poll70128240,st25,other,,loc0082
+,ocd-id,,ocd-division/country:us/state:ma/place:duxbury,duxb0902,poll66282114,st25,other,,loc0083
+,ocd-id,,ocd-division/country:us/state:ma/place:east_bridgewater,east_bridgewa0909,poll8178500,st25,other,,loc0084
+,ocd-id,,ocd-division/country:us/state:ma/place:east_brookfield,east_brookfi0925,poll47035574,st25,other,,loc0085
+,ocd-id,,ocd-division/country:us/state:ma/place:east_longmeadow,east_longmea0933,poll26367419,st25,other,,loc0086
+,ocd-id,,ocd-division/country:us/state:ma/place:eastham,east0942,poll72601430,st25,other,,loc0087
+,ocd-id,,ocd-division/country:us/state:ma/place:easthampton,easthamp0957,poll82534555,st25,other,,loc0088
+,ocd-id,,ocd-division/country:us/state:ma/place:easton,eas0971,poll53438639 poll80665077,st25,other,,loc0089
+,ocd-id,,ocd-division/country:us/state:ma/place:edgartown,edgart0982,poll2493385,st25,other,,loc0090
+,ocd-id,,ocd-division/country:us/state:ma/place:egremont,egrem0990,poll83222675,st25,other,,loc0091
+,ocd-id,,ocd-division/country:us/state:ma/place:erving,erv01000,poll34092481,st25,other,,loc0092
+,ocd-id,,ocd-division/country:us/state:ma/place:essex,es01014,poll12902351 poll30197727,st25,other,,loc0093
+,ocd-id,,ocd-division/country:us/state:ma/place:everett,ever01020,poll9842291,st25,other,,loc0094
+,ocd-id,,ocd-division/country:us/state:ma/place:fairhaven,fairha01029,poll47237649 poll59202448,st25,other,,loc0095
+,ocd-id,,ocd-division/country:us/state:ma/place:fall_river,fall_ri01040,poll67674200,st25,other,,loc0096
+,ocd-id,,ocd-division/country:us/state:ma/place:falmouth,falmo01054,poll41509992,st25,other,,loc0097
+,ocd-id,,ocd-division/country:us/state:ma/place:fitchburg,fitchb01060,poll88098553,st25,other,,loc0098
+,ocd-id,,ocd-division/country:us/state:ma/place:florida,flor01070,poll7175382,st25,other,,loc0099
+,ocd-id,,ocd-division/country:us/state:ma/place:foxborough,foxboro01079,poll7308892,st25,other,,loc0100
+,ocd-id,,ocd-division/country:us/state:ma/place:framingham,framing01085,poll427933 poll70742707,st25,other,,loc0101
+,ocd-id,,ocd-division/country:us/state:ma/place:franklin,frank01112,poll60117378 poll53031612,st25,other,,loc0102
+,ocd-id,,ocd-division/country:us/state:ma/place:freetown,freet01119,poll23187662 poll77691460,st25,other,,loc0103
+,ocd-id,,ocd-division/country:us/state:ma/place:gardner,gard01127,poll16077270,st25,other,,loc0104
+,ocd-id,,ocd-division/country:us/state:ma/place:georgetown,georget01138,poll73552809,st25,other,,loc0105
+,ocd-id,,ocd-division/country:us/state:ma/place:gill,g01149,poll67853316,st25,other,,loc0106
+,ocd-id,,ocd-division/country:us/state:ma/place:gloucester,glouces01160,poll17291860,st25,other,,loc0107
+,ocd-id,,ocd-division/country:us/state:ma/place:goshen,gos01163,poll96804253,st25,other,,loc0108
+,ocd-id,,ocd-division/country:us/state:ma/place:gosnold,gosn01174,poll20281678,st25,other,,loc0109
+,ocd-id,,ocd-division/country:us/state:ma/place:grafton,graf01181,poll35044557,st25,other,,loc0110
+,ocd-id,,ocd-division/country:us/state:ma/place:granby,gra01191,poll13797146,st25,other,,loc0111
+,ocd-id,,ocd-division/country:us/state:ma/place:granville,granvi01201,poll47453985,st25,other,,loc0112
+,ocd-id,,ocd-division/country:us/state:ma/place:great_barrington,great_barring01208,poll58752451 poll89944094 poll24644210,st25,other,,loc0113
+,ocd-id,,ocd-division/country:us/state:ma/place:greenfield,greenfi01221,poll15110071,st25,other,,loc0114
+,ocd-id,,ocd-division/country:us/state:ma/place:groton,gro01236,poll98189250,st25,other,,loc0115
+,ocd-id,,ocd-division/country:us/state:ma/place:groveland,grovel01243,poll63565536,st25,other,,loc0116
+,ocd-id,,ocd-division/country:us/state:ma/place:hadley,had01257,poll55468586,st25,other,,loc0117
+,ocd-id,,ocd-division/country:us/state:ma/place:halifax,hali01262,poll73190057,st25,other,,loc0118
+,ocd-id,,ocd-division/country:us/state:ma/place:hamilton,hamil01274,poll60450383,st25,other,,loc0119
+,ocd-id,,ocd-division/country:us/state:ma/place:hampden,hamp01280,poll23442727 poll84594947,st25,other,,loc0120
+,ocd-id,,ocd-division/country:us/state:ma/place:hancock,hanc01299,poll88832539,st25,other,,loc0121
+,ocd-id,,ocd-division/country:us/state:ma/place:hanover,hano01310,poll59546963,st25,other,,loc0122
+,ocd-id,,ocd-division/country:us/state:ma/place:hanson,han01314,poll97729375,st25,other,,loc0123
+,ocd-id,,ocd-division/country:us/state:ma/place:hardwick,hardw01335,poll88975682,st25,other,,loc0124
+,ocd-id,,ocd-division/country:us/state:ma/place:harvard,harv01342,poll86184237,st25,other,,loc0125
+,ocd-id,,ocd-division/country:us/state:ma/place:harwich,harw01352,poll70126192,st25,other,,loc0126
+,ocd-id,,ocd-division/country:us/state:ma/place:hatfield,hatfi01360,poll79459025,st25,other,,loc0127
+,ocd-id,,ocd-division/country:us/state:ma/place:haverhill,haverh01379,poll36498953 poll72284605 poll9770927 poll71455541,st25,other,,loc0128
+,ocd-id,,ocd-division/country:us/state:ma/place:hawley,haw01380,poll68748642,st25,other,,loc0129
+,ocd-id,,ocd-division/country:us/state:ma/place:heath,he01388,poll91596338,st25,other,,loc0130
+,ocd-id,,ocd-division/country:us/state:ma/place:hingham,hing01392,poll26964505,st25,other,,loc0131
+,ocd-id,,ocd-division/country:us/state:ma/place:hinsdale,hinsd01401,poll83883362,st25,other,,loc0132
+,ocd-id,,ocd-division/country:us/state:ma/place:holbrook,holbr01411,poll30972489,st25,other,,loc0133
+,ocd-id,,ocd-division/country:us/state:ma/place:holden,hol01422,poll12990135,st25,other,,loc0134
+,ocd-id,,ocd-division/country:us/state:ma/place:holland,holl01432,poll19473996,st25,other,,loc0135
+,ocd-id,,ocd-division/country:us/state:ma/place:holliston,hollis01433,poll98907248,st25,other,,loc0136
+,ocd-id,,ocd-division/country:us/state:ma/place:holyoke,holy01468,poll31688198 poll95047246 poll65330870 poll45423337 poll21787887 poll21896065 poll84619522,st25,other,,loc0137
+,ocd-id,,ocd-division/country:us/state:ma/place:hopedale,hoped01476,poll31345716,st25,other,,loc0138
+,ocd-id,,ocd-division/country:us/state:ma/place:hopkinton,hopkin01494,poll52104846,st25,other,,loc0139
+,ocd-id,,ocd-division/country:us/state:ma/place:hubbardston,hubbards01502,poll15707025 poll44122137,st25,other,,loc0140
+,ocd-id,,ocd-division/country:us/state:ma/place:hudson,hud01514,poll35243033,st25,other,,loc0141
+,ocd-id,,ocd-division/country:us/state:ma/place:hull,h01517,poll26510275,st25,other,,loc0142
+,ocd-id,,ocd-division/country:us/state:ma/place:huntington,hunting01530,poll68277175,st25,other,,loc0143
+,ocd-id,,ocd-division/country:us/state:ma/place:ipswich,ipsw01535,poll95628606,st25,other,,loc0144
+,ocd-id,,ocd-division/country:us/state:ma/place:kingston,kings01552,poll75735467,st25,other,,loc0145
+,ocd-id,,ocd-division/country:us/state:ma/place:lakeville,lakevi01564,poll40471506,st25,other,,loc0146
+,ocd-id,,ocd-division/country:us/state:ma/place:lancaster,lancas01574,poll29889720 poll11613000 poll97330073,st25,other,,loc0147
+,ocd-id,,ocd-division/country:us/state:ma/place:lanesborough,lanesboro01585,poll47814512,st25,other,,loc0148
+,ocd-id,,ocd-division/country:us/state:ma/place:lawrence,lawre01589,poll57214393,st25,other,,loc0149
+,ocd-id,,ocd-division/country:us/state:ma/place:lee,01608,poll87975882,st25,other,,loc0150
+,ocd-id,,ocd-division/country:us/state:ma/place:leicester,leices01618,poll25732386,st25,other,,loc0151
+,ocd-id,,ocd-division/country:us/state:ma/place:lenox,le01630,poll23335906,st25,other,,loc0152
+,ocd-id,,ocd-division/country:us/state:ma/place:leominster,leomins01635,poll91778109,st25,other,,loc0153
+,ocd-id,,ocd-division/country:us/state:ma/place:leverett,lever01650,poll4249225,st25,other,,loc0154
+,ocd-id,,ocd-division/country:us/state:ma/place:lexington,lexing01652,poll60301845,st25,other,,loc0155
+,ocd-id,,ocd-division/country:us/state:ma/place:leyden,ley01663,poll81284007,st25,other,,loc0156
+,ocd-id,,ocd-division/country:us/state:ma/place:lincoln,linc01675,poll62855297,st25,other,,loc0157
+,ocd-id,,ocd-division/country:us/state:ma/place:littleton,little01682,poll39797978,st25,other,,loc0158
+,ocd-id,,ocd-division/country:us/state:ma/place:longmeadow,longmea01691,poll29124203,st25,other,,loc0159
+,ocd-id,,ocd-division/country:us/state:ma/place:lowell,low01720,poll9339478 poll53172010 poll9787222 poll9616800 poll54703616 poll8152528 poll2662410 poll82816847 poll85612597 poll95321535 poll57022368 poll5180973 poll74185789,st25,other,,loc0160
+,ocd-id,,ocd-division/country:us/state:ma/place:ludlow,lud01731,poll83630698,st25,other,,loc0161
+,ocd-id,,ocd-division/country:us/state:ma/place:lunenburg,lunenb01741,poll3849265,st25,other,,loc0162
+,ocd-id,,ocd-division/country:us/state:ma/place:lynn,l01760,poll92976913 poll24306246,st25,other,,loc0163
+,ocd-id,,ocd-division/country:us/state:ma/place:lynnfield,lynnfi01770,poll45548157,st25,other,,loc0164
+,ocd-id,,ocd-division/country:us/state:ma/place:malden,mal01781,poll60287927 poll25541159,st25,other,,loc0165
+,ocd-id,,ocd-division/country:us/state:ma/place:manchester-by-the-sea,manchester-by-the-01791,poll11923689,st25,other,,loc0166
+,ocd-id,,ocd-division/country:us/state:ma/place:mansfield,mansfi01797,poll58614696,st25,other,,loc0167
+,ocd-id,,ocd-division/country:us/state:ma/place:marblehead,marbleh01817,poll45928980,st25,other,,loc0168
+,ocd-id,,ocd-division/country:us/state:ma/place:marion,mar01820,poll29317614,st25,other,,loc0169
+,ocd-id,,ocd-division/country:us/state:ma/place:marlborough,marlboro01836,poll14052738,st25,other,,loc0170
+,ocd-id,,ocd-division/country:us/state:ma/place:marshfield,marshfi01845,poll18028196,st25,other,,loc0171
+,ocd-id,,ocd-division/country:us/state:ma/place:mashpee,mash01861,poll97646102,st25,other,,loc0172
+,ocd-id,,ocd-division/country:us/state:ma/place:mattapoisett,mattapois01870,poll48301125,st25,other,,loc0173
+,ocd-id,,ocd-division/country:us/state:ma/place:maynard,mayn01873,poll58292255,st25,other,,loc0174
+,ocd-id,,ocd-division/country:us/state:ma/place:medfield,medfi01888,poll19247454,st25,other,,loc0175
+,ocd-id,,ocd-division/country:us/state:ma/place:medford,medf01903,poll62795761,st25,other,,loc0176
+,ocd-id,,ocd-division/country:us/state:ma/place:medway,med01908,poll43134797,st25,other,,loc0177
+,ocd-id,,ocd-division/country:us/state:ma/place:melrose,melr01921,poll31933954,st25,other,,loc0178
+,ocd-id,,ocd-division/country:us/state:ma/place:mendon,men01937,poll84482477,st25,other,,loc0179
+,ocd-id,,ocd-division/country:us/state:ma/place:merrimac,merri01949,poll91613811,st25,other,,loc0180
+,ocd-id,,ocd-division/country:us/state:ma/place:methuen,meth01952,poll96628669,st25,other,,loc0181
+,ocd-id,,ocd-division/country:us/state:ma/place:middleborough,middleboro01968,poll75311291,st25,other,,loc0182
+,ocd-id,,ocd-division/country:us/state:ma/place:middlefield,middlefi01972,poll89104570,st25,other,,loc0183
+,ocd-id,,ocd-division/country:us/state:ma/place:middleton,middle01981,poll50991794,st25,other,,loc0184
+,ocd-id,,ocd-division/country:us/state:ma/place:milford,milf01987,poll27824534,st25,other,,loc0185
+,ocd-id,,ocd-division/country:us/state:ma/place:millbury,millb02004,poll43530928,st25,other,,loc0186
+,ocd-id,,ocd-division/country:us/state:ma/place:millis,mil02016,poll66291922,st25,other,,loc0187
+,ocd-id,,ocd-division/country:us/state:ma/place:millville,millvi02024,poll33518730,st25,other,,loc0188
+,ocd-id,,ocd-division/country:us/state:ma/place:milton,mil02030,poll65058497,st25,other,,loc0189
+,ocd-id,,ocd-division/country:us/state:ma/place:monroe,mon02040,poll6882387,st25,other,,loc0190
+,ocd-id,,ocd-division/country:us/state:ma/place:monson,mon02054,poll568675 poll47420117,st25,other,,loc0191
+,ocd-id,,ocd-division/country:us/state:ma/place:montague,monta02063,poll76030516,st25,other,,loc0192
+,ocd-id,,ocd-division/country:us/state:ma/place:monterey,monte02068,poll11035062,st25,other,,loc0193
+,ocd-id,,ocd-division/country:us/state:ma/place:montgomery,montgom02070,poll69446036,st25,other,,loc0194
+,ocd-id,,ocd-division/country:us/state:ma/place:nahant,nah02080,poll74532467,st25,other,,loc0195
+,ocd-id,,ocd-division/country:us/state:ma/place:nantucket,nantuc02082,poll81617541,st25,other,,loc0196
+,ocd-id,,ocd-division/country:us/state:ma/place:natick,nat02092,poll39851835,st25,other,,loc0197
+,ocd-id,,ocd-division/country:us/state:ma/place:needham,need02108,poll15238806,st25,other,,loc0198
+,ocd-id,,ocd-division/country:us/state:ma/place:new_bedford,new_bedf02115,poll81849883 poll9127513 poll78191391,st25,other,,loc0199
+,ocd-id,,ocd-division/country:us/state:ma/place:new_braintree,new_braint02130,poll64768892,st25,other,,loc0200
+,ocd-id,,ocd-division/country:us/state:ma/place:new_marlborough,new_marlboro02141,poll31063510,st25,other,,loc0201
+,ocd-id,,ocd-division/country:us/state:ma/place:newbury,newb02146,poll51684631,st25,other,,loc0202
+,ocd-id,,ocd-division/country:us/state:ma/place:newburyport,newburyp02153,poll52218660,st25,other,,loc0203
+,ocd-id,,ocd-division/country:us/state:ma/place:newton,new02177,poll93154835 poll15652564 poll13261979 poll88032793 poll59546545 poll17460780 poll89025218 poll67860762,st25,other,,loc0204
+,ocd-id,,ocd-division/country:us/state:ma/place:norfolk,norf02190,poll65872914,st25,other,,loc0205
+,ocd-id,,ocd-division/country:us/state:ma/place:north_adams,north_ad02204,poll46172931,st25,other,,loc0206
+,ocd-id,,ocd-division/country:us/state:ma/place:north_andover,north_ando02205,poll30677771,st25,other,,loc0207
+,ocd-id,,ocd-division/country:us/state:ma/place:north_attleborough,north_attleboro02225,poll47547997,st25,other,,loc0208
+,ocd-id,,ocd-division/country:us/state:ma/place:north_brookfield,north_brookfi02227,poll94136820,st25,other,,loc0209
+,ocd-id,,ocd-division/country:us/state:ma/place:north_reading,north_read02244,poll97994508,st25,other,,loc0210
+,ocd-id,,ocd-division/country:us/state:ma/place:northampton,northamp02255,poll72978312,st25,other,,loc0211
+,ocd-id,,ocd-division/country:us/state:ma/place:northborough,northboro02267,poll48235306 poll71151073 poll38055275,st25,other,,loc0212
+,ocd-id,,ocd-division/country:us/state:ma/place:northbridge,northbri02276,poll18681062,st25,other,,loc0213
+,ocd-id,,ocd-division/country:us/state:ma/place:northfield,northfi02288,poll52741156,st25,other,,loc0214
+,ocd-id,,ocd-division/country:us/state:ma/place:norton,nor02301,poll88775759,st25,other,,loc0215
+,ocd-id,,ocd-division/country:us/state:ma/place:norwell,norw02310,poll49951968,st25,other,,loc0216
+,ocd-id,,ocd-division/country:us/state:ma/place:norwood,norw02324,poll28274927,st25,other,,loc0217
+,ocd-id,,ocd-division/country:us/state:ma/place:oak_bluffs,oak_blu02325,poll97136631,st25,other,,loc0218
+,ocd-id,,ocd-division/country:us/state:ma/place:oakham,oak02335,poll61639179,st25,other,,loc0219
+,ocd-id,,ocd-division/country:us/state:ma/place:orange,ora02351,poll7345600,st25,other,,loc0220
+,ocd-id,,ocd-division/country:us/state:ma/place:orleans,orle02355,poll44738094,st25,other,,loc0221
+,ocd-id,,ocd-division/country:us/state:ma/place:otis,o02366,poll87535234,st25,other,,loc0222
+,ocd-id,,ocd-division/country:us/state:ma/place:oxford,oxf02381,poll75086204,st25,other,,loc0223
+,ocd-id,,ocd-division/country:us/state:ma/place:palmer,pal02388,poll1118698,st25,other,,loc0224
+,ocd-id,,ocd-division/country:us/state:ma/place:paxton,pax02397,poll85456518,st25,other,,loc0225
+,ocd-id,,ocd-division/country:us/state:ma/place:peabody,peab02426,poll11376044 poll17788073 poll71142478,st25,other,,loc0226
+,ocd-id,,ocd-division/country:us/state:ma/place:pelham,pel02432,poll65753302 poll55437004,st25,other,,loc0227
+,ocd-id,,ocd-division/country:us/state:ma/place:pembroke,pembr02446,poll68499758,st25,other,,loc0228
+,ocd-id,,ocd-division/country:us/state:ma/place:pepperell,pepper02449,poll74817857,st25,other,,loc0229
+,ocd-id,,ocd-division/country:us/state:ma/place:peru,p02457,poll96784063,st25,other,,loc0230
+,ocd-id,,ocd-division/country:us/state:ma/place:petersham,peters02460,poll18201539,st25,other,,loc0231
+,ocd-id,,ocd-division/country:us/state:ma/place:phillipston,phillips02468,poll72956096,st25,other,,loc0232
+,ocd-id,,ocd-division/country:us/state:ma/place:pittsfield,pittsfi02483,poll33286464,st25,other,,loc0233
+,ocd-id,,ocd-division/country:us/state:ma/place:plainfield,plainfi02487,poll63468242,st25,other,,loc0234
+,ocd-id,,ocd-division/country:us/state:ma/place:plainville,plainvi02500,poll67612250,st25,other,,loc0235
+,ocd-id,,ocd-division/country:us/state:ma/place:plymouth,plymo02508,poll48523525 poll69709282,st25,other,,loc0236
+,ocd-id,,ocd-division/country:us/state:ma/place:plympton,plymp02522,poll95674918,st25,other,,loc0237
+,ocd-id,,ocd-division/country:us/state:ma/place:princeton,prince02529,poll6557129,st25,other,,loc0238
+,ocd-id,,ocd-division/country:us/state:ma/place:provincetown,provincet02541,poll35661629,st25,other,,loc0239
+,ocd-id,,ocd-division/country:us/state:ma/place:quincy,qui02548,poll33804989 poll63923007,st25,other,,loc0240
+,ocd-id,,ocd-division/country:us/state:ma/place:randolph,rando02561,poll81934437,st25,other,,loc0241
+,ocd-id,,ocd-division/country:us/state:ma/place:raynham,rayn02579,poll92907938,st25,other,,loc0242
+,ocd-id,,ocd-division/country:us/state:ma/place:reading,read02586,poll13284087,st25,other,,loc0243
+,ocd-id,,ocd-division/country:us/state:ma/place:rehoboth,rehob02600,poll82051 poll93591983,st25,other,,loc0244
+,ocd-id,,ocd-division/country:us/state:ma/place:revere,rev02609,poll52098383 poll13332592,st25,other,,loc0245
+,ocd-id,,ocd-division/country:us/state:ma/place:richmond,richm02612,poll28161551,st25,other,,loc0246
+,ocd-id,,ocd-division/country:us/state:ma/place:rochester,roches02629,poll20291997,st25,other,,loc0247
+,ocd-id,,ocd-division/country:us/state:ma/place:rockland,rockl02645,poll30558356,st25,other,,loc0248
+,ocd-id,,ocd-division/country:us/state:ma/place:rockport,rockp02663,poll86403073,st25,other,,loc0249
+,ocd-id,,ocd-division/country:us/state:ma/place:rowe,r02670,poll70213801,st25,other,,loc0250
+,ocd-id,,ocd-division/country:us/state:ma/place:rowley,row02671,poll80881184,st25,other,,loc0251
+,ocd-id,,ocd-division/country:us/state:ma/place:royalston,royals02683,poll4773410,st25,other,,loc0252
+,ocd-id,,ocd-division/country:us/state:ma/place:russell,russ02688,poll98868872,st25,other,,loc0253
+,ocd-id,,ocd-division/country:us/state:ma/place:rutland,rutl02700,poll48482793,st25,other,,loc0254
+,ocd-id,,ocd-division/country:us/state:ma/place:salem,sa02706,poll98441654 poll32365106 poll93811791,st25,other,,loc0255
+,ocd-id,,ocd-division/country:us/state:ma/place:salisbury,salisb02720,poll10169507,st25,other,,loc0256
+,ocd-id,,ocd-division/country:us/state:ma/place:sandisfield,sandisfi02725,poll39994263,st25,other,,loc0257
+,ocd-id,,ocd-division/country:us/state:ma/place:sandwich,sandw02744,poll78828226,st25,other,,loc0258
+,ocd-id,,ocd-division/country:us/state:ma/place:saugus,sau02751,poll82784974,st25,other,,loc0259
+,ocd-id,,ocd-division/country:us/state:ma/place:savoy,sa02760,poll68769802,st25,other,,loc0260
+,ocd-id,,ocd-division/country:us/state:ma/place:scituate,scitu02769,poll69862233,st25,other,,loc0261
+,ocd-id,,ocd-division/country:us/state:ma/place:seekonk,seek02780,poll56437411,st25,other,,loc0262
+,ocd-id,,ocd-division/country:us/state:ma/place:sharon,sha02789,poll65964448,st25,other,,loc0263
+,ocd-id,,ocd-division/country:us/state:ma/place:sheffield,sheffi02795,poll7949509,st25,other,,loc0264
+,ocd-id,,ocd-division/country:us/state:ma/place:shelburne,shelbu02808,poll95012530,st25,other,,loc0265
+,ocd-id,,ocd-division/country:us/state:ma/place:sherborn,sherb02820,poll11422341,st25,other,,loc0266
+,ocd-id,,ocd-division/country:us/state:ma/place:shirley,shir02825,poll11370215,st25,other,,loc0267
+,ocd-id,,ocd-division/country:us/state:ma/place:shrewsbury,shrewsb02840,poll95005326,st25,other,,loc0268
+,ocd-id,,ocd-division/country:us/state:ma/place:shutesbury,shutesb02851,poll82013068,st25,other,,loc0269
+,ocd-id,,ocd-division/country:us/state:ma/place:somerset,somer02860,poll16954341,st25,other,,loc0270
+,ocd-id,,ocd-division/country:us/state:ma/place:somerville,somervi02874,poll58092712,st25,other,,loc0271
+,ocd-id,,ocd-division/country:us/state:ma/place:south_hadley,south_had02887,poll62735961 poll5496774,st25,other,,loc0272
+,ocd-id,,ocd-division/country:us/state:ma/place:southampton,southamp02891,poll76209654,st25,other,,loc0273
+,ocd-id,,ocd-division/country:us/state:ma/place:southborough,southboro02908,poll64134895,st25,other,,loc0274
+,ocd-id,,ocd-division/country:us/state:ma/place:southbridge,southbri02920,poll11911785,st25,other,,loc0275
+,ocd-id,,ocd-division/country:us/state:ma/place:southwick,southw02928,poll60025984,st25,other,,loc0276
+,ocd-id,,ocd-division/country:us/state:ma/place:spencer,spen02940,poll45044023,st25,other,,loc0277
+,ocd-id,,ocd-division/country:us/state:ma/place:springfield,springfi02964,poll14672041 poll87216561 poll72106649 poll72032139 poll92834145 poll83049108 poll95025160 poll42924220 poll76927213 poll25955330,st25,other,,loc0278
+,ocd-id,,ocd-division/country:us/state:ma/place:sterling,sterl02974,poll63790063,st25,other,,loc0279
+,ocd-id,,ocd-division/country:us/state:ma/place:stockbridge,stockbri02998,poll51575745,st25,other,,loc0280
+,ocd-id,,ocd-division/country:us/state:ma/place:stoneham,stone03008,poll83506435,st25,other,,loc0281
+,ocd-id,,ocd-division/country:us/state:ma/place:stoughton,stough03020,poll50103220,st25,other,,loc0282
+,ocd-id,,ocd-division/country:us/state:ma/place:stow,s03028,poll94850764,st25,other,,loc0283
+,ocd-id,,ocd-division/country:us/state:ma/place:sturbridge,sturbri03042,poll38800034,st25,other,,loc0284
+,ocd-id,,ocd-division/country:us/state:ma/place:sudbury,sudb03048,poll9068651,st25,other,,loc0285
+,ocd-id,,ocd-division/country:us/state:ma/place:sunderland,sunderl03060,poll38857520,st25,other,,loc0286
+,ocd-id,,ocd-division/country:us/state:ma/place:sutton,sut03076,poll56022107,st25,other,,loc0287
+,ocd-id,,ocd-division/country:us/state:ma/place:swampscott,swampsc03086,poll19848189,st25,other,,loc0288
+,ocd-id,,ocd-division/country:us/state:ma/place:swansea,swan03089,poll83326366,st25,other,,loc0289
+,ocd-id,,ocd-division/country:us/state:ma/place:taunton,taun03099,poll6469548,st25,other,,loc0290
+,ocd-id,,ocd-division/country:us/state:ma/place:templeton,temple03119,poll46591633 poll60029465,st25,other,,loc0291
+,ocd-id,,ocd-division/country:us/state:ma/place:tewksbury,tewksb03132,poll29395690,st25,other,,loc0292
+,ocd-id,,ocd-division/country:us/state:ma/place:tisbury,tisb03133,poll45708226,st25,other,,loc0293
+,ocd-id,,ocd-division/country:us/state:ma/place:tolland,toll03135,poll37264685,st25,other,,loc0294
+,ocd-id,,ocd-division/country:us/state:ma/place:topsfield,topsfi03139,poll22581990,st25,other,,loc0295
+,ocd-id,,ocd-division/country:us/state:ma/place:townsend,towns03157,poll6047158,st25,other,,loc0296
+,ocd-id,,ocd-division/country:us/state:ma/place:truro,tr03170,poll9995524,st25,other,,loc0297
+,ocd-id,,ocd-division/country:us/state:ma/place:tyngsborough,tyngsboro03178,poll3716906,st25,other,,loc0298
+,ocd-id,,ocd-division/country:us/state:ma/place:tyringham,tyring03183,poll58343993,st25,other,,loc0299
+,ocd-id,,ocd-division/country:us/state:ma/place:upton,up03186,poll90734353 poll59383415,st25,other,,loc0300
+,ocd-id,,ocd-division/country:us/state:ma/place:uxbridge,uxbri03199,poll38329518 poll51821662,st25,other,,loc0301
+,ocd-id,,ocd-division/country:us/state:ma/place:wakefield,wakefi03209,poll94530538,st25,other,,loc0302
+,ocd-id,,ocd-division/country:us/state:ma/place:wales,wa03222,poll39868896,st25,other,,loc0303
+,ocd-id,,ocd-division/country:us/state:ma/place:walpole,walp03238,poll29692160,st25,other,,loc0304
+,ocd-id,,ocd-division/country:us/state:ma/place:waltham,walt03248,poll83102358 poll44841684,st25,other,,loc0305
+,ocd-id,,ocd-division/country:us/state:ma/place:ware,w03253,poll87476036,st25,other,,loc0306
+,ocd-id,,ocd-division/country:us/state:ma/place:wareham,ware03269,poll50034630,st25,other,,loc0307
+,ocd-id,,ocd-division/country:us/state:ma/place:warren,war03270,poll56431491,st25,other,,loc0308
+,ocd-id,,ocd-division/country:us/state:ma/place:warwick,warw03281,poll44049846,st25,other,,loc0309
+,ocd-id,,ocd-division/country:us/state:ma/place:washington,washing03289,poll10525271,st25,other,,loc0310
+,ocd-id,,ocd-division/country:us/state:ma/place:watertown,watert03300,poll28573474,st25,other,,loc0311
+,ocd-id,,ocd-division/country:us/state:ma/place:wayland,wayl03308,poll64479453,st25,other,,loc0312
+,ocd-id,,ocd-division/country:us/state:ma/place:webster,webs03317,poll80699,st25,other,,loc0313
+,ocd-id,,ocd-division/country:us/state:ma/place:wellesley,welles03334,poll92504173 poll26848893 poll74735858 poll98818884 poll80905522,st25,other,,loc0314
+,ocd-id,,ocd-division/country:us/state:ma/place:wellfleet,wellfl03359,poll54458387,st25,other,,loc0315
+,ocd-id,,ocd-division/country:us/state:ma/place:wendell,wend03366,poll7556324,st25,other,,loc0316
+,ocd-id,,ocd-division/country:us/state:ma/place:wenham,wen03371,poll89964830,st25,other,,loc0317
+,ocd-id,,ocd-division/country:us/state:ma/place:west_boylston,west_boyls03386,poll24502839,st25,other,,loc0318
+,ocd-id,,ocd-division/country:us/state:ma/place:west_bridgewater,west_bridgewa03389,poll99369501,st25,other,,loc0319
+,ocd-id,,ocd-division/country:us/state:ma/place:west_brookfield,west_brookfi03402,poll62885730,st25,other,,loc0320
+,ocd-id,,ocd-division/country:us/state:ma/place:west_newbury,west_newb03420,poll41080143,st25,other,,loc0321
+,ocd-id,,ocd-division/country:us/state:ma/place:west_springfield,west_springfi03431,poll45711241,st25,other,,loc0322
+,ocd-id,,ocd-division/country:us/state:ma/place:west_stockbridge,west_stockbri03434,poll72875706,st25,other,,loc0323
+,ocd-id,,ocd-division/country:us/state:ma/place:west_tisbury,west_tisb03441,poll46699113,st25,other,,loc0324
+,ocd-id,,ocd-division/country:us/state:ma/place:westborough,westboro03454,poll29273804,st25,other,,loc0325
+,ocd-id,,ocd-division/country:us/state:ma/place:westfield,westfi03457,poll74225608,st25,other,,loc0326
+,ocd-id,,ocd-division/country:us/state:ma/place:westford,westf03471,poll79047360,st25,other,,loc0327
+,ocd-id,,ocd-division/country:us/state:ma/place:westhampton,westhamp03481,poll33616456,st25,other,,loc0328
+,ocd-id,,ocd-division/country:us/state:ma/place:westminster,westmins03488,poll14595478,st25,other,,loc0329
+,ocd-id,,ocd-division/country:us/state:ma/place:weston,wes03499,poll55478713,st25,other,,loc0330
+,ocd-id,,ocd-division/country:us/state:ma/place:westport,westp03507,poll99227309,st25,other,,loc0331
+,ocd-id,,ocd-division/country:us/state:ma/place:westwood,westw03515,poll67672940,st25,other,,loc0332
+,ocd-id,,ocd-division/country:us/state:ma/place:weymouth,weymo03529,poll85483376,st25,other,,loc0333
+,ocd-id,,ocd-division/country:us/state:ma/place:whately,what03546,poll37137347,st25,other,,loc0334
+,ocd-id,,ocd-division/country:us/state:ma/place:whitman,whit03556,poll70393884,st25,other,,loc0335
+,ocd-id,,ocd-division/country:us/state:ma/place:wilbraham,wilbra03568,poll22531006,st25,other,,loc0336
+,ocd-id,,ocd-division/country:us/state:ma/place:williamsburg,williamsb03576,poll61548799,st25,other,,loc0337
+,ocd-id,,ocd-division/country:us/state:ma/place:williamstown,williamst03590,poll72539860 poll69876813,st25,other,,loc0338
+,ocd-id,,ocd-division/country:us/state:ma/place:wilmington,wilming03600,poll18953759,st25,other,,loc0339
+,ocd-id,,ocd-division/country:us/state:ma/place:winchendon,winchen03610,poll76244313,st25,other,,loc0340
+,ocd-id,,ocd-division/country:us/state:ma/place:winchester,winches03620,poll13593050,st25,other,,loc0341
+,ocd-id,,ocd-division/country:us/state:ma/place:windsor,wind03624,poll9990874,st25,other,,loc0342
+,ocd-id,,ocd-division/country:us/state:ma/place:winthrop,winth03632,poll26506797,st25,other,,loc0343
+,ocd-id,,ocd-division/country:us/state:ma/place:woburn,wob03643,poll95601675,st25,other,,loc0344
+,ocd-id,,ocd-division/country:us/state:ma/place:worcester,worces03650,poll29059118 poll3398908 poll84472883 poll39839801 poll53689777 poll35188895,st25,other,,loc0345
+,ocd-id,,ocd-division/country:us/state:ma/place:worthington,worthing03672,poll15017333,st25,other,,loc0346
+,ocd-id,,ocd-division/country:us/state:ma/place:wrentham,wrent03676,poll46190128,st25,other,,loc0347
+,ocd-id,,ocd-division/country:us/state:ma/place:yarmouth,yarmo03689,poll23740178,st25,other,,loc0348

@@ -1,0 +1,12 @@
+election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
+,ocd-id,,ocd-division/country:us/state:ut/county:box_elder,box_el0067,poll42775445 poll2200220,st49,other,,loc0001
+,ocd-id,,ocd-division/country:us/state:ut/county:carbon,car0018,poll87903929,st49,other,,loc0002
+,ocd-id,,ocd-division/country:us/state:ut/county:daggett,dagg0041,poll26177246,st49,other,,loc0003
+,ocd-id,,ocd-division/country:us/state:ut/county:emery,em0062,poll10330287,st49,other,,loc0004
+,ocd-id,,ocd-division/country:us/state:ut/county:iron,i0044,poll30182388 poll73545759 poll70029068,st49,other,,loc0005
+,ocd-id,,ocd-division/country:us/state:ut/county:piute,pi0087,poll36658352,st49,other,,loc0006
+,ocd-id,,ocd-division/country:us/state:ut/county:salt_lake,salt_l0094,poll61582448 poll33423810 poll89063608 poll95057381 poll13269669 poll35716744 poll89601719 poll7132574 poll39375479 poll71784023 poll6713102 poll49054574 poll29691044 poll24214506 poll15983711 poll70531682 poll40148622,st49,other,,loc0007
+,ocd-id,,ocd-division/country:us/state:ut/county:sanpete,sanp0069,poll86996951,st49,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:ut/county:tooele,too0043,poll26798024 poll30506997 poll22911734 poll94429476,st49,other,,loc0009
+,ocd-id,,ocd-division/country:us/state:ut/county:utah,u0103,poll58293610 poll63993115 poll5470765 poll64570944 poll80976946 poll8628554 poll76582100 poll95967545 poll87199502 poll12301987 poll92036522,st49,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:ut/county:washington,washing0086,poll82918304 poll35039774 poll89661240 poll25845735 poll73506883 poll90994092,st49,other,,loc0011

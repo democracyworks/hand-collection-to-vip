@@ -18,7 +18,7 @@ class PollingLocationTxt(object):
 
     def get_address_line(self, index, address1, address2, city, state, zip_code):
         """#"""
-        print 'wtf'
+        #print 'wtf'
 
         if not pd.isnull(address1):
             address1 = ''.join([i if ord(i) < 128 else ' ' for i in address1.strip()])
@@ -121,7 +121,7 @@ class PollingLocationTxt(object):
         # add leading zeros to maintain consistent id length
         if not pd.isnull(ocd_division):
             address_line = self.get_address_line(index, address1, address2, city, state, zip_code)
-            id = int(hashlib.sha1(ocd_division + address_line).hexdigest(), 16) % (10 ** 8)
+            id = int(hashlib.sha1(address_line).hexdigest(), 16) % (10 ** 8)
             id = 'poll' + str(id)
             return id
 
@@ -189,13 +189,14 @@ class PollingLocationTxt(object):
 
         intermediate_doc = intermediate_doc[intermediate_doc.address_line.notnull()]
 
-        intermediate_doc.to_csv(config.output + 'intermediate_doc2.csv', index=False, encoding='utf-8')
+        intermediate_doc.to_csv(config.output + 'intermediate_doc.csv', index=False, encoding='utf-8')
         return intermediate_doc
 
     def write_polling_location_txt(self):
         """Drops base DataFrame columns then writes final dataframe to text or csv file"""
 
         plt = self.build_polling_location_txt()
+
 
         # Drop base_df columns.
         plt.drop(['index', 'office_name', 'official_name', 'phone', 'email', 'ocd_division', 'phone', 'location_name',
@@ -204,7 +205,6 @@ class PollingLocationTxt(object):
                  inplace=True, axis=1)
 
         plt = self.dedupe(plt)
-        print plt
         plt = plt[plt.address_line.notnull()]
 
         plt.to_csv(config.output + 'polling_location.txt', index=False, encoding='utf-8')  # send to txt file
@@ -217,12 +217,13 @@ if __name__ == '__main__':
     #print s
 
     s = 'county, official_name, phone, email, ocd_division, phone, location_name, address1, address2, city, state, zip_code, start_time, end_time, start_date, end_date, is_only_by_appointment, is_or_by_appointment, directions, notes, index, address_line, hours, photo_uri, hours_open_id, is_drop_box, is_early_voting, latitude, longitude, latlng_source, id'.split(', ')
-    print s
+    #print s
 
 
     colnames = ['office_name', 'official_name', 'phone', 'email', 'ocd_division', 'phone', 'location_name',
                 'address1', 'address2', 'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date',
                 'end_date', 'is_only_by_appointment', 'is_or_by_appointment', 'directions', 'notes']
+    print len(colnames)
 
 
     #usecols = ['office_name', 'official_name', 'phone', 'email', 'ocd_division', 'phone', 'location_name',
@@ -235,5 +236,5 @@ if __name__ == '__main__':
     print early_voting_df
 
     pl = PollingLocationTxt(early_voting_df, config.early_voting)
-    #pl.export_for_schedule_and_locality()
+    pl.export_for_schedule_and_locality()
     pl.write_polling_location_txt()

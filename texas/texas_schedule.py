@@ -372,7 +372,7 @@ if __name__ == '__main__':
 
     colnames = ['county', 'ocd_division', 'homepage_url', 'phone', 'email', 'directions', 'location_name', 'address1', 'address2',
      'city', 'state', 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date',
-     'index', 'address_line', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude',
+     'index', 'name', 'address_line', 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude',
      'longitude', 'latlng_source', 'id']
     print len(colnames)
 

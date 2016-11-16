@@ -40,11 +40,22 @@ class ScheduleTxt(object):
         return self.dedupe(sch_base_df)
 
 
-    def get_sch_time(self, hours):
+    def get_sch_time(self, hours, date):
         if not pd.isnull(hours):
             #print hours
             hours_arr = hours.split(" - ")
-            hours = hours_arr[0] + "-" + hours_arr[1]
+            if len(hours_arr[0]) < 8:
+                hours_arr[0] = "0" + hours_arr[0]
+            time = hours_arr[0]
+
+            if "11/6" in date or "11/7" in date:
+
+                offset = "09:00"
+            else:
+                offset = hours_arr[1]
+
+            hours = time + "-" + offset
+            print hours
             return hours.strip()
         else:
             return ''
@@ -120,10 +131,10 @@ class ScheduleTxt(object):
         """
 
         self.base_df['start_time2'] = self.base_df.apply(
-            lambda row: self.get_sch_time(row["start_time"]), axis=1)
+            lambda row: self.get_sch_time(row["start_time"], row['start_date']), axis=1)
 
         self.base_df['end_time2'] = self.base_df.apply(
-            lambda row: self.get_sch_time(row['end_time']), axis=1)
+            lambda row: self.get_sch_time(row['end_time'], row['start_date']), axis=1)
 
         self.base_df['is_only_by_appointment2'] = self.base_df.apply(
             lambda row: self.is_only_by_appointment(row['appt']), axis=1)

@@ -17,6 +17,14 @@ class PollingLocationTxt(object):
     # (row['index'], row['address_1'], row['address_2'],
     #  row['city'], row['state'], row['zip']), axis = 1)
 
+    def get_location_name(self, name):
+        if not pd.isnull(name):
+            string = ''
+            string += name
+            return string
+        else:
+            return ''
+
     def get_address_line(self, index, address_one, city, zip_code):
         # required: print message for exception
         # TODO: concatenate street, city, state and zip
@@ -137,6 +145,10 @@ class PollingLocationTxt(object):
         New columns that match the 'polling_location.txt' template are inserted into the DataFrame, apply() is
         used to run methods that generate the values for each row of the new columns.
         """
+
+        self.base_df['name'] = self.base_df.apply(
+            lambda row: self.get_location_name(row['loc_name']), axis=1)
+
         self.base_df['address_line'] = self.base_df.apply(
             lambda row: self.get_address_line(row['index'], row['adr_1'],
                                                row['city'], row['zip']), axis=1)

@@ -17,6 +17,14 @@ class PollingLocationTxt(object):
     # (row['index'], row['address_1'], row['address_2'],
     #  row['city'], row['state'], row['zip']), axis = 1)
 
+    def get_location_name(self, name):
+        if not pd.isnull(name):
+            string = ''
+            string += name
+            return string.strip()
+        else:
+            return ''
+
     def get_address_line(self, index, address):
         # required: print message for exception
         # TODO: concatenate street, city, state and zip
@@ -128,6 +136,9 @@ class PollingLocationTxt(object):
         New columns that match the 'polling_location.txt' template are inserted into the DataFrame, apply() is
         used to run methods that generate the values for each row of the new columns.
         """
+        self.base_df['name'] = self.base_df.apply(
+            lambda row: self.get_location_name(row['loc_name']), axis=1)
+
         self.base_df['address_line'] = self.base_df.apply(
             lambda row: self.get_address_line(row['index'], row['address']), axis=1)
 
@@ -202,7 +213,7 @@ class PollingLocationTxt(object):
         plt = self.build_polling_location_txt()
 
         # Drop base_df columns.
-        plt.drop(['index','county', 'address', 'instructions','start_time', 'end_time', 'start_date', 'end_date'], inplace=True, axis=1)
+        plt.drop(['index','county', 'address', 'instructions','start_time', 'end_time', 'start_date', 'end_date', 'loc_name'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
         print plt
@@ -221,7 +232,7 @@ if __name__ == '__main__':
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
     early_voting_file = config.data_folder + state_file
 
-    colnames = ['county', 'address', 'instructions', 'start_time', 'end_time', 'start_date', 'end_date']
+    colnames = ['county', 'loc_name', 'address', 'instructions', 'start_time', 'end_time', 'start_date', 'end_date']
 
     early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1

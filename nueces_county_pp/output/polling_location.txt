@@ -1,0 +1,93 @@
+name,address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_voting,latitude,longitude,latlng_source,id
+Antonio Garcia Arts & Education Center,"2021 Agnes St, Corpus Christi, TX, 78405",,07:00 AM-07:00 PM,,ho19576434,false,false,,,,poll14882167
+Baker Middle School,"3445 Pecan St., Corpus Christi, TX, 78411",,07:00 AM-07:00 PM,,ho38078938,false,false,,,,poll98448241
+Banquete Isd,"4339 Fourth St., BANQUETE, TX, 78339",,07:00 AM-07:00 PM,,ho66460814,false,false,,,,poll54706738
+Ben Garza Gym,"1815 Howard St., Corpus Christi, TX, 78408",,07:00 AM-07:00 PM,,ho45839286,false,false,,,,poll60450865
+Bishop High SchoolÛó,"100 Badger Ln., BISHOP, TX, 78343",,07:00 AM-07:00 PM,,ho26349530,false,false,,,,poll45799109
+Bishop Primary School,"705 W. Main St., BISHOP, TX, 78343",,07:00 AM-07:00 PM,,ho73868893,false,false,,,,poll40577319
+Blanche Moore Elementary,"6121 Durant Dr., Corpus Christi, TX, 78414",,07:00 AM-07:00 PM,,ho75764608,false,false,,,,poll82915793
+Brooks A.M.E. Worship Center,"2101 N Port Ave, Corpus Christi, TX, 78401",,07:00 AM-07:00 PM,,ho33759858,false,false,,,,poll1636119
+Calallen East Elementary,"3709 Lott Ave., Corpus Christi, TX, 78401",,07:00 AM-07:00 PM,,ho13306308,false,false,,,,poll94916005
+Calallen Middle School,"4602 Cornett Rd., Corpus Christi, TX, 78410",,07:00 AM-07:00 PM,,ho38766817,false,false,,,,poll6942946
+Cimarron Senior Apartments,"2802 Cimarron Blvd., Corpus Christi, TX, 78414",,07:00 AM-07:00 PM,,ho75647196,false,false,,,,poll60689543
+Club Estates Elementary,"5222 Merganser Dr., Corpus Christi, TX, 78413",,07:00 AM-07:00 PM,,ho88341989,false,false,,,,poll98847556
+Cullen Middle School,"5224 Greely Dr., Corpus Christi, TX, 78412",,07:00 AM-07:00 PM,,ho94884324,false,false,,,,poll92117073
+Cunningham Middle School,"4321 Prescott St., Corpus Christi, TX, 78416",,07:00 AM-07:00 PM,,ho74897342,false,false,,,,poll17081602
+David Berlanga Community Center,"1513 2nd St, AGUA DULCE, TX, 78330",,07:00 AM-07:00 PM,,ho7856734,false,false,,,,poll25449270
+David Crockett Elementary,"2625 Belton St., Corpus Christi, TX, 78416",,07:00 AM-07:00 PM,,ho69810661,false,false,,,,poll47319127
+Deaf And Hard Of Hearing Center,"5151 McArdle Rd., Corpus Christi, TX, 78411",,07:00 AM-07:00 PM,,ho81287608,false,false,,,,poll20727778
+Del Mar College,"101 Baldwin Blvd., Corpus Christi, TX, 78404",,07:00 AM-07:00 PM,,ho70088764,false,false,,,,poll7059805
+Driscoll I.S.D.,"410 W. Ave. D, DRISCOLL, TX, 78351",,07:00 AM-07:00 PM,,ho66338567,false,false,,,,poll24654192
+Driscoll Middle School,"3501 Kenwood Dr., Corpus Christi, TX, 78408",,07:00 AM-07:00 PM,,ho83250323,false,false,,,,poll59336536
+Ella Barnes Elementary,"2829 Oso Parkway, Corpus Christi, TX, 78414",,07:00 AM-07:00 PM,,ho70209609,false,false,,,,poll10103804
+Ethel Eyerly Senior Center,"654 Graham Rd., Corpus Christi, TX, 78418",,07:00 AM-07:00 PM,,ho29639625,false,false,,,,poll61838561
+Fannin Elementary,"2730 Gollihar Rd., Corpus Christi, TX, 78415",,07:00 AM-07:00 PM,,ho2062846,false,false,,,,poll32159799
+Fire Station #7,"3722 S. Staples St., Corpus Christi, TX, 78411",,07:00 AM-07:00 PM,,ho62271044,false,false,,,,poll71719849
+Fire Station # 9,"501 Navigation Blvd., Corpus Christi, TX, 78408",,07:00 AM-07:00 PM,,ho78375199,false,false,,,,poll85482000
+Fire Station # 11,"910 Airline Rd., Corpus Christi, TX, 78412",,07:00 AM-07:00 PM,,ho49346422,false,false,,,,poll16829769
+Fire Station #12,"2120 Rand Morgan Rd., Corpus Christi, TX, 78410",,07:00 AM-07:00 PM,,ho42727429,false,false,,,,poll7712836
+Flour Bluff Isd (Maintenance Bldg.),"2505 Waldron Rd., Corpus Christi, TX, 78418",,07:00 AM-07:00 PM,,ho60137781,false,false,,,,poll85364387
+Galvan Elementary,"3126 Masterson Dr., Corpus Christi, TX, 78415",,07:00 AM-07:00 PM,,ho78208329,false,false,,,,poll31888261
+Gibson Elementary,"5723 Hampshire Rd., Corpus Christi, TX, 78408",,07:00 AM-07:00 PM,,ho76646664,false,false,,,,poll42489988
+Gloria Hicks Elementary,"3602 McArdle Rd., Corpus Christi, TX, 78415",,07:00 AM-07:00 PM,,ho80999442,false,false,,,,poll91795362
+Grace Presbyterian Church,"6301 Yorktown Blvd., Corpus Christi, TX, 78414",,07:00 AM-07:00 PM,,ho77718286,false,false,,,,poll45654250
+Grant Middle School,"4350 Aaron Dr., Corpus Christi, TX, 78413",,07:00 AM-07:00 PM,,ho20132168,false,false,,,,poll11604195
+Hamlin Middle School,"3900 Hamlin Dr., Corpus Christi, TX, 78411",,07:00 AM-07:00 PM,,ho99871599,false,false,,,,poll40395233
+Harold T. Branch Academy,"3902 Morgan St., Corpus Christi, TX, 78405",,07:00 AM-07:00 PM,,ho48317289,false,false,,,,poll49095061
+Hilltop Community Center,"11425 Leopard St., Corpus Christi, TX, 78410",,07:00 AM-07:00 PM,,ho27928010,false,false,,,,poll41176826
+Island Presbyterian Church,"14030 Fortuna Bay Dr., Corpus Christi, TX, 78418",,07:00 AM-07:00 PM,,ho37945722,false,false,,,,poll19831970
+John F. Kennedy Elementary,"1102 Villarreal Rd., Corpus Christi, TX, 78416",,07:00 AM-07:00 PM,,ho46329801,false,false,,,,poll7429040
+Johnny Calderon Building.,"710 E. Main St., ROBSTOWN, TX, 78380",,07:00 AM-07:00 PM,,ho74648233,false,false,,,,poll79208562
+Keach Family Library,"1000 Terry Shamsie, ROBSTOWN, TX, 78380",,07:00 AM-07:00 PM,,ho73381382,false,false,,,,poll76362088
+King High School,"5225 Gollihar Rd., Corpus Christi, TX, 78412",,07:00 AM-07:00 PM,,ho3612241,false,false,,,,poll97814790
+Kiwanis Recreation Center,"3933 Timon Blvd., Corpus Christi, TX, 78402",,07:00 AM-07:00 PM,,ho94083129,false,false,,,,poll6091507
+Kolda Elementary,"3730 Rodd Field, Corpus Christi, TX, 78414",,07:00 AM-07:00 PM,,ho52053644,false,false,,,,poll62089601
+Korean Presbyterian Church,"4326 McArdle Rd., Corpus Christi, TX, 78411",,07:00 AM-07:00 PM,,ho5552642,false,false,,,,poll35078173
+Kostoryz Elementary,"3602 Panama Dr., Corpus Christi, TX, 78415",,07:00 AM-07:00 PM,,ho48410200,false,false,,,,poll12652528
+La Retama Central Library,"805 Comanche St., Corpus Christi, TX, 78401",,07:00 AM-07:00 PM,,ho16196667,false,false,,,,poll53695459
+Lindale Senior Center,"3135 Swantner Dr., Corpus Christi, TX, 78404",,07:00 AM-07:00 PM,,ho87853423,false,false,,,,poll76251756
+London Isd Middle/High School,"1306 FM 43, Corpus Christi, TX, 78415",,07:00 AM-07:00 PM,,ho93685590,false,false,,,,poll69329884
+Lotspeich Elementary,"1000 Ruben Chavez Rd., ROBSTOWN, TX, 78380",,07:00 AM-07:00 PM,,ho70655674,false,false,,,,poll93762617
+Lulac West Apartments,"10702 IH 37, Corpus Christi, TX, 78410",,07:00 AM-07:00 PM,,ho5318403,false,false,,,,poll63284776
+Luther Jones Elementary,"7533 Lipes Blvd., Corpus Christi, TX, 78413",,07:00 AM-07:00 PM,,ho36028277,false,false,,,,poll20616082
+Magee Elementary-Star Annex,"4201 Calallen Dr., Corpus Christi, TX, 78410",,07:00 AM-07:00 PM,,ho40675561,false,false,,,,poll49353306
+Menger Elementary,"2401 S. Alameda St., Corpus Christi, TX, 78404",,07:00 AM-07:00 PM,,ho7755169,false,false,,,,poll88375549
+Metro E Elementary,"1707 Ayers St., Corpus Christi, TX, 78404",,07:00 AM-07:00 PM,,ho81934110,false,false,,,,poll71507929
+Mg Building Materials,"7406 S. Padre Island Dr., Corpus Christi, TX, 78412",,07:00 AM-07:00 PM,,ho82617476,false,false,,,,poll47418797
+Mireles Elementary,"7658 Cimarron Blvd., Corpus Christi, TX, 78414",,07:00 AM-07:00 PM,,ho58127406,false,false,,,,poll97258238
+Montclair Elementary,"5241 Kentner St., Corpus Christi, TX, 78412",,07:00 AM-07:00 PM,,ho68087353,false,false,,,,poll14245784
+Moody High School,"1818 Trojan Dr., Corpus Christi, TX, 78416",,07:00 AM-07:00 PM,,ho7509351,false,false,,,,poll24325230
+Nueces County Esd #4,"5781 FM 666, ROBSTOWN, TX, 78380",,07:00 AM-07:00 PM,,ho43443988,false,false,,,,poll6184271
+Oak Park Recreation Center,"842 Erwin Ave., Corpus Christi, TX, 78408",,07:00 AM-07:00 PM,,ho60424100,false,false,,,,poll2923541
+Our Lady Of Mnt. Carmel Mission,"1080 S Clarkwood Rd., Corpus Christi, TX, 78406",,07:00 AM-07:00 PM,,ho83622192,false,false,,,,poll10615893
+Oveal Williams Senior Center,"1414 Martin Luther King Dr., Corpus Christi, TX, 78401",,07:00 AM-07:00 PM,,ho49590171,false,false,,,,poll49363338
+Parkway Presbyterian Church,"3707 Santa Fe, Corpus Christi, TX, 78411",,07:00 AM-07:00 PM,,ho7282838,false,false,,,,poll94995918
+Peerless Cleaners,"2806 Santa Fe, Corpus Christi, TX, 78404",,07:00 AM-07:00 PM,,ho7384383,false,false,,,,poll53966001
+Petronila Elementary,"2391 Cnty Rd. 67, ROBSTOWN, TX, 78380",,07:00 AM-07:00 PM,,ho37488033,false,false,,,,poll329562
+Port Aransas Community Center,"408 North Alister, PORT ARANSAS, TX, 78373",,07:00 AM-07:00 PM,,ho23703428,false,false,,,,poll31353001
+River Hills Baptist Church,"16318 FM 624, ROBSTOWN, TX, 78380",,07:00 AM-07:00 PM,,ho41513319,false,false,,,,poll40346788
+Robert Driscoll Elementary,"122 W. Ave. H, ROBSTOWN, TX, 78380",,07:00 AM-07:00 PM,,ho27649132,false,false,,,,poll38029425
+Ronnie H. Polston County Bldg.,"10110 Compton Rd., Corpus Christi, TX, 78418",,07:00 AM-07:00 PM,,ho94314074,false,false,,,,poll284965
+Rose Shaw Elementary,"2920 Soledad St., Corpus Christi, TX, 78405",,07:00 AM-07:00 PM,,ho86999226,false,false,,,,poll1819226
+Saint John'S Baptist Church,"5445 Greenwood Dr., Corpus Christi, TX, 78417",,07:00 AM-07:00 PM,,ho68403024,false,false,,,,poll13250146
+San Pedro Elementary,"800 W. Ave. D, ROBSTOWN, TX, 78380",,07:00 AM-07:00 PM,,ho58967863,false,false,,,,poll64092196
+Schanen Estates Elementary,"5717 Killarmet Dr., Corpus Christi, TX, 78413",,07:00 AM-07:00 PM,,ho64378824,false,false,,,,poll98738455
+Schlitterbahn,"14353 Commodores Dr., Corpus Christi, TX, 78418",,07:00 AM-07:00 PM,,ho67800989,false,false,,,,poll15249504
+Scott Vetters Scout Hut,"3221 McKinzie Rd., Corpus Christi, TX, 78410",,07:00 AM-07:00 PM,,ho69257527,false,false,,,,poll6205420
+Smith Elementary,"6902 Williams Dr., Corpus Christi, TX, 78412",,07:00 AM-07:00 PM,,ho31373444,false,false,,,,poll72944971
+South Park Middle School,"3001 McArdle St., Corpus Christi, TX, 78415",,07:00 AM-07:00 PM,,ho2218722,false,false,,,,poll72397181
+St. Anthony Violet Catholic Church,"3918 Cnty. Rd. 61, ROBSTOWN, TX, 78380",,07:00 AM-07:00 PM,,ho74697713,false,false,,,,poll74331786
+T.G. Allen Elementary,"1414 18th. St., Corpus Christi, TX, 78404",,07:00 AM-07:00 PM,,ho88177703,false,false,,,,poll57841106
+The People'S Baptist Church,"1355 FM 665, Corpus Christi, TX, 78415",,07:00 AM-07:00 PM,,ho37018043,false,false,,,,poll73242949
+Tom Browne Middle School,"4301 Schanen Blvd., Corpus Christi, TX, 78413",,07:00 AM-07:00 PM,,ho53785940,false,false,,,,poll38912464
+Travis Elementary,"3210 Churchill Dr., Corpus Christi, TX, 78415",,07:00 AM-07:00 PM,,ho66366997,false,false,,,,poll38999147
+Tuloso-Midway High School,"2653 McKinzie Rd., Corpus Christi, TX, 78410",,07:00 AM-07:00 PM,,ho84566681,false,false,,,,poll94121626
+Tuloso-Midway Middle School,"9768 La Branch St., Corpus Christi, TX, 78410",,07:00 AM-07:00 PM,,ho97519032,false,false,,,,poll52817135
+Valencia Hall,"6110 Ayers St., Corpus Christi, TX, 78415",,07:00 AM-07:00 PM,,ho24259072,false,false,,,,poll41664032
+Veterans Memorial High School,"3750 Cimarron, Corpus Christi, TX, 78414",,07:00 AM-07:00 PM,,ho47179600,false,false,,,,poll74567684
+Villa Of Corpus Christi Ûò South,"4834 Yorktown Blvd., Corpus Christi, TX, 78413",,07:00 AM-07:00 PM,,ho37110900,false,false,,,,poll1497052
+West Oso Junior High School,"5202 Bear Lane, Corpus Christi, TX, 78405",,07:00 AM-07:00 PM,,ho35739151,false,false,,,,poll51039093
+Windsor Park Athena School,"4525 S. Alameda St., Corpus Christi, TX, 78412",,07:00 AM-07:00 PM,,ho34834881,false,false,,,,poll55205212
+Woodlawn Elementary,"1110 Woodlawn Dr., Corpus Christi, TX, 78412",,07:00 AM-07:00 PM,,ho75072163,false,false,,,,poll95446745
+Yeager Elementary,"5414 Tripoli Dr., Corpus Christi, TX, 78411",,07:00 AM-07:00 PM,,ho62064340,false,false,,,,poll52570865
+Zavala Senior Center,"510 Osage St, Corpus Christi, TX, 78405",,07:00 AM-07:00 PM,,ho14022491,false,false,,,,poll55887176

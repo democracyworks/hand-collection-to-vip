@@ -286,7 +286,7 @@ if __name__ == '__main__':
 
 
     colnames = ['ocd_division', 'county', 'location_name', 'address_1', 'address_2', 'dirs', 'city', 'state', 'zip_code',
-                'start_time', 'end_time', 'start_date', 'end_date', 'index', 'address_line', 'directions', 'hours',
+                'start_time', 'end_time', 'start_date', 'end_date', 'index', 'name', 'address_line', 'directions', 'hours',
                 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'latitude', 'longitude',
                 'latlng_source', 'id']
 

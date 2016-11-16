@@ -37,7 +37,7 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "2120 Gwynn Oak Avenue, Gwynn Oak, MD 21207",,08:00 AM - 08:00 PM,,ho78302468,false,true,,,,poll25010271
 "1610 Main St, Chester, MD 21619",,08:00 AM - 08:00 PM,,ho75523224,false,true,,,,poll8225393
 "110 Vincit St, Centreville, MD 21617",,08:00 AM - 08:00 PM,,ho99202072,false,true,,,,poll29088029
-"24801 Three Notch Road, Hollywood, MD 20636",,08:00 AM - 08:00 PM,,ho32886871,false,true,,,,poll43722945
+"24801 Three Notch Road, Hollywood, MD 20636",,08:00 AM - 08:00 PM,,ho32886871,false,true,,,,poll14501113
 "11916 Somerset Avenue, Princess Anne, MD 21853",,08:00 AM - 08:00 PM,,ho96658295,false,true,,,,poll19049976
 "315 Aurora Park Drive, Easton, MD 21601",,08:00 AM - 08:00 PM,,ho20771995,false,true,,,,poll36468561
 "101 Tandy Drive, Hagerstown, MD 21740",,08:00 AM - 08:00 PM,,ho79049518,false,true,,,,poll83325743

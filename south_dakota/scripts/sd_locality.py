@@ -113,7 +113,7 @@ class LocalityTxt(object):
         consistent id length.
         """
         for key, value in config.fips_dict.iteritems():
-            if key == self.state:
+            if key == self.state.lower():
                 state_num = value
                 if state_num <=9:
                     state_num = '0' + str(state_num)
@@ -306,13 +306,13 @@ if __name__ == '__main__':
     state_file = 'sd_early_voting_info.csv'
 
     # early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
-    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/south_dakota/early_voting_input/" + state_file
+    early_voting_file = config.input + state_file
 
     colnames = ['ocd_division', 'email', 'county', 'location_name', 'address_1', 'address_2', 'city', 'state',
                 'zip_code', 'start_time', 'end_time', 'start_date', 'end_date', 'is_only_by_appointment',
                 'is_or_by_appointment', 'appointment_phone', 'is_subject_to_change']
 
-    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
     early_voting_df['index'] = early_voting_df.index + 1
 
     pl = PollingLocationTxt(early_voting_df)

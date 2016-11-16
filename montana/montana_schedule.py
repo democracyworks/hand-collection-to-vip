@@ -45,7 +45,7 @@ class ScheduleTxt(object):
 
     def format_date(self, start_date):
 
-        start_date = tuple(start_date.split('-'))
+        start_date = tuple(start_date.split('/'))
         print start_date
 
         month = start_date[0]

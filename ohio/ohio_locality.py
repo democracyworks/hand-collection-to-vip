@@ -250,7 +250,7 @@ if __name__ == '__main__':
 
     state_file = 'intermediate_doc.csv'
 
-    early_voting_file = "/home/acg/democracyworks/hand-collection-to-vip/ohio/output/" + state_file
+    early_voting_file = config.output + state_file
 
     colnames = ['ocd_division', 'email', 'county', 'location_name', 'address_1', 'address_2', 'city',
                 'state', 'zip_code', 'source_start_time', 'source_end_time', 'source_start_date', 'source_end_date',

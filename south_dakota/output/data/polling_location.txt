@@ -47,8 +47,8 @@ address_line,directions,hours,photo_uri,hours_open_id,is_drop_box,is_early_votin
 "401 N. Main St. 2nd Floor, Howard, SD 57349",,01:00 PM-05:00 PM,,ho66669463,false,true,,,,poll35215585
 "415 N. Dakota Avenue, Sioux Falls, SD 57104",,08:00 AM-05:00 PM,,ho74992950,false,true,,,,poll90215382
 "101 E Pipestone Ave Ste D, Flandreau, SD 57028",,08:00 AM-05:00 PM,,ho32569388,false,true,,,,poll86536761
-"1 Positive Place, Pine Ridge, SD 57770",,08:00 AM-05:00 PM,,ho46630229,false,true,,,,poll23876517
-"906 N. River St., Hot Springs, SD 57747",,08:00 AM-05:00 PM,,ho47501868,false,true,,,,poll51147937
+"1 Positive Place, Pine Ridge, SD 57770",,08:00 AM-05:00 PM,,ho46630229,false,true,,,,poll57348404
+"906 N. River St., Hot Springs, SD 57747",,08:00 AM-05:00 PM,,ho47501868,false,true,,,,poll88326917
 "130 Kansas City St Ste 230, Rapid City, SD 57701",,08:00 AM-05:00 PM,,ho57546226,false,true,,,,poll15103554
 "100 East Main Street, Bison, SD 57620",,07:30 AM-12:00 PM,,ho72255578,false,true,,,,poll66517497
 "201 S Exene St, Gettysburg, SD 57442",,07:30 AM-12:00 PM,,ho35428799,false,true,,,,poll69062356

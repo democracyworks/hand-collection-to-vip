@@ -17,18 +17,24 @@ class PollingLocationTxt(object):
     # (row['index'], row['address_1'], row['address_2'],
     #  row['city'], row['state'], row['zip']), axis = 1)
 
+    def get_location_name(self, name):
+        if not pd.isnull(name):
+            string = ''
+            string += name
+            string = ''.join([i if ord(i) < 128 else ' ' for i in string])
+            return string
+        else:
+            return ''
+
     def get_address_line(self, index, name, address_one, address_two, city, zip_code):
         # required: print message for exception
         # TODO: concatenate street, city, state and zip
-
+        print address_one, address_two, city, zip_code
 
         adr = ''
 
         if not pd.isnull(address_one):
             adr += str(address_one)
-
-        if not pd.isnull(address_two):
-            adr += ", " + str(address_two)
 
         if not pd.isnull(city):
             city_name = str(city)
@@ -42,10 +48,18 @@ class PollingLocationTxt(object):
 
         return adr.strip() + ", " + city_name + ", CA " + zip
 
-    def get_directions(self, dirs):
+    def get_directions(self, dirs1, dirs2):
         """#"""
         # no direct relationship to any column
-        return dirs
+        dirs = ''
+
+        if not pd.isnull(dirs1):
+            dirs += dirs1 + " "
+
+        if not pd.isnull(dirs2):
+            dirs += dirs2
+
+        return dirs.strip()
 
     # def get_start_time(self, time):
     #     arr = time.split(" ")
@@ -129,12 +143,16 @@ class PollingLocationTxt(object):
         New columns that match the 'polling_location.txt' template are inserted into the DataFrame, apply() is
         used to run methods that generate the values for each row of the new columns.
         """
+
+        self.base_df['name'] = self.base_df.apply(
+            lambda row: self.get_location_name(row['loc_name']), axis=1)
+
         self.base_df['address_line'] = self.base_df.apply(
             lambda row: self.get_address_line(row['index'], row['name'], row['address_one'],
                                               row['address_two'], row['city'], row['zip']), axis=1)
 
         self.base_df['directions'] = self.base_df.apply(
-            lambda row: self.get_directions(row['dirs']), axis=1)
+            lambda row: self.get_directions(row['dirs'], row['address_two']), axis=1)
 
         self.base_df['hours'] = self.base_df.apply(
             lambda row: self.get_hours(row['index'],row['start_time'], row['end_time']), axis=1)
@@ -210,7 +228,7 @@ class PollingLocationTxt(object):
         plt = self.build_polling_location_txt()
 
         # Drop base_df columns.
-        plt.drop(['ocd-division', 'county', 'name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time',
+        plt.drop(['ocd-division', 'county', 'loc_name', 'address_one', 'address_two', 'city', 'state', 'zip', 'start_time',
                 'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change', 'index', 'dirs', 'drop_box'], inplace=True, axis=1)
 
         plt = self.dedupe(plt)
@@ -230,7 +248,7 @@ if __name__ == '__main__':
     #early_voting_file = "/Users/danielgilberg/Development/hand-collection-to-vip/polling_location/polling_location_input/" + state_file
     early_voting_file = config.data_folder + state_file
 
-    colnames = ['ocd-division', 'county', 'name', 'address_one', 'address_two', 'dirs', 'city', 'state', 'zip', 'start_time',
+    colnames = ['ocd-division', 'county', 'loc_name', 'address_one', 'address_two', 'dirs', 'city', 'state', 'zip', 'start_time',
                 'end_time', 'start_date', 'end_date', 'appt_1', 'appt_2', 'appt_3', 'subject_to_change', 'drop_box']
 
 

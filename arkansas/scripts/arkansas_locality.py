@@ -239,11 +239,11 @@ if __name__ == '__main__':
 
     early_voting_file = config.output + state_file
 
-    colnames = ['spr', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'name', 'adr_1', 'adr_2', 'dirs', 'city', 'state', 'zip',
+    colnames = ['spr', 'title', 'ocd_division', 'description', 'homepage', 'phone', 'email', 'name', 'adr_1', 'adr_2', 'city', 'state', 'zip',
                 'start_time', 'end_time', 'start_date', 'end_date', 'notes', 'index','address_line', 'directions',
                 'hours', 'photo_uri', 'hours_open_id', 'is_drop_box', 'is_early_voting', 'lat', 'long', 'latlng', 'id']
     print len(colnames)
-    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='utf-8', skiprows=1)
+    early_voting_df = pd.read_csv(early_voting_file, names=colnames, encoding='ISO-8859-1', skiprows=1)
 
     early_voting_df['index'] = early_voting_df.index +1 # offsets zero based index so it starts at 1 for ids
 
