@@ -22,31 +22,12 @@ id
 import pandas as pd
 import re
 import config
-import os
-from tx_locality import LocalityTxt
-from tx_polling_location import PollingLocationTxt
-from tx_precinct import PrecinctTxt
 
 
 voter_file = "C:\Users\Aaron Garris\democracyworks\hand-collection-to-vip\\texas_pp\source\\" + config.voter_file
 
 class StreetSegmentsTxt(object):
-    """Takes the merged_df passed to the class instance in main() and formats data according to VIP 5.1 specifications.
-
-    The merged dataframe (merged_df) is referred to as the base_df within the StreetSegmentsTxt() class. The base_df
-    contains the necessary data dependencies for creating street segments.
-
-    A method is provided for each 5.1 VIP street_segment.txt column. Values are taken from one or more relevant columns
-    of each row in the base dataframe (base_df) and modified as needed to create data for the new VIP columns which
-    are appended to the existing base_df.
-
-    Each method corresponding to a VIP column is called in the build method where parameters corresponding to column
-    values of the same row are passed to the apply() function. Apply() is set to operate row-wise meaning a given method
-    takes its input from and produces its output for the same row. In this case the values for new columns.
-
-    In the write method the dataframe is either reindexed or the original base_df columns are dropped leaving only the
-    VIP 5.1 spec columns which are then written to a text file.
-
+    """
     """
 
     def __init__(self, merged_df):
