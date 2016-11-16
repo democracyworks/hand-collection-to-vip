@@ -1,0 +1,610 @@
+CTY,Ocd-id,Municipality,W/P,Voting Place,Voting Address,start_time,end_time,start_date,end_date
+PIS,ocd-division/country:us/state:me/place:abbot,ABBOT ,1-1,Abbot Town Hall ,133 Main Road ,09:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:acton,ACTON,1-1,Acton Town Hall ,35 H Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:addison,ADDISON,1-1,Addison Town Hall ,334 Water Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:albany_twp,ALBANY TWP ,1-1,Albany Twp. Town House,1581 Hunts Corner Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:albion,ALBION,1-1,Besse Building ,22 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:alexander,ALEXANDER,1-1,Alexander Municipal Building ,50 Cooper Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:alfred,ALFRED,1-1,Conant Chapel ,8 Kennebunk Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,,ALFRED,1-2,Conant Chapel ,8 Kennebunk Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:allagash,ALLAGASH,1-1,Allagash Community Center,1063 Allagash Road,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:alna,ALNA,1-1,Alna Fire Station,1579 Alna Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:alton,ALTON,1-1,Alton Municipal Building ,3352 Bennoch Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:amherst,AMHERST,1-1,Amherst Town Hall ,572 Airline Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:amity,AMITY,1-1,Amity Town Office ,1143 US Route 1 ,09:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:andover,ANDOVER,1-1,Andover Town Hall ,24 Elm Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:anson,ANSON,1-1,Anson Town Hall ,5 Kennebec Street,09:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:appleton,APPLETON,1-1,Appleton Town Hall ,2915 Sennebec Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SAG,ocd-division/country:us/state:me/place:arrowsic,ARROWSIC,1-1,Arrowsic Town Hall ,340 Arrowsic Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:arundel,ARUNDEL,1-1,Arundel Fire Station ,468 Limerick Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:ashland,ASHLAND,1-1,Ashland Municipal Building,17 Bridgham Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:athens,ATHENS,1-1,Somerset Academy Building,26 Academy Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:atkinson,ATKINSON ,1-1,Atkinson Town Hall ,102 No. Stagecoach Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:auburn,AUBURN,1-1,Washburn School ,35 Lake Auburn Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:auburn,AUBURN,2-1,Auburn Middle School ,38 Falcon Drive ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:auburn,AUBURN,3-1,Fairview School ,397 Minot Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:auburn,AUBURN,4-1,Auburn Hall ,60 Court Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:auburn,AUBURN,5-1,Sherwood Heights School ,32 Sherwood Drive ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:augusta,AUGUSTA,1-1,Augusta Armory,179 Western Avenue,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:augusta,AUGUSTA,2-1,Augusta City Center,16 Cony Street,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:augusta,AUGUSTA,3-1,Augusta Civic Center,76 Community Drive,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:augusta,AUGUSTA,4-1,Cony High School,60 Pierce Drive ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:aurora,AURORA,1-1,Aurora Town Hall ,Old Route 9,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:avon,AVON,1-1,Avon Municipal Building ,1116 Rangeley Road ,09:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:baileyville,BAILEYVILLE,1-1,F. Doug Jones Memorial Municipal Building ,63 Broadway Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:baldwin,BALDWIN,1-1,Municipal Building,534 Pequawket Trail ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:bancroft,BANCROFT ,1-1,Weston Town Office ,5 Church Lane ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:bangor,BANGOR,1-1,Cross Insurance Center Arena,515 Main Street,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:bar_harbor,BAR HARBOR,1-1,Municipal Building Auditorium ,93 Cottage Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:baring_plt,BARING PLT,1-1,Baring Baptist Church ,47 Front Street ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SAG,ocd-division/country:us/state:me/place:bath,BATH,1-1,Bath Middle School ,6 Old Brunswick Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SAG,ocd-division/country:us/state:me/place:bath,BATH,2-1,Bath Middle School ,6 Old Brunswick Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SAG,ocd-division/country:us/state:me/place:bath,BATH,3-1,Bath Middle School ,6 Old Brunswick Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SAG,ocd-division/country:us/state:me/place:bath,BATH,4-1,Bath Middle School ,6 Old Brunswick Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SAG,ocd-division/country:us/state:me/place:bath,BATH,5-1,Bath Middle School ,6 Old Brunswick Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SAG,ocd-division/country:us/state:me/place:bath,BATH,6-1,Bath Middle School ,6 Old Brunswick Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SAG,ocd-division/country:us/state:me/place:bath,BATH,7-1,Bath Middle School ,6 Old Brunswick Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:beals,BEALS ,1-1,Beals Town Office ,11 Big Pond Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:beaver_cove,BEAVER COVE,1-1,Beaver Cove Town Office,795 Lily Bay Road,08:30:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:beddington,BEDDINGTON,1-1,Beddington Community Building ,1978 State Highway 193 ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:belfast,BELFAST,1-1,Belfast Boathouse ,34 Commercial Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:belfast,BELFAST,2-1,Belfast Boathouse ,34 Commercial Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:belfast,BELFAST,3-1,Belfast Boathouse ,34 Commercial Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:belfast,BELFAST,4-1,Belfast Boathouse ,34 Commercial Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:belfast,BELFAST,5-1,United Methodist Church ,23 Mill Lane ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:belgrade,BELGRADE,1-1,Town Office,990 Augusta Road,06:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:belmont,BELMONT,1-1,Belmont Community Building ,613 Back Belmont Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:benton,BENTON,1-1,Benton Town Office ,1279 Clinton Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:berwick,BERWICK,1-1,Berwick Town Hall ,11 Sullivan Square ,06:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:bethel,BETHEL,1-1,Crescent Park School Gymnasium,19 Crescent Lane ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:biddeford,BIDDEFORD,1-1,Tiger Gym Biddeford High School,10-20 Maplewood Avenue,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:biddeford,BIDDEFORD,2-1,Tiger Gym Biddeford High School,10-20 Maplewood Avenue,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:biddeford,BIDDEFORD,3-1,Tiger Gym Biddeford High School,10-20 Maplewood Avenue,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:biddeford,BIDDEFORD,4-1,Tiger Gym Biddeford High School,10-20 Maplewood Avenue,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:biddeford,BIDDEFORD,5-1,Tiger Gym Biddeford High School,10-20 Maplewood Avenue,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:biddeford,BIDDEFORD,6-1,Tiger Gym Biddeford High School,10-20 Maplewood Avenue,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:biddeford,BIDDEFORD,7-1,Tiger Gym Biddeford High School,10-20 Maplewood Avenue,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:bingham,BINGHAM,1-1,Quimby Middle School Gymnasium ,263 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:blaine,BLAINE,1-1,Blaine Town Office ,52 Military Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:blue_hill,BLUE HILL,1-1,Blue Hill Town Hall ,18 Union Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:boothbay,BOOTHBAY ,1-1,Boothbay Town Office ,1011 Wiscasset Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:boothbay_harbor,BOOTHBAY HARBOR,1-1,Boothbay Harbor Municipal Building,11 Howard Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SAG,ocd-division/country:us/state:me/place:bowdoin,BOWDOIN ,1-1,Bowdoin Central School ,1460 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SAG,ocd-division/country:us/state:me/place:bowdoinham,BOWDOINHAM,1-1,Bowdoinham Town Hall ,13 School Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:bowerbank,BOWERBANK ,1-1,Bowerbank Fire Station,650 Bowerbank Road,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:bradford,BRADFORD,1-1,Bradford Town Office ,345 East Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:bradley,BRADLEY,1-1,Bradley Municipal Building ,165B Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:bremen,BREMEN,1-1,Bremen Town Center ,208 Waldoboro Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:brewer,BREWER,1-1,Brewer Auditorium ,318 Wilson Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:bridgewater,BRIDGEWATER,1-1,Bridgewater Town Office ,11 Bootfoot Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:bridgton,BRIDGTON,1-1,Bridgton Town Hall ,26 North High Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:brighton_plt,BRIGHTON PLT ,1-1,Brighton Town Office,Stagecoach Road,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:bristol,BRISTOL,1-1,Bristol Town Hall,1268 Bristol Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:brooklin,BROOKLIN,1-1,Brooklin Town Office ,23 Bay Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:brooks,BROOKS,1-1,Brooks Fire House,19 Purple Heart Highway,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:brooksville,BROOKSVILLE,1-1,Brooksville Municipal Building,1 Townhouse Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:brownfield,BROWNFIELD ,1-1,Brownfield Municipal Building ,82 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:brownville,BROWNVILLE,1-1,Brownville Elementary School ,774 Main Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:brunswick,BRUNSWICK,1-1,Brunswick Junior High School,65 Columbia Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:brunswick,BRUNSWICK,1-2,Brunswick Junior High School,65 Columbia Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:brunswick,BRUNSWICK,2-1,Brunswick Junior High School,65 Columbia Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:brunswick,BRUNSWICK,2-2,Brunswick Junior High School,65 Columbia Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:brunswick,BRUNSWICK,3-1,Brunswick Junior High School,65 Columbia Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:brunswick,BRUNSWICK,3-2,Brunswick Junior High School,65 Columbia Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:brunswick,BRUNSWICK,4-1,Brunswick Junior High School,65 Columbia Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:brunswick,BRUNSWICK,4-2,Brunswick Junior High School,65 Columbia Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:brunswick,BRUNSWICK,5-1,Brunswick Junior High School,65 Columbia Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:brunswick,BRUNSWICK,5-2,Brunswick Junior High School,65 Columbia Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:brunswick,BRUNSWICK,6-1,Brunswick Junior High School,65 Columbia Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:brunswick,BRUNSWICK,6-2,Brunswick Junior High School,65 Columbia Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:brunswick,BRUNSWICK,7-1,Brunswick Junior High School,65 Columbia Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:brunswick,BRUNSWICK,7-2,Brunswick Junior High School,65 Columbia Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:buckfield,BUCKFIELD,1-1,Buckfield Municipal Center ,34 Turner Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:bucksport,BUCKSPORT,1-1,G. H. Jewett School Gymnasium,66 Bridge Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:burlington,BURLINGTON,1-1,Burlington Municipal Building ,1523 Long Ridge Road ,06:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:burnham,BURNHAM,1-1,Reynolds Corner Municipal Building,247 South Horseback Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:buxton,BUXTON,1-1,Buxton Municipal Complex/Town Hall ,185 Portland Road ,06:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:byron,BYRON,1-1,Byron Town Hall ,1 Byron Village Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:calais,CALAIS,1-1,Calais Elementary School,53 Garfield Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:cambridge,CAMBRIDGE,1-1,Cambridge Municipal Building ,202 Ripley Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:camden,CAMDEN,1-1,Camden Public Safety Building ,31 Washington Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:canaan,CANAAN,1-1,Canaan Calvary Church,299 Main Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:canton,CANTON,1-1,Canton Town Office,94 Turner Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:cape_elizabeth,CAPE ELIZABETH,1-1,Cape Elizabeth High School Gymnasium,Ocean House Road ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:caratunk,CARATUNK,1-1,Caratunk Town Office ,11 School Street ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:caribou,CARIBOU,1-1,Caribou Wellness & Recreation Center ,55 Bennett Drive ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:carmel,CARMEL ,1-1,Golden Harvest Grange Hall,928 Main Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:carrabassett_valley,CARRABASSETT VALLEY,1-1,Carrabassett Valley Town Office ,1001 Carriage Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:carroll_plt,CARROLL PLT ,1-1,Carroll Plantation Office ,644 Brown Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:carthage,CARTHAGE,1-1,Carthage Town Office ,703A Carthage Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:cary_plt,CARY PLT  ,1-1,Superintendant of Schools Building,175 Hodgdon Mills Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:casco,CASCO ,1-1,Casco Community Center,940 Meadow Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:castine,CASTINE,1-1,Emerson Hall ,67 Court Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:castle_hill,CASTLE HILL & T11 R4,1-1,Castle Hill Grange Hall ,1953 State Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:caswell,CASWELL,1-1,Dawn F. Barnes Elementary ,1025 Van Buren Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:chapman,CHAPMAN,1-1,Chapman Ridge Runners Snowmobile Club,94 Town Hall Road,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:charleston,CHARLESTON,1-1,Charleston Community Center ,125 School Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:charlotte,CHARLOTTE,1-1,Charlotte Town Hall,1092 Ayers Junction Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:chebeague_island,CHEBEAGUE ISLAND,1-1,Chebeague Island Hall & Community Center ,247 South Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:chelsea,CHELSEA,1-1,Chelsea Elementary School,566 Togus Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:cherryfield,CHERRYFIELD ,1-1,Cherryfield Town Office Meeting Room ,12 Municipal Way ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:chester,CHESTER,1-1,Marianne Municipal Building ,43 South Chester Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:chesterville,CHESTERVILLE,1-1,Chesterville Town Hall ,409 Dutch Gap Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:china,CHINA,1-1,China Town Office,571 Lakeview Drive,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:clifton,CLIFTON,1-1,Clifton Municipal Building,135 Airline Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:clinton,CLINTON,1-1,Clinton Town Office (Banquet Hall),27 Baker Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:codyville_plt,CODYVILLE PLT (with Topsfield),1-1,Topsfield Municipal Building ,48 North Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:columbia,COLUMBIA,1-1,Columbia Town Hall ,106 Epping Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:columbia_falls,COLUMBIA FALLS,1-1,Columbia Falls Municipal Building,8 Point Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:connor_twp,CONNOR TWP,1-1,Caribou Wellness & Recreation Center ,55 Bennett Drive ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:cooper,COOPER ,1-1,Cathance Grange Hall,Route 191-Cooper Highway,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:coplin_plt,COPLIN PLT  & Wyman Twp,1-1,Town Office ,5 Currie Street,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:corinna,CORINNA,1-1,Corinna Fire Annex,37 Exeter Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:corinth,CORINTH,1-1,Corinth Town Office Conference Room,31 Exeter Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:cornish,CORNISH,1-1,Pike Memorial Hall,17 Maple Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:cornville,CORNVILLE,1-1,Cornville Town Hall ,493 West Ridge Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:cornville,CRANBERRY ISLES,1-1,Great Cranberry Island Community Center ,191 Cranberry Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:cranberry_isles,CRANBERRY ISLES,2-1,Islesford Neighborhood House ,10 Mosswood Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:crawford,CRAWFORD,1-1,Crawford Town Hall ,3190 Airline Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:cross_lake_twp,CROSS LAKE TWP (with New Canada),1-1,New Canada Community Center ,1809 Caribou Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:crystal,CRYSTAL ,1-1,Crystal Town Office ,272 Crystal Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:cumberland,CUMBERLAND,1-1,Cumberland Town Hall ,290 Tuttle Road ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:cushing,CUSHING,1-1,Cushing Community Center ,39 Cross Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:cutler,CUTLER,1-1,Cutler Town Office-Library ,2655 Cutler Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:cyr_plt,CYR PLT,1-1,Governor Brann School House ,"218 Caribou Road, Rt #1",10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:dallas_plt,DALLAS PLT,1-1,Dallas Plantation Townhouse,436 Dallas Hill Road,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:damariscotta,DAMARISCOTTA,1-1,Damariscotta Town Hall ,21 School Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:danforth,DANFORTH (and Brookton Twp & Forest Twp),1-1,Danforth Town Hall ,52 Depot Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:dayton,DAYTON,1-1,Dayton Town Office ,33 Clarks Mills Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:deblois,DEBLOIS,1-1,Deblois Town Hall,8 Lane Road,09:30:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:dedham,DEDHAM,1-1,Dedham Fire Station ,8 Bald Mountain Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:deer_isle,DEER ISLE,1-1,Deer Isle Municipal Building,70 Church Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:denmark,DENMARK,1-1,Denmark Municipal Building,62 East Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:dennistown_plt,DENNISTOWN PLT,1-1,Moose River Town Office ,705 Main Street ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:dennysville,DENNYSVILLE (and Edmunds Twp),1-1,Town Office/Community Center,2 Main Street ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:detroit,DETROIT,1-1,DRCS Town Hall ,35 South Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:dexter,DEXTER,1-1,Dexter Town Hall ,10 Hall Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:dixfield,DIXFIELD ,1-1,American Legion,8 River Lane ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:dixmont,DIXMONT,1-1,Dixmont Town Office ,758 Western Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:dover-foxcroft,DOVER-FOXCROFT,1-1,Dover-Foxcroft Municipal Gymnasium,48 Morton Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:dresden,DRESDEN ,1-1,Pownalborough Hall ,314 Patterson Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:drew_plt,DREW PLT ,1-1,Drew Plt. Fire Building/ Town Hall ,65 Center Street ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:durham,DURHAM,1-1,Durham Community School ,654 Hallowell Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:dyer_brook,DYER BROOK,1-1,Dyer Brook Town Office ,864 Dyer Brook Road ,09:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:eagle_lake,EAGLE LAKE,1-1,Eagle Lake Municipal Building ,36 Devoe Brook Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:east_machias,EAST MACHIAS,1-1,East Machias Municipal Building ,571 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:east_millinocket,EAST MILLINOCKET ,1-1,East Millinocket Municipal Building ,53 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:eastbrook,EASTBROOK,1-1,Eastbrook Community Center,959 Eastbrook Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:easton,EASTON,1-1,Easton Town Office ,3 Station Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:eastport,EASTPORT,1-1,Shead High School ,89 High Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:eddington,EDDINGTON,1-1,Eddington Municipal Building-Meeting Room,906 Main Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:edgecomb,EDGECOMB,1-1,Edgecomb Town Hall ,16 Town Hall Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:edinburg,EDINBURG & part of Argyle Twp,1-1,Edinburg Town Building,595 Edinburg Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:eliot,ELIOT,1-1,Marshwood Middle School ,626 Harold L. Dow Highway ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:ellsworth,ELLSWORTH,1-1,Ellsworth City Hall Auditorium ,1 City Hall Plaza ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:ellsworth,ELLSWORTH,2-1,Community of Christ Church,283 State Street,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:ellsworth,ELLSWORTH,3-1,Maine Coast Baptist Church Gymnasium ,867 Bangor Road ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:ellsworth,ELLSWORTH,4-1,Ellsworth City Hall - Council Chambers ,1 City Hall Plaza ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:embden,EMBDEN,1-1,Embden Town Office ,809 Embden Pond Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:enfield,ENFIELD,1-1,Cole Memorial Building,789 Hammett Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:etna,ETNA ,1-1,Etna Community Hall ,17 Shadow Lane ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:eustis,EUSTIS,1-1,Eustis Town Office ,88 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:exeter,EXETER,1-1,Exeter Town Office ,1221 Stetson Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:fairfield,FAIRFIELD,1-1,Fairfield Community Center ,61 Water Street ,07:30:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:falmouth,FALMOUTH ,1-1,Falmouth High School ,74 Woodville Road ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:farmingdale,FARMINGDALE ,1-1,Hall-Dale Middle School Gymnasium,111 Maple Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:farmington,FARMINGTON,1-1,Farmington Community Center ,127 Middle Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:fayette,FAYETTE,1-1,Starling Grange Hall ,2769 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:fort_fairfield,FORT FAIRFIELD,1-1,Fort Fairfield Community Center ,18 Community Center Drive ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:fort_kent,FORT KENT,1-1,Fort Kent Town Office ,416 West Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:fort_kent,FORT KENT,1-2,Fort Kent Town Office ,416 West Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:fort_kent,FORT KENT,1-3,Fort Kent Town Office ,416 West Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:fort_kent,FORT KENT,1-4,Fort Kent Town Office ,416 West Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:fort_kent,FORT KENT,1-5,Fort Kent Town Office ,416 West Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:frankfort,FRANKFORT,1-1,Frankfort Congregational Church,42 Main Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:franklin,FRANKLIN,1-1,Franklin Community Center-Meeting Room ,34 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:freedom,FREEDOM ,1-1,Freedom Town Office-Election Hall,71 Pleasant Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:freeport,FREEPORT,1-1,Freeport High School Gymnasium ,Holbrook Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:frenchboro,FRENCHBORO,1-1,Frenchboro Community Building,1 Executive Drive,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:frenchville,FRENCHVILLE,1-1,Frenchville Community Center ,343-A US Route 1 ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:friendship,FRIENDSHIP,1-1,Hahn Community Center,31 Main Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:frye_island,FRYE ISLAND,1-1,Ferry Office,"7 Ferry Landing Road, Raymond",10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:fryeburg,FRYEBURG,1-1,American Legion Building,Bradley Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:gardiner,GARDINER,1-1,Boys & Girls Club ,14 Pray Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:garfield_plt,GARFIELD PLT,1-1,Garfield Town Garage,10 Cross Road,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:garland,GARLAND,1-1,Garland Town Office ,108 Corinth Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SAG,ocd-division/country:us/state:me/place:georgetown,GEORGETOWN ,1-1,Georgetown Central School ,52 Bay Point Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:gilead,GILEAD,1-1,Gilead Town Hall ,10 Depot Street ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:glenburn,GLENBURN,1-1,Glenburn Municipal Building ,144 Lakeview Road ,07:30:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:gorham,GORHAM,1-1,Gorham Middle School ,106 Weeks Road ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:gorham,GORHAM,1-2,Little Falls Activity Ctr,40 Acorn St,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:gorham,GORHAM,2-1,Gorham Municipal Center - Shaw Gymnasium,75 South Street,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:gouldsboro,GOULDSBORO,1-1,Gouldsboro Community Center Gymnasium,679 Pond Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:grand_isle,GRAND ISLE ,1-1,Grand Isle Town Office- Meeting Room,366 Main Street ,09:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:grand_lake_stream_plt,GRAND LAKE STREAM PLT ,1-1,James Brite Schoolhouse ,15 Water Street ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:gray,GRAY,1-1,Newbegin Gym,22 Main Street ,06:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:great_pond,GREAT POND,1-1,Great Pond Town Hall ,1235 Great Pond Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:greenbush,GREENBUSH,1-1,Greenbush Town Hall ,132 Military Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:greene,GREENE ,1-1,Greene Town Office,220 Main Street,06:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:greenville,GREENVILLE,1-1,Greenville Town Hall ,7 Minden Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:greenwood,GREENWOOD,1-1,American Legion Hall ,595 Gore Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:guilford,GUILFORD (and Kingsbury Plt),1-1,Guilford Fire Station ,4 School Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:hallowell,HALLOWELL,1-1,Hall Dale Elementary School ,26 Garden Lane ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:hamlin,HAMLIN,1-1,Roosevelt School ,588 Hamlin Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:hammond,HAMMOND,1-1,Hammond School House,13 Burnt Brow Road,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:hampden,HAMPDEN,1-1,Municipal Building Community Room ,106 Western Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:hancock,HANCOCK,1-1,Hancock Town Hall ,18 Point Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:hanover,HANOVER,1-1,Hanover Town Office ,21 Ferry Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:harmony,HARMONY,1-1,Harmony Elementary School,18 Main Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:harpswell,HARPSWELL,1-1,Elijah Kellogg Church,917 Harpswell Neck Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:harpswell,HARPSWELL,2-1,Cundy's Harbor Community Building ,837 Cundy's Harbor Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:harpswell,HARPSWELL,3-1,Old Orr's Island School House ,1594 Harpswell Islands Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:harrington,HARRINGTON,1-1,Harrington Town Office ,114 East Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:harrison,HARRISON,1-1,Harrison Town Office Meeting Room,20 Front Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:hartford,HARTFORD,1-1,Hartford Town Hall ,1190 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:hartland,HARTLAND,1-1,Hartland Town Hall ,21 Academy Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:haynesville,HAYNESVILLE,1-1,Haynesville Town Office ,16 Danforth Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:hebron,HEBRON,1-1,Hebron Town Office ,351 Paris Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:hermon,HERMON,1-1,Hermon Elementary School Gymnasium,235 Billings Road ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:hersey,HERSEY,1-1,Patten Fire Station,27 Dearborn Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:highland_plt,HIGHLAND PLT ,1-1,Town House ,Long Falls Dam Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:hiram,HIRAM,1-1,Hiram Town Office ,25 Allard Circle ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:hodgdon,HODGDON,1-1,Hodgdon Town Office ,179 Hodgdon Mills Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:holden,HOLDEN,1-1,Holden Municipal Building ,570 Main Road ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:hollis,HOLLIS,1-1,Hollis Fire Station #2 ,405 Plains Road ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:hope,HOPE,1-1,Hope Town Office ,441 Camden Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:houlton,HOULTON,1-1,Gentle Memorial Building ,128 Main Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:howland,HOWLAND,1-1,Howland Town Office,8 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:hudson,HUDSON ,1-1,Hudson Town Hall ,2334 Hudson Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:indian_township,INDIAN TOWNSHIP ,1-1,Indian Twp Tribal Office,8 Kennabasis Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:industry,INDUSTRY,1-1,Industry Town Hall ,1033 Industry Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:island_falls,ISLAND FALLS,1-1,Island Falls Municipal Office ,68 Houlton Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:isle_au_haut,ISLE AU HAUT,1-1,Revere Memorial Hall,1 Main Street,09:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:islesboro,ISLESBORO,1-1,Islesboro Public Safety Meeting Room,150 Main Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:jackman,JACKMAN,1-1,Jackman Municipal Conference Room,369 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:jackman,JACKMAN,1-2,Jackman Municipal Conference Room,369 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:jackson,JACKSON,1-1,Jackson Town Office ,730 Moosehead Trail ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:jay,JAY,1-1,Jay Community Building ,13 Community Drive,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:jefferson,JEFFERSON,1-1,Jefferson Fire Station ,204 Waldoboro Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:jonesboro,JONESBORO,1-1,Keith H. Schoppee Municipal Building,23 Station Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:jonesport,JONESPORT,1-1,Jonesport Town Office,70 Snare Creek Lane,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:kenduskeag,KENDUSKEAG,1-1,Kenduskeag Town Office ,4010 Broadway ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:kennebunk,KENNEBUNK,1-1,Edward C. Winston Auditorium ,1 Summer Street ,06:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:kennebunk,KENNEBUNK,1-2,Edward C. Winston Auditorium ,1 Summer Street ,06:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:kennebunkport,KENNEBUNKPORT,1-1,Village Fire Station ,32 North Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:kingfield,KINGFIELD,1-1,Webster Hall ,38 School Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:kittery,KITTERY,1-1,Kittery Community Center,120 Rogers Road,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:knox,KNOX,1-1,Knox Town Office ,10 Abbott Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:lagrange,LAGRANGE ,1-1,Lagrange Town Office ,5791 Bennoch Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:lake_view_plt,LAKE VIEW PLT,1-1,Lake View Town Office,27 Church Street,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:lakeville,LAKEVILLE,1-1,Lakeville Town Office (McKinley School House),828 Bottle Lake Road ,09:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:lamoine,LAMOINE,1-1,Lamoine Town Office ,606 Douglas Highway ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:lebanon,LEBANON,1-1,Lebanon Elementary School ,65 Upper Guinea Road ,06:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:lee,LEE,1-1,Eula Ham Municipal Building ,29 Winn Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:leeds,LEEDS,1-1,Leeds Town Office ,8 Community Drive ,06:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:levant,LEVANT,1-1,Levant Town Office,691 Townhouse Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:lewiston,LEWISTON ,1-1,Lewiston Memorial Armory,65 Central Avenue,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:lewiston,LEWISTON ,2-1,Montello School,407 East Avenue,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:lewiston,LEWISTON ,3-1,Lewiston Memorial Armory,65 Central Avenue,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:lewiston,LEWISTON ,4-1,Longley Elementary School,145 Birch Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:lewiston,LEWISTON ,5-1,Longley Elementary School,145 Birch Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:lewiston,LEWISTON ,6-1,The Green Ladle (at High School),156 East Avenue,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:lewiston,LEWISTON ,7-1,Longley Elementary School,145 Birch Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:liberty,LIBERTY ,1-1,Liberty Town Office-Overlock Room ,7 Water Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:limerick,LIMERICK,1-1,Limerick Municipal Building ,55 Washington Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:limestone,LIMESTONE,1-1,Limestone Municipal Building ,93 Main Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:limington,LIMINGTON,1-1,Limington Municipal Complex ,425 Sokokis Avenue ,06:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:lincoln,LINCOLN,1-1,Mattanawcook Academy Gymnasium,33 Reed Drive ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:lincoln_plt,LINCOLN PLT,1-1,Lincoln Plt Town Hall,260 Wilsons Mills Road,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:lincolnville,LINCOLNVILLE,1-1,Lincolnville Central School ,523 Hope Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:linneus,LINNEUS,1-1,Linneus Town Office ,1185 Hodgdon Mills Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:lisbon,LISBON,1-1,LHS Gym,2 Sugg Drive,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:lisbon,LISBON,2-1,LHS Gym,2 Sugg Drive,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:litchfield,LITCHFIELD ,1-1,Litchfield Sportsmen's Club ,2253 Hallowell Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:littleton,LITTLETON ,1-1,Littleton Town Office ,1536 US Highway 1,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:livermore,LIVERMORE,1-1,Livermore Town Office ,10 Crash Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:livermore_falls,LIVERMORE FALLS,1-1,Livermore Falls Municipal Building ,2 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:long_island,LONG ISLAND,1-1,Long Island Town Hall ,105 Wharf Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:lovell,LOVELL,1-1,Lovell Town Office ,1133 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:lowell,LOWELL,1-1,Lowell Town Office ,129 West Old Main Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:lubec,LUBEC,1-1,Lubec Municipal Building,40 School Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:ludlow,LUDLOW,1-1,Ludlow Town Office,831 Ludlow Road,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:lyman,LYMAN,1-1,Lyman Town Hall ,11 South Waterboro Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:machias,MACHIAS,1-1,Machias Town Office ,"7 Court Street, Suite 1 ",08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:machiasport,MACHIASPORT,1-1,Machiasport Municipal Complex ,8 Unity Square ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:macwahoc_plt,MACWAHOC PLT,1-1,Macwahoc Town Office ,48 Kingman Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:madawaska,MADAWASKA,1-1,Knights Of Columbus Hall ,172 Fox Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:madawaska_lake_twp,MADAWASKA LAKE TWP (w/ Stockholm),1-1,Stockholm Community Center,62 School Street ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:madison,MADISON,1-1,Madison Fire Station,26 Weston Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:magalloway_plt,MAGALLOWAY PLT,1-1,Magalloway Town Hall ,3682 Dam Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:manchester,MANCHESTER,1-1,Manchester Fire Station ,37 Readfield Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:mapleton,MAPLETON,1-1,Mapleton Fire Station ,117 Pulcifur Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:mapleton,MAPLETON,1-2,Mapleton Fire Station ,117 Pulcifur Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:mapleton,MAPLETON,1-3,Mapleton Fire Station ,117 Pulcifur Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:mariaville,MARIAVILLE,1-1,Mariaville Town Office ,1686 Mariaville Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:mars_hill,MARS HILL,1-1,Mars Hill Fire Station ,12 Market Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:marshfield,MARSHFIELD ,1-1,Marshfield Town Office ,187 Northfield Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:masardis,MASARDIS ,1-1,Masardis Municipal Building ,26 School Street ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:matinicus_isle_plt,MATINICUS ISLE PLT ,1-1,Matinicus Town Office,17 South Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:mattawamkeag,MATTAWAMKEAG,1-1,Mattawamkeag Municipal Building ,327 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:maxfield,MAXFIELD,1-1,Maxfield Town Office ,231 River Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:mechanic_falls,MECHANIC FALLS,1-1,Municipal Town Office Gymnasium ,108 Lewiston Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:meddybemps,MEDDYBEMPS,1-1,Meddybemps Community Center ,849 Main Street ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:medford,MEDFORD,1-1,Medford Town Office ,13 Trestle Road ,09:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:medway,MEDWAY ,1-1,Medway Fire Station,23 Grindstone Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:mercer,MERCER,1-1,Mercer Town Office ,1015 Beech Hill Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:merrill,MERRILL,1-1,Merrill Town Office ,3391 Route 2 ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:mexico,MEXICO,1-1,Calvin P. Lyons Hall ,134 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:milbridge,MILBRIDGE,1-1,Milbridge Town Office/Library Building,18 School Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:milford,MILFORD ,1-1,Milford Town Hall ,62 Davenport Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:millinocket,MILLINOCKET,1-1,Stearns High School ,199 State Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,,MILLINOCKET,1-2,Stearns High School ,199 State Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:milo,MILO/ORNEVILLE,1-1,Milo Town Hall ,6 Pleasant Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:minot,MINOT,1-1,Minot Town Office ,329 Woodman Hill Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:monhegan_island_plt,MONHEGAN ISLAND PLT ,1-1,Monhegan Memorial Library ,10 Monhegan Avenue ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:monmouth,MONMOUTH,1-1,Cumston Hall-Lower Level,796 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:monroe,MONROE,1-1,Monroe Town Hall ,8 Swanlake Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:monson,MONSON,1-1,Monson Town Office ,10 Tenney Hill Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:monticello,MONTICELLO,1-1,Monticello Town Office ,405 US Highway 1 ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:montville,MONTVILLE,1-1,Montville Town House (Town Hall),418 Center Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:moose_river,MOOSE RIVER,1-1,Moose River Town Office ,705 Main Street ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:moro_plt,MORO PLT,1-1,Katahdin Lodge ,626 Aroostook Scenic Highway ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:morrill,MORRILL,1-1,Morrill Community Center ,4 North Main Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:moscow,MOSCOW,1-1,Moscow Town Hall,110 Canada Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:mount_chase,MOUNT CHASE,1-1,Mount Chase Town Office ,1094 Shin Pond Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:mount_desert,MOUNT DESERT,1-1,Somesville Fire Station ,1157 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:mount_vernon,MOUNT VERNON,1-1,Mount Vernon Comunity Center ,2 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:naples,NAPLES,1-1,Naples Municipal Office Gymnasium,15 Village Green Lane ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:new_canada,NEW CANADA (and Cross Lake Twp),1-1,New Canada Town Office,1809 Caribou Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:new_gloucester,NEW GLOUCESTER,1-1,New Gloucester Fire Station,611 Lewiston Road,06:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:new_limerick,NEW LIMERICK,1-1,New Limerick Town Office ,11 Old Station Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:new_portland,NEW PORTLAND ,1-1,"New Portland Fire Station, Community Room ",911 River Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:new_sharon,NEW SHARON,1-1,New Sharon Town Office ,11 School Lane ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:new_sweden,NEW SWEDEN ,1-1,New Sweden Town Office,50 Station Road ,09:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:new_vineyard,NEW VINEYARD,1-1,Smith Memorial Hall,1680 New Vineyard Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:newburgh,NEWBURGH,1-1,Newburgh Town Office (former Elementary School),2220 Western Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:newcastle,NEWCASTLE,1-1,Community Meeting Room in Fire Station,86 River Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:newfield,NEWFIELD,1-1,Newfield Town Hall,23 South Effingham Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:newport,NEWPORT,1-1,Public Safety Bldg Multi-Purpose Room,21 Water Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:newry,NEWRY,1-1,Raymond C. Foster Municipal Building,422 Bear River Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:nobleboro,NOBLEBORO,1-1,Nobleboro Town Office Meeting Room,192 US Highway 1 ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:norridgewock,NORRIDGEWOCK,1-1,Mill Stream School ,26 Mercer Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:north_berwick,NORTH BERWICK,1-1,North Berwick Primary School ,25 Varney Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:north_haven,NORTH HAVEN ,1-1,North Haven Town Office,16 Town Office Square,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:north_yarmouth,NORTH YARMOUTH,1-1,Former Memorial School,120 Memorial Highway,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:northfield,NORTHFIELD,1-1,Northfield Town Hall ,1940 Northfield Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:northport,NORTHPORT,1-1,Northport Town Office ,16 Beech Hill Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:norway,NORWAY,1-1,Norway Fire Station ,19 Danforth Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:oakfield,OAKFIELD,1-1,Oakfield Town Office ,80 School Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:oakland,OAKLAND,1-1,Williams Elementary School ,55 Pleasant Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:ogunquit,OGUNQUIT,1-1,Dunaway Community Center ,23 School Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:old_orchard_beach,OLD ORCHARD BEACH,1-1,Old Orchard Beach High School ,40 E Emerson Cummings Boulevard ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:old_town,OLD TOWN (and Argyle Twp),1-1,Knights Of Columbus Hall ,5 Gilman Falls Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:old_town,OLD TOWN (and Argyle Twp),5-1,Knights Of Columbus Hall ,5 Gilman Falls Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:orient,ORIENT ,1-1,Orient Town Office,82 School House Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:orland,ORLAND,1-1,Orland Community Center,21 School House Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:orneville_twp,ORNEVILLE TWP (w/ Milo),1-1,Milo Town Hall ,6 Pleasant Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:orono,ORONO,1-1,Umaine Field House,5747 Memorial Gym,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:orono,ORONO,1-2,Umaine Field House,5747 Memorial Gym,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:orono,ORONO,1-3,Umaine Field House,5747 Memorial Gym,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:orrington,ORRINGTON,1-1,Orrington Town Office,29 Center Drive,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:osborn,OSBORN ,1-1,Emery L. Jordan Community Building,197 Moosehill Road,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:otis,OTIS,1-1,Otis Town Office,132 Otis Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:otisfield,OTISFIELD ,1-1,Otisfield Town Office ,403 State Route 121 ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:owls_head,OWLS HEAD,1-1,Owls Head Community Building ,224 Ash Point Drive ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:oxbow_plt,OXBOW PLT ,1-1,Oxbow Plt Municipal Building,685 Oxbow Road,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:oxford,OXFORD,1-1,Oxford Public Safety Building ,701 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:palermo,PALERMO,1-1,Palermo Town Office,45 North Palermo Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:palmyra,PALMYRA,1-1,Town Office and Community Center,4 Madawaska Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:paris,PARIS,1-1,Paris Fire Department ,137 Western Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:parkman,PARKMAN,1-1,Parkman Town Office -Lower Level,771 State Highway 150 ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:parsonsfield,PARSONSFIELD ,1-1,Parsonsfield Town Office,634 North Road,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:passadumkeag,PASSADUMKEAG,1-1,Passadumkeag Town Offfice ,34 Pleasant Street,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:patten,PATTEN,1-1,Patten Fire Station,27 Dearborn Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:pembroke,PEMBROKE,1-1,Pembroke Municipal Building,48 Old County Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:penobscot,PENOBSCOT,1-1,Penobscot  Community School Gym,66 North Penobscot Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:penobscot_nation_voting_district,PENOBSCOT NATION VOTING DISTRICT,1-1,Penobscot Nation Community Building-Conference Room,12 Wabanaki Way ,09:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:perham,PERHAM,1-1,Perham Town Office ,206 High Meadow Road ,09:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:perry,PERRY,1-1,Perry Municipal Building,898 US Route 1 ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:peru,PERU,1-1,Peru Town Office ,26 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:phillips,PHILLIPS (and Madrid),1-1,Phillips Municipal Building (former Primary School) ,15 Russell Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SAG,ocd-division/country:us/state:me/place:phippsburg,PHIPPSBURG,1-1,Phippsburg Town Hall,1042 Main Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:pittsfield,PITTSFIELD,1-1,Pittsfield Town Office ,112 Somerset Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:pittston,PITTSTON,1-1,Pittston Town Office,38 Whitefield Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:pleasant_point_voting_district,PLEASANT POINT VOTING DISTRICT,1-1,Tribal Office Building Transition House,136 County Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:pleasant_ridge_plt,PLEASANT RIDGE PLT ,1-1,Pleasant Ridge Plantation Town Office ,343 Rowe Pond Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:plymouth,PLYMOUTH,1-1,Plymouth Grange Hall ,1927 Moosehead Trail ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:poland,POLAND,1-1,Poland Town Hall ,1223 Maine Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:portage_lake,PORTAGE LAKE (and Nashville Plt) ,1-1,Portage Lake Municipal Building ,20 School Street ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:porter,PORTER,1-1,Porter Town Hall,71 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:portland,PORTLAND,1-1,East End Elementary School ,195 North Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:portland,PORTLAND,1-2,Merrill Auditorium Rehearsal Hall ,20 Myrtle Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:portland,PORTLAND,1-3,Peaks Island Community Hall ,Peaks Island ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:portland,PORTLAND,1-45,Merrill Auditorium Rehearsal Hall ,20 Myrtle Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:portland,PORTLAND,2-1,Reiche Elementary School ,166 Brackett Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:portland,PORTLAND,2-2,Exposition Building ,239 Park Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:portland,PORTLAND,3-1,Woodfords Club,179 Woodford Street,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:portland,PORTLAND,3-2,Italian Heritage Center ,40 Westland Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:portland,PORTLAND,4-1,St. Pius Church ,492 Ocean Avenue ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:portland,PORTLAND,4-2,First Baptist Church ,360 Canco Road ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:portland,PORTLAND,5-1,Deering High School Gymnasium,370 Stevens Avenue,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:portland,PORTLAND,5-2,Grace Baptist Church ,476 Summit Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:pownal,POWNAL ,1-1,Pownal Elementary School,507 Elmwood Road,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:presque_isle,PRESQUE ISLE,1-3,William V Haskell Community Center ,270 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:presque_isle,PRESQUE ISLE,1-4,William V Haskell Community Center ,270 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:presque_isle,PRESQUE ISLE,1-5,William V Haskell Community Center ,270 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:presque_isle,PRESQUE ISLE,1-6,William V Haskell Community Center ,270 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:presque_isle,PRESQUE ISLE,1-7,William V Haskell Community Center ,270 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:presque_isle,PRESQUE ISLE,1-8,William V Haskell Community Center ,270 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:presque_isle,PRESQUE ISLE,1-9,William V Haskell Community Center ,270 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:presque_isle,PRESQUE ISLE,2-4,William V Haskell Community Center ,270 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:presque_isle,PRESQUE ISLE,2-5,William V Haskell Community Center ,270 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:presque_isle,PRESQUE ISLE,1-10,William V Haskell Community Center ,270 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:presque_isle,PRESQUE ISLE,1-11,William V Haskell Community Center ,270 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:presque_isle,PRESQUE ISLE,1-12,William V Haskell Community Center ,270 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:presque_isle,PRESQUE ISLE,1-13,William V Haskell Community Center ,270 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:presque_isle,PRESQUE ISLE,1-14,William V Haskell Community Center ,270 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:presque_isle,PRESQUE ISLE,1-15,William V Haskell Community Center ,270 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:presque_isle,PRESQUE ISLE,1-16,William V Haskell Community Center ,270 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:presque_isle,PRESQUE ISLE,2-17,William V Haskell Community Center ,270 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:princeton,PRINCETON (and Big Lake Twp),1-1,Princeton Town Office ,15 Depot Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:prospect,PROSPECT,1-1,Prospect Municipal Office ,958 Bangor Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:randolph,RANDOLPH,1-1,Randolph Town Office ,121 Kinderhook Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:rangeley,RANGELEY,1-1,Rangeley Town Office ,15 School Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:rangeley_plt,RANGELEY PLT,1-1,Rangeley Plt School House (Town Hall),293 South Shore Drive,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:raymond,RAYMOND,1-1,Jordan Small Middle School ,423 Webbs Mills Road ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:readfield,READFIELD,1-1,"Readfield Town Hall, 2nd Floor ",8 Old Kents Hill Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:reed_plt,REED PLT ,1-1,School House (Town Office Building),8 Springer Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SAG,ocd-division/country:us/state:me/place:richmond,RICHMOND,1-1,Richmond Jr/Sr High School Gymnasium,132 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:ripley,RIPLEY,1-1,Courser Memorial School,47 West Ripley Road,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:robbinston,ROBBINSTON,1-1,Robbinston Fire Station ,886 US Route 1 ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:rockland,ROCKLAND ,1-1,Rockland Community Building ,61 Limerock Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:rockport,ROCKPORT ,1-1,Rockport Town Office ,101 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:rockwood_strip_twp,ROCKWOOD STRIP TWP,1-1,Rockwood Community Center ,3638 Rockwood Road (to Education Lane),08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:rome,ROME,1-1,Rome Town Office/ Community Center ,8 Mercer Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:roque_bluffs,ROQUE BLUFFS,1-1,Roque Bluffs Town Hall ,3 Roque Bluffs Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:roxbury,ROXBURY ,1-1,Town Hall,1095 Roxbury Road,09:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:rumford,RUMFORD,1-1,American Legion Post 24 ,184 Congress Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:sabattus,SABATTUS,1-1,Sabattus Town Office ,190 Middle Road ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:saco,SACO,1-1,Saco Community Center ,75 Franklin Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:saco,SACO,2-1,Saco Community Center ,75 Franklin Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:saco,SACO,3-1,Saco Community Center ,75 Franklin Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:saco,SACO,4-1,Saco Community Center ,75 Franklin Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:saco,SACO,5-1,Saco Community Center ,75 Franklin Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:saco,SACO,6-1,Saco Community Center ,75 Franklin Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:saco,SACO,7-1,Saco Community Center ,75 Franklin Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:saint_agatha,SAINT AGATHA & Sinclair,1-1,Saint Agatha Town Office ,419 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:saint_albans,SAINT ALBANS,1-1,Saint Albans Town Hall ,7 Water Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:saint_francis,SAINT FRANCIS,1-1,Saint Francis Town Office ,873 Main Street,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:saint_george,SAINT GEORGE,1-1,"Tenant's Harbor Fire Station, Meeting Room",3 School Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:saint_john_plt,SAINT JOHN PLT,1-1,Saint John Plt Community Center ,1774 St. John Road,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:sandy_river_plt,SANDY RIVER PLT,1-1,Sandy River Plt Town Office,33 Townhall Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:sanford,SANFORD,1-1,Nasson Community Center,457 Main Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:sanford,SANFORD,2-1,St Ignatius Hall ,25 Riverside Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:sanford,SANFORD,3-1,Curtis Lake Christian Church ,38 Westview Drive ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:sangerville,SANGERVILLE ,1-1,Sangerville Town Hall Community Room,1 Town Hall Avenue,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:scarborough,SCARBOROUGH,1-1,Scarborough High School - Plummer's Gymnasium ,11 Municipal Drive,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:searsmont,SEARSMONT,1-1,Searsmont Community Center ,37 Main Street South ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:searsport,SEARSPORT,1-1,Searsport Public Safety Building ,3 Union Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:sebago,SEBAGO,1-1,Sebago Town Office ,406 Bridgton Road ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:sebec,SEBEC,1-1,Harland Ladd Municipal Building ,29 North Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:seboeis_plt,SEBOEIS PLT,1-1,Kenneth B. Brown Community Building ,1144 Seboeis Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:sedgwick,SEDGWICK ,1-1,Sedgwick Town House ,574 North Sedgwick Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:shapleigh,SHAPLEIGH,1-1,Shapleigh Town Hall ,22 Back Road ,07:30:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:sherman,SHERMAN (and Benedicta and Silver Ridge),1-1,Sherman Town Office ,36 School Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:shirley,SHIRLEY,1-1,Shirley Town Hall,25 West Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:sidney,SIDNEY,1-1,Sidney Town Office ,2986 Middle Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:sinclair,SINCLAIR (w/ St. Agatha),1-1,Saint Agatha Town Office ,419 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:skowhegan,SKOWHEGAN,1-1,Skowhegan Municipal Building,225 Water Street,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:smithfield,SMITHFIELD,1-1,Smithfield Municipal Building ,926 Village Road ,07:45:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:smyrna,SMYRNA,1-1,Smyrna Town Office ,3391 Route 2 ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:solon,SOLON,1-1,Solon Town Office ,121 South Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:somerville,SOMERVILLE,1-1,Somerville Town Office,72 Sand Hill Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:sorrento,SORRENTO,1-1,Sorrento Community Building ,81 Pomola Avenue,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:south_berwick,SOUTH BERWICK,1-1,"South Berwick Town Hall, 3rd Floor ",180 Main Street ,06:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:south_bristol,SOUTH BRISTOL ,1-1,South Bristol School ,2024 State Route 129 ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:south_portland,SOUTH PORTLAND,1-1,South Portland Boys & Girls Club ,169 Broadway ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:south_portland,SOUTH PORTLAND,2-1,American Legion Hall ,413 Broadway ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:south_portland,SOUTH PORTLAND,3-1,South Portland Community Center ,21 Nelson Road ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:south_portland,SOUTH PORTLAND,4-1,South Portland Community Center ,21 Nelson Road ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:south_portland,SOUTH PORTLAND,5-1,Redbank Community Center ,Macarthur Circle West,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:south_thomaston,SOUTH THOMASTON,1-1,South Thomaston Municipal Building ,125 Spruce Head Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:southport,SOUTHPORT,1-1,Southport Town Hall ,361 Hendricks Hill Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:southwest_harbor,SOUTHWEST HARBOR,1-1,Southwest Harbor Fire Station ,250 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:springfield,SPRINGFIELD,1-1,Springfield Town Office ,13 Park Street ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:stacyville,STACYVILLE,1-1,Stacyville Town Office,414 Station Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:standish,STANDISH,1-1,Standish Municipal Center ,175 Northeast Road ,06:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:starks,STARKS,1-1,Starks Town Office ,57 Anson Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:stetson,STETSON,1-1,Stetson Meeting House,7 Wolfboro Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:steuben,STEUBEN,1-1,Steuben Town Office ,294 US Route 1 ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:stockholm,STOCKHOLM /MADAWASKA LAKE TWP,1-1,Stockholm Community Center,62 School Street ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:stockton_springs,STOCKTON SPRINGS,1-1,Stockton Springs Town Office ,217 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:stoneham,STONEHAM,1-1,Stoneham Fire Station ,22 Butters Hill Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:stonington,STONINGTON ,1-1,"Stonington Town Hall, 2nd Floor Meeting Room",32 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:stow,STOW,1-1,Stow Municipal Office ,710 Stow Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:strong,STRONG,1-1,Forster Memorial Building ,14 South Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:sullivan,SULLIVAN,1-1,Sullivan Town Office ,1888 US Highway 1 ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:sumner,SUMNER,1-1,Bisbee-Dyer Municipal Center (Town Office),633 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:surry,SURRY,1-1,Surry Town Office ,741 North Bend Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:swans_island,SWANS ISLAND,1-1,Swans Island Town Office ,125 Harbor Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:swanville,SWANVILLE,1-1,Swanville Town Office ,6 Town House Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:sweden,SWEDEN,1-1,Sweden Town Office,147 Bridgton Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:talmadge,TALMADGE ,1-1,Ladies Aid Building ,Old Mill Road,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:temple,TEMPLE,1-1,Temple Town Hall ,258 Temple Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:the_forks_plt,THE FORKS PLT,1-1,The Forks Town Hall ,2621 US Route 201,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:thomaston,THOMASTON,1-1,American Legion Hall ,10 Watts Lane ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:thorndike,THORNDIKE,1-1,Thorndike Town Office ,125 Mount View Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:topsfield,TOPSFIELD,1-1,Topsfield Municipal Building ,48 North Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SAG,ocd-division/country:us/state:me/place:topsham,TOPSHAM ,1-1,Topsham Fairgrounds Exhibition Building ,54 Elm Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:tremont,TREMONT,1-1,Tremont Town Office-Harvey Kelley Meeting Room,20 Harbor Drive,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:trenton,TRENTON,1-1,Trenton Town Office ,59 Oak Point Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:troy,TROY,1-1,Troy Town Office ,129 Rogers Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:turner,TURNER,1-1,Turner Town Office ,11 Turner Center Road ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:union,UNION,1-1,William Pullen Municipal Building ,567 Common Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:unity,UNITY,1-1,Unity Community Center,32 School Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:upton,UPTON ,1-1,Ladies Aid Building ,23 Mill Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:van_buren,VAN BUREN ,1-1,Van Buren Community Center ,130 Champlain Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:vanceboro,VANCEBORO,1-1,Vanceboro Fire Station ,Shaw Street,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:vassalboro,VASSALBORO,1-1,Vassalboro Town Office ,682 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:veazie,VEAZIE,1-1,"Veazie Municipal Building, Council Chambers ",1084 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:verona_island,VERONA ISLAND,1-1,Verona Town Hall ,16 School Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:vienna,VIENNA ,1-1,Vienna Community Building ,34 Kimball Pond Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:vinalhaven,VINALHAVEN,1-1,Vinalhaven Town Office,19 Washington School Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:wade,WADE,1-1,Wade Town office-Washburn,6 Victoria Street,09:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:waite,WAITE,1-1,Ladies Aid Building ,10 Old Mill Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:waldo,WALDO,1-1,Waldo Town Office ,629 Waldo Station Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:waldoboro,WALDOBORO,1-1,Waldoboro Municipal Building,1600 Atlantic Highway ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+AND,ocd-division/country:us/state:me/place:wales,WALES,1-1,Wales Municipal Center,175 Centre Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:wallagrass,WALLAGRASS,1-1,Wallagrass Elementary School,45 Church Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:waltham,WALTHAM ,1-1,Waltham Town Office,1520 Waltham Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:warren,WARREN,1-1,Masonic Hall,105 Camden Road,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:washburn,WASHBURN,1-1,Washburn Civic Center/Town Office ,1287 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KNO,ocd-division/country:us/state:me/place:washington,WASHINGTON,1-1,Bryant Room - Gibbs Library,40 Old Union Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:waterboro,WATERBORO,1-1,Massabesic East School,84 West Road,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:waterford,WATERFORD,1-1,Waterford Municipal Building ,366 Valley Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:waterville,WATERVILLE,1-1,Bourque-Lanigan Post #5 American Legion ,21 College Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:waterville,WATERVILLE,2-1,Bourque-Lanigan Post #5 American Legion ,21 College Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:waterville,WATERVILLE,3-1,Bourque-Lanigan Post #5 American Legion ,21 College Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:waterville,WATERVILLE,4-1,Bourque-Lanigan Post #5 American Legion ,21 College Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:waterville,WATERVILLE,5-1,Bourque-Lanigan Post #5 American Legion ,21 College Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:waterville,WATERVILLE,6-1,Bourque-Lanigan Post #5 American Legion ,21 College Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:waterville,WATERVILLE,7-1,Bourque-Lanigan Post #5 American Legion ,21 College Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:wayne,WAYNE,1-1,Ladd Recreation Center ,26 Gott Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:webster_plt,WEBSTER PLT ,1-1,Webster Plt Town Office ,583 Tucker Ridge Road ,09:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:weld,WELD ,1-1,Multi-Purpose Room ,23 Mill Street ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:wellington,WELLINGTON,1-1,Wellington Town Office,13 Harmony Road,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:wells,WELLS,1-1,Wells Junior High School,1470 Post Road,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:wesley,WESLEY,1-1,Wesley Elementary School,13 Whining Pines Drive,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SAG,ocd-division/country:us/state:me/place:west_bath,WEST BATH,1-1,West Bath Fire Hall ,192 State Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SOM,ocd-division/country:us/state:me/place:west_forks_plt,WEST FORKS PLT,1-1,West Forks Town Hall ,2955 US Route 201 ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:west_gardiner,WEST GARDINER,1-1,West Gardiner Town Hall/Fire Department ,322 Spears Corner Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:west_paris,WEST PARIS,1-1,West Paris Town Office-Meeting Room ,25 Kingsbury Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:westbrook,WESTBROOK,1-1,Wescott Community Center,426 Bridge Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:westbrook,WESTBROOK,2-1,Westbrook Armory ,120 Stroudwater Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:westbrook,WESTBROOK,3-1,Westbrook Armory ,120 Stroudwater Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:westbrook,WESTBROOK,4-1,Wescott Community Center,426 Bridge Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:westbrook,WESTBROOK,5-1,Pride's Corner Congregational Church ,235 Pride Street ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:westfield,WESTFIELD,1-1,Westfield Town Office ,6 Main Street ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:westmanland,WESTMANLAND ,1-1,Westmanland Town Hall,Westmanland Road,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:weston,WESTON,1-1,Weston Town Office ,5 Church Lane ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:westport_island,WESTPORT ISLAND ,1-1,Westport Island Old Town Hall ,1217 Main Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:whitefield,WHITEFIELD ,1-1,Whitefield Fire and Rescue,26 Townhouse Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:whiting,WHITING ,1-1,Whiting Community Building ,169 US Route 1 ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAS,ocd-division/country:us/state:me/place:whitneyville,WHITNEYVILLE,1-1,Hillgrove Community Building,42 South Main Street,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PIS,ocd-division/country:us/state:me/place:willimantic,WILLIMANTIC,1-1,Willimantic Town Hall,2360 Elliottsville Road,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+FRA,ocd-division/country:us/state:me/place:wilton,WILTON,1-1,Wilton Town Office,158 Weld Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:windham,WINDHAM,1-1,Windham High School Main Gym,406 Gray Road ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:windsor,WINDSOR,1-1,Windsor Town Hall ,523 Ridge Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:winn,WINN,1-1,Winn Community Hall (Town Office) ,24 Main Street ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:winslow,WINSLOW,1-1,V F W ,175 Veteran Drive ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+HAN,ocd-division/country:us/state:me/place:winter_harbor,WINTER HARBOR,1-1,Municipal Building,20 School Street,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+WAL,ocd-division/country:us/state:me/place:winterport,WINTERPORT,1-1,Samuel L Wagner Middle School ,19 Williams Way,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:winterville_plt,WINTERVILLE PLT,1-1,Winterville Plantation Office ,391 Quimby Road ,10:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+KEN,ocd-division/country:us/state:me/place:winthrop,WINTHROP,1-1,Winthrop Town Office ,17 Highland Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+LIN,ocd-division/country:us/state:me/place:wiscasset,WISCASSET,1-1,Wiscasset Community Center,242 Gardiner Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+ARO,ocd-division/country:us/state:me/place:woodland,WOODLAND ,1-1,Woodland Public Highway Garage,843 Woodland Center Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+OXF,ocd-division/country:us/state:me/place:woodstock,WOODSTOCK & Milton Twp,1-1,Woodstock Town Office ,26 Monk Avenue ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+PEN,ocd-division/country:us/state:me/place:woodville,WOODVILLE,1-1,South Woodville Schoolhouse ,Woodville Road ,09:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+SAG,ocd-division/country:us/state:me/place:woolwich,WOOLWICH,1-1,Woolwich Central School,137 Nequasset Road ,08:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+CUM,ocd-division/country:us/state:me/place:yarmouth,YARMOUTH,1-1,Robert W. Boyd Amvets Post #2 ,148 North Road ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
+YOR,ocd-division/country:us/state:me/place:york,YORK,1-1,York High School-Robert E. Butler Gymnasium ,1 Robert Stevens Drive ,07:00:00 - 05:00,20:00:00 - 05:00,11/8/16,11/8/16
