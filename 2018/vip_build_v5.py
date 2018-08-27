@@ -79,7 +79,7 @@ def vip_build(state_data, state_feed, election_authorities):
     person = generate_person(election_authorities)
     
     # GENERATE zip file
-    zip_data(state_feed['state_abbrv'][0], {'election': election,
+    zip_data(state_feed, {'election': election,
                                             'polling_location': polling_location,
                                             'schedule': schedule,
                                             'source':source,
@@ -163,7 +163,7 @@ def generate_person(election_authorities):
 def generate_election(state_feed):
     """
     PURPOSE: generates election dataframe for .txt file
-    INPUT: state_data, state_feed
+    INPUT: state_feed
     RETURN: election dataframe
     SPEC: https://vip-specification.readthedocs.io/en/latest/built_rst/xml/elements/election.html
     """
@@ -318,11 +318,11 @@ def generate_department(election_authorities):
     return department
 
   
-def zip_data(state_abbrv, files):
+def zip_data(state_feed, files):
     """
     PURPOSE: create .txt files and export into a folder for 1 state
     (election.txt, polling_location.txt, locality.txt, schedule.txt, source.txt, state.txt)
-    INPUT: state_abbrv, files
+    INPUT: state_feed, files
     RETURN: exports zip of 8 .txt files
     """
     print()
@@ -334,10 +334,13 @@ def zip_data(state_abbrv, files):
         file_list.append(file)
         df.to_csv(file, index=False, encoding='utf-8')
         
-        print(state_abbrv, name, "|", len(df.index), "row(s)")
+        print(state_feed['state_abbrv'][0], name, "|", len(df.index), "row(s)")
+
+    # define name of zipfile
+    zip_filename = 'vipfeed-' + str(state_feed['election_date'][0].date()) + '-' + state_feed['state_abbrv'][0] + '.zip'
 
     # writing files to a zipfile
-    with ZipFile(state_abbrv + '.zip','w') as zip:
+    with ZipFile(zip_filename, 'w') as zip:
         for file in file_list:
             zip.write(file)
 
