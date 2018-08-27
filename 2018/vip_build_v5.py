@@ -68,7 +68,7 @@ def vip_build(state_data, state_feed, election_authorities):
     election_authorities = pd.merge(election_authorities, temp, on =['ocd_division', 'official_title'])
     
     # GENERATE 8 .txt files
-    election = generate_election(state_feed, state_data)
+    election = generate_election(state_feed)
     polling_location = generate_polling_location(state_data)
     schedule = generate_schedule(state_data, state_feed)
     source = generate_source(state_feed)
@@ -160,7 +160,7 @@ def generate_person(election_authorities):
     return person
 
     
-def generate_election(state_feed, state_data):
+def generate_election(state_feed):
     """
     PURPOSE: generates election dataframe for .txt file
     INPUT: state_data, state_feed
