@@ -3,6 +3,7 @@
 
 Program takes hand-collected state data related to early voting locations, standardizes the data, and outputs the data in a format that can be read by the VIP Dashboard.  The data was collected by the Democracy Works VIP Outreach Team.
 
+<br> </br>
 ## How to run program 
 
 ```python ‘program file name’ --nargs <state abbreviations or ‘all’>```
@@ -54,7 +55,6 @@ The tool outputs a single zip file per state feed, which contains the following 
 ###### Documentation for the output files: 
 https://vip-specification.readthedocs.io/en/latest/index.html
 
-<br> </br>
 ### How to upload output file to VIP Dashboard:
 Use the following command to upload a single zip file to the VIP Dashboard:
 
@@ -84,4 +84,19 @@ Number of states that processed successfully: 1
 List of states that processed successfully:
 ['SD']
 ```
+<br> </br>
+
+## Explanation of common errors
+
+##### 'ERROR: <state> could not be found or retrieved from Google Sheets.'
+Indicates the tab for the requested state is not in the Google Sheet doc. The tab might either not be included or is misspelled.
+
+##### 'ERROR: <state> could not be processed.'
+Indicates a critical error in building the .txt files. The error might be a type or formatting issue. For debugging, comment out the try and except clauses. 
+
+##### 'Error: ELECTION_AUTHORITIES Google Sheets is either missing from the Google workbook or there is data reading error.'
+Indicates ELECTION_AUTHORITIES is missing from the Google Sheet or has a read-in issue. The tab might either not be included or is misspelled.
+
+##### 'Error: STATE_FEED Google Sheets is either missing from the Google workbook or there is data reading error.'
+Indicates STATE_FEED is missing from the Google Sheet or has a read-in issue. The tab might either not be included or is misspelled. 
 
