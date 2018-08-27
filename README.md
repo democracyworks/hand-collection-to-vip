@@ -1,2 +1,4 @@
-# hand-collection-to-vip
-Scripts to process hand-collected election information into VIP 5.1 format files
+### Program Overview
+# Early Voting Hand Collection 2018
+# Voting Information Project (VIP) Version 5.1
+
