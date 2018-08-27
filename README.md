@@ -7,10 +7,12 @@ Program takes hand-collected state data related to early voting locations, stand
 
 ```python ‘program file name’ --nargs <state abbreviations or ‘all’>```
 
-##### Sample run
+##### Sample run(s)
 ```python vip_build_v5.py --nargs WY hi sD Nj```
 
 ```python vip_build_v5.py --nargs all```
+
+<br> </br>
 
 ## Required input data
 
@@ -19,7 +21,7 @@ Program takes hand-collected state data related to early voting locations, stand
 ### 1) Early Hand Collecting
 https://docs.google.com/spreadsheets/d/1utF9ybiOcCc9GvZ_KMqKO1TDaVqUxmHl4xmK48YkZj4/edit#gid=892894361
 
-##### Required sheets & features
+##### Required sheets & features:
 
 ###### STATE_FEED sheet
 office_name, ocd_division, election_date, election_name, state_abbrv, state_fips
@@ -29,7 +31,57 @@ OCD_ID, location_name, address_1, dirs, start_time, end_time, start_date, end_da
 
 ### 2) Election Authorities
 
-##### Required sheets & features
+##### Required sheets & features:
 
 ###### ELECTION_AUTHORITIES sheet
 ocd_division, official_title, hompage_uri, state
+
+<br> </br>
+## Output
+
+The tool outputs a single zip file per state feed, which contains the following files:
+
+* department.txt
+* election_administration.txt
+* election.txt
+* locality.txt
+* person.txt
+* polling_location.txt
+* schedule.txt
+* source.txt
+* state.txt
+
+###### Documentation for the output files: 
+https://vip-specification.readthedocs.io/en/latest/index.html
+
+<br> </br>
+### How to upload output file to VIP Dashboard:
+Use the following command to upload a single zip file to the VIP Dashboard:
+
+```sh upload_script_staging.sh  <state abbreviation>.zip```
+
+##### Sample run(s)  
+ 
+```sh upload_script_staging.sh OH.zip```
+<br> </br>
+
+## Print out sample
+```
+SD election | 1 row(s)
+SD polling_location | 69 row(s)
+SD schedule | 698 row(s)
+SD source | 1 row(s)
+SD state | 1 row(s)
+SD locality | 63 row(s)
+SD election_administration | 66 row(s)
+SD department | 66 row(s)
+SD person | 66 row(s)
+
+Number of states that could not be found or retrieved from Google Sheets: 0
+Number of states that could not be processed: 0
+Number of states that processed successfully: 1
+
+List of states that processed successfully:
+['SD']
+```
+
