@@ -4,6 +4,7 @@
 Program takes hand-collected state data related to early voting locations, standardizes the data, and outputs the data in a format that can be read by the VIP Dashboard.  The data was collected by the Democracy Works VIP Outreach Team.
 
 <br> </br>
+
 ## How to run program 
 
 ```python ‘program file name’ --nargs <state abbreviations or ‘all’>```
@@ -38,6 +39,7 @@ OCD_ID, location_name, address_1, dirs, start_time, end_time, start_date, end_da
 ocd_division, official_title, hompage_uri, state
 
 <br> </br>
+
 ## Output
 
 The tool outputs a single zip file per state feed, which contains the following files:
@@ -63,6 +65,7 @@ Use the following command to upload a single zip file to the VIP Dashboard:
 ##### Sample run(s)  
  
 ```sh upload_script_staging.sh OH.zip```
+
 <br> </br>
 
 ## Print out sample
@@ -84,6 +87,7 @@ Number of states that processed successfully: 1
 List of states that processed successfully:
 ['SD']
 ```
+
 <br> </br>
 
 ## Explanation of common errors
