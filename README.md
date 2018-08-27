@@ -57,7 +57,7 @@ The tool outputs a single zip file per state feed, which contains the following 
 ###### Documentation for the output files: 
 https://vip-specification.readthedocs.io/en/latest/index.html
 
-##### How to upload output file to VIP Dashboard:
+#### How to upload output file to VIP Dashboard:
 Use the following command to upload a single zip file to the VIP Dashboard:
 
 ```sh upload_script_staging.sh  <state abbreviation>.zip```
