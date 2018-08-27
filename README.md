@@ -38,6 +38,9 @@ OCD_ID, location_name, address_1, dirs, start_time, end_time, start_date, end_da
 ###### ELECTION_AUTHORITIES sheet
 ocd_division, official_title, hompage_uri, state
 
+### Data Dictionary
+https://docs.google.com/spreadsheets/d/1s3ZayYvPBGSmyXzxq1pNdKosbEoh6QnE85e4-l8CuUc/edit#gid=2035147249
+
 <br> </br>
 
 ## Output
