@@ -73,6 +73,7 @@ Use the following command to upload a single zip file to the VIP Dashboard:
 
 ## Print out sample
 ```
+<< South Dakota >>
 SD election | 1 row(s)
 SD polling_location | 69 row(s)
 SD schedule | 698 row(s)
