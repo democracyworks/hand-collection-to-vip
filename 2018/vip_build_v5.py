@@ -119,10 +119,10 @@ def clean_data(state_feed, state_data, election_authorities):
     temp[1] = temp[1].str.pad(5, side='left', fillchar='0')
     state_data['end_time'] = temp[0] + '-' + temp[1]
     
-    state_data['is_drop_box'] = state_data['is_drop_box'].str.lower()
-    state_data['is_early_voting'] = state_data['is_early_voting'].str.lower()
-    state_data['is_only_by_appointment'] = state_data['is_only_by_appointment'].str.lower()
-    state_data['is_or_by_appointment'] = state_data['is_or_by_appointment'].str.lower()
+    state_data['is_drop_box'] = state_data['is_drop_box'].str.lower().str.strip()
+    state_data['is_early_voting'] = state_data['is_early_voting'].str.lower().str.strip()
+    state_data['is_only_by_appointment'] = state_data['is_only_by_appointment'].str.lower().str.strip()
+    state_data['is_or_by_appointment'] = state_data['is_or_by_appointment'].str.lower().str.strip()
 
     state_data['OCD_ID'] = state_data['OCD_ID'].str.strip()
     election_authorities['ocd_division'] = election_authorities['ocd_division'].str.strip()
