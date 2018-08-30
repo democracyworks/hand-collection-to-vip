@@ -79,7 +79,8 @@ def vip_build(state_data, state_feed, election_authorities):
     person = generate_person(election_authorities)
     
     # GENERATE zip file
-    zip_data(state_feed, {'election': election,
+    generate_zip(state_feed['state_abbrv'][0], 
+                 state_feed['office_name'][0], {'election': election,
                                             'polling_location': polling_location,
                                             'schedule': schedule,
                                             'source':source,
@@ -87,7 +88,9 @@ def vip_build(state_data, state_feed, election_authorities):
                                             'locality':locality,
                                             'election_administration':election_administration,
                                             'department': department, 
-                                            'person': person})
+                                            'person': person,
+                                            'precinct': precinct,
+                                            'street_segment': street_segment})
     
     return
             
@@ -318,15 +321,15 @@ def generate_department(election_authorities):
     return department
 
   
-def zip_data(state_feed, files):
+def generate_zip(state_abbrv, office_name, files):
     """
     PURPOSE: create .txt files and export into a folder for 1 state
     (election.txt, polling_location.txt, locality.txt, schedule.txt, source.txt, state.txt)
-    INPUT: state_feed, files
+    INPUT: state_abbrv, files
     RETURN: exports zip of 8 .txt files
     """
     print()
-    
+    print('<<',office_name,'>>')
     # writing dataframes to txt files
     file_list = []
     for name, df in files.items():
@@ -334,7 +337,7 @@ def zip_data(state_feed, files):
         file_list.append(file)
         df.to_csv(file, index=False, encoding='utf-8')
         
-        print(state_feed['state_abbrv'][0], name, "|", len(df.index), "row(s)")
+        print(state_abbrv, name, "|", len(df.index), "row(s)")
 
     # define name of zipfile
     zip_filename = 'vipfeed-' + str(state_feed['election_date'][0].date()) + '-' + state_feed['state_abbrv'][0] + '.zip'
