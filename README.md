@@ -7,12 +7,12 @@ Program takes hand-collected state data related to early voting locations, stand
 
 ## How to run program 
 
-```python ‘program file name’ --nargs <state abbreviations or ‘all’>```
+```python <program file name> --nargs <state abbreviations or ‘all’>```
 
 ##### Sample run(s)
-```python vip_build_v5.py --nargs WY hi sD Nj```
+```python vip_earlyvoting_build.py --nargs WY hi sD Nj```
 
-```python vip_build_v5.py --nargs all```
+```python vip_earlyvoting_build.py --nargs all```
 
 <br> </br>
 
