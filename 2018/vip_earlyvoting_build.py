@@ -88,9 +88,7 @@ def vip_build(state_data, state_feed, election_authorities):
                                             'locality':locality,
                                             'election_administration':election_administration,
                                             'department': department, 
-                                            'person': person,
-                                            'precinct': precinct,
-                                            'street_segment': street_segment})
+                                            'person': person})
     
     return
             
@@ -245,16 +243,16 @@ def generate_state(state_feed):
                           'office_name':'name'}, inplace=True)
     return state
 
-def generate_locality(state_data, state_feed, election_authorities):
+def generate_locality(state_feed, state_data, election_authorities):
     """
     PURPOSE: generates locality dataframe for .txt file
-    INPUT: state_data, state_feed
+    INPUT: state_feed, state_data, election_authorities
     RETURN: locality dataframe
     SPEC: https://vip-specification.readthedocs.io/en/latest/built_rst/xml/elements/locality.html
     """ 
 
     # SELECT feature(s)
-    locality = state_feed[['OCD_ID', 'polling_location_ids']]
+    locality = state_data[['OCD_ID', 'polling_location_ids']]
 
     # GROUP polling_location_ids
     locality.drop_duplicates(inplace=True)  # REMOVE duplicate rows
@@ -263,11 +261,11 @@ def generate_locality(state_data, state_feed, election_authorities):
     locality = ids_joined.reset_index()  # FLATTEN aggregated df
 
     # CREATE feature(s)
-    locality['state_id'] = state_data['state_id'][0]
+    locality['state_id'] = state_feed['state_id'][0]
     locality['name'] = locality['OCD_ID'].str.extract('\\/\\w+\\:(\\w+\'?\\-?\\w+?)$')
-    locality['external_identifier_type'] = state_data['external_identifier_type'][0]
+    locality['external_identifier_type'] = state_feed['external_identifier_type'][0]
 
-    # Add election_administration_id
+    # ADD election_administration_id
     election_admins = election_authorities[['ocd_division', 'election_administration_id']]
     # election_admins['ocd_division'] = election_admins['ocd_division'].str.replace('_town', '').str.replace('_city', '')
     locality = locality.merge(election_admins, left_on='OCD_ID', right_on='ocd_division', how='left')
@@ -404,32 +402,32 @@ if __name__ == '__main__':
 
         for state in input_states:
         
-            try:
+            # try:
             
-                # LOAD state data
-                state_data_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=state).execute()
-                state_data_values = state_data_result.get('values', [])
-                state_data = pd.DataFrame(state_data_values[0:],columns=state_data_values[0])
-                state_data.drop([0], inplace=True)
-                
-                state_feed = state_feed_all[state_feed_all['state_abbrv'] == state] # FILTER state_feed_all for selected state
-                election_authorities = election_authorities_all[election_authorities_all['state'] == state] # FILTER election_authorities_all for selected state
-                
-                vip_build(state_data, state_feed, election_authorities)
-                
-                states_successfully_processed.append(state)
-                increment_success +=1
-                
-                print() 
+            # LOAD state data
+            state_data_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=state).execute()
+            state_data_values = state_data_result.get('values', [])
+            state_data = pd.DataFrame(state_data_values[0:],columns=state_data_values[0])
+            state_data.drop([0], inplace=True)
+            
+            state_feed = state_feed_all[state_feed_all['state_abbrv'] == state] # FILTER state_feed_all for selected state
+            election_authorities = election_authorities_all[election_authorities_all['state'] == state] # FILTER election_authorities_all for selected state
+            
+            vip_build(state_data, state_feed, election_authorities)
+            
+            states_successfully_processed.append(state)
+            increment_success +=1
+            
+            print() 
 
                 
-            except HttpError:
-                print ('ERROR:', state, 'could not be found or retrieved from Google Sheets.')
-                increment_httperror += 1
+            # except HttpError:
+            #     print ('ERROR:', state, 'could not be found or retrieved from Google Sheets.')
+            #     increment_httperror += 1
                 
-            except:
-                print ('ERROR:', state, 'could not be processed.')
-                increment_processingerror += 1
+            # except:
+            #     print ('ERROR:', state, 'could not be processed.')
+            #     increment_processingerror += 1
 
     print('Number of states that could not be found or retrieved from Google Sheets:', increment_httperror)
     print('Number of states that could not be processed:', increment_processingerror)
