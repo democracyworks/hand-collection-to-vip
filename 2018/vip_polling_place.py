@@ -16,12 +16,11 @@ warnings.filterwarnings('ignore')
 
 
 
-# If modifying these scopes, delete the file token.json.
+# PRO-TIP: if modifying these scopes, delete the file token.json.
 SCOPES = 'https://www.googleapis.com/auth/spreadsheets.readonly'
 
 # SET Google Spreadsheet IDs
-#SPREADSHEET_ID = '1utF9ybiOcCc9GvZ_KMqKO1TDaVqUxmHl4xmK48YkZj4' # MAIN (states & STATE_FEED)
-SPREADSHEET_ID = '1o68iC82jt7WOoTYn_rdda2472Fn2_2_FRBsgZla5v8M' # TEST MAIN (states & STATE_FEED)
+SPREADSHEET_ID = '1o68iC82jt7WOoTYn_rdda2472Fn2_2_FRBsgZla5v8M' # MAIN (states & STATE_FEED)
 SPREADSHEET_EA_ID = '1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_y2o' # ELECTION_AUTHORITIES
 
 def vip_build(state_data, state_feed, election_authorities, target_smart):
@@ -40,8 +39,8 @@ def vip_build(state_data, state_feed, election_authorities, target_smart):
 
     # CLEAN/FORMAT state_feed and state_data
     state_feed, state_data, election_authorities, target_smart = clean_data(state_feed, state_data, election_authorities, target_smart)
-    
 
+    
     # CREATE 'election_adminstration_id'
     temp = election_authorities[['county']]
     temp.drop_duplicates(['county'], inplace=True)
@@ -50,18 +49,18 @@ def vip_build(state_data, state_feed, election_authorities, target_smart):
     election_authorities = pd.merge(election_authorities, temp, on =['county'])
     
     # CREATE 'hours_only_id'
-    temp = state_data[['county', 'location_name', 'address_1']]
-    temp.drop_duplicates(['county', 'location_name', 'address_1'], inplace=True)
+    temp = state_data[['county', 'location_name', 'address_line']]
+    temp.drop_duplicates(['county', 'location_name', 'address_line'], inplace=True)
     temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
     temp['hours_open_id'] = 'hours' + (temp.index + 1).astype(str).str.zfill(4)
-    state_data = pd.merge(state_data, temp, on =['county','location_name','address_1'])
+    state_data = pd.merge(state_data, temp, on =['county','location_name','address_line'])
 
     # CREATE 'polling_location_ids'
-    temp = state_data[['county', 'location_name', 'address_1']]
-    temp.drop_duplicates(['county', 'location_name', 'address_1'], inplace=True)
+    temp = state_data[['county', 'location_name', 'address_line']]
+    temp.drop_duplicates(['county', 'location_name', 'address_line'], inplace=True)
     temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
     temp['polling_location_ids'] = 'pol' + (temp.index + 1).astype(str).str.zfill(4)
-    state_data = pd.merge(state_data, temp, on =['county','location_name','address_1'])
+    state_data = pd.merge(state_data, temp, on =['county','location_name','address_line'])
     
     # CREATE 'election_official_person_id'
     temp = election_authorities[['county', 'official_title']]
@@ -98,6 +97,11 @@ def vip_build(state_data, state_feed, election_authorities, target_smart):
                                                   'precinct': precinct,
                                                   'street_segment': street_segment})
     
+    print()
+    print('Total precincts provided in polling place data:', state_data['precinct'].nunique())
+    print('Total precincts provided in TargetSmart data:', street_segment['precinct_id'].nunique())
+    print('----------------------------------------------------')
+   
     return
             
     
@@ -128,21 +132,23 @@ def clean_data(state_feed, state_data, election_authorities, target_smart):
     temp[1] = temp[1].str.pad(5, side='left', fillchar='0')
     state_data['end_time'] = temp[0] + '-' + temp[1]
     
+    # FORMAT FIPS & ZIPS
+    state_feed['fips'] = state_feed['state_fips'].str.pad(5, side='right', fillchar='0')
+    target_smart['vf_reg_zip'] = target_smart['vf_reg_zip'].str.pad(5, side='left', fillchar='0')
 
-    state_feed['state_fips'] = state_feed['state_fips'].str.pad(5, side='right', fillchar='0')
-
-    # STRIP WHITESPACE
-    #state_data['OCD_ID'] = state_data['OCD_ID'].str.strip()
-    #state_data['county'] = state_data['OCD_ID'].str.extract('\\/\\w+\\:(\\w+\'?\\-?\\w+?)$') 
+    # FORMAT county
     state_data['county'] = state_data['county'].str.upper().str.strip()
 
     election_authorities['ocd_division'] = election_authorities['ocd_division'].str.upper().str.strip()
     election_authorities['county'] = election_authorities['ocd_division'].str.extract('\\/\\w+\\:(\\w+\'?\\-?\\w+?)$')
     
+    # FORMAT voter file addresses
     target_smart['vf_reg_address_1'] = target_smart['vf_reg_address_1'].str.upper().str.strip()
 
 
+
     return state_feed, state_data, election_authorities, target_smart
+
 
 def generate_precinct(state_data, locality):
     """
@@ -152,7 +158,7 @@ def generate_precinct(state_data, locality):
     SPEC: https://vip-specification.readthedocs.io/en/latest/csv/element_files/precinct.html
     """
 
-    # CREATE precinct dataframe
+    # SELECT feature(s)
     precinct = state_data[['precinct', 'polling_location_ids']]
 
     # GROUP polling_location_ids
@@ -182,6 +188,7 @@ def generate_street_segment(state_abbrv, target_smart):
     SPEC: https://vip-specification.readthedocs.io/en/latest/csv/element_files/street_segment.html
     """    
 
+    # SELECT feature(s)
     street_segment = target_smart[['vf_reg_address_1', 'vf_reg_address_2', 'vf_reg_city', 'vf_precinct_id', 'vf_reg_zip']]
     
 
@@ -255,11 +262,12 @@ def generate_street_segment(state_abbrv, target_smart):
     street_segment['end_house_number'] = street_segment['house_number']
     street_segment['odd_even_both'] = 'both'
     
-    street_segment.drop(['vf_reg_address_1', 'temp'], axis=1, inplace=True)
-    street_segment.drop_duplicates()
+    street_segment.drop(['vf_reg_address_1', 'temp', 'house_number'], axis=1, inplace=True)
+    street_segment.drop_duplicates(inplace=True)
     street_segment.reset_index(drop=True, inplace=True) # RESET index
     street_segment['id'] = 'ss' + (street_segment.index + 1).astype(str).str.zfill(9) # CREATE street IDS
 
+    
     return street_segment
 
 def generate_person(election_authorities):
@@ -287,10 +295,10 @@ def generate_person(election_authorities):
     person['profession'] = 'ELECTION ADMINISTRATOR'
     
     # EXTRACT county/place and CREATE/FORMAT official_title
-    person['official_title'] = person['county'].str.upper() + ' COUNTY ' + person['official_title'].str.upper()
+    person['title'] = person['county'].str.upper() + ' COUNTY ' + person['official_title'].str.upper()
     
-    person.rename(columns={'official_title':'title', 'election_official_person_id':'id', }, inplace=True) # RENAME col(s)
-    person.drop(['county', 'state'], axis=1, inplace=True)
+    person.rename(columns={'election_official_person_id':'id', }, inplace=True) # RENAME col(s)
+    person.drop(['county', 'official_title', 'state'], axis=1, inplace=True)
 
     return person
 
@@ -323,14 +331,14 @@ def generate_polling_location(state_data):
     SPEC: https://vip-specification.readthedocs.io/en/latest/built_rst/xml/elements/polling_location.html
     """ 
 
-    # SELECT feature(s)
-    polling_location = state_data[['polling_location_ids', 'location_name', 'address_1', 
+    # SELECT feature(s) ## address_line
+    polling_location = state_data[['polling_location_ids', 'location_name', 'address_line', 
                                     'dirs', 'hours_open_id']] 
 
     # CREATE/FORMAT col(s)                                  
     polling_location.rename(columns={'polling_location_ids':'id', 
                                      'location_name':'name', 
-                                     'address_1':'address_line',
+                                     'address_line':'address_line',
                                      'dirs':'directions'}, inplace=True)
     polling_location.drop_duplicates(inplace=True)
 
@@ -362,7 +370,7 @@ def generate_source(state_feed):
     """ 
     
     # SELECT feature(s)
-    source = state_feed[['state_fips']]
+    source = state_feed[['fips']]
 
     # CREATE/FORMAT feature(s)
     source.reset_index(drop=True, inplace=True)
@@ -370,7 +378,7 @@ def generate_source(state_feed):
     source['date_time'] = datetime.datetime.now().replace(microsecond=0).isoformat() 
     source['name'] = 'Democracy Works Outreach Team'
     source['version'] = '5.1' # REFERENCES VIP SPEC
-    source.rename(columns={'state_fips':'vip_id'}, inplace=True) # RENAME col(s)
+    source.rename(columns={'fips':'vip_id'}, inplace=True) # RENAME col(s)
     
     return source
   
@@ -467,21 +475,25 @@ def generate_zip(state_abbrv, official_name, files):
     INPUT: state_abbrv, files
     RETURN: exports zip of 8 .txt files
     """
+
     print()
-    print('<<',official_name,'>>')
-    # writing dataframes to txt files
+    print('--------------------',official_name,'--------------------')
+    print()
+
+    # WRITE dataframes to txt files
     file_list = []
     for name, df in files.items():
+
         file = name + '.txt'
         file_list.append(file)
         df.to_csv(file, index=False, encoding='utf-8')
         
         print(state_abbrv, name, "|", len(df.index), "row(s)")
 
-    # define name of zipfile
+    # DEFINE name of zipfile
     zip_filename = 'vipfeed-pp-' + str(state_feed['election_date'][0].date()) + '-' + state_feed['state_abbrv'][0] + '.zip'
 
-    # writing files to a zipfile
+    # WRITE files to a zipfile
     with ZipFile(zip_filename, 'w') as zip:
         for file in file_list:
             zip.write(file)
@@ -522,7 +534,8 @@ if __name__ == '__main__':
         print('Error: ELECTION_AUTHORITIES Google Sheet is either missing from the Google workbook or there is data reading error.')
         raise
 
-    target_smart_all = pd.read_csv("tn_jackson.txt", encoding='utf-8', error_bad_lines=False)
+    target_smart_all = pd.read_csv("tn_jackson.txt", encoding='utf-8', error_bad_lines=False, dtype = 'object')
+    # print(list(target_smart))
     
     states_successfully_processed = [] # STORE states that successfully create zip files
     increment_success = 0 
@@ -545,7 +558,7 @@ if __name__ == '__main__':
 
         for state in input_states:
         
-            # try:
+            try:
             
                 # LOAD state data
                 state_data_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=state).execute()
@@ -565,14 +578,15 @@ if __name__ == '__main__':
                 print() 
 
                 
-            # except HttpError:
-            #     print ('ERROR:', state, 'could not be found or retrieved from Google Sheets.')
-            #     increment_httperror += 1
+            except HttpError:
+                print ('ERROR:', state, 'could not be found or retrieved from Google Sheets.')
+                increment_httperror += 1
                 
-            # except:
-            #     print ('ERROR:', state, 'could not be processed.')
-            #     increment_processingerror += 1
+            except:
+                print ('ERROR:', state, 'could not be processed.')
+                increment_processingerror += 1
 
+    print()
     print('Number of states that could not be found or retrieved from Google Sheets:', increment_httperror)
     print('Number of states that could not be processed:', increment_processingerror)
     print('Number of states that processed successfully:', increment_success)
