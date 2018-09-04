@@ -3,6 +3,9 @@
 
 Program takes hand-collected state data related to polling place locations, standardizes the data, and outputs the data in a format that can be read by the VIP Dashboard.  The data was collected by the Democracy Works VIP Outreach Team.
 
+States Processed in 2018:
+AR, AZ, ME, NH, SD, TN, TX
+
 <br> </br>
 
 ## How to run program 
@@ -10,9 +13,9 @@ Program takes hand-collected state data related to polling place locations, stan
 ```python <program file name> --nargs <state abbreviations or ‘all’>```
 
 ##### Sample run(s)
-```python vip_earlyvoting_build.py --nargs WY hi sD Nj```
+```python vip_polling_place.py --nargs AR az sD Tn```
 
-```python vip_earlyvoting_build.py --nargs all```
+```python vip_polling_place.py --nargs all```
 
 <br> </br>
 
@@ -70,29 +73,31 @@ Use the following command to upload a single zip file to the VIP Dashboard:
 
 ##### Sample run(s)  
  
-```sh upload_script_staging.sh vipfeed-pp-2018-11-06-SD.zip```
+```sh upload_script_staging.sh vipfeed-pp-2018-11-06-TN.zip```
 
 <br> </br>
 
 ## Print out sample
 ```
-<< South Dakota >>
-SD election | 1 row(s)
-SD polling_location | 69 row(s)
-SD schedule | 698 row(s)
-SD source | 1 row(s)
-SD state | 1 row(s)
-SD locality | 63 row(s)
-SD election_administration | 66 row(s)
-SD department | 66 row(s)
-SD person | 66 row(s)
+<< Tennessee >>
+TN election | 1 row(s)
+TN polling_location | 132 row(s)
+TN schedule | 132 row(s)
+TN source | 1 row(s)
+TN state | 1 row(s)
+TN locality | 95 row(s)
+TN election_administration | 95 row(s)
+TN department | 95 row(s)
+TN person | 95 row(s)
+TN precinct | 120 rows(s)
+TN street_segment | 4233 row(s)
 
 Number of states that could not be found or retrieved from Google Sheets: 0
 Number of states that could not be processed: 0
 Number of states that processed successfully: 1
 
 List of states that processed successfully:
-['SD']
+['TN']
 ```
 
 <br> </br>
