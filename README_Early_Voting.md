@@ -10,9 +10,9 @@ Program takes hand-collected state data related to early voting locations, stand
 ```python <program file name> --nargs <state abbreviations or ‘all’>```
 
 ##### Sample run(s)
-```python vip_earlyvoting_build.py --nargs WY hi sD Nj```
+```python vip_earlyvoting.py --nargs WY hi sD Nj```
 
-```python vip_earlyvoting_build.py --nargs all```
+```python vip_earlyvoting.py --nargs all```
 
 <br> </br>
 
@@ -46,7 +46,7 @@ https://docs.google.com/spreadsheets/d/1s3ZayYvPBGSmyXzxq1pNdKosbEoh6QnE85e4-l8C
 
 ## Output
 
-The tool outputs a single zip file per state feed, which contains the following files:
+The tool outputs a single zip file per state feed, which contains the following 9 files:
 
 * department.txt
 * election_administration.txt
@@ -74,23 +74,26 @@ Use the following command to upload a single zip file to the VIP Dashboard:
 
 ## Print out sample
 ```
-<< South Dakota >>
-SD election | 1 row(s)
-SD polling_location | 69 row(s)
-SD schedule | 698 row(s)
-SD source | 1 row(s)
-SD state | 1 row(s)
-SD locality | 63 row(s)
-SD election_administration | 66 row(s)
-SD department | 66 row(s)
-SD person | 66 row(s)
+----------------- Iowa -----------------
+
+IA election | 1 row(s)
+IA polling_location | 99 row(s)
+IA schedule | 792 row(s)
+IA source | 1 row(s)
+IA state | 1 row(s)
+IA locality | 99 row(s)
+IA election_administration | 99 row(s)
+IA department | 99 row(s)
+IA person | 99 row(s)
+
+----------------------------------------
 
 Number of states that could not be found or retrieved from Google Sheets: 0
 Number of states that could not be processed: 0
-Number of states that processed successfully: 1
+Number of states that processed sucessfully: 1
 
-List of states that processed successfully:
-['SD']
+List of states that processed sucessfully:
+['IA']
 ```
 
 <br> </br>
