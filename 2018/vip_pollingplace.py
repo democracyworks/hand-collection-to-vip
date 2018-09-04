@@ -152,7 +152,7 @@ def clean_data(state_feed, state_data, election_authorities, target_smart):
     # CREATE/FORMAT county (1 created, 2 formatted)
     state_data['county'] = state_data['county'].str.upper().str.strip()
     election_authorities['ocd_division'] = election_authorities['ocd_division'].str.upper().str.strip()
-    election_authorities['county'] = election_authorities['ocd_division'].str.extract('\\/\\w+\\:(\\w+\'?\\-?\\w+?)$')
+    election_authorities['county'] = election_authorities['ocd_division'].str.extract('\\/\\w+\\:(\\w+\'?\\-?\\~?\\w+?)$')
     
     # FORMAT voter file addresses (1 formatted)
     target_smart['vf_reg_address_1'] = target_smart['vf_reg_address_1'].str.upper().str.strip()
