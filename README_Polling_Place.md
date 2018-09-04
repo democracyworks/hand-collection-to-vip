@@ -13,9 +13,9 @@ AR, AZ, ME, NH, SD, TN, TX
 ```python <program file name> --nargs <state abbreviations or ‘all’>```
 
 ##### Sample run(s)
-```python vip_polling_place.py --nargs AR az sD Tn```
+```python vip_pollingplace.py --nargs AR az sD Tn```
 
-```python vip_polling_place.py --nargs all```
+```python vip_pollingplace.py --nargs all```
 
 <br> </br>
 
@@ -79,18 +79,25 @@ Use the following command to upload a single zip file to the VIP Dashboard:
 
 ## Print out sample
 ```
-<< Tennessee >>
+------------------------- Tennessee -------------------------
+
 TN election | 1 row(s)
-TN polling_location | 132 row(s)
-TN schedule | 132 row(s)
+TN polling_location | 15 row(s)
+TN schedule | 15 row(s)
 TN source | 1 row(s)
 TN state | 1 row(s)
-TN locality | 95 row(s)
+TN locality | 1 row(s)
 TN election_administration | 95 row(s)
 TN department | 95 row(s)
 TN person | 95 row(s)
-TN precinct | 120 rows(s)
+TN precinct | 15 row(s)
 TN street_segment | 4233 row(s)
+
+Total precincts collected in polling place data: 12
+Total precincts provided in TargetSmart data: 12
+
+-------------------------------------------------------------
+
 
 Number of states that could not be found or retrieved from Google Sheets: 0
 Number of states that could not be processed: 0
