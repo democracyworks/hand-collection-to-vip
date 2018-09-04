@@ -32,11 +32,11 @@ office_name, ocd_division, election_date, election_name, state_abbrv, state_fips
 OCD_ID, location_name, address_1, dirs, start_time, end_time, start_date, end_date, is_only_by_appointment, is_or_by_appointment, is_drop_box, is_early_voting
 
 ### 2) Election Authorities
+https://docs.google.com/spreadsheets/d/1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_y2o/edit#gid=1572182198
 
 ##### Required sheets & features:
 
 ###### ELECTION_AUTHORITIES sheet
-https://docs.google.com/spreadsheets/d/1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_y2o/edit#gid=1572182198
 ocd_division, official_title, hompage_url, state
 
 ### Data Dictionary
