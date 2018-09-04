@@ -26,10 +26,10 @@ https://docs.google.com/spreadsheets/d/1utF9ybiOcCc9GvZ_KMqKO1TDaVqUxmHl4xmK48Yk
 ##### Required sheets & features:
 
 ###### STATE_FEED sheet
-office_name, ocd_division, election_date, election_name, state_abbrv, state_fips
+official_name, ocd_division, election_date, election_name, state_abbrv, state_fips
 
 ###### STATE sheets 
-OCD_ID, location_name, address_1, dirs, start_time, end_time, start_date, end_date, is_only_by_appointment, is_or_by_appointment, is_drop_box, is_early_voting
+OCD_ID,	location_name,	address_line,	directions,	start_time,	end_time,	start_date,	end_date,	is_only_by_appointment,	is_or_by_appointment,	is_drop_box,	is_early_voting,	internal_notes
 
 ### 2) Election Authorities
 https://docs.google.com/spreadsheets/d/1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_y2o/edit#gid=1572182198
