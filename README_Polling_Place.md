@@ -1,7 +1,7 @@
-# Program Overview   |   Early Voting Hand Collection 2018
+# Program Overview   |   Polling Place Hand Collection 2018
 ###### Voting Information Project (VIP) Version 5.1
 
-Program takes hand-collected state data related to early voting locations, standardizes the data, and outputs the data in a format that can be read by the VIP Dashboard.  The data was collected by the Democracy Works VIP Outreach Team.
+Program takes hand-collected state data related to polling place locations, standardizes the data, and outputs the data in a format that can be read by the VIP Dashboard.  The data was collected by the Democracy Works VIP Outreach Team.
 
 <br> </br>
 
@@ -20,8 +20,8 @@ Program takes hand-collected state data related to early voting locations, stand
 
 2 Google Sheets workbooks are required to run the program
 
-### 1) Early Hand Collecting
-https://docs.google.com/spreadsheets/d/1utF9ybiOcCc9GvZ_KMqKO1TDaVqUxmHl4xmK48YkZj4/edit#gid=892894361
+### 1) Polling Place Hand Collecting
+https://docs.google.com/spreadsheets/d/1o68iC82jt7WOoTYn_rdda2472Fn2_2_FRBsgZla5v8M/edit#gid=1405854820
 
 ##### Required sheets & features:
 
@@ -29,17 +29,18 @@ https://docs.google.com/spreadsheets/d/1utF9ybiOcCc9GvZ_KMqKO1TDaVqUxmHl4xmK48Yk
 office_name, ocd_division, election_date, election_name, state_abbrv, state_fips
 
 ###### STATE sheets 
-OCD_ID, location_name, address_1, dirs, start_time, end_time, start_date, end_date, is_only_by_appointment, is_or_by_appointment, is_drop_box, is_early_voting
+county,	precinct,	location_name,	address_line,	directions,	start_time,	end_time,	start_date,	end_date
 
 ### 2) Election Authorities
+https://docs.google.com/spreadsheets/d/1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_y2o/edit#gid=1572182198
 
 ##### Required sheets & features:
 
 ###### ELECTION_AUTHORITIES sheet
-ocd_division, official_title, hompage_uri, state
+ocd_division, official_title, hompage_url, state
 
 ### Data Dictionary
-https://docs.google.com/spreadsheets/d/1s3ZayYvPBGSmyXzxq1pNdKosbEoh6QnE85e4-l8CuUc/edit#gid=2035147249
+https://docs.google.com/spreadsheets/d/19g4qfdMu16bULxHrs3RkWapgTVQ3siS1XJS9BRTA2cg/edit#gid=2035147249
 
 <br> </br>
 
@@ -56,6 +57,8 @@ The tool outputs a single zip file per state feed, which contains the following 
 * schedule.txt
 * source.txt
 * state.txt
+* precinct.txt
+* street_segment.txt
 
 ###### Documentation for the output files: 
 https://vip-specification.readthedocs.io/en/latest/index.html
@@ -67,7 +70,7 @@ Use the following command to upload a single zip file to the VIP Dashboard:
 
 ##### Sample run(s)  
  
-```sh upload_script_staging.sh vipfeed-2018-11-06-SD.zip```
+```sh upload_script_staging.sh vipfeed-pp-2018-11-06-SD.zip```
 
 <br> </br>
 
