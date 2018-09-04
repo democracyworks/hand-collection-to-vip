@@ -285,7 +285,7 @@ def generate_locality(state_feed, state_data, election_authorities):
 
     # CREATE/FORMAT feature(s) (4 created, 1 formatted)
     locality['state_id'] = state_feed['state_id'][0]
-    locality['name'] = locality['OCD_ID'].str.extract('\\/\\w+\\:(\\w+\'?\\-?\\w+?)$')
+    locality['name'] = locality['OCD_ID'].str.extract('\\/\\w+\\:(\\w+\'?\\-?\\~?\\w+?)$')
     locality['external_identifier_type'] = state_feed['external_identifier_type'][0]
     locality.reset_index(drop=True, inplace=True) 
     locality['id'] = 'loc' + (locality.index + 1).astype(str).str.zfill(4)
