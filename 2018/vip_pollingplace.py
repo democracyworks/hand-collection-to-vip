@@ -173,7 +173,7 @@ def generate_election(state_feed, state_data):
     # SELECT feature(s)
     election = state_feed[['election_date','election_name','state_id']]
     
-    # CREATE/FORMAT feature(s)
+    # CREATE/FORMAT feature(s) (3 created, 2 formatted)
     election['id'] = 'ele01' 
     election['election_type'] = 'Federal'
     election['is_statewide'] = 'true'
