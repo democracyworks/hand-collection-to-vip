@@ -516,6 +516,10 @@ def generate_zip(state_abbrv, official_name, files):
         
         print(state_abbrv, name, "|", len(df.index), "row(s)")
 
+    # CREATE state directory
+    if not os.path.exists(state_abbrv):
+        os.makedirs(state_abbrv)
+    
     # DEFINE name of zipfile
     zip_filename = 'vipfeed-pp-' + str(state_feed['election_date'][0].date()) + '-' + state_feed['state_abbrv'][0] + '.zip'
 
@@ -523,6 +527,7 @@ def generate_zip(state_abbrv, official_name, files):
     with ZipFile(zip_filename, 'w') as zip:
         for file in file_list:
             zip.write(file)
+            os.rename(file, os.path.join(state_abbrv, file))
 
     return 
 
