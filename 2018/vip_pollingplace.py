@@ -87,22 +87,22 @@ def vip_build(state_data, state_feed, election_authorities, target_smart):
     department = generate_department(election_authorities)
     person = generate_person(election_authorities)
     precinct = generate_precinct(state_data, locality)
-    street_segment = generate_street_segment(state_feed['state_abbrv'][0], target_smart)
+    street_segment = generate_street_segment(state_feed['state_abbrv'][0], target_smart, precinct)
   
 
     # GENERATE zip file
     generate_zip(state_feed['state_abbrv'][0], 
-                state_feed['official_name'][0], {'election': election,
-                                                 'polling_location': polling_location,
-                                                 'schedule': schedule,
-                                                 'source':source,
-                                                 'state':state,
-                                                 'locality':locality,
-                                                 'election_administration':election_administration,
-                                                 'department': department, 
-                                                 'person': person,
-                                                 'precinct': precinct,
-                                                 'street_segment': street_segment})
+                 state_feed['official_name'][0], {'election': election,
+                                                  'polling_location': polling_location,
+                                                  'schedule': schedule,
+                                                  'source':source,
+                                                  'state':state,
+                                                  'locality':locality,
+                                                  'election_administration':election_administration,
+                                                  'department': department, 
+                                                  'person': person,
+                                                  'precinct': precinct,
+                                                  'street_segment': street_segment})
     
     
     # PRINT information regarding precinct match up                  
@@ -394,6 +394,7 @@ def generate_precinct(state_data, locality):
     precinct.drop(['county', 'name'], axis=1, inplace=True)
 
     # CREATE/FORMAT feature(s) (1 created, 2 formatted)
+    precinct.drop_duplicates(inplace=True)
     precinct.rename(columns={'precinct':'name',
                              'id':'locality_id'}, inplace=True)
     precinct.reset_index(drop=True, inplace=True)
@@ -404,10 +405,10 @@ def generate_precinct(state_data, locality):
 
 
 
-def generate_street_segment(state_abbrv, target_smart):
+def generate_street_segment(state_abbrv, target_smart, precinct):
     """
     PURPOSE: generates street_segment dataframe for .txt file
-    INPUT: state_data, target_smart
+    INPUT: state_data, target_smart, precinct
     RETURN: street_segment dataframe
     SPEC: https://vip-specification.readthedocs.io/en/latest/csv/element_files/street_segment.html
     """    
@@ -415,7 +416,9 @@ def generate_street_segment(state_abbrv, target_smart):
     # SELECT feature(s)
     street_segment = target_smart[['vf_reg_address_1', 'vf_reg_address_2', 'vf_reg_city', 
                                    'vf_precinct_id', 'vf_reg_zip']]
-    
+
+    # REMOVE duplicate rows created by multiple registrants at the same address                           
+    street_segment.drop_duplicates(inplace=True)
 
     # CREATE/FORMAT feature(s) (3 created, 5 formatted)
     street_segment['address_direction'] = street_segment['vf_reg_address_1'].str.extract('\\s+(N|E|S|W|NE|NW|SE|SW)$') # EXTRACT last cardinal direction in the address
@@ -423,7 +426,6 @@ def generate_street_segment(state_abbrv, target_smart):
     street_segment['street_direction'] = street_segment['vf_reg_address_1'].str.extract('\\s+(N|E|S|W|NE|NW|SE|SW)\\s+') # EXTRACT cardinal direction in the middle of the address
     street_segment['state'] = state_abbrv
     street_segment.rename(columns={'vf_reg_city':'city', 
-                                   'vf_precinct_id':'precinct_id', 
                                    'vf_reg_address_2':'unit_number', 
                                    'vf_reg_zip':'zip'}, inplace=True) 
 
@@ -481,13 +483,21 @@ def generate_street_segment(state_abbrv, target_smart):
     
     # REMOVE feature(s) (3 removed)
     street_segment.drop(['vf_reg_address_1', 'temp', 'house_number'], axis=1, inplace=True)
+    
+    # MERGE street_segment with precinct
+    precinct = precinct[['name', 'id']]
+    street_segment = street_segment.merge(precinct, how='left', left_on='vf_precinct_id', right_on='name')
+    
+    # REMOVE feature(s) (2 removed)
+    street_segment.drop(['vf_precinct_id', 'name'], axis=1, inplace=True)
 
-    # CREATE feature(s) (1 created)
+    # CREATE/FORMAT feature(s) (1 created, 1 formatted)
+    street_segment.rename(columns={'id':'precinct_id'}, inplace=True)
     street_segment.drop_duplicates(inplace=True)
     street_segment.reset_index(drop=True, inplace=True) # RESET index
-    street_segment['id'] = 'ss' + (street_segment.index + 1).astype(str).str.zfill(9) # CREATE street IDS
+    street_segment['id'] = 'ss' + (street_segment.index + 1).astype(str).str.zfill(9) 
 
-    
+
     return street_segment
 
 
