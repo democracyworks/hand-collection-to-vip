@@ -12,6 +12,7 @@ from zipfile import ZipFile
 from IPython.display import display
 import warnings
 warnings.filterwarnings('ignore')
+pd.set_option('max_colwidth', 200)
 
 
 
