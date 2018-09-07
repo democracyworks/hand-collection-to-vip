@@ -87,7 +87,14 @@ def vip_build(state_data, state_feed, election_authorities):
     election_administration = generate_election_administration(election_authorities)
     department = generate_department(election_authorities)
     person = generate_person(election_authorities)
+
+
+    # PRINT state name
+    print('\n'*1)
+    print(state_feed['official_name'][0].center(80, '-'))
+    print()
     
+
     # GENERATE zip file
     generate_zip(state_feed['state_abbrv'][0], 
                  state_feed['official_name'][0], {'election': election,
@@ -101,9 +108,33 @@ def vip_build(state_data, state_feed, election_authorities):
                                                   'person': person})
     
     
+    # PRINT report on OCD IDs for the state being processed 
+
+    # CREATE dataframes of unique OCD IDs for election authorities and state data
+    ea = election_authorities[['ocd_division']]
+    ea.drop_duplicates(inplace=True)
+    sd = state_data[['OCD_ID']]
+    sd.drop_duplicates(inplace=True)
+
+    # PRINT count of unique OCD IDs
     print()
-    length = 36 + len(state_feed['official_name'][0])
-    print('-'*length)
+    print('Unique OCD IDs listed |', len(sd), ' in state data <>', len(ea), ' in election authorities')
+    
+    # PRINT count of OCD IDs that match with election authorities
+    diff_election_authorities = ea.merge(sd, how = 'left', left_on = 'ocd_division', right_on = 'OCD_ID')
+    diff_election_authorities = diff_election_authorities[diff_election_authorities['OCD_ID'].isnull() == False]
+    print('Percent of OCD IDs in state data matching those in election authorities |', '{:.2%}'.format(len(diff_election_authorities)/len(ea)))
+    
+    # PRINT count of OCD IDs that are unique to state data
+    diff_state_data = sd.merge(ea, how = 'left', left_on = 'OCD_ID', right_on = 'ocd_division')
+    diff_state_data = diff_state_data[diff_state_data['ocd_division'].isnull()]
+    print('Percent of OCD IDs found only in state data |', '{:.2%}'.format(len(diff_state_data)/len(sd)))
+
+    
+    print()
+    print('_'*80)
+    print('\n'*1)
+
 
     return
             
@@ -137,15 +168,24 @@ def clean_data(state_feed, state_data, election_authorities):
     state_data['end_time'] = temp[0] + '-' + temp[1]
     
     # FORMAT booleans (4 formatted)
-    state_data['is_drop_box'] = state_data['is_drop_box'].str.lower().str.strip()
-    state_data['is_early_voting'] = state_data['is_early_voting'].str.lower().str.strip()
-    state_data['is_only_by_appointment'] = state_data['is_only_by_appointment'].str.lower().str.strip()
-    state_data['is_or_by_appointment'] = state_data['is_or_by_appointment'].str.lower().str.strip()
+    true_chars = [char for char in 'true' if char not in 'false'] # SET unique chars in 'true' and not in 'false'
+    false_chars = [char for char in 'false' if char not in 'true'] # SET unique chars in 'true' and not in 'false'
+    #lambda_funct = (lambda x: ['true', 'false'][any(char in x for char in true_chars)]) # SET true-false lambda function 
+    #lambda_funct = (lambda x: 'true' if any(char in x for char in true_chars) == True else ('false' if any(char in x for char in false_chars) == True else np.nan))
+    lambda_funct = (lambda x: None if bool(x) == False else ( \
+                    'true' if any(char in x for char in true_chars) == True else ('false' if any(char in x for char in false_chars) == True else np.nan)))
+    state_data['is_drop_box'] = state_data['is_drop_box'].str.lower().apply(lambda_funct)
+    state_data['is_early_voting'] = state_data['is_early_voting'].str.lower().apply(lambda_funct)
+    state_data['is_only_by_appointment'] = state_data['is_only_by_appointment'].str.lower().apply(lambda_funct)
+    state_data['is_or_by_appointment'] = state_data['is_or_by_appointment'].str.lower().apply(lambda_funct)
 
     # FORMAT ocd division ids (2 formatted)
     state_data['OCD_ID'] = state_data['OCD_ID'].str.strip()
     election_authorities['ocd_division'] = election_authorities['ocd_division'].str.strip()
     
+    state_data['address_line'] = state_data['address_line'].str.strip()
+    state_data['location_name'] = state_data['location_name'].str.strip()
+
 
     return state_feed, state_data, election_authorities
 
@@ -169,6 +209,7 @@ def generate_election(state_feed):
     election.rename(columns={'election_date':'date', 
                              'election_name':'name'}, inplace=True) # RENAME col(s)
     
+
     return election
 
 
@@ -335,6 +376,7 @@ def generate_department(election_authorities):
     department.drop_duplicates(inplace=True)
     department['id'] = 'dep' + (department.index + 1).astype(str).str.zfill(4)
 
+
     return department
 
 
@@ -373,11 +415,6 @@ def generate_zip(state_abbrv, official_name, files):
     RETURN: exports zip of 9 .txt files
     """
 
-    # PRINT state name
-    print()
-    print('-'*17,official_name,'-'*17)
-    print()
-
     # WRITE dataframes to txt files
     file_list = []
     for name, df in files.items():
@@ -400,6 +437,7 @@ def generate_zip(state_abbrv, official_name, files):
         for file in file_list:
             zip.write(file)
             os.rename(file, os.path.join(state_abbrv, file))
+
 
     return
 
@@ -486,7 +524,7 @@ if __name__ == '__main__':
                 states_successfully_processed.append(state)
                 increment_success +=1
                 
-                print() 
+                
 
                 
             except HttpError:
@@ -497,10 +535,13 @@ if __name__ == '__main__':
                 print ('ERROR:', state, 'could not be processed.')
                 increment_processingerror += 1
 
+    # PRINT final report
+    print('\n'*2)
     print('Number of states that could not be found or retrieved from Google Sheets:', increment_httperror)
     print('Number of states that could not be processed:', increment_processingerror)
     print('Number of states that processed sucessfully:', increment_success)
     print()
     print('List of states that processed sucessfully:')
     print(states_successfully_processed)
-    print()
+    print('\n'*2)
+
