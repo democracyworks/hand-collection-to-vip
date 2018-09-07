@@ -129,7 +129,6 @@ def vip_build(state_data, state_feed, election_authorities):
     diff_state_data = sd.merge(ea, how = 'left', left_on = 'OCD_ID', right_on = 'ocd_division')
     diff_state_data = diff_state_data[diff_state_data['ocd_division'].isnull()]
     print('Percent of OCD IDs found only in state data |', '{:.2%}'.format(len(diff_state_data)/len(sd)))
-
     
     print()
     print('_'*80)
