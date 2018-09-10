@@ -129,6 +129,7 @@ def vip_build(state_data, state_feed, election_authorities):
     diff_state_data = sd.merge(ea, how = 'left', left_on = 'OCD_ID', right_on = 'ocd_division')
     diff_state_data = diff_state_data[diff_state_data['ocd_division'].isnull()]
     print('Percent of OCD IDs found only in state data |', '{:.2%}'.format(len(diff_state_data)/len(sd)))
+
     
     print()
     print('_'*80)
@@ -169,8 +170,6 @@ def clean_data(state_feed, state_data, election_authorities):
     # FORMAT booleans (4 formatted)
     true_chars = [char for char in 'true' if char not in 'false'] # SET unique chars in 'true' and not in 'false'
     false_chars = [char for char in 'false' if char not in 'true'] # SET unique chars in 'true' and not in 'false'
-    #lambda_funct = (lambda x: ['true', 'false'][any(char in x for char in true_chars)]) # SET true-false lambda function 
-    #lambda_funct = (lambda x: 'true' if any(char in x for char in true_chars) == True else ('false' if any(char in x for char in false_chars) == True else np.nan))
     lambda_funct = (lambda x: None if bool(x) == False else ( \
                     'true' if any(char in x for char in true_chars) == True else ('false' if any(char in x for char in false_chars) == True else np.nan)))
     state_data['is_drop_box'] = state_data['is_drop_box'].str.lower().apply(lambda_funct)
@@ -524,8 +523,6 @@ if __name__ == '__main__':
                 increment_success +=1
                 
                 
-
-                
             except HttpError:
                 print ('ERROR:', state, 'could not be found or retrieved from Google Sheets.')
                 increment_httperror += 1
@@ -534,8 +531,11 @@ if __name__ == '__main__':
                 print ('ERROR:', state, 'could not be processed.')
                 increment_processingerror += 1
 
+
     # PRINT final report
-    print('\n'*2)
+    print('\n'*1)
+    print('Summary Report'.center(80, ' '))
+    print('\n'*1)
     print('Number of states that could not be found or retrieved from Google Sheets:', increment_httperror)
     print('Number of states that could not be processed:', increment_processingerror)
     print('Number of states that processed sucessfully:', increment_success)
@@ -543,4 +543,4 @@ if __name__ == '__main__':
     print('List of states that processed sucessfully:')
     print(states_successfully_processed)
     print('\n'*2)
-
+    
