@@ -90,9 +90,14 @@ def vip_build(state_data, state_feed, election_authorities, target_smart):
     street_segment = generate_street_segment(state_feed['state_abbrv'][0], target_smart, precinct)
   
 
+    # PRINT state name
+    print('\n'*1)
+    print(state_feed['official_name'][0].center(85, '-'))
+    print()
+
+
     # GENERATE zip file
-    generate_zip(state_feed['state_abbrv'][0], 
-                 state_feed['official_name'][0], {'election': election,
+    generate_zip(state_feed['state_abbrv'][0],   {'election': election,
                                                   'polling_location': polling_location,
                                                   'schedule': schedule,
                                                   'source':source,
@@ -105,13 +110,32 @@ def vip_build(state_data, state_feed, election_authorities, target_smart):
                                                   'street_segment': street_segment})
     
     
-    # PRINT information regarding precinct match up                  
+    # PRINT report on OCD IDs for the state being processed 
+
+    # CREATE dataframes of unique OCD IDs for election authorities and state data
+    ea = election_authorities[['county']]
+    ea.drop_duplicates(inplace=True)
+    sd = state_data[['county']]
+    sd.drop_duplicates(inplace=True)
+
+    # PRINT count of unique OCD IDs
     print()
-    print('Total precincts collected in polling place data:', state_data['precinct'].nunique())
-    print('Total precincts provided in TargetSmart data:', street_segment['precinct_id'].nunique())
+    print('Unique OCD IDs listed |', len(sd), ' in state data <>', len(ea), ' in election authorities')
+    
+    # PRINT count of OCD IDs that match with election authorities
+    diff_election_authorities = ea.merge(sd, how = 'left', on = 'county')
+    diff_election_authorities = diff_election_authorities[diff_election_authorities['county'].isnull() == False]
+    print('Percent of OCD IDs in state data matching those in election authorities |', '{:.2%}'.format(len(diff_election_authorities)/len(ea)))
+    
+    # PRINT count of OCD IDs that are unique to state data
+    diff_state_data = sd.merge(ea, how = 'left', on = 'county')
+    diff_state_data = diff_state_data[diff_state_data['county'].isnull()]
+    print('Percent of OCD IDs found only in state data |', '{:.2%}'.format(len(diff_state_data)/len(sd)))
+
+    
     print()
-    length = 52 + len(state_feed['official_name'][0])
-    print('-'*length)
+    print('_'*85)
+    print('\n'*1)
    
 
     return
@@ -502,7 +526,7 @@ def generate_street_segment(state_abbrv, target_smart, precinct):
 
 
 
-def generate_zip(state_abbrv, official_name, files):
+def generate_zip(state_abbrv, files):
     """
     PURPOSE: create .txt files and export into a folder for 1 state
     (election.txt, polling_location.txt, schedule.txt, source.txt, state.txt, locality.txt, 
@@ -510,11 +534,6 @@ def generate_zip(state_abbrv, official_name, files):
     INPUT: state_abbrv, files
     RETURN: exports zip of 11 .txt files
     """
-
-    # PRINT state name
-    print()
-    print('-'*25,official_name,'-'*25)
-    print()
 
     # WRITE dataframes to txt files
     file_list = []
@@ -626,8 +645,6 @@ if __name__ == '__main__':
                 states_successfully_processed.append(state)
                 increment_success +=1
                 
-                print() 
-
                 
             except HttpError:
                 print ('ERROR:', state, 'could not be found or retrieved from Google Sheets.')
@@ -637,15 +654,15 @@ if __name__ == '__main__':
                 print ('ERROR:', state, 'could not be processed.')
                 increment_processingerror += 1
 
-    print()
+
+    # PRINT final report
+    print('\n'*1)
+    print('Summary Report'.center(80, ' '))
+    print('\n'*1)
     print('Number of states that could not be found or retrieved from Google Sheets:', increment_httperror)
     print('Number of states that could not be processed:', increment_processingerror)
-    print('Number of states that processed successfully:', increment_success)
+    print('Number of states that processed sucessfully:', increment_success)
     print()
-    print('List of states that processed successfully:')
+    print('List of states that processed sucessfully:')
     print(states_successfully_processed)
-    print()
-
-                    
-            
-
+    print('\n'*2)
