@@ -68,7 +68,7 @@ Use the following command to upload a single zip file to the VIP Dashboard:
 
 ##### Sample run(s)  
  
-```sh upload_script_staging.sh vipfeed-2018-11-06-SD.zip```
+```sh upload_script_staging.sh vipfeed-ev-2018-11-06-SD.zip```
 
 <br> </br>
 
