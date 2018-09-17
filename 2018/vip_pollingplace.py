@@ -85,7 +85,7 @@ def vip_build(state_data, state_feed, election_authorities, target_smart):
     locality = generate_locality(state_feed, state_data, election_authorities)
     election_administration = generate_election_administration(election_authorities)
     department = generate_department(election_authorities)
-    person = generate_person(election_authorities)
+    person = generate_person(state_feed['state_abbrv'][0], election_authorities)
     precinct = generate_precinct(state_data, locality)
     street_segment = generate_street_segment(state_feed['state_abbrv'][0], target_smart, precinct)
   
@@ -176,7 +176,7 @@ def clean_data(state_feed, state_data, election_authorities, target_smart):
     # CREATE/FORMAT county (1 created, 2 formatted)
     state_data['county'] = state_data['county'].str.upper().str.strip()
     election_authorities['ocd_division'] = election_authorities['ocd_division'].str.upper().str.strip()
-    election_authorities['county'] = election_authorities['ocd_division'].str.extract('\\/\\w+\\:(\\w+\'?\\-?\\~?\\w+?)$')
+    election_authorities['county'] = election_authorities['ocd_division'].str.extract('\\/\\w+\\:(\\w+\'?\\-?\\~?\\w+?)$').str.replace('_', ' ').str.replace('~', "'")
     
     # FORMAT voter file addresses (1 formatted)
     target_smart['vf_reg_address_1'] = target_smart['vf_reg_address_1'].str.upper().str.strip()
@@ -364,7 +364,7 @@ def generate_department(election_authorities):
 
 
 
-def generate_person(election_authorities):
+def generate_person(state_abbrv, election_authorities):
     """
     PURPOSE: generates person dataframe for .txt file
     INPUT: election_authorities
@@ -378,8 +378,11 @@ def generate_person(election_authorities):
     # CREATE/FORMAT feature(s) (2 created, 1 formatted)
     person.drop_duplicates('election_official_person_id', keep='first',inplace=True)
     person['profession'] = 'ELECTION ADMINISTRATOR'
-    person['title'] = person['county'].str.upper() + ' COUNTY ' + person['official_title'].str.upper()
     person.rename(columns={'election_official_person_id':'id'}, inplace=True) 
+    if state_abbrv == 'NH':
+        person['title'] = person['county'].str.upper() + ' ' + person['official_title'].str.upper()
+    else:
+        person['title'] = person['county'].str.upper() + ' COUNTY ' + person['official_title'].str.upper()
 
     # REMOVE feature(s) (2 removed)
     person.drop(['county', 'official_title'], axis=1, inplace=True) 
@@ -439,7 +442,7 @@ def generate_street_segment(state_abbrv, target_smart, precinct):
 
     # SELECT feature(s)
     street_segment = target_smart[['vf_reg_address_1', 'vf_reg_address_2', 'vf_reg_city', 
-                                   'vf_precinct_id', 'vf_reg_zip']]
+                                   'vf_precinct_name', 'vf_reg_zip']]
 
     # REMOVE duplicate rows created by multiple registrants at the same address                           
     street_segment.drop_duplicates(inplace=True)
@@ -452,6 +455,9 @@ def generate_street_segment(state_abbrv, target_smart, precinct):
     street_segment.rename(columns={'vf_reg_city':'city', 
                                    'vf_reg_address_2':'unit_number', 
                                    'vf_reg_zip':'zip'}, inplace=True) 
+    if state_abbrv == 'NH':
+        street_segment['vf_precinct_name'] = street_segment['vf_precinct_name'].str.upper().str.replace('-', ' ').str.split().str.join(' ') # REMOVE dash in precinct ids and UPPERCASE 
+
 
     # C1 Street Suffix Abbreviations (https://pe.usps.com/text/pub28/28apc_002.htm)
     # GENERATE regex for street ending
@@ -510,10 +516,10 @@ def generate_street_segment(state_abbrv, target_smart, precinct):
     
     # MERGE street_segment with precinct
     precinct = precinct[['name', 'id']]
-    street_segment = street_segment.merge(precinct, how='left', left_on='vf_precinct_id', right_on='name')
+    street_segment = street_segment.merge(precinct, how='left', left_on='vf_precinct_name', right_on='name')
     
     # REMOVE feature(s) (2 removed)
-    street_segment.drop(['vf_precinct_id', 'name'], axis=1, inplace=True)
+    street_segment.drop(['vf_precinct_name', 'name'], axis=1, inplace=True)
 
     # CREATE/FORMAT feature(s) (1 created, 1 formatted)
     street_segment.rename(columns={'id':'precinct_id'}, inplace=True)
