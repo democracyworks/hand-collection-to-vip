@@ -324,7 +324,7 @@ def generate_locality(state_feed, state_data, election_authorities):
 
     # CREATE/FORMAT feature(s) (4 created, 1 formatted)
     locality['state_id'] = state_feed['state_id'][0]
-    locality['name'] = locality['OCD_ID'].str.extract('\\/\\w+\\:(\\w+\'?\\-?\\~?\\w+?)$')
+    locality['name'] = locality['OCD_ID'].str.extract('([^\\:]*)$')
     locality['external_identifier_type'] = state_feed['external_identifier_type'][0]
     locality.reset_index(drop=True, inplace=True) 
     locality['id'] = 'loc' + (locality.index + 1).astype(str).str.zfill(4)
@@ -393,7 +393,7 @@ def generate_person(election_authorities):
     # CREATE/FORMAT feature(s) (2 created, 1 formatted)
     person.drop_duplicates('election_official_person_id', keep='first',inplace=True)
     person['profession'] = 'ELECTION ADMINISTRATOR'
-    person['title'] = person['ocd_division'].str.extract('\\/\\w+\\:(\\w+)$').str.upper() + ' COUNTY ' + person['official_title'].str.upper()
+    person['title'] = person['ocd_division'].str.extract('([^\\:]*)$').str.upper() + ' COUNTY ' + person['official_title'].str.upper()
     person.rename(columns={'election_official_person_id':'id'}, inplace=True)
 
     # REMOVE feature(s) (2 removed)
