@@ -1,4 +1,8 @@
 from __future__ import print_function
+
+import warnings
+warnings.filterwarnings('ignore')
+
 from sys import argv
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
@@ -10,9 +14,8 @@ import argparse
 import os
 from zipfile import ZipFile
 import re
-#from IPython.display import display
-import warnings
-warnings.filterwarnings('ignore')
+import json
+import mysql.connector 
 
 
 # PRO-TIP: if modifying these scopes, delete the file token.json.
@@ -40,7 +43,7 @@ def vip_build(state_data, state_feed, election_authorities, target_smart):
     
     # CREATE/FORMAT feature(s) referenced by multiple .txts (6 created, 1 formatted)
 
-    state_feed.reset_index(drop=True, inplace=True) # RESET index prior to creating id
+    #state_feed.reset_index(drop=True, inplace=True) # RESET index prior to creating id
     state_feed['state_fips'] = state_feed['state_fips'].str.pad(2, side='left', fillchar='0') # first make sure there are leading zeros
     state_feed['state_id'] = state_feed['state_abbrv'].str.lower() + state_feed['state_fips']
 
@@ -606,10 +609,19 @@ if __name__ == '__main__':
         print('Error: ELECTION_AUTHORITIES Google Sheet is either missing from the Google workbook or there is data reading error.')
         raise
 
-    # LOAD TargetSmart data
-    target_smart_all = pd.read_csv("tn_jackson.txt", encoding='utf-8', error_bad_lines=False, dtype = 'object')
+    try:
+        # CONNECT to AWS RDS MySQL database
+        targetsmart_creds = open('targetsmart_credentials.json', 'r')
+        conn_string = json.load(targetsmart_creds)
+        conn = mysql.connector.connect(**conn_string)
+    except:
+        print('Error: There is a database connection error.')
 
-    
+
+    # SET list of vars selected in MySQL query
+    targetsmart_sql_col_list = ['vf_precinct_name', 'vf_reg_address_1', 'vf_reg_address_2', 'vf_reg_city', 'vf_source_state', 'vf_reg_zip']
+    targetsmart_sql_col_string = ', '.join(targetsmart_sql_col_list)
+        
     states_successfully_processed = [] # STORE states that successfully create zip files
     increment_success = 0 # STORE error counts
     increment_httperror = 0
@@ -644,14 +656,40 @@ if __name__ == '__main__':
                 
                 state_feed = state_feed_all[state_feed_all['state_abbrv'] == state] # FILTER state_feed_all for selected state
                 election_authorities = election_authorities_all[election_authorities_all['state'] == state] # FILTER election_authorities_all for selected state
-                target_smart = target_smart_all[target_smart_all['vf_source_state'] == state] # FILTER target_smart_all for selected state
 
+                state_feed.reset_index(inplace=True) # RESET index
+                sql_table_name = state_feed['official_name'].str.lower().str.replace(' ', '') # CREATE MYSQL table name (format: full name, lowercase, no spaces)
+               
+
+                try:
+                    # LOAD TargetSmart data for a single state
+
+                    curs = conn.cursor() # OPEN database connection
+
+                    # SET MySQL query
+                    query = 'SELECT ' + targetsmart_sql_col_string +' FROM ' + sql_table_name[0] + ' LIMIT 5;'
+
+                    curs.execute(query) # EXECUTE MySQL query
+
+                    target_smart_values = curs.fetchall() # LOAD in data
+
+                    conn.rollback() # REFRESH database connection
+                    curs.close() # CLOSE cursor object
+
+                    # GENERATE target_smart dataframe
+                    target_smart = pd.DataFrame(list(target_smart_values), columns=targetsmart_sql_col_list, dtype='object')
+                    
+                except:
+                    print('ERROR: TargetSmart data for', state, 'is either missing from the database or there is data reading error.')
+
+                
                 vip_build(state_data, state_feed, election_authorities, target_smart)
                 
+
                 states_successfully_processed.append(state)
                 increment_success +=1
                 
-                
+            
             except HttpError:
                 print ('ERROR:', state, 'could not be found or retrieved from Google Sheets.')
                 increment_httperror += 1
@@ -659,6 +697,9 @@ if __name__ == '__main__':
             except:
                 print ('ERROR:', state, 'could not be processed.')
                 increment_processingerror += 1
+
+
+    conn.close() # CLOSE MySQL database connection 
 
 
     # PRINT final report
