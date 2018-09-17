@@ -667,7 +667,7 @@ if __name__ == '__main__':
                     curs = conn.cursor() # OPEN database connection
 
                     # SET MySQL query
-                    query = 'SELECT ' + targetsmart_sql_col_string +' FROM ' + sql_table_name[0] + ' LIMIT 5;'
+                    query = 'SELECT ' + targetsmart_sql_col_string +' FROM ' + sql_table_name[0] + ';'
 
                     curs.execute(query) # EXECUTE MySQL query
 
