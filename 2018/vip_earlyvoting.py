@@ -63,18 +63,18 @@ def vip_build(state_data, state_feed, election_authorities):
     election_authorities = pd.merge(election_authorities, temp, on =['ocd_division', 'official_title'])
     
     # CREATE 'hours_only_id'
-    temp = state_data[['OCD_ID', 'location_name', 'address_line']]
-    temp.drop_duplicates(['OCD_ID', 'location_name', 'address_line'], inplace=True)
+    temp = state_data[['OCD_ID', 'location_name', 'address_line', 'directions']]
+    temp.drop_duplicates(['OCD_ID', 'location_name', 'address_line', 'directions'], inplace=True)
     temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
     temp['hours_open_id'] = 'hours' + (temp.index + 1).astype(str).str.zfill(4)
-    state_data = pd.merge(state_data, temp, on =['OCD_ID','location_name','address_line'])
+    state_data = pd.merge(state_data, temp, on =['OCD_ID','location_name','address_line', 'directions'])
 
     # CREATE 'polling_location_ids'
-    temp = state_data[['OCD_ID', 'location_name', 'address_line']]
-    temp.drop_duplicates(['OCD_ID', 'location_name', 'address_line'], inplace=True)
+    temp = state_data[['OCD_ID', 'location_name', 'address_line', 'directions']]
+    temp.drop_duplicates(['OCD_ID', 'location_name', 'address_line', 'directions'], inplace=True)
     temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
     temp['polling_location_ids'] = 'pol' + (temp.index + 1).astype(str).str.zfill(4)
-    state_data = pd.merge(state_data, temp, on =['OCD_ID','location_name','address_line'])
+    state_data = pd.merge(state_data, temp, on =['OCD_ID','location_name','address_line', 'directions'])
     
     
     # GENERATE 9 .txt files
