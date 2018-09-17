@@ -393,7 +393,7 @@ def generate_person(election_authorities):
     # CREATE/FORMAT feature(s) (2 created, 1 formatted)
     person.drop_duplicates('election_official_person_id', keep='first',inplace=True)
     person['profession'] = 'ELECTION ADMINISTRATOR'
-    person['title'] = person['ocd_division'].str.extract('([^\\:]*)$').str.upper() + ' COUNTY ' + person['official_title'].str.upper()
+    person['title'] = person['ocd_division'].str.extract('([^\\:]*)$').str.upper() + ' ' + person['official_title'].str.upper()
     person.rename(columns={'election_official_person_id':'id'}, inplace=True)
 
     # REMOVE feature(s) (2 removed)
@@ -526,9 +526,9 @@ if __name__ == '__main__':
             except HttpError:
                 print ('ERROR:', state, 'could not be found or retrieved from Google Sheets.')
                 increment_httperror += 1
-                
-            except:
-                print ('ERROR:', state, 'could not be processed.')
+
+            except Exception as e:
+                print ('ERROR:', state, 'could not be processed.', type(e).__name__, ':', e)
                 increment_processingerror += 1
 
 
