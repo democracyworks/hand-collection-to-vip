@@ -182,7 +182,7 @@ def clean_data(state_feed, state_data, election_authorities):
     election_authorities['ocd_division'] = election_authorities['ocd_division'].str.strip()
     
     state_data['address_line'] = state_data['address_line'].str.strip()
-    state_data['location_name'] = state_data['location_name'].str.strip()
+    state_data['location_name'] = state_data['location_name'].str.strip().str.replace('\'S', '\'s')
 
 
     return state_feed, state_data, election_authorities
