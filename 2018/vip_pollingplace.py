@@ -90,9 +90,10 @@ def vip_build(state_data, state_feed, election_authorities, target_smart):
     department = generate_department(election_authorities)
     person = generate_person(state_feed['state_abbrv'][0], election_authorities)
     precinct = generate_precinct(state_data, locality)
-    street_segment = generate_street_segment(state_feed['state_abbrv'][0], target_smart, precinct)
+    street_segment = generate_street_segment(state_feed['state_abbrv'][0], target_smart, state_data, precinct)
   
-
+    precinct.drop(['county'], axis=1, inplace=True) # DROP county from precinct after being passed to street_segment
+    
     # PRINT state name
     print('\n'*1)
     print(state_feed['official_name'][0].center(85, '-'))
@@ -174,6 +175,7 @@ def clean_data(state_feed, state_data, election_authorities, target_smart):
     
     # FORMAT FIPS & ZIPS (2 formatted)
     state_feed['fips'] = state_feed['state_fips'].str.pad(5, side='right', fillchar='0')
+    target_smart['vf_reg_zip'] = target_smart['vf_reg_zip'].astype(str)
     target_smart['vf_reg_zip'] = target_smart['vf_reg_zip'].str.pad(5, side='left', fillchar='0')
 
     # CREATE/FORMAT county (1 created, 2 formatted)
@@ -184,6 +186,8 @@ def clean_data(state_feed, state_data, election_authorities, target_smart):
     # FORMAT voter file addresses (1 formatted)
     target_smart['vf_reg_address_1'] = target_smart['vf_reg_address_1'].str.upper().str.strip()
 
+    if state_feed['state_abbrv'][0] == 'NH':
+        street_segment['vf_precinct_name'] = street_segment['vf_precinct_name'].str.upper().str.replace('-', ' ').str.split().str.join(' ') # REMOVE dash in precinct ids and UPPERCASE 
 
     return state_feed, state_data, election_authorities, target_smart
 
@@ -404,24 +408,17 @@ def generate_precinct(state_data, locality):
     """
 
     # SELECT feature(s)
-    precinct = state_data[['precinct', 'polling_location_ids']]
-
-    # GROUP polling_location_ids
-    precinct.drop_duplicates(inplace=True)  
-    grouped = precinct.groupby('precinct')
-    grouped = pd.DataFrame(grouped.aggregate(lambda x: ' '.join(x))['polling_location_ids']) # FLATTEN aggregated df
-    precinct = grouped.reset_index()  
-    
-    # MERGE precinct with state_data
-    temp = state_data[['precinct', 'county']]
-    precinct = precinct.merge(temp, left_on='precinct', right_on='precinct', how='left')
+    precinct = state_data[['precinct', 'polling_location_ids', 'county']]
 
     # MERGE precinct with locality
     temp = locality[['name', 'id']]
     precinct = precinct.merge(temp, left_on='county', right_on='name', how='left')
 
-    # REMOVE feature(s) (2 removed)
-    precinct.drop(['county', 'name'], axis=1, inplace=True)
+    # GROUP polling_location_ids
+    precinct.drop_duplicates(inplace=True) 
+    grouped = precinct.groupby(['county', 'id', 'precinct'])
+    grouped = pd.DataFrame(grouped.aggregate(lambda x: ' '.join(x))['polling_location_ids']) # FLATTEN aggregated df
+    precinct = grouped.reset_index()  
 
     # CREATE/FORMAT feature(s) (1 created, 2 formatted)
     precinct.drop_duplicates(inplace=True)
@@ -435,7 +432,7 @@ def generate_precinct(state_data, locality):
 
 
 
-def generate_street_segment(state_abbrv, target_smart, precinct):
+def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
     """
     PURPOSE: generates street_segment dataframe for .txt file
     INPUT: state_data, target_smart, precinct
@@ -445,7 +442,7 @@ def generate_street_segment(state_abbrv, target_smart, precinct):
 
     # SELECT feature(s)
     street_segment = target_smart[['vf_reg_address_1', 'vf_reg_address_2', 'vf_reg_city', 
-                                   'vf_precinct_name', 'vf_reg_zip']]
+                                   'vf_precinct_name', 'vf_reg_zip', 'vf_county_name']]
 
     # REMOVE duplicate rows created by multiple registrants at the same address                           
     street_segment.drop_duplicates(inplace=True)
@@ -458,9 +455,7 @@ def generate_street_segment(state_abbrv, target_smart, precinct):
     street_segment.rename(columns={'vf_reg_city':'city', 
                                    'vf_reg_address_2':'unit_number', 
                                    'vf_reg_zip':'zip'}, inplace=True) 
-    if state_abbrv == 'NH':
-        street_segment['vf_precinct_name'] = street_segment['vf_precinct_name'].str.upper().str.replace('-', ' ').str.split().str.join(' ') # REMOVE dash in precinct ids and UPPERCASE 
-
+    
 
     # C1 Street Suffix Abbreviations (https://pe.usps.com/text/pub28/28apc_002.htm)
     # GENERATE regex for street ending
@@ -503,33 +498,39 @@ def generate_street_segment(state_abbrv, target_smart, precinct):
                           'VALLEY', 'VALLY', 'VLLY', 'VLY', 'VALLEYS', 'VLYS', 'VDCT', 'VIA', 'VIADCT', 'VIADUCT', 'VIEW', 'VW', 'VIEWS', 'VWS', 'VILL', 'VILLAG', 'VILLAGE', 'VILLG', 'VILLIAGE', 
                           'VLG', 'VILLE', 'VL', 'VIS', 'VIST', 'VISTA', 'VST', 'VSTA', 
                           'WALK', 'WALKS', 'WALL', 'WAY', 'WY', 'WAYS', 'WELL', 'WL', 'WELLS', 'WLS']
-    street_suffix_regex = re.compile(r'\b(' + '|'.join(street_suffix_list) + r')$ \b', re.IGNORECASE)
+    street_suffix_regex = re.compile(r'\b(' + '|'.join(street_suffix_list) + r')$\b', re.IGNORECASE)
     
     # CREATE feature(s) (6 created)
-    street_segment['street_suffix'] = street_segment['vf_reg_address_1'].str.extract(street_suffix_regex, expand = True)
+    street_segment['street_suffix'] = street_segment['vf_reg_address_1'].str.strip().str.extract(street_suffix_regex, expand = True)
     street_segment['house_number'] = street_segment['vf_reg_address_1'].str.extract('^(\\d+)')
     street_segment['start_house_number'] = street_segment['house_number']
     street_segment['end_house_number'] = street_segment['house_number']
     street_segment['odd_even_both'] = 'both'
     street_segment['temp'] = street_segment['vf_reg_address_1'].str.replace(street_suffix_regex, '')
     street_segment['street_name'] = street_segment['temp'].str.replace('^\\d+\\s+', '')
-    
+    street_segment.drop_duplicates(inplace=True) 
+
     # REMOVE feature(s) (3 removed)
     street_segment.drop(['vf_reg_address_1', 'temp', 'house_number'], axis=1, inplace=True)
-    
+
+    # MERGE street_segment with state_data
+    temp = state_data[['precinct', 'county']]
+    temp.drop_duplicates(inplace=True)
+    street_segment = street_segment.merge(temp, left_on=['vf_precinct_name', 'vf_county_name'], right_on=['precinct', 'county'], how='left')
+
     # MERGE street_segment with precinct
-    precinct = precinct[['name', 'id']]
-    street_segment = street_segment.merge(precinct, how='left', left_on='vf_precinct_name', right_on='name')
-    
-    # REMOVE feature(s) (2 removed)
-    street_segment.drop(['vf_precinct_name', 'name'], axis=1, inplace=True)
+    temp = precinct[['name', 'id', 'county']]
+    street_segment = street_segment.merge(temp, how='left', left_on=['vf_precinct_name', 'county'], right_on=['name', 'county'])
+    print('After merging with precinct', len(street_segment))
+
+    # REMOVE feature(s) (4 removed)
+    street_segment.drop(['vf_precinct_name', 'name', 'county', 'vf_county_name'], axis=1, inplace=True)
 
     # CREATE/FORMAT feature(s) (1 created, 1 formatted)
     street_segment.rename(columns={'id':'precinct_id'}, inplace=True)
     street_segment.drop_duplicates(inplace=True)
     street_segment.reset_index(drop=True, inplace=True) # RESET index
     street_segment['id'] = 'ss' + (street_segment.index + 1).astype(str).str.zfill(9) 
-
 
     return street_segment
 
@@ -543,6 +544,7 @@ def generate_zip(state_abbrv, files):
     INPUT: state_abbrv, files
     RETURN: exports zip of 11 .txt files
     """
+
 
     # WRITE dataframes to txt files
     file_list = []
@@ -619,7 +621,7 @@ if __name__ == '__main__':
 
 
     # SET list of vars selected in MySQL query
-    targetsmart_sql_col_list = ['vf_precinct_name', 'vf_reg_address_1', 'vf_reg_address_2', 'vf_reg_city', 'vf_source_state', 'vf_reg_zip']
+    targetsmart_sql_col_list = ['vf_precinct_name', 'vf_reg_address_1', 'vf_reg_address_2', 'vf_reg_city', 'vf_source_state', 'vf_reg_zip', 'vf_county_name']
     targetsmart_sql_col_string = ', '.join(targetsmart_sql_col_list)
         
     states_successfully_processed = [] # STORE states that successfully create zip files
