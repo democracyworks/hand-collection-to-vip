@@ -65,18 +65,18 @@ def vip_build(state_data, state_feed, election_authorities, target_smart):
     election_authorities = pd.merge(election_authorities, temp, on =['county'])
     
     # CREATE 'hours_only_id'
-    temp = state_data[['county', 'location_name', 'address_line']]
-    temp.drop_duplicates(['county', 'location_name', 'address_line'], inplace=True)
+    temp = state_data[['county', 'location_name', 'address_line', 'directions']]
+    temp.drop_duplicates(['county', 'location_name', 'address_line', 'directions'], inplace=True)
     temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
     temp['hours_open_id'] = 'hours' + (temp.index + 1).astype(str).str.zfill(4)
-    state_data = pd.merge(state_data, temp, on =['county','location_name','address_line'])
+    state_data = pd.merge(state_data, temp, on =['county','location_name','address_line', 'directions'])
 
     # CREATE 'polling_location_ids'
-    temp = state_data[['county', 'location_name', 'address_line']]
-    temp.drop_duplicates(['county', 'location_name', 'address_line'], inplace=True)
+    temp = state_data[['county', 'location_name', 'address_line', 'directions']]
+    temp.drop_duplicates(['county', 'location_name', 'address_line', 'directions'], inplace=True)
     temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
     temp['polling_location_ids'] = 'pol' + (temp.index + 1).astype(str).str.zfill(4)
-    state_data = pd.merge(state_data, temp, on =['county','location_name','address_line'])
+    state_data = pd.merge(state_data, temp, on =['county','location_name','address_line', 'directions'])
     
 
     # GENERATE 11 .txt files
@@ -93,7 +93,7 @@ def vip_build(state_data, state_feed, election_authorities, target_smart):
     street_segment = generate_street_segment(state_feed['state_abbrv'][0], target_smart, state_data, precinct)
   
     precinct.drop(['county'], axis=1, inplace=True) # DROP county from precinct after being passed to street_segment
-    
+
     # PRINT state name
     print('\n'*1)
     print(state_feed['official_name'][0].center(85, '-'))
@@ -233,6 +233,7 @@ def generate_polling_location(state_data):
                                      'location_name':'name'}, inplace=True)
     polling_location.drop_duplicates(inplace=True)
 
+    polling_location.to_csv('polling_location_check.txt')
 
     return polling_location
 
@@ -427,7 +428,7 @@ def generate_precinct(state_data, locality):
     precinct.reset_index(drop=True, inplace=True)
     precinct['id'] = 'pre' + (precinct.index + 1).astype(str).str.zfill(4)
 
-
+    precinct.to_csv('check.txt')
     return precinct
 
 
@@ -521,10 +522,10 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
     # MERGE street_segment with precinct
     temp = precinct[['name', 'id', 'county']]
     street_segment = street_segment.merge(temp, how='left', left_on=['vf_precinct_name', 'county'], right_on=['name', 'county'])
-    print('After merging with precinct', len(street_segment))
 
-    # REMOVE feature(s) (4 removed)
-    street_segment.drop(['vf_precinct_name', 'name', 'county', 'vf_county_name'], axis=1, inplace=True)
+
+    # REMOVE feature(s) (5 removed)
+    street_segment.drop(['vf_precinct_name', 'precinct', 'name', 'county', 'vf_county_name'], axis=1, inplace=True)
 
     # CREATE/FORMAT feature(s) (1 created, 1 formatted)
     street_segment.rename(columns={'id':'precinct_id'}, inplace=True)
@@ -684,6 +685,7 @@ if __name__ == '__main__':
                 except:
                     print('ERROR: TargetSmart data for', state, 'is either missing from the database or there is data reading error.')
 
+                
                 
                 vip_build(state_data, state_feed, election_authorities, target_smart)
                 
