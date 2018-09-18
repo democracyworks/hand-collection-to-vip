@@ -230,6 +230,17 @@ def generate_polling_location(state_data):
     polling_location.drop_duplicates(inplace=True)
     
 
+    # WARNING for identical locations with different directions
+    temp = state_data[['OCD_ID', 'location_name', 'address_line', 'directions']].drop_duplicates()
+    temp['OCD_ID'] = temp['OCD_ID'].str.extract('([^\\:]*)$')
+
+    duplicate_rows = temp[temp.duplicated(subset=['OCD_ID', 'location_name', 'address_line'],keep=False)]
+    if not duplicate_rows.empty:
+        print()
+        print('WARNING: identical locations with different directions')
+        print (duplicate_rows)
+        # raise UserWarning(duplicate_rows)
+
     return polling_location
 
 
