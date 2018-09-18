@@ -232,8 +232,7 @@ def generate_polling_location(state_data):
     polling_location.rename(columns={'polling_location_ids':'id', 
                                      'location_name':'name'}, inplace=True)
     polling_location.drop_duplicates(inplace=True)
-
-    polling_location.to_csv('polling_location_check.txt')
+    
 
     return polling_location
 
@@ -428,7 +427,7 @@ def generate_precinct(state_data, locality):
     precinct.reset_index(drop=True, inplace=True)
     precinct['id'] = 'pre' + (precinct.index + 1).astype(str).str.zfill(4)
 
-    precinct.to_csv('check.txt')
+
     return precinct
 
 
