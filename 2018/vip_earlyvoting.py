@@ -9,10 +9,11 @@ import datetime
 import argparse
 import os
 from zipfile import ZipFile
+import numpy as np
 #from IPython.display import display
 import warnings
 warnings.filterwarnings('ignore')
-
+oh_my_goodness = Exception("well, that rather badly didnt it?")
 
 
 # PRO-TIP: if modifying these scopes, delete the file token.json.
@@ -170,7 +171,7 @@ def clean_data(state_feed, state_data, election_authorities):
     # FORMAT booleans (4 formatted)
     true_chars = [char for char in 'true' if char not in 'false'] # SET unique chars in 'true' and not in 'false'
     false_chars = [char for char in 'false' if char not in 'true'] # SET unique chars in 'true' and not in 'false'
-    lambda_funct = (lambda x: None if bool(x) == False else ( \
+    lambda_funct = (lambda x: None if not x else ( \
                     'true' if any(char in x for char in true_chars) == True else ('false' if any(char in x for char in false_chars) == True else np.nan)))
     state_data['is_drop_box'] = state_data['is_drop_box'].str.lower().apply(lambda_funct)
     state_data['is_early_voting'] = state_data['is_early_voting'].str.lower().apply(lambda_funct)
@@ -228,18 +229,7 @@ def generate_polling_location(state_data):
     polling_location.rename(columns={'polling_location_ids':'id', 
                                      'location_name':'name'}, inplace=True)
     polling_location.drop_duplicates(inplace=True)
-    
 
-    # WARNING for identical locations with different directions
-    temp = state_data[['OCD_ID', 'location_name', 'address_line', 'directions']].drop_duplicates()
-    temp['OCD_ID'] = temp['OCD_ID'].str.extract('([^\\:]*)$')
-
-    duplicate_rows = temp[temp.duplicated(subset=['OCD_ID', 'location_name', 'address_line'],keep=False)]
-    if not duplicate_rows.empty:
-        print()
-        print('WARNING: identical locations with different directions')
-        print (duplicate_rows)
-        # raise UserWarning(duplicate_rows)
 
     return polling_location
 
@@ -493,9 +483,11 @@ if __name__ == '__main__':
     
 
     states_successfully_processed = [] # STORE states that successfully create zip files
-    increment_success = 0 # STORE error counts
-    increment_httperror = 0
-    increment_processingerror = 0
+    states_missing_data = [] # STORE states that are missing data
+    increment_success = 0 # STORE count of states successfully processed
+    increment_httperror = 0 # STORE count of states that could not be retrieved or found in Google Sheets
+    increment_processingerror = 0 # STORE count of states that could not be processed
+    increment_userwarningerror = 0 # STORE count of states have missing data
     
     # PROCESS each state individually
     for _, input_states in parser.parse_args()._get_kwargs(): # ITERATE through input arguments
@@ -513,7 +505,6 @@ if __name__ == '__main__':
             
             input_states = state_feed_all['state_abbrv'].unique().tolist() # EXTRACT unique list of 50 state abbreviations
 
-
         for state in input_states:
         
             try:
@@ -524,6 +515,12 @@ if __name__ == '__main__':
                 state_data = pd.DataFrame(state_data_values[0:],columns=state_data_values[0])
                 state_data.drop([0], inplace=True)
 
+                # CHECK for missing data 
+                state_data = state_data.replace('^\\s*$', np.nan, regex=True) # REPLACE empty strings with NaNs
+                missing_data_check = state_data[state_data.columns.difference(['directions', 'internal_notes'])].isnull().any(axis=1)
+                if missing_data_check.any(): # IF any rows have missing data (col set to True)
+                    raise UserWarning
+                    
                 # FILTER state_feed and election_authorities
                 state_feed = state_feed_all[state_feed_all['state_abbrv'] == state] # FILTER state_feed_all for selected state
                 election_authorities = election_authorities_all[election_authorities_all['state'] == state] # FILTER election_authorities_all for selected state
@@ -534,6 +531,18 @@ if __name__ == '__main__':
                 increment_success +=1
                 
                 
+            except UserWarning:
+                print()
+                print('ERROR:', state, 'is missing data from the following rows:')
+                missing_data_list = missing_data_check.loc[lambda x: x==True].index.values.tolist()
+                if len(missing_data_list) < 50:
+                    print (missing_data_check.loc[lambda x: x==True].index.values.tolist())
+                else:
+                    print('[ More than 50 rows are missing data ]')
+                print()
+                states_missing_data.append(state)
+                increment_userwarningerror += 1
+
             except HttpError:
                 print ('ERROR:', state, 'could not be found or retrieved from Google Sheets.')
                 increment_httperror += 1
@@ -550,6 +559,11 @@ if __name__ == '__main__':
     print('Number of states that could not be found or retrieved from Google Sheets:', increment_httperror)
     print('Number of states that could not be processed:', increment_processingerror)
     print('Number of states that processed sucessfully:', increment_success)
+    print('Number of states missing data:', increment_userwarningerror)
+
+    print()
+    print('List of states missing data:')
+    print(states_missing_data)
     print()
     print('List of states that processed sucessfully:')
     print(states_successfully_processed)
