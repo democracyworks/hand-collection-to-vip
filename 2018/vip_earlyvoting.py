@@ -13,8 +13,6 @@ import numpy as np
 #from IPython.display import display
 import warnings
 warnings.filterwarnings('ignore')
-oh_my_goodness = Exception("well, that rather badly didnt it?")
-
 
 # PRO-TIP: if modifying these scopes, delete the file token.json.
 SCOPES = 'https://www.googleapis.com/auth/spreadsheets.readonly'
