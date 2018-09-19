@@ -16,6 +16,7 @@ from zipfile import ZipFile
 import re
 import json
 import mysql.connector 
+import numpy as np
 
 
 # PRO-TIP: if modifying these scopes, delete the file token.json.
@@ -187,7 +188,8 @@ def clean_data(state_feed, state_data, election_authorities, target_smart):
     target_smart['vf_reg_address_1'] = target_smart['vf_reg_address_1'].str.upper().str.strip()
 
     if state_feed['state_abbrv'][0] == 'NH':
-        street_segment['vf_precinct_name'] = street_segment['vf_precinct_name'].str.upper().str.replace('-', ' ').str.split().str.join(' ') # REMOVE dash in precinct ids and UPPERCASE 
+        target_smart['vf_precinct_name'] = target_smart['vf_precinct_name'].str.upper().str.replace('-', ' ').str.split().str.join(' ') # REMOVE dash in precinct ids and UPPERCASE 
+
 
     return state_feed, state_data, election_authorities, target_smart
 
@@ -232,7 +234,8 @@ def generate_polling_location(state_data):
     polling_location.rename(columns={'polling_location_ids':'id', 
                                      'location_name':'name'}, inplace=True)
     polling_location.drop_duplicates(inplace=True)
-    
+
+    polling_location.to_csv('polling_location_check.txt')
 
     return polling_location
 
@@ -386,11 +389,9 @@ def generate_person(state_abbrv, election_authorities):
     person.drop_duplicates('election_official_person_id', keep='first',inplace=True)
     person['profession'] = 'ELECTION ADMINISTRATOR'
     person.rename(columns={'election_official_person_id':'id'}, inplace=True) 
-    if state_abbrv == 'NH':
-        person['title'] = person['county'].str.upper() + ' ' + person['official_title'].str.upper()
-    else:
-        person['title'] = person['county'].str.upper() + ' COUNTY ' + person['official_title'].str.upper()
 
+    person['title'] = person['county'].str.upper() + ' ' + person['official_title'].str.upper()
+    
     # REMOVE feature(s) (2 removed)
     person.drop(['county', 'official_title'], axis=1, inplace=True) 
 
@@ -427,7 +428,7 @@ def generate_precinct(state_data, locality):
     precinct.reset_index(drop=True, inplace=True)
     precinct['id'] = 'pre' + (precinct.index + 1).astype(str).str.zfill(4)
 
-
+    precinct.to_csv('check.txt')
     return precinct
 
 
@@ -454,8 +455,11 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
     street_segment['state'] = state_abbrv
     street_segment.rename(columns={'vf_reg_city':'city', 
                                    'vf_reg_address_2':'unit_number', 
-                                   'vf_reg_zip':'zip'}, inplace=True) 
-    
+                                   'vf_reg_zip':'zip'}, inplace=True)
+
+    street_segment['unit_number_temp'] = street_segment['vf_reg_address_1'].str.strip().str.extract('(UNIT\\s+\\d+?\\w+?|\\#\\s+\\d+\\w+?|APT\\s+\\d+?\\w+?)$') # EXTRACT unit number
+    street_segment['unit_number'] = np.where(street_segment['unit_number'] == '', street_segment['unit_number_temp'], np.nan)
+    street_segment['vf_reg_address_1'] = street_segment['vf_reg_address_1'].str.strip().str.replace('\\s+(UNIT\\s+\\d+?\\w+?|\\#\\s+\\d+\\w+?|APT\\s+\\d+?\\w+?)$', '') # REMOVE unit number from address
 
     # C1 Street Suffix Abbreviations (https://pe.usps.com/text/pub28/28apc_002.htm)
     # GENERATE regex for street ending
@@ -502,20 +506,22 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
     
     # CREATE feature(s) (6 created)
     street_segment['street_suffix'] = street_segment['vf_reg_address_1'].str.strip().str.extract(street_suffix_regex, expand = True)
-    street_segment['house_number'] = street_segment['vf_reg_address_1'].str.extract('^(\\d+)')
+    street_segment['house_number'] = street_segment['vf_reg_address_1'].str.extract('^(\\d+)').astype(str).str.replace('nan', '')
     street_segment['start_house_number'] = street_segment['house_number']
     street_segment['end_house_number'] = street_segment['house_number']
     street_segment['odd_even_both'] = 'both'
     street_segment['temp'] = street_segment['vf_reg_address_1'].str.replace(street_suffix_regex, '')
-    street_segment['street_name'] = street_segment['temp'].str.replace('^\\d+\\s+', '')
-    street_segment.drop_duplicates(inplace=True) 
+    street_segment['street_name'] = street_segment['temp'].str.replace('^\\d+\\s+', '').str.strip()
 
-    # REMOVE feature(s) (3 removed)
-    street_segment.drop(['vf_reg_address_1', 'temp', 'house_number'], axis=1, inplace=True)
+    # REMOVE feature(s) (4 removed)
+    street_segment.drop(['vf_reg_address_1', 'temp', 'unit_number_temp', 'house_number'], axis=1, inplace=True)
+    street_segment.drop_duplicates(inplace=True) 
 
     # MERGE street_segment with state_data
     temp = state_data[['precinct', 'county']]
     temp.drop_duplicates(inplace=True)
+    if state_abbrv == 'NH':
+        street_segment['vf_county_name'] = street_segment['city'].str.upper() # NOTE: NH does precincts by town/city
     street_segment = street_segment.merge(temp, left_on=['vf_precinct_name', 'vf_county_name'], right_on=['precinct', 'county'], how='left')
 
     # MERGE street_segment with precinct
@@ -648,7 +654,7 @@ if __name__ == '__main__':
         
         for state in input_states:
         
-            try:
+            # try:
             
                 # LOAD state data
                 state_data_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=state).execute()
@@ -675,9 +681,9 @@ if __name__ == '__main__':
 
                     target_smart_values = curs.fetchall() # LOAD in data
 
-                    conn.rollback() # REFRESH database connection
                     curs.close() # CLOSE cursor object
-
+                    conn.rollback() # REFRESH database connection
+                    
                     # GENERATE target_smart dataframe
                     target_smart = pd.DataFrame(list(target_smart_values), columns=targetsmart_sql_col_list, dtype='object')
                     
@@ -693,13 +699,13 @@ if __name__ == '__main__':
                 increment_success +=1
                 
             
-            except HttpError:
-                print ('ERROR:', state, 'could not be found or retrieved from Google Sheets.')
-                increment_httperror += 1
+            # except HttpError:
+            #     print ('ERROR:', state, 'could not be found or retrieved from Google Sheets.')
+            #     increment_httperror += 1
                 
-            except:
-                print ('ERROR:', state, 'could not be processed.')
-                increment_processingerror += 1
+            # except:
+            #     print ('ERROR:', state, 'could not be processed.')
+            #     increment_processingerror += 1
 
 
     conn.close() # CLOSE MySQL database connection 
