@@ -516,7 +516,8 @@ if __name__ == '__main__':
 
                 # CHECK for missing data 
                 state_data = state_data.replace('^\\s*$', np.nan, regex=True) # REPLACE empty strings with NaNs
-                missing_data_check = state_data[state_data.columns.difference(['directions', 'internal_notes'])].isnull().any(axis=1)
+                missing_data_check = state_data[state_data.columns.difference(['directions', 'start_time', 'end_time', 'internal_notes'])].isnull().any(axis=1)
+                missing_data_check.index = missing_data_check.index + 1  # INCREASE INDEX to correspond with google sheets index
                 if missing_data_check.any(): # IF any rows have missing data (col set to True)
                     raise UserWarning
                     
