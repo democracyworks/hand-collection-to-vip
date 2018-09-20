@@ -64,6 +64,7 @@ def vip_build(state_data, state_feed, election_authorities, target_smart):
     temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
     temp['election_administration_id'] = 'ea' + (temp.index + 1).astype(str).str.zfill(4)
     election_authorities = pd.merge(election_authorities, temp, on =['county'])
+    election_authorities.drop_duplicates(subset=['election_administration_id'], inplace=True) #REMOVE all except first election administration entry for each ocd-id
     
     # CREATE 'hours_only_id'
     temp = state_data[['county', 'location_name', 'address_line', 'directions']]

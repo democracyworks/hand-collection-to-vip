@@ -53,6 +53,7 @@ def vip_build(state_data, state_feed, election_authorities):
     temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
     temp['election_administration_id'] = 'ea' + (temp.index + 1).astype(str).str.zfill(4)
     election_authorities = pd.merge(election_authorities, temp, on =['ocd_division'])
+    election_authorities.drop_duplicates(subset=['election_administration_id'], inplace=True) #REMOVE all except first election administration entry for each ocd-id
 
     # CREATE 'election_official_person_id'
     temp = election_authorities[['ocd_division', 'official_title']]
