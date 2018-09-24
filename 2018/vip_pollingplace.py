@@ -18,6 +18,9 @@ import json
 import mysql.connector 
 import numpy as np
 
+pd.set_option('display.max_columns', None)  # or 1000
+pd.set_option('display.max_rows', None)  # or 1000
+
 
 # PRO-TIP: if modifying these scopes, delete the file token.json.
 SCOPES = 'https://www.googleapis.com/auth/spreadsheets.readonly'
@@ -64,7 +67,6 @@ def vip_build(state_data, state_feed, election_authorities, target_smart):
     temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
     temp['election_administration_id'] = 'ea' + (temp.index + 1).astype(str).str.zfill(4)
     election_authorities = pd.merge(election_authorities, temp, on =['county'])
-    election_authorities.drop_duplicates(subset=['election_administration_id'], inplace=True) #REMOVE all except first election administration entry for each ocd-id
     
     # CREATE 'hours_only_id'
     temp = state_data[['county', 'location_name', 'address_line', 'directions']]
@@ -189,7 +191,8 @@ def clean_data(state_feed, state_data, election_authorities, target_smart):
     target_smart['vf_reg_address_1'] = target_smart['vf_reg_address_1'].str.upper().str.strip()
 
     if state_feed['state_abbrv'][0] == 'NH':
-        target_smart['vf_precinct_name'] = target_smart['vf_precinct_name'].str.upper().str.replace('-', ' ').str.split().str.join(' ') # REMOVE dash in precinct ids and UPPERCASE 
+        target_smart['vf_precinct_name'] = target_smart['vf_precinct_name'].str.upper().str.replace('-', ' ').str.split().str.join(' ') # REMOVE dash in precinct names
+        state_data['county'] = state_data['county'].str.replace("'", '') # REMOVE apostrophes in state_data `county` because target_smart does not incl. them 
 
 
     return state_feed, state_data, election_authorities, target_smart
@@ -444,7 +447,7 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
 
     # SELECT feature(s)
     street_segment = target_smart[['vf_reg_address_1', 'vf_reg_address_2', 'vf_reg_city', 
-                                   'vf_precinct_name', 'vf_reg_zip', 'vf_county_name']]
+                                   'vf_precinct_name', 'vf_reg_zip', 'vf_county_name', 'vf_township']]
 
     # REMOVE duplicate rows created by multiple registrants at the same address                           
     street_segment.drop_duplicates(inplace=True)
@@ -522,16 +525,18 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
     temp = state_data[['precinct', 'county']]
     temp.drop_duplicates(inplace=True)
     if state_abbrv == 'NH':
-        street_segment['vf_county_name'] = street_segment['city'].str.upper() # NOTE: NH does precincts by town/city
+        # NOTE: Since NH uses township instead of county to group precincts, the following subsittution accounts for this difference
+        street_segment['vf_county_name'] = street_segment['vf_township'].str.upper() # NOTE: NH does precincts by town/city
     street_segment = street_segment.merge(temp, left_on=['vf_precinct_name', 'vf_county_name'], right_on=['precinct', 'county'], how='left')
+
 
     # MERGE street_segment with precinct
     temp = precinct[['name', 'id', 'county']]
     street_segment = street_segment.merge(temp, how='left', left_on=['vf_precinct_name', 'county'], right_on=['name', 'county'])
 
 
-    # REMOVE feature(s) (5 removed)
-    street_segment.drop(['vf_precinct_name', 'precinct', 'name', 'county', 'vf_county_name'], axis=1, inplace=True)
+    # REMOVE feature(s) (6 removed)
+    street_segment.drop(['vf_precinct_name', 'precinct', 'name', 'county', 'vf_county_name', 'vf_township'], axis=1, inplace=True)
 
     # CREATE/FORMAT feature(s) (1 created, 1 formatted)
     street_segment.rename(columns={'id':'precinct_id'}, inplace=True)
@@ -628,7 +633,8 @@ if __name__ == '__main__':
 
 
     # SET list of vars selected in MySQL query
-    targetsmart_sql_col_list = ['vf_precinct_name', 'vf_reg_address_1', 'vf_reg_address_2', 'vf_reg_city', 'vf_source_state', 'vf_reg_zip', 'vf_county_name']
+    targetsmart_sql_col_list = ['vf_precinct_name', 'vf_reg_address_1', 'vf_reg_address_2', 'vf_reg_city', 
+                                'vf_source_state', 'vf_reg_zip', 'vf_county_name', 'vf_township']
     targetsmart_sql_col_string = ', '.join(targetsmart_sql_col_list)
         
     states_successfully_processed = [] # STORE states that successfully create zip files
@@ -655,7 +661,7 @@ if __name__ == '__main__':
         
         for state in input_states:
         
-            # try:
+            try:
             
                 # LOAD state data
                 state_data_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=state).execute()
@@ -700,13 +706,13 @@ if __name__ == '__main__':
                 increment_success +=1
                 
             
-            # except HttpError:
-            #     print ('ERROR:', state, 'could not be found or retrieved from Google Sheets.')
-            #     increment_httperror += 1
+            except HttpError:
+                print ('ERROR:', state, 'could not be found or retrieved from Google Sheets.')
+                increment_httperror += 1
                 
-            # except:
-            #     print ('ERROR:', state, 'could not be processed.')
-            #     increment_processingerror += 1
+            except:
+                print ('ERROR:', state, 'could not be processed.')
+                increment_processingerror += 1
 
 
     conn.close() # CLOSE MySQL database connection 
