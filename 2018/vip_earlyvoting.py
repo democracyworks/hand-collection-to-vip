@@ -36,13 +36,9 @@ def vip_build(state_data, state_feed, election_authorities):
     INPUT: state_data, state_feed, election_authorities
     RETURN: None
     """
-    
-    # CLEAN/FORMAT state_feed and state_data
-    state_feed, state_data, election_authorities = clean_data(state_feed, state_data, election_authorities)
+
 
     # CREATE/FORMAT feature(s) referenced by multiple .txts (6 created, 1 formatted)
-
-    state_feed.reset_index(drop=True, inplace=True) # RESET index prior to creating id
     state_feed['state_fips'] = state_feed['state_fips'].str.pad(2, side='left', fillchar='0') # PAD for leading zeros
     state_feed['state_id'] = state_feed['state_abbrv'].str.lower() + state_feed['state_fips']
     state_feed['external_identifier_type'] = 'ocd-id' 
@@ -89,11 +85,6 @@ def vip_build(state_data, state_feed, election_authorities):
     person = generate_person(election_authorities)
 
 
-    # PRINT state name
-    print('\n'*1)
-    print(state_feed['official_name'][0].center(80, '-'))
-    print()
-    
 
     # GENERATE zip file
     generate_zip(state_feed['state_abbrv'][0], 
@@ -130,10 +121,9 @@ def vip_build(state_data, state_feed, election_authorities):
     diff_state_data = diff_state_data[diff_state_data['ocd_division'].isnull()]
     print('Percent of OCD IDs found only in state data |', '{:.2%}'.format(len(diff_state_data)/len(sd)))
 
-    
-    print()
-    print('_'*80)
-    print('\n'*1)
+
+    # print('_'*80)
+    print('\n'*2)
 
 
     return
@@ -146,6 +136,12 @@ def clean_data(state_feed, state_data, election_authorities):
     INPUT: state_feed, state_data
     RETURN: state_feed, state_data dataframes
     """
+
+    # RESET state_feed index
+    state_feed.reset_index(drop=True, inplace=True)
+
+    # REPLACE empty strings with NaNs
+    state_data = state_data.replace('^\\s*$', np.nan, regex=True)
 
     # FORMAT dates (3 formatted)
     state_feed['election_date'] = pd.to_datetime(state_feed['election_date'])
@@ -436,8 +432,60 @@ def generate_zip(state_abbrv, official_name, files):
             zip.write(file)
             os.rename(file, os.path.join(state_abbrv, file))
 
-
     return
+
+
+def warning_missing_data(state_abbrv, state_data):
+    """
+    PURPOSE: To display a warning for empty fields in select columns of state_data
+    INPUT: state_abbrv, state_data
+    RETURN: True if there is missing data, False otherwise
+    """
+
+    missing_data_check = state_data[state_data.columns.difference(['directions', 'start_time', 'end_time', 'internal_notes'])].isnull().any(axis=1)
+    missing_data_check.index = missing_data_check.index + 1  # INCREASE INDEX to correspond with google sheets index
+    if missing_data_check.any(): # IF any rows have missing data (col set to True)
+        print()
+        print('!!! WARNING !!!', state_abbrv, 'is missing data from the following rows:')
+        missing_data_list = missing_data_check.loc[lambda x: x==True].index.values.tolist()
+        if len(missing_data_list) < 50:
+            print (missing_data_check.loc[lambda x: x==True].index.values.tolist())
+        else:
+            print('[ More than 50 rows are missing data ]')
+        print()
+        print()
+        return True
+
+    return False
+
+
+
+def warning_multiple_directions(state_abbrv, state_data):
+    # Tested with ND (2018 EV data)
+    """
+    PURPOSE: To display a warning for locations in state_data that are listed with multiple directions
+    INPUT: state_abbrv, state_data
+    RETURN: True if there are locations with multiple directions, False otherwise
+    """
+
+    unique_rows = state_data[['OCD_ID', 'location_name', 'address_line', 'directions']].drop_duplicates()
+    duplicate_locations = unique_rows[unique_rows.duplicated(subset=['OCD_ID', 'location_name', 'address_line'],keep=False)]
+
+    if not duplicate_locations.empty:
+        duplicate_locations.index = duplicate_locations.index + 1  # INCREASE INDEX to correspond with google sheets index
+        groupby_duplicate_locations = sorted([tuple(x) for x in duplicate_locations.groupby(['OCD_ID', 'location_name', 'address_line']).groups.values()])
+        print()
+        print('!!! WARNING !!!', state_abbrv, 'has locations listed with multiple directions in the following rows:')
+        print(groupby_duplicate_locations)
+        print()
+        print()
+        return True
+
+    return False
+
+def warning_cross_streets(state_abbrv, state_data):
+
+    return False
 
 
            
@@ -482,11 +530,10 @@ if __name__ == '__main__':
     
 
     states_successfully_processed = [] # STORE states that successfully create zip files
-    states_missing_data = [] # STORE states that are missing data
+    states_with_warnings = [] # STORE states that are missing data
     increment_success = 0 # STORE count of states successfully processed
     increment_httperror = 0 # STORE count of states that could not be retrieved or found in Google Sheets
     increment_processingerror = 0 # STORE count of states that could not be processed
-    increment_userwarningerror = 0 # STORE count of states have missing data
     
     # PROCESS each state individually
     for _, input_states in parser.parse_args()._get_kwargs(): # ITERATE through input arguments
@@ -513,35 +560,31 @@ if __name__ == '__main__':
                 state_data_values = state_data_result.get('values', [])
                 state_data = pd.DataFrame(state_data_values[0:],columns=state_data_values[0])
                 state_data.drop([0], inplace=True)
-
-                # CHECK for missing data 
-                state_data = state_data.replace('^\\s*$', np.nan, regex=True) # REPLACE empty strings with NaNs
-                missing_data_check = state_data[state_data.columns.difference(['directions', 'start_time', 'end_time', 'internal_notes'])].isnull().any(axis=1)
-                missing_data_check.index = missing_data_check.index + 1  # INCREASE INDEX to correspond with google sheets index
-                if missing_data_check.any(): # IF any rows have missing data (col set to True)
-                    raise UserWarning
                     
                 # FILTER state_feed and election_authorities
                 state_feed = state_feed_all[state_feed_all['state_abbrv'] == state] # FILTER state_feed_all for selected state
                 election_authorities = election_authorities_all[election_authorities_all['state'] == state] # FILTER election_authorities_all for selected state
-                
+
+                # CLEAN/FORMAT state_feed and state_data
+                state_feed, state_data, election_authorities = clean_data(state_feed, state_data, election_authorities)
+
+                # PRINT state name
+                print('\n'*1)
+                print(state_feed['official_name'][0].center(80, '-'))
+                print()
+
+                # WARNINGS for missing/incorrect/unusual data
+                missing_data = warning_missing_data(state_feed['state_abbrv'][0], state_data)
+                multiple_directions = warning_multiple_directions(state_feed['state_abbrv'][0], state_data)
+                cross_streets = warning_cross_streets(state_feed['state_abbrv'][0], state_data)
+                if missing_data or multiple_directions or cross_streets:
+                    states_with_warnings.append(state)
+
+                # VIP BUILD
                 vip_build(state_data, state_feed, election_authorities)
                 
                 states_successfully_processed.append(state)
                 increment_success +=1
-                
-                
-            except UserWarning:
-                print()
-                print('ERROR:', state, 'is missing data from the following rows:')
-                missing_data_list = missing_data_check.loc[lambda x: x==True].index.values.tolist()
-                if len(missing_data_list) < 50:
-                    print (missing_data_check.loc[lambda x: x==True].index.values.tolist())
-                else:
-                    print('[ More than 50 rows are missing data ]')
-                print()
-                states_missing_data.append(state)
-                increment_userwarningerror += 1
 
             except HttpError:
                 print ('ERROR:', state, 'could not be found or retrieved from Google Sheets.')
@@ -554,18 +597,21 @@ if __name__ == '__main__':
 
     # PRINT final report
     print('\n'*1)
+    print('_'*80)
+    print('\n'*1)
     print('Summary Report'.center(80, ' '))
     print('\n'*1)
     print('Number of states that could not be found or retrieved from Google Sheets:', increment_httperror)
     print('Number of states that could not be processed:', increment_processingerror)
     print('Number of states that processed sucessfully:', increment_success)
-    print('Number of states missing data:', increment_userwarningerror)
 
     print()
-    print('List of states missing data:')
-    print(states_missing_data)
+    print('List of states with data warnings:')
+    print(states_with_warnings)
     print()
     print('List of states that processed sucessfully:')
     print(states_successfully_processed)
+    print('\n'*1)
+    print('_'*80)
     print('\n'*2)
     
