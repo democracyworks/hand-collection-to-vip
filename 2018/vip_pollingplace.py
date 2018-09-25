@@ -481,10 +481,10 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
                                    'vf_reg_zip':'zip'}, inplace=True)
     
     # CREATE/FORMAT feature(s) (1 created, 1 formatted)
-    street_segment['unit_number_temp'] = street_segment['vf_reg_address_1'].str.strip().str.extract('(APT .*|UNIT .*|# .*)$') # EXTRACT unit number
+    street_segment['unit_number_temp'] = street_segment['vf_reg_address_1'].str.strip().str.extract('(APT .*|UNIT .*|# .*|PMB .*)$') # EXTRACT unit number
     street_segment['unit_number'] = street_segment['unit_number'].replace('', np.nan, regex=True) # REPLACE empty strings with NaNs
     street_segment['unit_number'].fillna(street_segment['unit_number_temp'], inplace=True)
-    street_segment['vf_reg_address_1'] = street_segment['vf_reg_address_1'].str.replace('(APT .*|UNIT .*|# .*)$', '') # REMOVE unit number from address
+    street_segment['vf_reg_address_1'] = street_segment['vf_reg_address_1'].str.replace('(APT .*|UNIT .*|# .*|PMB .*)$', '') # REMOVE unit number from address
 
     # C1 Street Suffix Abbreviations (https://pe.usps.com/text/pub28/28apc_002.htm)
     # GENERATE regex for street ending
