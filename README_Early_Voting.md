@@ -112,3 +112,7 @@ Indicates ELECTION_AUTHORITIES is missing from the Google Sheet or has a read-in
 ##### 'Error: STATE_FEED Google Sheets is either missing from the Google workbook or there is data reading error.'
 Indicates STATE_FEED is missing from the Google Sheet or has a read-in issue. The tab might either not be included or is misspelled. 
 
+<br> </br>
+
+## Notes
+DC does not have election authority information listed in the Election Administration google sheet.  Therefore, the election_administration, department, and person output files are not created.
