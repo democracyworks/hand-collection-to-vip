@@ -115,4 +115,4 @@ Indicates STATE_FEED is missing from the Google Sheet or has a read-in issue. Th
 <br> </br>
 
 ## Notes
-DC does not have election authority information listed in the Election Administration google sheet.  Therefore, the election_administration, department, and person output files are not created.
+DC does not have election authority information listed in the Election Administration google sheet.  Therefore, the election_administration.txt, department.txt, and person.txt output files are blank (aside from headers).
