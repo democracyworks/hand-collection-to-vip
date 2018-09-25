@@ -168,7 +168,10 @@ def clean_data(state_feed, state_data, election_authorities):
     false_chars = [char for char in 'false' if char not in 'true'] # SET unique chars in 'true' and not in 'false'
     lambda_funct = (lambda x: None if not x else ( \
                     'true' if any(char in x for char in true_chars) == True else ('false' if any(char in x for char in false_chars) == True else np.nan)))
-    state_data['is_drop_box'] = state_data['is_drop_box'].str.lower().apply(lambda_funct)
+    if state_data['is_drop_box'].isnull().all():
+        state_data['is_drop_box'] = 'false'
+    else:
+        state_data['is_drop_box'] = state_data['is_drop_box'].str.lower().apply(lambda_funct)
     state_data['is_early_voting'] = state_data['is_early_voting'].str.lower().apply(lambda_funct)
     state_data['is_only_by_appointment'] = state_data['is_only_by_appointment'].str.lower().apply(lambda_funct)
     state_data['is_or_by_appointment'] = state_data['is_or_by_appointment'].str.lower().apply(lambda_funct)
@@ -484,7 +487,15 @@ def warning_multiple_directions(state_abbrv, state_data):
     return False
 
 def warning_cross_streets(state_abbrv, state_data):
+    cross_street_addresses = state_data[state_data['address_line'].str.contains(' & | and ')]
 
+    if not cross_street_addresses.empty:
+        print()
+        print('!!! WARNING !!!', state_abbrv, 'contains addresses with invalid cross-streets format in the following rows:')
+        print(list(cross_street_addresses.index + 1))
+        print()
+        print()
+        return True
     return False
 
 
@@ -596,7 +607,6 @@ if __name__ == '__main__':
 
 
     # PRINT final report
-    print('\n'*1)
     print('_'*80)
     print('\n'*1)
     print('Summary Report'.center(80, ' '))
