@@ -43,20 +43,25 @@ def vip_build(state_data, state_feed, election_authorities):
     state_feed['state_id'] = state_feed['state_abbrv'].str.lower() + state_feed['state_fips']
     state_feed['external_identifier_type'] = 'ocd-id' 
     
-    # CREATE 'election_adminstration_id'
-    temp = election_authorities[['ocd_division']]
-    temp.drop_duplicates(['ocd_division'], inplace=True)
-    temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
-    temp['election_administration_id'] = 'ea' + (temp.index + 1).astype(str).str.zfill(4)
-    election_authorities = pd.merge(election_authorities, temp, on =['ocd_division'])
-    election_authorities.drop_duplicates(subset=['election_administration_id'], inplace=True) #REMOVE all except first election administration entry for each ocd-id
+    if election_authorities.empty:
+        # CREATE empty election_authorities DataFrame if state not in Election Administration sheet
+        election_authorities = pd.DataFrame(columns=['ocd_division','election_administration_id','homepage_url','official_title','election_official_person_id'])
 
-    # CREATE 'election_official_person_id'
-    temp = election_authorities[['ocd_division', 'official_title']]
-    temp.drop_duplicates(['ocd_division', 'official_title'], keep='first',inplace=True)
-    temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
-    temp['election_official_person_id'] = 'per' + (temp.index + 1).astype(str).str.zfill(4)
-    election_authorities = pd.merge(election_authorities, temp, on =['ocd_division', 'official_title'])
+    else:
+        # CREATE 'election_adminstration_id'
+        temp = election_authorities[['ocd_division']]
+        temp.drop_duplicates(['ocd_division'], inplace=True)
+        temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
+        temp['election_administration_id'] = 'ea' + (temp.index + 1).astype(str).str.zfill(4)
+        election_authorities = pd.merge(election_authorities, temp, on =['ocd_division'])
+        election_authorities.drop_duplicates(subset=['election_administration_id'], inplace=True) #REMOVE all except first election administration entry for each ocd-id
+
+        # CREATE 'election_official_person_id'
+        temp = election_authorities[['ocd_division', 'official_title']]
+        temp.drop_duplicates(['ocd_division', 'official_title'], keep='first',inplace=True)
+        temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
+        temp['election_official_person_id'] = 'per' + (temp.index + 1).astype(str).str.zfill(4)
+        election_authorities = pd.merge(election_authorities, temp, on =['ocd_division', 'official_title'])
     
     # CREATE 'hours_only_id'
     temp = state_data[['OCD_ID', 'location_name', 'address_line', 'directions']]
@@ -85,7 +90,6 @@ def vip_build(state_data, state_feed, election_authorities):
     person = generate_person(election_authorities)
 
 
-
     # GENERATE zip file
     generate_zip(state_feed['state_abbrv'][0], 
                  state_feed['official_name'][0], {'election': election,
@@ -97,37 +101,10 @@ def vip_build(state_data, state_feed, election_authorities):
                                                   'election_administration':election_administration,
                                                   'department': department, 
                                                   'person': person})
-    
-    
-    # PRINT report on OCD IDs for the state being processed 
-
-    # CREATE dataframes of unique OCD IDs for election authorities and state data
-    ea = election_authorities[['ocd_division']]
-    ea.drop_duplicates(inplace=True)
-    sd = state_data[['OCD_ID']]
-    sd.drop_duplicates(inplace=True)
-
-    # PRINT count of unique OCD IDs
-    print()
-    print('Unique OCD IDs listed |', len(sd), ' in state data <>', len(ea), ' in election authorities')
-    
-    # PRINT count of OCD IDs that match with election authorities
-    diff_election_authorities = ea.merge(sd, how = 'left', left_on = 'ocd_division', right_on = 'OCD_ID')
-    diff_election_authorities = diff_election_authorities[diff_election_authorities['OCD_ID'].isnull() == False]
-    print('Percent of OCD IDs in state data matching those in election authorities |', '{:.2%}'.format(len(diff_election_authorities)/len(ea)))
-    
-    # PRINT count of OCD IDs that are unique to state data
-    diff_state_data = sd.merge(ea, how = 'left', left_on = 'OCD_ID', right_on = 'ocd_division')
-    diff_state_data = diff_state_data[diff_state_data['ocd_division'].isnull()]
-    print('Percent of OCD IDs found only in state data |', '{:.2%}'.format(len(diff_state_data)/len(sd)))
-
-
-    # print('_'*80)
-    print('\n'*2)
-
+                                                 
+    print_state_report(state_feed['state_abbrv'][0], state_data, election_authorities)
 
     return
-            
 
     
 def clean_data(state_feed, state_data, election_authorities):
@@ -370,9 +347,9 @@ def generate_department(election_authorities):
     department = election_authorities[['election_administration_id', 'election_official_person_id']]
 
     # CREATE feature(s) (1 created)
-    department.drop_duplicates(inplace=True)
-    department['id'] = 'dep' + (department.index + 1).astype(str).str.zfill(4)
-
+    if not election_authorities.empty:
+        department.drop_duplicates(inplace=True)
+        department['id'] = 'dep' + (department.index + 1).astype(str).str.zfill(4)
 
     return department
 
@@ -438,6 +415,43 @@ def generate_zip(state_abbrv, official_name, files):
     return
 
 
+def print_state_report(state_abbrv, state_data, election_authorities):
+    """
+    PURPOSE: to print report on OCD IDs for the state being processed 
+    INPUT: state_data, election_authorities
+    RETURN: N/A
+    """
+    # HANDLE case where election_authorities is empty
+    if election_authorities.empty:
+        print()
+        print('Note:', state_abbrv, 'does not include Election Authorities data.')
+
+    else:
+        # CREATE dataframes of unique OCD IDs for election authorities and state data
+        ea = election_authorities[['ocd_division']]
+        ea.drop_duplicates(inplace=True)
+        sd = state_data[['OCD_ID']]
+        sd.drop_duplicates(inplace=True)
+
+        # PRINT count of unique OCD IDs
+        print()
+        print('Unique OCD IDs listed |', len(sd), ' in state data <>', len(ea), ' in election authorities')
+        
+        # PRINT count of OCD IDs that match with election authorities
+        diff_election_authorities = ea.merge(sd, how = 'left', left_on = 'ocd_division', right_on = 'OCD_ID')
+        diff_election_authorities = diff_election_authorities[diff_election_authorities['OCD_ID'].isnull() == False]
+        print('Percent of OCD IDs in state data matching those in election authorities |', '{:.2%}'.format(len(diff_election_authorities)/len(ea)))
+        
+        # PRINT count of OCD IDs that are unique to state data
+        diff_state_data = sd.merge(ea, how = 'left', left_on = 'OCD_ID', right_on = 'ocd_division')
+        diff_state_data = diff_state_data[diff_state_data['ocd_division'].isnull()]
+        print('Percent of OCD IDs found only in state data |', '{:.2%}'.format(len(diff_state_data)/len(sd)))
+
+    print()
+
+    return
+
+
 def warning_missing_data(state_abbrv, state_data):
     """
     PURPOSE: To display a warning for empty fields in select columns of state_data
@@ -462,7 +476,6 @@ def warning_missing_data(state_abbrv, state_data):
     return False
 
 
-
 def warning_multiple_directions(state_abbrv, state_data):
     # Tested with ND (2018 EV data)
     """
@@ -485,6 +498,7 @@ def warning_multiple_directions(state_abbrv, state_data):
         return True
 
     return False
+
 
 def warning_cross_streets(state_abbrv, state_data):
     cross_street_addresses = state_data[state_data['address_line'].str.contains(' & | and ')]
