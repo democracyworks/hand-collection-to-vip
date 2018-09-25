@@ -125,25 +125,34 @@ def vip_build(state_data, state_feed, election_authorities, target_smart):
     ea.drop_duplicates(inplace=True)
     sd = state_data[['county']]
     sd.drop_duplicates(inplace=True)
+    if state_feed['state_abbrv'][0] == 'NH':
+        ts = target_smart[['vf_township']]
 
+    else:
+        ts = target_smart[['vf_county_name']]
+    ts.drop_duplicates(inplace=True)
+    
     # PRINT count of unique OCD IDs
     print()
-    print('Unique OCD IDs listed |', len(sd), ' in state data <>', len(ea), ' in election authorities')
+    print(f"{'Unique counties/places listed in state_data':53} | {len(sd)}")
+    print(f"{'Unique counties/places listed in election_authorities':53} | {len(ea)}")
+    print(f"{'Unique counties/places listed in target_smart':53} | {len(ts)}")
     
-    # PRINT count of OCD IDs that match with election authorities
-    diff_election_authorities = ea.merge(sd, how = 'left', on = 'county')
-    diff_election_authorities = diff_election_authorities[diff_election_authorities['county'].isnull() == False]
-    print('Percent of OCD IDs in state data matching those in election authorities |', '{:.2%}'.format(len(diff_election_authorities)/len(ea)))
+    # # PRINT count of OCD IDs that match with election authorities
+    # sd_match_ea = sd[sd.isin(ea)].dropna()
+    # print('Percent of counties/places in state data matching those in election authorities |', '{:.2%}'.format(len(sd_match_ea)/len(ea)))
     
-    # PRINT count of OCD IDs that are unique to state data
-    diff_state_data = sd.merge(ea, how = 'left', on = 'county')
-    diff_state_data = diff_state_data[diff_state_data['county'].isnull()]
-    print('Percent of OCD IDs found only in state data |', '{:.2%}'.format(len(diff_state_data)/len(sd)))
+    # # PRINT count of OCD IDs that are unique to state data
+    # sd_doesnotmatch_ea = sd[~sd.isin(ea)].dropna()
+    # print('Percent of counties/places found in state data but not in election authorities |', '{:.2%}'.format(len(sd_doesnotmatch_ea)/len(sd)))
 
+    # # PRINT count of OCD IDs that are unique to target_smart
+    # ts_doesnotmatch_sd = target_smart[~target_smart.isin(sd)].dropna()
+    # print('Percent of counties/places found in TargetSmart data but not state data |', '{:.2%}'.format(len(ts_doesnotmatch_sd)/len(ts)))
     
-    print()
-    print('_'*85)
-    print('\n'*1)
+    # print()
+    # print('_'*85)
+    # print('\n'*1)
    
 
     return
@@ -184,16 +193,24 @@ def clean_data(state_feed, state_data, election_authorities, target_smart):
 
     # CREATE/FORMAT county (1 created, 2 formatted)
     state_data['county'] = state_data['county'].str.upper().str.strip()
+    target_smart['vf_county_name'] = target_smart['vf_county_name'].str.upper().str.strip()
     election_authorities['ocd_division'] = election_authorities['ocd_division'].str.upper().str.strip()
     election_authorities['county'] = election_authorities['ocd_division'].str.extract('\\/\\w+\\:(\\w+\'?\\-?\\~?\\w+?)$').str.replace('_', ' ').str.replace('~', "'")
     
+    # FORMAT precinct (2 formatted)
+    state_data['precinct'] = state_data['precinct'].str.strip().str.upper()
+    target_smart['vf_precinct_name'] = target_smart['vf_precinct_name'].str.strip().str.upper()
+
     # FORMAT voter file addresses (1 formatted)
     target_smart['vf_reg_address_1'] = target_smart['vf_reg_address_1'].str.upper().str.strip()
 
     if state_feed['state_abbrv'][0] == 'NH':
         target_smart['vf_precinct_name'] = target_smart['vf_precinct_name'].str.upper().str.replace('-', ' ').str.split().str.join(' ') # REMOVE dash in precinct names
         state_data['county'] = state_data['county'].str.replace("'", '') # REMOVE apostrophes in state_data `county` because target_smart does not incl. them 
-
+        target_smart['vf_township'] = target_smart['vf_township'].str.upper() 
+    elif state_feed['state_abbrv'][0] == 'AZ':
+        target_smart['vf_precinct_name'] = target_smart['vf_precinct_name'].str.replace('PIMA ', '')
+        
 
     return state_feed, state_data, election_authorities, target_smart
 
@@ -456,14 +473,18 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
     street_segment['address_direction'] = street_segment['vf_reg_address_1'].str.extract('\\s+(N|E|S|W|NE|NW|SE|SW)$') # EXTRACT last cardinal direction in the address
     street_segment['vf_reg_address_1'] = street_segment['vf_reg_address_1'].str.replace('\\s+(N|E|S|W|NE|NW|SE|SW)$', '') # REMOVE last cardinal direction in the address
     street_segment['street_direction'] = street_segment['vf_reg_address_1'].str.extract('\\s+(N|E|S|W|NE|NW|SE|SW)\\s+') # EXTRACT cardinal direction in the middle of the address
+    street_segment['vf_reg_address_1'] = street_segment['vf_reg_address_1'].str.replace('\\s+(N|E|S|W|NE|NW|SE|SW)\\s+', ' ') # REPLACE cardinal direction in the middle of the address
+
     street_segment['state'] = state_abbrv
     street_segment.rename(columns={'vf_reg_city':'city', 
                                    'vf_reg_address_2':'unit_number', 
                                    'vf_reg_zip':'zip'}, inplace=True)
-
-    street_segment['unit_number_temp'] = street_segment['vf_reg_address_1'].str.strip().str.extract('(UNIT\\s+\\d+?\\w+?|\\#\\s+\\d+\\w+?|APT\\s+\\d+?\\w+?)$') # EXTRACT unit number
-    street_segment['unit_number'] = np.where(street_segment['unit_number'] == '', street_segment['unit_number_temp'], np.nan)
-    street_segment['vf_reg_address_1'] = street_segment['vf_reg_address_1'].str.strip().str.replace('\\s+(UNIT\\s+\\d+?\\w+?|\\#\\s+\\d+\\w+?|APT\\s+\\d+?\\w+?)$', '') # REMOVE unit number from address
+    
+    # CREATE/FORMAT feature(s) (1 created, 1 formatted)
+    street_segment['unit_number_temp'] = street_segment['vf_reg_address_1'].str.strip().str.extract('(APT .*|UNIT .*|# .*)$') # EXTRACT unit number
+    street_segment['unit_number'] = street_segment['unit_number'].replace('', np.nan, regex=True) # REPLACE empty strings with NaNs
+    street_segment['unit_number'].fillna(street_segment['unit_number_temp'], inplace=True)
+    street_segment['vf_reg_address_1'] = street_segment['vf_reg_address_1'].str.replace('(APT .*|UNIT .*|# .*)$', '') # REMOVE unit number from address
 
     # C1 Street Suffix Abbreviations (https://pe.usps.com/text/pub28/28apc_002.htm)
     # GENERATE regex for street ending
@@ -514,7 +535,7 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
     street_segment['start_house_number'] = street_segment['house_number']
     street_segment['end_house_number'] = street_segment['house_number']
     street_segment['odd_even_both'] = 'both'
-    street_segment['temp'] = street_segment['vf_reg_address_1'].str.replace(street_suffix_regex, '')
+    street_segment['temp'] = street_segment['vf_reg_address_1'].str.strip().str.replace(street_suffix_regex, '')
     street_segment['street_name'] = street_segment['temp'].str.replace('^\\d+\\s+', '').str.strip()
 
     # REMOVE feature(s) (4 removed)
@@ -525,8 +546,8 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
     temp = state_data[['precinct', 'county']]
     temp.drop_duplicates(inplace=True)
     if state_abbrv == 'NH':
-        # NOTE: Since NH uses township instead of county to group precincts, the following subsittution accounts for this difference
-        street_segment['vf_county_name'] = street_segment['vf_township'].str.upper() # NOTE: NH does precincts by town/city
+        # NOTE: Since NH uses township instead of county to group precincts. The following subsittution accounts for this difference
+        street_segment['vf_county_name'] = street_segment['vf_township'] # NOTE: NH does precincts by town/city
     street_segment = street_segment.merge(temp, left_on=['vf_precinct_name', 'vf_county_name'], right_on=['precinct', 'county'], how='left')
 
 
@@ -566,7 +587,9 @@ def generate_zip(state_abbrv, files):
         file_list.append(file)
         df.to_csv(file, index=False, encoding='utf-8')
         
-        print(state_abbrv, name, "|", len(df.index), "row(s)")
+        line = '|'
+        print(f'{state_abbrv:2} {name:23} | {len(df.index)} row(s)')
+        #print(state_abbrv, name, "|", len(df.index), "row(s)")
 
     # CREATE state directory
     if not os.path.exists(state_abbrv):
@@ -682,7 +705,13 @@ if __name__ == '__main__':
                     curs = conn.cursor() # OPEN database connection
 
                     # SET MySQL query
-                    query = 'SELECT ' + targetsmart_sql_col_string +' FROM ' + sql_table_name[0] + ';'
+                    if state == 'AZ':
+                        
+                        query = "SELECT " + targetsmart_sql_col_string + " FROM " + sql_table_name[0] + \
+                                " WHERE vf_county_name = 'PIMA';"
+                                
+                    else: 
+                        query = "SELECT " + targetsmart_sql_col_string + " FROM " + sql_table_name[0] + ";"
 
                     curs.execute(query) # EXECUTE MySQL query
 
@@ -693,19 +722,19 @@ if __name__ == '__main__':
                     
                     # GENERATE target_smart dataframe
                     target_smart = pd.DataFrame(list(target_smart_values), columns=targetsmart_sql_col_list, dtype='object')
-                    
+
                 except:
                     print('ERROR: TargetSmart data for', state, 'is either missing from the database or there is data reading error.')
 
-                
-                
+                print(datetime.datetime.now().replace(microsecond=0).isoformat())
+
                 vip_build(state_data, state_feed, election_authorities, target_smart)
                 
 
                 states_successfully_processed.append(state)
                 increment_success +=1
                 
-            
+                
             except HttpError:
                 print ('ERROR:', state, 'could not be found or retrieved from Google Sheets.')
                 increment_httperror += 1
