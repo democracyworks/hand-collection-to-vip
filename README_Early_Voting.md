@@ -114,5 +114,18 @@ Indicates STATE_FEED is missing from the Google Sheet or has a read-in issue. Th
 
 <br> </br>
 
+## Explanation of warnings
+
+##### 'Warning: <state> is missing data from the following rows: [2, 4, 124, 352]'
+Indicates that there are one or more empty fields in the corresponding rows of the Early Voting Hand Collection google sheet.  The warning detects missing values from all columns except 'directions', 'start_time', 'end_time', and 'internal_notes'.
+
+##### 'Warning: <state> has locations listed with multiple 'directions' in the following rows: [(2, 4), (124, 132)]'
+Indicates that a polling location is listed with multiple values in the 'directions' field.  This can indicate that the location uses multiple rooms within the same building, depending on the time/day.  Alternatively, this can indicate a data collection mistake, particularly if one of the values is blank.  The list of rows corresponds to row numbers in the Early Voting Hand Collection google sheet.  Each tuple in the list includes rows from a single polling location.
+ 
+##### 'Warning: <state> contains addresses with invalid cross-streets format in the following rows: [2, 4, 124, 352]'
+Indicates that the address provided is an intersection (written as cross-streets) rather than street and house number. The warning detects '&' and 'and' strings in the address_line column.  The list of rows corresponds to row numbers in the Early Voting Hand Collection google sheet.
+
+<br> </br>
+
 ## Notes
 DC does not have election authority information listed in the Election Administration google sheet.  Therefore, the election_administration.txt, department.txt, and person.txt output files are blank (aside from headers).
