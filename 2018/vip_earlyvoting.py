@@ -556,6 +556,7 @@ if __name__ == '__main__':
 
     states_successfully_processed = [] # STORE states that successfully create zip files
     states_with_warnings = [] # STORE states that are missing data
+    states_not_processed = [] # STORE states that are not processed
     increment_success = 0 # STORE count of states successfully processed
     increment_httperror = 0 # STORE count of states that could not be retrieved or found in Google Sheets
     increment_processingerror = 0 # STORE count of states that could not be processed
@@ -614,10 +615,12 @@ if __name__ == '__main__':
             except HttpError:
                 print ('ERROR:', state, 'could not be found or retrieved from Google Sheets.')
                 increment_httperror += 1
+                states_not_processed.append(state)
 
             except Exception as e:
                 print ('ERROR:', state, 'could not be processed.', type(e).__name__, ':', e)
                 increment_processingerror += 1
+                states_not_processed.append(state)
 
 
     # PRINT final report
@@ -629,6 +632,10 @@ if __name__ == '__main__':
     print('Number of states that could not be processed:', increment_processingerror)
     print('Number of states that processed sucessfully:', increment_success)
 
+
+    print()
+    print('List of states that did not process:')
+    print(states_not_processed)
     print()
     print('List of states with data warnings:')
     print(states_with_warnings)
