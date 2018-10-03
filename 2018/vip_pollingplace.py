@@ -69,18 +69,18 @@ def vip_build(state_data, state_feed, election_authorities, target_smart):
     election_authorities = pd.merge(election_authorities, temp, on =['county'])
     
     # CREATE 'hours_only_id'
-    temp = state_data[['county', 'location_name', 'address_line', 'directions']]
-    temp.drop_duplicates(['county', 'location_name', 'address_line', 'directions'], inplace=True)
+    temp = state_data[['location_name', 'address_line', 'directions']]
+    temp.drop_duplicates(['location_name', 'address_line', 'directions'], inplace=True)
     temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
     temp['hours_open_id'] = 'hours' + (temp.index + 1).astype(str).str.zfill(4)
-    state_data = pd.merge(state_data, temp, on =['county','location_name','address_line', 'directions'])
+    state_data = pd.merge(state_data, temp, on =['location_name','address_line', 'directions'])
 
     # CREATE 'polling_location_ids'
-    temp = state_data[['county', 'location_name', 'address_line', 'directions']]
-    temp.drop_duplicates(['county', 'location_name', 'address_line', 'directions'], inplace=True)
+    temp = state_data[['location_name', 'address_line', 'directions']]
+    temp.drop_duplicates(['location_name', 'address_line', 'directions'], inplace=True)
     temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
     temp['polling_location_ids'] = 'pol' + (temp.index + 1).astype(str).str.zfill(4)
-    state_data = pd.merge(state_data, temp, on =['county','location_name','address_line', 'directions'])
+    state_data = pd.merge(state_data, temp, on =['location_name','address_line', 'directions'])
     
 
     # GENERATE 11 .txt files
@@ -127,7 +127,6 @@ def vip_build(state_data, state_feed, election_authorities, target_smart):
     sd.drop_duplicates(inplace=True)
     if state_feed['state_abbrv'][0] == 'NH':
         ts = target_smart[['vf_township']]
-
     else:
         ts = target_smart[['vf_county_name']]
     ts.drop_duplicates(inplace=True)
@@ -204,13 +203,33 @@ def clean_data(state_feed, state_data, election_authorities, target_smart):
     # FORMAT voter file addresses (1 formatted)
     target_smart['vf_reg_address_1'] = target_smart['vf_reg_address_1'].str.upper().str.strip()
 
+    # REMOVE headers in TargetSmart dataframe
+    # NOTE: Occasionaly TargetSmart includes a header as a row (specifically for MT), so this accounts for this error
+    target_smart = target_smart[target_smart['vf_precinct_name'] != 'VF_PRECINCT_NAME'] 
+
+    # FORMAT address line (1 formatted)
+    # NOTE: A common outreach error was missing state abbreviations in the address line
+    state_abbrv_with_space = state_feed['state_abbrv'][0].center(4, ' ')
+    insert_state_abbrv = lambda x: re.sub('[ ](?=[^ ]+$)', state_abbrv_with_space,  x) if state_abbrv_with_space not in x else x 
+    state_data['address_line'] = state_data['address_line'].apply(lambda x: insert_state_abbrv(x))
+
+    # CONDITIONAL formattating for 2 states (NH, AZ) 
     if state_feed['state_abbrv'][0] == 'NH':
+
         target_smart['vf_precinct_name'] = target_smart['vf_precinct_name'].str.upper().str.replace('-', ' ').str.split().str.join(' ') # REMOVE dash in precinct names
+        target_smart['vf_precinct_name'] = target_smart['vf_precinct_name'].str.replace('"', '') # REMOVE quotes in precinct names
         state_data['county'] = state_data['county'].str.replace("'", '') # REMOVE apostrophes in state_data `county` because target_smart does not incl. them 
         target_smart['vf_township'] = target_smart['vf_township'].str.upper() 
+
+        """ NOTE: In New Hampshire, BERLIN WARD 02 in 2018 was merged with BERLIN WARD 03. 
+        For future elections, TargetSmart may update the voterfile to reflect these changes and thus BERLIN WARD 02
+        will no longer be an issue. It may be worth isolating how many records listing `BERLIN WARD 02` remain and 
+        deleting this if-statement if 0 are identified. """
+        target_smart['vf_precinct_name'] = target_smart['vf_precinct_name'].str.replace('BERLIN WARD 02', 'BERLIN WARD 03') 
+
     elif state_feed['state_abbrv'][0] == 'AZ':
         target_smart['vf_precinct_name'] = target_smart['vf_precinct_name'].str.replace('PIMA ', '')
-        
+
 
     return state_feed, state_data, election_authorities, target_smart
 
@@ -550,11 +569,9 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
         street_segment['vf_county_name'] = street_segment['vf_township'] # NOTE: NH does precincts by town/city
     street_segment = street_segment.merge(temp, left_on=['vf_precinct_name', 'vf_county_name'], right_on=['precinct', 'county'], how='left')
 
-
     # MERGE street_segment with precinct
     temp = precinct[['name', 'id', 'county']]
     street_segment = street_segment.merge(temp, how='left', left_on=['vf_precinct_name', 'county'], right_on=['name', 'county'])
-
 
     # REMOVE feature(s) (6 removed)
     street_segment.drop(['vf_precinct_name', 'precinct', 'name', 'county', 'vf_county_name', 'vf_township'], axis=1, inplace=True)
@@ -564,6 +581,7 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
     street_segment.drop_duplicates(inplace=True)
     street_segment.reset_index(drop=True, inplace=True) # RESET index
     street_segment['id'] = 'ss' + (street_segment.index + 1).astype(str).str.zfill(9) 
+
 
     return street_segment
 
@@ -708,7 +726,7 @@ if __name__ == '__main__':
                     if state == 'AZ':
                         
                         query = "SELECT " + targetsmart_sql_col_string + " FROM " + sql_table_name[0] + \
-                                " WHERE vf_county_name = 'PIMA';"
+                                " WHERE vf_county_name = 'PIMA' and vf_reg_address_1;"
                                 
                     else: 
                         query = "SELECT " + targetsmart_sql_col_string + " FROM " + sql_table_name[0] + ";"
