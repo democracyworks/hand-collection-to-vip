@@ -501,6 +501,12 @@ def warning_multiple_directions(state_abbrv, state_data):
 
 
 def warning_cross_streets(state_abbrv, state_data):
+    """
+    PURPOSE: To display a warning for addresses in state_data that are formatted as cross-streets
+    INPUT: state_abbrv, state_data
+    RETURN: True if there are addresses included as cross-streets, False otherwise
+    """
+
     cross_street_addresses = state_data[state_data['address_line'].str.contains(' & | and ')]
 
     if not cross_street_addresses.empty:
@@ -510,6 +516,29 @@ def warning_cross_streets(state_abbrv, state_data):
         print()
         print()
         return True
+
+    return False
+
+
+def warning_invalid_year(state_abbrv, state_data):
+    """
+    PURPOSE: To display a warning for dates in state_data that include an invalid year (defined as year != 2018)
+    INPUT: state_abbrv, state_data
+    RETURN: True if there are dates with an invalid year, False otherwise
+    """
+
+    incorrect_start_dates = state_data[state_data['start_date'].dt.year != 2018]
+    incorrect_end_dates = state_data[state_data['end_date'].dt.year != 2018]
+    incorrect_dates = incorrect_start_dates.append(incorrect_end_dates)
+
+    if not incorrect_dates.empty:
+        print()
+        print('!!! WARNING !!!', state_abbrv, 'contains dates with an invalid year in the following rows:')
+        print(list(set(incorrect_dates.index + 1)))
+        print()
+        print()
+        return True
+
     return False
 
 
@@ -603,7 +632,8 @@ if __name__ == '__main__':
                 missing_data = warning_missing_data(state_feed['state_abbrv'][0], state_data)
                 multiple_directions = warning_multiple_directions(state_feed['state_abbrv'][0], state_data)
                 cross_streets = warning_cross_streets(state_feed['state_abbrv'][0], state_data)
-                if missing_data or multiple_directions or cross_streets:
+                invalid_year = warning_invalid_year(state_feed['state_abbrv'][0], state_data)
+                if missing_data or multiple_directions or cross_streets or invalid_year:
                     states_with_warnings.append(state)
 
                 # VIP BUILD
