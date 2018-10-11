@@ -20,7 +20,10 @@ import numpy as np
 
 pd.set_option('display.max_columns', 100)  # or 1000 or None
 pd.set_option('display.max_rows', 100)  # or 1000 or None
-PRINT_OUTPUT_WIDTH = 87 # SET print output length
+PRINT_OUTPUT_WIDTH = 100 # SET print output length
+PRINT_CENTER = 50
+
+STATES_WITH_WARNINGS = [] # STORE states that trigger warnings
 
 # PRO-TIP: if modifying these scopes, delete the file token.json.
 SCOPES = 'https://www.googleapis.com/auth/spreadsheets.readonly'
@@ -592,8 +595,6 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
         # COMBINE vote center slice and precinct slice
         street_segment = pd.concat([slice_vote_center, slice_precinct])
 
-        print(street_segment.head(3))
-
     else: # IF there are no vote centers
 
         # MERGE street_segment with state_data
@@ -662,6 +663,8 @@ def generate_zip(state_abbrv, files):
    
 ############################################################################################### END OF VIP BUILD RELATED DEFINITIONS
 
+
+
 def state_report(state_abbrv, state_feed, state_data, election_authorities, target_smart, files):
     """
     PURPOSE: print state report (general descriptive stats and warnings)
@@ -674,12 +677,12 @@ def state_report(state_abbrv, state_feed, state_data, election_authorities, targ
     state_name_with_space = ' ' + state_feed['official_name'][0].upper() + ' '
     print(state_name_with_space.center(PRINT_OUTPUT_WIDTH, '-'))
     print('\n')
-    print('.txt Lengths'.center(PRINT_OUTPUT_WIDTH, ' '))
+    print('.txt Size'.center(PRINT_OUTPUT_WIDTH, ' '))
     print()
 
     for name, df in files.items():
 
-        print(f'{name:>43} | {len(df.index)} row(s)')
+        print(f'{name:>{PRINT_CENTER-2}} | {len(df.index)} row(s)')
 
     # CREATE dataframes of unique OCD IDs for election authorities and state data
     ea = election_authorities[['county']]
@@ -694,11 +697,11 @@ def state_report(state_abbrv, state_feed, state_data, election_authorities, targ
 
     # PRINT count of unique OCD IDs
     print('\n'*2) 
-    print('Unique Count'.center(PRINT_OUTPUT_WIDTH, ' ')) 
+    print('# of Unique Counties/Places  '.center(PRINT_OUTPUT_WIDTH, ' ')) 
     print()
-    print(f"{'State Data':>43} | {len(sd)} counties/places")
-    print(f"{'TargetSmart':>43} | {len(ts)} counties/places")
-    print(f"{'Election Authorities':>43} | {len(ea)} counties/places")
+    print(f"{'State Data |':>{PRINT_CENTER}} {len(sd)} counties/places")
+    print(f"{'TargetSmart |':>{PRINT_CENTER}} {len(ts)} counties/places")
+    print(f"{'Election Authorities |':>{PRINT_CENTER}} {len(ea)} counties/places")
 
     # GENERATE warnings
     missing_data_rows = warning_missing_data(state_data)
@@ -709,6 +712,7 @@ def state_report(state_abbrv, state_feed, state_data, election_authorities, targ
     if missing_data_rows or multi_directions_rows or cross_street_rows or date_year_rows:
         print('\n'*2)
         print( '---------------------- WARNINGS ----------------------'.center(PRINT_OUTPUT_WIDTH, ' ')) 
+        STATES_WITH_WARNINGS.append(state_abbrv) # RECORD states with warnings
 
     if missing_data_rows:
         print('\n')
@@ -726,7 +730,7 @@ def state_report(state_abbrv, state_feed, state_data, election_authorities, targ
         print('\n')
         print('Problematic Cross-Street Formats'.center(PRINT_OUTPUT_WIDTH, ' '))
         print()
-        print(str(multi_directions_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+        print(str(cross_street_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
 
     if date_year_rows:
         print()
@@ -775,8 +779,8 @@ def warning_cross_street(state_data):
     """
 
     # NOTE: invalid cross streets sometimes do not map well on Google's end 
-    cross_street_rows = state_data[state_data['address_line'].str.contains(' & | and ')]
-    cross_street_rows = list(cross_street_rows.index + 1)
+    cross_street_addresses = state_data[state_data['address_line'].str.contains(' & | and ')]
+    cross_street_rows = list(cross_street_addresses.index + 1)
 
 
     return cross_street_rows
@@ -820,6 +824,56 @@ def warning_date_year(state_data): # CRITICAL
 
 
     return date_year_rows
+
+
+
+def summary_report(increment_httperror, increment_processingerror, increment_success,
+                   states_failed_to_load, states_failed_to_process, states_successfully_processed):
+    """
+    PURPOSE: print summary report
+    INPUT: increment_httperror, increment_processingerror, increment_success,
+           states_failed_to_load, states_failed_to_process, states_successfully_processed
+    RETURN: 
+    """
+
+    # PRINT final report
+    print('\n'*1)
+    print('SUMMARY REPORT'.center(PRINT_OUTPUT_WIDTH, ' '))
+    print('\n'*1)
+    print('# of States'.center(PRINT_OUTPUT_WIDTH, ' '))
+    print()
+    print(f"{'Failed to load Google Sheets data |':>{PRINT_CENTER}} {increment_httperror} state(s)")
+    print(f"{'Failed to process |':>{PRINT_CENTER}} {increment_processingerror} state(s)")
+    print(f"{'Successfully processed |':>{PRINT_CENTER}} {increment_success} state(s)")
+
+    if states_failed_to_load:
+        print('\n'*1)
+        print('States that failed to load Google Sheets data'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(states_failed_to_load).strip('[]').replace('\'', '').center(PRINT_OUTPUT_WIDTH, ' '))
+        
+    if states_failed_to_process:
+        print('\n'*1)
+        print('States that failed to process'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(states_failed_to_process).strip('[]').replace('\'', '').center(PRINT_OUTPUT_WIDTH, ' '))
+
+    if STATES_WITH_WARNINGS:      
+        print('\n'*1)
+        print('States that processed with warnings'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(STATES_WITH_WARNINGS).strip('[]').replace('\'', '').center(PRINT_OUTPUT_WIDTH, ' '))
+        
+    if states_successfully_processed:
+        print('\n'*1)
+        print('States that sucessfully processed'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(states_successfully_processed).strip('[]').replace('\'', '').center(PRINT_OUTPUT_WIDTH, ' '))
+    
+    print('\n'*3)
+
+
+    return
 
 
 
@@ -891,9 +945,12 @@ if __name__ == '__main__':
         
     # STORE states with errors
     states_successfully_processed = [] # STORE states that successfully create zip files
-    increment_success = 0 # STORE error counts
-    increment_httperror = 0
-    increment_processingerror = 0
+    states_failed_to_load = [] # STORE states whose data failed to load
+    states_failed_to_process = [] # STORE states that failed to process
+    increment_success = 0 # STORE count of states successfully processed
+    increment_httperror = 0 # STORE count of states that could not be retrieved or found in Google Sheets
+    increment_processingerror = 0 # STORE count of states that could not be processed
+    
     
     # PROCESS each state individually (input_states are requested states listed as state abbreviations)
     for _, input_states in parser.parse_args()._get_kwargs(): # ITERATE through input arguments
@@ -965,28 +1022,19 @@ if __name__ == '__main__':
                 
                 
             except HttpError:
-                print ('ERROR:', state_abbrv, 'could not be found or retrieved from Google Sheets.')
                 increment_httperror += 1
+                states_failed_to_load.append(state_abbrv)
                 
             except:
-                print ('ERROR:', state_abbrv, 'could not be processed.')
                 increment_processingerror += 1
+                states_failed_to_process.append(state_abbrv)
+
 
 
     conn.close() # CLOSE MySQL database connection 
 
-
-    # PRINT final report
-    print('\n'*1)
-    print('Summary Report'.center(PRINT_OUTPUT_WIDTH, ' '))
-    print('\n'*1)
-    print('Number of states that could not be found or retrieved from Google Sheets:', increment_httperror)
-    print('Number of states that could not be processed:', increment_processingerror)
-    print('Number of states that processed sucessfully:', increment_success)
-    print()
-    print('List of states that processed sucessfully:')
-    print(states_successfully_processed)
-    print('\n'*3)
+    summary_report(increment_httperror, increment_processingerror, increment_success,
+                   states_failed_to_load, states_failed_to_process, states_successfully_processed)
 
 
     print('Timestamp:', datetime.datetime.now().replace(microsecond=0))
