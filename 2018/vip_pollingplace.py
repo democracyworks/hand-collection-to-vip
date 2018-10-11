@@ -914,7 +914,7 @@ if __name__ == '__main__':
         
         for state_abbrv in input_states:
         
-            # try:
+            try:
             
                 # LOAD state data
                 state_data_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=state_abbrv).execute()
