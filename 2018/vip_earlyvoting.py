@@ -10,14 +10,28 @@ import argparse
 import os
 from zipfile import ZipFile
 import numpy as np
+import re
 #from IPython.display import display
 import warnings
 warnings.filterwarnings('ignore')
 
+
+# _________________________________________________________________________________________________________________________
+
+# SET global variables and print display formats
+pd.set_option('display.max_columns', 100)  # or 1000 or None
+pd.set_option('display.max_rows', 100)  # or 1000 or None
+PRINT_OUTPUT_WIDTH = 100 # SET print output length
+PRINT_CENTER = int(PRINT_OUTPUT_WIDTH/2) # SET print output middle
+
+STATES_WITH_WARNINGS = [] # STORE states that trigger warnings
+
+# _________________________________________________________________________________________________________________________
+
+# SET SCOPES & Google Spreadsheet IDs (2 IDs)
+
 # PRO-TIP: if modifying these scopes, delete the file token.json.
 SCOPES = 'https://www.googleapis.com/auth/spreadsheets.readonly'
-
-# SET Google Spreadsheet IDs (2 IDs)
 
 # states & STATE_FEED
 # https://docs.google.com/spreadsheets/u/1/d/1utF9ybiOcCc9GvZ_KMqKO1TDaVqUxmHl4xmK48YkZj4/edit#gid=366784608
@@ -28,24 +42,32 @@ SPREADSHEET_ID = '1utF9ybiOcCc9GvZ_KMqKO1TDaVqUxmHl4xmK48YkZj4'
 SPREADSHEET_EA_ID = '1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_y2o' 
 
 
-def vip_build(state_data, state_feed, election_authorities):
+# _________________________________________________________________________________________________________________________
+
+
+def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     """
     PURPOSE: transforms state_data and state_feed data into .txt files, exports zip of 9 .txt files
     (election.txt, polling_location.txt, schedule.txt, source.txt, state.txt, locality.txt, 
     election_administration.txt, department.txt, person.txt)
-    INPUT: state_data, state_feed, election_authorities
+    INPUT: state_abbrv, state_data, state_feed, election_authorities
     RETURN: None
     """
 
 
-    # CREATE/FORMAT feature(s) referenced by multiple .txts (6 created, 1 formatted)
-    state_feed['state_fips'] = state_feed['state_fips'].str.pad(2, side='left', fillchar='0') # PAD for leading zeros
-    state_feed['state_id'] = state_feed['state_abbrv'].str.lower() + state_feed['state_fips']
+    # CREATE/FORMAT feature(s) (1 created, 1 formatted)
+    state_feed['state_fips'] = state_feed['state_fips'].str.pad(2, side='left', fillchar='0') # first make sure there are leading zeros
+    state_feed['state_id'] = state_abbrv.lower() + state_feed['state_fips']
     state_feed['external_identifier_type'] = 'ocd-id' 
     
+    # CLEAN/FORMAT state_feed, state_data, and election_authorities (3 dataframes)
+    state_feed, state_data, election_authorities = clean_data(state_abbrv, state_feed, state_data, election_authorities)
+
+
     if election_authorities.empty:
-        # CREATE empty election_authorities DataFrame if state not in Election Administration sheet
-        election_authorities = pd.DataFrame(columns=['ocd_division','election_administration_id','homepage_url','official_title','election_official_person_id'])
+        # CREATE empty election_authorities DataFrame if state not in election administration sheet
+        election_authorities = pd.DataFrame(columns=['ocd_division','election_administration_id','homepage_url',
+                                                     'official_title','election_official_person_id'])
 
     else:
         # CREATE 'election_adminstration_id'
@@ -91,28 +113,41 @@ def vip_build(state_data, state_feed, election_authorities):
 
 
     # GENERATE zip file
-    generate_zip(state_feed['state_abbrv'][0], 
-                 state_feed['official_name'][0], {'election': election,
-                                                  'polling_location': polling_location,
-                                                  'schedule': schedule,
-                                                  'source':source,
-                                                  'state':state,
-                                                  'locality':locality,
-                                                  'election_administration':election_administration,
-                                                  'department': department, 
-                                                  'person': person})
+    generate_zip(state_abbrv, state_feed, {'state':state, 
+                                           'source':source,
+                                           'election': election,
+                                           'election_administration':election_administration,
+                                           'department': department,
+                                           'person': person,
+                                           'locality':locality,
+                                           'polling_location': polling_location,
+                                           'schedule': schedule})
                                                  
-    print_state_report(state_feed['state_abbrv'][0], state_data, election_authorities)
+    # PRINT state report
+    state_report(state_abbrv, state_feed, state_data, 
+                 election_authorities, {'state':state, 
+                                        'source':source,
+                                        'election': election,
+                                        'election_administration':election_administration,
+                                        'department': department,
+                                        'person': person,
+                                        'locality':locality,
+                                        'polling_location': polling_location,
+                                        'schedule': schedule})
+
 
     return
 
     
-def clean_data(state_feed, state_data, election_authorities):
+
+def clean_data(state_abbrv, state_feed, state_data, election_authorities):
     """
     PURPOSE: cleans and formats state_feed, state_data, & election_authorities to output standards
-    INPUT: state_feed, state_data
-    RETURN: state_feed, state_data dataframes
+    INPUT: state_abbrv, state_feed, state_data, election_authorities
+    RETURN: state_feed, state_data, election_authorities dataframes
     """
+
+    # CREATE/FORMAT | Adjust variables to desired standards shared across relevant .txt files
 
     # RESET state_feed index
     state_feed.reset_index(drop=True, inplace=True)
@@ -127,6 +162,7 @@ def clean_data(state_feed, state_data, election_authorities):
     
     # FORMAT hours (2 formatted)
     state_data['start_time'] = state_data['start_time'].str.replace(' ', '')
+    state_data['start_time'] = state_data['start_time'].str.replace(';', ':')
     state_data['start_time'] = state_data['start_time'].str.replace('-',':00-')
     temp = state_data['start_time'].str.split('-', n=1, expand=True)
     temp[0] = temp[0].str.pad(8, side='left', fillchar='0')
@@ -134,6 +170,7 @@ def clean_data(state_feed, state_data, election_authorities):
     state_data['start_time'] = temp[0] + '-' + temp[1]
 
     state_data['end_time'] = state_data['end_time'].str.replace(' ', '')
+    state_data['end_time'] = state_data['end_time'].str.replace(';', ':')
     state_data['end_time'] = state_data['end_time'].str.replace('-',':00-')
     temp = state_data['end_time'].str.split('-', n=1, expand=True)
     temp[0] = temp[0].str.pad(8, side='left', fillchar='0')
@@ -155,10 +192,23 @@ def clean_data(state_feed, state_data, election_authorities):
 
     # FORMAT ocd division ids (2 formatted)
     state_data['OCD_ID'] = state_data['OCD_ID'].str.strip()
-    election_authorities['ocd_division'] = election_authorities['ocd_division'].str.strip()
+    if not election_authorities.empty:
+        election_authorities['ocd_division'] = election_authorities['ocd_division'].str.upper().str.strip()
     
-    state_data['address_line'] = state_data['address_line'].str.strip()
+    state_data['address_line'] = state_data['address_line'].str.strip().str.replace('\\s{2,}', ' ')
     state_data['location_name'] = state_data['location_name'].str.strip().str.replace('\'S', '\'s')
+    
+    # _____________________________________________________________________________________________________________________
+
+    # ERROR HANDLING | Interventionist adjustments to account for state eccentricities and common hand collection mistakes, etc
+
+    # FORMAT address line (1 formatted)
+    # NOTE: A common outreach error was missing state abbreviations in the address line
+    state_abbrv_with_space = state_feed['state_abbrv'][0].center(4, ' ')
+    state_data['address_line'] = state_data['address_line'].str.replace('.','')
+    insert_state_abbrv = lambda x: x if re.search('(\\d{5})$', x) == None else \
+                                  (re.sub('[ ](?=[^ ]+$)', state_abbrv_with_space,  x) if state_abbrv_with_space not in x else x)
+    state_data['address_line'] = state_data['address_line'].apply(lambda x: insert_state_abbrv(x))
 
 
     return state_feed, state_data, election_authorities
@@ -300,7 +350,7 @@ def generate_locality(state_feed, state_data, election_authorities):
 
     # CREATE/FORMAT feature(s) (4 created, 1 formatted)
     locality['state_id'] = state_feed['state_id'][0]
-    locality['name'] = locality['OCD_ID'].str.extract('([^\\:]*)$')
+    locality['name'] = locality['OCD_ID'].str.extract('([^\\:]*)$', expand=False)
     locality['external_identifier_type'] = state_feed['external_identifier_type'][0]
     locality.reset_index(drop=True, inplace=True) 
     locality['id'] = 'loc' + (locality.index + 1).astype(str).str.zfill(4)
@@ -380,13 +430,13 @@ def generate_person(election_authorities):
 
     
  
-def generate_zip(state_abbrv, official_name, files):
+def generate_zip(state_abbrv, state_feed, files):
     """
     PURPOSE: create .txt files and export into a folder for 1 state
     (election.txt, polling_location.txt, schedule.txt, source.txt, state.txt, locality.txt, 
-    election_administration.txt, department.txt, person.txt)
-    INPUT: state_abbrv, official_name, files
-    RETURN: exports zip of 9 .txt files
+    election_administration.txt, department.txt, person.txt, precinct.txt, street_segment.txt)
+    INPUT: state_abbrv, state_feed, files
+    RETURN: exports zip of 11 .txt files
     """
 
     # WRITE dataframes to txt files
@@ -396,15 +446,13 @@ def generate_zip(state_abbrv, official_name, files):
         file = name + '.txt'
         file_list.append(file)
         df.to_csv(file, index=False, encoding='utf-8')
-        
-        print(state_abbrv, name, "|", len(df.index), "row(s)")
 
     # CREATE state directory
     if not os.path.exists(state_abbrv):
         os.makedirs(state_abbrv)
-
+    
     # DEFINE name of zipfile
-    zip_filename = 'vipfeed-ev-' + str(state_feed['election_date'][0].date()) + '-' + state_feed['state_abbrv'][0] + '.zip'
+    zip_filename = 'vipfeed-pp-' + str(state_feed['election_date'][0].date()) + '-' + state_abbrv + '.zip'
 
     # WRITE files to a zipfile
     with ZipFile(zip_filename, 'w') as zip:
@@ -412,139 +460,229 @@ def generate_zip(state_abbrv, official_name, files):
             zip.write(file)
             os.rename(file, os.path.join(state_abbrv, file))
 
-    return
+
+    return 
 
 
-def print_state_report(state_abbrv, state_data, election_authorities):
+
+
+###########################################################################################################################
+# END OF VIP BUILD FUNCTION DEFINITIONS ###################################################################################
+###########################################################################################################################
+
+
+
+def state_report(state_abbrv, state_feed, state_data, election_authorities, files):
     """
-    PURPOSE: to print report on OCD IDs for the state being processed 
-    INPUT: state_data, election_authorities
-    RETURN: N/A
+    PURPOSE: print state report (general descriptive stats and warnings)
+    INPUT: state_abbrv, state_feed, state_data, election_authorities, files
+    RETURN: 
     """
-    # HANDLE case where election_authorities is empty
-    if election_authorities.empty:
-        print()
-        print('Note:', state_abbrv, 'does not include Election Authorities data.')
+    
+    # PRINT state name
+    print('\n'*1)
+    state_name_with_space = ' ' + state_feed['official_name'][0].upper() + ' '
+    print(state_name_with_space.center(PRINT_OUTPUT_WIDTH, '-'))
+    print('\n')
+    
+    # PRINT the length of text files in zip
+    print('.txt Size'.center(PRINT_OUTPUT_WIDTH, ' '))
+    print()
+    for name, df in files.items():
 
-    else:
-        # CREATE dataframes of unique OCD IDs for election authorities and state data
+        print(f'{name:>{PRINT_CENTER-2}} | {len(df.index)} row(s)')
+
+    # PRINT count of unique OCD IDs
+    sd = state_data[['OCD_ID']] # CREATE count of unique OCD IDs in state_data
+    sd.drop_duplicates(inplace=True)
+    print('\n'*2) 
+    print('# of Unique Counties/Places  '.center(PRINT_OUTPUT_WIDTH, ' ')) 
+    print()
+    print(f"{'State Data |':>{PRINT_CENTER}} {len(sd)} counties/places")
+    if not election_authorities.empty:
         ea = election_authorities[['ocd_division']]
         ea.drop_duplicates(inplace=True)
-        sd = state_data[['OCD_ID']]
-        sd.drop_duplicates(inplace=True)
+        print(f"{'Election Authorities |':>{PRINT_CENTER}} {len(ea)} counties/places")
 
-        # PRINT count of unique OCD IDs
+    # _____________________________________________________________________________________________________________________
+
+
+    # GENERATE warnings
+    missing_data_rows = warning_missing_data(state_data)
+    multi_directions_rows = warning_multi_directions(state_abbrv, state_data)
+    cross_street_rows = warning_cross_street(state_data)
+    date_year_rows = warning_date_year(state_data)
+
+    if missing_data_rows or multi_directions_rows or cross_street_rows or date_year_rows:
+        print('\n'*2)
+        print( '---------------------- WARNINGS ----------------------'.center(PRINT_OUTPUT_WIDTH, ' ')) 
+        STATES_WITH_WARNINGS.append(state_abbrv) # RECORD states with warnings
+
+    if missing_data_rows:
+        print('\n')
+        print('Missing Data'.center(PRINT_OUTPUT_WIDTH, ' '))
         print()
-        print('Unique OCD IDs listed |', len(sd), ' in state data <>', len(ea), ' in election authorities')
-        
-        # PRINT count of OCD IDs that match with election authorities
-        diff_election_authorities = ea.merge(sd, how = 'left', left_on = 'ocd_division', right_on = 'OCD_ID')
-        diff_election_authorities = diff_election_authorities[diff_election_authorities['OCD_ID'].isnull() == False]
-        print('Percent of OCD IDs in state data matching those in election authorities |', '{:.2%}'.format(len(diff_election_authorities)/len(ea)))
-        
-        # PRINT count of OCD IDs that are unique to state data
-        diff_state_data = sd.merge(ea, how = 'left', left_on = 'OCD_ID', right_on = 'ocd_division')
-        diff_state_data = diff_state_data[diff_state_data['ocd_division'].isnull()]
-        print('Percent of OCD IDs found only in state data |', '{:.2%}'.format(len(diff_state_data)/len(sd)))
+        print(str(missing_data_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
 
-    print()
+    if multi_directions_rows:
+        print('\n')
+        print('Polling Locations have Multiple Directions'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(multi_directions_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
 
-    return
+    if cross_street_rows:
+        print('\n')
+        print('Problematic Cross-Street Formats'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(cross_street_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+
+    if date_year_rows:
+        print()
+        print('Dates have Invalid Years'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(date_year_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
 
 
-def warning_missing_data(state_abbrv, state_data):
+    print('\n'*1)
+    print('_'*PRINT_OUTPUT_WIDTH)
+    print('\n'*2)
+
+
+    return 
+
+
+
+def warning_missing_data(state_data):
     """
-    PURPOSE: To display a warning for empty fields in select columns of state_data
-    INPUT: state_abbrv, state_data
-    RETURN: True if there is missing data, False otherwise
+    PURPOSE: isolate which rows, if any, are missing data in the state data 
+    INPUT: state_data
+    RETURN: missing_data_rows
     """
 
     missing_data_check = state_data[state_data.columns.difference(['directions', 'start_time', 'end_time', 'internal_notes'])].isnull().any(axis=1)
     missing_data_check.index = missing_data_check.index + 1  # INCREASE INDEX to correspond with google sheets index
-    if missing_data_check.any(): # IF any rows have missing data (col set to True)
-        print()
-        print('!!! WARNING !!!', state_abbrv, 'is missing data from the following rows:')
-        missing_data_list = missing_data_check.loc[lambda x: x==True].index.values.tolist()
-        if len(missing_data_list) < 50:
-            print (missing_data_check.loc[lambda x: x==True].index.values.tolist())
-        else:
-            print('[ More than 50 rows are missing data ]')
-        print()
-        print()
-        return True
 
-    return False
+    missing_data_rows = []
+    if missing_data_check.any(): # IF any data is missing
+        if len(missing_data_check) < 30: # IF less than 30 rows are missing
+            missing_data_rows = missing_data_check.loc[lambda x: x==True].index.values.tolist()
+
+        else: # IF there are more than 30 rows with missing data then simply notify user
+            missing_data_rows = ['More than 30 rows with missing data']
 
 
-def warning_multiple_directions(state_abbrv, state_data):
-    # Tested with ND (2018 EV data)
+    return missing_data_rows
+
+
+
+def warning_cross_street(state_data):
     """
-    PURPOSE: To display a warning for locations in state_data that are listed with multiple directions
-    INPUT: state_abbrv, state_data
-    RETURN: True if there are locations with multiple directions, False otherwise
+    PURPOSE: isolate which rows, if any, have invalid cross street (e.g. 1st & Main St)
+    INPUT: state_data
+    RETURN: cross_street_rows
     """
 
+    # NOTE: invalid cross streets sometimes do not map well on Google's end 
+    cross_street_addresses = state_data[state_data['address_line'].str.contains(' & | and ')]
+    cross_street_rows = list(cross_street_addresses.index + 1)
+
+
+    return cross_street_rows
+
+
+
+def warning_multi_directions(state_abbrv, state_data):
+    """
+    PURPOSE: isolate which polling locations, if any, have multiple directions (may cause errors)
+    INPUT: state_data
+    RETURN: multi_directions_rows
+    """
+
+    # SELECT feature(s) (4 selected)
     unique_rows = state_data[['OCD_ID', 'location_name', 'address_line', 'directions']].drop_duplicates()
     duplicate_locations = unique_rows[unique_rows.duplicated(subset=['OCD_ID', 'location_name', 'address_line'],keep=False)]
 
-    if not duplicate_locations.empty:
+    multi_directions_rows = []
+    if not duplicate_locations.empty: # IF the dataframe is not empty
         duplicate_locations.index = duplicate_locations.index + 1  # INCREASE INDEX to correspond with google sheets index
-        groupby_duplicate_locations = sorted([tuple(x) for x in duplicate_locations.groupby(['OCD_ID', 'location_name', 'address_line']).groups.values()])
-        print()
-        print('!!! WARNING !!!', state_abbrv, 'has locations listed with multiple directions in the following rows:')
-        print(groupby_duplicate_locations)
-        print()
-        print()
-        return True
-
-    return False
+        multi_directions_rows = sorted([tuple(x) for x in duplicate_locations.groupby(['OCD_ID', 'location_name', 'address_line']).groups.values()])
 
 
-def warning_cross_streets(state_abbrv, state_data):
+    return multi_directions_rows
+
+
+
+def warning_date_year(state_data): # CRITICAL
     """
-    PURPOSE: To display a warning for addresses in state_data that are formatted as cross-streets
-    INPUT: state_abbrv, state_data
-    RETURN: True if there are addresses included as cross-streets, False otherwise
+    PURPOSE: isolate which rows, if any, have multiple directions (may cause errors)
+    INPUT: state_data
+    RETURN: date_year_rows
     """
 
-    cross_street_addresses = state_data[state_data['address_line'].str.contains(' & | and ')]
-
-    if not cross_street_addresses.empty:
-        print()
-        print('!!! WARNING !!!', state_abbrv, 'contains addresses with invalid cross-streets format in the following rows:')
-        print(list(cross_street_addresses.index + 1))
-        print()
-        print()
-        return True
-
-    return False
-
-
-def warning_invalid_year(state_abbrv, state_data):
-    """
-    PURPOSE: To display a warning for dates in state_data that include an invalid year (defined as year != 2018)
-    INPUT: state_abbrv, state_data
-    RETURN: True if there are dates with an invalid year, False otherwise
-    """
-
+    # ISOLATE data errors in 2 features
     incorrect_start_dates = state_data[state_data['start_date'].dt.year != 2018]
     incorrect_end_dates = state_data[state_data['end_date'].dt.year != 2018]
     incorrect_dates = incorrect_start_dates.append(incorrect_end_dates)
 
-    if not incorrect_dates.empty:
+    date_year_rows = list(set(incorrect_dates.index + 1))
+
+
+    return date_year_rows
+
+
+
+def summary_report(num_input_states, increment_httperror, increment_processingerror, increment_success,
+                   states_failed_to_load, states_failed_to_process, states_successfully_processed):
+    """
+    PURPOSE: print summary report
+    INPUT: increment_httperror, increment_processingerror, increment_success,
+           states_failed_to_load, states_failed_to_process, states_successfully_processed
+    RETURN: 
+    """
+
+    # PRINT final report
+    print('\n'*1)
+    print('SUMMARY REPORT'.center(PRINT_OUTPUT_WIDTH, ' '))
+    print('\n'*1)
+    print('Final Status for All Requested States'.center(PRINT_OUTPUT_WIDTH, ' '))
+    print()
+    print(f"{'Failed to load state data |':>{PRINT_CENTER}} {increment_httperror} state(s) out of {num_input_states}")
+    print(f"{'Failed to process |':>{PRINT_CENTER}} {increment_processingerror} state(s) out of {num_input_states}")
+    print(f"{'Successfully processed |':>{PRINT_CENTER}} {increment_success} state(s) out of {num_input_states}")
+
+    if states_failed_to_load:
+        print('\n'*1)
+        print('States that failed to load state data'.center(PRINT_OUTPUT_WIDTH, ' '))
         print()
-        print('!!! WARNING !!!', state_abbrv, 'contains dates with an invalid year in the following rows:')
-        print(list(set(incorrect_dates.index + 1)))
+        print(str(states_failed_to_load).strip('[]').replace('\'', '').center(PRINT_OUTPUT_WIDTH, ' '))
+        
+    if states_failed_to_process:
+        print('\n'*1)
+        print('States that failed to process & why'.center(PRINT_OUTPUT_WIDTH, ' '))
         print()
+        print(str(states_failed_to_process).strip('[]').replace('\'', '').center(PRINT_OUTPUT_WIDTH, ' '))
+
+    if STATES_WITH_WARNINGS:      
+        print('\n'*1)
+        print('States that processed with warnings'.center(PRINT_OUTPUT_WIDTH, ' '))
         print()
-        return True
+        print(str(STATES_WITH_WARNINGS).strip('[]').replace('\'', '').center(PRINT_OUTPUT_WIDTH, ' '))
+        
+    if states_successfully_processed:
+        print('\n'*1)
+        print('States that sucessfully processed'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(states_successfully_processed).strip('[]').replace('\'', '').center(PRINT_OUTPUT_WIDTH, ' '))
+    
+    print('\n'*3)
 
-    return False
+
+    return
 
 
-           
-##################################################### END OF FUNCTION DEFINITIONS
-
+###########################################################################################################################
+# END OF REPORT RELATED DEFINITIONS #######################################################################################
+###########################################################################################################################
 
 
 if __name__ == '__main__':
@@ -552,8 +690,11 @@ if __name__ == '__main__':
 
     # SET UP command line inputs
     parser = argparse.ArgumentParser()
-    parser.add_argument('--nargs', nargs='+')
-    
+    parser.add_argument('-states', nargs='+')
+
+    print('Timestamp:', datetime.datetime.now().replace(microsecond=0))
+
+    # _____________________________________________________________________________________________________________________
 
     # SET UP Google API credentials
     # REQUIRES a local 'token.json' file & 'credentials.json' file
@@ -568,111 +709,86 @@ if __name__ == '__main__':
     
     try: 
         # LOAD state feed data
-        state_feed_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range='STATE_FEED').execute()
+        state_feed_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, 
+                                                                range='STATE_FEED').execute()
         state_feed_values = state_feed_result.get('values', [])
     except:
-        print('Error: STATE_FEED Google Sheet is either missing from the Google workbook or there is data reading error.')
+        print('Error: STATE_FEED Google Sheet is either missing from the workbook or there is data reading error.')
         raise
 
     try: 
         # LOAD election authorities data
-        election_authorities_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_EA_ID, range='ELECTION_AUTHORITIES').execute()
+        election_authorities_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_EA_ID, 
+                                                                          range='ELECTION_AUTHORITIES').execute()
         election_authorities_values = election_authorities_result.get('values', [])
     except:
-        print('Error: ELECTION_AUTHORITIES Google Sheet is either missing from the Google workbook or there is data reading error.')
+        print('Error: ELECTION_AUTHORITIES Google Sheet is either missing from the workbook or there is data reading error.')
         raise
-    
 
+    # _____________________________________________________________________________________________________________________
+
+    # PROCESS all user requested states 
+
+    # STORE states with errors
     states_successfully_processed = [] # STORE states that successfully create zip files
-    states_with_warnings = [] # STORE states that are missing data
-    states_not_processed = [] # STORE states that are not processed
+    states_failed_to_load = [] # STORE states whose data failed to load
+    states_failed_to_process = [] # STORE states that failed to process
     increment_success = 0 # STORE count of states successfully processed
     increment_httperror = 0 # STORE count of states that could not be retrieved or found in Google Sheets
     increment_processingerror = 0 # STORE count of states that could not be processed
     
-    # PROCESS each state individually
+    # PROCESS each state individually (input_states are requested states listed as state abbreviations)
     for _, input_states in parser.parse_args()._get_kwargs(): # ITERATE through input arguments
 
 
         input_states = [state.upper() for state in input_states] # FORMAT all inputs as uppercase
         
         # GENERATE state_feed & election_authorities dataframe
-        state_feed_all = pd.DataFrame(state_feed_values[1:],columns=state_feed_values[0])
-        election_authorities_all = pd.DataFrame(election_authorities_values[0:],columns=election_authorities_values[0])
+        state_feed_all = pd.DataFrame(state_feed_values[1:], columns=state_feed_values[0])
+        election_authorities_all = pd.DataFrame(election_authorities_values[0:], columns=election_authorities_values[0])
         election_authorities_all.drop([0], inplace=True)
 
 
         if 'ALL' in input_states: # IF user requests all states to be processed
             
-            input_states = state_feed_all['state_abbrv'].unique().tolist() # EXTRACT unique list of 50 state abbreviations
+            input_states = state_feed_all['state_abbrv'].unique().tolist() # FORMAT unique list of 50 state abbreviations
 
-        for state in input_states:
+
+        for state_abbrv in input_states:
         
             try:
             
                 # LOAD state data
-                state_data_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=state).execute()
+                state_data_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=state_abbrv).execute()
                 state_data_values = state_data_result.get('values', [])
                 state_data = pd.DataFrame(state_data_values[0:],columns=state_data_values[0])
                 state_data.drop([0], inplace=True)
                     
                 # FILTER state_feed and election_authorities
-                state_feed = state_feed_all[state_feed_all['state_abbrv'] == state] # FILTER state_feed_all for selected state
-                election_authorities = election_authorities_all[election_authorities_all['state'] == state] # FILTER election_authorities_all for selected state
+                state_feed = state_feed_all[state_feed_all['state_abbrv'] == state_abbrv] # FILTER state_feed_all for selected state
+                election_authorities = election_authorities_all[election_authorities_all['state'] == state_abbrv] # FILTER election_authorities_all for selected state
 
-                # CLEAN/FORMAT state_feed and state_data
-                state_feed, state_data, election_authorities = clean_data(state_feed, state_data, election_authorities)
 
-                # PRINT state name
-                print('\n'*1)
-                print(state_feed['official_name'][0].center(80, '-'))
-                print()
-
-                # WARNINGS for missing/incorrect/unusual data
-                missing_data = warning_missing_data(state_feed['state_abbrv'][0], state_data)
-                multiple_directions = warning_multiple_directions(state_feed['state_abbrv'][0], state_data)
-                cross_streets = warning_cross_streets(state_feed['state_abbrv'][0], state_data)
-                invalid_year = warning_invalid_year(state_feed['state_abbrv'][0], state_data)
-                if missing_data or multiple_directions or cross_streets or invalid_year:
-                    states_with_warnings.append(state)
-
-                # VIP BUILD
-                vip_build(state_data, state_feed, election_authorities)
+                # GENERATE zip file and print state report
+                vip_build(state_abbrv, state_feed, state_data, election_authorities)
                 
-                states_successfully_processed.append(state)
-                increment_success +=1
 
+                states_successfully_processed.append(state_abbrv)
+                increment_success +=1
+            
             except HttpError:
-                print ('ERROR:', state, 'could not be found or retrieved from Google Sheets.')
                 increment_httperror += 1
-                states_not_processed.append(state)
+                states_failed_to_load.append(state_abbrv)
 
             except Exception as e:
-                print ('ERROR:', state, 'could not be processed.', type(e).__name__, ':', e)
                 increment_processingerror += 1
-                states_not_processed.append(state)
+                states_failed_to_process.append((state_abbrv, type(e).__name__, e))
 
 
-    # PRINT final report
-    print('_'*80)
-    print('\n'*1)
-    print('Summary Report'.center(80, ' '))
-    print('\n'*1)
-    print('Number of states that could not be found or retrieved from Google Sheets:', increment_httperror)
-    print('Number of states that could not be processed:', increment_processingerror)
-    print('Number of states that processed sucessfully:', increment_success)
+    summary_report(len(input_states), increment_httperror, increment_processingerror, increment_success,
+                   states_failed_to_load, states_failed_to_process, states_successfully_processed)
 
 
-    print()
-    print('List of states that did not process:')
-    print(states_not_processed)
-    print()
-    print('List of states with data warnings:')
-    print(states_with_warnings)
-    print()
-    print('List of states that processed sucessfully:')
-    print(states_successfully_processed)
-    print('\n'*1)
-    print('_'*80)
-    print('\n'*2)
-    
+    print('Timestamp:', datetime.datetime.now().replace(microsecond=0))
+
+
