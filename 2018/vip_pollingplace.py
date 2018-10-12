@@ -178,7 +178,7 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities, target
     state_data['county'] = state_data['county'].str.upper().str.strip()
     target_smart['vf_county_name'] = target_smart['vf_county_name'].str.upper().str.strip()
     election_authorities['ocd_division'] = election_authorities['ocd_division'].str.upper().str.strip()
-    election_authorities['county'] = election_authorities['ocd_division'].str.extract('\\/\\w+\\:(\\w+\'?\\-?\\~?\\w+?)$').str.replace('_', ' ').str.replace('~', "'")
+    election_authorities['county'] = election_authorities['ocd_division'].str.extract('\\/\\w+\\:(\\w+\'?\\-?\\~?\\w+?)$', expand=False).str.replace('_', ' ').str.replace('~', "'")
     
     # FORMAT precinct (2 formatted)
     state_data['precinct'] = state_data['precinct'].str.strip().str.upper()
@@ -554,7 +554,7 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
     
     # CREATE feature(s) (7 created)
     street_segment['street_suffix'] = street_segment['vf_reg_address_1'].str.strip().str.extract(street_suffix_regex, expand = True)
-    street_segment['temp'] = street_segment['vf_reg_address_1'].str.strip().str.extract('^(\\d+\\s+\\d+/\\d+|\\d+\\w+|\\d+)').astype(str).str.replace('nan', '')
+    street_segment['temp'] = street_segment['vf_reg_address_1'].str.strip().str.extract('^(\\d+\\s+\\d+/\\d+|\\d+\\w+|\\d+)', expand=False).str.replace('nan', '')
     street_segment['house_number'] = street_segment['temp'].str.extract('^(\\d+)')
     street_segment['start_house_number'] = street_segment['house_number']
     street_segment['end_house_number'] = street_segment['house_number']
@@ -1025,7 +1025,8 @@ if __name__ == '__main__':
                 increment_httperror += 1
                 states_failed_to_load.append(state_abbrv)
                 
-            except:
+            except Exception as e:
+                print ('Error:', state_abbrv, 'could not be processed.', type(e).__name__, ':', e)
                 increment_processingerror += 1
                 states_failed_to_process.append(state_abbrv)
 

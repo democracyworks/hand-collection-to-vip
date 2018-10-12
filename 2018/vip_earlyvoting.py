@@ -369,7 +369,7 @@ def generate_person(election_authorities):
     # CREATE/FORMAT feature(s) (2 created, 1 formatted)
     person.drop_duplicates('election_official_person_id', keep='first',inplace=True)
     person['profession'] = 'ELECTION ADMINISTRATOR'
-    person['title'] = person['ocd_division'].str.extract('([^\\:]*)$').str.upper() + ' ' + person['official_title'].str.upper()
+    person['title'] = person['ocd_division'].str.extract('([^\\:]*)$', expand=False).str.upper() + ' ' + person['official_title'].str.upper()
     person.rename(columns={'election_official_person_id':'id'}, inplace=True)
 
     # REMOVE feature(s) (2 removed)
