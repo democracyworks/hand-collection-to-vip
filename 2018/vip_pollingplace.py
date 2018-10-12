@@ -1,8 +1,6 @@
 from __future__ import print_function
-
 import warnings
 warnings.filterwarnings('ignore')
-
 from sys import argv
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
@@ -18,6 +16,9 @@ import json
 import mysql.connector 
 import numpy as np
 
+# _________________________________________________________________________________________________________________________
+
+# SET global variables and print display formats
 pd.set_option('display.max_columns', 100)  # or 1000 or None
 pd.set_option('display.max_rows', 100)  # or 1000 or None
 PRINT_OUTPUT_WIDTH = 100 # SET print output length
@@ -25,12 +26,14 @@ PRINT_CENTER = 50
 
 STATES_WITH_WARNINGS = [] # STORE states that trigger warnings
 
+# _________________________________________________________________________________________________________________________
+
+# SET SCOPES & Google Spreadsheet IDs (2 IDs)
+
 # PRO-TIP: if modifying these scopes, delete the file token.json.
 SCOPES = 'https://www.googleapis.com/auth/spreadsheets.readonly'
 
-# SET Google Spreadsheet IDs (2 IDs)
-
-# states & STATE_FEED
+# state data & STATE_FEED
 # https://docs.google.com/spreadsheets/d/1o68iC82jt7WOoTYn_rdda2472Fn2_2_FRBsgZla5v8M/edit#gid=2009403147
 SPREADSHEET_ID = '1o68iC82jt7WOoTYn_rdda2472Fn2_2_FRBsgZla5v8M' 
 
@@ -39,12 +42,16 @@ SPREADSHEET_ID = '1o68iC82jt7WOoTYn_rdda2472Fn2_2_FRBsgZla5v8M'
 SPREADSHEET_EA_ID = '1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_y2o' 
 
 
+# _________________________________________________________________________________________________________________________
+
+
+
 def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_smart):
     """
     PURPOSE: transforms state_data and state_feed data into .txt files, exports zip of 11 .txt files
     (election.txt, polling_location.txt, schedule.txt, source.txt, state.txt, locality.txt, 
     election_administration.txt, department.txt, person.txt, precinct.txt, street_segment.txt)
-    INPUT: state_data, state_feed, election_authorities, target_smart
+    INPUT: state_abbrv, state_data, state_feed, election_authorities, target_smart
     RETURN: None
     """
     
@@ -106,17 +113,17 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
     precinct.drop(['county'], axis=1, inplace=True) # DROP county from precinct after being passed to street_segment
 
     # GENERATE zip file
-    generate_zip(state_abbrv, {'election': election,
-                               'polling_location': polling_location,
-                               'schedule': schedule,
-                               'source':source,
-                               'state':state,
-                               'locality':locality,
-                               'election_administration':election_administration,
-                               'department': department, 
-                               'person': person,
-                               'precinct': precinct,
-                               'street_segment': street_segment})
+    generate_zip(state_abbrv, state_feed, {'election': election,
+                                           'polling_location': polling_location,
+                                           'schedule': schedule,
+                                           'source':source,
+                                           'state':state,
+                                           'locality':locality,
+                                           'election_administration':election_administration,
+                                           'department': department, 
+                                           'person': person,
+                                           'precinct': precinct,
+                                           'street_segment': street_segment})
 
     # PRINT state report
     state_report(state_abbrv, state_feed, state_data, 
@@ -143,9 +150,11 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities, target
     INPUT: state_feed, state_data, election_authorities, target_smart
     RETURN: state_feed, state_data dataframe, election_authorities, target_smart dataframes
     """
-    # _____________________________________________________________________________________________________________________
 
     # CREATE/FORMAT | Adjust variables to desired standards shared across relevant .txt files
+
+    # REPLACE empty strings with NaNs
+    state_data = state_data.replace('^\\s*$', np.nan, regex=True)
 
     # FORMAT dates (3 formatted)
     state_feed['election_date'] = pd.to_datetime(state_feed['election_date'])
@@ -187,6 +196,7 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities, target
     # FORMAT voter file addresses (1 formatted)
     target_smart['vf_reg_address_1'] = target_smart['vf_reg_address_1'].str.upper().str.strip()
     target_smart['vf_reg_address_1'] = target_smart['vf_reg_address_1'].str.replace('\\s{2,}', ' ')
+
     # _____________________________________________________________________________________________________________________
 
     # ERROR HANDLING | Interventionist adjustments to account for state eccentricities and common hand collection mistakes, etc
@@ -553,8 +563,8 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
     street_suffix_regex = re.compile(r'\b(' + '|'.join(street_suffix_list) + r')$\b', re.IGNORECASE)
     
     # CREATE feature(s) (7 created)
-    street_segment['street_suffix'] = street_segment['vf_reg_address_1'].str.strip().str.extract(street_suffix_regex, expand = True)
-    street_segment['temp'] = street_segment['vf_reg_address_1'].str.strip().str.extract('^(\\d+\\s+\\d+/\\d+|\\d+\\w+|\\d+)', expand=False).str.replace('nan', '')
+    street_segment['street_suffix'] = street_segment['vf_reg_address_1'].str.strip().str.extract(street_suffix_regex, expand=True)
+    street_segment['temp'] = street_segment['vf_reg_address_1'].str.strip().str.extract('^(\\d+\\s+\\d+/\\d+|\\d+\\w+|\\d+)', expand=False).astype(str).str.replace('nan', '')
     street_segment['house_number'] = street_segment['temp'].str.extract('^(\\d+)')
     street_segment['start_house_number'] = street_segment['house_number']
     street_segment['end_house_number'] = street_segment['house_number']
@@ -619,22 +629,20 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
     street_segment.drop_duplicates(inplace=True)
     street_segment.reset_index(drop=True, inplace=True) # RESET index
     street_segment['id'] = 'ss' + (street_segment.index + 1).astype(str).str.zfill(9) 
- 
 
 
     return street_segment
 
 
 
-def generate_zip(state_abbrv, files):
+def generate_zip(state_abbrv, state_feed, files):
     """
     PURPOSE: create .txt files and export into a folder for 1 state
     (election.txt, polling_location.txt, schedule.txt, source.txt, state.txt, locality.txt, 
     election_administration.txt, department.txt, person.txt, precinct.txt, street_segment.txt)
-    INPUT: state_abbrv, files
+    INPUT: state_abbrv, state_feed, files
     RETURN: exports zip of 11 .txt files
     """
-
 
     # WRITE dataframes to txt files
     file_list = []
@@ -657,11 +665,14 @@ def generate_zip(state_abbrv, files):
             zip.write(file)
             os.rename(file, os.path.join(state_abbrv, file))
 
+
     return 
 
+
            
-   
-############################################################################################### END OF VIP BUILD RELATED DEFINITIONS
+###########################################################################################################################
+# END OF VIP BUILD FUNCTION DEFINITIONS ###################################################################################
+###########################################################################################################################
 
 
 
@@ -827,7 +838,7 @@ def warning_date_year(state_data): # CRITICAL
 
 
 
-def summary_report(increment_httperror, increment_processingerror, increment_success,
+def summary_report(num_input_states, increment_httperror, increment_processingerror, increment_success,
                    states_failed_to_load, states_failed_to_process, states_successfully_processed):
     """
     PURPOSE: print summary report
@@ -840,15 +851,15 @@ def summary_report(increment_httperror, increment_processingerror, increment_suc
     print('\n'*1)
     print('SUMMARY REPORT'.center(PRINT_OUTPUT_WIDTH, ' '))
     print('\n'*1)
-    print('# of States'.center(PRINT_OUTPUT_WIDTH, ' '))
+    print('Overall Process Status'.center(PRINT_OUTPUT_WIDTH, ' '))
     print()
-    print(f"{'Failed to load Google Sheets data |':>{PRINT_CENTER}} {increment_httperror} state(s)")
+    print(f"{'Failed to load state data |':>{PRINT_CENTER}} {increment_httperror} state(s)")
     print(f"{'Failed to process |':>{PRINT_CENTER}} {increment_processingerror} state(s)")
     print(f"{'Successfully processed |':>{PRINT_CENTER}} {increment_success} state(s)")
 
     if states_failed_to_load:
         print('\n'*1)
-        print('States that failed to load Google Sheets data'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print('States that failed to load state data'.center(PRINT_OUTPUT_WIDTH, ' '))
         print()
         print(str(states_failed_to_load).strip('[]').replace('\'', '').center(PRINT_OUTPUT_WIDTH, ' '))
         
@@ -876,9 +887,9 @@ def summary_report(increment_httperror, increment_processingerror, increment_suc
     return
 
 
-
-############################################################################################### END OF REPORT RELATED DEFINITIONS
-
+###########################################################################################################################
+# END OF REPORT RELATED DEFINITIONS #######################################################################################
+###########################################################################################################################
 
 
 if __name__ == '__main__':
@@ -886,8 +897,9 @@ if __name__ == '__main__':
 
     # SET UP command line inputs
     parser = argparse.ArgumentParser()
-    parser.add_argument('--nargs', nargs='+')
+    parser.add_argument('-states', nargs='+')
 
+    # PRINT timestamp to help user guage processing times
     print('Timestamp:', datetime.datetime.now().replace(microsecond=0))
 
     # _____________________________________________________________________________________________________________________
@@ -905,18 +917,20 @@ if __name__ == '__main__':
     
     try: 
         # LOAD state feed data
-        state_feed_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range='STATE_FEED').execute()
+        state_feed_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, 
+                                                                range='STATE_FEED').execute()
         state_feed_values = state_feed_result.get('values', [])
     except:
-        print('Error: STATE_FEED Google Sheet is either missing from the Google workbook or there is data reading error.')
+        print('Error | STATE_FEED Google Sheet is either missing from the workbook or there is data reading error.')
         raise
 
     try: 
         # LOAD election authorities data
-        election_authorities_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_EA_ID, range='ELECTION_AUTHORITIES').execute()
+        election_authorities_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_EA_ID, 
+                                                                          range='ELECTION_AUTHORITIES').execute()
         election_authorities_values = election_authorities_result.get('values', [])
     except:
-        print('Error: ELECTION_AUTHORITIES Google Sheet is either missing from the Google workbook or there is data reading error.')
+        print('Error | ELECTION_AUTHORITIES Google Sheet is either missing from the workbook or there is data reading error.')
         raise
 
     # _____________________________________________________________________________________________________________________
@@ -929,7 +943,7 @@ if __name__ == '__main__':
         conn_string = json.load(targetsmart_creds)
         conn = mysql.connector.connect(**conn_string)
     except:
-        print('Error: There is a database connection error.')
+        print('Error | There is a database connection error.')
 
     # SET list of vars selected in MySQL query
     targetsmart_sql_col_list = ['vf_precinct_name', 'vf_reg_address_1', 'vf_reg_address_2', 'vf_reg_city', 
@@ -966,7 +980,7 @@ if __name__ == '__main__':
 
         if 'ALL' in input_states: # IF user requests all states to be processed
             
-            input_states = state_feed_all['state_abbrv'].unique().tolist() # EXTRACT unique list of 50 state abbreviations
+            input_states = state_feed_all['state_abbrv'].unique().tolist() # FORMAT unique list of 50 state abbreviations
 
         
         for state_abbrv in input_states:
@@ -979,11 +993,12 @@ if __name__ == '__main__':
                 state_data = pd.DataFrame(state_data_values[0:], columns=state_data_values[0])
                 state_data.drop([0], inplace=True)
                 
-                state_feed = state_feed_all[state_feed_all['state_abbrv'] == state_abbrv] # FILTER state_feed_all for selected state
-                election_authorities = election_authorities_all[election_authorities_all['state'] == state_abbrv] # FILTER election_authorities_all for selected state
+                # FILTER dataframes for selected state (2 dataframes)
+                state_feed = state_feed_all[state_feed_all['state_abbrv'] == state_abbrv] 
+                election_authorities = election_authorities_all[election_authorities_all['state'] == state_abbrv] 
 
                 state_feed.reset_index(inplace=True) # RESET index
-                sql_table_name = state_feed['official_name'].str.lower().str.replace(' ', '') # CREATE MYSQL table name (format: full name, lowercase, no spaces)
+                sql_table_name = state_feed['official_name'][0].str.lower().str.replace(' ', '') # CREATE MYSQL table name (format: full name, lowercase, no spaces)
                
 
                 try: # LOAD TargetSmart data for a single state 
@@ -1011,9 +1026,10 @@ if __name__ == '__main__':
                     target_smart = pd.DataFrame(list(target_smart_values), columns=targetsmart_sql_col_list, dtype='object')
 
                 except:
-                    print('ERROR: TargetSmart data for', state_abbrv, 'is either missing from the database or there is data reading error.')
+                    print('ERROR | TargetSmart data for', state_abbrv, 'is either missing from the database or there is data reading error.')
 
 
+                # GENERATE zip file and print state report
                 vip_build(state_abbrv, state_feed, state_data, election_authorities, target_smart)
                 
 
@@ -1025,18 +1041,16 @@ if __name__ == '__main__':
                 increment_httperror += 1
                 states_failed_to_load.append(state_abbrv)
                 
-            except Exception as e:
-                print ('Error:', state_abbrv, 'could not be processed.', type(e).__name__, ':', e)
+            except Exception as e:                
                 increment_processingerror += 1
-                states_failed_to_process.append(state_abbrv)
-
+                states_failed_to_process.append((state, type(e).__name__, e))
 
 
     conn.close() # CLOSE MySQL database connection 
 
-    summary_report(increment_httperror, increment_processingerror, increment_success,
+    summary_report(len(input_states), increment_httperror, increment_processingerror, increment_success,
                    states_failed_to_load, states_failed_to_process, states_successfully_processed)
 
 
     print('Timestamp:', datetime.datetime.now().replace(microsecond=0))
-    print()
+
