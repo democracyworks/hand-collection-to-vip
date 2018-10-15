@@ -615,6 +615,11 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
             list_unique_hc_towns = temp['county'].unique().tolist()
             street_segment['vf_county_name'] = street_segment['city'].apply(lambda x: np.nan if x not in list_unique_hc_towns else x)
             street_segment['vf_county_name'].fillna(street_segment['vf_township'], inplace=True)
+            # NOTE: there is weird geography issue in Washington county and stoddard precinct for VALLEY RD addresses
+            street_segment.loc[(street_segment['street_name'] == 'VALLEY') & \
+                               (street_segment['street_suffix'] == 'RD') & \
+                               (street_segment['zip'] == '03280') & \
+                               (street_segment['city'] == 'WASHINGTON'), 'vf_precinct_name'] = 'WASHINGTON'
         street_segment = street_segment.merge(temp, left_on=['vf_precinct_name', 'vf_county_name'], right_on=['precinct', 'county'], how='left')
 
         # MERGE street_segment with precinct
