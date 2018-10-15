@@ -766,7 +766,8 @@ def warning_missing_data(state_data):
     RETURN: missing_data_rows
     """
 
-    missing_data_check = state_data[state_data.columns.difference(['directions', 'start_time', 'end_time', 'internal_notes'])].isnull().any(axis=1)
+    missing_data_check = state_data[state_data.columns.difference(['directions', 'start_time', 'end_time', 
+                                                                   'internal_notes', 'collected_precinct'])].isnull().any(axis=1)
     missing_data_check.index = missing_data_check.index + 1  # INCREASE INDEX to correspond with google sheets index
 
     missing_data_rows = []
