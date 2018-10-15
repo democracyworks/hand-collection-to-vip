@@ -852,11 +852,11 @@ def summary_report(num_input_states, increment_httperror, increment_processinger
     print('\n'*1)
     print('SUMMARY REPORT'.center(PRINT_OUTPUT_WIDTH, ' '))
     print('\n'*1)
-    print('Overall Process Status'.center(PRINT_OUTPUT_WIDTH, ' '))
+    print('Final Status for All Requested States'.center(PRINT_OUTPUT_WIDTH, ' '))
     print()
-    print(f"{'Failed to load state data |':>{PRINT_CENTER}} {increment_httperror} state(s)")
-    print(f"{'Failed to process |':>{PRINT_CENTER}} {increment_processingerror} state(s)")
-    print(f"{'Successfully processed |':>{PRINT_CENTER}} {increment_success} state(s)")
+    print(f"{'Failed to load state data |':>{PRINT_CENTER}} {increment_httperror} state(s) out of {num_input_states}")
+    print(f"{'Failed to process |':>{PRINT_CENTER}} {increment_processingerror} state(s) out of {num_input_states}")
+    print(f"{'Successfully processed |':>{PRINT_CENTER}} {increment_success} state(s) out of {num_input_states}")
 
     if states_failed_to_load:
         print('\n'*1)
