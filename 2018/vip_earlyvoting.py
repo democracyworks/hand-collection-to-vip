@@ -434,9 +434,9 @@ def generate_zip(state_abbrv, state_feed, files):
     """
     PURPOSE: create .txt files and export into a folder for 1 state
     (election.txt, polling_location.txt, schedule.txt, source.txt, state.txt, locality.txt, 
-    election_administration.txt, department.txt, person.txt, precinct.txt, street_segment.txt)
+    election_administration.txt, department.txt, person.txt)
     INPUT: state_abbrv, state_feed, files
-    RETURN: exports zip of 11 .txt files
+    RETURN: exports zip of 9 .txt files
     """
 
     # WRITE dataframes to txt files
@@ -452,7 +452,7 @@ def generate_zip(state_abbrv, state_feed, files):
         os.makedirs(state_abbrv)
     
     # DEFINE name of zipfile
-    zip_filename = 'vipfeed-pp-' + str(state_feed['election_date'][0].date()) + '-' + state_abbrv + '.zip'
+    zip_filename = 'vipfeed-ev-' + str(state_feed['election_date'][0].date()) + '-' + state_abbrv + '.zip'
 
     # WRITE files to a zipfile
     with ZipFile(zip_filename, 'w') as zip:
@@ -560,16 +560,12 @@ def warning_missing_data(state_data):
     """
 
     missing_data_check = state_data[state_data.columns.difference(['directions', 'start_time', 'end_time', 'internal_notes'])].isnull().any(axis=1)
-    missing_data_check.index = missing_data_check.index + 1  # INCREASE INDEX to correspond with google sheets index
-
     missing_data_rows = []
+
     if missing_data_check.any(): # IF any data is missing
-        if len(missing_data_check) < 30: # IF less than 30 rows are missing
-            missing_data_rows = missing_data_check.loc[lambda x: x==True].index.values.tolist()
-
-        else: # IF there are more than 30 rows with missing data then simply notify user
+        missing_data_rows = missing_data_check.loc[lambda x: x==True].index.values.tolist()
+        if len(missing_data_rows) > 30:  # IF there are more than 30 rows with missing data then simply notify user
             missing_data_rows = ['More than 30 rows with missing data']
-
 
     return missing_data_rows
 
@@ -584,7 +580,7 @@ def warning_cross_street(state_data):
 
     # NOTE: invalid cross streets sometimes do not map well on Google's end 
     cross_street_addresses = state_data[state_data['address_line'].str.contains(' & | and ')]
-    cross_street_rows = list(cross_street_addresses.index + 1)
+    cross_street_rows = list(cross_street_addresses.index)
 
 
     return cross_street_rows
@@ -604,7 +600,6 @@ def warning_multi_directions(state_abbrv, state_data):
 
     multi_directions_rows = []
     if not duplicate_locations.empty: # IF the dataframe is not empty
-        duplicate_locations.index = duplicate_locations.index + 1  # INCREASE INDEX to correspond with google sheets index
         multi_directions_rows = sorted([tuple(x) for x in duplicate_locations.groupby(['OCD_ID', 'location_name', 'address_line']).groups.values()])
 
 
@@ -624,7 +619,7 @@ def warning_date_year(state_data): # CRITICAL
     incorrect_end_dates = state_data[state_data['end_date'].dt.year != 2018]
     incorrect_dates = incorrect_start_dates.append(incorrect_end_dates)
 
-    date_year_rows = list(set(incorrect_dates.index + 1))
+    date_year_rows = list(set(incorrect_dates.index))
 
 
     return date_year_rows
