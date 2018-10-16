@@ -1004,8 +1004,8 @@ if __name__ == '__main__':
                 election_authorities = election_authorities_all[election_authorities_all['state'] == state_abbrv] 
 
                 state_feed.reset_index(inplace=True) # RESET index
-                sql_table_name = state_feed['official_name'][0].str.lower().str.replace(' ', '') # CREATE MYSQL table name (format: full name, lowercase, no spaces)
-               
+                sql_table_name = state_feed['official_name'].str.lower().str.replace(' ', '') # CREATE MYSQL table name (format: full name, lowercase, no spaces)
+
 
                 try: # LOAD TargetSmart data for a single state 
                                                     
