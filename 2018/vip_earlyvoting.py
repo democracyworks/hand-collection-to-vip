@@ -24,6 +24,8 @@ pd.set_option('display.max_rows', 100)  # or 1000 or None
 PRINT_OUTPUT_WIDTH = 100 # SET print output length
 PRINT_CENTER = int(PRINT_OUTPUT_WIDTH/2) # SET print output middle
 
+ELECTION_YEAR = 2018
+
 STATES_WITH_WARNINGS = [] # STORE states that trigger warnings
 
 # _________________________________________________________________________________________________________________________
@@ -510,7 +512,7 @@ def state_report(state_abbrv, state_feed, state_data, election_authorities, file
 
     # GENERATE warnings
     missing_data_rows = warning_missing_data(state_data)
-    multi_directions_rows = warning_multi_directions(state_abbrv, state_data)
+    multi_directions_rows = warning_multi_directions(state_data)
     cross_street_rows = warning_cross_street(state_data)
     date_year_rows = warning_date_year(state_data)
 
@@ -561,6 +563,7 @@ def warning_missing_data(state_data):
     """
 
     missing_data_check = state_data[state_data.columns.difference(['directions', 'start_time', 'end_time', 'internal_notes'])].isnull().any(axis=1)
+    missing_data_check.index = missing_data_check.index + 1  # INCREASE INDEX to correspond with google sheets index
     missing_data_rows = []
     
     if missing_data_check.any(): # IF any data is missing
@@ -582,16 +585,16 @@ def warning_cross_street(state_data):
 
     # NOTE: invalid cross streets sometimes do not map well on Google's end 
     cross_street_addresses = state_data[state_data['address_line'].str.contains(' & | and ')]
-    cross_street_rows = list(cross_street_addresses.index)
+    cross_street_rows = list(cross_street_addresses.index + 1)
 
 
     return cross_street_rows
 
 
 
-def warning_multi_directions(state_abbrv, state_data):
+def warning_multi_directions(state_data):
     """
-    PURPOSE: isolate which polling locations, if any, have multiple directions (may cause errors)
+    PURPOSE: isolate which polling locations, if any, have multiple directions (warning: each unique set of directions is considered a polling location)
     INPUT: state_data
     RETURN: multi_directions_rows
     """
@@ -599,6 +602,7 @@ def warning_multi_directions(state_abbrv, state_data):
     # SELECT feature(s) (4 selected)
     unique_rows = state_data[['OCD_ID', 'location_name', 'address_line', 'directions']].drop_duplicates()
     duplicate_locations = unique_rows[unique_rows.duplicated(subset=['OCD_ID', 'location_name', 'address_line'],keep=False)]
+    duplicate_locations.index = duplicate_locations.index + 1  # INCREASE INDEX to correspond with google sheets index
 
     multi_directions_rows = []
     if not duplicate_locations.empty: # IF the dataframe is not empty
@@ -611,17 +615,17 @@ def warning_multi_directions(state_abbrv, state_data):
 
 def warning_date_year(state_data): # CRITICAL
     """
-    PURPOSE: isolate which rows, if any, have multiple directions (may cause errors)
+    PURPOSE: isolate which rows, if any, have a start_date or end_date outside of the election year
     INPUT: state_data
     RETURN: date_year_rows
     """
 
     # ISOLATE data errors in 2 features
-    incorrect_start_dates = state_data[state_data['start_date'].dt.year != 2018]
-    incorrect_end_dates = state_data[state_data['end_date'].dt.year != 2018]
+    incorrect_start_dates = state_data[state_data['start_date'].dt.year != ELECTION_YEAR]
+    incorrect_end_dates = state_data[state_data['end_date'].dt.year != ELECTION_YEAR]
     incorrect_dates = incorrect_start_dates.append(incorrect_end_dates)
 
-    date_year_rows = list(set(incorrect_dates.index))
+    date_year_rows = list(set(incorrect_dates.index + 1))
 
 
     return date_year_rows
