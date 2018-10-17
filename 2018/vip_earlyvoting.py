@@ -151,6 +151,7 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities):
 
     # RESET state_feed index
     state_feed.reset_index(drop=True, inplace=True)
+    state_data.reset_index(drop=True, inplace=True)
 
     # REPLACE empty strings with NaNs
     state_data = state_data.replace('^\\s*$', np.nan, regex=True)
@@ -561,12 +562,13 @@ def warning_missing_data(state_data):
 
     missing_data_check = state_data[state_data.columns.difference(['directions', 'start_time', 'end_time', 'internal_notes'])].isnull().any(axis=1)
     missing_data_rows = []
-
+    
     if missing_data_check.any(): # IF any data is missing
         missing_data_rows = missing_data_check.loc[lambda x: x==True].index.values.tolist()
         if len(missing_data_rows) > 30:  # IF there are more than 30 rows with missing data then simply notify user
             missing_data_rows = ['More than 30 rows with missing data']
 
+            
     return missing_data_rows
 
 
@@ -777,7 +779,8 @@ if __name__ == '__main__':
 
             except Exception as e:
                 increment_processingerror += 1
-                states_failed_to_process.append((state_abbrv, type(e).__name__, e))
+                exception_string = state_abbrv + ' | ' + str(type(e).__name__) + ' ' + str(e) + '\n'
+                states_failed_to_process.append(exception_string)
 
 
     summary_report(len(input_states), increment_httperror, increment_processingerror, increment_success,
