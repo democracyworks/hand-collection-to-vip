@@ -56,6 +56,11 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     RETURN: None
     """
 
+    # PREP | Identify data issues, create/format features, and standardize dataframes
+
+    # GENERATE warnings in state_data (4 types of warnings)
+    missing_data_rows, multi_directions_rows, cross_street_rows, \
+      semi_colon_rows, date_year_rows = generate_warnings(state_data)
 
     # CREATE/FORMAT feature(s) (1 created, 1 formatted)
     state_feed['state_fips'] = state_feed['state_fips'].str.pad(2, side='left', fillchar='0') # first make sure there are leading zeros
@@ -65,6 +70,8 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     # CLEAN/FORMAT state_feed, state_data, and election_authorities (3 dataframes)
     state_feed, state_data, election_authorities = clean_data(state_abbrv, state_feed, state_data, election_authorities)
 
+
+    # CREATE IDS | Create ids on dataframes
 
     if election_authorities.empty:
         # CREATE empty election_authorities DataFrame if state not in election administration sheet
@@ -101,7 +108,9 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     temp['polling_location_ids'] = 'pol' + (temp.index + 1).astype(str).str.zfill(4)
     state_data = pd.merge(state_data, temp, on =['location_name','address_line', 'directions'])
     
-    
+ 
+    # FILE CREATION | Generate files for dashboard zip
+
     # GENERATE 9 .txt files
     election = generate_election(state_feed)
     polling_location = generate_polling_location(state_data)
@@ -124,18 +133,22 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
                                            'locality':locality,
                                            'polling_location': polling_location,
                                            'schedule': schedule})
-                                                 
+    
+
+    # REPORT | Print zip file sizes, dataframe descriptions, and data warnings
+
     # PRINT state report
-    state_report(state_abbrv, state_feed, state_data, 
-                 election_authorities, {'state':state, 
-                                        'source':source,
-                                        'election': election,
-                                        'election_administration':election_administration,
-                                        'department': department,
-                                        'person': person,
-                                        'locality':locality,
-                                        'polling_location': polling_location,
-                                        'schedule': schedule})
+    state_report(missing_data_rows, multi_directions_rows, cross_street_rows, semi_colon_rows, date_year_rows,
+                 state_abbrv, state_feed, state_data, election_authorities,
+                 {'state':state, 
+                  'source':source,
+                  'election': election,
+                  'election_administration':election_administration,
+                  'department': department,
+                  'person': person,
+                  'locality':locality,
+                  'polling_location': polling_location,
+                  'schedule': schedule})
 
 
     return
@@ -475,83 +488,22 @@ def generate_zip(state_abbrv, state_feed, files):
 
 
 
-def state_report(state_abbrv, state_feed, state_data, election_authorities, files):
+def generate_warnings(state_data):
     """
-    PURPOSE: print state report (general descriptive stats and warnings)
-    INPUT: state_abbrv, state_feed, state_data, election_authorities, files
-    RETURN: 
+    PURPOSE: isolate which rows, if any, have warnings
+    INPUT: state_data
+    RETURN: missing_data_rows, multi_directions_rows, cross_street_rows, date_year_rows, semi_colon_rows
     """
-    
-    # PRINT state name
-    print('\n'*1)
-    state_name_with_space = ' ' + state_feed['official_name'][0].upper() + ' '
-    print(state_name_with_space.center(PRINT_OUTPUT_WIDTH, '-'))
-    print('\n')
-    
-    # PRINT the length of text files in zip
-    print('.txt Size'.center(PRINT_OUTPUT_WIDTH, ' '))
-    print()
-    for name, df in files.items():
-
-        print(f'{name:>{PRINT_CENTER-2}} | {len(df.index)} row(s)')
-
-    # PRINT count of unique OCD IDs
-    sd = state_data[['OCD_ID']] # CREATE count of unique OCD IDs in state_data
-    sd.drop_duplicates(inplace=True)
-    print('\n'*2) 
-    print('# of Unique Counties/Places  '.center(PRINT_OUTPUT_WIDTH, ' ')) 
-    print()
-    print(f"{'State Data |':>{PRINT_CENTER}} {len(sd)} counties/places")
-    if not election_authorities.empty:
-        ea = election_authorities[['ocd_division']]
-        ea.drop_duplicates(inplace=True)
-        print(f"{'Election Authorities |':>{PRINT_CENTER}} {len(ea)} counties/places")
-
-    # _____________________________________________________________________________________________________________________
-
 
     # GENERATE warnings
     missing_data_rows = warning_missing_data(state_data)
     multi_directions_rows = warning_multi_directions(state_data)
     cross_street_rows = warning_cross_street(state_data)
     date_year_rows = warning_date_year(state_data)
-
-    if missing_data_rows or multi_directions_rows or cross_street_rows or date_year_rows:
-        print('\n'*2)
-        print( '---------------------- WARNINGS ----------------------'.center(PRINT_OUTPUT_WIDTH, ' ')) 
-        STATES_WITH_WARNINGS.append(state_abbrv) # RECORD states with warnings
-
-    if missing_data_rows:
-        print('\n')
-        print('Missing Data'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(missing_data_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-
-    if multi_directions_rows:
-        print('\n')
-        print('Polling Locations have Multiple Directions'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(multi_directions_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-
-    if cross_street_rows:
-        print('\n')
-        print('Problematic Cross-Street Formats'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(cross_street_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-
-    if date_year_rows:
-        print()
-        print('Dates have Invalid Years'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(date_year_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+    semi_colon_rows = warning_semi_colon(state_data)
 
 
-    print('\n'*1)
-    print('_'*PRINT_OUTPUT_WIDTH)
-    print('\n'*2)
-
-
-    return 
+    return missing_data_rows, multi_directions_rows, cross_street_rows, semi_colon_rows, date_year_rows 
 
 
 
@@ -594,7 +546,8 @@ def warning_cross_street(state_data):
 
 def warning_multi_directions(state_data):
     """
-    PURPOSE: isolate which polling locations, if any, have multiple directions (warning: each unique set of directions is considered a polling location)
+    PURPOSE: isolate which polling locations, if any, have multiple directions 
+             (warning: each unique set of directions is considered a polling location)
     INPUT: state_data
     RETURN: multi_directions_rows
     """
@@ -621,6 +574,8 @@ def warning_date_year(state_data): # CRITICAL
     """
 
     # ISOLATE data errors in 2 features
+    state_data['start_date'] = pd.to_datetime(state_data['start_date'])
+    state_data['end_date'] = pd.to_datetime(state_data['end_date'])
     incorrect_start_dates = state_data[state_data['start_date'].dt.year != ELECTION_YEAR]
     incorrect_end_dates = state_data[state_data['end_date'].dt.year != ELECTION_YEAR]
     incorrect_dates = incorrect_start_dates.append(incorrect_end_dates)
@@ -629,6 +584,114 @@ def warning_date_year(state_data): # CRITICAL
 
 
     return date_year_rows
+
+
+
+def warning_semi_colon(state_data):
+    """
+    PURPOSE: isolate which rows, if any, have ;'s instead of :'s in hours
+    INPUT: state_data
+    RETURN: semi_colon_rows
+    """
+
+    # ISOLATE data errors in 2 features
+    semi_colon_start_time = state_data[state_data['start_time'].str.contains(';')]
+    semi_colon_end_time = state_data[state_data['end_time'].str.contains(';')]
+    semi_colon_times = semi_colon_start_time.append(semi_colon_end_time)
+
+    semi_colon_rows = list(set(semi_colon_times.index+1))
+
+
+    return semi_colon_rows
+
+
+
+###########################################################################################################################
+# END OF WARNING FUNCTION DEFINITIONS #####################################################################################
+###########################################################################################################################
+
+
+
+def state_report(missing_data_rows, multi_directions_rows, cross_street_rows, semi_colon_rows, date_year_rows, 
+                 state_abbrv, state_feed, state_data, election_authorities, files):
+    """
+    PURPOSE: print state report (general descriptive stats and warnings)
+    INPUT: missing_data_rows, multi_directions_rows, cross_street_rows, date_year_rows,
+                 state_abbrv, state_feed, state_data, election_authorities, files
+    RETURN: 
+    """
+    
+    # PRINT state name
+    print('\n'*1)
+    state_name_with_space = ' ' + state_feed['official_name'][0].upper() + ' '
+    print(state_name_with_space.center(PRINT_OUTPUT_WIDTH, '-'))
+    print('\n')
+    
+    # PRINT the length of text files in zip
+    print('.txt Size'.center(PRINT_OUTPUT_WIDTH, ' '))
+    print()
+    for name, df in files.items():
+
+        print(f'{name:>{PRINT_CENTER-2}} | {len(df.index)} row(s)')
+
+    # PRINT count of unique OCD IDs
+    sd = state_data[['OCD_ID']] # CREATE count of unique OCD IDs in state_data
+    sd.drop_duplicates(inplace=True)
+    print('\n'*2) 
+    print('# of Unique Counties/Places  '.center(PRINT_OUTPUT_WIDTH, ' ')) 
+    print()
+    print(f"{'State Data |':>{PRINT_CENTER}} {len(sd)} counties/places")
+    if not election_authorities.empty:
+        ea = election_authorities[['ocd_division']]
+        ea.drop_duplicates(inplace=True)
+        print(f"{'Election Authorities |':>{PRINT_CENTER}} {len(ea)} counties/places")
+
+
+    # _____________________________________________________________________________________________________________________
+
+
+    if missing_data_rows or multi_directions_rows or cross_street_rows or semi_colon_rows or date_year_rows:
+        print('\n'*2)
+        print( '---------------------- WARNINGS ----------------------'.center(PRINT_OUTPUT_WIDTH, ' ')) 
+        STATES_WITH_WARNINGS.append(state_abbrv) # RECORD states with warnings
+
+    if missing_data_rows:
+        print('\n')
+        print('Missing Data'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(missing_data_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+
+    if multi_directions_rows:
+        print('\n')
+        print('Polling Locations have Multiple Directions'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(multi_directions_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+
+    if cross_street_rows:
+        print('\n')
+        print('Problematic Cross-Street Formats'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(cross_street_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+
+    if semi_colon_rows:
+        print('\n')
+        print('Hours have ;\'s Instead of :\'s'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(semi_colon_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+
+    if date_year_rows:
+        print()
+        print('Dates have Invalid Years'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(date_year_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+
+
+    print('\n'*1)
+    print('_'*PRINT_OUTPUT_WIDTH)
+    print('\n'*2)
+
+
+    return 
 
 
 
@@ -772,7 +835,7 @@ if __name__ == '__main__':
 
                 # GENERATE zip file and print state report
                 vip_build(state_abbrv, state_feed, state_data, election_authorities)
-                
+
 
                 states_successfully_processed.append(state_abbrv)
                 increment_success +=1
