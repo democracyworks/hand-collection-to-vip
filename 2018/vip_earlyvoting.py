@@ -610,7 +610,8 @@ def warning_ocd_id(state_data, state_abbrv):
             ocd_id_rows.append(('county|place', str(set(county_place_issue.index+1)).strip('{}')))
 
     # ISOLATE if the number of slashes is incorrect
-    if state_abbrv != 'AK': # Alaska ocd-ids have 2 and 3 slashes, depending       
+    if state_abbrv != 'AK': # Alaska ocd-ids have 2 and 3 slashes, depending
+        slash_number = 3
         slash_issue = state_data[state_data['OCD_ID'].str.count('/') != slash_number]
         if not slash_issue.empty:
             ocd_id_rows.append(('slashes', str(set(slash_issue.index+1)).strip('{}')))
