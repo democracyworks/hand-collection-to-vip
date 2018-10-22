@@ -57,6 +57,12 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
     RETURN: None
     """
     
+    # PREP | Identify data issues, create/format features, and standardize dataframes
+
+    # GENERATE warnings in state_data (4 types of warnings)
+    missing_data_rows, multi_directions_rows, cross_street_rows, \
+      semi_colon_rows, date_year_rows = generate_warnings(state_data)
+
     # CREATE/FORMAT feature(s) (1 created, 1 formatted)
     state_feed['state_fips'] = state_feed['state_fips'].str.pad(2, side='left', fillchar='0') # first make sure there are leading zeros
     state_feed['state_id'] = state_abbrv.lower() + state_feed['state_fips']
@@ -66,7 +72,7 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
 
     # _____________________________________________________________________________________________________________________
 
-    # CREATE various ids referenced by multiple .txts (4 created)
+    # CREATE IDS | Create ids on dataframes
 
     # CREATE 'election_official_person_id'
     temp = election_authorities[['county', 'official_title']]
@@ -99,6 +105,8 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
     
     # _____________________________________________________________________________________________________________________
 
+    # FILE CREATION | Generate files for dashboard zip
+
     # GENERATE 11 .txt files
     election = generate_election(state_feed, state_data)
     polling_location = generate_polling_location(state_data)
@@ -127,19 +135,24 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
                                            'precinct': precinct,
                                            'street_segment': street_segment})
 
+    # _____________________________________________________________________________________________________________________
+
+    # REPORT | Print zip file sizes, dataframe descriptions, and data warnings
+
     # PRINT state report
-    state_report(state_abbrv, state_feed, state_data, 
-                 election_authorities, target_smart, {'state':state, 
-                                                      'source':source,
-                                                      'election': election,
-                                                      'election_administration':election_administration,
-                                                      'department': department,
-                                                      'person': person,
-                                                      'locality':locality,
-                                                      'polling_location': polling_location,
-                                                      'precinct': precinct,
-                                                      'schedule': schedule,
-                                                      'street_segment': street_segment})
+    state_report(missing_data_rows, multi_directions_rows, cross_street_rows, semi_colon_rows, date_year_rows,
+                 state_abbrv, state_feed, state_data, election_authorities, target_smart, 
+                 {'state':state, 
+                  'source':source,
+                  'election': election,
+                  'election_administration':election_administration,
+                  'department': department,
+                  'person': person,
+                  'locality':locality,
+                  'polling_location': polling_location,
+                  'precinct': precinct,
+                  'schedule': schedule,
+                  'street_segment': street_segment})
 
 
     return
@@ -681,89 +694,23 @@ def generate_zip(state_abbrv, state_feed, files):
 # END OF VIP BUILD FUNCTION DEFINITIONS ###################################################################################
 ###########################################################################################################################
 
-
-
-def state_report(state_abbrv, state_feed, state_data, election_authorities, target_smart, files):
+def generate_warnings(state_data):
     """
-    PURPOSE: print state report (general descriptive stats and warnings)
-    INPUT: state_abbrv, state_feed, state_data, election_authorities, target_smart, files
-    RETURN: 
+    PURPOSE: isolate which rows, if any, have warnings
+    INPUT: state_data
+    RETURN: missing_data_rows, multi_directions_rows, cross_street_rows, date_year_rows, semi_colon_rows
     """
-    
-    # PRINT state name
-    print('\n'*1)
-    state_name_with_space = ' ' + state_feed['official_name'][0].upper() + ' '
-    print(state_name_with_space.center(PRINT_OUTPUT_WIDTH, '-'))
-    print('\n')
-    print('.txt Size'.center(PRINT_OUTPUT_WIDTH, ' '))
-    print()
-
-    for name, df in files.items():
-
-        print(f'{name:>{PRINT_CENTER-2}} | {len(df.index)} row(s)')
-
-    # CREATE dataframes of unique OCD IDs for election authorities and state data
-    ea = election_authorities[['county']]
-    ea.drop_duplicates(inplace=True)
-    sd = state_data[['county']]
-    sd.drop_duplicates(inplace=True)
-    if state_abbrv == 'NH':
-        ts = target_smart[['vf_township']]
-    else:
-        ts = target_smart[['vf_county_name']]
-    ts.drop_duplicates(inplace=True)
-
-    # PRINT count of unique OCD IDs
-    print('\n'*2) 
-    print('# of Unique Counties/Places  '.center(PRINT_OUTPUT_WIDTH, ' ')) 
-    print()
-    print(f"{'State Data |':>{PRINT_CENTER}} {len(sd)} counties/places")
-    print(f"{'TargetSmart |':>{PRINT_CENTER}} {len(ts)} counties/places")
-    print(f"{'Election Authorities |':>{PRINT_CENTER}} {len(ea)} counties/places")
 
     # GENERATE warnings
     missing_data_rows = warning_missing_data(state_data)
     multi_directions_rows = warning_multi_directions(state_data)
     cross_street_rows = warning_cross_street(state_data)
     date_year_rows = warning_date_year(state_data)
-
-    if missing_data_rows or multi_directions_rows or cross_street_rows or date_year_rows:
-        print('\n'*2)
-        print( '---------------------- WARNINGS ----------------------'.center(PRINT_OUTPUT_WIDTH, ' ')) 
-        STATES_WITH_WARNINGS.append(state_abbrv) # RECORD states with warnings
-
-    if missing_data_rows:
-        print('\n')
-        print('Missing Data'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(missing_data_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-
-    if multi_directions_rows:
-        print('\n')
-        print('Polling Locations have Multiple Directions'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(multi_directions_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-
-    if cross_street_rows:
-        print('\n')
-        print('Problematic Cross-Street Formats'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(cross_street_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-
-    if date_year_rows:
-        print()
-        print('Dates have Invalid Years'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(date_year_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+    semi_colon_rows = warning_semi_colon(state_data)
 
 
-    print('\n'*1)
-    print('_'*PRINT_OUTPUT_WIDTH)
-    print('\n'*2)
-
-
-    return 
-
+    return missing_data_rows, multi_directions_rows, cross_street_rows, semi_colon_rows, date_year_rows 
+ 
 
 
 def warning_missing_data(state_data):
@@ -833,6 +780,10 @@ def warning_date_year(state_data): # CRITICAL
     RETURN: date_year_rows
     """
 
+    # FORMAT features (2 formatted)
+    state_data['start_date'] = pd.to_datetime(state_data['start_date'])
+    state_data['end_date'] = pd.to_datetime(state_data['end_date'])
+    
     # ISOLATE data errors in 2 features
     incorrect_start_dates = state_data[state_data['start_date'].dt.year != ELECTION_YEAR]
     incorrect_end_dates = state_data[state_data['end_date'].dt.year != ELECTION_YEAR]
@@ -861,6 +812,102 @@ def warning_semi_colon(state_data):
 
 
     return semi_colon_rows
+
+
+###########################################################################################################################
+# END OF WARNING FUNCTION DEFINITIONS #####################################################################################
+###########################################################################################################################
+
+def state_report(missing_data_rows, multi_directions_rows, cross_street_rows, semi_colon_rows, date_year_rows,
+                 state_abbrv, state_feed, state_data, election_authorities, target_smart, files):
+    """
+    PURPOSE: print state report (general descriptive stats and warnings)
+    INPUT: state_abbrv, state_feed, state_data, election_authorities, target_smart, files
+    RETURN: 
+    """
+    
+    # _____________________________________________________________________________________________________________________
+
+    # .txt DATAFRAMES | Print dataframe stats 
+
+    # PRINT state name
+    print('\n'*1)
+    state_name_with_space = ' ' + state_feed['official_name'][0].upper() + ' '
+    print(state_name_with_space.center(PRINT_OUTPUT_WIDTH, '-'))
+    print('\n')
+    print('.txt Size'.center(PRINT_OUTPUT_WIDTH, ' '))
+    print()
+
+    for name, df in files.items():
+
+        print(f'{name:>{PRINT_CENTER-2}} | {len(df.index)} row(s)')
+
+    # CREATE dataframes of unique OCD IDs for election authorities and state data
+    ea = election_authorities[['county']]
+    ea.drop_duplicates(inplace=True)
+    sd = state_data[['county']]
+    sd.drop_duplicates(inplace=True)
+    if state_abbrv == 'NH':
+        ts = target_smart[['vf_township']]
+    else:
+        ts = target_smart[['vf_county_name']]
+    ts.drop_duplicates(inplace=True)
+
+    # PRINT count of unique OCD IDs
+    print('\n'*2) 
+    print('# of Unique Counties/Places  '.center(PRINT_OUTPUT_WIDTH, ' ')) 
+    print()
+    print(f"{'State Data |':>{PRINT_CENTER}} {len(sd)} counties/places")
+    print(f"{'TargetSmart |':>{PRINT_CENTER}} {len(ts)} counties/places")
+    print(f"{'Election Authorities |':>{PRINT_CENTER}} {len(ea)} counties/places")
+
+    # _____________________________________________________________________________________________________________________
+
+    # WARNINGS | Print warnings (less severe to critical)
+
+    if missing_data_rows or multi_directions_rows or cross_street_rows or semi_colon_rows or date_year_rows:
+        print('\n'*2)
+        print( '---------------------- WARNINGS ----------------------'.center(PRINT_OUTPUT_WIDTH, ' ')) 
+        STATES_WITH_WARNINGS.append(state_abbrv) # RECORD states with warnings
+
+    if missing_data_rows:
+        print('\n')
+        print('Missing Data'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(missing_data_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+
+    if multi_directions_rows:
+        print('\n')
+        print('Polling Locations have Multiple Directions'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(multi_directions_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+
+    if cross_street_rows:
+        print('\n')
+        print('Problematic Cross-Street Formats'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(cross_street_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+
+    if semi_colon_rows:
+        print('\n')
+        print('Hours have ;\'s Instead of :\'s'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(semi_colon_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+
+    if date_year_rows:
+        print()
+        print('Dates have Invalid Years'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(date_year_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+
+
+    print('\n'*1)
+    print('_'*PRINT_OUTPUT_WIDTH)
+    print('\n'*2)
+
+
+    return 
+
 
 
 
