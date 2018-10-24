@@ -1235,7 +1235,7 @@ def state_report(multi_directions_rows, multi_address_rows, cross_street_rows, #
             print('\n')
             print('Missing Zipcodes from Location Addresses'.center(PRINT_OUTPUT_WIDTH, ' '))
             print()
-            print(str(date_year_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+            print(str(missing_zipcode_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
 
 
     if state_abbrv in STATES_USING_TOWNSHIPS: # PROCESS states that use townships
