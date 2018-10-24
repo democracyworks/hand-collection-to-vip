@@ -1281,7 +1281,7 @@ def state_report(multi_directions_rows, multi_address_rows, cross_street_rows, #
             print('\n')
             print('Precincts in State Data not found in TargetSmart'.center(PRINT_OUTPUT_WIDTH, ' '))
             print()
-            print(str(multi_directions_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+            print(str(sd_unmatched_precincts_list).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
 
         if ts_unmatched_precincts_list:
             print('\n')
