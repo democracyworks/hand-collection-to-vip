@@ -234,10 +234,6 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities, target
 
     # ERROR HANDLING | Interventionist adjustments to account for state eccentricities and common hand collection mistakes, etc
 
-    # REMOVE headers in TargetSmart dataframe
-    # NOTE: Occasionaly TargetSmart includes a header as a row (specifically for MT)
-    target_smart = target_smart[target_smart['vf_precinct_name'] != 'VF_PRECINCT_NAME'] 
-
     # FORMAT address line (1 formatted)
     # NOTE: A common outreach error was missing state abbreviations in the address line
     state_abbrv_with_space = state_feed['state_abbrv'][0].center(4, ' ')
@@ -665,11 +661,12 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
         temp = state_data[['precinct', 'county']]
         temp.drop_duplicates(inplace=True)
         if state_abbrv in STATES_USING_TOWNSHIPS:
-            print("HEREERERERERE")
+
             # NOTE: Since NH uses township instead of county to group precincts. The following subsittution accounts for this difference
             list_unique_hc_towns = temp['county'].unique().tolist()
             street_segment['vf_county_name'] = street_segment['city'].apply(lambda x: np.nan if x not in list_unique_hc_towns else x)
             street_segment['vf_county_name'].fillna(street_segment['vf_township'], inplace=True)
+
             # NOTE: there is weird geography issue in Washington county and stoddard precinct for VALLEY RD addresses
             street_segment.loc[(street_segment['street_name'] == 'VALLEY') & \
                                (street_segment['street_suffix'] == 'RD') & \
@@ -1513,6 +1510,10 @@ if __name__ == '__main__':
                     
                     # GENERATE target_smart dataframe
                     target_smart = pd.DataFrame(list(target_smart_values), columns=targetsmart_sql_col_list, dtype='object')
+
+                    # REMOVE headers in TargetSmart dataframe
+                    # NOTE: Occasionaly TargetSmart includes a header as a row (specifically for MT)
+                    target_smart = target_smart[target_smart['vf_precinct_name'] != 'VF_PRECINCT_NAME'] 
 
                 except:
                     print('ERROR | TargetSmart data for', state_abbrv, 'is either missing from the database or there is data reading error.')
