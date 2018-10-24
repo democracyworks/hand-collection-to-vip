@@ -1500,7 +1500,7 @@ if __name__ == '__main__':
 
                     elif state_abbrv == 'FL':
                         query = "SELECT " + targetsmart_sql_col_string + " FROM " + sql_table_name[0] + \
-                                targetsmart_sql_filter_string + " AND vf_county_name IN ('OSCEOLA', 'BAY', 'ST. LUCIE');"
+                                targetsmart_sql_filter_string + " AND vf_county_name IN ('OSCEOLA', 'BAY', 'ST LUCIE');"
                     else: 
                         query = "SELECT " + targetsmart_sql_col_string + " FROM " + sql_table_name[0] + targetsmart_sql_filter_string + ";"
 
