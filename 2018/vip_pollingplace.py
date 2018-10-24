@@ -18,7 +18,8 @@ import numpy as np
 
 # _________________________________________________________________________________________________________________________
 
-# SET global variables and print display formats
+# GLOBAL VARIABLES | Set global variables and print display formats
+
 pd.set_option('display.max_columns', 100)  # or 1000 or None
 pd.set_option('display.max_rows', 100)  # or 1000 or None
 PRINT_OUTPUT_WIDTH = 100 # SET print output length
@@ -26,11 +27,13 @@ PRINT_CENTER = 50
 
 ELECTION_YEAR = 2018
 
+STATES_USING_TOWNSHIPS = ['NH', 'ME'] # SET states that use townships instead of counties for elections
+
 STATES_WITH_WARNINGS = [] # STORE states that trigger warnings
 
 # _________________________________________________________________________________________________________________________
 
-# SET SCOPES & Google Spreadsheet IDs (2 IDs)
+# GOOGLE API | Set scopes & Google Spreadsheet IDs (2 IDs)
 
 # PRO-TIP: if modifying these scopes, delete the file token.json.
 SCOPES = 'https://www.googleapis.com/auth/spreadsheets.readonly'
@@ -59,16 +62,23 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
     
     # PREP | Identify data issues, create/format features, and standardize dataframes
 
-    # GENERATE warnings in state_data (4 types of warnings)
-    missing_data_rows, multi_directions_rows, cross_street_rows, \
-      semi_colon_rows, date_year_rows = generate_warnings(state_data)
+    # GENERATE warnings/fatal errors in state_data (2 warnings, 4 fatal errors)
+    multi_directions_rows, multi_address_rows, cross_street_rows, \
+      missing_data_rows, semi_colon_rows, date_year_rows, missing_zipcode_rows = generate_warnings_state_data(state_data)
+
+    # GENERATE warnings in target_smart (2 types of warnings)
+    missing_counties_count, missing_townships_count, missing_state_count = generate_warnings_target_smart(state_abbrv, target_smart)
+
+    # GENERATE warnings for matches between counties/places/townships & precincts in state_data & target_smart (2 warnings)
+    sd_unmatched_precincts_list, ts_unmatched_precincts_list = generate_warnings_mismatches(state_abbrv, state_data, target_smart)
 
     # CREATE/FORMAT feature(s) (1 created, 1 formatted)
     state_feed['state_fips'] = state_feed['state_fips'].str.pad(2, side='left', fillchar='0') # first make sure there are leading zeros
     state_feed['state_id'] = state_abbrv.lower() + state_feed['state_fips']
 
     # CLEAN/FORMAT state_feed, state_data, election_authorities, and target_smart (4 dataframes)
-    state_feed, state_data, election_authorities, target_smart = clean_data(state_abbrv, state_feed, state_data, election_authorities, target_smart)
+    state_feed, state_data, \
+      election_authorities, target_smart = clean_data(state_abbrv, state_feed, state_data, election_authorities, target_smart)
 
     # _____________________________________________________________________________________________________________________
 
@@ -122,6 +132,10 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
   
     precinct.drop(['county'], axis=1, inplace=True) # DROP county from precinct after being passed to street_segment
 
+    # GENERATE .txt file warnings (3 warnings)
+    missing_precinct_ids_count, missing_house_numbers_count, \
+      missing_street_suffixes_count = generate_warnings_txt(state_abbrv, street_segment)
+
     # GENERATE zip file
     generate_zip(state_abbrv, state_feed, {'election': election,
                                            'polling_location': polling_location,
@@ -140,9 +154,13 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
     # REPORT | Print zip file sizes, dataframe descriptions, and data warnings
 
     # PRINT state report
-    state_report(missing_data_rows, multi_directions_rows, cross_street_rows, semi_colon_rows, date_year_rows,
-                 state_abbrv, state_feed, state_data, election_authorities, target_smart, 
-                 {'state':state, 
+    state_report(multi_directions_rows, multi_address_rows, cross_street_rows, # WARNINGS for state data
+                 missing_data_rows, semi_colon_rows, date_year_rows, missing_zipcode_rows, # FATAL ERRORS for state_data
+                 missing_counties_count, missing_townships_count, missing_state_count, # WARNINGS for target_smart
+                 sd_unmatched_precincts_list, ts_unmatched_precincts_list, # WARNINGS for mismatches between state_data & target_smart
+                 missing_precinct_ids_count, missing_house_numbers_count, missing_street_suffixes_count, # WARNINGS for .txt dataframes
+                 state_abbrv, state_feed, state_data, election_authorities, target_smart, # MAIN dataframes
+                 {'state':state,                                                          
                   'source':source,
                   'election': election,
                   'election_administration':election_administration,
@@ -206,10 +224,10 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities, target
     
     # FORMAT precinct (2 formatted)
     state_data['precinct'] = state_data['precinct'].str.strip().str.upper()
-    target_smart['vf_precinct_name'] = target_smart['vf_precinct_name'].str.strip().str.upper()
+    target_smart['vf_precinct_name'] = target_smart['vf_precinct_name'].astype(str).str.strip().str.upper()
 
     # FORMAT voter file addresses (1 formatted)
-    target_smart['vf_reg_address_1'] = target_smart['vf_reg_address_1'].str.upper().str.strip()
+    target_smart['vf_reg_address_1'] = target_smart['vf_reg_address_1'].str.upper().str.strip().str.replace('\"', '')
     target_smart['vf_reg_address_1'] = target_smart['vf_reg_address_1'].str.replace('\\s{2,}', ' ')
 
     # _____________________________________________________________________________________________________________________
@@ -505,8 +523,8 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
     street_segment.drop_duplicates(inplace=True)
 
     # CREATE/FORMAT feature(s) (3 created, 5 formatted)
-    street_segment['address_direction'] = street_segment['vf_reg_address_1'].str.extract('\\s+(N|E|S|W|NE|NW|SE|SW)$') # EXTRACT last cardinal direction in the address
-    street_segment['vf_reg_address_1'] = street_segment['vf_reg_address_1'].str.replace('\\s+(N|E|S|W|NE|NW|SE|SW)$', '') # REMOVE last cardinal direction in the address
+    street_segment['address_direction'] = street_segment['vf_reg_address_1'].str.extract('\\s+(N|E|S|W|NE|NW|SE|SW|NORTH|EAST|SOUTH|WEST)$') # EXTRACT last cardinal direction in the address
+    street_segment['vf_reg_address_1'] = street_segment['vf_reg_address_1'].str.replace('\\s+(N|E|S|W|NE|NW|SE|SW|NORTH|EAST|SOUTH|WEST)$', '') # REMOVE last cardinal direction in the address
     street_segment['street_direction'] = street_segment['vf_reg_address_1'].str.extract('\\s+(N|E|S|W|NE|NW|SE|SW)\\s+') # EXTRACT cardinal direction in the middle of the address
     street_segment['vf_reg_address_1'] = street_segment['vf_reg_address_1'].str.replace('\\s+(N|E|S|W|NE|NW|SE|SW)\\s+', ' ') # REPLACE cardinal direction in the middle of the address
 
@@ -515,50 +533,70 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
                                    'vf_reg_address_2':'unit_number', 
                                    'vf_reg_zip':'zip'}, inplace=True)
     
-    # CREATE/FORMAT feature(s) (1 created, 1 formatted)
-    street_segment['unit_number_temp'] = street_segment['vf_reg_address_1'].str.strip().str.extract('(APT .*|APARTMENT *.|UNIT .*|# .*|PMB .*|PO BOX .*|BOX .*|HOUSE \\d+)$') # EXTRACT unit number
-    street_segment['unit_number'] = street_segment['unit_number'].replace('', np.nan, regex=True) # REPLACE empty strings with NaNs
-    street_segment['unit_number'].fillna(street_segment['unit_number_temp'], inplace=True)
-    street_segment['vf_reg_address_1'] = street_segment['vf_reg_address_1'].str.replace('(APT .*|APARTMENT *.|UNIT .*|# .*|PMB .*|PO BOX .*|BOX .*|HOUSE \\d+)$', '') # REMOVE unit number from address
+    # CREATE/FORMAT feature(s) (1 created, 1 formatted) 
+    unit_number_list = ['APT .*', 'APT.*', 'APT', 'APARTMENT .*', 'UNIT .*', 'UNIT', 'PMB .*', 'PO BOX .*', 'BSMT .*', 'BOX \\d+', 'BX .*', 
+                        'LOT .*', 'LOT', 'RM # .*', 'RM .*', 'DEPT .*', 'PH .*', 'PH', 'STE .*', 'BLDG .*', 'TRLR \\d+', 'SLIP .*', 'FLOOR .*', 
+                        'FL .*', 'OFC .*', 'OFC', 'FRNT .*', 'LBBY .*', 'LBBY', 'REAR .*', 'REAR', 'CONDO .*', 
+                        'COLBY \\d+', 'TTU .*', 'ROOM .*', 'HOUSE \\d+']
+    unit_number_regex = re.compile(r'\b(' + '|'.join(unit_number_list) + r')$\b', re.IGNORECASE)
 
-    # C1 Street Suffix Abbreviations
+    street_segment['unit_number_temp0'] = street_segment['vf_reg_address_1'].str.strip().str.extract('(CLASS OF \\d+|VU STA PMB \\d+)$')
+    street_segment['unit_number_temp1'] = street_segment['vf_reg_address_1'].str.strip().str.extract(unit_number_regex) # EXTRACT unit number
+    street_segment['unit_number_temp2'] = street_segment['vf_reg_address_1'].str.strip().str.extract('(#.*)$') # EXTRACT other unit number
+    highway_name_list = ['HIGHWAY', 'HWY', 'RT ', 'RR ', ' SR', ' US ', 'OLD NO']
+    street_segment_highway_or_not = lambda x: True if any(highway_name in x for highway_name in highway_name_list) == True else False
+    street_segment['unit_number_temp3_flag'] = street_segment['vf_reg_address_1'].astype(str).apply(street_segment_highway_or_not)
+    street_segment['unit_number_temp3'] = np.nan
+    street_segment.loc[street_segment['unit_number_temp3_flag']==False, 'unit_number_temp3'] = street_segment.loc[street_segment['unit_number_temp3_flag']==False, 'vf_reg_address_1'].str.strip().str.extract('([0-9]*)$')
+    
+    street_segment['unit_number'] = street_segment['unit_number'].replace('', np.nan, regex=True) # REPLACE empty strings with NaNs
+    street_segment['unit_number'].fillna(street_segment['unit_number_temp0'], inplace=True)
+    street_segment['unit_number'].fillna(street_segment['unit_number_temp1'], inplace=True)
+    street_segment['unit_number'].fillna(street_segment['unit_number_temp2'], inplace=True)
+    street_segment['unit_number'].fillna(street_segment['unit_number_temp3'], inplace=True)
+
+    street_segment['vf_reg_address_1'] = street_segment['vf_reg_address_1'].str.replace(unit_number_regex, ' ') # REMOVE unit number from address
+    street_segment['vf_reg_address_1'] = street_segment['vf_reg_address_1'].str.replace('#.*$', '')
+    street_segment['vf_reg_address_1'] = street_segment['vf_reg_address_1'].astype(str).apply(lambda x: x if "HIGHWAY" in x or "HWY" in x else re.sub('[0-9]*$', '', x))
+    
+    # C1 Street Suffix Abbreviations + extra
     # https://pe.usps.com/text/pub28/28apc_002.htm
-    # GENERATE regex for street ending
-    street_suffix_list = ['HIGHWAY \\d+', 'STREET EXT', 'RD EXT', 'ROAD EXT', 'ST EXT', 'ST EXTENSION', 'DRIVE EXT', 'LANE EXT', 'AVENUE EXT', 'DR EXT', # NH has odd EXT edge cases 
-                          'ALLEE', 'ALLEY', 'ALLY', 'ALY', 'ANNEX', 'ANNX', 'ANX', 'ARC', 'ARCADE', 'AV', 'AVE', 'AVEN', 'AVNUE', # A
-                          'BAYOO', 'BAYOU', 'BYU', 'BCH', 'BEACH', 'BEND', 'BND', 'BLF', 'BLUF', 'BLUFF', 'BLUFFS', 'BFLS', 'BOT', # B
-                          'BTM', 'BOTTM', 'BOTTOM', 'BLVD', 'BOUL', 'BOULEVARD', 'BOULV', 'BR', 'BRNCH', 'BRANCH', 'BRDGE', 'BRG', 
+    # GENERATE regex for street ending #'HIGHWAY .*', 'HWY .*', 
+    street_suffix_list = ['STREET EXT', 'RD EXT', 'ROAD EXT', 'ST EXT', 'ST EXTENSION', 'DRIVE EXT', 'LANE EXT', 'AVENUE EXT', 'DR EXT', # NH has odd EXT edge cases 
+                          'ALLEE', 'ALLEY', 'ALLY', 'ALY', 'ANNEX', 'ANNX', 'ANX', 'ARC', 'ARCADE', 'AV', 'AVE', 'AVEN', 'AVNUE', 'ACRES', # A
+                          'BAY', 'BAYOO', 'BAYOU', 'BYU', 'BCH', 'BEACH', 'BEND', 'BND', 'BLF', 'BLUF', 'BLUFF', 'BLUFFS', 'BFLS', 'BOT', # B
+                          'BTM', 'BOTTM', 'BOTTOM', 'BLVD', 'BOUL', 'BOULEVARD', 'BOULV', 'BR', 'BRNCH', 'BRANCH', 'BRDGE', 'BRG', 'BlFS',
                           'BRIDGE', 'BRK', 'BROOK', 'BROOKS', 'BRKS', 'BURG', 'BG', 'BURGS', 'BGS', 'BYP', 'BYPA', 'BYPAS', 'BYPASS', 'BYPS', 
-                          'CAMP', 'CP', 'CMP', 'CANYN', 'CANYON', 'CNYN', 'CYN', 'CAPE', 'CPE', 'CAUSEWAY', 'CAUSEWA', 'CSWY', 'CEN', # C
+                          'CAMP', 'CP', 'CR', 'CMP', 'CANYN', 'CANYON', 'CNYN', 'CYN', 'CAPE', 'CPE', 'CAUSEWAY', 'CAUSEWA', 'CSWY', 'CEN', # C
                           'CENT', 'CENTER', 'CENTR', 'CENTRE', 'CNTER', 'CNTR', 'CTR', 'CENTERS', 'CIR', 'CIRC', 'CIRCL', 'CIRCLE', 
                           'CRCL', 'CRCLE', 'CIRCLES', 'CLF', 'CLIFF', 'CLIFFS', 'CLFS', 'CLB', 'CLUB', 'COMMON', 'CMN', 'COMMONS', 
                           'CMNS', 'COR', 'CORNER', 'CORNERS', 'CORS', 'COURSE', 'CRSE', 'COURT', 'CT', 'COURTS', 'CTS', 'COVE', 
-                          'CV', 'CREEK', 'CRK', 'CRESCENT', 'CRES', 'CRSENT', 'CRSNT', 'CREST', 'CRST', 'CROSSING', 'CRSSNG', 
+                          'CV', 'CVE', 'CREEK', 'CRK', 'CRESCENT', 'CRES', 'CRSENT', 'CRSNT', 'CREST', 'CRST', 'CROSSING', 'CRSSNG', 
                           'XING', 'CROSSROAD', 'XRD', 'CROSSROADS', 'XRDS', 'CURVE', 'CURV', 
-                          'DALE', 'DL', 'DAM', 'DM', 'DIV', 'DIVIDE', 'DV', 'DVD', 'DR', 'DRIVE', 'DRIV', 'DRV', 'DRIVES', 'DRS', # D
+                          'DALE', 'DL', 'DAM', 'DM', 'DIV', 'DIVIDE', 'DV', 'DVD', 'DR', 'DRIVE', 'DRIV', 'DRV', 'DRIVES', 'DRS', 'DOWN', 'DOWNS', # D
                           'EST', 'ESTATE', 'ESTATES', 'ESTS', 'EXP', 'EXPR', 'EXPRESS', 'EXPRESSWAY', 'EXPW', 'EXPY', 'EXT', # E
                           'EXTENSION', 'EXTN', 'EXTNSN', 'EXTS', 
-                          'FALL', 'FALLS', 'FLS', 'FERRY', 'FRRY', 'FRY', 'FIELD', 'FLD', 'FIELDS', 'FLDS', 'FLAT', 'FLT', # F
-                          'FLATS', 'FLTS', 'FORD', 'FRD', 'FORDS', 'FRDS', 'FOREST', 'FORESTS', 'FRST', 'FORG', 'FORGE', 'FRG', 
+                          'FALL', 'FALLS', 'FARM', 'FLS', 'FERRY', 'FRRY', 'FRY', 'FIELD', 'FLD', 'FIELDS', 'FLDS', 'FLAT', 'FLT', # F
+                          'FLATS', 'FLTS', 'FORD', 'FRD', 'FORDS', 'FRDS', 'FOREST', 'FORESTS', 'FRST', 'FORG', 'FORGE', 'FRG', 'FIREROAD',
                           'FORGES', 'FRGS', 'FORK', 'FRK', 'FORKS', 'FRKS', 'FORT', 'FRT', 'FT', 'FREEWAY', 'FREEWY', 'FRWAY', 'FRWY', 'FWY',
-                          'GARDEN', 'GARDN', 'GRDEN', 'GRDN', 'GDN', 'GARDENS', 'GDNS', 'GRDNS', 'GATEWAY', 'GATEWY', 'GATWAY', # G
-                          'GTWAY', 'GTWY', 'GLEN', 'GLN', 'GLENS', 'GLNS', 'GREEN', 'GRN', 'GREENS', 'GRNS', 'GROV', 'GROVE', 'GRV', 'GROVES', 
+                          'GARDEN', 'GARDN', 'GAP', 'GRDEN', 'GRDN', 'GDN', 'GARDENS', 'GDNS', 'GRDNS', 'GATEWAY', 'GATEWY', 'GATWAY', # G
+                          'GTWAY', 'GTWY', 'GLEN', 'GLN', 'GLENS', 'GLNS', 'GREEN', 'GRADE', 'GRN', 'GREENS', 'GRNS', 'GROV', 'GROVE', 'GRV', 'GROVES', 
                           'HARB', 'HARBOR', 'HARBRB', 'HBR', 'HRBOR', 'HARBORS', 'HBRS', 'HAVEN', 'HVN', 'HT', 'HTS', 'HIGHWAY', # H
                           'HIGHWY', 'HIWAY', 'HWY', 'HIWY', 'HWAY', 'HILL', 'HL', 'HILLS', 'HLS', 'HLLW', 'HOLLOW', 'HOLLOWS', 'HOLW', 'HOLWS', 
                           'INLT', 'IS', 'ISLAND', 'ISLND', 'ISLANDS', 'ISLNDS', 'ISS', 'ISLE', 'ISLES', # I
                           'JCT', 'JCTION', 'JCTN', 'JUNCTION', 'JUNCTN', 'JUNCTON', 'JCTNS', 'JCSTS', 'JUNCTIONS', # J
                           'KEY', 'KY', 'KEYS', 'KYS', 'KNL', 'KNOL', 'KNOLL', 'KNLNS', 'KNOLLS', # K
                           'LK', 'LAKE', 'LKS', 'LAKES', 'LAND', 'LANDING', 'LNDG', 'LNDNG', 'LANE', 'LN', 'LGT', 'LIGHT', # L
-                          'LIGHTS', 'LGHTS', 'LF', 'LOAF', 'LCK', 'LOCK', 'LDG', 'LDGE', 'LODG', 'LODGE', 'LOOP', 'LOOPS', 
+                          'LIGHTS', 'LGHTS', 'LF', 'LOAF', 'LCK', 'LOCK', 'LDG', 'LDGE', 'LODG', 'LODGE', 'LOOP', 'LOOPS', 'LOCH',
                           'MALL', 'MNR', 'MANOR', 'MANORS', 'MNRS', 'MEADOW', 'MDW', 'MDW', 'MDWS', 'MEADOWS', 'MEDOWS', # M
                           'MEWS', 'MILL', 'ML', 'MILLS', 'MLS', 'MISSN', 'MSSN', 'MSN', 'MOTORWAY', 'MTWY', 'MNT', 'MT', 
                           'MOUNT', 'MNTAIN', 'MNTN', 'MOUNTAIN', 'MOUNTIN', 'MTN', 'MTIN', 'MNTNS', 'MOUNTAINS', 
-                          'NCK', 'NECK', # N
-                          'ORCH', 'ORCHARD', 'ORCHRD', 'OVAL', 'OVL', 'OVERPASS', 'OPAS', 'OPASS', # O
-                          'PARK', 'PRK', 'PARKS', 'PRKS', 'PARKWAY', 'PARKWY', 'PKWAY', 'PKWY', 'PKY', 'PARKWAYS', # P
-                          'PKWYS', 'PASS', 'PASSAGE', 'PSGE', 'PATH', 'PATHS', 'PIKE', 'PIKES', 'PINE', 'PNE', 
-                          'PINES', 'PNES', 'PL', 'PLAIN', 'PLN', 'PLAINS', 'PLNS', 'PLAZA', 'PLZ', 'PLZA', 'POINT', 
-                          'PT', 'POINTS', 'PTS', 'PORT', 'PRT', 'PORTS', 'PRTS', 'PR', 'PRARIE', 'PRR', 
+                          'NCK', 'NECK', 'NOOK', # N
+                          'ORCH', 'ORCHARD', 'ORCHRD', 'OVAL', 'OVL', 'OVERPASS', 'OPAS', 'OPASS', 'OVERLOOK', # O
+                          'PARK', 'PRK', 'PARKS', 'PRKS', 'PARKWAY', 'PARKWY', 'PKWAY', 'PKWY', 'PKY', 'PK', 'PARKWAYS', # P
+                          'PKWYS', 'PASS', 'PASSAGE', 'PSGE', 'PATH', 'PATHS', 'PIKE', 'PIKES', 'PINE', 'PNE', 'PIER',
+                          'PINES', 'PNES', 'PL', 'PLAIN', 'PLN', 'PLAINS', 'PLNS', 'PLAZA', 'PLZ', 'PLZA', 'POINT', 'POINTE',  
+                          'PT', 'POINTS', 'PTS', 'PORT', 'PRT', 'PORTS', 'PRTS', 'PR', 'PRARIE', 'PRR', 'PROMENADE', 
                           'RAD', 'RADIAL', 'RADL', 'RADIEL', 'RADL', 'RAMP', 'RANCH', 'RANCHES', 'RNCH', 'RNCHS', # R
                           'RAPID', 'RPD', 'RAPIDS', 'RPDS', 'REST', 'RST', 'RDG', 'RIDGE', 'RDGE', 'RDGS', 'RIDGES', 
                           'RIV', 'RIVER', 'RVR', 'RIVR', 'RD', 'ROAD', 'RD', 'ROADS', 'RDS', 'ROUTE', 'ROW', 'RUE', 'RUN', 
@@ -566,29 +604,30 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
                           'SKWY', 'SPG', 'SPNG', 'SPRING', 'SPRNG', 'SPGS', 'SPNGS', 'SPRINGS', 'SPRNGS', 'SPUR', 'SPURS', 
                           'SQ', 'SQR', 'SQRE', 'SQU', 'SQUARE', 'SQRS', 'SQUARES', 'SQS', 'STA', 'STATION', 'STATN', 'STN', 
                           'STRA', 'STRAV', 'STRAVEN', 'STRAVENUE', 'STREAM', 'STREME' 'STRM', 'STREET', 'STRT', 'ST', 'STR', 
-                          'STREETS', 'STS', 'SMT', 'SUMIT', 'SUMITT', 'SUMMIT', 
+                          'STREETS', 'STS', 'SMT', 'SUMIT', 'SUMITT', 'SUMMIT', 'SPEEDWAY',
                           'TER', 'TERR', 'TERRACE', 'THROUGHWAY', 'TRWY', 'TRACE', 'TRACES', 'TRCE', 'TRACK', 'TRACKS', # T
                           'TRAK', 'TRK', 'TRKS', 'TRAFFICWAY', 'TRFY', 'TRAIL', 'TRAILS', 'TRL', 'TRLS', 'TRAILER', 'TRLR', 
-                          'TRLRS', 'TUNEL', 'TUNL', 'TUNLS', 'TUNNEL', 'TUNNELS', 'TUNNL', 'TRNPK', 'TURNPIKE', 'TPKE', 'TURNPK', 
+                          'TRLRS', 'TUNEL', 'TUNL', 'TUNLS', 'TUNNEL', 'TUNNELS', 'TUNNL', 'TRNPK', 'TURNPIKE', 'TPKE', 'TURNPK', 'TURN', 'TR',
                           'UNDERPASS', 'UPAS', 'UN', 'UNION', 'UNIONS', 'UNS', # U
                           'VALLEY', 'VALLY', 'VLLY', 'VLY', 'VALLEYS', 'VLYS', 'VDCT', 'VIA', 'VIADCT', 'VIADUCT', 'VIEW', 'VW', # V
                           'VIEWS', 'VWS', 'VILL', 'VILLAG', 'VILLAGE', 'VILLG', 'VILLIAGE', 'VLG', 'VILLE', 'VL', 'VIS', 'VIST', 
                           'VISTA', 'VST', 'VSTA', 
-                          'WALK', 'WALKS', 'WALL', 'WAY', 'WY', 'WAYS', 'WELL', 'WL', 'WELLS', 'WLS'] # W
+                          'WALK', 'WALKS', 'WALL', 'WAY', 'WY', 'WAYS', 'WELL', 'WL', 'WELLS', 'WLS', 'WHARF', 'WOODS'] # W
     street_suffix_regex = re.compile(r'\b(' + '|'.join(street_suffix_list) + r')$\b', re.IGNORECASE)
     
     # CREATE feature(s) (7 created)
     street_segment['street_suffix'] = street_segment['vf_reg_address_1'].str.strip().str.extract(street_suffix_regex, expand=True)
-    street_segment['temp'] = street_segment['vf_reg_address_1'].str.strip().str.extract('^(\\d+\\s+\\d+/\\d+|\\d+\\w+|\\d+)', expand=False).astype(str).str.replace('nan', '')
+    street_segment['temp'] = street_segment['vf_reg_address_1'].str.strip().str.extract('^(\\d+\\s+\\d+/\\d+|\\d+\\w+|[A-Z]{1}\\d+|\\d+)', expand=False).astype(str).str.replace('nan', '')
     street_segment['house_number'] = street_segment['temp'].str.extract('^(\\d+)')
     street_segment['start_house_number'] = street_segment['house_number']
     street_segment['end_house_number'] = street_segment['house_number']
     street_segment['odd_even_both'] = 'both'
     street_segment['temp'] = street_segment['vf_reg_address_1'].str.strip().str.replace(street_suffix_regex, '')
-    street_segment['street_name'] = street_segment['temp'].str.replace('^(\\d+\\s+\\d+/\\d+|\\d+\\w+|\\d+)', '').str.strip()
+    street_segment['street_name'] = street_segment['temp'].str.replace('^(\\d+\\s+\\d+/\\d+|\\d+\\w+|[A-Z]{1}\\d+|\\d+)', '').str.strip()
 
     # REMOVE feature(s) (4 removed)
-    street_segment.drop(['vf_reg_address_1', 'temp', 'unit_number_temp', 'house_number'], axis=1, inplace=True)
+    street_segment.drop(['unit_number_temp0', 'unit_number_temp1', 'unit_number_temp2', 'unit_number_temp3', 'unit_number_temp3_flag',
+                         'vf_reg_address_1', 'temp', 'house_number'], axis=1, inplace=True)
     street_segment.drop_duplicates(inplace=True) 
 
     # IDENTIFY if there are any vote centers
@@ -625,7 +664,8 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
         # MERGE street_segment with state_data
         temp = state_data[['precinct', 'county']]
         temp.drop_duplicates(inplace=True)
-        if state_abbrv == 'NH':
+        if state_abbrv in STATES_USING_TOWNSHIPS:
+            print("HEREERERERERE")
             # NOTE: Since NH uses township instead of county to group precincts. The following subsittution accounts for this difference
             list_unique_hc_towns = temp['county'].unique().tolist()
             street_segment['vf_county_name'] = street_segment['city'].apply(lambda x: np.nan if x not in list_unique_hc_towns else x)
@@ -689,28 +729,94 @@ def generate_zip(state_abbrv, state_feed, files):
     return 
 
 
-           
+
 ###########################################################################################################################
 # END OF VIP BUILD FUNCTION DEFINITIONS ###################################################################################
 ###########################################################################################################################
 
-def generate_warnings(state_data):
+
+
+def generate_warnings_state_data(state_data):
     """
-    PURPOSE: isolate which rows, if any, have warnings
+    PURPOSE: isolate which rows, if any, have warnings or fatal errors in state_data
     INPUT: state_data
-    RETURN: missing_data_rows, multi_directions_rows, cross_street_rows, date_year_rows, semi_colon_rows
+    RETURN: multi_directions_rows, multi_address_rows, cross_street_rows, 
+            missing_data_rows, semi_colon_rows, date_year_rows, missing_zipcode_rows
     """
 
-    # GENERATE warnings
-    missing_data_rows = warning_missing_data(state_data)
+    # GENERATE warnings (2 warnings)
     multi_directions_rows = warning_multi_directions(state_data)
+    multi_address_rows = warning_multi_addresses(state_data)
     cross_street_rows = warning_cross_street(state_data)
+
+    # GENERATE fatal errors (3 fatal errors)
+    missing_data_rows = warning_missing_data(state_data)
     date_year_rows = warning_date_year(state_data)
     semi_colon_rows = warning_semi_colon(state_data)
+    missing_zipcode_rows = warning_missing_zipcodes(state_data)
 
-
-    return missing_data_rows, multi_directions_rows, cross_street_rows, semi_colon_rows, date_year_rows 
+    return     multi_directions_rows, multi_address_rows, cross_street_rows, \
+               missing_data_rows, semi_colon_rows, date_year_rows, missing_zipcode_rows
  
+
+def warning_multi_directions(state_data):
+    """
+    PURPOSE: isolate which polling locations, if any, have multiple directions
+             (warning: each unique set of directions is considered a polling location)
+    INPUT: state_data
+    RETURN: multi_directions_rows
+    """
+
+    # SELECT feature(s) (4 selected)
+    unique_rows = state_data[['county', 'location_name', 'address_line', 'directions']].drop_duplicates()
+    duplicate_locations = unique_rows[unique_rows.duplicated(subset=['county', 'location_name', 'address_line'],keep=False)]
+    duplicate_locations.index = duplicate_locations.index + 1  # INCREASE INDEX to correspond with google sheets index
+
+    multi_directions_rows = []
+    if not duplicate_locations.empty: # IF the dataframe is not empty
+        multi_directions_rows = sorted([tuple(x) for x in duplicate_locations.groupby(['county', 'location_name', 'address_line']).groups.values()])
+
+
+    return multi_directions_rows
+
+
+
+def warning_multi_addresses(state_data):
+    """
+    PURPOSE: isolate which polling locations (county/precinct pair), if any, have multiple addresses
+             (warning: each unique set of addresses is considered a polling location)
+    INPUT: state_data
+    RETURN: multi_address_rows
+    """
+
+    # SELECT feature(s) (4 selected)
+    addresses = state_data[['county','location_name', 'address_line']].drop_duplicates()
+    multi_addresses = addresses[addresses.duplicated(subset=['county','location_name'], keep=False)]
+    multi_addresses.index = multi_addresses.index + 1  # INCREASE INDEX to correspond with google sheets index
+
+    multi_address_rows = []
+    if not multi_addresses.empty: # IF the dataframe is not empty
+        multi_address_rows = sorted([tuple(x) for x in multi_addresses.groupby(['county', 'location_name']).groups.values()])
+
+
+    return multi_address_rows
+
+
+
+def warning_cross_street(state_data):
+    """
+    PURPOSE: isolate which rows, if any, have invalid cross street (e.g. 1st & Main St)
+    INPUT: state_data
+    RETURN: cross_street_rows
+    """
+
+    # NOTE: invalid cross streets sometimes do not map well on Google's end 
+    cross_street_addresses = state_data[state_data['address_line'].str.contains(' & | and ')]
+    cross_street_rows = list(cross_street_addresses.index + 1)
+
+
+    return cross_street_rows
+
 
 
 def warning_missing_data(state_data):
@@ -735,45 +841,7 @@ def warning_missing_data(state_data):
 
 
 
-def warning_cross_street(state_data):
-    """
-    PURPOSE: isolate which rows, if any, have invalid cross street (e.g. 1st & Main St)
-    INPUT: state_data
-    RETURN: cross_street_rows
-    """
-
-    # NOTE: invalid cross streets sometimes do not map well on Google's end 
-    cross_street_addresses = state_data[state_data['address_line'].str.contains(' & | and ')]
-    cross_street_rows = list(cross_street_addresses.index + 1)
-
-
-    return cross_street_rows
-
-
-
-def warning_multi_directions(state_data):
-    """
-    PURPOSE: isolate which polling locations, if any, have multiple directions
-             (warning: each unique set of directions is considered a polling location)
-    INPUT: state_data
-    RETURN: multi_directions_rows
-    """
-
-    # SELECT feature(s) (4 selected)
-    unique_rows = state_data[['county', 'location_name', 'address_line', 'directions']].drop_duplicates()
-    duplicate_locations = unique_rows[unique_rows.duplicated(subset=['county', 'location_name', 'address_line'],keep=False)]
-    duplicate_locations.index = duplicate_locations.index + 1  # INCREASE INDEX to correspond with google sheets index
-
-    multi_directions_rows = []
-    if not duplicate_locations.empty: # IF the dataframe is not empty
-        multi_directions_rows = sorted([tuple(x) for x in duplicate_locations.groupby(['county', 'location_name', 'address_line']).groups.values()])
-
-
-    return multi_directions_rows
-
-
-
-def warning_date_year(state_data): # CRITICAL
+def warning_date_year(state_data): 
     """
     PURPOSE: isolate which rows, if any, have a start_date or end_date outside of the election year
     INPUT: state_data
@@ -814,15 +882,253 @@ def warning_semi_colon(state_data):
     return semi_colon_rows
 
 
+
+def warning_missing_zipcodes(state_data):
+    """
+    PURPOSE: isolate which rows, if any, are missing zip codes in the state data 
+    INPUT: state_data
+    RETURN: missing_zipcode_rows
+    """
+
+    # EXTRACT zip codes
+    addresses = state_data[['address_line']]
+    addresses['zipcode'] = addresses['address_line'].str.split().str[-1].str.split(',').str[-1]
+
+    # ISOLATE zip codes that are not 5 digit numbers
+    invalid_zipcodes = addresses[~(addresses['zipcode'].str.isnumeric()) | (addresses['zipcode'].str.len() != 5) ]
+    invalid_zipcodes.index = invalid_zipcodes.index + 1  # INCREASE INDEX to correspond with Google Sheets index
+    missing_zipcode_rows = invalid_zipcodes.index.values.tolist()
+    
+
+    return missing_zipcode_rows
+
+
+
+###########################################################################################################################
+# END OF STATE_DATA WARNING FUNCTION DEFINITIONS ##########################################################################
+###########################################################################################################################
+
+
+def generate_warnings_target_smart(state_abbrv, target_smart):
+    """
+    PURPOSE: isolate which rows, if any, have warnings in target_smart
+    INPUT: state_abbrv, target_smart
+    RETURN: missing_counties_count, missing_townships_count, missing_state_count
+    """
+
+    # GENERATE warnings (3 warnings)
+    missing_counties_count = warning_missing_counties(target_smart)
+    missing_townships_count = warning_missing_townships(target_smart)
+    missing_state_count = warning_missing_state(state_abbrv, target_smart)
+
+
+    return missing_counties_count, missing_townships_count, missing_state_count
+
+
+
+def warning_missing_counties(target_smart):
+    """
+    PURPOSE: count how many rows are missing county data
+    INPUT: target_smart
+    RETURN: missing_counties_count
+    """
+
+    # COUNT the number of rows missing county data
+    target_smart['vf_county_name'] = target_smart['vf_county_name'].replace('', np.nan, regex=True) # REPLACE empty strings with NaNs
+    missing_counties_count = len(target_smart[target_smart['vf_county_name'].isnull()])
+
+
+    return missing_counties_count
+
+
+
+def warning_missing_townships(target_smart):
+    """
+    PURPOSE: count how many rows are missing township data
+    INPUT: target_smart
+    RETURN: missing_townships_count
+    """
+
+    # COUNT the number of rows missing township data (critical for states listed in STATES_USING_TOWNSHIPS)
+    target_smart['vf_township'] = target_smart['vf_township'].replace('', np.nan, regex=True) # REPLACE empty strings with NaNs
+    missing_townships_count = len(target_smart[target_smart['vf_township'].isnull()])
+
+
+    return missing_townships_count
+
+
+
+def warning_missing_state(state_abbrv, target_smart):
+    """
+    PURPOSE: count how many rows are missing state data & fill it in
+    INPUT: missing_state_count
+    RETURN: 
+    """
+    target_smart['vf_source_state'] = target_smart['vf_source_state'].replace('', np.nan, regex=True) # REPLACE empty strings with NaNs
+    missing_state = target_smart[target_smart['vf_source_state'].isnull()]
+    missing_state_count = len(missing_state)
+
+    if not missing_state.empty: # IF there are rows missing state data
+        street_segment['vf_source_state'].fillna(state_abbrv, inplace=True)
+    
+
+    return missing_state_count
+
+
+
+###########################################################################################################################
+# END OF TARGET_SMART WARNING FUNCTION DEFINITIONS ########################################################################
+###########################################################################################################################
+
+
+
+def generate_warnings_mismatches(state_abbrv, state_data, target_smart):
+    """
+    PURPOSE: isolate matching issues between state_data and target_smart
+    INPUT: state_abbrv, state_data, target_smart
+    RETURN: sd_unmatched_precincts, ts_unmatched_precincts
+    """
+
+    # GENERATE warnings (2 warnings)
+    sd_unmatched_precincts_list, ts_unmatched_precincts_list = warning_unmatched_precincts(state_abbrv, state_data, target_smart)
+
+
+    return sd_unmatched_precincts_list, ts_unmatched_precincts_list
+
+
+
+def warning_unmatched_precincts(state_abbrv, state_data, target_smart):
+    """
+    PURPOSE: isolate which county/precinct pairs in state_data, are missing from target_smart, and vice versa
+    INPUT: state_abbrv, state_data, target_smart
+    RETURN: sd_unmatched_precincts, ts_unmatched_precincts
+    """
+
+    # SELECT all state_data County/Precinct pairs
+    sd_precincts_df = state_data[['county', 'precinct']].drop_duplicates()
+    sd_precincts = set((x[0].upper(), x[1]) for x in sd_precincts_df.values)
+
+    # SELECT all target_smart County/Precinct pairs
+    if state_abbrv in STATES_USING_TOWNSHIPS:
+        ts_precincts_df = target_smart[['vf_township', 'vf_precinct_name']].drop_duplicates()
+    else:
+        ts_precincts_df = target_smart[['vf_county_name', 'vf_precinct_name']].drop_duplicates()
+    ts_precincts = set(tuple(x) for x in ts_precincts_df.values)
+
+    # UNMATCHED state_data precincts -- County/Precinct pairs only in state_data
+    sd_unmatched_precincts_list = sorted(list(sd_precincts - ts_precincts))
+
+    # UNMATCHED target_smart precincts -- County/Precinct pairs only in target_smart
+    ts_unmatched_precincts_list = sorted(list(ts_precincts - sd_precincts))
+
+
+    return sd_unmatched_precincts_list, ts_unmatched_precincts_list
+
+
+
+###########################################################################################################################
+# END OF MATCHING WARNING FUNCTION DEFINITIONS ############################################################################
+###########################################################################################################################
+
+
+
+def generate_warnings_txt(state_abbrv, street_segment):
+    """
+    PURPOSE: isolate matching issues between state_data and target_smart
+    INPUT: state_abbrv, state_data, target_smart
+    RETURN: sd_unmatched_precincts, ts_unmatched_precincts
+    """
+
+    # GENERATE warnings (3 warnings)
+    missing_precinct_ids_count = warning_missing_precinct_ids(state_abbrv, street_segment)
+    missing_house_numbers_count = warning_missing_house_numbers(state_abbrv, street_segment)
+    missing_street_suffixes_count = warning_missing_street_suffixes(state_abbrv, street_segment)
+
+
+    return missing_precinct_ids_count, missing_house_numbers_count, missing_street_suffixes_count
+
+
+
+def warning_missing_precinct_ids(state_abbrv, street_segment):
+    """
+    PURPOSE: isolate the number of addresses that failed to match to precinct ids
+    INPUT: street_segment
+    RETURN: missing_precinct_ids_count
+    """
+
+    # COUNT the number of rows in street_segment that do not have a precinct_id
+    missing_precinct_ids = street_segment[street_segment['precinct_id'].isnull()]
+    missing_precinct_ids_count = len(missing_precinct_ids)
+
+    # OPTIONAL: Export a csv of the rows with missing precinct_ids
+    missing_precinct_ids_filename = 'PP_' + state_abbrv + '_missing_precinct_ids.csv'
+    missing_precinct_ids.to_csv(missing_precinct_ids_filename, index=False)
+
+    return missing_precinct_ids_count
+
+
+
+def warning_missing_house_numbers(state_abbrv, street_segment):
+    """
+    PURPOSE: isolate the number of addresses missing a house number
+    INPUT: street_segment
+    RETURN: missing_precinct_ids_count
+    """
+
+    # COUNT the number of rows in street_segment that are missing a house number
+    missing_house_numbers = street_segment[street_segment['start_house_number'].isnull()]
+    missing_house_numbers_count = len(missing_house_numbers)
+
+    # OPTIONAL: Export a csv of the rows with missing house numbers
+    missing_house_numbers_filename = 'PP_' + state_abbrv + '_missing_house_numbers.csv'
+    missing_house_numbers.to_csv(missing_house_numbers_filename, index=False)
+
+
+    return missing_house_numbers_count
+
+
+
+def warning_missing_street_suffixes(state_abbrv, street_segment):
+    """
+    PURPOSE: isolate the number of addresses missing a street suffixes
+    INPUT: street_segment
+    RETURN: missing_street_suffixes_count
+    """
+    # COUNT the number of rows in street_segment that are missing a street suffix
+    missing_street_suffixes = street_segment[street_segment['street_suffix'].isnull()]
+    missing_street_suffixes_count = len(missing_street_suffixes)
+
+    # OPTIONAL: Export a csv of the rows with missing street suffixes
+    missing_street_suffixes_filename = 'PP_' + state_abbrv + '_missing_street_suffixes.csv'
+    missing_street_suffixes.to_csv(missing_street_suffixes_filename, index=False)
+
+    return missing_street_suffixes_count
+
+
+
+
 ###########################################################################################################################
 # END OF WARNING FUNCTION DEFINITIONS #####################################################################################
 ###########################################################################################################################
 
-def state_report(missing_data_rows, multi_directions_rows, cross_street_rows, semi_colon_rows, date_year_rows,
-                 state_abbrv, state_feed, state_data, election_authorities, target_smart, files):
+
+
+def state_report(multi_directions_rows, multi_address_rows, cross_street_rows, # WARNINGS for state data
+                 missing_data_rows, semi_colon_rows, date_year_rows, missing_zipcode_rows, # FATAL ERRORS for state_data
+                 missing_counties_count, missing_townships_count, missing_state_count, # WARNINGS for target_smart
+                 sd_unmatched_precincts_list, ts_unmatched_precincts_list, # WARNINGS for mismatches between state_data & target_smart
+                 missing_precinct_ids_count, missing_house_numbers_count, missing_street_suffixes_count, # WARNINGS for .txt dataframes
+                 state_abbrv, state_feed, state_data, election_authorities, target_smart, # MAIN dataframes
+                 files):
     """
-    PURPOSE: print state report (general descriptive stats and warnings)
-    INPUT: state_abbrv, state_feed, state_data, election_authorities, target_smart, files
+    PURPOSE: print state report (general descriptive stats, warnings, and fatal errors)
+    INPUT: multi_directions_rows, multi_address_rows, cross_street_rows, # WARNINGS for state data
+           missing_data_rows, semi_colon_rows, date_year_rows, missing_zipcode_rows, # FATAL ERRORS for state_data
+           missing_counties_count, missing_townships_count, missing_state_count, # WARNINGS for target_smart
+           sd_unmatched_precincts_list, ts_unmatched_precincts_list, # WARNINGS for mismatches between state_data & target_smart
+           missing_precinct_ids_count, missing_house_numbers_count, missing_street_suffixes_count, # WARNINGS for .txt dataframes
+           state_abbrv, state_feed, state_data, election_authorities, target_smart, # MAIN dataframes
+           files
     RETURN: 
     """
     
@@ -847,60 +1153,166 @@ def state_report(missing_data_rows, multi_directions_rows, cross_street_rows, se
     ea.drop_duplicates(inplace=True)
     sd = state_data[['county']]
     sd.drop_duplicates(inplace=True)
-    if state_abbrv == 'NH':
+    if state_abbrv in STATES_USING_TOWNSHIPS: # PROCESS states that use townships
         ts = target_smart[['vf_township']]
-    else:
+    else: # PROCESS states that use counties/places
         ts = target_smart[['vf_county_name']]
     ts.drop_duplicates(inplace=True)
 
     # PRINT count of unique OCD IDs
     print('\n'*2) 
-    print('# of Unique Counties/Places  '.center(PRINT_OUTPUT_WIDTH, ' ')) 
+    if state_abbrv in STATES_USING_TOWNSHIPS: # PROCESS states that use townships
+        print('# of Unique Townships'.center(PRINT_OUTPUT_WIDTH, ' ')) 
+        unique_ocd_id_string = 'townships'
+    else: # PROCESS states that use counties/places
+        print('# of Unique Counties/Places'.center(PRINT_OUTPUT_WIDTH, ' ')) 
+        unique_ocd_id_string = 'counties/places'
     print()
-    print(f"{'State Data |':>{PRINT_CENTER}} {len(sd)} counties/places")
-    print(f"{'TargetSmart |':>{PRINT_CENTER}} {len(ts)} counties/places")
-    print(f"{'Election Authorities |':>{PRINT_CENTER}} {len(ea)} counties/places")
+    print(f"{'State Data |':>{PRINT_CENTER}} {len(sd)} {unique_ocd_id_string}")
+    print(f"{'TargetSmart |':>{PRINT_CENTER}} {len(ts)} {unique_ocd_id_string}")
+    print(f"{'Election Authorities |':>{PRINT_CENTER}} {len(ea)} {unique_ocd_id_string}")
 
     # _____________________________________________________________________________________________________________________
 
+    
     # WARNINGS | Print warnings (less severe to critical)
 
-    if missing_data_rows or multi_directions_rows or cross_street_rows or semi_colon_rows or date_year_rows:
+
+    if multi_directions_rows or multi_address_rows or cross_street_rows or \
+       missing_data_rows or semi_colon_rows or date_year_rows or missing_zipcode_rows or \
+       (missing_counties_count > 0) or (missing_townships_count > 0) or (missing_state_count > 0) or \
+       sd_unmatched_precincts_list or ts_unmatched_precincts_list or \
+       (missing_precinct_ids_count > 0) or (missing_house_numbers_count > 0) or (missing_street_suffixes_count > 0): 
+
+        STATES_WITH_WARNINGS.append(state_abbrv) # STORE states with warnings
+
+    if multi_directions_rows or multi_address_rows or cross_street_rows:      
         print('\n'*2)
-        print( '---------------------- WARNINGS ----------------------'.center(PRINT_OUTPUT_WIDTH, ' ')) 
-        STATES_WITH_WARNINGS.append(state_abbrv) # RECORD states with warnings
+        print('------------------ STATE DATA WARNINGS ------------------'.center(PRINT_OUTPUT_WIDTH, ' '))
 
-    if missing_data_rows:
+        if multi_directions_rows:
+            print('\n')
+            print('Multiple Directions for the Same Polling Location'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            print(str(multi_directions_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+
+        if multi_address_rows:
+            print('\n')
+            print('Multiple Locations for the Same Polling Location'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            print(str(multi_address_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+           
+        if cross_street_rows:
+            print('\n')
+            print('Problematic Cross-Street Formats'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            print(str(cross_street_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+    
+
+    if missing_data_rows or semi_colon_rows or date_year_rows or missing_zipcode_rows:
         print('\n')
-        print('Missing Data'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(missing_data_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+        print('---------------- STATE DATA FATAL ERRORS ----------------'.center(PRINT_OUTPUT_WIDTH, ' '))
 
-    if multi_directions_rows:
-        print('\n')
-        print('Polling Locations have Multiple Directions'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(multi_directions_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+        if missing_data_rows:
+            print('\n')
+            print('Missing Data'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            print(str(missing_data_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
 
-    if cross_street_rows:
-        print('\n')
-        print('Problematic Cross-Street Formats'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(cross_street_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+        if semi_colon_rows:
+            print('\n')
+            print('Hours have ;\'s Instead of :\'s'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            print(str(semi_colon_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
 
-    if semi_colon_rows:
-        print('\n')
-        print('Hours have ;\'s Instead of :\'s'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(semi_colon_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+        if date_year_rows:
+            print('\n')
+            print('Dates have Invalid Years in'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            print(str(date_year_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
 
-    if date_year_rows:
-        print()
-        print('Dates have Invalid Years'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(date_year_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+        if missing_zipcode_rows:
+            print('\n')
+            print('Missing Zipcodes from Location Addresses'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            print(str(date_year_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
 
 
+    if state_abbrv in STATES_USING_TOWNSHIPS: # PROCESS states that use townships
+        if (missing_townships_count > 0) or (missing_state_count > 0):
+            print('\n'*2)
+            print('----------------- TARGET SMART WARNINGS -----------------'.center(PRINT_OUTPUT_WIDTH, ' '))
+
+            if missing_townships_count > 0:
+                    print('\n')
+                    print('# of Rows Missing Townships'.center(PRINT_OUTPUT_WIDTH, ' '))
+                    print()
+                    print(str(missing_townships_count).center(PRINT_OUTPUT_WIDTH, ' '))
+
+            if missing_state_count > 0:
+                print('\n')
+                print('# of Missing State Abbreviations Filled'.center(PRINT_OUTPUT_WIDTH, ' '))
+                print()
+                print(str(missing_state_count).center(PRINT_OUTPUT_WIDTH, ' '))
+
+    else: # PROCESS states that use counties
+        if (missing_counties_count > 0) or (missing_state_count > 0):
+            print('\n'*2)
+            print('----------------- TARGET SMART WARNINGS -----------------'.center(PRINT_OUTPUT_WIDTH, ' '))
+
+            if missing_counties_count > 0:
+                print('\n')
+                print('# of Rows Missing Counties'.center(PRINT_OUTPUT_WIDTH, ' '))
+                print()
+                print(str(missing_counties_count).center(PRINT_OUTPUT_WIDTH, ' '))
+
+            if missing_state_count > 0:
+                print('\n')
+                print('# of Missing State Abbreviations Filled'.center(PRINT_OUTPUT_WIDTH, ' '))
+                print()
+                print(str(missing_state_count).center(PRINT_OUTPUT_WIDTH, ' '))
+
+
+    if sd_unmatched_precincts_list or ts_unmatched_precincts_list:      
+        print('\n'*2)
+        print('------------------- MISMATCH WARNINGS -------------------'.center(PRINT_OUTPUT_WIDTH, ' '))
+
+        if sd_unmatched_precincts_list:
+            print('\n')
+            print('Precincts in State Data not found in TargetSmart'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            print(str(multi_directions_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+
+        if ts_unmatched_precincts_list:
+            print('\n')
+            print('Precincts in TargetSmart not found in State Data'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            print(str(ts_unmatched_precincts_list).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+    
+
+    if (missing_precinct_ids_count > 0) or (missing_house_numbers_count > 0) or (missing_street_suffixes_count > 0):
+        print('\n'*2)
+        print('---------------- STREET SEGMENT WARNINGS ----------------'.center(PRINT_OUTPUT_WIDTH, ' '))
+
+        if missing_precinct_ids_count > 0:
+            print('\n')
+            print('# of Rows Missing Precinct Ids'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            print(str(missing_precinct_ids_count).center(PRINT_OUTPUT_WIDTH, ' '))
+
+        if missing_house_numbers_count > 0:
+            print('\n')
+            print('# of Rows Missing Address Numbers'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            print(str(missing_house_numbers_count).center(PRINT_OUTPUT_WIDTH, ' '))
+
+        if missing_street_suffixes_count > 0:
+            print('\n')
+            print('# of Rows Missing Street Suffixes'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            print(str(missing_street_suffixes_count).center(PRINT_OUTPUT_WIDTH, ' '))
+
+        
     print('\n'*1)
     print('_'*PRINT_OUTPUT_WIDTH)
     print('\n'*2)
@@ -1024,7 +1436,8 @@ if __name__ == '__main__':
     targetsmart_sql_col_string = ', '.join(targetsmart_sql_col_list)
 
     # SET list of fields to filter out if they are empty in TargetSmart
-    targetsmart_sql_filter_string = " WHERE vf_reg_city <> ''"
+    targetsmart_sql_filter_string = "WHERE vf_reg_city <> '' AND vf_precinct_name <> '' AND \
+                                     vf_reg_address_1 <> '' AND vf_reg_zip <> ''"
 
     # _____________________________________________________________________________________________________________________
       
@@ -1085,6 +1498,9 @@ if __name__ == '__main__':
                         query = "SELECT " + targetsmart_sql_col_string + " FROM " + sql_table_name[0] + \
                                 targetsmart_sql_filter_string + " AND vf_county_name = 'PIMA';"
 
+                    elif state_abbrv == 'FL':
+                        query = "SELECT " + targetsmart_sql_col_string + " FROM " + sql_table_name[0] + \
+                                targetsmart_sql_filter_string + " AND vf_county_name IN ('OSCEOLA', 'BAY', 'ST. LUCIE');"
                     else: 
                         query = "SELECT " + targetsmart_sql_col_string + " FROM " + sql_table_name[0] + targetsmart_sql_filter_string + ";"
 
@@ -1116,7 +1532,7 @@ if __name__ == '__main__':
                 
             except Exception as e:                
                 increment_processingerror += 1
-                states_failed_to_process.append((state, type(e).__name__, e))
+                states_failed_to_process.append((state_abbrv, type(e).__name__, e))
 
 
     conn.close() # CLOSE MySQL database connection 
