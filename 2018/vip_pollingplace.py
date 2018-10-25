@@ -239,11 +239,9 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities, target
     # FORMAT address line (1 formatted)
     # NOTE: A common outreach error was missing state abbreviations in the address line
     state_abbrv_with_space = state_feed['state_abbrv'][0].center(4, ' ')
-    state_data['address_line'] = state_data['address_line'].str.replace('.','')
-    insert_state_abbrv = lambda x: x if re.search('(\\d{5})$', x) == None else \
-                                  (re.sub('[ ](?=[^ ]+$)', state_abbrv_with_space,  x) if state_abbrv_with_space not in x else x)
-    state_data['address_line'] = state_data['address_line'].apply(lambda x: insert_state_abbrv(x))
-
+    state_data['address_line'] = state_data['address_line'].str.replace(state_abbrv_with_space, ' ') \
+                                                           .str.replace('[ ](?=[^ ]+$)', state_abbrv_with_space)
+    
     # CONDITIONAL formattating for 2 states (NH, AZ) 
     if state_abbrv == 'NH':
 
