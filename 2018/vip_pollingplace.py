@@ -62,15 +62,13 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
     
     # PREP | Identify data issues, create/format features, and standardize dataframes
 
-    # GENERATE warnings/fatal errors in state_data (2 warnings, 4 fatal errors)
+    # GENERATE warnings/fatal errors in state_data (2 warnings, 5 fatal errors)
     multi_directions_rows, multi_address_rows, cross_street_rows, \
-      missing_data_rows, semi_colon_rows, date_year_rows, missing_zipcode_rows = generate_warnings_state_data(state_data)
-
+      missing_data_rows, semi_colon_rows, date_year_rows, \
+      missing_zipcodes_rows, missing_state_abbrvs_rows = generate_warnings_state_data(state_abbrv, state_data)
+    
     # GENERATE warnings in target_smart (2 types of warnings)
     missing_counties_count, missing_townships_count, missing_state_count = generate_warnings_target_smart(state_abbrv, target_smart)
-
-    # GENERATE warnings for matches between counties/places/townships & precincts in state_data & target_smart (2 warnings)
-    sd_unmatched_precincts_list, ts_unmatched_precincts_list = generate_warnings_mismatches(state_abbrv, state_data, target_smart)
 
     # CREATE/FORMAT feature(s) (1 created, 1 formatted)
     state_feed['state_fips'] = state_feed['state_fips'].str.pad(2, side='left', fillchar='0') # first make sure there are leading zeros
@@ -79,6 +77,9 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
     # CLEAN/FORMAT state_feed, state_data, election_authorities, and target_smart (4 dataframes)
     state_feed, state_data, \
       election_authorities, target_smart = clean_data(state_abbrv, state_feed, state_data, election_authorities, target_smart)
+
+    # GENERATE warnings for matches between counties/places/townships & precincts in state_data & target_smart (2 warnings)
+    sd_unmatched_precincts_list, ts_unmatched_precincts_list = generate_warnings_mismatches(state_abbrv, state_data, target_smart)
 
     # _____________________________________________________________________________________________________________________
 
@@ -155,7 +156,8 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
 
     # PRINT state report
     state_report(multi_directions_rows, multi_address_rows, cross_street_rows, # WARNINGS for state data
-                 missing_data_rows, semi_colon_rows, date_year_rows, missing_zipcode_rows, # FATAL ERRORS for state_data
+                 missing_data_rows, semi_colon_rows, date_year_rows, # FATAL ERRORS for state_data
+                 missing_zipcode_rows, missing_state_abbrvs_rows, 
                  missing_counties_count, missing_townships_count, missing_state_count, # WARNINGS for target_smart
                  sd_unmatched_precincts_list, ts_unmatched_precincts_list, # WARNINGS for mismatches between state_data & target_smart
                  missing_precinct_ids_count, missing_house_numbers_count, missing_street_suffixes_count, # WARNINGS for .txt dataframes
@@ -733,12 +735,13 @@ def generate_zip(state_abbrv, state_feed, files):
 
 
 
-def generate_warnings_state_data(state_data):
+def generate_warnings_state_data(state_abbrv, state_data):
     """
     PURPOSE: isolate which rows, if any, have warnings or fatal errors in state_data
     INPUT: state_data
     RETURN: multi_directions_rows, multi_address_rows, cross_street_rows, 
-            missing_data_rows, semi_colon_rows, date_year_rows, missing_zipcode_rows
+            missing_data_rows, semi_colon_rows, date_year_rows, 
+            missing_zipcode_rows, missing_state_abbrvs_rows
     """
 
     # GENERATE warnings (2 warnings)
@@ -750,11 +753,14 @@ def generate_warnings_state_data(state_data):
     missing_data_rows = warning_missing_data(state_data)
     date_year_rows = warning_date_year(state_data)
     semi_colon_rows = warning_semi_colon(state_data)
-    missing_zipcode_rows = warning_missing_zipcodes(state_data)
+    missing_zipcodes_rows = warning_missing_zipcodes(state_data)
+    missing_state_abbrvs_rows = warning_missing_state_abbrvs(state_abbrv, state_data)
 
     return     multi_directions_rows, multi_address_rows, cross_street_rows, \
-               missing_data_rows, semi_colon_rows, date_year_rows, missing_zipcode_rows
- 
+               missing_data_rows, semi_colon_rows, date_year_rows, \
+               missing_zipcodes_rows, missing_state_abbrvs_rows 
+
+
 
 def warning_multi_directions(state_data):
     """
@@ -898,6 +904,23 @@ def warning_missing_zipcodes(state_data):
     
 
     return missing_zipcode_rows
+
+
+
+def warning_missing_state_abbrvs(state_abbrv, state_data):
+    """
+    PURPOSE: isolate which rows, if any, are missing state abbreviations in the `address_line` col in state data 
+    INPUT: state_data
+    RETURN: missing_state_abbrvs_rows
+    """
+    
+    # SELECT feature(s) (1 feature)
+    missing_state_abbrvs = state_data[['address_line']]
+    state_abbrv_with_space = ' ' + state_abbrv + ' ' # CREATE state_abbrv with space
+    missing_state_abbrvs = missing_state_abbrvs[~missing_state_abbrvs['address_line'].str.upper().str.contains(state_abbrv_with_space)]
+    missing_state_abbrvs_rows = list(set(missing_state_abbrvs.index + 1)) # ADD 1 to index to correspond with Google Sheets
+
+    return missing_state_abbrvs_rows  
 
 
 
@@ -1111,7 +1134,8 @@ def warning_missing_street_suffixes(state_abbrv, street_segment):
 
 
 def state_report(multi_directions_rows, multi_address_rows, cross_street_rows, # WARNINGS for state data
-                 missing_data_rows, semi_colon_rows, date_year_rows, missing_zipcode_rows, # FATAL ERRORS for state_data
+                 missing_data_rows, semi_colon_rows, date_year_rows, # FATAL ERRORS for state_data
+                 missing_zipcode_rows, missing_state_abbrvs_rows, 
                  missing_counties_count, missing_townships_count, missing_state_count, # WARNINGS for target_smart
                  sd_unmatched_precincts_list, ts_unmatched_precincts_list, # WARNINGS for mismatches between state_data & target_smart
                  missing_precinct_ids_count, missing_house_numbers_count, missing_street_suffixes_count, # WARNINGS for .txt dataframes
@@ -1176,7 +1200,8 @@ def state_report(multi_directions_rows, multi_address_rows, cross_street_rows, #
 
 
     if multi_directions_rows or multi_address_rows or cross_street_rows or \
-       missing_data_rows or semi_colon_rows or date_year_rows or missing_zipcode_rows or \
+       missing_data_rows or semi_colon_rows or date_year_rows or \
+       missing_zipcode_rows or missing_state_abbrvs_rows or \
        (missing_counties_count > 0) or (missing_townships_count > 0) or (missing_state_count > 0) or \
        sd_unmatched_precincts_list or ts_unmatched_precincts_list or \
        (missing_precinct_ids_count > 0) or (missing_house_numbers_count > 0) or (missing_street_suffixes_count > 0): 
@@ -1206,7 +1231,7 @@ def state_report(multi_directions_rows, multi_address_rows, cross_street_rows, #
             print(str(cross_street_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
     
 
-    if missing_data_rows or semi_colon_rows or date_year_rows or missing_zipcode_rows:
+    if missing_data_rows or semi_colon_rows or date_year_rows or missing_zipcode_rows or missing_state_abbrvs_rows:
         print('\n')
         print('---------------- STATE DATA FATAL ERRORS ----------------'.center(PRINT_OUTPUT_WIDTH, ' '))
 
@@ -1233,6 +1258,12 @@ def state_report(multi_directions_rows, multi_address_rows, cross_street_rows, #
             print('Missing Zipcodes from Location Addresses'.center(PRINT_OUTPUT_WIDTH, ' '))
             print()
             print(str(missing_zipcode_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+            
+        if missing_state_abbrvs_rows:
+            print('\n')
+            print('Missing State Abbreviations from Location Addresses'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            print(str(missing_state_abbrvs_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
 
 
     if state_abbrv in STATES_USING_TOWNSHIPS: # PROCESS states that use townships
