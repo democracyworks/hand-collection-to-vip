@@ -65,7 +65,7 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
     # GENERATE warnings/fatal errors in state_data (2 warnings, 5 fatal errors)
     multi_directions_rows, multi_address_rows, cross_street_rows, \
       missing_data_rows, semi_colon_rows, date_year_rows, \
-      missing_zipcodes_rows, missing_state_abbrvs_rows = generate_warnings_state_data(state_abbrv, state_data)
+      missing_zipcode_rows, missing_state_abbrvs_rows = generate_warnings_state_data(state_abbrv, state_data)
     
     # GENERATE warnings in target_smart (2 types of warnings)
     missing_counties_count, missing_townships_count, missing_state_count = generate_warnings_target_smart(state_abbrv, target_smart)
@@ -751,12 +751,12 @@ def generate_warnings_state_data(state_abbrv, state_data):
     missing_data_rows = warning_missing_data(state_data)
     date_year_rows = warning_date_year(state_data)
     semi_colon_rows = warning_semi_colon(state_data)
-    missing_zipcodes_rows = warning_missing_zipcodes(state_data)
+    missing_zipcode_rows = warning_missing_zipcodes(state_data)
     missing_state_abbrvs_rows = warning_missing_state_abbrvs(state_abbrv, state_data)
 
     return     multi_directions_rows, multi_address_rows, cross_street_rows, \
                missing_data_rows, semi_colon_rows, date_year_rows, \
-               missing_zipcodes_rows, missing_state_abbrvs_rows 
+               missing_zipcode_rows, missing_state_abbrvs_rows 
 
 
 
@@ -888,15 +888,15 @@ def warning_missing_zipcodes(state_data):
     """
     PURPOSE: isolate which rows, if any, are missing zip codes in the `address_line` col in state data 
     INPUT: state_data
-    RETURN: missing_zipcodes_rows
+    RETURN: missing_zipcode_rows
     """
 
     # SELECT feature(s) (1 feature)
     missing_zipcodes = state_data[['address_line']]
     missing_zipcodes = missing_zipcodes[~missing_zipcodes['address_line'].str.contains('[0-9]{5}$')]
-    missing_zipcodes_rows  = list(set(missing_zipcodes.index + 1)) # ADD 1 to index to correspond with Google Sheets
+    missing_zipcode_rows  = list(set(missing_zipcodes.index + 1)) # ADD 1 to index to correspond with Google Sheets
    
-    return missing_zipcodes_rows
+    return missing_zipcode_rows
 
 
 
@@ -1302,13 +1302,15 @@ def state_report(multi_directions_rows, multi_address_rows, cross_street_rows, #
             print('\n')
             print('Precincts in State Data not found in TargetSmart'.center(PRINT_OUTPUT_WIDTH, ' '))
             print()
-            print(str(sd_unmatched_precincts_list).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+            for i in range(len(sd_unmatched_precincts_list) // 2 + 1):
+                print (str(sd_unmatched_precincts_list[i * 2:(i + 1) * 2]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
 
         if ts_unmatched_precincts_list:
             print('\n')
             print('Precincts in TargetSmart not found in State Data'.center(PRINT_OUTPUT_WIDTH, ' '))
             print()
-            print(str(ts_unmatched_precincts_list).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+            for i in range(len(ts_unmatched_precincts_list) // 2 + 1):
+                print (str(ts_unmatched_precincts_list[i * 2:(i + 1) * 2]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
     
 
     if (missing_precinct_ids_count > 0) or (missing_house_numbers_count > 0) or (missing_street_suffixes_count > 0):
@@ -1457,7 +1459,7 @@ if __name__ == '__main__':
     targetsmart_sql_col_string = ', '.join(targetsmart_sql_col_list)
 
     # SET list of fields to filter out if they are empty in TargetSmart
-    targetsmart_sql_filter_string = "WHERE vf_reg_city <> '' AND vf_precinct_name <> '' AND \
+    targetsmart_sql_filter_string = " WHERE vf_reg_city <> '' AND vf_precinct_name <> '' AND \
                                      vf_reg_address_1 <> '' AND vf_reg_zip <> ''"
 
     # _____________________________________________________________________________________________________________________
@@ -1537,7 +1539,7 @@ if __name__ == '__main__':
 
                     # REMOVE headers in TargetSmart dataframe
                     # NOTE: Occasionaly TargetSmart includes a header as a row (specifically for MT)
-                    target_smart = target_smart[target_smart['vf_precinct_name'] != 'VF_PRECINCT_NAME'] 
+                    target_smart = target_smart[target_smart['vf_precinct_name'] != 'vf_precinct_name'] 
 
                 except:
                     print('ERROR | TargetSmart data for', state_abbrv, 'is either missing from the database or there is data reading error.')
