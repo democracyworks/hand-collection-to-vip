@@ -888,22 +888,17 @@ def warning_semi_colon(state_data):
 
 def warning_missing_zipcodes(state_data):
     """
-    PURPOSE: isolate which rows, if any, are missing zip codes in the state data 
+    PURPOSE: isolate which rows, if any, are missing zip codes in the `address_line` col in state data 
     INPUT: state_data
-    RETURN: missing_zipcode_rows
+    RETURN: missing_zipcodes_rows
     """
 
-    # EXTRACT zip codes
-    addresses = state_data[['address_line']]
-    addresses['zipcode'] = addresses['address_line'].str.split().str[-1].str.split(',').str[-1]
-
-    # ISOLATE zip codes that are not 5 digit numbers
-    invalid_zipcodes = addresses[~(addresses['zipcode'].str.isnumeric()) | (addresses['zipcode'].str.len() != 5) ]
-    invalid_zipcodes.index = invalid_zipcodes.index + 1  # INCREASE INDEX to correspond with Google Sheets index
-    missing_zipcode_rows = invalid_zipcodes.index.values.tolist()
-    
-
-    return missing_zipcode_rows
+    # SELECT feature(s) (1 feature)
+    missing_zipcodes = state_data[['address_line']]
+    missing_zipcodes = missing_zipcodes[~missing_zipcodes['address_line'].str.contains('[0-9]{5}$')]
+    missing_zipcodes_rows  = list(set(missing_zipcodes.index + 1)) # ADD 1 to index to correspond with Google Sheets
+   
+    return missing_zipcodes_rows
 
 
 
