@@ -1570,7 +1570,7 @@ if __name__ == '__main__':
                 states_failed_to_process.append((state_abbrv, type(e).__name__, e))
 
 
-        conn.close() # CLOSE MySQL database connection 
+    conn.close() # CLOSE MySQL database connection 
 
 
     summary_report(len(input_states), increment_httperror, increment_processingerror, increment_success,
