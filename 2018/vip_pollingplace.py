@@ -246,7 +246,7 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities, target
     if state_abbrv == 'NH':
 
         target_smart['vf_precinct_name'] = target_smart['vf_precinct_name'].str.replace(' - ', ' ') # REMOVE dash in precinct names
-        target_smart['vf_precinct_name'] = target_smart['vf_precinct_name'].str.replace('"', '') # REMOVE quotes in precinct names
+        target_smart['vf_precinct_name'] = target_smart['vf_precinct_name'].str.replace('"', '').str.replace("'", '') # REMOVE quotes in precinct names
         state_data['county'] = state_data['county'].str.replace("'", '') # REMOVE apostrophes in state_data `county` because target_smart does not incl. them 
         state_data['precinct'] = state_data['precinct'].str.replace("'", '')
         target_smart['vf_township'] = target_smart['vf_township'].str.upper() 
@@ -321,7 +321,8 @@ def generate_schedule(state_data, state_feed):
     """ 
 
     # SELECT feature(s)
-    schedule = state_data[['start_time', 'end_time', 'start_date', 'end_date', 'hours_open_id']] 
+    schedule = state_data[['start_time', 'end_time', 'start_date', 'end_date', 'hours_open_id']]
+    schedule.drop_duplicates(inplace=True)
 
     # CREATE feature(s) (1 created)
     schedule.reset_index(drop=True, inplace=True) # RESET index
@@ -1021,11 +1022,18 @@ def warning_unmatched_precincts(state_abbrv, state_data, target_smart):
     sd_precincts_df = state_data[['county', 'precinct']].drop_duplicates()
     sd_precincts = set((x[0].upper(), x[1]) for x in sd_precincts_df.values)
 
+    # IDENTIFY Vote Center Locations
+    vote_center_locations = list(sd_precincts_df[sd_precincts_df['precinct'] == 'VOTE CENTER']['county'].str.upper())
+
     # SELECT all target_smart County/Precinct pairs
     if state_abbrv in STATES_USING_TOWNSHIPS:
         ts_precincts_df = target_smart[['vf_township', 'vf_precinct_name']].drop_duplicates()
+        ts_precincts_df['vf_precinct_name'][ts_precincts_df['vf_township'].isin(vote_center_locations)] = 'VOTE CENTER'
     else:
         ts_precincts_df = target_smart[['vf_county_name', 'vf_precinct_name']].drop_duplicates()
+        ts_precincts_df['vf_precinct_name'][ts_precincts_df['vf_county_name'].isin(vote_center_locations)] = 'VOTE CENTER'
+
+    ts_precincts_df.drop_duplicates(inplace=True)    
     ts_precincts = set(tuple(x) for x in ts_precincts_df.values)
 
     # UNMATCHED state_data precincts -- County/Precinct pairs only in state_data
@@ -1538,7 +1546,7 @@ if __name__ == '__main__':
                     target_smart = pd.DataFrame(list(target_smart_values), columns=targetsmart_sql_col_list, dtype='object')
 
                     # REMOVE headers in TargetSmart dataframe
-                    # NOTE: Occasionaly TargetSmart includes a header as a row (specifically for MT)
+                    # NOTE: Occasionaly TargetSmart includes a header as a row (specifically for MT & ME)
                     target_smart = target_smart[target_smart['vf_precinct_name'] != 'vf_precinct_name'] 
 
                 except:
@@ -1562,7 +1570,8 @@ if __name__ == '__main__':
                 states_failed_to_process.append((state_abbrv, type(e).__name__, e))
 
 
-    conn.close() # CLOSE MySQL database connection 
+        conn.close() # CLOSE MySQL database connection 
+
 
     summary_report(len(input_states), increment_httperror, increment_processingerror, increment_success,
                    states_failed_to_load, states_failed_to_process, states_successfully_processed)
