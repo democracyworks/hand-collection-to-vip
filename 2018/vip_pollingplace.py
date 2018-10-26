@@ -649,6 +649,13 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
         temp.drop_duplicates(inplace=True)
         slice_precinct = slice_precinct.merge(temp, left_on=['vf_precinct_name', 'vf_county_name'], right_on=['precinct', 'county'], how='left')
 
+        # NOTE: HARDCODED Values for Osceola County, FL
+        slice_precinct.loc[(slice_precinct['street_name'] == 'MASSACHUSETTS') & \
+                               (slice_precinct['street_suffix'] == 'AVE') & \
+                               (slice_precinct['zip'] == '34769') & \
+                               (slice_precinct['end_house_number'].isin(['1800', '1806', '1898'])) & \
+                               (slice_precinct['city'] == 'SAINT CLOUD'), 'vf_precinct_name'] = '523'
+        
         # MERGE street_segment with precinct
         temp = precinct[['name', 'id', 'county']]
         slice_precinct = slice_precinct.merge(temp, how='left', left_on=['vf_precinct_name', 'county'], right_on=['name', 'county'])
