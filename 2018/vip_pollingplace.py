@@ -1221,7 +1221,7 @@ def state_report(multi_directions_rows, multi_address_rows, cross_street_rows, #
 
         if multi_address_rows:
             print('\n')
-            print('Multiple Locations for the Same Polling Location'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print('Multiple Addresses for the Same Polling Location'.center(PRINT_OUTPUT_WIDTH, ' '))
             print()
             print(str(multi_address_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
            
