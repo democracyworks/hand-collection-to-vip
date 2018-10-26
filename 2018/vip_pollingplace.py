@@ -894,7 +894,7 @@ def warning_missing_zipcodes(state_data):
 
     # SELECT feature(s) (1 feature)
     missing_zipcodes = state_data[['address_line']]
-    missing_zipcodes = missing_zipcodes[~missing_zipcodes['address_line'].str.contains('[0-9]{5}$')]
+    missing_zipcodes = missing_zipcodes[~missing_zipcodes['address_line'].str.strip().str.contains('[0-9]{5}$')]
     missing_zipcode_rows  = list(set(missing_zipcodes.index + 1)) # ADD 1 to index to correspond with Google Sheets
    
     return missing_zipcode_rows
