@@ -60,7 +60,8 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
 
     # GENERATE warnings in state_data (6 types of warnings)
     missing_data_rows, multi_directions_rows, cross_street_rows, \
-      ocd_id_rows, semi_colon_rows, date_year_rows = generate_warnings(state_data, state_abbrv)
+    ocd_id_rows, semi_colon_rows, date_year_rows, missing_zipcode_rows, \
+    missing_state_abbrvs_rows = generate_warnings(state_data, state_abbrv)
 
     # CREATE/FORMAT feature(s) (1 created, 1 formatted)
     state_feed['state_fips'] = state_feed['state_fips'].str.pad(2, side='left', fillchar='0') # first make sure there are leading zeros
@@ -142,7 +143,8 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
 
     # PRINT state report
     state_report(missing_data_rows, multi_directions_rows, cross_street_rows, 
-                 ocd_id_rows, semi_colon_rows, date_year_rows,
+                 ocd_id_rows, semi_colon_rows, date_year_rows, 
+                 missing_zipcode_rows, missing_state_abbrvs_rows,
                  state_abbrv, state_feed, state_data, election_authorities,
                  {'state':state, 
                   'source':source,
@@ -499,9 +501,10 @@ def generate_zip(state_abbrv, state_feed, files):
 def generate_warnings(state_data, state_abbrv):
     """
     PURPOSE: isolate which rows, if any, have warnings
-    INPUT: state_data
+    INPUT: state_data, state_abbrv
     RETURN: missing_data_rows, multi_directions_rows, cross_street_rows, 
-            ocd_id_rows, date_year_rows, semi_colon_rows
+            ocd_id_rows, date_year_rows, semi_colon_rows, missing_zipcode_rows,
+            missing_state_abbrvs_rows
     """
 
     # GENERATE warnings
@@ -511,10 +514,13 @@ def generate_warnings(state_data, state_abbrv):
     ocd_id_rows = warning_ocd_id(state_data, state_abbrv)
     date_year_rows = warning_date_year(state_data)
     semi_colon_rows = warning_semi_colon(state_data)
+    missing_zipcode_rows = warning_missing_zipcodes(state_data)
+    missing_state_abbrvs_rows = warning_missing_state_abbrvs(state_abbrv, state_data)
 
 
     return missing_data_rows, multi_directions_rows, cross_street_rows, \
-           ocd_id_rows, semi_colon_rows, date_year_rows 
+           ocd_id_rows, semi_colon_rows, date_year_rows, missing_zipcode_rows, \
+           missing_state_abbrvs_rows
 
 
 
@@ -661,6 +667,39 @@ def warning_semi_colon(state_data):
 
 
 
+def warning_missing_zipcodes(state_data):
+    """
+    PURPOSE: isolate which rows, if any, are missing zip codes in the `address_line` col in state data 
+    INPUT: state_data
+    RETURN: missing_zipcode_rows
+    """
+
+    # SELECT feature(s) (1 feature)
+    missing_zipcodes = state_data[['address_line']]
+    missing_zipcodes = missing_zipcodes[~missing_zipcodes['address_line'].str.strip().str.contains('[0-9]{5}$')]
+    missing_zipcode_rows  = sorted(list(set(missing_zipcodes.index + 1))) # ADD 1 to index to correspond with Google Sheets
+   
+    return missing_zipcode_rows
+
+
+
+def warning_missing_state_abbrvs(state_abbrv, state_data):
+    """
+    PURPOSE: isolate which rows, if any, are missing state abbreviations in the `address_line` col in state data 
+    INPUT: state_data
+    RETURN: missing_state_abbrvs_rows
+    """
+    
+    # SELECT feature(s) (1 feature)
+    missing_state_abbrvs = state_data[['address_line']]
+    state_abbrv_with_space = ' ' + state_abbrv + ' ' # CREATE state_abbrv with space
+    missing_state_abbrvs = missing_state_abbrvs[~missing_state_abbrvs['address_line'].str.upper().str.contains(state_abbrv_with_space)]
+    missing_state_abbrvs_rows = list(set(missing_state_abbrvs.index + 1)) # ADD 1 to index to correspond with Google Sheets
+
+    return missing_state_abbrvs_rows  
+
+
+
 ###########################################################################################################################
 # END OF WARNING FUNCTION DEFINITIONS #####################################################################################
 ###########################################################################################################################
@@ -669,11 +708,13 @@ def warning_semi_colon(state_data):
 
 def state_report(missing_data_rows, multi_directions_rows, cross_street_rows, 
                  ocd_id_rows, semi_colon_rows, date_year_rows, 
+                 missing_zipcode_rows, missing_state_abbrvs_rows,
                  state_abbrv, state_feed, state_data, election_authorities, files):
     """
     PURPOSE: print state report (general descriptive stats and warnings)
     INPUT: missing_data_rows, multi_directions_rows, cross_street_rows, 
            ocd_id_rows, semi_colon_rows, date_year_rows,
+           missing_zipcode_rows, missing_state_abbrvs_rows,
            state_abbrv, state_feed, state_data, election_authorities, files
     RETURN: 
     """
@@ -708,7 +749,7 @@ def state_report(missing_data_rows, multi_directions_rows, cross_street_rows,
 
 
     if missing_data_rows or multi_directions_rows or cross_street_rows or \
-       ocd_id_rows or semi_colon_rows or date_year_rows:
+       ocd_id_rows or semi_colon_rows or date_year_rows or missing_zipcode_rows or missing_state_abbrvs_rows:
         print('\n'*2)
         print( '---------------------- WARNINGS ----------------------'.center(PRINT_OUTPUT_WIDTH, ' ')) 
         STATES_WITH_WARNINGS.append(state_abbrv) # RECORD states with warnings
@@ -744,10 +785,22 @@ def state_report(missing_data_rows, multi_directions_rows, cross_street_rows,
         print(str(semi_colon_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
 
     if date_year_rows:
-        print()
+        print('\n')
         print('Dates have Invalid Years'.center(PRINT_OUTPUT_WIDTH, ' '))
         print()
         print(str(date_year_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+
+    if missing_zipcode_rows:
+        print('\n')
+        print('Missing Zipcodes from Location Addresses'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(missing_zipcode_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+        
+    if missing_state_abbrvs_rows:
+        print('\n')
+        print('Missing State Abbreviations from Location Addresses'.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        print(str(missing_state_abbrvs_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
 
 
     print('\n'*1)
