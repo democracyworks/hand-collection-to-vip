@@ -39,6 +39,7 @@ https://docs.google.com/spreadsheets/d/1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_
 ###### ELECTION_AUTHORITIES sheet
 ocd_division, official_title, hompage_url, state
 
+<br> </br>
 
 ### Data Dictionary
 https://docs.google.com/spreadsheets/d/1s3ZayYvPBGSmyXzxq1pNdKosbEoh6QnE85e4-l8CuUc/edit#gid=2035147249
