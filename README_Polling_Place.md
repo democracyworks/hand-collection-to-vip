@@ -273,8 +273,13 @@ Indicates the number of addresses that are missing street suffixes.
 <br> </br>
 
 ## Notes
-AZ - Script filters TargetSmart data for Pima county
-FL - Script filters TargetSmart data for Bay, Osceola, and St Lucie counties
-FL - Hardcoded precinct names for several addresses in Osceola County
-NH - Hardcoded precinct names for several addresses in Washington County
+##### AZ 
+- Script filters TargetSmart data for Pima county  
+
+##### FL
+- Script filters TargetSmart data for Bay, Osceola, and St Lucie counties  
+- Hardcoded precinct names for several addresses in Osceola County  
+
+##### NH
+- Hardcoded precinct names for several addresses in Washington County  
 
