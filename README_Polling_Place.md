@@ -4,7 +4,7 @@
 Program takes hand-collected state data related to polling place locations, standardizes the data, and outputs the data in a format that can be read by the VIP Dashboard.  The data was collected by the Democracy Works VIP Outreach Team.
 
 States Processed in 2018:
-AR, AZ, ME, NH, SD, TN, TX
+ME, MT, NH, TN, TX, SD, AZ (Pima), FL (Bay, Osceola, St Lucie)
 
 <br> </br>
 
