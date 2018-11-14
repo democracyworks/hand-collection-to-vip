@@ -18,6 +18,9 @@ Program takes hand-collected state data related to early voting locations, stand
 
 ## Required input data
 
+#### Data Dictionary
+https://docs.google.com/spreadsheets/d/1s3ZayYvPBGSmyXzxq1pNdKosbEoh6QnE85e4-l8CuUc/edit#gid=2035147249
+
 Two Google Sheets workbooks are required to run the program
 
 ### 1) Early Hand Collecting
@@ -38,11 +41,6 @@ https://docs.google.com/spreadsheets/d/1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_
 
 ###### ELECTION_AUTHORITIES sheet
 ocd_division, official_title, hompage_url, state
-
-<br> </br>
-
-### Data Dictionary
-https://docs.google.com/spreadsheets/d/1s3ZayYvPBGSmyXzxq1pNdKosbEoh6QnE85e4-l8CuUc/edit#gid=2035147249
 
 
 <br> </br>
