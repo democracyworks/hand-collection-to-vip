@@ -84,7 +84,7 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
       election_authorities, target_smart = clean_data(state_abbrv, state_feed, state_data, election_authorities, target_smart)
 
     # GENERATE warnings for matches between counties/places/townships & precincts in state_data & target_smart (2 warnings)
-    sd_unmatched_precincts_list, ts_unmatched_precincts_list = generate_warnings_mismatches(state_abbrv, state_data, target_smart)
+    sd_unmatched_precincts_list, ts_unmatched_precincts_list = warning_unmatched_precincts(state_abbrv, state_data, target_smart)
 
     # _____________________________________________________________________________________________________________________
 
@@ -1127,21 +1127,6 @@ def warning_missing_state(state_abbrv, target_smart):
 ###########################################################################################################################
 # END OF TARGET_SMART WARNING FUNCTION DEFINITIONS ########################################################################
 ###########################################################################################################################
-
-
-
-def generate_warnings_mismatches(state_abbrv, state_data, target_smart):
-    """
-    PURPOSE: isolate matching issues between state_data and target_smart
-    INPUT: state_abbrv, state_data, target_smart
-    RETURN: sd_unmatched_precincts, ts_unmatched_precincts
-    """
-
-    # GENERATE warnings (2 warnings)
-    sd_unmatched_precincts_list, ts_unmatched_precincts_list = warning_unmatched_precincts(state_abbrv, state_data, target_smart)
-
-
-    return sd_unmatched_precincts_list, ts_unmatched_precincts_list
 
 
 
