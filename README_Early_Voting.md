@@ -7,12 +7,12 @@ Program takes hand-collected state data related to early voting locations, stand
 
 ## How to run program 
 
-```python <program file name> --nargs <state abbreviations or ‘all’>```
+```python <program file name> -states <state abbreviations or ‘all’>```
 
 ##### Sample run(s)
-```python vip_earlyvoting.py --nargs WY hi sD Nj```
+```python vip_earlyvoting.py -states WY hi sD Nj```
 
-```python vip_earlyvoting.py --nargs all```
+```python vip_earlyvoting.py -states all```
 
 <br> </br>
 
@@ -74,26 +74,76 @@ Use the following command to upload a single zip file to the VIP Dashboard:
 
 ## Print out sample
 ```
------------------ Iowa -----------------
+--------------------------------------------- ARIZONA ----------------------------------------------
 
-IA election | 1 row(s)
-IA polling_location | 99 row(s)
-IA schedule | 792 row(s)
-IA source | 1 row(s)
-IA state | 1 row(s)
-IA locality | 99 row(s)
-IA election_administration | 99 row(s)
-IA department | 99 row(s)
-IA person | 99 row(s)
 
-----------------------------------------
+                                             .txt Size                                              
 
-Number of states that could not be found or retrieved from Google Sheets: 0
-Number of states that could not be processed: 0
-Number of states that processed sucessfully: 1
+                                           state | 1 row(s)
+                                          source | 1 row(s)
+                                        election | 1 row(s)
+                         election_administration | 15 row(s)
+                                      department | 15 row(s)
+                                          person | 15 row(s)
+                                        locality | 15 row(s)
+                                polling_location | 88 row(s)
+                                        schedule | 241 row(s)
 
-List of states that processed sucessfully:
-['IA']
+
+
+                                   # of Unique Counties/Places                                      
+
+                                      State Data | 15 counties/places
+                            Election Authorities | 15 counties/places
+
+
+
+                       ---------------------- WARNINGS ----------------------                       
+
+
+                                            Missing Data                                            
+
+                                           100, 126, 127                                            
+
+
+                                  Problematic Cross-Street Formats                                  
+
+                                         156, 158, 160, 164                                         
+
+
+                              Missing Zipcodes from Location Addresses                              
+
+                                      147, 239, 240, 241, 242                                       
+
+
+                        Missing State Abbreviations from Location Addresses                         
+
+                                      239, 240, 241, 242, 147                                       
+
+
+____________________________________________________________________________________________________
+
+
+
+                                           SUMMARY REPORT                                           
+
+
+                               Final Status for All Requested States                                
+
+                       Failed to load state data | 0 state(s) out of 1
+                               Failed to process | 0 state(s) out of 1
+                          Successfully processed | 1 state(s) out of 1
+
+
+                                States that processed with warnings                                 
+
+                                                 AZ                                                 
+
+
+                                 States that sucessfully processed                                  
+
+                                                 AZ                                                 
+
 ```
 
 <br> </br>
@@ -101,7 +151,7 @@ List of states that processed sucessfully:
 ## Explanation of common errors
 
 ##### 'ERROR: <state> could not be found or retrieved from Google Sheets.'
-Indicates the tab for the requested state is not in the Google Sheet doc. The tab might either not be included or is misspelled.
+Indicates the tab for the requested state is not in the Google Sheet doc. The tab might not be included or is misspelled.
 
 ##### 'ERROR: <state> could not be processed.'
 Indicates a critical error in building the .txt files. The error might be a type or formatting issue. For debugging, comment out the try and except clauses. 
@@ -116,14 +166,23 @@ Indicates STATE_FEED is missing from the Google Sheet or has a read-in issue. Th
 
 ## Explanation of warnings
 
-##### 'Warning: <state> is missing data from the following rows: [2, 4, 124, 352]'
+##### 'Missing Data'
 Indicates that there are one or more empty fields in the corresponding rows of the Early Voting Hand Collection google sheet.  The warning detects missing values from all columns except 'directions', 'start_time', 'end_time', and 'internal_notes'.
 
-##### 'Warning: <state> has locations listed with multiple 'directions' in the following rows: [(2, 4), (124, 132)]'
+##### 'Polling Locations have Multiple Directions'
 Indicates that a polling location is listed with multiple values in the 'directions' field.  This can indicate that the location uses multiple rooms within the same building, depending on the time/day.  Alternatively, this can indicate a data collection mistake, particularly if one of the values is blank.  The list of rows corresponds to row numbers in the Early Voting Hand Collection google sheet.  Each tuple in the list includes rows from a single polling location.
  
-##### 'Warning: <state> contains addresses with invalid cross-streets format in the following rows: [2, 4, 124, 352]'
+##### 'Problematic Cross-Street Formats'
 Indicates that the address provided is an intersection (written as cross-streets) rather than street and house number. The warning detects '&' and 'and' strings in the address_line column.  The list of rows corresponds to row numbers in the Early Voting Hand Collection google sheet.
+ 
+##### 'Missing Zipcodes from Location Addresses'
+Indicates that the address provided in the address_line column does not contain a zipcode.  The list of rows corresponds to row numbers in the Early Voting Hand Collection google sheet.
+ 
+##### 'Missing State Abbreviations from Location Addresses'
+Indicates that the address provided in the address_line column does not contain a state abbreviation.  The list of rows corresponds to row numbers in the Early Voting Hand Collection google sheet.
+ 
+##### 'Incorrect OCD ID Formats'
+Indicates that the OCD ID provided in the OCD_ID column is incorrect or has an unusual format.  The list of rows corresponds to row numbers in the Early Voting Hand Collection google sheet.
 
 <br> </br>
 
