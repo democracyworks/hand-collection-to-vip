@@ -18,7 +18,7 @@ Program takes hand-collected state data related to early voting locations, stand
 
 ## Required input data
 
-2 Google Sheets workbooks are required to run the program
+Two Google Sheets workbooks are required to run the program
 
 ### 1) Early Hand Collecting
 https://docs.google.com/spreadsheets/d/1utF9ybiOcCc9GvZ_KMqKO1TDaVqUxmHl4xmK48YkZj4/edit#gid=892894361
@@ -39,8 +39,10 @@ https://docs.google.com/spreadsheets/d/1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_
 ###### ELECTION_AUTHORITIES sheet
 ocd_division, official_title, hompage_url, state
 
+
 ### Data Dictionary
 https://docs.google.com/spreadsheets/d/1s3ZayYvPBGSmyXzxq1pNdKosbEoh6QnE85e4-l8CuUc/edit#gid=2035147249
+
 
 <br> </br>
 
@@ -58,7 +60,7 @@ The tool outputs a single zip file per state feed, which contains the following 
 * source.txt
 * state.txt
 
-###### Documentation for the output files: 
+##### Documentation for the output files: 
 https://vip-specification.readthedocs.io/en/latest/index.html
 
 #### How to upload output file to VIP Dashboard:
