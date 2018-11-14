@@ -150,10 +150,10 @@ ________________________________________________________________________________
 
 ## Explanation of common errors
 
-##### 'ERROR: <state> could not be found or retrieved from Google Sheets.'
+##### 'States that failed to load state data'
 Indicates the tab for the requested state is not in the Google Sheet doc. The tab might not be included or is misspelled.
 
-##### 'ERROR: <state> could not be processed.'
+##### 'States that failed to process & why'
 Indicates a critical error in building the .txt files. The error might be a type or formatting issue. For debugging, comment out the try and except clauses. 
 
 ##### 'Error: ELECTION_AUTHORITIES Google Sheets is either missing from the Google workbook or there is data reading error.'
@@ -183,6 +183,12 @@ Indicates that the address provided in the address_line column does not contain 
  
 ##### 'Incorrect OCD ID Formats'
 Indicates that the OCD ID provided in the OCD_ID column is incorrect or has an unusual format.  The list of rows corresponds to row numbers in the Early Voting Hand Collection google sheet.
+ 
+##### 'Hours have ;'s Instead of :'s'
+Indicates that there are semicolons in place of colons in the start_time or end_time columns.  This is a common data entry error and all instances must be corrected.  The list of rows corresponds to row numbers in the Early Voting Hand Collection google sheet.
+ 
+##### 'Dates have Invalid Years'
+Indicates that the year provided in the start_date or end_date columns is incorrect (does not match the election year).  The list of rows corresponds to row numbers in the Early Voting Hand Collection google sheet.
 
 <br> </br>
 
