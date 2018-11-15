@@ -31,7 +31,7 @@ https://docs.google.com/spreadsheets/d/1utF9ybiOcCc9GvZ_KMqKO1TDaVqUxmHl4xmK48Yk
 ###### STATE_FEED sheet
 official_name, ocd_division, election_date, election_name, state_abbrv, state_fips
 
-###### STATE sheets 
+###### STATE sheets (with each sheet named according to its state abbreviation, for example, 'NY')
 OCD_ID,	location_name,	address_line,	directions,	start_time,	end_time,	start_date,	end_date,	is_only_by_appointment,	is_or_by_appointment,	is_drop_box,	is_early_voting,	internal_notes
 
 ### 2) Election Authorities
@@ -168,30 +168,30 @@ Indicates STATE_FEED is missing from the Google Sheet or has a read-in issue. Th
 ## Explanation of warnings
 
 ##### 'Missing Data'
-Indicates that there are one or more empty fields in the corresponding rows of the Early Voting Hand Collection google sheet.  The warning detects missing values from all columns except 'directions', 'start_time', 'end_time', and 'internal_notes'.
+Indicates that there are one or more empty fields in the corresponding rows of the Early Voting Hand Collection Google Sheet.  The warning detects missing values from all columns except 'directions', 'start_time', 'end_time', and 'internal_notes'.
 
 ##### 'Polling Locations have Multiple Directions'
-Indicates that a polling location is listed with multiple values in the 'directions' field.  This can indicate that the location uses multiple rooms within the same building, depending on the time/day.  Alternatively, this can indicate a data collection mistake, particularly if one of the values is blank.  The list of rows corresponds to row numbers in the Early Voting Hand Collection google sheet.  Each tuple in the list includes rows from a single polling location.
+Indicates that a polling location is listed with multiple values in the 'directions' field.  This can indicate that the location uses multiple rooms within the same building, depending on the time/day.  Alternatively, this can indicate a data collection mistake, particularly if one of the values is blank.  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet.  Each tuple in the list includes rows from a single polling location.
  
 ##### 'Problematic Cross-Street Formats'
-Indicates that the address provided is an intersection (written as cross-streets) rather than street and house number. The warning detects '&' and 'and' strings in the address_line column.  The list of rows corresponds to row numbers in the Early Voting Hand Collection google sheet.
+Indicates that the address provided is an intersection (written as cross-streets) rather than street and house number. The warning detects '&' and 'and' strings in the address_line column.  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet.
  
 ##### 'Missing Zipcodes from Location Addresses'
-Indicates that the address provided in the address_line column does not contain a zipcode.  The list of rows corresponds to row numbers in the Early Voting Hand Collection google sheet.
+Indicates that the address provided in the address_line column does not contain a zipcode.  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet.
  
 ##### 'Missing State Abbreviations from Location Addresses'
-Indicates that the address provided in the address_line column does not contain a state abbreviation.  The list of rows corresponds to row numbers in the Early Voting Hand Collection google sheet.
+Indicates that the address provided in the address_line column does not contain a state abbreviation.  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet.
  
 ##### 'Incorrect OCD ID Formats'
-Indicates that the OCD ID provided in the OCD_ID column is incorrect or has an unusual format.  The list of rows corresponds to row numbers in the Early Voting Hand Collection google sheet.
+Indicates that the OCD ID provided in the OCD_ID column is incorrect or has an unusual format.  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet.
  
 ##### 'Hours have ;'s Instead of :'s'
-Indicates that there are semicolons in place of colons in the start_time or end_time columns.  This is a common data entry error and all instances must be corrected.  The list of rows corresponds to row numbers in the Early Voting Hand Collection google sheet.
+Indicates that there are semicolons in place of colons in the start_time or end_time columns.  This is a common data entry error and all instances must be corrected.  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet.
  
 ##### 'Dates have Invalid Years'
-Indicates that the year provided in the start_date or end_date columns is incorrect (does not match the election year).  The list of rows corresponds to row numbers in the Early Voting Hand Collection google sheet.
+Indicates that the year provided in the start_date or end_date columns is incorrect (does not match the election year).  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet.
 
 <br> </br>
 
 ## Notes
-DC does not have election authority information listed in the Election Administration google sheet.  Therefore, the election_administration.txt, department.txt, and person.txt output files are blank (aside from headers).
+DC does not have election authority information listed in the Election Administration Google Sheet.  Therefore, the election_administration.txt, department.txt, and person.txt output files are blank (aside from headers).
