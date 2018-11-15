@@ -1,7 +1,7 @@
 # Program Overview   |   Polling Place Hand Collection 2018
 ###### Voting Information Project (VIP) Version 5.1
 
-Program takes hand-collected state data related to polling place locations, standardizes the data, and outputs the data in a format that can be read by the VIP Dashboard.  The data was collected by the Democracy Works VIP Outreach Team.
+Program matches TargetSmart data with hand-collected polling place data, standardizes the data, and outputs the data in a format that can be read by the VIP Dashboard.  The data was collected by the Democracy Works VIP Outreach Team.
 
 States Processed in 2018:
 ME, MT, NH, TN, TX, SD, AZ (Pima), FL (Bay, Osceola, St Lucie)
@@ -31,7 +31,7 @@ https://docs.google.com/spreadsheets/d/1o68iC82jt7WOoTYn_rdda2472Fn2_2_FRBsgZla5
 ###### STATE_FEED sheet
 office_name, ocd_division, election_date, election_name, state_abbrv, state_fips
 
-###### STATE sheets 
+###### STATE sheets (with each sheet named according to its state abbreviation, for example, 'NY')
 county,	precinct,	location_name,	address_line,	directions,	start_time,	end_time,	start_date,	end_date
 
 ### 2) Election Authorities
@@ -216,28 +216,28 @@ Indicates that there is an error reading the TargetSmart data from the database.
 ### State Data
 
 ##### 'Missing Data'
-Indicates that there are one or more empty fields in the corresponding rows of the Polling Place Hand Collection google sheet.  The warning detects missing values from all columns except 'directions', 'start_time', 'end_time', and 'internal_notes'.
+Indicates that there are one or more empty fields in the corresponding rows of the Polling Place Hand Collection Google Sheet.  The warning detects missing values from all columns except 'directions', 'start_time', 'end_time', and 'internal_notes'.
 
 ##### 'Multiple Directions for the Same Polling Location'
-Indicates that a polling location is listed with multiple values in the 'directions' field.  This can indicate that the location uses multiple rooms within the same building, depending on the time/day.  Alternatively, this can indicate a data collection mistake, particularly if one of the values is blank.  The list of rows corresponds to row numbers in the Polling Place Hand Collection google sheet.  Each tuple in the list includes rows from a single polling location.
+Indicates that a polling location is listed with multiple values in the 'directions' field.  This can indicate that the location uses multiple rooms within the same building, depending on the time/day.  Alternatively, this can indicate a data collection mistake, particularly if one of the values is blank.  The list of rows corresponds to row numbers in the Polling Place Hand Collection Google Sheet.  Each tuple in the list includes rows from a single polling location.
 
 ##### 'Multiple Addresses for the Same Polling Location'
-Indicates that a polling location name is listed with multiple addresses, within the same county.  This can indicate a data collection mistake or simply two separate polling locations with the name name.  The list of rows corresponds to row numbers in the Polling Place Hand Collection google sheet.  Each tuple in the list includes rows from a single polling location.
+Indicates that a polling location name is listed with multiple addresses, within the same county.  This can indicate a data collection mistake or simply two separate polling locations with the same name.  The list of rows corresponds to row numbers in the Polling Place Hand Collection Google Sheet.  Each tuple in the list includes rows from a single polling location.
  
 ##### 'Problematic Cross-Street Formats'
-Indicates that the address provided is an intersection (written as cross-streets) rather than street and house number. The warning detects '&' and 'and' strings in the address_line column.  The list of rows corresponds to row numbers in the Polling Place Hand Collection google sheet.
+Indicates that the address provided is an intersection (written as cross-streets) rather than street and house number. The warning detects '&' and 'and' strings in the address_line column.  The list of rows corresponds to row numbers in the Polling Place Hand Collection Google Sheet.
  
 ##### 'Missing Zipcodes from Location Addresses'
-Indicates that the address provided in the address_line column does not contain a zipcode.  The list of rows corresponds to row numbers in the Polling Place Hand Collection google sheet.
+Indicates that the address provided in the address_line column does not contain a zipcode.  The list of rows corresponds to row numbers in the Polling Place Hand Collection Google Sheet.
  
 ##### 'Missing State Abbreviations from Location Addresses'
-Indicates that the address provided in the address_line column does not contain a state abbreviation.  The list of rows corresponds to row numbers in the Polling Place Hand Collection google sheet.
+Indicates that the address provided in the address_line column does not contain a state abbreviation.  The list of rows corresponds to row numbers in the Polling Place Hand Collection Google Sheet.
  
 ##### 'Hours have ;'s Instead of :'s'
-Indicates that there are semicolons in place of colons in the start_time or end_time columns.  This is a common data entry error and all instances must be corrected.  The list of rows corresponds to row numbers in the Polling Place Hand Collection google sheet.
+Indicates that there are semicolons in place of colons in the start_time or end_time columns.  This is a common data entry error and all instances must be corrected.  The list of rows corresponds to row numbers in the Polling Place Hand Collection Google Sheet.
  
 ##### 'Dates have Invalid Years'
-Indicates that the year provided in the start_date or end_date columns is incorrect (does not match the election year).  The list of rows corresponds to row numbers in the Polling Place Hand Collection google sheet.
+Indicates that the year provided in the start_date or end_date columns is incorrect (does not match the election year).  The list of rows corresponds to row numbers in the Polling Place Hand Collection Google Sheet.
 
 ### TargetSmart Data
 
@@ -253,10 +253,10 @@ Indicates the number of rows missing state abbreviation values in the TargetSmar
 ### State Data & TargetSmart Data
 
 ##### 'Precincts in State Data not found in TargetSmart'
-Indicates which precincts (if any) in the hand collected state data are not found in the TargetSmart data.
+Indicates which precincts (if any) in the hand-collected state data are not found in the TargetSmart data.
 
 ##### 'Precincts in TargetSmart not found in State Data'
-Indicates which precincts (if any) in the TargetSmart data are not found in the hand collected state data.
+Indicates which precincts (if any) in the TargetSmart data are not found in the hand-collected state data.
 
 ### Street Segment Data
 
@@ -274,12 +274,12 @@ Indicates the number of addresses that are missing street suffixes.
 
 ## Notes
 ##### AZ 
-- Filters TargetSmart data for Pima County  
+- Script filters TargetSmart data for Pima County  
 
 ##### FL
-- Filters TargetSmart data for Bay County, Osceola County, and St Lucie County 
-- Hardcodes precinct names for several addresses in Osceola County  
+- Script filters TargetSmart data for Bay County, Osceola County, and St Lucie County 
+- Script hardcodes precinct names for several addresses in Osceola County  
 
 ##### NH
-- Hardcodes precinct names for several addresses in Washington County  
+- Script hardcodes precinct names for several addresses in Washington County  
 
