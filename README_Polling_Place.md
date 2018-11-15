@@ -216,7 +216,7 @@ Indicates that there is an error reading the TargetSmart data from the database.
 ### State Data
 
 ##### 'Missing Data'
-Indicates that there are one or more empty fields in the corresponding rows of the Polling Place Hand Collection Google Sheet.  The warning detects missing values from all columns except 'directions', 'start_time', 'end_time', and 'internal_notes'.
+Indicates that there are one or more empty fields in the corresponding rows of the Polling Place Hand Collection Google Sheet.  The warning detects missing values from all columns except 'collected_precinct', 'directions', 'start_time', 'end_time', and 'internal_notes'.
 
 ##### 'Multiple Directions for the Same Polling Location'
 Indicates that a polling location is listed with multiple values in the 'directions' field.  This can indicate that the location uses multiple rooms within the same building, depending on the time/day.  Alternatively, this can indicate a data collection mistake, particularly if one of the values is blank.  The list of rows corresponds to row numbers in the Polling Place Hand Collection Google Sheet.  Each tuple in the list includes rows from a single polling location.
@@ -274,12 +274,12 @@ Indicates the number of addresses that are missing street suffixes.
 
 ## Notes
 ##### AZ 
-- Script filters TargetSmart data for Pima County  
+- Script filters TargetSmart data for Pima County.  
 
 ##### FL
-- Script filters TargetSmart data for Bay County, Osceola County, and St Lucie County 
-- Script hardcodes precinct names for several addresses in Osceola County  
+- Script filters TargetSmart data for Bay County, Osceola County, and St Lucie County. 
+- Script hardcodes precinct names for several addresses in Osceola County.  
 
 ##### NH
-- Script hardcodes precinct names for several addresses in Washington County  
+- Script hardcodes precinct names for several addresses in Washington County.  
 
