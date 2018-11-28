@@ -1,28 +1,40 @@
 from __future__ import print_function
 from sys import argv
+import argparse
+import os
+
+# GOOGLE API libraries
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from httplib2 import Http
 from oauth2client import file, client, tools
+
+# DATA MUNGING & FORMATTING libraries
 import pandas as pd
+import json
 import datetime
-import argparse
-import os
-from zipfile import ZipFile
+import re # regex
 import numpy as np
-import re
-#from IPython.display import display
+import time
+
+# OTHER libraries
+from zipfile import ZipFile
 import warnings
-warnings.filterwarnings('ignore')
 
 
 # _________________________________________________________________________________________________________________________
 
-# SET global variables and print display formats
+# GLOBAL VARIABLES | Set global variables and print display formats
+
+warnings.filterwarnings('ignore') # FILTER out warnings that are not critical
+
 pd.set_option('display.max_columns', 100)  # or 1000 or None
-pd.set_option('display.max_rows', 100)  # or 1000 or None
+pd.set_option('display.max_rows', 1000)  # or 1000 or None
 PRINT_OUTPUT_WIDTH = 100 # SET print output length
-PRINT_CENTER = int(PRINT_OUTPUT_WIDTH/2) # SET print output middle
+PRINT_CENTER = int(PRINT_OUTPUT_WIDTH/2)
+np.set_printoptions(linewidth=PRINT_OUTPUT_WIDTH)
+PRINT_TUPLE_WIDTH = 2
+PRINT_ARRAY_WIDTH = 11 
 
 ELECTION_YEAR = 2018
 
@@ -30,16 +42,17 @@ STATES_WITH_WARNINGS = [] # STORE states that trigger warnings
 
 # _________________________________________________________________________________________________________________________
 
-# SET SCOPES & Google Spreadsheet IDs (2 IDs)
+# GOOGLE API | Set scopes & Google Spreadsheet IDs (1 scope, 2 IDs)
 
-# PRO-TIP: if modifying these scopes, delete the file token.json.
+# PRO-TIP: if modifying these scopes, delete the file token.json
+# NOTE: Scope url should not change year to year unless Google alters syntax
 SCOPES = 'https://www.googleapis.com/auth/spreadsheets.readonly'
 
-# states & STATE_FEED
+# individual states & STATE_FEED tabs in a single Google Sheet (multiple tabs)
 # https://docs.google.com/spreadsheets/u/1/d/1utF9ybiOcCc9GvZ_KMqKO1TDaVqUxmHl4xmK48YkZj4/edit#gid=366784608
 SPREADSHEET_ID = '1utF9ybiOcCc9GvZ_KMqKO1TDaVqUxmHl4xmK48YkZj4' 
 
-# ELECTION_AUTHORITIES
+# ELECTION_AUTHORITIES entire Google Sheet (1 tab) 
 # https://docs.google.com/spreadsheets/d/1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_y2o/edit#gid=1572182198
 SPREADSHEET_EA_ID = '1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_y2o' 
 
@@ -59,9 +72,10 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     # PREP | Identify data issues, create/format features, and standardize dataframes
 
     # GENERATE warnings in state_data (6 types of warnings)
-    missing_data_rows, multi_directions_rows, cross_street_rows, \
-    ocd_id_rows, semi_colon_rows, date_year_rows, missing_zipcode_rows, \
-    missing_state_abbrvs_rows = generate_warnings(state_data, state_abbrv)
+    multi_directions_rows, multi_address_rows, cross_street_rows, \
+       missing_data_rows, semi_colon_rows, date_year_rows, \
+       missing_zipcode_rows, missing_state_abbrvs_rows, \
+       timezone_mismatch_rows, ocd_id_rows = generate_warnings(state_data, state_abbrv, state_feed['official_name'][0])
 
     # CREATE/FORMAT feature(s) (1 created, 1 formatted)
     state_feed['state_fips'] = state_feed['state_fips'].str.pad(2, side='left', fillchar='0') # first make sure there are leading zeros
@@ -73,7 +87,7 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
 
     # _____________________________________________________________________________________________________________________
 
-    # CREATE IDS | Create ids on dataframes
+    # CREATE IDS | Create IDs on dataframes
 
     if election_authorities.empty:
         # CREATE empty election_authorities DataFrame if state not in election administration sheet
@@ -81,6 +95,9 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
                                                      'official_title','election_official_person_id'])
 
     else:
+        # # SELECT desired cols from election_authorities
+        election_authorities = election_authorities[['ocd_division','homepage_url', 'official_title']]
+
         # CREATE 'election_adminstration_id'
         temp = election_authorities[['ocd_division']]
         temp.drop_duplicates(['ocd_division'], inplace=True)
@@ -142,9 +159,10 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     # REPORT | Print zip file sizes, dataframe descriptions, and data warnings
 
     # PRINT state report
-    state_report(missing_data_rows, multi_directions_rows, cross_street_rows, 
-                 ocd_id_rows, semi_colon_rows, date_year_rows, 
-                 missing_zipcode_rows, missing_state_abbrvs_rows,
+    state_report(multi_directions_rows, multi_address_rows, cross_street_rows, # WARNINGS for state data
+                 missing_data_rows, semi_colon_rows, date_year_rows, # FATAL ERRORS for state_data
+                 missing_zipcode_rows, missing_state_abbrvs_rows, 
+                 timezone_mismatch_rows, ocd_id_rows,
                  state_abbrv, state_feed, state_data, election_authorities,
                  {'state':state, 
                   'source':source,
@@ -170,8 +188,8 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities):
 
     # CREATE/FORMAT | Adjust variables to desired standards shared across relevant .txt files
 
-    # RESET state_feed index
-    state_feed.reset_index(drop=True, inplace=True)
+    # RESET indexes
+
     state_data.reset_index(drop=True, inplace=True)
 
     # REPLACE empty strings with NaNs
@@ -208,7 +226,7 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities):
     false_chars = [char for char in 'false' if char not in 'true'] # SET unique chars in 'true' and not in 'false'
     lambda_funct = (lambda x: None if not x else ( \
                     'true' if any(char in x for char in true_chars) == True else ('false' if any(char in x for char in false_chars) == True else np.nan)))
-    if state_data['is_drop_box'].isnull().all():
+    if state_data['is_drop_box'].isnull().all(): # NOTE: is_drop_box is often left empty, which should be treated as false
         state_data['is_drop_box'] = 'false'
     else:
         state_data['is_drop_box'] = state_data['is_drop_box'].str.lower().apply(lambda_funct)
@@ -230,12 +248,21 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities):
 
     # FORMAT address line (1 formatted)
     # NOTE: A common outreach error was missing state abbreviations in the address line
-    state_abbrv_with_space = state_feed['state_abbrv'][0].center(4, ' ')
-    state_data['address_line'] = state_data['address_line'].str.replace('.','')
-    insert_state_abbrv = lambda x: x if re.search('(\\d{5})$', x) == None else \
-                                  (re.sub('[ ](?=[^ ]+$)', state_abbrv_with_space,  x) if state_abbrv_with_space not in x else x)
-    state_data['address_line'] = state_data['address_line'].apply(lambda x: insert_state_abbrv(x))
-
+    state_abbrv_insert = state_feed['state_abbrv'][0].center(4, ' ')
+    
+    # FORMAT address line 
+    # NOTE: There is a ton of random non-standard punctuation. The following regex clears everything except periods in digits
+    state_data['address_line'] = state_data['address_line'].str.strip() \
+                                                           .str.strip('.,;:)(') \
+                                                           .str.replace('(?<!\\d)[.,;:](?!\\d)?', ' ') \
+                                                           .str.replace('\\s{2,}', ' ') \
+                                                           .str.replace(' D C ', ' DC ') \
+                                                           .str.strip()
+    
+    state_abbrv_replace = ' ' + state_abbrv + '|' + state_feed['official_name'][0] + ' ' # CREATE abbrv or full name with space
+    state_data['address_line'] = state_data['address_line'].str.replace(state_abbrv_replace, ' ') \
+                                                           .str.replace('[ ](?=[^ ]+$)', state_abbrv_insert) \
+                                                           .str.replace('\\s{2,}', ' ')
 
     return state_feed, state_data, election_authorities
 
@@ -249,7 +276,7 @@ def generate_election(state_feed):
     SPEC: https://vip-specification.readthedocs.io/en/latest/built_rst/xml/elements/election.html
     """
 
-    # SELECT feature(s)
+    # SELECT feature(s) (3 selected)
     election = state_feed[['election_date','election_name','state_id']]
     
     # CREATE/FORMAT feature(s) (3 created, 2 formatted)
@@ -272,7 +299,7 @@ def generate_polling_location(state_data):
     SPEC: https://vip-specification.readthedocs.io/en/latest/built_rst/xml/elements/polling_location.html
     """ 
 
-    # SELECT feature(s) 
+    # SELECT feature(s) (7 selected)
     polling_location = state_data[['polling_location_ids','location_name', 'address_line', 'directions',
                                    'hours_open_id', 'is_drop_box', 'is_early_voting']] 
 
@@ -294,7 +321,7 @@ def generate_schedule(state_data, state_feed):
     SPEC: https://vip-specification.readthedocs.io/en/latest/built_rst/xml/elements/hours_open.html#schedule
     """ 
 
-    # SELECT feature(s)
+    # SELECT feature(s) (7 selected)
     schedule = state_data[['start_time', 'end_time', 'start_date', 'end_date', 'hours_open_id',
                            'is_only_by_appointment', 'is_or_by_appointment']]
 
@@ -315,7 +342,7 @@ def generate_source(state_feed):
     SPEC: https://vip-specification.readthedocs.io/en/latest/built_rst/xml/elements/source.html
     """ 
     
-    # SELECT feature(s)
+    # SELECT feature(s) (1 selected)
     source = state_feed[['state_fips']]
 
     # CREATE/FORMAT feature(s) (4 created, 1 formatted)    
@@ -339,7 +366,7 @@ def generate_state(state_feed):
     SPEC: https://vip-specification.readthedocs.io/en/latest/built_rst/xml/elements/state.html
     """ 
     
-    # SELECT col(s)
+    # SELECT feature(s) (4 selected)
     state = state_feed[['state_id', 'external_identifier_type', 'ocd_division', 'official_name']]
 
     # FORMAT features (3 formatted)
@@ -360,7 +387,7 @@ def generate_locality(state_feed, state_data, election_authorities):
     SPEC: https://vip-specification.readthedocs.io/en/latest/built_rst/xml/elements/locality.html
     """ 
 
-    # SELECT feature(s)
+    # SELECT feature(s) (2 selected)
     locality = state_data[['OCD_ID', 'polling_location_ids']]
 
     # GROUP polling_location_ids
@@ -398,7 +425,7 @@ def generate_election_administration(election_authorities):
     SPEC: https://vip-specification.readthedocs.io/en/latest/csv/element_files/election_administration.html
     """
 
-    # SELECT feature(s)
+    # SELECT feature(s) (2 selected)
     election_administration = election_authorities[['election_administration_id', 'homepage_url']]
 
     # FORMAT feature(s) (2 formatted)
@@ -419,7 +446,7 @@ def generate_department(election_authorities):
     SPEC: https://vip-specification.readthedocs.io/en/latest/csv/element_files/department.html
     """
 
-    # SELECT feature(s)
+    # SELECT feature(s) (2 selected)
     department = election_authorities[['election_administration_id', 'election_official_person_id']]
 
     # CREATE feature(s) (1 created)
@@ -439,7 +466,7 @@ def generate_person(election_authorities):
     SPEC: https://vip-specification.readthedocs.io/en/latest/csv/element_files/person.html
     """
 
-    # SELECT feature(s)
+    # SELECT feature(s) (3 selected)
     person = election_authorities[['ocd_division', 'official_title', 'election_official_person_id']]
 
     # CREATE/FORMAT feature(s) (2 created, 1 formatted)
@@ -498,29 +525,34 @@ def generate_zip(state_abbrv, state_feed, files):
 
 
 
-def generate_warnings(state_data, state_abbrv):
+def generate_warnings(state_data, state_abbrv, state_fullname):
     """
-    PURPOSE: isolate which rows, if any, have warnings
-    INPUT: state_data, state_abbrv
+    PURPOSE: isolate which rows, if any, have warnings or fatal errors
+    INPUT: state_data, state_abbrv, state_fullname
     RETURN: missing_data_rows, multi_directions_rows, cross_street_rows, 
             ocd_id_rows, date_year_rows, semi_colon_rows, missing_zipcode_rows,
             missing_state_abbrvs_rows
     """
 
-    # GENERATE warnings
-    missing_data_rows = warning_missing_data(state_data)
+    # GENERATE general warnings (3 warnings)
     multi_directions_rows = warning_multi_directions(state_data)
+    multi_address_rows = warning_multi_addresses(state_data)
     cross_street_rows = warning_cross_street(state_data)
-    ocd_id_rows = warning_ocd_id(state_data, state_abbrv)
+
+    # GENERATE fatal errors (7 fatal errors)
+    missing_data_rows = warning_missing_data(state_data)
     date_year_rows = warning_date_year(state_data)
     semi_colon_rows = warning_semi_colon(state_data)
     missing_zipcode_rows = warning_missing_zipcodes(state_data)
-    missing_state_abbrvs_rows = warning_missing_state_abbrvs(state_abbrv, state_data)
+    missing_state_abbrvs_rows = warning_missing_state_abbrvs(state_data, state_abbrv, state_fullname)
+    timezone_mismatch_rows = warnings_start_end_timezone_mismatch(state_data)
+    ocd_id_rows = warning_ocd_id(state_data, state_abbrv)
 
 
-    return missing_data_rows, multi_directions_rows, cross_street_rows, \
-           ocd_id_rows, semi_colon_rows, date_year_rows, missing_zipcode_rows, \
-           missing_state_abbrvs_rows
+    return     multi_directions_rows, multi_address_rows, cross_street_rows, \
+               missing_data_rows, semi_colon_rows, date_year_rows, \
+               missing_zipcode_rows, missing_state_abbrvs_rows, \
+               timezone_mismatch_rows, ocd_id_rows
 
 
 
@@ -531,6 +563,7 @@ def warning_missing_data(state_data):
     RETURN: missing_data_rows
     """
 
+    # SELECT feature(s) (all features from state_data except 4 features)
     missing_data_check = state_data[state_data.columns.difference(['directions', 'start_time', 'end_time', 'internal_notes'])].isnull().any(axis=1)
     missing_data_check.index = missing_data_check.index + 1  # INCREASE INDEX to correspond with google sheets index
     missing_data_rows = []
@@ -552,13 +585,34 @@ def warning_cross_street(state_data):
     RETURN: cross_street_rows
     """
 
-    # NOTE: invalid cross streets sometimes do not map well on Google's end 
+    # NOTE: Invalid cross streets sometimes do not map well on Google's end 
     cross_street_addresses = state_data[state_data['address_line'].str.contains(' & | and ')]
-    cross_street_rows = list(cross_street_addresses.index + 1)
+    cross_street_rows = sorted(list(cross_street_addresses.index + 1))
 
 
     return cross_street_rows
 
+
+
+def warning_multi_addresses(state_data):
+    """
+    PURPOSE: isolate which polling locations (OCD_ID, location name), if any, have multiple addresses
+             (warning: each unique set of addresses is considered a polling location)
+    INPUT: state_data
+    RETURN: multi_address_rows
+    """
+
+    # SELECT feature(s) (3 selected)
+    addresses = state_data[['OCD_ID','location_name', 'address_line']].drop_duplicates()
+    multi_addresses = addresses[addresses.duplicated(subset=['OCD_ID','location_name'], keep=False)]
+    multi_addresses.index = multi_addresses.index + 1   # INCREASE INDEX to correspond with google sheets index
+
+    multi_address_rows = []
+    if not multi_addresses.empty:  # IF the dataframe is not empty
+        multi_address_rows = sorted([tuple(x) for x in multi_addresses.groupby(['OCD_ID', 'location_name']).groups.values()])
+
+
+    return multi_address_rows
 
 
 def warning_multi_directions(state_data):
@@ -575,7 +629,7 @@ def warning_multi_directions(state_data):
     duplicate_locations.index = duplicate_locations.index + 1  # INCREASE INDEX to correspond with google sheets index
 
     multi_directions_rows = []
-    if not duplicate_locations.empty: # IF the dataframe is not empty
+    if not duplicate_locations.empty: # IF there are polling locations with multiple locations
         multi_directions_rows = sorted([tuple(x) for x in \
                                         duplicate_locations.groupby(['OCD_ID', 'location_name', 'address_line']).groups.values()])
 
@@ -611,9 +665,9 @@ def warning_ocd_id(state_data, state_abbrv):
 
     # ISOLATE if country is incorrect
     if state_abbrv != 'AK': # Alaska ocd-ids does not include county/place 
-        county_place_issue = state_data[~state_data['OCD_ID'].str.contains(r'county|place|sldl')]
+        county_place_issue = state_data[~state_data['OCD_ID'].str.contains(r'county|place|sldl|parish')]
         if not county_place_issue.empty:
-            ocd_id_rows.append(('county|place', str(set(county_place_issue.index+1)).strip('{}')))
+            ocd_id_rows.append(('county|place|sldl|parish', str(set(county_place_issue.index+1)).strip('{}')))
 
     # ISOLATE if the number of slashes is incorrect
     if state_abbrv != 'AK': # Alaska ocd-ids have 2 and 3 slashes, depending
@@ -627,21 +681,23 @@ def warning_ocd_id(state_data, state_abbrv):
 
 
 
-def warning_date_year(state_data): # CRITICAL
+def warning_date_year(state_data): 
     """
     PURPOSE: isolate which rows, if any, have a start_date or end_date outside of the election year
     INPUT: state_data
     RETURN: date_year_rows
     """
 
-    # ISOLATE data errors in 2 features
+    # FORMAT features (2 formatted)
     state_data['start_date'] = pd.to_datetime(state_data['start_date'])
     state_data['end_date'] = pd.to_datetime(state_data['end_date'])
+    
+    # ISOLATE data errors in 2 features
     incorrect_start_dates = state_data[state_data['start_date'].dt.year != ELECTION_YEAR]
     incorrect_end_dates = state_data[state_data['end_date'].dt.year != ELECTION_YEAR]
     incorrect_dates = incorrect_start_dates.append(incorrect_end_dates)
 
-    date_year_rows = list(set(incorrect_dates.index + 1))
+    date_year_rows = sorted(list(set(incorrect_dates.index + 1)))
 
 
     return date_year_rows
@@ -660,7 +716,7 @@ def warning_semi_colon(state_data):
     semi_colon_end_time = state_data[state_data['end_time'].str.contains(';')]
     semi_colon_times = semi_colon_start_time.append(semi_colon_end_time)
 
-    semi_colon_rows = list(set(semi_colon_times.index+1))
+    semi_colon_rows = sorted(list(set(semi_colon_times.index + 1)))
 
 
     return semi_colon_rows
@@ -676,27 +732,71 @@ def warning_missing_zipcodes(state_data):
 
     # SELECT feature(s) (1 feature)
     missing_zipcodes = state_data[['address_line']]
-    missing_zipcodes = missing_zipcodes[~missing_zipcodes['address_line'].str.strip().str.contains('[0-9]{5}$')]
-    missing_zipcode_rows  = sorted(list(set(missing_zipcodes.index + 1))) # ADD 1 to index to correspond with Google Sheets
-   
+
+    # FORMAT feature(s) (1 formatted)
+    missing_zipcodes['address_line'] =  missing_zipcodes['address_line'].str.strip() \
+                                                                        .str.strip('.,;:)(') \
+                                                                        .str.replace('\t', ' ') \
+                                                                        .str.replace('(?<!\\d)[.,;:](?!\\d)?', ' ') \
+                                                                        .str.replace('\\s{2,}', ' ') \
+                                                                        .str.strip()
+    missing_zipcodes = missing_zipcodes[~missing_zipcodes['address_line'].str.contains('\\s[0-9]{5}(?:-[0-9]{4})?$')]
+
+    missing_zipcode_rows  = sorted(list(set(missing_zipcodes.index + 1)))  # ADD 1 to index to correspond with Google Sheets
+
+
     return missing_zipcode_rows
 
 
 
-def warning_missing_state_abbrvs(state_abbrv, state_data):
+def warning_missing_state_abbrvs(state_data, state_abbrv, state_fullname):
     """
     PURPOSE: isolate which rows, if any, are missing state abbreviations in the `address_line` col in state data 
-    INPUT: state_data
+    INPUT: state_data, state_abbrv, state_fullname
     RETURN: missing_state_abbrvs_rows
     """
     
     # SELECT feature(s) (1 feature)
     missing_state_abbrvs = state_data[['address_line']]
-    state_abbrv_with_space = ' ' + state_abbrv + ' ' # CREATE state_abbrv with space
-    missing_state_abbrvs = missing_state_abbrvs[~missing_state_abbrvs['address_line'].str.upper().str.contains(state_abbrv_with_space)]
-    missing_state_abbrvs_rows = list(set(missing_state_abbrvs.index + 1)) # ADD 1 to index to correspond with Google Sheets
+
+    # FORMAT to check if state abbreviations are missing (1 formatted)
+    missing_state_abbrvs['address_line'] =  missing_state_abbrvs['address_line'].str.strip() \
+                                                                                .str.strip('.,;:)(') \
+                                                                                .str.replace('\t', ' ') \
+                                                                                .str.replace('(?<!\\d)[.,;:](?!\\d)?', ' ') \
+                                                                                .str.replace('\\s{2,}', ' ') \
+                                                                                .str.replace(' D C ', ' DC ') \
+                                                                                .str.strip()
+   
+    state_abbrv_with_space = ' ' + state_abbrv + '|' + state_fullname.upper() + ' ' # CREATE state_abbrv with space
+    missing_state_abbrvs = missing_state_abbrvs[~missing_state_abbrvs['address_line'].str.upper() \
+                                                                                     .str.contains(state_abbrv_with_space)]
+    missing_state_abbrvs_rows = sorted(list(set(missing_state_abbrvs.index + 1)))  # ADD 1 to index to correspond with Google Sheets
+
 
     return missing_state_abbrvs_rows  
+
+
+
+def warnings_start_end_timezone_mismatch(state_data):
+    """
+    PURPOSE: isolate which rows, if any, have timezones that are different between start_time and end_time
+    INPUT: state_data
+    RETURN: timezone_mismatch_rows
+    """
+
+    # SELECT feature(s) (2 features)
+    timezone_mismatch = state_data[['start_time', 'end_time']]
+    timezone_mismatch['start_time_timezone'] = timezone_mismatch['start_time'].str.extract('-(.*)$')  # EXTRACT timezone
+    timezone_mismatch['start_time_timezone'] = timezone_mismatch['start_time_timezone'].str.strip()
+    timezone_mismatch['end_time_timezone'] = timezone_mismatch['end_time'].str.extract('-(.*)$')  # EXTRACT timezone
+    timezone_mismatch['end_time_timezone'] = timezone_mismatch['end_time_timezone'].str.strip()
+
+    timezone_mismatch_rows = timezone_mismatch[timezone_mismatch['start_time_timezone']!=timezone_mismatch['end_time_timezone']]
+    timezone_mismatch_rows = list(set(timezone_mismatch_rows.index + 1))  # ADD 1 to index to correspond with Google Sheets
+
+
+    return timezone_mismatch_rows 
 
 
 
@@ -706,15 +806,17 @@ def warning_missing_state_abbrvs(state_abbrv, state_data):
 
 
 
-def state_report(missing_data_rows, multi_directions_rows, cross_street_rows, 
-                 ocd_id_rows, semi_colon_rows, date_year_rows, 
-                 missing_zipcode_rows, missing_state_abbrvs_rows,
+def state_report(multi_directions_rows, multi_address_rows, cross_street_rows, # WARNINGS for state data
+                 missing_data_rows, semi_colon_rows, date_year_rows, # FATAL ERRORS for state_data
+                 missing_zipcode_rows, missing_state_abbrvs_rows, 
+                 timezone_mismatch_rows, ocd_id_rows,
                  state_abbrv, state_feed, state_data, election_authorities, files):
     """
     PURPOSE: print state report (general descriptive stats and warnings)
-    INPUT: missing_data_rows, multi_directions_rows, cross_street_rows, 
-           ocd_id_rows, semi_colon_rows, date_year_rows,
-           missing_zipcode_rows, missing_state_abbrvs_rows,
+    INPUT: multi_directions_rows, multi_address_rows, cross_street_rows, # WARNINGS for state data
+           missing_data_rows, semi_colon_rows, date_year_rows, # FATAL ERRORS for state_data
+           missing_zipcode_rows, missing_state_abbrvs_rows, 
+           timezone_mismatch_rows, ocd_id_rows,
            state_abbrv, state_feed, state_data, election_authorities, files
     RETURN: 
     """
@@ -743,65 +845,101 @@ def state_report(missing_data_rows, multi_directions_rows, cross_street_rows,
         ea = election_authorities[['ocd_division']]
         ea.drop_duplicates(inplace=True)
         print(f"{'Election Authorities |':>{PRINT_CENTER}} {len(ea)} counties/places")
+    else:
+        print(f"{'Election Authorities |':>{PRINT_CENTER}} 0 counties/places")
 
 
     # _____________________________________________________________________________________________________________________
 
-
-    if missing_data_rows or multi_directions_rows or cross_street_rows or \
-       ocd_id_rows or semi_colon_rows or date_year_rows or missing_zipcode_rows or missing_state_abbrvs_rows:
-        print('\n'*2)
-        print( '---------------------- WARNINGS ----------------------'.center(PRINT_OUTPUT_WIDTH, ' ')) 
-        STATES_WITH_WARNINGS.append(state_abbrv) # RECORD states with warnings
-
-    if missing_data_rows:
-        print('\n')
-        print('Missing Data'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(missing_data_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-
-    if multi_directions_rows:
-        print('\n')
-        print('Polling Locations have Multiple Directions'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(multi_directions_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-
-    if cross_street_rows:
-        print('\n')
-        print('Problematic Cross-Street Formats'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(cross_street_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-    
-    if ocd_id_rows:
-        print('\n')
-        print('Incorrect OCD ID Formats'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(ocd_id_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-
-    if semi_colon_rows:
-        print('\n')
-        print('Hours have ;\'s Instead of :\'s'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(semi_colon_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-
-    if date_year_rows:
-        print('\n')
-        print('Dates have Invalid Years'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(date_year_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-
-    if missing_zipcode_rows:
-        print('\n')
-        print('Missing Zipcodes from Location Addresses'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(missing_zipcode_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+    if multi_directions_rows or multi_address_rows or cross_street_rows or \
+       missing_data_rows or semi_colon_rows or date_year_rows or \
+       missing_zipcode_rows or missing_state_abbrvs_rows or \
+       timezone_mismatch_rows or ocd_id_rows:
         
-    if missing_state_abbrvs_rows:
-        print('\n')
-        print('Missing State Abbreviations from Location Addresses'.center(PRINT_OUTPUT_WIDTH, ' '))
-        print()
-        print(str(missing_state_abbrvs_rows).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+         STATES_WITH_WARNINGS.append(state_abbrv) # RECORD states with warnings
 
+
+    if multi_directions_rows or multi_address_rows or cross_street_rows:      
+        print('\n'*2)
+        print('----------------------- STATE DATA WARNINGS -----------------------'.center(PRINT_OUTPUT_WIDTH, ' '))
+
+        if multi_directions_rows:
+            print('\n')
+            print('Rows w/ Multiple Directions for the Same Polling Location'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            for i in range(0, len(multi_directions_rows), PRINT_TUPLE_WIDTH):
+                print(str(multi_directions_rows[i:i+PRINT_TUPLE_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+
+        if multi_address_rows:
+            print('\n')
+            print('Rows w/ Multiple Addresses for the Same Polling Location'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            for i in range(0, len(multi_address_rows), PRINT_TUPLE_WIDTH):
+                print(str(multi_address_rows[i:i+PRINT_TUPLE_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+          
+        if cross_street_rows:
+            print('\n')
+            print('f'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            for i in range(0, len(cross_street_rows), PRINT_ARRAY_WIDTH):
+                print(str(cross_street_rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+   
+
+    if missing_data_rows or semi_colon_rows or date_year_rows or \
+       missing_zipcode_rows or missing_state_abbrvs_rows or \
+       timezone_mismatch_rows or ocd_id_rows:
+        print('\n')
+        print('--------------------- STATE DATA FATAL ERRORS ---------------------'.center(PRINT_OUTPUT_WIDTH, ' '))
+
+        if missing_data_rows:
+            print('\n')
+            print('Rows w/ Missing Data'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            for i in range(0, len(missing_data_rows), PRINT_ARRAY_WIDTH):
+                print(str(missing_data_rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+ 
+        if semi_colon_rows:
+            print('\n')
+            print('Rows w/ ;\'s Instead of :\'s in Start and/or End Hours'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            for i in range(0, len(semi_colon_rows), PRINT_ARRAY_WIDTH):
+                print(str(semi_colon_rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+ 
+        if date_year_rows:
+            print('\n')
+            print('Rows w/ Invalid Years in Start and/or End Dates'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            for i in range(0, len(date_year_rows), PRINT_ARRAY_WIDTH):
+                print(str(date_year_rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+ 
+        if missing_zipcode_rows:
+            print('\n')
+            print('Rows w/ Missing or Invalid Zipcodes from Location Addresses'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            for i in range(0, len(missing_zipcode_rows), PRINT_ARRAY_WIDTH):
+                print(str(missing_zipcode_rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+
+        if missing_state_abbrvs_rows:
+            print('\n')
+            print('Rows w/ Missing State Abbreviations from Location Addresses'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            for i in range(0, len(missing_state_abbrvs_rows),PRINT_ARRAY_WIDTH):
+                print(str(missing_state_abbrvs_rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+
+        if timezone_mismatch_rows:
+            print('\n')
+            print('Rows w/ Mismatched Timezones between Start and End Times'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            for i in range(0, len(timezone_mismatch_rows),PRINT_ARRAY_WIDTH):
+                print(str(timezone_mismatch_rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+           
+        if ocd_id_rows:
+            print('\n')
+            print('Rows w/ (Possibly) Incorrect OCD ID Formats'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print()
+            for i in range(0, len(ocd_id_rows),1):
+                print(str(ocd_id_rows[i:i+1]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+ 
 
     print('\n'*1)
     print('_'*PRINT_OUTPUT_WIDTH)
@@ -835,25 +973,29 @@ def summary_report(num_input_states, increment_httperror, increment_processinger
         print('\n'*1)
         print('States that failed to load state data'.center(PRINT_OUTPUT_WIDTH, ' '))
         print()
-        print(str(states_failed_to_load).strip('[]').replace('\'', '').center(PRINT_OUTPUT_WIDTH, ' '))
+        for i in range(0, len(states_failed_to_load),PRINT_ARRAY_WIDTH):
+            print(str(states_failed_to_load[i:i+PRINT_ARRAY_WIDTH]).strip('[]').replace('\'', '').center(PRINT_OUTPUT_WIDTH, ' '))
         
     if states_failed_to_process:
         print('\n'*1)
         print('States that failed to process & why'.center(PRINT_OUTPUT_WIDTH, ' '))
         print()
-        print(str(states_failed_to_process).strip('[]').replace('\'', '').center(PRINT_OUTPUT_WIDTH, ' '))
+        for i in range(0, len(states_failed_to_process),PRINT_ARRAY_WIDTH):
+            print(str(states_failed_to_process[i:i+PRINT_ARRAY_WIDTH]).strip('[]').replace('\'', '').center(PRINT_OUTPUT_WIDTH, ' '))
 
     if STATES_WITH_WARNINGS:      
         print('\n'*1)
         print('States that processed with warnings'.center(PRINT_OUTPUT_WIDTH, ' '))
         print()
-        print(str(STATES_WITH_WARNINGS).strip('[]').replace('\'', '').center(PRINT_OUTPUT_WIDTH, ' '))
+        for i in range(0, len(STATES_WITH_WARNINGS),PRINT_ARRAY_WIDTH):
+            print(str(STATES_WITH_WARNINGS[i:i+PRINT_ARRAY_WIDTH]).strip('[]').replace('\'', '').center(PRINT_OUTPUT_WIDTH, ' '))
         
     if states_successfully_processed:
         print('\n'*1)
         print('States that sucessfully processed'.center(PRINT_OUTPUT_WIDTH, ' '))
         print()
-        print(str(states_successfully_processed).strip('[]').replace('\'', '').center(PRINT_OUTPUT_WIDTH, ' '))
+        for i in range(0, len(states_successfully_processed),PRINT_ARRAY_WIDTH):
+            print(str(states_successfully_processed[i:i+PRINT_ARRAY_WIDTH]).strip('[]').replace('\'', '').center(PRINT_OUTPUT_WIDTH, ' '))
     
     print('\n'*3)
 
@@ -871,9 +1013,10 @@ if __name__ == '__main__':
 
     # SET UP command line inputs
     parser = argparse.ArgumentParser()
-    parser.add_argument('-states', nargs='+')
+    parser.add_argument('-states', nargs='+', required=True)
 
     print('Timestamp:', datetime.datetime.now().replace(microsecond=0))
+    start = time.time()
 
     # _____________________________________________________________________________________________________________________
 
@@ -894,7 +1037,7 @@ if __name__ == '__main__':
                                                                 range='STATE_FEED').execute()
         state_feed_values = state_feed_result.get('values', [])
     except:
-        print('Error: STATE_FEED Google Sheet is either missing from the workbook or there is data reading error.')
+        print('ERROR | STATE_FEED Google Sheet is either missing from the workbook or there is data reading error.')
         raise
 
     try: 
@@ -903,7 +1046,7 @@ if __name__ == '__main__':
                                                                           range='ELECTION_AUTHORITIES').execute()
         election_authorities_values = election_authorities_result.get('values', [])
     except:
-        print('Error: ELECTION_AUTHORITIES Google Sheet is either missing from the workbook or there is data reading error.')
+        print('ERROR | ELECTION_AUTHORITIES Google Sheet is either missing from the workbook or there is data reading error.')
         raise
 
     # _____________________________________________________________________________________________________________________
@@ -947,6 +1090,7 @@ if __name__ == '__main__':
                     
                 # FILTER state_feed and election_authorities
                 state_feed = state_feed_all[state_feed_all['state_abbrv'] == state_abbrv] # FILTER state_feed_all for selected state
+                state_feed.reset_index(drop=True, inplace=True)
                 election_authorities = election_authorities_all[election_authorities_all['state'] == state_abbrv] # FILTER election_authorities_all for selected state
 
 
@@ -972,5 +1116,4 @@ if __name__ == '__main__':
 
 
     print('Timestamp:', datetime.datetime.now().replace(microsecond=0))
-
-
+    print(f'Run time: {float((time.time()-start)):.2f} second(s)')
