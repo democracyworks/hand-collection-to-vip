@@ -228,4 +228,5 @@ Indicates that the OCD ID provided in the OCD_ID column is incorrect or has an u
 <br> </br>
 
 ## Additional Notes
-DC does not have election authority information listed in the Election Administration Google Sheet.  Therefore, the election_administration.txt, department.txt, and person.txt output files are blank (aside from headers).
+- Minimum python version required to run, primarily for f-strings: Python 3.7.0 
+- DC does not have election authority information listed in the Election Administration Google Sheet.  Therefore, the election_administration.txt, department.txt, and person.txt output files are blank (aside from headers).
