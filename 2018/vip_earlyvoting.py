@@ -914,7 +914,7 @@ def state_report(multi_directions_rows, multi_address_rows, cross_street_rows, #
  
         if missing_zipcode_rows:
             print('\n')
-            print('Rows w/ Missing or Invalid Zipcodes from Location Addresses'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print('Rows w/ Missing or Invalid Zip Codes from Location Addresses'.center(PRINT_OUTPUT_WIDTH, ' '))
             print()
             for i in range(0, len(missing_zipcode_rows), PRINT_ARRAY_WIDTH):
                 print(str(missing_zipcode_rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
