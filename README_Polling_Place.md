@@ -35,7 +35,7 @@ office_name, ocd_division, election_date, election_name, state_abbrv, state_fips
 county,	precinct,	location_name,	address_line,	directions,	start_time,	end_time,	start_date,	end_date
 
 ### 2) Election Authorities
-https://docs.google.com/spreadsheets/d/1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_y2o/edit#gid=1572182198
+https://docs.google.com/spreadsheets/d/1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_y2o
 
 ##### Required sheets & features:
 
@@ -48,9 +48,6 @@ ocd_division, official_title, hompage_url, state
 
 ###### TargetSmart data
 vf_precinct_name, vf_reg_address_1, vf_reg_address_2, vf_reg_city, vf_source_state, vf_reg_zip, vf_county_name, vf_township
-
-### Data Dictionary
-https://docs.google.com/spreadsheets/d/19g4qfdMu16bULxHrs3RkWapgTVQ3siS1XJS9BRTA2cg/edit#gid=2035147249
 
 <br> </br>
 
@@ -78,9 +75,22 @@ Use the following command to upload a single zip file to the VIP Dashboard:
 
 ```sh upload_script_staging.sh  <state abbreviation>.zip```
 
+For batch uploads of all the zips in your folder, use the following command:
+
+```for file in *.zip; do sh upload_script_staging.sh $file; done```
+
+Before a batch upload, remove all the old zip files before running the program:
+
+```rm *.zip```
+
+Bonus: remove all folders within the folder:
+
+```rm -r -- */```
+
 ##### Sample run(s)  
  
 ```sh upload_script_staging.sh vipfeed-pp-2018-11-06-TN.zip```
+
 
 <br> </br>
 
@@ -188,7 +198,7 @@ ________________________________________________________________________________
 
 <br> </br>
 
-## Explanation of common errors
+## Explanation of _general program errors_
 
 ##### 'States that failed to load state data'
 Indicates the tab for the requested state is not in the Google Sheet doc. The tab might not be included or is misspelled.
@@ -196,50 +206,57 @@ Indicates the tab for the requested state is not in the Google Sheet doc. The ta
 ##### 'States that failed to process'
 Indicates a critical error in building the .txt files. The error might be a type or formatting issue. For debugging, comment out the try and except clauses. 
 
-##### 'Error: ELECTION_AUTHORITIES Google Sheets is either missing from the Google workbook or there is data reading error.'
+##### 'ERROR | ELECTION_AUTHORITIES Google Sheet is either missing from the workbook or there is data reading error.'
 Indicates ELECTION_AUTHORITIES is missing from the Google Sheet or has a read-in issue. The tab might either not be included or is misspelled.
 
-##### 'Error: STATE_FEED Google Sheets is either missing from the Google workbook or there is data reading error.'
+##### 'ERROR | STATE_FEED Google Sheet is either missing from the workbook or there is data reading error.'
 Indicates STATE_FEED is missing from the Google Sheet or has a read-in issue. The tab might either not be included or is misspelled. 
 
-##### 'Error: There is a database connection error.'
+##### 'ERROR | There is a database connection error.'
 Indicates that there is an error connecting to the AWS MySQL database.
 
 ##### 'ERROR | TargetSmart data for <state_abbrv> is either missing from the database or there is data reading error.'
-Indicates that there is an error reading the TargetSmart data from the database.
-
+Indicates that there is an error reading the TargetSmart data from the AWS database.
 
 <br> </br>
 
-## Explanation of warnings
+## Explanation of _STATE DATA WARNINGS_
 
-### State Data
+##### 'Rows w/ Multiple Directions for the Same Polling Location'
+Indicates that a polling location is listed with multiple unique values in the 'directions' field.  This can indicate that the location uses multiple rooms within the same building, depending on the time/day.  Alternatively, this can indicate a data collection mistake, particularly if one of the values is blank.  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet. Each tuple in the list includes rows from a single polling location.
 
-##### 'Missing Data'
-Indicates that there are one or more empty fields in the corresponding rows of the Polling Place Hand Collection Google Sheet.  The warning detects missing values from all columns except 'collected_precinct', 'directions', 'start_time', 'end_time', and 'internal_notes'.
+##### 'Rows w/ Multiple Addresses for the Same Polling Location'
+Indicates a paired `OCD_ID` and `location_name`, aka a unique polling location, has multiple addresses listed. This can indicate a spelling error or a mismatched `location_name`. The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet. Each tuple in the list includes rows from a single polling location.
 
-##### 'Multiple Directions for the Same Polling Location'
-Indicates that a polling location is listed with multiple values in the 'directions' field.  This can indicate that the location uses multiple rooms within the same building, depending on the time/day.  Alternatively, this can indicate a data collection mistake, particularly if one of the values is blank.  The list of rows corresponds to row numbers in the Polling Place Hand Collection Google Sheet.  Each tuple in the list includes rows from a single polling location.
+##### 'Rows w/ Problematic Cross-Street Formats'
+Indicates that the address provided is an intersection (written as cross-streets) rather than street and house number. The warning detects '&' and 'and' strings in the address_line column.  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet.
 
-##### 'Multiple Addresses for the Same Polling Location'
-Indicates that a polling location name is listed with multiple addresses, within the same county.  This can indicate a data collection mistake or simply two separate polling locations with the same name.  The list of rows corresponds to row numbers in the Polling Place Hand Collection Google Sheet.  Each tuple in the list includes rows from a single polling location.
- 
-##### 'Problematic Cross-Street Formats'
-Indicates that the address provided is an intersection (written as cross-streets) rather than street and house number. The warning detects '&' and 'and' strings in the address_line column.  The list of rows corresponds to row numbers in the Polling Place Hand Collection Google Sheet.
- 
-##### 'Missing Zipcodes from Location Addresses'
-Indicates that the address provided in the address_line column does not contain a zipcode.  The list of rows corresponds to row numbers in the Polling Place Hand Collection Google Sheet.
- 
-##### 'Missing State Abbreviations from Location Addresses'
-Indicates that the address provided in the address_line column does not contain a state abbreviation.  The list of rows corresponds to row numbers in the Polling Place Hand Collection Google Sheet.
- 
-##### 'Hours have ;'s Instead of :'s'
-Indicates that there are semicolons in place of colons in the start_time or end_time columns.  This is a common data entry error and all instances must be corrected.  The list of rows corresponds to row numbers in the Polling Place Hand Collection Google Sheet.
- 
-##### 'Dates have Invalid Years'
-Indicates that the year provided in the start_date or end_date columns is incorrect (does not match the election year).  The list of rows corresponds to row numbers in the Polling Place Hand Collection Google Sheet.
+<br> </br>
 
-### TargetSmart Data
+## Explanation of _STATE DATA FATAL ERRORS_
+
+##### 'Rows w/ Missing Data'
+Indicates that there are one or more empty fields in the corresponding rows of the Early Voting Hand Collection Google Sheet.  The warning detects missing values from all columns except 'directions', 'start_time', 'end_time', and 'internal_notes'.
+
+##### 'Rows w/ ;\'s Instead of :\'s in Start and/or End Hours'
+Indicates that there are semicolons in place of colons in the start_time or end_time columns.  This is a common data entry error and all instances must be corrected.  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet.
+ 
+##### 'Rows w/ Invalid Years in Start and/or End Dates'
+Indicates that the year provided in the start_date or end_date columns is incorrect (does not match the election year).  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet.
+
+##### 'Rows w/ Missing or Invalid Zipcodes from Location Addresses'
+Indicates that the address provided in the address_line column does not contain a zipcode.  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet.
+ 
+##### 'Rows w/ Missing State Abbreviations from Location Addresses'
+Indicates that the address provided in the address_line column does not contain a state abbreviation.  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet.
+
+##### 'Rows w/ Mismatched Timezones between Start and End Times'
+Indicates a hand collection error where the GMT adjustments are different for start and end times in the same row.
+ 
+##### 'Rows w/ Polling Locations with Different Timezones'
+Indicates a hand collection error where the same election day polling location has more than one unique GMT adjustment listed in start and/or end times.
+
+## Explanation of _TARGET SMART WARNINGS_
 
 ##### '# of Rows Missing Townships'
 Indicates the number of rows missing township values in the TargetSmart file.  This is especially important for states using townships rather than counties.
@@ -250,15 +267,15 @@ Indicates the number of rows missing county values in the TargetSmart file.  Thi
 ##### '# of Missing State Abbreviations Filled'
 Indicates the number of rows missing state abbreviation values in the TargetSmart file.
 
-### State Data & TargetSmart Data
+## Explanation of _MISMATCH WARNINGS_
 
 ##### 'Precincts in State Data not found in TargetSmart'
-Indicates which precincts (if any) in the hand-collected state data are not found in the TargetSmart data.
+Indicates which precincts (if any) in the hand collected state data are not found in the TargetSmart data.
 
 ##### 'Precincts in TargetSmart not found in State Data'
 Indicates which precincts (if any) in the TargetSmart data are not found in the hand-collected state data.
 
-### Street Segment Data
+## Explanation of _STREET SEGMENT WARNINGS_
 
 ##### '# of Rows Missing Precinct Ids'
 Indicates the number of addresses in the street segment data that do not have precinct ids.
