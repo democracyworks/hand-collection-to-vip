@@ -879,7 +879,7 @@ def state_report(multi_directions_rows, multi_address_rows, cross_street_rows, #
           
         if cross_street_rows:
             print('\n')
-            print('f'.center(PRINT_OUTPUT_WIDTH, ' '))
+            print('Rows w/ Problematic Cross-Street Formats'.center(PRINT_OUTPUT_WIDTH, ' '))
             print()
             for i in range(0, len(cross_street_rows), PRINT_ARRAY_WIDTH):
                 print(str(cross_street_rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
