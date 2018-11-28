@@ -96,7 +96,10 @@ Bonus: remove all folders within the folder:
 
 ## Print out sample
 ```
---------------------------------------------- ARIZONA ----------------------------------------------
+Timestamp: 2018-11-28 00:20:28
+
+
+------------------------------------------ NEW HAMPSHIRE -------------------------------------------
 
 
                                              .txt Size                                              
@@ -104,75 +107,61 @@ Bonus: remove all folders within the folder:
                                            state | 1 row(s)
                                           source | 1 row(s)
                                         election | 1 row(s)
-                         election_administration | 15 row(s)
-                                      department | 15 row(s)
-                                          person | 15 row(s)
-                                        locality | 1 row(s)
-                                polling_location | 241 row(s)
-                                        precinct | 249 row(s)
-                                        schedule | 241 row(s)
-                                  street_segment | 340770 row(s)
+                         election_administration | 135 row(s)
+                                      department | 135 row(s)
+                                          person | 135 row(s)
+                                        locality | 241 row(s)
+                                polling_location | 312 row(s)
+                                        precinct | 320 row(s)
+                                        schedule | 312 row(s)
+                                  street_segment | 480269 row(s)
 
 
 
-                                    # of Unique Counties/Places                                     
+                                       # of Unique Townships                                        
 
-                                      State Data | 1 counties/places
-                                     TargetSmart | 1 counties/places
-                            Election Authorities | 15 counties/places
-
-
-
-                     ------------------ STATE DATA WARNINGS ------------------                      
+                                      State Data | 241 townships
+                                     TargetSmart | 241 townships
+                            Election Authorities | 135 townships
 
 
-                         Multiple Directions for the Same Polling Location                          
-
-      (24, 191), (32, 33), (47, 66), (88, 231), (93, 229), (132, 182), (151, 226), (220, 227)       
+                --------------------- STATE DATA FATAL ERRORS ---------------------                 
 
 
-                          Multiple Addresses for the Same Polling Location                          
+                    Rows w/ Missing State Abbreviations from Location Addresses                     
 
-                (17, 152), (20, 233), (28, 241), (36, 162), (43, 167), (55, 197)
-
-
-                                  Problematic Cross-Street Formats                                  
-
-                                               5, 77                                                
+                             13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23                             
+                             24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34                             
+                             35, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46                             
+                             47, 48, 50, 51, 52, 53, 54, 55, 56, 57, 58                             
+                             59, 60, 61, 62, 63, 64, 66, 67, 68, 69, 70                             
+                             71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81                             
+                             82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92                             
+                           93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103                         
 
 
 
-                     ------------------- MISMATCH WARNINGS -------------------                      
-
-
-                          Precincts in State Data not found in TargetSmart                          
-
-                                          ('PIMA', '027')                                           
-
-
-                          Precincts in TargetSmart not found in State Data                          
-
-                                  ('PIMA', '268'), ('PIMA', '279')                                  
-                                  ('PIMA', '291'), ('PIMA', '294')                                  
-                                  ('PIMA', '316'), ('PIMA', '332')                                  
-                                  ('PIMA', '362'), ('PIMA', '368')                                  
-                                                                                                    
-
-
-                     ---------------- STREET SEGMENT WARNINGS ----------------                      
+                --------------------- STREET SEGMENT WARNINGS ---------------------                 
 
 
                                    # of Rows Missing Precinct Ids                                   
 
-                                                 8                                                  
+                                                3665                                                
+
+
+                                 # of Rows Missing Address Numbers                                  
+
+                                                208                                                 
 
 
                                  # of Rows Missing Street Suffixes                                  
 
-                                               53754                                                
+                                                6585                                                
 
 
 ____________________________________________________________________________________________________
+
+
 
 
 
@@ -188,12 +177,18 @@ ________________________________________________________________________________
 
                                 States that processed with warnings                                 
 
-                                                 AZ                                                 
+                                                 NH                                                 
 
 
                                  States that sucessfully processed                                  
 
-                                                 AZ                                                 
+                                                 NH                                                 
+
+
+
+
+Timestamp: 2018-11-28 00:21:22
+Run time: 0.91 minute(s)                                            
 ```
 
 <br> </br>
