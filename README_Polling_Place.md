@@ -295,3 +295,5 @@ Indicates the number of addresses that are missing street suffixes.
 ##### NH
 - Script hardcodes precinct names for several addresses in Washington County.  
 
+### Additional Notes
+- Minimum python version required to run, primarily for f-strings: Python 3.7.0 
