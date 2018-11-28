@@ -68,7 +68,7 @@ For batch uploads of all the zips in your folder, use the following command:
 
 ```for file in *.zip; do sh upload_script_staging.sh $file; done```
 
-Below running the program and running a batch upload, remove all the old zip files:
+Before a batch upload, remove all the old zip files before running the program:
 
 ```rm *.zip```
 
@@ -172,7 +172,7 @@ Run time: 2.97 second(s)
 
 <br> </br>
 
-## Explanation of program errors: 
+## Explanation of _general program errors_
 
 ##### 'Failed to load state data'
 Indicates the tab for the requested state is not in the Google Sheet doc. The tab might not be included or is misspelled.
@@ -188,20 +188,20 @@ Indicates STATE_FEED is missing from the Google Sheet or has a read-in issue. Th
 
 <br> </br>
 
-## Explanation of `STATE DATA WARNINGS`
+## Explanation of _STATE DATA WARNINGS_
 
 ##### 'Rows w/ Multiple Directions for the Same Polling Location'
-Indicates that a paired `OCD_ID` and `location_name`, aka a unique polling location, have multiple addresses listed. This can indicate a spelling error or a mismatched `location_name`. The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet. Each tuple in the list includes rows from a single polling location.
+Indicates that a polling location is listed with multiple unique values in the 'directions' field.  This can indicate that the location uses multiple rooms within the same building, depending on the time/day.  Alternatively, this can indicate a data collection mistake, particularly if one of the values is blank.  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet. Each tuple in the list includes rows from a single polling location.
 
 ##### 'Rows w/ Multiple Addresses for the Same Polling Location'
-Indicates that a polling location is listed with multiple values in the 'address_line' field.  This can indicate that the location uses multiple rooms within the same building, depending on the time/day.  Alternatively, this can indicate a data collection mistake, particularly if one of the values is blank.  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet. Each tuple in the list includes rows from a single polling location.
+Indicates a paired `OCD_ID` and `location_name`, aka a unique polling location, has multiple addresses listed. This can indicate a spelling error or a mismatched `location_name`. The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet. Each tuple in the list includes rows from a single polling location.
 
 ##### 'Rows w/ Problematic Cross-Street Formats'
 Indicates that the address provided is an intersection (written as cross-streets) rather than street and house number. The warning detects '&' and 'and' strings in the address_line column.  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet.
 
 <br> </br>
 
-## Explanation of `STATE DATA FATAL ERRORS`
+## Explanation of _STATE DATA FATAL ERRORS_
 
 ##### 'Rows w/ Missing Data'
 Indicates that there are one or more empty fields in the corresponding rows of the Early Voting Hand Collection Google Sheet.  The warning detects missing values from all columns except 'directions', 'start_time', 'end_time', and 'internal_notes'.
@@ -219,7 +219,7 @@ Indicates that the address provided in the address_line column does not contain 
 Indicates that the address provided in the address_line column does not contain a state abbreviation.  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet.
 
 ##### 'Rows w/ Mismatched Timezones between Start and End Times'
-Indicates a hand collection error where the GMT adjustment on the times are different for start and end times in the same row.
+Indicates a hand collection error where the GMT adjustments are different for start and end times in the same row.
  
 ##### 'Rows w/ (Possibly) Incorrect OCD ID Formats'
 Indicates that the OCD ID provided in the OCD_ID column is incorrect or has an unusual format.  The list of rows corresponds to row numbers in the Early Voting Hand Collection Google Sheet. This one will have a ton of bugs, but are still worth double checking they are correct as OCD IDs are critical.
