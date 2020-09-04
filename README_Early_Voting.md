@@ -1,5 +1,5 @@
-# Program Overview   |   Early Voting Hand Collection 2018
-###### Voting Information Project (VIP) Version 5.1
+# Program Overview   |   Early Voting Hand Collection 2020
+###### Voting Information Project (VIP) Version 5.2
 
 Program takes hand-collected state data related to early voting locations, standardizes the data, and outputs the data in a format that can be read by the VIP Dashboard.  The data was collected by the Democracy Works VIP Outreach Team.
 
