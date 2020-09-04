@@ -53,9 +53,8 @@ SCOPES = 'https://www.googleapis.com/auth/spreadsheets.readonly'
 SPREADSHEET_ID = '1mccKKi7u8DZ5hl5-BPykJyIwj-J4N-fUrTwwp0XSZxI' 
 
 # ELECTION_AUTHORITIES entire Google Sheet (1 tab) 
-# https://docs.google.com/spreadsheets/d/1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_y2o/edit#gid=1572182198
-SPREADSHEET_EA_ID = '1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_y2o' 
-
+# https://docs.google.com/spreadsheets/d/1XxY1pkoiKNAM8nUjrDJ4MMm6x_rGWRHbreW9XfJtdjE/edit#gid=1945124005
+SPREADSHEET_EA_ID = '1XxY1pkoiKNAM8nUjrDJ4MMm6x_rGWRHbreW9XfJtdjE' 
 
 # _________________________________________________________________________________________________________________________
 
@@ -92,11 +91,12 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     if election_authorities.empty:
         # CREATE empty election_authorities DataFrame if state not in election administration sheet
         election_authorities = pd.DataFrame(columns=['ocd_division','election_administration_id','homepage_url',
+                                                     #'am_i_registered_uri','registration_uri','where_do_i_vote_uri'
                                                      'official_title','election_official_person_id'])
 
     else:
         # # SELECT desired cols from election_authorities
-        election_authorities = election_authorities[['ocd_division','homepage_url', 'official_title']]
+        election_authorities = election_authorities[['ocd_division','homepage_url', 'official_title']]#, 'am_i_registered_uri','registration_uri','where_do_i_vote_uri']]
 
         # CREATE 'election_adminstration_id'
         temp = election_authorities[['ocd_division']]
@@ -116,6 +116,8 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     # CREATE 'hours_only_id'
     temp_cols = ['location_name', 'structured_line_1', 'structured_line_2', 'structured_city', 'structured_state', 'structured_zip', 'directions', 'is_drop_box', 'is_early_voting']
     temp = state_data[temp_cols]
+    for col in temp_cols:
+        temp['{0}'.format(col)] = temp['{0}'.format(col)].str.strip()
     temp.drop_duplicates(temp_cols, inplace=True)
     temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
     temp['hours_open_id'] = 'hours' + (temp.index + 1).astype(str).str.zfill(4)
@@ -123,6 +125,8 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
 
     # CREATE 'polling_location_ids'
     temp = state_data[temp_cols]
+    for col in temp_cols:
+        temp['{0}'.format(col)] = temp['{0}'.format(col)].str.strip()
     temp.drop_duplicates(temp_cols, inplace=True)
     temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
     temp['polling_location_ids'] = 'pol' + (temp.index + 1).astype(str).str.zfill(4)
@@ -137,7 +141,7 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     polling_location = generate_polling_location(state_data)
     schedule = generate_schedule(state_data, state_feed)
     source = generate_source(state_feed)
-    state = generate_state(state_feed)
+    state = generate_state(state_feed, election_authorities)
     locality = generate_locality(state_feed, state_data, election_authorities)
     election_administration = generate_election_administration(election_authorities)
     department = generate_department(election_authorities)
@@ -198,7 +202,7 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities):
 
     # FORMAT OCD IDs (2 formatted)
     state_data['ocd-division'] = state_data['ocd-division'].str.strip()
-    election_authorities['ocd_division'] = election_authorities['ocd_division'].str.strip()
+    election_authorities['ocd_division'] = election_authorities['ocd_division'].str.strip().str.lower()
 
     # FORMAT dates (3 formatted)
     state_feed['election_date'] = pd.to_datetime(state_feed['election_date'])
@@ -360,7 +364,7 @@ def generate_source(state_feed):
 
 
 
-def generate_state(state_feed): 
+def generate_state(state_feed, election_authorities): 
     """
     PURPOSE: generates state dataframe for .txt file
     INPUT: state_feed
@@ -371,12 +375,19 @@ def generate_state(state_feed):
     # SELECT feature(s) (4 selected)
     state = state_feed[['state_id', 'external_identifier_type', 'ocd_division', 'official_name']]
 
+    # MERGE state with election_authorities
+    temp = election_authorities[['ocd_division', 'election_administration_id']]
+    temp['ocd_division'] = temp.ocd_division.str.lower()
+    state = state.merge(temp, on='ocd_division', how='left')
+    #print(state.election_administration_id.tolist())
+    state.drop_duplicates(inplace=True)  # REMOVE duplicate rows from merge 
+
     # FORMAT features (3 formatted)
     state.rename(columns={'state_id':'id', 
                           'ocd_division':'external_identifier_value', 
                           'official_name':'name'}, inplace=True)
     
-
+    state['name'] = state.name.apply(lambda x: "{0}-Hand Collection".format(x))
     return state
 
 
@@ -400,6 +411,7 @@ def generate_locality(state_feed, state_data, election_authorities):
 
     # MERGE locality with election_authorities
     temp = election_authorities[['ocd_division', 'election_administration_id']]
+    temp['ocd_division'] = temp.ocd_division.str.lower()
     locality = locality.merge(temp, left_on='ocd-division', right_on='ocd_division', how='left')
     locality.drop_duplicates(inplace=True)  # REMOVE duplicate rows from merge 
 
@@ -428,7 +440,7 @@ def generate_election_administration(election_authorities):
     """
 
     # SELECT feature(s) (2 selected)
-    election_administration = election_authorities[['election_administration_id', 'homepage_url']]
+    election_administration = election_authorities[['election_administration_id', 'homepage_url']]#, 'am_i_registered_uri','registration_uri','where_do_i_vote_uri']]
 
     # FORMAT feature(s) (2 formatted)
     election_administration.drop_duplicates(inplace=True)
@@ -1036,6 +1048,7 @@ if __name__ == '__main__':
     if not creds or creds.invalid:
         flow = client.flow_from_clientsecrets('credentials.json', SCOPES)
         creds = tools.run_flow(flow, store)
+
     service = build('sheets', 'v4', http=creds.authorize(Http()))
     
     try: 
@@ -1050,11 +1063,21 @@ if __name__ == '__main__':
     try: 
         # LOAD election authorities data
         election_authorities_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_EA_ID, 
-                                                                          range='ELECTION_AUTHORITIES').execute()
+                                                                          range='Authorities').execute()
         election_authorities_values = election_authorities_result.get('values', [])
     except:
-        print('ERROR | ELECTION_AUTHORITIES Google Sheet is either missing from the workbook or there is data reading error.')
+        print('ERROR | Authorities Google Sheet is either missing from the workbook or there is data reading error.')
         raise
+
+    try: 
+        # LOAD election authorities data
+        state_ea_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_EA_ID, 
+                                                                          range='States').execute()
+        state_ea_values = state_ea_result.get('values', [])
+    except:
+        print('ERROR | States Google Sheet is either missing from the workbook or there is data reading error.')
+        raise
+
 
     # _____________________________________________________________________________________________________________________
 
@@ -1076,9 +1099,11 @@ if __name__ == '__main__':
         
         # GENERATE state_feed & election_authorities dataframe
         state_feed_all = pd.DataFrame(state_feed_values[1:], columns=state_feed_values[0])
-        election_authorities_all = pd.DataFrame(election_authorities_values[0:], columns=election_authorities_values[0])
+        election_authorities_all = pd.DataFrame(election_authorities_values[1:], columns=election_authorities_values[1])
         election_authorities_all.drop([0], inplace=True)
-
+        state_ea_all = pd.DataFrame(state_ea_values[1:], columns = state_ea_values[0])
+        state_ea_all.drop([0], inplace=True)
+        state_ea_all['State'] = state_ea_all['Ocd division'].apply(lambda x: str(x).split(":")[-1].upper())
 
         if 'ALL' in input_states: # IF user requests all states to be processed
             
@@ -1097,10 +1122,13 @@ if __name__ == '__main__':
                 state_data.drop([0], inplace=True)    
                 # FILTER state_feed, state_data, and election_authorities
                 state_feed = state_feed_all[state_feed_all['state_abbrv'] == state_abbrv] # FILTER state_feed_all for selected state
-                state_data = state_data[state_data['Outreach status']  == 'Complete'].reset_index(drop=True) #drop any rows that are not yet complete
-                election_authorities = election_authorities_all[election_authorities_all['state'] == state_abbrv] # FILTER election_authorities_all for selected state
+                state_data = state_data[state_data['Outreach status']  == 'Complete']#.reset_index(drop=True) #drop any rows that are not yet complete
+                
+                election_authorities = election_authorities_all.loc[election_authorities_all['State'] == state_abbrv, :] # FILTER election_authorities_all for selected state
+                state_ea = state_ea_all.loc[state_ea_all['State'] == state_abbrv, :]
 
-
+                election_authorities = pd.concat([state_ea, election_authorities], sort = False)
+                election_authorities.rename(columns = {"Ocd division": "ocd_division", "Homepage url": "homepage_url", "Official title": "official_title", "Polling place url": "where_do_i_vote_uri", "Voter registration status url": "am_i_registered_uri", "Ovr url": "registration_uri"}, inplace = True)
                 # GENERATE zip file and print state report
                 vip_build(state_abbrv, state_feed, state_data, election_authorities)
 
