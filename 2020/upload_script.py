@@ -12,7 +12,6 @@ Update BUCKET accordingly once the production Dashboard can process 5.2 feeds.
 
 import os
 import sys
-import pandas as pd
 
 #dictionary that will convert state abbreviation to FIPS code
 state_codes = {
