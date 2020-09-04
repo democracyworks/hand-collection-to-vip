@@ -21,7 +21,7 @@ Program takes hand-collected state data related to early voting locations, stand
 Two Google Sheets workbooks are required to run the program
 
 ### 1) Early Voting Hand Collections
-https://docs.google.com/spreadsheets/d/1utF9ybiOcCc9GvZ_KMqKO1TDaVqUxmHl4xmK48YkZj4
+https://docs.google.com/spreadsheets/d/1mccKKi7u8DZ5hl5-BPykJyIwj-J4N-fUrTwwp0XSZxI/edit#gid=1483517030
 
 ##### Required sheets & features:
 
@@ -29,10 +29,13 @@ https://docs.google.com/spreadsheets/d/1utF9ybiOcCc9GvZ_KMqKO1TDaVqUxmHl4xmK48Yk
 official_name, ocd_division, election_date, election_name, state_abbrv, state_fips
 
 ###### STATE sheets (with each sheet named according to its state abbreviation, for example, 'NY')
-OCD_ID,	location_name,	address_line,	directions,	start_time,	end_time,	start_date,	end_date,	is_only_by_appointment,	is_or_by_appointment,	is_drop_box,	is_early_voting,	internal_notes
+Outreach status, ocd-division, Locality, Location Name, directions, 
+address_line1, address_line2, address_city, address_state, address_zip, 
+start_time, end_time, start_date, end_date, 
+is_only_by_appointment, is_or_by_appointment, is_drop_box, is_early_voting, internal_notes
 
 ### 2) Election Authorities
-https://docs.google.com/spreadsheets/d/1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_y2o
+https://docs.google.com/spreadsheets/d/1XxY1pkoiKNAM8nUjrDJ4MMm6x_rGWRHbreW9XfJtdjE/edit#gid=402159483
 
 ##### Required sheets & features:
 
@@ -57,16 +60,16 @@ The tool outputs a single zip file per state feed, which contains the following 
 * state.txt
 
 ##### Documentation for the output files: 
-https://vip-specification.readthedocs.io/en/latest/index.html
+https://vip-specification.readthedocs.io/en/latest/csv.html
 
 #### How to upload output file to VIP Dashboard:
 Use the following command to upload a single zip file to the VIP Dashboard:
 
-```sh upload_script_staging.sh  <state abbreviation>.zip```
+```python upload_script.py  <state abbreviation>.zip```
 
 For batch uploads of all the zips in your folder, use the following command:
 
-```for file in *.zip; do sh upload_script_staging.sh $file; done```
+```for file in *.zip; do python upload_script.py $file; done```
 
 Before a batch upload, remove all the old zip files before running the program:
 
@@ -78,7 +81,7 @@ Bonus: remove all folders within the folder:
 
 ##### Sample run(s)  
  
-```sh upload_script_staging.sh vipfeed-ev-2018-11-06-SD.zip```
+```python3 upload_script.py vipfeed-ev-2020-11-03-SD.zip```
 
 <br> </br>
 
