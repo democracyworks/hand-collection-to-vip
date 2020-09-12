@@ -80,7 +80,6 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     state_feed['state_fips'] = state_feed['state_fips'].str.pad(2, side='left', fillchar='0') # first make sure there are leading zeros
     state_feed['state_id'] = state_abbrv.lower() + state_feed['state_fips']
     state_feed['external_identifier_type'] = 'ocd-id' 
-    
     # CLEAN/FORMAT state_feed, state_data, and election_authorities (3 dataframes)
     state_feed, state_data, election_authorities = clean_data(state_abbrv, state_feed, state_data, election_authorities)
 
@@ -91,12 +90,14 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     if election_authorities.empty:
         # CREATE empty election_authorities DataFrame if state not in election administration sheet
         election_authorities = pd.DataFrame(columns=['ocd_division','election_administration_id','homepage_url',
-                                                     #'am_i_registered_uri','registration_uri','where_do_i_vote_uri'
+                                                     'am_i_registered_uri','registration_uri','where_do_i_vote_uri'
                                                      'official_title','election_official_person_id'])
 
     else:
         # # SELECT desired cols from election_authorities
-        election_authorities = election_authorities[['ocd_division','homepage_url', 'official_title']]#, 'am_i_registered_uri','registration_uri','where_do_i_vote_uri']]
+        election_authorities = election_authorities[['ocd_division','homepage_url', 'official_title', 
+        'am_i_registered_uri','registration_uri','where_do_i_vote_uri'
+        ]]
 
         # CREATE 'election_adminstration_id'
         temp = election_authorities[['ocd_division']]
@@ -116,8 +117,8 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     # CREATE 'hours_only_id'
     temp_cols = ['location_name', 'structured_line_1', 'structured_line_2', 'structured_city', 'structured_state', 'structured_zip', 'directions', 'is_drop_box', 'is_early_voting']
     temp = state_data[temp_cols]
-    for col in temp_cols:
-        temp['{0}'.format(col)] = temp['{0}'.format(col)].str.strip()
+    #for col in temp_cols:
+    #    temp['{0}'.format(col)] = temp['{0}'.format(col)].str.strip()
     temp.drop_duplicates(temp_cols, inplace=True)
     temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
     temp['hours_open_id'] = 'hours' + (temp.index + 1).astype(str).str.zfill(4)
@@ -125,8 +126,8 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
 
     # CREATE 'polling_location_ids'
     temp = state_data[temp_cols]
-    for col in temp_cols:
-        temp['{0}'.format(col)] = temp['{0}'.format(col)].str.strip()
+    #for col in temp_cols:
+    #    temp['{0}'.format(col)] = temp['{0}'.format(col)].str.strip()
     temp.drop_duplicates(temp_cols, inplace=True)
     temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
     temp['polling_location_ids'] = 'pol' + (temp.index + 1).astype(str).str.zfill(4)
@@ -202,16 +203,18 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities):
 
     # FORMAT OCD IDs (2 formatted)
     state_data['ocd-division'] = state_data['ocd-division'].str.strip()
+
     election_authorities['ocd_division'] = election_authorities['ocd_division'].str.strip().str.lower()
 
     # FORMAT dates (3 formatted)
     state_feed['election_date'] = pd.to_datetime(state_feed['election_date'])
     state_data['start_date'] = pd.to_datetime(state_data['start_date'])
     state_data['end_date'] = pd.to_datetime(state_data['end_date'])
-    
+
     # FORMAT hours (2 formatted)
     state_data['start_time'] = state_data['start_time'].str.replace(' ', '')
     state_data['start_time'] = state_data['start_time'].str.replace(';', ':')
+
     #state_data['start_time'] = state_data['start_time'].str.replace('-',':00-')
     temp = state_data['start_time'].str.split('-', n=1, expand=True)
     temp[0] = temp[0].str.pad(8, side='left', fillchar='0')
@@ -239,11 +242,12 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities):
     state_data['is_only_by_appointment'] = state_data['is_only_by_appointment'].str.lower().apply(lambda_funct)
     state_data['is_or_by_appointment'] = state_data['is_or_by_appointment'].str.lower().apply(lambda_funct)
 
+
     # FORMAT ocd division ids (2 formatted)
     state_data['ocd-division'] = state_data['ocd-division'].str.strip()
     if not election_authorities.empty:
         election_authorities['ocd_division'] = election_authorities['ocd_division'].str.upper().str.strip()
-    
+
     #state_data['address_line'] = state_data['address_line'].str.strip().str.replace('\\s{2,}', ' ')
     state_data['location_name'] = state_data['location_name'].str.strip().str.replace('\'S', '\'s')
     
@@ -257,17 +261,18 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities):
     
     # FORMAT address line 
     # NOTE: There is a ton of random non-standard punctuation. The following regex clears everything except periods in digits
-    state_data['structured_state'] = state_data['structured_state'].str.strip() \
-                                                           .str.strip('.,;:)(') \
-                                                           .str.replace('(?<!\\d)[.,;:](?!\\d)?', ' ') \
-                                                           .str.replace('\\s{2,}', ' ') \
-                                                           .str.replace(' D C ', ' DC ') \
-                                                           .str.strip()
+    if not state_data.structured_state.isnull().all():
+        state_data['structured_state'] = state_data['structured_state'].str.strip() \
+                                                               .str.strip('.,;:)(') \
+                                                               .str.replace('(?<!\\d)[.,;:](?!\\d)?', ' ') \
+                                                               .str.replace('\\s{2,}', ' ') \
+                                                               .str.replace(' D C ', ' DC ') \
+                                                               .str.strip()
     
-    state_abbrv_replace = ' ' + state_abbrv + '|' + state_feed['official_name'].tolist()[0] + ' ' # CREATE abbrv or full name with space
-    state_data['structured_state'] = state_data['structured_state'].str.replace(state_abbrv_replace, ' ') \
-                                                           .str.replace('[ ](?=[^ ]+$)', state_abbrv_insert) \
-                                                           .str.replace('\\s{2,}', ' ')
+        state_abbrv_replace = ' ' + state_abbrv + '|' + state_feed['official_name'].tolist()[0] + ' ' # CREATE abbrv or full name with space
+        state_data['structured_state'] = state_data['structured_state'].str.replace(state_abbrv_replace, ' ') \
+                                                               .str.replace('[ ](?=[^ ]+$)', state_abbrv_insert) \
+                                                               .str.replace('\\s{2,}', ' ')
 
     return state_feed, state_data, election_authorities
 
@@ -440,7 +445,9 @@ def generate_election_administration(election_authorities):
     """
 
     # SELECT feature(s) (2 selected)
-    election_administration = election_authorities[['election_administration_id', 'homepage_url']]#, 'am_i_registered_uri','registration_uri','where_do_i_vote_uri']]
+    election_administration = election_authorities[['election_administration_id', 'homepage_url', 
+    'am_i_registered_uri','registration_uri','where_do_i_vote_uri'
+    ]]
 
     # FORMAT feature(s) (2 formatted)
     election_administration.drop_duplicates(inplace=True)
@@ -1101,9 +1108,11 @@ if __name__ == '__main__':
         state_feed_all = pd.DataFrame(state_feed_values[1:], columns=state_feed_values[0])
         election_authorities_all = pd.DataFrame(election_authorities_values[1:], columns=election_authorities_values[1])
         election_authorities_all.drop([0], inplace=True)
+        election_authorities_all.columns = [col.lower().strip() for col in election_authorities_all.columns]
         state_ea_all = pd.DataFrame(state_ea_values[1:], columns = state_ea_values[0])
         state_ea_all.drop([0], inplace=True)
-        state_ea_all['State'] = state_ea_all['Ocd division'].apply(lambda x: str(x).split(":")[-1].upper())
+        state_ea_all.columns = [col.lower().strip() for col in state_ea_all.columns]
+        state_ea_all['state'] = state_ea_all['ocd division'].apply(lambda x: str(x).split(":")[-1].upper())
 
         if 'ALL' in input_states: # IF user requests all states to be processed
             
@@ -1124,11 +1133,11 @@ if __name__ == '__main__':
                 state_feed = state_feed_all[state_feed_all['state_abbrv'] == state_abbrv] # FILTER state_feed_all for selected state
                 state_data = state_data[state_data['Outreach status']  == 'Complete']#.reset_index(drop=True) #drop any rows that are not yet complete
                 
-                election_authorities = election_authorities_all.loc[election_authorities_all['State'] == state_abbrv, :] # FILTER election_authorities_all for selected state
-                state_ea = state_ea_all.loc[state_ea_all['State'] == state_abbrv, :]
+                election_authorities = election_authorities_all.loc[election_authorities_all['state'] == state_abbrv, :] # FILTER election_authorities_all for selected state
+                state_ea = state_ea_all.loc[state_ea_all['state'] == state_abbrv, :]
 
                 election_authorities = pd.concat([state_ea, election_authorities], sort = False)
-                election_authorities.rename(columns = {"Ocd division": "ocd_division", "Homepage url": "homepage_url", "Official title": "official_title", "Polling place url": "where_do_i_vote_uri", "Voter registration status url": "am_i_registered_uri", "Ovr url": "registration_uri"}, inplace = True)
+                election_authorities.rename(columns = {"ocd division": "ocd_division", "homepage url": "homepage_url", "official title": "official_title", "polling place url": "where_do_i_vote_uri", "voter registration status url": "am_i_registered_uri", "ovr url": "registration_uri"}, inplace = True)
                 # GENERATE zip file and print state report
                 vip_build(state_abbrv, state_feed, state_data, election_authorities)
 
