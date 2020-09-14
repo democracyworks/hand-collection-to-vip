@@ -1038,9 +1038,13 @@ if __name__ == '__main__':
     
 
     # SET UP command line inputs
+    """
     parser = argparse.ArgumentParser()
     parser.add_argument('-states', nargs='+', required=True)
-
+    """
+    input_message = "Input state abbreviations with spaces bewteen each (or use the special argument all). No quotes or commas needed:\n\n"
+    input_states = [a.upper().strip() for a in str(input(input_message)).split(" ")]
+    print("Parsing:", ", ".join(input_states))
     print('Timestamp:', datetime.datetime.now().replace(microsecond=0))
     start = time.time()
 
@@ -1099,60 +1103,60 @@ if __name__ == '__main__':
     increment_processingerror = 0 # STORE count of states that could not be processed
     
     # PROCESS each state individually (input_states are requested states listed as state abbreviations)
-    for _, input_states in parser.parse_args()._get_kwargs(): # ITERATE through input arguments
+    #for input_states in parser:#parser.parse_args()._get_kwargs(): # ITERATE through input arguments
 
 
-        input_states = [state.upper() for state in input_states] # FORMAT all inputs as uppercase
+    #input_states = [state.upper() for state in parser] # FORMAT all inputs as uppercase
+    
+    # GENERATE state_feed & election_authorities dataframe
+    state_feed_all = pd.DataFrame(state_feed_values[1:], columns=state_feed_values[0])
+    election_authorities_all = pd.DataFrame(election_authorities_values[1:], columns=election_authorities_values[1])
+    election_authorities_all.drop([0], inplace=True)
+    election_authorities_all.columns = [col.lower().strip() for col in election_authorities_all.columns]
+    state_ea_all = pd.DataFrame(state_ea_values[1:], columns = state_ea_values[0])
+    state_ea_all.drop([0], inplace=True)
+    state_ea_all.columns = [col.lower().strip() for col in state_ea_all.columns]
+    state_ea_all['state'] = state_ea_all['ocd division'].apply(lambda x: str(x).split(":")[-1].upper())
+
+    if 'ALL' in input_states: # IF user requests all states to be processed
         
-        # GENERATE state_feed & election_authorities dataframe
-        state_feed_all = pd.DataFrame(state_feed_values[1:], columns=state_feed_values[0])
-        election_authorities_all = pd.DataFrame(election_authorities_values[1:], columns=election_authorities_values[1])
-        election_authorities_all.drop([0], inplace=True)
-        election_authorities_all.columns = [col.lower().strip() for col in election_authorities_all.columns]
-        state_ea_all = pd.DataFrame(state_ea_values[1:], columns = state_ea_values[0])
-        state_ea_all.drop([0], inplace=True)
-        state_ea_all.columns = [col.lower().strip() for col in state_ea_all.columns]
-        state_ea_all['state'] = state_ea_all['ocd division'].apply(lambda x: str(x).split(":")[-1].upper())
-
-        if 'ALL' in input_states: # IF user requests all states to be processed
-            
-            input_states = state_feed_all['state_abbrv'].unique().tolist() # FORMAT unique list of 50 state abbreviations
+        input_states = state_feed_all['state_abbrv'].unique().tolist() # FORMAT unique list of 50 state abbreviations
 
 
-        for state_abbrv in input_states:
+    for state_abbrv in input_states:
+    
+        try:
         
-            try:
+            # LOAD state data
+            state_data_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=state_abbrv).execute()
+            state_data_values = state_data_result.get('values', [])
+            state_data = pd.DataFrame(state_data_values[0:],columns=state_data_values[0])
+            state_data.rename(columns = {"Location Name": "location_name", "address_line1": "structured_line_1", "address_line2": "structured_line_2", "address_city": "structured_city", "address_state": "structured_state", "address_zip": "structured_zip"}, inplace  = True)
+            state_data.drop([0], inplace=True)    
+            # FILTER state_feed, state_data, and election_authorities
+            state_feed = state_feed_all[state_feed_all['state_abbrv'] == state_abbrv] # FILTER state_feed_all for selected state
+            state_data = state_data[state_data['Outreach status']  == 'Complete']#.reset_index(drop=True) #drop any rows that are not yet complete
             
-                # LOAD state data
-                state_data_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=state_abbrv).execute()
-                state_data_values = state_data_result.get('values', [])
-                state_data = pd.DataFrame(state_data_values[0:],columns=state_data_values[0])
-                state_data.rename(columns = {"Location Name": "location_name", "address_line1": "structured_line_1", "address_line2": "structured_line_2", "address_city": "structured_city", "address_state": "structured_state", "address_zip": "structured_zip"}, inplace  = True)
-                state_data.drop([0], inplace=True)    
-                # FILTER state_feed, state_data, and election_authorities
-                state_feed = state_feed_all[state_feed_all['state_abbrv'] == state_abbrv] # FILTER state_feed_all for selected state
-                state_data = state_data[state_data['Outreach status']  == 'Complete']#.reset_index(drop=True) #drop any rows that are not yet complete
-                
-                election_authorities = election_authorities_all.loc[election_authorities_all['state'] == state_abbrv, :] # FILTER election_authorities_all for selected state
-                state_ea = state_ea_all.loc[state_ea_all['state'] == state_abbrv, :]
+            election_authorities = election_authorities_all.loc[election_authorities_all['state'] == state_abbrv, :] # FILTER election_authorities_all for selected state
+            state_ea = state_ea_all.loc[state_ea_all['state'] == state_abbrv, :]
 
-                election_authorities = pd.concat([state_ea, election_authorities], sort = False)
-                election_authorities.rename(columns = {"ocd division": "ocd_division", "homepage url": "homepage_url", "official title": "official_title", "polling place url": "where_do_i_vote_uri", "voter registration status url": "am_i_registered_uri", "ovr url": "registration_uri"}, inplace = True)
-                # GENERATE zip file and print state report
-                vip_build(state_abbrv, state_feed, state_data, election_authorities)
+            election_authorities = pd.concat([state_ea, election_authorities], sort = False)
+            election_authorities.rename(columns = {"ocd division": "ocd_division", "homepage url": "homepage_url", "official title": "official_title", "polling place url": "where_do_i_vote_uri", "voter registration status url": "am_i_registered_uri", "ovr url": "registration_uri"}, inplace = True)
+            # GENERATE zip file and print state report
+            vip_build(state_abbrv, state_feed, state_data, election_authorities)
 
 
-                states_successfully_processed.append(state_abbrv)
-                increment_success +=1
-            
-            except HttpError:
-                increment_httperror += 1
-                states_failed_to_load.append(state_abbrv)
+            states_successfully_processed.append(state_abbrv)
+            increment_success +=1
+        
+        except HttpError:
+            increment_httperror += 1
+            states_failed_to_load.append(state_abbrv)
 
-            except Exception as e:
-                increment_processingerror += 1
-                exception_string = state_abbrv + ' | ' + str(type(e).__name__) + ' ' + str(e) + '\n'
-                states_failed_to_process.append(exception_string)
+        except Exception as e:
+            increment_processingerror += 1
+            exception_string = state_abbrv + ' | ' + str(type(e).__name__) + ' ' + str(e) + '\n'
+            states_failed_to_process.append(exception_string)
 
 
     summary_report(len(input_states), increment_httperror, increment_processingerror, increment_success,
