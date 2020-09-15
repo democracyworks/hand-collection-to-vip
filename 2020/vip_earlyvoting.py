@@ -2,6 +2,7 @@ from __future__ import print_function
 from sys import argv
 import argparse
 import os
+import shutil
 
 # GOOGLE API libraries
 from googleapiclient.discovery import build
@@ -522,9 +523,13 @@ def generate_zip(state_abbrv, state_feed, files):
         df.to_csv(file, index=False, encoding='utf-8')
 
     # CREATE state directory
-    if not os.path.exists(state_abbrv):
-        os.makedirs(state_abbrv)
-    
+    #if not os.path.exists(state_abbrv):
+    #    os.makedirs(state_abbrv)
+    if os.path.exists(state_abbrv):
+        shutil.rmtree(state_abbrv)
+
+    os.makedirs(state_abbrv)
+
     # DEFINE name of zipfile
     zip_filename = 'vipfeed-ev-' + str(state_feed['election_date'].tolist()[0].date()) + '-' + state_abbrv + '.zip'
 
