@@ -1140,8 +1140,7 @@ if __name__ == '__main__':
             state_data.drop([0], inplace=True)    
             # FILTER state_feed, state_data, and election_authorities
             state_feed = state_feed_all[state_feed_all['state_abbrv'] == state_abbrv] # FILTER state_feed_all for selected state
-            state_data = state_data[state_data['Outreach status']  == 'Complete']#.reset_index(drop=True) #drop any rows that are not yet complete
-            
+            state_data = state_data[state_data['Outreach status'].str.upper().str.contains('^COMPLETE', regex = True)]#.reset_index(drop=True) #drop any rows that are not yet complete
             election_authorities = election_authorities_all.loc[election_authorities_all['state'] == state_abbrv, :] # FILTER election_authorities_all for selected state
             state_ea = state_ea_all.loc[state_ea_all['state'] == state_abbrv, :]
 
