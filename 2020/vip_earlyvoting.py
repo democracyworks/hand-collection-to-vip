@@ -83,7 +83,6 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     state_feed['external_identifier_type'] = 'ocd-id' 
     # CLEAN/FORMAT state_feed, state_data, and election_authorities (3 dataframes)
     state_feed, state_data, election_authorities = clean_data(state_abbrv, state_feed, state_data, election_authorities)
-
     # _____________________________________________________________________________________________________________________
 
     # CREATE IDS | Create IDs on dataframes
@@ -612,7 +611,7 @@ def warning_cross_street(state_data):
     """
 
     # NOTE: Invalid cross streets sometimes do not map well on Google's end 
-    cross_street_addresses = state_data[state_data['structured_line_1'].str.contains(' & | and | between', regex =  True)]
+    cross_street_addresses = state_data[state_data['structured_line_1'].str.contains(' & | and | between', regex =  True, na = False)]
     cross_street_rows = sorted(list(cross_street_addresses.index + 1))
 
 
@@ -674,24 +673,24 @@ def warning_ocd_id(state_data, state_abbrv):
     ocd_id_rows = []
 
     # ISOLATE if ocd-division is incorrect
-    ocd_id_issue = state_data[~state_data['ocd-division'].str.contains('ocd-division')]
+    ocd_id_issue = state_data[~state_data['ocd-division'].str.contains('ocd-division', na = False)]
     if not ocd_id_issue.empty:
         ocd_id_rows.append(('ocd-id', str(set(ocd_id_issue.index+1)).strip('{}')))
 
     # ISOLATE if country is incorrect
-    country_issue = state_data[~state_data['ocd-division'].str.contains('country:us')]
+    country_issue = state_data[~state_data['ocd-division'].str.contains('country:us', na = False)]
     if not country_issue.empty:
         ocd_id_rows.append(('country', str(set(country_issue.index+1)).strip('{}')))
 
     # ISOLATE if state is incorrect 
     state_string = 'state:' + state_abbrv.lower()
-    state_issue = state_data[~state_data['ocd-division'].str.contains(state_string)]
+    state_issue = state_data[~state_data['ocd-division'].str.contains(state_string, na = False)]
     if not state_issue.empty:
         ocd_id_rows.append(('state', str(set(state_issue.index+1)).strip('{}')))
 
     # ISOLATE if country is incorrect
     if state_abbrv != 'AK': # Alaska ocd-ids does not include county/place 
-        county_place_issue = state_data[~state_data['ocd-division'].str.contains(r'county|place|sldl|parish')]
+        county_place_issue = state_data[~state_data['ocd-division'].str.contains(r'county|place|sldl|parish', na = False)]
         if not county_place_issue.empty:
             ocd_id_rows.append(('county|place|sldl|parish', str(set(county_place_issue.index+1)).strip('{}')))
 
@@ -738,8 +737,8 @@ def warning_semi_colon(state_data):
     """
 
     # ISOLATE data errors in 2 features
-    semi_colon_start_time = state_data[state_data['start_time'].str.contains(';')]
-    semi_colon_end_time = state_data[state_data['end_time'].str.contains(';')]
+    semi_colon_start_time = state_data[state_data['start_time'].str.contains(';', na = False)]
+    semi_colon_end_time = state_data[state_data['end_time'].str.contains(';', na = False)]
     semi_colon_times = semi_colon_start_time.append(semi_colon_end_time)
 
     semi_colon_rows = sorted(list(set(semi_colon_times.index + 1)))
@@ -769,7 +768,7 @@ def warning_missing_zipcodes(state_data):
                                                                         .str.strip()
     """
     missing_zipcodes['structured_zip'] =  missing_zipcodes['structured_zip'].str.strip()
-    missing_zipcodes = missing_zipcodes[~missing_zipcodes['structured_zip'].str.contains('^[0-9]{5}(?:-[0-9]{4})?$', regex = True)]
+    missing_zipcodes = missing_zipcodes[~missing_zipcodes['structured_zip'].str.contains('^[0-9]{5}(?:-[0-9]{4})?$', regex = True, na = False)]
     
     missing_zipcode_rows  = sorted(list(set(missing_zipcodes.index + 1)))  # ADD 1 to index to correspond with Google Sheets
 
@@ -801,7 +800,7 @@ def warning_missing_state_abbrvs(state_data, state_abbrv, state_fullname):
     """
     state_abbrv_with_space = state_abbrv + '|' + state_fullname.upper() # CREATE state_abbrv with space
     missing_state_abbrvs = missing_state_abbrvs[~missing_state_abbrvs['structured_state'].str.upper() \
-                                                                                     .str.contains(state_abbrv_with_space, regex = True)]
+                                                                                     .str.contains(state_abbrv_with_space, regex = True, na = False)]
     missing_state_abbrvs_rows = sorted(list(set(missing_state_abbrvs.index + 1)))  # ADD 1 to index to correspond with Google Sheets
 
 
@@ -1136,11 +1135,12 @@ if __name__ == '__main__':
             state_data_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=state_abbrv).execute()
             state_data_values = state_data_result.get('values', [])
             state_data = pd.DataFrame(state_data_values[0:],columns=state_data_values[0])
+            print(state_data.columns)
             state_data.rename(columns = {"Location Name": "location_name", "address_line1": "structured_line_1", "address_line2": "structured_line_2", "address_city": "structured_city", "address_state": "structured_state", "address_zip": "structured_zip"}, inplace  = True)
             state_data.drop([0], inplace=True)    
             # FILTER state_feed, state_data, and election_authorities
             state_feed = state_feed_all[state_feed_all['state_abbrv'] == state_abbrv] # FILTER state_feed_all for selected state
-            state_data = state_data[state_data['Outreach status'].str.upper().str.contains('^COMPLETE', regex = True)]#.reset_index(drop=True) #drop any rows that are not yet complete
+            state_data = state_data[state_data['Outreach status'].str.upper().str.contains('^COMPLETE', regex = True, na = False)]#.reset_index(drop=True) #drop any rows that are not yet complete
             election_authorities = election_authorities_all.loc[election_authorities_all['state'] == state_abbrv, :] # FILTER election_authorities_all for selected state
             state_ea = state_ea_all.loc[state_ea_all['state'] == state_abbrv, :]
 
