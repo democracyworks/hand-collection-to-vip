@@ -16,6 +16,8 @@ import datetime
 import re # regex
 import numpy as np
 import time
+import pytz
+import hashlib
 
 # OTHER libraries
 from zipfile import ZipFile
@@ -36,7 +38,7 @@ np.set_printoptions(linewidth=PRINT_OUTPUT_WIDTH)
 PRINT_TUPLE_WIDTH = 2
 PRINT_ARRAY_WIDTH = 11 
 
-ELECTION_YEAR = 2018
+ELECTION_YEAR = 2022
 
 STATES_WITH_WARNINGS = [] # STORE states that trigger warnings
 
@@ -50,11 +52,11 @@ SCOPES = 'https://www.googleapis.com/auth/spreadsheets.readonly'
 
 # individual states & STATE_FEED tabs in a single Google Sheet (multiple tabs)
 # https://docs.google.com/spreadsheets/u/1/d/1utF9ybiOcCc9GvZ_KMqKO1TDaVqUxmHl4xmK48YkZj4/edit#gid=366784608
-SPREADSHEET_ID = '1utF9ybiOcCc9GvZ_KMqKO1TDaVqUxmHl4xmK48YkZj4' 
+SPREADSHEET_ID = '1ulDgIatmEe4IG-Wtu0ZcqDG-2RRAESCNeUwHj4JGOeg' 
 
 # ELECTION_AUTHORITIES entire Google Sheet (1 tab) 
 # https://docs.google.com/spreadsheets/d/1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_y2o/edit#gid=1572182198
-SPREADSHEET_EA_ID = '1bopYqaQzBVd0JGV9ymPiOsTjtlUCzyFOv6mUhjt_y2o' 
+SPREADSHEET_EA_ID = '12jlzfFM5Fr7LmLaH_1hJ2MLO2-YCcI5eKkRK1b8ayZA' 
 
 
 # _________________________________________________________________________________________________________________________
@@ -73,9 +75,8 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
 
     # GENERATE warnings in state_data (6 types of warnings)
     multi_directions_rows, multi_address_rows, cross_street_rows, \
-       missing_data_rows, semi_colon_rows, date_year_rows, \
-       missing_zipcode_rows, missing_state_abbrvs_rows, \
-       timezone_mismatch_rows, ocd_id_rows = generate_warnings(state_data, state_abbrv, state_feed['official_name'][0])
+               missing_data_rows, semi_colon_rows, date_year_rows, \
+               ocd_id_rows, bad_zip_rows = generate_warnings(state_data, state_abbrv, state_feed['official_name'][0])
 
     # CREATE/FORMAT feature(s) (1 created, 1 formatted)
     state_feed['state_fips'] = state_feed['state_fips'].str.pad(2, side='left', fillchar='0') # first make sure there are leading zeros
@@ -112,20 +113,12 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
         temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
         temp['election_official_person_id'] = 'per' + (temp.index + 1).astype(str).str.zfill(4)
         election_authorities = pd.merge(election_authorities, temp, on =['ocd_division', 'official_title'])
+        
+    # CREATE stable IDs for polling locations
+    stable_cols = ['location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_state', 'address_zip']
     
-    # CREATE 'hours_only_id'
-    temp = state_data[['location_name', 'address_line', 'directions']]
-    temp.drop_duplicates(['location_name', 'address_line', 'directions'], inplace=True)
-    temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
-    temp['hours_open_id'] = 'hours' + (temp.index + 1).astype(str).str.zfill(4)
-    state_data = pd.merge(state_data, temp, on =['location_name','address_line', 'directions'])
-
-    # CREATE 'polling_location_ids'
-    temp = state_data[['location_name', 'address_line', 'directions']]
-    temp.drop_duplicates(['location_name', 'address_line', 'directions'], inplace=True)
-    temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
-    temp['polling_location_ids'] = 'pol' + (temp.index + 1).astype(str).str.zfill(4)
-    state_data = pd.merge(state_data, temp, on =['location_name','address_line', 'directions'])
+    state_data = stable_id(state_data, ID = 'polling_location_ids', stable_prfx = "pl", stable_cols = stable_cols)
+    state_data = stable_id(state_data, ID = 'hours_open_id', stable_prfx = "ho", stable_cols = stable_cols)
     
     # _____________________________________________________________________________________________________________________
 
@@ -161,8 +154,7 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     # PRINT state report
     state_report(multi_directions_rows, multi_address_rows, cross_street_rows, # WARNINGS for state data
                  missing_data_rows, semi_colon_rows, date_year_rows, # FATAL ERRORS for state_data
-                 missing_zipcode_rows, missing_state_abbrvs_rows, 
-                 timezone_mismatch_rows, ocd_id_rows,
+                 ocd_id_rows, bad_zip_rows,
                  state_abbrv, state_feed, state_data, election_authorities,
                  {'state':state, 
                   'source':source,
@@ -199,28 +191,6 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities):
     state_data['OCD_ID'] = state_data['OCD_ID'].str.strip()
     election_authorities['ocd_division'] = election_authorities['ocd_division'].str.strip()
 
-    # FORMAT dates (3 formatted)
-    state_feed['election_date'] = pd.to_datetime(state_feed['election_date'])
-    state_data['start_date'] = pd.to_datetime(state_data['start_date'])
-    state_data['end_date'] = pd.to_datetime(state_data['end_date'])
-    
-    # FORMAT hours (2 formatted)
-    state_data['start_time'] = state_data['start_time'].str.replace(' ', '')
-    state_data['start_time'] = state_data['start_time'].str.replace(';', ':')
-    state_data['start_time'] = state_data['start_time'].str.replace('-',':00-')
-    temp = state_data['start_time'].str.split('-', n=1, expand=True)
-    temp[0] = temp[0].str.pad(8, side='left', fillchar='0')
-    temp[1] = temp[1].str.pad(5, side='left', fillchar='0')
-    state_data['start_time'] = temp[0] + '-' + temp[1]
-
-    state_data['end_time'] = state_data['end_time'].str.replace(' ', '')
-    state_data['end_time'] = state_data['end_time'].str.replace(';', ':')
-    state_data['end_time'] = state_data['end_time'].str.replace('-',':00-')
-    temp = state_data['end_time'].str.split('-', n=1, expand=True)
-    temp[0] = temp[0].str.pad(8, side='left', fillchar='0')
-    temp[1] = temp[1].str.pad(5, side='left', fillchar='0')
-    state_data['end_time'] = temp[0] + '-' + temp[1]
-
     # FORMAT booleans (4 formatted)
     true_chars = [char for char in 'true' if char not in 'false'] # SET unique chars in 'true' and not in 'false'
     false_chars = [char for char in 'false' if char not in 'true'] # SET unique chars in 'true' and not in 'false'
@@ -239,30 +209,16 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities):
     if not election_authorities.empty:
         election_authorities['ocd_division'] = election_authorities['ocd_division'].str.upper().str.strip()
     
-    state_data['address_line'] = state_data['address_line'].str.strip().str.replace('\\s{2,}', ' ')
+    state_data['address_line1'] = state_data['address_line1'].str.strip().str.replace('\\s{2,}', ' ')
+    state_data['address_line2'] = state_data['address_line2'].str.strip().str.replace('\\s{2,}', ' ')
+    state_data['address_line3'] = state_data['address_line3'].str.strip().str.replace('\\s{2,}', ' ')
+    state_data['address_city'] = state_data['address_city'].str.strip().str.replace('\\s{2,}', ' ')
+    state_data['address_state'] = state_data['address_state'].str.strip().str.replace('\\s{2,}', ' ')
     state_data['location_name'] = state_data['location_name'].str.strip().str.replace('\'S', '\'s')
     
     # _____________________________________________________________________________________________________________________
 
     # ERROR HANDLING | Interventionist adjustments to account for state eccentricities and common hand collection mistakes, etc
-
-    # FORMAT address line (1 formatted)
-    # NOTE: A common outreach error was missing state abbreviations in the address line
-    state_abbrv_insert = state_feed['state_abbrv'][0].center(4, ' ')
-    
-    # FORMAT address line 
-    # NOTE: There is a ton of random non-standard punctuation. The following regex clears everything except periods in digits
-    state_data['address_line'] = state_data['address_line'].str.strip() \
-                                                           .str.strip('.,;:)(') \
-                                                           .str.replace('(?<!\\d)[.,;:](?!\\d)?', ' ') \
-                                                           .str.replace('\\s{2,}', ' ') \
-                                                           .str.replace(' D C ', ' DC ') \
-                                                           .str.strip()
-    
-    state_abbrv_replace = ' ' + state_abbrv + '|' + state_feed['official_name'][0] + ' ' # CREATE abbrv or full name with space
-    state_data['address_line'] = state_data['address_line'].str.replace(state_abbrv_replace, ' ') \
-                                                           .str.replace('[ ](?=[^ ]+$)', state_abbrv_insert) \
-                                                           .str.replace('\\s{2,}', ' ')
 
     return state_feed, state_data, election_authorities
 
@@ -299,9 +255,10 @@ def generate_polling_location(state_data):
     SPEC: https://vip-specification.readthedocs.io/en/latest/built_rst/xml/elements/polling_location.html
     """ 
 
-    # SELECT feature(s) (7 selected)
-    polling_location = state_data[['polling_location_ids','location_name', 'address_line', 'directions',
-                                   'hours_open_id', 'is_drop_box', 'is_early_voting']] 
+    # SELECT feature(s) (12 selected)
+    polling_location = state_data[['polling_location_ids','location_name', 
+                                   'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_state', 'address_zip',
+                                   'directions', 'hours_open_id', 'is_drop_box', 'is_early_voting']] 
 
     # FORMAT col(s) (2 formatted)                              
     polling_location.rename(columns={'polling_location_ids':'id', 
@@ -315,23 +272,73 @@ def generate_polling_location(state_data):
 
 def generate_schedule(state_data, state_feed):
     """
-    PURPOSE: generates schedule dataframe for .txt file
+    PURPOSE: generates schedule dataframe for .txt file, calculating UTC offsets and daylight savings time
     INPUT: state_data, state_feed
     RETURN: schedule dataframe
     SPEC: https://vip-specification.readthedocs.io/en/latest/built_rst/xml/elements/hours_open.html#schedule
     """ 
 
-    # SELECT feature(s) (7 selected)
-    schedule = state_data[['start_time', 'end_time', 'start_date', 'end_date', 'hours_open_id',
+    # SELECT feature(s) (8 selected)
+    schedule = state_data[['time_zone', 'start_time', 'end_time', 'start_date', 'end_date', 'hours_open_id',
                            'is_only_by_appointment', 'is_or_by_appointment']]
-
+    
+    # Split rows along time zone transitions
+    for i, row in schedule.iterrows():
+        
+        tz = pytz.timezone(row["time_zone"])
+        dt_start = tz.localize(datetime.datetime.strptime(row["start_date"]+row["start_time"], "%Y-%m-%d%H:%M:%S"))
+        dt_end = tz.localize(datetime.datetime.strptime(row["end_date"]+row["end_time"], "%Y-%m-%d%H:%M:%S"))
+        
+        if dt_start.utcoffset() != dt_end.utcoffset():
+            utc_transition_times = [pytz.utc.localize(x) for x in tz._utc_transition_times]
+            try:
+                current_transition, = [x for x in utc_transition_times if dt_start < x < dt_end]
+            except ValueError:
+                print("Time zone error: line {0} spans multiple DST transitions".format(i))
+            
+            current_transition = current_transition.astimezone(tz)
+            
+            end_split = current_transition.date() - datetime.timedelta(days = 1)
+            schedule.iloc[i]["end_date"] = end_split.strftime("%Y-%m-%d")
+            
+            # Special case: if the location is open before 2:00 AM on the day of the transition, that one day can have different offsets for start and end times
+            if datetime.datetime.strptime(row["start_time"], "%H:%M:%S").time() < current_transition.astimezone(tz).time():
+                newrow = row.copy()
+                newrow["start_date"] = current_transition.strftime("%Y-%m-%d")
+                newrow["end_date"] = current_transition.strftime("%Y-%m-%d")
+                schedule = pd.concat([schedule, newrow.to_frame().T], axis = 0, ignore_index = True)
+                
+                begin_split = current_transition.date() + datetime.timedelta(days = 1)
+            else:
+                begin_split = current_transition.date()
+                
+            newrow = row.copy()
+            newrow["start_date"] = begin_split.strftime("%Y-%m-%d")
+            schedule = pd.concat([schedule, newrow.to_frame().T], axis = 0, ignore_index = True)
+    
+    # after necessary rows have been split, add offsets to the start and end times
+    for i, row in schedule.iterrows():
+        
+        tz = pytz.timezone(row["time_zone"])
+        dt_start = tz.localize(datetime.datetime.strptime(row["start_date"]+row["start_time"], "%Y-%m-%d%H:%M:%S"))
+        dt_end = tz.localize(datetime.datetime.strptime(row["end_date"]+row["end_time"], "%Y-%m-%d%H:%M:%S"))
+        
+        offset_start = dt_start.strftime("%z")
+        offset_end = dt_end.strftime("%z")
+        
+        offset_start = offset_start[:3]+":"+offset_start[3:]
+        offset_end = offset_end[:3]+":"+offset_end[3:]
+        
+        schedule.iloc[i]["start_time"] = row["start_time"]+offset_start
+        schedule.iloc[i]["end_time"] = row["end_time"]+offset_end
+    
     # CREATE feature(s) (1 created)
     schedule.reset_index(drop=True, inplace=True) 
     schedule['id'] = 'sch' + (schedule.index + 1).astype(str).str.zfill(4) 
-
+    
+    schedule.drop(columns = "time_zone", inplace = True)
 
     return schedule
-
 
 
 def generate_source(state_feed):
@@ -539,22 +546,114 @@ def generate_warnings(state_data, state_abbrv, state_fullname):
     multi_address_rows = warning_multi_addresses(state_data)
     cross_street_rows = warning_cross_street(state_data)
 
-    # GENERATE fatal errors (7 fatal errors)
+    # GENERATE fatal errors (5 fatal errors)
     missing_data_rows = warning_missing_data(state_data)
     date_year_rows = warning_date_year(state_data)
     semi_colon_rows = warning_semi_colon(state_data)
-    missing_zipcode_rows = warning_missing_zipcodes(state_data)
-    missing_state_abbrvs_rows = warning_missing_state_abbrvs(state_data, state_abbrv, state_fullname)
-    timezone_mismatch_rows = warnings_start_end_timezone_mismatch(state_data)
     ocd_id_rows = warning_ocd_id(state_data, state_abbrv)
+    bad_zip_rows = warning_bad_zip(state_data)
 
 
     return     multi_directions_rows, multi_address_rows, cross_street_rows, \
                missing_data_rows, semi_colon_rows, date_year_rows, \
-               missing_zipcode_rows, missing_state_abbrvs_rows, \
-               timezone_mismatch_rows, ocd_id_rows
+               ocd_id_rows, bad_zip_rows
 
+def stable_id(df, ID="id", file_name=None, stable_prfx=None, stable_cols=None):
+    """Takes the inputs of a standardized 5.2 VIP CSV and generates an ID that is stable
+    Currently only works for source, election, state, locality, precinct, polling_location, street_segment
+    Default value is 'id' but if other calculations are needed (such as for hours_open_id), you can 'id' equal whatever to call that column
+    You can also use your own stable_prfx and stable_cols values depending on your source data and need to customize the method for making IDs static"""
+    if len(df) == 0:
+        return
 
+    stable_dict = {
+        "source": ["so", "name", "vip_id"],
+        "election": ["el", "name", "date"],
+        "state": ["st", "name"],
+        "locality": ["lc", "name", "type", "is_mail_only"],
+        "precinct": [
+            "pr",
+            "name",
+            "number",
+            "is_mail_only",
+            "precinct_split_name",
+            "ward",
+        ],
+        "polling_location": [
+            "pl",
+            "name",
+            "address_line",
+            "structured_line_1",
+            "structured_line_2",
+            "structured_city",
+            "structured_state",
+            "structured_zip",
+        ],
+        "drop_box": [
+            "db",
+            "name",
+            "address_line",
+            "structured_line_1",
+            "structured_line_2",
+            "structured_city",
+            "structured_state",
+            "structured_zip",
+        ],
+        "early_vote_site": [
+            "ev",
+            "name",
+            "address_line",
+            "structured_line_1",
+            "structured_line_2",
+            "structured_city",
+            "structured_state",
+            "structured_zip",
+        ],
+        "street_segment": [
+            "ss",
+            "address_direction",
+            "city",
+            "house_number_prefix",
+            "house_number_suffix",
+            "includes_all_addresses",
+            "includes_all_streets",
+            "odd_even_both",
+            "start_house_number",
+            "end_house_number",
+            "state",
+            "street_direction",
+            "street_name",
+            "street_suffix",
+            "unit_number",
+            "zip",
+        ],
+    }
+
+    if (
+        file_name in stable_dict.keys()
+    ):  # if file_name is provided, use the default columns for that file type
+        stable_cols = stable_dict[file_name][1:]
+        if (
+            stable_prfx is None
+        ):  # if no prefix is provided, use the default prefix for that file type
+            stable_prfx = stable_dict[file_name][0]
+
+    # now, assign the id value based on the stable prefix and a calculation of the stable_cols values
+    df[ID] = (
+        stable_prfx
+        + "_"
+        + df[stable_cols].apply(
+            lambda x: hashlib.sha1(
+                (
+                    " ".join(
+                        [str(col).upper().strip() for col in x if str(col) != "nan"]
+                    ).encode()
+                )
+            ).hexdigest(),
+            axis=1,
+        )
+    )
+    return df
 
 def warning_missing_data(state_data):
     """
@@ -563,8 +662,8 @@ def warning_missing_data(state_data):
     RETURN: missing_data_rows
     """
 
-    # SELECT feature(s) (all features from state_data except 4 features)
-    missing_data_check = state_data[state_data.columns.difference(['directions', 'start_time', 'end_time', 'internal_notes'])].isnull().any(axis=1)
+    # SELECT feature(s) (all features from state_data except 6 features)
+    missing_data_check = state_data[state_data.columns.difference(['address_line2', 'address_line3', 'directions', 'start_time', 'end_time', 'internal_notes'])].isnull().any(axis=1)
     missing_data_check.index = missing_data_check.index + 1  # INCREASE INDEX to correspond with google sheets index
     missing_data_rows = []
     
@@ -586,7 +685,7 @@ def warning_cross_street(state_data):
     """
 
     # NOTE: Invalid cross streets sometimes do not map well on Google's end 
-    cross_street_addresses = state_data[state_data['address_line'].str.contains(' & | and ')]
+    cross_street_addresses = state_data[state_data['address_line1'].str.contains(' & | and ')]
     cross_street_rows = sorted(list(cross_street_addresses.index + 1))
 
 
@@ -603,7 +702,7 @@ def warning_multi_addresses(state_data):
     """
 
     # SELECT feature(s) (3 selected)
-    addresses = state_data[['OCD_ID','location_name', 'address_line']].drop_duplicates()
+    addresses = state_data[['OCD_ID','location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip']].drop_duplicates()
     multi_addresses = addresses[addresses.duplicated(subset=['OCD_ID','location_name'], keep=False)]
     multi_addresses.index = multi_addresses.index + 1   # INCREASE INDEX to correspond with google sheets index
 
@@ -624,14 +723,14 @@ def warning_multi_directions(state_data):
     """
 
     # SELECT feature(s) (4 selected)
-    unique_rows = state_data[['OCD_ID', 'location_name', 'address_line', 'directions']].drop_duplicates()
-    duplicate_locations = unique_rows[unique_rows.duplicated(subset=['OCD_ID', 'location_name', 'address_line'],keep=False)]
+    unique_rows = state_data[['OCD_ID', 'location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip', 'directions']].drop_duplicates()
+    duplicate_locations = unique_rows[unique_rows.duplicated(subset=['OCD_ID', 'location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip'],keep=False)]
     duplicate_locations.index = duplicate_locations.index + 1  # INCREASE INDEX to correspond with google sheets index
 
     multi_directions_rows = []
     if not duplicate_locations.empty: # IF there are polling locations with multiple locations
         multi_directions_rows = sorted([tuple(x) for x in \
-                                        duplicate_locations.groupby(['OCD_ID', 'location_name', 'address_line']).groups.values()])
+                                        duplicate_locations.groupby(['OCD_ID', 'location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip']).groups.values()])
 
 
     return multi_directions_rows
@@ -721,84 +820,16 @@ def warning_semi_colon(state_data):
 
     return semi_colon_rows
 
-
-
-def warning_missing_zipcodes(state_data):
+def warning_bad_zip(state_data):
     """
-    PURPOSE: isolate which rows, if any, are missing zip codes in the `address_line` col in state data 
+    PURPOSE: isolate which rows, if any, have zip codes the wrong number of digits long
+            matches zip codes in formats 12345, 123456789, and 12345-6789
     INPUT: state_data
-    RETURN: missing_zipcode_rows
+    RETURN: bad_zip_rows
     """
-
-    # SELECT feature(s) (1 feature)
-    missing_zipcodes = state_data[['address_line']]
-
-    # FORMAT feature(s) (1 formatted)
-    missing_zipcodes['address_line'] =  missing_zipcodes['address_line'].str.strip() \
-                                                                        .str.strip('.,;:)(') \
-                                                                        .str.replace('\t', ' ') \
-                                                                        .str.replace('(?<!\\d)[.,;:](?!\\d)?', ' ') \
-                                                                        .str.replace('\\s{2,}', ' ') \
-                                                                        .str.strip()
-    missing_zipcodes = missing_zipcodes[~missing_zipcodes['address_line'].str.contains('\\s[0-9]{5}(?:-[0-9]{4})?$')]
-
-    missing_zipcode_rows  = sorted(list(set(missing_zipcodes.index + 1)))  # ADD 1 to index to correspond with Google Sheets
-
-
-    return missing_zipcode_rows
-
-
-
-def warning_missing_state_abbrvs(state_data, state_abbrv, state_fullname):
-    """
-    PURPOSE: isolate which rows, if any, are missing state abbreviations in the `address_line` col in state data 
-    INPUT: state_data, state_abbrv, state_fullname
-    RETURN: missing_state_abbrvs_rows
-    """
+    bad_zip_rows = state_data[~state_data["address_zip"].str.fullmatch("(^\d{5}$)|(^\d{9}$)|(^\d{5}-\d{4}$)")]
     
-    # SELECT feature(s) (1 feature)
-    missing_state_abbrvs = state_data[['address_line']]
-
-    # FORMAT to check if state abbreviations are missing (1 formatted)
-    missing_state_abbrvs['address_line'] =  missing_state_abbrvs['address_line'].str.strip() \
-                                                                                .str.strip('.,;:)(') \
-                                                                                .str.replace('\t', ' ') \
-                                                                                .str.replace('(?<!\\d)[.,;:](?!\\d)?', ' ') \
-                                                                                .str.replace('\\s{2,}', ' ') \
-                                                                                .str.replace(' D C ', ' DC ') \
-                                                                                .str.strip()
-   
-    state_abbrv_with_space = ' ' + state_abbrv + '|' + state_fullname.upper() + ' ' # CREATE state_abbrv with space
-    missing_state_abbrvs = missing_state_abbrvs[~missing_state_abbrvs['address_line'].str.upper() \
-                                                                                     .str.contains(state_abbrv_with_space)]
-    missing_state_abbrvs_rows = sorted(list(set(missing_state_abbrvs.index + 1)))  # ADD 1 to index to correspond with Google Sheets
-
-
-    return missing_state_abbrvs_rows  
-
-
-
-def warnings_start_end_timezone_mismatch(state_data):
-    """
-    PURPOSE: isolate which rows, if any, have timezones that are different between start_time and end_time
-    INPUT: state_data
-    RETURN: timezone_mismatch_rows
-    """
-
-    # SELECT feature(s) (2 features)
-    timezone_mismatch = state_data[['start_time', 'end_time']]
-    timezone_mismatch['start_time_timezone'] = timezone_mismatch['start_time'].str.extract('-(.*)$')  # EXTRACT timezone
-    timezone_mismatch['start_time_timezone'] = timezone_mismatch['start_time_timezone'].str.strip()
-    timezone_mismatch['end_time_timezone'] = timezone_mismatch['end_time'].str.extract('-(.*)$')  # EXTRACT timezone
-    timezone_mismatch['end_time_timezone'] = timezone_mismatch['end_time_timezone'].str.strip()
-
-    timezone_mismatch_rows = timezone_mismatch[timezone_mismatch['start_time_timezone']!=timezone_mismatch['end_time_timezone']]
-    timezone_mismatch_rows = list(set(timezone_mismatch_rows.index + 1))  # ADD 1 to index to correspond with Google Sheets
-
-
-    return timezone_mismatch_rows 
-
-
+    return bad_zip_rows
 
 ###########################################################################################################################
 # END OF WARNING FUNCTION DEFINITIONS #####################################################################################
@@ -1006,11 +1037,9 @@ def summary_report(num_input_states, increment_httperror, increment_processinger
 ###########################################################################################################################
 # END OF REPORT RELATED DEFINITIONS #######################################################################################
 ###########################################################################################################################
-
-
-if __name__ == '__main__':
     
-
+def main():
+    
     # SET UP command line inputs
     parser = argparse.ArgumentParser()
     parser.add_argument('-states', nargs='+', required=True)
@@ -1085,14 +1114,18 @@ if __name__ == '__main__':
                 # LOAD state data
                 state_data_result = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=state_abbrv).execute()
                 state_data_values = state_data_result.get('values', [])
-                state_data = pd.DataFrame(state_data_values[0:],columns=state_data_values[0])
-                state_data.drop([0], inplace=True)
+                state_data_unfiltered = pd.DataFrame(state_data_values[0:],columns=state_data_values[0])
+                state_data_unfiltered.drop([0], inplace=True)
+                
+                # FILTER rows not marked "complete"
+                state_data = state_data_unfiltered.loc[state_data_unfiltered["status"] == "Complete"]
+                state_data.reset_index(drop = True, inplace = True)
+                state_data.drop(columns = "status", inplace = True)
                     
                 # FILTER state_feed and election_authorities
                 state_feed = state_feed_all[state_feed_all['state_abbrv'] == state_abbrv] # FILTER state_feed_all for selected state
                 state_feed.reset_index(drop=True, inplace=True)
                 election_authorities = election_authorities_all[election_authorities_all['state'] == state_abbrv] # FILTER election_authorities_all for selected state
-
 
                 # GENERATE zip file and print state report
                 vip_build(state_abbrv, state_feed, state_data, election_authorities)
@@ -1117,3 +1150,6 @@ if __name__ == '__main__':
 
     print('Timestamp:', datetime.datetime.now().replace(microsecond=0))
     print(f'Run time: {float((time.time()-start)):.2f} second(s)')
+
+if __name__ == '__main__':
+    main()
