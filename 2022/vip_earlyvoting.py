@@ -42,6 +42,13 @@ ELECTION_YEAR = 2022
 
 STATES_WITH_WARNINGS = [] # STORE states that trigger warnings
 
+OUTPUT_DIR = os.path.expanduser("~/Dropbox (Democracy Works VIP)/Democracy Works VIP's shared workspace/hand_collection/")
+
+fips_lookup = pd.read_json("fips_ocdid_zips_dictionary.txt").T["ocdid"]
+fips_lookup.dropna(inplace = True)
+
+fips_lookup_r = pd.Series(fips_lookup.index.values, name = "FIPS", index = fips_lookup)
+
 # _________________________________________________________________________________________________________________________
 
 # GOOGLE API | Set scopes & Google Spreadsheet IDs (1 scope, 2 IDs)
@@ -73,10 +80,8 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
 
     # PREP | Identify data issues, create/format features, and standardize dataframes
 
-    # GENERATE warnings in state_data (6 types of warnings)
-    multi_directions_rows, multi_address_rows, cross_street_rows, \
-               missing_data_rows, semi_colon_rows, date_year_rows, \
-               ocd_id_rows, bad_zip_rows = generate_warnings(state_data, state_abbrv, state_feed['official_name'][0])
+    # GENERATE warnings in state_data
+    warnings = generate_warnings(state_data, state_abbrv, state_feed['official_name'][0])
 
     # CREATE/FORMAT feature(s) (1 created, 1 formatted)
     state_feed['state_fips'] = state_feed['state_fips'].str.pad(2, side='left', fillchar='0') # first make sure there are leading zeros
@@ -134,8 +139,8 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     election_administration = generate_election_administration(election_authorities)
     department = generate_department(election_authorities)
     person = generate_person(election_authorities)
-
-
+    
+    
     # GENERATE zip file
     generate_zip(state_abbrv, state_feed, {'state':state, 
                                            'source':source,
@@ -150,11 +155,9 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     # _____________________________________________________________________________________________________________________
 
     # REPORT | Print zip file sizes, dataframe descriptions, and data warnings
-
+    
     # PRINT state report
-    state_report(multi_directions_rows, multi_address_rows, cross_street_rows, # WARNINGS for state data
-                 missing_data_rows, semi_colon_rows, date_year_rows, # FATAL ERRORS for state_data
-                 ocd_id_rows, bad_zip_rows,
+    state_report(warnings,
                  state_abbrv, state_feed, state_data, election_authorities,
                  {'state':state, 
                   'source':source,
@@ -165,7 +168,7 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
                   'locality':locality,
                   'polling_location': polling_location,
                   'schedule': schedule})
-
+    
 
     return
 
@@ -281,7 +284,7 @@ def generate_schedule(state_data, state_feed):
     # SELECT feature(s) (8 selected)
     schedule = state_data[['time_zone', 'start_time', 'end_time', 'start_date', 'end_date', 'hours_open_id',
                            'is_only_by_appointment', 'is_or_by_appointment']]
-    
+
     # Split rows along time zone transitions
     for i, row in schedule.iterrows():
         
@@ -299,7 +302,6 @@ def generate_schedule(state_data, state_feed):
             current_transition = current_transition.astimezone(tz)
             
             end_split = current_transition.date() - datetime.timedelta(days = 1)
-            schedule.iloc[i]["end_date"] = end_split.strftime("%Y-%m-%d")
             
             # Special case: if the location is open before 2:00 AM on the day of the transition, that one day can have different offsets for start and end times
             if datetime.datetime.strptime(row["start_time"], "%H:%M:%S").time() < current_transition.astimezone(tz).time():
@@ -315,7 +317,9 @@ def generate_schedule(state_data, state_feed):
             newrow = row.copy()
             newrow["start_date"] = begin_split.strftime("%Y-%m-%d")
             schedule = pd.concat([schedule, newrow.to_frame().T], axis = 0, ignore_index = True)
-    
+            
+            schedule.iloc[i]["end_date"] = end_split.strftime("%Y-%m-%d")
+            
     # after necessary rows have been split, add offsets to the start and end times
     for i, row in schedule.iterrows():
         
@@ -413,7 +417,7 @@ def generate_locality(state_feed, state_data, election_authorities):
     locality['name'] = locality['OCD_ID'].str.extract('([^\\:]*)$', expand=False)
     locality['external_identifier_type'] = state_feed['external_identifier_type'][0]
     locality.reset_index(drop=True, inplace=True) 
-    locality['id'] = 'loc' + (locality.index + 1).astype(str).str.zfill(4)
+    locality['id'] = locality.apply(lambda x: "loc" + str(fips_lookup_r[x["OCD_ID"]]).zfill(5), axis = 1)
     locality.rename(columns={'OCD_ID':'external_identifier_value'}, inplace=True)
     
     # REMOVE feature(s) (1 removed)
@@ -498,7 +502,19 @@ def generate_zip(state_abbrv, state_feed, files):
     INPUT: state_abbrv, state_feed, files
     RETURN: exports zip of 9 .txt files
     """
+    
+    reset_path = os.getcwd()
+    
+    election = state_feed['election_date'][0]
 
+    save_path = os.path.join(OUTPUT_DIR,election,state_abbrv,"early_voting")
+
+    # CREATE state directory
+    if not os.path.exists(save_path):
+        os.makedirs(save_path)
+        
+    os.chdir(save_path)
+    
     # WRITE dataframes to txt files
     file_list = []
     for name, df in files.items():
@@ -506,21 +522,17 @@ def generate_zip(state_abbrv, state_feed, files):
         file = name + '.txt'
         file_list.append(file)
         df.to_csv(file, index=False, encoding='utf-8')
-
-    # CREATE state directory
-    if not os.path.exists(state_abbrv):
-        os.makedirs(state_abbrv)
     
     # DEFINE name of zipfile
-    zip_filename = 'vipfeed-ev-' + str(state_feed['election_date'][0].date()) + '-' + state_abbrv + '.zip'
+    zip_filename = 'vipfeed-ev-' + election + '-' + state_abbrv + '.zip'
 
     # WRITE files to a zipfile
-    with ZipFile(zip_filename, 'w') as zip:
+    with ZipFile(zip_filename, 'w') as z:
         for file in file_list:
-            zip.write(file)
-            os.rename(file, os.path.join(state_abbrv, file))
+            z.write(file)
 
-
+    os.chdir(reset_path)
+    
     return 
 
 
@@ -530,33 +542,34 @@ def generate_zip(state_abbrv, state_feed, files):
 # END OF VIP BUILD FUNCTION DEFINITIONS ###################################################################################
 ###########################################################################################################################
 
-
+class warn_obj:
+    def __init__(self, desc = "", rows = [], fatal = False):
+        self.desc = desc
+        self.rows = rows
+        self.fatal = fatal
 
 def generate_warnings(state_data, state_abbrv, state_fullname):
     """
     PURPOSE: isolate which rows, if any, have warnings or fatal errors
     INPUT: state_data, state_abbrv, state_fullname
-    RETURN: missing_data_rows, multi_directions_rows, cross_street_rows, 
-            ocd_id_rows, date_year_rows, semi_colon_rows, missing_zipcode_rows,
-            missing_state_abbrvs_rows
+    RETURN: list of warning objects
     """
+    
+    l = [
+            warning_multi_directions(state_data), # General warnings
+            warning_multi_addresses(state_data),
+            warning_cross_street(state_data),
+            warning_missing_data(state_data), # Fatal errors
+            warning_date_year(state_data),
+            warning_semi_colon(state_data),
+            warning_ocd_id(state_data, state_abbrv),
+            warning_bad_zip(state_data),
+            warning_bad_timing(state_data)
+        ]
 
-    # GENERATE general warnings (3 warnings)
-    multi_directions_rows = warning_multi_directions(state_data)
-    multi_address_rows = warning_multi_addresses(state_data)
-    cross_street_rows = warning_cross_street(state_data)
+    warnings = [x for x in l if x is not None]
 
-    # GENERATE fatal errors (5 fatal errors)
-    missing_data_rows = warning_missing_data(state_data)
-    date_year_rows = warning_date_year(state_data)
-    semi_colon_rows = warning_semi_colon(state_data)
-    ocd_id_rows = warning_ocd_id(state_data, state_abbrv)
-    bad_zip_rows = warning_bad_zip(state_data)
-
-
-    return     multi_directions_rows, multi_address_rows, cross_street_rows, \
-               missing_data_rows, semi_colon_rows, date_year_rows, \
-               ocd_id_rows, bad_zip_rows
+    return warnings
 
 def stable_id(df, ID="id", file_name=None, stable_prfx=None, stable_cols=None):
     """Takes the inputs of a standardized 5.2 VIP CSV and generates an ID that is stable
@@ -672,8 +685,10 @@ def warning_missing_data(state_data):
         if len(missing_data_rows) > 30:  # IF there are more than 30 rows with missing data then simply notify user
             missing_data_rows = ['More than 30 rows with missing data']
 
-            
-    return missing_data_rows
+    if missing_data_rows:        
+        return warn_obj("Rows with missing data:", missing_data_rows, fatal = True)
+    else:
+        return None
 
 
 
@@ -688,8 +703,9 @@ def warning_cross_street(state_data):
     cross_street_addresses = state_data[state_data['address_line1'].str.contains(' & | and ')]
     cross_street_rows = sorted(list(cross_street_addresses.index + 1))
 
-
-    return cross_street_rows
+    if cross_street_rows:
+        return warn_obj("Rows with cross street addresses:", cross_street_rows, fatal = False)
+    else: return None
 
 
 
@@ -710,8 +726,9 @@ def warning_multi_addresses(state_data):
     if not multi_addresses.empty:  # IF the dataframe is not empty
         multi_address_rows = sorted([tuple(x) for x in multi_addresses.groupby(['OCD_ID', 'location_name']).groups.values()])
 
-
-    return multi_address_rows
+    if multi_address_rows:
+        return warn_obj("Rows with multiple addresses for one polling location:", multi_address_rows, fatal = False)
+    else: return None
 
 
 def warning_multi_directions(state_data):
@@ -732,8 +749,9 @@ def warning_multi_directions(state_data):
         multi_directions_rows = sorted([tuple(x) for x in \
                                         duplicate_locations.groupby(['OCD_ID', 'location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip']).groups.values()])
 
-
-    return multi_directions_rows
+    if multi_directions_rows:
+        return warn_obj("Rows with multiple directions for one polling location:", multi_directions_rows, fatal = False)
+    else: return None
 
 
 
@@ -775,8 +793,9 @@ def warning_ocd_id(state_data, state_abbrv):
         if not slash_issue.empty:
             ocd_id_rows.append(('slashes', str(set(slash_issue.index+1)).strip('{}')))
 
-
-    return ocd_id_rows
+    if ocd_id_rows:
+        return warn_obj("Rows with bad OCD IDs:", ocd_id_rows, fatal = True)
+    else: return None
 
 
 
@@ -786,20 +805,23 @@ def warning_date_year(state_data):
     INPUT: state_data
     RETURN: date_year_rows
     """
+    
+    temp = pd.DataFrame()
 
     # FORMAT features (2 formatted)
-    state_data['start_date'] = pd.to_datetime(state_data['start_date'])
-    state_data['end_date'] = pd.to_datetime(state_data['end_date'])
+    temp['start_date'] = pd.to_datetime(state_data['start_date'])
+    temp['end_date'] = pd.to_datetime(state_data['end_date'])
     
     # ISOLATE data errors in 2 features
-    incorrect_start_dates = state_data[state_data['start_date'].dt.year != ELECTION_YEAR]
-    incorrect_end_dates = state_data[state_data['end_date'].dt.year != ELECTION_YEAR]
+    incorrect_start_dates = temp[temp['start_date'].dt.year != ELECTION_YEAR]
+    incorrect_end_dates = temp[temp['end_date'].dt.year != ELECTION_YEAR]
     incorrect_dates = incorrect_start_dates.append(incorrect_end_dates)
 
     date_year_rows = sorted(list(set(incorrect_dates.index + 1)))
 
-
-    return date_year_rows
+    if date_year_rows:
+        return warn_obj("Rows with start or end dates outside election year:", date_year_rows, fatal = True)
+    else: return None
 
 
 
@@ -817,8 +839,9 @@ def warning_semi_colon(state_data):
 
     semi_colon_rows = sorted(list(set(semi_colon_times.index + 1)))
 
-
-    return semi_colon_rows
+    if semi_colon_rows:
+        return warn_obj("Rows with semicolons in times:", semi_colon_rows, fatal = True)
+    else: return None
 
 def warning_bad_zip(state_data):
     """
@@ -827,9 +850,31 @@ def warning_bad_zip(state_data):
     INPUT: state_data
     RETURN: bad_zip_rows
     """
-    bad_zip_rows = state_data[~state_data["address_zip"].str.fullmatch("(^\d{5}$)|(^\d{9}$)|(^\d{5}-\d{4}$)")]
+    bad_zip_df = state_data[~state_data["address_zip"].str.fullmatch("(^\d{5}$)|(^\d{9}$)|(^\d{5}-\d{4}$)")]
+    bad_zip_rows = sorted(list(set(bad_zip_df.index + 1)))
     
-    return bad_zip_rows
+    if bad_zip_rows:
+        return warn_obj("Rows with invalid zip codes:", bad_zip_rows, fatal = True)
+    else: return None
+
+def warning_bad_timing(state_data):
+    """
+    PURPOSE: isolate rows where start_time comes after end_time or start_date comes after end_date
+    INPUT: state_data
+    RETURN: bad_timing_rows
+    """
+    temp = pd.DataFrame()
+    temp["start_time"] = pd.to_datetime(state_data["start_time"])
+    temp["end_time"] = pd.to_datetime(state_data["end_time"])
+    temp["start_date"] = pd.to_datetime(state_data["start_date"])
+    temp["end_date"] = pd.to_datetime(state_data["end_date"])
+    
+    bad_timing_df = state_data[(temp["start_time"] > temp["end_time"]) + (temp["start_date"] > temp["end_date"])]
+    bad_timing_rows = sorted(list(set(bad_timing_df.index + 1)))
+    
+    if bad_timing_rows:
+        return warn_obj("Rows where start comes after end:", bad_timing_rows, fatal = True)
+    else: return None
 
 ###########################################################################################################################
 # END OF WARNING FUNCTION DEFINITIONS #####################################################################################
@@ -837,10 +882,7 @@ def warning_bad_zip(state_data):
 
 
 
-def state_report(multi_directions_rows, multi_address_rows, cross_street_rows, # WARNINGS for state data
-                 missing_data_rows, semi_colon_rows, date_year_rows, # FATAL ERRORS for state_data
-                 missing_zipcode_rows, missing_state_abbrvs_rows, 
-                 timezone_mismatch_rows, ocd_id_rows,
+def state_report(warnings,
                  state_abbrv, state_feed, state_data, election_authorities, files):
     """
     PURPOSE: print state report (general descriptive stats and warnings)
@@ -882,6 +924,18 @@ def state_report(multi_directions_rows, multi_address_rows, cross_street_rows, #
 
     # _____________________________________________________________________________________________________________________
 
+    if warnings:
+        print('\n'*2)
+        print('----------------------- STATE DATA WARNINGS -----------------------'.center(PRINT_OUTPUT_WIDTH, ' '))
+        
+    for w in warnings:    
+        print("\n")
+        print(w.desc.center(PRINT_OUTPUT_WIDTH, ' '))
+        print()
+        for i in range(0, len(w.rows), PRINT_ARRAY_WIDTH):
+            print(str(w.rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
+    
+    '''
     if multi_directions_rows or multi_address_rows or cross_street_rows or \
        missing_data_rows or semi_colon_rows or date_year_rows or \
        missing_zipcode_rows or missing_state_abbrvs_rows or \
@@ -970,7 +1024,7 @@ def state_report(multi_directions_rows, multi_address_rows, cross_street_rows, #
             print()
             for i in range(0, len(ocd_id_rows),1):
                 print(str(ocd_id_rows[i:i+1]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
- 
+    ''' 
 
     print('\n'*1)
     print('_'*PRINT_OUTPUT_WIDTH)
@@ -1053,10 +1107,10 @@ def main():
     # REQUIRES a local 'token.json' file & 'credentials.json' file
     # https://developers.google.com/sheets/api/quickstart/python
     
-    store = file.Storage('token.json')
+    store = file.Storage('../credentials/token.json')
     creds = store.get()
     if not creds or creds.invalid:
-        flow = client.flow_from_clientsecrets('credentials.json', SCOPES)
+        flow = client.flow_from_clientsecrets('../credentials/credentials.json', SCOPES)
         creds = tools.run_flow(flow, store)
     service = build('sheets', 'v4', http=creds.authorize(Http()))
     
