@@ -133,39 +133,39 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     try:
         election = generate_election(state_feed)
     except Exception as e:
-        raise Exception("Failed to generate election") from e
+        raise Exception("Election, "+str(e)) from e
     try:
         polling_location = generate_polling_location(state_data)
     except Exception as e:
-        raise Exception("Failed to generate polling locations") from e
+        raise Exception("Polling locations, "+str(e)) from e
     try:
         schedule = generate_schedule(state_data, state_feed)
     except Exception as e:
-        raise Exception("Failed to generate schedule") from e
+        raise Exception("Schedule, "+str(e)) from e
     try:
         source = generate_source(state_feed)
     except Exception as e:
-        raise Exception("Failed to generate source") from e
+        raise Exception("Source, "+str(e)) from e
     try:
         state = generate_state(state_feed)
     except Exception as e:
-        raise Exception("Failed to generate state") from e
+        raise Exception("State, "+str(e)) from e
     try:
         locality = generate_locality(state_feed, state_data, election_authorities)
     except Exception as e:
-        raise Exception("Failed to generate localities") from e
+        raise Exception("Localities, "+str(e)) from e
     try:
         election_administration = generate_election_administration(election_authorities)
     except Exception as e:
-        raise Exception("Failed to generate administration") from e
+        raise Exception("Administration, "+str(e)) from e
     try:
         department = generate_department(election_authorities)
     except Exception as e:
-        raise Exception("Failed to generate departments") from e
+        raise Exception("Departments, "+str(e)) from e
     try:
         person = generate_person(election_authorities)
     except Exception as e:
-        raise Exception("Failed to generate persons") from e
+        raise Exception("Persons, "+str(e)) from e
     
     
     # GENERATE zip file
@@ -1207,18 +1207,17 @@ def main():
                 
                 # FILTER rows not marked "complete"
                 state_data = state_data_unfiltered.loc[state_data_unfiltered["status"] == "Complete"]
-                state_data.reset_index(drop = True, inplace = True)
                 state_data.drop(columns = ["status","internal_notes"], inplace = True)
-                    
-                # FILTER state_feed and election_authorities
-                state_feed = state_feed_all[state_feed_all['state_abbrv'] == state_abbrv] # FILTER state_feed_all for selected state
-                state_feed.reset_index(drop=True, inplace=True)
-                election_authorities = election_authorities_all[election_authorities_all['state'] == state_abbrv] # FILTER election_authorities_all for selected state
                 
                 # Check for missing vital data:
                 missing_rows = state_data[(state_data[["time_zone", "start_time", "end_time", "start_date", "end_date"]]=="").any(axis = 1)].index.tolist()
                 if missing_rows:
                     raise Exception("Missing vital data on rows: "+" ".join(str(e+2) for e in missing_rows))
+                
+                # FILTER state_feed and election_authorities
+                state_feed = state_feed_all[state_feed_all['state_abbrv'] == state_abbrv] # FILTER state_feed_all for selected state
+                state_feed.reset_index(drop=True, inplace=True)
+                election_authorities = election_authorities_all[election_authorities_all['state'] == state_abbrv] # FILTER election_authorities_all for selected state
                 
                 # GENERATE zip file and print state report
                 vip_build(state_abbrv, state_feed, state_data, election_authorities)
