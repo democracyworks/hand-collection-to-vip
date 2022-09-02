@@ -130,15 +130,42 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     # FILE CREATION | Generate files for dashboard zip
 
     # GENERATE 9 .txt files
-    election = generate_election(state_feed)
-    polling_location = generate_polling_location(state_data)
-    schedule = generate_schedule(state_data, state_feed)
-    source = generate_source(state_feed)
-    state = generate_state(state_feed)
-    locality = generate_locality(state_feed, state_data, election_authorities)
-    election_administration = generate_election_administration(election_authorities)
-    department = generate_department(election_authorities)
-    person = generate_person(election_authorities)
+    try:
+        election = generate_election(state_feed)
+    except Exception as e:
+        raise Exception("Failed to generate election") from e
+    try:
+        polling_location = generate_polling_location(state_data)
+    except Exception as e:
+        raise Exception("Failed to generate polling locations") from e
+    try:
+        schedule = generate_schedule(state_data, state_feed)
+    except Exception as e:
+        raise Exception("Failed to generate schedule") from e
+    try:
+        source = generate_source(state_feed)
+    except Exception as e:
+        raise Exception("Failed to generate source") from e
+    try:
+        state = generate_state(state_feed)
+    except Exception as e:
+        raise Exception("Failed to generate state") from e
+    try:
+        locality = generate_locality(state_feed, state_data, election_authorities)
+    except Exception as e:
+        raise Exception("Failed to generate localities") from e
+    try:
+        election_administration = generate_election_administration(election_authorities)
+    except Exception as e:
+        raise Exception("Failed to generate administration") from e
+    try:
+        department = generate_department(election_authorities)
+    except Exception as e:
+        raise Exception("Failed to generate departments") from e
+    try:
+        person = generate_person(election_authorities)
+    except Exception as e:
+        raise Exception("Failed to generate persons") from e
     
     
     # GENERATE zip file
@@ -240,7 +267,7 @@ def generate_election(state_feed):
     
     # CREATE/FORMAT feature(s) (3 created, 2 formatted)
     election['id'] = 'ele01' 
-    election['election_type'] = 'Federal'
+    election['election_type'] = 'General'
     election['is_statewide'] = 'true'
     election.rename(columns={'election_date':'date', 
                              'election_name':'name'}, inplace=True) # RENAME col(s)
@@ -265,7 +292,13 @@ def generate_polling_location(state_data):
 
     # FORMAT col(s) (2 formatted)                              
     polling_location.rename(columns={'polling_location_ids':'id', 
-                                     'location_name':'name'}, inplace=True)
+                                     'location_name':'name',
+                                     'address_line1':'structured_line_1',
+                                     'address_line2':'structured_line_2',
+                                     'address_line3':'structured_line_3',
+                                     'address_city':'structured_city',
+                                     'address_state':'structured_state',
+                                     'address_zip':'structured_zip'}, inplace=True)
     polling_location.drop_duplicates(inplace=True)
 
 
@@ -280,14 +313,13 @@ def generate_schedule(state_data, state_feed):
     RETURN: schedule dataframe
     SPEC: https://vip-specification.readthedocs.io/en/latest/built_rst/xml/elements/hours_open.html#schedule
     """ 
-
+    
     # SELECT feature(s) (8 selected)
     schedule = state_data[['time_zone', 'start_time', 'end_time', 'start_date', 'end_date', 'hours_open_id',
                            'is_only_by_appointment', 'is_or_by_appointment']]
 
     # Split rows along time zone transitions
     for i, row in schedule.iterrows():
-        
         tz = pytz.timezone(row["time_zone"])
         dt_start = tz.localize(datetime.datetime.strptime(row["start_date"]+row["start_time"], "%Y-%m-%d%H:%M:%S"))
         dt_end = tz.localize(datetime.datetime.strptime(row["end_date"]+row["end_time"], "%Y-%m-%d%H:%M:%S"))
@@ -319,7 +351,7 @@ def generate_schedule(state_data, state_feed):
             schedule = pd.concat([schedule, newrow.to_frame().T], axis = 0, ignore_index = True)
             
             schedule.iloc[i]["end_date"] = end_split.strftime("%Y-%m-%d")
-            
+     
     # after necessary rows have been split, add offsets to the start and end times
     for i, row in schedule.iterrows():
         
@@ -542,35 +574,6 @@ def generate_zip(state_abbrv, state_feed, files):
 # END OF VIP BUILD FUNCTION DEFINITIONS ###################################################################################
 ###########################################################################################################################
 
-class warn_obj:
-    def __init__(self, desc = "", rows = [], fatal = False):
-        self.desc = desc
-        self.rows = rows
-        self.fatal = fatal
-
-def generate_warnings(state_data, state_abbrv, state_fullname):
-    """
-    PURPOSE: isolate which rows, if any, have warnings or fatal errors
-    INPUT: state_data, state_abbrv, state_fullname
-    RETURN: list of warning objects
-    """
-    
-    l = [
-            warning_multi_directions(state_data), # General warnings
-            warning_multi_addresses(state_data),
-            warning_cross_street(state_data),
-            warning_missing_data(state_data), # Fatal errors
-            warning_date_year(state_data),
-            warning_semi_colon(state_data),
-            warning_ocd_id(state_data, state_abbrv),
-            warning_bad_zip(state_data),
-            warning_bad_timing(state_data)
-        ]
-
-    warnings = [x for x in l if x is not None]
-
-    return warnings
-
 def stable_id(df, ID="id", file_name=None, stable_prfx=None, stable_cols=None):
     """Takes the inputs of a standardized 5.2 VIP CSV and generates an ID that is stable
     Currently only works for source, election, state, locality, precinct, polling_location, street_segment
@@ -668,6 +671,37 @@ def stable_id(df, ID="id", file_name=None, stable_prfx=None, stable_cols=None):
     )
     return df
 
+
+class warn_obj:
+    def __init__(self, desc = "", rows = [], fatal = False):
+        self.desc = desc
+        self.rows = rows
+        self.fatal = fatal
+
+def generate_warnings(state_data, state_abbrv, state_fullname):
+    """
+    PURPOSE: isolate which rows, if any, have warnings or fatal errors
+    INPUT: state_data, state_abbrv, state_fullname
+    RETURN: list of warning objects
+    """
+    
+    l = [
+            warning_multi_directions(state_data), # General warnings
+            warning_multi_addresses(state_data),
+            warning_cross_street(state_data),
+            warning_missing_data(state_data), # Fatal errors
+            warning_date_year(state_data),
+            warning_semi_colon(state_data),
+            warning_ocd_id(state_data, state_abbrv),
+            warning_bad_zip(state_data),
+            warning_bad_timing(state_data)
+        ]
+
+    warnings = [x for x in l if x is not None]
+
+    return warnings
+
+
 def warning_missing_data(state_data):
     """
     PURPOSE: isolate which rows, if any, are missing data in the state data 
@@ -675,8 +709,8 @@ def warning_missing_data(state_data):
     RETURN: missing_data_rows
     """
 
-    # SELECT feature(s) (all features from state_data except 6 features)
-    missing_data_check = state_data[state_data.columns.difference(['address_line2', 'address_line3', 'directions', 'start_time', 'end_time', 'internal_notes'])].isnull().any(axis=1)
+    # SELECT feature(s) (all features from state_data except 3 features)
+    missing_data_check = state_data[state_data.columns.difference(['address_line2', 'address_line3', 'directions'])].isnull().any(axis=1)
     missing_data_check.index = missing_data_check.index + 1  # INCREASE INDEX to correspond with google sheets index
     missing_data_rows = []
     
@@ -1174,16 +1208,20 @@ def main():
                 # FILTER rows not marked "complete"
                 state_data = state_data_unfiltered.loc[state_data_unfiltered["status"] == "Complete"]
                 state_data.reset_index(drop = True, inplace = True)
-                state_data.drop(columns = "status", inplace = True)
+                state_data.drop(columns = ["status","internal_notes"], inplace = True)
                     
                 # FILTER state_feed and election_authorities
                 state_feed = state_feed_all[state_feed_all['state_abbrv'] == state_abbrv] # FILTER state_feed_all for selected state
                 state_feed.reset_index(drop=True, inplace=True)
                 election_authorities = election_authorities_all[election_authorities_all['state'] == state_abbrv] # FILTER election_authorities_all for selected state
-
+                
+                # Check for missing vital data:
+                missing_rows = state_data[(state_data[["time_zone", "start_time", "end_time", "start_date", "end_date"]]=="").any(axis = 1)].index.tolist()
+                if missing_rows:
+                    raise Exception("Missing vital data on rows: "+" ".join(str(e+2) for e in missing_rows))
+                
                 # GENERATE zip file and print state report
                 vip_build(state_abbrv, state_feed, state_data, election_authorities)
-
 
                 states_successfully_processed.append(state_abbrv)
                 increment_success +=1
@@ -1194,7 +1232,7 @@ def main():
 
             except Exception as e:
                 increment_processingerror += 1
-                exception_string = state_abbrv + ' | ' + str(type(e).__name__) + ' ' + str(e) + '\n'
+                exception_string = state_abbrv + ' | ' + str(type(e).__name__) + ': ' + str(e)
                 states_failed_to_process.append(exception_string)
 
 
