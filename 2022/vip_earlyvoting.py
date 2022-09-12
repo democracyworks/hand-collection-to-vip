@@ -80,9 +80,6 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
 
     # PREP | Identify data issues, create/format features, and standardize dataframes
 
-    # GENERATE warnings in state_data
-    warnings = generate_warnings(state_data, state_abbrv, state_feed['official_name'][0])
-
     # CREATE/FORMAT feature(s) (1 created, 1 formatted)
     state_feed['state_fips'] = state_feed['state_fips'].str.pad(2, side='left', fillchar='0') # first make sure there are leading zeros
     state_feed['state_id'] = state_abbrv.lower() + state_feed['state_fips']
@@ -91,36 +88,41 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     # CLEAN/FORMAT state_feed, state_data, and election_authorities (3 dataframes)
     state_feed, state_data, election_authorities = clean_data(state_abbrv, state_feed, state_data, election_authorities)
 
+    # GENERATE warnings in state_data
+    warnings = generate_warnings(state_data, state_abbrv, state_feed['official_name'][0])
+
     # _____________________________________________________________________________________________________________________
 
     # CREATE IDS | Create IDs on dataframes
-
+    
     if election_authorities.empty:
         # CREATE empty election_authorities DataFrame if state not in election administration sheet
         election_authorities = pd.DataFrame(columns=['ocd_division','election_administration_id','homepage_url',
                                                      'official_title','election_official_person_id'])
-
+    
     else:
         # # SELECT desired cols from election_authorities
         election_authorities = election_authorities[['ocd_division','homepage_url', 'official_title']]
-
+        
         # CREATE 'election_adminstration_id'
         temp = election_authorities[['ocd_division']]
         temp.drop_duplicates(['ocd_division'], inplace=True)
-        temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
-        temp['election_administration_id'] = 'ea' + (temp.index + 1).astype(str).str.zfill(4)
+        
+        temp['election_administration_id'] = "ea_" + temp["ocd_division"]
+        
+        # temp['election_administration_id'] = temp.apply(lambda x: "ea" + str(fips_lookup_r[x["ocd_division"]]).zfill(5), axis = 1)
         election_authorities = pd.merge(election_authorities, temp, on =['ocd_division'])
         election_authorities.drop_duplicates(subset=['election_administration_id'], inplace=True) #REMOVE all except first election administration entry for each ocd-id
-
+        
         # CREATE 'election_official_person_id'
         temp = election_authorities[['ocd_division', 'official_title']]
         temp.drop_duplicates(['ocd_division', 'official_title'], keep='first',inplace=True)
-        temp.reset_index(drop=True, inplace=True) # RESET index prior to creating id
-        temp['election_official_person_id'] = 'per' + (temp.index + 1).astype(str).str.zfill(4)
+        temp['election_official_person_id'] = "per_" + temp["ocd_division"]
+        # temp['election_official_person_id'] = temp.apply(lambda x: "per" + str(fips_lookup_r[x["ocd_division"]]).zfill(5), axis = 1)
         election_authorities = pd.merge(election_authorities, temp, on =['ocd_division', 'official_title'])
         
     # CREATE stable IDs for polling locations
-    stable_cols = ['location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_state', 'address_zip']
+    stable_cols = ['location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_state', 'address_zip', "is_drop_box", "is_early_voting"]
     
     state_data = stable_id(state_data, ID = 'polling_location_ids', stable_prfx = "pl", stable_cols = stable_cols)
     state_data = stable_id(state_data, ID = 'hours_open_id', stable_prfx = "ho", stable_cols = stable_cols)
@@ -210,10 +212,6 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities):
 
     # CREATE/FORMAT | Adjust variables to desired standards shared across relevant .txt files
 
-    # RESET indexes
-
-    state_data.reset_index(drop=True, inplace=True)
-
     # REPLACE empty strings with NaNs
     state_data = state_data.replace('^\\s*$', np.nan, regex=True)
 
@@ -236,8 +234,6 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities):
 
     # FORMAT ocd division ids (2 formatted)
     state_data['OCD_ID'] = state_data['OCD_ID'].str.strip()
-    if not election_authorities.empty:
-        election_authorities['ocd_division'] = election_authorities['ocd_division'].str.upper().str.strip()
     
     state_data['address_line1'] = state_data['address_line1'].str.strip().str.replace('\\s{2,}', ' ')
     state_data['address_line2'] = state_data['address_line2'].str.strip().str.replace('\\s{2,}', ' ')
@@ -245,6 +241,8 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities):
     state_data['address_city'] = state_data['address_city'].str.strip().str.replace('\\s{2,}', ' ')
     state_data['address_state'] = state_data['address_state'].str.strip().str.replace('\\s{2,}', ' ')
     state_data['location_name'] = state_data['location_name'].str.strip().str.replace('\'S', '\'s')
+    
+    state_data = state_data.replace("[\r\n]+", "", regex = True)
     
     # _____________________________________________________________________________________________________________________
 
@@ -289,8 +287,8 @@ def generate_polling_location(state_data):
     polling_location = state_data[['polling_location_ids','location_name', 
                                    'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_state', 'address_zip',
                                    'directions', 'hours_open_id', 'is_drop_box', 'is_early_voting']] 
-
-    # FORMAT col(s) (2 formatted)                              
+    
+    # FORMAT col(s) (8 formatted)                              
     polling_location.rename(columns={'polling_location_ids':'id', 
                                      'location_name':'name',
                                      'address_line1':'structured_line_1',
@@ -449,7 +447,7 @@ def generate_locality(state_feed, state_data, election_authorities):
     locality['name'] = locality['OCD_ID'].str.extract('([^\\:]*)$', expand=False)
     locality['external_identifier_type'] = state_feed['external_identifier_type'][0]
     locality.reset_index(drop=True, inplace=True) 
-    locality['id'] = locality.apply(lambda x: "loc" + str(fips_lookup_r[x["OCD_ID"]]).zfill(5), axis = 1)
+    locality['id'] = "loc_" + locality["OCD_ID"]
     locality.rename(columns={'OCD_ID':'external_identifier_value'}, inplace=True)
     
     # REMOVE feature(s) (1 removed)
@@ -969,97 +967,6 @@ def state_report(warnings,
         for i in range(0, len(w.rows), PRINT_ARRAY_WIDTH):
             print(str(w.rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
     
-    '''
-    if multi_directions_rows or multi_address_rows or cross_street_rows or \
-       missing_data_rows or semi_colon_rows or date_year_rows or \
-       missing_zipcode_rows or missing_state_abbrvs_rows or \
-       timezone_mismatch_rows or ocd_id_rows:
-        
-         STATES_WITH_WARNINGS.append(state_abbrv) # RECORD states with warnings
-
-
-    if multi_directions_rows or multi_address_rows or cross_street_rows:      
-        print('\n'*2)
-        print('----------------------- STATE DATA WARNINGS -----------------------'.center(PRINT_OUTPUT_WIDTH, ' '))
-
-        if multi_directions_rows:
-            print('\n')
-            print('Rows w/ Multiple Directions for the Same Polling Location'.center(PRINT_OUTPUT_WIDTH, ' '))
-            print()
-            for i in range(0, len(multi_directions_rows), PRINT_TUPLE_WIDTH):
-                print(str(multi_directions_rows[i:i+PRINT_TUPLE_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-
-        if multi_address_rows:
-            print('\n')
-            print('Rows w/ Multiple Addresses for the Same Polling Location'.center(PRINT_OUTPUT_WIDTH, ' '))
-            print()
-            for i in range(0, len(multi_address_rows), PRINT_TUPLE_WIDTH):
-                print(str(multi_address_rows[i:i+PRINT_TUPLE_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-          
-        if cross_street_rows:
-            print('\n')
-            print('Rows w/ Problematic Cross-Street Formats'.center(PRINT_OUTPUT_WIDTH, ' '))
-            print()
-            for i in range(0, len(cross_street_rows), PRINT_ARRAY_WIDTH):
-                print(str(cross_street_rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-   
-
-    if missing_data_rows or semi_colon_rows or date_year_rows or \
-       missing_zipcode_rows or missing_state_abbrvs_rows or \
-       timezone_mismatch_rows or ocd_id_rows:
-        print('\n')
-        print('--------------------- STATE DATA FATAL ERRORS ---------------------'.center(PRINT_OUTPUT_WIDTH, ' '))
-
-        if missing_data_rows:
-            print('\n')
-            print('Rows w/ Missing Data'.center(PRINT_OUTPUT_WIDTH, ' '))
-            print()
-            for i in range(0, len(missing_data_rows), PRINT_ARRAY_WIDTH):
-                print(str(missing_data_rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
- 
-        if semi_colon_rows:
-            print('\n')
-            print('Rows w/ ;\'s Instead of :\'s in Start and/or End Hours'.center(PRINT_OUTPUT_WIDTH, ' '))
-            print()
-            for i in range(0, len(semi_colon_rows), PRINT_ARRAY_WIDTH):
-                print(str(semi_colon_rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
- 
-        if date_year_rows:
-            print('\n')
-            print('Rows w/ Invalid Years in Start and/or End Dates'.center(PRINT_OUTPUT_WIDTH, ' '))
-            print()
-            for i in range(0, len(date_year_rows), PRINT_ARRAY_WIDTH):
-                print(str(date_year_rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
- 
-        if missing_zipcode_rows:
-            print('\n')
-            print('Rows w/ Missing or Invalid Zip Codes from Location Addresses'.center(PRINT_OUTPUT_WIDTH, ' '))
-            print()
-            for i in range(0, len(missing_zipcode_rows), PRINT_ARRAY_WIDTH):
-                print(str(missing_zipcode_rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-
-        if missing_state_abbrvs_rows:
-            print('\n')
-            print('Rows w/ Missing State Abbreviations from Location Addresses'.center(PRINT_OUTPUT_WIDTH, ' '))
-            print()
-            for i in range(0, len(missing_state_abbrvs_rows),PRINT_ARRAY_WIDTH):
-                print(str(missing_state_abbrvs_rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-
-        if timezone_mismatch_rows:
-            print('\n')
-            print('Rows w/ Mismatched Timezones between Start and End Times'.center(PRINT_OUTPUT_WIDTH, ' '))
-            print()
-            for i in range(0, len(timezone_mismatch_rows),PRINT_ARRAY_WIDTH):
-                print(str(timezone_mismatch_rows[i:i+PRINT_ARRAY_WIDTH]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-           
-        if ocd_id_rows:
-            print('\n')
-            print('Rows w/ (Possibly) Incorrect OCD ID Formats'.center(PRINT_OUTPUT_WIDTH, ' '))
-            print()
-            for i in range(0, len(ocd_id_rows),1):
-                print(str(ocd_id_rows[i:i+1]).strip('[]').center(PRINT_OUTPUT_WIDTH, ' '))
-    ''' 
-
     print('\n'*1)
     print('_'*PRINT_OUTPUT_WIDTH)
     print('\n'*2)
