@@ -23,32 +23,35 @@ state_codes = {
 'OK': '40', 'OR': '41', 'PA': '42',             'RI': '44', 'SC': '45', 'SD': '46', 'TN': '47', 'TX': '48', 'UT': '49', 
 'VT': '50', 'VA': '51',             'WA': '53', 'WV': '54', 'WI': '55', 'WY': '56',                                     'PR': '72'
 }
+def upload(ARG):
+    if not os.path.isfile(ARG):
+        raise Exception("Not a valid file")
+    PATH, FILE = os.path.split(ARG)
+    match = re.fullmatch(r"^vipfeed-(?:ev|pp)-\d{4}-\d{2}-\d{2}-\D{2}.zip$", FILE)
+    if not match:
+        raise Exception("Filename must match pattern 'vipfeed-[pp|ev]-YYYY-MM-DD-XX.zip'")
+    if PATH:
+        os.chdir(os.path.expanduser(PATH))
+    ELECTION_DATE = "-".join(FILE.split("-")[2:5])
+    FIPS = state_codes[FILE.split("-")[-1].split(".")[0]]
+    print("Processing", FILE)
+    
+    #BUCKET needs upading, rest of os.system should run the same.
+    BUCKET="data-dashboard-staging-unprocessed"
+    #BUCKET="data-suite-production-uploaded-feeds" #will be the future bucket
+    bucket_message = "-".join(BUCKET.split("-")[0:3])
+    
+    os.system('aws s3 cp {0} s3://{1}/{2}/{3}/{0}'.format(FILE, BUCKET, FIPS, ELECTION_DATE))
+    
+    esc_quote = '\\"'
+    
+    message_body = '{{:filename {4}{0}/{1}/{2}{4} :bucket {4}{3}{4}}}'.format(FIPS, ELECTION_DATE, FILE, BUCKET, esc_quote)
+    
+    os.system('aws sqs send-message --queue-url https://sqs.us-east-1.amazonaws.com/858394542481/{0} --message-body "{1}"'.format(bucket_message, message_body))
+    
+    print("Uploaded!")
 
-#File should be provided on the command line.
-ARG = sys.argv[1]
-if not os.path.isfile(ARG):
-    raise Exception("Not a valid file")
-PATH, FILE = os.path.split(ARG)
-match = re.fullmatch(r"^vipfeed-(?:ev|pp)-\d{4}-\d{2}-\d{2}-\D{2}.zip$", FILE)
-if not match:
-    raise Exception("Filename must match pattern 'vipfeed-[pp|ev]-YYYY-MM-DD-XX.zip'")
-if PATH:
-    os.chdir(os.path.expanduser(PATH))
-ELECTION_DATE = "-".join(FILE.split("-")[2:5])
-FIPS = state_codes[FILE.split("-")[-1].split(".")[0]]
-print("Processing", FILE)
-
-#BUCKET needs upading, rest of os.system should run the same.
-BUCKET="data-dashboard-staging-unprocessed"
-#BUCKET="data-suite-production-uploaded-feeds" #will be the future bucket
-bucket_message = "-".join(BUCKET.split("-")[0:3])
-
-os.system('aws s3 cp {0} s3://{1}/{2}/{3}/{0}'.format(FILE, BUCKET, FIPS, ELECTION_DATE))
-
-esc_quote = '\\"'
-
-message_body = '{{:filename {4}{0}/{1}/{2}{4} :bucket {4}{3}{4}}}'.format(FIPS, ELECTION_DATE, FILE, BUCKET, esc_quote)
-
-os.system('aws sqs send-message --queue-url https://sqs.us-east-1.amazonaws.com/858394542481/{0} --message-body "{1}"'.format(bucket_message, message_body))
-
-print("Uploaded!")
+if __name__ == '__main__':
+    #File should be provided on the command line.
+    ARG = sys.argv[1]
+    upload(ARG)
