@@ -23,7 +23,7 @@ import hashlib
 from zipfile import ZipFile
 import warnings
 
-
+from upload_script import upload
 # _________________________________________________________________________________________________________________________
 
 # GLOBAL VARIABLES | Set global variables and print display formats
@@ -48,6 +48,8 @@ fips_lookup = pd.read_json("fips_ocdid_zips_dictionary.txt").T["ocdid"]
 fips_lookup.dropna(inplace = True)
 
 fips_lookup_r = pd.Series(fips_lookup.index.values, name = "FIPS", index = fips_lookup)
+
+file_dict = {}
 
 # _________________________________________________________________________________________________________________________
 
@@ -77,7 +79,6 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     INPUT: state_abbrv, state_data, state_feed, election_authorities
     RETURN: None
     """
-
     # PREP | Identify data issues, create/format features, and standardize dataframes
 
     # CREATE/FORMAT feature(s) (1 created, 1 formatted)
@@ -214,6 +215,9 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities):
 
     # REPLACE empty strings with NaNs
     state_data = state_data.replace('^\\s*$', np.nan, regex=True)
+    
+    # TRIM whitespace
+    state_data = state_data.apply(lambda x: x.str.strip())
 
     # FORMAT OCD IDs (2 formatted)
     state_data['OCD_ID'] = state_data['OCD_ID'].str.strip()
@@ -314,10 +318,14 @@ def generate_schedule(state_data, state_feed):
     
     # SELECT feature(s) (8 selected)
     schedule = state_data[['time_zone', 'start_time', 'end_time', 'start_date', 'end_date', 'hours_open_id',
-                           'is_only_by_appointment', 'is_or_by_appointment']]
+                           'is_only_by_appointment', 'is_or_by_appointment']].reset_index(drop=True) 
+    
+    schedule.replace("", np.nan, inplace = True)
 
     # Split rows along time zone transitions
     for i, row in schedule.iterrows():
+        if row[["time_zone", "start_time", "end_time"]].isna().any():
+            continue
         tz = pytz.timezone(row["time_zone"])
         dt_start = tz.localize(datetime.datetime.strptime(row["start_date"]+row["start_time"], "%Y-%m-%d%H:%M:%S"))
         dt_end = tz.localize(datetime.datetime.strptime(row["end_date"]+row["end_time"], "%Y-%m-%d%H:%M:%S"))
@@ -352,6 +360,8 @@ def generate_schedule(state_data, state_feed):
      
     # after necessary rows have been split, add offsets to the start and end times
     for i, row in schedule.iterrows():
+        if row[["time_zone", "start_time", "end_time"]].isna().any():
+            continue
         
         tz = pytz.timezone(row["time_zone"])
         dt_start = tz.localize(datetime.datetime.strptime(row["start_date"]+row["start_time"], "%Y-%m-%d%H:%M:%S"))
@@ -367,6 +377,7 @@ def generate_schedule(state_data, state_feed):
         schedule.iloc[i]["end_time"] = row["end_time"]+offset_end
     
     # CREATE feature(s) (1 created)
+    #schedule.sort_values(["hours_open_id", "start_date"], inplace = True, ignore_index = True)
     schedule.reset_index(drop=True, inplace=True) 
     schedule['id'] = 'sch' + (schedule.index + 1).astype(str).str.zfill(4) 
     
@@ -391,7 +402,7 @@ def generate_source(state_feed):
     source['id'] = 'src' + (source.index + 1).astype(str).str.zfill(4)
     source['date_time'] = datetime.datetime.now().replace(microsecond=0).isoformat() 
     source['name'] = 'Democracy Works Outreach Team'
-    source['version'] = '5.1' # REFERENCES VIP SPEC
+    source['version'] = '5.2' # REFERENCES VIP SPEC
     source.rename(columns={'state_fips':'vip_id'}, inplace=True) # RENAME col(s)
     
 
@@ -560,6 +571,8 @@ def generate_zip(state_abbrv, state_feed, files):
     with ZipFile(zip_filename, 'w') as z:
         for file in file_list:
             z.write(file)
+            
+    file_dict[state_abbrv] = os.path.join(save_path, zip_filename)
 
     os.chdir(reset_path)
     
@@ -730,9 +743,10 @@ def warning_cross_street(state_data):
     INPUT: state_data
     RETURN: cross_street_rows
     """
-
+    
     # NOTE: Invalid cross streets sometimes do not map well on Google's end 
     cross_street_addresses = state_data[state_data['address_line1'].str.contains(' & | and ')]
+    
     cross_street_rows = sorted(list(cross_street_addresses.index + 1))
 
     if cross_street_rows:
@@ -772,14 +786,14 @@ def warning_multi_directions(state_data):
     """
 
     # SELECT feature(s) (4 selected)
-    unique_rows = state_data[['OCD_ID', 'location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip', 'directions']].drop_duplicates()
-    duplicate_locations = unique_rows[unique_rows.duplicated(subset=['OCD_ID', 'location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip'],keep=False)]
+    unique_rows = state_data[['OCD_ID', 'location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip', 'directions', 'is_drop_box', 'is_early_voting']].drop_duplicates()
+    duplicate_locations = unique_rows[unique_rows.duplicated(subset=['OCD_ID', 'location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip', 'is_drop_box', 'is_early_voting'],keep=False)]
     duplicate_locations.index = duplicate_locations.index + 1  # INCREASE INDEX to correspond with google sheets index
 
     multi_directions_rows = []
     if not duplicate_locations.empty: # IF there are polling locations with multiple locations
         multi_directions_rows = sorted([tuple(x) for x in \
-                                        duplicate_locations.groupby(['OCD_ID', 'location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip']).groups.values()])
+                                        duplicate_locations.groupby(['OCD_ID', 'location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip', 'is_drop_box', 'is_early_voting']).groups.values()])
 
     if multi_directions_rows:
         return warn_obj("Rows with multiple directions for one polling location:", multi_directions_rows, fatal = False)
@@ -1117,7 +1131,7 @@ def main():
                 state_data.drop(columns = ["status","internal_notes"], inplace = True)
                 
                 # Check for missing vital data:
-                missing_rows = state_data[(state_data[["time_zone", "start_time", "end_time", "start_date", "end_date"]]=="").any(axis = 1)].index.tolist()
+                missing_rows = state_data[(state_data[["start_date", "end_date"]]=="").any(axis = 1)].index.tolist()
                 if missing_rows:
                     raise Exception("Missing vital data on rows: "+" ".join(str(e+2) for e in missing_rows))
                 
@@ -1148,6 +1162,16 @@ def main():
 
     print('Timestamp:', datetime.datetime.now().replace(microsecond=0))
     print(f'Run time: {float((time.time()-start)):.2f} second(s)')
+    
+    if file_dict:
+        query = input("Upload? [ALL or state_abbrvs]: ").upper().strip()
+        if query == "ALL":
+            upload_states = file_dict.keys()
+        else:
+            query = re.sub(r"\s{2,}", " ", query)
+            upload_states = [x for x in query.split(" ") if x in file_dict.keys()]
+        for state in upload_states:
+            upload(file_dict[state])
 
 if __name__ == '__main__':
     main()
