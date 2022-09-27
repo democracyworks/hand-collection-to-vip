@@ -27,6 +27,10 @@ import pytz
 from zipfile import ZipFile
 import warnings
 
+from upload_script import upload
+
+file_dict = {}
+
 # _________________________________________________________________________________________________________________________
 
 # GLOBAL VARIABLES | Set global variables and print display formats
@@ -85,8 +89,6 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
     
     # PREP | Identify data issues, create/format features, and standardize dataframes
 
-    # GENERATE warnings/fatal errors in state_data (2 warnings, 5 fatal errors)
-    warnings = generate_warnings_state_data(state_data, state_abbrv, state_feed['official_name'][0])
     """
     # GENERATE warnings in target_smart (3 types of warnings)
     missing_counties_count, missing_townships_count, \
@@ -99,6 +101,9 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
     # CLEAN/FORMAT state_feed, state_data, election_authorities, and target_smart (4 dataframes)
     state_feed, state_data, election_authorities, \
        target_smart = clean_data(state_abbrv, state_feed, state_data, election_authorities, target_smart)
+       
+    # GENERATE warnings/fatal errors in state_data (2 warnings, 5 fatal errors)
+    warnings = generate_warnings_state_data(state_data, state_abbrv, state_feed['official_name'][0])
     """
     # GENERATE warnings for matches between counties/places/townships & precincts in state_data & target_smart (2 warnings)
     sd_unmatched_precincts_list, ts_unmatched_precincts_list = warning_unmatched_precincts(state_abbrv, state_data, target_smart)
@@ -110,14 +115,14 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
     # CREATE 'election_adminstration_id'
     temp = election_authorities[['ocd_division']]
     temp.drop_duplicates(['ocd_division'], inplace=True)
-    temp['election_administration_id'] = temp.apply(lambda x: "ea" + str(fips_lookup_r[x["ocd_division"]]).zfill(5), axis = 1)
+    temp['election_administration_id'] = "ea_"+temp["ocd_division"]
     election_authorities = pd.merge(election_authorities, temp, on =['ocd_division'])
     election_authorities.drop_duplicates(subset=['election_administration_id'], inplace=True) #REMOVE all except first election administration entry for each ocd-id
 
     # CREATE 'election_official_person_id'
     temp = election_authorities[['ocd_division', 'official_title']]
     temp.drop_duplicates(['ocd_division', 'official_title'], keep='first',inplace=True)
-    temp['election_official_person_id'] = temp.apply(lambda x: "per" + str(fips_lookup_r[x["ocd_division"]]).zfill(5), axis = 1)
+    temp['election_official_person_id'] = "per_"+temp["ocd_division"]
     election_authorities = pd.merge(election_authorities, temp, on =['ocd_division', 'official_title']) 
 
     # CREATE stable IDs for polling locations
@@ -229,6 +234,9 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities, target
     # REPLACE empty strings with NaNs
     state_data = state_data.replace('^\\s*$', np.nan, regex=True)
     
+    # TRIM whitespace
+    state_data = state_data.apply(lambda x: x.str.strip())
+    
     # FORMAT FIPS & ZIPS (2 formatted)
     state_feed['fips'] = state_feed['state_fips'].str.pad(5, side='right', fillchar='0')
     target_smart['vf_reg_cass_zip'] = target_smart['vf_reg_cass_zip'].astype(str).str.pad(5, side='left', fillchar='0')
@@ -237,7 +245,6 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities, target
     state_data['locality'] = state_data['locality'].str.upper().str.strip()
     target_smart['vf_locality'] = target_smart['vf_locality'].str.upper().str.strip()
     election_authorities['ocd_division'] = election_authorities['ocd_division'].str.strip()
-    election_authorities.rename(columns={'ocd_division':'county'}, inplace=True)
     
     # FORMAT precinct (2 formatted)
     state_data['precinct'] = state_data['precinct'].str.strip().str.upper()
@@ -248,7 +255,7 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities, target
 
     # ERROR HANDLING | Interventionist adjustments to account for state eccentricities and common hand collection mistakes, etc
 
-    
+    '''
     # CONDITIONAL formattating for 2 states (NH, AZ) 
     if state_abbrv == 'NH':
 
@@ -265,7 +272,7 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities, target
 
         # NOTE: TargetSmart lists some of the precincts in Arizona as 'PIMA' + #, but not all
         target_smart['vf_precinct_name'] = target_smart['vf_precinct_name'].str.replace('PIMA ', '')
-
+    '''
     # OPTIMIZE data types 
     state_data, election_authorities, target_smart = optimize_data_types(state_abbrv, state_data, election_authorities, target_smart)
 
@@ -287,13 +294,12 @@ def optimize_data_types(state_abbrv, state_data, election_authorities, target_sm
     state_data['end_time'] = state_data['end_time'].astype('category')
 
     # OPTIMIZE target_smart data types
-    target_smart['vf_reg_city'] = target_smart['vf_reg_city'].astype('category')
-    target_smart['vf_source_state'] = target_smart['vf_source_state'].astype('category')
-    target_smart['vf_reg_zip'] = target_smart['vf_reg_zip'].astype('category')
+    target_smart['vf_reg_cass_city'] = target_smart['vf_reg_cass_city'].astype('category')
+    target_smart['vf_source_cass_state'] = target_smart['vf_source_cass_state'].astype('category')
+    target_smart['vf_reg_cass_zip'] = target_smart['vf_reg_cass_zip'].astype('category')
 
 
     # OPTIMIZE election_authorities data types
-    election_authorities['ocd_division'] = election_authorities['ocd_division'].astype('category')
     election_authorities['state'] = election_authorities['state'].astype('category')
 
 
@@ -367,7 +373,7 @@ def generate_schedule(state_data, state_feed):
 
     # SELECT feature(s) (3 selected)
     schedule = state_data[['time_zone', 'hours_open_id', 'start_time', 'end_time']]
-    schedule.drop_duplicates(inplace=True)
+    schedule.drop_duplicates(inplace=True, ignore_index = True)
     
     # Add start and end times (election day)
     eday = state_feed.loc[0, "election_date"]
@@ -419,7 +425,7 @@ def generate_source(state_feed):
     source['id'] = 'src' + (source.index + 1).astype(str).str.zfill(4)
     source['date_time'] = datetime.datetime.now().replace(microsecond=0).isoformat() 
     source['name'] = 'Democracy Works Outreach Team'
-    source['version'] = '5.1' # REFERENCES VIP SPEC
+    source['version'] = '5.2' # REFERENCES VIP SPEC
     source.rename(columns={'fips':'vip_id'}, inplace=True) # RENAME col(s)
     
 
@@ -472,10 +478,17 @@ def generate_locality(state_feed, state_data, election_authorities, target_smart
     # CREATE/FORMAT feature(s) (3 created)
     locality['state_id'] = state_feed['state_id'][0]
     locality['type'] = loctype
-    locality['id'] = locality.apply(lambda x: "loc_" + str(fips_lookup_r[x["OCD_ID"]]).zfill(5), axis = 1)
+    locality['id'] = "loc_"+locality["OCD_ID"]
     
-    locality.rename(columns={'county':'name'}, inplace=True)
-    locality.drop(columns="OCD_ID", inplace=True)
+    pl = state_data[['locality', 'polling_location_ids']][state_data["precinct"].isna()]
+    grouped = pl.groupby(['locality'], dropna = False)
+    grouped = pd.DataFrame(grouped.aggregate(lambda x: ' '.join(x))['polling_location_ids']) # FLATTEN aggregated df
+    grouped.reset_index(inplace = True)
+    
+    locality = locality.merge(grouped, on = "locality", how = "left")
+    
+    locality.rename(columns={'locality':'name'}, inplace=True)
+    locality.drop(columns=["OCD_ID", "ocd_division"], inplace=True)
     
     locality.reset_index(drop=True, inplace=True)
 
@@ -556,35 +569,32 @@ def generate_precinct(state_data, target_smart):
     SPEC: https://vip-specification.readthedocs.io/en/latest/csv/element_files/precinct.html
     """
     
-    precinct = target_smart[["vf_locality", "vf_precinct_name"]].drop_duplicates(ignore_index = True)
+    precinct = target_smart[["vf_locality", "vf_precinct_name"]].drop_duplicates(ignore_index = True).rename(columns={"vf_locality":"locality",
+                                                                                                                      "vf_precinct_name":"precinct"})
     
     # SELECT feature(s) (3 selected)
     loc = state_data[['locality', 'OCD_ID']].drop_duplicates(ignore_index = True)
 
-    precinct = precinct.merge(loc, left_on='vf_locality', right_on='locality', how='left')
+    precinct = precinct.merge(loc, on='locality', how='left')
 
     # GROUP polling_location_ids
-    pl = state_data[['locality', 'precinct', 'polling_location_ids']].rename(columns={"polling_location_ids":"A"})
+    pl = state_data[['locality', 'precinct', 'polling_location_ids']]
     grouped = pl.groupby(['locality', 'precinct'], dropna = False)
-    grouped = pd.DataFrame(grouped.aggregate(lambda x: ' '.join(x))['A']) # FLATTEN aggregated df
+    grouped = pd.DataFrame(grouped.aggregate(lambda x: ' '.join(x))['polling_location_ids']) # FLATTEN aggregated df
     grouped.reset_index(inplace = True)
     
-    countywide = grouped[grouped["precinct"].isna()].rename(columns={"A":"B"})
-    
-    precinct = precinct.merge(grouped, left_on=["vf_locality","vf_precinct_name"], right_on = ["locality", "precinct"])
-    precinct = precinct.merge(countywide, left_on="vf_locality", right_on = "locality")
+    precinct = precinct.merge(grouped, on = ["locality", "precinct"])
     
     precinct.fillna("", inplace = True)
-    precinct["polling_location_ids"] = precinct[["A","B"]].agg(" ".join, axis = 1).str.strip()
     
-    precinct["locality_id"] = precinct.apply(lambda x: "loc_" + str(fips_lookup_r[x["OCD_ID"]]).zfill(5), axis = 1)
-    precinct = stable_id(precinct, stable_prfx = "pre", stable_cols = ["vf_locality", "vf_precinct_name"])
+    precinct["locality_id"] = "loc_" + precinct["OCD_ID"]
+    precinct = stable_id(precinct, stable_prfx = "pre", stable_cols = ["locality", "precinct"])
     
-    precinct.drop(columns = ["locality_x", "locality_y", "precinct_x", "locality", "precinct_y", "A", "B", "vf_locality", "OCD_ID"], inplace = True)
+    precinct.drop(columns = ["locality", "OCD_ID"], inplace = True)
     
     # CREATE/FORMAT feature(s) (1 created, 2 formatted)
     precinct.drop_duplicates(inplace=True)
-    precinct.rename(columns={'vf_precinct_name':'name'}, inplace=True)
+    precinct.rename(columns={'precinct':'name'}, inplace=True)
     precinct.reset_index(drop=True, inplace=True)
     
     precinct = precinct[["id", "locality_id", "name", "polling_location_ids"]]
@@ -668,6 +678,8 @@ def generate_zip(state_abbrv, state_feed, files):
     with ZipFile(zip_filename, 'w') as z:
         for file in file_list:
             z.write(file)
+            
+    file_dict[state_abbrv] = os.path.join(save_path, zip_filename)
 
     os.chdir(reset_path)
     
@@ -1486,15 +1498,7 @@ def main():
                                                              " AND vf_reg_cass_street_name <> 'PO BOX'"])
                     
                     # SET MySQL query
-                    if state_abbrv == 'AZ':
-                        query = "SELECT " + targetsmart_sql_col_string + " FROM " + sql_table_name + \
-                                targetsmart_sql_filter_string + " AND vf_county_name = 'PIMA';"
-
-                    elif state_abbrv == 'FL':
-                        query = "SELECT " + targetsmart_sql_col_string + " FROM " + sql_table_name + \
-                                targetsmart_sql_filter_string + " AND vf_county_name IN ('OSCEOLA', 'BAY', 'ST LUCIE');"
-                    else: 
-                        query = "SELECT " + targetsmart_sql_col_string + " FROM " + sql_table_name + \
+                    query = "SELECT " + targetsmart_sql_col_string + " FROM " + sql_table_name + \
                                 targetsmart_sql_filter_string + ";"
                             
                     target_smart = pd.read_sql(query, conn)
@@ -1530,6 +1534,16 @@ def main():
 
     print(f'Timestamp: {datetime.datetime.now().replace(microsecond=0)}')
     print(f'Run time: {float((time.time()-start)/60):.2f} minute(s)')
+    
+    if file_dict:
+        query = input("Upload? [ALL or state_abbrvs]: ").upper().strip()
+        if query == "ALL":
+            upload_states = file_dict.keys()
+        else:
+            query = re.sub(r"\s{2,}", " ", query)
+            upload_states = [x for x in query.split(" ") if x in file_dict.keys()]
+        for state in upload_states:
+            upload(file_dict[state])
 
 if __name__ == '__main__':
     
