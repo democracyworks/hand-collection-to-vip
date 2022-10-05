@@ -41,13 +41,13 @@ def upload(ARG):
     #BUCKET="data-suite-production-uploaded-feeds" #will be the future bucket
     bucket_message = "-".join(BUCKET.split("-")[0:3])
     
-    os.system('aws s3 cp {0} s3://{1}/{2}/{3}/{0}'.format(FILE, BUCKET, FIPS, ELECTION_DATE))
+    os.system('/usr/local/bin/aws s3 cp {0} s3://{1}/{2}/{3}/{0}'.format(FILE, BUCKET, FIPS, ELECTION_DATE))
     
     esc_quote = '\\"'
     
     message_body = '{{:filename {4}{0}/{1}/{2}{4} :bucket {4}{3}{4}}}'.format(FIPS, ELECTION_DATE, FILE, BUCKET, esc_quote)
     
-    os.system('aws sqs send-message --queue-url https://sqs.us-east-1.amazonaws.com/858394542481/{0} --message-body "{1}"'.format(bucket_message, message_body))
+    os.system('/usr/local/bin/aws sqs send-message --queue-url https://sqs.us-east-1.amazonaws.com/858394542481/{0} --message-body "{1}"'.format(bucket_message, message_body))
     
     print("Uploaded!")
 
