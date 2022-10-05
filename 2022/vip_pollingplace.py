@@ -103,7 +103,7 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
        target_smart = clean_data(state_abbrv, state_feed, state_data, election_authorities, target_smart)
        
     # GENERATE warnings/fatal errors in state_data (2 warnings, 5 fatal errors)
-    warnings = generate_warnings_state_data(state_data, state_abbrv, state_feed['official_name'][0])
+    warnings = generate_warnings_state_data(state_data, state_abbrv, state_feed['official_name'][0], target_smart)
     """
     # GENERATE warnings for matches between counties/places/townships & precincts in state_data & target_smart (2 warnings)
     sd_unmatched_precincts_list, ts_unmatched_precincts_list = warning_unmatched_precincts(state_abbrv, state_data, target_smart)
@@ -175,16 +175,16 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
     try:
         precinct = generate_precinct(state_data, target_smart)
     except Exception as e:
-        raise Exception("Persons, "+str(e)) from e
+        raise Exception("Precinct, "+str(e)) from e
     try:
         street_segment = generate_street_segment(state_abbrv, target_smart, state_data, precinct)
     except Exception as e:
-        raise Exception("Persons, "+str(e)) from e
-
+        raise Exception("Street Segments, "+str(e)) from e
+    '''
     # GENERATE .txt file warnings (3 warnings)
     missing_precinct_ids_count, missing_house_numbers_count, \
       missing_street_suffixes_count = generate_warnings_txt(state_abbrv, street_segment)
-
+    '''
     # GENERATE zip file
     generate_zip(state_abbrv, state_feed, {'election': election,
                                            'polling_location': polling_location,
@@ -197,7 +197,6 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
                                            'person': person,
                                            'precinct': precinct,
                                            'street_segment': street_segment})
-
     # _____________________________________________________________________________________________________________________
 
     # REPORT | Print zip file sizes, dataframe descriptions, and data warnings
@@ -216,7 +215,6 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
                   'precinct': precinct,
                   'schedule': schedule,
                   'street_segment': street_segment})
-
 
     return
             
@@ -274,7 +272,7 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities, target
         target_smart['vf_precinct_name'] = target_smart['vf_precinct_name'].str.replace('PIMA ', '')
     '''
     # OPTIMIZE data types 
-    state_data, election_authorities, target_smart = optimize_data_types(state_abbrv, state_data, election_authorities, target_smart)
+    # state_data, election_authorities, target_smart = optimize_data_types(state_abbrv, state_data, election_authorities, target_smart)
 
 
     return state_feed, state_data, election_authorities, target_smart
@@ -295,7 +293,7 @@ def optimize_data_types(state_abbrv, state_data, election_authorities, target_sm
 
     # OPTIMIZE target_smart data types
     target_smart['vf_reg_cass_city'] = target_smart['vf_reg_cass_city'].astype('category')
-    target_smart['vf_source_cass_state'] = target_smart['vf_source_cass_state'].astype('category')
+    target_smart['vf_reg_cass_state'] = target_smart['vf_reg_cass_state'].astype('category')
     target_smart['vf_reg_cass_zip'] = target_smart['vf_reg_cass_zip'].astype('category')
 
 
@@ -307,7 +305,7 @@ def optimize_data_types(state_abbrv, state_data, election_authorities, target_sm
     return state_data, election_authorities, target_smart
 
 
-def generate_election(state_feed, state_data):
+def generate_election(state_feed):
     """
     PURPOSE: generates election dataframe for .txt file
     INPUT: state_data, state_feed
@@ -320,7 +318,7 @@ def generate_election(state_feed, state_data):
     
     # CREATE/FORMAT feature(s) (3 created, 2 formatted)
     election['id'] = 'ele01' 
-    election['election_type'] = 'Federal'
+    election['election_type'] = 'General'
     election['is_statewide'] = 'true'
     election.rename(columns={'election_date':'date', 
                              'election_name':'name'}, inplace=True) # RENAME col(s)
@@ -356,8 +354,8 @@ def generate_polling_location(state_data):
     polling_location.drop_duplicates(inplace=True)
     
     # ADD features (2 selected)
-    polling_location["is_drop_box"] = "FALSE"
-    polling_location["is_early_voting"] = "FALSE"
+    polling_location["is_drop_box"] = "false"
+    polling_location["is_early_voting"] = "false"
     
     return polling_location
 
@@ -535,7 +533,7 @@ def generate_department(election_authorities):
 
 
 
-def generate_person(state_abbrv, election_authorities):
+def generate_person(election_authorities):
     """
     PURPOSE: generates person dataframe for .txt file
     INPUT: election_authorities
@@ -544,18 +542,16 @@ def generate_person(state_abbrv, election_authorities):
     """
 
     # SELECT feature(s) (3 selected)
-    person = election_authorities[['county', 'official_title', 'election_official_person_id']]
+    person = election_authorities[['ocd_division', 'official_title', 'election_official_person_id']]
 
     # CREATE/FORMAT feature(s) (2 created, 1 formatted)
     person.drop_duplicates('election_official_person_id', keep='first',inplace=True)
     person['profession'] = 'ELECTION ADMINISTRATOR'
-    person.rename(columns={'election_official_person_id':'id'}, inplace=True) 
+    person['title'] = person['ocd_division'].str.extract('([^\\:]*)$', expand=False).str.upper() + ' ' + person['official_title'].str.upper()
+    person.rename(columns={'election_official_person_id':'id'}, inplace=True)
 
-    person['title'] = person['county'].str.upper() + ' ' + person['official_title'].str.upper()
-    
     # REMOVE feature(s) (2 removed)
-    person.drop(['county', 'official_title'], axis=1, inplace=True) 
-
+    person.drop(['ocd_division', 'official_title'], axis=1, inplace=True)
 
     return person
 
@@ -571,7 +567,7 @@ def generate_precinct(state_data, target_smart):
     
     precinct = target_smart[["vf_locality", "vf_precinct_name"]].drop_duplicates(ignore_index = True).rename(columns={"vf_locality":"locality",
                                                                                                                       "vf_precinct_name":"precinct"})
-    
+    precinct.sort_values(["locality", "precinct"], inplace = True, ignore_index = True)
     # SELECT feature(s) (3 selected)
     loc = state_data[['locality', 'OCD_ID']].drop_duplicates(ignore_index = True)
 
@@ -614,17 +610,18 @@ def generate_street_segment(state_abbrv, target_smart, state_data, precinct):
     # SELECT feature(s)
     street_segment["address_direction"] = target_smart["vf_reg_cass_post_directional"]
     street_segment["city"] = target_smart["vf_reg_cass_city"]
-    street_segment["includes_all_addresses"] = "FALSE"
-    street_segment["includes_all_streets"] = "FALSE"
+    street_segment["includes_all_addresses"] = "false"
+    street_segment["includes_all_streets"] = "false"
     street_segment["odd_even_both"] = "both"
     street_segment["precinct_id"] = stable_id(target_smart[["vf_locality", "vf_precinct_name"]],
                                               stable_prfx = "pre",
                                               stable_cols = ["vf_locality", "vf_precinct_name"])["id"]
-    street_segment["start_house_number"] = target_smart["vf_reg_cass_street_num"].str.strip(r"\D")
-    street_segment["end_house_number"] = street_segment["start_house_number"]
-    street_segment["house_number_prefix"] = target_smart["vf_reg_cass_street_num"].str.extract(r"^(\D)\d").str.strip()
-    street_segment["house_number_suffix"] = target_smart["vf_reg_cass_street_num"].str.extract(r"(\D)$").str.strip()
-    street_segment["state"] = target_smart["vf_reg_cass_state"]
+    streetnum = target_smart["vf_reg_cass_street_num"].str.strip().str.extract(r"^(?P<pre>\D*)\W*(?P<num>\d+)\W*(?P<suf>.*?)$", expand = True)
+    street_segment["start_house_number"] = streetnum["num"]
+    street_segment["end_house_number"] = streetnum["num"]
+    street_segment["house_number_prefix"] = streetnum["pre"]
+    street_segment["house_number_suffix"] = streetnum["suf"]
+    street_segment["state"] = state_abbrv
     street_segment["street_direction"] = target_smart["vf_reg_cass_pre_directional"]
     street_segment["street_name"] = target_smart["vf_reg_cass_street_name"]
     street_segment["street_suffix"] = target_smart["vf_reg_cass_street_suffix"]
@@ -794,7 +791,7 @@ class warn_obj:
         self.rows = rows
         self.fatal = fatal
 
-def generate_warnings_state_data(state_data, state_abbrv, state_fullname):
+def generate_warnings_state_data(state_data, state_abbrv, state_fullname, target_smart):
     """
     PURPOSE: isolate which rows, if any, have warnings or fatal errors
     INPUT: state_data, state_abbrv, state_fullname
@@ -806,11 +803,13 @@ def generate_warnings_state_data(state_data, state_abbrv, state_fullname):
             warning_multi_addresses(state_data),
             warning_cross_street(state_data),
             warning_missing_data(state_data), # Fatal errors
-            warning_date_year(state_data),
-            warning_semi_colon(state_data),
+            #warning_date_year(state_data),
+            #warning_semi_colon(state_data),
             warning_ocd_id(state_data, state_abbrv),
             warning_bad_zip(state_data),
-            warning_bad_timing(state_data)
+            warning_bad_timing(state_data),
+            warning_unmatched_precinct_hc(state_data, target_smart),
+            warning_unmatched_precinct_ts(state_data, target_smart)
         ]
 
     warnings = [x for x in l if x is not None]
@@ -1024,7 +1023,29 @@ def warning_bad_timing(state_data):
         return warn_obj("Rows where start comes after end:", bad_timing_rows, fatal = True)
     else: return None
 
+def warning_unmatched_precinct_hc(state_data, target_smart):
+    hc_df = state_data[["locality", "precinct"]].apply(", ".join, axis = 1)
+    ts_df = target_smart[["vf_locality", "vf_precinct_name"]].apply(", ".join, axis = 1)
+    
+    hc = set(hc_df.tolist())
+    ts = set(ts_df.tolist())
+    
+    hc_but_not_ts = list(hc.difference(ts))
+    if hc_but_not_ts:
+        return warn_obj("Precincts found in HC but not TS:", hc_but_not_ts, fatal = False)
+    else: return None
 
+def warning_unmatched_precinct_ts(state_data, target_smart):
+    hc_df = state_data[["locality", "precinct"]].apply(", ".join, axis = 1)
+    ts_df = target_smart[["vf_locality", "vf_precinct_name"]].apply(", ".join, axis = 1)
+    
+    hc = set(hc_df.tolist())
+    ts = set(ts_df.tolist())
+    
+    ts_but_not_hc = list(ts.difference(hc))
+    if ts_but_not_hc:
+        return warn_obj("Precincts found in TS but not HC:", ts_but_not_hc, fatal = False)
+    else: return None
 
 ###########################################################################################################################
 # END OF STATE_DATA WARNING FUNCTION DEFINITIONS ##########################################################################
@@ -1260,18 +1281,14 @@ def state_report(warnings,
     for name, df in files.items():
 
         print(f'{name:>{PRINT_CENTER-2}} | {len(df.index)} row(s)')
-
+        
     # CREATE dataframes of unique OCD IDs for election authorities and state data
-    ea = election_authorities[['county']]
+    ea = election_authorities[['ocd_division']]
     ea.drop_duplicates(inplace=True)
-    sd = state_data[['county']]
+    sd = state_data[['locality']]
     sd.drop_duplicates(inplace=True)
-    if state_abbrv in STATES_USING_TOWNSHIPS: # PROCESS states that use townships
-        ts = target_smart[['vf_township']]
-    else: # PROCESS states that use counties/places
-        ts = target_smart[['vf_county_name']]
+    ts = target_smart[['vf_locality']]
     ts.drop_duplicates(inplace=True)
-
     # PRINT count of unique OCD IDs
     print('\n'*2) 
     if state_abbrv in STATES_USING_TOWNSHIPS: # PROCESS states that use townships
