@@ -88,10 +88,10 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     
     # CLEAN/FORMAT state_feed, state_data, and election_authorities (3 dataframes)
     state_feed, state_data, election_authorities = clean_data(state_abbrv, state_feed, state_data, election_authorities)
-
+    
     # GENERATE warnings in state_data
     warnings = generate_warnings(state_data, state_abbrv, state_feed['official_name'][0])
-
+    
     # _____________________________________________________________________________________________________________________
 
     # CREATE IDS | Create IDs on dataframes
@@ -247,6 +247,8 @@ def clean_data(state_abbrv, state_feed, state_data, election_authorities):
     state_data['location_name'] = state_data['location_name'].str.strip().str.replace('\'S', '\'s')
     
     state_data = state_data.replace("[\r\n]+", "", regex = True)
+    
+    state_data.loc[state_data["is_only_by_appointment"]=="true","time_zone":"end_time"] = np.nan
     
     # _____________________________________________________________________________________________________________________
 
@@ -702,7 +704,7 @@ def generate_warnings(state_data, state_abbrv, state_fullname):
             warning_cross_street(state_data),
             warning_missing_data(state_data), # Fatal errors
             warning_date_year(state_data),
-            warning_semi_colon(state_data),
+            #warning_semi_colon(state_data),
             warning_ocd_id(state_data, state_abbrv),
             warning_bad_zip(state_data),
             warning_bad_timing(state_data)
@@ -719,17 +721,14 @@ def warning_missing_data(state_data):
     INPUT: state_data
     RETURN: missing_data_rows
     """
-
     # SELECT feature(s) (all features from state_data except 3 features)
-    missing_data_check = state_data[state_data.columns.difference(['address_line2', 'address_line3', 'directions'])].isnull().any(axis=1)
+    missing_data_check = state_data[state_data.columns.difference(['address_line2', 'address_line3', 'directions', "time_zone", "start_time", "end_time"])].isnull().any(axis=1)
     missing_data_check.index = missing_data_check.index + 1  # INCREASE INDEX to correspond with google sheets index
-    missing_data_rows = []
-    
-    if missing_data_check.any(): # IF any data is missing
-        missing_data_rows = missing_data_check.loc[lambda x: x==True].index.values.tolist()
-        if len(missing_data_rows) > 30:  # IF there are more than 30 rows with missing data then simply notify user
-            missing_data_rows = ['More than 30 rows with missing data']
-
+    missing_data_rows = missing_data_check.loc[lambda x: x==True].index.values.tolist()
+    '''
+    if len(missing_data_rows) > 30:  # IF there are more than 30 rows with missing data then simply notify user
+        missing_data_rows = ['More than 30 rows with missing data']
+    '''
     if missing_data_rows:        
         return warn_obj("Rows with missing data:", missing_data_rows, fatal = True)
     else:
@@ -743,7 +742,6 @@ def warning_cross_street(state_data):
     INPUT: state_data
     RETURN: cross_street_rows
     """
-    
     # NOTE: Invalid cross streets sometimes do not map well on Google's end 
     cross_street_addresses = state_data[state_data['address_line1'].str.contains(' & | and ')]
     
@@ -762,7 +760,6 @@ def warning_multi_addresses(state_data):
     INPUT: state_data
     RETURN: multi_address_rows
     """
-
     # SELECT feature(s) (3 selected)
     addresses = state_data[['OCD_ID','location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip']].drop_duplicates()
     multi_addresses = addresses[addresses.duplicated(subset=['OCD_ID','location_name'], keep=False)]
@@ -784,7 +781,6 @@ def warning_multi_directions(state_data):
     INPUT: state_data
     RETURN: multi_directions_rows
     """
-
     # SELECT feature(s) (4 selected)
     unique_rows = state_data[['OCD_ID', 'location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip', 'directions', 'is_drop_box', 'is_early_voting']].drop_duplicates()
     duplicate_locations = unique_rows[unique_rows.duplicated(subset=['OCD_ID', 'location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip', 'is_drop_box', 'is_early_voting'],keep=False)]
@@ -807,7 +803,6 @@ def warning_ocd_id(state_data, state_abbrv):
     INPUT: state_data
     RETURN: ocd_id_rows
     """
-
     ocd_id_rows = []
 
     # ISOLATE if ocd-division is incorrect
@@ -851,7 +846,6 @@ def warning_date_year(state_data):
     INPUT: state_data
     RETURN: date_year_rows
     """
-    
     temp = pd.DataFrame()
 
     # FORMAT features (2 formatted)
@@ -877,7 +871,6 @@ def warning_semi_colon(state_data):
     INPUT: state_data
     RETURN: semi_colon_rows
     """
-
     # ISOLATE data errors in 2 features
     semi_colon_start_time = state_data[state_data['start_time'].str.contains(';')]
     semi_colon_end_time = state_data[state_data['end_time'].str.contains(';')]
