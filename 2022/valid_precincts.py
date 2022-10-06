@@ -26,7 +26,7 @@ import pytz
 
 STATES_USING_TOWNSHIPS = ["CT", "ME", "MA", "NH", "RI", "VT"] # SET states that use townships instead of counties for elections
 
-OUTPUT_DIR = os.path.expanduser("~/Dropbox (Democracy Works VIP)/Democracy Works VIP's shared workspace/hand_collection/2022-11-08/valid_precincts/")
+OUTPUT_DIR = os.path.expanduser("~/Democracy Works VIP Dropbox/Democracy Works VIP's shared workspace/hand_collection/2022-11-08/valid_precincts/")
 
 dbname = {"AL":"alabama", "AK":"alaska", "AZ":"arizona", "AR":"arkansas", "CA":"california", "CO":"colorado", "CT":"connecticut", "DE":"delaware", 
           "DC":"district_of_columbia", "FL":"florida", "GA":"georgia", "HI":"hawaii", "ID":"idaho", "IL":"illinois", "IN":"indiana", "IA":"iowa", 

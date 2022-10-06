@@ -51,7 +51,7 @@ STATES_USING_TOWNSHIPS = ["CT", "ME", "MA", "NH", "RI", "VT"] # SET states that 
 
 STATES_WITH_WARNINGS = [] # STORE states that trigger warnings
 
-OUTPUT_DIR = os.path.expanduser("~/Dropbox (Democracy Works VIP)/Democracy Works VIP's shared workspace/hand_collection/")
+OUTPUT_DIR = os.path.expanduser("~/Democracy Works VIP Dropbox/Democracy Works VIP's shared workspace/hand_collection/")
 
 fips_lookup = pd.read_json("fips_ocdid_zips_dictionary.txt").T["ocdid"]
 fips_lookup.dropna(inplace = True)
