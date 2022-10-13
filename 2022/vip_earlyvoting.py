@@ -87,10 +87,16 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
     state_feed['external_identifier_type'] = 'ocd-id' 
     
     # CLEAN/FORMAT state_feed, state_data, and election_authorities (3 dataframes)
-    state_feed, state_data, election_authorities = clean_data(state_abbrv, state_feed, state_data, election_authorities)
-    
+    try:
+        state_feed, state_data, election_authorities = clean_data(state_abbrv, state_feed, state_data, election_authorities)
+    except Exception as e:
+        raise Exception("Clean, "+str(e)) from e
+        
     # GENERATE warnings in state_data
-    warnings = generate_warnings(state_data, state_abbrv, state_feed['official_name'][0])
+    try:
+        warnings = generate_warnings(state_data, state_abbrv, state_feed['official_name'][0])
+    except Exception as e:
+        raise Exception("Warnings, "+str(e)) from e
     
     # _____________________________________________________________________________________________________________________
 
@@ -169,7 +175,6 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities):
         person = generate_person(election_authorities)
     except Exception as e:
         raise Exception("Persons, "+str(e)) from e
-    
     
     # GENERATE zip file
     generate_zip(state_abbrv, state_feed, {'state':state, 
@@ -761,8 +766,8 @@ def warning_multi_addresses(state_data):
     RETURN: multi_address_rows
     """
     # SELECT feature(s) (3 selected)
-    addresses = state_data[['OCD_ID','location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip']].drop_duplicates()
-    multi_addresses = addresses[addresses.duplicated(subset=['OCD_ID','location_name'], keep=False)]
+    addresses = state_data[['OCD_ID','location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip', "is_drop_box", "is_early_voting"]].drop_duplicates()
+    multi_addresses = addresses[addresses.duplicated(subset=['OCD_ID','location_name', "is_drop_box", "is_early_voting"], keep=False)]
     multi_addresses.index = multi_addresses.index + 1   # INCREASE INDEX to correspond with google sheets index
 
     multi_address_rows = []
@@ -1124,7 +1129,7 @@ def main():
                 state_data.drop(columns = ["status","internal_notes"], inplace = True)
                 
                 # Check for missing vital data:
-                missing_rows = state_data[(state_data[["start_date", "end_date"]]=="").any(axis = 1)].index.tolist()
+                missing_rows = state_data[(state_data[["start_date", "end_date", "location_name", "address_line1", "locality", "OCD_ID", "address_city", "address_state"]]=="").any(axis = 1)].index.tolist()
                 if missing_rows:
                     raise Exception("Missing vital data on rows: "+" ".join(str(e+2) for e in missing_rows))
                 
@@ -1155,7 +1160,7 @@ def main():
 
     print('Timestamp:', datetime.datetime.now().replace(microsecond=0))
     print(f'Run time: {float((time.time()-start)):.2f} second(s)')
-    
+
     if file_dict:
         query = input("Upload? [ALL or state_abbrvs]: ").upper().strip()
         if query == "ALL":
