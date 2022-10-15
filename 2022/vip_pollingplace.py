@@ -103,7 +103,10 @@ def vip_build(state_abbrv, state_feed, state_data, election_authorities, target_
        target_smart = clean_data(state_abbrv, state_feed, state_data, election_authorities, target_smart)
        
     # GENERATE warnings/fatal errors in state_data (2 warnings, 5 fatal errors)
-    warnings = generate_warnings_state_data(state_data, state_abbrv, state_feed['official_name'][0], target_smart)
+    try:
+        warnings = generate_warnings_state_data(state_data, state_abbrv, state_feed['official_name'][0], target_smart)
+    except Exception as e:
+        raise Exception("Warnings, "+str(e)) from e
     """
     # GENERATE warnings for matches between counties/places/townships & precincts in state_data & target_smart (2 warnings)
     sd_unmatched_precincts_list, ts_unmatched_precincts_list = warning_unmatched_precincts(state_abbrv, state_data, target_smart)
@@ -565,8 +568,8 @@ def generate_precinct(state_data, target_smart):
     SPEC: https://vip-specification.readthedocs.io/en/latest/csv/element_files/precinct.html
     """
     
-    precinct = target_smart[["vf_locality", "vf_precinct_name"]].drop_duplicates(ignore_index = True).rename(columns={"vf_locality":"locality",
-                                                                                                                      "vf_precinct_name":"precinct"})
+    precinct = target_smart[["vf_locality", "vf_precinct_name"]].rename(columns={"vf_locality":"locality",
+                                                                                 "vf_precinct_name":"precinct"})
     precinct.sort_values(["locality", "precinct"], inplace = True, ignore_index = True)
     # SELECT feature(s) (3 selected)
     loc = state_data[['locality', 'OCD_ID']].drop_duplicates(ignore_index = True)
@@ -579,7 +582,7 @@ def generate_precinct(state_data, target_smart):
     grouped = pd.DataFrame(grouped.aggregate(lambda x: ' '.join(x))['polling_location_ids']) # FLATTEN aggregated df
     grouped.reset_index(inplace = True)
     
-    precinct = precinct.merge(grouped, on = ["locality", "precinct"])
+    precinct = precinct.merge(grouped, on = ["locality", "precinct"], how = "left")
     
     precinct.fillna("", inplace = True)
     
@@ -823,17 +826,17 @@ def warning_missing_data(state_data):
     INPUT: state_data
     RETURN: missing_data_rows
     """
-
+    print("MISSING DATA")
     # SELECT feature(s) (all features from state_data except 3 features)
-    missing_data_check = state_data[state_data.columns.difference(['address_line2', 'address_line3', 'directions'])].isnull().any(axis=1)
+    missing_data_check = state_data[state_data.columns.difference(['address_line2', 'address_line3', 'directions',"precinct"])].isnull().any(axis=1)
     missing_data_check.index = missing_data_check.index + 1  # INCREASE INDEX to correspond with google sheets index
-    missing_data_rows = []
-    
+    missing_data_rows = missing_data_check.loc[lambda x: x==True].index.values.tolist()
+    '''
     if missing_data_check.any(): # IF any data is missing
         missing_data_rows = missing_data_check.loc[lambda x: x==True].index.values.tolist()
         if len(missing_data_rows) > 30:  # IF there are more than 30 rows with missing data then simply notify user
             missing_data_rows = ['More than 30 rows with missing data']
-
+    '''
     if missing_data_rows:        
         return warn_obj("Rows with missing data:", missing_data_rows, fatal = True)
     else:
@@ -847,7 +850,7 @@ def warning_cross_street(state_data):
     INPUT: state_data
     RETURN: cross_street_rows
     """
-
+    print("CROSS ST")
     # NOTE: Invalid cross streets sometimes do not map well on Google's end 
     cross_street_addresses = state_data[state_data['address_line1'].str.contains(' & | and ')]
     cross_street_rows = sorted(list(cross_street_addresses.index + 1))
@@ -865,7 +868,7 @@ def warning_multi_addresses(state_data):
     INPUT: state_data
     RETURN: multi_address_rows
     """
-
+    print("MULTI ADDR")
     # SELECT feature(s) (3 selected)
     addresses = state_data[['OCD_ID','location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip']].drop_duplicates()
     multi_addresses = addresses[addresses.duplicated(subset=['OCD_ID','location_name'], keep=False)]
@@ -887,7 +890,7 @@ def warning_multi_directions(state_data):
     INPUT: state_data
     RETURN: multi_directions_rows
     """
-
+    print("MULTI DIRECTIONS")
     # SELECT feature(s) (4 selected)
     unique_rows = state_data[['OCD_ID', 'location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip', 'directions']].drop_duplicates()
     duplicate_locations = unique_rows[unique_rows.duplicated(subset=['OCD_ID', 'location_name', 'address_line1', 'address_line2', 'address_line3', 'address_city', 'address_zip'],keep=False)]
@@ -910,7 +913,7 @@ def warning_ocd_id(state_data, state_abbrv):
     INPUT: state_data
     RETURN: ocd_id_rows
     """
-
+    print("OCDID")
     ocd_id_rows = []
 
     # ISOLATE if ocd-division is incorrect
@@ -999,6 +1002,7 @@ def warning_bad_zip(state_data):
     INPUT: state_data
     RETURN: bad_zip_rows
     """
+    print("BAD ZIP")
     bad_zip_df = state_data[~state_data["address_zip"].str.fullmatch("(^\d{5}$)|(^\d{9}$)|(^\d{5}-\d{4}$)")]
     bad_zip_rows = sorted(list(set(bad_zip_df.index + 1)))
     
@@ -1012,6 +1016,7 @@ def warning_bad_timing(state_data):
     INPUT: state_data
     RETURN: bad_timing_rows
     """
+    print("BAD TIMING")
     temp = pd.DataFrame()
     temp["start_time"] = pd.to_datetime(state_data["start_time"])
     temp["end_time"] = pd.to_datetime(state_data["end_time"])
@@ -1024,8 +1029,9 @@ def warning_bad_timing(state_data):
     else: return None
 
 def warning_unmatched_precinct_hc(state_data, target_smart):
-    hc_df = state_data[["locality", "precinct"]].apply(", ".join, axis = 1)
-    ts_df = target_smart[["vf_locality", "vf_precinct_name"]].apply(", ".join, axis = 1)
+    print("UNMATCHED 1")
+    hc_df = state_data[["locality", "precinct"]].fillna("").apply(", ".join, axis = 1)
+    ts_df = target_smart[["vf_locality", "vf_precinct_name"]].fillna("").apply(", ".join, axis = 1)
     
     hc = set(hc_df.tolist())
     ts = set(ts_df.tolist())
@@ -1036,8 +1042,9 @@ def warning_unmatched_precinct_hc(state_data, target_smart):
     else: return None
 
 def warning_unmatched_precinct_ts(state_data, target_smart):
-    hc_df = state_data[["locality", "precinct"]].apply(", ".join, axis = 1)
-    ts_df = target_smart[["vf_locality", "vf_precinct_name"]].apply(", ".join, axis = 1)
+    print("UNMATCHED 2")
+    hc_df = state_data[["locality", "precinct"]].fillna("").apply(", ".join, axis = 1)
+    ts_df = target_smart[["vf_locality", "vf_precinct_name"]].fillna("").apply(", ".join, axis = 1)
     
     hc = set(hc_df.tolist())
     ts = set(ts_df.tolist())
@@ -1481,8 +1488,11 @@ def main():
                 state_data_unfiltered.drop([0], inplace=True)
                 
                 # FILTER rows not marked "complete"
-                state_data = state_data_unfiltered.loc[state_data_unfiltered["status"] == "Complete"]
-                state_data.drop(columns = ["status","internal_notes"], inplace = True)
+                cols = ["OCD_ID","locality","precinct","location_name",
+                        "directions","address_line1","address_line2",
+                        "address_line3","address_city","address_state",
+                        "address_zip","time_zone","start_time","end_time"]
+                state_data = state_data_unfiltered.loc[state_data_unfiltered["status"] == "Complete",cols]
                 
                 # FILTER dataframes for selected state (2 dataframes)
                 state_feed = state_feed_all[state_feed_all['state_abbrv'] == state_abbrv] 
