@@ -1125,8 +1125,13 @@ def main():
                 state_data_unfiltered.drop([0], inplace=True)
                 
                 # FILTER rows not marked "complete"
-                state_data = state_data_unfiltered.loc[state_data_unfiltered["status"] == "Complete"]
-                state_data.drop(columns = ["status","internal_notes"], inplace = True)
+                cols = ["OCD_ID","locality","precinct","location_name",
+                        "directions","address_line1","address_line2",
+                        "address_line3","address_city","address_state",
+                        "address_zip","time_zone","start_time","end_time",
+                        "start_date","end_date","is_only_by_appointment",
+                        "is_or_by_appointment","is_drop_box","is_early_voting"]
+                state_data = state_data_unfiltered.loc[state_data_unfiltered["status"] == "Complete",cols]
                 
                 # Check for missing vital data:
                 missing_rows = state_data[(state_data[["start_date", "end_date", "location_name", "address_line1", "locality", "OCD_ID", "address_city", "address_state"]]=="").any(axis = 1)].index.tolist()
