@@ -831,14 +831,14 @@ def warning_ocd_id(state_data, state_abbrv):
         county_place_issue = state_data[~state_data['OCD_ID'].str.contains(r'county|place|sldl|parish')]
         if not county_place_issue.empty:
             ocd_id_rows.append(('county|place|sldl|parish', str(set(county_place_issue.index+1)).strip('{}')))
-
+    '''
     # ISOLATE if the number of slashes is incorrect
     if state_abbrv != 'AK': # Alaska ocd-ids have 2 and 3 slashes, depending
         slash_number = 3
         slash_issue = state_data[state_data['OCD_ID'].str.count('/') != slash_number]
         if not slash_issue.empty:
             ocd_id_rows.append(('slashes', str(set(slash_issue.index+1)).strip('{}')))
-
+            '''
     if ocd_id_rows:
         return warn_obj("Rows with bad OCD IDs:", ocd_id_rows, fatal = True)
     else: return None
@@ -1125,7 +1125,7 @@ def main():
                 state_data_unfiltered.drop([0], inplace=True)
                 
                 # FILTER rows not marked "complete"
-                cols = ["OCD_ID","locality","precinct","location_name",
+                cols = ["OCD_ID","locality","location_name",
                         "directions","address_line1","address_line2",
                         "address_line3","address_city","address_state",
                         "address_zip","time_zone","start_time","end_time",
