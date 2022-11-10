@@ -308,7 +308,7 @@ def generate_polling_location(state_data):
                                      'address_city':'structured_city',
                                      'address_state':'structured_state',
                                      'address_zip':'structured_zip'}, inplace=True)
-    polling_location.drop_duplicates(inplace=True)
+    polling_location.drop_duplicates("id", inplace=True)
 
 
     return polling_location
@@ -1134,7 +1134,7 @@ def main():
                 state_data = state_data_unfiltered.loc[state_data_unfiltered["status"] == "Complete",cols]
                 
                 # Check for missing vital data:
-                missing_rows = state_data[(state_data[["start_date", "end_date", "location_name", "address_line1", "locality", "OCD_ID", "address_city", "address_state"]]=="").any(axis = 1)].index.tolist()
+                missing_rows = state_data[(state_data[["start_date", "end_date", "location_name", "address_line1", "locality", "OCD_ID", "address_city", "address_state", "address_zip"]]=="").any(axis = 1)].index.tolist()
                 if missing_rows:
                     raise Exception("Missing vital data on rows: "+" ".join(str(e+2) for e in missing_rows))
                 

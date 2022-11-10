@@ -354,7 +354,7 @@ def generate_polling_location(state_data):
                                      'address_state':'structured_state',
                                      'address_zip':'structured_zip'}, inplace=True)
     
-    polling_location.drop_duplicates(inplace=True)
+    polling_location.drop_duplicates("id",inplace=True)
     
     # ADD features (2 selected)
     polling_location["is_drop_box"] = "false"
@@ -592,7 +592,7 @@ def generate_precinct(state_data, target_smart):
     precinct.drop(columns = ["locality", "OCD_ID"], inplace = True)
     
     # CREATE/FORMAT feature(s) (1 created, 2 formatted)
-    precinct.drop_duplicates(inplace=True)
+    precinct.drop_duplicates("id", inplace=True)
     precinct.rename(columns={'precinct':'name'}, inplace=True)
     precinct.reset_index(drop=True, inplace=True)
     
@@ -1494,6 +1494,11 @@ def main():
                         "address_zip","time_zone","start_time","end_time"]
                 state_data = state_data_unfiltered.loc[state_data_unfiltered["status"] == "Complete",cols]
                 
+                # Check for missing vital data:
+                missing_rows = state_data[(state_data[["location_name", "address_line1", "locality", "OCD_ID", "address_city", "address_state", "address_zip", "start_time", "end_time"]]=="").any(axis = 1)].index.tolist()
+                if missing_rows:
+                    raise Exception("Missing vital data on rows: "+" ".join(str(e+2) for e in missing_rows))
+                
                 # FILTER dataframes for selected state (2 dataframes)
                 state_feed = state_feed_all[state_feed_all['state_abbrv'] == state_abbrv] 
                 election_authorities = election_authorities_all[election_authorities_all['state'] == state_abbrv] 
@@ -1523,6 +1528,16 @@ def main():
                                                              " AND vf_reg_address_1 <> ''",
                                                              " AND vf_reg_zip <> ''",
                                                              " AND vf_reg_cass_street_name <> 'PO BOX'"])
+                    
+                    if state_abbrv == "FL":
+                        #hc_counties = ["LAKE","PINELLAS","ST LUCIE","MANATEE","MADISON","HARDEE","BAY","MONROE","VOLUSIA","SUMTER",
+                        #               "PASCO","PALM BEACH","GULF","CHARLOTTE","BROWARD","ALACHUA","DUVAL","WASHINGTON","NASSAU","LIBERTY"]
+                        hc_counties = state_data["locality"].drop_duplicates().tolist()
+                        print(hc_counties)
+                        hc_counties = ["'"+x+"'" for x in hc_counties]
+                        
+                        targetsmart_sql_filter_string = targetsmart_sql_filter_string + " AND vf_county_name IN ({})".format(
+                            ",".join(hc_counties))
                     
                     # SET MySQL query
                     query = "SELECT " + targetsmart_sql_col_string + " FROM " + sql_table_name + \

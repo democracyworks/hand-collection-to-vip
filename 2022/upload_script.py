@@ -45,7 +45,7 @@ def upload(ARG):
     
     esc_quote = '\\"'
     
-    message_body = '{{:filename {4}{0}/{1}/{2}{4} :bucket {4}{3}{4}}}'.format(FIPS, ELECTION_DATE, FILE, BUCKET, esc_quote)
+    message_body = '{{:filename {4}{0}/{1}/{2}{4} :bucket {4}{3}{4} :post-process-street-segments? true :notify? false}}'.format(FIPS, ELECTION_DATE, FILE, BUCKET, esc_quote)
     
     os.system('/usr/local/bin/aws sqs send-message --queue-url https://sqs.us-east-1.amazonaws.com/858394542481/{0} --message-body "{1}"'.format(bucket_message, message_body))
     
